@@ -1,0 +1,367 @@
+D&D Got Health WRONG
+https://youtu.be/PRm6OBug_I4
+
+What if the best way to make your D and
+D combat unforgettable didn't come from
+D and D at all? I'm sure you've had this
+happen. Your barbarian charges forward
+despite getting hit with four fireball
+attacks, their great axe triumphantly
+waving over their head, only for them to
+end up rolling deaths because of one
+last little goblin sticking them with
+their rapier with a flipping toothpick.
+Antilimactic, right? And sure, hit
+points are simple. They're easy to
+track, but are they really what you want
+in your games? Do you want your players
+to just scribble minus 12 hit points
+without flinching? Or do you want them
+to carry a scar, a limp, a story that
+they'll be talking about for weeks? So,
+I always thought hit points were fine. I
+thought they were just kind of an
+unavoidable part of RPGs that landed a
+little more heavily on the G part of all
+of it. But I was wrong. Like very wrong.
+But luckily, that's where another system
+came and showed me the lights. Because
+here's the problem. In Dn D, nobody
+really cares about HP until it's
+dwindling down into the single digits.
+Most of the time, losing hit points
+means absolutely nothing, which is like
+a jarring contrast to real life where
+getting hit in the chest with an axe
+would mean everything. And that
+disconnect, that's why a lot of these
+other fixes for combat, things like
+faster pacing, cooler monster tactics,
+clever win conditions, they all help,
+but they don't solve the real problem,
+and that's that your players aren't
+immersed. They don't feel like they're
+in danger. And that's where Tales from
+Elsewhere's Clockworld comes in. Even
+though Peter's a friend of mine and he
+ran not one but two oneshots of his
+system for me and some other D and D
+YouTubers you might recognize. Despite
+all this, today I'm still going to steal
+from his brilliantly designed game.
+Anyways, that's right. This is yet
+another edition of Stealed This
+Mechanic, the game show where I take
+things I love from other games I play
+and think about how I tinker with them
+to put them into Dn D. Just fun little
+experiments. a round of whatifs for us
+game mechanic nerds out there. Now, the
+Tales from Elsewhere system is more on
+the grittier, slightly more deadly side
+of the TTRPG spectrum, but not in the
+usual low hit points, everyone dies fast
+sort of way that we're kind of used to
+with his game. Peter has made a strong
+case for ditching HP entirely and
+replacing it with wounds and conditions
+instead. So, here's how it works.
+Instead of a big pool of hit points,
+you've got wound slots. For strain,
+these are superficial grazes and
+stresses. For serious injuries, these
+are ones that slow you down but aren't
+life-threatening. For critical injuries,
+those are definitely for like uh-oh
+moments. Uh that's a dangerous, more
+severe sort of hit. And lethal injuries
+are wounds that are immediately
+lifethreatening. And things get extra
+flavorful and intense with the Tales
+from Elsewhere system because serious
+and critical wounds, those buddies come
+with conditions. In one of those games,
+Bone Wizard took a serious wound, not
+necessarily a big deal in itself, except
+for it was specifically an arm injury,
+and the condition he had as a result
+wouldn't let him use his two-handed
+weapon anymore. You know, the one our
+survival basically depended on. And if
+we hadn't dealt with that right away, we
+probably wouldn't have survived the
+encounter. And spoiler alert, if you
+watched the replay, uh, one of us
+didn't. Meanwhile though, something like
+an unarmed cultist scratching at your
+face, that's just strain. But even
+strain stacks up over time, and enough
+of it can snowball into more of a
+serious injury. And let me tell you,
+this system felt more immersive
+immediately, more than hit points ever
+had. But it did this all without using
+wounds as a deterrent to get you as a
+player to avoid combat, which is
+definitely something I've experienced
+with other systems that use more of
+these wound and condition types of
+mechanics. But this made it so that we
+could still enjoy that part of the game.
+But it was like combat suddenly had way
+more teeth, sharp, pointy ones. And I
+didn't feel like I was just waiting for
+my turn. I was on the edge of my seat,
+invested in every single hit that my
+friends took. And of course, this is a
+big departure from how Dn D works with
+hit points, right? So, the real question
+is, can we actually run something like
+this in Dn D? Let's find out. Now,
+obviously, there's way more to Peter's
+system than just wounds and conditions.
+His whole combat design is actually very
+elegant. He's a dapper man. I'd expect
+nothing less. But if you'd like to try
+it for yourself, his fully funded
+Kickstarter with mere days left to it
+actually has a free play test dock and
+the two oneshot adventures that he ran
+for the group I was playing with. So you
+can go to his Kickstarter and download
+those. You can go to his channel and
+watch the two oneshots. Whatever floats
+your boat. Links are below. But here's
+the thing. Dn D is pretty much married
+to hit points. And not only that, it's a
+highly heroic game. So, at first glance,
+swapping in wounds doesn't feel like the
+most natural fit, but I ain't scared,
+Suge. If it were me, here's where I'd
+start. And honestly, I want to hear from
+you, too. This isn't something that I've
+play tested yet. I'm just kind of
+letting these ideas percolate a bit.
+This is very thought experimenty, just a
+sort of for fun kind of thing. So, drop
+a comment and let me know how you drift
+on this sort of idea. So, first things
+first, we need to turn HP into wound
+slots in Tales from Elsewhere. Everyone
+starts with roughly the same amount of
+wound slots, but in D and D, hit points
+between classes vary wildly. So, we have
+to account for those differences between
+something like a barbarian and a squishy
+little wizard. Not to mention that
+there's feats, ancestry bonuses, all
+that sort of stuff. So, there are a few
+different ways I'm thinking about
+tinkering with it. One option would be
+to focus in on class flavor. So, you'd
+want to figure out how many types of
+each wound slot would make a barbarian
+feel tanky versus a wizard feel fragile.
+Another option I was considering is
+having this be more of a point buy sort
+of deal, almost similar to like stats.
+You could take base HP and constitution,
+then let players buy wound slots, maybe
+trade them in as they level up. And if
+scaling wound slots or seeing how many
+fit for each class sounds like a lot to
+you, I know not everyone enjoys play
+testing, I think you could also consider
+having a more flat across the board
+style system like Tales from Elsewhere
+has, and instead try implementing a
+secondary system like negation slots. So
+instead of scaling moon slots, you can
+give classes a certain number of
+negotiation slots to avoid the damage
+entirely. Barbarians can flavor it as
+shrugging off hits, paladins as
+parrying, and wizards as making a lucky
+dodge. And of course, if these ideas
+seem overwhelming to you, I think even a
+light version of all of this would
+really bring a lot of flavor to the
+table. So, you can skip reinventing the
+HP system and instead just add two or
+three wound slots as a separate track
+entirely. That way, say maybe once PCs
+are below half their HP, you can play
+with more of these narrative injuries
+and conditions with mechanical
+consequences without overhauling the
+entire system. Which, speaking of
+damage, hit points and damage are
+basically glued together in DD. So, how
+do we rethink that if we're moving over
+to wounds? Unfortunately, you can't just
+copy tails from elsewhere one to one
+here. But here's how I'd start. For nap
+20s, I'd just have them instantly be
+lethal to low-level enemies and minions.
+For tougher monsters, it'd be an instant
+critical and then maybe only a serious
+wound for boss battles. For armor class,
+we can keep it as is. And so ultimately,
+we're really only swapping out what
+happens after we hit. And since D and D
+can have a wide damage range, I lean on
+more threshold style rules. Think Dagger
+Heart. So, a great sword rolling 2d6 has
+more chances to land a low number, which
+means a higher chance of getting a
+critical wound. Perfect. Leave as is.
+While a great axe with a d12 might look
+like this, one to two on it would be a
+critical injury. 3 to five is a serious
+and six and over would be a strain. And
+for monsters, you can tweak it a little
+bit by roll. Simplify. So maybe minions
+can only inflict a strain unless they
+get a one and then it's a serious. But
+for big scary bosses, every strike they
+land might be a serious wound and then
+maybe have the chance of being a
+critical wound on a one. I think there's
+a lot of room to play with it. So, be
+flexible. And honestly, I'd love to hear
+in the comments how you'd tune these
+thresholds for your table. But
+naturally, we also have to consider
+things like resistances and
+vulnerabilities. And luckily, these ones
+slot right in. If your barbarian is
+raging and resistant to piercing,
+slashing, and budgeoning damage, any hit
+in that wound gets downgraded. maybe
+even say that they can only get strains
+from these lower level attacks as a
+class feature. But on the flip side,
+vulnerabilities upgrade wounds. So if an
+awakened shrub takes fire damage, that
+strain would be bumped up to a serious
+and a serious to a critical. Now, I know
+all of this sounds like a really big
+leap, but here's why it's worth playing
+with. With this wound and condition
+system, combat instantly feels more
+dangerous. It feels more dramatic, and
+it feels way more memorable. And that's
+not just because of the wounds
+themselves. That's the core. But it's
+also because of this next thing.
+Conditions are where this whole wound
+thing really comes alive. Sure, you can
+use D and D's existing conditions. You
+can even port over the ones from Tales
+from elsewhere and kind of see how you'd
+fit those in. But honestly, what excites
+me the most is the idea of inventing new
+ones. Effects that make combat feel
+unpredictable and dangerous. Picture
+this. There's a pack of blink dogs
+teleporting around the battlefield.
+Maybe if two of them hit one PC, you can
+introduce the overwhelmed condition. Now
+that player rolls further attacks with
+disadvantage, and if they crit fail,
+they clip an ally in the process. Or
+imagine a lightning bolt. Not only does
+it knock you prone, but maybe it also
+inflicts the electrocuted condition. If
+you fail the save for this, you keep
+taking strain every round until you make
+the save. Maybe it even means adjacent
+PCs are at risk of static electricity
+jumps in some kind of area of effect
+damage. And that's the beauty of wounds
+with conditions. Every hit carries
+suspense. It's not just you took damage.
+It's, "Oh no, what else is about to
+happen to me?" Now, of course, there's
+the elephant in the room. Let's talk
+healing. This is the other big place
+you'd probably need to make a few more
+tweaks for Dn D. In Tales from
+Elsewhere, treating a wound doesn't
+automatically clear the injury. It
+clears the condition. That slot stays
+locked out of the fight. But since Dn D
+is so much more heroic, I think it's
+reasonable that a potion or a spell
+would clear the whole wound slot
+completely, injury and all. So cure
+wounds or healing word, they erase a
+wound slot instead of restoring HP.
+Spells that grant temporary HP, now they
+grant a temporary wound slot. You could
+even tie certain healing spells to
+certain thresholds. Full roles might
+clear critical or serious injuries.
+Lesser rolls might only clear strain.
+And by now you might be asking, why
+bother with all of this extra work?
+Here's why. What turns most people off
+about combat in D and D isn't always
+about the lack of speed or the
+complexity. It's that it often doesn't
+feel that interesting or immersive. A
+hit should feel like a hit, not a casual
+math problem. A wound system makes
+combat much more storytelling forward.
+And not just in the moment, but in the
+scars, the strategies, and even in the
+roleplay hooks that ripple out after
+combat's over. It creates choices that
+matter. It creates combat where you can
+feel the tension all across the table,
+and it makes your games unforgettable.
+And our first Tales from Elsewhere game,
+uh, crowd favorite, Gentle Jeff, a 6'
+tall, 6 foot wide, 6 foot deep cube of a
+man. He lost his leg in combat. Instead
+of treating it like a punishment, Jason
+leaned into it. For the next game, he
+took a feat that gave him clockwork
+parts. Suddenly, Jeff was clanking
+around everywhere, and sneaking was no
+longer really an option for him. And
+that wasn't forced by the GM. It was a
+story that Jason chose to tell as a
+result, like what his character had been
+through. In another game, my character
+Marlo was impaled through the gut. She
+was leaving a trail of blood that
+Eldrich horrors could track. So, it
+forced me to burn a precious item just
+to increase my chances of survival.
+That's what wounds do. They turn combat
+into story. They force players to make
+hard calls, and they create moments that
+you remember long after the dice stop
+rolling. For me as a DM, that's the
+dream. a table full of possibility.
+Terrifying possibility. So again, this
+is just me spitballing. If you've
+already got your own cool way of
+tweaking hit points or replacing HP,
+drop it down in the comments so I can
+steal that, too. And yeah, I know it's a
+big fundamental switch, but I do think
+it'd be really cool to try something
+like this for a short story arc, a
+highstakes dungeon oneshot, or even just
+a gritty little side quest. And
+seriously, don't sleep on the Tales from
+Elsewhere Kickstarter. There are just a
+couple days left, so go grab your free
+play test now. And as always, if you
+enjoyed this video, make sure to like
+it, to hype it, and to subscribe if
+you'd like to see more of my face in the
+future. And make sure to check out these
+videos
