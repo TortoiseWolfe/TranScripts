@@ -1,19 +1,19 @@
-# Career Coaching GPT Tools
+# Career Coaching Claude Projects
 
-This folder contains custom GPT instructions for reviewing LinkedIn profiles and resumes, based on 30 cleaned transcripts from professional career coaching sessions.
+This folder contains custom Claude Project instructions for reviewing LinkedIn profiles and resumes, based on 30 cleaned transcripts from professional career coaching sessions.
 
 ---
 
-## Available GPTs
+## Available Projects
 
-| GPT | Purpose | Input |
-|-----|---------|-------|
+| Project | Purpose | Input |
+|---------|---------|-------|
 | **LinkedIn Profile Review** | Optimize your profile for recruiter searches | LinkedIn data export (Profile.csv) |
 | **Resume Improvement** | Rewrite bullets and improve ATS optimization | Resume text or file upload |
 
 ---
 
-## How to Use the LinkedIn Profile Review GPT
+## How to Use the LinkedIn Profile Review Project
 
 ### Step 1: Export Your LinkedIn Data
 
@@ -48,10 +48,10 @@ This folder contains custom GPT instructions for reviewing LinkedIn profiles and
 ### Step 3: Submit for Review
 
 Open **Profile.csv** and either:
-- **Copy/paste the contents** into the GPT chat, OR
+- **Copy/paste the contents** into the chat, OR
 - **Upload the file** directly
 
-The GPT will provide a complete section-by-section review with:
+Claude will provide a complete section-by-section review with:
 - Specific rewrites for your headline and about section
 - Keyword optimization for recruiter searches
 - Skills recommendations
@@ -59,7 +59,7 @@ The GPT will provide a complete section-by-section review with:
 
 ---
 
-## How to Use the Resume Improvement GPT
+## How to Use the Resume Improvement Project
 
 ### Step 1: Prepare Your Resume
 
@@ -69,7 +69,7 @@ Have your resume ready in one of these formats:
 
 ### Step 2: Choose Your Output Format
 
-The GPT will ask your preference:
+Claude will ask your preference:
 
 | Option | What You Get |
 |--------|--------------|
@@ -78,7 +78,7 @@ The GPT will ask your preference:
 
 ### Step 3: Review and Apply
 
-The GPT will analyze your resume against proven frameworks:
+Claude will analyze your resume against proven frameworks:
 - **Action Verb + Task + Result** formula for every bullet
 - **Impact Logic** for writing strong bullets without metrics
 - **Keyword optimization** for ATS systems
@@ -88,9 +88,9 @@ The GPT will analyze your resume against proven frameworks:
 
 ## What's Included
 
-### Instruction Files (for GPT setup)
-- `LINKEDIN_GPT_INSTRUCTIONS.md` - Complete instructions for LinkedIn review GPT
-- `RESUME_GPT_INSTRUCTIONS.md` - Complete instructions for Resume improvement GPT
+### Project Instructions (for Claude Project setup)
+- `LINKEDIN_PROJECT_INSTRUCTIONS.md` - Complete instructions for LinkedIn review project
+- `RESUME_PROJECT_INSTRUCTIONS.md` - Complete instructions for Resume improvement project
 
 ### Knowledge Base (cleaned transcripts)
 - `LinkedIn_Edited/` - 22 transcripts covering profile optimization, SEO, networking, recommendations
@@ -128,7 +128,7 @@ Example: "Improved site load time by 40% through optimized code deployment"
 
 **For LinkedIn:**
 - Export fresh data right before your review
-- Have 2-3 target job descriptions ready (the GPT will extract keywords)
+- Have 2-3 target job descriptions ready (Claude will extract keywords)
 - Be ready to update your profile immediately after review
 
 **For Resume:**
