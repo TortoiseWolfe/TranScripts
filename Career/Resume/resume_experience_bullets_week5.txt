@@ -1,0 +1,942 @@
+2025-11-25T23:02:52Z - Career Strategy w/ Chelsea - YouTube
+
+Hello. Hello.
+Hey there. How are you?
+>> Good.
+>> How you been?
+>> I'm good. We'll just wait for a few
+others to join.
+Hey Anna, I'm just waiting for a few
+others to join.
+Oh, okay. I was about to test my system.
+I was like, uhoh.
+I know there's there's a Well, I don't
+know if anyone's coming from Adam's
+meeting, but I was over there and then I
+saw the time and then jumped over here.
+Yeah, I I switched uh my my times last
+minute uh because I need to do some last
+minute uh travel tomorrow. So,
+but we'll start in just a few moments.
+I'll be right back. Going to heat up
+some tea.
+Okay, everyone, let's get started.
+Welcome back. [clears throat]
+Um, so again, we are continuing with our
+resume clinic.
+Um so
+tonight we are going to focus on one of
+the most important parts of your resume.
+Um your experience bullets. So this is
+where recruiters look first. It's where
+you show your value. Okay. Um, I mean,
+we definitely look at the um headline
+and the summary, but it is super um
+important to have your bullets all set
+and ready to go. Um, and it is a very
+important part of your resume. So, our
+goal tonight is simple.
+You learn how to turn basic duties into
+strong accomplishments
+that prove impact. So that's the real
+thing about bullets. They aren't just
+what you say you can do. It's what you
+can prove you can impact.
+So, by the end of tonight, you will
+leave with three improved improved
+bullets that you can use immediately.
+So, type uh I'd like everyone to type
+one word in the chat describing how
+confident you feel about your experience
+bullets right now.
+you know, wherever you are, you know,
+you'll walk out stronger where you came
+in, but
+let's just share a little bit first. So
+again, type one word in the chat
+describing how confident you feel about
+your experience bullets right now.
+>> [snorts]
+>> Okay. So,
+recruiters
+skim your resume and they do not read
+every single bullet. They look for
+short, clear statements that show
+outcomes, right? So, strong bullets are
+going to share three qualities, okay?
+They start with a clear action verb.
+They explain what you worked on
+and they show the outcome
+or the value of your work.
+So,
+weak bullets
+list tasks.
+Strong bullets
+show why the task mattered.
+Okay, so let me say that again.
+Weak bullets list tasks.
+Strong bullets show why the task
+mattered.
+So of a couple of examples here.
+So a weak task
+or a weak bullet
+responsible for helping with front end
+updates.
+Okay. Something a little bit stronger
+would be improved frontend layout
+by refactoring components for cleaner,
+more reusable code.
+So
+this is not about having five years of
+experience. This is about taking credit
+for what you have built, tested, fixed
+or contributed to.
+Okay.
+Any questions, thoughts?
+Is all of this making sense?
+>> Yeah, it makes sense.
+>> Cool.
+So,
+this formula
+changes everything. And and I like using
+formulas because it helps me sort of
+remember, but it also keeps me
+accountable on my resume for what I'm
+writing. So, if you'll remember when we
+discussed writing a summary, we built in
+a sort of formula or a structure. This
+is very very much the same with the
+bullet. So, and and this formula really
+changes everything. Every experience
+bullet should follow this structure. And
+I'm going to put this
+in
+the chat. Just get it in there.
+Okay.
+All right. So,
+if you have a metric that you can use,
+amazing, use it. But from some of our
+previous discussions,
+most of you don't feel that you really
+do have a metric yet just because you
+haven't been here long enough to
+actually see your efforts um in some
+sort of a a you know data metric. If you
+do not have a metric, we can still show
+results using clarity,
+scope, consistency,
+frequency,
+or improvements. Right? So, here's an
+example
+of the formula being used in real time,
+and I'll use a few. So, again,
+action verb plus task plus result.
+developed API endpoints using NodeJS to
+support user profile management.
+Okay. If you lack metrics,
+built React components
+that improve code readability
+and simplified feature updates. So
+that's if you lack those metrics
+using scope
+instead of data collaborated with a team
+of four developers to design and deliver
+core project features
+right
+now. if you're going to use frequency
+debugged multiple front-end issues
+weekly across different browsers and
+devices.
+And then if you're using improvement
+language, you could say
+enhanced application stability by
+resolving API integration errors.
+So all five versions are valid and
+believable.
+Impact does not always require numbers
+or metrics. It does though require
+clarity. So that's definitely a goal
+that you should have
+before we move into the next section of
+learning how to write strong bullets
+without metrics. Any questions,
+concerns,
+any input or thoughts?
+No. Okay.
+>> Now, to replay the video, [laughter]
+remember everything you said, for
+example.
+>> Um, I can copy and paste them
+in the chat.
+If you all have an iPhone,
+if it's hard to find,
+um, the playback
+then you, just a thought, you might want
+to just record,
+just hit record on your phone and you
+can record the session as well.
+But let me
+>> I'm a desktop girl.
+>> Okay, give me a second. Let me copy and
+paste this in here.
+Right, there you go.
+So, how do you write a strong strong
+bullets without metrics? [snorts]
+Most early career co coders do not have
+production metrics, right? That's
+normal. You can still show impact in a
+variety of credible ways.
+So there
+uh you can break these
+ways down in four methods. So
+number one scope right what was the
+scale of your work
+size of the project
+the number of components
+the number of features
+technologies used
+as an example built three interactive
+pages using React JSX
+and API data integration.
+Okay,
+that happened.
+Hold on.
+Something weird just happened.
+>> I actually have to leave early, but
+thanks for thanks for the advice.
+>> Yeah, sure.
+Now,
+there's also consistency, right? So,
+how often did you do this task?
+An example, tested API responses daily
+using Postman to ensure consistent data
+validation.
+Okay. Quality or improvement.
+Did your work make something cleaner,
+faster, clearer, easier?
+Example, improved code readability by
+modularizing
+business logic across components.
+And you can also use collaboration and
+delivery. So, how did you help the team?
+Supported sprint delivery
+by completing assigned tickets and
+participating in code reviews.
+So these are the kinds of outcomes
+early recruiters, early career
+recruiters expect,
+right?
+So let me
+Okay.
+All right.
+Here, let me copy and paste this
+in the chat so that you have it.
+New laptop.
+Sorry,
+there.
+All right,
+there. So you might want to take
+screenshots
+that might be helpful.
+Um so
+talking about metrics here you are if
+you do not have metrics as most early
+career coders do not. Now
+now we're going to rew rewrite some
+bullets on our resume. Okay. So, we'll
+do live rewrites. So, post one week
+bullet from your resume in the chat
+and then we're going to rewrite it.
+Well, you all are going to rewrite it
+and we'll take a look at the before and
+the after.
+Are you referring to those summaries?
+>> No, we're talking about the bullets in
+your experience.
+>> Oh,
+my my bullets are just really just
+listing technology or tools that were
+used.
+>> Well, this is why you're here.
+So we can work on them live
+and edit.
+I'll give all of you about five minutes
+and just take one bullet that you'd like
+to revise.
+I'm trying to go through. I got so many
+to put out here.
+Oh goodness.
+So we are just to right now post the um
+the bullet and
+>> yep post the week bullet
+and then you can also So after you
+started working, after you finished
+rewriting it, you can post the before
+and the after.
+I guess all mines are weak. I just
+choose one. Yep. That's all the
+assignment was to just choose one.
+I I have to say AI didn't do a bad job
+for what it came up with.
+But I got so many these files I had to
+go through
+and find which one is on in closer to
+what you were asking or are asking.
+So again this is you know we're when
+we're rewriting
+We are sticking close to the formula,
+right?
+Action verb, task,
+result.
+Okay.
+Okay. Does anyone have any
+afters
+that they would like to
+paste in there? [clears throat]
+All of my bullets are based off of the
+projects that I did. And
+um and AI just kind of like summarizing
+what it is, what it correlates to, if
+that's a bad word, but it's not
+>> just take one. Don't look at all the
+bullets. Take one bullet.
+Just one. That's that's the assignment
+that I gave. So take one bullet
+and rewrite that bullet
+based on the formula.
+>> Okay.
+Okay. Are we ready?
+Yeah.
+wants to plop thereafter in there. Okay,
+I see you Kai. Nice.
+Now, the truth is Anna, this could have
+just been slightly tweaked
+because this bullet actually follows the
+formula.
+So Kai before we focused on scalable
+solutions that connect local businesses
+and users with accessible tools. Okay.
+After engineered scalable full stack
+applications to connect local businesses
+and users with accessible tools. Okay.
+So you changed engineered.
+Okay.
+I mean there's definitely, you know, the
+formula is definitely there.
+So again, action verb plus task plus
+result.
+Turtle, what you got? Anything?
+>> I'm working on it. I think I need to go
+back and listen to a couple of the
+videos I missed because my template like
+I don't even really have bullet points.
+What I'm pulling out is in uh
+>> Okay.
+>> key key projects or closest thing I've
+got to bullet bullet points.
+>> Okay. Okay.
+>> I'm got one of those.
+>> Okay.
+Um
+All right.
+So we did our
+um we did our live rewrite. Okay. So
+some other examples
+of these rewrites
+worked on backend routes. The rewrite
+built and tested backend API routes
+using Node.js and Express to support
+you. the user authentic authentic
+authentication can't talk today.
+Now this version is is clearer. It uses
+action verbs. It describes what you
+built and it shows the purpose of the
+work.
+How is everyone
+capturing that
+and understanding the formula?
+>> Yes. No.
+>> I feel like I get the formula. I think I
+start to struggle with like what really
+has impact
+and and that's where I just start to get
+into
+questioning
+the words, you know, the word choice a
+lot
+>> because I mean it still feels like
+you're trying to pack a lot into a
+really short amount of space.
+>> I think that if you think of it more as
+following the formula
+and it's kind of simple. It's like,
+okay, here's what I did.
+This was you know this was the task or
+here's the action word what I did
+here was the task
+and then the result
+>> so break it down into something very
+simple and then start adding and using
+chatbt.
+Yeah. So, um, Turtle, what was what's
+the before and what's the after?
+>> Uh, where's the top one?
+>> Okay.
+Okay. Um,
+yeah, I think you almost went backward,
+>> but it's okay.
+So, let's take the first one here.
+Educational platform.
+See, he's like, "So, what is this script
+hammer? This is just This is a
+description of what it is." Yeah.
+>> Yeah.
+>> It's an All right. So, this is really a
+description of what this script hammer
+is. So, it's not really a bullet. It's
+not really what you did. The second one
+is what you did for this educational
+platform.
+Um,
+and you were reducing redundancies. So,
+let's
+let's do this. Let's
+The main idea was that like there's
+certain things that I almost do like
+like all all my projects I want to put
+storybook in. So, I basically made a
+template that had everything that things
+that I always repeated in a project. I
+went ahead and set them up in the
+template so I wouldn't wouldn't have to
+keep repeating them every time.
+Um, not following you. Uh, on your
+resume, you mean?
+>> No, on Well, the the script hammer,
+that's what it's a template that has
+things I keep putting. If it's something
+that I put in almost every project, then
+I went ahead and put it in the template
+so I wouldn't have to keep redoing it,
+>> repeating that process every time.
+>> Gotcha. Okay. Um, all right. So
+let's me share my screen and we can talk
+to chat GBT and see if they've got chat
+GBT has
+any ideas. So can all of you see my
+screen?
+>> Yes.
+>> Okay.
+>> Okay. Using the
+formula
+action verb
+plus
+task plus result.
+Write
+rewrite
+the following
+bullet
+Okay.
+All right, let's see what Chad Ch says.
+Okay, I mean it's short and sweet, but
+it's it's a nice rephrasing, right?
+Built a full stack template. Built is
+your action verb.
+full stack template to standardize the
+task. That's the task to standardize
+project setup and cut redundant tasks.
+And here's the result, which improved
+development speed.
+I
+I feel like
+you're looking at the resume in its
+entirety.
+And whenever I ask students
+to,
+you know, take a piece of your resume
+and put it in the chat, it's almost as
+if like your eyes glass over and you're
+like, "Oh my god, it's you just you're
+looking at one bullet.
+You're looking at your summary, right?
+It's you're you're not look in this sort
+of curation and de development phase of
+your resume. You're breaking it down.
+You're not really looking at it in its
+entirety. You're really just looking at
+it in pieces
+so that you can really curate something
+meaningful in each segment.
+And Anna didn't like her bullet,
+[clears throat] but it was actually that
+was she she presented the before or she
+presented the after
+was all set. It was a formula that was
+that she unknowingly already followed.
+>> Yeah. I asked it to change the result
+part and it literally literally just
+only changed the result part. [laughter]
+>> Yeah, it's again chat GPT doesn't read
+your mind. You have to be very specific.
+>> So I got so many windows open here. I
+got to click around and find the chat
+window.
+So it changed the result part. The first
+part it left because I said to to you
+know expound on the result so to speak
+using that formula. It's like okay.
+>> Yeah. I mean it's not perfect every time
+and I think you have to be really simple
+with your words yet very specific.
+I think that I probably would have copy
+and pasted the formula and given a
+little bit more context
+like talk to it like it's human being
+like this is
+the the below bullet is a bullet I have
+on my resume. I followed this for
+formula to craft it.
+I
+want to change the result to lean more
+in in this direction and give it a
+little hint of h how you want to
+articulate the result.
+I mean there's got to be only so many
+ways that you can articulate
+the result.
+>> Okay,
+>> but it says developed. You got the the
+action word backend logic using Python
+and JavaScript. Great. Two integrate
+APIs. Awesome. That's the task. And then
+the result, improving overall
+application performance and reliability
+through seamless real-time data
+exchange.
+That sounds great to me.
+>> What didn't you like about it? What did
+you want to change?
+Well, I I guess at this point for me
+because it's all just coming from what
+experience I've had working on projects.
+>> Um it, you know, I feel kind of limited
+as to what I can say because I want it
+to be real and I don't want people to
+think, well, I've been out there in the
+field, you know,
+>> they're not going to they're not going
+to think that because they can see that
+>> you're doing, you know what I mean?
+Like,
+>> yeah,
+>> I think
+I think you're almost a little too in
+your head assuming what people are going
+to think and say about your resume
+>> when it's don't it's you you have the
+experience you have. You don't have the
+experience you don't have. People are
+going to I mean recruiters are going to
+see, oh, okay,
+she went through a coding academy.
+great. She's got, you know, a background
+in quality assurance. It's very easy to
+for recruiters who are skilled and tech
+recruiters to
+break down your resume and understand
+what you're up to.
+>> Okay?
+>> We can we can read the story loud. We
+can hear the story loud and clear.
+>> Okay? is I, you know, I just gave it two
+of the challenge projects that I did um
+um to kind of generate bullets off of.
+Um I didn't include projects that I did
+in the explored stage, which was
+um
+uh a to-do list um with with no.js and
+next and then um the trivia app. I think
+everybody here know what the trivia app
+is. [laughter]
+Okay. Yeah. I mean, I would definitely
+it just because you worked on a specific
+project doesn't mean it has to go on
+your resume. If you're not proud of the
+project, if you're not excited about the
+project,
+don't list it.
+It it it's more impactful to see one or
+two
+exciting projects that you're excited
+about.
+>> Well, equal with all of them. It was
+It's kind of equal with all of them.
+It's like, you know, happy got something
+created. [laughter]
+>> Yeah.
+Yeah. Sure.
+Okay.
+So, I share my screen. Where are we?
+Okay. 6:45.
+All right. So,
+we can continue talking about this.
+We've got 15 minutes. But, you know, we
+learned how to write bullets that show
+value. And I think that that's what you
+really need to keep in mind when you're
+curating your bullets
+in any kind of experience listing is
+you're looking to show how you added
+value.
+And that really is an important thought
+because that is really how you show your
+worth in the tech field.
+all wrapped up.
+How do you
+show value?
+Recruiters,
+especially tech recruiters, they respond
+to clarity, results, and ownership,
+unwavering
+ownership.
+So, you know, before next week,
+look at your bullets
+and take it one by one. First bullet.
+Okay, let's work on this. Take a day,
+break it, break it out in in a over
+time. Take a day and say, you know what?
+I'm going to tackle this bullet today.
+I'm going to think about this and come
+up with a few different versions of how
+I want to list this bullet.
+Keep the formula close, right?
+And update three bullets on your resume
+using the formula we practiced.
+>> Okay.
+>> If you have
+>> Yes.
+>> Yeah. I'm just saying and keep I'm
+thinking out loud. I'm sorry. I didn't
+mean to.
+>> Oh, it's okay.
+>> I thought I was muted.
+>> Oh, that's okay. Um, if you have a
+portfolio or GitHub,
+make sure that your bullets match the
+language in your project descriptions,
+right? And that's another thing. If you
+list your project descriptions on your
+resume, and you certainly can, it's nice
+to add some context if you have the
+room,
+depending on how you formatted your
+resume.
+These bullets should match that language
+in your project descriptions.
+There should definitely be an alignment
+there. It should be very cohesive and
+and a nice flow.
+>> I have a question.
+>> Yeah.
+Um because you mentioned GitHub
+portfolio and um I have to admit because
+this year I I I other things was going
+on my top focus was not looking for a
+job but it started gearing in now
+because this year has come to an end and
+I have to gear it up. Um [clears throat]
+I don't I don't have a GitHub portfolio.
+>> They're two I was saying two different
+things. If you have a GitHub or
+portfolio, they're two different things.
+>> Oh,
+>> GitHub is GitHub and then there is a
+actual portfolio where you can showcase
+your produced work.
+>> Okay. Well, the portfolio I think for
+the challenge that um I just got it I
+think one was published and another one
+I did not publish. I haven't published
+that second one. Um,
+>> I I think that you should just focus on
+your resume.
+>> Okay.
+>> Yeah. Don't tackle too much. Focus on
+your resume. You're you're not like, you
+know, two years in at a development job.
+You're you're getting your feet wet and
+you're low code. Yeah. That's what
+you're looking for, right? you're
+looking to continue in QA.
+>> I'm on support local.
+>> I'm actually um doing full stack.
+>> Okay.
+>> Or with well AI doing full stacks and
+I'm the driver.
+>> Okay.
+Yeah. I mean I think that still you're
+in the baby step phase.
+>> Oh yes. get real excited and real solid
+in your resume. And then when you feel
+confident in your resume,
+then start looking into GitHub because
+GitHub is the industry standard for full
+stack developers. A portfolio is a nice
+to have and you don't have produced work
+just yet. So a portfolio is down the
+road.
+So resumeé first, GitHub second.
+>> Okay. Yeah, just don't overwhelm
+yourself and take on too much.
+>> Okay. So, I'm just going to see if it
+can Well, we know AI can reward I guess
+>> that I worked on the challenges and then
+also
+>> Yeah, it's there as a support
+>> innovator
+>> for sure
+>> that couple in there too.
+>> Yeah. And you know, it's about showing
+business impact, not job function.
+That's not what bullets are. You have to
+show how you can impact business.
+Again, there's that value.
+That is how you stand out as a job
+seeker.
+Okay. Clarity, results, and results,
+excuse me, and unwavering ownership. I
+wrote that down.
+Yeah. Like if that impacted you and
+resonated with you. Yeah. And when you
+look at your resume, think how am I
+showing value here?
+Right.
+So do any of you, you know, we've got 10
+minute, nine minutes. Uh is there
+anything outside of the bullet that
+we've already talked about? Uh so we're
+talking about the headline,
+the summary,
+uh skills,
+and or you know, are you um
+maybe you're looking for
+um impactful action verbs, right?
+There's some good ones. I like the word
+deploy.
+I like that action word.
+transform.
+I like that one.
+Optimized
+>> deploy make me think of like a release
+manager.
+>> I'm sure Kai and Turtle knows what that
+is cuz you guys worked as developers,
+right? In the real life.
+>> Um, you know, I was a tester and uh when
+it was deployed, release managers are
+the ones that did that. Um, of course we
+worked with GitHub hub and we we push it
+to do the main and merge it that way
+>> to have the build. But um, usually
+release managers did that.
+>> Anyone anyone have another question?
+>> Yeah, I just put one in the chat. I was
+wondering if there's a template that
+you're kind of outlines what you're
+showing as far as like the headline, the
+bullet points.
+Well, the bullet points I put the
+formula. I copy and pasted it in the
+chat.
+>> I made a template for the whole resume.
+>> Oh, no. I don't um I haven't crafted
+anything like that. Probably should, but
+you know, always, you know, your
+education is last.
+Skills are right underneath
+the summary.
+And then you list your either your
+projects,
+list where you've worked,
+um functional resume for career
+changers, that's what the guidance is.
+And you can ask Google or ChatgPT
+if it can give you examples. And we've
+talked about that to you. I think in my
+first session, we discussed the
+different types of résumés
+and why they work for certain
+individuals. If you're a career changer,
+they recommend the functional resume.
+What else do you have for me?
+as just since you've been starting to do
+the tech recruiting, have you heard sort
+of any
+uh conversations about career changers
+as being
+uh more
+valuable or less valuable
+um as they're getting into tech just in
+light of having more capability with AI.
+Um, I mean, I
+I haven't heard any of those discussions
+about
+I don't know. I don't age or you know,
+it's always about experience, right?
+because you're looking for people who
+have done
+what you're hiring, that they have those
+skills and that experience and
+understand the process.
+Um,
+so it's really just about
+showing on paper that you understand and
+then being to able to talk
+fluently and with some kind of
+confidence and finesse
+about what you can how you can add that
+value.
+Because again, it's not always about
+produced work.
+It's about how you can add value.
+>> Okay.
+>> I have not heard any specific, you know,
+it's really about is this the right
+candidate? Can this candidate do the
+job?
+And it also depends on the brief. What's
+the brief? What's the job description?
+What are they looking for?
+>> Okay.
+>> What's the, you know, what is the role?
+>> I don't know if this is a good approach
+necessarily, but you know, sort of
+pushing to sort of get in front of
+somebody, you know, as best you can.
+>> Yeah.
+When doing that, should you be trying to
+present
+your value somewhat aggressively in the
+sense of like I think I can do or I can
+provide this for you. Like this is an
+area that I could fit in well with your
+team or dynamic. Obviously, you'd have
+to have a lot of knowledge or
+understanding of the company or their
+services.
+Is that too forward
+think?
+>> No, I mean I don't think
+being aggressive but just you know
+having confidence in your ability and
+how you can add that value.
+>> Okay.
+>> Yeah. Like transforming the confidence
+that you have in architecture
+into
+um you know a position. And I just think
+that, [clears throat] you know, there's
+some flexibility that everyone needs,
+right? You're not going to step into a
+role that you're going to be making a
+million dollars straight away. It it's
+it's a progression.
+>> Mhm. [clears throat]
+Right.
+And like any job or any company you step
+into, you have to prove yourself.
+So, you know, there may be
+um you know, you may need to
+take a lower salary to get your foot in
+the door, lower title or a title that
+you didn't expect.
+But if you're going in a forward motion,
+then
+mission accomplished.
+>> Okay. Yeah.
+>> Thank you.
+>> Yeah. Anyone
+else?
+>> Well, I kind of figure I, you know, I'm
+starting over. So, um,
+>> a lot of people are.
+>> That's, you know, I have to take
+>> not too humble. Um, but a more humble
+type of um offer that,
+>> you know, if I get a from my
+understanding, um,
+>> it's kind of tough out there right now.
+Um, I just saw something about Apple
+downsizing more people and so it's like
+as you know
+>> that
+>> you know these are highly skilled people
+and um, you know, so there's a lot of
+people that's you know out there
+looking.
+>> Yeah. Yeah.
+>> But yeah, so I figure I may have to be
+humble and and I also thinking um I may
+have to leverage some of that QA
+background [laughter] to get back in the
+door. Of course. Why wouldn't you? It's
+experience that you have. That's valid.
+>> Yeah. Cuz the the only time they call me
+is to be a team lead or something like
+that. And I don't want that headache
+anymore. Like bye.
+>> So I prefer to start humble just to get
+my door my foot into the door as a as a
+um whatever the title will be. It may
+not be junior dev. It may be something
+else but similar to a dev. But that of
+course you know since you are the resume
+wizard you know oh I can kind of like
+work that to you know to my face
+>> and you know it's it again just try I
+mean
+I just do the same I do the same thing
+with my resume just break it down and I
+break it down all the time like I'll
+literally just start with my name there
+I am
+>> and I have to admit y'all I haven't been
+out on LinkedIn and I know you get on me
+about it and I'll get to it one of these
+days, but right now I'm going to get
+back to my program, the project three,
+but I know eventually I can't get around
+it. [laughter]
+>> Well, I mean, it's uh definitely uh I
+definitely the resume and the LinkedIn
+profile in tandem you can work on
+certainly. So,
+>> yeah,
+>> you've got all the tools. So,
+>> I know you guys love LinkedIn, but I
+hate LinkedIn because I'm old enough to
+remember before it was not was not even
+it didn't exist. And to me, it's just a
+addict freak fre fre fre fre fre fre fre
+fre fre fre fre fre fre fre fre fre fre
+fre fre fre freaking headache. That's
+how I see it. Yeah, it's a necessary
+evil unfortunately.
+>> Necessary evil.
+>> Yeah, I I think it's a great tool, you
+know, and it's it's what recruiters use.
+>> Yeah.
+>> Oh, that's right. Oh, I'm sorry. Forgive
+me. Forgive me. That's right.
+>> Yeah, it's what they use. So, you gotta
+gotta get over it. Gotta get over the
+hump. But um uh we'll be back next week
+on Wednesday. So sessions are every
+Wednesday, 6 PM Eastern Standard Time.
+Um feel free to message me on Discord if
+you have any questions, but have a safe
+and wonderful Thanksgiving holiday.
+>> Yeah, happy Thanksgiving, folks. And hi,
+Lisa. See you there.
+>> All right. and and turtle turtle now
+>> I'm using um claw command line

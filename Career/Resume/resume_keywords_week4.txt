@@ -1,0 +1,926 @@
+2025-11-19T22:57:44Z - Career Strategy w/ Chelsea - YouTube
+
+Hey there, Ahmad. Uh, just giving folks
+a little bit of time to come in. Oh,
+>> okay. No worries. I saw your message, so
+I thought I should join. I was free
+today.
+>> Yeah. No, that's great. Excellent.
+Welcome.
+Thanks. Do you prefer video on or off?
+>> On for sure.
+>> Okay. On. All right. Thanks.
+>> Sure. You're welcome.
+>> How's your um Saturday or Wednesday
+going so far? Good.
+>> Uh yeah, pretty crazy. Uh pretty crazy
+work day, but I'm uh I'm almost almost
+out of the woods.
+>> It's good. Good. Yeah. Well,
+everything's a scramble before
+Thanksgiving, I think.
+>> Always. Always.
+>> Yeah.
+>> Yes.
+>> I'm just trying to get my resume
+up, but I mean, you helped me. I I think
+I have to look at choose which one you
+gave me cuz But I did update my
+LinkedIn.
+>> Oh, good. Excellent.
+>> Yeah.
+So, thank you.
+>> You're welcome. Actually,
+I can attend these sessions on
+Wednesdays if it's at this time. I just
+>> Yeah.
+>> Oh, great. Excellent.
+I'll do That
+Hey Kai, just waiting for a few other
+people to join.
+>> Hey
+K, how's it going?
+Hey David, we're just waiting for a few
+others to join.
+>> Okay, sounds good.
+Okay,
+we've got a crowd
+tonight. Welcome uh back everyone.
+Tonight we are focusing on something
+that immediately increases your
+visibility to recruiters. EU, which is
+using the right keywords. Now, for those
+of you who have not been in our resume
+clinic sessions for the past few weeks,
+we have been uh focused on
+resumeé building and doing exactly what
+we did with our LinkedIn clinic.
+Uh we are starting from the tippy top
+and that's where we started from the
+name all of your information
+uh contact information LinkedIn link
+GitHub link if you have a portfolio
+listing your portfolio and more
+importantly your headline right and then
+last week we moved on to creating your
+summary.
+and really developing that using a
+structured formula. If you are curious
+about all of that, definitely take a
+look at the recordings.
+So again, this evening we are talking
+about using the right keywords in your
+resume.
+Um, this is really the bridge between
+your resume, your LinkedIn skills, and
+the job alerts you've been setting up on
+LinkedIn or even Indeed, whichever
+platform you're you're using. So, if
+last week was about telling your story
+clearly,
+this week is about speaking the langu
+language that employers are using. So
+before we dive in,
+type one word in the chat that describes
+how confident you feel about tailoring
+your resume to a job description.
+Mhm.
+Okay. Unsure. Okay. All right. Cool.
+Well, you know, definitely for those of
+you who haven't been here for the the
+resume clinic, definitely uh try to
+check out those um recordings because
+they are pretty it's it's like a whole
+story, right?
+So,
+thank you all for doing that. Um, so
+we've got warming up, maybe nervous, eh,
+unsure.
+Cool. So, why keywords matter?
+So, recruiters search
+for candidates the same way you search
+for things online.
+Keywords.
+Keywords determine how you show up in
+those searches, right? So, your resume
+needs three kinds of keywords,
+technical skills, right?
+So languages tools
+frameworks
+ro specific terms
+front end
+test automation
+ETL
+rest APIs
+soft skills
+tied to delivery
+collaboration
+communication
+agile
+Sprint planning,
+hiring teams.
+Use these terms in job descriptions,
+recruiter searches, and interview
+criteria.
+ATS systems
+scan for these keywords.
+recruiters skim
+for
+clearly and effortlessly.
+So,
+>> sorry guys. Can you all hear me?
+>> No, we can't.
+>> Now you can. Okay. Sorry. I had uh if
+any of you follow astrology, Mercury is
+in retrograde
+>> and two Mercury true Mercury retrograde
+form. My laptop died. So I borrowed a
+laptop because I had to put my laptop
+with Apple. So I'm just having a lot of
+malfunctions. So
+um
+so
+reinforce
+you know the the the
+idea is
+also to important to reinforce the link
+to LinkedIn. So, as you put your
+keywords in LinkedIn, your resume
+keywords
+should pretty much match your LinkedIn
+skills. That alignment
+increases
+search visibility
+and helps your profile appear in a
+relevant
+alerts,
+relevant job alerts. So,
+how do you extract?
+All right. How do you extract keywords?
+So,
+let's walk through a real job
+description together and and I'll show
+you how to pull keywords the way that
+recruiters do. So,
+let me
+screen.
+Bear with me.
+[snorts]
+Description.
+Give me one second. Just trying to find
+my screen. Pull the job description.
+Got it.
+All right. So,
+can everyone see my screen?
+>> Yes.
+>> Okay. So, I pulled a lead full stack
+engineer job description.
+It is at uh an advertising agency, an
+agency that I've worked at, Publicist
+Media. Now,
+as you can see, we start off at the at
+the very top.
+Now,
+job title,
+lead full stack engineer.
+responsibilities,
+right?
+Required skills or qualifications,
+preferred
+skills.
+So, we have to kind of look in here and
+see if there's any
+nice to have kind of thing. doesn't seem
+like it.
+Tools mentioned in the stack. We see all
+of the tools here in the stack that
+they're looking for.
+Okay. So,
+in the chat,
+list three key words that you feel
+absolutely must appear on a resume for
+this role.
+See what we got here.
+Okay,
+good.
+Good.
+Excellent.
+All right. So,
+yes, full stack, JavaScript, databases,
+REST APIs, MVC,
+my MySQL.
+Yep.
+Yep. Got it.
+So,
+okay. So
+any keyword that appears
+multiple times,
+that's a priority.
+Any keyword that appears in both
+required
+and preferred
+is a must add.
+So
+let's look at the job description here.
+The only thing I really see as preferred
+looks like is this bachelor degree in
+computer science or related field
+that's happening a lot in tech that I've
+been seeing.
+So
+now it's your turn.
+All of you take a moment,
+find a job description
+that matches your target role.
+And when you find that job description
+in the chat,
+highlight
+the top three technical keywords,
+top two like ro action keywords,
+top two environment keywords,
+and any repeated tool or framework. And
+I'll put that all in the chat for you.
+and I'll give all of you a few minutes.
+found an odd one that doesn't really
+have like the description so short. I
+don't even see a lot of keywords in it
+other than WordPress, which has kind of
+surprised me.
+>> Then you may want to look at another job
+description
+or just work with the job description
+that you have.
+>> Yeah. I mean, I thought in theory we all
+be able to do it with anyone, but I
+mean, it's just we just want somebody
+part-time for WordPress and everything
+else is like part-time ASP.
+Nothing I'd really count of as a keyword
+or like a necessarily.
+So, I thought it was I mean, it was kind
+of random, but it was also kind of
+interesting as a case study
+for separate websites.
+>> Payage
+Jot everything you think in the chat.
+>> Well, says we'll work closely with our
+team, but not necessarily a key word. I
+mean, you could say team. Well, it says
+team. Put that as the keyword is team.
+Chelsea,
+can you can you give an example of an
+environment keyword again?
+>> I'm sorry.
+>> Can you give an example of an
+environment keyword?
+>> Um, it would be like,
+let me look at this job description that
+I pulled up previously.
+Um
+I would say front end backend aspects
+you could say as an environment both are
+environment keywords so what you're kind
+of working with
+um it could also be
+um
+the type of team that you're going to be
+on.
+>> You might have that.
+>> Okay.
+Is anybody talking?
+>> Not. No, we're we're
+doing a
+>> exercise.
+>> Yeah.
+>> Okay. Sorry.
+>> No problem.
+All right.
+Oh, it's not in the chat.
+>> No, we'll we'll get you on the next on
+the next one.
+Okay.
+So in more specifically
+uh Kai
+an environment
+keyword is kind of kind of what I
+thought but it describes the setting
+pace or structure of the workplace you
+operate in. So it tells
+you know the type of environment where
+you will perform well. Fast-paced,
+collaborative, agile, customer focused,
+deadline driven, hybrid, on-site,
+remote, high volume, startup,
+enterprise, crossf functional,
+mentorship or oriented, data driven,
+productled.
+So, these types of words help you match
+your resume language
+to the environment that the employer
+highlights in the job description.
+>> Okay.
+>> Yeah. Okay.
+>> Um, so for looking at keywords
+specifically when something like how
+specific do things need to get? Like if
+the post is saying collaborating versus
+collaborative, does that make a
+difference?
+>> No, it's the same word.
+>> Okay.
+>> Yeah. Just, you know,
+>> in different ways. But um Michelle, what
+we're talking about, we've been doing
+for the past couple of weeks is our
+resume clinic. We wrapped up with
+LinkedIn and we've been focusing on the
+resume and we've been doing exactly what
+we were doing with LinkedIn with the
+resume. So starting at the very top and
+really breaking it down. So name,
+contact information, headline. Last week
+we did the summary. Today we're focusing
+on identifying and using keywords.
+So that's I you know we I
+showed a job description. We looked at
+some keywords there. Now we're doing a
+live breakdown and extracting
+uh keywords from
+job description that I had everyone look
+at and look for.
+on their own.
+>> Okay.
+>> So, great. I mean, everyone looks like
+they understand
+the assignment. So, everything looks
+good from what I'm seeing.
+>> Um,
+now
+>> [clears throat]
+>> So
+[clears throat] look at some of the
+comments in the chat.
+uh see if any keywords are showing up
+multiple times in some of these
+>> uh
+keywords that people threw out. I see
+some similarities across the board.
+So these if you were looking at three
+different job descriptions
+and you're looking at
+like say you have three different jobs
+that you want to apply to and you have
+three different job descriptions in
+front of you.
+If you see keywords
+that are showing up in all three job
+descriptions,
+these are your anchor keywords. They
+belong in your skills section, your
+summary and your experience bullets
+where relevant.
+Now,
+it's really all about integrating
+keywords
+naturally and not stuffing your resume
+with keywords, right? So, keywords only
+help
+if they read naturally.
+And ATS systems and recruiters
+really do ignore keyword dumping.
+So, Here's
+how here's how you can integrate these
+keywords in clean ways.
+So
+add tools to your summary
+skilled in React NodeJS REST API
+integration.
+Add keywords to your skill skills
+section in order of importance.
+React, JavaScript, Node.js, SQL, Git
+APIs.
+Add keywords
+into bullets with context.
+Built REST API endpoints
+using NodeJS
+and Express.
+created test cases and automated
+regression tests using just
+match terminology exactly.
+If the job description says typescript,
+do not say TS, don't abbreviate it.
+Right?
+So,
+here's an example.
+Worked on backend routes.
+That's the before.
+After built and tested backend API
+routes using NodeJS, Express and
+MongoDB.
+Another before and after
+did manual testing.
+The after
+designed manual test cases
+and API tests using Postman to validate
+data accuracy.
+good at this. I'm just gonna say it just
+it flows off your tongue so easily.
+I mean, honestly, I'm not smart. I'm not
+a developer. And I've also
+very rarely recruited for tech.
+Guys, this is chat GPT
+[clears throat]
+asked a lot of questions.
+>> I was gonna say you sound like you've
+been recruiting for tech for years.
+>> Yeah. Now,
+>> going forward, are we only doing this
+class on Wednesdays now?
+>> Yes.
+>> Okay.
+>> Yes.
+>> So,
+choose take your one job posting from
+earlier.
+>> Okay. So, Michelle, what I I did is I
+asked everyone to pull a job description
+of maybe a job that everyone has been
+uh
+either applied to or looks interesting
+to them or just, you know, pulls it. You
+know, you look on Indeed or LinkedIn,
+you pull a job description.
+>> Now,
+update
+one of the following sections of your
+resume,
+either your summary,
+your skills section,
+or your or one experience bullet.
+Now,
+use at least two job specific keywords.
+[clears throat]
+Okay, so I'm going to put this in the
+chat.
+There you have it. The reference
+And now
+any of you who feel confident
+and want to share,
+paste your updates in the chat
+and we'll all give some feedback.
+So I'll give you all a few minutes to do
+that.
+Take your time. It's not a race.
+That all night.
+Wish we did, but we don't.
+I would say we don't have long enough
+with you.
+Quick question. At what point does your
+summary
+get to be too long?
+I mean,
+>> yes. So, we covered that uh last week.
+>> Okay.
+>> Um there is a structure.
+Um, let me see if I can look in the chat
+and see if that's still there.
+Maybe
+give me a second. Ah,
+>> I really am sorry. I missed out on the
+meetings. Okay, so
+>> no worries. That's why they're recorded.
+So if you can um find them but here is
+the structure
+>> and that that definitely answers your
+question.
+>> Okay.
+>> Now really they say four to five
+sentences.
+I think you could go to you know six
+seven.
+Okay.
+All right. How's everyone doing here? Do
+you need a little bit more time?
+>> Yes.
+>> Yeah, I do.
+I'm going to give you all one more
+minute. Sorry. Because we have only 15
+minutes left.
+We need to cover a little bit more.
+Okay.
+So, anyone
+would anyone like to share what you came
+up with?
+I'll I'll go.
+>> Okay.
+>> You mind? I updated my summary a little
+bit.
+>> Okay.
+>> I just said
+>> before
+and put it in the chat.
+>> Before and after.
+>> Yeah.
+>> Okay.
+Let me put it in the chat. One second.
+>> Thank you.
+I just
+Okay. It's not very good because but I I
+didn't I have a lot of keywords but I
+tried it.
+>> All right. So the before
+web development intern at check techjoy
+academy interested in digital
+microbiology passionate about HTML and
+CSS. Okay. So
+let's look at the structure that we
+talked about last week that Mindy was
+questioning.
+And now let's also look at the after.
+Created and kept up customer
+relationships by building a training
+module on inclusivity in the workplace.
+Design digital solution on the web using
+WordPress buddy boss and ASA.
+Okay. So line one
+in the after
+doing
+>> who you are and your main focus
+not there.
+>> Yeah.
+>> Right. Line two what you do well
+including tools
+or skills
+>> somewhat.
+Line three, proof of impact or
+contribution.
+>> Um, kind of.
+>> Yeah.
+>> Not impact though,
+>> right? And now line four or five, what
+you want next and how you want to add
+value.
+Now
+I'm going to
+use what we came up for David. I'm
+actually editing his resume in real time
+as I wait for you all to finish.
+[laughter]
+But here
+is a beautiful example
+of what we should be seeing as a
+summary,
+right?
+Now
+Amat
+I know you're incredibly intelligent
+creative person. I've speaken to I've
+spoken to you multiple times
+brother please
+throw it in chat GBT that is why the
+technology is there
+and how we came up with this
+summary
+is we took his original summary which
+was pretty impressive already
+we threw it into chat GBT and We asked
+ChachuT,
+we are rewrite
+this summary for a resume.
+And you know what? You don't just say
+that. You go in depth with AI. People
+think, "Oh, you threw something in.
+It'll spit something incredible out."
+No, no, no, no. You have to add context.
+You have to talk about who you are.
+this technology AI and chat and and and
+the AI within chat GBT
+it understands
+it it it can speak emotionally but you
+have to tell it who you are you have to
+talk about who you are
+you have to tell this per this AI tool
+I am
+I'm passionate I I am interested in
+digital microbiology and I'm passionate
+about HTML and CSS. This is the degree
+in education I have. This is what I'm
+doing now. This is what I'd want to
+transition into. I want to help people.
+I want to do this. I want to do this.
+Make sure that you express my passions,
+my skills,
+what I was doing before, what I'm doing
+now, and where I want to go in this
+summary. And and what you do is you copy
+and paste this exact thing that I copy
+and pasted at 6:42 p.m. You copy and
+paste. You say, "Use this simple
+structure
+to craft this summary." And you copy and
+paste line one, line two, line three,
+line four, or five. You copy and paste
+that all in.
+And all of you who were were there when
+we crafted this, David, where are you?
+this I mean we ca that's how we came up
+with this and and you picked David you
+had I think we did four or five
+>> that we we [clears throat] chose and and
+we talked about and you ended up
+choosing which one resonated for you
+right
+>> right
+>> y
+>> so all of you the technology is here for
+you to use.
+It's It's really and and you te tell
+chat GPT,
+do not sound like a robot.
+I want you to sound human.
+I want the tone to be warm but
+professional.
+Talk to chat GPT like it's your friend.
+It wants to be your friend.
+It's creepy,
+but it does.
+And [clears throat] more that you are
+transparent about who you are, what you
+want,
+where you're going,
+even go one step beyond and say, "This
+is a job description that I would love
+to become. I would love to embody this
+exact job description. Create a summary
+for my resume
+using
+my attached resume as context. Attach
+your resume
+and use this simple structure.
+line one, line two, line three, line
+four,
+and show me four to five different
+options for me to choose from
+my summary.
+It'll do it.
+>> Um, I have a question.
+>> Yeah. So,
+Uh what when we have all the options how
+do you like what kind of options might
+it give you?
+>> What do you mean options
+>> like options that he provides?
+>> Yeah, the answer the answer is the job
+descriptions. I guess whichever one
+sounds best, right?
+>> It's up to you, brother.
+>> Yeah, it has to resonate with you. I
+mean with with David for instance,
+we
+um we looked at a uh some of those
+options that Chad GPT came up with. One
+was like professional and warm. One was
+more like technology and whatever
+focused like I can't
+it might happen in the
+>> like teamwork focused.
+Yeah, there was a whole like it really
+actually I think it's in Yeah.
+Yep.
+>> Also, what if we don't know
+>> entrylevel growth focused
+like there was a lot
+>> that provided.
+Are you referring to the keywords or
+>> the options?
+>> Oh,
+different types. Okay.
+>> Hey, Ahmad, watch the video from last
+week. It'll give you some ideas.
+>> Okay.
+>> Yeah. Seriously, it'll it'll work for
+you. You'll get you'll get an idea what
+we're talking about.
+>> Yeah. Yeah. Because you'll see me do it
+in real time.
+>> Yeah.
+>> I my screen and I went on chat GPT and I
+put everything in there.
+Okay.
+So,
+tonight you learned how to align your
+resume with the roles that you're
+targeting.
+When your keywords
+match employer language, you immediately
+increase your chances of passing
+recruiter scans and ATS filters.
+So
+homework for you all.
+Choose three job descriptions.
+Extract overlapping keywords.
+Add them to your summary skills
+and two resume bullets.
+Update your LinkedIn skills to match the
+same set.
+Now again,
+don't get it twisted.
+Your resume and your LinkedIn profile
+should not be identical.
+You should not be putting your the same
+summary that is in your LinkedIn about
+section and plop it into your resume.
+Absolutely not. That's lazy.
+Don't do it.
+That's an immediate pass from a
+recruiter,
+right? So,
+you now have the strategy that
+recruiters wish job seekers used.
+The more you practice this keyword work,
+the more interviews you'll get.
+Now,
+I'm going to try to get this done fast.
+Um, do you mind uh repeating this uh the
+homeworks?
+>> Yeah,
+>> sorry.
+>> No worries.
+>> Here, I'm going to put it in the chat.
+>> Thanks,
+Yeah. So,
+Ahmad, let's do this quickly. We've got
+three minutes.
+Um,
+I've got your
+after summary.
+I've got the simple structure.
+You want to focus on full stack
+development. Yes. All
+right, start.
+All right, let me share this really
+quick.
+>> Okay, can you see my screen?
+>> No,
+>> I got to share it. That's why. Thank
+you, Mindy.
+>> Okay, here we are. Can you see my
+screen?
+>> Yes.
+>> Okay.
+Uh, I am a
+student
+at a coding academy.
+Um,
+Ahmad,
+you have like a fancy degree or
+something like that, right? What do you
+What do you Well, who are you again?
+Tell me.
+>> Yeah, I have a degree in microbiology.
+>> Okay.
+>> You had to throw that premed in there,
+didn't you? Just
+>> Yeah, because that was that was my
+>> brother. Talk about
+>> Okay. I have a degree in microbiology.
+Now, do you want to shift and not do
+that and go full into full stack
+development or do you want to maybe do
+that incorporate both?
+>> Um
+maybe uh just incorporate maybe
+incorporate both.
+>> Okay.
+>> Okay. So, I have a degree in
+microbiology. I want to utilize this
+degree and Incorp
+sorry I can't spell incorporate
+this degree
+into my
+coding studies.
+My focus
+full stack
+sorry full stack development.
+stack development.
+Uh can you throw in the chat some
+frameworks, databases, coding languages
+that you use that you're confident in
+that you're going to be focusing on?
+Thank you.
+Bye, Mindy.
+That's it.
+We need more.
+Okay. My focus is full stack
+development.
+What's happening?
+Below is my current
+place.
+Sorry.
+Create
+a
+new resume summary
+using following
+structure.
+that structure. Damn it.
+There we are.
+I
+will not list exact
+years of experience.
+Do not sound like a robot.
+Be human. Warm
+but professional.
+Provide
+four to five
+summary option to choose.
+see what it says.
+All right. So, I'll put everything in
+the chat, but here are a few options and
+I can also discord it to you as well.
+Few options. Option one,
+full stack developer in training with a
+foundation in microbiology and a focus
+in Python and ReactJS.
+Oh, that's weird. You analyze problems
+with a specific mindset and build clear,
+functional solutions on the web. Wait,
+what is this? You have no I don't like
+this. Sorry.
+No,
+it is not what I want.
+Do not
+craft
+or
+First, this is a resume summary.
+All right, let's see what it does.
+There we go. full stack developer
+focused
+on Python and ReactJS with a strong
+academic foundation in microbiology.
+Brings analytical thinking and a
+structured approach in building clean
+functional web solutions.
+Contributed to workplace improvement
+through inclusivity training module and
+supported digital workflows with modern
+tools.
+seeking a role that values
+crossdisciplinary
+insight and hands-on problem solving to
+deliver reliable user focused products.
+You've got that option. There's four
+different five different options here.
+So,
+we can't go over time per Dr. Emily. So
+I am going to copy and paste this and
+send this to you in Discord.
+Okay, Aman.
+>> Sure.
+>> But that's an easy way to do it. And you
+know what? You continue
+to break this down. Read through it.
+Look at one that you might like.
+And whichever one resonates with you, if
+there I I suggest taking two,
+whatever resonates with you
+and keep drilling in with chat GPT or
+Claude or whatever AI tool, AI platform
+you prefer.
+>> Cool.
+Was that helpful?
+>> Very helpful. Yes.
+>> Okay.
+>> Also, I like how you wrote it. if you
+could send me the prompt as well.
+>> Okay.
+>> Thanks.
+>> Hey, Chelsea, I have a quick question.
+>> Uhhuh.
+>> Michelle mentioned earlier that um we're
+only going to have you for a certain
+period of time. Is she referring to this
+particular session?
+>> Yes.
+>> They're only uh I am only doing now one
+session and that's on Wednesday evenings
+at 6 p.m.
+>> Okay. So, but you're not going anywhere,
+are you?
+>> No, I'm not going anywhere.
+>> Okay. Because, you know, I'm still doing
+tech innovating. I know I'm going to
+need help with with that. So, you know,
+once I gather all that experience.
+>> Sure. Sure. Yep. Yep.
+>> She's just cutting back your hours.
+>> Yeah.
+>> Okay. Oh,
+>> none of us are happy about that.
+Speaking of that, I have to drop y'all
+because I have that call at seven. Bye
+bye. [laughter]
+>> All right, everyone. Have a wonderful
+evening. Let me know if you've got any
+questions.
+>> Thank you, Chelsea.
+>> Thank you very much, Chelsea. Bye. Bye.

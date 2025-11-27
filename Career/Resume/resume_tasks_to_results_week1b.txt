@@ -1,0 +1,1021 @@
+Career Strategy w/ Chelsea - Resume Series: Tasks to Results (Week 1 Session 2)
+https://youtu.be/odPIvVCLsYs
+
+Hi there David. We will wait a couple of
+minutes for others to join.
+>> Okay. How are you?
+>> Good, thank you.
+>> Good.
+Hey there, Leo. I'm just taking a few
+minutes to allow some others to join.
+>> Gotcha.
+Okay, let us begin.
+Uh last night uh I started the series um
+uh and this is really going to be a
+shift of your mindset from you know
+listing your jobs to creating a resume
+that's really more of a marketing
+document. Right. So welcome to this new
+Q&A series.
+>> Yes.
+Did you say something?
+>> No, I said thanks for having us.
+>> Oh, of course. Of course. Thank you for
+having me and welcome. Um, so Leo,
+you've really been pretty um consistent
+with a lot of of the the LinkedIn
+series. So, this is really going to
+transition into
+um resume building. So,
+this new Q&A series is going to focus on
+building resumes that get interviews.
+So, over the past 12 weeks, we built a a
+LinkedIn presence. So, now we're turning
+that visibility into proof right on
+paper.
+Yeah.
+>> So, last night, uh, we did quite a bit
+of focusing on looking at your resume
+through a recruiter's eyes. And
+how I started the session last night,
+and I'll start it again this way this
+night, [clears throat] uh, tonight is
+type one word in the chat that describes
+how you currently feel about your
+resume. No explanations,
+just one word.
+And what we're going to do is really
+step inside a recruiter's mind and sit
+in their chair.
+Um, when I personally, as a recruiter,
+open a resume, I spend anywhere between
+6 to 10 seconds on the first scan. It's
+quick, especially,
+you know, if I have a lot of positions
+that are open. I'm recruiting for a
+variety of different things. I don't
+have time and and most recruiters don't
+to really dig deep into a resume. that
+will come later
+um when you've narrowed down your top
+uh I would say depending on the role
+depending on how many of the same type
+of roles you have open you're parsing
+anywhere from 3 to 20 resumes that will
+eventually be narrowed down to whomever
+you're going to present to the hiring
+manager to review.
+>> Um, and here's what recruiters look at
+immediately. And this is really a review
+from last night, so I'll be going
+somewhat quickly so that we get to this
+evening's uh topics.
+Um, the first top third of your resume
+is what I'm going to look at. your job
+title and company names,
+any visible metrics or measurable
+outcomes. That piece right there was a
+bit of a sticking point with a good
+amount of of those who attended last
+night because from what I understand
+currently
+uh with the joy of coding and Dr. Emily
+has really um been brilliant with how
+she has structured the program because
+ideally
+working on graduating to a junior
+developer in the program working on real
+clients and real projects. The idea is
+for her students to land
+six figure salaries out of the gate and
+without needing an internship when they
+graduate from the boot camp.
+Um,
+I know that there are projects that you
+do, but a lot of people work on them and
+you aren't really around long enough to
+see or observe any data
+or metrics or any kind of quantifying
+of how you independently impacted the
+project. So, there's real no data.
+There's really no data that you can
+actually place on your resume. So, I did
+a little bit of research on that. I
+spoke to a couple of my tech recruiter
+friends and I will revisit this shortly.
+Um, but we also or I also look for
+keywords that match the role that you're
+looking for. Okay, so
+I have spent several years reviewing
+rèsumés and and here's what makes me
+stop scrolling.
+A clear target role or headline at the
+top underneath your resume. What are you
+looking for?
+Bullets that show outcomes,
+not tasks.
+And
+until
+you are working at a company as a
+developer or low code position that you
+are working toward right now where you
+have the opportunity to really
+in a way that you can quantify your
+impact
+showing outcomes that are
+with specificity. around metrics is
+likely not going to be possible. So
+there are some workarounds that again I
+will review with you. But also
+consistency between your resume and
+LinkedIn profile.
+I I'm not saying that they need to
+mirror each other, but there needs to be
+consistency.
+Um,
+so
+let's talk about this turning tasks
+into results. But before I do, do either
+of you have any questions uh with what I
+just covered.
+>> So I do have a question. Um
+[clears throat] I'm in the um
+with Key does um a power circle every
+every um Wednesday morning and she told
+me to get get in touch with you. Um I
+keep switching internships.
+First I was going to be a freelance web
+developer. Then I took the Joy Coding
+Academy Tech Joy and I've been in this
+is my fourth different internship
+and I'm now I'm in the
+>> Now I'm in the low code. Oh, here she
+is. I was just talking about Yuki.
+[laughter]
+Now I'm in the low code internship. So I
+guess I what I'm trying to say is how do
+I
+do I just target my resume as my new my
+newest internship or should I put that
+I've had experience in actual coding
+like JavaScript, React, Nex.js like how
+do I because it's going to be
+>> list those in your skills. You list
+those in your skills.
+>> Okay.
+>> Yeah. Unless unless you are
+[clears throat and cough]
+seriously moving into say a full deck
+stack developer position
+>> and that is your your focus and you are
+actively applying for those roles.
+I would focus on what you are
+what your target is currently.
+>> Okay. because I right now I want to I
+know WordPress is pretty popular still.
+So I want to I want to try to get into
+the tech world under like a low code
+position at the moment.
+>> Okay. And and then that's is what I
+would focus on.
+>> Okay. Good to know.
+>> Yeah. So yeah. So key um you were in
+class last night um and I was just
+reviewing with Leo and David um what we
+were going over and then that there was
+this particular pain point around
+turning tasks into results on the resume
+and then we had a broader discussion
+about that. Um, I did a little bit of
+research and also um spoke to a couple
+of my uh previous colleagues that are
+now tech recruiters and there were uh
+they definitely do have some um guidance
+and opinions that I wanted to impart
+um to all of you because I think it
+would be you know very helpful.
+Um, you know, and my question really to
+them was,
+you know, I I let them know about our
+conversation and that there is a concern
+with the students here at Techjoy that
+they understand the [clears throat]
+value of quantifying and having data and
+metrics against projects that they've
+worked on. But, you know, the way that
+the program is structured, it's not like
+you're really around to
+connect with the client directly and
+understand
+what the outcome or outcomes were and
+also really understanding how your role
+directly affected that outcome.
+Um, and you know what I let them know is
+I think that they're the concern is in
+that they won't be taken seriously or
+they won't be believable and be able to
+land even an interview or any kind of
+facetime. And what they told me is that
+the resume will not look unbelievable
+and the resume will not prevent you from
+getting an interview if you're not
+listing these measurable
+uh results.
+If you don't list it, it will make you
+look authentic. As long as you focus on
+evidence of process,
+scope and
+as much outcome that you know,
+not on hard business metrics, right?
+So, you know, recruiters understand that
+early career voters
+and pre-production contributors often
+have often don't have that, you know,
+production data.
+So, what they want to see is and what
+they kept talking about is impact logic,
+right? So
+writing sort of credible bullets when
+you can't quantify the numbers.
+>> Yeah.
+>> And they gave me they they provided some
+examples. So one was showing scope
+instead of data.
+Right?
+So
+examples that I looked through and came
+up with and and some they gave me
+developed authentification
+flow for full stack
+mer app with JWT and react context. Now
+I'm assuming all of you know this. This
+is what the tech recruiters gave me. So
+I hope it makes sense to you. Not all of
+it makes sense to me.
+Um built six REST API endpoints to
+handle crude operations for product
+data.
+And what they said was this sort of
+scope shows technical depth.
+So really making sure that
+you're providing an authentic and rich
+scope depth that you are involved in.
+Another point and I've got six and I'll
+try to go that through them quickly but
+uh two they said show quality or
+improvement language
+and a couple of examples improved app
+reliability by refactoring
+frontend components for reusable logic.
+Does that make sense to all of you? Like
+is what I'm saying what the the what I
+discussed with them. Okay. If it
+doesn't, let me know because I do have
+resources that I, you know, I want to
+make sure that I'm addressing your
+questions and concerns. Would you be
+able to share um the ones that you're
+you know telling us in the chat so we
+can see them written as well?
+>> Yep. Awesome.
+>> Good idea.
+[clears throat]
+>> I was going to do that after
+but I will do it now. Thank you.
+>> It's quite extensive so hopefully.
+Yeah. Okay. Let me see.
+All right. It's
+not letting me post all of it. Let's
+see.
+Okay, here's one, two, three.
+There we go.
+there. All of it is in the chat.
+[clears throat]
+All right. Um, also enhanced code
+readability and reduced redundancy
+through modularization.
+And what they said is recruiters
+recognize those as measurable
+improvements even without percentages.
+Okay.
+Number three,
+um, use frequency
+or scale when exact numbers aren't
+tracked.
+So, an example, couple of examples
+there, debugged multiple front-end
+issues weekly in collaboration with QA
+team.
+implemented feature updates across the
+three sprint cycles following agile
+methodology.
+Um, and I'll since they're in the chat,
+I um won't read everything through since
+I want to make sure we have time for
+everything this evening. Emphasize
+collaboration and delivery. Show results
+in terms of learning or a contribution.
+Like those sort of things sound like
+uh authentic and real actionable things
+that all of you do in this program,
+right? And then uh when possible use
+project or course outcomes and here it
+is if it is a boot camp or personal
+project outcomes
+still count.
+>> Yeah.
+>> And you know I made it a point to make
+sure that they understood where you all
+are in your sort of professional lives.
+Most of you are career changers. A lot
+of you are just sort of figuring out
+your your life and where you want to
+move in your first couple of of
+positions. So the bottom line
+is recruiters read outcome as proof of
+ownership, not proof of revenue. Right?
+And I think that that's really the key
+thing there.
+You demonstrate credibility through
+clarity of contribution,
+right? Um,
+and you know, some early stage
+coder, you know, resume bullet samples.
+Uh, there are quite a few. Um, but a
+couple that really stood out for me,
+um, was
+learning boot camp projects.
+And a couple of bullets that I came up
+with with some of the two of the recruit
+tech recruiters that I spoke with was
+completed 12week coding boot camp
+focused on full stack JavaScript
+development. Simple
+practice version control deployment and
+testing in real time collaborative
+projects.
+Practice version. Oh wait, uh presented
+final capstone project to technical
+mentors and peers explaining
+architecture and decisions,
+right? And then they even
+um you know gave me you know some
+optional bullets for soft skills
+balanced multiple project deadlines
+while maintaining code quality and
+documentation standards.
+Um, and then
+you know talking about how to adapt
+these to a resume
+um for some of the students. So swap in
+your own project names, task tracker
+app, weather dashboard, ecommerce API. I
+mean it sounds like you've got some of
+those names from what I've heard and
+seen in the the Discord messages.
+Swap your uh tech Slack language or use
+sorry use your tech slack language.
+React, view, flask. Replace broad verbs
+like built with context verbs,
+implemented,
+integrated,
+refactored, deployed.
+And keep every bullet under two lines.
+Concise.
+scannable and resultsoriented.
+Yes, Anna.
+>> Hi. Uh
+I'm not sure if you put anything in
+chat. I'm just asking if anything was
+put in chat. Could you repost?
+>> Yes.
+>> Um let me see. Yep.
+>> It's in the chat now.
+>> Yeah, I wouldn't see it because I just
+got out.
+Oh, I got it.
+[cough and clears throat]
+And then
+>> Thank you.
+>> You're welcome.
+There go. And there's the other bit.
+Okay.
+So
+continuing on,
+um, so these were examples for your
+resume, turning tasks into results.
+Um, now your resume should look like you
+and reflect your personal brand,
+right? Um,
+let's review and talk about quickly
+because again this is from last night's
+um last night's and this is the review.
+Um,
+let's look at the pull your resumes up.
+Make sure you have them so that you can
+see them. Don't share your screen, but
+this is really for you.
+You know, start with cleaning up the
+most critical area, which is the top
+third, because that's the part every
+recruiter reads, right? Your name, city,
+email, phone, LinkedIn URL, GitHub, and
+or your portfolio if you have one, and
+if it's relevant.
+I
+if you have a side hustle or another
+business that you do, but you're also
+looking to be a full stack developer,
+for example,
+don't put your landscaping
+website
+on this resume. It's not relevant.
+Target role line, that is your headline.
+full stack developer react node API
+integration very similar to what your
+headline is in LinkedIn not identical
+again
+your resume should be similar your
+resume and LinkedIn
+should somewhat mirror each other it it
+should not be the exact same thing
+verbatim
+uh and then you know a three to four
+line summary
+that again mirrors your LinkedIn about
+section.
+Okay.
+Um,
+and so last night I asked those that
+attended
+to
+take one week bullet and rewrite it
+using
+a formula that I provided.
+So action plus task plus result
+and I will put that also
+in the chat because it is directly
+reflective of what I already posted.
+Okay? So think about that, right? And uh
+if you are all looking to restructure
+and refine your resume and you're in the
+middle of editing,
+take one week bullet and rewrite it
+using the formula.
+Refine your top third of your resume
+and include a clear target role.
+and make sure your LinkedIn headline and
+summary
+match the same similar target language.
+It's not going to be identical, but it's
+going to be fairly similar.
+Okay,
+T, did you by any chance do any of that?
+I'll use you as an example, but if not,
+that's fine.
+Yeah. So, I worked on that bullet point,
+specifically the one that I shared
+yesterday that was so troublesome for
+me. [laughter]
+So, I was just putting it in chat. So,
+if you give me just a minute, I can copy
+it in there and I can I can read it out.
+>> Thank you for being
+>> the guinea pig. [laughter]
+>> Absolutely. I mean, it helps me, right?
+like the the moment of like fear goes by
+knowing that I'm getting, you know, the
+help that's hopefully going to get me a
+job, right? [laughter] Like
+>> Yes. Yes. Exactly.
+>> All right. Cool.
+>> Yeah. So, my original one was led
+development of admin data management
+feature to improve relevance and
+timeliness of displayed data. And that
+was already like improved, right?
+briefly from um what we discussed
+because I think the like original
+original like tried to have some sort of
+unrealistic metric or it just didn't
+flow like even that flows better than
+what it was [laughter] like originally
+originally. Um but then I uh update it
+since then to be a developed React admin
+dashboard integrated with AWS S3 to
+provide full data visibility and
+manipulation.
+Yeah.
+What does everyone think? I like that
+because it really does use the action,
+task, and result.
+>> Yeah, it sounds really good.
+Nice.
+>> Yay.
+That one was such a struggle because
+like we talked about it last um
+yesterday of like there's just we don't
+have any metrics behind it like we
+haven't had enough users or anything. So
+that was the real struggle there. I'm
+super glad that like we've come up and
+the examples like today have been really
+helpful to like spark the how else I can
+change the the things that maybe don't
+have a user behind it just yet.
+>> Yeah. Yeah. No, and I I I'm great. Thank
+you very much for
+um you know uh being the guinea pig. Um
+because you know we we're really trying
+to
+instill that your resume is your
+marketing tool, right? It's not just a
+list of things that you know you've done
+and
+um it's marketing your value and
+thinking like a recruiter that's really
+going to help.
+So, three volunteers.
+Here we go. He did it. So, I need three
+others to paste one old bullet
+in the chat.
+And based on the formula,
+I want you to quickly
+see using the formula if you can come up
+with a new bullet
+and enter that in the chat. So, put your
+new or old bullet. Put old dash what the
+old bullet is
+and then a new. I'm gonna give you five
+minutes to do it.
+>> Um, Chelsea, my situation is kind of
+different because the resume I have is
+is more
+um focused on my QA background.
+>> And so to write something for full
+stack,
+>> um,
+>> it's not you're not writing for full
+stack. You're taking a bullet from your
+resume.
+>> Oh, any bullet. Okay.
+>> That Yeah.
+>> Okay.
+Yeah. And using the formula,
+rewriting that bullet because
+it can be done for testing NQA,
+you know, designed manual test cases for
+API endpoints to confirm data accuracy
+and error handling
+using a formula.
+created automative tests, automated test
+scripts with Jess to validate core
+functions.
+So, it's really looking at who you are,
+not other people. It's looking at your
+resume,
+seeing where
+you can
+focus more
+on
+writing sound, credible, specific,
+and not inflated with metrics, bullets.
+to show clear outcomes and contribution
+since
+you're really not able in this program
+to have users and then see be here for
+the length of time needed to understand
+the results the data the metrics.
+So this is an exercise so that you can
+work on those bullets on your own in
+your resume.
+Okay, everyone.
+Okay.
+Okay.
+Thank you, Leo. I'd like I'd think for
+this purpose, for this exercise of being
+like super quick like on the fly.
+Yes.
+But I think you can
+>> Yeah. The first
+>> Yeah. But I think it's awesome. Like
+super fast.
+Beautiful.
+Where was I?
+Here we go.
+>> All right. So, we've got Key and Leo,
+David and Anna. We will wait a few
+minutes for you.
+One more minute.
+Hey.
+>> Okay. Came up with something.
+>> What's that?
+>> I said came up with something because I
+I think a lot of it was already covered
+with this resume. So, I was trying to
+think of other areas.
+>> Okay.
+>> Yeah.
+provided guidance on how to develop
+regression and smooth test plans for
+contract workers.
+And was this the before or the after?
+>> Um when I came on, I came on as to be
+one of the testers and then um you know
+noticed that it was like a learning
+curve going on with workers from other
+vendors that I was working with on the
+project. So I ended up being the ones to
+show how to create, you know, set up and
+design those regression test plans, how
+to, you know, consider the smoke test.
+>> Okay. But that actually that sorry uh
+that wasn't what I was talking about. So
+what I meant was is
+>> that initially I asked you to take an
+original bullet and post it
+along with the new bullet.
+>> Yeah. But everything that's because this
+resume that I have was you helped me
+with this resume.
+>> Yeah.
+>> And all the bullets to me look perfect.
+So I didn't have anything to do it
+before or after with. But I mean I
+there's I can't think of anything that
+will outdo these bullets that's sitting
+on this paper. So that's this [laughter]
+path.
+>> All right.
+>> Sorry.
+>> All right. So David,
+>> um
+>> this was one of my skills listed under
+skills. My the says frameworks and
+libraries colon.
+>> Yeah. No, we're not looking at skills.
+We're looking at We're looking at a
+description, a bullet that describes
+what you've done.
+>> That's what I figured
+>> in either joy of coding or what have
+you.
+>> Yeah. So, I changed it
+>> to be something specific.
+>> But those skills you still need to have
+listed. So, you can't really take
+skills.
+>> Oh, I get what you're saying. I get it.
+>> Okay.
+Yeah. So, just think think of that um
+you know while you're looking at your
+resume. But
+>> moving on to refining the top third of
+your resume, right?
+>> Yeah.
+>> So, that section must clearly show what
+role you're targeting.
+>> Got it. So if your resume starts with an
+objective to obtain dot dot dot, delete
+that
+is no longer relevant and replace it
+with a professional headline and
+summary.
+That's what your resume should look
+like.
+and
+you know uh
+type your target role headline
+in the chat exactly how it is now
+and then maybe how you plan to write it
+something different.
+An example
+full stack developer
+react node
+postgresql.
+It's almost like listing your skills and
+you can list soft skills as well, but
+again it's listing for roles that you
+want to a role [clears throat] that you
+want to hand.
+Give you guys a few minutes to
+come up with something. And again, it
+doesn't have to be perfect. It's kind of
+on the fly
+and also
+can use an AI tool AI platform to come
+up with this to give you some ideas.
+It is there for us to utilize
+as Dr. Emily says
+right key. [laughter]
+This is I just put in my summary as of
+now because I haven't updated my resume
+yet.
+That's great. And thank you, David. But
+please, that we're focusing on the
+headline at the moment.
+>> Oh,
+>> yeah.
+>> Well, that is
+>> But I'll read it.
+>> Huh?
+>> Uh, no, that's not your headline. That's
+your summary.
+>> Oh, I don't have a headline then. I got
+to make one up.
+>> Yeah.
+Let's see.
+I'll be right back, guys. I have to go
+and close my windows. It's dark outside.
+I just realized
+um in the other room, I don't like the
+windows open.
+Hey.
+Yes.
+Yeah.
+Yeah. That's great, Key.
+And you know, you're always going to be
+tweaking it. You're always going to be
+changing it in some way.
+But this is a great start for sure.
+I feel like with every project that I do
+and especially like every like um like
+challenge week that we've gone through,
+I learn a little bit more about what I
+want to do. So, I think it definitely
+changes with every every project. Uh I
+get a little bit more focused on what I
+want because I experience what I don't
+want sometimes.
+>> Yeah, that's the beauty of these types
+of programs and this one specifically
+that Dr. Emily created because you
+really do um have opportunity to do so
+many different things outside of
+learning code, right? Really being
+involved in these projects and being a
+mentor and you know it's such a great
+program
+um that it just gives you a lot of
+opportunity and then it helps you think
+about what you're really looking for.
+All right. So while all of you are
+finishing that little exercise,
+um you know talking about and thinking
+about
+brand word integration because you know
+really what your resume is is is you
+your resume and your LinkedIn profile
+is
+talking about you and you are the brand,
+right? So,
+think about a couple of words that
+describe you and that is what this sort
+of headline exercise is.
+And
+then make sure that these words that
+you're choosing in your headline that
+they're showing up in your bullets and
+your summary. Right? So if your word is
+organized
+or a word that you feel that resonates
+with you, say it's organized, you can
+say
+in a bullet streamlined project workflow
+to reduce task overlap. And if you have
+metrics or data, you can add some sort
+of percentage, right? If your word is
+technical
+developed rest API integrations
+improving data flow accuracy
+is the word collaborative
+say partnered with three crossf
+functional teams to deliver feature
+releases two weeks early.
+So, pick one of your brand words and
+write a bullet that reflects it
+and think about that.
+So
+tonight you practiced
+part of
+taking your
+experience
+into somewhat measurable results as as
+measurable as you can making them I
+would say more authentic
+and building a strong top third that
+recruiter
+can at least see what your direction is
+in 30 seconds.
+>> So, you know, before next week,
+start to work on your resume. And just
+like you did with your LinkedIn profile,
+you start from the top.
+You start from the name, the headline.
+the summary,
+making sure under your name that you
+have your LinkedIn profile,
+your GitHub if you have one,
+your contact information, email, phone
+number, no address.
+If you choose,
+you can put your location, not
+necessary, but you can. It is relevant,
+especially if you are looking for remote
+work.
+Um, and you know, before next week,
+finalize your top third and your first
+five bullets.
+Now,
+underneath your summary,
+we haven't talked about this, but David
+did list his skills. Skills should be at
+the top underneath your summary.
+And this is because
+there has been a huge push at
+companies
+large and small from startup to big
+holding companies. They are utilizing AI
+within their applicant tracking systems
+and they are parsing resumes
+with key words.
+so that recruiters can have those
+resumes highlighted.
+That is the guidance for this new job
+market and this new way of AI and ETSs.
+So,
+[clears throat] next session we're going
+to cover resumeé structure and format
+like what layouts pass the six-cond
+test. Layouts do matter. Formatting does
+matter. Font does matter. What I want to
+say is keep it simple.
+You want to make sure that the ATS
+systems that have the built-in AI
+features are reading your resume collect
+correctly so that you're getting
+noticed.
+You're already ahead of most job seekers
+because you are starting to understand
+how to think like a recruiter
+and you keep tightening every section
+and every bullet until it proves impact.
+We've got a few more minutes,
+questions,
+concerns.
+So, I have a question about the
+headline. I just where I'm just going to
+put it after my name and just just above
+the summary.
+>> Um, so at the top will be your name.
+>> Yeah.
+>> Underneath your name, you'll have your
+contact information.
+>> Yeah.
+>> Your link to your LinkedIn profile. And
+if you have a GitHub, you list that link
+as well.
+>> Yep.
+>> Underneath that, you have your summary.
+Okay.
+>> Underneath your summary, you have your
+list, your bullet list of skills,
+however you would like to list it.
+>> Yes.
+>> Then underneath that.
+>> Yes.
+>> Go ahead. Sorry. Go ahead.
+>> Then underneath your skills, you start
+listing your experience with the bullets
+that we discussed today.
+>> Okay. But you said that what I showed
+you was my summary, not my headline.
+So this should the headline should be
+the first sentence of the summary. Is
+that what I'm getting?
+>> No, your headline is basically your
+title.
+>> Oh, I get it. I didn't have a I didn't
+So I didn't have a title before. I just
+had just went right in from my
+information to the summary. I gotcha.
+>> Yeah.
+>> Okay.
+>> Yep.
+>> That was all. Thank you.
+>> You're welcome. you know, thank you for
+doing this class because I've learned a
+lot tonight just in good.
+>> Yeah.
+>> Excellent. Well, this is the
+second [clears throat]
+this is the second session
+>> of the first week
+>> of this is going to be a 12-week series.
+>> Okay, cool.
+>> I've been I've been dreading doing my
+resume over again, but now I think it
+looks more doable than I thought it was
+going to be. Well, you know, it's not.
+Again, I think that when you look at
+your resume and you look at it in its
+entirety,
+>> Yeah.
+>> It's a lot.
+>> Yeah.
+>> But, you know, again, just like your
+LinkedIn profile, you break it down.
+>> Yes.
+>> Start from the beginning.
+>> Yep.
+>> And you know what? Utilize
+what you've got the technology that you
+have at your disposal and and you know
+you have
+>> if you don't if you say I don't have a
+professional photo
+>> use Insta head shot I just did it
+>> it was 50 bucks
+I got
+I had to upload I think it was 11
+photographs of myself like from the the
+neck up.
+>> And they literally gave me 60 different
+versions that I could download and keep
+and pull from.
+>> Oh, wow.
+>> So, I mean, yes, it does cost money, but
+50 bucks for 60 different head shot that
+you can choose from and utilize in any
+professional setting. I did it for
+LinkedIn and so that I would have those
+options.
+>> Wow.
+And it is important and
+it in a when you are
+looking for a job and you're entering a
+market that you've been spending time
+and money
+to
+break into.
+Why not go all out?
+Do it the right way.
+>> Yeah.
+>> Don't waste time.
+And you know it
+it's going to pay off if you really
+approach this in the most authentic and
+professional way that you can.
+So, I will be
+back next week for week two
+and we will be continuing with the
+breaking down of the resume and I'll
+review uh very quickly what we go over
+each week. Just a quick rundown. As
+usual, these sessions are recorded. So,
+if you missed any of my LinkedIn
+sessions,
+they are all recorded. If you missed uh
+some of these resumeé se sessions that I
+started this week, started that last
+night, all pre-recorded.
+And um
+>> that's easier said than done because of
+the way that those pre-recordings are s
+archived.
+>> It's like you got to go through a hay
+stack at night time just to find a
+needle.
+>> Oh, I never I never tried to look for
+them.
+I'm not I'm not sure where they're
+located myself, but
+>> I guess one big long archive and you got
+to sort through, right?
+>> So there there's the one big long
+archive that has all of the meetings
+that are recorded basically dumped into
+one um playlist on YouTube, but we
+actually have also started doing um more
+um center or like segregated playlists
+as well. So, if you go to the calendar
+and you click on the event that you
+missed, there's a link down at the
+bottom of that that says like if you
+missed it, watch the replay and it
+should have a link to um like there's a
+specific job hunt um playlist.
+Um so, you can check it out there and
+it's a lot easier to find the meeting
+that you wanted to um look at because
+it's based by topic now, too.
+That's nice.
+>> Thank you for that, Key.
+All right, folks.
+>> Down the road. When you click on one, it
+takes you to that specific archive. That
+would be even much better.
+But sorry.
+>> Thank you very much and I will see you
+next week.
+>> All right. Bye.
