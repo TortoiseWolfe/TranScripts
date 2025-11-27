@@ -1,0 +1,210 @@
+Career Strategy w/ Chelsea - Job Search Strategy & LinkedIn Engagement (Week 12)
+https://youtu.be/E6zkcdNbn0A
+
+---
+
+## Course Recap
+
+Over 11 weeks, we've covered:
+- Why LinkedIn matters
+- Profile basics (photo, headline, banner)
+- Crafting a compelling summary
+- Highlighting skills, projects, education
+- Custom URL and settings
+- Building your network (Part 1: Connecting, Part 2: Keeping relationships warm)
+- Messaging and outreach
+- Asking for and writing recommendations
+- Posting content and using hashtags
+- Job alerts, filters, and search tools
+
+Tonight: Bringing it all together - making your profile recruiter-ready.
+
+---
+
+## How Recruiters Use LinkedIn
+
+### Boolean Searches
+Recruiters use boolean searches to filter candidates. Profiles with complete information rank higher.
+
+### Example Recruiter Search
+```
+("Full Stack Developer" OR "Software Engineer") AND (JavaScript OR React OR Node) AND (SQL OR AWS OR API OR PostgreSQL)
+```
+
+**Question to ask yourself:** What would make YOUR profile appear in this search?
+
+### Answer: Your Entire Profile
+- Keywords in headline
+- Skills listed
+- Activity and engagement
+- Connections with relevant people
+
+---
+
+## Profile Deep Dive Checklist
+
+### Photo and Banner
+- Is your image professional and clear?
+- Does your banner represent your field?
+
+### Headline
+- Does it state your role, specialty, or target position?
+- Include searchable keywords (Full Stack Developer, QA Engineer, etc.)
+
+### About/Summary Section
+- Does it tell your story clearly in 2-3 short paragraphs?
+
+### Experience and Projects
+- Are projects explained with outcomes and tools used?
+- List what you accomplished, not just what you did
+
+### Skills
+- Are your top 10 skills relevant to jobs you're applying for?
+- Add skills for each position you've held
+
+### Recommendations
+- Do you have at least 1-2 recommendations?
+
+---
+
+## Common Mistakes to Avoid
+
+1. **Keyword stuffing** and vague summaries
+2. **Incomplete project descriptions** - not showing measurable results
+3. **Neglecting banner or headline** altogether
+4. **No engagement or posting** - staying invisible
+
+Every section should work together to tell the story of where you're headed next.
+
+---
+
+## Making LinkedIn Work for You
+
+### LinkedIn Works When You Do
+
+After building your profile foundation, focus on:
+- **Building traction** through consistent activity
+- **Making meaningful connections** with the right people
+- **Creating visibility** that leads to interviews
+
+### Connect Meaningfully
+
+When you apply to a role:
+1. Search for the company on LinkedIn
+2. Click on "People"
+3. Find and connect with recruiters and people with your target title
+4. Send a personalized message referencing your application
+
+**Message template:**
+"Hi, I just applied to [Role]. Attached is my resume. I'm impressed with [specific thing about company/values/article]. I'd love to learn more about what your team is looking for."
+
+### Research Connections
+- Look at profiles of people at target companies
+- Check what groups they belong to
+- Join those groups
+- Repost relevant articles with hashtags
+- Show that you're doing the work
+
+---
+
+## Setting Up Your Job Search System
+
+### Job Alerts
+- LinkedIn notifies you when roles match your target
+- Set alerts for jobs posted within 1-24 hours
+- If a job was posted 3 days ago with 100+ applicants, don't bother
+
+### Search Filters
+- Refine and prioritize your search filters
+- Save multiple searches for different role types
+
+### Outreach
+- Connect with talent acquisition and recruiters at target companies
+- Connect with hiring leads and team members
+- Forward your resume with a meaningful intro
+
+### Visibility
+- Engage with posts
+- Post your own updates
+- Stay top of mind
+
+---
+
+## The Power of Engagement
+
+### Commenting on Recruiter Posts
+When you engage with recruiters' and hiring leads' posts, you become visible to them.
+
+### Share Short Updates About:
+- Projects you're working on
+- Learning wins
+- Career progress
+
+### Post Template
+"Look at what I've completed. This is a project I'm really proud of. I did this at [Program/Company]."
+
+Include the people you collaborated with and relevant hashtags.
+
+---
+
+## Strategic Outreach
+
+**Every job application should be paired with outreach.**
+
+Keep it short, specific, and friendly:
+
+"Hi, I saw your post about the Software Developer role at [Company]. I'm a developer focused on [your skills]. I'd love to learn more about what your team is looking for when hiring."
+
+**Pro tip:** Use AI (ChatGPT, Claude) to help craft these messages, then personalize them.
+
+---
+
+## Using AI Strategically
+
+AI can help with:
+- Crafting outreach messages
+- Tailoring resumes to job descriptions
+- Writing thank you letters
+- Generating LinkedIn content ideas
+
+**Warning:** Don't sound robotic. Edit AI output to sound authentic. Recruiters can spot pure AI copy-paste.
+
+**Telltale signs of AI:** M-dashes, overly formal language, generic phrasing.
+
+---
+
+## Final Checklist
+
+- [ ] Profile complete and optimized
+- [ ] Job alerts set for fresh postings
+- [ ] Daily engagement plan (commenting, connecting)
+- [ ] Weekly outreach goals
+- [ ] Projects explained with outcomes
+- [ ] Keywords matching job descriptions
+- [ ] Recommendations gathered
+
+---
+
+## Mindset for This Market
+
+This job market is tough, but you now have a toolkit most job seekers never build.
+
+**Keep showing up. Keep engaging. Keep refining.**
+
+The opportunities will come.
+
+You don't need to chase every job. You need to **show up where the right people are already looking.** That's LinkedIn.
+
+---
+
+## Key Takeaways
+
+1. Your entire profile is searchable - optimize every section
+2. Every job application should be paired with LinkedIn outreach
+3. Engagement and activity boost your visibility
+4. Set job alerts for posts within 24 hours
+5. Use AI to help, but keep your voice authentic
+6. Research companies before applying
+7. Join groups where target company employees participate
+8. This is a two-pronged approach: applications + networking
+9. Consistency wins - show up daily

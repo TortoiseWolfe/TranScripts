@@ -1,0 +1,242 @@
+Career Strategy w/ Chelsea - Skills, Projects & Education (Evening Session)
+https://youtu.be/E1qSTh9LhWs
+
+---
+
+## Session Goal
+
+Leave with clarity on:
+1. What skills to list (LinkedIn and resume)
+2. How to present projects from TechJoy Academy
+3. How to leverage boot camp experience confidently
+
+**Key question:** If someone looked at your LinkedIn profile right now, what would they think your superpower is?
+
+---
+
+## Hard Skills vs Soft Skills Review
+
+### Hard Skills Get You the Interview
+
+Technical, teachable abilities learned through training or hands-on experience. Easy to measure, show up in job descriptions.
+
+**Examples:**
+- JavaScript, React, Node.js
+- Git, GitHub, REST APIs
+- Test-driven development
+- Debugging tools (VS Code, Figma, Postman)
+- SQL, HTML, Python
+
+These are the tools in your toolbox - they show what you can build.
+
+### Soft Skills Help You Pass It and Keep the Job
+
+Interpersonal and communication-based abilities. Help you thrive on a team, solve problems, and adapt. Harder to quantify but just as important - often the reason people get hired or promoted.
+
+**Examples:**
+- Problem solving
+- Communication
+- Time management
+- Adaptability
+- Teamwork and collaboration
+- Empathy
+- Giving and receiving feedback
+
+**Important:** Soft skills can be more important than hard skills. You might encounter amazing coders who are challenging to work with, or people who aren't the strongest technically but are collaborative, positive, and great problem solvers.
+
+---
+
+## Where to List Skills
+
+**Resume:** Skills should be listed at TOP of resume, just under your summary. This ensures AI/ATS systems pull key words immediately.
+
+**LinkedIn:** Skills section should have 30-50 skills (LinkedIn allows up to 50).
+
+**Key:** Skills in your profile should match those in job descriptions you're applying to.
+
+---
+
+## Multiple Resumes for Different Roles
+
+If applying to both low code AND full stack positions:
+- **LinkedIn:** Keep broad to cover both
+- **Resumes:** Create separate versions for each type
+
+This allows you to quickly send targeted resumes while maintaining broad LinkedIn visibility.
+
+---
+
+## Live Profile Comparison Exercise
+
+**Profile A (Ali):**
+- No last name visible (frustrating for recruiters)
+- Senior experience, been in industry a while
+- No activity/posts
+- Skills listed
+- Projects listed
+- Recommendations (but dated)
+
+**Profile B (Maurice):**
+- Full name visible
+- More personable description
+- Active on LinkedIn (posting, reposting)
+- Skills noted for each role
+- Education listed
+- Recommendations
+- Speaks 8 languages
+
+**Winner:** Maurice - more personable, easier to work with impression, active on platform, full name visible
+
+**Key insight:** Having no activity makes your profile feel stale. Recruiters notice.
+
+---
+
+## Framing Projects: The Formula
+
+**What it is + What tools you used + What you built + Impact/Result**
+
+### Example
+
+"Built a full-stack budgeting app using React, Node.js, and MongoDB that allowed users to track expenses. Designed UI for intuitive UX, deployed with Netlify. Reduced friction for new users by 25% in testing."
+
+### Quantifying Work
+
+For projects without clear metrics, focus on:
+- Delivering complete, usable product by deadline
+- Number of tickets completed
+- Test files written
+- Features shipped
+
+**Example from workshop:**
+"Collaborated with team to build task manager in four days. Delivered 100% complete and usable product by strict deadline."
+
+---
+
+## Highlighting Boot Camp / Education
+
+### LinkedIn Format
+
+```
+TechJoy Academy
+Full Stack Web Development Certification Program
+[Dates]
+
+Technologies Learned: React, Next.js, Node.js, TypeScript, PostgreSQL, GitHub, CI/CD
+
+Notable Projects:
+• TaskFlow Pro - Full-stack task manager with real-time updates
+• Low Code CRM - Client-facing CRM for small business operations
+
+Certifications: Certificate in Full Stack Web Development
+```
+
+### Resume Format (More Condensed)
+
+```
+TechJoy Academy | Certificate in Full Stack Web Development | [Date]
+
+• Completed immersive 16-week program focused on modern web development practices
+• Technologies: React, Next.js, TypeScript, Node.js, PostgreSQL, GitHub, CI/CD
+• Key Projects: TaskFlow Pro, Low Code CRM
+• Certifications: Full Stack Web Development Certificate
+```
+
+---
+
+## Describing TechJoy Academy
+
+**One sentence that makes it impressive without overselling:**
+
+"Real-life projects that we work on once we get into the internship - forced to learn things you don't realize you're learning, all relevant to real jobs because it's real work."
+
+**Key differentiator:** Students bring something to production - a big step that hiring managers want to see.
+
+---
+
+## Using AI to Enhance Project Descriptions
+
+1. Describe what you did in plain language
+2. Add the project formula to your prompt
+3. Let AI generate a starting point
+4. Tweak for your voice
+
+**Note:** AI gives a starting point - always tweak the output yourself.
+
+---
+
+## Employee Referrals
+
+When someone posts job openings (like Susie posting company jobs in Discord):
+
+1. Apply to the position
+2. **Let the person know you applied** - "Hey Susie, I saw you posted those jobs. I applied to [position]. Just wanted you to know."
+
+**Why this matters:**
+- They can advocate for you / get you the interview
+- Referral bonuses exist ($600 - $15,000+ depending on company and level)
+- Bypasses the resume pile
+
+**Key insight:** Susie can make it so you get an interview - that's a big step when companies go through hundreds of resumes.
+
+---
+
+## The Power of Networking
+
+- Yes, resume and LinkedIn work feels tedious
+- But it's your digital reputation
+- **Always be buttoned up and ready** - you never know when opportunities appear
+
+### Post-Application Follow-Up
+
+Don't just apply and log it on your spreadsheet. After applying:
+1. Research the company on LinkedIn
+2. Follow employees
+3. Connect and message:
+
+"I recently applied to [position]. I'm inspired by your work. [Specific project] impressed me. I'm enthusiastic about joining and know how I could contribute."
+
+---
+
+## Hobbies and Other Activities
+
+**LinkedIn:** Absolutely list hobbies and non-coding activities that showcase other talents
+- Sculpture, gardening, baking
+- Yoga certification (if relevant - could teach at a company)
+- Improv classes (shows presentation skills development)
+
+**Resume:** Be more cautious - do research on what's appropriate
+
+**Why it matters:** Shows you're a whole person. Recruiters want to know who you are beyond coding.
+
+---
+
+## AI Skills Are Hot
+
+After the AI initiative announcements, there's huge demand for:
+- AI-specific programming
+- People who know how to partner with AI to enhance work
+
+**Tip:** The AI challenge week approach (using AI through IDE, asking questions properly) is valuable. Take that approach to your regular work.
+
+---
+
+## Job Hunt Support
+
+For those actively applying:
+- Share job hunt tracker with Chelsea for feedback
+- Reach out on Discord with questions
+- Look at job postings shared by other students (Joy of Coding server)
+- Let people know when you apply to positions they've shared
+
+---
+
+## Key Takeaways
+
+1. **Hard skills:** Get you the interview
+2. **Soft skills:** Help you pass it and keep the job
+3. **Skills section:** 30-50 skills, matched to job descriptions
+4. **Projects:** Use the formula (what + tools + built + impact)
+5. **Boot camp:** It's real experience, frame it confidently
+6. **Networking:** Follow up after every application
+7. **Referrals:** Always let people know when you apply to jobs they shared
+8. **Stay ready:** Keep LinkedIn updated, you never know when opportunity strikes

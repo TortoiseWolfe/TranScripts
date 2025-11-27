@@ -1,0 +1,206 @@
+Resume Series: Experience Bullets (Week 5)
+
+---
+
+## Why Experience Bullets Matter
+
+Your experience bullets are one of the most important parts of your resume. This is where recruiters look first to see your value.
+
+**Goal:** Learn how to turn basic duties into strong accomplishments that prove impact.
+
+---
+
+## Strong Bullets vs Weak Bullets
+
+**Weak bullets list tasks.**
+**Strong bullets show why the task mattered.**
+
+Recruiters skim resumes - they don't read every bullet. They look for short, clear statements that show outcomes.
+
+### Three Qualities of Strong Bullets
+1. Start with a clear action verb
+2. Explain what you worked on
+3. Show the outcome or value of your work
+
+---
+
+## The Bullet Formula
+
+**Action Verb + Task + Result**
+
+This formula changes everything. Every experience bullet should follow this structure.
+
+---
+
+## Examples with Metrics
+
+**Action verb + Task + Result (with metric):**
+"Developed API endpoints using Node.js to support user profile management"
+
+---
+
+## Writing Strong Bullets Without Metrics
+
+Most early career coders don't have production metrics. That's normal. You can still show impact using:
+
+### 1. Scope
+What was the scale of your work? Size of project, number of components, number of features, technologies used.
+
+**Example:** "Built three interactive pages using React JSX and API data integration"
+
+### 2. Consistency
+How often did you do this task?
+
+**Example:** "Tested API responses daily using Postman to ensure consistent data validation"
+
+### 3. Quality or Improvement
+Did your work make something cleaner, faster, clearer, easier?
+
+**Example:** "Improved code readability by modularizing business logic across components"
+
+### 4. Collaboration and Delivery
+How did you help the team?
+
+**Example:** "Supported sprint delivery by completing assigned tickets and participating in code reviews"
+
+---
+
+## More Examples Using the Formula
+
+### If You Lack Metrics
+"Built React components that improved code readability and simplified feature updates"
+
+### Using Scope Instead of Data
+"Collaborated with a team of four developers to design and deliver core project features"
+
+### Using Frequency
+"Debugged multiple front-end issues weekly across different browsers and devices"
+
+### Using Improvement Language
+"Enhanced application stability by resolving API integration errors"
+
+**All five versions are valid and believable.** Impact doesn't always require numbers - it requires clarity.
+
+---
+
+## Before and After Rewrites
+
+### Example 1
+**Before:** "Responsible for helping with front-end updates"
+**After:** "Improved frontend layout by refactoring components for cleaner, more reusable code"
+
+### Example 2
+**Before:** "Worked on backend routes"
+**After:** "Built and tested backend API routes using Node.js and Express to support user authentication"
+
+**Why the "After" works:**
+- Uses action verbs
+- Describes what you built
+- Shows the purpose of the work
+
+---
+
+## Live Rewrite Exercise
+
+**Before:** "Educational platform template reducing redundancies"
+
+**After:** "Built a full stack template to standardize project setup and cut redundant tasks, improving development speed"
+
+**Breakdown:**
+- **Action verb:** Built
+- **Task:** full stack template to standardize project setup and cut redundant tasks
+- **Result:** improving development speed
+
+---
+
+## Common Mistakes to Avoid
+
+### Listing Technologies Without Context
+**Weak:** Just listing "React, Node.js, PostgreSQL"
+**Strong:** Use technologies within action-oriented bullets
+
+### Describing What Something Is Instead of What You Did
+A bullet should show what YOU did, not describe the project
+
+### Overthinking Without Starting
+Don't look at your entire resume - focus on one bullet at a time. Break it down day by day if needed.
+
+---
+
+## Working with AI for Bullets
+
+### Using ChatGPT
+```
+Using the formula: Action verb + Task + Result
+Rewrite the following bullet:
+[paste your weak bullet]
+```
+
+### Tips for Better AI Results
+- Be specific with your prompts
+- Provide context about who you are
+- Tell it: "Do not sound like a robot. Be human. Warm but professional."
+- If results aren't perfect, refine your prompt or edit manually
+
+---
+
+## Showing Business Impact
+
+Bullets aren't about job function - they're about showing how you can impact business.
+
+**Ask yourself:** How am I showing value here?
+
+**What recruiters respond to:**
+- Clarity
+- Results
+- Unwavering ownership
+
+---
+
+## Career Changers and Entry-Level
+
+Just because you worked on a specific project doesn't mean it has to go on your resume.
+- If you're not proud of the project, don't list it
+- One or two exciting projects is more impactful than many mediocre ones
+
+For career changers:
+- Leverage your previous experience (QA, customer service, etc.)
+- Show transferable skills through the bullet formula
+- Be humble but confident about where you're starting
+
+---
+
+## Portfolio and GitHub Alignment
+
+If you have a portfolio or GitHub:
+- Make sure bullets match the language in your project descriptions
+- There should be cohesive flow between resume and project showcases
+
+**Priority order for early career:**
+1. Resume first
+2. GitHub second
+3. Portfolio later (when you have produced work)
+
+---
+
+## Homework
+
+1. Look at your bullets one by one
+2. Take a day per bullet if needed - don't rush
+3. Update three bullets on your resume using the formula
+4. Keep the formula close: Action Verb + Task + Result
+5. If you have GitHub, ensure bullets match project description language
+
+---
+
+## Key Takeaways
+
+1. Weak bullets list tasks; strong bullets show why tasks mattered
+2. Follow the formula: Action Verb + Task + Result
+3. Without metrics, use: Scope, Consistency, Quality/Improvement, Collaboration
+4. Impact doesn't require numbers - it requires clarity
+5. Break down the work: one bullet at a time
+6. Show business impact, not job function
+7. Recruiters respond to clarity, results, and ownership
+8. AI can help, but add your own voice and verify accuracy
+9. Quality over quantity - better to have fewer strong bullets than many weak ones

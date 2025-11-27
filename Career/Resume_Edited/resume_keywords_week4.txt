@@ -1,0 +1,172 @@
+Resume Series: Keywords & ATS Optimization (Week 4)
+
+---
+
+## Why Keywords Matter
+
+Recruiters search for candidates the same way you search for things online: **Keywords.**
+
+Keywords determine how you show up in searches. This is the bridge between your resume, LinkedIn skills, and job alerts.
+
+**Last week:** Telling your story clearly (summary)
+**This week:** Speaking the language that employers are using
+
+---
+
+## Three Types of Resume Keywords
+
+### 1. Technical Skills
+Languages, tools, frameworks
+- JavaScript, React, Node.js, Python
+- PostgreSQL, MongoDB, AWS
+- Git, Docker, REST APIs
+
+### 2. Role-Specific Terms
+- Front end, backend, full stack
+- Test automation, ETL
+- REST APIs, microservices
+
+### 3. Soft Skills Tied to Delivery
+- Collaboration, communication
+- Agile, Sprint planning
+- Cross-functional teams
+
+Hiring teams use these terms in job descriptions, recruiter searches, and interview criteria.
+
+---
+
+## How ATS and Recruiters Use Keywords
+
+- **ATS systems** scan for keywords
+- **Recruiters** skim for them clearly and effortlessly
+
+### LinkedIn Alignment
+As you put keywords in LinkedIn, your resume keywords should match your LinkedIn skills. This alignment:
+- Increases search visibility
+- Helps your profile appear in relevant job alerts
+
+---
+
+## Extracting Keywords from Job Descriptions
+
+### What to Look For
+
+1. **Job Title:** Lead Full Stack Engineer, Frontend Developer, etc.
+2. **Responsibilities section:** Action words and technologies mentioned
+3. **Required Skills/Qualifications:** Must-have technologies and experience
+4. **Preferred Skills:** Nice-to-haves that set you apart
+5. **Tools in the Stack:** Specific technologies listed
+
+### Keyword Extraction Exercise
+
+For any job description, identify:
+- Top 3 technical keywords
+- Top 2 role/action keywords
+- Top 2 environment keywords
+- Any repeated tool or framework
+
+---
+
+## Environment Keywords
+
+Environment keywords describe the setting, pace, or structure of the workplace:
+
+- Fast-paced
+- Collaborative
+- Agile
+- Customer-focused
+- Deadline-driven
+- Hybrid/On-site/Remote
+- High-volume
+- Startup vs Enterprise
+- Cross-functional
+- Mentorship-oriented
+- Data-driven
+- Product-led
+
+These help match your resume language to the employer's described environment.
+
+---
+
+## Anchor Keywords Strategy
+
+If you have three different jobs you want to apply to:
+1. Pull keywords from all three job descriptions
+2. Find keywords that appear in all three
+3. These are your **anchor keywords**
+
+**Anchor keywords belong in:**
+- Your skills section
+- Your summary
+- Your experience bullets (where relevant)
+
+---
+
+## Integrating Keywords Naturally
+
+Keywords only help if they read naturally. ATS systems and recruiters ignore keyword dumping.
+
+### Clean Integration Methods
+
+**Add tools to your summary:**
+"Skilled in React, Node.js, and REST API integration"
+
+**Add keywords to skills section in order of importance:**
+React, JavaScript, Node.js, SQL, Git, APIs
+
+**Add keywords into bullets with context:**
+"Built REST API endpoints using Node.js and Express"
+"Created test cases and automated regression tests using Jest"
+
+**Match terminology exactly:**
+If the job description says "TypeScript," don't abbreviate to "TS"
+
+---
+
+## Before and After Examples
+
+### Example 1
+**Before:** "Worked on backend routes"
+**After:** "Built and tested backend API routes using Node.js, Express, and MongoDB"
+
+### Example 2
+**Before:** "Did manual testing"
+**After:** "Designed manual test cases and API tests using Postman to validate data accuracy"
+
+---
+
+## Homework: Keyword Integration
+
+1. Choose three job descriptions
+2. Extract overlapping keywords
+3. Add them to your summary, skills section, and two resume bullets
+4. Update your LinkedIn skills to match the same set
+
+---
+
+## Important Reminders
+
+### Resume vs LinkedIn
+Your resume and LinkedIn profile should NOT be identical.
+- Do not put the same summary in both places
+- That's lazy and an immediate pass from recruiters
+
+### The Strategy Recruiters Wish Job Seekers Used
+The more you practice keyword work, the more interviews you'll get.
+
+When your keywords match employer language, you immediately increase your chances of passing:
+- Recruiter scans
+- ATS filters
+
+---
+
+## Key Takeaways
+
+1. Keywords determine how you show up in recruiter searches
+2. Three types: Technical skills, Role-specific terms, Soft skills tied to delivery
+3. Extract keywords from job descriptions systematically
+4. Anchor keywords appear across multiple target job descriptions
+5. Integrate keywords naturally - no dumping
+6. Match terminology exactly as written in job descriptions
+7. Align resume keywords with LinkedIn skills for maximum visibility
+8. Resume and LinkedIn complement each other but should not be identical

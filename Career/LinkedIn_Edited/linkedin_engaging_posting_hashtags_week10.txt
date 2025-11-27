@@ -1,0 +1,244 @@
+LinkedIn Engagement: Posting Content, Commenting & Hashtags (Week 10)
+https://youtu.be/4Nq0BoH9uOs
+
+---
+
+## Course Progress Recap
+
+- Weeks 1-5: Profile building (why LinkedIn matters, photo, headline, summary, skills, URL settings)
+- Weeks 6-7: Building your network (connecting, invites, keeping relationships warm)
+- Week 8: Messaging and cold outreach
+- Week 9: Recommendations
+- Week 10 (This Session): Engagement - posting content, commenting, and hashtags
+
+---
+
+## Why Engagement Matters
+
+Engagement is the next elevating step after building your profile and network. It makes you more visible to the people you're networking with.
+
+### The Full Cycle
+
+1. Apply to jobs
+2. Research the company on LinkedIn
+3. Find the person who posted the job
+4. Connect with them
+5. Send a personalized note
+6. **Follow their content and engage**
+7. Join groups they belong to
+8. Continue building the relationship
+
+**Long game insight:** When things pick up, people will start reaching out to you instead of you constantly reaching out to them.
+
+---
+
+## Best Practices for Posting
+
+### Frequency
+**2-3 times per week** is the sweet spot for staying visible without oversharing.
+
+### Types of Posts That Work in 2025
+
+**Learning Journey Posts**
+- What you're coding
+- What you're building
+- What you're struggling with
+
+**Project Work with Insight**
+Not just "I made this" but "Here's what I made and here's why it matters."
+- Share the challenge
+- What you learned
+- Ask if others have faced similar issues
+
+**Industry Commentary**
+Your reaction to:
+- AI trends
+- Coding trends
+- Tech hiring news
+
+**Gratitude/Recognition Posts**
+- Shout out to a mentor
+- Thank a teammate
+- Celebrate someone's achievement
+
+---
+
+## Post Structure
+
+### Hook Line
+The opening that draws people in (only a preview is visible before "see more")
+
+### Body (3-5 short sentences)
+- What you're working on or learning
+- Why it matters
+- What you learned or who helped
+
+### Call to Action
+- Ask a question
+- Invite comments
+- Share gratitude
+
+### Example Post
+
+"This week I built my first full-stack project at TechJoy Academy. It challenged me to think about user flows and debugging in new ways. I learned that breaking problems into smaller parts makes solutions faster and cleaner. Curious how others approach debugging when they're stuck on code."
+
+---
+
+## Post Tone
+
+- Confident
+- Professional
+- Personal enough to show personality
+- Avoid sounding robotic and generic
+
+---
+
+## Commenting Best Practices
+
+### Why Comments Matter
+Recruiters often find candidates through their comments on thought leadership posts. They care about what you think and like to see people engaging with industry conversations.
+
+### Add Value Every Time
+
+**Don't write:** "Great post"
+
+**Do write:** "This is spot on. I've been applying this in my coding projects by [specific example]."
+
+### Comment on Recruiter and Hiring Manager Posts
+It puts you directly on their radar.
+
+### Strong Comment Starters
+
+- "This aligns with what I've been seeing in my projects at TechJoy Academy."
+- "I agree with your point on [X]. In my experience, [Y] has also been important."
+- "Thanks for sharing this. I've been exploring similar approaches in my coding journey."
+- "This resonates. I learned the same lesson when working on [project]."
+
+---
+
+## Hashtag Strategy
+
+### What Hashtags Do
+
+**Categorize your posts** - Tell LinkedIn what your content is about
+
+**Expand visibility** - Your post can appear in feeds of people following or searching that hashtag (even if not connected to you)
+
+**Connect you to communities** - Active hashtags gather professionals around shared topics
+
+**Signal keywords to recruiters** - Recruiters track hashtags to source talent pools
+
+### Best Practices
+
+- Use **3-5 hashtags max**
+- Mix broad and niche hashtags
+- Check activity before using (if nobody's engaging, it won't help visibility)
+
+### Example Hashtags
+
+- #FullStackDeveloper
+- #WomenWhoCode
+- #OpenToWork
+- #EntryLevelDeveloper
+- #React
+- #AI
+- #CareerGrowth
+- #TechHiring
+
+---
+
+## What Catches Recruiters' Eyes in 2025
+
+### Content That Signals Employability
+
+- Posts showing you solving problems or sharing lessons learned
+- Evidence of collaboration (worked with classmates, team projects)
+- Thoughtful engagement with industry changes (layoffs, AI, hiring trends)
+
+### Consistency Over Time
+
+- A candidate posting once a month vs. one posting 2-3 times weekly
+- The consistent candidate is more likely to get contacted
+- Credibility comes from consistency, not a flawless post
+
+---
+
+## Overcoming First Post Fear
+
+Most professionals lurk for months before posting. But:
+
+- Recruiters don't care about perfection
+- They care about visibility
+- Credibility comes from consistency, not flawlessness
+
+### First Post Template
+
+1. **Hook line** - What you're working on or learning
+2. **Context** - Why it matters
+3. **What you learned** - Or who helped you
+4. **Reflection/Takeaway** - What you'd do differently, what excited you
+5. **Question or gratitude** - Invite engagement
+
+---
+
+## Key Equations
+
+**Engagement = Visibility**
+
+**Visibility = Opportunity**
+
+---
+
+## LinkedIn Groups
+
+Consider joining groups related to:
+- Your tech stack (React, Python, etc.)
+- Your role type (full-stack, QA, BA)
+- Your interests (Women Who Code, AI)
+- Your industry targets
+
+Groups surface relevant content and networking opportunities.
+
+---
+
+## Time Investment
+
+**10-15 minutes a day** is enough to stay visible.
+
+You don't need to spend hours. Just:
+- Scroll your feed
+- Comment on 1-2 posts
+- Post 2-3 times per week
+
+---
+
+## The Mirror Effect
+
+LinkedIn engagement is a mirror of how you will engage on the job:
+- Open to collaboration
+- Thoughtful communication
+- Industry awareness
+- Professional presence
+
+Recruiters and hiring leads notice candidates who engage thoughtfully with industry conversations.
+
+---
+
+## Homework
+
+1. Find one post in your feed and write a strong, value-adding comment
+2. Brainstorm content ideas for your first post
+3. If nervous, reach out for feedback before posting
+
+---
+
+## Key Takeaways
+
+1. **Posting and commenting** show recruiters you're active, motivated, and industry-aware
+2. You don't have to be an expert - the point is engagement
+3. **2-3 posts per week** is the sweet spot
+4. **Add value** in every comment - no "great post"
+5. Use **3-5 relevant hashtags**
+6. **Consistency > Perfection**
+7. **10-15 minutes daily** is enough
+8. Show you're not a passive job seeker but an engaged professional

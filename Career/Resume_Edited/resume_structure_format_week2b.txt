@@ -1,0 +1,128 @@
+Resume Series: Structure & Format Workshop (Week 2 Session B)
+https://youtu.be/sYWh4NN-mKU
+
+---
+
+## Resume Structure Recap
+
+### Reverse Chronological Resume
+- Most common and preferred for consistent career paths
+- Highlights steady progression and recent experience
+- Easy for recruiters and ATS systems to read
+
+**Use when:** Staying in the same field, consistent experience and titles
+
+### Functional Resume (Skills-Based)
+- Ideal for career changers or those with mixed experience
+- Groups experience under skill categories instead of dates
+- Highlights transferable skills and impact instead of job titles
+
+**Use when:** Pivoting careers, gaps in employment, mixed experience, rebranding yourself
+
+---
+
+## Resume Anatomy: Non-Negotiables
+
+**Sections that must appear:**
+1. Name and header (LinkedIn, contact info, GitHub if applicable)
+2. Summary (2-5 sentences)
+3. Core skills / technical stack
+4. Experience and/or projects
+5. Education and certifications
+
+---
+
+## Formatting Principles
+
+**Keep margins balanced and fonts consistent**
+- Consistency with font and formatting is essential
+- Line spacing matters for readability
+- Clean and polished appearance
+
+**No headshots on resume**
+- European and Asian standard, not US
+- Distracting and unnecessary
+
+**Avoid design-heavy templates**
+- ATS systems can't read complex designs
+- Simple = better
+
+**Page length guidance**
+- One page unless you have several years of experience
+- Two pages acceptable
+- Three pages excessive
+
+**Clarity matters more than decoration**
+
+---
+
+## Building Your Resume Layout
+
+### Think Structure Before Substance
+Start with layout, even using placeholder text:
+1. Header with name and contact info
+2. Summary section (can be gibberish placeholder initially)
+3. Skills section
+4. Experience section
+5. Education section
+
+Get the format right first, then fill in content.
+
+---
+
+## Condensing Your Resume
+
+### Header Condensation
+- Don't write "LinkedIn: [full URL]" - hyperlink the word "LinkedIn"
+- Same for Portfolio and GitHub
+- Remove redundant labels
+
+### Line Spacing
+- Set to single first
+- Then customize spacing (3pt after paragraphs works well)
+- Apply consistently throughout
+
+### Remove Excessive Bold
+- Not everything needs to be bold
+- Use bold strategically for section headers and key items
+
+---
+
+## Managing Employment Gaps
+
+If you have gaps in employment:
+- Functional resume can help by emphasizing skills over timeline
+- It's acceptable to note reasons (caretaker for loved one, etc.)
+- Life is life - recruiters understand
+
+---
+
+## Age Considerations
+
+To avoid age discrimination:
+- Do not list experience over 10 years old
+- Do not list graduation year from college
+- Focus on recent, relevant experience
+
+---
+
+## Key Equations
+
+**Every resume needs structure before substance**
+
+**Clear focused format = Shows recruiters you respect their time**
+
+**Clean design gets you seen, strong content gets you hired**
+
+---
+
+## Key Takeaways
+
+1. Choose functional resume for career changes, reverse chronological for staying in same field
+2. Structure and format matter as much as content
+3. White space helps readability
+4. Job titles and keywords drive recruiter search results
+5. The top third must capture interest instantly
+6. Prioritize alignment with your target job title
+7. If your resume can tell your story in one clean glance, you've done your job
+8. Readability, alignment, simplicity - this is what recruiters look for

@@ -1,0 +1,218 @@
+Career Strategy w/ Chelsea - LinkedIn Optimization for Junior Developers
+https://youtu.be/3n-waDkVu9o
+
+---
+
+## Why LinkedIn Matters
+
+This is the first part of an 18-week session plan focused on LinkedIn and your LinkedIn presence. This session is designed to help you build a strong, authentic LinkedIn presence that supports your job search goals as junior developers.
+
+Each week will include a focused theme, mini training session, and live practice with feedback.
+
+### LinkedIn is a Recruiter's First Stop
+
+95% of recruiters and hiring managers use LinkedIn daily to source talent. It is our database. Even if you apply through a job board, they'll often check your LinkedIn profile before reaching out. It serves as your public resume and reputation all in one.
+
+### Why a Strong LinkedIn Presence Increases Visibility
+
+LinkedIn is the primary sourcing tool for recruiters. While they're filling a job now or building a pipeline for future goals, they're searching by keywords, skills, job titles, and locations - checking if you are remote, hybrid, or want to come into the office.
+
+**Why it matters:** Recruiters use boolean searches to find candidates. They'll type: "junior developer" AND "JavaScript" AND "New York". A strong profile with the right keywords, skills, and summary increases your chances of showing up in these search results.
+
+Having a clear, keyword-rich headline and skill section ensures you're part of the conversation even when you're not applying to jobs. This is the beauty of LinkedIn - it does the work for you if you've set up your profile properly.
+
+---
+
+## Personal Branding
+
+This is where personal branding starts, and personal branding is what sets you apart from the sea of applicants in the job market right now.
+
+Unlike resumes, LinkedIn allows you to tell your story - why you got into tech, why you care about it, and what you're trying to build. It's the first impression that often sticks.
+
+### What is Personal Branding?
+
+Personal branding is how you intentionally present yourself - your values, stories, skills, and voice - to others in a professional context. It's not about being flashy or overly polished. It's about being clear, consistent, and authentic in how you show up.
+
+Unlike a resume which is limited to bullet points and rigid formatting, LinkedIn gives you the space to explain the "why" behind the "what." It allows you to connect the dots between your background and your career goals - especially for junior developers or those pivoting into a different career.
+
+### The About Section
+
+Your about section isn't a summary of your resume. It's a snapshot of who you are, why you made the leap into tech, what drives you, and where you're headed. This is where your voice and confidence in yourself and your skill set matters.
+
+**Example:**
+"After five years in healthcare administration, I discovered coding through a free online course and was immediately hooked. I'm now building responsive front-end projects with React and constantly looking for ways to blend design and functionality."
+
+### Why Recruiters Care
+
+Hiring managers and recruiters want to feel something when they visit your profile. They want to engage. They're not just looking at what you can do - they're thinking:
+- "Does this person seem motivated?"
+- "Are their goals clear?"
+- "Are they someone I'd enjoy working with?"
+
+A thoughtful summary helps recruiters connect with you on a human level and sets the tone for everything else. Once you nail your voice and message in the summary and headline, it guides your tone for:
+- Portfolio site
+- Cover letters
+- LinkedIn posts
+- Interview introductions
+
+Your personal brand should feel cohesive across all platforms.
+
+---
+
+## Activity: The 30-Second Test
+
+If someone only saw your LinkedIn for 30 seconds, what three things would you want them to walk away knowing about you?
+
+These three points can become the framework for your headline and summary.
+
+[REVIEW: Student responses included: fast learner, competent, trustworthy, web developer focus, work environment preferences, personal hobbies like running, coding experience, transferable skills from previous careers, career aspirations]
+
+---
+
+## Visibility Equals Opportunities
+
+You show up in search results when recruiters look for skills: JavaScript, HTML, Python. Make sure those skills are listed - doesn't even have to be programming languages. Skills like mentoring, food and beverage experience, regulatory knowledge all matter.
+
+The more complete and optimized your profile is, the more you will appear. You can literally control what and how often recruiters see your profile.
+
+### Recruiters Use LinkedIn Like Google
+
+Recruiters don't just browse job boards. They search LinkedIn using boolean strings and keywords:
+- "junior front end developer" OR "React developer" AND JavaScript AND "New York"
+
+These boolean searches work in web browsers as well.
+
+### Testing Your Searchability
+
+You can do boolean searches within LinkedIn in the search bar. The breadth of results depends on your LinkedIn package (free, Premium, Recruiter, Recruiter Business).
+
+If your profile contains specific keywords and skills and is complete, you will appear in search results. Incomplete profiles won't show up.
+
+### Most Important Sections for Search Visibility
+
+1. **Headline**
+2. **About/Summary section**
+3. **Experience**
+4. **Skills**
+
+Each should naturally include terms like: career changer, git, accessibility, JavaScript, HTML, front-end developer, software engineer, full stack developer. You can add skills to each job you list.
+
+### All-Star Profile Status
+
+LinkedIn rewards profile completeness. If your profile is marked "All-Star," you're more likely to rank higher in recruiter searches.
+
+**What makes a profile All-Star:**
+- Profile photo
+- Headline
+- Summary/About section
+- 2+ work experiences listed
+- Education
+- Skills
+- Activity on LinkedIn
+- Recommendations
+
+Don't be apprehensive about listing non-tech jobs. People work. People have lives. No big deal.
+
+---
+
+## Activity Boosts Visibility
+
+- Commenting on posts by others in tech
+- Connecting with people you admire in the industry
+- Researching their work and shooting them a quick note
+- Reacting to alumni or recruiter updates
+- Sharing progress on your latest boot camp projects
+- Posting once a month with a career or learning update
+
+Be proud of your achievements and talk about it on LinkedIn. It makes you visible and increases your network reach.
+
+**The goal:** "I didn't even apply for this role, but a recruiter found me on LinkedIn."
+
+### Recruiter Perspective
+
+When recruiting, the last thing I look at is who applied. I go out looking for talent at agencies or organizations doing work I love.
+
+Questions I ask hiring managers:
+- "What companies excite you?"
+- "Where is the work coming out that you're blown away by?"
+- "What technologies are these companies using?"
+- "What excites you about them?"
+
+Then I go pull talent from those places.
+
+**Key insight:** Profiles don't get opportunities. People with presence do.
+
+---
+
+## Homework: Keyword Alignment Exercise
+
+1. Choose 2-3 roles you want
+2. Search for those roles on LinkedIn
+3. Read 3 job descriptions
+4. Highlight repeated keywords
+5. Check your profile for those terms - are they there?
+
+This helps ensure your profile matches job descriptions for ATS (Applicant Tracking System) compatibility.
+
+---
+
+## The Power of Networking
+
+70-85% of roles are filled through networking.
+
+LinkedIn gives you a built-in professional community and job search tool. Engaging with people allows you to be top of mind for hiring managers and employees at other organizations.
+
+### Employee Referral Programs
+
+Every agency, corporate company, healthcare organization has employee referral benefits. Companies pay internal employees $200-$10,000 for referrals. Companies much rather hire people that internal employees know, have worked with, and have had success with.
+
+### It's Not Just Who You Know
+
+It's also about who knows you and thinks of you when opportunities arise. The people you've worked with, learned from, commented on, messaged, or connected with - they're the ones who open doors.
+
+**Many roles are never posted publicly.** They're shared through internal referrals or recommendations. Even when applying online, a referral gives you 4x higher chances of getting an interview.
+
+### Vetting Connection Requests and Messages
+
+Use your own discernment. Be proactive about who you're reaching out to and build your own curated database of people you're trying to target and connect with.
+
+When you get a message, go to their profile. If their picture looks heavily AI-generated and they're in another country you have no connection to, it's probably not something worth engaging with.
+
+### Networking is a Habit, Not One Big Ask
+
+Build relationships without asking for anything:
+- Share helpful content with a short reflection
+- DM someone with a thank you after attending a webinar or reading their blog
+- Lots of small touch points over time
+
+---
+
+## Key Takeaways
+
+1. Your LinkedIn profile grows with you - it's a never-ending project
+2. Show your progression and share what you're learning
+3. Stay active
+4. Visibility builds trust and recognition before you need it
+5. Start with LinkedIn for immediate visibility
+6. Your brand is never finished - it always evolves
+
+---
+
+## Profile Tips
+
+- Add your GitHub link in the top section
+- Add personal/creative website links
+- Show personality - hobbies, interests, other passions
+- You can list career gaps creatively (much more acceptable post-COVID)
+- Make sure organizations like TechJoy are properly linked for the logo/shield to appear
+- Keywords, keywords, keywords
+
+---
+
+## Q&A Highlights
+
+**Q: Is "career changer" a good keyword?**
+A: It can be. Recruiters sometimes specifically look for fresh perspectives - people transitioning from account side to copywriting, doctors becoming pharmaceutical writers. Career changes are a fact of life, neither good nor bad.
+
+**Q: How do I handle the cohesion of my brand across platforms?**
+A: Start with LinkedIn for immediate visibility. Nothing is ever final - your brand always evolves as you move through your career.

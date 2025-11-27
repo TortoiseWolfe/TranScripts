@@ -1,0 +1,78 @@
+LinkedIn Boolean Search Practice: Hands-On Operators & Filters (Week 12 Evening Session)
+https://youtu.be/h_3tUhdck8o
+
+---
+
+## Boolean Search Operators in Action
+
+### AND Operator
+Requires both terms to appear.
+
+**Example:** `"Software Engineer" AND Amazon`
+- Results: Software engineers at Amazon
+- Can click "People" to see all matching profiles
+- Shows jobs, posts, and people matching criteria
+
+### OR Operator
+Shows results matching either term.
+
+**Example:** `"Full Stack Developer" OR "Front-End Developer"`
+- Results: Both types of developers
+- Useful when you're open to multiple role types
+
+**Combined example:** `("Full Stack Developer" OR "Front-End Developer") AND Amazon`
+- Results: Either role type specifically at Amazon
+
+### NOT Operator
+Excludes specific terms.
+
+**Example:** `"Tech Recruiter" NOT Agency`
+- Results: Tech recruiters excluding agency recruiters
+- Useful for finding in-house recruiters
+
+### Quotes
+Ensures exact phrase matching.
+
+**Example:** `"Machine Learning Engineer"`
+- Results: Exact job title only
+- Without quotes, words could appear separately
+
+---
+
+## Handling Title Variations
+
+**Challenge:** Job titles are written inconsistently:
+- Full Stack / Full-Stack / Fullstack
+- Front End / Front-End / Frontend
+
+**Solution options:**
+- Use OR to cover variations: `"Full Stack" OR "Full-Stack" OR "Fullstack"`
+- Search multiple times with different variations
+- Test what returns most relevant results
+
+---
+
+## Targeting Large Companies
+
+For companies with thousands of employees:
+
+1. **Focus on specific departments** rather than searching all employees
+2. **Target recruiters first** - they're the first line of contact
+3. **Find hiring leads** - people who might manage the role
+4. **Filter by job function** when available
+
+**Key question:** "Who is sourcing for these roles?"
+- Answer: Recruiters. That's your first target.
+
+---
+
+## Key Takeaways
+
+1. **AND** narrows results (must have both terms)
+2. **OR** expands results (either term works)
+3. **NOT** excludes unwanted results
+4. **Quotes** ensure exact phrase matching
+5. Combine operators for complex searches
+6. LinkedIn is an active search tool - invest time learning it
+7. Boolean searching is how recruiters find candidates
+8. Learning these techniques puts you ahead of passive job seekers

@@ -1,0 +1,169 @@
+LinkedIn Research & Boolean Searching: Leveraging LinkedIn as a Research Tool (Week 12)
+https://youtu.be/r7gcooU_XBs
+
+---
+
+## Course Progress Recap
+
+- Weeks 1-5: Profile building (why LinkedIn matters, photo, headline, summary, skills, URL, settings)
+- Weeks 6-7: Building your network (connecting, keeping relationships warm)
+- Week 8: Messaging and cold outreach
+- Week 9: Recommendations
+- Week 10: Engagement (posting, commenting, hashtags)
+- Week 11: Job alerts and filters
+- Week 12 (This Session): Leveraging LinkedIn for research and boolean searching
+
+---
+
+## LinkedIn as a Research Tool
+
+LinkedIn is more than a digital resume. It's a database of companies, people, and opportunities. If you learn to research effectively, you'll always be ahead of the average job seeker.
+
+---
+
+## Three Research Categories
+
+### 1. Company Research
+- Look up your target company page
+- Go to the "People" tab to see:
+  - Alumni
+  - Recruiters
+  - Employees with relevant titles
+- Check the **Insights tab** for:
+  - Growth trends
+  - Locations
+  - Headcount changes
+  - Open jobs
+- Review if company is hiring aggressively or shrinking before applying
+
+### 2. Role and Career Path Research
+- Search job titles (Full Stack Developer, QA Engineer)
+- Review profiles of people currently in those roles
+- Look at their:
+  - Career trajectory
+  - Previous companies
+  - Groups they belong to
+  - Skills listed
+- Discover new companies through where others have worked
+
+### 3. Recruiter and Hiring Manager Search
+- Filter by job title in the People section
+- Search: `"Technical Recruiter" AND [Target Company]`
+- Follow recruiters, engage with their posts
+- Connect with tailored notes
+
+---
+
+## Understanding Company Insights
+
+When viewing a company page, click **Insights** to see:
+- Employee growth percentage (e.g., "131% growth in past 6 months")
+- Recent hires count
+- Headcount by function (Engineering, Sales, etc.)
+- Where alumni went after leaving
+- Competitor companies
+
+**Strategic use:** If a company shows strong growth in engineering, they're likely hiring aggressively for tech roles.
+
+---
+
+## Understanding Connection Levels
+
+- **1st connections:** People you know well, interact with frequently
+- **2nd connections:** People you don't know directly but share mutual connections
+- **3rd connections:** No direct connection, no mutual contacts
+
+---
+
+## What is a Boolean Search?
+
+A search method using operators (AND, OR, NOT, quotes, parentheses) to refine results.
+
+**Why it matters:**
+- Recruiters use boolean searching every day to find talent
+- Job seekers can use it to research recruiters, companies, and target roles
+- It's a logic-based way of telling LinkedIn exactly what to include or exclude
+
+---
+
+## Boolean Search Operators
+
+### AND (Must include both terms)
+`"Software Engineer" AND Amazon`
+- Shows only software engineers who work at Amazon
+
+### OR (Include either term)
+`"Full Stack Developer" OR "Front-End Developer"`
+- Shows both types of developers
+
+### NOT (Exclude a term)
+`Recruiter NOT HR`
+- Shows recruiters but excludes HR recruiters
+
+### Quotes (Exact phrase match)
+`"Machine Learning Engineer"`
+- Returns exact job title, not words separately
+
+### Parentheses (Group terms for complex searches)
+`("Full Stack Developer" OR "Software Engineer") AND Amazon`
+- Combines multiple conditions
+
+---
+
+## Boolean Search Examples
+
+**Finding recruiters at a target company:**
+```
+"Technical Recruiter" AND Google
+```
+
+**Finding developers with specific skills:**
+```
+"Software Engineer" AND Amazon
+```
+
+**Finding multiple role types at a company:**
+```
+("Full Stack Developer" OR "Front-End Developer") AND Amazon
+```
+
+**Excluding certain recruiter types:**
+```
+"Tech Recruiter" NOT Agency
+```
+
+---
+
+## Practical Application
+
+When you find a job posting:
+1. Research the company using the Insights tab
+2. Check recent growth and hiring trends
+3. Find recruiters using boolean search
+4. Identify people in your target role
+5. Connect strategically with personalized notes
+
+---
+
+## Targeting Large Companies
+
+For companies with 10,000+ employees:
+- Filter by department or role type
+- Focus on finding:
+  - Recruiters/sourcers for your function
+  - Hiring leads for your target team
+  - People currently in the role you want
+- Don't try to search through all employees
+
+---
+
+## Key Takeaways
+
+1. LinkedIn is a research database, not just a profile host
+2. Use the **Insights tab** to evaluate company health before applying
+3. Boolean searches give you precise control over results
+4. **AND** narrows results, **OR** expands them, **NOT** excludes
+5. Quotes ensure exact phrase matching
+6. Recruiters use these same techniques to find you
+7. Research companies before applying to target outreach effectively
+8. LinkedIn is an active search and networking tool, not passive

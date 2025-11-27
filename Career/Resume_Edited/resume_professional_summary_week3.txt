@@ -1,0 +1,159 @@
+Resume Series: Professional Summary (Week 3)
+https://youtu.be/Utec2BjFJrg
+
+---
+
+## What a Professional Summary Is and Is Not
+
+### A Summary Is NOT
+- An objective statement like "to obtain a role where I can grow"
+- A generic list of soft skills
+- A paragraph packed with buzzwords with no proof
+
+### A Summary IS
+- A short, focused snapshot of your value
+- Aligned to a specific role or role family
+- Written in language that recruiters use in job descriptions
+- Backed by real work, projects, or skills
+
+---
+
+## Why This Matters
+
+In today's market, a recruiter might review hundreds of résumés for one role.
+
+- If your summary sounds generic, they move on
+- If your summary sounds targeted and confident, they keep reading
+
+Your summary should connect with your LinkedIn about section. Not identical, but cohesive. If your summary says one thing and your LinkedIn says something completely different, that hurts trust.
+
+---
+
+## The Professional Summary Structure
+
+Use this formula every time (3-5 sentences max):
+
+**Line 1:** Who you are and your main focus
+**Line 2:** What you do well, including tools or skills
+**Line 3:** Proof of impact or contribution
+**Line 4-5:** What you want next and how you want to add value
+
+---
+
+## Example Summaries
+
+### Junior Full Stack Developer
+1. Full stack developer with training in JavaScript, React, and Node.js
+2. Builds end-to-end features, connects APIs, and writes clean testable code
+3. Delivered multiple boot camp and personal projects using Git, REST APIs, and SQL
+4. Seeking a software engineer role where I can contribute to real product features and grow within a collaborative team
+
+### Career Changer into QA/SDET
+1. QA engineer transitioning from customer support into test automation and quality focus
+2. Skilled in manual testing, SQL queries, and API testing with Postman
+3. Improved defect reporting and collaboration between support and dev teams in previous roles
+4. Targeting QA and SDET roles where quality metrics and automated tests support reliable releases
+
+### Data/Analytics Focused
+1. Data analyst with experience in SQL, spreadsheets, and data visualization
+2. Collects, cleans, and analyzes data sets to answer concrete business questions
+3. Built dashboards and reports that helped stakeholders see trends and patterns more clearly
+4. Targeting data roles where I can support decision-making with clear analysis
+
+---
+
+## Weak vs Strong Summary Comparison
+
+**Weak Example:**
+"Motivated developer looking for an opportunity to grow and learn. Hard worker and team player who loves technology."
+
+**Problems:**
+- No tech stack
+- No specific role target
+- No proof of work
+- Generic fluff that says nothing
+
+**Strong Example:**
+"Frontend developer with training in React, JavaScript, and responsive design. Builds accessible, mobile-friendly interfaces and collaborates closely with designers. Completed multiple projects using REST APIs and Git. Targeting junior front-end roles where I can ship features that improve user experience."
+
+**Why It Works:**
+- Names the role clearly
+- Lists the tech stack
+- Provides proof of work
+- Explains target clearly
+
+---
+
+## Using ChatGPT to Craft Your Summary
+
+### Process
+1. Input your current summary (or notes about yourself)
+2. Provide the formula structure (Line 1, Line 2, Line 3, Line 4-5)
+3. Ask for 4-5 impactful summary options
+4. Choose the one that resonates most
+5. Refine and personalize as needed
+
+### Sample Prompt
+```
+Rewrite the following summary for a resume.
+Here is the current summary: [paste summary]
+
+To rewrite this resume summary, use the following structure:
+- Line 1: Who you are and your main focus
+- Line 2: What you do well, including tools or skills
+- Line 3: Proof of impact or contribution
+- Line 4-5: What you want next and how you want to add value
+
+Provide four to five impactful summary options that will draw the attention of tech recruiters.
+```
+
+---
+
+## Tailoring Your Summary
+
+For career changers with transferable skills:
+- Focus on what translates to tech (problem-solving, following documentation, team collaboration)
+- Previous career experience shows up in your work history - summary should focus on where you're going
+- Transferable skills matter but keep summary focused on target role
+
+---
+
+## Tightening Your Summary
+
+**Remove:**
+- Repeated phrases like "hard worker" and "team player" (unless you give proof)
+- Filler like "seeking an opportunity where I can grow and learn"
+
+**Keep:**
+- The role
+- The stack
+- The outcomes
+- The target
+
+### Before and After Example
+
+**Before:**
+"Full stack developer with training in JavaScript, React, and Node.js. Passionate about learning, growing, and working with a team. Completed several projects and enjoy writing clean code."
+
+**After:**
+"Full stack developer with training in JavaScript, React, and Node.js. Builds full features from front end to API integration with focus on clean, testable code. Completed multiple projects using Git, REST APIs, and SQL. Targeting engineer roles on collaborative teams."
+
+---
+
+## Homework
+
+1. Write your 3-5 line summary using the structure
+2. Make sure your target role is clear
+3. Add at least one concrete proof statement
+4. Copy a version to your LinkedIn about section (adapted, not identical)
+
+---
+
+## Key Takeaways
+
+1. Your summary is a short focused snapshot of your value
+2. Follow the 4-line structure: Who you are, What you do, Proof, Target
+3. Each summary should state a clear target field, include tools/skills, and give proof
+4. Proof can be projects, boot camp work, previous jobs, or measurable improvements
+5. Generic summaries get ignored; targeted summaries get interviews
+6. Resume and LinkedIn summaries should mirror each other in tone, not be identical

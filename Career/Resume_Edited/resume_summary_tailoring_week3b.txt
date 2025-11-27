@@ -1,0 +1,152 @@
+Resume Series: Summary Tailoring Workshop (Week 3 Session B)
+
+---
+
+## Session Focus
+
+Professional resume summary clinic and job description alignment.
+
+Goal: Refine summaries and learn how to tailor them to real jobs in the current market.
+
+---
+
+## Tailoring a Summary to a Job Description
+
+### The Process
+
+1. Find a job description for a role you want
+2. Take your existing summary
+3. Use ChatGPT to tailor it specifically to that job
+
+### ChatGPT Prompt Template
+
+```
+I am a [role type] at the final stages of completing a coding boot camp.
+I'm ready to apply for open roles on LinkedIn and need help with my resume summary.
+
+Below is the current version of my resume summary:
+[paste your summary]
+
+Tailor the provided resume summary to this job description:
+[paste full job description - links don't work, must copy/paste text]
+```
+
+---
+
+## Real Example: Frontend Developer Role
+
+**Tailored Output Options:**
+
+**Option 1 - Balanced and Professional:**
+"Front-end developer skilled in building responsive, high-performance web applications using JavaScript, React, and AstroJS. Experienced in writing clean, maintainable code and collaborating with designers to deliver intuitive user experiences. Adept at testing, debugging, and optimizing for accessibility, speed, and SEO. Passionate about crafting digital experiences that engage users and strengthen brand impact."
+
+**Option 2 - Results-Driven and Technical:**
+"Front-end developer with expertise in modern JavaScript, HTML, CSS, and React frameworks. Focused on building scalable, responsive, and visually engaging web interfaces that perform flawlessly across devices. Known for thorough testing, clear documentation, and efficient version control using Git. Trained in AstroJS and eager to contribute technical precision and creative problem-solving to [Company]'s growing engineering team."
+
+**Option 3 - Human-Centered and Brand Aligned:**
+"Front-end web developer who combines strong technical foundations in JavaScript, HTML, CSS, React, and AstroJS with a genuine focus on user experience. Skilled in debugging, performance optimization, and collaborating across teams to deliver functional and visually consistent sites. Committed to creating fast, reliable, and accessible digital products that reflect [Company]'s people-first and community-driven values."
+
+---
+
+## Entry-Level and Growth-Focused Example
+
+For a web designer role:
+
+"Front-end developer and WordPress designer completing a full stack boot camp with top marks (98.37%). Proficient in Elementor, HTML, CSS, and React with a growing portfolio of responsive, visually consistent web builds. Adept at balancing creativity with functionality, improving accessibility, and optimizing design performance. Eager to grow with [Company]'s collaborative team and deliver impactful, conversion-driven website experiences for clients."
+
+**Why this works:**
+- Entry-level and growth-focused without saying "entry-level"
+- Shows completion of training with strong performance
+- Lists relevant tools
+- Demonstrates understanding of the company's mission
+
+---
+
+## Handling AI-Generated Content Concerns
+
+### Common Recruiter Concerns
+Some recruiters claim they won't look at AI-generated resumes
+
+### Reality Check
+- If it hits all the points that are true about your skill set and experience, it works
+- The technology is here to use
+- Even with AI, crafting a meaningful resume takes time
+
+### Making AI Content Sound Human
+1. Remove the em dash (--) and replace with commas
+2. Tell ChatGPT: "Do not make what you generate sound like AI. Make it sound human."
+3. Take what it produces and add your own voice and flair
+4. If using ChatGPT output, be aware of potential watermarks when copying
+
+---
+
+## Consistency Across Your Assets
+
+When you finalize a summary:
+
+**Your summary should match:**
+- LinkedIn headline and about section (tone, not identical)
+- Job titles in experience section
+- Skills you list
+- Roles you actually apply for
+
+### Alignment Problems to Avoid
+
+- Resume summary targets full stack roles but LinkedIn headline says "open to anything" = Confuses recruiters
+- Summary lists Python and SQL but skills section doesn't include them = Looks careless
+
+---
+
+## Action Steps
+
+1. Copy your final summary into your LinkedIn about section and adapt it there
+2. Check that your target role is the same across resume and LinkedIn profile
+3. Check that your top three skills appear in: Summary, Skills section, LinkedIn about, LinkedIn skills
+
+---
+
+## Creating LinkedIn Summary from Resume Summary
+
+### ChatGPT Prompt
+```
+This is my resume summary.
+[paste resume summary]
+
+Create a new summary for my LinkedIn about section.
+This new LinkedIn about summary should mirror my resume summary in tone only.
+It should not be identical.
+```
+
+---
+
+## The Brand Mindset
+
+You are a brand first and foremost.
+
+- LinkedIn = Your storefront (public brand)
+- Resume = Your proof document (sales sheet)
+
+Those who understand marketing understand how to present themselves effectively.
+
+---
+
+## Self-Assessment Checklist
+
+- Does my summary state a clear target role?
+- Does it list key tools or skills that match real job posts?
+- Does it include at least one piece of proof?
+- Does it say what I want to do next?
+- Can someone skim it in five seconds and understand my direction?
+
+If you answer yes to most, you're in strong shape.
+
+---
+
+## Key Takeaways
+
+1. You can take a generic summary and adapt it to any specific job posting
+2. Tailor by incorporating keywords and requirements from the job description
+3. Different summary versions for different job types is smart strategy
+4. Resume and LinkedIn should be cohesive but not identical
+5. Brand consistency matters - recruiters notice alignment (or lack thereof)
+6. Use AI as a tool but add your own voice and verify accuracy

@@ -1,0 +1,141 @@
+Resume Series: Structure & Format (Week 2)
+https://youtu.be/uLGKKcpM9gQ
+
+---
+
+## Why Format Matters
+
+If a recruiter can't navigate your resume in 6 seconds, they won't.
+
+Recruiters scan for:
+- Clarity
+- Structure
+- Alignment with the role
+
+The format should guide their eyes, not overwhelm them.
+
+---
+
+## Two Core Resume Structures
+
+### 1. Reverse Chronological Resume
+**Best for:** Consistent career paths (staying in same industry)
+
+- Most common and preferred format
+- Highlights steady progression and recent experience
+- Easy for recruiters and ATS systems to read
+- Lists experience in date order (most recent first)
+
+**Use when:**
+- Staying in the same industry
+- Have consistent experience and titles
+- Want to showcase steady growth
+
+### 2. Functional Resume (Skills-Based)
+**Best for:** Career changers or those with mixed experience
+
+- Groups experience under skill categories instead of dates
+- Highlights transferable skills and impact instead of job titles
+- Ideal for pivoting careers or rebranding
+
+**Use when:**
+- Pivoting careers (teacher becoming developer, etc.)
+- Have gaps or mixed experience
+- Need to highlight skills before timeline
+
+**Recommendation for TechJoy students:** Functional resume (most are career changers)
+
+---
+
+## Resume Anatomy: Non-Negotiable Sections
+
+### 1. Header
+- Name (prominent)
+- LinkedIn profile link
+- Contact information (email, phone)
+- GitHub (for developers)
+- Portfolio link (if applicable - produced work you have permission to showcase)
+
+### 2. Headline
+- Clear target role
+- Goes directly under your name
+- Example: "Full Stack Developer | React | Node | PostgreSQL"
+
+### 3. Summary
+- 2-5 sentences maximum
+- Mirrors LinkedIn about section (similar, not identical)
+- Tailored to your goals
+
+### 4. Core Skills / Technical Stack
+- Listed right under summary
+- ATS systems and AI parse resumes for these keywords
+- Organize by category if needed
+
+### 5. Experience and/or Projects
+- Use Action + Task + Result formula
+- Most recent first
+- 3-5 bullets per position
+
+### 6. Education and Certifications
+- List at the bottom
+- Include boot camps and relevant training
+
+---
+
+## Formatting Best Practices
+
+### Do
+- Keep margins balanced
+- Use consistent fonts throughout
+- Maintain consistent line spacing (single, then customize)
+- Stick to one page unless you have several years of experience (two pages acceptable, three excessive)
+- Use simple, clean design
+- Save as PDF when submitting (never Word - can be altered)
+
+### Don't
+- Put your photograph on your resume (European standard, not US)
+- Use design-heavy templates (ATS systems can't read them)
+- Use various colors or graphics (distracting)
+- Make the name huge
+- Include headers/footers that might be missed
+
+---
+
+## Resume Tailoring Process
+
+1. Keep a master template in Google Docs/Sheets
+2. For each application: File → Make a Copy
+3. Tailor the copy for that specific job
+4. File → Download → PDF
+5. Never send Word documents
+
+---
+
+## Live Formatting Tips
+
+### Hyperlinks
+- Don't write "LinkedIn: [full URL]"
+- Instead: Hyperlink the word "LinkedIn" to your profile
+- Same for Portfolio and GitHub
+
+### Line Spacing
+- Always set to single first
+- Then customize (try 3pt after paragraphs)
+- Consistency is key
+
+### Font Size
+- Keep headlines consistent (all same size)
+- Body text: 10-12pt typically
+- Name can be slightly larger
+
+---
+
+## Key Takeaways
+
+1. Choose structure based on your situation: reverse chronological (staying in field) or functional (career change)
+2. Format must guide the recruiter's eyes, not overwhelm them
+3. Clarity beats decoration every time
+4. ATS-friendly = simple formatting, no graphics, clear section headers
+5. Keep a master template, make copies for tailoring
+6. PDF only for submissions
+7. Your resume is prime real estate - the top third must capture interest instantly

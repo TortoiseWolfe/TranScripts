@@ -1,0 +1,212 @@
+LinkedIn Recommendations: How to Ask For and Write Strong Recommendations (Week 9)
+https://youtu.be/vXjuYguGB7s
+
+---
+
+## Course Progress Recap
+
+- Weeks 1-5: Profile building (why LinkedIn matters, photo, headline, summary, skills, URL settings)
+- Weeks 6-7: Building your network (connecting, personalizing invites, keeping relationships warm)
+- Week 8: Messaging and cold outreach
+- Week 9 (This Session): Recommendations - how to ask for and write them
+
+---
+
+## Why Recommendations Matter
+
+Now that your profile is taking shape and your network is warming up, let's layer on credibility. Recommendations are proof - personal references that live on your profile.
+
+### Social Proof on LinkedIn
+
+Recommendations validate what you've said about yourself in your summary and experience sections. They demonstrate:
+- **Credibility** - Someone else vouches for your skills, character, and impact
+- **Trust** - Recruiters see not only what you've done but how others experienced working with you
+
+Think of recommendations as mini references that live publicly on your profile.
+
+---
+
+## How Recruiters and Hiring Managers Use Them
+
+- **Hiring managers** often scan recommendations before or after an interview to confirm impressions
+- **Recruiters** may use them as tie-breakers between equally strong candidates
+- They add weight to keywords on your profile (e.g., "She led the React project brilliantly" reinforces technical experience)
+
+### Especially Valuable For:
+- **Career changers** - Recommendations highlight transferable skills and professionalism
+- **Students with limited formal experience** - Shows real-world collaboration abilities
+
+---
+
+## Types of Recommendations
+
+Think broadly when considering who to ask:
+
+**Peer Recommendations**
+Classmates, teammates, colleagues who can speak to collaboration
+
+**Manager/Supervisor Recommendations**
+People who can show accountability, leadership, or quality of work
+
+**Mentor/Coach Recommendations**
+People who can highlight growth, learning, character
+
+**Client Recommendations** (if applicable)
+Valuable for freelancers or project-based contributors - demonstrates reliability and outcomes. Always ask permission from your organization first.
+
+### Exercise
+Think of one person from each category who could realistically vouch for you. Write down 3-4 names.
+
+---
+
+## How to Ask for a Recommendation
+
+### Who to Ask
+- Former colleagues, managers, clients, classmates
+- Mentors who guided you
+- Project partners you collaborated with
+
+### When to Ask (Timing Matters)
+- Right after completing a project or assignment
+- After receiving positive feedback
+- When wrapping up an internship, boot camp, or position
+
+**Why timing matters:** People's memory is fresh and they're more inclined to write something meaningful.
+
+### How to Ask
+
+**Option 1: LinkedIn's Built-In Tool**
+You can directly request a recommendation, but the default message is impersonal.
+
+**Option 2: Warm Approach (Recommended)**
+Reach out first with a personal note before sending the LinkedIn request.
+
+**Option 3: Hybrid**
+Send a warm DM or email first, then follow up with the LinkedIn tool for ease.
+
+---
+
+## Framing Your Ask
+
+Keep it:
+- Clear
+- Appreciative
+- Non-demanding
+
+Make it easy for them to say yes by suggesting what they might focus on.
+
+### Template
+
+"Hi [Name], I valued working with you on [project/context]. I'm working on strengthening my LinkedIn presence and would love if you'd feel comfortable writing a short recommendation. It would be especially helpful if you could highlight [specific skill, quality, or project impact]. Thank you so much for considering."
+
+### Things to Avoid
+- Applying pressure: "I need this for my job search"
+- Being vague: "Can you just write me one?"
+- Mass-sending the same generic request (no copy-paste)
+
+---
+
+## Sample Ask Messages
+
+**To a Project Collaborator:**
+"Hey Rodrigo, I really enjoyed getting to work with you on the Consemble project. I am working on growing my LinkedIn profile and would really appreciate a recommendation from you talking about my problem-solving or team support contributions. Thank you so much for taking the time to do this."
+
+**To a Mentor/Lead:**
+"Hi Katrina, I really enjoyed working with you during our capstone project. I'm building my LinkedIn presence and would be grateful if you'd feel comfortable writing me a short recommendation. It would mean a lot if you could mention how we worked together on the backend API and how I helped with debugging. Thank you for your consideration."
+
+**Simple Version:**
+"Working and learning from you at TechJoy has been very enjoyable. Right now, I'm working on improving my LinkedIn profile and would really appreciate a recommendation from you about my learning from you. Thank you for lending a hand."
+
+---
+
+## How to Write a Recommendation
+
+It's not just about asking - it's about reciprocating.
+
+### Structure (Four-Part Framework)
+
+1. **Context** - How you know the person
+   - "I worked alongside Katrina in the Joy of Coding program where we collaborated on building a Python-based inventory system."
+
+2. **Skills and Qualities Demonstrated**
+   - "Hope consistently showed strong problem-solving skills and an eagerness to support teammates by explaining complex logic clearly."
+
+3. **Impact They Made**
+   - "Leo's contributions improved our app's efficiency and helped the team stay motivated during crunch times."
+
+4. **Closing Statement/Endorsement**
+   - "I would highly recommend Key for any software development role. She's reliable, collaborative, and technically sharp."
+
+### Tone Guidelines
+
+**Authentic:** Write in your natural voice. Avoid stiff corporate jargon.
+
+**Specific:** Mention a project, task, or skill. "Optimized our database" beats "good with tech."
+
+**Professional:** Keep it respectful. No jokes, casual nicknames, or inside jokes.
+
+---
+
+## Weak vs Strong Recommendations
+
+### Weak
+"She was nice to work with. A hard worker."
+- Vague, no proof of skills
+
+### Strong
+"I collaborated with Hope on a full-stack project where she led the React development. Her ability to debug complex UI issues saved us time and kept our launch on schedule. She communicates clearly, contributes ideas, and is the type of teammate every team wants."
+- Specific, contextual, persuasive
+
+---
+
+## Length Guidelines
+
+Keep it concise: **3-5 sentences** is ideal.
+
+Some people write lengthy recommendations (which is nice), but shorter and specific is more effective.
+
+---
+
+## Pro Tips
+
+### Reciprocity
+When you ask for a recommendation, offer to write one in return: "I'll recommend you if you recommend me."
+
+### Review Others' Recommendations
+When networking, look at people's recommendations. See what others have written. Get ideas for your own.
+
+### Using Recommendations Strategically
+You can use your recommendations with AI to curate your resume for specific jobs - let others' words showcase your skills.
+
+### Two-Resume Strategy
+- ATS-compliant resume for applications
+- Detailed resume with recommendation excerpts for face-to-face interviews
+
+---
+
+## Recommendations Go Both Ways
+
+When evaluating job offers, look at recommendations of:
+- People you'll be working with
+- The hiring manager
+- The company's employees
+
+---
+
+## Homework
+
+1. Send at least one real recommendation request today
+2. (Optional) Write one recommendation for someone
+3. Share what you've written on Discord for feedback
+
+---
+
+## Key Takeaways
+
+1. Recommendations are proof of how you are as a professional
+2. The more thoughtful and specific, the more trust you build
+3. Ask when memory is fresh (after projects, feedback, milestones)
+4. Use the four-part framework: Context → Skills → Impact → Endorsement
+5. Keep it concise (3-5 sentences)
+6. Reciprocate - offer to write for others
+7. Don't forget to ask mentors and coaches for recommendations too

@@ -1,0 +1,131 @@
+Resume Series: The Recruiter's Perspective (Week 1)
+https://youtu.be/sGOiktiv6Oo
+
+---
+
+## Course Overview
+
+Over 12 weeks of LinkedIn strategy, we built visibility. Now we're turning that visibility into proof on paper.
+
+**LinkedIn = Your public brand (storefront)**
+**Resume = Your sales sheet (proof document)**
+
+---
+
+## The 6-Second Scan
+
+When a recruiter opens your resume, they spend **6-10 seconds** on the first scan.
+
+### What Recruiters Look For Immediately
+1. **Top third of your resume** - Name, headline, summary
+2. **Job titles and company names** - Role progression
+3. **Visible metrics or measurable outcomes** - Proof of impact
+4. **Keywords that match the role** - Technical skills, tools
+
+### What Makes Recruiters Stop Scrolling
+- Clear target role or headline at the top
+- Bullets that show outcomes, not tasks
+- Consistency between resume and LinkedIn profile
+
+---
+
+## Describing vs Marketing Your Value
+
+**Weak (describing work):**
+"Helped with customer emails"
+
+**Strong (marketing value):**
+"Resolved 50+ support tickets per week, reducing average response time from 24 hours to 6"
+
+This is the difference between describing your work and marketing your value.
+
+---
+
+## The Bullet Formula
+
+Every bullet should follow this structure:
+
+**Action Verb + Task + Result**
+
+### Examples
+
+**Before:** Worked on website updates
+**After:** Improved site load time by 40% through optimized code deployment
+
+**Before:** Responsible for front-end updates
+**After:** Improved frontend layout by refactoring components for cleaner, more reusable code
+
+---
+
+## When You Don't Have Metrics
+
+For boot camp students and early-career developers working on projects without production data:
+
+**The resume will NOT look unbelievable without metrics** - as long as you focus on:
+- Evidence of process
+- Scope of work
+- As much outcome as you know
+
+Recruiters understand that early-career coders and pre-production contributors often don't have production data.
+
+### Impact Logic (Credible Bullets Without Numbers)
+
+**Show Scope Instead of Data:**
+- "Developed authentication flow for full-stack MERN app with JWT and React Context"
+- "Built six REST API endpoints to handle CRUD operations for product data"
+
+**Show Quality or Improvement:**
+- "Improved app reliability by refactoring frontend components for reusable logic"
+- "Enhanced code readability and reduced redundancy through modularization"
+
+**Use Frequency or Scale:**
+- "Debugged multiple front-end issues weekly in collaboration with QA team"
+- "Implemented feature updates across three sprint cycles following agile methodology"
+
+**Emphasize Collaboration and Delivery:**
+- "Collaborated with design team to translate wireframes into responsive React components"
+- "Participated in code reviews and contributed to team documentation standards"
+
+---
+
+## Boot Camp Project Bullet Examples
+
+**Learning/Boot Camp Projects:**
+- "Completed 12-week coding boot camp focused on full-stack JavaScript development"
+- "Practiced version control, deployment, and testing in real-time collaborative projects"
+- "Presented final capstone project to technical mentors and peers, explaining architecture and decisions"
+
+**Soft Skills:**
+- "Balanced multiple project deadlines while maintaining code quality and documentation standards"
+
+---
+
+## Resume Top Third Checklist
+
+Your top third must include:
+- Name, city, email, phone
+- LinkedIn URL
+- GitHub (if applicable)
+- Portfolio (if relevant and applicable)
+- Target role line (headline)
+- 3-4 line summary that mirrors LinkedIn about section
+
+---
+
+## Homework
+
+1. Take one weak bullet and rewrite it using Action + Task + Result
+2. Refine the top third of your resume
+3. Include a clear target role line
+4. Make sure LinkedIn headline and summary match similar target language (not identical, but aligned)
+
+---
+
+## Key Takeaways
+
+1. Recruiters spend 6-10 seconds on the first scan
+2. Your resume is a marketing tool, not a job description
+3. Use the formula: Action Verb + Task + Result
+4. Recruiters read outcome as proof of ownership, not proof of revenue
+5. You demonstrate credibility through clarity of contribution
+6. Visibility attracts attention, but proof earns interviews

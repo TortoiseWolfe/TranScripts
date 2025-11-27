@@ -1,0 +1,137 @@
+Resume Series: Tasks to Results (Week 1 Session B)
+https://youtu.be/odPIvVCLsYs
+
+---
+
+## Mindset Shift
+
+Your resume is not a list of jobs - it's a marketing document.
+
+---
+
+## Writing Credible Bullets Without Metrics
+
+Tech recruiters confirm: Resumes without hard metrics will NOT prevent you from getting interviews if you focus on:
+- Evidence of process
+- Scope
+- Outcome (as much as you know)
+
+### What Recruiters Want to See: Impact Logic
+
+**1. Show Scope Instead of Data**
+- "Developed authentication flow for full-stack MERN app with JWT and React Context"
+- "Built six REST API endpoints to handle CRUD operations for product data"
+
+*Scope shows technical depth.*
+
+**2. Show Quality or Improvement Language**
+- "Improved app reliability by refactoring frontend components for reusable logic"
+- "Enhanced code readability and reduced redundancy through modularization"
+
+*Recruiters recognize these as measurable improvements even without percentages.*
+
+**3. Use Frequency or Scale When Exact Numbers Aren't Tracked**
+- "Debugged multiple front-end issues weekly in collaboration with QA team"
+- "Implemented feature updates across three sprint cycles following agile methodology"
+
+**4. Emphasize Collaboration and Delivery**
+- "Collaborated with design team to translate wireframes into responsive React components"
+- "Contributed to sprint planning and participated in daily standups using agile methodology"
+
+**5. Show Results in Terms of Learning or Contribution**
+- "Quickly ramped up on new codebase and began contributing within first sprint"
+- "Supported senior developer in debugging production issues, reducing resolution time"
+
+**6. Use Project or Course Outcomes**
+Boot camp and personal project outcomes still count:
+- "Completed 12-week coding boot camp focused on full-stack JavaScript development"
+- "Presented final capstone project to technical mentors, explaining architecture decisions"
+
+---
+
+## Bottom Line
+
+**Recruiters read outcome as proof of ownership, not proof of revenue.**
+
+You demonstrate credibility through clarity of contribution.
+
+---
+
+## Early-Stage Coder Resume Bullets
+
+### Learning/Boot Camp Projects
+- "Completed 12-week coding boot camp focused on full-stack JavaScript development"
+- "Practiced version control, deployment, and testing in real-time collaborative projects"
+- "Presented final capstone project to technical mentors and peers, explaining architecture and decisions"
+
+### Optional Soft Skill Bullets
+- "Balanced multiple project deadlines while maintaining code quality and documentation standards"
+
+---
+
+## Adapting Bullets to Your Resume
+
+1. Swap in your own project names (task tracker app, weather dashboard, ecommerce API)
+2. Use your tech stack language (React, Vue, Flask, etc.)
+3. Replace broad verbs like "built" with context verbs: implemented, integrated, refactored, deployed
+4. Keep every bullet under two lines - concise, scannable, results-oriented
+
+---
+
+## The Bullet Formula
+
+**Action Verb + Task + Result**
+
+### Live Rewrite Example
+
+**Before:** "Led development of admin data management feature to improve relevance and timeliness of displayed data"
+
+**After:** "Developed React admin dashboard integrated with AWS S3 to provide full data visibility and manipulation"
+
+---
+
+## Resume Structure Reminder
+
+**Top Third (Most Critical Area):**
+- Name, city, email, phone, LinkedIn URL, GitHub, portfolio (if relevant)
+- Target role line (headline): "Full Stack Developer | React | Node | API Integration"
+- 3-4 line summary that mirrors LinkedIn about section
+
+**Skills Section:**
+Should be near the top, underneath summary. ATS systems and AI within applicant tracking systems parse resumes for keywords.
+
+---
+
+## Brand Word Integration
+
+Think of 2-3 words that describe you. Make sure these words show up in your bullets and summary.
+
+### Examples
+
+**If your word is "organized":**
+"Streamlined project workflow to reduce task overlap"
+
+**If your word is "technical":**
+"Developed REST API integrations improving data flow accuracy"
+
+**If your word is "collaborative":**
+"Partnered with three cross-functional teams to deliver feature releases"
+
+---
+
+## Homework
+
+1. Finalize your top third and first five bullets
+2. Skills section should be at the top underneath your summary
+3. Use the Action + Task + Result formula for every bullet
+
+---
+
+## Key Takeaways
+
+1. Your resume should sound like you and reflect your professional brand
+2. Focus on scope, quality, frequency, collaboration - not just metrics
+3. Boot camp and project work counts as legitimate experience
+4. Clarity of contribution > hard metrics
+5. Keep bullets under two lines
+6. Match resume language to LinkedIn (similar, not identical)

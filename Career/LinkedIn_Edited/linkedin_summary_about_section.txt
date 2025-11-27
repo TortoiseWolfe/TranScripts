@@ -1,0 +1,167 @@
+Career Strategy w/ Chelsea - LinkedIn Summary / About Section
+https://youtu.be/EbDidul7XBc
+
+---
+
+## Course Progress Recap
+
+**Week 1:** Why LinkedIn matters - LinkedIn's role in job search, how recruiters use it as first step, what makes a profile great from content and strategy perspective.
+
+**Week 2:** Setting up the basics - Photos, contact info, banners, how small visual cues build trust.
+
+**Week 3 (This Session):** The About/Summary section.
+
+---
+
+## What is the Summary Section?
+
+The summary appears just under your headline, name, contact info, GitHub, and portfolio links - right underneath your banner.
+
+**Key characteristics:**
+- One of the few narrative parts of LinkedIn
+- Shows up in search results
+- Gives a voice to your resume
+- It's the first step recruiters take when researching who you are
+
+**LinkedIn vs Resume:**
+- LinkedIn = narrative part of who you are (human approach)
+- Resume = more formal document, legacy of your work history
+
+---
+
+## Core Elements of a Strong Summary
+
+1. **Clear and confident opening line**
+2. **A sense of who you are and what you're about professionally**
+3. **What you're working on now and looking for**
+4. **A sentence or two reflecting your personality, values, motivation**
+5. **Call to action (optional)** - open to networking, hiring, or collaboration
+
+---
+
+## Words to Avoid in Your Summary
+
+Based on conversations with recruiters, chief talent officers, HR directors, and talent acquisition leaders across advertising, tech startups, and technology companies:
+
+**Avoid:**
+- "Seasoned"
+- "Junior"
+- "Aspiring"
+- Years of experience (e.g., "25+ years")
+
+**Why:** Recruiters can determine your level from your resume and LinkedIn profile. Keep things ambiguous in that regard. The details about years of experience are for conversations in initial phone screens.
+
+---
+
+## Best Practices for LinkedIn Summary
+
+### 1. Open with a Strong, Concise Sentence
+
+Who you are + what you do + what you're working toward.
+
+**Example:**
+"I am a front-end developer with a background in visual design and a passion for building intuitive user experiences."
+
+### 2. Use Plain, Confident Language
+
+- Avoid buzzwords and filler
+- Write like a human who understands their work, not a press release
+- Words like "results-driven" and "team-oriented" are overused - find unique ways to express these qualities
+
+### 3. Highlight What You Build or Solve
+
+- Mention technologies you use
+- Problems you love solving
+- Recent projects
+- Focus on outcomes, not just tasks
+- Include metrics or percentages when possible
+
+### 4. Add a Personal/Human Touch
+
+A line about:
+- How you think
+- What drives you
+- Why tech excites you
+
+This makes your summary memorable and real.
+
+---
+
+## Summary Structure Framework
+
+**Line 1:** Who you are and what you're currently doing
+- "I am [job title/role] with a background in [relevant area] and a focus on [skill or goal]."
+
+**Lines 2-4:** Your work, skills, values, current learning journey
+
+**Line 5 (optional):** What you're open to or excited about
+
+---
+
+## Example Summary: Career Changer (Architecture to Tech)
+
+"I'm a front-end developer with a background in architecture and a growing passion for building responsive, accessible web experiences. I specialize in HTML, CSS, and JavaScript and recently completed a React-focused boot camp where I built a task manager app with real-time form validation.
+
+Before transitioning into tech, I managed cross-disciplinary design projects and collaborated with engineers, clients, and city agencies, which taught me how to communicate clearly and think in systems.
+
+I am currently diving deeper into TypeScript, accessibility best practices, and test-driven development. I love clean design, collaborative code, and solving the kind of problems that make life a little easier for users."
+
+---
+
+## Example Summary: Mid-Level Developer
+
+"I am a full stack developer with experience building internal tools and customer-facing platforms in startup environments. My background is in product design, so I bring a user-centered approach to everything I code.
+
+Whether I'm building APIs, shaping back-end architecture, or refactoring a messy UI, I've worked in small teams where adaptability and ownership matter. I'm especially comfortable collaborating with designers and project managers to turn ambiguous ideas into shipped features.
+
+Outside of work, I mentor early-career developers and occasionally write about web performance and component design."
+
+---
+
+## About the "Junior" Title
+
+**Context:** TechJoy Academy graduates as "Junior Developer" - that's the official title from the program.
+
+**Guidance:**
+- In the **summary section** (LinkedIn and resume): No need to say "I am a junior developer"
+- In the **experience section**: If your official title was "Junior Software Developer," list it accurately
+- Recruiters can see your level from your experience section
+- Titles vary tremendously from organization to organization
+
+**Why this matters:** You might interview and speak like a senior even if your title is junior. Companies may place you in a role without "junior" in the title. The summary is for selling yourself and showing where you want to go.
+
+---
+
+## Handling Multiple Career Interests
+
+**Question:** What if you have conflicting roles you want to pursue (e.g., game producer vs training manager)?
+
+**Answer:** Your LinkedIn summary can cover both if the skills overlap. Example:
+- "I am a full stack developer with a passion for gaming and operations"
+- Cast a wide net - you're supposed to in the summary
+- The goal is to have options and get noticed by as many people as possible
+
+**Key insight:** Your LinkedIn profile shows you as a human being. Casting a wide net is acceptable in the summary as long as there's some level of specificity.
+
+---
+
+## Homework
+
+Between now and next session:
+1. Jot down 2-3 sentences for your summary
+2. Bring your draft or bullet points to the workshop
+3. **Do not change your current LinkedIn summary yet** - we want to see the before and after
+4. Come up with 2-3 different versions to discuss with peers
+
+---
+
+## Q&A Highlights
+
+**Q: If we remove "junior" from everywhere, we're basically saying "developer" right off the bat?**
+A: We're talking specifically about the summary section. List your actual title in the experience section. The summary is about selling yourself and showing progression.
+
+**Q: Should I mention how long I've been doing something?**
+A: Avoid putting years. That's for the phone screen conversation with recruiters.
+
+**Q: Can I use AI to help write my summary?**
+A: Yes, but be very descriptive in your prompts. List words you don't want (seasoned, detail-oriented), specify the tone you want (professional but warm), and include relevant background to incorporate.

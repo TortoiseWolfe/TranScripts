@@ -1,0 +1,219 @@
+Career Strategy w/ Chelsea - LinkedIn Profile: Photo, Headline & Banner Setup
+https://youtu.be/iRv6uNV5YcU
+
+---
+
+## Recap: Why LinkedIn Matters
+
+LinkedIn is a recruiter's first step to reviewing a candidate. Whether referred by an internal employee, applied online directly, or handed a paper resume at a career fair - recruiters always go to LinkedIn first. 95% of recruiters and hiring managers use it daily to source talent.
+
+Even if you apply through a job board, they'll often check your LinkedIn before reaching out. It serves as your public resume and reputation all in one.
+
+**Your photo and headline = your first impression.**
+
+---
+
+## Profile Photo
+
+### Why a Good Photo Matters
+
+First impression and profile visibility are crucial.
+
+**Guidelines (Do's):**
+- Clear headshot
+- Well lit
+- Plain background
+- Dressed appropriately for tech (casual but neat)
+- Smile or neutral expression
+- Friendly, approachable expression
+
+**Don'ts:**
+- Selfies
+- Filters
+- Group shots
+- Blurry/low resolution photos
+- Photos with others (including pets)
+
+### Free Tools and Options
+
+- **Canva** - cropping and editing
+- **Phone portrait mode** - for clean background blur
+- **YouTube tutorials** - photographers who teach how to angle, sit, and use lighting
+- **AI platforms** - upload 6-8 clean photos and they create a professional composite
+- **Job fairs/tech events** - often have photo booths for professional headshots
+
+---
+
+## Banner Image
+
+### Why It Matters
+
+Visual branding and profile differentiation. It's the largest graphic on your profile - don't leave it blank.
+
+### Banner Ideas
+
+- **Branded tech banners** - GitHub, Code Newbie
+- **Program branding** - ask permission to use TechJoy branding
+- **Personal project screenshots**
+- **Code snippets**
+- **City skyline**
+- **IDE backgrounds**
+- **Abstract tech imagery**
+- **Personal branding or quote**
+
+**Canva templates:** Search "LinkedIn banner" for many options.
+
+---
+
+## Contact Information
+
+### What to Include
+
+- **Professional email** - use Gmail or current platform, avoid old university emails or outdated platforms (AOL)
+- **GitHub portfolio**
+- **Personal site/portfolio**
+- **Customize your LinkedIn URL**
+
+### What NOT to Include
+
+- Personal phone number
+- Mailing address
+
+### Pro Tip: Visibility Settings
+
+Check your visibility settings - recruiters should be able to reach you. Go into settings and make sure you're visible to recruiters and marked as "open to work" if you're job searching.
+
+---
+
+## The Headline
+
+### Why Headlines Matter
+
+- **Searchable** - recruiters find you through headline keywords
+- **Highly visible** - often the only thing people see before clicking
+- **Defines your narrative**
+
+It's your elevator pitch in 50-100 characters.
+
+### Headline Formula
+
+**Role/Identity + Skills & Tools + What You're Excited About (Soft Skills)**
+
+### Example
+
+"Junior Front-End Developer | React, JavaScript, CSS | Building clean UIs and scalable applications"
+
+### Do's
+
+- Be specific (not just "aspiring developer")
+- Mention tech stack
+- Include value proposition
+- Mix hard and soft skills
+
+### Don'ts
+
+- "Aspiring developer looking for opportunities" (too vague)
+- "Recent boot camp grad" (not ideal for headline)
+- Filler phrases like "looking for opportunities" (assumed)
+
+---
+
+## Headline Examples from Workshop
+
+**Full Stack Developer Examples:**
+- "Full Stack Developer | React, Node.js, TypeScript | Building scalable user-centric web apps"
+- "Full Stack Developer | React, Node.js, MongoDB | Eager to build, learn, and ship real products"
+- "Full Stack Developer | Building user-focused scalable apps | Fast learner with a bias for action"
+
+**With Soft Skills:**
+- "Full Stack Developer | React, Node.js | Turning ideas into scalable, user-first web apps"
+- "React, Node.js Developer | Full Stack Engineer | Building fast, scalable, reliable web applications"
+
+**DevOps Focus:**
+- "DevOps | GitHub, Jenkins, Docker | [Add soft skills: collaborative, problem solver, mentor]"
+
+**QA/Testing Background:**
+- "QA Automation Engineer | Manual Tester | Next.js, React, TypeScript, Jenkins, Cypress | Peer Mentor"
+
+**Career Transition:**
+- "Full Stack Developer | Former Software Tester | Detail-oriented, adaptive, and driven to build"
+- "Aspiring Full Stack Developer | Precision-focused with QA mindset | Collaborative, quick to pivot, always learning"
+
+**Leadership/Soft Skills Focus:**
+- "Lead Training Manager | Python, Discord, GitHub | Patiently led by example into growth"
+- "Game Producer | React | Patiently organize volunteer teams to produce apps swiftly"
+
+---
+
+## People-First Language for Soft Skills
+
+How to say "I'm a nice person" professionally:
+
+- **Empathetic talent partner**
+- **Building inclusive teams with heart and strategy**
+- **Collaborative**
+- **Kindness-driven**
+- **Impact-minded**
+- **Leading with integrity, curiosity, and care**
+
+---
+
+## Skills: How Many to List
+
+- Minimum 3-5 skills per job
+- Maximum around 20
+- Smaller companies = more varied skills (you wear many hats)
+- Skills are searchable keywords
+
+---
+
+## Portfolio Work: Important Notes
+
+### Permission to Share Work
+
+Always ask permission before posting work samples:
+- Some clients have strict NDAs
+- Some projects can't be highlighted externally
+
+### Workarounds for Restricted Work
+
+- Password-protect links
+- Take screenshots and compile into PDF
+- Change passwords after interviews to limit access
+- Only post live, working links (never broken links)
+
+---
+
+## Professional Presentation Tips
+
+### For Career Starters/Changers
+
+- Put professional photo and headline first
+- Keep it clean and simple
+- Let your work speak for itself
+
+### After 3-5 Years in Industry
+
+- More flexibility based on company culture
+- Can personalize more
+
+### Regulatory Industries (Biotech, Fintech, Government)
+
+- Keep it clean - no jazz
+- Simple and professional
+- Same advice for resumes: simple black and white
+
+**Rule:** Keep it simple. Lean on the side of plain and professional.
+
+---
+
+## Q&A Highlights
+
+**Q: Is there a limit to skills/tools in the headline?**
+A: No strict limit, but 3-5 is ideal for the headline. For the skills section, aim for 5-20 depending on role complexity.
+
+**Q: Can I list project work from coding jams?**
+A: Yes, but only if links are live and working. Never post broken links.
+
+**Q: Should I show previous non-tech jobs?**
+A: Yes, especially to show transferable skills. Your journey matters.

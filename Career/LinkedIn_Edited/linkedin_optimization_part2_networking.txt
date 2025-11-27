@@ -1,0 +1,281 @@
+Career Strategy w/ Chelsea - LinkedIn Optimization Part 2 (Networking & Company Research)
+https://youtu.be/PgKlyDrFEBA
+
+---
+
+## Why LinkedIn Matters (Review)
+
+This session is designed to help you build a strong, authentic LinkedIn presence that supports your job search goals as junior, mid, and senior developers.
+
+### LinkedIn is a Recruiter's First Stop
+
+Once recruiters get a brief from the hiring lead, have approval from finance, and know exactly what they're looking for, they look internally first, then commence external search. 95% of recruiters and hiring managers use LinkedIn daily to source talent.
+
+Even if you apply through a job board, they'll often check your LinkedIn before reaching out. They want to see who you are and how you represent yourself. It serves as your public resume and reputation all in one.
+
+### LinkedIn Helps You Get Found
+
+LinkedIn is the primary sourcing tool for recruiters, whether filling a job now or building a pipeline for future roles. They search by keywords, skills, job titles, locations, remote/hybrid/on-site preferences.
+
+**If your profile isn't built out with the right terms, you're invisible to recruiters.**
+
+### Boolean Searches
+
+Recruiters use boolean searches to find candidates. Example: "junior front-end developer" AND "JavaScript" AND "New York"
+
+A strong profile with the right keywords, skills, and summary increases your chances of showing up in search results.
+
+Having a clear, keyword-rich headline and skills section ensures you are part of the conversation even when you're not applying - because recruiters proactively source talent on LinkedIn.
+
+---
+
+## Personal Branding
+
+This is where your personal branding starts. Unlike resumes, LinkedIn allows you to tell your story - why you got into tech, what you care about, and what you're building. It's the first impression that often sticks.
+
+**Personal branding is how you intentionally present yourself** - your values, your story, your skills, and your voice to others in a professional context. It's not about being flashy or overly polished. It's about being clear, consistent, and authentic in how you show up.
+
+### Why LinkedIn is the Perfect Place to Start
+
+Unlike a resume (limited to bullet points and rigid formatting), LinkedIn gives you space to explain the "why" behind the "what." It connects the dots between your background and career goals - especially for those pivoting from another field.
+
+Previous careers and educational experiences are absolutely valid and should be mentioned on LinkedIn. Those skills you acquired in other opportunities matter.
+
+### Your About Section
+
+Your about section isn't a summary of your resume. It's a snapshot of who you are, why you made the leap into tech, what drives you, and where you're headed.
+
+**Example:**
+"After 5 years in healthcare administration, I discovered coding through a free online course and was immediately hooked. I'm now building responsive front-end projects with React and constantly looking for ways to blend design and functionality."
+
+Telling your story gives you practice in interviewing.
+
+### Why Recruiters Care
+
+Hiring managers and recruiters want to feel something when they visit your profile. They're looking for:
+- What motivates you
+- Clarity around your goals
+- Whether you'd be right for the team (casting perspective)
+
+A thoughtful summary helps recruiters connect with you on a human level and sets the tone for:
+- Portfolio site
+- Cover letters
+- LinkedIn posts
+- Interview introductions
+
+Your personal brand should feel cohesive across all platforms.
+
+---
+
+## Activity: The 30-Second Test
+
+If someone only saw your LinkedIn for 30 seconds, what three things would you want them to walk away knowing about you?
+
+These three points can become the framework for your headline and summary.
+
+---
+
+## Skills: Hard and Soft
+
+**Hard skills:** Programming languages, database knowledge, technology tools (Slack, etc.)
+
+**Soft skills:** Being collaborative, client-facing abilities, staying cool/calm/collected under pressure.
+
+All positions require both hard and soft skills. Soft skills can be very important - you can be an amazing coder, but if you can't present your work to clients and internal business partners, that's a problem.
+
+When editing each job experience in LinkedIn, you can add skills from many options. Add a good amount because those are the keywords that:
+- Applicant tracking systems pick up
+- Recruiters use in boolean searches
+
+---
+
+## Visibility Equals Opportunity
+
+If you're not visible to recruiters, they can't consider you for roles. You show up in search results when recruiters look for skills - populate that skills section.
+
+**The more complete and optimized your profile is, the more you'll appear.**
+
+### Recruiters Use LinkedIn Like Google
+
+LinkedIn is their database and first touchpoint. They don't just browse job boards - they search LinkedIn using boolean strings and keywords.
+
+Example search: "junior front-end developer" AND "JavaScript" AND "New York" AND "remote"
+
+### Profile Completeness = Search Results
+
+If your profile contains specific keywords and is complete, you'll appear in search results. If not, you won't.
+
+**Most important sections for search visibility:**
+1. Headline
+2. About/Summary
+3. Experience
+4. Skills
+
+### All-Star Profile Status
+
+LinkedIn rewards profile completeness. All-Star profiles rank higher in recruiter searches, are seen as more credible, and signal you're active and ready for opportunities.
+
+**What makes a profile All-Star:**
+- Professional photo
+- Robust headline
+- Clear and concise summary
+- At least 2 work experiences listed
+- Education
+- Skills populated
+- Recommendations
+
+### Activity Boosts Your Reach
+
+Even with a perfect All-Star profile, you need to be active:
+- Comment on posts by others in tech
+- React to alumni or recruiter updates
+- Share progress on boot camp projects
+- Post once a month with a career or learning update
+
+This increases visibility in your network feed. Recruiters are watching.
+
+**The goal:** "I didn't even apply for this role, but a recruiter found me on LinkedIn."
+
+### Who's Viewing Your Profile?
+
+You can see who's viewing your profile even without paying for Premium.
+
+Your presence signals:
+- You're serious about your transition into tech
+- You're actively learning and growing
+- You're someone worth watching
+
+Even if you're not applying yet, visibility builds trust and recognition before you need it.
+
+---
+
+## The Power of Networking
+
+70-85% of roles are filled through networking.
+
+LinkedIn gives you a built-in professional community and job search tool. Engaging equals staying top of mind for opportunities.
+
+### Pipeline Building
+
+Recruiters pipeline talent constantly. They might reach out saying: "I saw your profile. You look interesting. I don't have a position right now, but I want to connect. Maybe we have an informational interview."
+
+Sometimes after these calls, recruiters will cold email hiring managers: "I just met this amazing developer. Take a look at their work." Hiring leads sometimes say: "She's so good. I'm going to work with finance to see if we can create a role for her."
+
+**Many roles are never posted publicly.** They're shared through internal referrals or recommendations.
+
+### Referral Power
+
+A referral gives you 4x higher chances of getting noticed.
+
+You don't need a massive network. You need warm connections. LinkedIn lets you:
+- Reconnect with people from your past
+- Engage with fellow developers, mentors, instructors
+- Build reputation over time
+
+### Networking is a Habit, Not One Big Ask
+
+Networking isn't one grand gesture. It's a lot of small touch points over time.
+
+### Employee Referral Bonuses
+
+Most companies have employee referral bonuses ($200-$10,000). When your connections get hired somewhere and hear about open positions, they think of people they enjoyed working with.
+
+The next job you get - and forever more in this industry - so much of it is through relationships, networking, and who you've worked with in the past.
+
+---
+
+## Homework: Keyword Alignment Exercise
+
+1. Choose 2-3 roles you want (full stack developer, junior front-end developer, QA, BA)
+2. Search for those roles on LinkedIn
+3. Read 3 job descriptions
+4. Highlight repeated keywords
+5. Check your profile - are those keywords there?
+
+---
+
+## Profile Structure Tips
+
+### Experience Section
+
+Don't list duties/responsibilities in your experience section - that's antiquated for 2025.
+
+**Replace duties with skills.** Skills are what pull you into recruiter searches. LinkedIn searches pick from the skills you select, not everything you've written.
+
+- Duties go on your resume
+- Discuss duties in interviews
+- Use cover letters to stand out (they're back due to saturated job market)
+
+### Education Section
+
+Don't put graduation years on LinkedIn or resume.
+
+### Recommendations
+
+Get recommendations from everywhere you've worked:
+- Hiring managers
+- People you've hired
+- Colleagues
+- People you've mentored
+
+---
+
+## Company Research Strategy
+
+### Finding Your Target Companies
+
+What are your top 5 dream companies?
+
+### LinkedIn Company Research Process
+
+1. Search for the company on LinkedIn
+2. Follow them (updates come to your feed)
+3. Click on the company page
+4. Click on "People" or employee count
+5. Filter by role type
+
+### What to Look For
+
+- Look for recruiters, HR generalists, or talent acquisition people
+- Connect with senior people in your target role
+- "HR Generalist" often means they handle recruiting too
+- Look for "Actively Hiring" badge on company pages
+
+### Pro Tips
+
+- Go through profiles of people you admire
+- Scroll to their recommendations
+- Those recommenders might work at companies that excite you
+- Reach out and connect
+
+### Connecting Strategy
+
+- You can send connection requests without a note when just building your network
+- Once connected, you can find their email address for direct outreach
+- LinkedIn may warn you about connecting with too many unknown people - that's normal
+
+### Applying to Companies
+
+- Check company pages for job listings
+- Look at their careers page
+- Create a beautiful email introduction about yourself
+- Package it all up with your passion for the company
+
+---
+
+## Q&A Highlights
+
+**Q: How would you word a boolean search for someone who can lead or follow on projects?**
+A: Use multiple terms: "project lead" AND "team lead" AND "collaborative" - start big and narrow down.
+
+**Q: Does "profile" mean just the header or the whole page?**
+A: The entire LinkedIn page is your profile.
+
+**Q: Are soft skills good to include?**
+A: Absolutely. All roles require both hard and soft skills. Client-facing, collaboration, staying calm under pressure - these matter.
+
+**Q: Should I have a dedicated email for job searching?**
+A: Sure, just make sure it's professional. Unprofessional email addresses are a red flag.
+
+**Q: Should I remove duties from my experience section?**
+A: Yes, replace with skills. Skills are searchable; duties descriptions are not.

@@ -1,0 +1,227 @@
+Career Strategy w/ Chelsea - Skills, Projects & Education
+https://youtu.be/gqLmmKjzQek
+
+---
+
+## Session Goal
+
+Leave with clarity on:
+1. What skills to list on LinkedIn and resume
+2. How to present projects from TechJoy Academy
+3. How to leverage boot camp experience confidently
+
+**Key question to carry through:** If someone looked at your LinkedIn profile right now, what would they think your superpower is?
+
+You don't need 10 years of experience to have a strong LinkedIn. Clarity and confidence always win.
+
+---
+
+## Understanding the Skills Section
+
+### Hard Skills vs Soft Skills
+
+**Frame it like this:**
+- Hard skills get you the interview
+- Soft skills help you pass it and keep the job
+
+Both are essential. Tech is a team sport - you can't do a job in this industry alone. It's always collaborative.
+
+---
+
+## Hard Skills: What You Can Do
+
+Technical, teachable abilities learned through training or hands-on experience. Easy to measure, show up in job descriptions and LinkedIn skill lists.
+
+**Examples for developers:**
+- JavaScript, React, Node.js
+- Git, GitHub
+- REST APIs
+- Debugging tools (VS Code, Postman, Figma)
+- Test-driven development
+- SQL, NoSQL
+
+**Think of hard skills as tools in your toolbox.** They show what you can build.
+
+---
+
+## Soft Skills: How You Work With Others
+
+These are often the most critical skills. You can be a master coder, but if you're not a problem solver, lack empathy, or can't give and receive feedback - that prevents elevation to senior, manager, director, or C-suite.
+
+**Examples:**
+- Problem solving
+- Communication
+- Time management
+- Adaptability
+- Teamwork and collaboration
+- Empathy
+- Giving and receiving feedback
+- Mentorship
+
+**Soft skills are your reputation.** They're how you use your tools and how well you work with others while doing it.
+
+---
+
+## Recruiter Secrets: Skills Section
+
+- ATS and LinkedIn Recruiter heavily rely on the skills section
+- Skills in your profile should match those in job descriptions
+- Focus on relevant skills for today's job market, not just what you've learned
+- **Add 30-50 skills** - LinkedIn allows up to 50
+- Lean profiles (few skills) signal either limited experience or someone who hasn't maintained their profile
+
+### Mentorship as a Skill
+
+If you're a peer mentor, list "mentor" or "mentorship" as a skill. This is critical because:
+- You'll be tasked with mentoring juniors in future roles
+- Organizations assign buddies/mentors to new employees
+- It shows leadership potential
+
+---
+
+## Framing Projects Like a Pro
+
+The academy gives you real projects - critical for showing you've worked on real work with real teams, not just attended classes.
+
+### Project Framework Formula
+
+**What it is + What tools you used + What you built + Impact/Result**
+
+### Example
+
+"Built a full-stack budgeting app using React, Node.js, and MongoDB that allowed users to track expenses. Designed UI for intuitive UX, deployed with Netlify. Reduced friction for new users by 25% in testing."
+
+### Important Notes on Metrics
+
+- Only include metrics if you can talk about them and quantify them
+- If you can't quantify, just state what you did, tools used, and what you built
+- For projects without clear metrics, focus on: delivering a complete, usable product by deadline
+
+### Example Without Metrics
+
+"Collaborated on a team to build a task manager in four days. Delivered 100% complete and usable product by strict deadline following SLICK methodology (Simple, Lovable, Complete)."
+
+---
+
+## Highlighting Boot Camp / Education
+
+Boot camps and certification programs aren't just training - they're proof of commitment and skill development.
+
+**Boot camp is more than coursework.** It's full-on project-based learning.
+
+### What to Include
+
+1. Name the boot camp/academy
+2. List technologies learned
+3. Notable projects
+4. Additional certifications (if applicable)
+
+---
+
+## LinkedIn Format: Education Section
+
+```
+TechJoy Academy
+Full Stack Web Development Certificate Program
+[Start Date] - [End Date]
+
+Technologies Learned: React, Next.js, Node.js, TypeScript, PostgreSQL, GitHub, CI/CD
+
+Notable Projects:
+• TaskFlow Pro - Built full-stack task manager using React, Node.js, MongoDB. Integrated real-time updates with Socket.io
+• Low Code CRM Tool - Collaborated on client-facing CRM built with Glide Apps to support small business operations
+
+Certifications: Certificate in Full Stack Web Development
+```
+
+**Key point:** Make sure you can speak to notable projects in detail, flawlessly, with no hesitation. That's when detail matters - in the interview.
+
+---
+
+## Resume Format: Education Section
+
+```
+TechJoy Academy | Certificate in Full Stack Web Development | [Date]
+
+• Completed immersive 16-week program focused on modern web development practices and collaborative project work
+• Technologies: React, Next.js, TypeScript, Node.js, PostgreSQL, GitHub, CI/CD
+• Key Projects: TaskFlow Pro (full-stack task manager), Low Code CRM (Glide Apps)
+• Certifications: LinkedIn Learning certificates, Full Stack Web Development Certificate
+```
+
+**Difference from LinkedIn:**
+- More condensed
+- Bullet format
+- Same information, different structure
+
+---
+
+## LinkedIn vs Resume: Key Differences
+
+| LinkedIn | Resume |
+|----------|--------|
+| Human approach, who you are | More formal, professional |
+| First person narrative | Structured bullets |
+| Can elaborate more | Condensed format |
+| Shows personality | Straight to the point |
+
+Both should mirror each other closely, but LinkedIn allows for more personality.
+
+---
+
+## Experience Section: Skills Not Duties
+
+**Don't list duties/responsibilities** in your experience section - that's antiquated for 2025.
+
+**Replace duties with skills.** Skills are what pull you into recruiter searches. LinkedIn searches pick from skills you select, not everything you've written.
+
+- Duties go on your resume
+- Discuss duties in interviews
+- Use cover letters to stand out (they're back due to saturated job market)
+
+---
+
+## Should I List Non-Tech Jobs?
+
+**Yes, include previous non-tech jobs** - especially to show transferable skills.
+
+- Your journey matters
+- Shows you've worked, have life experience
+- No need to hide career history
+- Much more acceptable post-COVID to have varied career paths
+
+---
+
+## Homework
+
+1. Update skills and education sections on LinkedIn (and resume)
+2. Add at least one project with a strong description
+3. **Bonus:** Share one project on LinkedIn this week with a short caption, tag TechJoy
+
+---
+
+## The Networking Push
+
+Applying to jobs doesn't end when you click submit.
+
+**After applying:**
+1. Research the company on LinkedIn
+2. Look at what they've done, what they're famous for
+3. Follow people who work there
+4. Connect with relevant employees
+5. Message them:
+
+"I recently applied to [position]. I'm inspired by the work you do. One project that impressed me was [specific project]. I'm enthusiastic about joining your team and know this is how I could contribute."
+
+**This visibility is what lands jobs.** Sometimes recruiters receive messages and put interesting candidates in LinkedIn projects for future roles, or share profiles with hiring managers for positions not yet posted.
+
+---
+
+## Standing Out in a Saturated Market
+
+- It's a unique market (not just tough) - find creative ways to stand out
+- 70-85% of roles filled through networking
+- Referral bonuses exist at most companies ($200-$15,000)
+- Be "buttoned up and ready" - you never know when opportunities appear
+
+**Key insight:** Your LinkedIn and resume represent your digital reputation. Be meticulous now when it counts most.

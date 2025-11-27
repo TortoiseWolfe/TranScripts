@@ -1,0 +1,272 @@
+Career Strategy w/ Chelsea - LinkedIn Headline Workshop (Evening Session)
+https://youtu.be/cs0KJ-dW70U
+
+---
+
+## Recap: Why LinkedIn Matters
+
+LinkedIn is a recruiter's first stop. 95% of recruiters and hiring managers use it daily to source talent. Even if you've applied through a job board, they'll check your LinkedIn profile first.
+
+If referred from an internal hiring manager, external recruiter, or friend - they look at LinkedIn first. It serves as your public resume and reputation all in one.
+
+**Your photo and headline = their first impression.**
+
+---
+
+## Profile Photo Guidelines
+
+### Do's
+
+- Clear headshot
+- Professional look
+- Clear/blurred background
+- Tech-appropriate attire (casual but neat)
+- Good lighting
+- Friendly, approachable expression
+
+### Don'ts
+
+- Selfies or filters
+- Others in photo (including pets)
+- Low resolution photos
+
+### Photo Resources
+
+- **Canva** - cropping and editing
+- **Phone portrait mode**
+- **YouTube tutorials** - photographers teaching lighting and angles
+- **AI photo platforms** - upload 6-8 photos, get professional composite
+- **Tech events/job fairs** - often have headshot booths
+
+---
+
+## Banner Image
+
+### Purpose
+
+Visual branding and profile differentiation. It's the largest graphic on your profile.
+
+### Ideas
+
+- Branded tech banners (GitHub, Code Newbie)
+- TechJoy branding (ask permission)
+- Personal project screenshots
+- Code snippets
+- City skyline of where you live
+- Canva templates (search "LinkedIn banner")
+- IDE backgrounds
+- Abstract tech imagery
+- Personal branding or inspirational quote
+
+---
+
+## Headline Deep Dive
+
+### Why Headlines Are Important
+
+- **Searchable** - recruiters find you through keywords
+- **Highly visible** - often the only thing seen before clicking
+- **Defines your narrative** - your elevator pitch
+
+### Headline Formula
+
+**Role/Identity + Skills & Tools + What You're Excited About**
+
+The components can be in any order - doesn't have to follow exact structure.
+
+### Example Breakdown (Chelsea's Headlines)
+
+**Current:**
+"Recruitment Leader | Career Coach | Tech, Corporate & Creative Hiring | DEI Advocate | Connector of People and Purpose"
+
+**Alternative 1 (Team Building Focus):**
+"Tech Recruitment Leader | Career Coach | Building teams across engineering, product, and creative | Advocate for equality, equity, and access"
+
+**Alternative 2 (Strategy Focus):**
+"Recruitment Strategist | Career Coach | Talent Partner for high-growth tech and creative teams | Purpose-driven and people-first"
+
+**Alternative 3 (Breadth & Adaptability):**
+"Full Cycle Talent Leader | Tech, Corporate & Creative Hiring | Career Coach | DEI Champion | Connecting bold thinkers to big missions"
+
+---
+
+## Workshop: Creating Your Headlines
+
+### Activity
+
+Come up with 3 different headline options. Look at your current headline and create variations.
+
+### Using AI Effectively
+
+**Conversation approach:**
+1. Give context: "I'm trying to get this role. I can do this. It needs to appeal to this crowd."
+2. Ask follow-up questions like you would with a real person
+3. Dump in your current headline AND resume
+4. Ask: "Based on this, give me a headline that will do XYZ"
+5. Keep refining - it's not a one-shot process
+
+**Balance tip:** Ask AI for options that balance:
+- Keyword-heavy (recruiter-friendly, searchable)
+- Personality-driven (stand out, show who you are)
+
+**Pro tip:** Tell AI "don't sound robotic - bring warmth and friendliness" for better results.
+
+---
+
+## Student Headline Examples
+
+### Full Stack Developer
+
+**Glenn's Options:**
+1. "Full Stack Developer | React, Next.js, TypeScript, PostgreSQL | Delivering user-centered scalable applications"
+2. "Full Stack Developer | Crafting clean, suitable web apps with React, Next.js, PostgreSQL | Built for how people work" ← *favorite*
+3. "Full Stack Developer | React, TypeScript, Prisma | Agile contributor focused on clarity, collaboration, and continuous learning"
+
+**Analysis:** Options 2 and 3 add more personality. Option 1 is dry but keyword-rich.
+
+### Full Stack with Soft Skills Focus
+
+**Key's Evolution:**
+- Original: "Full Stack Developer | React, Node.js | Building scalable web apps"
+- Refined: "Full Stack Developer | React, Next.js, TypeScript | Supportive teammate and peer mentor | Empowering team problem-solving and building meaningful, purpose-focused solutions"
+
+**Tip:** Include "peer mentor" if applicable - shows leadership.
+
+### Business Analyst
+
+**Jasmina's Options:**
+1. "Technical Business Analyst | Data and Integration Expert | Passionate AI Learner | Bridging tech strategy and emerging innovation" ← *goosebumps*
+2. "Business Analyst with Dev Experience | AI and Data-Driven Problem Solver | Learning and applying emergent tech to improve systems"
+3. "Tech-Savvy Business Analyst | Building AI skills | Solving business and cyber challenges with data, dev, and continuous learning"
+
+### Career Transition (QA to Developer)
+
+**Anna's Situation:** Former tester, training as junior developer, wants less stressful development role.
+
+**Headlines Created:**
+1. "Full Stack Developer | Former Software Tester | Detail-oriented, adaptive, and driven to build" *(bridges QA and development)*
+2. "Developer in Training | Tech-savvy, intuitive, and culture-driven | From testing to building great products" *(emphasizes career evolution)*
+3. "Aspiring Full Stack Developer | Precision-focused with QA mindset | Collaborative, quick to pivot, always learning" ← *recommended*
+
+**Key Soft Skills for Anna:** Collaborative, team player, focused, stays on task, seasoned professional.
+
+---
+
+## Junior vs Full Stack Developer Title
+
+**Question:** If we present as "junior dev," are we excluded from consideration?
+
+**Answer:** It depends on where you're at. Many open roles are mid/senior level. Sometimes you need to "fake it till you make it."
+
+The TechJoy program has metrics showing graduates landing six-figure salaries. You'll have excellent training.
+
+---
+
+## Borrowing from Other Profiles
+
+**Question:** Is it okay to look at other profiles and borrow what I like?
+
+**Answer:** Absolutely. As the saying goes: "Code you wrote is good. Code you stole is great."
+
+Get inspired by others, then tailor to yourself. This doesn't negatively impact search algorithms.
+
+---
+
+## LinkedIn Searchability
+
+### What's Searchable
+
+- Headlines
+- Open to Work status
+- Remote/hybrid/on-site preferences
+- About section
+- Experience
+- Education (including years)
+- Skills
+- Organization history with date ranges
+
+**Example search:** Software engineers who worked at OpenAI from 2016-2017.
+
+---
+
+## Open to Work: Best Practices
+
+### Don't Use the Banner
+
+The green "Open to Work" banner is visible to everyone, including your current employer.
+
+### Do Use the Setting
+
+Mark yourself as "open to work" in settings (edit top section of profile). People at your current company will be blocked from seeing this status.
+
+---
+
+## Contact Information
+
+### Include
+
+- Professional email (Gmail preferred, avoid AOL/old platforms)
+- LinkedIn profile link
+- GitHub
+- Portfolio sites
+
+### Don't Include
+
+- Phone number
+- Mailing address
+
+**Reasoning:** "They can have that information when they hire you. That's the present they get."
+
+---
+
+## Salary Negotiation Insights
+
+### Internal Equity Matters
+
+Recruiters consider internal equity - what current employees at similar levels make.
+
+**Scenario:** If the highest person on team makes $150K and you want $160K, the company may not be able to offer that even if the budget allows it.
+
+### Coming in at Top of Band
+
+If you come in at the top of the salary band, you won't get raises the next year because you've already hit the ceiling.
+
+**Ideal:** Come in with room to grow, not hitting a glass ceiling.
+
+### The Bigger Picture
+
+Questions to consider:
+- Is this the opportunity you want?
+- Is this the culture you want?
+- Will this help you reach your personal goals?
+
+"Sometimes it's about the opportunity. Sometimes you have to go back $10K."
+
+But also: "Don't go to work with jerks."
+
+---
+
+## Key Takeaways
+
+1. **Photos:** Professional, clear, well-lit headshot
+2. **Banners:** Don't leave blank - use tech imagery or personal branding
+3. **Headlines:** Be specific, include tech stack AND soft skills
+4. **Use AI:** Have a conversation, not a one-shot query
+5. **Borrow inspiration:** Look at profiles you admire
+6. **Mark Open to Work:** Use the setting, not the banner
+7. **Keep refining:** Your LinkedIn profile is never done
+
+---
+
+## Headline Formula Reminders
+
+**Avoid:**
+- "Aspiring developer looking for opportunities"
+- "Recent boot camp grad"
+- Generic titles without specifics
+
+**Use:**
+- Specific role + tech stack + value proposition
+- Mix of hard skills and soft skills
+- Keywords recruiters search for
+- Something that shows personality

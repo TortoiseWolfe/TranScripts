@@ -1,0 +1,206 @@
+Career Strategy w/ Chelsea - LinkedIn Summary Workshop (Evening Session with Profile Reviews)
+https://youtu.be/Gtjaa4FaBmE
+
+---
+
+## Course Progress Recap
+
+**Week 1:** Why LinkedIn matters - LinkedIn's role in job search, how recruiters use it
+
+**Week 2:** Setting up basics - Photos, contact info, banners, visual cues for trust
+
+**Week 3:** Writing a great headline - Strong, keyword-rich headlines
+
+**This Session:** Crafting a compelling summary with live profile reviews
+
+---
+
+## Core Elements of a Strong Summary
+
+1. **Clear and confident opening line**
+2. **A sense of who you are and what you're about professionally**
+3. **What you're working on and looking for**
+4. **Sentence or two reflecting personality, values, motivation**
+5. **Call to action (optional)** - open to networking, hiring, collaboration
+
+### Pro Tip: Hiring Managers on LinkedIn
+
+When you become a hiring lead, you may post on your LinkedIn profile that you're hiring. Recruiters often ask hiring managers to do this because candidates respond more to developers who are hiring than to recruiters.
+
+---
+
+## Live Profile Reviews
+
+### Profile 1: Max (Machine Learning Engineer at Amazon)
+
+**What he did well:**
+- Professional banner and photo
+- Listed title in headline (acceptable when employed at a company you're proud of)
+- About section structured differently but effective
+- Opens with "Experienced staff machine learning engineer" and backs it up
+- Lists specializations and proficiencies
+- Ends with personal touch: "Avid reader with passion for learning new tools"
+- 55 skills listed for Amazon position alone
+- Bullets what he did at each role
+- Education with relevant skills
+
+**What's missing:**
+- No recommendations (should definitely add these)
+
+---
+
+### Profile 2: Lette (Junior Software Engineer)
+
+**What she did well:**
+- Professional banner and photo
+- Personal, vulnerable opening in about section
+- Shows her journey to tech through personal story
+- Currently at associate level, started as software engineer apprentice
+
+**About section style:**
+"I am a proud product of life's tumultuous nature. Through the highs and the lows, I have learned with every breath..."
+
+**Recruiter perspective:** This personal storytelling approach works. Recruiters love to see who someone is. However, tech folks tend to be more precise and to the point.
+
+**Opportunities:**
+- Headline could be more robust than just title
+- Could clean up formatting (spacing)
+
+---
+
+### Profile 3: David (Software Engineer at Deloitte)
+
+**What he did:**
+- Talks about where he's been, how he started, programming experience
+- Entry level, graduated 2022, worked his way up
+
+**Opportunities:**
+- No banner image
+- Used common phrases like "detail-oriented" and "team player" - should find more unique language
+- Could remove early non-relevant jobs (teller, sales associate) now that he's in tech-focused role
+
+**Note:** Most people don't update profiles once employed. Don't let yours fall by the wayside - keep it updated regardless of level.
+
+---
+
+### Profile 4: Jonathan (Software Engineer at GitHub)
+
+**What he did:**
+- Jazzed up headline, interesting profile picture
+- Got straight to the point in about section
+- Full-time at GitHub for 4+ years
+- Lists experience with bullets
+
+**Opportunities:**
+- Technologies listed in experience could be in skills section instead (cleaner, more searchable)
+
+---
+
+## Key Insight: Simple vs Verbose
+
+**Question:** Are there groups that look for more verbose profiles?
+
+**Answer:**
+- LinkedIn is for recruiters, hiring managers, and employees to connect
+- Recruiters use LinkedIn to look at backgrounds quickly (often don't receive resumes first)
+- Most recruiters see portfolios, GitHub, and projects first - resume is often an afterthought
+- For job seekers: Resume and LinkedIn need to be ATS-compliant and AI-ready
+- **Time to be verbose and playful:** Later in career when employed and comfortable
+- **Now:** Be meticulous, organized - this is when it counts
+
+**For tech roles specifically:** Hiring leads look for frameworks and technologies. "Okay, they have HTML, CSS, Python, React - let me reach out." Story-telling comes in the interview.
+
+---
+
+## Best Practices for LinkedIn Summary
+
+### Open Strong
+
+Concise sentence: Who you are + what you do + what you're working toward
+
+### Use Plain, Confident Language
+
+- Avoid buzzwords: "results-driven," "seasoned"
+- Write like a human who understands their work
+- Not a press release
+
+### Highlight What You Build or Solve
+
+- Technologies you use
+- Problems you love solving
+- Recent projects
+- Reflect learning or growth path (especially helpful for early career or self-taught)
+
+### Add Personal Touch
+
+- How you think
+- What drives you
+- Why tech excites you
+
+---
+
+## Live Summary Creation Example
+
+**Input prompt to AI:**
+- Current LinkedIn about section
+- Request to rewrite
+- Specified skills to keep
+
+**Output:**
+"Full Stack Software Developer | React, Next.js, TypeScript, PostgreSQL, CI/CD
+
+I am a full stack developer focused on building scalable, maintainable software with a strong foundation in React, Next.js, and TypeScript. I enjoy working in agile environments where clean code, thoughtful collaboration, and continuous improvement drive progress.
+
+At TechJoy Software, I contribute to feature development, database optimization, and test coverage improvements across a growing suite of applications. I also mentor aspiring developers at Joy of Coding Academy, helping them troubleshoot code, strengthen their problem-solving skills, and navigate the early stages of their tech careers.
+
+Always open to connecting with other developers, collaborators, and teams building things that matter."
+
+---
+
+## Using AI Effectively
+
+- Give AI your current summary AND resume
+- Be very descriptive in prompts
+- Ask it to balance keyword-heavy (searchable) with personality-driven (stand out)
+- Tell it "don't sound robotic - bring warmth and friendliness"
+- Play with it - it takes time and refinement
+
+---
+
+## Who's Viewing Your Profile
+
+**How to check:** Notifications → See who viewed your profile
+
+**Note:** Many recruiters block their views from being seen. You might see "10 recruiters from Apple and other companies" but not specific names.
+
+**Premium:** Gives more detailed view information and filters more job opportunities your way. Recommended when actively job hunting.
+
+---
+
+## Career Gaps
+
+**Guidance:** You can note breaks on your resume to account for time. It doesn't have to elaborate why - just account for the time.
+
+---
+
+## LinkedIn vs Resume: Key Difference
+
+**LinkedIn:** The human you - who you are as a person, how you show up, first person voice
+
+**Resume:** More formal, professional document, your work history legacy
+
+Both should mirror each other closely, but LinkedIn allows for more personality.
+
+---
+
+## Q&A Highlights
+
+**Q: How do I blend senior experience in one field with junior experience in a new field?**
+A: Remember - you're only "junior" because:
+1. That's your title at TechJoy Academy
+2. This is new to you
+
+But as individuals, you have tons to offer. The full scope of your LinkedIn and resume should arm recruiters with everything searchable. You can note previous experience that aligns (architecture experience for someone going into development, for example).
+
+**Q: My profile has been called "too broad" - what should I do?**
+A: The summary section IS supposed to cast a wide net. You want options and to be noticed by many people. Some level of specificity is needed, but listing multiple interests (low code + full stack, for example) is fine. Question who gave that feedback - hiring managers don't usually give that kind of advice.

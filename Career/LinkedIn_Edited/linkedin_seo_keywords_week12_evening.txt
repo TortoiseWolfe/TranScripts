@@ -1,0 +1,174 @@
+LinkedIn SEO & Keywords: Mirroring Recruiter Search Terms (Week 12 Evening Session)
+https://youtu.be/8ElQsDJitmA
+
+---
+
+## Why SEO Matters for LinkedIn
+
+Recruiters search LinkedIn the same way they search Google: by using keywords.
+
+**The right keywords:** Increase your chances of appearing in recruiter searches
+
+**Wrong or missing keywords:** Make your profile invisible, even if you're highly qualified
+
+### Key Statistics
+- **90% of recruiters** use keyword filters to find candidates
+- Candidates with keyword-optimized profiles receive **2-3x more views** from recruiters
+
+### Goals
+1. Match recruiter search terms
+2. Rank high in search results
+3. Attract more recruiter messages and interview opportunities
+
+---
+
+## What is LinkedIn Recruiter?
+
+A separate paid platform that recruiters use to search for candidates. It's different from regular LinkedIn but part of the same ecosystem.
+
+Recruiters use it to:
+- Run advanced boolean searches
+- Filter by location, experience, skills
+- Track and manage candidate pipelines
+- Reach out to potential hires
+
+---
+
+## Key Fields That Impact LinkedIn SEO
+
+### Headline
+Weighted heavily by LinkedIn's algorithm. Don't just put "Software Developer" - add multiple keywords for maximum visibility.
+
+### About Section
+Scanned for relevant skills and job titles.
+
+### Experience Section
+Job titles, skills, and project descriptions are indexed.
+
+### Skills Section
+Top 50 skills are searchable and contribute to ranking.
+
+### Recommendations
+Keywords in recommendations also count.
+
+### Engagement
+Posts and comments including relevant terms improve visibility.
+
+---
+
+## How Recruiters Search
+
+Recruiters enter boolean searches and filter by:
+- Location
+- Industry
+- Experience level
+- Keywords
+
+Profiles are ranked by keyword relevance and engagement.
+
+### Example Boolean Search
+```
+("Full Stack Developer" OR "Software Engineer") AND (React OR NodeJS OR JavaScript) AND (API OR PostgreSQL OR AWS)
+```
+
+**What this tells LinkedIn:** Find developers who know React, NodeJS, or JavaScript AND have experience with APIs, PostgreSQL, or AWS.
+
+---
+
+## Mirroring: The Key Concept
+
+LinkedIn matches words in recruiter searches to words in your profile. If you use different terms or omit keywords, you won't appear in results.
+
+**You must use the same words recruiters use, not just words you prefer.**
+
+### How to Know What Recruiters Search
+They use the same professional terms from job descriptions. Pull 3-5 job postings for your target role and identify repeating keywords.
+
+---
+
+## Before and After Optimization
+
+### Before (Weak)
+**Headline:** Passionate developer, problem solver, creative thinker
+
+**About:** I enjoy learning new technologies and building cool projects. I love collaborating with others and continuously improving my skills.
+
+**Skills:** Teamwork, HTML, CSS, JavaScript
+
+### After (Optimized)
+**Headline:** Full Stack Developer | JavaScript | React | NodeJS | API Integration
+
+**About:** I am a full stack developer specializing in React and NodeJS with experience building REST APIs, integrating PostgreSQL databases, and deploying applications on AWS. I'm passionate about clean code, scalable systems, and collaboration in agile environments.
+
+**Skills:** React, NodeJS, JavaScript, PostgreSQL, API Development, AWS
+
+### Why It Works
+- Headline matches recruiter search titles
+- About section repeats and contextualizes keywords
+- Skills section supports the same language
+
+---
+
+## How to Mirror Recruiter Searches
+
+### Step 1: Analyze Target Job Postings
+- Review 3-5 postings of your dream role
+- Highlight repeating terms
+- Note job title variations (Software Engineer, Full Stack Developer, Front-End Engineer)
+
+### Step 2: Embed Keywords Across Profile
+- **Headline:** Target title + top 3 skills
+- **About:** Phrases recruiters type
+- **Experience:** Tie each project to target keywords
+- **Skills:** Every hard skill from multiple postings
+
+### Step 3: Match Variations
+Use multiple forms:
+- API and REST API
+- ReactJS and React
+- AWS and Amazon Web Services
+- SQL and PostgreSQL
+
+---
+
+## Avoid Keyword Stuffing
+
+**Don't:** Cram a list of terms without context
+
+**Weak example:** React, NodeJS, PostgreSQL, AWS, API, Agile
+
+**Strong example:** Developed full stack applications using React and NodeJS. Managed PostgreSQL databases and deployed to AWS using CI/CD pipelines.
+
+Always use keywords in real sentences showing how you apply the skill.
+
+---
+
+## LinkedIn Favors Active Profiles
+
+- Post at least once a week using relevant keywords
+- Example: "Excited to finish my React app today"
+- Comment on posts using industry language
+- Follow companies and hashtags reflecting target roles
+
+---
+
+## Managing Extensive Experience
+
+If you have 10+ years of experience with many skills:
+- Focus on **current** skills that are in demand
+- Bundle similar skills together
+- Highlight how past experience connects to current goals
+- You don't need to list everything - prioritize relevance
+
+---
+
+## Key Takeaways
+
+1. Recruiters search by keywords - optimize or be invisible
+2. 90% of recruiters use keyword filters
+3. Mirror the exact language from job postings
+4. Keywords must appear in headline, about, experience, and skills
+5. Avoid keyword stuffing - always provide context
+6. Include title variations
+7. Active engagement boosts search ranking
+8. Take profile updates section by section - don't get overwhelmed

@@ -1,0 +1,159 @@
+LinkedIn Job Alerts & Filters: Setting Up LinkedIn to Work For You (Week 11)
+https://youtu.be/M-iT2pBF5Ec
+
+---
+
+## Course Progress Recap
+
+- Weeks 1-5: Profile building (why LinkedIn matters, photo, headline, summary, skills, URL settings)
+- Weeks 6-7: Building your network (connecting, keeping relationships warm)
+- Week 8: Messaging and cold outreach
+- Week 9: Recommendations
+- Week 10: Engagement (posting, commenting, hashtags)
+- Week 11 (This Session): Job alerts, filters, and using LinkedIn to find jobs for you
+
+---
+
+## Why Timing Matters
+
+Recruiters see early applicants first. The earlier you apply, the better your shot.
+
+**Key insight:** Apply to roles posted within the past 24 hours. If 100+ people have already applied, you're likely too late.
+
+**The goal:** Send fresh, relevant roles straight to your inbox the moment they go live. No more endless scrolling, no more missing out because you were late to apply.
+
+---
+
+## Setting Up Job Alerts Step by Step
+
+### 1. Navigate to Jobs
+Click the briefcase icon (Jobs) in the top navigation.
+
+### 2. Enter Your Target Role
+In the "Describe the job you want" field, type your target job title.
+- Just the role, not location yet
+- Example: "Full Stack Developer" or "QA Engineer"
+
+### 3. Set Date Filter
+Click "Date posted" and select **Past 24 hours**.
+- This filters to only the freshest postings
+- Jobs posted 4 weeks ago = too late
+
+### 4. Turn On Job Alert
+Look for "Job search alert is on" toggle.
+- Turn this ON for searches you want alerts for
+- LinkedIn will email you when matching jobs are posted
+
+### 5. Set Location (Optional)
+Add location filters as needed (city, remote, etc.)
+
+---
+
+## Multiple Search Strategy
+
+Save more than one search:
+- Full Stack Developer + Remote
+- QA Engineer + NYC
+- Software Engineer + Your City
+
+**Pro tip:** You can search "Remote + [Job Title]" to prioritize remote roles.
+
+---
+
+## After You Apply: The Follow-Up Process
+
+1. **Apply directly on company website** (not Easy Apply when possible)
+2. **Follow the company** on LinkedIn
+3. **Find the recruiter/hiring manager** on the company's People page
+4. **Connect with a personalized note:**
+
+"Hi [Name], so nice to meet you along with this invite. I wanted to thank you for your time and consideration. I recently applied to the [Position] on your website. [2-3 bullets of what you offer]. Attached is my resume."
+
+5. **If rejected, circle back:**
+
+"Hi [Name], a couple weeks ago I reached out about the [Position]. Unfortunately, I was rejected. But I'd like to stay connected and see if something else comes up that might be better aligned with my background. I've attached my resume for your review. Please feel free to reach me directly."
+
+6. **Join groups** the company employees belong to
+7. **Continue engaging** with their content
+
+---
+
+## Finding Recruiters at Target Companies
+
+1. Search for the company on LinkedIn
+2. Click on "People"
+3. Look for titles like:
+   - Talent Acquisition Specialist
+   - Technical Recruiter
+   - Head of Talent Acquisition
+   - HR Manager
+
+**Pro tip:** Recruiters and TA specialists are usually on the first 1-2 pages of results.
+
+---
+
+## Resume Management Best Practice
+
+Create a naming system for tailored resumes:
+- `Resume_CompanyName_Date_RoleType.pdf`
+- Keep copies of every version sent
+- Use AI (ChatGPT, Claude) to tailor your template to each job description
+
+**Template approach:** Have one master resume template. For each application:
+1. Copy the template
+2. Attach it to AI with the job description
+3. Ask it to tailor the resume
+4. Review and send
+
+---
+
+## LinkedIn Premium
+
+**Cost:** ~$257/year (monthly options available)
+
+**Benefits:**
+- More visible to recruiters
+- See who viewed your profile
+- Additional search filters
+- Skills match indicators
+
+**Recommendation:** If you're in a serious job hunt, premium is worth the investment.
+
+---
+
+## The Networking Reality
+
+**Critical insight:** You will not get a job by only sending applications. It's not going to happen in this market.
+
+The way you get a job:
+- Networking
+- Commenting on people's posts
+- Adding your own posts
+- Giving yourself value along with visibility
+
+It's a long game and a two-pronged approach.
+
+---
+
+## Daily Practice
+
+After setting up alerts:
+- Check alerts daily
+- Apply quickly to fresh postings
+- Follow up with personalized outreach
+- Keep alerts fresh and updated
+
+Early applicants get noticed. If you're not right for the role, you'll get that rejection email sooner and can move on.
+
+---
+
+## Key Takeaways
+
+1. **24-hour rule:** Apply to jobs posted within the past 24 hours
+2. Set up multiple job alerts for different role variations
+3. Apply directly on company websites when possible
+4. Always follow up applications with recruiter outreach
+5. Use AI to tailor resumes efficiently
+6. Join groups where target company employees participate
+7. This market requires networking, not just applications
+8. Consistency and early action are your competitive advantages

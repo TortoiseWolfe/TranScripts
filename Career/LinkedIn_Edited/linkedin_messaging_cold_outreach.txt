@@ -1,0 +1,240 @@
+Career Strategy w/ Chelsea - Messaging & Cold Outreach on LinkedIn (Week 8)
+https://youtu.be/EtaFsPb22xk
+
+---
+
+## Course Progress Recap
+
+- Week 1: Why LinkedIn matters
+- Week 2: Profile basics (photo, headline, banner, contact info)
+- Week 3: Crafting a compelling summary
+- Week 4: Showcasing skills, projects, education
+- Week 5: Custom LinkedIn URL and contact settings
+- Week 6: Building your network (who to connect with, personalizing invites)
+- Week 7: Keeping relationships warm, showing up authentically
+- Week 8 (This Session): Messaging and cold outreach - moving from hoping for replies to earning replies
+
+---
+
+## Why Messaging Matters in 2025
+
+### 1. Referrals Beat Applications
+The hidden job market is alive and well. Most interviews don't start with an online application - they start with a person.
+
+**A warm intro from:**
+- An alum
+- A recruiter remembering your message
+- A hiring manager seeing your name before your resume lands
+
+...dramatically increases your chances of getting seen.
+
+**Key insight:** A referral can move your application from a pile of 500 to the top 10 considered in under 24 hours.
+
+### 2. Short Supply of Attention
+Hiring managers, recruiters, and alumni are busy. They often skim LinkedIn on their phone between meetings.
+
+- Long messages get skipped
+- Short, clear, specific messages get replies
+- Best outreach takes 15-20 seconds to read
+
+**Signal immediately:** Who you are, why you're reaching out, what you're asking for.
+
+### 3. AI Filters Everywhere
+In 2025, most recruiters and hiring platforms use AI to sort, scan, and flag messages.
+
+- Generic copy-paste templates get caught in filters, deprioritized, or ignored
+- Personalization is key
+- A detail about their work, company, or shared connection makes your message stand out as human and thoughtful
+
+---
+
+## Core Principles for Every Message
+
+1. **Short** - 2-4 lines max. Respect the skim.
+2. **Specific** - Mention one real thing about them
+3. **Value forward** - Offer context or a small win before asking
+4. **Micro ask** - A tiny next step: a tip, pointer, or yes/no question
+5. **No links in first note** - Unless highly relevant and requested later
+
+---
+
+## What Each Audience Values
+
+**Alumni:** Shared community, pay-it-forward culture, practical tips
+
+**Hiring Managers:** Impact signal (you can help their team), problem-fit, skills match
+
+**Recruiters:** Clarity on role, target, location, skills, eligibility, timing
+
+---
+
+## Message Frameworks
+
+### The 3-1-1 Formula
+- **3 words of context** to start ("Fellow TechJoy alum", "Saw your talk", "Loved your post")
+- **1 line** specific about them
+- **1 micro ask**
+
+### The TACO Close
+**T**iny **A**sk, **C**lear **O**utcome
+
+Examples:
+- "Could you share one suggestion on...?"
+- "Is it worth applying for X, or is Y a better fit?"
+- "If there's a better contact, happy to reach out."
+
+---
+
+## Alumni Outreach Examples
+
+### Cold Outreach
+"Hello, fellow TechJoy alum here. I saw your post about onboarding developers into AI projects. I'm exploring backend and AI-driven roles in Halifax and weighing Spring Boot versus Flask for my portfolio projects. If you had to pick one that maps better to applied AI work on your team, which would you suggest?"
+
+### Career Transition Question
+"Hi Maya, we share the TechJoy network. I noticed you transitioned from intern to full-time in under six months. That's amazing. What made the biggest difference for you early on? Technical depth, shipping full-stack projects, or how you approached networking?"
+
+### Warm Outreach (After Commenting)
+"Thanks for your thoughtful thread on code reviews in full-stack teams. As I prep more pull requests for my AI side projects, is there one rule your team follows that keeps reviews both fast and constructive?"
+
+### Referral Ask (Without Awkwardness)
+"Hi Chris, fellow TechJoy alum here. If it's appropriate, would you be comfortable pointing me to the best person to speak with about the backend role on Team Atlas? A name is plenty. If not, no worries."
+
+---
+
+## Hiring Manager Outreach Examples
+
+### Cold Outreach
+"Hi Alex, your team's work on applied AI for real-time analytics really caught my attention. I recently built a low-code prototype that integrates Flask with an optimization engine to streamline predictions. If you were me, which one project would you spotlight first for a hiring conversation with your team?"
+
+### After Applying
+"Hi Priya, I applied to the full-stack developer role on Monday. Two strengths I'd bring: designing REST APIs and building low-code solutions that speed up delivery. If the role is still live, would a quick note on your top success criteria help me tailor the examples I prepare?"
+
+### Warm Outreach (Mutual Connection)
+"Hi John, Key suggested I reach out. I've been working on AI-powered full-stack applications and noticed your team is focused on API scalability and data pipelines. If you had 60 seconds for one tip on what separates strong candidates in your process, I'd be so grateful."
+
+---
+
+## Recruiter Outreach Examples
+
+### Cold Outreach
+"Hi Taylor, I'm a full-stack focused developer with experience in Python, Flask, JavaScript, React, and low-code solutions. I'm based in Halifax and eligible to work in Canada, open to hybrid or remote. My target is backend or AI-focused product roles. If you're open, is there one opportunity I should have on my radar this week?"
+
+### After Seeing a Role Posted
+"Hi Fred, I saw the full-stack AI role your contracts division just posted. I'm NYC-based with a background in low-code development and API design. If NYC is still an option, I'd love to compare notes on your must-haves. Would it be helpful if I sent a quick snapshot of my most relevant projects?"
+
+### After They Viewed Your Profile
+"Thanks for checking out my profile, Jenna. If you're currently hiring for full-stack or AI-related roles, I'd be glad to share a 3-bullet snapshot of my skills and recent projects to make screening simple. Would that be useful?"
+
+---
+
+## Follow-Up Sequence
+
+### Day 1: Initial Connection Note
+"Fellow alum here. Loved your post on junior onboarding. One quick question on skills if you're open."
+
+### Day 3: First Follow-Up
+"Bumping this in case it was buried in your messages. Still deciding between Spring Boot and Flask for a portfolio update. One pointer would help me aim correctly if you have a moment. Thank you for your time."
+
+### Day 7: Value-Add Note
+"Sharing this short article on API design that helped me tighten a recent project. If you have a different go-to resource, I'd love to read it."
+
+### Day 14: Graceful Close
+"Closing the loop so I don't crowd your inbox. Grateful for your time either way, and wishing you a smooth sprint to the rest of the year."
+
+---
+
+## Comment → DM Strategy
+
+A cold outreach feels less cold if you've already engaged with someone's content.
+
+### Step 1: Comment on Their Post
+"I really appreciated your post about low-code tools speeding up delivery. I've seen that in my own internship projects, too."
+
+### Step 2: Follow-Up DM
+"Hi Alex, I left a note on your post about low-code adoption. I'm exploring backend AI-focused roles and would love to ask you one quick question: Which skill do you see as most critical for developers entering this space?"
+
+**Why this works:** The DM flows naturally from the comment. It feels warmer, not random.
+
+---
+
+## Handling Different Responses
+
+### "No bandwidth right now"
+"No worries. Thanks for replying. If you had one sentence on skills that matter most for your roles, I'd be grateful."
+
+### Someone agrees to a call
+"Thank you! I'll keep this to 10 minutes and send two focused questions in advance."
+
+### "We're not hiring"
+"Thanks for letting me know. Wishing you a strong quarter."
+
+### Ghosted
+"Closing the loop here so I don't crowd your inbox. Thanks for your time. Grateful either way."
+
+---
+
+## The Polish Pass
+
+Many great drafts are too long. Final test: **Can it be cut to 4 lines max?**
+
+### Before (Too Long)
+"Hi, I'm a TechJoy alum currently exploring backend and AI opportunities. I noticed you've worked extensively with Spring Boot, which I'm learning now. I'd love to hear how you use it on your team and if you think it's a skill that makes a candidate stand out when applying."
+
+### After (Polished)
+"Hello, fellow TechJoy alum here. I saw your work with Spring Boot. As I build out projects in that space, what's one way you've seen it make candidates stand out?"
+
+**Shorter is almost always stronger.**
+
+---
+
+## Mistakes to Avoid
+
+- Walls of text
+- Vague asks like "Can I pick your brain?"
+- Attachments and multiple links in first message
+- Copy-paste intros that ignore person's work
+- Asking for referrals before building rapport
+
+---
+
+## Persona Sprints: Different Audiences, Different Asks
+
+**Alumni:** Lean toward advice
+**Hiring Managers:** Focus on fit and success criteria
+**Recruiters:** Clarify on roles (Is it open? Still open? Similar roles coming?)
+
+Be specific about them and their company. Reference:
+- Something they posted
+- Why the position aligns with your experience
+- Why you've been following them
+- What you can bring to solve their problems
+
+---
+
+## Weekly Goals
+
+**20 personalized outreaches:**
+- 8 recruiters
+- 6 hiring managers
+- 6 alumni
+
+(Or half that if time is limited: 4 recruiters, 3 hiring managers, 3 alumni)
+
+**Track everything** in your job hunt spreadsheet.
+
+**Expected benchmarks:**
+- 35-50% connect rate
+- 15-25% reply rate
+
+---
+
+## Key Takeaways
+
+1. **Referrals move you from pile of 500 to top 10**
+2. **Short, specific, personal** messages get replies
+3. **3-1-1 Formula:** 3 words context + 1 line about them + 1 micro ask
+4. **Comment first, then DM** for warmer outreach
+5. **Follow up gracefully** - Day 3, Day 7, Day 14
+6. **Shorter is stronger** - 4 lines max
+7. **Track everything** - This is the long game
+8. **Conversations → Referrals → Interviews → Offers**
