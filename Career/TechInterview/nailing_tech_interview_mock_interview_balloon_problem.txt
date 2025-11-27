@@ -1,0 +1,1011 @@
+Nailing the Tech Interview: Mock Interview - Balloon Problem (Sunday Session)
+https://youtu.be/P60M5VIEBQY
+
+All right, welcome to this week's
+nailing the technical interview. It is
+Sunday. I did miss last Wednesday. I had
+some stuff come up um for my Spanish
+cast. It's like exam season for my
+Spanish stuff, so I Yeah, I I missed
+some stuff, so I had to go to an extra
+little event. Um,
+so now we are back here on Sunday and we
+are starting fresh.
+So before we get started
+on our Sunday session, do either of you
+have any questions about the mock
+interview? Um, practicing, preparing,
+preparations. I can never get that line
+out the way I want it. practicing,
+preparing, anything that you want to
+discuss or talk about?
+>> I already been told everything I needed
+to know at this point. So, no.
+>> Sure.
+We did, speaking of that, we did take a
+deviation last week to look at some of
+the
+string methods in Python library. Um, so
+Mauricio, you posted some really great
+solutions to the last week's homework.
+So we didn't have last Wednesday's
+session, but we did still have some code
+that was put out by Mauricio on the
+Hacker Rank Discord channel. Um,
+that were basically answers to the two
+the two problems which was the string
+count and string replace I believe with
+their additional function parameters.
+Um, so we might look at those in depth
+in the future and kind of break that
+down even further, but that is there on
+the Hackar Discord channel. So, thank
+you, Fauricio, for taking on that that
+homework time. Um,
+>> was good practice.
+>> That's kind of it.
+And how did you find that process? Did
+you did you think it was easy? Did it
+feel
+Did it take you a long time? I mean as
+far as making it a class and all that or
+you mean the actual code of the
+function?
+>> Yeah, the actual code of the function.
+The class stuff was not required. It was
+mainly just the function, but it was
+nice to see that you did the class. That
+was fun.
+>> Yeah, I just wanted to make it look the
+same way you would do the built-in
+class. So that's why I did the class.
+But
+>> Mhm.
+>> Uh the code yeah that kind of I just
+asked myself what would be the logic and
+I start coding and then I I had a couple
+of bumps on the way especially with the
+updating the string making it a new
+string whenever I uh
+>> whenever I find something. I don't
+remember exactly but yeah that was one
+bump with the s equal something in
+replace I think
+>> and then the count function was whenever
+I get replace function in count was
+pretty easy because it was pretty much
+based on it and like a short shortened
+version of it
+>> right that's why I chose those because
+the find yeah find index or no it's just
+find count and replace all have a very
+similar case of traversing the string or
+strings and comparing making those
+comparisons, but then they do like
+slightly different things based on
+there. The count takes a count, the find
+returns an index, the replace updates
+the string. So they all have the same
+base, but then they have different
+little side effects basically that come
+as a result from that. But yeah, the
+replace one is the hardest one. So since
+you did the hardest one first, the count
+one was probably
+>> Yeah, I remember the issue I was having.
+I was just kind of replacing just one of
+the of the h occurrences
+>> and then I did some change and I was
+replacing just the last of the
+occurrences.
+>> So
+yeah, I found out I figured that doing
+updating in every iteration the string
+itself was the was the answer. So it
+would take it again already updated. So
+it would just focus on the next on the
+next on the next and finish.
+>> Nice.
+All right. Well, so let's move on to the
+mock interview. So Mauricio has
+volunteered to do a mock interview today
+for us
+and we're just going to dive right into
+it. We haven't done one in a few weeks,
+so it's it's good to to do. All right.
+So I'm going to post this into the chat
+if you want to open that up and click
+the green share arrow.
+Green share error. I just see the link
+there, right?
+>> Yeah. In Zoom, the green share error.
+>> Ah, to share. Okay. Yeah,
+it looks
+like a lot.
+This the one.
+>> It is a medium problem. Okay. Um, so I
+think what we'll do is we'll we'll start
+with 20 minutes and then maybe we'll go
+to 30 minutes since we started pretty
+early today. Um, and then we'll just
+kind of see how far you get. Just making
+sure you're practicing the understanding
+the problem early problem solving steps
+and maybe a few pseudo code steps and
+then whatever code you want to get
+written. Um, as long as we're focusing
+on on all the different parts there.
+>> Okay.
+>> All right. So
+>> start with 20 minutes and then see what
+it looks like after that.
+>> All right. So I'm going to read it in
+silence and then I verbalize what I
+understood.
+>> Perfect.
+Okay. So,
+there's like a an array of balloons. I
+mean, they call it a rope, but it's
+basically an array uh of balloons that
+has different colors.
+And there's another array of needed time
+that represents the time to remove each
+one of those balloons in the other
+array. So the goal is to
+to remove to make the the the array of
+colors uh colorful.
+And by that that means uh remove any
+consecutive um consecutive balloons of
+the same color. They shouldn't be two
+consecutive balloons with the same
+color. That's what it means by colorful
+and uh it ask for the minimum time. So
+it also should look in doing that should
+like kind of get to fulfill two
+conditions that there is not two
+balloons of the same color and that is
+the remove the minimum the minimum time.
+So kind of here like is the third is
+three because it it removed this one. So
+there wouldn't be two
+two blues.
+So here it doesn't do anything because
+there already
+just no repetition of color. And here it
+does the first and the last because
+that will keep non-consecutive blues and
+they also be chipped because it's one
+and one. So that's the minimum time. So
+you add the two times and and get two in
+this case.
+As far as the con constraints, uh the
+colors length uh
+is equal to n.
+Both arrays are the same length because
+it's one time for each color and is
+equal to n. n could be between 1 and 10^
+the 5. And the time spent for each
+balloon could be between 1 and 10 to the
+4.
+The colors are lowerase English letters.
+So now
+the solution
+uh basically first I should try to find
+the repetitions of colors
+and they are English letters right so I
+should find
+where it repeats
+any letter.
+So if I um
+loop
+the colors
+and find
+two consecutive
+that are equal.
+That should be a an indication that I
+should be removing
+removing any of those
+uh
+any remove any of those
+And I need to
+remove any of those. And then uh
+I have to choose which ones
+which one depending on cost of time
+on time cost
+from the needed time array.
+So which one is the minimum?
+And then with that with that index
+I remove from colors
+or I just uh not even remove just count
+because
+I know I just uh
+with that index I
+I get a sum of
+Add it to a sum. Whatever time is
+needed, add the time to a summit
+time to then
+just continue the loop.
+I know this just if I just spawn one.
+Yeah, I continue the loop. So, continue
+the loop for any other
+consecutives
+and delete
+as above. I mean, not delete, but uh add
+the times as above. Same thing I did
+before.
+and add times as above.
+So yeah,
+and if if none consecutives are found
+returns here.
+So I got my two arrays here
+and
+I should loop through the through colors
+for color in
+Oh,
+I probably
+could loop in the steps of two.
+So colors
+the steps of two
+since it's two consecutive numbers. So
+probably do that.
+Sorry if
+So I will have to compare here
+if
+colors
+color colors color
+equal to
+colors
+color + one.
+Sorry, I I forgot the L here
+and I probably had to do colors minus
+one because I'm check I needed to check
+up to the one next to the last and don't
+go further because
+I'm doing it in pairs. So if colors
+equal to colors + one
+then I found two consecutives. So if I
+found two consecutives,
+I get the same array, the same stuff for
+an accumulator here
+from needed needed time
+this stuff
+and I'd accumulate the
+the value of of that time
+with the
+same index.
+I know I have to do another check
+because I need to find the minimum
+there.
+If the minimum is uh
+if the which one of those two are is the
+minimum
+so
+if
+needed time
+so basically take the minimum
+to accumulate to the sum
+Between these two
+need time color
+and need time
+color one
+That would be that one.
+[Music]
+I have to start with
+Sounds here.
+I'm done with everything with looping.
+Now it should return the the sum.
+Well, it seems too simplistic there to
+actually be a solution for a meeting,
+but I'm going to run it to see
+network error.
+>> Can you hear me?
+>> Yes.
+>> I don't know. is showing network error
+when I run it.
+>> Yeah. And my
+>> I had that happen last night when I was
+practicing. So, um
+>> I guess I have to copy a code and
+reload. If I reload the page, will I
+lose the code? Probably.
+>> You might I would copy it and try Yeah.
+and reload.
+You have quite a few tabs open. I don't
+know if that's contributing, but
+>> Yeah, probably.
+I have that that problem. The top
+problem.
+I'm not sure if it's copying. Let me
+see.
+Copy.
+So, just refresh the page and then also
+get rid of that debug right there.
+Yeah.
+It copy.
+Yeah, it's gone.
+>> Okay. So, yeah, it logged you out.
+That's what happened. So, you're going
+to have to log in.
+>> I'm logged out. Okay.
+Okay. So,
+>> okay, there we go. All right.
+>> Yeah,
+>> back to it.
+>> Yeah.
+So, it's returning zero here. So uh
+so if color and range l color minus one
+* 2
+it goes through a and then jumps two
+checks here
+finds
+One, two, two.
+No way it's returning. So, it's never
+getting to here then.
+Colors. Colors.
+[Music]
+Where's my other book?
+I don't see my debug statement here.
+>> So if it's not showing anything,
+>> ah, it's not a string. Sorry.
+Yeah, it probably not getting there.
+It's not showing anything. So, it's not
+getting inside the conditional.
+[Music]
+I'm probably going over it maybe.
+Uh
+how do print
+in colors
+I
+colors
+I + one I mean sorry Color.
+Color. Color. Plus one.
+It's not printing that either.
+How come it's not printing anything?
+Colors. Color. Color.
+It's cool.
+Yes. I tried to print just
+just the
+the index
+to see if it's even printing that
+Maybe I have that.
+It's not printing that
+like the loop is not even running or
+what?
+How come?
+Grand I think.
+What?
+I'm printing that.
+Close.
+getting done. No network error again.
+Okay, it passed now. Go figure.
+I don't understand what happened there.
+Ah, maybe the stepping
+was freaking out my for loop. I don't
+know.
+Now submit
+and
+Wrong answer
+only 33 of that's like less than 30%. So
+when I have this
+big thing,
+uh
+I'm I guess
+I'll have to take two. Not only one but
+two. In this case,
+I'm just working for two here.
+[Music]
+Okay, let's go ahead and stop there.
+>> Okay.
+>> Um, this is a great job. I mean for
+let's see 23
+24 minutes 23 or 24 minutes you've got
+quite a handful of test cases running
+you've got your code out um and working
+had a few hiccups that you moved through
+and you had so you read through the
+problem you understood the problem you
+got some pseudo code
+you got some starter code going and you
+ran into a hiccup but you kind of worked
+around it and now you've got quite a few
+handful of quite a few handful you've
+got about let's see I don't know what is
+that maybe
+>> 33 a fourth to a third of the test cases
+passing
+um I think that's a really great place
+to be especially on a medium problem
+>> 28% yeah
+>> so one thing that I would have liked to
+see is
+well let me pose it as a question could
+we caught the potential error with the
+for loop sooner.
+>> Yeah, just trying step just doing step
+one instead of two.
+>> So, but let's assume we had your
+original code with the step two. Could
+we have caught it sooner than
+than where we did?
+>> Yes, we could have if I just tried just
+without it.
+>> Well, not even trying without it. What
+could you have done to make sure that
+that stepped through everything?
+>> Just uh I guess because my print stuff
+wasn't working at all. So it was like it
+was not even running. So
+when I just did all the prints with and
+nothing worked, I I just realized that
+probably was stepping over everything or
+or not even running at all.
+>> Right. And we could have done the
+printing testing right after we wrote
+the for loop, right? Instead of after
+the if conditions and the the return
+statements and everything.
+>> You mean here?
+>> Yes. So as soon as you wrote your for
+loop, I would have tested to make sure
+>> Okay. Okay.
+>> Writing anything else. Okay.
+>> Right. Exactly.
+>> Yeah. I could have
+>> It seems simple, right? Like why would I
+need to test my for loop? I've written
+my for loop a million times. This is
+exactly why I do it every single week. I
+always write the print statement like
+just to double check um because it's
+very easy to
+slip, right? And and not have that that
+additional grab. So then we had to work
+through, okay, well, which part of my
+code isn't working? Is it inside the if
+statement? No. Is it inside outside of
+the if statement and inside of the for
+loop? Well, maybe. Is it outside of my
+for loop? Maybe. Um, and we could have
+reduced that to just like one check
+right at the beginning. Okay, I've
+written my for loop. Well, nothing's
+happening. So, the only thing I have
+written here is my for loop, so it's got
+to be my for loop, right? Versus a few
+lines down, it's like, well, it could be
+the if statement. It could be the sum
+thing. It could be inside the for loop.
+It could be that I wrote color versus
+color in my if statement incorrectly. It
+could have been a few different things.
+So, that's why I like to do that. Um,
+but you didn't freeze up, which is
+amazing. and you kept testing. You tried
+a few different print statements which I
+liked. And then the only thing I would
+have done maybe more than that was just
+to check outside of the for loop just to
+make sure like is there something wrong
+with my debugger? Um but you removed the
+two and got it working and so that was
+totally fine. Um and then it passed the
+test cases. So the twostep may or may
+not be needed. First we have to diagnose
+why the twostep wasn't working and then
+next figure out why
+um because your your kind of code game
+plan was kind of counting on the two
+stepping situation.
+>> Yeah. But that's not generalized enough
+now because we have three now cases with
+three consecutive. So
+>> exactly. So you might have to go back to
+the drawing board and kind of figure
+that out. So having the step count
+figured out might help with that. um or
+just kind of using this test case as a
+sample test case. Especially with lead
+code, it's nice that you can do this,
+but you can now that it's given you
+wrong answer, you can pull that into
+your test cases as a sample test case to
+kind of compare against. Um but so
+that's my only my only critique there is
+is making sure we're testing and
+debugging along the way. Otherwise, I
+think this was really great and your
+approach makes sense and you've already
+realized like, okay, well, there's
+something going on with my logic when
+there's three in a row. Um, maybe I need
+to do some kind of evaluation there.
+So, what what would you consider doing
+next, do you think?
+>> I'm thinking
+>> not even from a code code approach, just
+like what is your strategy as a next
+step?
+My strategy is like I need to generalize
+for any number of consecutives, not just
+two, but
+>> okay. So, what's going to help you
+figure out how to general generalize?
+[Music]
+I guess
+like a while loop while while they are
+equal to each other and then stop and
+then
+like why color like instead of if doing
+a while but probably that will be too
+expensive
+but that's what I can think of from the
+top of my head. So you immediately are
+going to making some code changes to
+figure out what you can change. Where I
+might start is since this test case is
+pretty small, I might just start with
+walking that test case one by one
+through my existing code and figuring
+out exactly where it's breaking down
+because the output that you are giving
+and the expected output is only off by
+one number. So it seems like your code
+logic is pretty close. So before I make
+any changes to your actual logic here,
+maybe I want to figure out what
+specifically is miscalculating there.
+>> So I mean the only thing that can show
+me that going through this example is
+specifically like step by step and
+seeing how is how it's working.
+That's what I will do if you know if I
+needed to grind on this to figure out
+what the heck is happening.
+So in this case specifically
+you will it will start here right you
+will do step by step. So it finds that
+these two are equal then it it finds the
+minimum there.
+>> Mhm.
+>> The minimum cost there.
+Uh and it gets the minimum.
+>> So it's going to sum the three because
+that's the minimum.
+>> Yeah. It's going to it's going to get
+three. And then it's going to move here.
+>> Mhm.
+>> And it's going to check this two, which
+is five and 10. And it's going to add
+five to three.
+>> Mhm.
+>> So that would be the equivalent if if it
+had eliminated these two.
+>> Yep.
+>> And then it's going to keep going.
+Uh,
+I think I need to refresh the sum for
+when it changed characters.
+>> Well, let's keep going. I want to see
+where it breaks down.
+>> I know because it's this the total sum,
+right? Okay. So, you went here three 35.
+It did. So, it came here
+>> Mhm.
+to 10
+and then it checks 10 and seven that'll
+be it would take seven.
+>> So is it going to do that? What is our
+if condition here?
+>> If color equal to color + one I know it
+won't because it's different character.
+>> Exactly. All right. So then we'll do
+nothing for that one. So we still have
+the three and the five with eight and
+then we move on to the next one.
+uh where I'm at here.
+>> Yep. The first bead. Yep.
+>> So, I moved to this one and then
+Yeah, I found out uh
+that will be one, two, three, four,
+five. One, two, three, four, five.
+That'll be five and three. So, I will go
+with three.
+Add it to the sum.
+Then move to here. Uh skip because they
+are not equal.
+And go to here. And between these two
+will be one, two, three, four.
+Five and four. Go with four.
+And then move here.
+And four and eight. Go with four. I
+can't kind of repeat it twice, I think.
+Wait.
+And I'm here. One, two, three, four,
+five, and four. I choose four.
+Then move to four and four and eight. I
+choose four again.
+So I kind of count double there
+and then I move here. Eight and one. I
+choose one.
+Uh I don't know. I think what is wrong
+is when I change characters I have to
+No. But the song is the accumulation of
+all characters. Right?
+When I compare this border lines things
+when it changes character
+it will escape.
+When I get here I compare they are not
+equal. So we'll go to the next one
+and then it will go this and this are
+the same. So it will do a good job
+there.
+This and this
+will do a good job there.
+And then it goes here.
+They are not the same. So it will move
+to here.
+And then this and this are not the same.
+So it will move to here. Compare these
+two and then get the minimum. Go to the
+next one. Compare these two. Get the
+minimum. Go to the next one. Compare
+these two. Get the minimum.
+I'm sorry. I don't see why. Uh
+>> yeah. So if we're not seeing exactly
+where the breakdown is, maybe I would go
+ahead and add that next step of checking
+some of going through my code line by
+line and checking those variables. So
+printing
+>> what is my current index? Am I what are
+my current color if conditions? and then
+what's my sum at any given point and
+kind of just take it line by line like
+that and say all right we're matching up
+here we're matching up here we're
+matching up here
+and then see if there's a breakdown
+there cuz going through it just mentally
+um it seems like maybe there's too many
+I'm even looking at it like hm that
+seems weird um so that's what I might
+try next but it looks like
+I want to say I have an idea of what it
+is and I think it's just kind of
+that last character cuz if we're only
+off by one, the only one value is that
+last one. So I want to say that maybe
+we're just not evaluating that last
+character
+>> because it's because I did l minus one.
+So let's try without it then.
+Uh,
+index out of range, I guess.
+I know. Yeah, index out of range.
+Yeah, because it goes color plus one.
+So,
+so that's why I didn't Yeah, I do
+evaluate it because I evaluate mean from
+color and color plus one. So, it's got
+to get to that one.
+So I don't think it's that
+but yeah we'll have to print
+I'll have to print index.
+I am pretty sure it is that. Um but I
+will let you continue investigating to
+see why that is.
+I because I can kind of see it already.
+But I think that's a great spot to be
+in. You are only off by one. And I think
+if you figured out that one little edge
+case there, you'd probably be able to
+pass either all of them or most of them
+um and take yourself from like 33 to 98
+or even again all of them. So it seems
+like you're only like one or two logical
+conditions away from from getting to the
+final answer there. It's just how do you
+go through that practice of making kind
+of figuring out what's going on in your
+code, what's going on in the test case,
+where is that that logic breaking down,
+and then kind of taking the time to go
+back to the drawing board and say, "All
+right, before I just start switching
+variables or switching conditions,
+what do I need to know about this
+problem? What do I need to consider
+about this problem?" Um, and I think
+that hint might even be the last
+example, example three in their in their
+code. I mean, in the in the problem
+statement and then kind of making a
+decision from there. But again, overall,
+I think this was really great,
+especially for the less than 30 minutes
+you had for a medium problem. Um, this
+was a really good spot to be in and I
+think you're on your way.
+>> Uh, I had a really quick question just
+about nomenclature. Um,
+>> uh, Mario, I did see that you did take
+away the negative one in line four and
+you did get an error. But in just plain
+English, what does that do? I mean, I
+know that we're looking at an zero
+indexed um, what do you call it? Length.
+Um, and so you you'd be looking at
+something that would begin with the zero
+and then 1 2 3 4 and five. The what does
+the negative one do? Does it get rid of
+the Does it give you the accurate
+length of the array? Um
+I guess
+>> no it just stops here. It just stops in
+the next to the last because since I
+have color plus one, I need to stop here
+and do do my comparison and stop there
+because if I stop here
+>> and I I take that minus one, it will
+stop here and then I guess index out of
+range because it does color plus one and
+>> so it's a safety thing. You're stopping
+one before the end.
+>> Yes.
+>> Oh, okay. Now going down to line five.
+Why did you put plus one in there for
+color?
+>> Because I want to compare if two
+consecutives consecutive balloons are
+the same color. So I need to get where
+I'm at on the loop and the next one. So
+the next index or where I am is just one
+index forward. So I put plus one.
+>> Okay. So, um, the first one would be
+like the first balloon and the colors,
+uh, bracket color plus one would be the
+balloon right in back of it.
+>> No, the next one, the next consecutive
+balloon.
+>> Yeah. Okay. So, like you have two
+balloons side by side. You're comparing
+the one on the left hand side of the
+equal sign to the one on the right hand
+side of the equal sign.
+>> Yeah. And and that will be just always
+two consecutives. So I compare these
+two, then these two, then these two,
+>> and so on until I get to here.
+>> Okay.
+>> And then these two. And then I I do my
+logic of getting the minimum sum of
+>> Mhm.
+>> of of those two. But something is uh
+still not complete on my logic that I
+figured out.
+>> Okay. Well, when you're looking at
+minimum, what are you trying to get from
+that?
+>> Well, according to the problem, I get to
+I need to remove I cannot have two
+consecutive balloons of the same color.
+But there's another condition that it
+needs to be the cheapest removal. So, in
+the minimum time, so I have an array
+that tells me in the same index exactly
+how how long it takes to remove that
+balloon. So I need to to if I'm going to
+remove any of the two consecutives of
+the same color, I need to know which one
+is is the fastest I can remove.
+>> So that's why I get the minimum of the
+one I'm at and the consecutive uh from
+this array that has the times on it.
+>> Okay. So looking at that example up
+there on the left, you'd want to get rid
+of the red balloon, wouldn't you?
+>> No, because the red is only one balloon.
+So, I'm getting rid of the consecutive
+of the same color. And the red is only
+one one balloon.
+>> That's why I'm getting rid of this one
+and this one.
+>> Ah, okay.
+>> But I'm not getting rid of this one and
+this one because getting rid of this one
+and this one is cheapest because they
+are lower numbers in my array of needed
+time. That's why I I check that minimum
+here before choosing one to add to my
+sum because the sum is the total time of
+removing those. So the array is colorful
+which means
+>> so Linda you missed some you missed some
+setup earlier on when we got started and
+we're going through the problem. Um, but
+these are great questions and I think
+it's a great opportunity for Mauricio to
+explain the logic behind the problem a
+little more in detail and answer some
+questions about his code. Um, which is
+always great practice. So, thank you for
+those questions. Those are really good
+questions.
+>> I'm sorry I'm late. I I really
+>> No, no. I I think that was actually
+great because it's always good to be
+able to think about the problem and
+explain your code um in this way,
+especially for a technical interview.
+And that's that's going to be
+really good for the interviewer to hear
+how you're thinking about the problem.
+So that was great.
+>> All right. Any other thoughts about this
+problem before we close out today?
+>> So what what Mario were you what was the
+what was the object of it again? Um
+cuz you want to get Okay. I I kind of
+stopped where you started dealing with
+like with the minimum and Okay, you had
+a bunch of blue balloons that Yeah, you
+want to get rid of the blue balloons all
+the way down to I guess the minimum
+number of blue balloons so that you're
+you end up with like a blue balloon on
+each side of the red balloon.
+No, I just wanna I don't I don't need I
+mean I don't want to have the problem
+doesn't want to have two balloons of the
+same color consecutively.
+>> Okay.
+>> So this is a problem here and this is a
+problem here.
+>> Okay. So where you should have ended up
+was that line where you had a blue
+balloon, a red balloon, a blue balloon,
+right?
+>> Yes. After removing them.
+>> Okay. after uh removing all the extra
+blue balloons.
+>> Yep.
+But I need to remove the cheapest. So
+that's why I removed this one and this
+one.
+>> Yeah. The general premise of the problem
+was set up just that you want to have
+alternating colors in the balloon in the
+balloon string. So remove any of them
+that would lead colors to be next to
+each other.
+>> Yeah.
+>> And then each balloon in the string has
+an associated time that it would take to
+remove like he mentioned. Um, and so you
+have to be strategic about if there are
+consecutive ones, which ones you're
+going to remove. That was just the
+general premise.
+And so then the output is the minimum
+amount of time it takes to have all of
+the balloons be
+interchanged in that way.
+>> Um, did you have to stay with like plus
+one? What would happen if you had done
+plus two?
+that I will be comparing not the next
+one but the next to the next one. So
+this to this but that will be out
+outside of the of the problem because
+it's talking about consecutive balloons.
+So I will be doing like another problem.
+>> It wouldn't be consecutive. So I
+wouldn't be like obeying the
+restrictions of this particular problem.
+So the plus one does it like
+one balloon, the next balloon, the next
+balloon, the next balloon.
+>> It does. I mean, at each iteration, I'm
+I'm sitting in one balloon and I'm
+looking at the next.
+>> You can't go more than one balloon at a
+time.
+>> Uh, well, in the way I'm solving it, no.
+I guess if there's other ways of solving
+it, I guess you can. But the way I stay
+in my solution, I'm I'm trying to
+compare consecutives
+>> balloons.
+>> Two by two. So I'm going these two,
+these two, these two, and these two.
+>> Yeah.
+>> Okay. Thank you for that.
+>> You're welcome. So, but there's
+something incomplete in that logic. So
+that's why I'm not getting it all the
+way.
+>> Mhm. Um be before we go though, um I did
+get in late. Um
+but did you go over the um what was it?
+The count and the replace.
+>> No. So we didn't we started with a mock
+interview today. Um Mauricio does have
+that code on the Hacker Discord channel
+and then we might take a deeper look at
+it on Wednesday. Um,
+yeah, I think we'll look at this problem
+and and to complete it and wrap it up
+since I don't think there's actually
+much more that needs to be changed. That
+shouldn't take too long. And then we can
+just quickly
+recap the find or the replace and the
+count
+code as well.
+>> Okay, great. Thank you. Yeah, this is
+sort of new to me, the the whole setup
+that you do on nail the tech interview.
+Um, so it's it's it's good to know the
+procedure.
+>> Yes, we haven't been following the
+procedure actually. So, Sundays are mock
+interview days and new problems kind of
+thing. And then Wednesdays are exploring
+the problems that we've covered more in
+depth. Um, since I missed last
+Wednesday,
+>> we'll have to kind of make that up,
+right, as a part of this coming
+Wednesday. But in general on Sundays
+it's like new problems starting fresh,
+maybe a mock interview if someone wants
+that practice. And then Wednesdays is
+exploring the code and alternatives and
+efficiency and all of that good stuff.
+>> Okay.
+Well, congratulations to you, Mori. Uh
+Moraicio.
+>> Okay.
+>> I agree. That was a great um
+>> great job.
+>> Yeah. Sometimes I'm inspired, sometimes
+I'm not.
+>> I think you're exactly where you needed
+to be in the amount of time that was
+given for a medium problem.
+>> Yeah. Now, that pretty much the only way
+that works for me to get out of this
+situation like I'm in right now is to
+just run through the case that is uh
+failing. But I guess I need a bunch of
+print statements because it's confusing
+doing it by hand. But yeah, I need to
+find
+>> make it visual if you need to.
+I find making it visual.
+I think if you had a kind of just a
+visual drawing it out on pen and paper
+with some little balloon icons, that
+might help you see what's going on here.
+And doing exactly what you were doing
+with the A B C blah blah blah. Okay, so
+we cross that one out and then move on.
+We cross that one out and we sum this. I
+think that would that would bridge the
+gap for you.
+Yeah, need to go with pen and paper
+over. Yeah,
+>> I'm always a fan of pen and paper. All
+right, so with that, we will conclude
+today's session and then we will look at
+this again on Wednesday and I will pull
+out the whiteboard so that we can do
+exactly that. Um,
+and if you get a solution working, post
+it in hack rank the discord channel.
+That'll be great. We'll look at it.
+We'll review it and then we'll discuss
+it on Wednesday.
+>> All right. Thanks everyone and we will
+see you next time.
+>> Thank you.

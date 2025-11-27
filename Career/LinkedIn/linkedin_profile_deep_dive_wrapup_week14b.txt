@@ -1,0 +1,862 @@
+LinkedIn Profile Deep Dive: Complete Profile Power & Wrap-Up (Week 14 Session B)
+https://youtu.be/8vNK0CiXkOw
+
+Hey Keith, how's it going?
+>> Hey, I'm doing all right. How are you?
+>> I am doing well. Um, I will wait just
+one more minute. Um, I haven't really
+had anyone. Last week, no one showed up.
+So, I don't know what's going to be
+going on now. But if it's just you, your
+option, we, you know, totally up to you.
+We can have the session or we can see if
+people maybe show up tomorrow because my
+time switched.
+>> Uh, so I'm doing Tuesday, Wednesday
+night. So, whatever you It's totally up
+to you. You decide. So, I'll give it
+until I was giving an giving it until
+610,
+6:15.
+So, we'll see. Otherwise, I'm going to
+uh let you decide what you want to do.
+But I I have something, you know, I have
+something planned, but either way, it's
+totally fine.
+>> Yeah. I know. Um last week, I had the
+accountability check-in Wednesday night.
+Nobody showed for that either. So, I
+wonder what was happening last
+Wednesday. Just nobody wanted last t was
+it last Tuesday? Yeah, last Wednesday. I
+just I don't know what was happening
+last week.
+>> Nobody wanted to show up for things. I
+don't know.
+>> Yeah. Well, I mean, it's getting to be
+the fall, so people probably are kind of
+like not really wanting to do much, just
+like me. Hey, Anna, how are you?
+>> Hello. Um, I haven't been over in this
+stop in a while and I just figured let
+me jump over here and see how it going.
+>> Okay. Well, we're happy to have you. Um,
+well, I will start. Um, this actually is
+our 12 our week 12 wrapup series, which
+should be exciting because I was going
+to start moving more into resume
+building and best practices. So, we'll
+see how that goes. uh this session this
+evening I am going to focus on the power
+of a complete profile um because really
+that's you know what we've been doing um
+we've spent the last 11 weeks building
+our LinkedIn presence from the ground up
+and each week had a purpose and every
+part connects to how recruiters find and
+eval EV valuate you. So
+we'll quickly walk through what we've
+covered.
+All right. So brief recap.
+We have talked about why LinkedIn
+matters. We've done the profile basics
+and I believe both of you were, you
+know, definitely in and out uh
+consistently for these weeks. So you'll
+remember or you can uh look at the the
+recorded videos. Um but with with the
+profile basics, we looked at everything
+from the photo and headline banner. We
+talked about com uh crafting a
+compelling summary, highlighting skills,
+projects, education,
+um setting up and crafting our unique
+custom URL and settings. We did part one
+and part two of uh building your network
+and one week we really talked about
+connecting
+um and sending invites. Second week for
+part two we talked about keeping
+relationships warm and authentic during
+that networking process and that can be
+over the course of several months and
+really it never ends.
+um messaging and outreach. We talked
+about that. We also talked about asking
+for and writing recommendations.
+So, that's pretty important and
+something that really has sort of that
+timing component. Uh best utilized when
+you are leaving a position, when someone
+you worked with perhaps is leaving a
+position to move on. Um or while you are
+working with someone, say here in the
+joy of coding, you had the opportunity
+to work together on a project. Um ask
+each other for uh recommendations, you
+know, posting content and using
+hashtags, learning that even those are
+searchable uh for recruiters. And then
+of course, job alerts, filters, and
+search tools using boolean searches and
+different ways of connecting with people
+through groups and then just searching
+for them through boolean searches. Um,
+tonight we're going to start bringing
+that all together. Uh, we'll focus on
+making your profile fully optimized and
+recruiter ready.
+Now,
+you know, from a recruiter's
+perspective, really the goal is to help
+all of you see how we recruiters
+actually use LinkedIn to find a
+candidate. So, it's nice to really have
+me here as um you know, someone that you
+can kind of lean on and ask these
+questions. Um because most people also
+don't really know what recruiting is and
+how it works. Um recruiters use Blue
+Lane searchers to filter candidates. We
+talked talked about that quite a bit
+over the past couple of weeks.
+um profiles with complete information
+rank higher in searches.
+So if you don't have recommendations, if
+you haven't been posting things, if you
+know your skills aren't filled out for
+each position you've worked, that
+summary,
+that headline, all is searchable. And
+really, you know, the recruiters first
+thing they see is the photo and the
+headline. So, they really should be on
+point. Um, engagement
+and activity boosts visibility.
+Commenting on posts, signing up to be in
+groups, following folks in those groups,
+you're able to network. It helps, you
+know, allowing you to
+um establish relationships, keep
+relationships warm and authentic. So
+it's really a plus especially during you
+know these times where you're actively
+applying for jobs should be again
+following up with some sort of
+networking after for folks that are at
+that company that you've just applied.
+Any questions, thoughts, concerns, or
+just comments?
+>> No. No, you covered a lot, but I haven't
+been around, so I don't have much.
+>> I Well, I just reviewed quite a bit. So,
+you know, and then, of course, uh you
+can refer to all of the recordings, so
+it's all right there. Super easy to
+access. So, no worries if you weren't
+able to attend it live. This is why Dr.
+Emily has designed the program this way,
+so you always have these tools of
+reference.
+Um, so
+we over the past couple of weeks and
+this will be a great review for you Anna
+and whoever
+is looking to get it come in. Michelle,
+let me say hello to her before I
+continue. I don't know where she went.
+All right,
+continuing. So Anna, this will be a good
+um review for you because what we were
+talking about over the past couple of
+weeks most specifically are boolean
+searches and uh sort of sharing I'll
+share with you now the type of Boolean
+search that um that we use
+to do searches or you know a a simple
+example le so I'll put it in the chat
+but this is an example of a more
+technical search that um I myself has
+used for a full stack developer just so
+that you get an idea of what these
+boolean search strings look like. The
+quotes are purposeful
+the parentheses as well. It is essential
+uh that you utilize these searches, but
+you as job seekers can also utilize
+utilize boolean search methods. And if
+you have no idea what that is, it's as
+simple as going to Claude or chat GPT
+and say
+craft or write a boolean search for me
+to put in LinkedIn to search for full
+stack developer positions.
+That's simple and easy to uh get you
+started quickly as well. Um,
+now
+one question I would like to ask and and
+I think you should constantly be
+thinking about is what would make your
+profile appear in that search that I
+just
+put in the chat.
+If recruiters put this in their LinkedIn
+search bar,
+your all of your profiles should show up
+if you are looking for full stack
+developer opportunities, right?
+>> So that's
+>> I'm sorry.
+>> I said it must be hashtags, right?
+>> To make it
+>> No,
+>> no,
+>> no. It's do you are you able to see what
+I copy and pasted into the chat?
+>> Yeah, but your question was what would
+make our page appear
+>> and so I was thinking that hashtags
+would make it appear, right?
+>> Um well it it's for the search in
+general. So this and it's using this as
+the example. So this boolean search
+here. So if you'd look at your LinkedIn
+profile,
+the first thing maybe in the headline
+should be full stack developer.
+If
+you know of course you know if you are
+all looking for full stack developer
+roles I think key we've talked kind of
+extensively and and that would be a
+position that you would be open to and
+you know it says full stack developer or
+software engineer because those they're
+used interchangeably.
+So, you know, maybe
+as a clue, if you all are really trying
+to position yourselves as a full stock
+developer in your in your headline, you
+can put full stock developer,
+software engineer,
+right? So, you could put those and then
+your profiles would likely show up. But
+also depending on what sort of database
+or program knowledge you're really
+focusing on, you might want to put those
+in your headline too. But that and and
+that will also make
+this you come into come up in recruiter
+searches also in skills, right? Skills
+would be another way. Maybe you're
+listing that you're at Java coding right
+now and the skills if you are on the
+full stack developer track you want to
+make sure that those skills say full
+stack developer software engineer and
+maybe you know you're
+feeling confident in JavaScript or
+React. It's like this is coming up with
+ways of making yourself visible on
+LinkedIn for recruiters.
+Okay,
+so these key words, so skills, activity,
+like yes, Michelle, you were close.
+Like, yes, making a note in your
+postings. Maybe you've posted an article
+and the article was talking about full
+stack development or React. You could
+post the job and then put some hashtags
+for that so that that comes up in a
+search. It it does come up in recruiter
+searches and they do help to make you
+more visible.
+So
+now
+for a profile deep dive, right? And and
+this is still actually going to be a
+review because we are finalizing our
+LinkedIn series uh this week. The photo
+and banner.
+Is your image professional and clear?
+Pull up your LinkedIn profiles. Look at
+them now. And they should definitely be
+up because we're going through this.
+So, is your im is your image
+professional and clear? Does your banner
+represent your field?
+The headline,
+does it state your role,
+specialty, or target position?
+And the about section or summary,
+take a look at that. Does it tell your
+story clearly in two to three short
+paragraphs?
+This is this is what you think about.
+This is what recruiters look at
+experiencing projects. Are your projects
+explained with outcomes or tools used?
+That's critical. And again, Dr. Emily
+has designed this program so that you
+are working with real clients on real
+projects
+so that you have the opportunity to
+fluently
+provide
+these projects. talk through these
+projects and explain them with outcomes
+in the tools that you've used. These are
+stories that you can not only utilize
+here in your LinkedIn profile,
+but in your recruiter interviews and
+technical interviews.
+skills.
+Are your top 10 skills relevant to the
+jobs you're applying for?
+Whether you are
+full stack developer, software engineer,
+or you're focusing more within low code
+positions,
+those skills need to be listed.
+Recommendations.
+Do you have at least one or two?
+All right. So, what I would like you to
+do right now is pick one section to
+improve tonight
+and update it.
+It's 6:25.
+I'll give you 10 minutes.
+How's everyone doing?
+I'm giving you until 6:35
+and then we'll talk a little bit about
+the changes that we made and maybe give
+some examples if anyone is inclined.
+>> Do you have to um have a paid
+subscription to do hashtags on LinkedIn?
+>> Oh. Uh-uh. No. You can make comments,
+you know. Um, but I mean hashtags are
+really only valuable if you're looking,
+you know, if you're posting something,
+maybe an article or a podcast
+that you listen to that you want to
+share that has to do with software
+development, uh, you know, full stack
+development, QA, whatever really your
+your focus is, data analytics,
+data visualization really, you know, I
+would keep it professional, especially
+on LinkedIn.
+>> Yeah.
+>> But
+yeah, it should connect to something.
+>> Yeah. Another lady just got fired for
+doing something at a baseball game.
+You got to be careful everywhere now.
+Mhm.
+Three more minutes everyone.
+Hey everyone, we're going to start
+wrapping up what you're doing.
+And welcome Timothy. We just did a
+review of what we've covered over the uh
+past 11 weeks that I've been doing the
+uh why LinkedIn matters series.
+Um and
+uh we just did a live edit of our
+LinkedIn profile. So, over the past
+several weeks, we have been talking
+about things like our photo and banner.
+Is your image professional and clear?
+Does your banner represent your field?
+And then moving on to the headline, does
+it state your role, specialty, or target
+position? All of this you should be
+thinking about when looking at your
+LinkedIn profile.
+the summary or about section. Does it
+tell your story clearly in two to three
+short paragraphs?
+And then moving down into the experience
+in your projects that maybe you have
+listed, which you should have listed.
+Are your projects explained with
+outcomes
+or tools,
+programs that you used?
+Skills. Are your top 10 skills relevant
+to the jobs that you're applying for?
+Are they relevant to the jobs that you
+previously worked for?
+And then recommendations.
+Do you have any at least one two?
+So I asked folks to take 10 minutes and
+pick one section to improve right now.
+And now
+common mistakes that folks make. Keyword
+stuffing or vague summaries.
+You want a little bit of you definitely
+in these about sections.
+It's about you and it selling you. And
+if you're getting stuck,
+type what you want to be said into a
+claude or chat GBT or your AI platform
+of choice.
+Dr. Emily says this all the time. It's
+about utilizing
+these um new platforms. That's going to
+give you the edge. Incomplete job
+descriptions. This is a huge mistake to
+avoid. There should be a lot in there
+describing what the project was, how
+many people partnered with you, what
+your role was in these specific
+projects,
+how you solved the problem.
+And then of course even better is to
+have a personal portfolio that shows the
+project, lists the people that were
+working on the project and their duty so
+that when a recruiter looks at it, they
+know exactly what you did. You didn't
+build the entire thing unless you did.
+But if it's something here from uh
+TechJoy, then you should be listing the
+people that you worked with to
+accomplish the project.
+Um, neglecting a banner or a headline,
+that's just a missed opportunity to not
+be visible and not come up in uh
+recruiter searches.
+And if you're not engaging or posting
+with LinkedIn, you're also not getting
+everything out of it that you can. Every
+section should work together to tell the
+story of where you're headed next.
+Questions,
+thoughts, and concerns before I have
+some of you show what you did.
+Okay,
+>> I will know where to start
+>> with with what, Anna?
+>> Uh, everything. Um, because I think the
+last time I on your class was like a
+couple months ago. So,
+I had to start from scratch on this
+stuff.
+>> Yeah. And you know what? I just laid it
+out. Super easy.
+Start from the top.
+You start from where? You tell me
+>> the description under your picture. You
+have photo and your banner there.
+>> Uh f the the photo and the banner is
+where you start.
+So you look at the photo and the banner.
+Does
+your banner does your is your image
+professional
+and clear? And does your banner
+represent your field?
+>> Yes.
+>> Okay.
+So, so those are the questions that that
+you should be asking yourself.
+>> Let me do this. Let me put all of that
+in the chat.
+All right. And you know what? I'm going
+to do a little snooping.
+I'm going to look myself.
+That's about the only thing that was
+kind of done.
+>> We're gonna we're going to go through
+the whole lot.
+>> But, um, who So, in the, uh, chat, I,
+uh, listed what you should be thinking
+about. Um, Anna stepped forward. Who
+else would like to
+talk about what they worked on?
+And if nobody steps up, I'm going to
+have to pick you.
+>> Yeah.
+>> Because eventually all of you are going
+to go.
+>> I can talk about what I updated.
+>> Yeah.
+>> Realistically, what I did right now was
+not much. uh because I have been, you
+know, following along as best I can and
+um watching a couple replays for the
+sessions that I did miss. Um so I had
+just about everything pretty well
+updated. I did a little bit more
+updating now that I've kind of like
+>> got a better understanding of like my
+rules. So like I updated my heading to
+to be more clear and not have as many
+like filler words that meant nothing,
+right?
+Um, and then I updated like my about
+section to be more like what my
+passion's about more so than just here's
+the tasks I did, right? Um, it's still
+got a little bit of that like
+>> the tasks I did, but a lot more passion
+behind it. I think like the the phrasing
+is a little bit more
+>> personable rather than just like I did
+A, B, and C.
+Um,
+>> yeah,
+>> like you talked about image. That is the
+biggest thing that I need to get my
+image.
+I'm not great at those. Like I already I
+know I need a new like professional
+image. Like I need a new like head shot
+like taken. Um
+>> and so that I need to get that that
+updated. And I have not
+gotten a banner that is like included in
+the like text space like right like my
+banner it's not it's just like an image
+to put there.
+>> Yeah. So I understand
+>> to that. Um
+>> I know I know it gets it gets difficult
+for sure to do that. Um,
+yeah. It and it's it's really honestly
+it's just about
+starting with at the top
+>> and you take it day by day. You're like,
+"Okay, you know what? Today I'm going to
+I'm going to go through this first
+initial square." So, we've got in this
+first, you know,
+where it has the headline, the photo,
+your name, the title, your location,
+your contact info. It's going through
+every bit underneath your contact info.
+I mean, it should have uh whatever your
+LinkedIn profile, how you want that
+listed. Um, some people list their phone
+number. I don't do that. Um I
+personally, especially if you're looking
+for a job, your email address is
+perfect.
+Don't you don't need to list your phone
+number. Um I I don't know. I'm just
+as as much information that I can give
+you so that you can at least get in
+touch with me but not stop me. Mhm.
+>> Um,
+some recruiters would probably be like,
+"Don't tell don't tell people that." But
+private I mean, you know, it's just for
+privacy and security reasons. I say
+this, right? Not listing all of your
+personal information. It's not needed,
+but just take everything in stages. Did
+you want to say something, Michelle?
+>> Yeah. Um, is there yet invented, which I
+probably am going to write it if it
+hasn't been, is a a good email system
+that can separate like all the stuff
+comes in, right? It separates it to
+business stuff and that, you know,
+automatically it doesn't just all go
+into the inbox and
+your way to
+>> I mean, I'm pretty sure that you can do
+that with any email platform. Um, I know
+you can do it with Outlook. Um, I
+haven't done it myself with Gmail, but
+um with Outlook, but I haven't figured
+that out.
+>> Yeah, you can you can do it, but you
+probably have to look up on YouTube.
+>> Yeah. Yeah, I would do that, Michelle.
+But because Yeah, you can do that for
+sure. I just I just don't know how. I
+haven't I haven't done it in a while, so
+I'd have to look at YouTube myself.
+>> Yeah,
+>> with you. with Outlook, yes, but not
+with Gmail. Um, I know I know it pretty
+fluidly.
+>> Well, Gmail does have some auto
+filtering you can do, but oftent times
+it's not great. Um,
+>> Oh, really?
+>> Honestly, what has worked great for me,
+which I would suggest if you're using
+Gmail specifically, create another Gmail
+account, right? have a like I have a
+separate
+>> like professional email where I'm
+expecting
+>> um like interview requests and responses
+to job applications. I have a completely
+separate email compared to like my
+personal
+>> like information and emails just because
+it's a lot easier to to see
+>> um without all this noise to see whether
+somebody's requesting an interview.
+>> Yeah, definitely. But I find because
+I've been doing that some of the job
+boards in the past I have put resumes
+out on I still get junk from all of
+I still do Zip Recruiter and some of the
+other ones they still it's it's all this
+the common theme though
+>> but
+>> yeah you can remove those which I would
+suggest doing start from scratch
+>> remove you go um old resumeumés
+old profiles on those
+uh platforms like Zip Recruiter and
+Indeed. I mean, you should be anyway
+because you should always be updating
+that information. And then of course you
+can remove your profile or uh at least
+pause your profile so that you're not
+receiving
+those things anymore unsolicited sort of
+stuff that maybe you don't want to
+receive anymore or is out ofd.
+Um,
+so
+your profile is your foundation. You've
+built it. Now, it's about staying
+visible and active.
+So, I really think and and really want
+to encourage all of you to review your
+profile from a recruiter's perspective.
+Ask a peer, you know, or a friend to
+give you honest feedback.
+Prepare one sentence that summarizes
+your professional brand. Um, you know,
+and that would be great if you're able
+to make tomorrow's session because
+tomorrow,
+um, in my evening session, we'll take
+everything that you've built and really,
+you know, turn it into action. So, how
+to use LinkedIn to generate
+opportunities
+and maintain consistency.
+So, you know, we'll talk about job
+alerts, search filters, outreach,
+visibility,
+you know, and
+how often are you checking your alerts
+and applying?
+Are you having those job alerts
+forwarded and funneled to your email
+address? How are you navigating? How are
+you
+setting up the filters on LinkedIn to
+work best for you?
+Are you engaging? Are you commenting on
+posts from recruiters or hiring leads
+that hopefully you've been connecting
+with because you've been researching who
+they are after you apply to jobs in
+certain companies if you are currently
+applying. of course,
+you know, and and
+write a think about writing a visibility
+post,
+something that you can share this week,
+maybe you know what you've learned,
+maybe here at Joy of Coding, something
+you learned this week.
+could be a project that you all
+completed, one that you're proud of,
+maybe about how you are um
+approaching approaching your job search
+and and
+following that up with what Michelle was
+saying about hashtags,
+post and then use a relevant hash
+hashtag # job searcher
+growth # software engineering. However,
+whatever
+it summarizes
+what you've just posted,
+right?
+>> Is it um okay to like mention someone
+else's
+like conference? Like Tony Robbins has
+an AI conference coming up. I think it's
+a three-day weekend
+>> and it sounds like it's going to be
+awesome. He's incredible anyway, but if
+I have dates and everything, it's free.
+>> So, would that something
+>> Yeah, I mean that's appropriate.
+Absolutely. You know, for sure.
+>> Okay.
+>> Yeah, that would be something you could
+post. Let people know it's happening.
+>> Yeah.
+>> Yeah.
+>> Okay.
+Chelsea, are you still doing those 101
+ones or that?
+>> Um, I am like sprinkling them uh about
+where I can.
+Uh, we had our one-on-one. Yeah.
+>> Yeah. Long time ago.
+>> Okay. Okay. Yeah. I mean, if you're
+looking for um, you know, a one-on-one
+session, I can, you know, definitely
+reach out. I can carve out some time and
+reach out on Discord. That's the best
+way to catch me.
+>> Yeah.
+>> Yeah. I kind of figured through uh
+discount cord.
+>> Yeah.
+>> You know, Michelle, what were you
+working on? I'm just curious. Like when
+I gave you those 10 minutes, what were
+you?
+>> I found some typos, so I fixed that.
+>> Oh, nice.
+>> Yeah. And I looked at some people, you
+know, I had got I had some messages, so
+I looked at those and
+>> Okay. Then I I looked at my banner and
+my picture and I think it's pretty good.
+Um there's pro there's a space there now
+for projects though that I've never seen
+before. So I'm going to have to update
+that.
+>> Okay.
+>> So I kind of looked at that, but that's
+going to take me some time and I have
+to, you know, it's something I need to
+concentrate on.
+>> But I'll get that up to date. And I
+don't have any hashtags because I don't
+know exactly where they go. Well, they
+go when you post like for instance, you
+were saying you want to post the Tony
+Robbins
+>> Yeah,
+>> post that.
+>> Okay.
+>> You could do post that and then put I
+don't know. You could put whatever the
+hashtags
+conference hashtagconference hashtag
+mindset hashtag Tony Robbins hashtag I
+don't know whatever you want to.
+>> We'll put those after the post. the
+hashtags after the
+>> Okay. All right.
+>> That's how most people do it.
+>> I' I've seen a a few different profiles
+where they actually have hashtags like
+in their banner area.
+>> Mhm.
+>> So, that's what I Is that supposed to
+happen?
+>> I mean, if that's what they want. I
+personally don't think it looks relevant
+or very tidy, but I mean
+>> that's what they want to do with their
+banner.
+>> It's up to them, you know. It's entirely
+up to you. Uh this these are just my
+suggestions
+>> and sort of like the industry of
+recruiting that
+catches our eye and sort of best
+practices.
+All right.
+>> Yeah.
+>> Um, in in in the first post that you
+made in the comments, you have uh quotes
+around fullstack developer and software
+engineer
+>> but not around JavaScript, React or
+Node.
+>> Yeah,
+>> you don't do that because of software.
+>> That's not it. That's just
+what how you have to do the boolean
+search.
+>> Okay. All right.
+>> Yeah,
+>> I just wanted to make sure.
+>> Yeah, no problem. Anyone else?
+Okay. So again, my sessions are now
+Tuesday evening and Wednesday evening,
+both at 6:00 p.m.
+I can oftent times squeeze in some
+one-on-one time,
+but definitely message me on Discord.
+Um, and I again encourage you to look
+through the sessions,
+the recorded sessions because that will
+give you all of the refresher that
+you'll need.
+Uh, I can definitely
+help you with updated your LinkedIn
+profile, but honestly, there's so much
+content to review in those sessions. It
+really does lay everything out. And
+again, I can't impress upon you enough
+to listen to what Dr. Emily says. Like,
+if you do not utilize technology, you
+will be a victim of it. It's there. AI
+is there and you have loads a handful of
+different platforms to choose from. And
+you know
+all you have to do is plug into
+blog chat GPT. I am a software engineer.
+I am looking to become a full stack
+developer and
+those are the type of roles that I am
+focused on and applying to. Help me
+craft a headline for LinkedIn. give me
+three to five options and go from there.
+>> And LinkedIn will not let you have two
+profiles.
+>> Um, I don't think so.
+I don't really think you need two
+different profiles.
+I I because I'm a lighting designer and
+I do computer work
+>> design for for conferences and sales big
+sales meetings and concerts and things
+like that.
+>> Oh, cool.
+>> Because that I I still we really need to
+meet because I struggle with how to make
+those two meet or if it's even possible.
+>> You can. It's possible for sure.
+>> I think it's possible. Okay.
+>> Um, yeah, I think it's possible.
+>> Okay. Well, I could really use your help
+with that.
+>> Yeah. Well, give me a shout on Discord.
+Um, and then of course, uh, again, I
+will review what we did for the past 11
+weeks quickly tomorrow night, what we've
+reviewed tonight, and then we'll be
+doing something slightly different
+tomorrow. And then next week, my plan is
+to start kicking off my resume series in
+talking about how to start
+uh crafting your resume. All right,
+folks. So, have a wonderful evening. Uh
+find me on Discord and I'm so happy to
+see all of you and have a wonderful
+evening. Yeah, I just shot your um IM on
+Discord, so look at it when you can.
+>> Okay, I will. Thanks, Anna.
+>> All righty.
+>> Thank you, Chelsea. Bye bye. You're
+welcome. You, too. Bye. Bye.

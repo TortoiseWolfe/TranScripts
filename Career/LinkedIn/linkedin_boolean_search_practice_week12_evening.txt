@@ -1,0 +1,263 @@
+LinkedIn Boolean Search Practice: Hands-On Operators & Filters (Week 12 Evening Session)
+https://youtu.be/h_3tUhdck8o
+
+Oh my gosh.
+I am sorry ladies. I do not know what
+happened.
+Okay, let me get back to where I was.
+Okay, and back to where I was. I am so
+sorry.
+Okay.
+All right. So, here we are. Software
+engineer in quotes.
+There's the space.
+A N.
+All right. And then Amazon.
+And then we go down to
+CL results.
+Now
+it goes along with all of these filters
+here. So starts with jobs.
+You can see all the jobs for software
+developers.
+Okay, let's go back.
+What we're looking for, we're looking
+for people, right?
+But this is fun. Look at this
+talent at Amazon who's actively hiring.
+They're posting jobs. Another recruiter
+software support engineer for Amazon.
+Software engineers resume tips. Hello.
+Great post. And now
+here are some people.
+There it is.
+Software engineers. And then you can
+click here and see all of the software
+engineers
+at Amazon.
+Do you have your location
+set to New York for this search or is it
+just selfidentifying that?
+>> Uh, might be I don't know.
+Let me look on locations. I think it's
+just self-identifying because it's
+looking for software engineers.
+I don't think it's looking specific for
+a specific location because remember
+what we did is we put in software
+engineer and Amazon.
+>> We didn't specify.
+>> I I was just noticing that all the
+software engineers that are popping up
+are all
+>> Well, this one is Seattle.
+>> That's true.
+Um, it's a huge hub
+for Amazon in general,
+but
+you know, you could certainly go through
+all of these pages and continue to see
+where folks are located. We've got San
+Francisco,
+a lot of folks in the city,
+but there are other people, other areas
+was really my search is really just
+about
+software engineers,
+Jersey City,
+Somerville.
+So yeah, keep going.
+Does that answer your question, Mindy?
+>> Yes, completely.
+>> Okay, so let's do more. So another
+operator word
+or.
+So
+example, you're looking for full stack
+developer
+or front-end developer. It'll show both
+types of developers.
+Let me go home. Start a new search
+and we do quotes
+space or
+front end.
+Maybe you're open to both of these
+roles. Maybe you're looking for jobs
+or people.
+Now, let's start it this way.
+Okay.
+Straight away, they gave you jobs
+and you can even save these job
+if you would like.
+You could see all the jobs. Keep
+scrolling.
+Look like they pulled a full stack
+developer position. Full stack Java
+developer
+all posts that maybe people
+posted out the jobs that were open.
+And then you've got your people, your
+first, second, and third connection. And
+then you can even click this tab, who's
+actively hiring.
+And then you've got people here,
+more jobs.
+Now, let's take this even further.
+Let's add
+an operator. Maybe you want to find full
+stock developers or front-end developers
+at Amazon
+and
+Amazon. Let's see what we come up with.
+Some jobs
+posts
+And then people
+all people in those positions and then
+more jobs,
+right?
+Go home again.
+Let's
+Here's a good one.
+using not
+which you want to exclude a term
+maybe recruiter
+not HR
+you want to see recruiters but not HR
+recruiters
+okay let's do this
+recruiter
+Not
+HR.
+Let's actually do this.
+Tech recruiter, not agent.
+This is
+general just looking for tech
+recruiters.
+You can see in you you know identify
+some tech recruiters if you want to do
+this kind of search. Maybe you're
+looking for a tech recruiter not HR
+at Amazon and
+Amazon
+Now, these are interesting. I wonder I
+put Amazon, but it's pulling up Chrome
+or Google. Strange.
+All right,
+here we go.
+can look at some of these recruiters and
+then see if
+you might want to reach out to some of
+these folks.
+And then maybe for someone like me
+who's looking for a full-time recruiter
+role, this would be good for me to take
+a look at.
+Now, when I started doing boolean
+searches, I didn't really understand
+where the quotation marks came in. It's
+meaning you really want an exact phrase
+match. So, let's say machine learning
+engineer.
+That will give you the exact job title,
+not just the words separately. Okay. So,
+let's see
+machine
+learn.
+Come here.
+Here we are.
+Some of those jobs you can look at.
+posts
+positions.
+Some more positions
+for some people.
+See many people here.
+It's interesting.
+and parenthesis.
+So that's when you're grouping terms for
+complex projects.
+Stop sh.
+>> Yes. Hi.
+Um,
+one thing that I've always found
+confusing was full stack like all the
+different terms are almost written
+different ways. You know, some people
+make it one word, some people make it
+hyphenated, different capitalizations,
+space separated.
+Is there a a place to sort of get like a
+I don't know a collection of these terms
+so that they're searched all search or
+do you have to go through it
+individually?
+Um
+>> that's a good question. I don't have the
+answer to that.
+>> Okay.
+>> Can't you do like
+couldn't you use the like terminology
+with the search characteristics?
+I'm not familiar with like
+>> um so
+in
+the SQL in the database searches
+we'll use um searching when we search
+for a string we'll use like
+and quotes.
+It might work. It's worth a shot.
+>> Never used like in my Google searches
+but sure. I mean
+try,
+you know, play with all of this.
+No,
+we'll be going through this again um in
+uh session B this evening and doing a
+little bit more you know interacting
+um
+you know interacting with each other in
+searches interacting with LinkedIn but I
+you know I really just want to reinforce
+that LinkedIn is not
+you
+a passive tool that you just kind of
+throw your profile up. It's an active
+search and networking tool.
+You can really utilize this and and
+really get somewhere.
+Any uh any questions?
+I had one thought when you showed um you
+pointed out some company that had 10,000
+employees.
+Is there an approach to
+interacting with a job post that's for a
+company that's of that scale? Obviously,
+searching through the employees would
+take forever
+and there are ways to filter it down, it
+sounds like, but um Should we be like
+targeting specific departments or areas?
+Is that even something that we can
+>> Yeah.
+>> identify?
+>> Absolutely.
+>> Yeah. Just like I've been saying in in
+these Q&A sessions, it's the hiring
+leads if that's posted, the recruiters
+that's posted, and if you're
+um not applying to a specific role where
+they might have the identity of the
+poster, it's about going straight to the
+source. Who is sourcing for these roles?
+Recruiters. That's the first line of
+fire.
+Then you start sussing out who might be
+a hiring lead or folks that you feel
+would be worth connecting with at a
+target company.
+>> Okay. Thank you.
+>> You're welcome. Um so let me get going
+because I believe there's another
+meeting at 1:00. Um but any further
+questions, please join me this evening
+at 6 PM.
+Thank you very much.

@@ -1,0 +1,1277 @@
+Career Strategy w/ Chelsea - LinkedIn Optimization for Junior Developers
+https://youtu.be/3n-waDkVu9o
+
+Hey John, how's it going?
+>> Hi. How are you?
+>> I'm good. You are in outer space.
+>> Yeah, that was
+>> I like it.
+Yeah, that's one of the few um pre- uh
+loaded u backgrounds they had. So, I I
+chose it a long time ago and it just
+stuck. So,
+>> I like it.
+>> Some people put their own pictures back
+there which look kind of cool depending
+on
+>> on what they are. So, yeah.
+>> Yeah. Yeah.
+>> Since I'm meeting with you tomorrow, I
+don't really have anything today. I was
+just going to drop in and listen in the
+background. So,
+>> Sure. Yeah, I think uh this is gonna be
+a good time.
+>> Okay,
+>> it's it'll be a party
+>> like Katrina's Python party. Have you
+seen that name of her?
+>> Oh, yeah.
+I love it.
+All right, we'll just uh we'll wait for
+just a couple more seconds to see if a
+few others are going to be able to join.
+Um, this is the first part or the first
+sort of portion of an 18-week session
+plan that I've mapped out for focusing
+on LinkedIn
+um, and your LinkedIn presence. So I'll
+probably be you know repeating some
+information in the second session as
+well just for those who may not have
+been able to attend this session. Um and
+then for anyone new kind of dropping in.
+Um but before I start how's everybody
+how's everybody feeling this morning?
+Good. Katrina's giving thumbs up.
+Stephen, hello. I don't think I think
+maybe we were we've been in a few
+sessions uh here and there but good to
+see you good to meet you again. Um
+so here we are.
+>> I guess I have a small question now that
+you uh mentioned about your two
+meetings. Uh like last week I didn't go
+to the second
+>> I didn't go to the second one like the
+later in the evening cuz I thought it
+was the same as this. Are you saying
+that they're both different kind of
+>> or no?
+>> Yeah, I it'll be uh the same subject
+matter, but uh it'll be more I think of
+an open discussion in the second
+portion. But because some people may not
+be able to make it, I will be reviewing
+what I've covered here because there is
+a pretty um wide breath of information.
+Um and I'm just breaking down starting
+from top to bottom uh with LinkedIn. So
+it'll be spread across. So um you know
+this session is really to help you build
+um a strong authentic LinkedIn presence
+that supports your job search uh your
+goals as junior developers. Um the
+session will include you know a little
+bit of a mini training followed by you
+know coaching and feedback. Uh I won't
+be breaking you out into different
+rooms. We're a small group. Um but I
+will be asking you to do a couple of
+things independently today. Uh that will
+help you start curating your LinkedIn
+profile. Um so each week for both
+sessions will include a focused theme uh
+mini training session and um live
+practice and feedback. So why LinkedIn
+matters? So,
+this is really to help you understand
+why LinkedIn is essential um and how it
+plays a unique role in your job search
+beyond résumés and applications because
+it's not just a platform to kind of you
+know post where you've worked and uh
+have recruiter pro recruiters post jobs
+and you apply to them. LinkedIn and what
+it does is is vast, right? So, LinkedIn
+is a recruiter's first stop. 95% of
+recruiters and hiring managers use it
+daily to source talent. It is our
+database. Even if you apply through a
+job board, uh they'll often check your
+check your LinkedIn profile before
+reaching out. It serves as your public
+resume and reputation all in one all on
+one sheet. Um,
+so
+here's
+got some other people coming in.
+Um, so here is why a strong LinkedIn
+presence increases visibility and
+network opportunities.
+Hello Kai. Um, so it helps you get
+found, right? So LinkedIn is the primary
+sourcing tool for recruiters, believe it
+or not. So while they're filling a job
+now or building a pipeline for future
+goals, they're searching by keywords,
+skills, job titles, and locations.
+Seeing if you are remote, if you are
+hybrid, if you are um someone who wants
+to come into the office, that is
+LinkedIn is a huge source of information
+for recruiters.
+Now, why it matters? So recruiters use
+boolean searches to find candidates. So
+they'll type in junior developer and
+JavaScript and New York. Those titles,
+locations, and program knowledge in
+quotes
+that allows
+us to pull from LinkedIn and search the
+database.
+Um, a strong profile with the right
+keywords,
+skills, and summary increases your
+chances of showing up in these search
+results that recruiters are running in
+LinkedIn. That's why it matters. So
+having a clear
+keywordrich headline
+and skill section ensures you're part of
+the conversation even when you are not
+applying to jobs. This is part of the
+beauty of LinkedIn. It helps to do the
+work for you if you have set up your
+profile properly. Um this is where
+personal branding starts. Starts right
+here. and personal branding is what sets
+you apart from the sea of applicants
+that we are seeing in the job market
+right now. Um unlike resumes,
+LinkedIn allows you to tell your story,
+why you got into tech, why you care
+about it, and what you're trying to
+build. Right? So, it's the first
+impression that often sticks.
+Okay? So I'll just pause for a moment.
+Welcome those who have um hopped on uh a
+little behind. Hello everyone. Um we are
+talking about LinkedIn today. So, if you
+are able to catch my session at 6 PM, it
+will be more of an open discussion, but
+I will be reviewing some of what I ran
+through today in case others are able to
+attend my evening session. Um, it will
+be an 18week
+focused
+um focused workshop sessions. So, this
+is the first of many. Uh so we'll be
+doing a deep dive. Um now what is
+personal branding? Right? Personal
+branding is how you intentionally
+present yourself, your values, your
+stories, your skills, and your voice to
+others in a professional context.
+That's important. and
+finding a way to
+um
+articulate that uniqueness in a LinkedIn
+profile is important. So, it's not about
+being flashy or overly polished. It's
+about being clear, being consistent, and
+authentic in how you show up. Okay? So,
+LinkedIn is a perfect place to start
+that. So, unlike a resume which is
+limited to bullet points and rigid
+formatting, LinkedIn gives you the space
+to explain the why behind the what. It
+allows you to connect the dots
+between your background and your career
+goals. especially for junior developers
+or those pivoting into a different
+career. Okay?
+So, it's where your story lives.
+So,
+start from the beginning, your about
+section. It isn't a summary of your
+resume. No, it's a snapshot of who you
+are, why you made the leap into tech,
+what drives you,
+and where you're headed. This is where
+your voice
+and knowing yourself and being confident
+in yourself and your skill set, this is
+when it matters. So an example,
+see
+after five years in healthcare
+administration,
+I discovered coding through a free
+online course and was immediately
+hooked. I'm now building responsive
+front-end projects with React and
+constantly looking for ways to blend
+design and functionality.
+an example.
+I would build on that. I think that's a
+great start for an about section.
+Um, a little bit more meat.
+Uh, let's see. Okay.
+Uh, yes. And I believe this session is
+being recorded.
+Yeah, keep me honest, Katrina. Okay,
+good.
+It looks like it's recording. Good. Um,
+so
+why should you care about LinkedIn and
+these about sections and these little
+pieces within telling this story, right?
+Hiring managers and recruiters want to
+feel something when they visit your
+profile. They want to engage. They're
+not just looking at what you can do.
+They're thinking,
+"Does this person seem motivated?"
+Um, are their goals clear?
+Are you someone they'd enjoy working
+with?
+I mean, in the resume, you can, it's
+like very regimented and very like this
+is what I've done. LinkedIn, you can
+actually oftentimes have a little bit of
+fun. It's not just about what you can
+bring to the table from a hard and soft
+skills perspective
+like
+you know what what else about you is
+exciting. Do you love to cook? Are you a
+musician? Do you like long walks and
+traveling? You know those things. Um, a
+thoughtful summary also um helps
+recruiters connect with you on a human
+level, which there is an element of
+that. You want to know that the person
+that you're reaching out to is going to
+have some sort of gravitas, right?
+Because, you know, even as a coder,
+you're not just or a remote uh worker
+coder.
+Yes, you'll be sitting behind a screen,
+but you're going to be interacting with
+hiring leads. You will also be
+interacting with talent just like
+yourself.
+Someday you're going to be interviewing
+people. You're going to be interviewing
+junior developers to join your team. So,
+this is all a part of the process.
+You're not just a coder sitting in a box
+not being disturbed. No, we want to hear
+a coder's perspective from beginning to
+end of a project.
+Um, you know, a a thoughtful summary,
+like I said, helps recruiters connect
+with you on a human level and it sets
+the tone for everything else. So once
+you nail your voice and message in the
+summary and headline,
+it helps to guide your tone for your
+portfolio site if you choose to have one
+in addition to GitHub.
+Cover letters, what you post or share on
+LinkedIn, how you introduce yourself in
+interviews. Your personal brand should
+feel cohesive across all platforms.
+Um, in advertising,
+what used to drive me nuts as a
+recruiter is hiring teams to work on a
+new brand. And they would be working
+across all disciplines, print, out of
+home, radio, TV, and then of course, you
+know, the gamut of digital um projects
+from could be platforms to banner ads to
+social media content.
+What used to drive me nuts is when one
+campaign,
+one 360 campaign
+looked like it was produced by different
+agencies because no one spoke to each
+other. It wasn't cohesive. So, think of
+your brand as an ad.
+Has to be cohesive
+and look like
+it's coming from the same person.
+regardless of what the platform is.
+Any questions, thoughts, or concerns so
+far?
+Okay. All right. I'm going to continue.
+If you would like me to slow down, I can
+absolutely do so. Just let me know. Now,
+what um somebody say something
+I I have just one. So the the co the
+cohesion,
+>> is this something that you start off
+with sort of having sort of a like
+identifying how you want to sort of
+format things or is this something that
+you sort of come to a conclusion once
+you've looked at everything?
+>> Nothing, you know what? Nothing is ever
+final. And I tell this to artists, any
+kind of creative, musicians, theater
+people, dancers, hair stylists,
+chefs,
+your brand is never finished and it
+always evolves. It's finished when
+you're in the ground and even then then
+that shifts to legacy, right? So,
+I always feel like
+creating your LinkedIn brand
+and starting with that makes a little
+bit of sense to me, especially for those
+individuals who, you know what, I got to
+get working. I have a family. I have
+kids. I'm the main supporter of my
+family. Got to make sure that I get a
+job. LinkedIn is that visibility and
+it's that immediate visibility. And as I
+said, if you've structured it properly
+and you have your skills and everything
+is clear, then
+you will be people will recruiters will
+search profiles based on boolean
+searches or however they run their
+searches and you will come up if your
+skills are there. So you want to have
+visibility like immediate visibility and
+I just feel like LinkedIn is the is the
+quickest way to do that.
+Did I answer
+that? Okay.
+>> Uh yeah, it I mean it sounds like start
+with LinkedIn.
+>> Yeah. Yeah, I think so. It's I mean you
+can start wherever you want but
+regardless it's going to evolve a a as
+as you continue to move into your career
+and work at different places and pick
+things different things up. You'll want
+to highlight various hard and soft
+skills that you're picking up along the
+way, but also
+your preferences and you know um your
+management style. all of those things
+will come into play. Um,
+so let me ask all of you a question and
+and we're here's our first little
+activity. Uh, if someone only saw your
+LinkedIn for 30 seconds, right?
+What three things would you want them to
+walk away knowing about you?
+So think about this for a moment. Write
+three points down
+and those three points
+can become the framework for your
+headline and summary.
+So take a let's take a few minutes.
+Doesn't have to be long sentences or
+paragraphs. This is just kind of like
+the spitball
+in advertising. We call it the war room
+where we're sitting around a table
+spitballing ideas.
+Would
+anyone like to share one or all of their
+points?
+Anyone?
+Should I pick someone? Kai, you're on my
+screen. Do you mind if I choose you?
+Sure.
+Um, still still writing them, but just
+sort of three like key items. Uh, fast
+learner, competent, trustworthy.
+I don't know if that's
+>> tremendous
+>> development.
+>> Tremendous. Yeah. And it it doesn't have
+to I mean, this is just the beginning,
+right? We're just
+>> we're just ideiating. I love that. Thank
+you. Anyone else? John, come on. John,
+we're talking you. It's you and I all
+day today.
+>> Yeah. So, I was work I was working on
+it. So, like the first one obviously
+would just be like what I'm actually
+like in, you know, interested in doing
+what like I've been building towards
+would just be, you know, like being a
+web developer and maybe being a little
+more specific about that.
+Um, so yeah, I I'm I'm not totally sure
+about uh presenting this stuff, but I'm,
+you know, you brought up a new idea for
+me. So, um, it's very important for me.
+The atmosphere that I would be working
+in, the environment is just as important
+to me as the actual job itself.
+>> Um, and% whether I whether it's remote
+or hybrid or going in there, you know, I
+I I can do any of those. the be the
+going into office would be if it was um
+you know where I live now because I
+would not re relocate you know
+>> sure
+>> but I would want to maybe make some sort
+of reference to that about uh because I
+think people can relate to that too um
+about like wanting to be comfortable in
+>> um I have developed my own little game
+which I have on uh on LinkedIn but you
+know I might make more reference to that
+um but I would also so I that's already
+three but like one more I I would want
+to share something about more about
+myself that's not related to the coding
+at all um some sort of hobby or
+something
+um which
+>> I've had many but ne none of them like
+very like very serious you like kind of
+like a jack of all trades but a master
+at none so it's like well which one like
+what what would I Um, I may I may put
+something about like running because
+that's what I've done a lot of and I
+know like it it's a it's a positive
+thing that uh people look at. Um,
+>> so I I don't know. I would I would pick
+out something like that that uh
+>> to like you said to have people know you
+on a more of a human level or something.
+So
+>> yeah. Yeah. Stephen, what about you? Do
+you have uh any thoughts that you can
+that you'd be willing to throw out for
+us?
+>> Well, I think that I would like anybody
+that looks at my resume or my LinkedIn
+profile rather,
+>> yeah,
+>> to know what I've that I've been coding
+for the past two years, a little over
+two years, and the different
+>> uh technologies that I've learned
+especially in this uh coding boot camp
+or academy. Okay.
+>> Um because I also have experience from
+another coding boot camp before this one
+and it was a little bit different too.
+Um and I guess the
+um I guess I would like them to see the
+what I worked on in the past 15 years
+that was nonrelated to tech because I
+kind of would like to find somewhere or
+maybe take those skills or have somebody
+value those skills,
+>> transferable skills. Yeah.
+>> Correct. Right. And ultimately what I
+aspire to be, you know, as a um a
+backend or front-end web developer.
+>> Okay. Okay. So, really focusing on your
+your hard skills, your background and
+experience even not related to tech. Um
+as you feel some of those maybe hard and
+soft skills will uh support this next
+move.
+All right. Um, I'm going to continue if
+that's okay with anyone. Does anyone
+have any questions? Good. Okay. Um, so
+visibility
+equals opportunities.
+Let's let's shake it out and let's say
+that again. that really resonated for me
+when I first
+started crafting this uh this workshop.
+Visibility equals opportunities.
+Okay, you show up in a search result
+when recruiters look for skills
+JavaScript,
+HTML, Python.
+So, making sure that those skills are
+listed. doesn't even have to be
+programming languages, but
+mentoring,
+uh, food and beverage, like these skills
+are everything. Maybe you maybe you're a
+full stack developer that that has
+previous experience at a fintech company
+and you love fintech, but you've been
+doing it for so many years, you really
+want to shift over to biotech. same reg
+regulative type of industry,
+same similar tech type of industry, but
+we want to know that you're able to
+shift and that you have some of that
+regulatory
+and coding experience.
+The more complete and optimized your
+profile is, the more that you will
+appear. You can literally control
+what and how often recruiters see
+of your profile.
+So like
+put it to you this way, recruiters use
+LinkedIn like Google.
+It's the very it's it's a search engine
+for us. Recruiters don't just browse job
+boards. You know, we search LinkedIn
+using the boolean strings and keywords
+that I had mentioned in the beginning.
+You know, they type
+June in quotes junior front end
+developer
+capital O R for or and then
+quotes React developer
+capital and JavaScript script capital
+and New York. So these are the and and
+we plug in some of these boolean
+searches in web browsers as well. and
+you'll come up if
+um everything is structured properly.
+Yes. Katrina,
+>> is there a way to test our searchability
+that way? Like how can we search for
+ourselves to make sure that we are
+showing up uh towards the top of those
+types of results?
+>> Yeah, in LinkedIn you can do searches.
+Now sometimes it the ability to see the
+a breadth of uh LinkedIn users is based
+on whether you are you know a regular
+LinkedIn user whether you're pre uh
+paying for their premium
+package or if you've got LinkedIn easy
+LinkedIn
+uh re LinkedIn easy will move you over
+to um LinkedIn recruiter which is a
+whole other way of sourcing. Then you
+have LinkedIn recruiter business. So
+yes, you can you can search uh do
+bullying searches within LinkedIn in the
+search bar. Um but depending on what
+package you've bought into for LinkedIn
+will really
+tell the tale on how many people uh will
+show up and also if you show up as well.
+So,
+I hope I answered your question. Yeah.
+Also, um if your profile contains
+specific keywords and skills and it's
+complete, you will appear in um in
+search results. If your LinkedIn profile
+is incomplete, then you won't really
+show up. Um, the most important sections
+for search visibility,
+the headline,
+the about or summary section,
+experience, and skills. Each of these
+should naturally include terms like
+career changer,
+git, accessibility,
+JavaScript, HTML, front-end developer,
+software engineer, full stack developer.
+You can add those skills in each job
+that you list.
+Now, LinkedIn literally rewards profile
+completeness. So, if your profile is
+marked allstar,
+you're more likely to rank higher in
+recruiter searches.
+um you look more like a trusted
+uh credible candidate because you have a
+shield when you are linking that company
+to your
+um work experience. Yes, John.
+Uh when you say allstar, is that
+something that they mark you as based on
+your profile completeness or are you
+saying like somebody who puts that in
+there?
+>> Okay. That they
+>> Well, it's it's Yeah, it's based on
+profile completeness. Um if everything
+you can uh add it, but you have to have
+your profile complete.
+the, you know, you need to have your
+headline, your photo,
+skills listed, some recommendations.
+It needs to be something that is robust
+and they'll give you that option to add
+it yourself.
+>> And when you mention,
+>> sorry,
+>> when you mention career,
+>> when you mention career changer, um, is
+that something like would anybody ever
+actually search for that? Is that like a
+good thing?
+>> Yes,
+>> it can be. Um, it's it's not good or
+bad. It's, you know, sometimes as a
+recruiter, I've looked for fresh faces.
+>> Okay. I've looked for
+people that
+maybe were on the account side
+and they shift into copywriting
+in their career
+or they're
+this this has happened to me a lot
+actually in healthcare advertising
+recruitment.
+um doctors
+who become healthc care pharmaceutical
+writers.
+>> Yeah. because they're just I that that
+happened a lot during COVID. Um I was
+identifying a lot of um PhDs within
+science and medicine and biotech who
+were looking to get out and do something
+that was a little less stressful. And
+>> my brother
+>> Yeah, my brother's an ER doctor and he
+just kind of switched over. Well, one of
+his jobs now is like in insurance kind
+of. So yeah.
+>> Yeah. Yeah. It's Yeah. And people change
+careers all the time for different
+reasons and it it's a uh a fact of life.
+It is not, you know, good nor bad. It it
+just is.
+Um thank you for that question, John. I
+appreciate it. But you know what makes a
+profile allstar, right? John, you just,
+you know, asked this photo, headline,
+the summary or about section, two plus
+work experiences listed, listing one.
+And and I understand that there's
+apprehension like, oh no, I was a bus
+driver before I became a coder. It's all
+right. List it. People work. People have
+lives. No big deal.
+What I wouldn't list is, you know, if
+you're uh a a school, you know, if you
+just graduated and you were bartending
+at
+Hooters, maybe not list it.
+Just saying.
+Um,
+the activity
+that you have through LinkedIn, believe
+it or not, also boosts your visibility.
+commenting on posts by others in tech,
+like those that you're really excited
+about, that you admire within the tech
+industry.
+Connect with them, research their work,
+shoot them a quick note,
+tell them, you know, I'm really inspired
+by your work, and this is actually a
+specific project that really inspired
+me. I'm so interested in your company.
+Here's here's a little bit about me.
+Here's my resume.
+Even at companies that are not hiring
+right now, recruiters that are not
+hiring, connect with them.
+Shoot them a quick note.
+reacting to alumni or recruiter updates,
+sharing progress on your latest boot
+camp project on LinkedIn, right? Post
+once a month with a career or learning
+update. Let people know, hey, I am so
+excited about TechJoy. This is an
+amazing program. I'm learning so much,
+great people,
+great coaches,
+great curriculum,
+and you know, this not only brings more
+people into Techjoy, but it lets people
+know that you're doing the work,
+that yeah, you know, uh they have a a
+job, a whole family, but they're they're
+getting it in.
+So, you know, be proud of your
+achievements and what you're doing and
+and talk about it on LinkedIn. It makes
+you visible. It increases your
+visibility in your network speed and
+recruiters are watching. It's like, I
+didn't even apply for this role, but a
+recruiter found me on LinkedIn. That's
+the goal. And when I recruit,
+the last thing I will look at
+are who applied. I'm always going I'm
+I'm going out and looking for the talent
+that I need at the agencies or
+organizations that are doing the work
+that I love.
+And most often when I'm talking to the
+hiring manager about what they're
+looking for, one of my questions, and
+all of you should know this because
+again, you all are going to be hiring
+managers one day and a recruiter is
+going to come to you and say, "Oh, you
+need a couple software engineers. Oh,
+you need a couple junior developers.
+Cool. Where where do you want me to
+look? What companies excite you? Where
+is the work coming out that you are just
+blown away from? Like what what what
+technologies are some of these companies
+using that you think some of the the
+pedigree of the talent that they have in
+their employee pool?
+Yeah. What is it that excites you about
+them?
+That's helpful to a recruiter. Help me
+help you. What do you want? Who do you
+like?
+Where are they?
+And then I go in
+and I pull them out.
+So profiles don't get opportunities.
+People with presence do. So remember
+that one, too.
+And you can
+put that
+authenticity into your LinkedIn profile
+and allow that profile to be a
+representation of you.
+You know, even if you're not applying to
+jobs yet,
+visibility builds trust and recognition
+before you need it.
+Any
+questions before we do our next
+activity?
+No. Okay.
+So, I'd love you guys to
+choose
+two to three roles
+that you want.
+And this is likely a little bit of
+homework.
+So nothing to do right now, but we can
+talk about it. And if all of you are
+able to
+meet in the evening,
+I will touch on this piece.
+So choose two to three roles that you
+want.
+Then search for those roles on LinkedIn.
+Read three job descriptions
+and highlight repeated keywords
+and then go and check your profile for
+those terms.
+Are they there?
+Let me
+do I'm gonna put this in the chat.
+>> Quick question. Do you mean three
+>> three roles with different companies or
+three different types of jobs? For
+example, QA, junior dev, and then full.
+>> Okay.
+>> What titles do you want? What jobs do
+you want? They might have all of those
+openings at say Amazon,
+but I would say maybe not to limit
+yourself
+and like
+just go for it.
+Uh,
+okay. I'm just trying to get this in the
+chat for you guys
+and then you can think about it because
+it's a nice little exercise just to also
+see how your profile matches with job
+descriptions because that's what we want
+to do. We want to make sure that that
+ATS because as some of you may know if
+you're applying to jobs sometimes you
+can apply through LinkedIn.
+So, there's a few different ways to do
+it. Either way, the applicant tracking
+system
+there.
+They're going to pick it up and you want
+it to.
+Okay.
+All right. So, there's a little
+homework. Now,
+network.
+Your network is very powerful.
+Right.
+Connections matter. And I will likely do
+a whole other
+couple of week workshops on this. I've
+gotten pretty much every position
+except for my first recruiting job from
+people that I knew and worked with.
+Relationships, relationships,
+relationships. And uh what I've had
+happen to me is a couple people that I
+hired as juniors, they became executive
+creative directors and they hired me. So
+it's a give and take, right? So
+70 to 85% of roles are filled through
+networking.
+LinkedIn gives you a builtin
+professional community and job search
+tool. So engaging with people
+and you know allows you you to be top of
+mind
+for hiring managers for other employees
+at other agencies. Now this is a thing I
+would say every agency, every corporate
+company,
+every you know medical, healthc care,
+any organization in this country has
+something called employee referral
+benefit.
+That's right. If you work at a company
+and there are openings
+in order to bring in top talent that
+maybe current employees have worked
+with, they will give their internal
+talent anywhere from I've seen it as low
+as $200 upward to $10,000
+for referrals.
+So that is also part of the relationship
+building that happens internally.
+Companies much rather
+hire people that other internal
+employees know, have worked with, and
+have had success with. So keep that in
+mind as well. It's not just about who
+you know, though. It's also about who
+knows you and thinks of you when
+opportunities arise.
+Um, the people you've worked with,
+learned from, commented on, messaged, or
+even connected with, they're the ones
+who open doors.
+people that you work with here in
+TechJoy, which is why it's so important
+to show up in this space with your
+camera positive, ready to go, engaged,
+locked in, because you know, Katrina
+could leave TechJoy and get a really
+badass position as like a VP director.
+I've only worked with her a few times.
+She's there. I'm a recruiter. I'm
+already thinking about where am I going
+to put her cuz she's there.
+But she gets into a role and she's just
+like, "Oh, damn. You know what? We've
+got three openings
+for this, this, and that." And you know
+what? I've got a QA role that's going to
+do a lot of coding and developing, and
+Mindy would be great for that. that can
+be a remote role like you know it's then
+then because why wouldn't Katrina want
+to build a team beneath her with people
+she knows and loves and knows will will
+kill the work
+that happens
+many roles are never posted publicly
+either that's the truth they're shared
+through internal referrals or
+recommendations
+so so much of what you see
+isn't even the breath of what is really
+open.
+You know, even when applying online, a
+referral gives you four times higher
+chances of getting an interview.
+That's why starting to connect with
+these people that you don't even know.
+As a recruiter, I've had to do that all
+the time. And I'm wooing talent from a
+lot of these agencies with CCOs who want
+awarded. I want everyone to be awarded.
+Great.
+How am I going to
+get the attention of this amazing
+creative or amazing developer or
+incredible production uh or producer
+and woo them from this incredible
+company that they're at now?
+know their work, send a message. Like,
+wouldn't it be amazing if a recruiter
+reached out to you and said, "Damn, you
+killed that platform." I imagine that
+code was so killer on the back end. It
+was so fluid. Moving through that site
+was incredible. Really, really love your
+work.
+Wouldn't that be like, "Oh, who's this?"
+She said she loved my work. She knows my
+work. She talked about key elements.
+So, you know, do a little bit of
+research, know your stuff about these
+people that you're reaching out, make it
+meaningful,
+throw it in chat GBT or whatever AI
+platform you use to tighten up the
+language. But yeah, you know,
+reconnect with people from your past
+career.
+Engage with fellow developers, mentors,
+instructors.
+Introduce yourself to recruiters or
+hiring managers directly. Like I've been
+saying, get recommended.
+Reach out to some of the people that you
+worked with in the past. Even if it's
+not development focused, it's okay.
+this. I've worked with the I'd worked
+I've worked with John in the past. He's
+awesome. Oh, yeah. John was my boss for
+a couple of years. He mentored me, made
+he made me who I am today.
+That's that's what we're looking for. Um
+v visibility builds trust over time,
+right? So networking does not mean
+begging for a job.
+It means staying visible
+in in the way that you know and that
+adds value. So when the right
+opportunity pops up, someone thinks of
+you
+commenting this is a great reminder or
+I've been applying these you know JS
+principles in my latest project.
+Start getting a little bit active on
+LinkedIn.
+And now we are
+we've got a little over 10 minutes.
+Would you like to ask questions now or
+would you like me to continue moving
+through some of the rest of the
+material? Yes, John.
+>> Uh I'll ask a quick question. Um, so
+some of the messages we get from um,
+recruiters on LinkedIn, like I don't
+think that they're real recruit Well,
+let's put it this way, they're the ones
+that get paid for, well, not just
+bringing in clients, but like um, like I
+don't think it's one of those deals
+where you pay them to try to find you a
+job and I just feel like they're more
+like scam like, you know, so
+>> I get a lot of those, too.
+>> Yeah. So, I basically just stopped even
+like responding to any of them because I
+only responded to like two and I
+realized what they were and I was like,
+"Well,
+>> so like is there a way of filtering like
+do you have to go through every one of
+those to try to or like is there a way
+of like filtering out to find like a
+real
+>> like I doubt I've even been messaged by
+a real recruiter yet. I mean, one that
+you wouldn't have to pay for.
+>> Yeah. Um it's you have to use your own
+discern discernment for sure. I mean I
+get those I get those emails too. We we
+we all are going to um you know I think
+it's just about you know being smart
+which is why I always emphasize being
+proactive in who you're reaching out to
+and making sure that you know you kind
+of ha are building your own database
+within LinkedIn that is a curation and
+of who you are trying to target and
+connect with.
+So, you're building your own orbit.
+>> Yeah. And just going along with that,
+that's was my next question. A lot of
+the connection requests, like at first I
+was trying to vet them and then I just
+started being like I just check check
+like I'm like, "Well, it can't hurt me,
+but maybe it can. I don't know." Like
+like if you're getting like fake people
+or like I don't know. You know what I'm
+mean? You know what I mean? Like is it
+okay to just accept?
+You can accept and decline whatever you
+want. And what I typically do is
+whenever I get a message, either an
+direct email or a LinkedIn message, I'll
+go to their profile straight away. And
+if their profile picture looks like
+heavily AI
+and they're in like some other country
+that I have no idea, chances are it's
+not something I want to engage in
+because I need something that is like on
+the ground here in the US in real time.
+>> Yeah. And so I also thought, well, it's
+bringing in those people to my
+connections like, you know, it's kind of
+diluting real people or whatever. So, I
+was like, maybe I should be more
+discerning about the connections that I
+just accept or whatever.
+>> Yeah.
+>> Yeah. I mean, you can accept people, but
+then you can, you know, just choose to
+ignore them if you're unsure.
+>> Yeah, that's true. Okay. Thank you.
+>> So,
+network networking isn't, you know, one
+big ask. It's lots of small touch
+points.
+>> Mhm. So
+it's it's not one big grand gesture.
+It's a habit, right? So when you're
+building your relationships without
+asking for anything, it's like, you
+know, share helpful content with a short
+reflection,
+DM someone with a thank you after
+attending a webinar or reading their
+blog,
+like little things like that.
+Um
+I the biggest takeaway
+is your LinkedIn profile grows with you.
+It is a never-ending open-ended project
+that highlights who you are,
+where you've been,
+and
+where you're focused on on shifting to,
+if you are at all. Um
+it's
+your profile is never ever done. So show
+your don't be shy about showing your
+progression and share what you're
+learning and stay active.
+So I'll be running through everything
+that I went through again in a condensed
+way.
+and my my second session at 6 PM.
+Um, and that will be we'll be running
+through what makes a great LinkedIn
+profile. So, it'll be very much a
+collaborative discussion.
+Um, that helps
+you to start thinking critically about
+what works on LinkedIn and why.
+You know, like what's the first thing
+you notice in a LinkedIn profile?
+Anything. Like, have you seen a profile
+that really impressed you? What made it
+stand out?
+What do you want someone to feel when
+they land on your profile?
+What feels confusing or or unclear about
+LinkedIn now?
+So, those are some of the topics I will
+be covering. Yes, Mindy.
+>> I was just looking at LinkedIn. I
+haven't really taken a deep dive on it
+recently, and basically, it's asking me
+to update my about section. It has a um
+it has a section for
+uh career gaps and I hadn't seen that
+before
+>> and basically it gives me an opportunity
+it so
+how can I put this
+>> the project ended but then
+my mother-in-law was ill and I started
+helping her and I kind of put it down as
+bereavement and that type of stuff. But
+I don't know that shouldn't be a bad
+thing because it's almost been two year.
+Well, actually it's it's been about two
+years since that happened. So there you
+go. It
+>> Yeah, it's not a bad thing. And and I
+think that a lot
+changed in
+how
+how we work.
+when CO
+happened and I think a lot of us learned
+that we all have lives, things happen.
+And some people talk about career
+changing or pausing careers sbaticals
+because they're traveling and they
+needed a a mental,
+you know, they they needed to take a
+mental health month or a year. I think
+it's it's much more acceptable and and
+or it's much more accepting I think
+these days than they have ever been
+before
+and you can find a clever way. Yeah.
+Yeah. find a clever way to talk about
+that
+both in LinkedIn and resume and and also
+in uh my evening session. I will put up
+my LinkedIn profile to show you
+how I have mine structured. Less
+>> less is more.
+>> And I'm just taking the the headline
+from the banner to the profile pick to
+the title. If you want to list pronouns,
+if you do not want to list pronouns, I
+highly recommend in the uh top portion
+that you add your GitHub link that you
+add if you have a a some sort of a
+creative or personal website. Maybe
+you're a poet, maybe you're a long form
+writer, maybe you write fiction, maybe
+you're a painter.
+Throw it up.
+I recruiters love to see it.
+Love to see it. Maybe you're a
+scientist. Maybe you published medical
+articles.
+Maybe you're in a book club and you want
+to highlight something like that. Maybe
+you're a dancer, a musician.
+Make sure um
+be by being clever, Kai. I mean how you
+are presenting
+information,
+you know, maybe you have a a maybe
+you're a comedian and nobody knows it.
+Maybe the way you choose your words will
+not say, you know, bereiement, but maybe
+you're coming up with a a snappier
+way of saying it. You can do that. You
+can be clever, creative.
+Right.
+Two
+two more minutes, guys. I didn't think I
+was going to get all of this in this one
+session.
+Did all of you find this helpful
+in the way that I presented this
+information?
+>> It It's good. I I was just going to say
+that basically I took some time to look
+at it and that was really important
+because I haven't gone there and really
+done a deep dive on a lot of things for
+a while. So
+>> yeah,
+>> gives me that opportunity.
+>> Cool.
+Anyone else? John, I see you ticked your
+mic off. Yeah.
+>> Yeah. I thought it was a Well,
+definitely it was a great improvement
+from even the first time that you
+talked. Not that that was bad, but like
+you could tell you've really No, you
+could tell you've really got the format
+down. And then I really uh appreciate
+the uh stopping like like every fourth
+of the way through to ask if anybody has
+any questions because otherwise it
+becomes like irrelevant almost by the
+time you get or you forget or something
+like that. So
+>> yeah, that was helpful for me. Yeah.
+>> Yeah. Yeah. Um would all of you do me a
+quick favor just because um names and
+ways of of reaching out I don't always
+know. I would love to send all of you a
+little cheat sheet of what I just ran
+through.
+Can you just quickly put your email
+addresses
+in the chat and I'll send you some notes
+because I know that this is a lot and
+you know you're trying you're sitting
+here captivated hopefully trying to
+capture all of this information in your
+brain and if you're taking notes however
+you're taking them um and you know none
+of this
+>> Yeah.
+>> Okay. So, I mean, I'm sorry. I didn't
+mean to cut you off. Um, so as looking
+through the LinkedIn profile, my
+LinkedIn profile,
+>> I remember that I listed my education,
+my previous coding boot camp and the
+current Joy Coding Academy, right? But I
+don't seem it doesn't seem like they
+register as businesses. So, there's not
+a logo that shows up for it.
+>> Okay.
+Do you know if that's something that
+like that LinkedIn controls or is that
+something that I did wrong or is that
+something that
+>> No, no, it's it's it's it they might not
+be listed as an official organization in
+LinkedIn.
+>> So,
+>> what's that?
+>> The Joy Coding is not listed as an
+official business organization. Is that
+what you mean?
+>> No, Joy, it is. Yeah, it is though. I
+have it list. I have it in mine. If you
+looked looked at look at my LinkedIn
+profile, it's there.
+>> Um,
+>> what's that?
+>> How do I find you on LinkedIn?
+>> Hold on one second.
+>> Send you I'll send you my profile.
+So, anyone who has to drop can let me
+just send my LinkedIn uh profile link.
+Sorry, my laptop is a little sleepy.
+Yeah. And you can all take a look at
+this and see how I've listed everything
+out because again, keywords, keywords,
+keywords.
+All right.
+Here
+we are. Sorry, guys.
+There we go.
+>> I appreciate that.
+>> Of course. Of course. And of course,
+ping me um ping me on Discord
+if you
+need anything, have any questions.
+Screenshot. I will forward
+um notes around all of this
+to you and of course ping me if you have
+any questions.
+Sound good?
+>> Yes.
+>> Thank you everyone. Uh hopefully I will
+see you uh this evening and we can run
+through it'll be a little review or
+something new.
+>> Thank you. I appreciate your time. This
+this was a really good session.
+>> Excellent. Thank you so much. Have a
+great afternoon. I'll see some of you
+later. John, you and I, brother.
+>> Have a good afternoon.
