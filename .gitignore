@@ -7,6 +7,10 @@ my_resume*
 *resume*.pdf
 cv.*
 
+# Private folders for personal info
+Career/LinkedIn_Edited/private/
+Career/Resume_Edited/private/
+
 # Secrets and credentials
 .env
 .env.*
