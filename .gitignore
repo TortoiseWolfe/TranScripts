@@ -1,0 +1,27 @@
+# Personal documents
+*.pdf
+*.doc
+*.docx
+my_resume*
+*_resume.*
+*resume*.pdf
+cv.*
+
+# Secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
