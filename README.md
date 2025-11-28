@@ -9,4 +9,7 @@ Educational transcripts from YouTube playlists, cleaned and organized for use wi
 
 ---
 
-See [Career/README.md](Career/README.md) for Claude Project setup instructions.
+## Documentation
+
+- [Career Setup Instructions](Career/README.md) - Claude Project setup
+- [LinkedIn Data Export Guide](Career/LinkedIn_Edited/README.md) - How to export your LinkedIn profile
