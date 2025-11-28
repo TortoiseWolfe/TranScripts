@@ -6,10 +6,10 @@ This folder contains Claude Project instructions and knowledge base transcripts 
 
 ## Claude Projects
 
-| Project | Instructions | User Guide |
-|---------|--------------|------------|
-| **LinkedIn Profile Review** | `LINKEDIN_PROJECT_INSTRUCTIONS.md` | `LINKEDIN_README.md` |
-| **Resume Improvement** | `RESUME_PROJECT_INSTRUCTIONS.md` | `RESUME_README.md` |
+| Project | System Prompt | User Guide |
+|---------|---------------|------------|
+| **LinkedIn Profile Review** | `LINKEDIN_SYSTEM_PROMPT.md` | `LINKEDIN_USER_GUIDE.md` |
+| **Resume Improvement** | `RESUME_SYSTEM_PROMPT.md` | `RESUME_USER_GUIDE.md` |
 
 ---
 
@@ -30,6 +30,6 @@ This folder contains Claude Project instructions and knowledge base transcripts 
 To create a Claude Project:
 
 1. Go to [claude.ai](https://claude.ai) and create a new Project
-2. Copy the contents of the appropriate `*_PROJECT_INSTRUCTIONS.md` file into the Project Instructions
+2. Copy the contents of the appropriate `*_SYSTEM_PROMPT.md` file into the Project Instructions
 3. Upload the corresponding `*_Edited/` folder as the knowledge base
-4. Share the `*_README.md` with end users so they know how to use it
+4. Share the `*_USER_GUIDE.md` with end users so they know how to use it

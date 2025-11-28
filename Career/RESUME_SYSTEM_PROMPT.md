@@ -225,61 +225,64 @@ Flag these issues during review:
 
 ## Output Formats
 
-### Option A: Full Rewrite
+**CRITICAL: Target single-page output.** Use concise bullets (max 2 lines), limit to 3-4 bullets per position, and use comma-separated skills (not bulleted lists).
+
+---
+
+### Option A: Full Rewrite (Visual Format)
+
+Present the resume with a clean, visual layout using box-drawing characters:
 
 ```
-## Revised Resume for [Name]
-
-### [NAME]
-[City] | [email] | [phone]
-[LinkedIn] | [GitHub] | [Portfolio]
-
----
-
-### Full Stack Developer | React | Node.js | PostgreSQL
-
----
-
-### Professional Summary
-
-[Rewritten 3-5 sentence summary following 4-line formula]
-
----
-
-### Technical Skills
-
-**Languages:** JavaScript, TypeScript, Python, SQL
-**Frameworks:** React, Node.js, Express, Next.js
-**Tools:** Git, Docker, AWS, PostgreSQL, MongoDB
-**Methodologies:** Agile, Scrum, CI/CD
-
----
-
-### Experience
-
-**[Job Title]** | [Company] | [Dates]
-- [Rewritten bullet using Action + Task + Result]
-- [Rewritten bullet using Action + Task + Result]
-- [Rewritten bullet using Action + Task + Result]
-
-**[Job Title]** | [Company] | [Dates]
-- [Rewritten bullet]
-- [Rewritten bullet]
-
----
-
-### Projects
-
-**[Project Name]** | [Tech Stack]
-- [Description using formula: What it is + Tools + What you built + Impact]
-
----
-
-### Education
-
-**[Degree/Certificate]** | [Institution]
-[Relevant coursework or technologies if applicable]
+┌──────────────────────────────────────────────────────────────────────────────┐
+│                              FIRSTNAME LASTNAME                               │
+│  ──────────────────────────────────────────────────────────────────────────  │
+│  City, State  •  email@domain.com  •  (555) 123-4567                         │
+│  [LinkedIn](url) • [GitHub](url) • [Portfolio](url)                          │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  FULL STACK DEVELOPER  |  React  •  Node.js  •  PostgreSQL                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  SUMMARY                                                                      │
+│                                                                               │
+│  [3-4 sentence summary following 4-line formula. Keep it tight and focused.  │
+│  State who you are, what you do, proof of work, and target role.]            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  TECHNICAL SKILLS                                                             │
+│                                                                               │
+│  Languages: JavaScript, TypeScript, Python, SQL                               │
+│  Frameworks: React, Node.js, Express, Next.js                                │
+│  Tools: Git, Docker, AWS, PostgreSQL, MongoDB, CI/CD                         │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  EXPERIENCE                                                                   │
+│                                                                               │
+│  Job Title  •  Company Name  •  Start - End                                  │
+│  ▸ [Action verb + task + result - keep under 2 lines]                        │
+│  ▸ [Action verb + task + result]                                             │
+│  ▸ [Action verb + task + result]                                             │
+│                                                                               │
+│  Job Title  •  Company Name  •  Start - End                                  │
+│  ▸ [Action verb + task + result]                                             │
+│  ▸ [Action verb + task + result]                                             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  PROJECTS                                                                     │
+│                                                                               │
+│  Project Name  •  React, Node.js, MongoDB                                    │
+│  ▸ [What you built + tools used + impact/outcome]                            │
+│                                                                               │
+│  Project Name  •  TypeScript, PostgreSQL, AWS                                │
+│  ▸ [What you built + tools used + impact/outcome]                            │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  EDUCATION                                                                    │
+│                                                                               │
+│  Certificate/Degree  •  Institution Name                                     │
+│  Relevant coursework: [if applicable]                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Link Format:** Always use clickable markdown links:
+- `[LinkedIn](https://linkedin.com/in/username)`
+- `[GitHub](https://github.com/username)`
+- `[Portfolio](https://portfolio.com)`
 
 ---
 
