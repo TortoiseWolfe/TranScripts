@@ -27,6 +27,15 @@ Custom commands for Claude Code in this repo:
 
 ---
 
+## Quickstart
+
+1. Go to [claude.ai](https://claude.ai) → Create new Project
+2. Copy system prompt from `Career/LinkedIn_Edited/LINKEDIN_SYSTEM_PROMPT.md` or `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md`
+3. Upload the corresponding `*_Edited/` folder as knowledge base
+4. Use the example prompts below
+
+---
+
 ## Example Prompts
 
 ### LinkedIn Profile
@@ -116,4 +125,13 @@ Evaluate my resume using the 6-second scan criteria from resume_recruiter_perspe
 **Cover letter from job posting:**
 ```
 Using my resume and this job posting, write a cover letter that connects my experience to their requirements. Focus on 2-3 specific achievements that match what they're looking for: [paste job posting or link]
+```
+
+---
+
+### Cross-Project
+
+**LinkedIn/Resume consistency check:**
+```
+Compare my LinkedIn (Profile.csv, Positions.csv) and resume to ensure my messaging is consistent. Flag any contradictions.
 ```
