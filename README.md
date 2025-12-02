@@ -13,3 +13,107 @@ Educational transcripts from YouTube playlists, cleaned and organized for use wi
 
 - [Career Setup Instructions](Career/README.md) - Claude Project setup
 - [LinkedIn Data Export Guide](Career/LinkedIn_Edited/README.md) - How to export your LinkedIn profile
+
+---
+
+## Slash Commands
+
+Custom commands for Claude Code in this repo:
+
+| Command | Description |
+|---------|-------------|
+| `/clean-transcript` | Clean a raw transcript file—removes filler, keeps frameworks and actionable advice, outputs markdown |
+| `/extract-linkedin` | Unzip LinkedIn data export in `Career/LinkedIn_Edited/private/`, delete irrelevant files, keep profile data for analysis |
+
+---
+
+## Example Prompts
+
+### LinkedIn Profile
+
+After uploading your LinkedIn CSV files to a Claude Project with the `LinkedIn_Edited/` knowledge base:
+
+**Full profile review:**
+```
+Review my LinkedIn CSV files against the frameworks in LinkedIn_Edited/. Give me a score and prioritized list of what to fix.
+```
+
+**Quick wins:**
+```
+Based on my Profile.csv and Skills.csv, what are 5 changes I can make in the next 10 minutes to improve recruiter visibility?
+```
+
+**Headline rewrite:**
+```
+Rewrite my headline from Profile.csv using the formula in linkedin_headline_workshop_evening.txt. Give me 3 options.
+```
+
+**About section rewrite:**
+```
+Rewrite my Summary from Profile.csv using the 5-part structure in linkedin_summary_about_section.txt.
+```
+
+**Experience bullets:**
+```
+Rewrite my Positions.csv descriptions using the skills-focused format in linkedin_skills_projects_education.txt. Replace duties with searchable skills.
+```
+
+**Skills audit:**
+```
+Audit my Skills.csv against the SEO strategy in linkedin_seo_recruiter_optimization_week12.txt. What's missing? What should I reorder?
+```
+
+**Job description match:**
+```
+Compare my profile against this job posting and tell me which keywords I'm missing: [paste job description]
+```
+
+**Recommendations review:**
+```
+Evaluate Recommendations_Received.csv using the 4-part framework in linkedin_recommendations_week9.txt. Which ones help and which don't?
+```
+
+**All-Star checklist:**
+```
+Run the All-Star Profile Completeness Checklist from the frameworks against my CSV files. What's missing?
+```
+
+---
+
+### Resume
+
+After uploading your resume to a Claude Project with the `Resume_Edited/` knowledge base:
+
+**Full resume review:**
+```
+Review my resume against the frameworks in Resume_Edited/. Score my bullets and tell me what to fix first.
+```
+
+**Bullet rewrites:**
+```
+Rewrite my experience bullets using the Action + Task + Result formula from resume_experience_bullets_week5.txt.
+```
+
+**Summary rewrite:**
+```
+Rewrite my professional summary using the 4-line formula in resume_professional_summary_week3.txt.
+```
+
+**ATS keyword check:**
+```
+Check my resume against this job posting for missing keywords using the anchor strategy in resume_keywords_week4.txt: [paste job description]
+```
+
+**6-second scan test:**
+```
+Evaluate my resume using the 6-second scan criteria from resume_recruiter_perspective_week1.txt. What do recruiters see first?
+```
+
+---
+
+### Cover Letter
+
+**Cover letter from job posting:**
+```
+Using my resume and this job posting, write a cover letter that connects my experience to their requirements. Focus on 2-3 specific achievements that match what they're looking for: [paste job posting or link]
+```
