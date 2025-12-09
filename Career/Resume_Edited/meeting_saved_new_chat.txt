@@ -1,0 +1,109 @@
+2025-12-03 18:04:00 From Turtle Wolfe to Everyone:
+	brb, trying to finish a bite for dinner
+	
+2025-12-03 18:10:21 From Turtle Wolfe to Everyone:
+	no
+	
+2025-12-03 18:14:24 From 6 Figure Coding Coach to Everyone:
+	You can measure:
+	 • Frequency. How often did you do something
+	 • Volume. How many items, users, tickets, pages, or features
+	 • Time. How long something took or how much time you helped save.
+	 • Scope. Size of the project or team.
+	 • Reach. Number of people who used what you built or supported.”
+	
+2025-12-03 18:15:09 From 6 Figure Coding Coach to Everyone:
+	Frequency examples:
+	 • “Joined daily standups and completed two to three tickets per sprint.”
+	 • “Ran manual test passes on each release before deployment.”
+	
+2025-12-03 18:15:53 From 6 Figure Coding Coach to Everyone:
+	Volume examples:
+	 • “Built six reusable React components for shared layouts.”
+	 • “Wrote 20+ unit tests to cover core functions.”
+	 • “Supported 50+ customer orders per week in a part-time retail role.”
+	
+2025-12-03 18:16:27 From 6 Figure Coding Coach to Everyone:
+	Scope examples:
+	 • “Collaborated with a team of four developers on a full-stack project.”
+	 • “Maintained data for a product catalog of 200+ items.”
+	
+2025-12-03 18:17:00 From 6 Figure Coding Coach to Everyone:
+	Reach examples:
+	 • “Built a dashboard used by classmates and instructors to track project progress.”
+	 • “Created a tutorial that classmates referenced during a group project.”
+	
+2025-12-03 18:21:00 From 6 Figure Coding Coach to Everyone:
+	Take three minutes and write down three raw metrics from your experience.
+	
+2025-12-03 18:22:09 From 6 Figure Coding Coach to Everyone:
+	About how many features, pages, or components have you built?
+	 • About how many users, tickets, or customers have you supported?
+	 • About how many projects, sprints, or group assignments have you completed?”
+	
+2025-12-03 18:25:16 From Turtle Wolfe to Everyone:
+	I'm sure I can come up with better ones later, but first draftScriptHammer has over 33 features,I've created over a thousand react components (generous estimate)my git hub has 108 repos
+	
+2025-12-03 18:25:52 From 6 Figure Coding Coach to Everyone:
+	Now we apply the formula: Action Verb + Task + Result (with metric if possible).
+	
+2025-12-03 18:27:12 From 6 Figure Coding Coach to Everyone:
+	Template 1:
+	 “[Action verb] [what you worked on] for [how many / how often] to [result or purpose].”
+	Template 2:
+	 “[Action verb] [number] [items/features/tickets] in [time frame], which [result / supported outcome].”
+	Template 3:
+	 “[Action verb] [task], handling [volume or frequency] to support [team, users, or project].”
+	
+2025-12-03 18:29:33 From 6 Figure Coding Coach to Everyone:
+	• Built
+	• Developed
+	• Engineered
+	• Designed
+	• Implemented
+	• Optimized
+	• Refactored
+	• Automated
+	• Integrated
+	• Debugged
+	• Deployed
+	• Architected
+	• Configured
+	• Tested
+	• Validated
+	• Scripted
+	• Streamlined
+	• Enhanced
+	• Improved
+	• Launched
+	• Customized
+	• Modernized
+	• Configured
+	• Analyzed
+	• Monitored
+	• Secured
+	• Delivered
+	• Resolved
+	• Supported
+	• Maintained
+	
+2025-12-03 18:35:32 From Leo to Everyone:
+	Implemented 8  Cypress tests for the sign-in flow to increase testing coverage in a single ticket
+	
+2025-12-03 18:36:41 From Turtle Wolfe to Everyone:
+	Built over 33 features for ScriptHammer.com
+	
+2025-12-03 18:37:14 From David Proto to Everyone:
+	Completed 2 -  4 tickets per month for various clients in Tech Joy Academy.
+	Helped an average of 12 - 16 people per day at the hardware store who had questions.
+	Delivered to about 12 customers per day at O’Reilly Auto parts to help our professional customers fix people’s cars.
+	
+2025-12-03 18:40:48 From 6 Figure Coding Coach to Everyone:
+	Built over 33 new features for ScriptHammer.com using React and Storybook to improve workflow speed and strengthen user engagement.
+	
+2025-12-03 18:44:27 From 6 Figure Coding Coach to Everyone:
+	Completed 2 to 4 tickets per month for Tech Joy Academy clients using Next.js, JavaScript, CSS, and TypeScript to improve site performance and support a smoother user experience.
+	
+2025-12-03 18:51:31 From Turtle Wolfe to Everyone:
+	under experience i found I can put 100's of components and then Participated in 'weekly' code reviews.. does 'weekly' count as a number?
+	
