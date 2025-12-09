@@ -1,0 +1,740 @@
+Hey, Leo. We'll just wait a couple
+minutes for others to join.
+>> All right.
+on it. Then put in the trifecta. It ran
+through.
+Okay, everyone,
+let's get started.
+Welcome. Welcome.
+All right. So,
+welcome back.
+>> Thank you.
+>> Tonight, we are going to make your
+resumes more concrete
+and convincing by adding
+numbers.
+So,
+we've been talking about this quite a
+bit. Recruiters scan resumes.
+Their eyes go straight to metrics.
+Numbers make your work feel real.
+Incredible.
+Now,
+you do not need a corporate dashboard or
+a performance report to use numbers.
+Okay? You can use counts,
+frequency, time saved,
+user impact,
+or even estimates.
+as long as you stay honest.
+>> Okay.
+>> So,
+have you added numbers to your resume
+yet?
+>> Yes. No. A little. Anyone?
+>> No. I just added dates.
+>> Okay. Okay.
+No, I haven't added them.
+Wherever you are, you'll leave tonight
+with three measurable bullets. So,
+why recruiter scan for metrics? So, when
+recruiters read your resume, they want
+two things fast. What you did and how
+much it mattered. I think we've talked
+about this before.
+Numbers give a quick picture of impact.
+adjectives,
+they don't give impact necessarily. They
+kind of beat it around the bush.
+So,
+compare a few of these, right?
+Reasonable.
+Oh, compare these two.
+responsible
+for testing features
+or
+tested three features
+per sprint
+and logged bugs before release.
+Sounds a little bit different. Yeah.
+>> Yeah.
+>> So, the second version feels more real.
+It gives scope and rhythm.
+Here's another.
+Helped customers with questions.
+Here's another. Supported 20 to 30
+customer requests each week by email and
+chat. Simple.
+Very simple.
+Again, same kind of work, completely
+different impact.
+So,
+here's the thing.
+Recruiters scan for metrics because
+numbers show scale,
+numbers show consistency,
+and numbers hint at trust and
+responsibility.
+Your job is to tell the truth and make
+the scale visible.
+So
+now
+for the next few minutes we're going to
+talk about what you can measure
+even in non numeric roles. Okay.
+So many of you feel stuck because you
+think I do not have sales numbers or my
+projects are in school or in a boot
+camp, right? You still have options. You
+can measure frequency,
+right? How often
+did you do something?
+You can measure volume.
+how many items, how many users, how many
+tickets, how many pages or features.
+You can measure time,
+how long something took or how much time
+you helped save.
+You can measure scope,
+size of the project or team.
+You can measure reach,
+the number of people who used what you
+built or supported.
+I'm going to put that in the chat
+because I think that's pretty impactful
+and informative.
+Right.
+So,
+here are some tailored examples
+um that I believe are perfect for coders
+and tech students like you. So, here are
+some frequency
+examples.
+Joined daily standups and completed two
+to three tickets per sprint.
+ran manual test passes on each release
+before deployment.
+I'll put that in the chat as well.
+Okay.
+Volume
+examples
+built six reusable React components for
+shared layouts.
+wrote 20 plus unit tests to cover core
+functions.
+Supported 50 plus customer orders per
+week in a part-time retail role.
+Okay.
+Volume
+examples. Let me get that in the chat.
+time
+examples
+reduced form submission time by
+simplifying fields and validation logic.
+Responded to customer emails within 24
+hours consistently.
+Those are scope examples.
+Reach
+examples. Build a dashboard used by
+classmates and instructure instructors
+to track project progress.
+created a tutorial that classmates
+referenced during a group project.
+Okay,
+we'll get that in the chat and I believe
+that's the last. So, if you can count
+it,
+you can probably use it as a metric.
+You do not need to impress anyone. You
+need to be specific.
+Okay.
+So,
+how do you estimate numbers
+honestly?
+So, sometimes you do not have exact
+numbers. That's normal. You can still
+estimate.
+Here is how to estimate in a way that
+shows honesty.
+So, think about
+a normal week or a normal sprint.
+Ask yourself, how many tickets,
+customers,
+pages,
+or tasks do I usually handle?
+Think about some of the projects that
+you've done in TechJoy. You know, Dr.
+Emily developed this program in a way
+that you're working on real projects
+with real clients. Okay?
+So, you must have
+something that you can measure through
+those projects.
+Again, how many tickets, customers,
+pages, or tasks do I usually handle?
+Pick a range that feels realistic.
+Use language that signals an estimate.
+What language
+about
+around
+roughly
+X to Y.
+So some examples
+supported roughly
+15 to 20 customer requests per week.
+reviewed
+two to three pull requests per sprint,
+tested around
+five key user flows per release.
+Okay,
+so this kind of phrasing is common and
+it's reasonable.
+It gives the recruiter a sense of scale
+without pretending you tracked every
+single instance. Right? The rule is
+simple.
+Do not guess wildly.
+Think through your typical workload
+and choose a grounded range.
+So,
+let's do an activity. Okay.
+Now, let's make this real.
+I would like you to create
+three metrics from your past work or
+projects.
+Can be current projects that you're
+working on.
+then
+we will turn those into full bullets.
+Okay.
+So, here's step one. Let's brainstorm
+metrics.
+Okay.
+So, I'm going to put this in the chat.
+Okay. Here's your little assignment. And
+I have a few other things to to paste in
+there.
+Okay. Take three minutes and write down
+three raw metrics from your experience.
+These aren't the bullets.
+You're just
+throwing some raw metrics on a piece of
+paper,
+right?
+about how many features, pages
+or components have you built?
+About how many users,
+tickets
+or customers have you supported?
+Could be even your own colleagues.
+And then lastly,
+about how many projects, sprints,
+or group assignments have you completed?
+Put that in the chat.
+Okay?
+Do not overthink. Write quick, honest
+guesses.
+She wants to go outside.
+>> I'm getting
+a minute.
+One more minute.
+All
+right.
+Now,
+now we
+apply
+our formula, right? We've been working
+with our formulas. Now
+take each metric that you wrote down
+and wrap it in a sentence that shows
+what you did and why it mattered.
+So let me
+add in the formula.
+Okay.
+Okay. Now,
+here's what I'm going to do.
+I am going to
+run through some templates, okay, that
+you can use. I'm going to put them in
+the chat, but I'll also talk about them
+as well. Right.
+Action verb. Here's template number one.
+Action verb. What you worked on for, how
+many, how often? Two, result or purpose.
+Okay. Template two.
+Action verb number.
+items, features, tickets in time frame
+which
+resulted in supported outcome.
+Template three
+action verb
+task
+handling
+volume or frequency to support team
+users or project.
+Okay.
+And
+let me find some my list of action
+verbs.
+Okay. Um,
+all right. So here, let's use some of
+these.
+Okay,
+here's some action verbs we can use.
+Okay.
+So, let's
+let's go through some examples just so
+it can also give you some ideas. Okay.
+Here's one built
+six
+reusable React components
+that streamlined the layout across the
+main pages
+we have built in here. Yeah, there it
+is.
+Here's another one. handled 20 to 25
+customer support tickets each week
+through email and chat.
+Do I have handled in here?
+No. Got the next one though. Tested
+three features per sprint and logged
+bugs before release to reduce issues in
+production.
+Got another one.
+Is it reviewed in here?
+Reviewed two to three pull requests per
+week in suggested changes to improve
+code clarity.
+maintained a product list of 200 plus
+items in a shared spreadsheet for team
+reference.
+Now paste one of your new bullets in the
+chat.
+No one. Anyone?
+Come on, friends. Don't be shy.
+Even if you started one and you're in
+the process and it's not finished, just
+throw it up there. We're all We're all
+colleagues here.
+I think where I get stuck matters.
+I can't find the chat. I'm gonna have to
+sign off and sign back in because I'm I
+can't get to the chat right now. I don't
+know why.
+>> Okie dokie.
+>> So, let's see.
+>> No one wants to share.
+>> I'm working on it though.
+>> Come on, Leo.
+I technically have one. It's just it's
+not as big as a number I thought it
+would be.
+>> But it doesn't have to be big. This and
+also this is an exercise.
+>> Yeah. Anyway, implemented eight Cypress
+Cypress tests
+>> from the sign and flow
+>> to increase test coverage on a single
+ticket. Yes,
+brother. Yes.
+>> I just took one the ones I already had
+on my resume and put a number in it.
+>> But you're clearly working on your
+resume here.
+>> Yes.
+>> This is clear. This is exactly what
+we're talking about here.
+>> It
+already in the format that you put
+there. You just put a number in it.
+>> If
+Yeah, if you feel that it's a realistic
+number and if you feel that
+>> yeah I
+>> you can quantify it.
+>> Yeah,
+>> completely 100%.
+100%.
+I'm sorry. Glasses are Looks like I
+licked my glasses and I didn't
+Okay.
+Okay. Okay. Turtle,
+>> I'm still stuck on why it matters part
+at the end.
+>> Well, what was the objective of script
+hammer?
+It's a template, so I don't have to redo
+everything from scratch every time.
+>> A template for what?
+>> Pretty much any project I'll start. I
+It's a React template, but it's got like
+uh it's got story book. It's got a lot
+of things built into it that I'd want
+almost every time.
+>> Okay.
+>> It's got spec. I It's got all It's got
+those 33 features built in so I don't
+have to keep adding them from scratch
+every time.
+>> Okay, let's throw this in chat GBT. I
+don't know why y'all aren't look aren't
+using this.
+>> So,
+okay.
+Um
+All right. Hold on. Let me see.
+Hold on.
+Okay.
+Oops.
+Hold on.
+Use this template.
+And now tell me again
+what this script hammer is.
+>> It's a template so I don't have to do
+everything from scratch. Uh it's got
+React, uh Storybook,
+Spec Kit. It's got a lot of
+>> So you don't have to do what from
+scratch?
+Um
+there there's a lot of ceremony when you
+like start a new project. It's like
+you've got to set up everything before I
+can even start coding. There's a lot of
+steps I nor
+get started.
+>> So I try to get all that out of the way.
+Anything I feel like I repeat on every
+project, I've tried to put it in there.
+>> Okay.
+If I'm starting a new project, I'm like,
+I've done this on the last seven
+projects. Then, you know, I keep
+repeating it over and over. So, I've
+tried to put it into a template for this
+from the start.
+>> All right.
+>> I'm just not sure how to word that word
+to
+>> Okay. So, right, but turtle use chat
+GPT.
+So
+it's you use do you use React and
+Storybook
+to is that what Scriptammer does? They
+it uses
+those programs.
+>> Mhm.
+>> Okay.
+Okay.
+Oh, beautiful. Here it is. And now I'm
+not smart. I'm not a coder. I just put
+all this in chat GBT. Okay. Here it is.
+Boom.
+Okay, that sounds good.
+All right, so let me share my screen
+real quick so you can see what I did and
+how I put it
+in chat GPT.
+All right, can you see my page?
+Okay,
+>> this is what I this is what I did. Use
+this template and I just took the first
+template because it made sense.
+Use this template action verb what you
+worked on for how many how often to
+result or purpose to rewrite this bullet
+for a resume to make it more impactful
+here. And I just copy and paste what you
+put built over 33 features for script
+hammer. Okay.
+And then this is what it came up with
+first. And I said, "Okay, so great. Now
+add the programs used in Scriptammer,
+React, and Storybook." And that's what
+it came up with. There's your bullet.
+>> Okay.
+>> All right.
+So,
+the technology is there, people. It's
+there. Utilize it. All right, David,
+you've got some stuff. Let's talk about
+it.
+All right.
+Well, we need the the why. It's
+impactful.
+>> Oh, yeah.
+>> In this first one, it's all right.
+helped an average of 12 to 12 to 16
+people per day at a hardware store who
+had questions. Great. But what was the
+result now? Delivered to
+>> the wrong advice. That was the
+>> delivered about 12 customers per day at
+to help our professional. Okay. All
+right. That's closer.
+>> Yeah.
+>> All right.
+Okay.
+Uh for this first one completed two to
+four four tickets per month. Is there
+any program
+uh programs uh that you used?
+>> Yeah. Next.js and um WordPress
+and JavaScript.
+>> Okay.
+and TypeScript.
+>> Oh boy, hang on. NextJS.
+So you said Next.js
+>> JavaScript.
+>> Yeah. JavaScript.
+>> Uhhuh. What else?
+>> And CSS.
+>> CSS and
+>> Yeah. And and Typescript,
+which is kind of the same thing as
+JavaScript. Really?
+>> All right. Little different.
+>> Yeah. Not much.
+>> We'll just put it in there. Okay.
+>> Okay.
+All right.
+Here you go.
+>> Let's see.
+You have to share your screen again.
+>> Oh. Uh, yes I do, don't I? Sorry, guys.
+>> You don't have to. But you
+>> It's been a long day. Sorry.
+Oh, wait. I put it in the chat.
+>> Oh, you did. Okay, never mind.
+>> Yeah.
+completed two to four tickets per month
+for TechJoy Academy clients using
+Nex.js, JavaScript, CSS, and TypeScript
+to improve site performance and support
+a smoother user experience.
+>> That sounds awesome.
+>> There it is.
+>> Yep.
+>> Whoop. There it is.
+>> Right. How is uh how is this feeling to
+everyone? Is this making sense? Like do
+you guys think that you can do this
+on your own?
+>> Yeah.
+>> It's just I mean guys if I can do this
+>> please anyone can do this.
+>> Yeah.
+>> All right. So
+that's a great exercise
+right now.
+Here's
+a few things to think about
+when you're looking at your resume.
+If you have something that says worked
+on,
+change that to built
+>> Yeah. were implemented.
+Name the tech stack. If you can
+clarify
+who benefited,
+user, team, customer, instructor.
+So, where to add your numbers now,
+right? Think about your current resume
+and ask yourself. I think Leo was kind
+of this is he he was already mentally
+the there. So well done Leo. So which
+bullets can gain a number?
+Which bullets can gain a frequency or
+range?
+Which bullets can gain a time or speed
+element?
+Pick two existing bullets from your
+resume and rewrite them with one verb
+from our list, one metric, range, or a
+time reference.
+Right?
+This is what we're talking about.
+So, let me give you a few minutes to do
+that.
+We're not going to share, but definitely
+definitely
+see where you can add
+Sorry, friends.
+>> Chelsea, did you get a lot of snow up
+there?
+>> Yeah,
+>> we got
+>> foot of snow yesterday.
+>> Wow. I figured as much. We got almost
+down here.
+>> How many?
+>> We got mostly rain where I am.
+>> Where are you?
+>> Uh, eastern Connecticut.
+>> Gotcha. Yeah.
+>> But yeah, it it snowed a little bit
+yesterday. This morning when I got up.
+>> Yeah.
+>> All day yesterday. It was just rain.
+>> Yeah.
+>> Yeah. No good.
+>> Yeah, we got a lot of snow.
+>> Yeah. I saw Brmley got like a foot of
+snow, too. Like the mountain went up on
+Facebook and they show all the fresh
+snow they got was wow.
+>> Yeah, we got a good amount. It was
+pretty.
+>> Yeah, I can't wait for our first snow.
+This winter supposed to be pretty pretty
+good. I think I think for snow they
+said.
+>> Yeah. You know, it I I live in an
+apartment complex that they plow, but we
+have to, you know, there's a little bit
+of digging that we have to do with my
+our car my car, our cars. So,
+>> Gotcha.
+>> But it's done now. It's all good.
+>> Yeah.
+>> Till the next We've got
+to We've got this month, January, and
+February.
+>> Yeah. March it kind of slows down, but
+we've gotten uh dumped on in March, too.
+And April.
+>> Yeah.
+>> We've had three feet of snow in April.
+>> Wow.
+>> And you live near Albany, right?
+>> Yeah.
+>> Okay.
+>> Yeah. I grew up in in a place called
+Skenctity.
+>> Yeah, I know that.
+>> Which is, you know, part of the the
+Capitól District.
+>> Yeah. I told you I dated a girl from
+Mechanicville. Um,
+>> so and then her her her brother lived in
+Clifton Park, so I know the other pretty
+well.
+>> Yep. Yep. Yep.
+>> Yep.
+>> Yep.
+>> Um, no. Weekly does not count as a
+number.
+Now,
+I am so sorry that I'm yawning. Um, it's
+been a long week and it's only
+Wednesday.
+Now,
+here's how I'm going to close. So,
+tonight you learned that numbers tell
+your story faster than any adjective,
+but I would like to say that using them
+in combination is is impactful.
+So recruiters scan for metrics because
+metrics show scale and trust. You do not
+need perfect data.
+You need honest,
+reasonable numbers that bring your work
+to life.
+Add uh so your homework, right?
+Add at least one metric to every
+experience section on your resume.
+Aim for three to five strong quantified
+bullets.
+Update your LinkedIn experience
+descriptions with the same numbers so
+your story matches across platforms.
+And finally, data sells competence.
+Use numbers to make your results
+undeniable.
+Who has questions?
+concerns, thoughts.
+Come on.
+No one, no one wants to
+provide.
+No one wants to provide any insight or
+thoughts.
+>> No, I just I it sounds really good
+though. those examples you gave, it
+makes the it makes the resume read much
+better and it sounds sincere when you
+say it too.
+>> Um, yeah. And you know, again, it's not
+about having these perfect numbers, you
+know, it's really about
+being honest with what you've done,
+right?
+>> Yeah.
+Well, anyway, those are my thoughts.
+That's my idea.
+>> Those are your thoughts. Okay.
+>> Who else has thoughts
+>> on script hammer? I've got there's over
+2,000 tests in there,
+>> but I feel weird because AI wrote all
+the tests.
+>> So, it's not like I wrote the test
+directly, but I mean they are used. They
+they they
+I use them that the tests were written
+before any of the code was written and
+so it actually quantifies if the code is
+passing or not. So they are usable test.
+>> Okay.
+>> Are using a pretty much to write almost
+everything now. I mean hardly hardly
+ever write anything from scratch. It
+just feels weird to say I wrote 2000
+tests when
+>> Yeah.
+>> Yeah.
+But you know, it's like I think you guys
+are doing great.
+Um, and you know, I see a lot of um
+a lot of work being done and it shows
+absolutely shows.
+Leo, what say you? Anything?
+Any thoughts?
+If you don't have any thoughts, it's
+okay.
+anyone?
+I mean, I'm really excited. Uh I think
+that these are this is some really
+impactful
+um
+things that even I need to look at my
+resume, my LinkedIn profile to see what
+I can quantify
+to see how I can update things.
+you know, everyone can add met some sort
+of numbers and metrics to their their
+resume and LinkedIn profile. And I would
+say that with these bullets, if you are
+listing experience
+um and and sort of listing descriptions
+underneath that experience in your
+resume, definitely do that. I would I I
+I don't I never say that your resume and
+your LinkedIn profile should mirror each
+other, but in the experience and if you
+have bullets underneath your experience,
+they that should mirror.
+>> Yeah.
+>> Does that make sense?
+>> Yes.
+Okay.
+All right, I'll I'm going to give you
+three minutes or two minutes back of
+your lives. Um,
+>> I will Yeah, I'll see you next week and
+uh have a wonderful, wonderful,
+wonderful evening.
+>> All right. Thank you, Chelsea.
+>> You're welcome.
+>> Good night.
+>> Good night.

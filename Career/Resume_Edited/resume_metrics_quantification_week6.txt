@@ -1,0 +1,162 @@
+# Adding Metrics and Numbers to Your Resume
+
+## Why Recruiters Scan for Metrics
+
+When recruiters read your resume, they want two things fast:
+- **What you did**
+- **How much it mattered**
+
+Numbers give a quick picture of impact. Adjectives don't give impact—they beat around the bush.
+
+**Compare these examples:**
+
+| Weak | Strong |
+|------|--------|
+| Responsible for testing features | Tested 3 features per sprint and logged bugs before release |
+| Helped customers with questions | Supported 20-30 customer requests each week by email and chat |
+
+The second version feels more real. It gives scope and rhythm.
+
+**Recruiters scan for metrics because numbers show:**
+- Scale
+- Consistency
+- Trust and responsibility
+
+Your job is to tell the truth and make the scale visible.
+
+---
+
+## 5 Types of Metrics (Even for Non-Numeric Roles)
+
+You don't need sales numbers or corporate dashboards. You can measure:
+
+| Type | What It Measures | Example |
+|------|------------------|---------|
+| **Frequency** | How often you did something | Joined daily standups and completed 2-3 tickets per sprint |
+| **Volume** | How many items, users, tickets, pages, features | Built 6 reusable React components for shared layouts |
+| **Time** | How long something took or time saved | Reduced form submission time by simplifying validation logic |
+| **Scope** | Size of the project or team | Maintained a product list of 200+ items for team reference |
+| **Reach** | Number of people who used what you built | Built a dashboard used by classmates and instructors to track progress |
+
+**If you can count it, you can probably use it as a metric.**
+
+---
+
+## Examples by Category
+
+### Frequency Examples
+- Joined daily standups and completed 2-3 tickets per sprint
+- Ran manual test passes on each release before deployment
+
+### Volume Examples
+- Built 6 reusable React components for shared layouts
+- Wrote 20+ unit tests to cover core functions
+- Supported 50+ customer orders per week in a part-time retail role
+
+### Time Examples
+- Reduced form submission time by simplifying fields and validation logic
+- Responded to customer emails within 24 hours consistently
+
+### Reach Examples
+- Built a dashboard used by classmates and instructors to track project progress
+- Created a tutorial that classmates referenced during a group project
+
+---
+
+## How to Estimate Numbers Honestly
+
+Sometimes you don't have exact numbers. That's normal. You can still estimate.
+
+**How to estimate honestly:**
+
+1. Think about a normal week or sprint
+2. Ask yourself: How many tickets, customers, pages, or tasks do I usually handle?
+3. Pick a range that feels realistic
+4. Use language that signals an estimate
+
+**Estimation language:**
+- About
+- Around
+- Roughly
+- X to Y (ranges)
+
+**Examples with honest estimation:**
+- Supported roughly 15-20 customer requests per week
+- Reviewed 2-3 pull requests per sprint
+- Tested around 5 key user flows per release
+
+This phrasing is common and reasonable. It gives recruiters a sense of scale without pretending you tracked every single instance.
+
+**The rule is simple:** Don't guess wildly. Think through your typical workload and choose a grounded range.
+
+---
+
+## 3 Bullet Templates
+
+### Template 1: Action + What + Quantity + Result
+```
+[Action verb] + [what you worked on] + [for how many/how often] + [to result/purpose]
+```
+**Example:** Built 6 reusable React components that streamlined the layout across main pages
+
+### Template 2: Action + Number + Items + Timeframe + Outcome
+```
+[Action verb] + [number] + [items/features/tickets] + [in time frame] + [which resulted in/supported outcome]
+```
+**Example:** Completed 2-4 tickets per month for TechJoy Academy clients using Next.js, JavaScript, CSS, and TypeScript to improve site performance
+
+### Template 3: Action + Task + Volume + Beneficiary
+```
+[Action verb] + [task] + [handling volume/frequency] + [to support team/users/project]
+```
+**Example:** Handled 20-25 customer support tickets each week through email and chat
+
+---
+
+## Bullet Examples with Metrics
+
+- **Built** 6 reusable React components that streamlined the layout across the main pages
+- **Handled** 20-25 customer support tickets each week through email and chat
+- **Tested** 3 features per sprint and logged bugs before release to reduce issues in production
+- **Reviewed** 2-3 pull requests per week and suggested changes to improve code clarity
+- **Maintained** a product list of 200+ items in a shared spreadsheet for team reference
+- **Implemented** 8 Cypress tests for the sign-in flow to increase test coverage
+
+---
+
+## Quick Fixes for Your Resume
+
+| Change This | To This |
+|-------------|---------|
+| "Worked on" | "Built" or "Implemented" |
+| Generic verbs | Specific action verbs |
+| Missing tech stack | Name the technologies used |
+| No beneficiary | Clarify who benefited (user, team, customer, instructor) |
+
+**Ask yourself about each bullet:**
+- Which bullets can gain a number?
+- Which bullets can gain a frequency or range?
+- Which bullets can gain a time or speed element?
+
+---
+
+## Homework
+
+1. **Add at least one metric** to every experience section on your resume
+2. **Aim for 3-5 strong quantified bullets**
+3. **Update your LinkedIn** experience descriptions with the same numbers so your story matches across platforms
+
+---
+
+## Key Takeaways
+
+- Numbers tell your story faster than any adjective
+- Recruiters scan for metrics because metrics show scale and trust
+- You don't need perfect data—you need honest, reasonable numbers that bring your work to life
+- **Data sells competence. Use numbers to make your results undeniable.**
+
+---
+
+## Resume-LinkedIn Alignment
+
+Experience bullets underneath each role should mirror between your resume and LinkedIn profile. Keep your story consistent across platforms.
