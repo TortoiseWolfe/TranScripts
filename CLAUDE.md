@@ -9,7 +9,7 @@ Educational transcripts from YouTube playlists (TechJoy, Career), cleaned and or
 ## Custom Commands
 
 ### `/clean-transcript`
-Cleans transcript files by removing filler while preserving educational content.
+Cleans raw transcript files for use as Claude Project knowledge bases.
 
 **Remove:** Conversational filler, technical difficulties, verbal filler ("um", "uh", "like"), off-topic content
 
@@ -19,6 +19,15 @@ Cleans transcript files by removing filler while preserving educational content.
 
 **Output:** Markdown with section headers, bullet points, bold emphasis, short paragraphs (2-3 sentences max)
 
+### `/extract-linkedin`
+Processes LinkedIn data export archives in `Career/LinkedIn_Edited/private/`.
+
+**Keep:** Profile.csv, Positions.csv, Skills.csv, Education.csv, Projects.csv, Certifications.csv, Recommendations_Received.csv, Connections.csv, Company Follows.csv
+
+**Delete:** Ad targeting, messages, invitations, rich media, learning data, and other non-profile files
+
+**Note:** The `private/` directory is gitignored—never commit personal data
+
 ## Architecture
 
 ```
@@ -26,7 +35,7 @@ Career/
 ├── LinkedIn/           # Raw transcripts (22 files)
 ├── LinkedIn_Edited/    # Cleaned transcripts + system prompt + user guide
 │   └── private/        # Personal documents (gitignored)
-├── Resume/             # Raw transcripts (8 files)
+├── Resume/             # Raw transcripts (11 files)
 ├── Resume_Edited/      # Cleaned transcripts + system prompt + user guide
 │   └── private/        # Personal documents (gitignored)
 └── TechInterview/      # Interview resources
@@ -41,7 +50,7 @@ Two career coaching projects with system prompts and knowledge bases:
 | Project | System Prompt | Knowledge Base |
 |---------|---------------|----------------|
 | LinkedIn Profile Review | `Career/LinkedIn_Edited/LINKEDIN_SYSTEM_PROMPT.md` | 22 transcripts in `LinkedIn_Edited/` |
-| Resume Review | `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md` | 8 transcripts in `Resume_Edited/` |
+| Resume Review | `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md` | 11 transcripts in `Resume_Edited/` |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
@@ -51,3 +60,23 @@ Setup: Copy system prompt to Project Instructions at claude.ai, upload the corre
 - System prompts: `*_SYSTEM_PROMPT.md`
 - User guides: `*_USER_GUIDE.md`
 - Cleaned versions go in `*_Edited/` directories
+
+## Workflow
+
+**Adding new transcripts:**
+1. Extract transcript from YouTube using the [YouTube Transcript MCP server](https://github.com/jkawamoto/mcp-youtube-transcript) (see README for setup)
+2. Save raw transcript to appropriate folder (`Career/LinkedIn/`, `Career/Resume/`, etc.)
+3. Run `/clean-transcript <filename>` to create cleaned version
+4. Move cleaned version to corresponding `*_Edited/` directory
+5. Update Claude Project knowledge base at claude.ai if needed
+
+**LinkedIn profile analysis (CSV export):**
+1. User downloads LinkedIn data export from LinkedIn settings
+2. Place `.zip` in `Career/LinkedIn_Edited/private/`
+3. Run `/extract-linkedin` to unzip and clean
+4. Analyze CSVs against frameworks in `LinkedIn_Edited/` transcripts
+
+**LinkedIn profile analysis (live via MCP):**
+1. Ensure LinkedIn MCP server is configured (see README for setup)
+2. Use the MCP server to fetch profile data directly
+3. Analyze against frameworks in `LinkedIn_Edited/` transcripts

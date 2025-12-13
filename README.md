@@ -9,6 +9,32 @@ Educational transcripts from YouTube playlists, cleaned and organized for use wi
 
 ---
 
+## MCP Server Setup
+
+This repo uses two MCP servers, both available in Docker Desktop's MCP Catalog.
+
+### YouTube Transcript Server
+
+[jkawamoto/mcp-youtube-transcript](https://github.com/jkawamoto/mcp-youtube-transcript) extracts transcripts from videos.
+
+**Docker Desktop:** MCP Toolkit → Search "youtube-transcript" → Add server.
+
+### LinkedIn Server
+
+[stickerdaniel/linkedin-mcp-server](https://github.com/stickerdaniel/linkedin-mcp-server) accesses LinkedIn profile data directly.
+
+**Docker Desktop:** MCP Toolkit → Search "LinkedIn" → Add server → Configure.
+
+**Getting the `li_at` cookie:**
+1. Log into LinkedIn in your browser
+2. Open DevTools (F12) → Application → Cookies → linkedin.com
+3. Copy the `li_at` cookie value
+4. Paste into the Configure dialog in Docker Desktop
+
+**Note:** Cookie expires every ~30 days—you'll need to reconfigure periodically.
+
+---
+
 ## Documentation
 
 - [Career Setup Instructions](Career/README.md) - Claude Project setup

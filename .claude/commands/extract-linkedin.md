@@ -15,24 +15,37 @@ Extract and clean a LinkedIn data export archive, keeping only files relevant fo
 ## Files to KEEP
 
 ### High Priority (Core Profile Content)
-| File Pattern | Purpose |
-|--------------|---------|
-| `Profile.csv` | Headline, location, settings |
-| `Profile Summary.csv` | About section text |
-| `Positions.csv` | Work experience entries |
-| `Skills.csv` | All listed skills (critical for SEO) |
-| `Recommendations_Received.csv` | Social proof |
-| `Education.csv` | Education entries |
-| `Projects.csv` | Listed projects |
-| `Certifications.csv` | Certifications shown |
+| File Pattern | Purpose | Export Type |
+|--------------|---------|-------------|
+| `Profile.csv` | Headline, location, settings | Basic |
+| `Profile Summary.csv` | About section text | Basic |
+| `Positions.csv` | Work experience entries | Basic |
+| `Skills.csv` | All listed skills (critical for SEO) | Basic |
+| `Recommendations_Received.csv` | Social proof | Basic |
+| `Education.csv` | Education entries | Basic |
+| `Projects.csv` | Listed projects | Basic |
+| `Certifications.csv` | Certifications shown | Basic |
+| `Honors.csv` | Awards and honors | Basic |
+| `Languages.csv` | Language skills | Basic |
+| `Volunteer.csv` | Volunteer experience | Basic |
+| `Courses.csv` | Courses on profile | Basic |
 
 ### Medium Priority (Strategic Insight)
+| File Pattern | Purpose | Export Type |
+|--------------|---------|-------------|
+| `Connections.csv` | Network size for outreach planning | Basic |
+| `Endorsement_Received_Info.csv` | Which skills others validate | Basic |
+| `Company Follows.csv` | Target companies | Basic |
+| `SavedJobAlerts.csv` | Target roles | Basic |
+
+### Complete Export Only (Analytics & Content)
 | File Pattern | Purpose |
 |--------------|---------|
-| `Connections.csv` | Network size for outreach planning |
-| `Endorsement_Received_Info.csv` | Which skills others validate |
-| `Company Follows.csv` | Target companies |
-| `SavedJobAlerts.csv` | Target roles |
+| `Profile Views.csv` | Who's viewing your profile, patterns |
+| `Search Appearances.csv` | Keywords driving traffic to you |
+| `Articles.csv` | Published articles (thought leadership) |
+| `Posts.csv` | Your posts and activity history |
+| `Member Follows.csv` | Influencers you follow (industry signals) |
 
 ## Files to DELETE
 
