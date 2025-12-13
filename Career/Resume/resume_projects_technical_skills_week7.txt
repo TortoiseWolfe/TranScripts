@@ -1,0 +1,1035 @@
+2025-12-10T23:01:01Z - Career Strategy w/ Chelsea - YouTube
+Source: https://youtu.be/OIRvDboMrr0
+
+Hey there. We'll wait a few minutes for
+others to join.
+Hey, Turtle. We're just waiting for
+others to join.
+>> All right. I actually need to help
+unload some groceries real quick. Um, on
+a side note, I know you like us to have
+our cameras on. I've been having
+technical difficulties with my camera
+this week.
+>> Okay, not a worry. Thank you. No
+problem. I'll be right back.
+Hey Leo, we're starting a few minutes.
+Gota
+Okay, let's get started.
+All right, friends.
+This is week seven of our resume
+clinic.
+We are heading into week seven and we
+are going to be
+talking about
+Hold on a second here. My screen is not
+right. One second. I know I left you
+hanging.
+Who is that? Okay.
+[clears throat]
+Sorry guys, I'm just trying to get my
+screen just right.
+Is anyone out there? I don't see
+anybody.
+Where is my crew? There's Leo. Hey. Hey.
+Hey. Hey. Hey. Okay, cool. So,
+[snorts] week seven.
+Let's get into it. projects, technical
+skills, and portfolios. That seems to
+have been a hot topic since I started,
+even when we started doing the LinkedIn
+clinic series. So, you know, tonight
+we're focusing on one of the most
+powerful sections of your resume as a
+developer, right? It's your projects and
+your technical experience.
+So, this often determines whether a
+recruiter believes you can actually do
+the work, right? Screen is kind of
+messed up. Sorry. Um,
+and your projects it your your projects
+or technical experience. This section
+often determines whether a recruiter
+believes you do the work and your titles
+and summaries get attention.
+Projects earn trust for the most part.
+Okay. Now, at the end of this session,
+I'm hoping that you'll know where
+projects belong on your resume, how to
+write clean,
+scannable project descriptions. It's
+important because if you can't talk
+about your work, which is something that
+you want to see a little bit of in the
+resume, but we sure do know that we want
+to be able to talk about our work
+calmly, articulately, fluently, have a
+nice cadence in the technical interview,
+right? So, that's a big thing with
+developers as well. Um, how to link
+GitHub and portfolios the right way. And
+then how to align your resume projects
+with LinkedIn projects.
+Okay.
+Um,
+turtle. I think he's still there. I
+don't know. I thought I had four people.
+Anyhow, so
+>> I'm here.
+>> Quick. Oh, hey, turtle. [laughter]
+So, quick check. Okay, we're going to do
+quick check. Do you currently have a
+project section in your resume?
+Yes or no?
+What say you?
+Write something in the chat.
+Leo, how about you?
+You have any project section in your
+resume at the moment?
+Well, yeah, I do. It's mostly talking
+about the projects that we're working
+here on the internship slash what's it
+called? Junior dev stuff, you know.
+>> Yeah. Yeah. Yeah, of course. So, yeah,
+you do. That's a yes. Um, good. Now,
+when recruiters review projects,
+they are not judging perfection.
+They're looking for evidence of
+thinking,
+execution,
+and ownership.
+Now,
+strong project sections answer four
+questions quickly.
+Okay? And I'm going to put this in the
+chat, too. So, what did you build?
+What tools did you use?
+What problem did you solve?
+What part did you personally own?
+Weak project sections
+list tools
+with no context.
+Strong project sections
+show how the tools were applied. Okay.
+So,
+let me get this in the chat.
+I know you guys like that. So, that's
+why I've been doing it.
+Okay. So, I'm going to give a a
+contrast
+example.
+built a MER stack project
+using React, Node, and MongoDB.
+That's a weak one. When would you guys
+agree? Would you agree that that's a
+weak one?
+>> Yeah, that's more of just a list of
+things that you've used instead of
+>> how what exactly the objective was. how
+you I mean it it used one aspect right
+but not not everything that we really
+need to see. Thank you Leo.
+>> Now here's how you can emphas like you
+can uh
+completely
+build credibility here, right?
+built a full stack MER application
+that allows users to create and manage
+accounts integrating React state
+management with REST APIs and DB
+persistence.
+Okay, I'm going to I'm going to give you
+that
+to take a look at and
+chew on a little bit.
+Okay,
+so notice a difference. Same tools,
+completely different level of
+credibility.
+Okay.
+What did you build? Let's let's let's
+dissect this a little bit. What did you
+build? Right. There's the first
+question. Built a full stack MER
+application.
+What tools did you use?
+Okay. REST APIs, React, MongoDB.
+Okay, there's that. But what problem did
+it solve?
+Allows users to create and manage
+accounts.
+Okay.
+Now,
+what part did you personally own? Maybe
+you could elaborate that in a different
+bullet, but I think that
+that's a pretty good example
+and it shows clearly
+the
+sort of the formula and the structure,
+right? How does everybody feel about
+that? Good.
+Hello. Is anybody out there
+Thanks, Leo.
+So, where
+where do projects belong on your resume?
+Anybody have an have an idea? Anyone
+type in the chat since everyone seems
+shy?
+Where does it belong? Everyone take a
+guess.
+Jeez, guys. This isn't our first uh
+first time at the rodeo here.
+There's no wrong answers here. It's a
+safe to fail environment.
+Okay, fine. Oh, minor between work
+experience and education.
+All right, cool. Blake, hey, I'm driving
+but paying attention. Sorry. Okay. Also,
+haven't been working on this for a
+while. Okay, Blake, that's cool. Kick
+back. Have a listen. Thank you. So, Leo
+and Turtle, it's your show.
+We don't want Blake to do anything
+because he's driving. We want him to
+just listen and absorb,
+>> right?
+>> So, placement matters, okay?
+And if you are an early career
+developer,
+boot camp grad, or career changer,
+projects should appear near the top of
+your resume, right after your summary
+and or skills.
+Okay, so maybe something for you to kind
+of analyze a little bit. turtle. If you
+have professional engineering
+experience,
+here's Ann.
+Um, if you have professional engineering
+experience,
+projects can live under a technical
+experience section or be integrated into
+your job bullets. Okay? Projects should
+never be buried or treated like an
+afterthought.
+So
+just to clarify a little bit uh section
+naming.
+So accept acceptable
+um selection titles
+for your projects include projects,
+technical projects,
+selected projects,
+technical experience.
+Right? So choose clarity
+over creativity.
+All right? So,
+let me [sighs] copy and paste some of
+this
+into the chat so that you guys can have
+it. And you know what? I I honestly I
+suggest you take, you know, your little
+meeting notes, copy and paste what I
+copy and paste into the chat. just put
+it on a word doc or a Google doc just so
+that you can kind of go over everything
+and remember. Now, how do you write
+strong project entries?
+So,
+every project
+should be written in two parts. Okay?
+project name
+plus
+one line description of what it does.
+That's line one. Line two line
+two tools used
+plus
+what you specifically built or
+implemented.
+two lines,
+clean,
+scannable,
+no paragraphs. Okay, so let me
+copy and paste that and I'll give you a
+few examples which I'll also copy and
+paste.
+Okay, give me one second.
+Okay. So, here are a few examples and
+I'll make sure and copy and paste all
+three of these examples in the chat so
+that you have it to refer back to along
+with what I just previously
+um copy and pasteed. So, example one,
+full stack and it is a task tracker
+application
+built a full stack task management app
+allowing users to create,
+edit, and delete tasks.
+implemented React components,
+NodeJS,
+APIs,
+and MongoDB data storage.
+Okay. Now, for example two, I'm going to
+go for front end.
+So what you built was a portfolio site,
+designed and developed a responsive
+personal portfolio
+using React and CSS grid showcasing
+projects and GitHub repos repositories.
+Okay, I'm sure all of you are pretty
+much doing those things right now while
+you're building your
+image, your
+entire package, right? As a developer
+and here's example three
+backend
+authent authent authent authentification API. This is what
+you've built. Created REST API endpoints
+for user authent authentification
+using NodeJS Express and JWT including
+error handling and validation.
+These are all examples of what we
+previously talked about and how to
+list the projects that you've done on
+your resume. And this will bring even
+more credibility to who you are as an
+applicant.
+So
+here are the examples. Let me copy and
+paste them in.
+Any
+questions,
+concerns at the moment?
+Okay, [clears throat]
+we'll keep going.
+Oh, actually, you know what? I have an a
+fourth example that I actually want to
+show. And I want to do this for Anna
+because she's in QA. So the next one is
+QA testing. This is my final example and
+I'll copy and paste this in the chat
+too. API test suite
+developed manual and automated API tests
+using Postman and justest to validate
+request and response handling.
+Now, you know, all this this format,
+including the one that I just listed,
+and let me copy and paste that in right
+now.
+It this format shows scope,
+stack, and ownership. It g gives
+recruiters confidence without
+overwhelming them, right?
+It's very simple formula.
+Now, let's talk about links for a bit.
+Your resume
+should include
+a GitHub link at the top. If you are a
+developer,
+got to have a GitHub link.
+a portfolio link if you have one. So I
+would say a portfolio link is something
+that you probably developed your first
+you start developing your first and
+second year that you're working you know
+you actually are working on projects.
+You're um at a place hopefully where you
+have enough time to see results and you
+are able to see data and understand the
+results of your efforts. Right? and then
+an optional GitHub link directly under
+key projects if relevant. And that just
+makes it easy, right, for recruiters to
+say, "Oh, this is what you did. All
+right, here's a link. Let's check it
+out." Okay. Do not paste long URLs.
+Use clean hyperlink text like GitHub uh
+repository or live demo. Okay? Don't
+Don't be putting crazy links on your on
+your resume. It's very overwhelming.
+Now, let me
+get that in the chat so that you have it
+and you can copy it.
+>> What would be an example of a crazy link
+that like what's something somebody put
+in their resume? It's just like why did
+they put that there?
+>> I mean, if it's like a link that's three
+sent like three lines long, like you
+don't want to do that. Just I thought
+you meant the actual destination link.
+>> I got you. I thought you meant the
+actual destination of the link.
+>> No. Yeah, just the link itself. Just
+hyperlink the link.
+>> Okay, I got you.
+>> Yeah. So, really best practices.
+>> I think I might have a a demonstration
+on that on my resume. I'm not sure.
+>> Oh, share screen here.
+>> Oh, let's share it. Yeah, let's do it.
+You want to see that stuff?
+>> Yeah. right here on the top got the
+contact info, email, GitHub, and here
+like the link is actually contained
+within the text instead of being the
+entire link which could take up multiple
+lines on how long it is. Like look up
+here for this doc thing that all this
+stuff
+normally comprehend.
+>> You know what? I need to put this on my
+higher screen so it's going to look my
+other monitor. So it's going to look
+like I'm looking up
+>> because I'm blind and I can't see. Okay,
+now I can.
+>> All right. You know what,
+brother? Just do just you don't even
+need GitHub and then Leo Glenn Hayes.
+Just put
+>> Yeah.
+>> Yeah. Just hyperlink the GitHub.
+>> All right.
+>> And just put See, so change the name and
+just change that to GitHub.
+>> Yeah. Link. All right.
+>> Yep.
+There you go. And I can do the rest as
+well. The link. Yeah.
+>> Yeah. Yep.
+>> Yeah. I'm glad we dug into that. That's
+very that's very helpful.
+>> Yeah.
+Yeah. Because I mean if you can
+hyperlink it and and show I mean that's
+that's
+industry standard technology. You have
+to show you can do that. Yeah.
+>> Yeah.
+>> So good stuff.
+Yeah. Leo, thank you. That was amazing.
+I love that. Thank you. Now,
+best practices only link,
+you know, uh
+projects that you're proud of
+and and you know, the repos should have
+clear readme files.
+Code should be readable even if it's
+unfinished. and you choose to list it,
+it's got to be readable
+and commit. History matters more than
+polish,
+right? So,
+[clears throat] make sure it's
+links are not broken and everything is
+explained properly.
+Then, you know, your resume projects
+must match your LinkedIn project
+section.
+This is where
+resumeé and LinkedIn
+should really be uh mirrored.
+Same project names, same tools,
+same descriptions.
+And when recruiters click from your
+resume to link it in, they should see
+the same story reinforced,
+right?
+Okay.
+So
+now it's your turn.
+I'm going to give you 15 minutes
+to write a clear
+uh choose one project. Okay. And do the
+following.
+Okay.
+Let me
+and all that you need to do this I put
+in the chat. So, here's the assignment.
+15minute assignment.
+Write. Choose one project and do the
+following.
+Write a clear project title.
+Add a oneline description of what it
+does.
+Add a second line explaining what you
+built.
+uh and the tools used.
+Add a GitHub or portfolio link if
+available
+and keep it to two lines. All right. So,
+this is the 15minute project. It is in
+the chat again. Choose one project
+and do the following.
+It's all right here in the chat.
+And then when we're ready, I think Lisa,
+with the exception of you, because you
+just joined, why don't you just observe,
+then we'll start um we'll go through
+each one by one except for Jared. So,
+Turtle, Anna, Leo, will hear what you
+guys have.
+So,
+15 minutes
+>> and it could be on can it could be on
+any of the projects we've done. Right.
+>> Correct. Yes.
+>> I was just going to try to do it even
+though I came in a little late. I just
+was
+>> Oh, yeah. Sorry Jared. I didn't see you
+there. Sure thing. Yeah, please. And
+again, this is a safe to fail
+environment. You know, we're just we're
+curating these on the fly.
+This is an exercise for you to just kind
+of utilize what this lesson is.
+But again, everything you need, all the
+information information you need to do
+this is all copy and pasted in the chat
+in 15 minutes.
+Thanks, Turtle. About five more minutes,
+friends.
+How are we doing? Anybody need more
+time?
+Everyone there?
+Did you guys go and eat dinner?
+>> Can you guys hear me?
+>> I can hear you. Oh,
+>> can't hear you now if you're talking.
+>> Hear me now.
+>> Kind of. You're kind of going in and
+out.
+>> There you go. I can hear you now. You
+like that Verizon commercial.
+All right, Leo. I saw you posted some
+something and then you deleted it. What
+happened? Did you get stage?
+>> Uh, it was a bit incomplete still and I
+pressed the button by accident. I was
+trying to [laughter]
+>> Okay. Okay. Cool. Cool. Cool. Um, so
+let's use turtle as an example here.
+Now, I like what you did in that, you
+know, you're you're definitely following
+the instructions, right? So, write a
+clear project title. That is script
+hammer. Now
+I personally would hyperlink
+script script hammer. So I would take
+this link this GitHub link and hyperlink
+it
+make sense. So that when you click on
+the word script hammer,
+this GitHub
+page pulls up.
+Okay.
+Now,
+oneline description of what it does.
+Um,
+now is that production ready nextJS
+starter template? Yeah.
+All right. I would put a productionheavy
+nextJS starter template with real time
+encrypted messaging.
+Now,
+now I know that the second line,
+add a second line explaining what you
+built and the tools used.
+Build full stack features including
+group chat
+with ECDH encryption. Okay. Payments
+using Okay, good. But now what
+what is this 2.1
+AA accessibility compliance? What is
+that for? And what where is that
+supposed to be? Is that
+is that does that go with this WCAG
+2.1 AAA accessibility compliance?
+Turtle, are you there?
+>> Yeah. Yeah. That's it's basically like
+um say if somebody's dyslexic or they're
+color blind, those are the accessibility
+options that are built in.
+>> Okay. So,
+>> it's also like Arya tabs like screen
+readers.
+>> Okay. But that goes with this produ a
+production ready. That's what it goes
+with. Yeah.
+>> Yes.
+>> Okay.
+>> I was changing the hyperlink too. Right
+now it's going to the repo. I was going
+to change it where it goes to the actual
+project.
+>> Yep, there it goes.
+Cloud code helped after finding. Okay.
+Okay, cool.
+>> I basically just asked Claude to
+describe the project based on your what
+you put in the chat. I gave that to
+Claude and like explain what you're
+working on here.
+>> Yeah. Yeah. No, definitely. Um Yeah,
+sure.
+This looks good.
+>> I was I figured I'd re like you said
+that WCAG 2.1 like that can be a little
+technical for
+>> somebody that's not actually working in
+directly as in the code. So I was going
+to try and like not dumb it down but
+make it more accessible.
+>> So I just don't know how to get to that
+point yet.
+>> Yeah. Now but what does it do like what
+who does it benefit, right?
+um
+what it what does it do
+and like who does it
+whose life does it make better right
+>> so it's for that's I think that's just
+one thing I'd want to add in the second
+sentence in the build well why did you
+build it
+>> okay
+So that that's I think what I'm looking
+for now.
+Who else we got here? Anna
+project full stack recipe management
+platform description.
+>> Yeah, that's projects I worked on.
+>> Okay. A full feature web application
+what I built. Okay. Developed a full
+stack system. Wait, hang on. So let's
+let's take this. I'm getting way ahead
+of myself.
+Okay.
+The heck.
+Okay. Clear title. The title is full
+stack recipe management platform
+description. Okay. Add oneline
+description of what it does. A
+fullfeatured web application for
+creating, organizing, and managing
+recipes with user and admin
+authentification.
+Okay.
+Developed a full
+Okay.
+Organizing and managing, right? Okay.
+Developed a full stack system using
+Okay. for front end. Mhm. For the back
+end. Mhm.
+Okay.
+Is there a way to simplify it?
+Well, I I guess I can
+kind of break up the front end from the
+back end.
+>> I mean, I think develop the full stack
+system using boom boom boom.
+Okay.
+All right. I see implemented REST APIs,
+authentication, database, and responsive
+UIs along with comfort. Okay. All right.
+Great. But the same thing I asked
+Turtle, what does it do? Like I know
+that it's a it's a a web featured
+application for creating organizing and
+managing recipes, but who like what why
+is that important?
+>> Well,
+>> whose life does it make better?
+Um,
+like you said, recipes with user, like
+you kind of touched on the user, but
+okay. So, what is all of this? Why is
+this a good thing?
+Who does it help? Whose life whose
+problem does it solve?
+Um, I would say for people who are
+really into cooking,
+like um, chefs or somebody like that
+that would like a personal app.
+>> Okay. I mean, like, yeah, I know that
+recipe.
+>> Yeah, it would be great for me because I
+use a lot of I I save a lot of recipes.
+Um,
+>> when it's totally done, um, I got it
+only to certain point because ran out of
+time. had to go to the next project.
+>> Yeah.
+>> Um I I'm going to include a shopping
+list and so it can it just help them out
+to whatever the recipes are.
+>> These are the shopping list um
+>> shopping list the items you know that
+you need to get
+>> right. But why is this so important? It
+seems to me it's to
+allow the user
+to not only have admin authentification
+but to also keep things their recipes
+organized in one place
+>> somehow explaining that
+>> and there will be multiple users. So the
+application um well it was just what we
+had to do and so if you are the admin
+then you of course you'll have more per
+or permissions so you'll be able to
+track the number of people that's in
+there perhaps the number of login things
+like that
+uh that's what I want to add to it in
+capacity but that's what I did and the
+current one I'm working on is really a
+profanity filter filter
+and um
+>> that one I guess would be good for
+people with small
+>> um form like that.
+>> Yeah,
+>> you can try.
+>> I mean I think this is a good start
+>> um for both you and Turtle. But what I
+would like you to kind of add is the
+why. Like why is this even being
+developed? Why is this important?
+>> Okay. Well, maybe
+>> just think about that.
+>> Okay. Maybe I should have went with the
+um the project I worked on with the
+camping site, but I didn't think about
+now.
+>> You know what? This is perfectly fine
+what you did. All you need to do is add
+the Y.
+>> Okay.
+>> Yeah.
+>> Well, we're Yeah, you did it. So, um
+projects are not filler, right? They're
+proof.
+And when written clearly, they tell
+recruiters that you can apply what
+you've learned,
+that you understand the stack
+and you can ship work.
+That's huge. And I would beg to differ
+or I would even add that you can talk
+about your work fluently, which is again
+so important because you are going to
+have to do that to get a job as a
+developer.
+So, you know, before I
+open uh the floor up to more
+conversation, what I would like you to
+do is think about some homework for
+yourselves. Right? So,
+add or refine at least two projects on
+your resume. Update your LinkedIn
+project section to match and then ensure
+your GitHub links are clean and
+readable. Okay. So, next week we'll move
+into resume design and layout so that
+everything you've written is easy to
+scan and recruiter friendly.
+Um,
+what what what is this for? Uh, is this
+for the same thing, Turtle? The same
+>> Yeah, I just tried to rewrite it based
+on feedback.
+>> Okay.
+>> A little less tech heavy as far as the
+wording.
+>> Okay. designed for startups and agency.
+Okay. Yeah. Nice. There it is.
+Absolutely. Thank you. What else you
+guys got for me?
+>> Thank you.
+>> It's all good advice.
+>> We've got like five more minutes, so
+let's talk about anything that you
+missed or anything that you have
+questions on.
+Anyone? Um
+um I'm I'm going to confess my sins.
+>> Oh no, we're going there.
+>> I have not done much with that LinkedIn.
+And I know, you know, I'm building up
+the bits and pieces, but I know at some
+point I'm going to have to get it filled
+out because to next year I really got to
+get serious about looking for a job.
+Mhm.
+>> So, um you know, right now I'm
+um working on ways to to build out the
+content that's, you know, correct ways
+and
+>> that's focusing on projects right now.
+So, I can say, you know, okay, this how
+I'm putting these skills together.
+>> Um but at some point, I really am going
+to probably need some help with that
+LinkedIn.
+>> So, that's me confessing my sins.
+>> Well, it's all right. I mean, you're not
+the only one. And I put a link there in
+the chat for transcripts.
+So you said you was behind on the
+LinkedIn. What I've been doing is taking
+what Chelsea tells us here every week.
+I've been taking the LinkedIn taking the
+link from uh YouTube and giving that to
+an MCP server that extracts the
+transcripts.
+>> Wow.
+>> And then I've taken that I've taken that
+collection of transcripts. You can do
+the same thing with a chat GPT or I can
+run it run you through it one night on a
+pure mentor session or something. But
+basically I use those transcripts as
+context. So the first time I and you can
+go to your uh LinkedIn and export all
+your data. And so I've taken my LinkedIn
+given it to that same GPT with the
+context of the transcripts. The first
+time I ran it through it said my
+LinkedIn was at a six out of a 10 and
+out of two different pass. You know I've
+been doing it like a basically every
+Monday I do another pass. So the first
+week it went from a six. Right now it's
+up to a seven 7.5 out of 10. And it
+started at six out of 10. So it's
+basically taking what she's teaching us
+and it kind of reminds me like the
+Superman got the crystals from his
+parents. It's [laughter] like here's
+everything. It's like here's everything
+I want to teach you and then it, you
+know, puts it into that automated form.
+So it's like she's there coaching even
+when she's not with us.
+>> Nice. Thanks, Turtle. That's great.
+>> You said a CGN.
+>> What's that? CGN.
+>> Yeah. You said you use something
+uh how you extract the data from.
+>> Oh uh there MCP uh so I've got a MCP
+server running in Docker. Let's see what
+is MCP model context protocol. Most of
+them have a lot of configuration but
+there's one that's really simple.
+Doesn't need any configuration and it's
+just set up to extract uh transcripts
+from YouTube's uh links.
+>> I like that a lot.
+>> Yeah, that's great. And I' I've got a
+little surprise coming, but I'm kind of
+keeping it under my hat till I get it
+further along because basically
+>> Oh, wow.
+>> I've taken your transcripts and the
+script hammer template and forked a new
+project off of that. Basically, it's
+based on the U spreadsheet that you gave
+us for tracking applications.
+>> Yes,
+>> it's basically I've built that into an
+app. So, it's
+>> okay. I'm just going to have to catch
+you off um you know turtle [laughter]
+offline on some of this stuff because
+>> yeah this is this is
+>> and this is all stuff that you can
+document too to turtle and showcase
+>> on your resume and LinkedIn profile so
+that's great you know and you're already
+helping people you're helping your peers
+>> so you have like real life testimonials
+right so that's great Um, so yeah. Who
+else? A couple of minutes.
+>> Chelsea, I put a project in there in the
+chat.
+>> Yeah. You know what? I couldn't I could
+barely see it, Lisa. Let me see if I can
+open it. Let me try to download it.
+>> Oh, yeah. That one. Yeah.
+>> I can't personal find. I can't really
+see all of it. Can you Is there a Wait.
+Uh,
+>> it's a JPEG or it's a snapshot.
+>> Yeah, I can't and I can't download it
+either.
+>> You can take a screenshot.
+>> I mean, I can see it, but I can't
+>> A lot of it cuts off.
+>> Yeah, but you can take a screenshot of
+your chat window. Just blow your chat
+window up, you know, zoom it out and
+then take a screenshot. That's what I
+did.
+>> Yeah.
+Um,
+I mean, I can kind of see and I see that
+you described it, which is great, but
+what I really want to see again, and if
+you kind of you you didn't you came in,
+you know, like kind of halfway, so you
+didn't get sort of the full
+explanation, but
+what you want to hear is what you built,
+what tools did you use, what problem did
+you solve? That's the why.
+>> Mhm.
+>> What part did you personally own?
+So,
+>> okay,
+>> you know, like some of the examples, if
+you scroll through the chat, there was
+one example that I gave. So the weak uh
+example is built a mer stack project
+using react node and mongodb
+that's only yes we know what you built
+and we know the tools that you used but
+there's like what problem did you solve
+they didn't really cover that and that's
+what's important that's the why so
+here's a strong example built a full
+stack m application that allows ows
+users
+to create and manage accounts
+integrating
+React
+state management with REST APIs and
+MongoDB persistence.
+I just want to kind of caution all of
+you that this isn't a place where you
+kind of vomit every
+database, every stack that you've used
+to be impressive.
+It's less is more, right?
+>> So, you give a t like a taste or um a
+moose boost.
+It's just simple. It's really following
+a formula. What did you build?
+I don't see that here. Unless I'm I'm
+missing it, uh, Lisa, because a lot is
+cut off. I don't see even what you
+built. I mean, I know Buddy is a
+comprehensive
+web-based
+I can't see what it says after that. And
+then it says management application
+designed to help
+I I Yeah. Oh,
+>> okay. So, it says um it doesn't have any
+it Well, it's the
+I ran we ran this through chat GPT and
+we got um the Budget Buddy is a
+comprehensive web-based uh personal
+finance management application designed
+to help users track their income,
+expenses, and saving goals with an
+intuitive visual interface.
+>> Okay. But you built
+>> So you built
+>> built a comprehensive webbased
+>> that's what you built.
+>> Okay.
+>> It's not I mean yes you're describing
+the project but you're talking about
+what you did.
+>> So you this is what you built
+>> and now
+what tools did you use? You have to add
+that. I don't see that. But again, I
+can't see the full
+um
+>> Okay.
+>> the full screenshot or whatever you put
+in here. And then
+>> yeah, I don't see there.
+>> And then I think it says
+>> I think it says designed to help. So
+that's the why.
+>> What problem did it solve? That's the
+why.
+So yeah, I would get those. Um
+>> I actually showed this one off to a
+couple people at church and they
+actually like it. They said that's
+pretty cool.
+>> So um um
+>> very good
+>> for a vibe, you know, for a vibe session
+with a team of people in four days. That
+was pretty It's a pretty good little
+app.
+>> So um I'm going to I mean you know Anna,
+you can include this one as well. So
+because this is me and you on this one
+as well. So,
+>> excellent. Yeah, I mean I would just
+make those few tweaks.
+>> Okay.
+>> Um I do want to get to Leo Leo
+Famigo Famigo.
+I would hyperlink that.
+>> Okay. So, don't
+>> I've been trying to figure out how to do
+that on the actual chat here.
+>> Ah, okay. Cool. Cool.
+>> Okay, you guys. I'm sorry. I'm got to
+jump out. I got a 7:00.
+>> Sure. Bye, Anna.
+So, what I would adjust, Leo, is built a
+listing site for family friendly
+friendly vacation spots, letting
+families find
+>> and leave. So, that's what you did,
+right? And then
+implement the implementation of
+Typescript and React for the UI when
+implementing the forgot password. Yeah,
+I think this could be tweaked a little
+bit. also
+>> or talk about the stack used right like
+using that language.
+>> Um okay friends we need to stop.
+So I hope this was beneficial for all of
+you. I hope to see all of you in my
+other my next session next Wednesday at
+6 PM. Um, please have a beautiful night
+and you can find me on Discord if you
+need to ask any questions.
+>> Cool.
+>> Hey, I just sent over mine. I I didn't
+hyperlink the title because I didn't
+have time and everything like that, but
+I just wanted to get a just an idea if
+if this looks okay like the format wise.
+>> Uh yeah, I don't think you need to put I
+but you can built and developed a
+back-end logistics
+automation platform designed to
+streamline shipping cost analysis and
+delivery time forecasting for small and
+medium-siz businesses. Yes. Everything.
+Yeah. This is what you did.
+Yep.
+Excellent. But
+>> yeah, thank you.
+>> Yeah, you're welcome. Definitely. That's
+that's the cadence that we're looking
+for there.
+>> Cool. Thank you. I appreciate it.
+>> Thank you. And um everyone have a great
+night and we'll see you next Wednesday
+hopefully. Yeah. Glad you liked it. Talk
+to you guys soon.
