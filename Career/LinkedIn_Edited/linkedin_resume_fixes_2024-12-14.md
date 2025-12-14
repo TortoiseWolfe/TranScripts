@@ -99,7 +99,7 @@ GitHub Actions
 
 ---
 
-## 3. LinkedIn Projects (ADD 3 NEW PROJECTS)
+## 3. LinkedIn Projects (ADD 4 NEW PROJECTS)
 
 ---
 
@@ -170,7 +170,7 @@ Present (or leave blank)
 
 #### Description
 ```
-Open-source Next.js starter template for production applications. Includes 93 Storybook components, 680+ Jest/Playwright tests, 32 theme variations, and automated CI/CD via GitHub Actions. Built with accessibility-first approach meeting WCAG AA standards.
+Production-ready Next.js 15 starter template with React 19, TypeScript, and Tailwind CSS. Features 32 DaisyUI themes, PWA with offline support, Docker-first development, and GitHub Actions CI/CD. Built with WCAG AA accessibility compliance.
 ```
 
 #### Skills
@@ -240,6 +240,52 @@ CSS
 ```
 ```
 GitHub Pages
+```
+
+---
+
+### Project 4: TurtleWolfe.com
+
+#### Project name
+```
+TurtleWolfe.com
+```
+
+#### Project URL
+```
+https://turtlewolfe.com/
+```
+
+#### Start date
+```
+2012
+```
+
+#### End date
+```
+Present (or leave blank)
+```
+
+#### Description
+```
+Portfolio site showcasing custom apps for small companies. Features mobile-first responsive design. Highlights full stack development with Node, React, Docker, AWS, and Google Cloud, plus 3D/AR work with C# and Unity.
+```
+
+#### Skills
+```
+React.js
+```
+```
+Node.js
+```
+```
+Docker
+```
+```
+AWS
+```
+```
+Responsive Web Design
 ```
 
 ---
@@ -328,6 +374,7 @@ PostgreSQL
 - [ ] Add SpokeToWork project
 - [ ] Add ScriptHammer Template project
 - [ ] Add Interactive Resume project
+- [ ] Add TurtleWolfe.com project
 - [ ] Replace Traversy Media description (still has "..parttime" typo)
 - [ ] Add 6 missing skills (Jest, Playwright, Storybook, CI/CD, GitHub Actions, PostgreSQL)
 - [ ] Consider hiding Creative Touch Studios & Antiquites (old non-tech roles)
