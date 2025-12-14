@@ -6,74 +6,254 @@ Generated: 2024-12-14
 
 ## 1. TechJoy Software LinkedIn Entry (ADD NEW POSITION)
 
-**Company:** TechJoy Software
-**Title:** Software Engineering Intern
-**Location:** Remote
-**Dates:** Jan 2022 – Present
-
-### Description (paste this):
+### Title
 ```
-Skills: React, TypeScript, JavaScript, RESTful APIs, Agile, Code Review, UI Components
+Software Engineering Intern
+```
 
-Built 50+ responsive UI components for client web applications. Integrated RESTful API endpoints and maintained code quality through weekly peer reviews following agile methodology.
+### Employment type
+```
+Internship
+```
+
+### Company name
+```
+TechJoy Software
+```
+
+### Location
+```
+Austin, Texas, United States
+```
+
+### Location type
+```
+Remote
+```
+
+### Start date
+```
+January 2022
+```
+
+### End date
+```
+☑️ Check "I currently work here"
+```
+
+### Description
+```
+Full-stack web development using React, TypeScript, and C#/.NET building educational software features.
+
+• Built interactive learning components with React and TypeScript, improving student engagement tracking
+• Developed REST API endpoints in C#/.NET for content management and user progress
+• Implemented responsive UI components following accessibility standards
+• Collaborated with senior developers using Git workflows and code review processes
+```
+
+### Skills (add each separately)
+```
+React.js
+```
+```
+TypeScript
+```
+```
+C#
+```
+```
+.NET
+```
+```
+REST APIs
+```
+```
+Git
 ```
 
 ---
 
-## 2. ScriptHammer LinkedIn Rewrite (REPLACE EXISTING)
+## 2. ScriptHammer LinkedIn Rewrite (EDIT EXISTING POSITION)
 
-### New Description (paste this):
+### Description (replace existing)
 ```
-Skills: React, Next.js, TypeScript, Docker, Storybook, Jest, Playwright, CI/CD, WCAG Accessibility, GitHub Actions
+Lead developer building web applications and 3D visualization tools for a film/TV production startup.
 
-Built production web applications and open-source developer tools. Maintained 166+ GitHub repositories with containerized environments. Created full-stack starter template featuring 93 Storybook components, 680+ automated tests, and WCAG AA accessibility compliance.
+• Built custom web applications with React and TypeScript for production workflow management
+• Developed 3D visualization tools using Blender and Three.js for pre-production planning
+• Created REST APIs in C#/.NET connecting frontend interfaces to production databases
+• Implemented responsive designs ensuring cross-device compatibility for on-set use
+```
+
+### Skills (add if missing)
+```
+React.js
+```
+```
+Next.js
+```
+```
+TypeScript
+```
+```
+Docker
+```
+```
+Storybook
+```
+```
+Jest
+```
+```
+Playwright
+```
+```
+GitHub Actions
 ```
 
 ---
 
 ## 3. LinkedIn Projects (ADD 3 NEW PROJECTS)
 
+---
+
 ### Project 1: SpokeToWork
 
-**Title:** SpokeToWork
-**URL:** https://spoketowork.com/
-**Start Date:** 2024
+#### Project name
+```
+SpokeToWork
+```
 
-#### Description (paste this):
+#### Project URL
+```
+https://spoketowork.com/
+```
+
+#### Start date
+```
+2024
+```
+
+#### End date
+```
+Present (or leave blank)
+```
+
+#### Description
 ```
 Progressive Web App for in-person job hunting with bike route optimization. Built with Next.js 15, React 19, and TypeScript. Achieved 98/100 Lighthouse accessibility score. Features offline support, geolocation, and mobile-first responsive design.
+```
 
-Technologies: Next.js, React, TypeScript, PWA, Geolocation API
+#### Skills
+```
+Next.js
+```
+```
+React.js
+```
+```
+TypeScript
+```
+```
+Progressive Web Apps (PWA)
 ```
 
 ---
 
 ### Project 2: ScriptHammer Template
 
-**Title:** ScriptHammer Full Stack Template
-**URL:** https://github.com/TortoiseWolfe/ScriptHammer
-**Start Date:** 2023
+#### Project name
+```
+ScriptHammer Full Stack Template
+```
 
-#### Description (paste this):
+#### Project URL
+```
+https://github.com/TortoiseWolfe/ScriptHammer
+```
+
+#### Start date
+```
+2023
+```
+
+#### End date
+```
+Present (or leave blank)
+```
+
+#### Description
 ```
 Open-source Next.js starter template for production applications. Includes 93 Storybook components, 680+ Jest/Playwright tests, 32 theme variations, and automated CI/CD via GitHub Actions. Built with accessibility-first approach meeting WCAG AA standards.
+```
 
-Technologies: Next.js, React, TypeScript, Docker, Storybook, Jest, Playwright, GitHub Actions
+#### Skills
+```
+Next.js
+```
+```
+React.js
+```
+```
+TypeScript
+```
+```
+Docker
+```
+```
+Storybook
+```
+```
+Jest
+```
+```
+Playwright
+```
+```
+GitHub Actions
 ```
 
 ---
 
 ### Project 3: Interactive Resume
 
-**Title:** Interactive Portfolio Resume
-**URL:** https://tortoisewolfe.github.io/Resume/
-**Start Date:** 2024
+#### Project name
+```
+Interactive Portfolio Resume
+```
 
-#### Description (paste this):
+#### Project URL
+```
+https://tortoisewolfe.github.io/Resume/
+```
+
+#### Start date
+```
+2024
+```
+
+#### End date
+```
+Present (or leave blank)
+```
+
+#### Description
 ```
 React/TypeScript portfolio showcasing projects with animated navigation and dynamic routing. Demonstrates component architecture, state management patterns, and smooth CSS transitions. Deployed via GitHub Pages with automated builds.
+```
 
-Technologies: React, TypeScript, CSS Animations, GitHub Pages
+#### Skills
+```
+React.js
+```
+```
+TypeScript
+```
+```
+CSS
+```
+```
+GitHub Pages
 ```
 
 ---
@@ -95,13 +275,28 @@ Software developer with 2.5 years of production C# experience building Revit aut
 
 ---
 
-## 5. Traversy Media LinkedIn Fix (REPLACE EXISTING)
+## 5. Traversy Media LinkedIn Fix (EDIT EXISTING POSITION)
 
-### New Description (paste this):
+### Description (replace existing)
 ```
-Skills: JavaScript, React, Node.js, Technical Communication, Mentorship
-
 Provided technical mentorship to web development students in online courses. Answered questions on JavaScript fundamentals, React component patterns, and Node.js backend development. Helped students debug code and understand best practices.
+```
+
+### Skills (add if missing)
+```
+JavaScript
+```
+```
+React.js
+```
+```
+Node.js
+```
+```
+Technical Communication
+```
+```
+Mentorship
 ```
 
 ---
@@ -138,13 +333,21 @@ PostgreSQL
 
 ## 7. Quick Fixes Checklist
 
+**Verified Dec 14, 2025**
+
+### Done
+- [x] Fix Collective Minds end date (now Jun 2021)
+- [x] Trinam Design description (updated manually)
+
+### LinkedIn - Still TODO
 - [ ] Add TechJoy Software position
 - [ ] Replace ScriptHammer description
 - [ ] Add SpokeToWork project
 - [ ] Add ScriptHammer Template project
 - [ ] Add Interactive Resume project
-- [ ] Replace Traversy Media description
-- [ ] Add 6 missing skills
-- [ ] Fix Collective Minds end date (Mar or Jun 2021 - pick one)
-- [ ] Update resume summary with "what's next" sentence
+- [ ] Replace Traversy Media description (still has "..parttime" typo)
+- [ ] Add 6 missing skills (Jest, Playwright, Storybook, CI/CD, GitHub Actions, PostgreSQL)
 - [ ] Consider hiding Creative Touch Studios & Antiquites (old non-tech roles)
+
+### Resume - Still TODO
+- [ ] Update resume summary with "what's next" sentence
