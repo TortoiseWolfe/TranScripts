@@ -23,7 +23,7 @@ TechJoy Software
 
 ### Location
 ```
-Austin, Texas, United States
+Madison, New Jersey, United States
 ```
 
 ### Location type
@@ -43,10 +43,10 @@ January 2022
 
 ### Description
 ```
-Full-stack web development using React, TypeScript, and C#/.NET building educational software features.
+Full-stack web development using React and TypeScript building educational software features.
 
 • Built interactive learning components with React and TypeScript, improving student engagement tracking
-• Developed REST API endpoints in C#/.NET for content management and user progress
+• Developed REST API endpoints for content management and user progress
 • Implemented responsive UI components following accessibility standards
 • Collaborated with senior developers using Git workflows and code review processes
 ```
@@ -59,12 +59,6 @@ React.js
 TypeScript
 ```
 ```
-C#
-```
-```
-.NET
-```
-```
 REST APIs
 ```
 ```
@@ -73,17 +67,9 @@ Git
 
 ---
 
-## 2. ScriptHammer LinkedIn Rewrite (EDIT EXISTING POSITION)
+## 2. ScriptHammer LinkedIn - Add Missing Skills
 
-### Description (replace existing)
-```
-Lead developer building web applications and 3D visualization tools for a film/TV production startup.
-
-• Built custom web applications with React and TypeScript for production workflow management
-• Developed 3D visualization tools using Blender and Three.js for pre-production planning
-• Created REST APIs in C#/.NET connecting frontend interfaces to production databases
-• Implemented responsive designs ensuring cross-device compatibility for on-set use
-```
+Your current description is accurate. Only add missing skills:
 
 ### Skills (add if missing)
 ```
@@ -174,7 +160,7 @@ https://github.com/TortoiseWolfe/ScriptHammer
 
 #### Start date
 ```
-2023
+2025
 ```
 
 #### End date
@@ -229,7 +215,7 @@ https://tortoisewolfe.github.io/Resume/
 
 #### Start date
 ```
-2024
+2025
 ```
 
 #### End date
@@ -239,7 +225,7 @@ Present (or leave blank)
 
 #### Description
 ```
-React/TypeScript portfolio showcasing projects with animated navigation and dynamic routing. Demonstrates component architecture, state management patterns, and smooth CSS transitions. Deployed via GitHub Pages with automated builds.
+React/TypeScript portfolio showcasing projects with animated navigation and dynamic routing. Features smooth CSS transitions and component-based architecture. Deployed via GitHub Pages with automated builds.
 ```
 
 #### Skills
@@ -279,21 +265,18 @@ Software developer with 2.5 years of production C# experience building Revit aut
 
 ### Description (replace existing)
 ```
-Provided technical mentorship to web development students in online courses. Answered questions on JavaScript fundamentals, React component patterns, and Node.js backend development. Helped students debug code and understand best practices.
+Part-time development coach helping students with Node.js, React, and TypeScript. Answered questions, helped debug code, and explained best practices for web development fundamentals.
 ```
 
 ### Skills (add if missing)
 ```
-JavaScript
+Node.js
 ```
 ```
 React.js
 ```
 ```
-Node.js
-```
-```
-Technical Communication
+TypeScript
 ```
 ```
 Mentorship
@@ -341,7 +324,7 @@ PostgreSQL
 
 ### LinkedIn - Still TODO
 - [ ] Add TechJoy Software position
-- [ ] Replace ScriptHammer description
+- [ ] Add ScriptHammer skills (description is already accurate)
 - [ ] Add SpokeToWork project
 - [ ] Add ScriptHammer Template project
 - [ ] Add Interactive Resume project

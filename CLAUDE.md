@@ -6,6 +6,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Educational transcripts from YouTube playlists (TechJoy, Career), cleaned and organized for use with Claude Projects. This is a content repository, not a software project—there are no build, lint, or test commands.
 
+## CRITICAL: No Fabrication Policy
+
+**NEVER fabricate, invent, or assume details about the user's work history, skills, or experience.**
+
+When writing or editing career documents (resumes, LinkedIn content, cover letters):
+
+1. **Use ONLY information from:**
+   - User's existing resume (`Career/Resume_Edited/private/`)
+   - User's LinkedIn export (`Career/LinkedIn_Edited/private/`)
+   - Direct statements from the user in conversation
+   - MCP-fetched profile data
+
+2. **If information is missing:**
+   - ASK the user directly
+   - Use placeholder text like `[DESCRIBE YOUR ROLE HERE]`
+   - Leave the field blank with a note
+
+3. **NEVER invent:**
+   - Company descriptions or industries
+   - Job responsibilities not stated by user
+   - Metrics, numbers, or achievements
+   - Project details or technologies used
+
+4. **When reformatting existing content:**
+   - Restructure for clarity, but preserve meaning
+   - Do not add claims the user didn't make
+   - Flag any additions with `[VERIFY: assumed detail]`
+
+Violating this policy damages trust and could put false information on the user's professional documents.
+
 ## Custom Commands
 
 ### `/clean-transcript`
