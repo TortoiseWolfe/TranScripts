@@ -117,7 +117,7 @@ https://spoketowork.com/
 
 #### Start date
 ```
-2024
+December 2025
 ```
 
 #### End date
@@ -155,12 +155,12 @@ ScriptHammer Full Stack Template
 
 #### Project URL
 ```
-https://github.com/TortoiseWolfe/ScriptHammer
+https://scripthammer.com/
 ```
 
 #### Start date
 ```
-2025
+September 2025
 ```
 
 #### End date
@@ -215,7 +215,7 @@ https://tortoisewolfe.github.io/Resume/
 
 #### Start date
 ```
-2025
+August 2025
 ```
 
 #### End date
