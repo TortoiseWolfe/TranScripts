@@ -28,6 +28,15 @@ Processes LinkedIn data export archives in `Career/LinkedIn_Edited/private/`.
 
 **Note:** The `private/` directory is gitignored—never commit personal data
 
+### `/extract-facebook`
+Processes Facebook data export archives in `Career/Facebook_Edited/private/`.
+
+**Keep:** Profile information, friends, followers, groups, pages, events, profile photo
+
+**Delete:** Ads/tracking, messages, posts, comments, reactions, stories, reels, marketplace, payments, media files
+
+**Note:** Facebook exports are HTML-based (not CSV like LinkedIn) and much larger due to media
+
 ## Architecture
 
 ```
@@ -38,6 +47,8 @@ Career/
 ├── Resume/             # Raw transcripts (11 files)
 ├── Resume_Edited/      # Cleaned transcripts + system prompt + user guide
 │   └── private/        # Personal documents (gitignored)
+├── Facebook_Edited/    # Facebook data exports for career analysis
+│   └── private/        # Extracted Facebook data (gitignored)
 └── TechInterview/      # Interview resources
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
