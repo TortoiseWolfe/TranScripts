@@ -28,10 +28,17 @@ This repo uses two MCP servers, both available in Docker Desktop's MCP Catalog.
 **Getting the `li_at` cookie:**
 1. Log into LinkedIn in your browser
 2. Open DevTools (F12) → Application → Cookies → linkedin.com
-3. Copy the `li_at` cookie value
-4. Paste into the Configure dialog in Docker Desktop
+3. Find the `li_at` cookie (long alphanumeric string starting with `AQ...`)
+4. Copy the entire value
+5. In Docker Desktop MCP Toolkit, paste into the `LI_AT_COOKIE` secret field
 
-**Note:** Cookie expires every ~30 days—you'll need to reconfigure periodically.
+**Troubleshooting:**
+- **"login_timeout" error:** Cookie expired or invalid—get a fresh one from browser
+- **"Cookie authentication failed":** LinkedIn may have blocked automated access—wait and retry, or use CSV export as fallback
+- **Cookie expires:** Every ~30 days—you'll need to reconfigure periodically
+- **Rate limiting:** Don't make too many requests in quick succession
+
+**Fallback:** If MCP fails, download your LinkedIn data export (Settings → Data Privacy → Get a copy of your data) and use `/extract-linkedin` to process it.
 
 ---
 
@@ -50,6 +57,11 @@ Custom commands for Claude Code in this repo:
 |---------|-------------|
 | `/clean-transcript` | Clean a raw transcript file—removes filler, keeps frameworks and actionable advice, outputs markdown |
 | `/extract-linkedin` | Unzip LinkedIn data export in `Career/LinkedIn_Edited/private/`, delete irrelevant files, keep profile data for analysis |
+| `/extract-facebook` | Unzip Facebook data export in `Career/Facebook_Edited/private/`, keep career-relevant files only |
+| `/job-search-prep` | **Full workflow:** Review resume + LinkedIn + alignment check, generate fixes file with copy blocks |
+| `/review-resume` | Standalone resume analysis against coaching frameworks |
+| `/review-linkedin` | Standalone LinkedIn profile analysis (via MCP or CSV export) |
+| `/check-alignment` | Compare resume ↔ LinkedIn for consistency issues |
 
 ---
 

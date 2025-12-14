@@ -37,6 +37,36 @@ Processes Facebook data export archives in `Career/Facebook_Edited/private/`.
 
 **Note:** Facebook exports are HTML-based (not CSV like LinkedIn) and much larger due to media
 
+### `/job-search-prep`
+Complete job search preparation workflow combining resume review, LinkedIn review, and alignment check.
+
+**Input:** Resume in `Career/Resume_Edited/private/` + LinkedIn (MCP or CSV export)
+
+**Output:** Comprehensive analysis + dated fixes file with ready-to-paste copy blocks
+
+**Workflow:**
+1. Review resume against coaching frameworks
+2. Review LinkedIn against coaching frameworks
+3. Check alignment between both
+4. Generate fixes file in `Career/LinkedIn_Edited/`
+
+### `/review-resume`
+Standalone resume analysis against `RESUME_SYSTEM_PROMPT.md` frameworks.
+
+**Checks:** 6-second scan, bullet formula (Action+Task+Result), summary 4-line formula, ATS keywords, formatting
+
+### `/review-linkedin`
+Standalone LinkedIn profile analysis against `LINKEDIN_SYSTEM_PROMPT.md` frameworks.
+
+**Checks:** Headline formula, about section 5-part structure, skills vs duties, All-Star checklist
+
+**Input:** MCP server (preferred) or CSV export in `private/`
+
+### `/check-alignment`
+Compare resume and LinkedIn for consistency.
+
+**Checks:** Title matches, date ranges, metrics/claims, technical skills, projects
+
 ## Architecture
 
 ```
