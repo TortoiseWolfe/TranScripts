@@ -23,22 +23,33 @@ This repo uses two MCP servers, both available in Docker Desktop's MCP Catalog.
 
 [stickerdaniel/linkedin-mcp-server](https://github.com/stickerdaniel/linkedin-mcp-server) accesses LinkedIn profile data directly.
 
-**Docker Desktop:** MCP Toolkit → Search "LinkedIn" → Add server → Configure.
+**Docker Desktop:** MCP Toolkit → Search "LinkedIn" → Add server → Configuration tab.
 
-**Getting the `li_at` cookie:**
+**Two fields to configure:**
+
+| Field | Section | Required | Purpose |
+|-------|---------|----------|---------|
+| `linkedin-mcp-server.cookie` | Secrets | Yes | Your `li_at` session cookie |
+| `linkedin-mcp-server.user_agent` | Configuration | No (recommended) | Helps avoid detection/blocks |
+
+**Step 1: Get the `li_at` cookie**
 1. Log into LinkedIn in your browser
 2. Open DevTools (F12) → Application → Cookies → linkedin.com
-3. Find the `li_at` cookie (long alphanumeric string starting with `AQ...`)
+3. Find the `li_at` cookie (long string starting with `AQ...`)
 4. Copy the entire value
-5. In Docker Desktop MCP Toolkit, paste into the `LI_AT_COOKIE` secret field
+5. Paste into `linkedin-mcp-server.cookie` field
+
+**Step 2: Set user agent (recommended)**
+1. Copy your browser's user agent (search "my user agent" in Google)
+2. Paste into `linkedin-mcp-server.user_agent` field
+3. This helps prevent LinkedIn from blocking automated access
 
 **Troubleshooting:**
-- **"login_timeout" error:** Cookie expired or invalid—get a fresh one from browser
-- **"Cookie authentication failed":** LinkedIn may have blocked automated access—wait and retry, or use CSV export as fallback
-- **Cookie expires:** Every ~30 days—you'll need to reconfigure periodically
+- **"login_timeout" / "Cookie authentication failed":** Cookie expired or LinkedIn blocked access—get fresh cookie, add user agent
+- **Cookie expires:** Every ~30 days—reconfigure when it stops working
 - **Rate limiting:** Don't make too many requests in quick succession
 
-**Fallback:** If MCP fails, download your LinkedIn data export (Settings → Data Privacy → Get a copy of your data) and use `/extract-linkedin` to process it.
+**Fallback:** If MCP fails, download your LinkedIn data export (Settings → Data Privacy → Get a copy of your data) and use `/extract-linkedin` to process the CSV files instead.
 
 ---
 
