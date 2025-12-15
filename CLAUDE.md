@@ -44,7 +44,9 @@ Violating this policy damages trust and could put false information on the user'
 
 **File naming:** `CoverLetter_[Company]_[JobID].rtf` (e.g., `CoverLetter_TDOC_73325.rtf`)
 
-**Save location:** `Career/Resume_Edited/private/` (gitignored)
+**Save location:** `Career/CoverLetter_Edited/private/` (gitignored)
+
+**System prompt:** `Career/CoverLetter_Edited/COVERLETTER_SYSTEM_PROMPT.md`
 
 ## Custom Commands
 
@@ -117,6 +119,8 @@ Career/
 ├── Resume/             # Raw transcripts (11 files)
 ├── Resume_Edited/      # Cleaned transcripts + system prompt + user guide
 │   └── private/        # Personal documents (gitignored)
+├── CoverLetter_Edited/ # Cover letter system prompt + drafts
+│   └── private/        # Cover letter drafts (gitignored)
 ├── Facebook_Edited/    # Facebook data exports for career analysis
 │   └── private/        # Extracted Facebook data (gitignored)
 └── TechInterview/      # Interview resources
@@ -126,12 +130,13 @@ RPGs/                   # RPG-related content
 
 ## Claude Projects
 
-Two career coaching projects with system prompts and knowledge bases:
+Three career coaching projects with system prompts and knowledge bases:
 
 | Project | System Prompt | Knowledge Base |
 |---------|---------------|----------------|
 | LinkedIn Profile Review | `Career/LinkedIn_Edited/LINKEDIN_SYSTEM_PROMPT.md` | 22 transcripts in `LinkedIn_Edited/` |
 | Resume Review | `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md` | 11 transcripts in `Resume_Edited/` |
+| Cover Letter Review | `Career/CoverLetter_Edited/COVERLETTER_SYSTEM_PROMPT.md` | (uses Resume + LinkedIn as reference) |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
