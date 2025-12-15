@@ -37,19 +37,41 @@ This repo uses two MCP servers, both available in Docker Desktop's MCP Catalog.
 2. Open DevTools (F12) → Application → Cookies → linkedin.com
 3. Find the `li_at` cookie (long string starting with `AQ...`)
 4. Copy the entire value
-5. In `linkedin-mcp-server.cookie` field, enter with prefix: `li_at=YOUR_COOKIE_VALUE`
-   - Example: `li_at=AQED...` (not just the raw value)
+5. In `linkedin-mcp-server.cookie` field, enter your cookie value with this prefix:
+
+```
+li_at=
+```
+
+Paste your cookie value immediately after the `=` with no space.
+
 6. Click the **blue checkmark** to save the secret
 
-**Step 2: Set user agent (recommended)**
-1. Copy your browser's user agent (search "my user agent" in Google)
-2. Paste into `linkedin-mcp-server.user_agent` field
-3. This helps prevent LinkedIn from blocking automated access
+**Step 2: Set user agent (required for reliable auth)**
+1. Get your browser's exact user agent:
+   - Chrome: `chrome://version/` → User Agent line
+   - Edge: `edge://version/` → User Agent line
+2. Paste the full string into `linkedin-mcp-server.user_agent` field
+3. This must match the browser you extracted the cookie from
+
+**Step 3: Restart the container**
+After changing config, the Docker container needs restart:
+- Docker Desktop → Containers → Find linkedin container → Restart
+- Or: `docker restart <container_name>`
 
 **Troubleshooting:**
-- **"login_timeout" / "Cookie authentication failed":** Cookie expired or LinkedIn blocked access—get fresh cookie, add user agent
-- **Cookie expires:** Every ~30 days—reconfigure when it stops working
-- **Rate limiting:** Don't make too many requests in quick succession
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| `login_timeout` / `Cookie authentication failed` | Cookie invalid or user agent mismatch | Get fresh cookie, ensure user agent matches browser exactly |
+| Empty responses (no error, no data) | Container using old config | Restart container after config changes |
+| `Request timed out` | Server needs more time | Normal—server uses web driver, can take 30-60 seconds |
+| Cookie stops working | Expired (~30 days) or multiple sessions | Get fresh cookie, close other LinkedIn tabs |
+
+**Common issues from [GitHub Issues](https://github.com/stickerdaniel/linkedin-mcp-server/issues):**
+- **User agent mismatch** ([Issue #40](https://github.com/stickerdaniel/linkedin-mcp-server/issues/40)): Cookie must be from same browser as user agent
+- **Single session only**: Don't have LinkedIn open in browser while MCP is running
+- **CAPTCHA triggered**: Too many auth attempts—wait and try later
 
 **Fallback:** If MCP fails, download your LinkedIn data export (Settings → Data Privacy → Get a copy of your data) and use `/extract-linkedin` to process the CSV files instead.
 

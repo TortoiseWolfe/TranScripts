@@ -36,6 +36,16 @@ When writing or editing career documents (resumes, LinkedIn content, cover lette
 
 Violating this policy damages trust and could put false information on the user's professional documents.
 
+## Cover Letter & Document Formatting
+
+**Always create RTF format.** Job applications typically accept: `.doc`, `.docx`, `.rtf`, `.odt`, `.pdf`, `.txt`
+
+**Use RTF (Rich Text Format)** - it's text-based so Claude can write it directly with formatting (bold, fonts, margins).
+
+**File naming:** `CoverLetter_[Company]_[JobID].rtf` (e.g., `CoverLetter_TDOC_73325.rtf`)
+
+**Save location:** `Career/Resume_Edited/private/` (gitignored)
+
 ## Custom Commands
 
 ### `/clean-transcript`
