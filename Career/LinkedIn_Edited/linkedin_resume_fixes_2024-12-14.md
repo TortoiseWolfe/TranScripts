@@ -4,54 +4,109 @@ Generated: 2024-12-14
 
 ---
 
-## 1. TechJoy Software LinkedIn Entry (ADD NEW POSITION)
+## 1. TechJoy Software LinkedIn Entries (TWO SEPARATE POSITIONS)
 
-### Title
-```
-Software Engineering Intern
-```
+### Entry 1: Peer Mentor (ADD NEW - Current Role)
 
-### Employment type
+#### Title
 ```
-Internship
+Peer Mentor
 ```
 
-### Company name
+#### Employment type
+```
+Part-time
+```
+
+#### Company name
 ```
 TechJoy Software
 ```
 
-### Location
+#### Location
 ```
 Madison, New Jersey, United States
 ```
 
-### Location type
+#### Location type
 ```
 Remote
 ```
 
-### Start date
+#### Start date
 ```
-January 2022
+November 2024
 ```
 
-### End date
+#### End date
 ```
 ☑️ Check "I currently work here"
 ```
 
-### Description
+#### Description
 ```
-Full-stack web development using React and TypeScript building educational software features.
-
-• Built interactive learning components with React and TypeScript, improving student engagement tracking
-• Developed REST API endpoints for content management and user progress
-• Implemented responsive UI components following accessibility standards
-• Collaborated with senior developers using Git workflows and code review processes
+Guide students through React and TypeScript projects, providing code review and debugging support. Participate in weekly community learning sessions and help explain best practices for web development.
 ```
 
-### Skills (add each separately)
+#### Skills (add each separately)
+```
+React.js
+```
+```
+TypeScript
+```
+```
+Mentorship
+```
+```
+Code Review
+```
+
+---
+
+### Entry 2: Software Engineering Intern (EDIT EXISTING or ADD)
+
+#### Title
+```
+Software Engineering Intern
+```
+
+#### Employment type
+```
+Internship
+```
+
+#### Company name
+```
+TechJoy Software
+```
+
+#### Location
+```
+Madison, New Jersey, United States
+```
+
+#### Location type
+```
+Remote
+```
+
+#### Start date
+```
+January 2022
+```
+
+#### End date
+```
+March 2022
+```
+
+#### Description
+```
+Built responsive UI components in React and TypeScript for client web applications. Integrated RESTful APIs following agile methodology.
+```
+
+#### Skills (add each separately)
 ```
 React.js
 ```
@@ -369,7 +424,8 @@ PostgreSQL
 - [x] Trinam Design description (updated manually)
 
 ### LinkedIn - Still TODO
-- [ ] Add TechJoy Software position
+- [ ] Add TechJoy Peer Mentor position (Nov 2024 - Present)
+- [ ] Edit TechJoy Intern position (change end date to Mar 2022, uncheck "currently work here")
 - [ ] Add ScriptHammer skills (description is already accurate)
 - [ ] Add SpokeToWork project
 - [ ] Add ScriptHammer Template project
