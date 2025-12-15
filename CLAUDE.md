@@ -147,6 +147,23 @@ Setup: Copy system prompt to Project Instructions at claude.ai, upload the corre
 - User guides: `*_USER_GUIDE.md`
 - Cleaned versions go in `*_Edited/` directories
 
+## MCP Server Quick Reference
+
+**YouTube Transcript:** Extract transcripts directly—no config needed.
+
+**LinkedIn MCP:** Requires `li_at=` cookie in Docker Desktop secrets. If auth fails, fallback to CSV export with `/extract-linkedin`.
+
+---
+
+## Common Prompt Patterns
+
+- **Full review:** "Review my [resume/LinkedIn] against the frameworks in [folder]. Score and prioritize fixes."
+- **Bullet rewrites:** "Rewrite bullets using Action + Task + Result formula"
+- **Keyword match:** "Compare against this job posting for missing keywords: [paste]"
+- **Consistency check:** "Compare LinkedIn and resume for contradictions"
+
+---
+
 ## Workflow
 
 **Adding new transcripts:**
