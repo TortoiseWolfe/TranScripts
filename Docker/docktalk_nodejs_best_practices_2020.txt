@@ -1,0 +1,1596 @@
+DockTalk: Node.js Docker Best Practices
+Peter McKee - Docker Official Channel
+September 2020 - 59 minutes
+https://www.youtube.com/watch?v=JtfDFUMmug0
+
+---
+
+hello everybody
+how's everybody doing today
+let me open up the chat here in a
+different window
+so i can see if anybody has any
+questions
+hello darsh how are you
+hey adrian welcome so today we're going
+to talk about
+uh node.js and docker some best
+practices so
+let's so one of the best places to start
+let me switch over here to sharing so
+one of the best places to start with
+uh best practices for any language
+that you're going to be uh that you're
+working with is in our docs
+so we have a great uh best practices
+file
+in docs so go to docs um there's a url
+right there let me
+let me drop this into the chat
+so that is a great resource for uh best
+practices
+for docker files just in general so
+we're going to talk about hey everybody
+good to see everybody cool so
+um yeah so here in the docker uh in the
+docker docs we have a best practices
+document that really walks through a lot
+of the best practices you want to think
+about
+as you're building out your docker files
+so today i want to talk specifically
+about node but a lot of things we're
+going to talk about today
+are general to all your docker files
+so one of the first things
+so we go okay so just reading the chat
+hello everybody glad to see everybody
+it's just
+me today chad is not able to make it
+today but he will definitely be back
+next week uh next week we're going to be
+moving to thursday
+same time just on thursdays
+all right so one of the one of the main
+things you want to think about
+in general about your images is they're
+ephemeral
+when i say ephemeral meaning they can be
+short-lived
+and they can die and then you can
+restart them with out of a lot of
+configuration and setup right you want
+these images to be able to run
+and if something happens they died
+another one can fire up
+and start running right so you want to
+you want
+to a lot of things we're going to talk
+about is is kind of in that context you
+want to
+have your images be stateless
+so the next thing you really want to
+think about
+is what processes you want to run inside
+of your
+image the best practice is you want to
+just have
+one process running inside of your image
+so before i came to docker and i was
+just
+starting to learn docker we were
+building um
+an application for an insurance company
+here in the texas area
+and we had a couple different processes
+running
+for this application a couple background
+processes there were node processes that
+would just
+spin up every five minutes they would
+read in read a cue in
+do some processing and then go to sleep
+and then they wake up back
+back up read some messages in the queue
+do some processing and go to sleep
+and the way we used to run that before
+we started running things in containers
+is we would have just an ec2 instance we
+had a couple of them
+and we had an nginx load balancer
+in front of it that would send traffic
+and then each one of those ec2 instances
+we had a second node process that ran
+um this background process a couple of
+them actually
+and they were fire up they would each
+look in the queue and they would pull
+messages off the queue until the queue
+was drained and then
+they would go to sleep and so when we
+started
+first thinking about docker you know we
+were still in this mindset of virtual
+machines
+and we created an image and we created
+all of those processes
+inside of that image so we actually had
+a couple
+processes running inside that image and
+the reason you don't want to do that
+is if one of those images one of those
+processes running inside that image
+dies you could kill your whole uh
+container your whole container can
+fail and and stop running and so
+and that would happen to us very often
+right until we kind of uh
+really understood what an image was and
+an image is just a wrapper around the
+process
+and you only want to have be running one
+process again and so we ended up
+splitting out our processes
+into multiple images and ran them in
+multiple containers
+so you really want to think about just
+running one process inside of your
+image and if that process dies then
+you're able to start that
+image back up inside of a container and
+run it again and you can have multiples
+of those
+containers running at once that's why
+you want to keep them stateless
+so in a web application if a request
+comes into your load balancer and it
+goes to container a
+it runs returns its response
+and then the response comes back in the
+load balancer might send that to
+container c and if you were saving state
+in a before that on that initial
+request when that second request goes to
+container c it's not going to have that
+state information so you want to make
+sure you keep all of your state outside
+of your images
+and you want to keep them ephemeral
+think of them as short-lived they can
+die at any moment
+and you can just start them back up
+there's a there's a little bit of a best
+practice around security too
+is you can do rolling rolling restarts
+of your containers um so
+at the insurance company we had our
+containers running and we had i think
+about five of them
+and at about 2 a.m we would bring each
+one down and
+and start up a new one and that was in
+case any of our
+uh containers were compromised
+if a hacker somehow got inside of that
+container that container was stopped and
+would kick everybody out
+and a new one would start back up
+you know not that's not shouldn't be
+your first line of security by any means
+right
+uh if someone is getting into your
+container you got bigger problems than
+worrying about exactly what's in that
+container you know how did they get past
+your network through your
+virtual networking system and into an
+actual container is is a bigger issue
+um so let's talk
+so let's jump into so that's kind of
+just a a
+framework that i wanted to kind of set
+and hello everybody everybody's jumping
+on good to see everybody a lot a lot of
+uh
+a lot of names and faces in the images a
+lot of you don't put uh
+pictures in your in your avatar no
+avatar pictures
+but that's okay it's good to see a lot
+of uh a lot of names
+if you have any questions as i'm going
+through this go ahead and
+drop them into the chat here but okay so
+let me get my notes let me situate my
+notes a little bit better so i can read
+them and see the chat at the same time
+my second monitor is not that big i need
+to get a bigger second monitor
+um okay so one of the first things you
+want to start
+with when you're thinking about your
+your images
+is what's your base image so a base
+image
+is is a image that's already been built
+for you
+and has a lot of tools libraries
+and has been configured to be a base
+image so node has a lot of base images
+so let's go over let's take a look at
+nodes
+so if you go into node.js docker images
+let's go there
+and we should end up on hub real quick
+let me sign in
+everybody close your eyes don't look at
+my password my dots
+okay so this is the official image for
+node
+on hub.docker.com
+and as you can see here we see a bunch
+of tags
+uh let me explain what a tag is so you
+have the format of your
+image let's see a best um
+might be now okay so what you don't want
+to do is do this
+just a docker pool uh node
+generally so the way we
+we name our images is we have a we have
+a namespace
+or a repository in this case it's node
+and then you have a colon
+and then you have a tag so if you
+if you do just a docker uh pull node
+the default tag is latest so it will
+just pull the latest
+whatever was the last uh image that got
+pushed is usually becomes your latest
+and the problem with that is if we have
+at the top
+top of top of our docker file
+man speaking this morning is hard
+so if we're just pulling latest from
+node
+latest can change underneath you and so
+one day you might be building your
+your image using node latest and
+everything works fine
+two days later a week later this usually
+happens uh
+you know it happens when you least
+expect it you everything is running fine
+your images are running fine
+and all of a sudden they stop working
+and you haven't changed much and you
+can't figure out why
+a lot of times as you're pulling the
+base image of latest
+and latest has changed underneath you
+some of the dependencies have changed
+that's not working with your package
+json
+so what we want to do is give it a make
+sure we give it a specific tag
+so we in this case that you're looking
+at here on the screen let me make sure
+this is big enough
+so we're looking at node 12.18.4
+and that's the that's the um that's the
+latest
+let's go here to uh no
+js.org
+and you can see here that's the lts the
+uh
+long term support is 12.4 12.18.4
+so now if we come back to the to the
+tags the way you want to read these tags
+is when you when you're looking at
+images you want to you'll usually see
+the they'll list out a bunch of tags
+and then as you read down through it'll
+explain these image variant
+variants and how they work so you see
+here we have node and then the version
+number
+and you can read about fact read about
+it here and this is saying right here
+this is the de facto
+image and then with they have a dash
+slim and a dash
+alpine and you can read about these here
+uh the dash slim work really well i use
+those a lot
+um okay so this kind of describes what
+the images are
+and then as you scroll back up
+we can see all of our 14.11
+and then we have our 12.18.4
+and if you look back at the nose web
+node website you see 14
+is the latest is the most current but
+it's not
+uh it can change it's not the long term
+support
+so you want to you also want to match up
+what you're developing locally on your
+development machine
+and what you're building in your in your
+docker images
+so if you're using 14 locally to develop
+in
+you're going to want to use 14 as your
+node image
+but basically you want to make sure you
+tag you pull a specific tag and just
+don't
+pull latest i won't get into what's the
+best
+base image to use uh you know a little
+bit of that as subjective it really
+depends on your
+your needs but generally speaking you
+want to get
+the slimmest base image that you can
+that works for you
+so when i say slim i mean the the image
+size
+is as small as possible and it has
+removed all the tools extra tools
+libraries things you don't need so like
+text editors
+those type of things you don't need
+those in your production builds
+and that way too if anybody does ever
+get a hacker ever does get into your
+container they don't have a lot of the
+normal to tools to use to attack your
+image
+the surface area attack surface is a lot
+smaller
+um uh oh
+i spelled something wrong
+not sure what but let me know if
+well we'll see if something breaks if i
+haven't spelled it correctly but what is
+alpine
+and adrian there yeah generally speaking
+it's a lightweight image
+built on the alpine project uh there's a
+lot of docker images that are alpine
+you'll hear that a lot and they're
+they're very slim slim
+images and they're based on the alpine
+distribution
+okay so again make sure you give a
+specific tag of an image that you want
+to use
+and i'd like to start out with when
+you're first creating your your
+docker images especially if you're new
+to docker
+don't worry too much at first about
+getting the smallest slimmest
+image possible you first want to get
+your
+application running inside of the image
+and running correctly
+and the best way to do that in this case
+is to use
+one of the fatter images so we're going
+to use node 12.18.4
+that way you know you have the the exact
+kind of install that you're working with
+developing
+if you're developing on 12 18 4 and then
+your image is
+based off of 1218 for that gives you a
+better that removes the
+inconsistencies between what you're
+developing with and what you're running
+with
+so it's a good practice to kind of start
+with that
+after you get it running then you can
+try out the slimmer end images
+and see if things break see if there's a
+package you might need to
+library a package you need to add into
+it
+but start out with just getting it
+worked working
+and then optimize for size okay
+another thing too as we're looking at
+the docker file here you wanna you wanna
+make sure your
+your commands in your docker file are in
+the order that
+is best for caching of layers and what i
+mean by that is
+each one of these docker commands
+creates a layer inside of your image
+and don't worry too much about layers
+but they're read-only layers and they
+get la
+they get layered on top of each other
+right
+and the big thing you should think about
+is they're they're cached each one of
+those layers is cached
+so as docker is executing your build it
+reads in
+from top to bottom just like you would
+execute javascript
+and so it reads in from and says okay
+the from keyword tells docker this is
+the
+this is the image i want you to start
+with okay
+so it'll pull that image down and it'll
+start that as your base
+base of your image and then everything
+gets layered on top of it
+and so as we work down we set a working
+directory this is a shortcut that all
+subsequent commands will then
+work against so when we do a copy here
+instead of me saying this
+and then copy into code package.json
+since i set my working directory above
+that i'm already sitting
+in that code directory so i don't need
+to i don't need to do that
+and so it slims down your docker files
+make them makes them a little bit more
+easier to read
+and then later on if you want to move
+this into app
+instead of code you don't have to go
+down everywhere in your docker file and
+change it
+so okay back to caching
+so as docker reads down it creates these
+layers and then it caches them
+and so if we run this the first time
+we'll pull in the base image of node
+we'll set our working directory then
+we'll copy in the
+package json locally on my machine into
+the image into the code folder
+and then it'll copy the package lock
+json in
+alright and then it'll run npm ci
+production so that'll that'll actually
+run
+the install for npm so it'll pull down
+all your packages
+and install them into your no modules
+directory
+so once that happens and then and then
+down here in line 10
+we're going to copy in our source code
+and we're going to copy everything in
+that current context docker context that
+we're working in and copy that into the
+code directory inside of our image
+and then down here we execute our node
+we start up our server so as we're
+walking down through here
+package json gets copied package lock
+we install and then we copy our source
+in so now we start working we change
+some source code we've updated some
+things
+and we re-run our build so when docker
+comes back in it says okay
+start at node 1218.4 i have that locally
+i don't need to go ahead and pull that
+again
+we set up a working directory that's
+fine
+it will look at this layer this command
+creates a layer and a hash and won't get
+into how it does the
+um does a cache hit or cast
+cache miss but it'll look has anything
+changed in this package.json file
+if things have changed it'll go ahead
+and run that command it'll copy that
+package json in again
+if nothing's changed it just uses the
+cache it just goes to the next line
+again we would have nothing changed so
+now it gets down here and says oh
+well nothing's changed so i don't need
+to install anything
+so it uses the cache there and then it
+sees you change the source code file
+it'll copy that source code file into
+the image
+and then it will run your command
+so that's that's really all that's how
+your caching works you want to have the
+files that you change the most often
+as far down in your docker files
+possible
+so in this scenario if we're changing a
+lot of source code and we're re-running
+images every time we change some
+source code this is okay here as i
+have it on line 10 because it's at the
+bottom right before my command
+and that's the only thing that will will
+cause the cache to be deleted and
+rebuilt
+but if this copy command was up here
+every time i change source code every
+layer be
+below your cache when it gets deleted
+will be rebuilt so in this case if i
+just changed one letter in one of my js
+files and saved it and redid a docker
+build
+the copy command would be that cache
+would be invalidated
+and then every cache below it so on line
+7
+8 10 would all be invalidated and
+everything would run
+all the again on each build because we
+changed a little js file and it's
+it's above all the other layers so all
+those layers get
+deleted and they get rebuilt so if your
+docker builds are taking a long time
+that's one of the first areas you want
+to look at
+make sure that your
+files that most often change are at the
+bottom of your docker file as far down
+in your docker file as possible
+okay
+let me see some questions here
+let's see so how can we set the
+container to run for certain amount of
+time
+and then close the container when the
+time limit
+crosses is there any configuration
+required in the yaml
+not really your your um container
+started and it will stop when the
+process inside of that
+container ends then that container will
+end will go away
+um if you want to do something like that
+if you have a long running process and
+you only want it to run for a certain
+amount of time you can bake that into
+your source code for one so you can have
+a timer in your source code only let it
+and then your process takes care of how
+long it
+is to run but if you need to handle that
+outside of that container
+it would be the same as if you were
+running a process locally on your
+machine in the terminal
+and you only want it to run let's say
+for a minute you'd have to time that
+somehow and then kill that process
+same thing with your container something
+outside of that needs to watch
+when it has started do a timer on it and
+then
+cancel it um be interested to hear
+more what uh what's the problem you're
+trying to solve with that because there
+might be a
+um there might be some different ways to
+think about it
+um can you tell me what uh mpmci
+production is so um
+yeah so it's basically i think it stands
+for continuous integration
+um what that does is does a clean build
+for you
+and let's just jump into the
+documentation mpmci
+so it does a clean state clean slate
+sorry
+talking's hard for me uh this afternoon
+for some reason
+so if you want to go uh to this npm
+description and read all about it
+so it's used a lot in these automated
+environments such as your continuous
+integration and your deployments
+it'll be a lot faster it won't
+user oriented features yeah so you can
+i like to do it in all my production
+image builds
+it'll just make your image a lot smaller
+if you have a
+development docker file i wouldn't use
+ci i would just do an npm install
+or an mpmi because you want that
+uh npm install to be the exact same as
+kind of as you're working in your dev
+environment
+yeah adrian that's correct i didn't i
+don't want to go
+i don't want to go too deep down that
+rabbit hole but yeah
+if you search the differences between ci
+and install
+it'll tell you the differences there's
+probably some good blog posts on it if
+you can't find anything tweet at me and
+maybe i'll write a blog post
+go a little more in depth on it okay
+so we talked about caching um
+we talked about using the a specific tag
+don't use just uh the latest tag you
+want to use a specific tag
+you want to start with the the version
+of node that you're using to work with
+as you develop get your application
+running inside that container first
+and then look at changing to use a
+slimmer version a smaller
+base image so you can get your your
+images smaller
+and then you want to make sure you put
+the commands in order
+where the files that change the most you
+want to be have at the bottom of that
+docker file so your
+your caches don't get invalidated and
+your builds will be faster
+and then also there's another file
+called docker ignore
+and so what docker noise works just like
+the get ignore
+um so when you do a get status anything
+in your git ignore
+is ignored get won't says okay what your
+git ignore tells get
+that i don't care about these files
+locally don't track them don't worry
+about them
+i'm not going to put them into uh the
+repo
+docker ignore is kind of similar when
+you do a docker build
+and you give it a context so let's let's
+jump over to command line here real
+quick
+where are we at here yeah okay so if we
+were going to build this project i'd do
+a docker build i'd give it a tag
+and let's just call it server and i'm
+just going to call it 1.0
+and now here when i give a dot what that
+dot is representing is i'm passing to
+docker
+a build context a context that i want
+docker to use
+and a contacts is telling docker this is
+where all my files are located this is
+this is where i where you
+where i want you to work inside of as
+you do the build
+and um inside of that we're not giving a
+uh
+we're not giving it a file name so we're
+not telling it what the
+docker file is because by default docker
+will look for the docker file
+we'll look for the docker file named
+dockerfile
+so that's why you see a lot of times
+you'll see a lot of demos a lot of
+blogs tutorials those type of things
+won't specify that
+the actual docker file because it is
+named dockerfile
+so here i'm giving a doc dot and i'm
+saying work in this local
+this local context and so when it runs
+it'll
+it'll docker bundles that all up and
+passes all those files
+into the engine so it'll use the build
+and what your docker ignore file does
+says
+don't don't pull these files out of the
+context and send it to the engine i'm i
+don't need them to build
+i'm not going to use them don't put them
+inside of my engine
+and so that's why here i'm able to say i
+don't need to do
+you know dot js files copy all those
+over
+um i'm not specifically you know naming
+files that i need to be copied into the
+image you can absolutely do that if you
+only want
+like if i only wanted my server.js file
+to be
+copied in i could just specifically tell
+it just copy that file and not
+everything else
+so anything you do not want to have in
+your
+included in the context put it in your
+docker ignore
+that although it's in your contacts
+doesn't necessarily mean it'll end up in
+the image because you have to move it in
+there you have to copy it into it
+but um but it also reduces the this the
+amount of files that will be sent into
+the docker engine before you build
+um
+yeah it looks like you guys are just
+talking about alpines yeah base images
+are
+interesting so we could probably do a
+whole talk on base images
+um yeah i think brett i don't know
+someone
+someone checked with brad he might have
+changed from uh the alpine tag but
+maybe not um
+so anyways so okay so that's your docker
+ignore
+it will uh tell docker to ignore
+these files in the context don't include
+them in the build don't send them to the
+engine
+we don't care we don't need them so
+things like your license file your
+readme
+log files um those type of things
+and your env files so
+you know you could be working locally
+and you have env files that you're using
+with nodemon or something like that
+and you might have uh passwords in there
+database passwords username and password
+secrets any kind of secrets sometimes we
+put in our environment variables
+uh that's a longer discussion i wouldn't
+use environment variables
+uh for secrets anymore um
+there's some better options um around
+with
+with uh build x and build kit you can
+use secrets
+um in swarm mode you can use secrets but
+so use your you make sure you have a
+docker ignore and at the very least
+ignore your node modules
+file uh you don't want all of this
+all of this stuff to be uh copied
+because in our docker file
+we're going to run this and that will
+stay inside of your image and put only
+the no modules that you need
+all right
+so he either prefers alpine or slim yeah
+cool i can't remember what is um
+i'll have to ask him out i'll ask him uh
+he he stays
+pretty up up to date with that um
+and if anybody if you want to feel free
+in the chat if you have opinions
+around alpine or slim i would love to
+hear
+okay so
+let might come let's see what or what i
+want to go with
+okay so let's talk let's talk about
+multi-stage builds
+so even though javascript is not
+compiled
+um it's still it's still a good thought
+to do multi-stage builds so
+let me i'm going to switch over to the
+ui this is just a react
+application and uh we're using node
+of course because it's javascript to do
+our build
+but with react react is not run
+on the server it's run in the browser
+right
+so we don't need a very big
+huge full node process to be running
+because it's not going to execute any of
+our javascript on the server
+all we need is a nice quick fast web
+server
+to serve up our static files to serve up
+our static js
+possibly css files right
+and so here in uh the docker file for
+the ui
+i have a multi-stage build and what
+multi-stage builds allows you to do is a
+couple different things one of the big
+things is you can label
+your froms your images so you'll see at
+the top i'm
+i'm still using node 12184 but i label
+it as build
+right so in this scenario i'm going to
+do a build phase
+and by building this scenario i want to
+pull down my mpm packages and then i'm
+going to do an npm run build
+that build so inside of the mpm
+uh you'll see a script here that's
+billed and that's going to run the react
+scripts
+build and that's going to i believe it
+uses webpack and it's gonna take
+everything put it all together put it in
+one js file
+uh it's probably gonna do um uh chunking
+and those type of things
+and it then it's gonna minify it and
+make that js file small
+and i can never say this word observate
+it
+i think we'll go with that but uh make
+it not very easy to read
+so it might change your big long
+function name from
+get password from user and encrypt to
+that
+function name that's really long it'll
+change it to a right or it'll change it
+to a1
+and so when you ever look at a minified
+observated
+javascript file it's really hard to read
+all the variable names have been changed
+all the function names have been changed
+the classes have been changed
+but um so the the react scripts will do
+that and some other things
+packages it all up and puts that into
+your build directory
+uh dist directory i'm sorry so if we
+come back here let me double click this
+so it stays up
+um so that's what this is doing here
+it's saying okay
+install install the npm packages
+copy my source code in and then run this
+react scripts
+build and then that will put everything
+into
+um into the build directory
+and so this is one image right there
+so that creates an image right
+and then down here we have a second
+phase
+and the only reason i'm calling it
+second phase is just by convention
+because we have
+we have uh the build phase above it and
+then the actual production
+kind of resulting image below
+and so docker will start at the top and
+run down through and then it gets here
+and says oh okay
+you want to build another image and it's
+based on the alpine
+version of nginx right and now in the
+copy
+we have this new from so we're going to
+say copy from not
+locally on my machine but i want you to
+copy it from build
+and it'll look up here at your build
+image and say okay i'm going to use that
+as my source
+so it's going to look in code build
+inside of this image
+and take all those files and copy them
+into user share nginx html
+and then by default nginx will serve
+html css images all that type of stuff
+from this
+from this folder um then we expose port
+80 and then we r we start up the nginx
+server
+so the nginx server is uh
+the 1.12 alpine is is very slim it
+doesn't have
+um text editors libraries things that
+you don't need to run
+your basic web server and so we put we
+do
+everything we need to do to build our
+react application using our
+node a big image right and then we say
+okay now just pull out the files and put
+them in this nice
+thin slim image and we're going to use
+that one
+right so so uh you can also do that on
+node so if you're
+using let's say typescript or something
+like that you can run a build step
+and transform all your code from regular
+javascript into typescript
+minify bundle everything up slim them
+down and then pull those out
+and run them in a very slim node
+image
+ah okay so what is node as build
+so this is a multi-stage build
+and the way you can do multi-stage
+builds is in your
+in your docker file you're able to label
+images
+and you can put do that on the from tag
+and then later on as you label them
+you're able to reference them later with
+commands
+all right so we labeled this this image
+as build
+and then later on down in our docker
+file where we'll then to then reference
+back to that image
+and pull files out of it so that's what
+we do down here on line 16.
+so if this if this copy command just
+look like this
+then it would look locally on in my code
+build directory
+inside of the context that i've sent to
+docker engine
+and it would look for all those files
+and copy them into the image
+it won't find them in this case
+but since we don't want to pull them out
+of the context the docker contacts that
+we're working in
+we tell it oh hey pull it from this
+image that i built
+above it labeled as build so that's
+that's the from
+that's why we label it as build and the
+build is
+this term build is is nothing special
+so this could be my infamous foo bar
+right
+so you can label these as whatever you
+want so this could be foobar
+okay the bill sometimes it's the build
+you know when we have uh uh terms that
+are they're overloaded with meaning
+sometimes
+it gets a little confusing so like
+exactly down here we're running build
+uh these this build here on line 11 and
+this build are different
+um so you i've seen a lot of
+uh very complex docker files that will
+have
+a build phase it'll have a testing phase
+and then i'll have a production phase um
+you know uh yeah let's call them phases
+inside of that dockerfile and you can
+run each one of those
+in succession or you can tell it you can
+put a build target
+so if we only built the if we targeted
+just the build
+this label when we did a docker build
+um then it would only build that image
+and anything that it depended on so it
+nbuilds a dependency graph
+[Music]
+so if this was let's just call it prod
+and i did a docker build and said target
+prod
+docker engine would look at it the build
+uh build engine would look at it and say
+okay you're targeting this
+and it would build a dependency draft
+and say okay well you're building from
+build
+and so it will also build this image
+right
+if we had another if we had another uh
+stage in here
+um that build was not dependent on and
+prod was not dependent on
+that stage would not get built when we
+target prod
+cool all right um
+so that's multi-stage builds they're
+they're a great way to
+to um to build you use a
+a image that has all the tools that you
+need in it to build your application
+and then you can use a very slim base
+image and just pull those
+pull those files out and put them in
+there and then this
+this build image goes away and you just
+have the resulting prod image let's call
+it
+awesome um another thing you
+want to think about in your especially
+with
+uh node is you want to gracefully shut
+down
+your server
+you know it's a node a lot of processes
+that are run
+running with node are you know rest apis
+apis in general there's server processes
+that connections are made to and those
+connections can hang around for a while
+and so when you when either your run
+time like kubernetes or swarm
+stops that process if you're not
+listening for the sig term
+the signal to terminate your process
+called a sig term
+um then your process just kind of hangs
+there and then and then
+uh usually the runtime will give it a
+depends but it'll give it a 10 seconds
+right and then it just kills your
+process
+so really what you want to do with node
+is you want to listen for that sig term
+and then you want to kind of stop taking
+requests and you want to kind of flush
+out the rest of your requests that are
+over there let them finish
+and then gracefully shut down so let's
+say you're building an e-commerce
+application
+and your little node process is the
+checkout process
+right and someone starts checking out
+and for whatever reason
+the the orchestrator or just the
+operator
+kills that process kills that container
+but you have connections to it and
+they're trying to purchase things right
+you don't want to just end those
+purchases right just kill that process
+for that user and
+you know he gets a 404 or 500 uh error
+and then hits refresh and he ends up on
+a different server
+and and things are missing and can get
+in a weird state right
+um so what you want to do is listen for
+that sig term
+you want to stop taking in incoming
+connections and then you want to drain
+the rest of the connections that you
+have so let them complete let
+let your end user finish their checkout
+process
+and then finish that then shut down the
+server gracefully
+there's a couple different npm packages
+that do that
+i don't have one particular that i'm
+gonna recommend but
+um
+i'll show you real briefly if i don't
+know if you guys are interested but
+let's see where we're at
+we'll take a little take a little look
+uh behind the scenes
+so i'm gonna go to my core
+so if you guys been watching follow my
+demos i use this
+i use this framework called um
+ronin and something i built it's not
+you can use it in production i have but
+um
+it's really meant for it's an easy way
+for me to demo it
+it sits on top of a lot of boilerplate
+no js code that you write a lot so i use
+ronin server
+so i mean the kitchen sink is kind of my
+playground here so let's pull one of
+these up
+so you can see i'm using the ronin
+server
+i create my server here and then you'll
+see i don't i'm not really listening for
+the sig term but what i do down here in
+the ronin server library
+if we pull that up
+um you'll see
+you'll see right here that
+um sorry for fast scrolling
+folks but you can see it sits right on i
+just wrap
+express do some more interesting stuff
+but um set of ports and all that good
+stuff i set up listeners
+um let me just scroll down if you're
+interested this is up on github
+feel free to go check it out and fork it
+and
+and submit pr's i would love love to uh
+improve this so i have a very since
+these are usually demos that i use
+um that i use ronin with um i don't
+necessarily need the drain
+requests and those type of things so
+you'll see here that i'm listening on to
+sig into the sig term
+and then i call shutdown then i tell it
+what signal's
+been called and then basically i just
+drop a message and then i exit the
+process
+but inside of here uh using express you
+can
+you can um it's a little complicated
+maybe maybe i'm opening a can of worms
+here that i didn't want to do but
+anyways
+um you basically have to count up all
+the connections that happen to express
+kind of keep track of them and then
+close them out as they're
+as they're being returned and then when
+you get a shutdown you look kind of in
+your stack and go oh
+i have requests let those finish and let
+me check every once in a while okay is
+my
+don't don't accept new requests um but
+let these requests finish and then um
+then i'm okay to shut down
+um i think i actually have it at the top
+here
+uh take a look at stoppable that's a
+pretty decent one
+okay cool so again just to recap you
+wanna you wanna
+think smartly about how you shut down
+your containers
+right you just don't if you're running a
+web service that you have connections to
+that could be important um you just
+don't want to shut down your process
+just kill it because
+they might be doing interesting stuff
+like purchasing things for your company
+okay one of the one of the big mistakes
+i see
+[Music]
+folks do especially with node is um
+let's look in here is that a lot of
+folks use npm
+they use or yarn right and they have all
+these scripts inside of their package
+uh json here we just have one in in the
+um
+in the server and basically so i can do
+an npm start
+and that just calls nodeserver.js right
+and so what i see a lot of folks doing
+is in their docker file
+um this is the front end
+let's look at the server docker file
+so a lot of folks will do npm
+run
+start right so they're recreating that
+mpm command that they usually do you
+know when they're developing locally you
+do
+npm start right we're so used to just
+typing that out ampi a run start
+but inside your docker file you don't
+want to do that what happens is npm will
+be the first process
+and then it'll spawn node as a second
+process
+and now you have two two main processes
+basically running inside of your docker
+inside of your image and we don't want
+to do that just
+use node don't use process monitors
+like nodemon and and what ps2 i think it
+is and
+and those type of things let your
+orchestrator
+uh so kubernetes swarm whatever you're
+using as an orchestrator
+let them let that process manage your
+containers lifetime
+right so let it start and stop those
+containers
+um if your process dies inside of that
+container
+so node let's say you have an un
+unhandled exception it just blows away
+your process
+let it die and let the orchestrator
+start up a new one right and then you'll
+see it die again
+start up a new and see a die again and
+then that's when you know you have a
+problem
+if you had a process manager your
+container would start up
+npm would start let's say let's say
+you're using um
+nodemon so let's change this to node mon
+and just just
+know that i have it there in my
+dependencies right it can find it
+so if npm starts then it starts nodemon
+and then no mons watch
+starts node and is watching that node
+process and when no
+the node process dies it starts it again
+starts it again
+to the outside world your container
+looks like it's just running normal
+it's just running right and it never
+dies um
+and so then you then you're gonna you
+know go and look at the logs make sure
+everything's
+running right so as a best practice
+don't do that just start node directly
+within your
+docker file and if that process dies
+let your orchestrator start a new a new
+uh image for it
+okay um
+yeah so no no process monitors inside of
+your image
+um only start one process uh don't use
+npm to start node inside of it just use
+node
+it's totally fine um
+the ui i won't look at the ui because
+again we're not running this on the
+server we're running nginx right
+and you can see we run nginx as the
+command here
+so if that nginx web server dies another
+one will start it back up
+what about using docker compose to
+restart the process
+yes you can do that you there's restarts
+and those type of things and compose
+you can use that
+and it depends on what orchestrator
+you're using if you're using swarm it
+can use that
+um
+yes you can you can override the command
+using docker compose
+um
+yeah sorry i'm not sure if i want to go
+down too far
+uh into what an entry point in command
+is the differences between the two
+but yet but so basically your entry
+point is the process that will be
+um the default uh entry point in that
+image
+and then you can override that and then
+in command kind of gets passed into that
+into the entry point if you have both
+and then on when you do a docker run you
+can also pass in a command that will
+overwrite the command that's in your
+docker file
+um you'll see a lot of uh
+a lot of the official images we'll use
+in entry point script
+that handles some of those different
+things so if you don't pass on a command
+it will use the default command
+um some of the databases are really good
+to go look at
+the official images go look at their
+docker files and that's a that's
+actually let me show that here where's
+my mouse
+so we come in the hub and let's just
+take a look at
+um now let's look at this one here
+12 18 4. so if you actually click on
+those links
+in hub it'll take you in the github and
+you can actually see the docker file
+that's used to build that image
+right which is great so you can go if
+you're like oh well
+how is this image built what's inside of
+it those type of things
+you can go and look at the docker file
+that's actually built that image and
+read down through it
+um let's see so
+here's kind of what i'm talking about so
+it provides an entry point for you
+and the default command is node but
+since in our
+on our um
+let's come over here it's a little bit
+simpler close that down a little bit
+um since in our docker file we we
+set up a command this command here
+and you can see it's just basic node
+will be overwritten
+right it will execute
+our it'll pass in node and server
+into the entry point script so docker
+enterpoint.sh
+so we can actually go look at that so i
+just
+i just went up one one folder here so we
+were looking at the docker file
+now you can come in and see the docker
+dash entry point sh
+and this is the script that actually
+gets run right
+and there's a bunch of bash stuffs in
+there it's basically looking for did you
+pass anything in
+or is the command node if it's not just
+use node
+if it's not use whatever was passed in
+if it wasn't passed in just use node
+someone correct me if i'm wrong man my
+bash is my bash is off
+i haven't written bash scripts in a long
+time
+okay cool um let's see what i have we're
+almost that time
+feel free to dump any uh questions in
+let me scroll up the chat a little bit
+okay awesome
+just looking through my notes see if i
+hit all the major points that i wanted
+to hit
+yeah those are those are pretty much
+talked about
+all the kind of fundamental best
+practices that you want to
+um go through when you're writing your
+doc files
+and again you also want to again you
+want to think about it the same way as
+you think of
+optimizing your code right when you're
+first writing your code
+you want to get it to work right let me
+just get it working
+and then you want to go back and look
+for speed optimizations
+um you know unwinding for loops and
+those type of stuffs right
+nowadays our runtimes are very very good
+at optimizing your code
+even even the um even the javascript
+engines right v8 and those engines are
+really good at optimizing your code
+um they'll they'll run them really fast
+right so as humans we don't do
+that great of a job of optimizing it so
+you want to do that you want to save
+that
+to the very very end right so you might
+read some code
+and it might look like oh this is going
+to be slow
+but actually when you run it it's fast
+enough right
+and that opens a whole nother question
+of what is fast and what is slow
+to be honest it's relative to what
+you're trying to do
+right so if you're um you know most
+things don't need to be lightning fast
+right
+um so usually straight
+readable from top to bottom well
+structured
+code with uh you know
+loosely coupled highly cohesive code
+runs fast
+right and same thing with your docker
+files
+you don't want to early optimize right
+so start out with
+an image that you know has all the tools
+and libraries in it that you need
+to get your application running once you
+have your application running
+then look at okay well maybe i should
+look at the base image that i'm using
+maybe we should build our own base image
+right and only put the tools in there
+that we know
+have been scanned for vulnerabilities
+those type of things
+and then everybody uses that base image
+and another team can manage that base
+image make sure it stays up to date make
+sure it's
+scanned for security vulnerabilities
+those type of things and then you can
+build your image on top of it
+and in that case too you can have one
+for production so very slimmed down
+um you know
+corporate name node base image that your
+company built and is the base production
+node image that everybody uses
+and then you can also have a node image
+that your company built that has all the
+tools in it to build your applications
+uh and same for other languages like go
+you know java and python all those
+so don't early optimize get everything
+working if you're trying to optimize and
+you're using a base image and you're
+fighting an
+error and you can't figure out why right
+you want to remove
+all the variabilities as much as
+possible and only try and focus on what
+exactly the error is
+i've done this from experience right i
+thought i'd get fancy get a nice
+thin base image uh and then when i try
+and
+build my app it's not working and i'd
+spend hours trying to
+debug why npm is not building things
+correctly
+um for me and it turned out to be the
+base image so
+start out with the base image that you
+know is good thick has all of your
+tools in it you need build your image
+get it working and then go back and
+optimize for size
+um and then make sure you have uh you
+think about
+caching when you build if you're
+building your images a lot
+uh caching really helps because you're
+going to um move those files that change
+the most all the way to the bottom
+so you're so your caches doesn't so your
+cache does not get invalidated
+and it'll speed up your builds use build
+kick
+you can read about build kit on our
+website
+it's called build x is the cli
+um but you can read about all things
+build kit here that has nice caching uh
+image caching those type of things you
+can
+you can give it um you could tell to use
+an ssh agent if you need to um
+you know go out let's say to get and
+pull down a repo in your build process
+and you need to use ssh instead of
+copying in your ssh keys into the image
+you can use um
+ssh command you can use secrets that way
+also
+it'll set up temp uh file system and
+include your secret inside the image for
+when you're building and then you
+then that temp will go away different
+things like that so
+um dude you know enable build kit and
+build x it'll speed up your your builds
+tremendously awesome
+yeah it's not necessary to use teeny
+anymore
+um i don't use it for any of my it won't
+hurt
+um but you can you can use it
+uh you can still use it it'll
+it'll pass on those sig int and sig
+terms into your into your node process
+um but docker has that built in now you
+don't necessarily need it
+uh node node will receive if it's the
+process one it'll receive your sig
+into the sig terms um
+yes james you can use buildex for
+nmulti-architect
+builds and it has a whole bunch of other
+stuff so even if you're not doing
+multi architectural builds um
+i would say still use buildex uh
+it just will speed up your builds uh
+with caching there's just and it could
+parallel process things so
+if you have a multi-stage build what uh
+build x is it depends
+builds that dependency tree right so
+it'll look at okay i have um
+i have a two two froms in my build
+in my dockerfile excuse me one goes off
+and and grabs some dependencies and
+and builds those another goes off and
+grabs some dependencies and builds those
+and then my third from depends on both
+of those
+so what build x will do or build kit
+will do is look at we'll build a
+dependency tree
+and see i have from a and from b
+which aren't depending on each other but
+from c depends on both
+so it won't run build c first it'll run
+build a and build b
+together in parallel and then once those
+finish it'll run build c
+um if you look at uh
+oh let's see if i can do this and uh
+it's gonna go into
+it's actually a really good um
+dockercon video that one of our docker
+captains gave
+um that explains just that
+uh let's see build
+let me turn the volume off okay pause it
+so this is so go watch this uh video
+it's a great video
+um explains everything around
+multi-stage builds around build caching
+remote caches using an image as your
+cache
+all those different things so it's a
+it's a really great talk it goes fast
+but it's a great
+starting point to then jump jump off and
+get more information
+um yeah i
+i think we're about done i appreciate
+everybody
+uh joining me and watching me again a
+quick reminder
+next week will be on thursday uh chad
+will be back
+and then we'll be doing thursdays um
+every week after that
+um please feel free to tweet
+at me uh for anything that you want us
+to see anything you want to see you want
+us to talk about
+any kind of demos those type of things
+feel free to uh probably the best ways
+is just to tweet at me or chat
+and um yeah thanks again i really
+appreciate
+everybody and everybody enjoy the rest
+of their week
+take care

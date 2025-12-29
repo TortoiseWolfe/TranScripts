@@ -1,0 +1,1277 @@
+Docker Production Best Practices from Bret Fisher at DockerCon 2017
+Bret Fisher - 45 minutes
+https://youtu.be/V4f_sHTzvCI
+
+---
+
+this video is my talk from docker con
+2017 I actually did it twice once in the
+u.s. once in Europe at both docker cons
+and a lot of this stuff still is
+relevant today in fact there's very
+little of it that would change if I did
+it again right now
+so this details the best practices
+starting from hardware decisions all the
+way up through the OS into docker
+versions into your images and then
+building out swarm clusters and how you
+design those and how big should they be
+and what should be managers versus
+workers and all the details in between
+so I hope you enjoy this is the last
+session of the day and we've got the the
+most excellently awesome Brett Fisher
+who is also a captain he was one of the
+first cohort captain so he's got years
+of experience at docker in production he
+consults and helps we will get to
+production and this session is about
+what you need to know but also what you
+need to decide to mistis decisions you
+need to make - if any of you are into
+like oh if you're old if there are old
+geeks in the audience I don't mean that
+in a nasty way because I am one real old
+and real geek then you will enjoy the
+the theme of this session so taking away
+--bread thank you I get the honor of
+having the graveyard shift so thanks for
+coming and we're almost to happy hour so
+why are we here he lined it up very
+succinctly but we are here because you
+probably want docker in production I'm
+not here to convince you that docker in
+production is a good idea you've
+probably already decided that so this is
+about the lessons learned with
+consulting and with docker and a lot of
+their best practices about a lot of the
+decisions you need to make before you
+get into production also you might be a
+old video game fan of retro video game
+fans so I'm going to keep you a little
+bit entertained with some trivia and I'm
+going to ask you four I'm going to give
+you some music and screenshots from
+classic games that were my favorites as
+a kid and I want you to yell it out if
+you recognize it so this is a little bit
+audience participation and let's get
+started so if you haven't figured it out
+yet I'm a geek and I have been since the
+fifth grade
+when I got a trs-80 and I most
+sis admin stuff although I'm a pretend
+developer as well for a long time now
+and the here's the list this is my
+resume this is the list of all the video
+game platforms I had as a child up until
+like the early 1990s and we're gonna
+have some trivia so let's have some fun
+any one Street Fighter
+that was good okay so this is me this is
+me making poor analogies about 80s video
+games and how that relates to docker so
+in the 90s I was actually in a VA school
+and in the military in the military we
+were learning mainframes as well as pcs
+at the same time because let's just do
+both
+we had original hybrid computing and the
+cool thing about this game was when you
+were actually in school you could
+actually get all your friends with a
+Super Nintendo inside the room and play
+eight game eight players at a time in a
+big tournament battle and we would
+declare the winning the crown champion
+for the week and then we would go back
+to studying our piece and PCs and
+mainframes and so it was a great time so
+I'm here to actually give you super
+Street Fighter 2 turbo advice on your
+project and maybe help you make some
+decisions and that first problem is
+limiting your simultaneous innovation
+limiting your simultaneous innovation so
+this is my fancy way of saying scope
+creep scope creep so we all know about
+scope creep and IT projects everybody
+wants everything in the first release
+and that this is the same with your
+infrastructure so there's common
+problems that I see when I'm starting
+off with projects usually I come in at
+the point when the client once docker
+they've heard about orchestration they
+want all the things in this fancy
+orchestration because they spent 20
+years building up their vm
+infrastructure or 15 years and they want
+that exact same thing in the first
+version of their first container in
+production so I'm going to give you some
+excuses for things that maybe you don't
+need the very first time you deploy
+production containers and one of those
+things is CI CD even though if you have
+that today you probably don't have to do
+a lot to get it to work with containers
+it's not that big of a deal all of the
+CI platforms now kind of support support
+containers so you're good but if you
+don't have
+see I CD today you don't have to have
+that for your first container project or
+even your second container project don't
+make that a requirement and have to
+build up that infrastructure dynamic
+performance scaling is another big one
+where people just assume that as soon as
+you get orchestration this magically
+causes all of your nodes and your
+containers to magically scale up and
+down that's not built-in and that
+probably shouldn't be the very first
+thing you do because you're going to
+learn a lot and you need to have those
+learnings before you start trying to
+automatically scale this infrastructure
+and starting with persistent data is a
+really big one don't make your databases
+the first thing that you put in a swarm
+cluster it's not that it's a bad thing
+it's just it's a little harder
+persistent data is a harder thing to
+deal with and it's also probably not
+your most agile infrastructure right
+you're probably not upgrading your
+databases to a new version every month
+but you're probably deploying new code
+every week or every day or and so you're
+going to get a lot more benefit out of
+your application code anyway instead of
+your persistent data so legacy apps as
+we've been saying all week and all year
+the MTA program legacy apps still work -
+one of my goals whenever we're working
+on a project with applications is to not
+change any code I would say that the
+probably the most common change we make
+an application code is when there's
+assumed environment pieces hard-coded
+into the app like IP addresses in code
+obviously we probably know that that's
+wrong but I our apps you know like
+really old apps 10 year old apps I see a
+lot of assumptions around specific IPS
+or host names or certain environment
+variables that need to be there and we
+usually have to pull those out and get
+those into environment variables that's
+really the only code we usually have to
+change 12 factor we all live you
+probably heard a swell factor it's sort
+of an ideal solution it doesn't need to
+be there for you to implement containers
+or even orchestration it's I don't look
+at it is it's done I look at it more as
+a horizon so your goal should be to
+learn distributed computing best
+practices and implement those over time
+not necessarily all at once before you
+go to production and yeah I don't like
+this stuff delay you because you're
+going to learn lots on the first day of
+production you're learning more there
+than the
+last two months of the project of going
+production right and 85 that was a long
+time ago but that game Super Mario
+Brothers held the title of the
+best-selling game on a platform for 30
+years it held that title and it was a
+big part of my was my first console that
+actually had two controllers that we
+could play a game at the same time so
+that was me learning how to be
+competitive in gaming before that a lot
+of the games are usually just one player
+at a time and it also had a co-op mode
+so that was really cool for learning
+what coops about so let's talk about
+some dockerfile
+power-ups and how you might make your
+docker files better and ready for
+production so I always tell everyone
+focus on docker files first I'd rather
+you have those docker files be really
+well tuned then some fancy orchestration
+features or fully automated CI CD those
+docker files are your new build
+documentation so you're going to need to
+move maybe you have code and ansible
+saltstack puppet whatever you need shell
+scripts that stuff that you had before
+for building your servers that's in your
+docker file now and you're going to need
+to comment it and put lots of
+documentation in that file and you're
+going to need to tune that file and in
+fact I call this the docker maturity
+model of how you might go about starting
+from day one of a duck or file to the
+production ready docker file because a
+lot of things obviously just work in dev
+and then not in production and with
+containers that's our goal right is that
+the things that work in dev work exactly
+the same in production that was our
+whole go goal so we start with just
+getting your app to work and not crash
+which doesn't always work the first day
+so as you start this project and you
+starting your Ducker files and you're
+basing it on official images hopefully
+you're gonna get it to start and stay
+starting and stay working then you're
+gonna focus on your logs like getting
+the logs out of that container not
+putting them into log files that's an
+anti-pattern and I see a lot of people
+still doing that you need to be putting
+it in the STD air an STD out and let
+docker handle your logs let your your
+orchestration handle your logs for you
+please don't keep them in the app and it
+also removes requirements because a lot
+of apps have
+sub-modules that are doing this fancy
+logging for them and now you can kind of
+pull that out of your app and make that
+a part of your infrastructure then
+documenting is a big thing to do next
+maybe you're someone who's working on
+the docker file for the team and you're
+gonna need to give this to it someone
+else in the team to have them test it
+run it I recommend you have
+documentation in there about each area
+of the docker file obviously those lines
+are pulled out before build time so it's
+not going to slow down your builds it's
+not going to affect production with all
+the documentation in there and then
+making it lean and making it scale so a
+lot of people focus on lean first like
+they worry about the size of the image
+and I'm here to tell you your image size
+is not your number one or number two
+problem I don't care how big your image
+is because you're you're gonna probably
+want to use that the official images
+that you're used to if your service
+today are Ubuntu or Sint OS or whatever
+you're running make those that default
+images on your first project now
+eventually you can get to some super
+lean Alpine images that are 5 Meg with
+only the binaries that you built and go
+and that's all wonderful but you don't
+need that on day one you don't need that
+in your first container project I have
+production clients that don't have that
+yet because that image is single instant
+storage on those hosts each image
+assuming it's a single version is only
+stored once even if you're running five
+containers from it and so it's not a big
+deal if you have a 500 Meg you know
+image or a 300 Meg image so I wouldn't
+sweat the small stuff like the image
+size I would sweat more about the
+quality of the docker file and then
+reducing the change rate so if you're
+Bill documentation is all based on
+apt-get you don't want to move
+necessarily on your very first docker
+file to a completely different package
+manager in Alpine you would rather use
+the same build documentation you have
+today it'll work in the docker file with
+App to get in the docker file and and
+take that to production and learn all
+the lessons you're gonna learn there and
+then make a separate project later -
+maybe we change - they'll have something
+like Alpine like a reduced image a
+reduced footprint for maybe for security
+or just for leanness of the image so and
+then make a scale right I'm taking that
+application and running it in multiple
+containers at the same time assuming it
+can if it's a database probably needs to
+have something like replication
+all that stuff in the database layer but
+if you're talking about web apps or
+worker apps and stuff like that I'll
+make sure that it can scale out because
+it doesn't always mean that just because
+it runs in one container that it'll work
+well in a Orchestrator automatically
+with five containers right there might
+be session state you're dealing with
+other issues with parallel Sonic the
+Hedgehog okay so who remembers the
+16-bit console wars remember the 8-bit
+Wii with a 16-bit it was a big deal and
+there was this fight between Super
+Nintendo and Sega Genesis and who's
+gonna win and you know now we're on the
+128-bit Wars or I don't know what we're
+at now but so Sonic the Hedgehog was
+such a big deal for me as a kid that I
+actually when I R see and even see
+everyone remember ICQ chat from the 90s
+yeah so I had to come up with a handle
+right we all if we all got online you're
+like oh I'm not supposed to use my real
+name I gotta have a handle so I ended up
+with Sonic's very variations on Sonic
+the Hedgehog because that was my
+favorite game at the time and he was he
+actually it was so cool he had this
+feature where he would roll up into a
+ball and scream around the screen
+loop-de-loops all over the screen and
+what happened was that you the player
+cuz I was probably like three frames a
+second or something crazy slow at the
+time yeah you you as a player we're no
+longer aware of what was going on the
+screen you were really just following
+anti-patterns and you were trying to
+prevent this you were trying to prevent
+from hitting spikes or dangers in the
+road ahead so the only job you had was
+to make sure that you didn't hit stuff
+you were an anti-pattern thing you were
+just a that's all you were observing so
+this is my horrible analogy of how we're
+gonna look at docker docker file
+anti-patterns for a second and we're
+gonna hammer through these pretty quick
+and the first one I see is pretty
+obvious we probably all know about
+volumes now and it's a new fad not a new
+feature it came out a while back a
+couple years and I see people that
+accidentally forget to add extra dock
+volumes for maybe their debug logs or
+air dump logs or something like that
+that they forgot to put the STD out or
+maybe they have static file uploads from
+users or some sort of caching files that
+they want to keep between loads of the
+app or something so you want to make
+sure that those are in volumes if you're
+using official images all the persistent
+data stuff in there or
+has volumes for you taken care of if
+you're using latest please stop
+just don't ever why just never again
+ever type that word latest just don't do
+it do a version just if you're going to
+make a docker file even for testing just
+get in the habit of typing versions
+because it's muscle memory so when you
+get to the muscle memory of knowing the
+version that you're on right now and
+just typing that in the front lines
+you'll see here that example on the top
+the PHP official one uses version number
+silvers right the second one there from
+Ubuntu it's it's got a technically it's
+a silver because it's on 1604 but it's
+date based so you know that the packet
+the apt-get packages in there when they
+were actually put in so it gives you an
+idea these are also two examples by the
+way of when you're building your own
+images you don't have to do Cimber of
+your own images you might do date based
+or commit ID based but what i really
+focus on here is that the top example is
+showing the versions of the different
+apps that i'm putting in that docker
+file and I'm setting up environment
+variables at the very top so that when
+someone or any one of my team looks at
+this docker file they can immediately
+know what actual versions of those apps
+are installed they don't have to scroll
+through what could be hundreds of lines
+of docker file to figure out what
+version of node that we put in here I
+mean obviously you have things like
+package.json and composer and stuff like
+that that's a little bit separate
+because that's in the app but this is
+all about those app those parts of the
+app that are there just so your code
+runs and they tend to get lost in the
+docker file and you forget to update
+them so in the second one you can see
+I'm pinning actually pinning isn't the
+right word for advocate but I am
+specifying the correct the right update
+version for some of my apt-get packages
+most people don't do this when I when I
+first get into the project and I it's
+not hard to do you actually just can
+install the versions that you think you
+need or just install whatever's latest
+and then find out the versions pretty
+easily without get and then just put
+those in your docker file not for
+everything probably not for curl you
+know or other utilities you might need
+but for the ones that are particular to
+your app and PHP is one of the harder
+ones because it usually has a lot of
+apt-get dependencies for your PHP app
+soap in those versions because you don't
+deploy random versions of code
+so why deploy ran
+versions of the code dependencies this
+docker file could be built daily every
+time you do a code commit which means
+you could end up with random image
+versions of this of the of the
+dependencies and then if you're doing
+start to get the full auto CI CD you
+start having random little quirks like
+the database driver gets updated
+and suddenly doesn't support your
+version of but you didn't know it
+cuz your testing doesn't maybe test on
+that version of so anyway I'm not
+nbitter it happened to me I'm just saying
+pin your versions you'll you can learn
+from me
+default configs in apps like people
+nreally all ass but PHP my sequel
+postgrads Java is a pretty good
+one a lot of people will not realize or
+conceptualize the idea that there are
+this is infrastructure building in the
+dockerfle and maybe before you were
+depending upon another team to set up
+your Java memory limits or set up the
+proper my sequel config file those are
+now responsibility of the docker file or
+at least they should be so this is a
+pretty good example of what you might do
+a better example is if you use the entry
+point script I'm not going to get into
+entry point scripts today or how they
+work but they allow you to run a command
+before you do your CMD that could be a
+script that sets up your config files on
+the fly and if you actually go look at
+the official images for my sequel or
+Postgres to name a few
+those have entry point scripts in them
+that do all sorts of stuff before the
+database starts they create the default
+database they add the default admin
+password they set up a custom user for
+your database they do all that and then
+the database restarts into the command
+and this is a way that you can solve a
+lot of these problems around not hard
+coding environment settings into the
+docker build you really want to keep
+those out and in the actual runtime
+configuration and so this is something I
+saw on a project where they were
+building the same image over and over
+different technically images for
+different environments so then they
+would just change the docker file to use
+a different JSON and then build a
+different image this is definitely an
+anti
+because now you've got all these
+different images one per environment and
+if if you've been in this industry long
+enough you know environments are
+infinite right especially now that we
+have virtualization it's you know
+nthey're whatever you have in
+environments tomorrow it'll be n plus
+one and so you'll be keeping all these
+different images and you don't want that
+so you're going to constantly try to be
+pulling out all those environment
+settings setting them ideally in
+nenvironment of a docker file I prefer
+doing it in the docker file then having
+it in other files that later get
+imported because it increases visibility
+so I always try to get as many of those
+environment settings right there in the
+docker file as default and then I set
+them at runtime so that anyone who's
+looking at the docker file knows what
+the defaults are they don't have to go
+digging around in some other repo or
+some other system for whatever that
+config file might be for that
+application hmm is a little tougher one
+we're going to get more advanced
+Dragonslayer yes this is a pretty cool
+one in fact it was the first laserdisc
+game and it was an 83 I don't know if
+I'm anyone here was a laserdisc but it
+was basically a big CD a very big city
+the size of a record and this is
+hand-drawn art this is actually a game
+that was playing a movie while you were
+watching it in fact for me it mostly
+mostly looked like that because I was
+constantly dying it was a hard game to
+play and there was no cheats you
+couldn't look up cheese on the internet
+back then so you couldn't figure out
+what the right moves were so dragon's
+lair
+it was it was actually a 50 cent game
+when the world was on 25 cents per game
+they were like the one they started this
+evolution of dollar games and $2.00
+games and all this crazy stuff now and
+we would all just stand around and watch
+it because it was like it was like
+watching a cartoon and it actually I
+think it was probably the one of the
+most grossing games in a ten minute
+period I would basically lose a paycheck
+in 10 minutes on this game because you
+would die every 30 seconds and it was
+one life per 50 cents so it was pretty
+tough by the way 50 35 years later this
+game still looks fantastic you can
+actually play it on your phone now it
+looks great so let's play some
+infrastructure dragons let's let's talk
+about three big decisions that you
+probably need to make if you're an ops
+team about your infrastructure it's
+probably some of the most common
+questions I get on a start of a project
+and the first one is vm's or hardware
+like variate vm's or bare metal and I
+say both I say do what you're good at
+stick with what you're good at and then
+maybe on a later project you do some
+basic performance testing on bare metal
+you're probably better unless you're a
+few of us that really need the raw power
+of bare metal you're probably better at
+vm's today then you are using bare metal
+and dynamically deploying bare metal so
+if you're if you're on VMs I would say
+later do some performance testing on
+bare metal and at scale on that not
+necessarily a multiple servers but on
+that server itself scaling up the number
+of containers on that bare metal and
+seeing what the performance looks like
+you can do some really simple stuff with
+some really simple open-source tools it
+doesn't have to be complicated or some
+tool you purchase and in fact the
+beginning of the year it's a it's
+probably still relevant because you know
+it is
+to give world the containers a beginning
+of this year on 112 I worked with HPE
+and docker on we created a white paper
+and there's an other white paper as well
+if on that link there's two of them that
+talk about and actually show some basic
+performance testing that we did and
+comparisons of workloads in vm's
+workloads in the containers and vm's and
+then workloads in containers on bare
+metal and it's not a tweet I can't just
+give you a one-liner that says this is
+what you should do because it's complex
+right it changes your i/o patterns it
+changes your kernel scheduling so you're
+gonna probably as you increase density
+of the number of containers in a VM
+you're gonna have to care a little more
+about things like kernel scheduling and
+kernel settings and network settings
+because you're going to be loading up
+that OS where maybe before you had one
+app in one OS and then one app and one
+OS so it changes changes the pattern so
+you have to learn a little bit as you
+grow the next one is about your OS and
+the distribution so we're talking about
+Linux right now obviously from wind if
+you're gonna do windows containers you
+get one choice and that's a nice easy
+choice but if you're on Linux your
+distribution doesn't matter as much as
+your kernel the innovations and fixes
+that I mean docker is a little over four
+years old now containers have actually
+been affecting the future of the kernel
+and how the Linux kernel in the
+operating system is created and deployed
+and all that stuff so you don't want to
+be running a five-year-old kernel
+version three ten is the minimum of
+docker and just because it's the minimum
+and it works doesn't mean it's the one
+you should be using right I recommend a
+4x kernel and there's actually still a
+couple of distributions out there where
+if you install the latest version you
+might get a three dot something kernel
+so you need to care about that more than
+you used to
+I mean Apache works the same way pretty
+much on every different distribution
+docker does not containers do not write
+so I would say if you don't have an
+opinion
+just try Ubuntu I'm not playing
+favorites here but the thing about
+you've been - if you're not someone
+who's particularly passionate about a
+particular distribution is that it comes
+with a four dot of the Box it has the
+nice long term support lifecycle
+it's well documented on the Internet
+docker tests it heavily it's one of the
+official docker supported distributions
+in the docker store or maybe try
+infrakit and Linux kit
+now this one is a caveat because this
+one will delay your project if you are
+new to this type of building your own
+distribution and deploying with linux
+with infrakit if you're not wear a limp
+infrakit those are extra additive things
+so I'm warning you now that that will
+not be the fastest choice but it will
+maybe be cool
+so that will affect the length of your
+project it'll delay it a little bit as
+you learn how linux kit works there's
+been sessions this week on linux kit and
+they'll be more tomorrow I'm sure at
+Moby summit
+lastly there make sure that you get your
+distribution from the store the default
+distribution of docker in your like an
+apt-get yum all those that's not gonna
+be the right version for you I'm gonna
+guarantee that because that that's
+probably gonna be 113 you know that's
+eight months old now ten months old so
+you want the latest versions of docker
+that you can get the latest stable is
+1709 from last month and you're going to
+get that through the store which mean
+sure is that docker built it and that
+it's not actually different than it what
+docker intended which is actually the
+case with some older distributions in
+the other package managers last one here
+is your container and we talked about
+this your container from image we talked
+about this your base image a lot of
+teams end up having an intermediate
+image is what I call it so you have your
+base from the store or from docker hub
+you have your intermediate that's maybe
+your standard for the team for nodejs
+you know picking your own standard of
+know of that version and you're gonna
+have some of that and then you maybe
+have another image that you build on top
+of that you don't have to do it that way
+but if you're more than a few people in
+the team you probably want to set some
+standards going along it's kind of like
+the gold golden image idea of a VM
+that's what you're going to maybe do
+with an intermediate but I would say
+make it based on not the image size like
+I said earlier definitely based on what
+your VMs are if you're used to a
+particular distribution just start with
+that distribution in your image it'll
+work it'll be great and then you won't
+have to change everything about your
+build documentation when you convert
+over to your docker file
+yeah i matching existing process and
+then maybe later again consider alpine
+it is becoming a very popular choice
+because of its five Meg size for the
+image which is pretty sweet
+Warcraft jobs done famous lines like
+jobs done right this is actually my
+intro into Blizzard and my 20-year love
+affair with Blizzard started with that
+game I was actually lucky enough to be
+in the beta of the very first version
+this was so long ago that you had to buy
+a sound card and put it in your PC to
+get it to play like her to actually
+enjoy it and that would that really oh
+the original PC that was not designed to
+play video games I guess or that not
+have at least anything other than a
+little crappy PC speaker so and I think
+I've bought every blizzard game since
+then so yeah that worked let's talk
+about swarm architectures now and this
+is really about the swarm layer the
+swarm architecture so we now know the OS
+we now know our image is let's talk
+about how we're gonna build that swarm
+out and I'm going to give you some very
+basic designs if you're not if if you
+haven't gone to some of the other swarm
+stuff you haven't read up on swarm and
+how it works I'm not gonna go deep dive
+it obviously into swarm
+we had a great workshop on Monday
+there's a session actually before this
+with Laura Frank that talks about swarm
+and the internals of raft and how can
+nsince this works so I'm just going to
+give you some basic design starting with
+baby swarm and baby swarm is one note
+you can build a swarm on one node which
+can be your laptop it's just one liner
+right we probably have all seen these
+demos we've probably tried these demos
+it's a real thing and I want to talk
+about it for a second it's okay you have
+infrastructure today I'm sure that every
+one of you there is one system in your
+environment that is not highly available
+that if it went down you would get a
+phone call right something somewhere it
+may it may be a CI system it may be just
+like some notification system for your
+ticket system or something you know
+something that's not critical to your
+business but you have that somewhere so
+run it on swarm run it on just do docker
+swarm in it you get new features out of
+the box with it you get secrets you get
+configs you get services that
+automatically they're declarative so
+they automatically
+we'll replace themselves if they have a
+problem they can use health checks to
+make sure that they're available those
+things you don't get with docker run so
+out of the box if we're fine let's do it
+the next option you might have is a
+three node swarm don't do even numbers
+not two nodes forums don't do that at
+least for managers we're talking about
+the managers and if you not super
+familiar with swarm there's two types of
+machines there's workers which get the
+job done and there's managers that have
+the raft consensus database kind of like
+an sed server and in this case you're a
+very small a project that's maybe a
+hobby project or a test project all the
+machines are doing work but they're also
+all managers so they're also have a
+little bit more of a security risk
+profile because they're storing the raft
+database that has all of the control
+over your swarm and that's the very
+minimum that it will actually provide a
+fault tolerance in your managers the
+next size up might be five this is what
+I would call the biz swarm because this
+is what I recommend it to small little
+scrappy startup companies that they just
+want the minimum infrastructure for high
+availability and they don't and they
+don't really they're not so concerned
+yet about security and providing
+boundaries around their managers and
+they just want high availability so I
+recommend this because this allows you
+to take one node down for maintenance
+and still have a fault tolerance because
+in this one you can lose two right so we
+got to have always a majority of manager
+nodes have to be up so that would be
+five from there we're just gonna kind of
+make it up as we go and by the way on
+these boxes if you're an AWS person
+ignore the fact that it says T 2 or C 2
+that the instance size doesn't matter it
+was just that the graphic program I was
+using gave me those graphics so in this
+case I've actually split them out I now
+have my managers on a sort of a secure
+Enclave a different VLAN or a security
+group so that they can all talk amongst
+themselves and control the swarm and
+then I can just make as many worker
+nodes as I need to have okay and those
+worker nodes can be lots of different
+things they can in one single swarm I
+can have different hardware profiles and
+different network segments different
+availability zones I can do all that
+stuff with those worker nodes and use
+constraints if you're not familiar with
+those it's basically metadata that
+allows you to tell
+a service that you're creating for
+docker that it needs to be over here
+with the SST zo SSDs are or maybe
+there's a security profile scanner you
+run on particular server for PCI
+compliance or whatever right you make it
+up VPNs maybe it something's over a VPN
+you want to assign labels to those nodes
+and then you constraint your work with
+that stuff with the the constraints so
+we can scale this up all the way to
+hundred nodes and it doesn't change a
+whole lot it does it doesn't really
+change it's just more worker nodes in
+more places with more diverse profiles
+you're still using the same habits maybe
+the instance sizes are bigger and you
+will have to scale your managers because
+your managers are storing that raft
+database in memory so as the work gets
+bigger and there's more work to be had
+that raft database will grow and your
+your RAM and CPU profiles on those
+managers may need to increase but
+nthey're very easy to replace you can
+bring one in take one out with a couple
+of lines at the docker file I'm gonna
+give you a quick little warning on a
+soap box that please don't make your
+cattle pets a lot of people that are
+moving to agile infrastructure and I
+hate to use that word cuz agile is
+always overused but your your
+infrastructure with docker has the
+capability of being agile if you don't
+make it pets if you don't start as like
+downloading get you know get
+repositories on to the hosts and you
+don't start doing special stuff on the
+hosts it can maintain if it's just build
+a server install docker add it to the
+swarm and then deploy containers if you
+just keep it at that and you do
+everything either remotely through the
+docker API or maybe some fancy shell
+stuff where you do stuff over SSH but
+you don't actually store stuff on the
+hard drive then that node is not special
+it doesn't have to be but I see a lot of
+people that end up making like one of
+the manager nodes their box that they do
+all this stuff on they have all these
+tools and then they install things with
+apt-get on the host and it's a bad habit
+it's a habit we've had for decades it's
+just a habit you got to get out of doing
+you can do all your troubleshooting and
+all your testing in containers and in
+that swarm and that's great it keeps it
+out of being on the hosts so reasons you
+might have multiple swarms this is a
+common question actually was also asked
+and Dan session before these are bad
+reasons for multiple swarms you can do a
+lot in a single swarm there is no hard
+set limits
+right we've tested thousands of nodes
+docker I think is tested tens of or
+10,000 or something I'm not sure what
+their their top number is but these are
+all things that actually you don't need
+a reason you don't need that reason to
+create multiple swarms now if you have
+some of these reasons you you would have
+to create potentially multiple swarms
+like I'm an ops person so I love the
+idea of giving the ops team the chance
+to fail before production so give that
+give the opportunity for the ops team to
+have as a real swarm that other people
+care about like maybe the CI platform or
+the testing infrastructure give the
+option or the team a chance to have that
+so they can learn they can make mistakes
+on swarm and accidentally delete the
+database off the swarm or whatever you
+know that people do before they get all
+the way to production because if this is
+your first project and this is your
+first forum you're gonna learn Lots
+you're gonna make mistakes so it's great
+when you can make them not in production
+right management boundaries the docker
+API out-of-the-box is an all-or-nothing
+thing and you've probably if you've used
+docker awhile even before swarm you know
+that it doesn't have our back built in
+it doesn't do that role based access
+control out of the box you can do that
+with docker EE there's other third-party
+tools there's actually a plug-in model
+that you can create off on top of it
+but unless you add that layer it is an
+all-or-nothing thing so if you have a
+team that needs that sort of thing maybe
+you just decide you know that New York
+office is going to have a swarm and the
+DC office is going to have a swarm
+because of management boundaries so I'm
+going to throw a real quick slide in
+about Windows Server 2016 because that
+is a cool really new cool thing in swarm
+where you can have a hybrid swarm of
+different os's
+and I will windows it's this year right
+this is the year that as Server 2016
+that's made this possible and it's
+innovating quickly so every couple of
+months we get a nice new set of features
+and windows that expand the capability
+of it in swarm and in docker in general
+so I will say that if you want to make a
+pure Windows Server 2016 swarm you there
+may be some potential negatives of that
+just because we've had four years of
+innovation in containers there's all
+these open source
+projects on monitoring and logging but a
+lot of that stuff is Linux only so if
+you're a window shop I would encourage
+you to consider at least some Linux in
+your swarm so that you can innovate with
+some of those neat tools out there that
+in the ecosystem that maybe aren't ready
+for Windows they're catching up to
+Windows right also if you're a I'm
+always licensed sensitive on Windows and
+if your swarm managers are just being
+swarm managers and that's all they're
+doing then maybe make those linux and
+then you use Windows for your Windows
+workloads and you don't sort of spend
+the license on Windows just to be a
+manager sitting there making decisions
+so another but it you know obviously
+could do that this is another hard one
+okay it's a little user of music right
+x-plane was a 1993 das game and it was
+probably one of the first games that you
+needed a mouse for like Wolfenstein 3d
+was around this time and all that it was
+actual flight simulator in space it had
+you could fly every Star Wars craft
+eventually because they had lots of
+Hason's this game was an addiction for
+me for at least a year to the point that
+I actually got my first store credit at
+the Navy NEX which is like the Navy
+Walmart and bought a Bose speakers to
+play the fantastic soundtrack and I
+bought a stick of a controller for
+flights flight stick I basically spent
+way too much money that I couldn't even
+afford it and I got a store credit so
+yeh consumer debt and that was the fault
+of that game so let's talk about
+outsourcing some parts of your swarm
+maybe you don't need to do everything
+in-house maybe you don't need to
+innovate everything so I'm gonna say
+like yeah beware the not implemented
+here syndrome basically there's products
+out there for a certain part there's
+nbait I mean obviously there's commercial
+products for everything you could just
+outsource all of this right we have the
+cloud we have commercial companies but
+if you're gonna do this yourself if you
+want to do swarm yourself dr. c ii then
+maybe there's some good parts out there
+that you can use that are easy to
+noutsource easy to exchange when I say
+outsource I mean like either a SAS or a
+some commercial product and image
+registries is a really great comment
+with that market is well-defined right
+there's good players out there they've
+been there for years
+log centralizing your logging and
+centralizing your monitoring those are
+obvious sort of to me those are obvious
+ways you don't have to go use all the
+open-source tools because typically with
+open-source even though it's awesome
+you're usually trading you know free for
+convenience right so it's there is no
+truly free so these will accelerate your
+project if you need to cut timeline out
+of your container project for growing
+production look at these areas and
+there's also by the way a great URL for
+the CN CF foundation they have a pretty
+cool sort of like a visual diagram of
+the ecosystem so if you're not familiar
+with all the logging players and
+containers there's a nice graphic there
+that'll give you their logos and you can
+figure out maybe what things you need to
+consider there all right so really quick
+we're actually gonna talk about tech
+stacks and that's why I don't I don't
+allow us to call it but you know this is
+the building up from the bottom up what
+it might look like for you today you
+know obviously in six months we might
+have kubernetes we will have kubernetes
+as an option so these slides aren't
+kubernetes ready because i'm talking
+about today right this is what you can
+do now so maybe at the very bottom
+you're deploying your infrastructure
+with infrakit and terraform Oh
+wrong button and then your your runtime
+here is docker obviously if you're using
+swarm your orchestration is docker swarm
+your networking is the built in
+overlaying of Dockers form your storage
+maybe you're using rex ray which is a
+open source project that orchestrate
+your your shared storage amongst your
+hosts that's a pretty cool project from
+Dell EMC Jenkins I'm just throwing this
+in there this idea of this stack here
+though is this is all the open source
+this is pure open source everything
+yourself on your own system or on a
+cloud system that you're deploying no
+SAS here docker distribution plus Portus
+Portus is an a GUI on top of the free
+registry from docker so register if you
+just do docker pull registry that's
+Dockers official registry maybe you
+don't want to use hub or anything else
+you just want your own registry that's
+what that would be for your layer 7
+proxy and if you didn't know you're
+gonna need one probably if you're into
+nwebs web stuff at all you're going to
+need to share port 80 and 443 amongst
+many containers that's going to need
+mean you need a reverse proxy or a layer
+7 proxy the same thing and flow proxy
+actually from Duquette one of our
+captains victor is a really cool project
+that uses h a proxy and then traffic I
+think maybe uses engine X that's another
+popular one ALK maybe for your loss
+centralized logging i'm most of you've
+probably heard of that that's another
+one that works with swarm centralized
+monitoring maybe Prometheus and Griffin
+ax Prometheus actually controls the
+monitoring graph Anna is the GUI on top
+that gives you nice graphs and then
+finally up here port Ainur would maybe
+be a GUI on top of swarm and one last
+little thing I thought I'd also throw in
+if you're into function
+is the service open faz is here this
+week
+alex is talking about ELC open fat
+shirts that runs on top of swarm so you
+can do your own functions as a service
+on top of that now what I'm going to do
+is I'm going to quickly show you what
+that might look like if you did some of
+these sass products on top and the bold
+items are the items that would change
+notice here docker for AWS and docker
+for Azure I didn't talk about those but
+those are Dockers opinions of how you
+should best run a swarm in those clouds
+and they give you templates the Google
+cloud ones in beta right now you can
+sign up I believe on Dockers website but
+the bold ones there are maybe choices
+you could make for commercial products
+that would accelerate your deployment by
+solving problems that you would
+otherwise have to solve yourself lastly
+here docker Enterprise Edition this is
+what would change if you did docker EE
+on top of docker for Azure or AWS so dr.
+Faraj or an AWS are free from docker I
+mean obviously I pay for the
+infrastructure but their templates are
+free and on top of that if you did
+docker EE your runtime changes to the
+official support in EE version you're
+late
+let your layer seven proxy and your
+registries and your GUI is taken care of
+for you
+so you can see how the stack is getting
+very very docker centric and focused and
+so the fastest deployment honestly is
+just a deploy docker ee on Azure AWS
+with their templates so if you needed
+speed if you didn't know also Dockery
+also gives you lots of other things
+right you have to image scanning the
+role based access control image
+promotion we've all seen those demos in
+the keynote and the content trust life
+lessons don't shoot your food this is
+1985 this is a hack and slash arcade
+game that hmm
+that gave you up to four players right
+I'm not talking about this ready player
+one by the way you need to watch that
+movie next year but you got to read the
+book or listen to the audio book by Wil
+Wheaton before that it's a great trip to
+through the 80s if you're an 80s fan at
+all I'll breathe your life running so
+the cool thing about this game you could
+play this as four players or one player
+and it still was fun okay so
+just because your friends weren't around
+you couldn't co-op together on this game
+doesn't mean you can't play it and it
+wouldn't and you wouldn't have fun so
+the same thing with your Orchestrator
+maybe I'm gonna I'm gonna like throw all
+that out and say maybe you need to get
+containers in production because the
+holiday season is coming and you
+promised your boss containers by
+Christmas so what if you can't do
+container orchestration before then and
+maybe you have infrastructure that's
+fully automated maybe you use aSG's in
+an Amazon where your auto scaling your
+VMs and you put your apps in the VMS so
+I'm just gonna argue my own argument and
+say maybe you like the VAT boundaries of
+a VM so do one V one container per VM we
+don't talk about that really in the
+industry because it's not the coolest
+thing but it totally works you could do
+this and change less of your
+infrastructure it but it has lots of
+benefits it means you can learn how to
+use docker files Italy means that you
+learn how to manage docker in production
+and this is one container on that one VM
+obviously you're not getting scale out
+of out of your containers like all these
+containers in a single VM but you're
+don't worry if you're not doing
+containers today then you're already
+doing this so this is not worse this is
+getting you better right it's just not
+the full-on orchestration so this
+actually is happening right now this is
+not a new thing
+Windows is doing this with hyper-v
+hyper-v containers are basically one
+container in a VM Linux is doing this
+with the until Intel clear containers
+initiative that's a cool project where
+they're making making very minimal Linux
+OSS this is also coming with the Linux
+kit well Linux kit does this today but
+this is actually coming with Linux
+containers on Windows which is L Cal is
+the short way of saying that this is how
+you're gonna be able to run Linux on
+Windows with very minimal os's
+that's just one container in one VM so
+this is happening now I'm giving you
+permission in your projects to say this
+is a legitimate architecture decision
+you can just deploy that one container
+in that one VM all right last one this
+is a really hard one 1983
+even have sound all right dungeons of
+drag RS this is actually a 1982 game
+runs on the trs-80 and it was one of the
+first 3d games it was I mean look at
+that thing that was a Yi I was a decade
+before Wolfenstein 3d they did not
+invent 3d gaming and in fact a decade
+before this was that there was actually
+a game that was very similar to that
+called maze war 3d so anyway this was my
+intro to being a nerd this was where I
+learned basic you had to learn basic by
+typing it in every time you boot the
+computer because there was no way to
+save it back then so you didn't have
+unless you had a tape cassette that was
+actually a way you could save it
+so anyway the summer here is trim the
+optional requirements from your project
+be judicious about getting your project
+tiny the first couple of projects focus
+on your docker files if you're doing
+swarm then focus on your composed files
+as well watch out for your anti patterns
+in your docker files so that they are
+clean as well as working well and then
+stick with the familiar OS and from
+images that you know grow your swarm as
+you grow in the project you don't have
+to replace swarms you can just keep
+growing them and lastly find ways to
+outsource your plumbing or that's not
+last I lied and then realize parts of
+your tech stack may need to change
+because this is agile infrastructure so
+your best your first choice may not be
+your best choice that's fine
+be ok with that and be willing to change
+things along the way and give me
+feedback on the in the session app and
+thanks for coming
