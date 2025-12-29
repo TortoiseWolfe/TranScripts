@@ -1,6 +1,6 @@
 # Docker Best Practices - Claude Project Instructions
 
-You are a Docker and containerization coach specializing in Node.js applications and production infrastructure, helping developers build secure, efficient, and production-ready container images and swarm clusters. Your advice is based on proven strategies from Bret Fisher's DockerCon talks (2017, 2019, 2022), Docker's official DockTalk (2020), and industry best practices.
+You are a Docker and containerization coach specializing in Node.js applications and production infrastructure, helping developers build secure, efficient, and production-ready container images and swarm clusters. Your advice is based on proven strategies from Bret Fisher's DockerCon talks (2017, 2018, 2019, 2022), Docker's official DockTalk (2020), and industry best practices.
 
 ---
 
@@ -192,6 +192,8 @@ const server = stoppable(http.createServer(app));
 - Adds unnecessary wrapper process
 - Prevents graceful shutdown
 
+**Quick diagnostic:** If your container takes 10 seconds to stop, you have a signaling problem. Docker waits 10 seconds for graceful shutdown, then force-kills.
+
 ```dockerfile
 # BAD
 CMD ["npm", "start"]
@@ -242,7 +244,7 @@ BuildKit can build for multiple architectures (amd64, arm64) in one command—us
 
 ### node_modules Compatibility
 
-**Problem:** Mac/Windows node_modules don't work in Linux containers.
+**Problem:** Mac/Windows node_modules contain binaries compiled for the host OS. When you bind mount into a Linux container, those binaries fail silently or crash.
 
 **Solution 1:** Install in container only
 ```bash
@@ -250,12 +252,29 @@ docker compose run --rm app npm install
 docker compose up
 ```
 
-**Solution 2:** Move node_modules up a directory
+**Solution 2:** Empty volume override
 ```yaml
 volumes:
   - .:/app
   - /app/node_modules  # Empty volume hides host modules
 ```
+
+**Solution 3:** Move node_modules outside app directory
+
+Install packages one level up, update PATH:
+```dockerfile
+WORKDIR /opt
+COPY package*.json ./
+RUN npm ci && npm cache clean --force
+
+# Add node_modules binaries to PATH
+ENV PATH=/opt/node_modules/.bin:$PATH
+
+WORKDIR /opt/app
+COPY . .
+```
+
+Node automatically looks up the directory tree for modules. This keeps Linux packages separate from any host packages.
 
 ### Performance Optimization
 
@@ -269,6 +288,28 @@ volumes:
 ```json
 { "legacyWatch": true }
 ```
+
+### Development Compose with nodemon
+
+Override CMD for file watching and debugging:
+
+```yaml
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # Node inspector
+    volumes:
+      - .:/opt/app:delegated
+      - /opt/app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: nodemon --inspect=0.0.0.0:9229 server.js
+```
+
+**nodemon restarts node inside the container**—faster than restarting the container itself (~0.5-1 second saved per change).
 
 ### Startup Order with Health Checks
 

@@ -1,0 +1,717 @@
+Late Night Docker: AMA Node.js Dockerfile Best Practices
+Bret Fisher - March 2018
+Source: https://www.youtube.com/watch?v=9j03Jlo_dtA
+Duration: 31 minutes
+
+Sample Project: https://github.com/BretFisher/node-docker-good-defaults
+
+---
+
+all right welcome to a Ducker AMA I'm
+kind of making these things up as I go
+along I'm calling it late-night docker
+cuz it is late here in the East Coast
+and I'm working through some ask me
+anything so I have a github AMA that I
+will share
+let's share us great sweet
+okay so I have an AMA four popular
+questions that people ask in the courses
+and other things mostly Ducker stuff but
+it can be just about anything and the
+second topic on here is around docker
+node good defaults so I have a repo for
+node and it's under github.com slash
+Brad Fisher no docker good defaults I
+will probably put something in here
+about that and this repo is a sample
+project and note I've had it a couple
+years it's probably needs a little bit
+of refreshing but it the goal here is
+that when your developer and docker
+you're not just you can't use it a
+simple set up you usually need a little
+bit of whiz-bang stuff especially with
+docker compose in order to get all the
+bells and whistles you want out of a
+better experience or at least an equal
+experience to developing on your local
+machine without docker so I thought I
+might go through this file maybe explain
+a few things instead of and make it more
+interesting than reading through the
+file so let's jump in I've got the node
+project over here it's I think it's a
+two day
+it's up-to-date and not everything you
+could possibly do this is sort of the
+minimal feature set that you'd want to
+do if you're developing locally on node
+doesn't really matter what version of
+node node six or anything newer there's
+little minor stuff like this is not even
+required but it's in there for verbosity
+we've got no environment variables and
+so node normally has a developer or
+production and that affects what
+packages and how it runs and so you
+usually want that in your docker file
+and then and you can set this it's
+designed so that you can set this on
+your local machine either in the compose
+file or as an environment variable and
+it will dynamically pick it up when you
+build and then it'll also pick it up
+notice that's the Arg there that's how
+it uses it for building and then you
+have an environment variable that's set
+for when you actually run it by the way
+if you have questions you can ask them
+in the slack or in the youtubes
+and warning I have no idea what I'm
+doing
+and let's step through each couple of
+lines here so we get ports now debugging
+is something that just about every
+framework works with in docker now
+especially it's a little harder on Mac
+and Windows or has been but if the
+debugger for your platform or your eco
+system supports ports so that you can
+connect to the debugger through a port
+then it'll totally work in docker and
+even if it doesn't use a port which now
+I'm not even sure there are any is still
+probably a way to map a file if it uses
+some sort of socket or something so in
+this case the the debug ports for node
+are exposed here so that we can get them
+by the way the expose command since
+version 2 of compose doesn't really do
+anything it's there only for
+documentation purposes when you use
+docker or compose any port that's listed
+in the container is always exposed in
+the network that's not related to
+publishing of ports that's a totally
+different thing but we all still put
+them in the docker files just for
+documentation purposes so health check
+is not critical for local development
+but I put it in here because it's
+important for every one of your docker
+files if you're using docker in
+production or docker swarm in particular
+health checks are key they're necessary
+for updates I won't go into the whole
+rolling update thing but if you're gonna
+use form ever you have to have a health
+check otherwise when you do updates
+docker or Linux in general doesn't know
+how to know when your app is ready
+because there's a difference between
+starting a binary and that binary being
+ready and available for connections and
+that depending on your platform and your
+ecosystem maybe minutes or seconds node
+usually is less than a few seconds if
+you're in Java and you're doing some
+caching on PHP or something you could
+talk about potentially minutes if it's
+got a long startup script so you want
+that health check in there so that it
+doesn't start sending connections in
+production before
+the containers ready anyway moving on so
+we've got our work directory we're gonna
+be using an opt directory just to keep
+it sort of a linux standard there and
+then we're copying in the package first
+and of course this is probably a common
+one oh one thing is anytime you have a
+package manager
+you always copy in the package manager
+file first and then you run the package
+manager and then you copy in your code
+and that's simply for build caching so
+if I'm over here and I actually build
+this let's see hopefully that'll work so
+it will pull down node philia it's node
+if I don't have it and then it runs
+through here so you'll notice that
+there's an order these steps and when I
+get to the NPM one it's going to copy in
+the package file and then it's going to
+run the installation so the goal here
+[Music]
+oh we don't have the we have the
+verbosity turned off it looks like there
+must be a new NPM feature so it doesn't
+show the entire list of installs so
+that's a new thing this NPM install is
+there because if I change my code I
+don't want to have to reinstall packages
+when I build if you're on anything like
+NPM composer for PHP any really any of
+the package managers these can take
+minutes and minutes to install and just
+because I change code which I'm changing
+constantly doesn't mean I want to
+reinstall those packages and the each
+line docker file is a new layer in the
+file system and if a higher-level line
+changes it will wipe out the cache that
+it has in the background of all the next
+lines and it will sort of what we call a
+cache busting event and that means that
+anytime your package changes your
+package station changes it's going to
+have to do the NPM install again and
+you'll notice that it says here well it
+doesn't say it now but if I run it again
+it's going to say using cache on each
+one of these steps and that's why that
+only took a second because it looks at
+the cache does the cache match what that
+command tells me to do if yes use cache
+and if I don't put these in this order
+before I actually copy in my code then
+every time I have to build my images I
+have to wait on the NPM install we
+usually change our packages one 100th of
+the time of actually code at least so
+you always want to do that first and in
+this case we're actually packing or
+copying in any package lock file as well
+we put that Astrakhan the end in case
+there's any other type of file there I'm
+trying to think actually there's a very
+specific reason that that's there it
+might even be in the issues we talked
+about it because that was actually a
+user adding stuff so I can't remember
+exactly why that's there it's not my
+head but after that you want to make
+sure you always clean up so most package
+managers cache packages if we want to
+make a nice clean image that's very
+small we want to do whatever that we
+need
+whether that's an apt-get or that's an
+NPM or composer we want to clean out
+those files before we go to the next
+line because the next line if we cleaned
+it out that's would not actually go to
+the previous layer because remember this
+is like a stack of pancakes layers on
+the pancake and if I go to the next
+layer and the pancake I can't go back up
+and delete stuff out of the previous
+layer so that would mean that all those
+caches would still be there regardless
+of what happens on the next line anyway
+we update our path here and this gets
+around a problem that's common in
+package manager frameworks like NPM
+where the default is to put packages in
+a subdirectory of your app that's a
+problem for local development when you
+do local development in docker your bind
+mounting in and we'll look at the
+compose file in a second but when you
+bind mount in your code from your host
+into the container you don't usually
+want the packages shared between the
+host and then in the container and
+that's usually mostly an issue on Mac
+and Windows because we have binaries and
+binaries in those packages that install
+on Mac will not run in a Linux container
+those are two separate compilations so
+we need the Linux packages to be in the
+Linux container this is weird when
+you're jumping code in from your host
+because your host might already have NPM
+packages there or maybe you're in the
+container and you install packages and
+then it would copy those into the host
+bind mount if you can follow that
+workflow you would then have Linux
+packages stored on your Mac or Windows
+that wouldn't be able to run if you ever
+ran node on your host so we don't run it
+won any of that the way around that is
+to use your package manager to change
+where it's going to install the packages
+in this case we what we do here is
+actually let me jump over to the compose
+file and show you what that looks like
+you
+compose
+you
+this is a little workaround that we do
+and so in when we install our packages
+we're going to install those in a
+different directory than our app so when
+you look if you were to dive into the
+container and the image you would see
+that the packages are under opt actually
+I'm saying this correctly
+you know what we don't do that in this
+one okay back it up there's two ways you
+can do this I used to do it this way in
+this repo but based on a user
+contribution the we changed it to be a
+little more efficient for node
+I still do it this way in PHP so let me
+explain both ways the way here we're
+actually still installing the binaries
+and the packages into the subdirectory
+for development no we're not I don't
+even know I'm talking about don't ever
+listen to me on late-night docker
+alright first let's just step through it
+it'll make sense we're going to jump
+into the OP directory not in the app
+directory so we're a higher directory
+level up we're going to install packages
+there then we're going to add that
+package binary path to our environment
+path so that we know how to get to any
+binaries that are in the node modules
+like node mod for example which we'll
+use in a minute and this gets us to the
+point where we're copying in code and
+we're then going to jump in a
+subdirectory so if I were to look into
+that image and do no sorry for the
+confusion there are two ways to do this
+and certain projects I use it two
+different ways
+nodes are one
+all right so this is my app it's in opt
+app I would normally see a node modules
+on a normal node app by default in this
+directory but I don't see it
+because it's up one and if you've ever
+used node this is a little bit odd but
+it's totally supported by node node
+allows you to change where your modules
+are located it will by default look in
+the current directory always and then if
+it doesn't find it it will then start
+looking in paths and there's a sort of a
+breakdown if you go look at the node the
+NPM and node documentation they will
+explain that there's an order to where
+it looks based on path rules and higher
+directories and all that stuff so this
+is the next best place for us to put it
+parallel to the app the gain we have
+here is now we don't have this
+confliction of any node modules that I
+might have installed on my Mac that
+aren't going to be binary compatible
+inside a Linux container so the Linux
+packages are in here and my Mac packages
+will stay on my Mac the way that we
+avoid a problem is with this when we're
+doing local development and this was a
+user submission there's actually a note
+here about it and we're making a fake or
+a unused volume it's not really a fake
+volume an unused volume and mapping it
+into where we would normally have our
+node modules so these two pieces work
+together and they're key to get right
+together first we are going to put the
+correct node modules in a different
+location outside of our app and then we
+are going to make sure that when we bind
+mount with compose that we don't
+actually introduce a new problem by
+bringing in our Mac or Windows packages
+and that's because you probably if
+you're no developer you probably are
+sometimes developing with node on your
+host node works on Mac Windows Linux it
+works across all three may be using it
+on the native OS so if I was on my
+native OS and I did an NPM in
+all its going to put all those packages
+in the subdirectory of my app right so
+I've got this node modules there that's
+a problem when i bind mount it into the
+container because the way that node
+works is that it will first look at the
+directory of my app and if there's any
+node modules in there it will prefer
+those first but I don't want it to do
+that because that will fail it will be
+using binaries that are incompatible
+with Linux because they're from my Mac
+so that's what this does this little
+volume here gets us around that issue by
+by by basically making a fake volume and
+if you didn't know when you'd use
+volumes inside containers they don't
+actually erase the files where you're
+putting them or mounting them it just
+overrides it's kind of like a shadow or
+a answer the right analogy there but in
+Linux its amount and amount can go over
+any other location on the filesystem and
+then when that mount leaves the old
+files come back it's not really a racing
+or deleting so what I'm saying here is
+it just in case if on my host I have a
+node modules directory in my app hide it
+by putting it in a volume and when I do
+that the volume will be empty and it
+there won't be anything there so we're
+sort of overriding that getting back to
+the file hopefully that makes sense we
+are with the whole node modules thing
+and now the one we copy in our app code
+we're going to copy that into the app
+directory so it's it's parallel with our
+node modules then we're gonna just run
+our node commit you're probably used to
+running NPM start that's a standard
+practice in node land and I'm not a fan
+of that I explain a little bit why it's
+here because when you're in docker you
+ideally want when you do your docker run
+for the command the CMD to be running
+the binary of your service and not some
+other binary that then runs your binary
+and you know and that you have this
+nested sub binary
+tree you don't really ideally want that
+you want docker to just run the single
+binary you need and not something else
+we might lose NPM starts ability for you
+to run automated stuff in your package
+file so if I went in to another window
+and looked at the package file if I had
+scripts in here like I do obviously I
+can't just it took advantage of those so
+it's a little bit of a negative because
+if you have a team that's used to adding
+more scripts to their package files and
+just running in PM commands that will
+not work here because it's gonna be
+running the node directly and it's
+skipping sorry it's skipping out on the
+benefits of NPM the big problem here is
+and why we do this is note an NPM aren't
+they aren't savvy with signals that are
+coming out of Linux by default they
+don't out of the box without any extra
+code and we'll go about the code in a
+minute they don't have any extra code in
+there when you do like a control see you
+won't actually exit out or if you do a
+sig term it won't properly stop node and
+you'll notice that if you run any node
+containers and then when you do maybe a
+control C or you do a stop on a
+container it takes about ten seconds and
+that is because Dockers trying to stop
+it gracefully is dot nodes not listening
+and so docker has to kill it and Dockers
+standard wait time for killing something
+is ten seconds so if you ever see that
+in containers and it seems like it's
+always waiting 10 seconds before
+responding that's because you have a
+signaling problem and the way to solve
+that in node is to step one not use NPM
+because NPM doesn't forward signals
+unfortunately and two in your code which
+we have an example here in the actual
+code of our app you need to handle
+signals now I'm going to get on a
+soapbox for a second if you're not savvy
+to signal management in your processes
+of node and you're gonna be doing
+distributed no
+meaning distributed computing even if
+you're not using containers you should
+get into signaling because signaling
+allows you to gracefully shut down node
+and when I say gracefully I mean receive
+a signal from the operating system or
+docker which everyone's telling it to
+stop and decide what you want to do do
+you want to wait for all the connections
+to finish maybe you have long polling
+and you want to wait for those long
+poles to finish or you have streams that
+are happening and you want to wait for
+those to finish uploading maybe you want
+to clean up certain connections or
+things if you want to do any of that you
+have to process signals that are coming
+in that's how you do proper shutdown of
+node most projects I work with don't
+ever look it into this and they don't
+realize that when they change things on
+the fly in their production environment
+whether you're using docker or
+kubernetes or AWS as aSG's or whatever
+you're using if you're using any of that
+stuff you're probably cutting off your
+users unless you're just running a
+static website that's doing nothing but
+serving a static webpage that they can
+just refresh you're going to be
+affecting somebody somewhere on the
+internet unless you do proper graceful
+shutdown so in distributed computing
+graceful shutdown is something you need
+to be concerned about we're used to that
+stuff in databases and other things
+where we have to worry about these
+long-running connections but the more we
+get into long polling and WebSockets and
+those sorts of things this becomes a
+real problem here too so I have a simple
+little example it doesn't handle all
+edge cases but it shows how I can
+quickly capture the signals coming in
+from docker either using a sig int or a
+sig term and I even put a little console
+message out that tells you whether it
+got a container stock all right that got
+a container control C maybe from your
+actual keyboard and it accepts those two
+signals and then processes a shutdown on
+the server this doesn't handle any sort
+of special waiting on users to finish
+their connections or you know giving a
+termination signal to connections or
+that sort of thing I'm not doing that
+for you there's lots of examples on the
+Internet
+depending on which things you're doing
+and note maybe now you're not even
+running a node server and it's something
+else that you need to gracefully shut
+down but that's my soapbox distributed
+computing which usually implies that
+you're changing things in rolling
+updates a lot you're probably going to
+need to care about this at some point
+and I give you that example so docker is
+going to handle that here and that's not
+so much a concern for development but
+that will affect your control see so if
+you're running without this stuff in
+here and you then do something like this
+if I'm in node and I do a docker let's
+see it let me do a docker run let me
+just do that okay running my web server
+I did not put it in the background with
+the dash D command so it's in the front
+normally with node if I'm using node or
+MPN if I control C right now nothing
+would happen for ten seconds but when I
+did it there you'll notice that I got to
+my message my little SIGINT and that's
+because I captured it
+up here and that caused it to run the
+function to shut down the server so
+that's a simple little example on how I
+put that in every project that I know is
+gonna be a node simply so that control C
+works and that when I do a docker stop
+it doesn't take ten seconds to kill the
+app and that's something that's pretty
+simple to do there's a if you go into
+nodes issues for the node an NPM
+repository is they actually have there's
+lots of people that file github issues
+around wishing that there was a default
+sig term or sig in built into those and
+there's a debate back and forth on
+whether they're going to put that in as
+far as I know it's still not in there so
+you have to put this in your app alright
+so we're done with the docker file and
+let's jump over to the compose and throw
+in a few more things and then we're done
+so I'm opening up my debug ports that's
+a common thing you want to do in compose
+is to make sure that the bug ports are
+there if you're using something like
+well there's the there's the built-in no
+debuggers the old one and the new one
+and if you use it something like Visual
+Studio code that actually can connect to
+the debugger and show it to you in a
+nice GUI these are what helps make that
+work they are required to make that work
+there's both the old port and the new
+port the new port I believe is this nine
+nine nine two to nine there and then
+you'll notice that I've got this command
+in here so what this is doing is this is
+for local development only changing my
+CMD changing the default command that my
+docker file is running because I want to
+watch files for changes if I'm
+developing I do not want to have to
+restart docker every time I edited and
+save a file it's crazy
+especially if you do like built like you
+don't have to build that do anything I
+just want my basically my page to
+refresh so or at least the closest thing
+to it so node Mon doesn't technically
+get my web app to refresh it refreshes
+the node app in the container without
+restarting the container that saves you
+about if you run the node mount on the
+host and you have node Mon restarting
+the docker container every time which
+I've seen people do that adds at least a
+half a second if not a full second to
+the
+restart so this is faster doing it in
+the container and so I do a node mod in
+here and I replace the the command that
+we had which was node index J s I'm
+replacing that with node Mon node Mon
+actually pulls from the package JSI
+believe so it knows to use index IJ s
+and I'm telling it to enable the
+inspector so that in case I want to do
+some debugging I can connect to that
+port and it'll work and this way because
+I'm using this volume this volume from
+my host into my container will then Auto
+refresh the node app every time it will
+auto restart node each time I change a
+file key for any developer who's
+spending their days and not-it's it
+would be a headache without the last
+thing you'll notice here is that little
+delegated on the end that's actually I
+think one of the latest changes
+suggested by one of the fans of this
+repo delegated is only currently a
+feature for Mac and it has to do with
+file i/o performance because in Windows
+and Mac you know these are all running
+in a little VM called movi that runs in
+the background and there's this layer
+and the file system of sharing that has
+to go on it's better on Mac than it is
+on Windows because Windows has to use
+smv SMB file sharing which is still kind
+of sucky and slow it's better than it
+used to be but not as good as Mac and
+definitely not as good as Linux on Mac
+we because Mac has that native Linux
+esque file system there's a tighter
+integration and in that case we have
+these options and if you just go look it
+up on docker they actually have a lot of
+information Mac docker delegated
+believe ya performance tuning for Mac
+and so there's options here that you can
+choose by default it's the safe set it
+it will make sure that files on both the
+Mac and in the Linux container are fully
+all the Iowas caught up before it will
+try to do things and normally if we're
+just writing files on the host and we're
+reading them in the container like you
+do with development you don't really
+need that fully consistent I oh pattern
+and we're talking about microseconds
+like nano sub nanosecond stuff right
+this is not something you have to worry
+about in production because when you're
+natively on Linux or natively on Windows
+containers if you're doing that those
+things are native to the OS they're
+using the same kernel to manage the
+filesystem
+in this case we've got a Linux kernel
+and a Mac kernel trying to agree on file
+i/o and which file needs to be changed
+next and so we're using this delegate
+adoption which gives us a better
+performing developer experience it
+allows for us to do npm installs that
+are faster and we will it's basically
+allowing a looser coupling of the i/o
+patterns so that things can happen
+faster in the container and we'll wait
+for the host OS to catch up later you
+can read more about those there but for
+development this option for a delegator
+is just fine let me find my tab there so
+that's gonna work and again it won't
+hurt anything to have that in there if
+you're on Windows if you're in a team
+always put this in so that your Mac
+peope will get better performance your
+windows people it just ignores it it
+just doesn't even use that option on the
+end and we're buying mounting the
+existing directory again we talked about
+that down here and then I'm changing my
+node environment to development so that
+way when my app starts up it sees that
+the node environment variable is
+development in case you depend on that
+in your app for stating changes or doing
+certain things based on production or
+development I think that's it for 99% of
+what's in here and hopefully will help
+your node
+apps perform better there's actually a
+few issues here that I've thrown in over
+this time line the cig term int thing in
+case you're wanting to help out I could
+totally use some help I need someone to
+validate that the current versions of es
+code actually work with the inspect and
+debug options I'm not sure how much
+people are using the older debug option
+anymore but it would be nice if we knew
+that it worked in most cases and then we
+have the sig term option here this is
+pretty cool where if you're doing long
+polling or WebSockets or something
+where the connections never end up
+finishing they're just they're always
+there's not we don't have the example in
+here supporting those edge cases so it
+would be cool if someone could come up
+with a agreed-upon standard sort of unup
+Enya nated way of having that in here in
+this demo app because it's using Express
+this demo apps using Express as a server
+web server so it would be nice if we had
+a little more intelligence and it may be
+even more examples in the code even if
+they're just commented out on how you
+might deal with closing out sessions
+because I think that needs to be talked
+about more most people are not realizing
+that their users are getting interrupted
+when they do updates of their containers
+or updates of their apps so I try to
+give some information here I'd love some
+help on that if anyone has the time
+other than that I'm going to check on
+slack and see if we have some questions
+that's a really long video no no
+questions all right I'm gonna try this
+again later on and see if we can't do
+this more often and have some fun all
+right thanks for watching
