@@ -1,0 +1,1229 @@
+Node.js Rocks in Docker, 2023 Ed. (DockerCon 2023)
+Bret Fisher - Docker Captain and DevOps Dude
+November 2023 - 45 minutes
+Source: https://www.youtube.com/watch?v=GEPW008G250
+
+---
+
+hello all right this is audience
+participation I like to be as not boring
+as possible that's even a thing so um my
+name is Brett this will be the third
+time at Docker that I have done a
+node.js talk so this is a a refresh and
+I always think I'll just do five slides
+it'll change five slides everything in
+this is different because there's so
+much new Docker stuff noce had a few
+changes that changed a few commands a
+few things so we're going to have an
+adventure together and I want you to
+yell out and if if I ask a question is
+hopefully yes or no kind of thing again
+audience participation and then I'm
+going to leave plenty of time for for
+questions
+because we could make this a three-hour
+conversation right I have a whole course
+on no. JS for Docker on udemy and it's
+not it's not 45 minutes so I want to
+make sure that if you have questions
+that I don't address some of the things
+in this talk I'm actually going to say
+if you if you need to know about that go
+to my previous year where I went and
+they're all online on on YouTube and
+then watch that to answer that specific
+question so that I because I keep adding
+new stuff and I can't fit it all in so I
+want to focus on things that are
+new and uh latest so that you get all
+the new stuff for this year and the
+design here is that uh who is it for
+right so you know some node you know
+some Docker and you want to be awesome
+at it and I work with a lot of teams as
+a adviser a lot of times not just not
+just an implementer but I'm looking at
+their stuff and Advising on how to
+improve it streamline things make them
+simpler also more secure stuff like that
+so we're going to go for awesome sauce
+mode today
+and we're going to go over four main
+things in and then we're going to end
+with a production checklist so we're
+going to start with node file node
+Docker file best practices this isn't
+your basic 101 stuff you get on the
+internet this is more than that and then
+we're going to talk a little bit about
+base images because it's we got new
+exciting things to talk about and then
+there's also the valley of despair of
+like it's hard right to go from day one
+to True production Enterprise grade node
+images is harder than you think it is
+some of you probably have great
+experiences and wonderful Tales to tell
+about all the things you've tried we're
+going to talk about process start up and
+shutdown although most of that is
+actually going to be me referring you to
+previous years because I went on for
+like 15 minutes about it to give you all
+the nitty-gritty but we'll cover the
+basics of that then we're going to talk
+about some new compos stuff because I
+love compose it's still even with all
+the teams I work with on kubernetes and
+all the fancy tools compos is still the
+place we keep coming back to for local
+development optimization and simplif
+simplifying the dev setup because I'm
+always I'm I'm an Ops guy at part but I
+want development to be as simple as we
+can make it right so we all want this
+beautiful idea of an magical development
+stack that looks just like production
+but also extremely easy to use and as
+fast that's hard to do right so I still
+love compos because it's local it's it's
+quick it's simple the file is easy to
+understand and there's a lot of new
+updates in the last couple of years
+especially if this is if you didn't see
+my talk last year or the one in 2019 so
+uh let's just jump right into the docker
+file because that tends to be the first
+place that people start making
+ill-advised decisions and the internet
+gets a lot of things wrong in fact the
+talk I used to say was
+like you know who's seen this oneone on
+the internet raise your hands right
+every blog post of the last 10 years has
+been this is how you do node well uh can
+anyone identify if you just want to yell
+out and I'll repeat it for the mic for
+people online uh can anyone yell at what
+they anything they see wrong with this
+file there's a dozen things wrong
+probably copy everything copying in
+everything yeah yep down there at the
+bottom um there's two copy commands
+which is technically
+correct um what else anyone see anything
+else just yell it
+out base image right that there's we
+definitely have room for improvement
+there right that's that's every Docker
+101 example but it's probably not the
+image that anyone ever on the internet
+should ever be using I have opinions
+um the work there's actually been some
+changes in the last three years and now
+the worker doesn't actually correctly
+assigns permissions but you'll notice
+we're still using root because the node
+image just like all Docker images
+default to easy mode which doesn't mean
+the most secure best mode so back in
+2013 when they made these images they
+were going for simplification ease of
+use and we'll get into that and why we
+want to change all that so if we just
+revamp that and say what if this was
+your day one you know this isn't
+necessarily production ready but day one
+image you've got tier one supported
+[Music]
+builds meaning if you didn't know in
+node land the node project supports
+different compilations and different
+platforms essentially for node and they
+have tier rankings of what is tier one
+and is the best it's for production you
+know you can get support contracts stuff
+like that for tier one tier two means we
+do best we we we try it's not as
+important but we try and then
+experimental is beta it's like we it it
+may work it may not we don't guarantee
+anything um weirdly or maybe
+ironically even Docker recommends
+sometimes the Alpine image which you
+will hear me talk about today in not a
+nice way Alpine the project is a
+fantastic project I never recommend node
+Alpine in in production I've worked for
+10 years I've worked for 15 almost 15
+years with node and 10 years with Docker
+eventually every project that I'm on if
+they're doing large scale node stuff in
+production they will eventually have
+problems that are Alpine specific uh
+mostly due to muil which is the way that
+uh things are compiled in in Alpine and
+so and there's other reasons busy box is
+sometimes a problem so you won't see me
+recommending Alpine today but don't
+worry I've got lots of recommendations
+for you that are even better so tier one
+meaning you want an image that is on a
+tier one supported build of node and
+Alpine is the one that's set to
+experimental next up we've uh we're
+pinning the image so in case you didn't
+know about pinning of images it's been
+around a while but I can guarantee that
+I'm getting the exact same base image
+because tags can be reused right in this
+case I'm using node 20 so I'm not
+pinning to the the patch level version
+but I am shashing it now Technically
+when you shaash an image like this when
+you you put that hash in that you can
+get from just doing a Docker images
+command there's actually like a dash Das
+show digest or something like that I
+forget the command but you can get those
+hashes technically it's ignoring the tag
+but the tag is for the humans to know
+what we pinned in the file so when you
+pen a sha hash it ignores the tag we're
+just using it as a friendly label to
+know what the heck it's from so the node
+20 Bookworm means that's the version of
+Debian that this is based on which is
+the latest Debian and then uh slim
+always use slim images and every
+programming language in Docker Hub if if
+you can get official images always use
+slim you never want the non-sim variant
+of Debian and you'll see why in a minute
+um we're running as non-root now
+something changed in the last three
+years so that I can now put the user
+node in there which is built into the
+official node images by default the user
+already exists I can put that there to
+run as non-root this is key um a lot of
+kubernetes clusters especially in
+sectors like government and financial
+whatnot will not allow a container to
+run as root so so you have to do that
+and if I do that before worker worker
+now I actually learned this earlier this
+year that it was 2 years ago about two
+three years ago maybe that they updated
+the work D so that it assigns the proper
+permissions based on the user above it
+so you put user in first you make it
+non-root and then when you create that
+worker it will properly give node user
+permissions so you don't have to assign
+those manually if you're someone who's
+taken my node courses the way I used to
+tell you to do is you had to type make
+dure and do all these things in a run
+command but you don't have to do that
+anymore it's easier then there's the
+copy so we're copying with the right
+permissions because now we're as a
+regular user not a root user so we have
+to use the Chone anytime we do a copy
+and then you see that so you see that
+multiple levels there and we have the
+package and the and the actual copying
+of the rest of the source code in and
+then uh what's next uh we're doing n
+npmci this is actually incorrect because
+I just learned today that we the mpm C
+has changed three times now or twice
+this is the third Rend Edition so you
+you'll see in future slides that it's
+technically should be npm c
+um omit Dev is what you want D- omit Dev
+you'll see it in the slides and it's
+also in this repo in case you didn't see
+I'll put it again at the end of the
+slides there's a whole repo with all
+this stuff in it example Docker files
+and I keep updating that that repo every
+year so you can get all these notes and
+a lot more detail it's a it's a tomb of
+information really so you're doing the
+npm NP MCI that removes Dev dependencies
+or prevents Dev dependencies and then we
+are not running npm or any other process
+manager yet in the command we don't want
+to use npm ever in production to start
+things that are going to be the long
+serving process and you'll learn why in
+a little
+bit so I've actually changed my opinion
+about some things as tools change in the
+industry and one of them was I used to
+teach people that this is this may be
+for you a great way to do your your npm
+audits your trivy scans any of your cve
+security scans maybe you can make a
+stage in a multi-stage Docker
+file and I'm now saying no we're not
+going to do that anymore uh one of my
+hopes in the industry was that the CI
+tools out there would start looking at
+build stages and Docker commands or
+essentially each Docker step as a as a
+thing that they can light up in their CI
+solution so that we basically can use a
+Docker file to do a lot of our CI and a
+lot of the automation you know testing
+and all the other things we need to do
+that didn't happen the industry so even
+though I kept advocating for Docker
+build as the way to do this I don't
+recommend that anymore all the modern
+CIS GitHub actions get you know gitlab
+and all of them have better support
+natively to do your npm Audits and your
+cve scans and stuff like that so I don't
+recommend these stages anymore which is
+great it simplifies our Docker file we
+don't have to do it um talk about Docker
+and nit so this is a new thing you heard
+about it in the Keynote
+Docker and knit allows you to start a
+project from scratch which means it
+comes with an opinionated Docker file
+and this is kind of what it would look
+like if you ran that command so if
+you're brand new day one to Docker
+Docker now at least has this a nit
+option like every other package manager
+and Tool in the world um so it's great
+it's great for new people I have
+opinions it it's one of those things
+where it's nothing's ever perfect or
+Universal for everyone right and you you
+basically give it a bunch questions or
+it gives you a bunch of questions you
+give it a bunch of answers and then it
+creates three files which is pretty
+great to start with it starts with a
+Docker ignore it starts with a Docker
+file and it gives you a compos file by
+the way compos files now the standard is
+composed. yaml is the default not
+docker-compose.yml which is what all of
+us that have been doing this for 10
+years have been typing it still supports
+all the file names but this is the new
+convention is composed. yaml so it
+creates those files for you and then
+recommends you know uh to do Docker
+compos up for you so let's just take a
+quick look at that real quick while we
+have
+time
+um
+and what does oh it's a different file
+so over here if I look at the docker
+file it's actually pretty fancy uh we
+have the syntax at the top in case you
+weren't familiar Docker has the build
+kit is Now the default Builder so we
+have this thing called front ends that
+allows it build kit to update dynamic
+and support a lot of new features so
+there's a lot of new stuff happening in
+the docker file but it's not necessarily
+in the oci spec it's happening in the
+build kit and through something called
+front end so if you put that syntax line
+in what that basically guarantees is
+when you when all of your team members
+build images or your CI builds images
+assuming they're all using buildkit as
+they should be because it's still the
+best container Builder um they will all
+have the same support for the same
+feature set inside the building of your
+image which if you start to use Advanced
+features is important and we'll talk
+about a few of those eventually uh in
+fact we'll talk about one of them right
+now so this is a heavily documented file
+this is all generated by Docker and
+you'll see things like it
+mounts files into the build time right
+so this is a fancy build kit front end
+feature it's been around for years uh I
+don't always use or recommend this I
+have to look at the team and decide how
+many like are they installing 200 Megs
+worth of node modules or a thousand Megs
+of node modules because I've seen both
+and if you have a the bigger your node
+modules the more likely caching this
+isn't cashing node modules this is
+caching the installation of those node
+modules so the downloads of those Zips
+before they're expanded in node modules
+so it'll save you internet trips on
+building uh it it does require you to
+use buildkit because I do believe this
+is a very specific thing to the docker
+builder for
+buildkit uh again that's fine because
+it's the best one and and so they they
+give you this nice little file where it
+helps you optimize that and it's it has
+a bunch of stages where it copies in
+files and this is all fine I do find
+that with teams I work with that if
+they're new to do new to node in Docker
+this is a lot to take in this is a you
+know and so I try to teach and help
+teams crawl before they walk and walk
+before they run this is a little bit
+closer to a fast walk so maybe not the
+day one Docker fall but hey it's great
+Docker give it to us the one thing that
+I don't agree with is that they default
+to node or I'm sorry they default to
+Alpine which again um I was talking
+several people that the conference that
+after 10 years of using trying to help
+teams using Alpine and production I've
+I've kind of given up and don't
+recommend it um what else does it do it
+gives you the compose file which we're
+going to talk about in a little bit but
+it lights up some pretty sweet new
+features in Docker files because we now
+have the compos spec so you probably
+know now if you're Avid compos user we
+no longer have composed versions in the
+file we now support all the features of
+versions two and versions three even in
+the keynote someone snuck in a file with
+a v3.4 in it which is considered Legacy
+no versions needed all features are
+available um in in the composed command
+line as long as you remove the composed
+version and we're going to talk about
+health checks and other stuff here in a
+minute so I'm not going to go too much
+more on
+that
+um all right so the perfect base image
+this is my favorite part of the talk
+because I could either talk for five
+minutes or 50 minutes on this topic but
+a lot of time gets spent in most teams I
+work with on finding the right Bas image
+that has all the things they need and
+then none of the vulnerabilities they
+don't want it's small it meets all these
+three or four different metrics right
+and it doesn't exist right this is very
+specific to your your team and almost
+every team I work with chooses a
+different path based on their culture
+culture based on their requirements
+based on the security team's involvement
+and you it's a it's a balancing act the
+more secure and smaller you make it the
+more advanced you're going to have to be
+to use it so it just depends on what you
+need in your team and some teams are
+perfectly fine with one of the default
+official images so let's start with the
+first three uh never use the top one
+ever ever in your life use it there's
+zero reasons to use it one of the big
+negatives besides you can see all these
+cve so this is me using multiple
+scanners in the industry two open source
+two commercials you'll notice a trend
+that the commercials tend to have less
+false positives this is something I
+actually recently discovered and I've
+had multiple conversations this week
+about that there's definitely a huge
+difference between in some images
+between the open- source scanners and
+the commercial ones that are
+specifically applying issues to each one
+that's might be a false positive they're
+they tend to be fixing them faster I'm
+not really sure what's going on in the
+background doesn't mean you can't use
+open source scanner but to me it's kind
+of
+like I know Docker Scout is working
+great and it's really new and the te
+it's not perfect yet but the team's
+taking a lot of feedback you'll see here
+we have actually a couple of images the
+Ducker Scout's not perfect on it's it
+doesn't scan it correctly but I always
+start people with slim the second
+one right slim is way smaller right it's
+less than a fourth the size huge
+different in the cve count and it has
+everything you need to run node the
+problem we have with the base image the
+original the top one is that I'll see
+teams especially when they need pack uh
+open S sorry they need OS package
+manager dependencies so they need apt
+and yum and what happens with this the
+the first one is it has tons of stuff in
+it and people when they get their first
+image working it'll work but then if
+they try to use slim it it'll fail the
+build because there's a missing
+dependency that they didn't specify
+because they didn't realize in their day
+one Docker experience that the the the
+default node image has it has material
+in it it has image magic it has so many
+things that we don't need in a node
+image usually so when those things are
+there it has it has all the build tools
+so you can do binary builds sometimes
+you need that but usually you want to
+specify those things by putting in your
+own run line right so you get the point
+there uh so I don't recommend that the
+Alpine one has great cve stuff but
+because of various reasons that you can
+listen to my previous talk years and
+then you you just go to the repo I put
+in lots of details about pros and cons I
+generally don't recommend the Alpine
+even though it is NI nice and small we
+can get smaller than than Alpine without
+the negative side effects of muil and
+busy box so the next three I'm going to
+show you are the Debian just to give you
+a comparison so these node images that
+are official from Docker Hub are based
+on Debian which means that a lot of the
+vulnerabilities if we're focused on that
+come from the base image node can't do
+anything about them so the 12 slim for
+example has less a few less but it still
+has some vulnerabilities and then you
+can see auntu so auntu is going to be
+one of my recommended images for you if
+you I'm going to give you three
+recommendations in a minute but we've
+got to take the journey to get there
+right so traditionally for those of us
+that are CIS admins when we think of
+auntu we think of ltss like 2004 and
+2204 those are long-term stable releases
+of auntu you don't necessarily have to
+do that in a container image because if
+you need the change from 22 204 to 2304
+it's just a oneline change and in theory
+you're getting newer dependencies and in
+this case you actually can see that
+there's less vulnerabilities in the 2304
+you sacrifice a little bit of that
+long-term availability of package
+manager stuff but that's getting into
+the weeds a little bit I'm not going to
+talk about that today uh so you you
+might have an opinion in your company
+where I I see companies where they say
+well we only use auntu LTS images and I
+know multiple companies on aw and Azure
+that their approach to all their own
+base images is they start with auntu and
+they build their own images from there
+and I'll show you a couple ways to do
+that one way you can do it in node
+specifically is you can make auntu which
+is a very small image right the auntu
+2204 is smaller than all the others 69
+Meg and it it's it's great because it
+has the classic auntu Enterprise support
+built in it has the long-term apps
+package manager stuff built in it's well
+supported on the internet well
+documented and you can add in the
+official node binaries with the node
+source so anyone here familiar with node
+Source you've heard of node Source like
+you've probably if you've ever installed
+or built node you know about node source
+so you can make a Docker file which is
+in the repo for this it shows you how to
+build this and then you just install
+their node Source One negative of that
+method is that the node Source team even
+though I've complained requires python
+in order to install node so the node
+image in this case now has Python and
+all its dependencies which will bring
+vulnerabilities to your node package I
+don't like that that's why I'm using
+node not python so I don't like that
+option the next option is what I'm
+calling like a side load where you can
+use the the copy command in your Docker
+file to Simply copy all the binaries out
+of the node image into the auntu image
+and now you don't need apt you don't
+need all that EXT stuff you get just
+what you want it's a smaller image you
+can tell here 225 so it's leaner than
+the others and it has a small
+vulnerability count there's no highs or
+criticals and any of the scanners one
+negative of this approach though is that
+it means that the binaries are probably
+not going to be picked up by your cve
+scanner except for sneak yay sneak uh
+sneak detects those binaries even though
+they're not installed by apt and gave me
+you know it reported that there was no
+vulnerabilities um I'm hoping that Dr
+Scout will do that one day and I'm going
+to let them know that they should then
+we have after that uh the idea of moving
+iunu to 2304 and you can see the results
+in the scans there it's it's a couple
+less cves because 2304 has newer
+dependencies in auntu than 22 and then
+lastly the last two we're going to talk
+about is dris who here is is anyone
+using
+dris got one up
+front uh so so dris is uh a cool idea I
+have issues and I and you'll see the
+little dots the little three and the
+four those are referring to the GitHub
+repo where this is all at you'll see on
+the last slide again it was on the first
+slide but the dist list has side effects
+you can't pin a lot of things it doesn't
+keep versions over time the way I wish
+it would and it also because of it's the
+way it's designed you can't it doesn't
+have apt installed or anything so it has
+to be the last stage which means you
+inherently have to have an advanced
+Docker file and you have to know that
+you have to have build images and then
+production uh images that you copy
+everything into into this dless image so
+I consider it an advanced solution but
+it still has vulnerabilities in
+it so in fact in some cases it might
+have more vulnerabilities than the auntu
+one so why would I use it if I'm because
+the point of drro was to keep it small
+and secure dress that is and it it's not
+always that best choice so the new the
+new one out there is chain guard who's
+here heard of chain
+guard anyone okay we got a couple so
+chain guard is a software supply chain
+security company they've been on my in
+case you didn't know I do a YouTube live
+stream about this stuff every week I
+have guests come on to YouTube join me
+there we're live every Thursday I'll be
+live tomorrow here at somewhere in this
+building and I had chainu guard on last
+year and I loved it they they are
+basically in my what my opinion or how I
+would describe what they're doing with
+Wolfie is that they're taking Docker
+official images and they're going and
+back and redesigning them from scratch
+and then maintaining them themselves to
+get it to zero cves across the board and
+they they they're very public about it
+uh these are free images they have a
+paid plan that allows you to do a few
+more things with these images but you
+get a lot out of the box for free they
+have their own registry I highly
+recommend them uh for any team that
+starts this would be one of my top three
+if not number one image that I would
+have them trying to use um it is a
+little Advanced it does require a little
+bit of understanding because these when
+these images get really small like this
+they don't have shells right they they
+they don't necessarily have all the
+packages you need so you you it it does
+get a little harder so that leads me to
+this slide this is the brand
+recommendations they're not in any order
+they are dependent upon your team and
+what they they might need so if you're
+going to want to use a official image
+which is easy mode comes out of the box
+that's the node Slim Right it has no it
+currently has no according to sneak and
+do Scout it has no critical or high
+vulnerabilities so only low and mediums
+I should have defined that at the
+beginning sorry it's defined on the
+website I apologize um and then the
+second image there is the one we built
+where I Sid loaded and if you wanted to
+see what that looks like it's pretty
+simple I don't know that's the right
+term but I'm making up that that term
+side
+load so if you looked
+at uh copy so in this
+file this is how I get node into this
+this is a regular auntu image and the
+way I get node in it is I use the copy
+from and this is a legitimate way I see
+multiple teams out there doing this for
+other types of images so I Define both
+of my images at the top I say here's my
+node image and here's my uh abutu image
+that I'm going to you know I'm going to
+use the node one later but I want to
+Define them all at the top so I can
+track versions I should be sha hasing
+these so that I have the hash to
+guarantee I get that exact image each
+time and then I'm giving them an alias
+and then we'll talk about Teeny here in
+a little bit but here I am Sid loading
+node in by copying it from one image to
+another because I trust the official
+node image for building the correct node
+version and since I can specify the node
+version coming from Docker Hub I know
+exactly what binaries I'm getting I just
+need to get them in here without maybe
+the the side effects of node Source or
+python being loaded or apt package
+dependencies that I don't really need
+and I've tested this in production um
+and uh this is an example I've been
+giving out for like four years and I
+haven't had any negative effects so
+far so there's that so those three
+options are for
+you and it's and then you got chain
+guard there at the bottom right so the
+the node latest image uh if you want to
+pen versions on on chain guard they they
+changed their policy recently because of
+their increased success and if you want
+pinned versions in the tag you need to
+sign up for one of their paid plans but
+you can always pen the shaash like I'm
+recommending and that's essentially
+giving you the same thing because
+they're always going to make those sha
+hases available and uh you can depend on
+those so
+let's move on all right Process
+Management how many people here know
+about an init process or use TD or any
+of these things in node right do we have
+a couple people okay like half the
+people uh great so you know about this
+problem and I also have opinions so I
+spent years working with teams on
+managing node processes in stalker and
+swarm and then kubernetes and trying to
+figure out the team the the init problem
+and process shutdown and basically zero
+downtime deploys never miss a connection
+never miss a essentially a HTT ping and
+this caused me to go down the rabbit
+hole of signals and uh what AIT
+processes are really doing and what what
+does zombie reaping really look like in
+the wild and does node even have these
+problems so I came up with a slide
+that's
+basically a decision a very I ended up
+making this really complicated decision
+tree for today and realized I could just
+make help you with two questions I could
+tell you whether or not you need this or
+not and the first one is is uh you want
+to add teeny in most cases as the thing
+that will start node in your container
+so not
+npm I I prefer I prefer Tei because
+that's what ships with Docker built in
+um your app doesn't create subprocesses
+which a lot of node apps don't they
+might do calls out to the file system
+but they don't necessarily spawn curl or
+some other binary on the machine or if
+you're in kubernetes in production if
+you didn't know about this option you
+can turn on which isn't turned on by
+default unfortunately the share process
+name space if you do that kubernetes has
+this neat trick where the pause
+container who knows about the pause
+container anyone know about the pause
+container so the pause container is the
+first thing in every kubernetes pod it's
+always there it's super small it's like
+100 lines or 50 lines of code or
+something and that thing will do the
+zombie reaping and the protection and
+the signal processing that is met that
+you need it will do that for you but
+only if it's sharing the process uh and
+name spaces as the rest of the
+containers in the Pod which
+unfortunately back in like kubernetes
+112 or something they decided to not do
+by default so if you set that true in
+kubernetes all the pods will be in the
+same name all the sorry all the
+containers in your pod will be in the
+same name space and essentially
+kubernetes gives you a free and knit
+manager known as Paws so you don't need
+teeny in that case you can avoid it the
+other case is if you're app
+listens for signals in the code and if
+you have questions about how to do that
+my I have a a link to my previous talk
+where I went into the weeds with code
+examples and uh counting connections on
+HTTP so you can make sure you set them
+down properly with fin packets and if
+you get into networking and nerdy stuff
+like that I'll show you the link I'll
+give you the the link at the end to go
+find that video but I'm not going to be
+able to go through all that today but if
+these both are true then you don't need
+teeny and you can save yourself the not
+really a hassle but you can avoid an
+unnecessary
+encapsulation so for everyone else we
+get we should have teeny we should have
+teeny in there and you shouldn't just
+have it here you should probably also
+use it in any exec probes or any health
+checks if you're actually calling out to
+the file system you should be using it
+there as well um this is the talk 2019
+actually it's still all relevant when it
+comes to Process Management signal
+processing I personally like to write
+all of this into my node app so my node
+app will see the shutdown signals and
+the way you know if this works in case
+you're not familiar with all this stuff
+is if you try to stop a node container
+and it takes 10 seconds because in
+Docker the default is 10 and kubernetes
+is 30 seconds but if it takes longer
+than 10 seconds then you have a a knit
+problem and what's happening is node is
+not aware of the signals coming from
+Linux the Kel saying you need to shut
+down now and so because the node by
+default and this is true of python a lot
+of other programming languages they're
+not trapping those signals by default so
+they ignore it and then Docker has to
+kill it so that's what the 10-second
+weight is so if you do a lot of online
+demos of node app samples you'll notice
+like when you control C or you Docker
+stop or whatever you do it just sits
+there for 10 seconds that's because it's
+not hearing the signals you can fix all
+that with an in it all right I don't
+need to play the video so nope I don't
+need to do
+that compose updates let's talk about
+compose my favorite developer tool um
+we've had changes in the last three or
+four years so if you haven't been to a
+previous virtual Docker con uh then you
+maybe haven't been aware of all these
+changes so I'll give you some brief uh
+examples of what's changed we don't have
+the versions I mentioned that yay unless
+you're on Swarm sadly if you're still on
+Swarm which is great I have a a growing
+Community Of Swarm fans that we're
+actually going to be meeting in hallway
+track
+tomorrow uh
+you on Swarm you still need to have the
+V3 because it's still on on an older
+version of the composed specification or
+it technically doesn't even use it but
+for the rest of us we could keepi rid of
+that which which gives us a bunch of
+features we had over the last 10 years
+of composed that we didn't get to use
+together because if you've been around a
+while you knew that we had days where
+you had to decide on V2 versus V3
+because features in V2 didn't come into
+V3 so there was it was a fork in the
+road it was a little complicated so now
+all the features that we had in V2 and
+all the features we had in V3 all
+together again as a happy family and one
+of my favorites that a lot of teams I
+work with do not use and did not know
+about is that you can people have heard
+about dependon but then they realize it
+doesn't really do what I thought like I
+wanted it to wait for my database to
+have its schema loaded before the node
+app starts well you can do that you just
+have to use this specific way to do it
+you put in a depends on and then you
+define the service that it depends on
+like the data base and then you say the
+condition of service healthy and I'll
+just show you the yaml file of that real
+quick so you know what I'm looking
+at
+and right here is what I would do for my
+node app I say I depend on the DB the
+condition must be healthy and you can do
+this I've seen compos files that have 30
+different microservices in it and they
+use the new profiles feature to actually
+put those in the chunks so they can load
+them sep times and they depend on reddis
+and postgres and a back-end worker and
+these all things have to be running
+first otherwise you end up getting like
+node crashing and cycling and all that
+so you don't really want that in
+development so you add that to all of
+your services that depend on something
+else and then in the dependent Services
+you add a health
+check and in a database this is actually
+a pretty easy one if I just go into
+health checks for postgres I can
+actually go in here and it does a SQL
+query and looks for a specific record so
+knows that I've seated the database so
+it's a simple Docker health check you
+can all you know the same kind of health
+check you would put in kubernetes and as
+long as I have that in my database or my
+redus or whatever my backend thing is
+when I do a Docker compose up it will
+sit there and wait until that health
+check passes green before it starts the
+services and you can chain these so you
+can have the the backend API wait on the
+database and then the front end weights
+on the API you can chain these all the
+way up and it's you know it's 10 lines
+of yaml to put it all in there so we get
+that now in the latest
+versions um the next one here includes
+extends and clo overrides I don't know
+if you've all scaled up your compos work
+but includes is the brand new feature
+that allows us to at the top of a
+composed file or anywhere but you put it
+at the root of a composed file you can
+say here's other files I want you to
+bring in um extends it's a little bit
+more flexible and I like it better than
+extends which is a very similar feature
+that we've had for a long time and then
+clo overrides CLI overrides is honestly
+the one I use the most because it allows
+me to give a whole team a composed file
+and then I give them and then they all
+can make another file called compose
+override. yaml and that file will change
+any of the settings including
+environment variables for their
+development setup so if they want
+different ports or they want different
+environment variables or different
+passwords and then we ignore that file
+in get ignore so that everyone has their
+own custom setup without needing a
+different compos file
+you can also do overrides for things
+like Ci testing so you can have an
+override that puts in all the CI testing
+values and you can have a base regular
+composed file that's simple and then
+override the customizations that's
+called overrides so you can look all
+those up in the docs in fact um I was
+going to click on one to bring it up but
+you get the point they had they had a
+Blog article recently um Nicholas put up
+there a great blog post on improving
+Docker compos so they go they walk
+through all the different ways to create
+many different yaml files that build
+into a single composed setup and and
+it's a pretty great walk through of all
+the ways and the pros and cons of each
+and why you want might want to use one
+over the
+other all right next
+up the develop we uh did they show this
+in the keynote I can't remember so
+develop is a brand new thing for watch
+and we'll talk about watch in a second
+watch is my favorite new feature this
+year you also get new features in Docker
+compos that most people don't know about
+again not related to node but you get a
+Docker compos LS so if you have multiple
+projects all running you can actually
+see them all in one command it's pretty
+handy you can see if you have stuff
+running in some other directory that you
+forgot about and then dock compose Alpha
+publish just got launched in the last
+month and this is something I've been
+asking for for about five years you can
+now put your compos files with that
+command it will automatically put them
+in a essentially an image and push them
+to a registry so you can share composed
+files without code as a Deployable
+object or as an artifact and we have
+this for kubernetes we have this for
+Helm uh for you know kubernetes manifest
+customized and stuff but we didn't
+really have it for compose until just
+this last month so that's their FYI so
+compos watch looks like this at the
+very top I'm typing dock compose watch
+and it requires some extra yaml which I
+will show you in a minute but once
+you've added that extra yaml you no
+longer need need in most cases to do
+bind mounts for development who here
+struggles with npm install performance
+or build performance on their local
+machine with bind mounts has anybody
+suffered with that over the years you've
+tried mutagen you've tried Docker syn
+you if you're if you go hardcore core
+you might try rsync you might do all
+sorts of crazy stuff well now with the
+composed watch in a lot of cases the the
+people that I'm talking to and working
+with and showing the examples to are
+saying they can now avoid the mounting
+of their source code and Docker simply
+watches for file changes on the host and
+then copies them in the background into
+the Container or it will rebuild the
+image based on your configuration so it
+avoids the the cross OS boundary bind
+Mount that us on Mac especially a little
+bit on on Windows side um we have to
+deal with that so real quick this will
+be my last little showand tell the
+last thing here is this section if you
+were Steely eyed earlier you might have
+saw this and thought what the heck is
+that so this is my node app and I'm
+using this to tell it if I change the
+package or the package lock file
+automatically rebuild the image every
+time I do a Docker compos watch which is
+like an
+up and then watch for anything in my
+directory and if it changes sync that
+file into the Container while it's still
+running now you would still and node you
+would still need to probably run this
+with like a nodemon because nodemon
+would then be in the container and would
+see the changes in the container and
+restart the app in the container which
+is a little bit faster than completely
+restarting the container
+um so if you add that in there for your
+node apps it's not node specific but it
+is very handy for node developers then
+whenever you run this you can actually
+see what it's doing it's replacing
+Docker compose up because is it pulls
+the images builds the the images and
+then spins them all up as their services
+and it tells you down at the very bottom
+in small text it says um yeah it says
+watching and it gives me the paths on my
+host to where it's watching for changes
+so it's it's like a nodemon or one of
+the other file uh file watch utilities
+but it's it's happening across the
+container boundary without a without a
+bind Mount pretty cool all right my last
+thing here uh if you have any questions
+I'm going to have a couple minutes for
+questions but this is a quick checklist
+for going
+production and like these are the things
+that I think of mentally and I work with
+the team on regardless of their status
+with node are they doing these things
+before we go into production uh it's not
+super focused but obviously Docker
+ignore file like it's amazing how many
+teams I work with that are maybe in
+their first year or two of containers
+that didn't realize they needed a Docker
+ignore um I just make a copy of the get
+ignore file and then I add node modules
+to it and that usually solves the
+problem
+that they're always running as node or a
+nonroot user right they're using teeny
+as or another init process they're
+calling node directly without using pm2
+nodemon in production or um you know npm
+or or yarn or any other tool we want to
+call node directly at least we want to
+have teeny call node directly we want to
+have a health check you're going to need
+those probes and kubernetes but in
+Docker you can just type the health
+check in the docker file I find that you
+when if you have that then you can use
+the dependon to wait for the database
+right but in order to do that so imagine
+you had a API back in on node if you
+added the health check in the docker
+file then the other developers could
+easily set up that dependency for
+dependon without needing to have to work
+on the on adding a manual health check
+so you if you put it in the docker file
+you can avoid it in the composed file is
+essentially what I'm saying we want to
+use the omit Dev and our npmc commands
+that's always how we want to run
+production in your source code these are
+the things that I would have you do I
+would ask you assuming that your team is
+controlling the node source code I would
+have you ask you to capture Sig Sig ter
+and Sig processes and handle proper
+shutdown I would ask you to track if
+you're a website if you're a web system
+if you're looking for zero
+downtime uh deployments essentially you
+probably at in some layer of your system
+you're going to need to monitor HTTP
+connections send fin packets to the
+front end browser or whatever it is your
+client and have them automatically route
+to the another healthy container because
+this container is shutting down and you
+can look up projects like stoppable
+which is a a nodejs uh mpm project out
+there that will properly count
+connections give you fin packets which
+are the way that you health you do a
+healthy shutdown of a node container
+without um losing without basically
+cutting people off on on and and giving
+them a hard connection reset if you're
+doing file IO a thing that I've learned
+the last three or four years working
+with teams that still are doing a lot of
+file IO like uploading images and
+storing them in some sort of system on a
+data on a file system is that
+permissions will end up biting you in
+the butt in production at some point
+especially if you're using like NFS or
+something on the network so I have them
+put code in to look for the proper
+permissions during node startup and if
+they don't see the proper permissions in
+the place they expect it will crash the
+app because a lot of times what will
+happen is we'll end up in production and
+then days later someone does a unique
+thing like they upload a PDF report and
+whatever their app is and then there's a
+permissions problem because someone
+changed an AWS ec2 thing and suddenly we
+have an outage um or at least the user
+gets a really bad experience so we've
+learned to just start checking for file
+permissions if we're going to write to
+disk during node startup um if you're
+listening on HTTP provide a common
+standard health health endpoint so that
+Docker compose swarm kubernetes and all
+the things can monitor your apps if you
+don't use HTTP apps and they don't have
+a listing Port then typically the way
+that we do it is we write the every you
+know 30 seconds we're writing a health
+status to a file on disk and then we're
+having the probe or the health check
+look for the date time stamp of that
+file or maybe look at the inside of that
+file for whatever data we gave it so
+that's how we deal with non-listening uh
+services and then lastly on kubernetes
+pods because it's not just about Docker
+uh I have a recommended podspec that I
+use with all my Consulting clients all
+my students and so that is go grab that
+I'm not going to go through it not going
+to have a chance because I got 30
+seconds um but you want to have ready
+that example gives you all the security
+features and all the stuff you should
+have in your podspec that you may not
+have today it talks about probes it
+talks about listeners the termination of
+the grace period seconds or termination
+grace period second yeah that's a hard
+one to say disabling privileged and
+escalations making sure that you're
+running as a non-privileged user and
+enforcing that so that your security
+team is happy with you and then finally
+enabling set comp profiles which Docker
+has by default but kubernetes disables
+by default unless you do that in every
+pod or at a level of the uh of the
+cluster so that's it that's the repo I'm
+going to hang around for questions since
+I ran out of time but uh go there for
+all this data and more it's just a
+GitHub repo and I will see you at the
+next one thank
+[Applause]
+[Music]
+you
