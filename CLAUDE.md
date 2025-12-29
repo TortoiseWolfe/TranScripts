@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Purpose
 
-Educational transcripts from YouTube playlists (TechJoy, Career), cleaned and organized for use with Claude Projects. This is a content repository, not a software project—there are no build, lint, or test commands.
+Educational transcripts from YouTube playlists (TechJoy, Career, Docker/DevOps), cleaned and organized for use with Claude Projects. This is a content repository, not a software project—there are no build, lint, or test commands.
 
 ## CRITICAL: No Fabrication Policy
 
@@ -124,19 +124,22 @@ Career/
 ├── Facebook_Edited/    # Facebook data exports for career analysis
 │   └── private/        # Extracted Facebook data (gitignored)
 └── TechInterview/      # Interview resources
+Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
+└── Docker_Edited/      # Cleaned transcripts + system prompt
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
 ```
 
 ## Claude Projects
 
-Three career coaching projects with system prompts and knowledge bases:
+Four projects with system prompts and knowledge bases:
 
 | Project | System Prompt | Knowledge Base |
 |---------|---------------|----------------|
 | LinkedIn Profile Review | `Career/LinkedIn_Edited/LINKEDIN_SYSTEM_PROMPT.md` | 22 transcripts in `LinkedIn_Edited/` |
 | Resume Review | `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md` | 11 transcripts in `Resume_Edited/` |
 | Cover Letter Review | `Career/CoverLetter_Edited/COVERLETTER_SYSTEM_PROMPT.md` | (uses Resume + LinkedIn as reference) |
+| Docker Best Practices | `Docker/Docker_Edited/DOCKER_SYSTEM_PROMPT.md` | 2 transcripts in `Docker_Edited/` |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
@@ -157,10 +160,17 @@ Setup: Copy system prompt to Project Instructions at claude.ai, upload the corre
 
 ## Common Prompt Patterns
 
+### Career Coaching
 - **Full review:** "Review my [resume/LinkedIn] against the frameworks in [folder]. Score and prioritize fixes."
 - **Bullet rewrites:** "Rewrite bullets using Action + Task + Result formula"
 - **Keyword match:** "Compare against this job posting for missing keywords: [paste]"
 - **Consistency check:** "Compare LinkedIn and resume for contradictions"
+
+### Docker/DevOps
+- **Dockerfile review:** "Review my Dockerfile for security and efficiency. Score and prioritize fixes."
+- **Multi-stage help:** "Help me convert this Dockerfile to multi-stage for dev/test/prod"
+- **Base image selection:** "What base image should I use for Node.js in production?"
+- **Compose setup:** "Set up Docker Compose for local Node.js development with hot reload"
 
 ---
 
@@ -168,10 +178,17 @@ Setup: Copy system prompt to Project Instructions at claude.ai, upload the corre
 
 **Adding new transcripts:**
 1. Extract transcript from YouTube using the [YouTube Transcript MCP server](https://github.com/jkawamoto/mcp-youtube-transcript) (see README for setup)
-2. Save raw transcript to appropriate folder (`Career/LinkedIn/`, `Career/Resume/`, etc.)
+2. Save raw transcript to appropriate folder (`Career/LinkedIn/`, `Career/Resume/`, `Docker/`, etc.)
 3. Run `/clean-transcript <filename>` to create cleaned version
 4. Move cleaned version to corresponding `*_Edited/` directory
 5. Update Claude Project knowledge base at claude.ai if needed
+
+**Adding Docker content:**
+1. Find Bret Fisher or other Docker best practices videos on YouTube
+2. Extract transcript and save to `Docker/`
+3. Run `/clean-transcript` to create cleaned version
+4. Move to `Docker/Docker_Edited/`
+5. Update Claude Project if using Docker knowledge base
 
 **LinkedIn profile analysis (CSV export):**
 1. User downloads LinkedIn data export from LinkedIn settings

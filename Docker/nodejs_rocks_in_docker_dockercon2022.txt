@@ -1,0 +1,771 @@
+Node.js Rocks in Docker, DockerCon 2022 Edition
+Bret Fisher - 27 minutes
+https://youtu.be/Z0lpNSC1KbM
+
+Examples repository: https://github.com/BretFisher/nodejs-rocks-in-docker
+
+---
+
+welcome
+i'm brett welcome to my talk i'm going
+to talk about node.js and docker today
+and all the slides are going to be over
+here
+and
+that's a full actual bunch of examples
+it's a written explanation of a lot of
+the things that i'm not going to have a
+chance to go deep into but my goal today
+well i've got a lot of goals let's go
+through them real quick today's talk is
+focused on the builds the docker file
+the base images and things you're going
+to do in the docker file if you want to
+learn more about the compose stuff i do
+with node and also the automation with
+github actions check out all that stuff
+in the repo including multi-arch builds
+and cool stuff turns out finding the
+best
+securest
+smallest and supported by the node team
+image is quite complicated it actually
+isn't as easy as we all think it is so i
+want to give you some of the details so
+you can make a better choice
+then we're going to go into dockerfile
+best practices node shouldn't be used as
+a pid1 inside of its container so we're
+going to talk about that and what that
+really means and what you should use and
+then lastly we're going to have time to
+talk about multi-stage builds which i'm
+going to go into a bunch of examples i
+think three or four of them and really
+break down how the stages are all going
+to work and what i do for my clients and
+recommend to my students and for all of
+you out there but first let's focus on
+the base image and exactly what we have
+to get into to understand what's in the
+image and how we make choices with all
+these different options out there now
+the reality is that there's way too much
+going on here for me to get even in a
+half an hour conference talk so there's
+more details on the repo i actually
+break down my decisions talk about the
+different options and more in depth but
+here we're going to go through it pretty
+quickly again that is going to be over
+at brett.show dockercon 22. there's a
+table that i made of i consider the
+major options for which note image and
+you might just be thinking well why
+don't i just pick node
+colon 16 which is the current lts
+version of node well not that you
+necessarily need to read through this
+whole table but it's one of the biggest
+images with the
+most vulnerabilities it actually has
+nearly 2 000 vulnerabilities cves i'm
+talking about here that are found with
+trivi an open source scanner in that so
+we don't want that for production in
+fact i don't use it at all i don't
+recommend people use it i only use slim
+variants or better so this is really
+talking about the official node image
+right so a docker hub you just look up
+node the official node there's at least
+three or four major choices you can make
+in there besides just versions
+and i'm not an alpine fan
+at least when it comes to programming
+languages alpine is a great minimal
+distribution there are a lot of people
+that are fans of it but i have many
+reasons
+a few of these major reasons why is the
+first one here is that the node team
+only considers it experimental not
+giving it the true tier one support that
+they give standard c libraries that come
+with things like ubuntu centos and
+debian
+it turns out that when you compare
+slimmed down
+node debian instances of a container
+image they're no smaller really they're
+no bigger than the alpine image in fact
+if you go with distrolus which we'll
+talk about in a second it's actually
+smaller than the alpine image so
+size isn't a reason to pick alpine
+secondly it is zero currently on the cve
+scanner so it has the least number of
+vulnerabilities but if you choose some
+of the slimmer options that i prefer
+or distroless you're getting near zero
+as well we're talking 10 or so 10 to 15
+medium or low
+and then maybe one or two highs in that
+case another reason is that the apps in
+apk apk is the alpine package manager
+those packages aren't pinnable if you
+change alpine versions or even if you
+just hold that pin for a while the next
+time another version comes out your
+version may fall off of the package
+manager so you may end up with broken
+images or well you will eventually end
+up with broken images if you pin
+versions there and you should always be
+pinning versions on your app
+dependencies for the os
+lastly there there are many prod fail
+stories i have had multiple ones myself
+of issues in prod that were alpine
+specific on node that i couldn't fix
+unless i just switched to debian or
+ubuntu or centos now you should never
+other than maybe your first day in
+dockerland use the node latest image it
+is there for convenience only in my
+opinion it's there for people to get
+started with the simple examples just to
+get used to docker but there are tons of
+packages in there that don't belong
+there are packages in there like image
+magic or subversion the old version
+manager or mercurial these version
+managers that very few people use
+anymore there's all sorts of libraries
+and things in there which is why it has
+nearly at this point over 800 cves in
+the one image
+and of course you've heard my opinions
+on alpine i mentioned node 16 nearly
+2000 cves even worse than node latest so
+we just want to stay from that as well
+now i always use even numbers and node
+those are considered the long term
+stable releases so 16 would be what we'd
+use right now 18 is right around the
+corner
+i would recommend slim but in this case
+a little known fact about node so
+this isn't true of necessarily every
+application on docker hub but when it
+comes to node releases
+when a new major version ships like node
+18 when it comes out these are all based
+on debian and it's a very slim
+debian release and then a bunch of stuff
+is added on right but
+the major version of debian that's out
+at the time that's the long-term
+supported version of debian that is the
+version that node will pin to
+in this case we're currently doing
+debian 10 in this image node 16 slim is
+using debian 10. but the bullseye
+release is actually the most current
+debian that's 11 wn11 and you can't use
+that in the note 16 slim with this
+particular tag because when node 16
+first came out it was pinned to debian
+10 and for stability and to make sure
+that they don't break people's apps by
+changing the major underlying distro
+version
+every node 16 by default
+by default here
+will only include the debian 10. now
+that the bad thing there is this means
+there's 131 cves because of an older
+release of debian
+but the good news is they have that tag
+so you can update your debian 11 distro
+to be your node underpinnings in your
+official node image but you have to
+manually select it in the tag and if you
+look at a lot of the different versions
+of node you'll notice that they'll
+mention buster and other versions of
+debian and that's what those those names
+are they're code words for the debian
+release and you want that to be the
+newest because the newest is going to
+have the most up-to-date app package
+manager stuff as well as the least
+amount of cves for those distros
+now really quick there are a few other
+options that aren't the official node
+images from docker hub but i think
+they're even better if you're willing to
+take a few extra steps to get there one
+of my favorite ways to make my own
+node.js base image is to really just use
+ubuntu it's my favorite distro it has
+that right combo of
+secure they actually have less cves
+historically than debian they tend to
+patch things faster i guess and they are
+widely used on the internet so whenever
+you're on stack overflow or some support
+site getting help you often will find
+answers based on ubuntu now there's at
+least three ways i can think of to do
+that so let's break those down real
+quick and i'll tell you which one is my
+favorite now the first one is just to do
+apt install node.js but the problem is
+it installs node 10. ooh that's wicked
+old not supported anymore next up if you
+go to the node.js website and you find
+the official way to install
+distributions in debian they use the
+node source packaging now nodesource is
+great they're they've been around a long
+time and they are key to the node.js
+community however there is one fatal
+flaw for me that prevents me from
+recommending this because it installs
+python 3. python 3 minimal and a few
+other packages are installed when you
+use the node source debian package which
+can add additional cves the whole thing
+i'm trying to get away from here is
+having unnecessary applications or
+binaries sitting there in my node apps i
+want it to be minimal i want it to only
+include node and the things that i need
+not python 3. so i won't be doing this
+you could it may not be a big deal to
+you or you may even need python minimal
+and that's fine for me though i think my
+favorite ray right now and i've been
+using it a few years is to copy in from
+one image to another so i get just the
+node parts i want in the base image i
+want it's kind of what you would do if
+instead of the node official image being
+based on debian if the node official
+image was based on ubuntu and all i'm
+doing here in this example
+is
+i define the node version once at the
+very top by doing a from line it just
+means that the base will be downloaded
+and i'm defining it as an alias
+essentially here i'm using as node so
+that when i use it three times later on
+in this file i don't have to specify the
+version each time it basically keeps it
+dry now what i'm doing here is i will
+switch from node straight to ubuntu
+without doing anything in the node
+release that probably should be a 1642
+bullseye slim if i'm keeping track of my
+previous recommendations and then i'm
+defining the ubuntu version which if you
+didn't know you can make them date based
+so focal would be the 2004 release
+that's the code name for it and then i'm
+defining the release they go up they
+release a new one about i don't know
+every three or four weeks and then when
+you update you at least in here what i
+really like is you know the date that
+they shipped it so that has to do with
+whether all the packages have been
+updated and the latest security update
+so i update this regularly in my docker
+files pinning it to the latest date
+version that focal would be on and then
+i'm going to copy in the three major
+locations of all the node stuff uh you
+could really probably get away with just
+user local there's not really much else
+there maybe one extra megabyte or a half
+a megabyte of files it's very small but
+you would just do that there and that's
+bringing in all of the node binaries
+libraries everything you need for node
+with nothing else nothing extra
+and if you didn't know about core pack
+core pack is a new way now to enable and
+disable all the package managers
+including yarn the npx which is
+complementary to npm and then the pnpm i
+don't know how you say that one that
+package manager as well so you do all
+that with a core
+core pack enable and i just do a disable
+first to make sure that it cleans up all
+the sim links and then it recreates them
+all without giving giving me an error
+about some are already here so i
+basically remove them all with disable
+add them all back in and make sure the
+sim links are correct and that works for
+me well that actually doesn't add any
+more vulnerabilities on top of the
+ubuntu package which if we're recounting
+is zero high and critical at this
+particular day and only 15 medium and
+lows so that's really great and
+considering that i'm comparing it to
+something like node 16 bullseye slim
+which lat on the same day that i scanned
+it had 12 highs and 74 mediums and low
+so quite a big difference in my eyes now
+to get the total cve count lower you can
+use distro list now you may have heard
+about distortless uh it's from google
+it's a project from google it's on
+github and what they do is they use
+debian releases
+they take the files from node and they
+much like i do they take the binaries
+downloaded from an official source and
+they remove everything from the debian
+release that they can including shells
+package managers you name it it's all
+gone in fact what's crazy about this
+release is that it's only one percent of
+the number of files that the other ones
+have it's 2 000 files in that and when
+the other ones have 180 000 files
+usually so it's an extremely small
+number of files however it doesn't do a
+lot of things that i wish it did so
+because it doesn't have a package
+manager or a shell
+it can only be the last stage in your
+docker file
+here what you're seeing is the last
+stage of a particular docker file where
+i might use a standard official node 16
+slim
+for my dev and test and then when it
+really matters when i'm going to
+production i change out for this distro
+list release where i'm using their url
+you would see at the very top i'd have a
+distro line that defines the version and
+then i would copy in
+from
+source and base all the stuff that i
+need basically i'm copying in all my
+node source files and then i'm defining
+all my other environment variables
+because now that it's a new base i have
+to redefine all my things including
+environment variables what user account
+i'm using i have to recreate the working
+directory all that stuff and then i'm
+able to run my app so supposedly this is
+way more secure i have opinions and i'm
+not convinced because while it does
+remove what could be potential sources
+of vulnerabilities and it definitely
+reduces the file count by leaps and
+bounds but it seems that most of those
+files weren't really harmful to begin
+with because a cve scanner took me from
+15 to 13. so it only really took away
+two other vulnerabilities it actually
+added one back that was a high
+from debian because this distro list
+solution is based on debian the same one
+that has all the bugs in our regular
+official node app so i actually go back
+and prefer the ubuntu one but this is an
+option if you're someone who wants to
+stick with one distribution and you like
+debian you want to stick with closer to
+the official releases or if you like the
+idea of not having a shell and a package
+manager in production even though those
+things may not be what actually makes
+the app vulnerable
+you can do that and this is a good
+option but it makes it a little bit
+smaller it's now the smallest this is
+actually technically smaller than alpine
+this is 108 meg this image which is
+slightly smaller than 111 megs so we're
+saving a whole three meg by using this
+distrolus over alpine and alpine even
+though they talk about it being slim it
+still has 180 000 files in it so
+not so minimal alpine so here's my
+official recommendation list
+the easy one on top use the node
+bullseye slam that gets you closer than
+anything else any official node images
+then you can use ubuntu 2004 which is
+even less vulnerabilities and then add
+node.js in the way you prefer
+or go distro-less and use google's
+another limitation of google disturbed
+list is that you could only pin to major
+versions which to me is again a
+non-starter i want to be able to pin to
+at least the minor version
+usually i want to pin to the patch
+version
+because i want to have
+reproducible builds i want these
+deterministic docker files where if i
+build it two months in a row i'm getting
+it all the same exactly every time okay
+we're done with base images i know that
+was a little bit of more information
+than you maybe needed but there's even
+more of that in the repo if you want to
+see all the links i went to to try to
+find what truly is the most secure
+smallest but most useful note image now
+let's just get into docker file better
+practices that may affect you you know
+js people i say better here because best
+implies that there's nothing better and
+in this case i just know that i prefer
+these things but that doesn't
+necessarily guarantee they're the best
+for you
+now you know about docker ignore right
+so docker ignore is essential i just
+copy the git ignore file into a docker
+ignore you always at least have to add
+two things the dot get directory and
+your node modules directory so that's
+step one now of course in the recent
+years we have had npmci
+and for your production stages and we're
+going to get to multi-stage in a second
+but for your production stages you're
+only going to want to have your
+production dependencies you don't want
+those dev dependencies in production
+because that's just going to add more
+potential for cves more potential attack
+vectors
+who knows and it also has bloat so we're
+going to try to keep this slim we want
+to make the security team happy so in
+that production stage we're only going
+to use ci with only production the ci
+means that it will only install the app
+versions from the lock file which are
+the identical versions to the ones you
+just tested right so if you tested them
+that way you don't want a potential npm
+install to change anything in your log
+file which is why they invented the ci
+command
+the next tip is to change your user so
+that you're not running as root there's
+really no reason that i've seen
+i think ever in node at least to run as
+root in the container and so we can
+potentially reduce our attack surface by
+using user node now i can say that
+because in the official node images
+they've already created a new user for
+you calling it node so you in those
+images you can just add user node if
+you're using ubuntu or distrolus you
+just need to add a couple lines to
+create the user in the group and then
+you can change to that user in this
+example i'm starting from the bullseye
+image and i am manually creating the
+directory because i want to control the
+permissions so i make the directory and
+then shown it to the node and then down
+here after i change the workdar i set
+the user node but to do that simply
+because how do you create a directory
+that only root has permissions to create
+with a user that's not root right so it
+gets a little bit wonky there but those
+three lines are basically standard in
+all my docker files now in the copy
+commands you notice that you're going to
+have to add the chone part which is
+great in recent years docker's added
+that as a feature so i want to do that
+for any files i copy in i want them to
+be owned by the node user and i'm
+copying in my package and yarn files
+then i'm running my npmci
+with only production because this
+particular example is just creating a
+production image not something for
+development or for testing with testing
+dependencies but just there for
+production and then i'm copying in my
+source code and then i'm doing an npm
+start
+now speaking of that npm start we
+shouldn't be doing that you shouldn't
+actually use anything other than the
+node process itself in the command
+unless you're using something like teeny
+which is an init process so node itself
+wasn't designed to really be the core
+starting process in linux known as pid1
+and when you start something in a
+container it becomes pid one so in this
+case what we're going to do is we are
+going to download and install teeny
+which is actually built in the docker by
+default but we may not have docker
+everywhere so rather than running it
+through the docker command because you
+can do a docker run dash dash init but
+that's only temporarily on your machine
+and that'll
+start teeny first which is a tiny little
+app and its only purpose is to start
+other apps and it will start node for
+you this is a couple of things this
+properly handles
+signals coming from the linux kernel
+like hey you need to shut down and it
+also prevents zombie processes which are
+processes that lose their parent and
+thus
+go rogue and aren't able to be found and
+shut down in a nice way so they're kind
+of known as zombies because they're they
+didn't die they're short of undead and
+we want to do that also it helps an exec
+probe so if you're someone who uses
+docker health checks which cause a
+docker exec to be used or in kubernetes
+probes where you're using an exec type
+probe you typically want those probes to
+also use an init process for node or
+really any other app because those exact
+processes can sometimes get out of hand
+there's actually a well-known talk
+from years gone by around
+zombie processes going crazy because
+there would be one created accidentally
+every time they did a health check which
+if you can imagine throughout a day lots
+of health checks happen and the way to
+always prevent that is to make sure you
+have something like teeny as your launch
+pid one now you can see me doing that in
+this image in this case i am just
+installing whatever teeny version comes
+with the package manager it may not be
+the exact latest but they don't change
+rapidly so it's fine that it might be
+one minor version out of date and then
+i'm adding that as my entry point what
+that means is that later on i can just
+define my node app and then it's always
+going to be run inside of teeny i don't
+have to ensure that my command always
+includes teeny and my node app and its
+file it can just be this set up here and
+then all the way down at the bottom
+you'll notice that we've now changed our
+command
+not to use npm because npm has issues
+you shouldn't run that directly in
+containers as the launch process for
+servers because npm can't handle signals
+it also is in a necessary process you
+don't need to have that additional
+process running on your servers really
+we just want node itself and in this
+case since teeny is designed to be
+running in there always starting and
+stopping and controlling our processes
+reaping those zombies then we want the
+node down here calling our apps main
+launch file
+now this gets to one of my favorites
+which is multi-stage and multi-stage is
+one of my absolute favorite features of
+the last i don't know four or five years
+of docker and
+i have my own opinions about multi-stage
+and the goal of my multi-stage is to
+have one docker file do all the things
+which does mean my docker file gets a
+little bit longer but i want my docker
+file to be able to support development
+environments
+testing in automation and then true
+production environments and those three
+have different needs right so we need to
+have a way to get our base together
+all of the core essential things that
+are in common and then diverge to a dev
+a test and a prod through stages in the
+old days we used to make separate docker
+files for this but now we got stages
+and in this example i'm only going to
+add a dev stage so we're not yet going
+to add the test which will come later in
+this case we're going to break it up
+into just dev or test and you'll notice
+in this case i'm sort of doing it all as
+one base there and that base
+is not giving me dev first you what
+you'll notice is that i'm focused here
+on production i'm adding in everything
+that i need for production including my
+source files i'm doing the npm ci with
+only production dependencies i'm only
+adding teeny in
+and i'm running as the node user so i'm
+doing all the things we just did but i'm
+adding on a second stage and that second
+stage here
+is adding the additional
+development npm install it's changing my
+command to run nodemon so i can do file
+watching for auto reloading in my local
+dev environment and i'm changing the
+node env of course
+and that's going to do its own thing so
+when i'm in local development using
+maybe a compose file i'm going to target
+this stage when i build this custom
+image
+and that is the image i would run
+locally so it's my production
+plus my extra dev stuff
+now why do i have this extra down at the
+bottom well for a couple of reasons
+this
+will work with old builders if you use
+an old builder like something that
+doesn't have build kit or buildex on it
+then it will just build the docker file
+from the top down and i tend to like my
+images by default to always just build
+the safe production image i only want to
+bother with dev when i really want to do
+dev and that's usually a human building
+it manually with docker compose or
+something locally so when i want it to
+be in any other environment i definitely
+want production so i will go back and
+reset the entry point and cmd
+down at the very bottom so that my
+production when it processes top down it
+finishes with my production stage you'll
+notice that it goes back
+from base it doesn't come from dev so
+technically when this production stage
+is built there was never any dev in it i
+didn't remove development dependencies
+with an npm command i simply took the
+original
+layers that were identical to what i
+tested in this case we're not yet
+testing but just imagine that and i'm
+moving that to production and i'm only
+changing the metadata which is the entry
+point and the cmd okay now we're adding
+more layers more stages to our docker
+file and they're doing this so we can
+automate our testing and in fact if you
+look at this repo for with all these
+examples i did a talk recently and in
+that talk i talked about github actions
+and how you can automate testing and
+building and all the things even with
+kubernetes testing automated in your prs
+on github however the way i approach
+this is i don't want this to mess up my
+production source so again we are going
+to layer testing stuff on top
+of those base layers that have all of my
+production stuff i'm not going to muddle
+in the same stage with test and
+production i really want these as
+separate layers so that i can skip them
+when i ship to production and as you'll
+see in this file we have the same
+original base which only adds my
+production stuff the only thing in there
+is the minimal i need for production i
+am removing by the way from there the
+source code so we're not yet putting in
+source code we're just copying in the
+lock files and then we're installing the
+production dependencies
+then we have the dev just like before we
+started our dev that's still there so
+that's going to be used in our local
+machine but we've got this new stage and
+i do the source in its own stage it
+comes from base that very first stage
+and it adds in our source and the reason
+that i split this one out and i document
+it here a little bit but the reason i
+split that out is because
+i'm going to add tests on top of this
+i'm going to add more layers on top of
+this source but when those tests pass
+i want to go back
+to that line as what i'm shipping to
+production i don't want to then i'd
+do another copy of source code after the
+fact i want a single copy of source code
+that i test and then ship so that you'll
+see i do all of my test stuff here i'm
+adding in my node modules from dev so
+it's using the dev dependencies from
+that stage and it's copying them in
+which includes those dev dependencies
+and node modules and then anything else
+i might need so i'm running an eslint
+maybe i'm running an npm test command
+i'm doing all that stuff here and if
+that passes in my automation
+then it will know to build my app again
+but when it builds it it's only adding
+metadata it's technically going to come
+from source
+which is this line up here so it will
+start from line 29 and add two pieces of
+metadata so technically what i'm
+shipping two production registries is
+the exact layers and files that i tested
+not some other build variant or
+potential difference i want to ship the
+exact thing so i do this very
+deliberately to make sure that i don't
+introduce anything even in the build
+stream that i didn't test all right oh
+man we ran out of time
+thanks for watching that's all i had
+time for today but there's way more in
+the repo there's more examples just a
+ton of details in the readme really just
+go check that out later and of course
+you can reach me on my weekly live show
+on youtube at brett.live where i have
+guests talking about docker stuff cloud
+native stuff
+i also have a discord server with just
+hit 10 000 people for focusing on devops
+in a discord server so check on
+devops.fan and of course you can get my
+courses coupons other stuff blog all
+that stuff at brettfisher.com so see you
+soon

@@ -1,0 +1,1178 @@
+Docker and Node.js Best Practices from Bret Fisher at DockerCon 2019
+Bret Fisher - 42 minutes
+https://youtu.be/Zgx0o8QjJk4
+
+Examples repository: https://github.com/BretFisher/dockercon19
+
+---
+
+this is my 2019 dr. Khan talk that
+focuses on the best of docker for nodejs
+apps and it's a preview of my course
+which you can get in the description
+here it's a nine plus hours of video
+this docker con talk is only 40 minutes
+of that but I try to cram as much of the
+highlights of the course in this video
+for the session at docker Khan
+so please enjoy and if you want more
+information on it check it out in the
+description below and you'll see a link
+to my website where you can get a coupon
+for it thanks for watching thank you for
+coming here today
+please welcome Brett Fisher who is a
+docker captain is the observer of mask
+sorry the author of dock camera the
+documentary course on udemy and he's
+been deploying docker and not yes in
+production environments since before it
+was cool it lives in a live chat session
+rock on the ocean in Virginia Beach with
+his puppy when a puppy whisky five month
+old and it's going to tell us today
+about best practices for using not jazz
+in docker containers and you can reach
+out to him on twitter at the Brett
+Fisher and that's it
+yeah thank you you're awake after lunch
+it's awesome
+alright so basically this is a best
+practices talk applied specifically to
+no js' things like NPM so this session
+is for you if you know a little bit of
+docker and don't consider yourself a
+Ducker
+master yet or another greninja and then
+you know some note obviously if you're
+here this is not a node 101 talk so this
+assumes that you've made some at least
+some simple apps in node most of you
+probably are doing node in production if
+you're hanging out here because this is
+not a node conference so thank you for
+being interested in node this is like a
+vintage old t-shirt I found that I was
+like very excited that I still had it so
+basically you want to put those two
+together to have the best node
+experience for development test and
+production that's really what we're
+trying to do here so we're going to
+docker file best practice yeah yeah
+that's the kind of expected we probably
+would do that then we're gonna make a
+real world multi stage docker file for
+node that's much better than the typical
+blog and
+as you see on examples and then we're
+gonna build in some auditing and
+security scanning on top of that we're
+gonna talk a lot about proper nodes
+shutdown so that you make sure that your
+containers can be replaced and a zero
+downtime type of situation we're going
+to talk about HTTP connection management
+because I imagine if you are using node
+or just JavaScript in general at some
+point you're dealing with HTTP servers
+that you're running not obviously node
+can do lots of things but we do a lot of
+web with it so HTTP itself deserves its
+own consideration and to talk about
+connections and stuff like that so let's
+start off real quick with the node
+docker file stuff I'm not going to talk
+about node docker file best practices I
+actually did that two years ago at
+docker con so just search YouTube for
+Brett Fisher docker con and you'll see
+like every year I build on the last
+year's talk and I talk about best
+practices and doctor files and best
+practices in production and all that
+stuff so you can get all that and I have
+links to all that stuff at the end on
+the last slide so we'll get to that all
+right so this is every sample docker
+file for know that you've ever seen on a
+blog that's getting started and it's
+garbage
+right like it works it works it works
+for your first day on your very first
+app that has five lines right but that's
+it that's all this is gonna do so we are
+going to start with this and we're gonna
+keep iterating throughout the day as we
+we're not here that long throughout the
+few minutes that we have in here to get
+us to a relatively close to production
+solution using all the latest features
+except for the ones in the demo
+yesterday and today cuz they don't let
+us captains know either so we don't have
+the new stuff so this is using 1809 last
+year's last stable release from the fall
+of 2018 okay so all the just stable
+normal docker stuff all right
+I wasn't I was gonna do a bunch of
+crayon writing with my iPad and iPad you
+can write on the slides now I was all
+excited about that and then I screwed it
+all up and had to delete it at the last
+minute so yay
+yay me I can't even handle a keynote so
+basically 12:00 is out like I don't know
+what happened but dr. Cohn happened made
+my slides they're outdated because I
+don't have all the latest commands and
+then no.12 came out so all my stuff is
+in no 10:12 is the latest release of
+node that is at least on the stable
+track so it would be really cool if I
+had 12 and all my demos right so don't
+use the latest tag that's sort of a PSA
+you should know that at any level of
+docker doesn't mean you can't use latest
+for just testing and playing around but
+if you're if you plan on going
+production at all with containers you
+will and you will never want to use that
+tag again because it will give you
+whatever random version is the latest
+one that now is 12 and you're probably
+not ready for that so the some of the
+advice here and we're gonna get into
+from images because one of your biggest
+concerns up front on every project I
+ever work in but it's note or anything
+else is what should we use as our base
+images what should we use as our are
+from in the docker file obviously node
+has a official repo that's the ones I
+always recommend people start with but
+you get choices there and it's about the
+underlying distribution of an image that
+you can use you can use debian which is
+the default or it can use Alpine that's
+also an option there are other options
+as well and I'm only going to be talking
+about official images not third-party
+custom images because I just I'm not
+convinced that we need those with node
+in most situations unless you're doing
+maybe custom builds or something
+so Debian is what you do if you're
+migrating and most of you I imagine
+I learned brownfield this week - I
+didn't know that most of you are on
+brownfield apps I'm still not convinced
+that's the right word we should be using
+but we're not using greenfield right me
+it's great if we can all start in
+containers and start an app on day one
+in containers and that's great
+but all you're gonna be migrating nodejs
+apps into containers and that's a lot of
+the projects that are I work on is the
+migration or as docker puts at the MTA
+migrating traditional apps so if you're
+not familiar with debian or how linux
+distributions and work all of the
+standard official images from docker hub
+debian underneath they don't doesn't
+mean that they're running the kernel
+just means that that's giving you this
+apt-get package manager' and those
+things that you would expect in a
+container and it uses Jesse it used to
+use Jesse that was the older version now
+we're using stretch so if you start
+worrying about security scanning and
+making sure you have all the latest
+stuff you're essentially going to want
+to focus on stretch Linux version of
+Debian this is a little deep but if
+you're not into this stuff eventually
+your security team will ask you about
+this and you'll have to say you'll have
+to go look at the docker file that
+docker uses and you have to figure out
+where it's built from and ensure the
+integrity of that so my advice is to use
+stretch which is now the default that's
+and that's a good thing because it
+improves your security scanning results
+and if you're not aware the we have to
+actually have in the next slide maybe I
+have it okay we'll talk about Alpine
+first and then we'll talk about the
+actual sizes so there's three different
+options in the main node repo and they
+are the default then there is slim and
+then there is Alpine now if you're been
+around the container community a while
+you hear a lot of hype around Alpine and
+a lot of it's true it's really small
+it's really tiny it is focused on
+security but it has drawbacks and so
+it's not the thing that I recommend for
+most projects especially if they're
+migrating in so there's this slim option
+with node that gives you everything you
+need for node without all the standard
+build tools for binaries so if you're
+not using if you're not building
+compiled libraries into your node apps
+which a lot of aren't then you don't
+need anything but slim and slim is
+almost as Tiny as Alpine so you would
+not necessarily need to move to alpine
+for space reasons all right to get a
+little bit more to the difference
+between these two my link actually will
+have these slides and I have an open
+source repo for all this stuff on github
+so again the link will be at the end for
+you to check out the stuff later but
+Alpine is a very popular base image that
+starts at 5 Meg it could almost fit on a
+floppy and it's smaller security focus
+is it's is its focused but it's not it's
+not a traditional Linux distribution so
+it doesn't have a lot of the things yet
+the
+traditional larger distributions like
+Ubuntu and Debian and Red Hat have and
+so a couple years ago alpine was making
+all the news because it was 5 Meg and
+these other options were hundreds of
+Meg's and or bigger and it was it was
+definitely a good reason to save you
+some space on a server but over time a
+lot of those other images have all got
+smaller - they've all taken out
+unnecessary tooling unnecessary
+libraries and commands and that that's
+basically over time if you look at the
+official images they keep getting
+smaller and smaller and smaller because
+we're learning what we don't need in the
+container we're learning that we baby
+don't need you know IP configuration
+tools and stuff like that and you can
+install those on your own so the benefit
+of Alpine as eyespace savings is
+basically my opinion no it's not in it
+not a reason to do Alpine if you want to
+do Alpine you have to have other good
+reasons
+Alpine for example is not without its
+own quirks so last year if you use node
+Mon node Mon last year had an issue with
+file watching for development but it was
+only on Alpine based images so it was a
+way that Alpine upon uses different C
+libraries and it was the way it was
+tracking something in the file system so
+anyway the point is is that there is no
+panacea there is no perfect base image
+it's up to you I always start with slim
+and we'll see that in a second the other
+reason that I gotta warn people about
+Alpine right now is that currently if
+you want to do CV scanning of your
+images which i think is great to do it's
+easy to do you'll see a demo today
+Alpine doesn't work really with that
+there is a database s it's a very small
+database that you can use but it's not
+it's complete if you're someone who's
+been in a shop that's scanned images
+like Red Hat and Ubuntu and Debian so
+there's some great documentation on
+cooed X cube X cube Dex actually calm
+it's a website I have a link in the
+slides if you want to look at it later
+on my website basically there's a couple
+of great articles were annulled someone
+analyzed all the different security
+scanners and looked at all the base
+images and give a great pro/con
+spreadsheet example of all the different
+reasons why ok so to get the point here
+though is just look at these different
+versions so we're looking at version 12a
+I updated the slides version 12 of node
+and you have Alpine there
+77 Meg and then this Slim is only a
+hundred and fifty Meg so on a server how
+much do we really care about 80 mega
+space-like that's assuming that
+everything is running so at the same
+image base image right which is probably
+not true on every server so let's double
+that triple that maybe and now we're
+talking about a couple hundred Meg if I
+don't use Alpine as a server admin that
+is not a factor to me I that if I don't
+have that much free space I'm already in
+trouble so I don't make decisions based
+on size I have to have real good reasons
+and for most developers we're all used
+to apt-get and that you know Debian
+Ubuntu experienced so stick with the
+default stick with either default or the
+slim you can see how crazy big though
+that default 12 images in the middle
+it's 900 that's because of all the build
+tools that come with that standard base
+it's not node it's actually just the the
+base underlying stuff and then note
+itself I think comes with more tools in
+order to also use the building tools
+like we're gonna mention here note gy P
+so node modules is a thing when you're
+when you first start developing a node
+you're going to run into issues with
+your host where you're probably used to
+developing on your host and you want to
+start developing in containers you're
+gonna have node modules on your host
+because you're used to that but then
+there's a struggle of what do I do in
+the container do i link it to the host
+with a bind mount do I put it in the
+copy them in the container and leave
+them in the container like what do I do
+there so you don't want to use the ones
+from your host on your development
+machine unless you're a Linux developer
+if you have Linux as your main machine
+you develop on congratulations you don't
+have any these issues you can go home
+the rest of us on Windows and Mac we're
+not running the same architecture on
+that main OS as in the container so if I
+have any actual binaries in my app and
+maybe your node app is pure JavaScript
+and all your modules are pure JavaScript
+and good for you but some of you will
+probably have like image magic if you
+wanted to manipulate images that's a
+binary and so that's not gonna work
+across architecture so the first time
+you try to do a docker compose up it
+might you know a sample file that you
+get off the internet might automatically
+connect your
+modules in and then it wouldn't run
+because it's for for Mac not for Linux
+so this is the core one of the core
+issues that get people stuck and one of
+the simple ways to solve that problem is
+adding the node modules to your dock
+ignore to make sure that first it never
+goes into your image you want your image
+to do the NPM install you don't want
+your node modules from the host so
+that's sort of step one if you're not
+aware of the docker ignore it's just
+like they get ignore file and you you
+want that basically in every single app
+and you definitely want it to keep get
+out right you don't want to put get in
+your containers you don't want to put
+node modules in your containers
+obviously anything like tests or logs
+you usually want to keep those out too
+so I tend to just copy the guid ignore
+it and make a dart nor out of it and
+then away we go the next thing in doctor
+files this is security related is that
+you want to enable the node user so
+every official node image comes with a
+node Linux user out of the box it's not
+enabled and the reasons I think it's not
+enabled and I don't know this for a fact
+but I believe the reason is not enabled
+is because it's it makes it hard to do
+order to do things you're not route in
+the container so things like NPM install
+might not work depending on how you have
+it set up so they don't enable it they
+just they just provide it which I kind
+of wish they would put that up at the
+ntop of the documentation like please
+take some time Dooley's privilege it's a
+good thing so all you have to do is add
+user node into your docker files and now
+the app the node app in your container
+is running in the container as a non
+root user which means if your app got
+hacked in the container obviously the
+goal is that they can break out of the
+container but if they're just using the
+node process they're not even root in
+the container so they can't you know
+even do bad things in one container
+right so you want to do that and it's
+it's easy to do it just has a couple of
+complexities with it so you want to
+order it so that it's after any root
+required things like a PK like that's
+for alpine or apt-get commands or if you
+do npm install global which requires
+root in linux by default and then you're
+gonna do it before your standard npm
+installs of your app so you're kind of
+sliding it sliding it in there in the
+middle because the minute you type
+node user node into a docker file then
+the following run commands will all run
+as that user okay
+and it also may cause some permissions
+and we'll get around that in a minute
+with an example so you would just use in
+that case shown to change the
+permissions and we'll let's look at this
+example so remember this silly blog
+example one old you know doctor 101 for
+node users well that's so look at the
+top right that's the name of the stalker
+file so as we progress through this file
+it'll change numbers so now we've added
+a few things so let's see if this works
+yeah so we've added this manual run line
+to make sure we get permissions in our
+app directory we've added H own down
+here so during the copy command we're
+changing the permissions of the files
+including the package file and when I
+copy all the source code alright so
+that's the first thing because we're
+dealing with permissions in an enabling
+leas privilege so now let's talk about
+shutting down your application and this
+is a big one for node because out of the
+box the experience sucks it's it's
+similar to Python and other scripting
+languages that don't have handle Linux
+signals by default so you need you have
+to do something you haven't basically
+three choices or your app will suck
+basically so it'll suck when you replace
+it it'll run fine but when you want to
+replace it and you're trying to go for a
+low down time you're gonna have some
+real issues so in a container the nice
+thing is we don't need other process
+managers for node right the whole design
+of containers is around being able to
+spin up mini containers from one image
+to regardless of what technology you're
+using to do that so you don't need p.m.
+to forever
+node Mon you don't need us on your
+servers now we will use node Mon in a
+minute for local development that's
+still a thing you want to use for
+cycling node every time you save files
+that's still a thing but you're not
+gonna need those others to other things
+in fact we don't even want to run our
+apps with NPM NPM start I think is an
+anti-pattern in a container so we want
+to let dock or control the node process
+directly as much as possible we want
+docker to spin up one node and if it
+needs to run more instances because of
+threading then we would spin up more
+replicas depending on whether you're
+using kubernetes or swarm or ECS or
+whatever you would spin up more
+containers
+that's how you scale with note not with
+node tools all right so with node and
+NPM out of the box they don't listen to
+the shutdown signals in Linux so we got
+to fix that and this leads to my next
+problem that the internet gets wrong I
+think a lot of the time and I am here to
+try to set the record straight a little
+bit that node handles signals as well as
+anything else as long as you tell it to
+it does not necessarily need something
+in front of it to manage signals if you
+know what you're doing and that's how
+that's why we're all here so basically a
+process in Linux and similar to Windows
+it needs something that starts it we
+call that in it right and that manages
+its life cycle and there's a couple of
+main things that it needs to do
+one is to reap the somme B's and zombies
+are essentially sub processes that lose
+their parent and they're out there all
+alone and they need something to manage
+and reap them basically get them and
+take care of them and the other thing it
+needs to do is pass signals to sub
+processes when necessary
+unfortunately NPM does not do that at
+all and no doesn't do it by default so
+zombies are not really an issue and no
+we don't spin up a lot of sub processes
+and know that are separated and even
+when we do they tend to be handled
+really well so even just spending an
+hour googling for people trying to have
+this problem I don't really see anyone
+they talk about it and they just ask and
+people say no I've never had that
+problem so I have not experienced it
+with my production workloads and I've
+worked on ones that are world wide
+global solutions so not the biggest of
+the biggest but I feel like I've got
+enough experience to say that I don't
+think it's an issue the second thing
+here is proper node shutdown which is
+super key in your apps and the way you
+know that by the way is if you just do a
+docker run on your app and then when you
+control C or you do a docker stop if it
+takes 10 seconds to shutdown you have a
+problem that means that your app is not
+listening to signals and it's waiting
+for docker to kill it because docker
+waits 10 seconds and then kills apps
+kubernetes I think Suede's 30 seconds so
+kubernetes would even be a longer wait
+time and then would just kill your app
+because your apps not listening for
+signals so there's these things in Linux
+called signals the ones we really care
+about are the first to sing and sing
+term and there's standard linux concepts
+that are easy to grab and note and use
+for your whatever you want to do so
+basically when you tell docker to stop a
+container or doctor decides to stop a
+container because it's unhealthy
+similar to kubernetes they send the
+signals specifically a sig term they
+send that signal to the container and
+the container is expected to know that
+receive it and then shut down
+accordingly like if it's a database it's
+gonna write files to disk you know if
+it's a web app maybe it's just gonna fin
+send a fin packet to signals on the
+connections to tell the connections hey
+I'm terminating please reestablish
+connection and then the load balancer
+supposed to do all that for you assuming
+you have magical orchestration so those
+are all things that have to happen but
+NPM doesn't do it and as far as I can
+tell they're not going to do it the last
+I checked they hadn't done any work on
+it so that's why I feel like NPM doesn't
+should not be your initializer in a
+container because it doesn't want to
+deal with this node can do it but you
+have to add some code or put another
+process in front of node instead of NPM
+all right and well so I'm going to show
+you three options
+the temporary option and you're probably
+some of you know of this one is when
+you're doing docker run is to add - - an
+it it's a really great way to run
+someone else's node app and add an
+initializer so that you can control see
+out or you can docker stop and it'll
+it'll work
+alright docker provides this thing
+called teeny out-of-the-box it's another
+open-source tool that they bundle with
+docker that you can elect to use on any
+app at any time by just adding docker
+run - - in it and it basically shims the
+start about the container with this
+thing teeny that acts like the zombie
+reaping signal processing thing that we
+we need all right it's it's a temporary
+solution it's not really something you
+use in a permanent app if you are not
+allowed to touch your code which I
+believe most of you probably can edit
+your node code but if you're in a
+situation where you're just you're only
+allowed to run the app given you and you
+are not allowed to change the source
+code then what you would do is add teeny
+to your images and then
+basically you would you still use teeny
+but you hard-coded into your app so that
+your app does it every time and that the
+first solution isn't needed okay
+the last option of my favorite option is
+to put in a production code or put in
+code that will work in production and
+work everywhere for capturing those
+signals and then properly exiting your
+app like we all want to do even
+stateless apps need healthy shutdown
+right all right so this is how would
+look if you do docker run with the the
+first option the temp option this is how
+it would look if you were going to add
+teenee into your this is actually an
+alpine example of adding teenee into
+into your app the tini website our
+github repo has all the different
+examples and this is taking our last
+docker file doctor file one and now
+we're getting even more stuff into it so
+we're adding the teenie up top right
+we're changing the entry point the entry
+point runs right before CMD it actually
+the entry point and CMDs come together
+so we're technically running the entry
+point tini and then it runs the node
+command down here so you see that I've
+changed this from NPM to node so we're
+not executing NPM in in the image
+all right and so if you're interested in
+the actual code stuff this is an example
+of how you can take this is what if as I
+what if I use Express or just a standard
+HTTP server and I just simply needed to
+capture the signals and then properly
+shut down the HTTP server there's a
+another example here in a minute that's
+a little better than this one but this
+is the minimum information so I
+basically cut and paste this into every
+node app wherever you're gonna have your
+start up j/s and however you gonna soar
+up your image whether it's in then been
+/ dub dub dub or wherever you want to
+put it and then you just basically are
+doing this key little server closed come
+in on the HTTP so the idea here is that
+you're you're telling the website the
+stop and then your till and then you're
+exiting the process healthy healthy
+leav it's not even a word I should mean
+that up this is the better one and I
+wasn't gonna show the code because it's
+a whole repo stoppable is pretty great
+because what it does is it tracks web
+connections and properly controls each
+connection every time by sending them a
+fin packet to let to basically tells the
+connected client connection please
+reestablish connection and hopefully
+your load balancer knows that you're
+your Ducker container shutting down and
+will direct them somewhere else this is
+the only way I know of to have true zero
+downtime deployments and node with any
+language really is that you have to be
+able to track connections in web be able
+to handle those connections so that
+you're not severing them all by just
+stopping the process you know I mean
+obviously we have web browsers that are
+pretty resilient and probably if it's a
+static website you'll be fine but if
+you're trying to deal with long polling
+connections and you're worried about
+data people maybe uploading files you
+basically combine this with health
+checks and long shutdown times so that
+you exceed the window of long polling
+and you eventually get to the near zero
+or zero downtime deployments but this is
+the first step in node is to try that
+out stoppable all right
+multistage bills have been around a
+couple years so I don't want to really
+go into exactly what that is but it
+allows you to essentially save you can
+have multiple concerns in the same
+docker file so you can build in your dev
+dependencies and your production
+dependencies and your testing frameworks
+all into a single docker file so one of
+the problems with No
+that we want like every language we want
+to avoid having our tests and our dev
+dependencies in the production images
+but we do want that stuff locally for
+dev and then when we do CI we want that
+in our CI as well so basically we're
+gonna make different stages in the
+docker file and we'll get to that we'll
+show that in a second and we're if you
+can optionally use the newer command NPM
+CI which guarantees it uses the lock
+file only it's a little more robust in
+terms of using the dock that lock file
+and not the pet package Jason but is
+that it's a little tiny faster it's not
+in docker it's not really much faster
+because it doesn't reuse the cache but
+and make sure that you've got your
+production dev environment set so this
+was the one you just saw this is the
+docker file we just had and now we're
+getting more complex this is a
+multi-stage so I have stage one up at
+the top notice the from an image up
+there and then I have this from image
+down here that is taking that and
+turning into a new image and adding some
+development stuff like adding my
+development dependencies setting it to
+node Mon so that I use node model
+locally on my machine for dev that's
+simple now we're gonna get more complex
+so you might build this image this way
+so if you just build a standard build
+command it will build the whole docker
+file and whatever's last will be what
+your result is but you can target
+specific stages with the docker build
+command and you probably saw some of
+that they'd actually did that a demo
+today in the keynote they targeted a
+different stage so I can target the
+production stage only and it won't add
+the dev dependencies so I might do that
+in CI right before I push the image up
+into my registry for production all
+right and you also can add another stage
+and you can just keep adding stages
+stages for tests for security scanning
+so let's keep doing that one of the
+things for dev is you don't actually
+need someone a little fast on that one
+you don't actually need to copy code
+into the dev image or to the dev stage
+because in dev you're gonna bind mount
+your code on your local machine you're
+just buying mounting your host code
+right so you don't need to also have the
+the source code in the image it's
+irrelevant because it's just gonna use
+the host so you can save that step and
+then you can also one of the other goals
+is to keep it dry never repeat yourself
+so that's what we get to this
+so it's getting a little harder to read
+and we now have a this this is the
+standard base image that just has all
+the defaults we're just installing
+production packages
+none of that changed then this didn't
+change this is our dev image it stayed
+the same now we're creating another
+image that's just pulling in the source
+code and then we're taking that source
+code and combining it with the dev
+dependencies that's what this little
+copy line here does we're combining the
+source code with the production and the
+dev dependencies and doing stuff like
+linting npm tests and all of that in a
+test and then finally we have a prod
+image that does does not have the dead
+dependencies the reason that i'm
+breaking all this out is that what i
+don't want to do is copy stuff and test
+it all and then start from scratch and
+build the production right what i really
+want is to test be as close as possible
+to testing what's going to be in
+production so we essentially build
+what's gonna be in production first do
+all the dev and test stuff and then
+where we go back to the original source
+as where we're starting from because we
+know we've tested it so essentially this
+is like free see I don't hopefully
+you're not with the CI vendor in here
+because if you don't have CI today and
+you just want to use github and github
+you can do this and it's testing every
+one of your builds with whatever test
+commands you put in that test stage
+right in fact we can go a step further I
+should have done that sorry bigger so we
+can also add more in there and just keep
+adding stages all right so I'm gonna add
+another stage I'm going to add NPM audit
+which is a good thing to run and then
+I'm gonna run a CVE scanner which scans
+for known vulnerabilities in my apps
+dependencies not necessarily it's not a
+code scanner
+it's a dependency scanner to look for
+known Linux vulnerabilities node
+vulnerabilities NPM vulnerabilities
+anything like that so it's going to take
+that image and then it's going to add
+more stages down below
+and so now I have this audit one and the
+audit one depends on the test ones so if
+I try to build and I target this stage
+it will first build this one right so
+the dependency order matters and it will
+then come down here you notice it
+actually changes the user back to root
+because I need to be root to do these
+things and then I do an NPM audit and I
+actually set the audit level to critical
+so that because there's always something
+and in p.m. audit there's always
+something it seems like so I don't want
+things that aren't critical to fail my
+build because that's what these will do
+everyone these commands will exit one or
+exit with an error and give you a failed
+build if they don't pass so my advice is
+when you start is you always make the
+scans just do the little little as
+possible they won't fail for something
+so that's what you can do there that the
+other thing I do here is from Aqua
+security they have a scanner that scans
+CVE inside your docker image when you're
+building it so this is basically I just
+add a token at runtime and they have an
+open source scanner on their website
+that uses their CV and there's other
+options there's three or four other
+options some scan from outside the image
+some scan in the image it's just a
+dependency on the scanner this they all
+it's like antivirus scanners they all
+report slightly different results so you
+might have multiple stages if you're
+super security conscious and each stage
+is a different security scanner and then
+you combine them together and then
+somebody decides if that's acceptable so
+alright let's jump the composer real
+quick we got about 10 minutes left by
+the way for questions I'm just gonna
+hang out in the hallway afterwards so
+because we probably won't have time for
+questions all right here's another
+mythbuster version 2 in version 3 of
+compose are still legitimate versions
+version 2 was not replaced by version 3
+it's an unfortunate effect that we
+called it version 3 and then everybody
+thought version 2 was outdated version 2
+is designed for local Devon tests and it
+keeps getting new features in fact the
+latest feature I think was late last
+year if you're not basically the rule is
+if you're not using swarm of kubernetes
+with these yellow files keep it in
+version 2 version 2 oops sorry back that
+up
+version two is ideal for local Devon
+test version three is designed for not
+just production on super kubernetes or
+swarm but also if you need to use the
+file with both Devon docker compose
+command line and swarm and compose so
+that the version three works on both
+sides but it has to give up a few things
+that our local dev only concerns like
+this next example so this is every
+compost example you've ever seen on the
+Internet of node right and so let's
+first talk about we're gonna build that
+up real quick and make it more advanced
+as well the problem is we can't just
+bind mount with the node modules right
+we have that whole incompatibility so
+the to petition potential solutions that
+I recommend solution one is what most
+people use and that is just to bind
+mount your app in the container to your
+host and you what that means is is that
+until you do a docker compose run npm
+install in the container to then write
+those files to the host
+you can't technically do a docker
+compose up so it's a little hard if
+you've never actually had this problem
+or to conceptualize it but basically if
+you have your node models on the host
+and it's incompatible with the linux in
+your container then you can't ever run
+npm install on the host you could you
+only can run it in linux unless your
+host is linux because if i run it on my
+Mac those are gonna be Mac based
+dependencies and so I have to run them
+in the container so this is easy to get
+started it has that middle requirement
+that you always have to do docker
+compose up or doctor compose run npm
+install to install your node modules
+before you can run the app alright the
+yeah so the other thing is you can never
+npm install from host because then
+that'll that'll get you mac or windows
+dependencies not not linux
+alright so solution two is sometimes
+better sometimes not solution two is
+where there's a feature in node modules
+and just note in general where our
+javascript in general where you can what
+can i say node will look for node
+modules up the path so if it doesn't see
+a node modules in your current directory
+it will look up a directory and so on
+until it gets to the root of the file
+system and it'll unfortunately use the
+first one it comes to you can't actually
+hard-coded that i'm
+to tell it which one you want and it
+doesn't like mash them all together it
+basically just uses one so what I'm
+doing here what I would do here is I
+would new move node modules up a
+directory in my container and then
+basically bind mount and make an empty
+volume in the app directory itself in
+the container and that way my app won't
+see the one from the host it will only
+use the node modules that are up a
+directory in the container I know this
+is a little I wish I had a better
+graphic to show you but I have examples
+on all this in the links of the in the
+slide and that way the node modules on
+your host is separated so they can live
+separate which means you could do
+development on the host without docker
+and then you could do it in the
+container and the node modules would
+never clash alright so that's a little
+more advanced I call that solution - I
+don't really have a good name for it but
+a lot of my students in my courses
+prefer this option simply so that
+nbecause they maybe don't always want to
+develop in containers and so they like
+having the flexibility it just requires
+that in their container not every app
+works with this there are some
+unfortunate like some unfortunate
+frameworks out there Fred
+I think Express does work and happy
+works there's some other ones out there
+that don't work with the node modules up
+a directory for some reason they don't
+follow that standard or their apps so
+fancy that it doesn't work so not every
+app works with solution - if you're
+using a lot of frameworks all right
+vine mounting performance in case you
+didn't know a thing if you're in large
+projects with node if you're on Windows
+I'm sorry it's slow I can't help you it
+sucks
+so some with been talking very large
+projects right thousands of files big
+npm installs so the two things you want
+to focus on is making sure that your npm
+install is not something that you have
+to run constantly because you don't you
+really just never want to run it so
+that's how you design your docker files
+properly like I showed you so that you
+won't have to run npm install unless you
+change the package file and then the
+other thing is if you're on Mac make
+sure that every one of your bind mounts
+has delegated always always always has
+this little option at the end called
+delegated and on Mac that will make your
+performance much much faster it actually
+disables
+right guarantees on that link and
+ensures that the the Mac basically
+serves up the files in an asynchronous
+manner and so when changes happen it
+doesn't it doesn't have to wait for them
+essentially so this is our simple little
+file right and then we're good we're
+going to add so notice how I've added
+the volume here it says delegated on the
+end so it works on a Mac on Windows
+it'll just ignore this option because it
+doesn't Windows doesn't yet have this
+support for the the whatever that came
+over the feature that they call for this
+but doctor is documented it in their
+website and blog articles and stuff so
+if you just search like Mac OS dedicate
+or delegated file sync or something
+you'll find that the doctor
+documentation on it all right so we have
+this right and we're gonna keep going so
+notice that I've targeted my build in my
+compose file to target dev so that dev
+stage with all my dev dependencies
+that's the one my compose file is going
+to build and use on my local machine so
+that's how you use multi stage with
+compose so that compose only uses the
+dev image not the not the production
+image alright so you're gonna use node
+montt I think we mentioned that right if
+you're using something besides node Mon
+those these all basically work the same
+and if you're on Windows you need to
+make sure that whatever you're doing in
+docker no matter what application you're
+using you need to enable polling and the
+file system because docker on Windows
+has the unfortunate side effect of it's
+it's a cross OS and across filesystem
+communication so there isn't there's no
+parity there like there is on Mac so
+there's no way for the Linux VM to know
+when you change a file on the host
+there's no file IO syncing it works on
+Mac and works on Linux does not work on
+on Windows so what I do is I add all the
+things I need all the other stuff I need
+to compile and build like typescript and
+all that stuff it all ends up going in
+my node ma and Jason and then every time
+node Mon sees a change using the polling
+method it automatically restarts the
+container right or it restarts a note it
+doesn't actually restart the container
+right it just restarts node inside that
+container all right so let's talk a
+little bit about startup order in
+dependencies the
+the problem here is that if you're on
+development this is actually mostly a
+development problem that my laptop
+my my slack and I can't there's no way
+to muse and you get to hear my slack
+messages
+dependency awareness here is where we
+had to depends on who here has tried to
+use depends on and their doctor can post
+file and it doesn't do what you wish it
+would do and you're all mad the solution
+exists you just didn't know it it's
+already there it's not a wait for script
+it's none of that garbage
+it is simply using the version two of
+compose file with depends on and a
+health check if you have those three
+things on it all works
+this is just for development this is not
+a production concern but it all works
+like you would expect and the way we do
+that is this is a hot compost why we
+just had now what I've done is I've
+added the pins on on my node app I have
+a database I have a node app I've added
+the Pens on I have specified that the
+dependency what has to start first and
+then I've added a condition service
+healthy that has to be their condition
+service healthy and then whatever my app
+is I'm depending on I have to give it a
+test a health check that will pass and
+docker on github has released a health
+check examples for every major storage
+system so like postgrads my sequel
+Redis they all have examples health
+checks there that you can go find just
+look like search docker library health
+check and then you'll find all these
+examples you can add this in your
+compose files and if I had time to show
+you a demo it would work
+I would I would type docker compose up
+and it would even try to start my node
+app and it would realize that the
+database isn't responding to queries yet
+and so it would sit there and wait until
+the database is ready to in seconds
+later and then it would spin up my note
+image and you can have multiple levels
+of that alright so the production
+checklist here is essentially doing the
+key things that are going to affect your
+your startup and your shutdown of your
+apps right so we we're making sure we're
+using node directly as a CMD and our
+docker file we're making sure we add the
+docker ignore so that we don't get the
+stuff we don't want we're properly
+capturing the sig term we're throwing in
+the production npm option so we only get
+our production dependencies not our dev
+dependencies and then we're adding to
+our CI solution or wherever we're
+building our
+we're adding the scan audit test that we
+get sort of almost with just a couple of
+lines the dockerfile but it's almost
+free for you to do that even if you're
+not doing actual code testing yet you
+can still do NPM audit and use a CVE
+scanner like that out of the box and
+then lastly the health check so you just
+saw a quick little example of health
+checks but every app you ship has to
+have health checks if it's in anything
+containers you cannot do distributed
+computing or orchestration without
+health checks or you will just have
+downtime like maybe you're lucky and you
+have a shop where you can just you can
+do that you can just say I have I have a
+four hour window for downtime so I'm
+just gonna take down all my apps and
+have a coffee and I'm gonna bring them
+up again but the rest of us have to have
+as close to zero time time as possible
+the only way you're gonna get there is
+through health checks I could do a whole
+talk on health checks so enough of the
+soapbox thank you so much for coming
+that I haven't I have new courses out
+this is not a meant to be an
+advertisement for my node.js course but
+I do have a doctor for nodejs course
+that launched last week so there's nine
+hours of me talking about all this stuff
+in there and of course I'm online every
+Thursday on YouTube live with other
+doctor captains and so if you just
+search YouTube for Brett Fisher
+hopefully you'll find my channel all of
+the links for everything I talked about
+here including the open source of these
+example files is all at that URL and
+thank you for coming
