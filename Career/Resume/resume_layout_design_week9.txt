@@ -1,0 +1,1104 @@
+2026-01-07T22:59:23Z - Career Strategy w/ Chelsea - YouTube
+Source: https://youtu.be/TJZbIcN18AM
+
+Get
+Hello.
+>> Hey.
+>> Hello.
+>> All right. We'll give um we'll do just a
+couple more minutes waiting for others
+to join. See if there are others to
+join. So, I'll be right there.
+>> Sure.
+Okay, let's get started. Um, there might
+be some other people that are going to
+um come in.
+Who is here now? Leo, are you here as
+well?
+>> Yeah.
+>> Okay, there you are. Um, sorry. I have
+my I have my screen minimized
+um a little bit here. So, Tushar, is
+that who you pronounce that? Tar.
+>> All right. Fantastic. So, um this
+evening we are picking up where we left
+off a few weeks ago before the holidays.
+So, it's been a little bit of time. We
+are in week nine of our resume clinic.
+we've been covering quite a bit. So, um,
+Tushar, you may want to go back and or
+research how to obtain the recordings
+for, um, all of my Q&A sessions that I
+do. Um, I was doing them on Tuesdays and
+Wednesdays. Now, I'm only on Wednesdays
+at 6:00 p.m. Eastern Standard Time. But
+there are these all are recorded and I
+am covering this is basically week nine
+of our resume clinic. So you might want
+to go back to week one and it really
+breaks everything down. Um but tonight
+is actually a great session because
+we're talking about resumeé layouts and
+um design principles.
+>> Okay. Um, so,
+um,
+>> we do have one if I if you want me to
+upload it and send it to you.
+>> Um, yeah, you can do that. You can
+actually forward it to me in Discord,
+um, if you'd like.
+>> Sure.
+>> So, um, tonight we are focusing on, as I
+said, resume layout and design.
+>> Um, this is really one of the fastest
+ways to improve your resume without
+rewriting any content. like this is the
+fun stuff to be honest. Um, a clean
+layout keeps recruiters reading. Um, a
+cluttered layout makes them stop. And I
+can tell you from currently being a
+recruiter and being a recruiter for 20
+plus years, I 100% look at the
+simplicity of someone's resume. Unless
+you are a designer,
+I don't want to see design on your
+resume. And even if you're a designer,
+that's even
+that's
+just keep it simple. I've been saying
+this the entire time. Even when we were
+talking um uh about LinkedIn in our
+LinkedIn clinic, less is more. Always
+remember that.
+Um,
+and
+one of the biggest things and something
+that I've actually been seeing with a
+lot of younger
+um, state side applicants,
+they're putting their picture, their
+photo on their resume. Don't do that.
+Don't don't don't do that. That is a
+European uh thing. That is what they do.
+You do not do that here. If you are
+going to uh or if you feel compelled to
+uh put your photograph anywhere, it
+should be placed in your online
+portfolio. Not your GitHub, but your
+online portfolio in a section that is
+your about section.
+That's the appropriate place to put it.
+Now,
+you know, the goal is to not make your
+resume look flashy. The goal is to make
+your content easier to read, easier to
+trust, and easier to remember. Now,
+quick poll. Are you currently using a
+resume template or something you built
+yourself?
+Put it in the chat. Type template or
+custom.
+Okay. Neil's using a template.
+Is this the template I gave you?
+>> Uh, yes. Well,
+>> sort of. Yes and no. Right.
+>> It's the template that I've been using
+forever from the previous boot camp I
+was in, which then you helped mess
+around with and now I have now.
+Gotcha. All right. Cool. Cool. Cool.
+Cool. All right. What do we got? Who
+else?
+Okay.
+Ré builder. Okay. All right. Um again,
+to definitely go back and take a look.
+Um because these resume builders
+typically are antiquated
+and
+don't consider the fact that AI is now
+reviewing résumés and applicant tracking
+systems and it's you know not really
+telling you the wise behind the
+positioning between certain uh segments
+of your resume.
+Now, um, thank you everyone for sharing
+that. I appreciate it.
+Um, now
+recruiters do not read resumes from top
+to bottom, okay? They scan.
+Most scans follow a pattern.
+top third of the page, section headers,
+job titles in dates,
+and first bullet or two under each role.
+Now, your layout either supports the
+scan or fights it. If a recruiter has to
+work to understand your resume, they
+move on.
+Confirming.
+Yes.
+So
+the ATS reality,
+what's an ATS? Applicant tracking
+system.
+So when you apply to a role, whether
+through LinkedIn, Indeed, or if you're
+applying directly on a company's career
+page, your application is then deposited
+in something called an applicant
+tracking system. There are many many
+applicant tracking systems. There's
+something called Ashby,
+Greenhouse,
+Job Vite.
+Gosh, what other ones have I used?
+Work work something
+that was sued. Workday.
+Workday has a lot of lawsuits.
+Um, yeah. So applicant tracking systems
+read line by line. Okay.
+They struggle with tables, text boxes,
+graphics,
+some columns if they're too complicated,
+um, and tables. So even if a resume
+looks nice to you, it may be unreadable
+to software.
+So that's definitely something that uh
+you should think about.
+So some core design rules that every
+resume should follow. So these rules
+apply to nearly every resume in today's
+market.
+Font.
+Use one font only.
+Stick to Ariel Collabri or Helvetica.
+something very simple.
+Uh 10.5 to 12 for body text and slightly
+larger for section headers.
+Okay, these fonts are readable,
+they're professional,
+and more importantly, they're ATS safe.
+Color:
+black or dark gray text. No colored
+section headers. No background shading.
+Okay. Now, color
+distracts from content and breaks the
+scanning patterns.
+So, that's why we like to keep
+everything nice and clean and simple.
+Um, this is really for applicant
+tracking systems. And now you know the
+formatting. So, use bold
+for section headers and job titles.
+Avoid italics
+or for large blocks of texts.
+No underlines except hyperlinks.
+Okay.
+>> While you're on color, um, what about
+like the the hyperlinks? They're they
+would usually be in blue with the ATS.
+Have a problem with those? I would I
+would make them black.
+>> Okay.
+>> Yeah, good question. Now, bold guides
+the eye.
+Colors confuse it.
+Okay.
+And now layout.
+Single column layout.
+Left aligned text.
+Consistent spacing between sections.
+Symmetry, believe it or not, builds
+trust. Inconsistent spacing signals
+carelessness and sloppiness.
+Now,
+if you, you know, are dead set on
+designing your resume and making it
+colorful and what have you.
+I always suggest that you leave that
+tech that type of resume for when you
+are interviewing in person and maybe you
+want to
+give a little bit more
+oomph.
+I personally don't I would just keep
+everything consistent across the board
+and leave the ump to your online
+portfolio where you put your about
+section. If you want to show your
+creative side, do it there.
+But again,
+um, unless you are
+creatives,
+um, artists,
+designers, art directors,
+leave the creative out of it. If you're
+not a creative, don't try to be.
+It does. It never flies.
+um noisy versus clean layout.
+So
+I'll give you a few examples.
+Now describe
+let me describe to you a noisy
+resume.
+Two columns,
+icons for phone and email, skill bars,
+multiple fonts, tight spacing.
+Clean resume has one column,
+clear section headers,
+consistent bullet spacing,
+and simple margins.
+Now, which one is easier to scan in 5
+seconds? Which one do you think?
+The clean one.
+Yep.
+So, the clean resume lets the content
+speak. The noisy resume
+forces the reader
+to decode the layout first.
+So again, design
+should disappear
+and content
+should stand out. So the proof is in the
+pudding as they say.
+So
+here are the rules.
+edit in Word or Google Docs. I prefer
+Google Docs because it makes editing
+much easier. Unless of course you are a
+Word layout expert.
+Very, very few people are.
+If you are not a Microsoft Word expert,
+do not craft your resume in Microsoft
+Word. It's going to look terrible.
+micro uh Google Docs
+that's personally when I am revising
+résumés
+for my clients
+that is what I use
+um you submit you always submit a resume
+in PDF form unless a posting requests
+word that is because word can be altered
+very very easily. You have to jump
+through a couple of hoops to alter a PDF
+and never submit screenshots or Canva
+links. God, please don't do that.
+Yes, Cam. Canva is
+a design platform that has come out but
+is a design platform in
+in a lot of worlds that is deemed very
+amateur.
+So, don't do that.
+I wouldn't even mention that you use
+Canva ever.
+If you do, keep it to yourself.
+Um,
+PDF PDFs pref preserve formatting.
+Word and Google Docs do allow editing,
+but again, you really, if you're using
+Microsoft Teams, you really or Microsoft
+Word, you need to know what you're
+doing.
+And clear file names
+look professional and organized. I think
+I forgot to name that name your file
+clearly.
+I I don't
+and no like
+you know JP resume for Jonathan Palner.
+No, because then I mean a lot of people
+are named JP, right? First name
+underscore last name underscore
+resumeé.pdf
+PDF.
+Okay.
+So, some systems
+in uh some applicant tracking systems
+reparse PDFs.
+So, clean formatting ensures your
+content survives the upload.
+Right? So, if you've been sitting
+submitting your resume in a Word doc,
+chances are it hasn't uploaded all of
+the content
+and maybe that's why you were declined
+just because of a resume formatting
+issue. That would be a sad sad day.
+Questions
+because we're going to be moving to a
+live activity.
+anyone?
+>> Uh, I have a little something here and
+whatnot. It's just that um a little
+earlier today I uh put one like the
+current resume
+>> into a u website that is supposed to be
+a resume builder/optimizer thing
+>> and I don't know as good as some of
+those sites are the particular one I I
+was using looked a little suspect to me.
+>> Yeah. because
+um sure the score was low and I went to
+improve it using their own tools or what
+tools that were available
+>> uh for free and I messed with it when I
+did what they recommended and it still
+came out to a little a low score
+but then I noticed oh yeah there's a
+bunch of extra stuff that are on the
+premium track
+and also a lot of stuff that are on the
+premium track uh took away a lot of
+stuff from the original resume.
+>> Yeah.
+>> Like you can only have a certain amount
+of experience like um what's it called?
+Like projects on your resume unless you
+pay premium.
+>> Yeah. Yeah.
+>> So I'm like yeah just be careful out
+there.
+>> Yeah. Um,
+as far as what recruiters feel about,
+you know, resume builders,
+um, the majority of them are only trying
+to pull your information so that they
+can solicit you.
+>> Um, resume builders are,
+it's better to tell your own story in
+your own way. And I know that the
+thought of revising and keeping uh
+curating a resume is daunting,
+>> but
+>> yeah,
+>> it's
+I I wouldn't use a resume builder just
+because you can also tell as a recruiter
+those who have used ré builders because
+>> like if somebody used AI because am
+dashes and stuff.
+>> Yeah. Uh, and it just really looks very
+amateur-ish. And that is a buzzkill for
+a recruiter. Like recruiters want to see
+that you can tell your story in your way
+because ultimately
+>> we are going to have the initial what we
+call recruiter screen with you. And we
+are here not I and you know especially
+for tech and yes listen
+>> I know tech recruiters who are
+insanely knowledgeable about tech.
+>> They are few and far between.
+>> They really are.
+>> And they it really does depend on the
+company that they're recruiting for. any
+recruiter from Amazon, any tech
+recruiter from Amazon, any tech
+recruiter from Google, um most tech
+recruiters from some of the snappy
+startups, they know what they're talking
+about and they're going to ask you
+questions that the hiring managers want
+them to sus out before you pass them
+over to them. But the the recruiter
+screen,
+>> that's for casting,
+right? That's about, and no one wants to
+say this out loud. It's to see number
+one, if you act like a serial killer or
+crazy person,
+>> how put together you are. Yes. What you
+look like.
+Honesty here.
+Mhm.
+>> How quote unquote seasoned you are,
+meaning how many years of experience you
+have,
+>> and if they feel behaviorally,
+because they will ask a few behavioral
+questions, if you will fit in the group
+that they're hiring for.
+Okay.
+>> Yeah. So, they're assessing the soft
+skills for the most part. Yes, he's, you
+know, yes, uh, we um, we met with Leo
+today. He was great, even tempered, but
+confident,
+spoke very thoughtfully and
+intentionally about his background. He
+was confident in what he said. He knew
+he knows who he is and what he can
+deliver. That's what that recruiter
+screen is about. It's about confirming
+that everything that is listed in the
+resume is true from a behavioral
+standpoint.
+Uh they will absolutely
+um you know make sure that you um
+can talk through those skills so that
+you know when you move over to the
+hiring manager interview that you have
+the platform database whatever program
+knowledge that is required for the
+position but It's the hiring manager
+that's actually going to a ask you
+specifically
+what you've done,
+what metrics were used to measure its
+success in if any because sometimes
+you're coming from an internship where
+you were only there for a few months and
+you couldn't really see the results
+delivered in metrics.
+>> Yeah.
+>> Um but that's that's okay. Again, you're
+going to have your opportunity to talk
+through that with a hiring manager. So,
+that's the beauty. And that again, I
+keep saying this, this is why
+Dr. Emily
+um
+uh designed the program as it is to make
+sure that all of you
+um um and they really really want to
+make sure that um you know she wanted to
+make sure that you were able to step
+into a role having had experience
+working with real clients in real time.
+So that's the beauty of this program
+that that Dr. Emily designed. She's
+really helped prepare you for that
+conversation.
+Um, now we're let's apply some of this
+in real time to your resume. Okay. Now,
+open your resume
+if you can on your screen. If anyone is
+driving, don't don't do that.
+Um,
+and do a quick check, right?
+Do you have more than one font in your
+resume?
+Any uneven spacing between sections?
+Crowded margins,
+inconsistent bullet indentation.
+All right.
+And you know I am also happy to pull up
+my resume.
+Um
+uh anyone would it be helpful for me to
+pull up my resume? It it believe it or
+not it does it does need some editing.
+So, if you want me to pull up the the
+resume, let me know and we can kind of
+look at it because I can show you how I
+format. And I only say not to use Word
+because my husband is a designer
+and he's an amazing designer
+and
+he is a Word expert. He designs and he
+receives a lot of RFPs and he has to go
+through all of it and design everything
+based on an RFP and he deals with
+Microsoft Word and I know it's like what
+Microsoft Word that's for you know
+that's an administrative tool if you
+don't know what you're doing like if you
+don't know that you should show the
+paragraphs and the periods and the
+spaces the period the dots between the
+faces. If you don't know how to do that,
+you shouldn't be using Microsoft Word.
+Okay,
+now let me pull my resume up because I
+think nobody's saying anything and I
+think it would be helpful. So, give me a
+sec.
+And I edit again all my resume résumés
+in uh in my Google Drive. Let me just
+find my resume.
+I try.
+All right.
+So, I'm going to show you a couple
+résumés. I'm going to show you a resume
+that is an older resume that I was using
+that
+was no bueno.
+And then I'll show you the resume that I
+am using now.
+All right. Where's my share screen? Here
+we go.
+Okay. Here.
+Okay. Can everyone see my screen?
+Yeah. All right. So, here's my resume
+that I was using for a while.
+everything you're not supposed to do.
+I was using this resume more so in 2023,
+2024,
+but again, no good,
+right? No good. Underlined three
+columns, no good. Three columns of
+bullets, no good lines, color.
+Um
+uh more color.
+Um this is not
+um yeah, it's not that it's not a good
+resume. It's just a resume that is not
+going it isn't ATS
+compliant.
+Right.
+Um
+here. Let's go back
+there.
+This Oh. Oh, this is my executive
+assistant one. No, I don't want to use
+this one. This isn't the one.
+Ah, here we go.
+So, here is what I've been using. Um,
+and it does need some updating. Why do I
+want to update this?
+I want to take out the line
+and I want to redo these core
+competencies.
+I want to reduce the columns and I was
+using
+three columns because I wanted to reduce
+the size of my resume.
+But again, I'm going to take out the
+lines. But other than that,
+I think it's pretty good. Um, but
+definitely needs some updating for sure.
+Um, now what I was talking about in
+terms of editing,
+now when you're editing
+your resume,
+you should be doing it in a view that
+shows non-printing
+characters.
+You want to see that?
+Absolutely 100%. Because it shows you,
+look, I'm already seeing some issues
+here. Two spaces, two spaces, two
+spaces,
+three spaces.
+I'm also
+seeing that
+this is dumb. You don't want to do this.
+I want to do this.
+Take out the hyperlink.
+I want to cut this.
+I want to put the hyperlink back in
+and put
+email.
+And I also
+want to take out the underline
+and take out
+the blue and make it black.
+Where my hyperlink go hyperlink it?
+Huh? I wonder wonder if you can't take
+out
+Huh. What happened?
+Let me see something.
+Didn't do it. Hold on a second.
+I wonder what happened there.
+There we go. I guess it has to be blue.
+Jonathan,
+I think that's okay.
+We'll see.
+>> Yeah.
+>> Now, we'll do the same for LinkedIn.
+body can tell that it's active. And then
+also if you mouse over it, the address
+should pop up.
+>> Yes. No, I know. But we're talking about
+um design layout tonight and the
+guidance is to not have any other colors
+except for black on your resume because
+it is not ATS compliant and it will not
+be picked up by applicant tracking
+systems.
+Um,
+>> I have to go into options, but I'm not
+sure about the cloud. I know in word
+there's options for that.
+>> Yeah. Um, unless you are an expert in
+Microsoft Word, I would recommend not
+using it
+because it is if you're not an expert,
+you're not going to the edits are going
+to look sloppy.
+Um, so again, I'm going to
+copy this.
+I'm going to edit the link.
+That makes it better.
+LinkedIn
+apply.
+Now,
+one might think, well, if you just put
+email or LinkedIn, then the applicant
+tracking systems aren't going to be able
+to see that. It will because that's all
+information that you add in a different
+um part of your application anyway.
+But these are
+like it's it's pretty important for you
+to see
+the spaces
+that you've added,
+the par the the paragraphs or the line
+spacing that you've added.
+So this is how you create
+a proper
+um document.
+Okay. So again, pull up your resumes
+and check for more than one font,
+uneven spacing between sections,
+crowded margins,
+and inconsistent bullet
+indentation.
+and
+increase line spaces
+to 1.1 or 1.2.
+That is another reason why I absolutely
+love
+um go my my Google doc
+because
+say I want to
+shift this spacing in my summary.
+Highlight it.
+I go to format
+line spacing and paragraph
+single spacing and then I can custom
+space
+line spacing always at single when
+you're reformatting a resume so that you
+can
+custom use the custom spacing.
+For this I used three and three. So
+that's another reason it's just so easy
+to use.
+>> It's a old feature in Microsoft. They
+just leverage off of Microsoft stuff.
+>> Yeah, it is easier than Microsoft.
+Um create uh sorry add one blank line
+between sections.
+and align all bullets and dates.
+And it's easy to do that as well in in
+here
+and go here
+and then you could
+move it around.
+and remove icon icons or graphics.
+Again, it is a distraction for applicant
+tracking systems.
+And now,
+who's going to volunteer
+to show their their resume?
+I could probably kill two birds with one
+stone because I've got a question about
+removing those lines.
+>> What line?
+>> Uh the ones I got in my like the lines
+between sections. I'm not sure how to
+remove those.
+>> Okay. Are you What are you using?
+Microsoft Word or I mean you really
+would just highlight it and delete.
+>> It's not letting me highlight it. It's
+skipping from the word above it to the
+words below it. So
+>> um All right. Can you can you share your
+screen?
+>> Yeah,
+>> it's a it's a Google doc.
+>> I just sh saved it over there since cuz
+you were saying not to edit it in Word.
+That's where I had it before.
+>> Okay.
+Cool.
+All right.
+>> So, take out these lines that you're
+talking about here.
+>> Yeah. you know, um
+maybe go to put your cursor at the
+beginning of software developer
+underneath right underneath summary.
+Now, right in right in front of the S.
+Yep. Now, backspace.
+Yep. Yeah, you can do it in that that
+space that you have the cursor. Can you
+backspace there?
+>> Huh?
+That's weird. Um, can you go to format
+and go to
+Wait, hold on.
+Hold on. No, sorry. Go to view
+and go to show non-printing characters.
+All right.
+Um,
+it might be because you
+and uh backspace again.
+There you go. Enter.
+>> There you go.
+>> Yep.
+>> Down below languages. So, do that for
+each one, I guess.
+>> Yeah.
+Yep.
+And now it's going to change the line
+spacing, but that's okay because we're
+going to we're going to fix that. Okay.
+right
+now. Yep, there you go.
+It's gonna keep moving down and it's
+gonna kind of mess up your formatting,
+but it's okay. We'll redo it. You don't
+have to don't Yeah, don't don't worry
+about that. Now,
+>> awesome.
+>> Also had a question, too. You're talking
+about the uh the hot links.
+Uh, should I leave should I leave.com on
+the end of it or should it just like
+>> like script?
+>> Um,
+sure. You can leave that.
+>> Yeah.
+Yeah.
+I mean, are those two things projects?
+>> Yes.
+>> Okay. I would leave them I mean, do you
+have them listed down here somewhere?
+>> Oh, yeah. They repeated it. Well, script
+hammers here is template.
+>> Okay.
+>> And spoke to
+>> and what's the other one?
+>> The other one is that's your profile.
+That's your portfolio.
+>> Yeah, that's actually a good catch. But
+I don't have spoke to work up here, but
+I don't have turtle wolf down here.
+>> Yeah. No, that's okay because that's
+that is so the the the turtle wolf that
+is your online portfolio, correct?
+>> Yes.
+>> Okay. So, what I would do is
+do the hyperlink thing that I showed you
+and just put portfolio.
+>> Okay?
+>> And then take out the other thing
+because it's redundant. You have it in
+two places.
+All
+right, cool.
+>> All right. Why won't you go away now?
+Try to highlight it.
+>> The the line. Sorry. Line's driving me
+nuts.
+>> I'm trying to grab a hold of it.
+>> Why
+I need to know this?
+Can you try highlighting it at the end?
+>> Oh, there's that bit, too. Dang, it's a
+stubborn line. I don't know what that's
+about.
+So, yeah. I mean, this is
+>> It's almost like when I put it when I do
+it on one, it wants to go down to the
+next one.
+>> It does. It's all right.
+Yeah, we'll get it. Get it down. Oh,
+okay.
+>> Last one.
+>> That one disappeared.
+>> Just hit the delete key.
+>> He can't capture it. If you
+go to the end of that line,
+>> that's as far as it lets me go.
+>> All right. What about below it?
+>> And doy below it.
+>> Nope.
+>> Yeah.
+>> Not without putting just All I can do is
+push it down by
+>> Interesting.
+Huh.
+I am
+stumped.
+All right, we'll deal with that later.
+But there's that.
+>> Okay, there's that.
+>> It looks weird, too, cuz it's got key
+projects here that then they're all
+listed on the second page.
+But you said the formatting would if we
+cleaned up the formatting, they'll
+probably because I was trying to keep it
+on one page anyways. Maybe if I just put
+the extra line on the second page. I
+don't know.
+>> Uh No, we don't want that line there,
+but we'll deal with that later. So, go
+back up. And now again,
+sections.
+I think that the format of your header
+with your name, what you do, your
+headline,
+your information. I think that's all
+great. Beautiful. You've got your
+summary.
+Now the spacing I think for your summary
+is perfect.
+Now what we need to do is go to
+technical skills. Now highlight
+everything in languages.
+Yep. Yep. Okay. Good. Go up to format.
+Yep. Go down to
+lines. Line and paragraph spacing.
+Now go down to custom spacing.
+Yep. All right. See how everything's
+uneven there? Now, I would just make it
+basic. Keep the single line spacing
+always when you're maneuvering, when
+you're doing the custom.
+All right. Remove 12 and put six.
+Remove five and put six.
+apply. There you go.
+I think that spacing looks nice.
+>> Does it autosave or save it somewhere?
+>> Um, I would say I think it's it
+autosaves in in Google Docs. Yeah,
+autosaves. But now, here's the thing
+that I do. Maybe this is your template
+email or resume. Maybe you
+are someone who is customizing, doing a
+little customization to your resumes.
+You're tailoring some of your résumés to
+specific job descriptions that you're
+excited about.
+What you can do is go to file,
+make a copy
+above. Yep. Make a copy
+and it says copy of
+and then you edit that
+resume and you always have your template
+on the ready. Does that make sense?
+>> No.
+>> Okay. So,
+cancel
+for now.
+All right.
+So
+that's the that's the
+that's editing. That's the type of
+editing that I would recommend that you
+do.
+Um
+now
+align all your bullets and dates. Remove
+icons and graphics.
+you know,
+I've gave like some pretty good direct
+feedback.
+>> Okay.
+>> Um, now
+your resume layout should never compete
+with your content.
+Your design, when design is clean,
+recruiters stay focused on what you've
+accomplished, right? And they're not
+like dissecting your resume saying, "Why
+on earth did they put this rectangle
+with this pink circle over here, right?"
+Um,
+remove any visual clutter
+and, you know, bring a polished version
+of your resume to our next session. You
+know, the goal isn't to impress with
+style. You're not designers.
+It's to make the reader stay longer on
+your content and read who you are and
+stay interested in that. Clean design
+wins every time.
+Okay.
+So, we've got some time. What else?
+You know, and you're likely going to
+want to
+Yep.
+bullets seemed like they're being
+they're clean now.
+All right, you're using those arrows
+now when you copy and paste this stuff.
+Um,
+so ah but wait, what happened to our
+paragraphs?
+Where did that go? Didn't stay. So we
+got to I don't know what happened there.
+view.
+Go to view
+and go to show non-printing characters.
+Great.
+All right. Let's see. Has everything.
+All right.
+All right. Cool.
+Yeah, we want to see all that.
+That's important.
+That line really is bothering me though.
+>> Yeah, me too. Not sure what to do about
+it yet.
+>> Me neither.
+I'm going to have to ask an expert.
+>> Well, there is help that might help. It
+might not.
+>> Where's the help?
+>> Yeah, we could also ask chat GPT too.
+That's what I would do. Maybe just ask
+chat GPT on formatting.
+>> I was thinking that too.
+>> Yeah, my good friend Chat GBT for you.
+Help you out there.
+>> So who what other questions or concern?
+Uh Tar, this is like one of your first
+sessions. Uh any thoughts?
+Um, I get all this and then I guess I'm
+going to have to switch my uh switch
+out. But you you mentioned in the
+beginning what were some of the other um
+I guess other apps or places we can go
+to start writing the resume on.
+Um
+I I mean I write I don't
+>> you know
+>> is there any templates or anything that
+>> No, I I wouldn't use any of those sites.
+I think they're No, I I don't and and
+the guidance is is from recruiters and a
+lot of just
+>> and it has become from my direct
+experience those uh resume building apps
+and websites are only to a make money to
+force you to upgrade to some sort of
+premium service that delivers the
+mediocrity and it really is just trying
+to get your information.
+>> Gotcha. So, pretty much just take what I
+have now, uh, copy paste into a Google
+doc and go from there.
+>> Yeah, I would. I would. And you know,
+um,
+make sure because again, you um, it
+would be great if you could go back and
+look at some of the recordings, but if
+you're noticing like, um, uh, hey, John,
+uh, scroll up to the top
+for a second. Great. Notice the format,
+right? He's got his name and then his
+headline underneath. Right
+>> now he's putting where he his location.
+Some people will do that, some people
+won't. Don't put your exact address.
+Don't do that.
+>> Okay.
+>> Um that is another way for people to
+steal your identity. The less
+information is possible.
+>> Um you know, showing your location is
+fine. You can either even put remote or
+hybrid or what have you.
+>> Um then you have your summary.
+Right. Then your technical skills. It's
+really important that you list your
+technical skills underneath your summary
+because applicant tracking systems want
+to see that first
+>> and then your professional experience.
+>> Then you can put in your key projects.
+>> Okay.
+>> Thank you, John.
+You're doing great. Very consistent.
+And then
+>> I sent over I sent over two resumes to
+you on this. So
+>> okay,
+>> if you want to take a look at those and
+then you know tell me what you think and
+then uh yeah I'll
+>> for our next meeting I'll make sure I
+get this into a Google doc
+>> and make make the corrections.
+>> Yeah. And now as you can see you've got
+if you've got key projects to highlight
+highlight them with a brief description
+and we talked a lot about that as well
+in some of these
+>> sessions. and then adding your education
+and certification.
+>> Okay.
+>> All right.
+>> Yep. I think all of which I do have and
+it's similar format to what uh
+>> nice
+>> Jonathan has.
+>> Excellent. Excellent. All right. Cool.
+Um
+ladies, gentlemen, we've got one more
+minute.
+>> I have a question.
+>> What have you got? Yes. about
+certification like um
+>> um what if you have a certification for
+training that you did few years ago and
+you never used it?
+>> Um it does it pertain to and add to the
+current experience that you're gaining
+and the positions that you're targeting.
+>> Yes.
+>> Yeah. List it. It's within three it's
+it's like the past three years. That's
+relevant. Sure. Yep.
+>> Yeah.
+>> I'm picking up a Still Did I lose my
+audio? You still hear me?
+>> What's What's that?
+>> I was I'm starting a class uh at the end
+of the month. It'll be six weeks long
+and it it's a Compa certification.
+>> Oh, nice.
+>> I was kind of cur I almost feel bad
+putting it on there because it's only
+six weeks. Is that But it is Compa
+certified.
+put it on if it is if it is relevant to
+what you've been studying for the past
+couple of years and if it is relevant to
+the types of roles that you're targeting
+now list it.
+>> So they're not really going to question
+it. It's only a six week course that
+feels like it's not long enough to
+really learn something.
+>> Doesn't matter. Doesn't matter at all.
+That's like a condensed session. Doesn't
+matter how long it is.
+>> Yeah. Okay.
+>> Yeah.
+>> Yeah. It's through one of the local
+community colleges, but it's like 15
+hours a week online.
+>> Nice.
+>> Yeah,
+>> it's basically data analytics. Looks
+like it'll mostly be Python anyways.
+>> Okay. All right.
+>> So, yeah, that'll that'll give me
+something else to put down here at the
+bottom.
+Maybe we can learn how to get rid of
+that line, right? All right, everyone.
+Thank you so so much for your time and
+uh we will see you next Wednesday with
+another another fun session.
+>> Appreciate you.
+>> Thank you.
+>> Bye.
+>> Bye.
+>> Bye.
