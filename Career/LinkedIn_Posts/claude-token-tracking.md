@@ -33,7 +33,7 @@ I also identified heavy hitters—MCP tools like Playwright that load substantia
 
 If you're paying for premium AI tools, visibility isn't optional. You need to know exactly what you're spending and WHERE, so you can optimize how you work with the model—not just track a number.
 
-Comment "TRACK" below and I'll send you the bash script.
+Grab the script here: https://gist.github.com/TortoiseWolfe/a1ae3d8216301d5d2a360abd71b34e9a
 
 #ClaudeAI #AITools #DeveloperProductivity #ContextEngineering #Anthropic
 
