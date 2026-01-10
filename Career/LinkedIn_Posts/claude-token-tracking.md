@@ -21,7 +21,7 @@ COMPRESSION COUNTER — The [C:2] indicator tracks how many times context has be
 
 ROLLING ALLOCATION — Separate tracking for remaining input and output tokens within your 7-day sliding window. Output tokens carry a 5x cost premium ($75/M versus $15/M for Opus), making this distinction critical.
 
-CONSUMPTION VELOCITY — Daily burn rate averaging enables informed pacing. That ~158k/d figure tells me whether I'm on trajectory to utilize my full allocation or heading toward another mid-week rate limit.
+CONSUMPTION VELOCITY — Daily output burn rate averaging enables informed pacing. That ~158k/d tracks output tokens specifically—the costly ones—showing if I'm on pace or heading toward another mid-week limit.
 
 The rolling window architecture means usage from exactly seven days prior continuously expires. There's no arbitrary reset day—capacity gradually replenishes as historical consumption ages out.
 
