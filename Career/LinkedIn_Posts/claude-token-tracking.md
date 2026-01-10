@@ -1,39 +1,40 @@
 # LinkedIn Post: Claude Token Tracking
 
 **Status:** Draft
-**Target Length:** 2,000-2,500 chars
-**Actual:** ~2,400 chars
+**Target Length:** 2,700-2,950 chars
+**Actual:** ~2,900 chars
 
 ---
 
-Paying $200/month for Claude Max and burned 25% of my weekly limit on day one. The dashboard gave no breakdown of where. Built a custom statusline to practice context engineering properly.
+Investing $200/month in Claude Max, I consumed 25% of my weekly allocation within the first day. Anthropic's dashboard acknowledged the consumption but offered no granular breakdown of where those tokens were actually going. This opacity prompted me to build a custom statusline—not merely for tracking, but for practicing context engineering with the precision it demands.
 
-As a power user of Claude Code, I burned through 25% of my weekly limit on the first day. The dashboard told me that much, but gave no visibility into WHERE those tokens were going. The $200/month Max plan gives you 20x the capacity of Pro, but Anthropic's weekly limits are a rolling 7-day window—not a billing cycle reset.
+As a power user of Claude Code, I discovered that flying blind on token consumption undermines the very efficiency these tools promise. The Max subscription delivers 20x the capacity of Pro, but here's the critical nuance many users miss: Anthropic's weekly limits operate on a rolling 7-day window, not a billing cycle reset. Understanding this distinction fundamentally changes how you approach resource management.
 
-I needed granular visibility. So I built a bash script that shows me exactly where I stand:
+The absence of detailed telemetry motivated me to engineer a solution:
 
 | █████████░ 9% free (14k) [I:1.5M O:341k ~158k/d] |
 
-What this tracks:
-- Progress bar: Context window usage (autocompacts at ~78%)
-- I/O remaining: Input and output tokens left in my 7-day rolling window
-- Daily burn rate: Am I on pace to use my full allocation?
+This statusline provides continuous visibility into several critical dimensions:
 
-The rolling window means usage from 7 days ago gradually expires. No fixed reset day—capacity refreshes as old usage ages out. Planning around this requires knowing your daily average.
+- **Context window utilization**: Visual progress toward the ~78% autocompaction threshold
+- **Rolling weekly allocation**: Remaining input and output tokens within the 7-day sliding window
+- **Consumption velocity**: Daily burn rate averaging, enabling informed pacing decisions
 
-Here's the economics that changed everything: Output tokens cost 5x more than input ($75/M vs $15/M for Opus). That ~158k/day output burn was my real problem.
+The rolling window architecture means usage from exactly seven days prior continuously expires. There's no arbitrary reset day—capacity gradually replenishes as historical consumption ages out.
 
-Once I could SEE this, I could finally apply context engineering with precision:
+The economic revelation that transformed my workflow: output tokens carry a 5x cost premium over input ($75/M versus $15/M for Opus). That ~158k daily output burn represented my primary optimization target.
 
-**Priming input instead of patching output.** I rewrote my custom slash commands to be less verbose in their instructions to Claude—silent where possible. But I added MORE context upfront: better system prompts, clearer requirements, relevant examples, explicit constraints.
+With granular visibility established, I could finally apply context engineering principles with precision:
 
-The result? Claude's outputs became more focused on the first try. Less iteration, less "can you also..." follow-ups, less burning expensive output tokens on revisions.
+**Prioritizing input priming over output iteration.** I restructured my custom slash commands to minimize verbose instructions while maximizing contextual frontloading—comprehensive system prompts, explicit requirements, curated examples, and unambiguous constraints delivered upfront.
 
-I also identified heavy hitters—MCP tools like Playwright that load substantial context just by being enabled. Sometimes turning off what you're not using matters.
+The measurable outcome: Claude's responses achieved alignment on initial generation far more consistently. The costly iteration cycle—"could you also..." exchanges that hemorrhage expensive output tokens—diminished substantially.
 
-If you're paying for premium AI tools, visibility isn't optional. You need to know exactly what you're spending and WHERE, so you can optimize how you work with the model—not just track a number.
+I also identified disproportionate consumers in my toolchain. MCP integrations like Playwright load considerable context simply by being enabled. Selective activation yields meaningful efficiency gains.
 
-Grab the script here: https://gist.github.com/TortoiseWolfe/a1ae3d8216301d5d2a360abd71b34e9a
+For those investing in premium AI tooling, operational visibility isn't a luxury—it's a prerequisite for extracting maximum value. Understanding consumption patterns enables optimizing your interaction methodology rather than merely monitoring a depleting balance.
+
+Implementation available here: https://gist.github.com/TortoiseWolfe/a1ae3d8216301d5d2a360abd71b34e9a
 
 #ClaudeAI #AITools #DeveloperProductivity #ContextEngineering #Anthropic
 
