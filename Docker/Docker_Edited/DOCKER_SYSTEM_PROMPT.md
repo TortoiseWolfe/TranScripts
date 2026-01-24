@@ -223,6 +223,54 @@ ENTRYPOINT ["/usr/bin/tini", "--"]
 CMD ["node", "server.js"]
 ```
 
+### Compose with Multi-Stage Builds
+
+Use the `target` property to build specific stages:
+
+```yaml
+# compose.yaml - Development
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+```
+
+```yaml
+# compose.prod.yaml - Production
+services:
+  app:
+    build:
+      context: .
+      target: prod
+    ports:
+      - "3000:3000"
+```
+
+**Build commands:**
+```bash
+# Development (uses dev stage)
+docker compose up --build
+
+# Production (uses prod stage)
+docker compose -f compose.prod.yaml up --build
+
+# Build specific stage without Compose
+docker build --target test -t myapp:test .
+docker build --target prod -t myapp:prod .
+```
+
+**CI/CD pattern:** Build test stage in CI, prod stage for deployment:
+```bash
+# CI pipeline
+docker build --target test -t myapp:test .  # Runs linting + tests
+docker build --target prod -t myapp:prod .  # Creates deployable image
+```
+
 ### Base Image Selection Matrix
 
 | Recommendation | Image | CVEs | Size | Use Case |
@@ -387,6 +435,52 @@ docker buildx build .
 **Cache mounts** for npm (caches downloads, not node_modules):
 ```dockerfile
 RUN --mount=type=cache,target=/root/.npm npm ci
+```
+
+**Secret mounts** for sensitive build-time data (never baked into image):
+```dockerfile
+# syntax=docker/dockerfile:1
+
+# Example: npm token for private packages
+RUN --mount=type=secret,id=npm_token \
+    NPM_TOKEN=$(cat /run/secrets/npm_token) npm ci
+
+# Example: .npmrc file with auth
+RUN --mount=type=secret,id=npmrc,target=/root/.npmrc npm ci
+```
+```bash
+# Build with secrets
+docker build --secret id=npm_token,src=.npm_token .
+docker build --secret id=npmrc,src=.npmrc .
+
+# With Compose (compose.yaml)
+services:
+  app:
+    build:
+      context: .
+      secrets:
+        - npm_token
+secrets:
+  npm_token:
+    file: .npm_token
+```
+
+**SSH mounts** for private Git repos (key never copied to image):
+```dockerfile
+# syntax=docker/dockerfile:1
+
+# Clone private repo during build
+RUN --mount=type=ssh git clone git@github.com:org/private-repo.git
+
+# Or install private npm packages via Git
+RUN --mount=type=ssh npm install git+ssh://git@github.com:org/private-pkg.git
+```
+```bash
+# Build with SSH agent forwarding
+docker build --ssh default .
+
+# Or specify a specific key
+docker build --ssh default=$HOME/.ssh/id_ed25519 .
 ```
 
 ### Multi-Architecture Builds
