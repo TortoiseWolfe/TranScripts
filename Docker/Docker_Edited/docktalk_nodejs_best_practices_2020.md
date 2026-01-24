@@ -4,6 +4,8 @@
 September 2020 - 59 minutes
 Source: https://www.youtube.com/watch?v=JtfDFUMmug0
 
+> **Note (2023 update):** Alpine is now considered experimental/Tier 2 by the Node team. Use `node:XX-bookworm-slim` for production. The npm flag `--only=production` is deprecated; use `--omit dev` instead. See 2023 transcript for current guidance.
+
 ---
 
 ## Overview

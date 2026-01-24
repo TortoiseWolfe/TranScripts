@@ -4,6 +4,8 @@
 Source: https://youtu.be/Z0lpNSC1KbM
 Examples: https://github.com/BretFisher/nodejs-rocks-in-docker
 
+> **Note:** This file includes merged content from DockerCon 2019 (zero-downtime deployments, security scanning stages). For the most current guidance (2023), see `nodejs_rocks_in_docker_dockercon2023.md`.
+
 ---
 
 ## Overview
@@ -139,7 +141,7 @@ node_modules
 ### Use npm ci for Production
 
 ```dockerfile
-RUN npm ci --only=production
+RUN npm ci --omit dev
 ```
 
 **Why `npm ci`:**
@@ -147,7 +149,7 @@ RUN npm ci --only=production
 - Reproducible builds
 - No unexpected version changes
 
-**Why `--only=production`:**
+**Why `--omit dev`:**
 - Excludes dev dependencies
 - Reduces CVE surface area
 - Smaller image size
@@ -164,7 +166,7 @@ USER node
 
 # Copy files with correct ownership
 COPY --chown=node:node package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit dev
 COPY --chown=node:node . .
 ```
 
@@ -234,7 +236,7 @@ FROM node:18-bullseye-slim AS base
 RUN apt-get update && apt-get install -y tini
 WORKDIR /app
 COPY --chown=node:node package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit dev
 USER node
 
 # Stage 2: Dev (extends base with dev deps)
@@ -259,7 +261,7 @@ CMD ["node", "server.js"]
 FROM node:18-bullseye-slim AS base
 WORKDIR /app
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci --omit dev
 
 # Dev stage - adds dev dependencies
 FROM base AS dev
@@ -312,7 +314,7 @@ CMD ["node", "server.js"]
 
 - [ ] Use bullseye-slim or newer Debian version
 - [ ] Add `.dockerignore` with `.git` and `node_modules`
-- [ ] Use `npm ci --only=production` for prod
+- [ ] Use `npm ci --omit dev` for prod
 - [ ] Run as non-root user (`USER node`)
 - [ ] Use `--chown=node:node` on COPY commands
 - [ ] Install and use Tini as entrypoint
@@ -322,9 +324,66 @@ CMD ["node", "server.js"]
 
 ---
 
+## Zero-Downtime Deployments
+
+*Content merged from DockerCon 2019*
+
+### The stoppable Package
+
+For true zero-downtime deployments, use the `stoppable` npm package to track connections and send FIN packets to clients:
+
+```javascript
+const stoppable = require('stoppable');
+const server = stoppable(http.createServer(app));
+```
+
+### Zero-Downtime Requirements
+
+1. **Signal handling** - App responds to SIGTERM
+2. **Connection tracking** - Use `stoppable` to track HTTP connections
+3. **Health checks** - Orchestrator knows when app is ready/unhealthy
+4. **Graceful shutdown** - Send FIN packets to existing connections
+5. **Long shutdown timeout** - Exceed your longest request time (file uploads, long polling)
+
+**Without health checks, you will have downtime.** Every containerized app needs them.
+
+---
+
+## Security Scanning in Build
+
+*Content merged from DockerCon 2019*
+
+### npm audit Stage
+
+Add an audit stage to your multi-stage build:
+
+```dockerfile
+FROM test AS audit
+USER root
+RUN npm audit --audit-level=critical
+# Add CVE scanner here (e.g., Aqua Trivy)
+```
+
+**Start with `--audit-level=critical`** - there's always something in npm audit. Don't let non-critical issues fail your build initially.
+
+### Building with Audit
+
+```bash
+docker build --target audit -t myapp:audit .
+```
+
+### CVE Scanners
+
+- Scans for known Linux, Node, and npm vulnerabilities
+- Different scanners report different results
+- Consider multiple scanners for security-critical apps
+
+---
+
 ## Resources
 
 - **Examples repo:** https://github.com/BretFisher/nodejs-rocks-in-docker
+- **2019 examples:** https://github.com/BretFisher/dockercon19
 - **Weekly live show:** bret.live
 - **Discord:** devops.fan (10,000+ members)
 - **Courses/blog:** bretfisher.com

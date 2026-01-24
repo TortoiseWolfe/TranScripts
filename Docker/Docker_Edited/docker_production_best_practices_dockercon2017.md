@@ -3,6 +3,8 @@
 **Bret Fisher - DockerCon 2017**
 Source: https://youtu.be/V4f_sHTzvCI
 
+> **Historical context:** This 2017 transcript contains foundational concepts on organizational strategy, Swarm architecture, and phased adoption that remain relevant today. For current Dockerfile syntax, base image recommendations, and npm commands, see the 2023 transcript.
+
 ---
 
 ## Overview

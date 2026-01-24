@@ -5,6 +5,8 @@
 Source: https://www.youtube.com/watch?v=9j03Jlo_dtA
 Sample Project: https://github.com/BretFisher/node-docker-good-defaults
 
+> **Historical context:** This 2018 transcript has the clearest explanation of signal handling (SIGTERM) and layer caching fundamentals. For current base image recommendations (Alpine is now deprecated for production) and npm syntax (`--omit dev` replaces `--only=production`), see the 2023 transcript.
+
 ---
 
 ## Overview
