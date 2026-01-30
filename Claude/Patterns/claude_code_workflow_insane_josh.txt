@@ -1,0 +1,506 @@
+His Claude Code Workflow Is Insane
+josh :)
+https://youtube.com/watch?v=JUTx6MxOjhE
+Uploaded: 2026-01-10 | Duration: 18 minutes
+
+The guy who created Cloud Code as a side
+project, yes, you heard that right, a
+side project, just revealed his entire
+workflow. And despite calling it
+vanilla, he runs five Clouds
+simultaneously, uses MCP server that
+post directly to Slack, custom AI sub
+agents that review his code, and
+something called the Ralph Wigum plugin
+that runs Claude and autonomous loops
+for hours. In this video, I'm going to
+break down his exact workflow so that
+you can use Cloud Code like the guy who
+created it. Now, I've been using Cloud
+Code daily for the last couple of
+months, and I thought I was good at it,
+but after reading through Boris's
+thread, I realized there's a lot I don't
+know, and a lot of features I should be
+using. Features that Boris claim can two
+to 3x the quality of your AI generated
+code. So, we're going to cover how to
+get Claude to oneshot entire poll
+requests/comands that save you from
+repeating the same prompts, and that
+Ralph Wiggum thing, which is way more
+powerful than it sounds. Let's start
+with the foundation of his workflow.
+We're going to be operating on my
+portfolio site because it's an easy
+small enough project where I think you
+can see the actual value. There are a
+lot of things I like about it. It's very
+pretty. But one good feature, for
+example, is I have this blog post with
+some code. And ideally, I'd like a copy
+code button. So, let's do that. If
+there's one thing you get out of this
+video, it's that every session should
+start with plan mode. To enter plan
+mode, you're going to press shift tab
+twice. You can also type slash plan and
+you're going to tell it what you want to
+build. Now, in this mode, Claude can
+only read your codebase. It can't write
+anything. [snorts] You're just going to
+have a back and forth conversation until
+you and Claude both agree that there's
+nothing else to clarify. So, let's do
+that. I want to add a copy code button
+to my blogs where there is code. It's
+going to look around, get all the
+context that it needs, and then come
+back and ask some follow-up questions.
+And look at that. It'll come back and
+actually remind me that there already is
+one blog post that has a copy code
+button which I would have forgotten cuz
+I've been maintaining this blog over a
+decade now. And it's asking me how I
+want to do it. I have this thing called
+load templates which is not a good
+solution but exists and it's asking me
+if I want to use that. It recommends it
+and sure that's not a bad idea. Then
+it's going to present me with a plan and
+then I'm going to either accept it and
+let it do its thing or I can accept it
+and review it along the way or I could
+just tell it to change something. I'm
+pretty happy with this and it's a pretty
+simple feature. So, we're just going to
+auto accept it. It'll even tell me where
+to go to see the changes. So, let's see
+it. If we go down to the code, there's
+this copy button. And if I paste, it's
+copied it. Now, this was a simple
+feature for demonstration purposes, but
+it gives you an idea of what Claude can
+do and how it could do it. I do think
+Claude could have done it without
+entering plan mode, but it's good
+practice. And Porus himself says, and I
+quote, "A good plan is really important.
+Once you like to plan, only then do you
+switch to auto accept mode, and Cloud
+can usually oneshot the entire
+implementation." When I first started
+adding AI to my workflow, I would ADHD
+just tell it to do something. And most
+of the time was spent being like, "Oh,
+not like that." But now I spend more
+time planning and less time debugging,
+which honestly is the entire job. And it
+helps me think through what I'm trying
+to do more clearly cuz that is the job
+of software engineering. And so even if
+you have really simple features, I
+encourage you to get into this habit of
+entering plan mode regardless because
+even for this simple feature, it found
+me a better solution. And turns out I
+would have repeated some code that I had
+forgotten about. The second foundational
+piece is something called cloud.md. And
+I'm just going to show you what that
+looks like. This is my cloud MD file. It
+lives in your repo and kind of acts like
+Claude's memory. It's where you document
+your project's rules, patterns, and
+preferences for you and your team. So
+here it'll tell it the architecture, the
+key files, the development, how to
+actually run it, the design system, how
+to add a blog post, etc. Now to actually
+make one it's quite simple. You type
+flash in itit and it'll comb through
+your codebase and generate this
+document. Now there is one thing that
+Boris does that is completely new to me.
+He actually tags Claude in his teammates
+pull request and ask it to add learnings
+to claude.md as part of the PR. So every
+time someone on his team merges code,
+the repos memory gets smarter and it's a
+guarantee that whatever nit happened on
+that pull request won't need to happen
+again. I'm not going to do it here
+because my portfolio site is only run by
+me. Uh you would do install GitHub app
+and that would allow you to call Claude
+from Now we get to the stuff that Boris
+calls his inner loop. It's the stuff
+that he does multiple times a day. Boris
+uses custom slash commands for every
+repeated task. His most used one. You
+won't be surprised to learn that it's
+commit push PR. Now, you'll see that I
+don't have it because it's a custom
+slash command just for him. And your
+custom slash commands will probably be
+personalized to your workflow and what
+works for you. Now, I do have to commit
+and push a lot. So, we're actually going
+to copy Boris here and make it together.
+The benefit of this is that instead of
+having to type out instructions each
+time, you can just type out the command
+and cloud code knows exactly what to do.
+So to make our own, we're going to make
+a folder at our root
+calledcloud/comands.
+And then inside of that, we're going to
+make a custom markdown file. Let's call
+ours commit. Now, here's a trick that
+Boris uses to make his commands actually
+run quickly. You can embed commands into
+your command with back. So instead of
+claude asking what's the get status, it
+already knows and you don't even need to
+waste tokens on it coming up with that.
+So for example here I'll tell it here's
+the current git status and then this
+command is going to run and then it's
+going to fill with the output of that
+terminal command. You'll give it your
+recent commits and then you'll say
+something like create a commit based on
+these stage changes. Now let's run it
+and see what it looks like based off the
+changes that it [clears throat] made.
+Here we go. It'll take a sec. I should
+have said that it should also add and
+commit, but sure, we'll have it commit
+all files. Now, you can probably guess
+that if I wanted to, I could have added
+everything and at the end of it push,
+but that's just an example of how you
+can save all those words into one nice
+little function. If you've used cloud
+code before, you'll know that there is a
+big optimization with permissions. If I
+ask Claude to do pretty much anything,
+it's going to ask you, do I have
+permission to do this? and you have to
+approve it every single time. Let's come
+up with an example. I asked it to look
+up a website and see if it's good and
+it's going to ask me permission. Now,
+you shouldn't blindly accept permissions
+for everything, but there are some
+pretty obvious ones that aren't too bad.
+In order to set this up, run /missions
+and you can add a new rule. Now, you may
+have to look up how to get the specific
+syntax of the command that you want, but
+for example, if I say, hey, web fetch is
+all good. It'll ask you, do you want
+this locally as a project or your user
+settings? I'm just going to say locally
+cuz I don't want that to actually impact
+everything. Now, adding these and
+clarifying them have helped keep me in a
+flow state. No interruptions for things
+I know are safe because I don't need
+that to take up mental space in my
+workflow. And notice it's really
+important he's not using a command. I I
+don't even want to teach you this
+command. Honestly, you shouldn't even
+know. Just don't do it.
+There is a way to skip everything called
+dangerously skip permissions.
+As you can assume, it won't ask you a
+single question and it'll just start
+doing stuff. I do not recommend running
+like this. Instead, I recommend
+evaluating which permissions you're
+actually okay with and adding it via
+that interface that I just showed you.
+Now, these are pretty simple, but we're
+going to start getting into some of the
+power features. Boris uses custom AI sub
+agents that run after Claude finishes a
+task. You can think of these as
+specialized assistants. He has one
+called the code simplifier that cleans
+up code after it's written.
+[clears throat] another called verify
+app that has detailed instructions for
+testing the entire application and all
+these other ones that are specific to
+his workflow. Let's create one together.
+Just like before, we're going to make a
+directory called claude/ aents. And in
+that directory, let's say we're going to
+create one called code simplifier this
+markdown. So we'll say name code
+simplifies code after changes tools it
+has access to. And then below this will
+actually give a description of what it
+is. You are a code simplication expert.
+Now people usually laugh at other people
+that say things like this. You are an
+expert. You are a senior dev. But
+there's actually a really good reason
+why it works. If you're interested in
+that, I could make a whole video about
+that. It's very interesting. After code
+is written, remove unnecessary
+complexity. And now that we've made this
+file, I can say things like use code
+simplifier to clean up load templates.js
+and a specialized agent that we've
+written will take over. Now, obviously,
+this isn't a very sophisticated one, but
+you can have one for your UI, your UX,
+or your copy, etc. You can have one for
+really whatever you can imagine. You'll
+see here that it calls in code
+simplifier and now it is acting within
+the description that we gave it. And
+apparently it has a lot of opinions. I'm
+a little offended honestly, but
+whatever. And now have done some pretty
+good things. It extracts logic into a
+function, uses a sign, moves CSS to a
+constant. All of these seem like
+generally good things. Now, next we have
+a small thing that prevents a lot of CI
+failures. Boris actually runs a hook
+that automatically formats code after
+Claude edits it. Claude's code is
+usually formatted correctly, but here's
+an example of how you can use a hook to
+handle that last 10% so that you never
+fail CI on format. Now, there are quite
+a few hooks you can use. There's one for
+before you use claw. There's one for
+after. There are ones for notifications,
+etc. But the one that we're concerned
+with is post tool use. Now, in order to
+add this, we're going to just call
+/hooks and we're going to do post tool
+use, which is again after claud writes.
+It's going to ask you after cla does
+what? It gives you all these options,
+but we're just going to say after you
+write or after you edit, we're going to
+call a command. Let's say mpm run lint.
+And we'll just save that locally. And
+now, every time that claude writes code
+in your codebase, it's going to lint
+your code. Now, this one's actually
+insane and one I'm really pushing to use
+at work more. You can get Claude to not
+just code, but also do things like post
+to Slack, run big query analytics, and
+even grab error logs from Sentry or
+Rollar. Now, you'll see here there are
+so many servers you can add. I guarantee
+you that whatever systems you're working
+with, they're probably in here. We're
+just going to choose this one cuz it
+seems interesting. I don't know what
+kiwi.com is if I'm being honest, but it
+says we can search for flights and I do
+like to travel. So, we're just going to
+copy this. We're going to go back here.
+And now we've added it. Let's go into
+Claude. If we type /mcp, we can see that
+we are actually connected. And now that
+we've confirmed it's there, let's search
+for some flights. Uh, find me the
+cheapest flight from Austin to New
+Zealand. I've been wanting to go to New
+Zealand. Let's see what we could do.
+This might take a sec. I'm not sure how
+good this is. Now, it'll come back with
+all these options, which are admittedly
+pretty bad, but it's giving me options
+saying this is the cheapest. this one
+two three with three stops which is kind
+of insane or this one which only has one
+stop connect to something like Slack.
+You can have it read from Slack or you
+can have it right to Slack as well. Now
+this is a silly example but you can use
+it with Atlassian and you can use it
+with Slack. You can use it with Jira to
+write your tickets for you. You can do
+it to open PRs for you. And this ends up
+turning Claude code from just a coding
+assistant to an interface for your
+entire development ecosystem. Now, next
+part of this is something that Boris
+claims is very important for him. It
+allows Claude to run for extremely long
+amount of time. I haven't personally
+done this because I'm still building
+that trust with the system to just fully
+let it run for hours and it costs a lot
+of money. The way that he's using stop
+hooks is when Claude says it finish a
+task, sometimes it's not actually done
+and you need to follow up. And so what
+Boris will do is he will spawn a
+verification agent that will check its
+work and say no you're not done keep
+working or it will confirm that it's
+done and be like oh you're good. So in
+order to do that similar to the other
+hook we set up we go to hooks we go all
+the way down to stop and then same way
+we would have to define what that
+verification looks like and then add it
+in here. This creates a feedback loop
+without you having to babysit and allows
+people to run cloud code for hours until
+it finishes an entire codebase, which is
+not necessarily how I imagine using it,
+but that is an option that you should
+know about if you are going to use cloud
+code. And now, finally, we get to the
+thing with the really weird name. The
+Ralph Wiggum plugin is named after the
+Simpsons character. It was invented by a
+developer named Jeffrey Huntley, and
+it's kind of correct. Instead of Claude
+working on a task once and stopping,
+Ralph keeps Claude working in loops
+until it genuinely succeeds. Very
+similar to the stop hook before it. The
+results, and remember this is reported
+from Twitter, these results, if they're
+true, are actually insane. Jeffrey
+Huntley apparently ran a 3month
+autonomous loop that built an entire
+programming language. and another
+engineer completed a $50,000 contract
+for $297 in API costs. If someone could
+let me know where these $50,000
+contracts are, I'd be very grateful. But
+it turns out that it's not intended to
+be used for everything. You wouldn't use
+it for simple tasks. But for large
+refactors, batch operations, or grinding
+through hundreds of support tickets,
+this is where it shines. This is my
+first time installing it as well. So,
+let's uh see what all the hubs about.
+install Ralph Wiggum install for you.
+Just as a test, we'll actually run this
+on something I've been meaning to do for
+a long time. Although, I'm not going to
+lie, I'm a little scared. We're going to
+run this on my website and we're going
+to do a stress test. I'm a little scared
+to do this. I don't know how it's going
+to go, but everyone's raving about it.
+The creator of Claude Code says it's
+good and so we should try it out. So, if
+you click on my blog, older blogs have
+not migrated over to our new style. So,
+if you click on our new style, you'll
+see that it is a much better user
+experience. And on top of that, I still
+haven't quite standardized the styling
+across everything. There are some minor
+differences, but overall styles
+developing. You'll see I have this bar
+on the left, which isn't there in the
+base. Anyway, we're going to go back and
+we're going to push this thing to its
+limits. create a unified styling based
+on my most recent articles blog posts
+and migrate old blog posts to use this
+new style. Do max iterations 50. It is
+chugging away and I'm actually a little
+nervous that the cost of this. It's all
+good. We're stress testing it. Um it's
+got some ways to go and yeah, I'll ch
+when it's done. It not look like it's
+stopping. Oh my god, there are still 20
+more. All right, I mean this is
+interesting. It said this is taking too
+long. Let me launch some parallel tasks
+to help migrate the remaining posts. So
+I think now there are three agents that
+are working on this. Well, it seems to
+have finished and I'm honestly it's not
+perfect. I It's really good. Don't get
+me wrong. Honestly, it's better than
+what I had here before. But there are
+some things apparently we lost the copy
+code that we had. So that's unfortunate.
+These diagrams, they were ugly to begin
+with, but now that they're not centered,
+they're especially ugly. Uh, but I will
+say this one, I wrote this probably in
+2020. Oh, wow. Look at that. Holy crap
+is right. See, this is a weird thing
+that's going on. Oh, I really like the
+way it's incorporated colors, but it's
+not perfect.
+It's definitely not perfect. Bujo. All
+right. Our successful open source
+project. Honestly, I don't think I'm
+going to keep it. I think asking cloud
+code to do something as large as this
+while people are talking about it on X
+are really just a money sync. I think
+that costs me $10.
+I think it will get there and I think
+there will be a day where it can do that
+and that day is probably sooner than I
+think. But as of right now, having as
+part of your workflow is really the best
+way to use this. Now, I just want to
+look at this together because Boris says
+that this is the most important thing to
+get great results out of Claude code.
+It's to give Claude a way to verify its
+work. If Claude has that feedback loop,
+it will two to 3x the quality of the
+final result. Claude tests every single
+change I land using the Claude Chrome
+extension. It opens a browser, tests the
+UI, and iterates until the code works
+and the UX feels good. Verification
+looks different depending on what you're
+working on. It might look as simple as
+running a bash command, running a test
+suite, or testing the app in a browser
+or phone simulator. Maybe if I had done
+this or my portfolio sites, I'd have to
+be a little creative as to what that
+looks like. I think I probably could
+have gotten away with it. So, that's how
+the creator of Cloud Code actually uses
+Cloud Code. To recap, one, start in plan
+mode. Two, build your CloudMD over time.
+Three, use SL commands for repeated
+workflows. Four, pre-allow safe
+permissions. Five, deploy sub aents for
+review and testing. Six, auto format
+with post tool use hooks. Seven, connect
+external tools with MCP. Eight, use stop
+hooks for verification. And nine, I
+don't recommend this, but just know that
+Ralph Wigum is available. I'll always
+continue testing things cuz that's just
+what I do. I can't help it. And if
+anything mind-blowing happens, I will
+report it here. My videos are usually
+using tech for entertainment, but I
+think I have some value to share and
+hope that you found it useful. If you
+did find this useful, please like and
+subscribe and spend some time with your
+loved ones. Am I?
