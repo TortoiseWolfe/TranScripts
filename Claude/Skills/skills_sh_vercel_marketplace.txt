@@ -1,0 +1,357 @@
+Skills.sh - LEVEL UP Your Claude Code Agents!
+All About AI
+https://youtu.be/vDBUf533e_M
+Uploaded: 2026-01-21 | Duration: 14 minutes
+
+Today I want to share a bit about
+something I've been playing around with
+for the last few days and this is skills
+the open AI agent ecosystem. This is the
+skills.sh.
+This is from Versel and basically if
+you don't know what skills is, this is a
+way you can kind of level up your AI
+agents. So if you look at the Claude
+codes interpretation of this, this is
+extend Claude with skills. create,
+manage, and share skills to extend
+cloud's capabilities include code
+includes custom slash commands and stuff
+like that. So, basically, it's a simple
+way to upgrade your agents for whatever
+use case you have. So, you can think of
+it like it's like in between like an MCP
+server, but it's a bit more different.
+I'm not going to go into kind of exactly
+how skills work in this video. I'm just
+going to showcase the new marketplace or
+ecosystem from Versel here. So if you
+scroll down a bit, you can see here are
+kind of where we can download or reuse
+other people's skills they have created.
+So you can see versel react best
+practices. This is the most installed
+for this is a bit more based on kind of
+the front end part. So you can see we
+have web design guidelines 18,000
+downloads. Then we have remotion. We're
+going to try that out. So basically what
+I want to do, I want to try to update my
+web page using these two skills from
+Versel here. And I want to try some
+simple video editing with remote skill.
+So basically you can see all we have to
+do install in one command npx skills add
+and just the repo here. So let's try it
+out and see what this can do for us. And
+like I said I will be using cloud code
+for this. Okay so this is kind of my
+code base for this website now. Right.
+So we have the NPC my creative agents
+video agents website. You can see it's
+looked pretty good, but I kind of want
+to make maybe add some dark mode, maybe
+some smoother animations. We'll see what
+we can do. So, you can see now we're
+just going to head back here. And, you
+know, we need this MPC skills command.
+So, I'm just going to paste in run this
+command. And I think we want to install
+two of these. Yeah, we want to install
+this, right? So this is super easy. But
+remember, we also want to along with the
+best practices, we also want to install
+the web interface guidelines. So I'm
+also going to copy this command. I'm
+going to head back to cloud code. But
+first let's finish installing this. Here
+you can see we can see the skills and we
+got that. Okay. So we installed those
+and next is going to be the the web
+design guidelines skills. Okay. That was
+done. So I think we need to restart
+claw code now. So I'm just going to exit
+clear and I'm going to do claw again. Go
+into this. So if we do slash skills now
+you can see we have those two skills.
+Versel react best practices, web design
+guidelines. This is project based
+skills. So this is not global and that's
+what I wanted. Right? So now that we
+have these skills, I want to make a
+prompt to actually take use of these
+skills. So if we go back to cursor now,
+you can now see we have something called
+claude here and we have skills and here
+we can see we have versel and we have
+the web design. So we click on versel,
+we go to skills.md. Here we kind of have
+the full overview. So you can see we
+have a bunch of information. Claude can
+look up here. Rendering performance,
+JavaScript performance. We can switch
+over to web design skill.md. And again
+it kind of refers to this file here. So
+this is a file we can fetch fresh
+guidelines before each review. Something
+we can do right. So this is kind of the
+way when we do this MPX install or
+skills, we get this into our cloud
+skills and we can kind of refer to this
+here. So yeah, works pretty smooth. So
+remember the skills we kind of upgraded
+this agents to now is kind of to follow
+the best practices and the web design
+guidelines from Versel. So I'm just
+going to say I already have a working
+Versel stack page. Explore the codebase.
+Please use best practices to update this
+page. Also, I want the page to have a
+dark team option and some smooth
+animations. So, when I click enter now,
+hopefully we can see that Claude code or
+this agent now decides to use some of
+the skills we already have installed
+here. But you can see first it's going
+to explore the code base and then I'm
+going to take you back if I see Claude
+code choosing here to use some of the
+skills we kind of have upgraded this
+agent to. Okay. So you can see now it
+kind of loaded up a couple of skills. So
+this is the versel react best practices
+web design guidelines and now it's going
+to yeah let me see what happens. So it's
+going to read this agents.md file.
+We're going to fetch something here. So
+we can look at some web interface
+guidelines from versel labs. Okay that's
+fine. So I'm just going to let this run
+and see what kind of how we're going to
+use these skills and how this is going
+to be implemented into our web page
+here. So you can see now it's kind of
+working on the dark team. It's going to
+look at some prefers reduced motion.
+Okay. So basically hopefully now it's
+just going to look at the page we have
+do some updated or upgrades based on
+kind of the skills we gave it and then
+we're going to see how this look
+afterwards. So you can see after kind of
+running the review here of the full page
+based on kind of the guidelines from the
+skills we have some issues here we can
+try to fix. So on line 7 37 15. Yeah,
+you kind of get the point. This is kind
+of what this skill is about. And now you
+can see cloud code is working on these
+issues kind of based on the guidelines
+from the skill package we installed. So
+yeah, I think we are done with the dark
+mode and now we're just going to do this
+and let's take a look at the final
+result. So yeah, we have updated all the
+pages for dark mode. Now, let's just go
+here and let's start the page again. So,
+mpm rundev and we're going to open up
+this in an external browser. And let's
+see. Now, we should have the dark mode,
+right? All right. This looks pretty
+good. And yeah, animations feels pretty
+smooth like they did before. I don't see
+any big changes, but I like the dark
+mode. Let's try to switch to light.
+Okay, seems to work pretty good. So, is
+this persistence now? If you go to
+pricing, yeah, that kind of brings the
+dark mode over. What about the blog
+page? Good. Signin page. Yeah, still
+dark mode. And what if we switch? All
+right, so that was pretty easy. Did this
+make like a big change? I'm not quite
+sure, but we at least got the dark mode
+working and it's looking pretty smooth.
+So, of course, I would have follow up
+with do this on mobile and stuff like
+that, but I'm not going to skip that
+now. And yeah, like a super easy way to
+kind of get sure or make sure that if
+you wanted to, you kind of have all the
+Versel React best practices. Of course,
+this is very specific to this stack. And
+we have some web design guidelines that
+can also be nice to follow if you're
+building on Versel like most of my
+projects are. But now I want to move on
+to Remotion. So Remotion is kind of a
+way you can edit videos by using code.
+And this is something I really like to
+do. So I'm kind of excited to see what
+we can actually do with remotion and
+cloud code and using code to animate and
+edit video. Okay. So what I have done
+now is I went into remotion right. I
+installed this MPX skills here and you
+can see here are kind of all the
+markdown files. So these are the rules,
+calculations, everything we need to kind
+of use remote in the best practices. So
+these are kind of referring to different
+market files. So if we go to cursor now
+and we go under cloud skills remote best
+practices what we installed and we look
+at the skill MD file you can see these
+are kind of referring to all of these
+different pages so Claude can fetch so
+this could be rules for 3D assets fonts
+everything here right so that's pretty
+good so what I want to do now is I have
+two different clips the first clip is
+basically me just talking about the
+intro for this video for example 12
+seconds and I have like some B-roll
+something like that this is just me
+scrolling over this skill page so I want
+to try to use remote now to kind of edit
+this video add some cool transitions
+maybe some animations some captions and
+see how that goes so what I'm going to
+do is I headed over to cloud code in
+this directory and now I want to start
+trying to edit this videos using
+remotion. Okay, so I think I have a plan
+now. I'm going to read this but you can
+skip ahead. So basically what we want to
+do, we have the two clips skills 1.mp4
+and b-roll.mp4. The video is about an
+intro to skills to understand the clips.
+We want to use ffmpeg to get the audio
+to mp3. Then we want to use a local
+whisper model to get the SRT file. This
+is the transcription and the timestamps.
+And when you have this, you can find the
+best place to insert a B-roll clip and
+also add captions to the video and some
+smooth animations. Create a plan for
+this. So, I'm going to go to plan mode
+and create a plan for how we're going to
+execute all of these tasks. So,
+hopefully now Claude can with Remotion
+and FFmpeg and Whisper fully edit my
+video. So, I have it ready with all the
+animations, captions, everything we need
+in kind of one go. So I'm going to take
+you back when we have the plan and then
+see if we can actually execute on this
+plan. So we can see now Claude is
+actually using the skills here. So it's
+looking at remotion best practices,
+rules, videos, animations, audio, and I
+found some important best practices from
+the skills. Let me update the plan to
+correct the remote patterns. All of this
+looks pretty good. So this kind of could
+save us some time. if we kind of have
+all the skills are updated and the
+documentation is updated. This will kind
+of help us saving some time and maybe
+get some better results. So, I think the
+plan is almost ready now after we kind
+of looked at the last set of skills we
+learned and see if we can actually edit
+this video. So, I'm just going to accept
+this plan now. And hopefully now Claude
+is just going to start working on this
+task we gave it. And I'm not going to
+touch anything. I'm not going to do any
+interventions now. I'm just want to see
+if the plan if this plan works first
+time and hopefully we get good results
+with the B-roll added on top of our
+footage and some captions and some
+animations. Okay, so here comes the
+exciting part now. So you can see we
+should be ready to test this. So I'm
+just going to say run npm run dev for
+me. And hopefully now we have like a
+fully edited video only done with
+whisper ffmpeg and remotion used by cloud
+code. Okay, so you can see we popped up
+into their editor and right away this
+looks pretty good. You can see we have
+the captions. So let me turn off my mic
+and let's play the 12 second clip.
+Today we are taking a look at versel
+skills.sh. This is where you can kind of
+upgrade or level up your agents like
+cloud code. So let's take a look at it
+and see how we can actually use this in
+practice. Okay, that wasn't too bad,
+right? We kind of you can see I'm going
+to turn off the sound here. So we got
+the captions. They look fine. We could
+have done some more editing on those if
+we wanted to. And you can see at 8
+seconds or something, we switch to the
+B-roll. And I guess that's fine. Maybe
+we could have done that earlier. Maybe
+we can done it at 2 seconds. But other
+than that, that looks pretty good. And I
+think there's much more we could do with
+this. So let's ask for some more
+engaging or attention editing just to
+see what happens. So I'm just going to
+say great job. We need the editing to be
+more engaging, more to keep the people's
+attention. Do your best. So, I'm going
+to leave it like with an open-ended goal
+and let's see what kind of editing here
+now Claude Code can do with the remote
+skills and stuff like that and see if we
+can make it a bit more interesting. So,
+I went ahead I asked Claude if they can
+do some sound effects. So, it suggested
+I should go ahead and create all of
+these sound effects. So, I did that. I
+just put them in this audio here audio
+folder. So, now we have the six sound
+effects. So, I'm just going to refer to
+that and let's see if it can add it. I
+just added all the effects in audio and
+now I want to see if it adds all these
+effects into the final clip. So, I'm
+going to render the clip and then we're
+going to play it to see if it's more
+engaging that what we had the first time
+around. So, I just said here render the
+clip save to CVD and now we are kind of
+rendering. You can see here we are
+rendering the clip and this should be
+saved and then we're going to open it
+and let's play it in kind of full to see
+is this more engaging and would I ever
+use this in some video editing. Okay, so
+you can see this is now rendered. So
+let's open this up now. So you can see
+it's stored here. Skills intro.mp4 here
+and let's watch the full clip. Today we
+are taking a look at versel skills.sh.
+This is where you can kind of upgrade or
+level up your agents like cloud code. So
+let's take a look at it and see how we
+can actually use this in practice. Yeah,
+that was not maybe perfect. But I think
+there are something here. So I'm
+definitely going to explore this more.
+How I can use Claude code with remotion
+and the skills package to kind of edit
+videos. Definitely going to explore it
+more. So yeah, I think that was pretty
+much it I wanted to cover today. So go
+check it out. skills.sh. I think it's
+pretty interesting and I think we're
+going to see more of these agent
+marketplaces popping up in 2026. So
+yeah, thank you for tuning in. Have a
+great day and I'll see you again.

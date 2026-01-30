@@ -1,0 +1,1136 @@
+Designer's toolkit for Claude Code
+Dive Club (Vid hosting, Kyle Zantos guest)
+https://youtu.be/HcLz3ikw-n0
+Uploaded: 2026-01-07 | Duration: 48 minutes
+
+My goal for 2026 is to fully transition
+into a builder with AI. Even for me
+though, it's really hard to keep up with
+all of the latest tools and
+tactics that are popping up every single
+day. We're in a really mellin
+exploratory era with all this stuff.
+Nobody really has definitive answers.
+So, what are some of the right steps
+that you can take to strengthen some of
+these design engineering muscles?
+Everybody's going to start having their
+own workbench and that and that wall of
+tools at the workbench is going to be a
+little bit different for everyone.
+What trends should designers jump on and
+which ones can we safely ignore?
+Claude code can be so many things that
+aren't coding. Claude code is just
+Claude's computer.
+Welcome to Dive Club. My name is Vid and
+this is where designers never stop
+learning. This week's episode is
+with Kyle Xantos, who's leading the new
+UX tools labs, where he's responsible
+for figuring out what matters when it
+comes to new design tools and new
+workflows. And as a result, he's pretty
+quickly become one of my go-to resources
+as I navigate my own journey building
+with AI. So, this week's episode is a
+deep dive into very specific tactics
+that you can use on your own design
+engineering journey. And to start, I
+wanted to get his take on some
+of the new cursor updates. You know,
+last time I was on here, we were talking
+about warp and using cloud code inside
+of warp and stuff, and that is still a
+great way to go, but cursor, they have
+an inapp browser, which is cool. What
+they added recently was this visual
+editor, and this got a lot of people
+talking. There was a big debate about it
+that was spawned essentially from
+cursor's positioning was like, "Hey,
+look at all these tools. Aren't these
+familiar to you as a Figma user? And
+isn't it cool that we have these? There
+shouldn't really be a divide essentially
+between like design and engineering and
+stuff." And so I started experimenting
+with it. We didn't just get Figma buffer
+code. That's still not still not
+happening. But when you're doing tweaks
+and stuff and want to just play with
+like spacing or arrangements or
+something like that, it's a pretty easy
+win because this is an app that I
+made for my friends and I. We've had a
+long-standing NFL pickum pool. We used
+to use Excel spreadsheets and then we
+were using the Yahoo Fantasy app. This
+year they were like, "Could you maybe
+make one for us?" And I said, "Why don't
+we try?" So, I did and we've
+used it all season and it's great, but I
+might want to tweak
+like this has some extra padding that
+seems unnecessary
+and I might not know the exact value
+that I want to change for that. So, it's
+nice to just be able to do subtle tweaks
+kind of go like,
+yeah, that's a little better. Maybe I
+could like bring it in a little bit.
+Okay. Okay. you know, so I can do
+little tweaks like that.
+Like that's terrible.
+That was terrible, but also really cool
+to be able to do that in the UI.
+Exactly. So, it's bad design
+decision, but nice to just throw it in
+there and see it immediately. Right. And
+so, it's keeping you out of the
+prompt loop that I think designers can
+get stuck in or annoyed by, self
+included. And it lets you play
+and experiment quickly, right? And then
+once you dial those in and you can go
+as nerdy and as engineered deep as
+you want in here, you know, with both
+the design and the CSS and then you just
+hit apply over here to have the
+cursor agent. So I still don't even pay
+for cursor right now. It just still
+isn't my like desired AI. But from an
+interface standpoint, I'm using cloud
+code in a regular terminal in here in
+cursor again. And I'm using the crap out
+of the inapp browser and the visual
+editor to just kind of imagine, tweak,
+experiment, and get it in real time.
+So I think it does matter to designers
+from that. Let me do some tweaking
+and some kind of experimentation, but
+it's not, oh, this isn't the full like
+Figma is dead and vectors are dead
+totally moment, if there ever will be.
+Is it enough though for
+you to confidently say to a designer who
+hasn't adopted any of these tools yet?
+Hey, cursor probably is that first real
+code editing tool working with
+production cuz it's kind of at least for
+me like I'm in warp right now. Like I
+left cursor to use work with Claude code
+and now I'm looking at this like man I
+got some FOMO. I'm not going to lie.
+Yeah, you probably should have FOMO
+because it's pretty convenient. There
+are other ways to do this kind of but as
+an entryway cursor as an app like even
+on the free plan. Yeah. You know what?
+This is the other reason that I'd say it
+is a good this is my tool for using
+cloud code and and other CLI as a
+designer starting out. This is the other
+reason that I'd say that there is
+something to be said. I still like
+spinning up Cloud Code or Droid or
+Codex or whatever in the CLI. I think
+it works the best, but from a stuff can
+be scary standpoint. The Cloud Code
+extension, it's the VS Code extensions,
+which again, Codex, Factory, and Cloud
+Code all have. Those are all the CLI
+based AI agents that I use for coding.
+They have these interfaces essentially
+via these extensions that might feel a
+little bit more friendly to designers
+that are getting started and you can do
+all the same stuff and you just get it
+in a layout that is a little bit more
+friendly for folks that are still a
+little bit scared of the terminal. Plus
+the other thing is that you know if you
+have a bunch of text and stuff in the
+terminal you can only use your keyboard
+to navigate but in here
+I can do that. It's a big deal actually.
+And amazingly, that's kind of a huge
+deal. Even I still go back and forth
+like it kind of feel like even
+certain plugins or workflows still have
+a few things that only work well or do
+what it's supposed to do in the
+true terminal CLI version as opposed to
+the extension. But if you're starting
+out, I think that it's perfectly fine to
+use the extensions and give yourself a
+more friendly UI for a designer to
+get used to.
+Okay. So, I want to keep tapping into
+your perspective as somebody who is a
+serial tinkerer and you're always like
+playing with different workflows and
+trying these tools and you're just
+learning a lot that I think designers
+can benefit from. So,
+I kind of asked you to come to the table
+with just some of these little
+experiments and lessons and insights.
+And really the goal, at least for me, is
+to try to help designers who maybe feel
+a little bit overwhelmed by the amount
+of stuff going on, stay up to date with
+what actually matters and come out of
+this with some practical tactics that
+they can immediately start incorporating
+into their own workflows. So given that,
+what are some of the things that you've
+been adding to your own toolkit lately?
+Yeah, and I got to be honest, too, like
+I play around with tools. I tinker a
+good amount, but I've figured out how to
+limit myself better. And that's been
+important because I really I'm skill
+building right now. So much of my time
+is spent trying to fill gaps that I have
+in my knowledge to become closer and
+closer to being able to call myself a
+design engineer, you know, exploring
+micro animations and things like that
+and just learning code things in
+general, right? So, like there's so many
+tools and we're going to be in a tool
+explosion right now. So, there's a lot
+that you can ignore. The stuff that I
+have today is more cuz I tried to not be
+uber specific about this tool and this
+tool and this tool and more like a
+philosophy and approach in a way that if
+you kind of are thinking this way, you
+can just keep applying it to your set of
+tools. Cuz I think everybody's going to
+start having their own workbench and
+that wall of tools at the
+workbench is going to be a little bit
+different for everyone and that's fine.
+You can spend too much time getting too
+like what exactly is the right setup.
+One of those things is something that's
+come up on your show a few times
+recently from MDS a little bit
+further back. Nick Patterson was
+mentioning they're doing this and you're
+starting to see this a lot more
+around, but if you haven't started
+doing this, I really recommend it, which
+is make a playground for yourself
+whenever you have something in your mind
+that you want to execute in your design
+and you can't find the existing version
+of it. For my personal site that I'm
+slowly but surely actually building. I
+have this like, you know, this kind of
+retrofuturistic
+world that I've been building and like
+AI imagery and video and stuff. It's
+sort of a little nod of like this
+alien material that's arrived that I'm
+exploring.
+And so I have this hover video,
+right? And I wanted to put some music to
+it. And I finally found like the I
+found an old sample chop that I did that
+I thought would work nicely with
+it, but I couldn't find. So, you see how
+I have like my sort of ghosted buttons
+over here. I knew I wanted to put the
+waveform like sound on, sound off thing
+probably in the bottom right, but I
+couldn't find an animated like version
+of it that I liked. And so I just ended
+up building a studio basically that gave
+me a bunch of options to play around
+with. So this I can actually try this.
+That's so cool.
+So then once I find my active state and
+my muted state that feel good to me, I
+can just grab this code and then bring
+it in and tell Claude Code this is the
+functionality that I want tied to my
+waveform component and this is the
+design and behavior that I want. And so
+like this is something that once I
+there's a few things I need to tweak,
+but like I'll just go put this out
+publicly and other people can play
+around in here too and get their own
+version and just paste that in,
+right? Like I built in these different
+effects. This is all, you know, trying
+to fit with my sort of like imaginary
+retrofuturistic world thing. But it's
+just it's fun. It's useful. I've
+already built all this out. So, you know
+what I can do now is not make this
+limited to just waveforms. I can keep
+all these effects, right? Cuz I might
+want to use more of these in other
+places in my personal site while I'm
+doing this sort of branding world
+building thing. And I could just bring
+in other icons or even honestly I could
+make it accept images and stuff.
+Yeah, you could do almost anything.
+Yeah. Like another thing that I made
+for the same reason was a hologram
+projector that I can upload videos into
+and displays in a cool interesting
+3D way.
+How are you coming up with some of the
+language even for these different types
+of prompts? Because I'm looking at these
+effects. They're beautiful,
+but I have no idea how to describe some
+of these things. And so I can feel
+myself wanting to recreate it and yet
+I'm like, "Oh gosh, that blinking cursor
+feels a little bit more intimidating
+than normal when I'm trying to describe
+things that I have no language for." So
+how'd you even get to like this?
+There's kind of two answers to
+that in my mind. One is learn the
+language of code and the sort of like
+typical
+developer nomenclature for it too. So
+you can learn descriptor adjectives that
+you see like other devs using to
+describe certain things because the
+likelihood that the LLMs were trained on
+some of those words and stuff as the
+translations for in natural language
+we're calling this effect glitchy CRT
+scan lines and it knows the code
+translation of that. Right? So that's
+one version of that answer. The other
+version of that answer is something I've
+started doing a lot more recently, which
+is
+just go if you find a source of
+something you think is really cool, tell
+Claude Code to go figure out how to do
+it and then you can learn it as a skill
+or just apply it to that app right away,
+you know, whatever. So, case in point, I
+saw a tweet from James McDonald
+referencing this multi-layered shadow
+technique and I clicked through it and I
+just looked briefly at it and I was
+like, "Oh my god, this speaks to me." It
+is like subtlety that is obvious if you
+know to look and it's sort of one of
+those like before afters. Basically, the
+idea is instead of literally applying a
+border on your shape or your container
+or something, instead put on a few
+layers, in his case, he usually
+references three different shadows
+that are layered with different
+opacities and spreads and values and
+stuff. And they create a border effect,
+but it's so much more subtle and it
+feels so much more elevated figuratively
+and literally. The aesthetic I just
+I love. So, like I did it to a mobile
+app that a set of games that I built for
+my son who's a toddler and these are all
+like games that help him learn
+numbers and letters and sounds. He
+like me actually I feel like he's
+surpassed me in his NFL fandom. He's
+obsessed. He can do all 32 of these no
+problem. But just like look how nice
+these borders are. And I just told
+Claude Code while I was in
+this repo, I dropped in this URL and
+I said, "This technique is awesome. I
+want it applied to our components. Go do
+that." And it literally just went looked
+at it, figured out the technique, ripped
+the snippets, and then applied it to my
+design. I even kind of started to
+experiment like you can see I contained
+the app in a phone like
+container while you view it on desktop.
+And so even there like these are three
+layers to create that border effect. But
+if you want a stronger border effect, I
+was like, okay, take the same theory but
+make it stronger. Maybe do like five
+layers. And so that's how I got a
+differentiation
+in this phone container border effect
+that feels different than this one. So
+you can take the theory of hey some
+layers of different values of shadows to
+make a hybrid border/border
+and elevation effect. But then you can
+just keep again with the same philosophy
+which Claude code is kind of like hip to
+now that I fed at that URL. We could
+keep extrapolating it and using it
+differently in different places. Again,
+for example, these buttons have, I
+think, four layers instead of three. And
+so, it's that slight differentiation.
+I'm chuckling to myself because I did
+the exact same thing with Derek Briggs's
+tweet back from when he was working on
+Campsite, and I know that him and James
+have collaborated on that technique as
+well. And so that's like definitely a
+through line, but I took
+a full tweet thread and an image and I
+fed it to Claude Code while I was working
+on the inflight UI kit and I was like,
+don't copy this exactly, scan through
+it
+and figure out like where are the nice
+easy wins based off of this tweet thread
+cuz I want to steal some of the best
+parts of this style. And it just worked.
+And to this day, my buttons look so much
+better in code than they do in Figma
+because I haven't taken the time to go
+through and do all the shadows and the
+negative spreads. And I probably never
+will.
+Yeah, that's totally fair. I was so
+excited by doing this and how well it
+worked. I had done this before, but it
+just really came through for me on
+this and I started exploring Jakub's
+articles more and realized again from
+this sort of like we're talking about
+theory right now, right? Like it's
+literal but it's also philosophy and
+approach and theoretical and stuff. And
+one of the other people that I mean
+since the beginning of me getting
+starting to explore coding and designing
+and code and stuff, Jhey Tompkins is you
+know one of the top people that I've
+been aware of. He's just so clever with
+what he does, but he's so minimalistic
+in the actual code. He's so surgical
+with how he uses everything and
+everything has a purpose and it's all so
+slim. It's like such an
+admirable philosophy, right? And so to
+pull the thread further of essentially
+referencing slash stealing but
+referencing really great designers both
+literal applications of techniques and
+philosophy. I sent Claude Code on a
+mission to create a new skill and agent
+that embody the philosophies and the
+techniques of Jakub and Jhey. So what I
+did was I really like using the compound
+engineering plugin for Claude Code that
+is in the Every marketplace created by
+Kieran Clawson. It's a really powerful
+plugin. It can be overkill I think for
+some folks but it's actually quite a bit
+more approachable and easy to use than
+you might think at first. But
+regardless, it has a skill that
+sets you up really well for creating
+skills for yourself of your own. And
+so I used that skill that it has and I
+said, I love these guys. I pulled
+together probably like 15 to 20 code
+pens and some like tweets from Jhey. Scan
+through all of Jakub's site. Scan
+through these, you know, collection of
+Jhey's code pens. Look through what's
+happening in there, gather what's useful
+from there from a literal sense and also
+process this philosophically. I want a
+skill that can do that well. So, how
+should I do that? And basically what it
+said was, we're going to make an agent
+that uses a skill that has a bunch of
+reference points. Basically I used them
+to make a visual design interaction
+design auditor that is invoked with this
+skill basically and that launches the
+custom Claude Code sub agent. So now
+what I can do I think I actually did
+this on the lunar lander game
+recreation that we'll see later. I
+had it where it was and then I sent the
+agent go do an audit on all the visual
+and interaction design of this app. This
+is the literal skill.md but it has
+these other pieces of the agent's
+knowledge base that are helping guide it
+through the audit.
+Dude, this is so good. I'm really
+underutilizing skills is what I'm
+realizing just looking at this. Dude, I
+got to tell you, like the skills thing,
+I still kind of struggle with it. I
+get it now mostly because of creating
+this sub agent's skills. Are they that
+different? I feel like I could do what
+skills can do with sub agents. And so
+honestly the easiest way for me to get
+past that was to use the compound
+engineering plugin's create a new skill
+skill to build this out for me cuz I
+wouldn't have known to go this
+multi-layered.
+Yeah. But I can tell you that having
+used it, I understand now why layering
+like this and having both the skill,
+these other docs and the agent all
+referencing each other and stuff
+makes a lot of sense. But yeah, I send
+this out. It gives me an audit and
+recommendations of what I could change
+to make it feel better from the
+collective
+philosophy that Claude Code kind of
+amalgamated about what it observed from
+Jhey and from Jakub's stuff that I sent
+to learn about.
+It's so good. I mean, I'm already
+so glad that we're doing this episode
+because this is incredibly practical for
+me because I've been doing this
+manually. For me, I look at those guys.
+I look at Emil Kowalski's. I look at a
+lot of stuff. So the amount of times
+that I've fed tweet threads or articles
+or snippets of his course into Claude
+Code and then basically was just like
+hey just read this and try to find
+things that we can do better. I've done
+that so manually at least 25 times and I
+never thought of investing into a system
+like this, but it makes so much sense
+and such an easy way to elevate what I'm
+able to bring to the table as somebody
+who's a designer who's like tinkering in
+code but definitely not a design
+engineer yet.
+That's what I loved about using the
+compound engineering skill to make this
+skill for me finally made me make sense
+of all of it more. So again, heavily
+recommend. All this stuff is free, which
+is mind-blowing.
+We'll put that in the show notes, too,
+for someone who's listening cuz I also
+haven't been there yet. So, I will be
+clicking that link later as well.
+He should have a whole episode about
+compound engineering cuz it as a
+philosophy is really powerful. I'm
+trying to work it in more and more to my
+stuff. What I really loved about it too
+is that now that I have this agent and
+this skill and this whole like folder, I
+can add to it. So, I did this not as
+like this is my end all be all of my
+guys and this is it. It was just like I
+know I really like these guys. Let's see
+if we can do this and make it work. And
+it does. So, now I can collect
+more and just be like, hey, I want to
+iterate on this skill and agent and this
+whole situation. Here's a bunch more
+links of stuff I like.
+So, good.
+Reassess and add it in and just like
+and it's cool cuz you can kind
+of make it think about it again. So you
+already had these kind of these two
+perspectives from Jakub and Jhey.
+Let's add in Emil's with like 20 links
+or something, right? As opposed to now
+add Emil's perspective. You could almost
+like think about everything together
+now. So yes, we'll have Jhey's
+perspective, Jakub's and Emil's, but now
+think about like tell Claude Code to
+zoom out yet again back to the source
+material and think about what the
+general philosophy becomes with the
+three layers of perspective instead of
+the two. And so instead of just adding
+one layer to the cake, you're changing
+the whole construction of the cake when
+you add this other ingredient into or
+you can if you want to. And in my mind,
+that's where I want to go cuz then it's
+refining more and more this amalgamation
+of techniques and philosophies and stuff
+that I find really compelling.
+I find it really
+encouraging. Again, as someone who I
+kind of want to be more
+of a design engineer, you know, all day
+today, I have not really made that much
+in Figma. I've mostly been in Claude Code
+because I'm iterating on something that
+I already designed in Figma and had
+built with an engineer. So, yeah, I want
+to grow that muscle, right?
+Like I want to be more of a design
+engineer. I had no interest in really
+getting into the intricacies of syntax.
+I do think I have decent taste, you
+know, and honestly, I think you kind of
+do, too. Like, we're obviously looking
+at the same types of people for
+inspiration. Those are who I would
+consider the best of the best for sure.
+This creates that very clear tangible
+mechanic that I can use to act on my
+taste, right? It's like
+I know this is good and now I can
+actually use it instead of just pointing
+at it and saying that it's good. What a
+fun set of next steps. I'm really
+excited about this.
+The amount of just amazing lessons
+and knowledge out there for free is
+staggering. So finding ways to actually
+leverage that. It's that like AI doing
+that 10x thing that you have to start
+thinking that way to get the full 10x
+out of the potential of the 10x.
+Otherwise you could end up at like two
+still which is great still but you got
+to start thinking in that systematizing
+collecting. Now, you can get big bloat,
+too, and end up like with nothing
+usable. Also, like don't create
+one skill that is every designer you've
+ever thought was cool, you know? Like,
+don't do that cuz that'll be useless.
+Like, you do want to be somewhat
+surgical and intentional and stuff. And
+as I go along, like when I use this
+skill and stuff more, it can be overly
+conservative on how obvious the effect
+should be because it has that subtlety
+influence from processing Jhey and Jakub
+stuff. But like I don't always want
+everything to be super subtle. Sometimes
+you want it to be like big but done in a
+reasonable tasteful way, right? So I
+might say at some point take it out of
+our general philosophy that like
+everything needs to be subtle. Change it
+more to is this the type of animation
+that might be something you want the
+user to kind of grab onto or is this a
+little tasty a little background for the
+if you know you know crowd that should
+take that really subtle approach to
+it. Right? And so you can just keep
+iterating, create the thing, and then
+over time give it your feedback of your
+taste of what to do with the taste it
+sort of ingested from these reference
+points.
+Let's keep the train moving here. What
+are some of the other
+things that you think more designers can
+have in their toolkit for 2026? Yeah.
+So, aside from making your own like full
+tool studio thing that has the
+parameters and stuff, and I know you
+were saying you just were doing this
+yesterday, and I had seen this before,
+but it was a conversation I had with
+Will King. Shout out Will. He just was
+like, "Dude, this is such an easy win."
+Cuz honestly, what I was talking to him
+about was how do I become more of a
+design engineer than just a designer
+that's learning some code? And one of
+the things he said is like, "Dude, this
+easy win is bring in this control
+panel." The one that I'm using is called
+Leva. That's L-E-V-A. Another popular one, I
+think, is Tweakpane, but Leva
+seems to just work really well with
+Next.js and React and all those things.
+And you can just tell Claude Code, I
+want you to incorporate a Leva control
+panel. And literally every parameter on
+here is up to you. It needs to go set it
+up for you and assign variables and
+things like that,
+but it gives you the, you know, again,
+what designers feel like they can be
+missing when they're designing in code
+is nailing those details, especially in
+like interaction design and stuff. So,
+this is also for my personal site. This
+is going to be like a throwaway is kind
+of the wrong word, but kind of. I'm
+just going to house this in this little
+retrofuturistic tablet thing that I've
+made. It's a game. I recreated the lunar
+lander game. It was my dad's favorite
+game way back in the day. And when we
+were young, like killing time in the car
+or something, my dad was an early
+adopter, so he was a Palm Pilot person.
+And they had the lunar lander game and we
+would totally just sink 45 minutes into
+that with the stylus and everything.
+So, I went and was like, "Oh, this fits
+thematically and it's kind of a nod to
+my dad and my past and stuff." And I'm
+just making this as a little bonus
+Easter egg in my personal site, but it's
+fully functional. Like, all of this is
+real. So, I've got the rocket here and
+I've got the lander. Eventually,
+zantos.co
+will have the fruition of all this.
+You've seen some of the other images.
+I've shown you some of the visual
+language that I've been creating
+around this imaginary world that now I
+also have to incorporate my son into
+because he saw me working with it for
+mine. He's three and a half and he was
+like can I see myself in space too and I
+was like
+yeah give me a little bit. I've
+basically become a creative studio for
+my toddler. That's straight up what's
+happening now.
+Truly though truly it is building
+for yourself and the people immediately
+in your orbit
+is how I've learned almost everything
+about coding and building and doing all
+that stuff. So, if you notice here, I've
+got these corners sitting on all of the
+cards, and the hover state draws them
+from the corner
+to the middle. So, they start from each
+corner, and they animate to meet in the
+middle.
+Now, I might want that to be
+a little bit snappier.
+So, I made the transition shorter
+or a little bit more luxurious. And
+there's that last like it kind of
+joins the initial line and then there's
+a following that's like the edge tracer
+that comes after it. So, the triggering
+of when that secondary tracer comes in,
+I can tweak here.
+What does it take to spin up Leva like
+this? Cuz I actually haven't used this.
+Anytime I need a control, I
+actually just custom build it. But
+this is way better than anything I coded
+quickly.
+No, seriously, like nothing. Like just
+tell Claude Code I want to use Leva.
+This is the stuff I want to be able to
+control. Make a plan. Like it's
+Man, I've been doing this all wrong.
+That's why we do this. And again, yeah,
+shout out Will for reminding
+me of this. Like I just I'd seen some
+folks do it before, but reminding me of
+just the incredible power of it with
+total simplicity for your coding agents
+to set up for you. And you can tell it
+in your human terms. Like I even,
+described in natural language how
+I wanted these corners to exist and draw
+themselves to each other on hover. That
+was all natural language. So, even when
+it came to getting the controls around
+it, I still it's just like I wanted to
+be able to tweak stuff around that
+effect
+like that. It's not even
+that much more detailed
+than that. You could just say all the
+things around the hover states for the
+cards in the level selector. And
+that's what I did yesterday. I had a
+pulsing animation for an idle state
+cuz I was trying to communicate that you
+can slide something
+and I just knew I needed some
+movement but I had no idea like should I
+use react motion? What kind of easing
+curve or spring? Like I just didn't even
+know. So I kind of just had it throw
+something and then my prompt was and
+give me knobs for all of the relevant
+controls that I might want. Like I
+didn't even know what they
+would be
+and it worked. It worked. It wasn't as
+good as this. I should totally use Leva
+next time, but it's not.
+But it's still that simple, too.
+It's basically what you did, but to make
+it a little better, you just need to
+know, oh, yeah, the Leva control panel,
+which is awesome. And this is again
+where it's just like collect those
+knowledge chunks as you're on Twitter
+and as you're on the web and like be
+careful of amassing too much that you'll
+never use, but stuff that you find
+that's like, oh my god, that's a
+no-brainer. Another thing that you could
+do specifically for Claude Code, you can
+go into your global user settings. So I
+could open up a Claude Code session be
+like, hey, put in my global claude.md
+essentially. So that's known to Claude
+Code in any project or session you do.
+Whenever I say give me controls to tweak
+something about UI, when I say that, you
+should know to go grab the Leva
+component, bring it into our app and ask
+me any clarifying questions you have
+about exactly what things even from a
+natural language perspective I want to
+be able to tweak within the control
+panel so it sets up the right
+parameters. Okay, let's dig into that
+for a second because this is another
+area that I know that I'm
+underutilizing. So, are there other easy
+wins or no-brainers that you think
+designers should do to invest in that
+top level claude.md file?
+Globally, be slim. Only put stuff in
+your global one that is like truly
+universal to what you use Claude Code for
+in general too. Even at your project
+level, claude.md, it's tempting to use
+it as your tome, like your journal of
+everything that you do to your app and
+how everything works and all that. That
+becomes inefficient because claude.md and
+agents.md if you're using Factory,
+Droid, or Codex, they are persistent
+memory.
+So, there's plenty of stuff that Claude
+Code doesn't need to know all of the
+time, even if it's critical about your
+app. Like, if I'm messing with UI stuff
+in my NFL pickum app, I don't
+really need it to know everything about
+what the API is doing while I'm working
+on something on the front end. And
+having that in there bloats its
+context, making its memory worse. So in
+general what I found is be slimmer on
+your claude.mds both global and local
+project level and even further you can
+make claude.md files in individual
+subdirectories that just pertain to your
+documentation or your backend stuff or
+your components and stuff. So being a
+bit more surgical about that is really
+helpful for I know I want to work around
+the components and make our tokens
+and our design system more robust and
+stuff and then you can have that claude.md
+for just that but then it's not
+staying in its persistent memory for
+like if you're working at the top level
+and working on the whole app in general.
+The reason this is a hard one to answer
+definitively is because go look on
+Twitter, YouTube, Google, whatever. And
+the philosophies around this stuff is a
+huge spectrum, right? And I've spent so
+much time previously
+reading and following everyone's advice
+of set up your things this way, do your
+flow exactly this way, use this new MCP
+that does this and this and you can
+learn from that. And I'm not poo
+pooing that entirely, but what I did
+find was it's easy to get caught up cuz
+that stuff changes so fast. Like the
+recommendations from 4 months ago almost
+certainly are not ones you should follow
+today if it was made literally 4 months
+ago unless it's a philosophical thing.
+And that's where I'm like, learn the
+philosophy and the approach and the
+ethos of all of this more than the
+literal way to direct your AI to be
+better because they level up themselves
+so often. I can't tell you how many
+times I've built little tools for myself
+in the past more in my earlier days
+like Claude Code itself just like sent
+out as an update like two months later
+that I sunk 20 hours into
+making this little tool and just like
+yeah that's not necessary and keep in
+mind that all of these people they're
+content creators they get views from 10x
+your Claude Code production by doing
+these three things right they're not the
+authority on all this there's still
+plenty to learn I'm not again I'm not
+out on all of this entirely, but I think
+you're better off understanding the
+philosophy and the theory of most of
+this, figuring out how to implement it.
+Sometimes experimenting, you know,
+again, that compound engineering plugin
+is one of those things that I'd say
+that's one of them that's like, no, do
+try that. But you also just download
+the plugin and kind of learn how to do
+the slash plan workflow slash review, but
+it's not a whole big setup that you see
+that has 10 steps on a YouTube video or
+something. It's kind of a vague answer
+for like what to put in there and what
+not to.
+I respect the answer a lot actually and
+you've made it
+because there's no great answer to do
+that.
+Yeah, that's and the reality
+is we're filming this video. It's going
+to be very helpful. And even though
+you're making a point of staying at a
+philosophical level, certain things are
+going to be outdated. You know,
+this is not evergreen content.
+Yeah. It's just they keep leapfrogging
+each other. And so especially as
+designers who are not as technical and
+at least for myself if I get a piece of
+advice I kind of follow it to the letter
+because I don't have the first
+principles knowledge to deviate as well
+or to know what little bits and pieces
+to take. And so keeping that more
+level-headed approach
+I think is a good it's something that
+I'm glad to have in this video. I guess
+anybody who's watching or listening or
+whatever like you know plays guitar or
+something like how many pedals and amps
+and guitars and pickups and everything
+are there that like there is no answer
+to what's the best setup, right? Like
+we're basically in that territory with
+AI tools. Same way with guitars. Like
+you're always going to get a better
+sound out of a tube amp if you don't
+specifically want the solid state sound
+that you know metal players want and
+things like that. So there's basic
+tenets like that. Plan before you
+execute with your agents. That's like
+finally all the tools have built that in
+as more of the standard, but that's
+been true for a while and it
+just keeps being true. But aside from
+that, when it's all these different
+setups and stuff, like play around.
+You're going to keep evolving. You're
+going to keep learning. You're going to
+keep figuring out what works
+for you. And then talk to people, read,
+learn, absorb new philosophies, try that
+philosophy out, see how it works for
+you. We're in a really exploratory era
+with all this stuff.
+Nobody really has definitive answers
+outside of some of those big core
+tenets of this is the best way to do
+this, this, and this. Feel it out. Find
+what you like, too. Make sure that
+you're following and looking at people
+doing that kind of thing. And then go
+play around and follow your passion
+there. You'll learn a lot quicker
+that way and become less susceptible to
+the loop of optimize, optimize,
+optimize, optimize and spending more
+time on like your system and your
+setup than doing the actual thing. The
+importance of experimentation comes up a
+lot. I totally agree. That's like the
+era that we're in. The reality is like
+not everybody has this blank credit card
+that is the corporate card
+that they get to just point at anything.
+And so there is some strategy especially
+as someone who's like charting a
+learning path for themselves this year
+but they don't have unlimited funds.
+Like how do you think about the right
+way to invest in these tools in a way
+that makes sense for like an individual
+who just wants to grow who doesn't have
+this unlimited budget?
+Free trials are awesome. Use them. At
+the UX Tools Lab stuff. We're going to
+be trying to put out ways for you to
+really condense like, should I care
+about this? Do I need to pay attention
+to this? Cuz there's way too many and
+there's so much noise and there's going
+to be plenty of overlap and stuff. So,
+you know, we're talking about setting up
+all your tools and your workbench and
+all that kind of thing. And figuring out
+combos for those can be really good in
+stretching your dollars. So, let's
+say, you know, someone asked me a
+question about I hit my Claude Code
+limits on my $20 plan quickly,
+regularly, and then it kind of breaks my
+flow cuz I'm like exploring. I'm doing
+stuff and stuff's working. It's like,
+you've hit your limit now, and you won't
+be a limit will reset at 2 p.m. and it's
+like 11:00 a.m. And it's just like it's
+such a frustrating wall to hit. So, like
+one thing that I like to do is combine a
+Claude Code subscription and I have a
+Factory Droid $20 subscription. And
+Factory is nice because it's like Cursor
+in that most of the major LLMs that
+you'd want to be using for coding
+are available in there. Gemini 3 Pro is
+great for UI generation. I'll go
+do stuff with Gemini 3 Pro through
+Factory to go execute that stuff, then
+hop over to Claude Code, the regular
+Claude Code to be doing bigger things,
+even though Claude Code also exists in
+Factory. But either way, I could bounce
+one direction or the other if I'm
+running out of my tokens in Factory or
+if I've hit my limit in Claude Code. You
+can add Factory or add Cursor. Add
+that $20 of one of those and then
+theoretically you could be doing a fair
+amount for $40. What I would say is if
+you're spending a decent amount of time
+in Claude Code that $100 tier is I use
+it. That's what I have. I almost never
+hit the limits and I hit it pretty
+hard a lot of the time. So, it feels
+like a lot, but you just got to like
+zoom out a little bit and think about
+what you're doing with Claude Code.
+Because keep in mind, like I'm not just
+building with Claude Code. Like I sent
+you, the Obsidian doc of some
+of the things that we're thinking about
+talking about today. And that's this. I
+have my Claude Code sitting on top of my
+Obsidian vault. And it helps me
+structure all this stuff. I can interact
+with Linear just through Claude Code to
+Linear and just kind of like clean
+out these issues and let's optimize
+these and if these are in this kind of
+state put it on hold and blah blah blah.
+So like Claude Code can be so many
+things that aren't coding. Claude Code
+is just Claude's computer. That's
+another one of those categories where
+I'm like, I know there's something there
+for me and it just kind of keeps getting
+knocked down the totem pole a little
+bit, but I see some of these workflows
+that people are stringing together using
+Claude Code way outside of like the
+context of an IDE that are really
+compelling.
+That actually gives me a good reminder
+of a thought that I had in that
+experimentation realm. If you can block
+out at least a half day, if it needs to
+be on a weekend, fine. If it's during
+the week and you can do that with your
+schedule, great. I've started to do what
+I'm calling tuneup days. And it's
+specifically for I'm not allowed to
+actually be productive in like a
+project. I can only enhance my setup.
+Finally bring in that workflow that
+people have been talking about. Finally
+install that plugin and try out the
+compound engineering and finally
+clean up my folder structures of this
+and that like a lot of those finally
+things. I have content sections of
+it. So education stuff. If there was an
+interview I'd really been wanting to
+thoughtfully consume for a while, I'll
+do that on a tuneup day or an article
+that I want to be thoughtful about.
+Playgroundy stuff too, like go do
+something that has no like stuff for my
+toddler. I just experiment with
+stuff all the time. Like right now, I'm
+adding to his games app basically an app
+within that for drawing on the iPad,
+both for coloring and tracing
+letters to learn how to write his
+letters. That's a playgroundy kind of
+thing. And giving yourself the time
+to play is a really good way to give
+yourself the license to go grab that
+tool, go sign up for that trial, give it
+a shot. I've been hearing about this
+thing a million times. Let's actually
+figure out what that does and does this
+matter for me and stuff. So, when it
+comes to the experimentation stuff and
+the overwhelm of all of that, I keep a
+running list of things that I'll want to
+do for my next tuneup day. And then when
+it gets to that day, I'll sort of like,
+all right, I'll pick out this one and
+this and this and this and then I go do
+those. Well, I feel like this entire
+episode has been a tuneup day for me and
+thank you for having me. I
+have a handful of very practical
+next steps. It's corny to say, but I
+literally
+wrote out on my own intentions for this
+year. Like I want to be more of a design
+engineer.
+Yes.
+This just got me excited, you know, like
+this got me energized and gave me some
+very practical next steps that I can
+take. So, I appreciate you as always,
+Kyle, for coming on. It's been fun.
+For sure. Thanks for having me, man.

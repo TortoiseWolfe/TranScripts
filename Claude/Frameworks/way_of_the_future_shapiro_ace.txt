@@ -1,0 +1,477 @@
+This is the WAY OF THE FUTURE
+David Shapiro
+https://youtu.be/2SBMsfU-XFo
+Uploaded: 2026-01-26 | Duration: 21 minutes
+
+So, the entire internet seems like it's
+losing its composure over Claudebot. And
+what I wanted to do was just kind of
+explore what's going on. Now, I spent a
+little time kind of reading up on it and
+figuring out what is it, how does it
+work, and that sort of thing. So, let's
+just start at the top. Claudebot is a
+semi-autonomous
+personal agent that the primary
+difference is that it is proactive. It
+finds stuff to do rather than just
+waiting for you to give it commands.
+Now, this is a non-trivial
+problem and it's one that I had been
+working on for quite a while and I'll
+talk about my previous work on this
+in a little bit. But the long story
+short is that people are freaking out
+about it because this is the level of
+autonomy that the agentic browsers
+were supposed to promise, but those were
+built in more of a let's say a
+paradigm that was more corporate
+friendly. Whereas Claudebot is open
+source and it's rogue. It's very
+renegade. And the reason that it emerged
+in the open-source space is because of
+the lower risk. It's saying, "Hey, this
+is open source software. Use at your own
+risk. If it deletes all of
+your emails or buys a million
+first-class tickets to Tahiti, that's on
+you." Whereas the Comet
+browser and the OpenAI browser, they
+had to make sure that it couldn't do
+those things. So, this is where the
+open-source movement has a very
+distinct advantage over corporations,
+over closed source, because it's just
+like, I'm just going to release this and
+see what happens. So, people are
+freaking out about it. This tweet in
+particular was hilarious. So,
+Flowers, this is the same person
+who was formerly Future Flowers
+said, "We should give Claudebot Minuteman
+3 access for a fast fun alignment
+test."
+So the idea is like, okay, like what
+kinds of guardrails does this have and
+what are the safety
+risks? And on a technical level, what a
+lot of people are concerned about is
+that you have an AI that's constantly
+running. It's got ports open, so it's
+hackable, so it's a security nightmare.
+So that's one thing that people are
+worried about. But you can run it on a
+local PC, you can run it on a Mac Mini,
+you can run it on a micro PC and then
+it just becomes your little shotgun
+ride-along buddy. You could put it in a
+container. If you containerize it,
+you can run it on anything including
+your phone. So this is very obviously
+the direction that things were going to
+go. And the reason that like all the
+primitives have been worked on.
+So there's a few technological
+primitives and what I mean by
+primitive is like the basic building
+blocks. So the technical primitives that
+we've been working on over the last few
+years and I say the royal we like all of
+us is so number one models that
+were capable of agency so taking tasks or
+taking commands, solving tasks, solving problems
+and that sort of thing. Tool use was
+one of the next big ones. So tool use,
+the ability to use JSON, the ability to
+use APIs, the ability to even say I don't
+know how to use that API. Let me
+find the documentation. So a lot of
+those autonomous, those
+fully autonomous tasks that were done in
+service to user-directed tasks were
+like kind of some of the building
+blocks. Memory management so
+recursive language models, that
+innovation has been a big contributor
+because one of the biggest problems is
+not what can you do, it's remembering
+what should you do, what does this person
+need. So things like retrieval augmented
+generation was kind of the first version
+of long-term memory, but it was really
+unstructured. It was basically just a
+soup of memory and had very very
+little structure. So recursive language
+models are a better more structured
+memory management system. And so this is
+similar to what I worked on a few years
+ago called REMO. Which was recursive
+emergent memory optimization I think is
+what it stood for. I worked on agentic
+memory systems for a while. So for those
+that have been around for a while you
+remember when I was working on that and
+when I was working on things like NALA
+and the ACE framework and I'll talk
+about that in just a minute. So the
+where we're going with this is this was
+very obviously the path forward. So over
+the last couple years, I've made a few
+videos talking about how just due to
+efficiency, this is what the market
+would demand because as soon as the AI
+was capable of being fully autonomous,
+people would build things that were
+fully autonomous and then the market
+would demand things that were fully
+autonomous. So this is and I started
+saying that because you know two, three
+years ago when OpenAI and Anthropic
+and everyone else is saying humans are
+going to be in the loop and it's just
+going to empower humans and it's going
+to be an empowerment tool and I called
+BS on that because that's not how
+technology works. You don't get to
+decide what a technology does ahead of
+time. There's emergent capabilities and
+when you take a step back
+and you say we are clearly building
+something that is a thinking engine and
+what's the difference between being able
+to carry out a task that you tell it to
+carry out and autonomously carrying out
+that task? Well, you just need something
+to specify the task. So this is what
+an agentic framework is. You have one
+module or one motor or one loop that's
+saying okay what's the most important
+task to do next? So that's one loop and
+then you have the outer loop which is go
+do the task and so then you have other
+services that manage the memory and that
+sort of thing. I remember when I had
+built a small team and we were working
+on the ACE framework. One of the team
+members implemented it in such a way
+that it started doing things
+autonomously and he shut that off. He's
+like well I didn't like that it was
+coming up with its own ideas. I want it
+to only do what I tell it to. I'm like I
+think you're fundamentally missing the
+purpose of autonomy. And he's like,
+"Well, no, but we need user stories."
+And so I was like, "Okay, this team
+clearly doesn't get it." So I was like,
+"All right, you guys can do whatever you
+want."
+Anyways, so long story short, I've been
+in the space for more than four years
+now. I wrote Natural Language Cognitive
+Architecture four years ago. And so I'm
+really excited. It took both less time
+and more time than I would have hoped
+for this kind of stuff to be out there.
+And I'm glad that I was there to help
+it along. So, let's see. So this is my
+original work. So, I wrote Natural
+Language Cognitive Architecture more
+than four years ago. And this was
+basically with GPT-3. I realized that
+this was the agentic framework. So I'm
+not saying that this is exactly how
+Claudebot works because again this was a
+while ago and you can't predict
+everything but this was the theory that
+I had. So you had the inner loop which
+would do a search space, create a kernel
+which is basically what do I do, then
+build a dossier. So that's a task
+specification and then load that into a
+shared database. And this is pretty
+close to how Claudebot works. Where
+there's like a tasks.md file and
+then you have a few other shared things.
+And the innovation here and I was
+actually working towards that was just
+put everything in plain text. You don't
+need a database, just put it in plain
+text because that's what the language
+models read. And so everyone has settled
+on do it in markdown. And then the outer
+loop is actually the task execution
+loop. So this was my first idea where
+you have the shared database. So that's
+kind of your recursive language model.
+So that's your context management.
+That's your shared tasks and that sort
+of thing. And so then you build a
+context. So by extracting from that you
+build a corpus which is basically
+recruiting all the information that you
+need to execute the task. Then you do
+the task and you output the task into
+the environment. So that's your API
+calls and that sort of thing. And then
+that updates so you get feedback. So you
+get the input processing and output
+loop. That's the outer loop. And then
+the inner loop is the task manager. And
+so this was actually pretty salient.
+This is pretty close to how Claudebot was
+ultimately implemented. So the next
+layer that I was working on was the ACE
+framework. So ACE framework stands for
+Autonomous Cognitive Entity and it's a
+more sophisticated hierarchy. And
+basically doing a side-by-side
+comparison, Claudebot actually does all
+but the aspirational layer. So to
+provide a little bit of more context,
+the entire theory of the ACE framework
+was that you'd have hierarchical
+layers. So different processes that were
+responsible for different aspects of
+basically making stuff happen. So you
+have the global strategy layer which is
+the environmental context and your long
+time horizon planning. The agent model
+which is basically a list of what your
+agent can and cannot do. As well as it
+has to understand what it is. So like I
+understand that I'm Claudebot and here
+are my tools, here are my hands, here's
+my memory, here's how I work. Because
+this was important at the time
+because language models had a lot less
+baked in in terms of what they were and
+what they were capable of. So we had to
+explicitly state you're a language model,
+this is you're a part of the ACE
+framework and that sort of thing and the
+Agent Forge team has taken all this and
+run with it. So they're still chugging
+away as far as I know. Then the
+executive function which is risks,
+resources, and plans. As far as I know
+the Claudebot focuses more on plans and
+maybe resources. I don't know if it has
+a risk control layer. But that would be
+a really easy thing to add. Next is
+cognitive control which is task
+selection and task switching. So
+cognitive control is about saying like
+I'm failing at this task. I need to
+either cancel this task or try a
+different method or that sort of thing.
+The inspiration for this layer was
+actually frustration. The
+neurocognitive point of frustration is
+to tell you that what you're doing isn't
+working. And so you get frustrated
+enough you either quit or you try harder
+or you try something else. So that's
+basically what the cognitive control
+layer does. And then you finally have
+the task prosecution layer which is
+actually executing a specific task like
+call this API, make this calculation,
+write that function, that sort of thing.
+Now many tasks actually require all of
+these layers. So this was basically kind
+of what a lot of people in the project
+and people who were observing it at the
+time, they said you're basically
+describing an org chart of a company.
+And so some people actually represented
+it as like floors of an office building.
+And so then you have many small agents
+taking on each role in that floor and
+they all talk with each other. And so
+then you have a northbound bus and
+southbound bus. So the northbound bus is
+basically feedback from the environment.
+So this is the green bar here is your
+interface with the outside world. So
+that's APIs, that's telemetry, that's
+anything that you have control over or
+get input from from the outside world.
+So that information needs to be
+disseminated to all the agents and
+layers. And then the southbound bus is
+command and control. Now, one of the
+things that is missing from Claudebot is
+an aspirational layer. So this is one of
+the main critiques that a lot of people
+have created or said is that Claudebot
+doesn't have like its own Supreme Court
+to decide like does this abide by our
+mission values or our mission parameters
+or universal ethics or that sort of
+thing. And so the aspirational layer is
+about morality, ethics and overall
+mission. So that's very similar to what
+you would say is like the constitution.
+So like Claude's constitution serves as
+an aspirational layer and this has been
+really the centerpiece of my work since
+I got into AI safety which is the
+Heuristic Imperatives. I'm really glad
+to be talking about the Heuristic
+Imperatives again. So the Heuristic
+Imperatives are what I came up with
+after studying morality, ethics,
+philosophy, game theory and that sort of
+thing which is okay if you have a fully
+autonomous machine what are the highest
+values that you should give it so that
+it stays aligned with humanity and
+pro-life and that sort of thing. And so
+that was: reduce suffering in the
+universe, increase prosperity in the
+universe, and increase understanding in
+the universe. So I came to those three
+values by figuring out like what are the
+most universal deontological values. So
+that's a duty-based ethics which is
+saying like from where I'm at today what
+should I try and achieve and so many
+people confuse like the paperclip
+maximizer is an example of a teleological
+thing. It's like the best version of
+the universe is the one with the most
+paper clips. So that is purely a
+teleological version of morality or
+ethics or mission or purpose. Whereas a
+more deontological thing is from where
+I'm at today, what do I have a duty to
+do? And so like a duty to protect. So
+this is where Asimov worked with the
+three laws of robotics which is robot
+may not harm a human. So under whatever
+the outcome is, whatever the long-term
+outcome is, do not do any actions that
+harm humans and then do not do any
+actions that allow harm to come to
+humans and that sort of thing. And then
+of course later in the Foundation the
+zeroth principle was actually your goal
+is to preserve life. So ultimately
+something like Claudebot will need an
+aspirational layer and I would recommend
+the Heuristic Imperatives. So reduce
+suffering, this is a very pro-social and
+pro-life heuristic which is basically
+most intelligent animals will recognize
+the suffering in other animals and try
+and intervene. So you'll see this where
+elephants and other animals if they see
+another animal in distress they'll try
+and help. Generally speaking animals
+will try and help each other because
+they recognize that distress, that
+suffering is bad. And so I said
+suffering specifically because there's a
+difference between pain. Pain is
+instructive. Pain is like you need pain
+to understand what hurts you. But
+suffering is non-adaptive. Meaning
+suffering is just pain that has no real
+purpose. So suffering is generally bad.
+Now from an artistic perspective some
+people say suffering creates art which
+is a defensible assertion. You look at
+Vincent Van Gogh and he suffered a lot
+and he created great art and that sort
+of thing. But that doesn't necessarily
+mean that it is teleologically good. And
+also you're never going to eliminate
+suffering. So another thing is what I've
+established is a vector. So reduce
+suffering, not get it to zero, not
+eradicate suffering, just reduce it.
+Just control suffering. Next is
+prosperity. Because when you have a
+heuristic direction that says reduce
+suffering, the best way to reduce
+suffering is to reduce life because the
+less life there is the less suffering
+there is. So then it took a while to
+figure out the term prosperity. So to
+counterbalance reduce suffering you then
+have a value of increase prosperity
+which is a very universal word. It
+comes from Latin prosperitas which means
+to live well. Literally the root of
+prosperity means you want to live well.
+You want to flourish, you want to
+thrive. So you reduce suffering, you
+increase thriving, you increase
+flourishing in the universe. And it's
+universal because all life depends on
+all other life. Now that's not
+universally true. There are parasites.
+There are life forms that are basically
+just harmful. But at the same time every
+life lives in the trophic level or in
+the ecosystem and occupies a particular
+niche. So then the final one was because
+I realized well just those two values
+you could end up with a green earth that
+has no intelligence on it, that has
+nothing, no curiosity, no expansion and
+so then I realized that the core
+objective function of humans that makes
+humans different is that we are curious.
+So I said how do we encode a curiosity
+algorithm into an autonomous machine
+whether it's AGI or ASI or your personal
+Claudebot as it turns out to be and that
+was to increase understanding. So
+curiosity is the desire to know for its
+own sake. So the desire to understand
+for its own sake. So rather than saying
+curiosity, which is I just want to know
+things, right? Because pure curiosity,
+unbridled curiosity can lead you to do
+things like section 31 and torturing
+frogs just to see what happens. There
+was actually an episode, this was also
+inspired by an episode of Star Trek
+where there was this galactic entity
+that wanted to experiment on the crew of
+the Enterprise just to see what would
+happen. And so that was an ethical
+dilemma showing pure curiosity for its
+own sake can actually be destructive and
+it can be harmful and cause suffering.
+So however you do want to understand and
+that's one of the core drives of
+humanity. It's like hey what's over
+there? What's on the horizon? How do I
+get across this body of water? Why does
+fire happen? Our curiosity is what sets
+us apart. So then I said okay we have
+created this higher layer of
+organization and how do we encode that
+into a machine. Now plenty of people
+because if you followed me for a while
+you know that Heuristic Imperatives,
+people are talking about it, people have
+put it into agents. I'm really excited
+and the reason I'm making this video and
+I didn't know that I was going to make
+the video this way but the reason I'm
+making this video is because I think we
+have a really powerful opportunity to
+now take that prior work, the Agent
+Forge team worked on, the ACE framework
+team worked on, and anyone who's tried
+to implement Natural Language Cognitive
+Architecture. The core Heuristic
+Imperatives would be I think really
+great to add to something like
+Claudebot. So yeah, I guess that's
+where I'll leave it.

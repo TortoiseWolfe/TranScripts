@@ -1,0 +1,476 @@
+My 3-Step Claude Skill for Perfect UX Design
+Sean Kochel
+https://youtu.be/nDHXLnwlIaY
+Uploaded: 2026-01-12 | Duration: 18 minutes
+
+If you're tired of getting boring
+vanilla UIs like this from your AI
+workflows and instead want something
+that looks and feels super professional
+and is actually surprisingly
+straightforward to make, well then do I
+have good news for you. Because all you
+need to do is stop skipping one critical
+piece of the planning process, which is
+exactly what most builders do. They jump
+straight into the AI coding piece, but
+every minute saved by not planning ends
+up being 10 minutes down the line of
+extra work that needs to be done to help
+make something like this not look like
+crap. And so skipping this stage is why
+these apps tend to look super generic
+and put people to sleep. So I built a
+clawed skill to help fix this, and I'm
+going to give you access to it. But
+first, let's build the first piece of
+the puzzle. So, step number one is
+creating the PRD. And this is the thing
+that most people do. Do do
+get it. So, this is where we define the
+features, talk about how they're really
+meant to be used, who the target users
+are, what the general flow kind of
+should be, what is the success criteria.
+How do we know that we built a thing
+that's actually doing what it is meant
+to do? And the thing is from here, you
+typically can actually build something
+that technically works. And so this is
+what most people do. They're going to
+take something like this. They're just
+going to throw it into clawed planning
+mode and say, "Hey, go build this
+thing." And if they're feeling super
+spicy, they might work something in here
+that says like, "And hey, give me a few
+pointers about the UX while you're
+doing it." So, in order to actually
+create this PRD, we can use a really
+basic command. I have one here. It'll be
+below the video. But basically, all we
+need in order for this thing to actually
+work is just some sort of documentation
+about what our MVP is. So, in this case,
+I'm giving a concept for what this app
+is. So, I'm actually adding in a pretty
+big new feature to an existing app, and
+it's basically a kind of N8N like
+interface. So, it's going to be a drag
+and drop builder with nodes that you can
+connect into things, have branching
+logic, all of that type of stuff, but
+there's a few unique things that is
+going to be inside of it. And so, I'm
+just prompting like what is the core
+concept really here of what we are
+building and then what are the main
+flows or steps or features that I'm
+thinking about in this thing. And so,
+this is where you can come in and just
+dump out what you're thinking of for
+this app. Now once we have this, I put
+it in a markdown file inside of the
+project. This one is called
+MVP.markdown. And then all we're going
+to do is we are going to go into cloud
+code and we're going to run this custom
+slash command. So we're going to say
+demo prd and then we are just going to
+give it the context of this specific
+file. So we could copy the path is one
+way to do it. And then we're just going
+to say go. And from here it's going to
+generate for us this PRD that we just
+looked at. So this is great because
+again it is our starting point. We need
+to have some tangible definition of like
+what is the thing actually that we are
+going to build in detail right some
+degree of detail. But if we were to
+really like think about this there's
+actually a ton of ambiguity in terms of
+how we would actually do this. And that
+ambiguity is how we end up with
+something like this. Because while it is
+functional, we're saying, "Hey, we have
+these nodes. These nodes connect
+together and they pass data in this way,
+that's not really enough to build out a
+user experience that feels really good
+because any given problem, if you were
+to really think about it, has dozens, if
+not hundreds or thousands of different
+potential ways to solve that problem. As
+an example, if you were to think of a
+tool like chatbt or claude, they didn't
+need to make it a chat interface, right?
+They didn't need it to be an interface
+where you could come in and send
+messages through and get messages back.
+They could have made it so that you fill
+out a form and they email you back with
+what the LLM said, but that would
+probably be a user experience, right?
+And so, this is what we're trying to do.
+We're trying to think through how do we
+actually want someone to experience this
+thing in detail. So if that's the case,
+well then our next step becomes defining
+that experience. And this is the step
+that most people skip. So, when I first
+started thinking about like how to code
+well and build stuff with AI, as
+someone that had coded a fair amount
+before, but was not a trained software
+engineer, what my mind immediately went
+to was, well, how does a world-class
+product organization actually build
+stuff? And can I just try to mimic that
+process? So, if I were to interview the
+top 10 engineering leads from the best
+companies in the world or the top 10
+product design leads from the best
+companies in the world and I said, "Hey,
+teach me every single step about what
+goes into building a great product, what
+would they actually answer and can I
+codify that and put it into a process?"
+Or if I asked them, "How would you build
+the worst product in the world?" Then
+maybe just do the opposite of whatever
+that was. And so, as it turns out with
+product design, there's actually some
+pretty standard stuff that everyone
+would pretty much agree you need to
+consider that thing and work it into
+your plan before you start building out
+actual features. And so, I've built some
+of these things into a claude skill,
+which you can get below the video. So,
+let's talk about what some of these
+things actually are. The first pass is
+mental model alignment. What does the
+user think is happening or think should
+be happening as they approach this
+feature? This is why it's important to
+actually research your ideal user and
+try to put yourself in their shoes with
+respect to the problem your app solves.
+What do they actually think should
+happen as they load up your app and try
+to solve that problem? Second pass,
+information architecture. what actually
+exists inside of the app and how is it
+all organized? So, what are all of the
+different pieces of information or
+context or concepts that someone is
+going to actually encounter inside of
+this app? And how are you going to
+choose to actually show them that
+information? Affordance and action. This
+is something that I think a lot of
+people skip over. How are you going to
+make the actions people can actually
+take clear to them? What actually looks
+clickable? What looks editable? What
+looks like it should generate you an
+output? What looks like something that a
+person should be aware of that this
+thing is actually going on as they
+interact with your app. So, we go
+through all of these types of questions
+in stages thinking through like they
+kind of build upon each other, right?
+Because how someone chooses to think
+about how the app should work to solve
+their problem is going to inform how we
+choose to present them information,
+which is going to inform how we choose
+to show them what information they can
+actually take action on, which then
+informs each subsequent stage down to
+how the system talks back to them. How
+does it interact depending on if the
+screen is empty, if it's loading, if
+there's a bunch of data in there, if
+there's incomplete data, if there's an
+error. We need to think through all of
+these things ahead of time because if we
+don't, the language model is going to
+make those decisions at game time and
+they love to cut corners. So what's
+going to end up happening is that they
+just don't do it at all. So again, what
+we can do here is we can just manually
+invoke this skill and it looks like
+this. So in this case, again, we're
+manually invoking it, which technically
+you should configure it. So, this could
+be automated, but for demo purposes, I'm
+going to manually call it. Use this PRD
+skill to translate that PRD that we made
+into our actual UX. And when we hit
+enter on this thing, it's going to run
+through. It's going to process it and
+out the other side, we're going to get
+an actual UX specification. So, this is
+following that structure that we just
+showed in our skill. So, we're thinking
+about the actual mental model that a
+user has as they approach this thing and
+how this needs to be reinforced through
+our actual UX decisions. We start
+thinking about the actual information
+architecture. What are all of the things
+like the actual elements and concepts
+that a user is going to encounter in
+this app? And so, again, this is all
+based on our PRD which was based on that
+MVP. So, we're going to have concepts
+like canvases, nodes, triggers, actions,
+connections between them. We're going to
+have a sidebar. We're going to have all
+of these other things that are specific
+to this app. And this is important to
+know because then we have to think
+through, well, how are we going to
+display this all to them in a cohesive
+way? And so, again, we're going through
+and we're grouping all of this together
+and talking about like, well, what shows
+where. So for example, if we are in the
+the node sidebar, which the node is one
+of our concepts, what are all of the
+different subconcepts and how are we
+going to choose to progressively show
+these things to people? And so we just
+repeat this process now for all of our
+UX decisions. So like we talked about
+earlier, needs to be really clear, like
+there need to be clear visual signals
+about what someone can actually do. So
+to take a really basic example of that,
+if we're going to tell people they can
+pick something out of the UI, we need to
+like indicate to them that that's
+actually something they can do. They're
+not just going to know that that's
+something that can happen. We need to be
+specific about making that clear to
+them. So again, this process repeats and
+repeats and repeats for all of the major
+features that we had inside of our PRD.
+But the problem now becomes this. If we
+were to simply take something like this
+or take our PRD and this and send it
+into a tool like Google Stitch or Replet
+Designer or one of those tools, they're
+actually pretty bad at handling this
+much context at the same time. And so we
+need now a system that can translate
+what we have just built into something
+that's going to work for those tools. So
+again we have another skill here you can
+run and this is the last skill in this
+sequence where effectively what we are
+doing is taking all of these features
+and the UX details and turning it into
+an actual build order. So if we wanted
+to actually properly capture all of
+those details and build through in
+stages, what would that actually need to
+look like? what would that sequence of
+events and what would basically the
+prompts be that we're going to paste
+into these tools. And so that is what
+this skill does. And after we run it
+through, we get out this build order
+document. Okay, so we have this big
+document that is specifying the entire
+build sequence from the creation of the
+design tokens through to the layout and
+then all of the details in between. Now
+again, all of these skills will be below
+the video. If you have a specific tool
+that you want to build with, I would
+recommend coming in and trying to tailor
+it to that platform's best practices.
+So, for example, with a tool like Google
+Stitch, you need to either be very vague
+or incredibly specific. And so, you
+might want to come in here if you want
+to use this with Stitch and have Claude
+Code update this skill so that it's
+specific for your use case. The version
+I have here is adequate to work across
+all of the different tools, but
+obviously as specific as we can get with
+the tools we're working with, it can
+become more and more polished and better
+to use. So, all we're going to do now is
+we are going to go prompt by prompt and
+just paste each of these into the tool
+one by one. So, I'm going to start at
+the top and then make my way down. So,
+there's a lot of tools you can use to
+mock this type of stuff up. You have
+Google Stitch, which I ran it through.
+You can use a tool like Replet's
+designer mode. There's tons of different
+tools that you can use for this stuff. I
+am going to be using a tool called
+Polyat. And the reason I'm using this
+tool is that I honestly think,
+especially if you want like a functional
+prototype, I think it's one of the best
+tools out there. I do not get paid from
+these guys. I do not have an affiliate
+link. It's just a really good tool and I
+really like it which is why this is what
+I use. But again, you can use any tool
+that you think works well for your
+workflows and you have a good system of
+working with. So again, we are going to
+come through here. I'm actually going to
+start with the prompt layout shell.
+Okay. So what we're going to do is we're
+just going to make the base kind of
+navigational feel and layout structure
+of this thing. So I'm going to copy that
+prompt. I'm going to come in here and
+all I'm going to do is paste it in. So I
+am going to just use one of their public
+design systems they have. So like button
+colors and things like that are already
+going to be there. I have this pasted in
+and all I'm going to do is hit go and
+then I will pause and we will look at
+what the first output is. All right
+guys, so what we got out the other side
+is again a really basic starting point.
+Okay, so we have our main canvas here,
+just the layout. Most of this
+functionality probably doesn't work cuz
+I haven't told it what I want yet. We
+have like basic configuration stuff on
+here, but we haven't even prompted what
+our UX is for that yet. So really basic
+builder. What I'm going to do now is I'm
+just going to go through and all I'm
+going to do is copy each of these
+prompts one by one and paste them in to
+this system. So we're going to go one by
+one. Going to paste them all in. And
+then I will unpause once this process is
+done. Nothing secret happening off the
+screen. It's just this is probably going
+to take about 20 minutes and so not
+worth us sitting here all just staring
+at that process. So I'm going to go
+through I'm going to start pasting all
+these in and then we will look at the
+final product. So there we go. Process
+is done. And I got to say I think it
+looks really professional. Again
+remember this is going to be one view
+inside of a larger application that I
+have. But we have now all of these
+triggers, we have the actions, we have
+some conditional like logic and control.
+And we have even some different data
+sources that we can configure. All
+really nicely organized and grouped
+together. I can drag different items
+onto the canvas. I can drag around which
+is pretty cool. I can zoom in, zoom out.
+All really nice. If I was to pop into
+one of these, again, we have some really
+nice formatting. It all feels super
+cohesive. If I was to look into one of
+these nodes, we can kind of pick our
+models out. We can see some of these
+like signals, right, of what the user
+can do in the app. So, if I were to come
+through here now, I could type in these
+double brackets and boom, I get this
+nice dropdown where I could select
+something out of my knowledge base.
+Inserts it in there nicely. What else do
+we have in here? We can come through. We
+have this little assistant at the bottom
+which we can pop out and probably chat
+with which is pretty cool. If we hit run
+workflow, we get this really nice like
+kind of loading animation showing that
+like information is passing between the
+nodes. So all in all, like it feels
+really nice. And again, if we were to
+pop in and actually look at some of
+these nodes, it just everything feels
+like it's in a spot where it's meant to
+be and that there's a reason why it's
+there. I can come in, I can add
+conditions, I can map fields from other
+places in the UI. If I were to come in
+and say I want to add in like I don't
+know a YouTube video as a data source.
+See where that went? If I was to click
+on this now, we see the YouTube name
+pops out. We can give the video. We can
+say what we want to do. We want to
+extract comments. We want to attract
+transcript. Do we want to include
+timestamps? Again, all like really,
+really nice, right? There's like a lot
+of detail in this. And again, that's
+because we planned it out first. We
+planned out all of this detail ahead of
+time, which meant when we went to the
+building process, we had a ton of
+specificity about what we wanted and we
+didn't have vagueness. And when you have
+vagueness, this is the type of thing
+that you get. And for most people, this
+is what their experience building with
+AI actually looks like and feels like.
+They have a cool concept, but then they
+get out something like this that just
+like kind of feels vanilla, right? It
+kind of feels vanilla. It's like it's
+cool. I could show it to my friends. I'd
+probably use it and it's functional, but
+it doesn't have the same pizzazz as
+something that we went through and
+thought about every little detail that
+was going to be in our build. And so,
+just to show you that I wasn't pulling
+any funny business by making this
+intentionally poor, what we did was we
+created a PRD. We actually took the same
+exact PRD that we had from the other
+project. We pasted it in in planning
+mode inside of Claude with a basic
+vanilla Nex.js application with Tailwind
+and we told it we wanted to clone the
+aesthetic of Claude. And then we gave it
+again all of those same that literally
+identical PRD and said, "Hey, I need you
+to go build this thing, right? I need
+you to go build this thing and build it
+with mock data." So I don't need you to
+build any of the backend functionality.
+Just build this thing with mock data.
+And so now you can see what the
+difference is between those types of
+approaches. So if you liked this
+process, I will link a video right here,
+which is where we actually plan out apps
+like this in extreme detail if you're
+serious about wanting to build cool
+stuff that actually works with AI
+workflows. You can adapt a lot of the
+stuff that we just did in this video to
+that process. Check that one out if you
+are interested. But that is it for this
+video. I will see you in the next.

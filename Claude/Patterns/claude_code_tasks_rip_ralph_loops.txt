@@ -1,0 +1,191 @@
+Claude Code TASKS (New Upgrade): RIP Ralph Loops! Anthropic UPGRADED Claude Code with this FEATURE!
+AICodeKing
+https://youtu.be/Qh6jg3FymXY
+Uploaded: 2026-01-23 | Duration: 8 minutes
+
+Hi, welcome to another video. So, Claude
+Code just got a pretty significant
+upgrade. They're replacing Todos with
+something called tasks. And before you
+roll your eyes and think, great, another
+fancy name for the same thing, let me
+tell you why this actually matters.
+Tasks are basically the evolution of
+Todos, but they solve problems that
+Todos never could. Here's the deal.
+As Opus 4.5 got better at running
+autonomously for longer periods,
+Anthropic noticed something interesting.
+The Todo Write tool became kind of
+unnecessary for smaller tasks.
+Claude already knew what it needed to
+do. It didn't need a checklist for
+simple stuff, but for bigger projects,
+for stuff that spans multiple sessions
+or involves multiple sub agents,
+Todos were completely useless. Think about it.
+With Todos, everything lived in memory.
+If you closed your session, your todo list
+was gone. If you spun up a sub agent, it
+had no idea what the main agent was
+working on. If you tried to coordinate
+work across multiple Claude Code
+sessions, you were basically yelling
+into the void. Tasks fix all of that.
+Now, let me explain what makes tasks
+different. First, tasks are stored in
+the file system. They live in
+~/.claude/tasks.
+This means they persist between
+sessions. You can close Claude Code, grab a
+coffee, come back, and your tasks are
+still there.
+You can even build your own utilities on
+top of them because they're just files.
+Second, tasks support dependencies.
+With Todos, everything was just a flat
+list. Task A, task B, task C. But real
+projects don't work like that. Sometimes
+task C can't start until task A and task
+B are done. Sometimes task D depends on
+task C, but task E doesn't. Tasks let
+you define these relationships in the
+metadata which mirrors how actual
+projects work. Third, and this is the
+big one, tasks enable collaboration
+across sessions and sub agents. When you
+spin up multiple sub agents or run
+multiple Claude Code sessions, they can
+all work on the same task list. When one
+session updates a task, that change is
+broadcasted to all other sessions
+working on the same list.
+This is huge for parallelization.
+You can have one sub agent working on
+the auth system, another on the database
+schema, and a third on the tests. They
+all see the same task list. They all
+know what's been completed and what's
+still pending. No more duplicate work.
+No more agents stepping on each other's
+toes. Now, here's where it gets
+interesting. Remember my video on the
+Ralph Wiggum loop?
+That plugin where you trap Claude Code
+in a loop until it actually finishes the
+job.
+Well, tasks are essentially the official
+version of what Ralph was trying to do,
+but built directly into Claude Code. Let
+me explain. Ralph Wiggum uses a stop hook
+to intercept Claude's exit attempts.
+Every time Claude tries to stop, the
+hook blocks the exit and reinjects the
+original prompt. It keeps going until
+the task is actually complete. The
+problem was Ralph was essentially a
+hack, a clever hack, but still a hack.
+It didn't have any concept of multiple
+tasks, dependencies, or coordination.
+Tasks take that same philosophy of keep
+going until it's actually done and
+integrate it properly into Claude Code's
+architecture.
+Instead of one task in a loop, you can
+have 10 tasks with complex dependencies.
+Instead of one session banging its head
+against a problem, you can have multiple
+sessions and sub agents dividing and
+conquering. And the best part, you can
+control this with an environment
+variable. If you want multiple sessions
+to collaborate on the same task list,
+you just set CLAUDE_CODE_TASK_LIST_ID
+equals whatever name you want and then
+start Claude Code.
+Sessions using that same ID will see and
+update the same tasks. This also works
+with claude -p for the CLI mode and with
+the agent SDK.
+So if you're building automation on top
+of Claude Code, you can coordinate work
+across multiple instances.
+Now let me talk about when you'd
+actually use this. For small tasks, you
+probably don't need tasks at all. If
+you're just asking to refactor a
+function or fix a bug, just ask it.
+Claude's smart enough now to handle that
+without needing a task management
+system. But for bigger projects like
+building a full feature across multiple
+files or doing a large refactor or
+creating a test suite,
+that's where tasks shine. Here's my
+workflow. I'll define my project
+requirements, ask Claude to break it
+down into tasks with proper
+dependencies,
+then spin up multiple sub agents to work
+on independent branches of the task
+tree.
+Each sub agent works in its own context
+window, but they're all seeing the same
+task list. When one finishes a task, the
+others see that update and can start
+working on tasks that were blocked. This
+is the kind of orchestration that used
+to require tools like Ralphie, which I
+covered in a previous video. Ralphie
+added parallel execution, git work
+trees, and task dependencies on top of
+the Ralph loop, but now tasks handle a
+lot of that natively. You still might
+want Ralphie for the git work tree
+isolation and automatic PR creation, but
+the core task coordination
+that's built in. Now, I do have a couple
+of nitpicks, though. First, the
+documentation is pretty sparse right
+now. The Claude Code team announced
+tasks on X, but there's not much
+official documentation yet. I had to
+piece together how it works from the
+announcement and some experimentation.
+Hopefully, they'll add proper docs soon.
+Second, I wish there was a visual
+interface for tasks. Right now you can
+see them in the terminal and you can
+Ctrl+T to hide them but a proper
+dashboard showing task progress and
+dependencies would be really nice.
+Maybe someone in the community will
+build that.
+Third, the fact that you need to set an
+environment variable to share tasks
+across sessions is a bit clunky.
+I'd prefer if there was a slash command
+or a config option for this. Something
+like /tasks share groceries to start
+collaborating on a task list called
+groceries,
+but these are minor complaints. The core
+functionality is solid and it's exactly
+what power users have been asking for.
+If you've been using the Ralph Wiggum
+plugin or Ralphie for autonomous loops,
+tasks won't completely replace those.
+Ralph is still useful for that
+single-minded don't stop until it's done
+behavior.
+But for coordinating work across
+multiple agents and sessions, tasks are
+the proper solution. Now, I think this
+is the direction AI coding tools should
+be going. We're moving from AI as a
+helper to AI as a team. And when you
+have a team, you need proper project
+management. Tasks are Claude Code's
+answer to that. Overall, it's pretty
+cool. Anyway, share your thoughts below
+and subscribe to the channel.

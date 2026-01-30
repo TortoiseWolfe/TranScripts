@@ -1,0 +1,375 @@
+Don't Use Clawdbot Until You Watch This (Security Guide)
+Snapper AI
+https://youtu.be/AbCHaAeqC_c
+Uploaded: 2026-01-26 | Duration: 12 minutes
+
+Claudebot is going viral at the moment.
+If you haven't come across it yet, it's
+open source software that lets you run
+your own AI assistant on a server. You
+can message it through apps like
+WhatsApp, Telegram, or Slack. It runs
+around the clock. You can give it access
+to your file system, shell, browser,
+calendar, and email. So, it can act
+autonomously on your behalf, whether
+you're watching or not. A lot of
+creators are hyping it right now and
+showing off the impressive things it can
+do. But I wanted to make a quick video
+to talk through what you need to do
+before you start using it. And that's
+understanding the risks and putting
+security guard rails in place. Burack
+Eragar put it bluntly in this thread on
+X. Most people will install Claudebot
+and accidentally hand it their entire
+life. If you run this with default
+settings, you're one prompt injection
+away from wiping your entire GitHub
+organization, losing your emails, or
+much worse. This thread has had over
+400,000 views, and Peter Steinberger,
+the creator of Claudebot, reposted it.
+So, there are things you need to do from
+a security and guardrail perspective to
+protect yourself before you start using
+it. And this video consolidates those
+recommendations into five steps you can
+run through in about 10 minutes. Before
+we get into the five steps, it's worth
+understanding what you're actually
+installing. Claudebot is fundamentally
+different from using something like
+Claude or Chat GPT in a browser or
+running Claude code or Codeex in your
+terminal. With browserbased chat, you're
+in the provider's environment. It
+doesn't have direct access to your local
+machine or server. With CLI agents like
+Claude Code or Codeex, they can access
+your file system and execute commands,
+but only while you're actively using
+them in a terminal session. You're
+present and you're watching what they
+do. Claudebot is different. It's a 24/7
+agent running on your server that can
+execute shell commands, read and write
+files, control a browser, and send
+messages on your behalf, all while
+you're asleep or away from your desk. It
+has persistent memory of everything you
+tell it, and anyone who can message it
+can potentially trigger those
+capabilities. That combination is what
+makes it risky. If someone sends your
+bot a malicious message or even a
+message containing hidden instructions
+in a link or document, they could
+potentially manipulate it into running
+commands, excfiltrating data, or taking
+actions you never intended. That's what
+prompt injection is. And with Claudebot,
+the blast radius is your entire server
+and every service is connected to. So
+that's why these security measures and
+guardrails are so important. And as
+mentioned, the creator of Claudebot,
+Peter Steinberger, published a list of
+guardrails that you should have in
+place. So, in this video, we'll walk
+through each one of them, starting with
+how to enable sandbox mode. Before we
+get into security steps, a quick note on
+setup. A lot of people are buying Mac
+minis to run Claudebot, but you don't
+need to do that. Peter Sinberger himself
+says you can deploy this on Amazon's
+free tier. If you want a step-by-step
+tutorial on how to set it up via AWS,
+let me know in the comments and I'll
+work on a separate video for that. Once
+you've installed Claudebot and completed
+the onboarding process, you'll see this
+screen. Then you want to press Ctrl C to
+exit and run this command. This will
+open up the Claudebot.json configuration
+file. This controls everything from
+which model you're using to how the
+agents behave. This acts as the main
+configuration file for Claudebot. You
+can see by default we have some basic
+settings already. Messages controls how
+the bot acknowledges messages in groups.
+Agents defines things like how many
+concurrent sessions can run and which
+model you're using. In this case, we're
+using Opus 4.5. The workspace is the
+directory where Claudebot stores its
+working files. And gateway controls how
+the server runs and authenticates. What
+you'll notice is there's no sandbox
+configuration here by default, which
+means right now any commands the agent
+runs are executing directly on your
+server with full access. So, we're going
+to add a sandbox block to change that.
+As you can see, I've now added the
+sandbox configuration inside the agents
+default section. Let me walk you through
+what each setting does. First, we've got
+mode set to all. This means every
+session runs inside a Docker container
+instead of directly on your server. You
+can also set this to non-main if you
+want your personal DM chat to run
+unsandboxed, but have group chats and
+other sessions isolated, but all is the
+safest option. Next, we've got scope set
+to session. This means each conversation
+gets its own isolated container. So if
+you're chatting with it via Telegram and
+someone else messages it via WhatsApp,
+those are two separate sandboxed
+environments. You could also set this to
+agent for one container per agent or
+shared for a single container across
+everything. But session gives you the
+strongest isolation. One thing to note,
+sandboxing requires Docker to be
+installed on your server. If you don't
+have Docker set up yet, you'll need to
+install it and run the sandbox setup
+script from the Claudebot repo. I'll
+link the docs to that in the
+description. And then we've got
+workspace access set to none. This means
+the sandbox tools can't access your
+agents workspace directory at all. You
+can set this to RORO for readonly access
+or RW for read write, but none is the
+most restrictive. The key thing to
+understand is that sandboxing isn't
+bulletproof. It won't stop every
+possible attack, but it significantly
+reduces the blast radius if the model
+does something unexpected or gets
+manipulated by a malicious prompt. Once
+we're happy with that, we can exit from
+this and then we can run the command
+claudebot gateway restart so the changes
+take effect. So, we've covered sandbox
+mode, but Peter also mentions
+whitelisting commands if you plan to run
+them out of the sandbox. This is about
+tool policies, controlling what the
+agent can actually do, not just where it
+runs. By default, Claudebot gives the
+agent access to a broad set of tools.
+File reading, writing, shell execution,
+browser control, and more. You can
+restrict this in your config by
+specifying an allow list and a deny list
+for tools. For example, you might allow
+the agent to read files and search the
+web, but explicitly block shell
+execution and browser control. The key
+distinction is this. Sandbox mode limits
+the blast radius if something goes
+wrong, while tool policies limit what
+can happen in the first place. Combining
+both gives you layered protection. I
+won't walk through the config for this
+one, but the docs have examples under
+the multi- aent sandbox and tools
+section. I'll link that in the
+description as well. But we can see next
+in Peter's post, he says read the
+security doc. So what I will show you
+next is the built-in security audit
+which checks your entire configuration
+for common issues. And just quickly, we
+can see the security docs here which
+again I will link in the description
+below. These are the three key commands
+you want to run as a security audit. So,
+we'll jump over to the terminal and run
+those now. So, we're back in the
+terminal. The first command I ran was
+Claudebot security audit. You can see it
+found a critical issue right away. My
+credentials directory has permissions
+that are too open, meaning another user
+on the system could potentially access
+or modify credential files. It also
+flags a warning about reverse proxy
+configuration and gives me an info
+summary of my attack surface, showing
+things like how many groups are open
+versus allow listed, whether elevated
+tools are enabled, and whether browser
+control is exposed. You can also run
+Claudebot security audit with a deep
+flag which does additional live probes
+of your gateway to check for network
+exposure. Useful if you've opened up any
+external access. But the most useful
+flag is d-fix which automatically
+applies safe corrections. And we can now
+see the output from that command on
+screen. You can see it's fixed the
+permissions on my credentials directory
+and the sessions directory changing them
+to 700 so only my user can access them.
+The critical issue is now gone. The
+warning about trusted proxies is still
+there, but that's fine for a local
+setup. It's only relevant if you're
+exposing the control UI through a
+reverse proxy. The docs recommend
+running this regularly, especially after
+changing your config or exposing any
+network surfaces. It's a quick sanity
+check to make sure you haven't
+accidentally left something open. So,
+we've locked down the agent itself with
+sandboxing and verified our config with
+a security audit. The next step is about
+the external services you connect to
+Claudebot. Things like GitHub, Google
+Calendar, Gmail, and other APIs. When
+you connect these services, you need to
+give Claudebot access tokens. And the
+temptation is to just grant full access
+so everything works. But that's exactly
+what you don't want to do. The principle
+here is minimum permissions. Every
+integration should have only the access
+it actually needs and nothing more. For
+example, with GitHub, don't give it a
+full repo scope, which grants complete
+control over all your repositories.
+Instead, use public repo if you only
+need it to work with public repos or
+scope it to specific repos. With Google,
+don't give it full account access. If
+you only need calendar functionality,
+give it read only calendar access. If
+you only need to read emails, don't give
+it permission to send. Burak calls this
+out specifically in his post. He says
+99% of people will mess this up. And the
+reason it matters is simple. If the
+agent gets manipulated through a prompt
+injection or does something unexpected,
+it can only do what the token allows. A
+readonly token, for example, can't
+delete your repos. A calendar only token
+can't send emails on your behalf. So
+before you connect any service, ask
+yourself what's the minimum access that
+is actually needed here and don't allow
+any more than that. So just as an
+example in GitHub, you go to developer
+settings, personal access tokens, and
+select fine grain tokens. This is where
+you create access tokens for Claudebot.
+You can see I've selected public repos
+only which gives readonly access by
+default. And there's a whole list of
+additional permissions here. Things like
+email addresses, SSH keys, profile
+access, but I'm not adding any of those.
+The principle here is minimum
+permissions only. So I can generate this
+token with just read only access to
+public repos. And even if the agent gets
+manipulated, the worst it can do is read
+public code. It can't push changes,
+access private repos, or touch anything
+else in my account. So, you've sandboxed
+the agent, run the security audit, and
+scoped your tokens. The last step is
+about who can actually talk to your bot.
+Burack in his post says this, "Never add
+your personal Claudebot to a WhatsApp or
+Telegram group chat. Every person in
+that chat effectively has shell access
+to your server via the bot." He says to
+treat this agent like a pseudo terminal
+because that's essentially what it is.
+And Peter echoes the same thing in his
+guard rails list. Don't add it to group
+chats if it's your personal bot. The
+reason is simple. If someone can message
+your bot, they can potentially
+manipulate it. Whether that's a
+malicious link, a document with hidden
+instructions, or just a cleverly worded
+prompt. The more people who have access,
+the larger your attack surface. If you
+do need the bot in a group setting, make
+sure you're using sandbox mode, tool
+restrictions, and set your group policy
+to allow list so only approved users can
+interact with it. But for a personal
+assistant, keep it to just you or a
+small number of people you actually
+trust. One more thing worth mentioning
+from the official readme doc. Peter
+says, "While any model is supported, I
+strongly recommend Anthropic Pro Max
+plan with Opus 4.5 for long context
+strength and better prompt injection
+resistance. The logic here is that more
+capable models are better at recognizing
+when they're being manipulated. A
+cheaper model might follow malicious
+instructions embedded in a document or
+link without questioning them. A more
+capable model is more likely to catch
+it. So if you're running an agent with
+real access to your systems, this
+probably isn't the place to cut costs on
+API tokens. And that's the model that
+Peter recommends. So to recap, here are
+the five steps. Number one, enable
+sandbox mode. Run the Asian inside a
+Docker container instead of directly on
+your server. This limits the blast
+radius if something goes wrong. Number
+two, consider tool restrictions. Decide
+what the agent actually needs to do and
+disable tools it doesn't need like shell
+execution or browser control. Number
+three, run the security audit. Use the
+command claudebot security audit to
+check your config for common issues and
+the d-fix flag to automatically tighten
+permissions. Number four, scope your
+tokens when connecting external
+services. Give minimum permissions only.
+Read only where possible and limited to
+specific resources rather than full
+account access. And number five, keep it
+private. Don't add your personal bot to
+group chats. Treat it like a pseudo
+terminal. Only people you trust should
+have access. This checklist is based on
+the creator of Claudebot, Peter
+Steinberger's Guard Rails list, and also
+Burak Era's thread. Both are linked in
+the description if you want to read them
+in full. They're not complicated steps
+and they only take a few minutes, but
+they are extremely important. Security
+and guardrails are a key step,
+especially if you're using software like
+Claudebot. So, I highly recommend
+implementing these steps before you get
+started. If you want to see a full setup
+tutorial or anything specific on using
+Claudebot, let me know in the comments.
+Make sure you subscribe for more videos
+and tutorials. Thanks for watching and
+I'll see you in the next one.

@@ -1,0 +1,88 @@
+Ctrl: Describe What You Need → Get a Working App with Database & AI Assistant
+Rado Sukala
+https://youtu.be/lDpJZBGkv8o
+Uploaded: 2026-01-24 | Duration: 3 minutes
+
+Today we are introducing control. Let me
+show you. Creating an app starts with a
+simple description. I want a habit
+tracker with daily check-ins, streaks,
+and weekly overview. AI reads my
+request, design the database schema, and
+writes the entire application. No
+templates, real TypeScript code. In
+about 2 minutes, I have a working app.
+Every app comes with an AI assistant
+built in. But here is what different.
+The AI has direct access to your app's
+database. I can ask it to create three
+new habits for me. I suggest entries. I
+proof them with one click and they are
+instantly saved to my local database. No
+manual data entry. Just tell the AI what
+you need. This works with any app. Here
+is documents one of our default app. We
+keep improving. I ask the AI to make
+this document more engaging. It analyze
+the content and show me precise changes
+and as diffs right in the document. I
+can accept individual suggestion or
+apply everything at once. The AI edits
+your actual content, not a copy. Control
+ships with a several default apps,
+notes, projects, documents, bookmarks.
+Switch between light and dark mode
+instantly. And every app has AI
+assistance one click away. The AI is
+always there understanding your data,
+ready to help.
+Let's look at projects. You get a kanban
+board, calendar view, and full task
+management. But here is where it gets
+interesting. I ask the AI what task am I
+missing for our open source launch. The
+AI read my existing task, understand
+the context and suggest what's missing.
+I can add them one by one or all at
+once. Each suggestion gets straight into
+my database. Here is a weather app I
+built with just few prompts. Today I
+found a free weather API and wired
+everything up. Adding new city is
+instant real data real API.
+An exercise tracker for my daily routine
+built exactly how I want it for the
+specific workouts I do. Every app can
+have a widget. These show live data from
+your app right on your desktop. No need
+to open the full app to check your
+habits or see today's tasks. Change
+wallpapers. Customize your workspace.
+This chess app with an AI opponent built
+with just five prompts. Full game logic,
+move validation, everything. Wordle for
+daily puzzle, a stock tracker pulling
+live market data from the free API.
+Each one built through conversation with
+the AI.
+Every app has setting you can customize
+and importantly you can export any app
+as a package and import it anywhere your
+apps are logged in. There are real code
+you own.
+This is where we are heading. Data lake
+shows all your data across every app.
+Our vision apps that understand each
+other. Query your projects and invoices
+together. Connect your habits to your
+goals. One unified personal data layer.
+Most AI coding tools generate code, but
+then you are on your own. Figure out
+deployments, set up a database, find
+hosting. Control is different. It adds a
+complete environment where AI builds
+apps that just work instantly running on
+your desktop with storage, widgets,
+everything handled. Try it. Build
+something and let us know what you
+create.

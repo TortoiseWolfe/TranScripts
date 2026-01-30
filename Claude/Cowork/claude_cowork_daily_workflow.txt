@@ -1,0 +1,403 @@
+Claude Cowork is the best AI tool of 2026. Here's how to use it.
+Alex Finn
+https://youtu.be/rdURhrS4xHI
+Uploaded: 2026-01-20 | Duration: 13 minutes
+
+Claude Co-work is going to be the
+biggest AI tool of 2026 and you're not
+even using 1% of its ability. I
+discovered a new workflow with Claude
+Co-work I promise you've never seen
+before. I type in just three words every
+morning and it kicks off a workflow that
+saves me hours a day. If you stick
+around to the end of this video, you're
+going to get prompts for clawed co-work
+that will make you more productive than
+you ever have been before in your entire
+life. Let's get into it. So, here's all
+I need to type into Claude Co-work to
+get it to do an enormous amount of work
+for me automatically. If you haven't
+used Claude Co-work yet, it's basically
+Claude code for your entire life. It
+takes the AI agent that Anthropic built,
+which is by far the most powerful AI
+agent on the entire market and allows
+you not to only just write code with it,
+but also manipulate files on your
+computer, do research for you, and do a
+tremendous amount of work for you
+automatically. Here's the issue that 99%
+of people have with Claude Co-work is
+they just don't know what to tell it
+what to do. People don't really know
+what it's capable of and they're not
+used to the idea of an AI agent doing
+all their daily work for them. So, I
+came up with this advanced workflow that
+takes out all of that creative thinking.
+Instead of having you decide what Claude
+Co-work should do for you, it decides
+what it should do for you. This is a
+workflow literally anyone can use. It
+doesn't matter how technical or
+untechnical you are, what type of work
+you do on a daily basis. What I'm about
+to show you will allow Claude Co to give
+you value no matter what you do on a
+daily basis. So, just to spoil what I'm
+going to show Claude Co-work did for me
+in this video, all with just those four
+words is it scripted this entire video
+you're watching right now. It wrote for
+me an entire thread for X about the X
+algorithm. It wrote me a draft for my
+newsletter today. It did research on AI
+energy stocks because I want to invest
+in AI energy. and it gave me a strategy
+for getting to a 100,000 subscribers on
+YouTube. All with just me saying, "Hey,
+let's start our day." I didn't tell
+Claude to do any of these tasks
+explicitly. And then after doing those
+tasks, it put all that work into this
+really structured, organized file system
+on my computer. Let me show you how all
+of this works. So when I say, "Let's
+start our day in Claude Co-work every
+morning." I do this every single
+morning. Every morning I go into Claude
+Co-work and I say, "Let's start our
+day." What I'm doing is I'm including
+two things. And I will have all the
+files, prompts, everything you need in
+the description below as well. I'm
+including a claude.md file, which is a
+brand new rules file I made just for
+Claude Co-work. And I am including this
+new Claude folder, which is a directory
+I made on my computer for Claude to work
+in. And don't worry, I'll show you how
+to set up both of these in a second.
+It's super super simple. I hit enter on
+this and Claude Co-work gets to work. It
+first reads the rules file to understand
+what I'm trying to tell it to do. So
+it's saying, "Good morning, Alex. I see
+you uploaded a claw.md file. Let me take
+a quick look to see what's inside.
+Inside this claude.md file is all the
+rules around how I want claude co-work
+to work. So as you can see here, here's
+my daily operating system. This will be
+your daily operating system after you
+watch this video. That basically says
+whenever the user says let's start our
+day or morning or daily brief or
+anything like that, go through this
+entire workflow. So let's see what
+Claude Co-work has for us here. It's
+asking us three questions. It asks us
+these same three questions every single
+morning. One, what's the number one
+thing that I'd make today a win? Two,
+what's on your to-do list for today? And
+three, any urgent items I should know
+about. So, I'm going to say number one,
+so this might not seem like much, but
+this is actually massive. And the reason
+it's massive is this. Instead of making
+the relationship between you and AI, you
+telling AI what to do, which requires a
+lot of your own mental energy, figuring
+out what you should do, what the AI
+should do, and just having to do a lot
+of creative thinking, which most people
+don't want to do. It reverses that
+relationship, and now the AI is asking,
+"Hey, just what are you doing today?"
+Now, it's on the AI agent, in this case,
+Claude Co-work, to figure out what it
+should do best instead of you having to
+come up with ideas for it. This saves
+you a ton of time. So, let me show you
+how this works. So, I'm going to say
+number one thing I want to do is film an
+excellent YouTube video about my clawed
+co-workflow. A little bit meta because
+you're watching the video right now.
+Number two is I give it my entire to-do
+list. So, I need to film that video. I
+need to write a thread about the newly
+open-sourced X algorithm. I need to work
+on my side project. I need to figure out
+new functionality for Creator Buddy,
+which is my main project. I need to
+write a newsletter about how to build
+apps and claude code. And I want to find
+AI companies to invest in. And I say the
+only urgent thing I'm trying to figure
+out is how to hit 100,000 subscribers on
+YouTube. Hit subscribe down below. I'm
+going to hit send on that. And now what
+Claude Co-work is going to do is it's
+going to look through my entire to-do
+list and it's going to figure out which
+tasks on my to-do list it can help out
+with. I think this solves the biggest
+problem most people have with clawed
+co-workers. They just don't know what to
+do with it. They don't know what task to
+give it. They don't know what it's best
+at. They don't know what it's skilled
+at. And because it requires so much
+creative thinking to figure out how to
+use it, most people just don't use it.
+My guess would be you, the person
+watching this video, probably haven't
+used Claude Co-work a ton just because
+you don't know how to use it and what
+tasks it's great at. This solves that
+problem. So now, instead of you telling
+what Claude Co-work to do, it interviews
+you and figures out what it can do. So
+it has my entire to-do list. It tells me
+how it can help for each and every one
+of those tasks. It's going to research
+AI energy stocks. It's going to do a
+draft for me for my entire newsletter.
+It's going to brainstorm features for
+Creator Buddy, my AI SAS. It's going to
+write my entire X algorithm thread
+completely by itself. So, it'll research
+the open source algorithm and draft the
+thread. And it's going to script this
+entire video for me, which is the script
+of the video you're watching right now.
+And then it even recommends how to do
+the work. So, all I have to do is
+instead of giving it a bunch of
+instructions what to do, all I have to
+do is say, "Okay, go ahead." Now, it
+says done. saved to our outbox. Inside
+our folder. So, a little preview of how
+this entire system is working behind the
+scenes. We have this clawed folder I
+created, which I'm going to give you a
+prompt at the end of this video that
+creates this entire file system for you.
+It has an outbox folder. In this outbox
+folder, it actually has all the outputs
+of what Claude Co-work is making for
+you. So, it's nice and organized. It has
+a context folder which has a bunch of
+markdown files that describes me, what
+stocks and assets are inside my
+portfolio, what my schedule is like,
+what projects I'm working on, and then
+it has this claude.md file, which is
+basically the rules file for me. And in
+this rules file, it describes exactly
+how this workflow works. When I say,
+"Let's start our day. Ask me these
+questions." Then take a look at all the
+context inside this clawed folder, then
+start asking me questions based on my
+day. So right now it went through all of
+that and actually wrote me the script
+for this video. So I said, "Okay, start
+the other task." And now it is going
+through and it's actually spinning up
+three sub agents that are now
+researching the X algorithm. We can see
+the steps on that. It's actually going
+through and searching through X and
+going on GitHub to look at the
+algorithm. As you can see, it has gone
+through like a hundred different
+websites to research this algorithm. And
+now it is writing the file that is the
+thread for my algorithm. It's
+researching AI energy stocks. So, it's
+going through all the AI energy stocks
+that are on the market. It's looking at
+a ton of different websites. And again,
+I didn't have to come up with all these
+tasks for Claude Co-work to do. It
+figured out what to do based on my to-do
+list for today. It wrote the file and
+then now it's drafting a strategy to
+reach 100,000 subscribers on YouTube.
+And so now it created this entire
+strategy. It's going through different
+YouTube strategies, different YouTube
+thumbnail designs. Look at all these
+websites. It went through simultaneously
+as the other tasks and then it wrote
+that file. Let's see the output of all
+this. So boom, here's our outbox. Here's
+our three new files. They all finished
+within 2 minutes of each other. Let's
+take a look first at the X algorithm
+thread. Boom. There's an entire thread
+about how the X algorithm works. It has
+10 tweets in it. AI energy stocks. So
+boom, here's all the AI energy stocks it
+researched. Key catalyst growth
+profiles. You can see each one of the
+companies here. And then my 100,000
+subscriber YouTube strategy. Let me pull
+this up here. Here's my entire strategy.
+So, it actually found my YouTube channel
+and it's going through and gave me. Wow,
+look at this. Look at all this strategy
+it wrote for me. And this all took like
+2 minutes. It basically completed 80% of
+my work for the day in like 3 minutes.
+That's hours saved. And this all stemmed
+from this very organized yet sort of
+complex folder system we set up that
+includes all the context about who we
+are, what we do, and how we want Claude
+Co-work to work with us. This Claude MD
+file, which I will give to you link down
+below in the description, is basically
+the brain behind this entire operation
+that tells Claude Co-work exactly how to
+work with us. So, all I need to do is
+type in let's start our day and it
+starts doing hours of work
+automatically. I truly believe this is
+the most powerful complex clawed
+co-work system anyone in the world is
+doing right now. And if you set this up,
+you will be more powerful than 99.9% of
+your competition. But how do you set
+this up? Very simple. You just need this
+folder system set up. And the easiest
+way to get this folder system set up is
+by using the prompt I'm about to show
+you here. So, I'll include a link to
+this prompt in the description, so you
+can just copy and paste and get this
+entire thing set up, but this daily OS
+starter prompt will guide Claude on
+exactly the folder structure it needs to
+create. So, what you're going to want to
+do to start this is you want to go in
+create a new Claude folder. I did this
+right in my documents on Mac. Just
+create Claude. Then you go in, you click
+new task in Claude Co-work, which is the
+Mac desktop app. So you go to Mac
+desktop app, click co-work here, new
+task. Then make sure you select this
+folder. So you select claude in there.
+So there it is. That's selected. Then
+you just paste in this prompt. And this
+prompt will instruct it on creating the
+context folder, the inbox folder. So you
+can see inbox here. Inbox is going to be
+the folder you place any files you want
+Claude Co-work to see before it does any
+tasks. So for instance, if I wanted to
+review a script I just wrote, I will put
+the script in the inbox. Then you also
+have the outbox folder which is for all
+the output from Claude. So anything
+Claude creates or changes or edits for
+you, it will automatically put in the
+outbox folder because that's what's in
+our claude.md rules. There's the context
+folder which has your profile,
+portfolio, schedule, and projects files.
+So as you can see here, here's my
+profile. Just talks about a little who I
+am, what my goals are, what my
+preferences are. It has my portfolio
+which has all the details about all my
+stocks and investments and a whole other
+information about all the projects I'm
+working on. This gives Claude Co-work
+tons of context. So, as it's doing tasks
+for you proactively, it knows all about
+you and it can figure out how to be the
+most helpful. There's also a skills
+folder which there's no skills system
+for Claude Co-work at the moment. So, I
+just built the skills system myself
+which has markdown files that describes
+how to do any skill we want Claude
+Co-work to do. Now, I'm sure a lot of
+this will soon be built into Claude
+Co-work. So, for instance, the claude.md
+file, like they'll probably make a
+claude.md rule system for Claude Co-work
+specifically soon, and they will
+probably have a skills folder for Claude
+Co-work specifically soon. But that
+doesn't impact this at all. You can
+still get ahead of the curve by creating
+these now and then when Claude Co-work
+eventually comes out with the skills
+system and the claude.md system, you can
+just copy and paste your files over to
+that new system. So all you want to do
+is copy and paste this prompt I linked
+down in the description. Put in Claude
+Co-work. It will set up this entire
+folder system for you and then all you
+need to do every single day. This is the
+only thing you need to remember to do is
+come in say let's start our day. Click
+and drag in your claude.md file, which
+is all your rules and basically the
+brain of this entire operation, and
+Claude Co-work will automatically get to
+work for you and save you hours a day.
+There's a lot more to this as well. In
+the Claude rules file, there's an end of
+the day routine. So, at the end of the
+day, you can say end of day, and it will
+go in and summarize what you got done,
+give you a list of everything it
+completed, suggest priorities for
+tomorrow. So, there's a lot you can do
+for this, and it's completely
+customizable, too. So, if you want to
+change how it works, anything it does,
+you can go into this claude.md file and
+change it yourself. This is the brain
+and it's fully editable, completely by
+you. I will include two Google Docs in
+the description. One is going to be the
+prompt to set all of this up. The other
+is going to be my entire claude.md file
+that you can just copy and paste into
+your own just in case the original
+prompt doesn't write this entire thing
+in detail. If you take both of those,
+you will have the same Claude co-work
+system set up that I have set up and I
+promise you it will save hours of time.
+I started a whole community around
+Claude code and Claude Co-work. So, if
+you want to join that, link to the Vibe
+Coding Academy is down below. If you
+learned anything at all, all I humbly
+ask for is a like on this video. It
+helps spread it to other people and
+helps the account out. Make sure to
+subscribe and turn on notifications as
+well. All I do is make amazing videos
+about AI with really practical tips that
+will save you time. If you want more
+Claude co-work videos, let me know in
+the replies down below. I don't know how
+many people are using this. I think way
+more people should be using it. So, I'm
+curious if you're interested in more
+co-work videos, let me know. I'm Alex
+Finn. I hope this video was helpful and
+I'll see you in the next.

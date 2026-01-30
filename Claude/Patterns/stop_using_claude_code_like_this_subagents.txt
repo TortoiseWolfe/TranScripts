@@ -1,0 +1,773 @@
+Stop Using Claude Code Like This (Use Sub-Agents Instead)
+Leon van Zyl
+https://youtu.be/P60LqQg1RH8
+Uploaded: 2026-01-14 | Duration: 31 minutes
+
+In this video, we're looking at sub
+agents and background agents.
+Understanding how sub agents work and
+knowing how to run specialized agents in
+the background is a critical skill to
+have, whether you're vibe coding or if
+you're using agentic coding as an
+experienced developer. So, after this
+video, you'll know exactly what sub
+agents are and how to create your own
+specialized agents. And towards the end
+of the video, I'll show you my workflow
+for implementing complex solutions.
+Let's jump in. So in Claude code, I'm
+actually going to switch over to
+planning mode for a second and let's ask
+the agent, hey there, please can you
+list all the sub agents that you have
+access to? Claude already has access to a few
+built-in sub agents. So it's got access
+to a bash agent. And this agent is a
+specialist for running bash commands
+like git operations, command execution,
+and other terminal tasks. I'm just going
+to hide this file explorer so we can
+actually see what we're doing. It also
+has access to this general purpose agent
+which is a general purpose agent for
+researching complex questions, searching
+for code, and executing multi-step
+tasks. So, it's good for searches where
+you're not confident of finding the
+right match quickly. We have access to
+the status line setup and that's the
+agent we use to create this little
+dashboard down here. We have access to
+an explore agent which actually uses
+Haiku which is a really fast and cheap
+model and this is ideal for quickly
+going through the code base to search
+for code patterns or files. We also have
+access to a planning agent which we can
+use during the planning phase to help
+our main agent investigate the code, go
+through the users requirements and plan
+a solution. We also have access to this
+Claude Code guide agent. So if you do have
+any questions related to any of the
+features offered by Claude Code, you can
+actually just invoke this agent
+directly. By the way, in order to call
+an agent directly, what you can do is
+enter @ then agent. And now you can
+access any of the available agents like
+let's select the Claude Code guide and
+let's just ask it can you explain what
+hooks are and let's send this. And by
+the way, you can also run any of these
+agents in the background by pressing
+Ctrl and B. This will simply free up the
+main agent so that you can continue your
+conversation with it while it's waiting
+for the background agent to complete.
+All right, so we get our answer back.
+And this is indeed explaining what hooks
+are in Claude Code. We can also get the
+main agent to call sub agents for us. So
+we don't have to use the @ symbol to
+tag the agent. To demonstrate this, I'm
+just going to set up a really basic
+boilerplate project. So, in another
+terminal session, I'm just going to call
+create next app at latest and period.
+This is just going to install Next.js,
+which is a really popular library for
+building powerful web applications.
+Right, installation is done. So, now I'm
+just going to start this dev server and
+I'll open up this URL. And this
+boilerplate project is indeed working.
+All right, cool. So, back in Claude, I'm
+just going to clear the conversation.
+Now, let's have a look at using one of
+those built-in agents, the explore
+agent. We can get the explore agent to
+analyze our codebase and give us a
+summary of the features and the tech
+stack as an example. Now, of course, we
+could get the main agent to do all of
+this work for us, but I will explain why
+that's a bad idea in a second. We
+ideally want to keep the main
+conversation clean and clutter-free. So
+it's a really good idea to use sub
+agents whenever possible. So let's take
+the example where we want to say
+something like please summarize the tech
+stack and core features of this project.
+Now yes it might seem silly in this
+instance because this is just a
+boilerplate Next.js project nothing fancy
+but just imagine this being an existing
+project with a whole bunch of features
+and a complex tech stack. Now for demo
+purposes I'm just going to add something
+to the tail end of this prompt. Do not
+use sub agents because sometimes the
+agent will decide to use sub agents as
+it's intelligent enough to identify that
+there are sub agents available. But just
+to demonstrate the benefits of using sub
+agents, let's run this as is. At the
+moment, this main agent is doing all of
+the work. So this conversation and the
+tool responses and its final response is
+all going to contribute towards this
+context usage which is currently sitting
+at 15%. Now let's try that again but
+this time let's pass in this message and
+let's say please use two explore agents
+to assist you. Let's run this. The agent
+is now saying that it's going to launch
+two explore agents in parallel to
+investigate the tech stack. And we can
+see that we are running two explore
+agents in parallel. We can press Ctrl+B
+to run all of that in the background. If
+we wanted to see what the agents were up
+to, we can actually just press down. And
+when we press enter, we can see these
+explore agents are currently running.
+And if we click on any of these, we can
+see the output of each of those
+background agents. So I'm just going to
+go back. This agent is now running these
+explore agents in parallel. So this
+means it can multitask. It can assign a
+specific task to one of these agents and
+a different task to another one. Like in
+this instance, the one explore agent is
+investigating the tech stack and config
+while the other one is purely focused on
+the core features. Usually if you were
+just relying on the main agent, it would
+have to kind of sequentially go through
+everything and it will take way longer.
+And now we're done. At this time, we
+only consumed 14% of the context window.
+But this is actually misleading as the
+results that we would get from using
+these asynchronous agents are way better
+than relying on a single agent. If
+you're familiar with using LLMs and how
+agents work, the more specific the scope
+that the agent has, the better the
+results will be. And because each of
+these explore agents focused on specific
+aspects of the application, I can
+guarantee you now these summaries are
+very very different, especially on more
+complex projects. A 1% difference might
+not seem like a lot, but there's
+definitely a quality difference, but
+towards the end of the video, we'll
+actually cover a way more complex
+scenario, and there you will see a night
+and day difference. Right, we will have
+a look at the planning agent in a
+second. But I think before we do, let me
+show you how you can create your own
+agents. Creating your own agents is
+super easy. Simply run the command /agents.
+Here we can see all of those
+built-in agents and the models that
+they're using. Let's create our own
+agent. Then I'm going to create this
+agent at project level. You can also
+create it at personal level which will
+create the agent in your user folder.
+And these agents will be available
+across all of your projects. For this
+demo, I'll just create this local agent.
+We can then manually configure the agent
+or let Claude create it. Let's just go
+with this first option. Now, let's
+describe this agent. Call this agent UI.
+This agent is an experienced UI and UX
+expert with over 20 years experience.
+For this project, this agent will ensure
+that the application uses a neo
+brutalism design. This includes
+components with bright colors and hard
+shadows as well as vibrant colors. It
+should also ensure that the UI is
+minimalist. The app should be responsive
+on larger screens, tablets, and mobile
+devices. Right, I think that's good
+enough. Let's send this. Claude will now
+write the system prompt for this agent.
+Now we can decide on the tools that we
+want to make available to this agent.
+I'm just going to select all of these
+and say continue. Now we can select the
+model. So Sonnet, Opus or Haiku. For this
+I'm actually going to select Opus. And
+by the way, do you guys still use Sonnet
+and Haiku or have you all switched over
+to Opus as well? For the color I'm just
+going to select blue. And we can now
+review the system prompt. But I'm just
+going to press enter. And I do see that
+we have an error message. So the name is
+way too short. So I'll just end up
+renaming it after this. Let's simply
+press enter. Now we can go to the .claude
+folder. And here we can see our UI
+agent. I'm just going to rename this
+file to UI expert. And in the file
+itself, let's just rename this guy to UI
+expert as well. Cool. Right. Let's just
+go back. I'm going to clear the
+conversation. And I think in order to
+pick up that agent, we actually have to
+exit out of Claude Code. Let's just go back
+in. And now we should have access to
+that agent, which we do. We can see the
+UI expert down here. So if we wanted to
+just chat to the agent directly, we
+could simply tag it like this and ask it
+a question or ask it to make a change.
+Or what we can also do is simply ask the
+main agent to invoke the sub agent for
+us. So I could say, "Hey, please can you
+kick off the UI expert to review our
+application and you can also get the UI
+expert to make any necessary changes. Do
+not make any code changes yourself.
+Simply orchestrate the efforts with the
+UI expert." And cool, we can see the UI
+expert was indeed triggered. I'm
+actually going to press Ctrl+B to run the
+UI expert in the background. Now again,
+this all comes down to saving the
+context window. Now, if you're
+unfamiliar with context windows in
+Claude Code or agentic coding in general,
+it's an extremely important topic. If I
+open up another Claude session, we can
+actually view the context usage by
+running the command /context. And if we
+scroll up, we can see that we're
+currently using 27,000 tokens out of the
+available 200,000 tokens. So that's
+round about 13%. Now, this number, this
+200,000 is really important. Large
+language models have a maximum context
+window size. When you use up the
+majority of this context window or
+exceed it, the quality of the responses
+will drastically decrease. Basically,
+everything at the start of the
+conversation will be dropped off to make
+room for all the new messages. And this
+means you'll lose a lot of critical
+context to the changes that you're
+trying to implement. So this means as
+we're interacting with our agent, we're
+using more and more of the context
+window. And at some point round about
+here, Claude Code will start to compact
+the conversation. Now for complex
+features, you'll really quickly reach
+this limit. And this is typically when
+people start complaining about the
+abilities of these agents where they
+would say that they actually tried
+agent coding or vibe coding and the results
+weren't really good. And that's because
+they're trying to do everything in the
+main thread of the main agent. This is
+really really not ideal. Instead, what
+you want to do is protect this main
+thread as much as possible. And the best
+way to do that is to try and offload a
+lot of work to sub agents. For example,
+when we handed off the explore task to
+the explore agent, what actually happens
+is this agent runs in its own thread and
+it's got its own conversation context
+window. So basically all of this applies
+to this sub agent as well. So at the
+start of this main conversation, we
+asked the agent to use an explore agent
+to analyze the code base for us. So what
+it did was it created this background
+agent and this background agent went
+through the codebase. So it started
+using up some of its tokens. So maybe at
+some point it used about 50,000 tokens.
+And this token usage does not affect the
+token usage of the main agent. This
+section remains unchanged. In fact, I
+think we actually had two explore agents
+running at the same time like this. So
+this agent might use about 40,000 tokens
+irrespective none of this token usage is
+affecting the main context window and
+that is what we're after. Once these
+agents complete they'll simply return a
+summary back to the main agent. So that
+summary might slightly increase this
+conversation a bit but nothing compared
+to the impact of using this. Now of
+course our sample project is really
+simple. That's why we didn't see that
+big of a difference. But on large code
+bases with lots of different features
+and a complicated tech stack, these sub
+agents can definitely use a lot of
+tokens. And by them only returning a
+short summary back to this agent greatly
+reduces its token usage. Now, I do have
+to be clear on this. Sub agents are not
+there to reduce overall token usage.
+They're simply there to protect the main
+conversation. And if you've ever used
+agent coding and you keep running
+into compacting issues, then you know
+exactly what a problem that can be.
+Either way, let's go back to our Claude
+session and let's see what the UI agent
+did. The UI expert has completed its
+review and made significant improvements
+to your application. How cool is that?
+So, it's changed all the styling. It's
+updated the main page, the layout, and
+then we get this final summary. And also
+note, we only used about 16% of the
+conversation. If the main agent did all
+of this work itself, this number would
+be way higher. And if we have a look at
+the app, we can definitely see the
+change was implemented. And if we go
+back to our light settings, the neo
+brutalism design was definitely
+implemented. And the great thing is we
+didn't have to tell the main agent what
+the style of the application should be.
+We added all of those rules to the UI
+agent only. This means this UI expert
+agent is actually a specialized agent.
+It has very specific rules baked into
+its system prompt with regards to the
+design system for our application. And
+that really is the power of these
+agents. We could provide very specific
+instructions and behaviors to each of
+these sub agents. Let's go ahead and
+create two more agents. And this will
+greatly help you with implementing
+changes going forward. So for the first
+agent, I'll simply create it at project
+level again and we'll create it with
+Claude. Let's say call this agent coder.
+This agent is an experienced developer
+with over 20 years in building robust
+web applications. It should write code
+that is performant, secure, well
+commented and follows best practices.
+This agent should never compromise on
+quality and should write the best
+quality code possible and something like
+that. Let's just send this. We'll give
+this agent access to all tools. Now, for
+the model, because this is a coding
+agent, I would actually recommend going
+with Opus. But if you do want to save
+some tokens, you can still go with
+Sonnet. And because of the workflow I'm
+going to show you, you should still get
+good results from Sonnet as well. So, I
+think for this tutorial, let's actually
+go with Sonnet. But if you can afford
+it, go with Opus. Trust me. Then for the
+color, let's make this orange. And I
+think that's it. Let's create one more
+agent. I'll create this in the personal
+space. And we'll use Claude to create
+it. Then let's say, please call this
+agent code reviewer. This agent is an
+experienced developer with over 20 years
+experience, but it's really good at
+reviewing code. So, this agent is
+responsible for checking the
+completeness of the code against the
+requirements. It needs to ensure that
+the code is secure and performant and
+that it follows best practices. This
+reviewer should ensure that files do not
+get too long and that code should be
+split up and be modular instead and that
+code has detailed and suitable comments.
+Code should also be easy to maintain. If
+your project or company has very strict
+rules around like coding practices and
+naming conventions, you can add all of
+that to your coding agent and this code
+review agent as well. We'll give this
+agent access to all of these tools. And
+for the model, I'm actually going to
+select Haiku. Now, again, if you can
+afford it, definitely go for Sonnet or
+even Opus. But I found that with code
+reviews, Haiku actually does a really
+good job at identifying any glaring
+issues. So, let's go with green. And
+that should be it. And now that we have
+our agents, I'm just going to exit out
+of Claude Code. We should now have access to
+all of those agents. So we have access
+to coder, to the UI expert, and code
+reviewer. Okay, cool. So let's have a
+look at a practical workflow that you
+can use to fully utilize sub agents. Now
+the first thing before implementing any
+change is to go into planning mode. This
+is where we can get the agent to really
+think about the feature that we're
+trying to implement and to look at the
+codebase and to come up with a solid
+plan. Now again, we don't want to use
+the main agent to do everything itself.
+It's really quickly going to fill up
+this context window. So instead, what we
+could do is say, please use three
+planning agents to help you come up with
+an implementation plan for the
+following. And as a reminder, if we go
+to our agents, we have access to this
+planning agent that inherits the same
+model used by the main agent. In our
+case, that's Opus 4.5. A really
+intelligent model which is perfect for
+planning out these complex solutions. So
+this is going to run three planning
+agents in parallel each of them
+investigating different aspects of the
+application. Now I am going to pass in
+quite a complex prompt. So I'm just
+going to paste it. But if you were
+curious what I'll do is I'll create a
+new file. So if you want you can pause
+the video and have a look at this
+prompt. I'll also upload it to my
+community which I'll link to in the
+description of this video. This is a
+really cool to-do list app. It uses a
+Kanban board to track the progress of
+the to-dos. Signing in is also optional.
+So if users are not signed in, all the
+to-dos will be managed in local storage.
+But if users do sign in and we will use
+the Better Auth library for
+authentication. Users can sync their
+to-dos to the cloud. So this involves a
+lot of work. It uses the Better Auth
+library. The agent will have to set up a
+Postgres database. It will have to use
+Drizzle ORM. So there's a lot going on
+here and this is really not something
+you'll be able to do with a single
+conversation. You'll definitely hit that
+context window really quickly. So let's
+go ahead and plan this application. It's
+saying it's going to launch three
+explore agents in parallel, which is not
+what I want. So, I'm just going to say I
+need you to use three plan agents
+instead, not explore agents. So, maybe
+because I said planning agents, it
+decided to use the explore agents, but
+the planning agent uses Opus as well.
+So, that's really what I want. Now, it's
+saying it's going to launch three plan
+agents. And that's perfect. So, we have
+our three planning agents running in the
+background, each of them focusing on a
+very specific task. And you can also see
+the amount of tokens being consumed by
+each of these sub agents. This one is
+already sitting at 20,000 tokens. This
+is about 20 as well. And as these
+numbers are growing, you'll notice that
+our main thread is staying clean. We're
+still only sitting at 14% or 28,000
+tokens. Right? So the sub agents are
+done and we can see that they used a
+combined total of about 80,000 tokens.
+And if we have a look at our main
+thread, it didn't increase nearly as
+much. And by the way, if you try to
+generate this plan using that same
+prompt without all of this, the token
+usage on the main thread is usually
+around 60%. And at the moment, we're
+only sitting at about 26%. Right? So, if
+we want, we can have a look at the plan
+and request any changes. But I'm
+actually going to accept this plan. But
+instead of telling the agent to just
+simply start writing code, I do want to
+store this plan somewhere. So, what I
+like to do is in the root of the
+project, I'm just going to create a new
+folder and call it spec over here. Then
+back in Claude Code, I'm going to switch
+over to change mode. And it's saying I'm
+happy with the plan, but please can we
+create a detailed implementation plan
+based on all of this? This
+implementation plan should be split up
+into phases and actionable tasks. It's
+really important that you include all of
+the technical detail as well. We will be
+handing this plan over to a team of
+developers. So everything, all the
+technical details, all the decisions
+need to be clearly documented in the
+implementation plan. I created a folder
+called spec in the root of this project.
+Create a subfolder within that spec
+folder and create an implementation plan
+in that folder. And let's run this. Now,
+at this point, you might be wondering
+why I'm not using BMAT or spec kit or
+even my own boilerplate commands for
+this. And that's simply because this is
+a Claude Code tutorial. And I do want to
+show you how much you can actually
+accomplish with vanilla Claude Code. So,
+for interest, the agent decided to
+create separate files for each of the
+phases. So for you if you are following
+along everything might be added to a
+single file but I think if the file is
+too large it will decide to just kind of
+split them up into different files and
+we are expected to receive about 13 or
+14 files which could take a bit of time.
+So one thing we can actually do is maybe
+just stop this conversation and let's
+say I don't want you writing one file at
+a time. Please can you kick off multiple
+general purpose agents to run in the
+background and in parallel to write the
+remaining files? Let's send this. So the
+agent realized that there's about seven
+files remaining. So it's saying I'm
+going to launch multiple agents in
+parallel. Let's kick off seven agents to
+handle the remaining documents. And look
+at that. We now have seven agents
+running in the background and in
+parallel writing these files. So this
+can be really helpful for taking tasks
+that actually have no dependency on each
+other and letting agents implement those
+in parallel. And as a reminder, you can
+see all of those agents by simply
+pressing the down arrow key where it
+says that we currently have seven
+background tasks. We can press enter.
+And now we can see all of those agents.
+And if we click into any of these, we
+can see exactly what those agents are
+currently busy with. I'll press the left
+arrow to go back to this screen. Then
+escape to go back to our agent. Now,
+we'll simply wait for these background
+tasks to complete. Man, I'm not even
+exaggerating. That was way, way faster.
+It's always a good idea that if the
+agent is doing something that you know
+can be done in parallel, just get it to
+use sub agents. Great. So, we've now
+created an implementation plan for this
+change. Now I'm not too worried about
+the overview file but what we can see is
+we have these different files that
+contain phases and for each phase we
+have all the technical details and steps
+that need to be executed in order to
+implement this phase. So what I'm going
+to do next is actually clear this
+conversation. So what I'm going to do
+now is actually pull in this
+implementation plan file or folder at
+least. And now we can use our sub agents
+in a really interesting way. Watch this.
+I need you to implement this feature.
+Now this is really important. I don't
+want you to write any code yourself.
+Your role is to coordinate the efforts
+between coding agents and code review
+agents. Have a look at this
+implementation plan. And I want you to
+create different tracks. So have a look
+at any phases or tasks that can be
+implemented in parallel. So find any
+phases or tasks that do not have a
+dependency on each other and then create
+different tracks. Then for each track,
+kick off a coding agent to implement the
+changes for that track. You need to use
+the coder agent for this. Once the
+coding agent completes its work, you
+need to hand over the solution to the
+code review agent and then let the code
+review agent provide feedback back to
+the coder agent. This cycle should
+continue until all changes have been
+fully implemented. Then by the very end
+of this process, after all agents have
+completed their work, I need you to kick
+off three code review agents to review
+the final state of our application from
+different perspectives.
+And that's really it. Let's send this.
+Now, this is really something that you
+just wouldn't be able to do with a
+single thread. If we ask this main agent
+to implement all of this, it would
+realistically maybe get up to phase
+eight or nine and it would then have to
+compact the conversation and that's just
+going to drop off a lot of important
+context at that point. Nice. So the main
+agent has now identified the different
+tracks or it decided to call those waves
+which is perfectly fine as well. But
+understandably for the first wave it
+needs to set up the project first.
+Everything else depends on this phase.
+And if we scroll up, we can actually see
+a better summary of how the phases and
+the waves actually work. And if
+everything goes well, this entire
+project will be implemented using
+background agents without the need to
+compact our main conversation at all.
+Right? So actually, if I have a look at
+these waves, it's actually more
+optimized than I thought. So each track
+is running in parallel. So at the
+moment, it's actually using three coding
+agents. One to build a Kanban board, the
+second for calendar and a third one for
+filtering. And you can see down here
+that we are using three background tasks
+and these tracks are running in
+parallel. So for each of those tracks,
+we'll have a coding agent implementing
+the changes followed by a code review
+agent to make sure that the code is
+complete and actually at a high quality.
+And as you might notice, I'm actually
+running Claude Code in a terminal at the
+moment. And that is because the terminal
+in the IDE tends to crash from time to
+time. And I'm not sure if it's just me,
+but I just find running it in a separate
+terminal window is way more reliable.
+And to really quickly open up a terminal
+window, you can click anywhere in your
+IDE and press Ctrl+Shift+C. And
+that will open up a terminal window
+that's already focused on your current
+working directory. And cool. So this
+entire project was implemented and we're
+only using about 58% of the context
+window and I mean you know for something
+of this size you really wouldn't be able
+to do this in a single thread not even
+close. So we get the summary of all the
+waves and phases that were implemented
+and because we asked this process to
+kick off review agents we do get this
+final code review as well. So we can see
+we have a few security issues that need
+to be resolved, some accessibility
+issues, etc. And keep in mind, we didn't
+test the app at all. So if you wanted
+to, you could actually implement a
+testing sub agent as well that's got
+access to unit tests or maybe can use an
+MCP server like the Playwright MCP server
+to actually test the application. But
+because we didn't do any testing, there
+will definitely be a bit of junk in this
+application. So let's start off by
+actually fixing these critical issues.
+Now I'm not going to ask this main agent
+to do these changes. Let's say let's
+address these critical issues. Please
+kick off coder sub agents to fix these
+issues in parallel. Do not change the
+code yourself. In fact, you can resolve
+these other points as well. Let's send
+this. And our main agent will now kick
+off multiple coder agents to resolve
+these outstanding issues. All right,
+cool. So, it's actually resolved all of
+these different issues. And it's telling
+us to start the database server using
+this command. Then we have to push any
+database migrations using this command
+and then use this to run the dev server.
+So, I'll actually go ahead and do that.
+So, we'll run docker compose up. Let's
+push these changes to the database. And
+we do get this error. So I'm just going
+to ask Claude to resolve this issue.
+Please use a coder agent to resolve this
+issue. And as you'll notice, we only get
+this message now saying that we will
+autocompact in about 13%. This is
+phenomenal. We're pretty much done with
+the entire project. And this is just
+like working on small bug fixes. But the
+fact that we're so far into the build is
+just amazing. All right, so this time
+npm db push worked. So, let's try to run
+the dev server. And that looks
+promising. Let's try to sign up. Then
+from here, I'll enter my name. Let's do
+test@demo.com.
+We also get this password strength thing
+that I actually really like. And let's
+try to create this account. Hey, and
+that actually worked. So, let's try to
+create a new to-do. Let's call this one
+buy bread with a description of buy
+bread. A priority of medium. Let's
+select a category like other and for the
+due date let's set it to tomorrow. Then
+let's add this task. And our task is
+indeed there. What happens if we
+refresh? The data is persisted. And can
+we drag and drop these? Yes, we can.
+That all works as well. Awesome. Let's
+have a look at the calendar view. We do
+get this issues warning down here, but
+in general, this does seem to be
+working. We can view our buy bread task
+over there, and we can change between
+day, week, and monthly views. This might
+seem like a really simple example at
+face value, but keep in mind this app is
+complete with user authentication as
+well as an actual Postgres database.
+And if we have a look at our session,
+we're only using 68% of the context
+window with a fully functional
+application. I hope you found this video
+informative. If you did, please hit the
+like button and subscribe to my channel
+for more Claude Code content. I'll see
+you in the next one. Bye-bye.

@@ -1,0 +1,552 @@
+7 CLAUDE CODE Skills Every Beginner NEEDS To Master
+Sean Kochel
+https://youtu.be/m3jiIowIi5I
+Uploaded: 2025-12-23 | Duration: 21 minutes
+
+The biggest problem with vibe coding as
+a non-engineer is that you don't
+actually know what makes code good. And
+if it isn't good, it means it's going to
+break all the time. It's not going to be
+scalable. It's not going to be testable.
+It's going to be ugly. And no one's
+going to want to use it. And I get it. A
+lot of beginners think clawed code on
+its own is enough to build things that
+are great. But here's the trap. By
+default, language models do not write
+good code. They write plausible code
+based on what they've read. And
+plausible code turns into bugs, horrible
+UX, and things people don't want to use.
+So, in this video, I'm going to break
+down my seven piece clawed skill stack
+that allows you to package engineering
+expertise into your project. Now, before
+we start by getting into skill number
+one, I want to spend about 15 seconds
+giving you a rundown of where you should
+actually use Claude skills and not
+something else. So, a basic mental model
+is this. Custom commands are basically
+just like reusable prompts. If you have
+a sequence of steps that you find
+yourself consistently prompting and copy
+pasting into the model you're using,
+just write that into a custom command.
+Now, sub agents are like mini instances
+of claude code that operate within their
+own context window. So, they are really
+good at solving very specific problems
+by having a context window that is for
+that specific problem. But skills allow
+us to give specific expertise to our
+agent and then we can use that expertise
+inside of our main context window. So,
+I'll have a prompt below the video here
+if you want it that actually helps you
+decide if what you're intending to do
+should be a sub agent or if it should be
+a skill depending on what it is exactly
+that you are doing because they are
+useful in different situations. So, the
+first skill we're going to talk about is
+actually published by Anthropic and it
+is their front-end design skill. So,
+probably the most complained about thing
+that I hear about from subscribers is
+that they really struggle with the
+aesthetics of their app and the user
+experience. So, basically, in any
+context where you aren't just cloning an
+existing design from someone like
+Airbnb, from a tool like Mobin, it can
+become very difficult to build something
+that actually looks really nice. And so,
+this front-end design skill is supposed
+to be a simple way for us to get around
+that. and it does it by giving the agent
+very specific directions about what the
+skill of UI design is even about. So,
+we're going to start off by actually
+getting access to this first plugin. And
+we do that by typing /plugin and then
+going down to the clawed plugins
+official. Browse the plugins and then we
+can choose the front-end design plugin
+and we can install it here in our
+project. So, what we have here is a very
+basic thumbnail design tool that I have
+been using that I built with Nano Banana
+Pro. And obviously, it looks a little
+bit stale. And so, I want to come down
+and I want to see if we can actually use
+this front-end design tool with a very
+simple prompt to make it pop. Now, these
+skills are typically automatically
+invoked by the system, but you can just
+tell it to use the skill as well. So,
+I'm going to give it a very simple
+prompt. I'm going to say, "Use this
+front-end design skill. Help me revamp
+the front-end design." It should use
+these libraries. The general feel should
+be like tech forward yet kind of
+Spartan. So, kind of like a Tesla
+interior, but with pops of color and
+kind of ease on the eyes like you would
+get with a tool like Claude. All right,
+guys. So, that just finished up
+frontend design skill, and I ran through
+a prompt here. So, it's looking pretty
+nice compared with what it looked like
+before. There's still a few little
+things I think that I would want to
+tighten up here. If we go in and look at
+the actual like gallery, they changed
+the entire gallery view. They did this
+nice little hover animation. Obviously,
+some of these buttons need to be kind of
+fixed. This should be inverted the other
+way. But if we were to like actually
+click on one of these, again, this looks
+really nice, really tight. And then nice
+editor workflow that it built out for us
+here with some nice little UI elements.
+So, for a very basic prompt, which
+again, I didn't dial in at all. This is
+ideally something that you would dial
+in, right? This is a beginner or like a
+starter prompt, but you can come in and
+you can make this your own, infuse it
+with your own design principles, all of
+that good stuff. And I really like what
+they did with the setting page. So, with
+this skill, that consistent struggle of
+trying to make UI that actually like
+conforms to your plan should be a thing
+of the past. And now we can move into
+our second skill which is actually the
+skill of writing skills but for code
+specifically. So as you start realizing
+how powerful these skills are the next
+logical or natural question becomes hey
+can I build these things myself based on
+what I do and my structures and my
+processes. And like anything there are
+good ways to build the skills and there
+are bad ways to build the skills. So
+luckily the author of my favorite skill
+library superpowers has a skill that is
+specifically for writing skills that are
+good for claude code. And so what's
+interesting about how they approach it
+in this repository is they basically say
+creating skills is much like creating
+tests. And so it has this analogy from
+test driven development and where that
+kind of maps onto this skill creation
+process. And so there's a lot of details
+in here. You can go and read it. But
+what we're going to do is we're going to
+hop in and we're going to actually
+create one. So I will clear out my
+context. Again, you would want to go
+into your plugins and you would want to
+go over to marketplaces. In this case,
+it is the Ora superpowers marketplace.
+You would want to browse the plugins and
+then from here you'll be able to pick
+the superpowers library which is where
+this is going to actually live. Say for
+example that we want to create a skill
+to use inside of cloud code that is
+specifically for writing change logs.
+And so we want it to be that anytime we
+maybe make a major feature addition or
+change something meaningful that it
+creates a change log which could be
+developer focused or customer focused
+and it creates that automatically based
+on this skill being called. So what we
+can do is we can use this superpower for
+writing skills to help us actually make
+this thing. Now in this case I already
+have one but I could just say hey I want
+to delete that one and start from
+scratch. And so what it's going to do is
+it's going to go through and it is going
+to create me a fresh skill and delete
+the other one that I had. All right. So
+now that that thing is done and it
+created this change log generator skill
+for us, we can simply come through and
+we could ask it to create us a change
+log. And now we can see that this change
+log generator skill is being used. And
+this is obviously something that would
+happen automatically, but in this case,
+just to show you guys, we're going to
+generate it manually. And I'm telling it
+to look through the last five commits
+from this project and then based on what
+it finds there, generate me a change log
+entry. And so there we have it out the
+other side, a really basic change log,
+which obviously we could ramp this thing
+up and amp it up and make it a lot
+better. But the point wasn't the change
+log. The point was we have this new
+skill where we can create Claude code
+specific skills very easily on our own.
+So, the next one up on the list is
+actually a bit of a bonus skill because
+it's an entire library of my favorite
+skills. So, what we're looking at here
+is a repository called Obra Superpowers.
+And so, this is an entire library of
+Claude Code specific skills. And I know
+it sounds a bit crazy to say, but it
+really has changed my perspective
+entirely when it comes to how I work
+with Claude Code. and I'm going to show
+you a few of the skills that are the
+reason why that's the case. So, inside
+of this repository, there's a few core
+skills that are really awesome. The
+first is the brainstorming skill. And
+so, what this does is anytime you set
+out to do some new work like creating a
+feature, adding functionality, making a
+major modification, it triggers this
+skill. And what this skill does is it
+really breaks down the process of really
+understanding the idea, coming up with
+different fundamental approaches to
+solving it and then presenting you some
+sort of design documentation specifying
+how it thinks you should proceed. And
+from there you can use the next skill
+which is writing plan. So these things
+hook together where we go from the
+brainstorming stage, we approve the
+design and then we jump directly into
+writing out an actual step by step plan
+for implementing this new thing that we
+are building. Now there's a ton of other
+skills that they have access to that you
+can go in and check out. I love the
+systematic debugging skill, but I'm
+going to hop in and show you guys how we
+can use these brainstorming and plan
+writing skills. So let's say for example
+we came in and we were like hey I want
+to build this new feature that uses the
+user's performance data for the
+thumbnails like the click-through rate
+the impressions and everything like that
+and it uses that to train future
+thumbnail generation so that we can get
+data driven thumbnail generations from
+this tool that we've been building or
+updating. And so we can see immediately
+what it does is it's actually triggering
+this brainstorming skill right off the
+bat. And so it's going to start off with
+asking us a few questions about the
+fundamental approach that we should be
+taking. So in this case, I want manual
+entries of this data. YouTube doesn't
+actually expose a lot of this data
+through their API. So outside of
+scraping it, this is going to be my best
+option. And then we're going to continue
+moving through and just answering the
+base questions that it has. And so
+again, the reason that I love this skill
+is it's asking us a lot of really good
+questions that were clearly ambiguous
+based on what our ask was. So, I said,
+"Hey, I want to be able to use a user's
+performance data to trigger better
+thumbnails in the future." Well, there's
+a lot of things we need to hash out
+based on that, like, where is the data
+going to actually come from? How is this
+even going to get entered into the
+system and used? How should it influence
+future generations of thumbnails? What
+are the actual criteria that determine a
+top performer? In this case, it's going
+to be the actual click-through rate. How
+many get sent through in each
+generation? And again, for all of these,
+it's giving us trade-offs, right? If we
+put too many images in, it's going to
+use a lot more tokens. So, it's going to
+be more costly. And so, we're just
+moving through and answering all of
+these questions one by one. So, once
+this is complete and it's gone through,
+it's asked us all the questions. Now,
+it's going to move through and make sure
+we are on board with the breakdown of
+what it is going to build. So, it goes
+from the feature overview, the core
+flows, the key constraints, making sure
+we're on board with all of that. Same
+thing with the changes that are going to
+be needed to our data model. How the
+actual API integration is going to work,
+how the UI is going to actually support
+this thing we're building, how the
+settings and the user controls are going
+to change, and then how we are going to
+handle edge cases and errors. So, it's
+making sure that we're on board with all
+of this stuff. And then from there, we
+are now invoking automatically this
+writing plans skill. And so again, it's
+going to have a really structured way of
+moving through the codebase, documenting
+what we're going to do, and then
+actually writing a plan that we can
+implement against. So now that that
+skill is complete, we have this
+comprehensive plan detailing everything
+that we would need to do in order to go
+build this feature. And when I say
+comprehensive, I mean it is actually
+quite long. It has all the testing in
+there, everything that we would need to
+go out and actually build this thing.
+So, if you're someone that is trying to
+vibe code with direction and a system
+behind you, this entire skill library I
+think is a bit of a no brainer. So, next
+up on the list for anybody that ever
+said prompt engineering is dead, clearly
+doesn't actually build stuff that needs
+good prompting. And so this prompt
+engineering skill is great if you are
+someone that's building apps that
+actually relies on calling model
+providers in order to do stuff. So what
+we're going to do here is we're going to
+ask it to use the prompt engineering
+pattern skill that we just looked at to
+analyze my Gemini calls and provide
+recommendations for how we can actually
+fix things. And so here it is. It's
+calling the skill and then it should
+generate us a report explaining how we
+could optimize our prompting. So after
+this thing has run through, we can see
+that it has a bunch of recommendations
+for us about how we are actually running
+our main generation prompt and some of
+the issues that are there and the
+severity meaning like what we could do
+to actually or rather what the priority
+of the problem is and giving us very
+clear recommendations for how to improve
+it. So my current prompt under the hood
+actually looks like that where it's
+relying a lot on this user prompt that
+comes through when in reality we could
+get much better outputs more
+consistently if we changed our prompt to
+something more like this more
+structured. And then that same approach
+applies to a few other areas. So this is
+all great because these are all things
+that would really meaningfully make this
+app better. And this is for something
+that's pretty straightforward, which is
+a basic image generation workflow. But
+obviously, sky is the limit with
+something like this. So skills like this
+one are exactly why I say that skills
+themselves are one of the best releases
+since sliced bread because we can take
+serious expertise from other people and
+in this case it's how to prompt engineer
+properly and then we can extend our own
+agents with that knowledge in order to
+make all of the stuff that we build just
+that much better. And the next skill on
+the list is really no different because
+we start getting into API design. So
+what we can do with this skill is that
+we can use it to help design our backend
+APIs in a way that does not stank. And
+so what we're going to do again is we're
+going to come down here into this
+project which doesn't actually have a
+REST API. And what I'm going to do is
+I'm going to ask it to plan out an
+approach to actually migrate it to a
+REST API. And so what we can see is that
+it's now using this specific plug-in for
+back-end development and it's calling
+the API design principles skill. And so
+it's going to use this to actually
+explore my entire codebase and then
+decide what changes to make and how it
+would actually migrate this app to using
+a REST API. And so this one is super
+useful because as our agent or our sub
+agents begin any back-end API work, we
+could configure it to actually invoke
+these skills. And what that means is
+anytime it goes to do this backend API
+work, it's going to have a bunch of
+great context and ways of working
+automatically injected into the
+definition of the agent at the time that
+it starts running. And this is why when
+people say that they think AI is going
+to replace coders and engineers, I kind
+of just laugh because we are always
+going to need people that can build out
+this type of expertise so that everybody
+else can actually use it and implement
+it in order to build things that are
+objectively better. So now we can see we
+have a pretty robust migration plan that
+would take us from our current state
+where we are through to a fully
+implemented REST API full with all of
+the endpoints, the user models, all of
+the data models, everything that would
+need to be there in order to make this
+transition happen. And it is very very
+detailed. I think they even built a job
+queue architecture in. So a very awesome
+thing that we got out of this skill. So
+again, another highly recommended
+especially for vibe coders that want to
+be able to do things the right way. And
+again, these skills can be invoked
+inside of your sub agents. And there's
+really a ton of awesome stuff that you
+can do. And so this next one up on the
+list goes hand in hand with the last one
+and really doubles down on that idea of
+why we will always need people that are
+absolute experts in something to help
+create these skills so that if we are
+vibe coding, we're doing things well.
+and we're not doing stuff that is just
+dumb. And so what we're talking about is
+Postgres table design. So this was one
+of those skills that really helped
+solidify for me how valuable these
+skills are really going to be because in
+this case we can again make sure that
+when we are working with Supabase for
+example that we aren't doing things that
+we really should not be doing that are
+going to create serious problems when we
+start to scale the database and get
+users and all of that stuff. And so what
+we could do to demonstrate this is we
+could think about this plan that we just
+made for the REST API. And we could
+first clear out the context here and we
+could tell the system to use the
+Postgres table design skill and update
+our REST API migration plan based on the
+Postgres skills, right? And then we
+could link to that plan. And so now it's
+going to take that API migration plan
+and it's going to make sure that it's
+conforming to all of the best practices
+that are laid out within this skill. And
+so now that this skill is finished
+processing, we can see that there were a
+lot of updates that were made to that
+migration plan when it comes to a bunch
+of different pieces of the database
+table design. And we can see that we
+have these other sections that were
+actually generated that are now at the
+end of this plan which we could move in
+and we could see exactly what was made.
+So pretty awesome. And again taking our
+project and elevating it beyond just
+some basic thing and starting to move it
+into that realm where it would actually
+have some sort of place in a real world
+application. All thanks to Claude
+skills. And so this is another skill
+that I think you'd be a fool not to use
+as a vibe coder. But we will move on to
+the last one, but definitely not the
+least one, the error handling skill. So
+error handling obviously very important.
+No denying that. But error handling well
+not only helps you, but it really helps
+the language models actually perform
+better. when you have much more
+contextual and sensible errors that you
+can give it, you end up fixing things a
+lot faster and it's just a much better
+workflow overall. And so what this skill
+does is it actually helps us do that. So
+it prompts for some distinct
+philosophies on how to actually handle
+errors the right way. It categorizes the
+different types of errors. And then it
+actually gives language specific error
+handling advice, which is good for me
+because I use Python and JavaScript
+primarily. And that is what the error
+handling conventions are that we have
+inside of this doc. And then it breaks
+down a bunch of patterns that are really
+helpful to know that you would
+potentially want in your app depending
+on what you're doing like circuit
+breakers and a bunch of other cool
+things. So the way that we could use
+this is again to hop back into our
+project. And so what we could ask it to
+do in this case is to look at our
+frontend hooks and then I want you to
+use the error handling skill to improve
+error handling in those files. So these
+are all the files that are responsible
+for how we do like the actual character
+generation and the edits and storing
+characters and doing all of that stuff.
+And so now that this skill is running,
+we can see that it's already moving
+along and recommending us updates. So
+it's creating a shared error utility
+that all of these hook patterns are
+going to actually use. And then it's
+going to move through and it's going to
+actually start improving the patterns
+that we're using to actually log these
+errors, which again is going to make our
+life a hell of a lot easier. So there
+you have it, guys. My seven skill Claude
+Code stack that I use on a weekly basis.
+Just remember, skills give your agents
+specialized expertise and so you would
+be a fool not to use them. Now, there's
+a ton of other skills out there that I
+didn't have time to cover, but even
+these seven alone will really improve
+the quality of what you build. So, get
+out there and start building stuff with
+these skills and let me know how it
+goes. I've got a free Vibe Coding
+community in the description below where
+I post all of my YouTube files and
+prompts, templates, and workflows. You
+can go check that out and share the type
+of stuff that you have been building.
+That is it for this video. I will see
+you in the next.

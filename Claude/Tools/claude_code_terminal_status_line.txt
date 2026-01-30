@@ -1,0 +1,387 @@
+Your Claude Code Terminal Could Look Like This
+Eric Tech
+https://youtu.be/Jvl_MOBPRXI
+Uploaded: 2026-01-24 | Duration: 16 minutes
+
+In this video, I'm going to show you
+exactly how you can turn your Claude Code
+terminal session to look something
+really plain like this to something like
+this where we have the model that we're
+using and also shows the progress bar
+exactly how much context percentage that
+we have used so far and as well as the
+current token size that we have consumed
+inside of the current context window.
+And we can also change the theme of it.
+For example, I have changed this to
+using the solarized light theme. And you
+can be able to change different colors
+of it for the status bar you're using
+based on your preference. And of course,
+you can also include more values like
+the versions, the model ID, the current
+directories, the project you're using,
+and so much more. And the reason why we
+do this is because we always want to
+stay under a certain context every time
+when we interact with Claude Code because
+after we exceed a certain threshold for
+context window, we usually get a lower
+accuracy for the AI generation. And we
+have to use the /context command to see
+that. And that's why in this video,
+I'm going to show you exactly step by
+step on how to set this up on your local
+machine and how you can be able to
+configure this as well as walking you
+through an example of using Claude Code
+and how we can be able to monitor this
+and be able to improve our Claude Code
+accuracies using this way to monitor our
+Claude context. So pretty much that's
+what we're going to cover in this video.
+All right, so before we jump in, a quick
+intro for those who are new here. My
+name is Eric and I have spent years as a
+senior software engineer at companies
+like Amazon, AWS and Microsoft. And I
+have started this YouTube channel to
+share everything I have learned along
+the way from AI and coding to
+automations, web 3, career developments
+and more all broken down into practical
+tutorials that you can actually follow.
+So if you're ready to level up, make
+sure to check out my YouTube channel and
+hit that subscribe button. Now let's get
+back to the video. So to get started,
+first thing first, going to navigate to
+jq and we're going to install this onto
+our local machine for the command line
+JSON processor. So I'm just going to
+click on download and you can be able to
+download this with your Mac OS or Linux
+operating system. And what we're going
+to do here is I'm just going to click on
+download right here. There's actually
+give you a command on exactly how we can
+install this. So if you have Homebrew
+installed on your local machine, you can
+simply just use the brew install jq and
+basically have this installed. So I'm
+just going to navigate to my terminal
+here. Here you can see I have a project
+open and I'm just going to simply paste
+this command to brew install jq. And
+once we have this installed, I'm just
+going to clear my terminal and I'm just
+going to start my Claude session. So here
+you can see this is my Claude session.
+And what we're going to do here is I'm
+just going to use the /statusline command
+right here which is the command and then
+followed by that command I'm just going
+to provide the prompt. First I want to
+mention that I'm currently using Mac OS
+for the operating system and I would
+like to install this globally and please
+create a separate .sh file for the
+script. So that's basically my prompt
+and I'm just going to enter this. All
+right. So now you can see that the
+status line setup agent here has
+configured a global status line with our
+Mac OS operating system. So here is what
+it creates. So it created the scripts
+here which is a bash script that
+displays the model name, the current
+directory, the git branch as well as the
+context remaining and also the output
+style. Okay. And basically it has stored
+this in the settings for the global
+environment. And then to complete the
+setup, simply we're just going to run
+this command in our terminal and restart
+our Claude session. After I run the command
+basically in my root directory here, you
+can see I'm just going to simply start
+my Claude session again. And here you can
+see that this is my Claude session,
+right? So right here you can see that we
+have our status bar right here showing
+automatically. So which model we're
+using, the context window and also the
+amount of tokens that we have consumed
+so far. All right. So basically what we
+can do now is I can be able to use the
+/statusline command here to basically prompt it
+and ask what are some options that we can
+add onto our status line. So that's
+basically my prompt. I'm just going to
+ask what are some options that we can
+include in our status line and the
+/statusline command here is going to fetch
+what are the options we can have. Right?
+So right here you can see right off the
+bat it consumed 23%. So we can actually
+be able to verify that it's actually
+consumed 23%. And I'm just going to say
+currently for the context. So if I were
+to type in /context, it should show me
+exactly what's the consumption look
+like, right? But while it's doing that,
+I also want to show you what we have,
+right? So for example, we can show the
+model, the context for the total tokens,
+the context window size. There's also
+the session, the workspace, so the
+current directory. And here you can see
+if I were to do the /context, you can
+see that it shows that currently we have
+consumed 23% of our context window.
+Okay, so total in total we have 200K,
+but so far we have consumed 47K. So if I
+were to scroll all the way down, you can
+see that is accurate based on what we
+have, right? So how much we have
+consumed 23% as well as how much tokens
+we have consumed. But I think this one's
+a bit inaccurate because if we were to
+scroll all the way up, you can see that
+currently we have consumed this much,
+right? So we have consumed 23%. So I'm
+just going to copy this. And here I'm
+just going to say currently you can see
+that we have consumed 23% in our status
+bar. It shows 23% here in the context
+window. But most importantly, you can
+see the token here is inaccurate based
+on what we see. Can you be able to make
+sure that this is aligned with how much
+token that we have consumed in the
+current context window. So I'm just
+going to paste this prompt and pass it
+to the /statusline right here. And
+hopefully it should be able to fix this.
+All right. So now you can see that it
+has fully fixed. And here you can see
+that this is the percentage that we have
+and so far we have used 66K out of 200K
+and I also ask it to give the entire
+like what are the field values that you
+have right? So for example, it has the
+total input tokens, the output tokens
+and also the entire context window
+size which is 200K and also the use
+percentage which is 32 which is
+what we have displayed here right and
+then also we have our input tokens and
+then the output tokens. So the actual
+context usage here is basically the cache
+read input and also the cache creation input
+tokens plus the input tokens and the
+output tokens which gives you the entire
+max of the 32% out of the 200K. Okay. So
+basically that gives you a calculation
+for how much tokens that we have used.
+So you can see here that we get a much
+more accurate answer based on this. All
+right. So now in this case I'm just
+going to open a new terminal and I'm
+just going to open another Claude
+session. And here you can see that it
+has a status line here or status bar
+showing inside of our Claude Code
+session. All right. So pretty much
+that's how you can be able to install
+the status bar inside of your Claude
+Code. And how can you do this? I
+basically wrote up an MD file here.
+Simply just pass this MD file to the
+Claude Code session and basically have
+Claude here to instruct it and follow that
+guide to install it, help you to install
+it without the pain that we just went
+through. Okay. And I'll make sure to put
+that doc inside of our community for our
+Discord channel which is completely
+free. So right now you can see I have
+navigated to another computer which is
+using VS Code for this particular
+project. And I just basically just
+referenced this entire path for this MD
+file. And I'm just going to say, please
+follow this MD file here to set up the
+status line bar, which is what I
+mentioned inside of this MD file. And
+that's basically my prompt to instruct
+Claude here to follow the MD file to set
+up the status bar. So I'm just going to
+send this request and let's have Claude
+here to execute this. All right. So now
+you can see that Claude has executed
+everything that we mentioned inside of
+that document. And here you can see at
+the end you can see that this is
+exactly what we saw inside of the other
+computer that we just saw, right? So
+right here you can see we have our Opus,
+we have the bar, we have how much tokens
+we have consumed. So you don't have to
+deal with all that. Just pass the
+document to Claude Code and let Claude
+here to install it based on the instruction
+that provided in documentation and have
+your status bar ready to go right away.
+And just for testing, I'm just going to
+stop this terminal session. Clear the
+terminal and I'm just going to restart
+my Claude session. And right here you can
+see we have the bar still present after
+we restart our Claude session as well. So
+let's say if I want to give it another
+prompt and try to see if the status line
+here works. So I have started a
+terminal session for the application and
+this is what the application looks like.
+So you can see we have our dashboard
+right. So basically this is the
+dashboard view and also we have our
+transaction and what I noticed that
+there's a bug is that currently for the
+source file column if we have a
+CSV or if we also have a Google Sheets
+they actually display the same badge and
+what I want to do here is I want to
+change the icon for the badge inside of
+it to have a different badge for Google
+Sheets or the same badge for CSV or
+spreadsheet or Excel sheets right so in
+this case we want to differentiate
+different file types so can you be able
+to help me to do that. And that's
+basically my prompt. And I'm not going
+to change it to a plan mode. And
+basically have it to execute. And let's
+try to see if the status bar here
+changed. Okay. So, right off the bat,
+you can see it took 24% of our current
+context window. And let's try to see how
+much context is actually consuming for
+completing this task. Okay, so now you
+can see that it has prompted some
+questions. So should the CSV and Excel
+files share the same color or would you
+like them to have different colors? So I
+would say same color. So same color for
+all of them including spreadsheet, but
+it's only the icon here that needs to
+change. But CSV, Excel, they can share
+with the same icon. And that's my
+prompt. And I'm just going to save that.
+And you can see that we also have our
+progress bar here changed as well as the
+amount of token that's changed as well.
+And then here you can see it gives me a
+plan. So I'm just going to read over the
+plan here. So basically differentiate
+the file type icon in the source file
+column. So change the source file column
+in the transaction table to display
+distinct icons for Google Sheets versus
+CSV and Excel sheets. And here let's
+take a look at the current state. Okay.
+So this is basically before and after is
+that it's going to add another icon. So
+if it's Google Sheets, it's going to
+change that to the file from
+spreadsheets. All right. So in this
+case, I'm just going to click on clear
+context and bypass permission. So right
+here, you can see that it has cleared
+context while Claude here is changing the
+code. All right. So now you can see that
+the Google Sheet has the distinct sheet
+icon which is different from other icons
+that we have. Right? So these are all
+the icon lists that we have here. Okay.
+So what I'm going to do here is I'm
+going to navigate back to the
+application here. You can see this is
+the spreadsheet. Okay. That's pretty
+good. All right. So now let's say if I
+navigate to like CSV data, you can
+see this is a completely different
+spreadsheet. So I'm just going to take a
+picture of this. Come back here. I'm
+just going to drag it over here. And
+that's going to be image two. And I'm
+also going to go all the way here. And
+I'm also going to say take a screenshot
+of this and take it here. I'm just
+going to say currently those two icons
+here looks kind of very very similar. Is
+there any way that we can differentiate
+it? My take here is probably using like
+a G or in this case the logo of Google
+Sheets, right? Try to use that for an
+example or maybe even better like just
+use G for Google Sheets or something.
+Maybe trigger the front end design skill
+here to have a better design. So that's
+basically my prompt and let's try to
+continue use it and see if the progress
+bar here changed. All right. So as the
+end result here you can see that it
+basically going to remove these four
+Claude Code plugins which here you can
+see we have our code review, TypeScript
+LSP and the code simplifier and also the
+feature dev for the Claude settings and
+also removing the duplication front
+design which is already duplicated. So
+it's going to remove that and also here
+you can see this is what the Claude
+settings look like after it has done. So
+it's going to remove this duplication
+which should clean up our context window
+initially for the prompt. And here you
+can see this is the implementation
+checklist. So disable the global plugins
+and also clean the project plugins. And
+then here initially before we have 13
+and after that we have nine which saves
+about like 8 to 12K for the tokens. So
+pretty much that's the plan for
+reducing the initial high context for
+the context window. So I'm just going to
+say continue here and it's going to spin
+up a new session here to basically try
+to complete this job. All right. So now
+you can see that it has removed this
+global settings for the four plugins and
+it should work now. So I'm just going to
+stop my terminal session and basically
+start a new Claude session and I'm just
+going to say based on the current
+uncommitted changes right now can you be
+able to commit it with a detailed commit
+message and that's my prompt and I'm
+just going to submit this and let's see
+how much consumption it takes initially.
+So currently you can see it takes 23%
+which is a lot better compared to before
+because before it was like 24 or 25
+roughly. You can see this is how we can
+be able to clean up our token
+consumption initially because the lower
+it is the higher accuracy it gets for
+the AI right so pretty much that's how
+you can use it and benefit from it to
+examine the current context window for
+the conversation and to see how you can
+be able to use that to increase the
+accuracy for AI to producing the code
+that you want so pretty much that's it
+for this video.

@@ -1,0 +1,244 @@
+I Can't Believe Anthropic Messed Up The Ralph Wiggum
+Better Stack
+https://youtu.be/XVAhQ-EcrWA
+Uploaded: 2026-01-21 | Duration: 8 minutes
+
+Ralph Wigum is absolutely blowing up. We
+made a video about it last year and
+since then it's all anyone is talking
+about on Twitter. Matt PCO has made
+loads of videos on it. Ryan Carson has
+written a very popular article on it and
+Rasmike has built on it with his Ralphie
+bash script. But is everyone doing it
+wrong? The creator has already said that
+some implementations are incorrect. So
+what's the correct way to do it? And why
+is Ralph currently the best way to build
+software with AI? Hit subscribe and
+let's get into it.
+The Ralph loop was created by Jeff
+Huntley and written about way back in
+June last year. It is essentially a bash
+loop that gives an AI agent the exact
+same prompt over and over again. But
+it's genius on so many levels because it
+lets the AI agent work in its smartest
+mode, which is the mode where it has as
+little context as possible. Take a look
+at this. So let's imagine this is the
+total context window for an agent. From
+zero to about 30% is what we'll call the
+smart zone, which is where the agent
+performs the best. From about 30 to 60%,
+it still performs really well. And from
+60% onwards, so 60, 70, 80, 90, that's
+when it starts to degrade. We'll call it
+the dumb zone. Now, these numbers aren't
+set in stone and could be different per
+model. So the smart zone for a certain
+model could be 40, 50%, but usually over
+80% context window, that's when the
+dumbness starts to begin. So for Claude
+Summit or Opus, the typical tokens for a
+context window is 200,000. So we can say
+the first 60 is the smart zone. The next
+60 is still okay, but not as good as the
+first 60k tokens. And then the last 80k,
+it doesn't seem to perform as well. Now
+this is my personal experience with this
+model. You might have had other
+experiences. And the reason for this is
+because the model itself is what we call
+auto reggressive. Meaning it has to look
+at the previous tokens to predict the
+next one. And if you have loads and
+loads of tokens, it has to go through a
+lot of them to find out the important
+bits that are relevant to the next task
+at hand. Now, let's focus on the first
+30%. Even before you write your first
+prompt, there are some things that get
+added to the context window
+automatically. First is the system
+prompt and then the system tools. These
+on a typical claude model take 8.3% and
+1.4% of the context. So almost 10% of
+this 30. And then if you have skills
+that can get added and also if you have
+custom MCP tools. Finally, if you have
+an agent MD file, that gets added, too.
+And the larger, of course, for any of
+these things. So, the larger the MD
+file, the more tokens it will take up.
+And this is all even before you've added
+your own prompt. So, in general, it's
+best to keep this section as small as
+possible. So, have less tools, have less
+skills, and have less in your agent MD
+file so that the model is working at its
+most optimum context. And to get an idea
+of exactly how much 60k is, if we were
+to get the whole script of Star Wars a
+new hope, that is about 54,000 tokens in
+GPT5. So roughly this amount. Now you
+may be wondering what about compaction?
+Can that help with this whole process?
+And we'll talk about that a bit later.
+But now let's move on to exactly how
+Ralph can help with this. So the benefit
+of Ralph is that you focus on one goal
+per context window. So the whole 200k
+context window, we can dedicate that to
+one goal or one task. And the way we do
+that is we write a prompt that will
+first say inspect the plan MD file. This
+contains the tasks to be done. So
+something like create the front end,
+create the back end, do the database and
+so on. That is a very high level
+example. Of course, you'd go way more
+detailed if you were doing Ralph and
+more granular, but we'll stick with that
+example for now. So this prompt will
+tell the agents to pick the most
+important task, then make those changes.
+After making those changes, run and even
+push and commit those changes as well as
+doing a test. And once you're done with
+those, once the tests have passed, then
+tick the task as done in the plan ND
+file and do that again. So the agent
+will keep looking for the most important
+task to do until it's completed all the
+tasks. Now, actually, let me take that
+back because you could keep having the
+Ralph loop go over and over again even
+if it has completed all the tasks. And
+the benefit of that is that it may even
+find things to fix or find features to
+add that don't exist in the plan and
+defile. But if it is going off the
+rails, the benefit of having Ralph is
+that you can stop the whole process
+whenever you want, adjust the prompt MD
+file and then run the whole process
+again. And Ralph makes this so simple
+because this whole process is executed
+in one single bash while loop. So here
+it just catchs the prompt MD file. So
+prints it to the agent and then runs
+claude in yolo mode. Of course, the flag
+isn't yolo. It's dangerously skip
+permissions, but for the sake of space,
+I've kept it short. And what makes Ralph
+special is that it's outside of the
+model's control. So the model can't
+control when to stop Ralph. It will just
+keep going. And that way you can ensure
+that when a new task runs or when a new
+prompt is triggered, the context, so
+here is pretty much where it is when you
+first open the agent. So this is fresh.
+It doesn't have any compaction. It
+doesn't have anything added. So each new
+task gets the most amount of context and
+uses the model in its most smart or most
+optimal context window stage. Basically,
+compaction is where the agent will look
+at all the tokens that have been written
+in the context window and pick out the
+most important bits for the next prompt.
+So, it will pick what it thinks is most
+important, but it doesn't know what is
+actually most important. Therefore,
+compaction might lose some critical
+information and make your project not
+work as expected. Anyway, now that we've
+seen the canonical Ralph loop
+implementation from the creator, this
+helps us see why other implementations
+are different. Let's take a look at the
+anthropic implementation, which uses a
+slash command to run Ralph inside of
+Claude's code, has max iterations, and a
+completion promise. So, the problem with
+this specific Ralph Wigan plug-in is the
+fact that it compacts the information
+when it's moving on to the next task.
+So, if it finishes one task and reruns
+the prompt instead of completely
+resetting the context window, it
+compacts what was previously done,
+therefore could lose some vital
+information. There's also the slight
+issue of having max iterations and a
+completion promise because sometimes
+it's nice to just let Ralph keep going.
+It can find very interesting things to
+fix that you wouldn't have thought of
+before. And if you watch it, so be a
+human on the loop, you may see patterns,
+good or bad, from a specific model that
+you can tweak and enhance in your
+original prompt. If we take a look at
+Ryan Carson's approach to the Ralph
+loop, we can see here that it's not
+quite canonical simply because on each
+loop, it has the possibility of
+adjusting or adding to the agents.md
+file. Now, depending on the system
+prompt or any user prompts you've added
+to the model, in my experience, by
+default, models can be very wordy. And
+so, if on each iteration you're adding
+to the agents file, which gets added to
+the context at the beginning of each
+user prompt, then you're just adding
+more tokens into the context window,
+pushing the model into a place where it
+could potentially give you dumb results.
+But the fact that people are making
+their own scripts from the basic Ralph
+loop bash script is a testament to how
+simple and easy it is to understand. And
+although there is a canonical way of
+doing Ralph, I think it's okay for
+developers, teams, and companies to
+tweak it to their specific use case. For
+example, I love the fact that in Raz
+Mike's Ralphy script, there's a way to
+run parallel Ralphs and also the fact
+that you can use the agent browser tool
+from Vel to do browser testing. I also
+love the fact that in Matt Perox's
+version of Ralph, he adds tasks or
+things to do as GitHub issues and the
+Ralph loop will pick the most important
+one, work on it, and mark it as done
+when it's complete before working on the
+next one, which I think is really
+clever. I think the power and simplicity
+of Ralph means that it's going to stick
+around for a very long time, and you
+also may see a lot of iterations and
+improvements from it. I really like the
+way Jeffree is taking this with his Loom
+and Weaver project where he wants to
+create a way to make software
+autonomously and correctly. But with all
+these Ralphs autonomously creating new
+software, you need a way to search for
+errors and make sure they get fixed.
+This is where Better Stack comes in
+because not only can it ingest logs and
+filter out errors from them, but it can
+also handle error tracking on the front
+end. So with this MCP server, you can
+ask an agent to specifically pick out
+errors from the front end or back end
+instead of reading through the whole
+log, which in turn reduces the context
+window. So go and check out better stack
+and let me know what you think in the
+comments.

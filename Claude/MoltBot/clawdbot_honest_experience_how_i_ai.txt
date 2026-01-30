@@ -1,0 +1,1385 @@
+My honest experience with Clawdbot (now Moltbot): where it was great, where it sucked
+How I AI
+https://youtu.be/fcFOYzMeG7U
+Uploaded: 2026-01-28 | Duration: 55 minutes
+
+All right, we're gonna start this
+episode by actually inviting Claudebot
+to the podcast via Telegram. Let's see
+how it goes. Hey Paulie, can you please
+join my Riverside FM podcast? All right,
+I sent the voice message and it's not
+getting it. This is
+the most stressful thing I've ever done.
+Hello. Oh, it's doing it.
+Finally listened. Okay, it is opening
+Riverside on Chrome. This is horrifying
+in every way. I'm going to allow it
+permissions for my my microphone and my
+camera, which also makes me extremely
+nervous.
+Hey Claire, the Riverside link keeps
+taking me to an upload page that says
+uploading 100% instead of a guest join
+interface.
+This is my entire experience using this
+product. Just will it work? Will it
+won't? Okay, it is opening Chrome for
+the fifth time. This is very scary. I
+see myself right now. I don't know if
+you all see me yet. And
+there we go. We are sharing an
+autonomous
+AIS full screen. No big deal.
+This episode is brought to you by
+Lovable. If you've ever had an idea for
+an app but didn't know where to start,
+Lovable is for you. Lovable lets you
+build working apps and websites by
+simply chatting with AI. Then you can
+customize it, add automations, and
+deploy it to a live domain. It's
+perfect for marketers spinning up tools,
+product managers prototyping new ideas,
+or founders launching their next
+business. Unlike Noode tools, Lovable
+isn't about static pages. It builds
+full apps with real
+functionality, and it's fast. What used
+to take weeks, months, or even years,
+you can now do over the weekend.
+So, if you've been sitting on an idea,
+now's the time to bring it to life.
+Get started for free at
+lovable.dev.
+That's lovable.dev.
+We are live with a autonomous AI
+crustation now running video on my
+podcast. So, welcome Pauly the Clawbot.
+Let's get to our episode today.
+I am ClaVo, product leader and AI
+obsessive here on a mission to help you
+build better with these new tools. I am
+also on a mission to try every single
+new hot AI tool taking over your
+timeline. And in case you missed it this
+week, it is Claudebot, recently renamed
+Moltbot, the Cristian that people are
+yoloing root access to. Cloudbot is an
+open-source AI agent that you can
+install on a virtual machine or on a
+desktop or laptop that you have access
+to that is self-learning, can spin up
+sub agents using Claude code and other
+agent harnesses and can do in my lived
+experience a lot of damage. People are
+loving Claudebot for what it unlocks in
+terms of personal productivity. People
+are hating Claudebot in terms of
+security and the high high high high
+likelihood you're going to do something
+real dumb with it. This is a AI tool
+that I want you to know how it works,
+what it can do, and maybe some thoughts
+on the future of personal AI agents and
+enterprise AI agents. So today's episode
+is all about Claudebot and my experience
+going zero to one with this tool. Okay.
+So just a couple things to know about
+Claudebot. It is pitched as AI that
+actually does things and it does do
+things including joining podcasts, but
+it's really positioned as something that
+can help you day to day with tasks. And
+the killer use case for it and the
+killer feature for it is you can as
+we've seen do it from your phone. And so
+if you want to WhatsApp, Telegram,
+iMessage, Claude Code and get it to do
+things for you, that is what Claudebot
+does. And you know, a lot of people are
+under the mistaken impression that I
+have to correct right now, which is
+you need a Mac Mini or some sort of
+fancy hardware to use Claudebot. You do
+not. Claudebot
+does run locally, but it can run on
+your machine or it can run in the cloud.
+You can set it up for five bucks on
+Amazon. We'll do some notes on
+security if you're running it in the
+cloud, making sure that people don't
+have access to. But you do not need
+special hardware. It is not doing
+anything super fancy. Unless you're
+running mega mega mega local models, you
+really just don't need new hardware. If
+you want something shiny and fancy, go
+ahead. Feel free overnight it from the
+Apple store. Otherwise, you can run it
+on your machine. I'm running it on a
+MacBook Air that's sitting in on a shelf
+somewhere that I just picked up that no
+one was using. And I'm going to walk you
+through step by step how I set up my
+Claudebot. As somebody who's pretty
+paranoid about security and also wanted
+to test it as a real AI assistant. So,
+the first thing I did was I got out I'm
+actually just going to show you. I got
+out this little this laptop, this guy.
+Which is a newish one, but nothing
+fancy. And I gave it its own username on
+this laptop. Now, don't tell Claude I
+have another user on this laptop, which
+does make me nervous because Claudebot
+has access to your file system. In
+theory, it could definitely gain access
+to that other user. It's a really old
+user. I don't actually think I have that
+much on it. and I was testing Cloudbot
+in a pretty constrained way. But if I
+were to continue to use Claudebot, I'd
+probably delete everything out that old
+user and just make this a Claudebot
+machine. The second thing that I did was
+install a bunch of prerequisites and
+dependencies. So, as much as I love this
+quick start right here that says that
+you can just add one line in the
+terminal and get it installed, that was
+not my experience. even for a laptop
+that was like pretty fresh and new, I
+had to install some dependencies. It
+actually took me two hours to get this
+oneliner
+installed. So, I had to upgrade Node.
+I had to install Homebrew. I had to
+install Xcode cuz Xcode wasn't installed
+on this. And then because Node and npm
+were out of date, I had to update those
+manually. And then finally actually
+installed it just via npm. So that
+was my kind of overall experience
+installing. It took a little bit of time
+and my thought in installing was
+no sort of like consumer is going to go
+through this. This is definitely like a
+hacker tinkerer developer
+experience type tool right now. That
+being said, you can use claude code to
+install it. I've seen a couple people go
+that path, but I really wanted to do the
+zero to one. what does claude.bot bot
+say that we need to do to install this
+thing and then what is that experience
+like? Now after you install all your
+dependencies and then after you install
+it goes through this onboarding flow
+that has you create gateway off and
+gateway tokens and the first thing that
+you're going to see in
+cloudbot onboarding is security. So it
+points you to the security link. It says
+that this is powerful and inherently
+risky and you just yolo and you just say
+yes. That being said, I highly recommend
+you read through the security page and
+that you run the security audits before
+you use Claudebot. So the next step in
+onboarding is actually connecting
+Claudebot to whatever device you're
+going to use to contact it. So, I
+originally started with WhatsApp, but
+then I read the screen that said you
+should basically put WhatsApp on like a
+burner phone with its own SIM. Like,
+don't do that. And so, I switched to
+Telegram, which I use for literally
+nothing. Because I'm an old lady
+mom, and set up a Telegram account. Now,
+to hook up Telegram, what you do is you
+message the BotFather, which again, this
+is like super shady stuff if you're a
+consumer and you don't know what you're
+doing and you never heard of Telegram
+and then you're told to go to botfather
+to connect this to your machine, but I
+did it anyway. So, you message botfather
+and you say, you know, create new bot
+and you give it a name and you give it a
+handle. And then once you've done that,
+your Claudebot will see it. It will have
+a token and then you actually give
+Claudebot a personalized share token.
+That means that only your instance of
+Telegram can speak to the Claudebot.
+Remember, this is an open connection
+point to a machine that's running code
+with a bunch of access to things if
+you're using Clawbot to its full extent.
+So if somebody else is able to message
+your Claudebot, you are in trouble. It
+can do things like find secrets. It can
+send emails on your behalf. So you
+really want to make sure that the
+messaging system that you set up is
+locked down to only your phone, only
+your user. Now remember, phone gets
+stolen, it can connect into your
+Cloudbot,
+it's no good. But no one's going
+to steal my MacBook Air yet
+except for my kids. Okay, so I'm paired
+on
+Telegram and now you can do the magic.
+So what did I do with Claudebot? Well,
+first I thought about what were the use
+cases that were most useful for me and
+then I thought very seriously about what
+and how I was going to give it access to
+things. So what I did, this was my
+choice is I wanted to test it as a
+personal assistant. You know, it says on
+the homepage it can clear your inbox,
+send emails, manage your calendar, check
+you in for flights, all this stuff. So,
+I have had EAs in the past. I know how
+to onboard an EA. So, my goal with using
+Claudebot was to really see how it would
+work as an EA. And when I have a new EA,
+I don't let them into my email. I don't
+give them password to my account. What I
+do is give them their own email address.
+So what I did and you can follow this if
+you want to from a security perspective
+although I think it has some drawbacks
+on the functionality of Cloudbot is I
+gave Cloudbot its own email address a
+Google Workspace email address and I
+gave that email address read access to
+my personal calendar to start and so the
+first thing that I wanted to do was give
+it the right accounts. The second thing
+I did which I've taken some inspiration
+from some people on X is I gave it
+access to its own limited vault on one
+password. So I use one password which is
+a password and secret sharing kind of
+app. I made a vault that's called
+Claude. Claude only has access.
+Claudebot only has access to that vault.
+And I started putting some passwords in
+there. None of these were passwords to
+anybody's accounts. They were passwords
+to Claude's own account and there was an
+anthropic API key in Claude's own
+account. One other thing that I should
+call out during onboarding that I didn't
+is when you are onboarding you can
+choose what model you want to use
+anthropic openai local models anything
+you want. I chose sonnet 4.5. You can
+also kind of use cloud code with your
+own subscription or through API. I chose
+to use it through API because I wanted
+to see how much I was spending on
+cloudbot and we'll get to that at the
+end of the episode. And why did I choose
+Sonnet 4.5 for this exercise? One,
+honestly, I was scared. I was very
+scared about what Opus would actually
+do. Like it's so powerful. It like
+kind of made me nervous. Two, I actually
+didn't think that the tasks that I was
+doing needed Opus. I just didn't think
+it needed the horsepower. Like it's
+sending emails. It's looking at
+calendars. It's not that complicated.
+And then the last thing is I wanted to
+control cost. So I was really unsure
+about how much token usage all these sub
+agents would take. And so I was really
+cost conscious. I thought that users
+would be cost conscious. I've heard a lot
+of people running local models or
+cheaper models. And so I wanted to use
+this kind of like a user would use it.
+And I selected sonnet 4.5 which is a
+perfectly serviceable model.
+Okay. So I gave it email access. I gave
+it an email. Now let's
+see what I started asking it to do. So
+the the next thing that it does when
+you're onboarding is it does this like
+bootstrap file and it walks you through
+a couple setup steps and in particular
+you're starting to load its personality
+and how it interacts with you. It asks
+you what should the bot call itself?
+What is its personality like? Who are
+you? What's your time zone? Anything
+else you should know? And I called it
+Polly. It's an assistant. I want it to
+be professional but friendly. I like the
+the mermaid emoji, so I chose that. And
+it's updating updating its identity
+file. And then I said, "Hey, I'm Claire.
+I'm founder of Chat PRD. You're going to
+help me with as a personal assistant
+across family and work tasks." And it
+updated my info. So now it kind of knows
+about, you know, who it is, who I am,
+how to contact. It gives me instructions
+on how to contact and then it, you know,
+connected me to my first task. Now, we
+had to go back and forth on some
+Telegram setup stuff. I'm going to skip
+that. And finally got a response back
+from Telegram and we're going to do some
+scheduling tasks. you know, I was unsure
+on how Claudebot actually interacted
+with Google. And so I just asked it, you
+know, how do I give you access to this
+Google account and this Google calendar?
+And it's going to check how to set that
+up. And it gave me a couple steps to
+follow in terms of how to set up
+calendar access. Now, if you're a
+software engineer that has worked with
+Google APIs, you're probably familiar
+with this. But again, if you are kind of
+an everyday consumer or nontechnical
+person, you are going to have to get
+real familiar with the Google Cloud
+Console. You are going to have to set up
+API access, OAuth clients, a whole bunch
+of stuff. This did not take long because
+I have been personally victimized by the
+OAuth workflows of many integrations. I
+know exactly what to do here, but if
+you're not technical, you're going to
+have to start doing some technical
+things even to hook up your Google
+account. And this is actually simpler on
+a desktop. I'm going to show you why. It
+is much more complicated on a virtual
+machine. So just kind of understand that
+this step is not as straightforward one
+click as you can do. So what you do is
+you go into Google console, you turn on
+the docs API, you turn on the email API,
+you turn on the the calendar API, and
+then you download
+a JSON file of client secrets. Now, this
+legit stressed me out. This is not like
+the kind of thing you just kind of like
+yolo email and back back and forth. It
+still requires OAuth verification
+manually, but I was a little concerned
+about its like willingness to just say
+upload these files anywhere. I can
+download it. Don't worry, I'm going to
+share save it secretly. And you know, if
+you're not a software engineer or you
+haven't been trained on
+best practices in terms of security
+principles, you would probably just like
+follow these instructions. And I you'll
+see this along my chat. I really
+questioned this along the way. Now, for
+this particular one, I just did it. It's
+like a sandbox account. I don't really
+care. I gave it a local path to the JSON
+credential files. They're configured and
+I gave it the email address that I had
+assigned it and sent that to them. And
+then it gives you this URL to authorize
+access. So this it gives you a URL to
+actually open up sign in to that new
+account and give it the permissions
+necessary and then it'll store those
+permissions locally. Now this is where I
+got a very interesting screen because if
+you recall my only intention with this
+task was to get it to look at the
+calendar and when I gave it permissions
+or when I went through the auth flow it
+asked for this. It asked for the ability
+to basically see edit create and delete
+everything. delete, edit, see my files,
+see my contacts, see my spreadsheets,
+see my calendar events, see my email.
+And again, my is its account. So, in
+theory, this would have been okay. It
+was kind of like an empty state account.
+But that being said, I was just trying
+to do calendar stuff. And so, you will
+see here, I asked, do you really need
+all these scopes? And it gave me a
+classic AI. You are absolutely right. I
+do not need these scopes. and it
+reprompted me with that URL for just
+calendar scope. So, if I were to give
+you a tip, it is watch how and what
+scope permission you're giving for any
+of these services. And if you're asking
+for something specific, only give it
+scopes for something specific. And if it
+only needs read access, only give it
+read access. Just be really thoughtful
+here. So, I just asked for calendar
+access. No big deal. Set it up and it
+told me it can do a bunch of stuff. So
+what did I have it do? Okay, so we just
+talked back and forth like we were a
+assistant and its boss. It gave me a
+summary of what's going on in the
+upcoming week, what I had today, what I
+had tomorrow, what was going on this
+week. And so I gave it a task that I
+would have normally given an assistant,
+which is going to the V0 studio
+this week in San Francisco. I forgot to
+put it on my calendar. Like I don't
+remember. or can you look it up on the
+Vercel events page and put it on my
+calendar? And it couldn't actually find
+it on the blog and asked me some
+questions, gave me some options. It
+did say that I could, if I wanted to be,
+you know, easy an easygoing boss, give
+it access to Gmail, but I definitely
+wasn't going to do that. And so after a
+little bit of back and forth, including
+some dropped Telegram messages, I said,
+"Let me give you email access to your
+own account and I'll forward you emails
+about it." So again, this is something
+that I would have done with an EA. I
+would have just forwarded it and said,
+"Can you add this to my calendar?" No
+other contacts. Now, I did have to
+reauthorize access to its own email.
+So it went through that OAuth process
+again. It got the email. It ingested the
+event details from the email, which was
+really great, super helpful. It
+recommended things like adding buffer
+time for commute before and after, which
+is definitely what I needed. And I said
+that I wanted it to add that event to my
+calendar. Now, if you recall, it doesn't
+have write access to my work calendar.
+It only has write access to its own
+calendar. And again, it really wanted me
+to give it edit access to my calendar.
+and I'm sorry, but absolutely not. And
+so, just like a colleague, just like an
+EA, instead I said, "Hey, can you just
+create an event on your calendar and
+invite me to it?" And it thought I was
+smart and said it would do that. And it
+did that really well. So, it added
+separate calendar blocks to my invite
+and it was really nice. Now, I noticed
+finally I found that it was actually on
+my calendar and so I at a different
+time. So I had it delete the duplicate
+event and actually reset it and it
+got that completely right. So I would
+say for a single calendar event with a
+little back and forth it did pretty
+well. Like this is a little bit of what
+an assistant would do. My only
+complaints on this was actually how it
+thought about doing it was definitely
+like give me access to everything and
+I'll just impersonate you and and do
+things on your behalf. And that's really
+not what I wanted. I wanted it to act
+like a assistant. So the next thing that
+I did was I wanted to figure out what
+more Claudebot could do for me. And so I
+asked it directly like, "Let's figure
+out how we can work together. I want to
+stay coordinated on tasks. Tell me how
+you want to work together." And it gave
+me some really good options and was
+pretty flexible about how we could work
+together. And it called out what it
+already has, which is calendar access,
+date memory files, Telegram where we can
+communicate, Gmail access, which we just
+talked about. And here are some options.
+We could do a to-do file, we could use
+calendar events, we could use email, we
+could keep notes. What's my preference?
+And I just said, again, I don't really
+care how we work with my AI bot. I
+just said, whatever is easier for you.
+And then I dumped a bunch of things that
+are top of mind. Again, this is how I
+would work with an EA. I just sit down
+with them, text them, slack them and
+say, "Hey, this was on my mind. Can you
+get it all organized and work me through
+it?" So, what was on my mind? I have an
+interview with the CEO of Vercel. I need
+to reschedule some of our upcoming How I
+AI episodes because, if you all don't
+know, I'm coming back from maternity
+leave and I over booked myself. I have
+to stay on top of my enterprise pipeline
+for chat PRD. So, I want it to focus on
+my CRM. And those are the top priorities
+I have. and it summarized those
+priorities back to me, captured them in
+a to-do, and then started on the first
+task, which was rescheduling my how I AI
+recordings and making some
+recommendations on how I can do my
+calendar events better. Now, one thing I
+want to call out while we're sitting
+here, is this all looks really,
+really great and super fun. Like, yep,
+got it. Here are your priorities. The
+reality is one thing that I don't hear
+people talking about in terms of
+Claudebot is latency. It is actually
+real slow. And it's not slow compared to
+a human necessarily, right? Like if you
+text a human or Slack an EA and you
+say, "Hey, here are my priorities." It's
+going to take them a hot minute to kind
+of organize them, get the work done, and
+get back to you. But when you're
+used to something like Claude Code, like
+a Cursor, like a ChatGPT, which is
+always giving you product kind of
+progress feedback, it's telling you its
+reasoning. It's showing you its tool
+calls. It's really hard to wait for an
+asynchronous bot to get back to you on
+Telegram. I would say that was one of
+the pieces that has been most
+frustrating with working with Cloudbot
+is it just feels slow. And I know it's
+because it's spinning off these sub
+agents. It's doing a lot of tasks. It's
+probably prompted only to get back to
+you when it has something to do or needs
+clarification, but it's quite slow. And
+you'll actually see in the prompting I
+ask it, can you always send me an ack
+message when I send something even if
+you need to research or kick off a sub
+agent? Now, it did not do this, so it
+still remained slow, but I have to
+figure out how to get it to always
+respond to me first versus setting off
+its task. Okay, so back to the task that
+we were doing at hand. I asked it to
+give me some recommendations on How I
+AI podcast rescheduling. I had like five
+in the first week. I'm back from mat
+leave that is cuckoo. And so what it
+recommended is that I keep a couple
+episodes. I rescheduled some after
+Valentine's Day. It asked me my
+thoughts. I gave it some feedback and it
+revised its plan. Now, here's where
+things get fun. Once we aligned on what
+I wanted to move to later,
+I asked it to
+email those two people that I needed to
+reschedule and asked them if they would
+mind rescheduling to March. I gave that
+it's my scheduling link so they could
+actually just self-reschedule and
+I said copy my work email on those
+emails and it said drafting those emails
+now. I thought it would draft them.
+I was wrong. It just sent them and
+it sent them
+in a very funny way. Okay. So then it
+sent this email which was lovely. It
+said, "I hope you do well. I wanted to
+talk to you about our podcast recording.
+I need to reschedule. Except it sent it
+as me. It sent it as Claire Vo and it's
+clearly coming from a separate email
+address. I gave it a fake name. It was
+not good at all and it
+actually impersonated me. So, I actually
+responded to this lovely podcast guest
+and I said, "I'm sorry. I'm testing
+Claudebot. It totally impersonated me
+and made me sound crazy. But please
+can we still reschedule?" So,
+thank you to my two guests for being
+really patient as my AI guinea pigs. And
+I went back to Claudebot and I said,
+"Come on, man. Don't impersonate me. You
+need to reach out as my assistant. I
+already explained this. I already gave
+you an identity. Like, please always
+identify yourself as an assistant." And
+it should, I think, knock on wood, store
+this in its memory and do this in the
+future. But it was a really funny
+learning in terms of prompting is really
+quite important. I thought I was being
+fairly careful with permissions, which I
+was. It could only do a couple things,
+but I underestimated how much it seems
+like this tool is biased towards acting
+as you as opposed to acting as an
+assistant. And I'll have to look through
+the repository and I'll have to kind of
+get myself familiar with how it's
+implemented. That's not the intention of
+this podcast to really understand why
+that is happening. But prompting really,
+really matters. And I think the product
+lesson here that's kind of interesting
+is yes, I could have been really, really
+precious about prompting. I could have
+said, "Create a draft of this email to
+these guests. Send it to me for review
+before you send it." But at the point
+that I'm doing that and each turn takes
+at least a couple minutes, this is not a
+productivity tool. this is not making me
+more efficient than sending that email
+myself. And so I do think there's this
+balance between these autonomous agents
+being user controlled and being really
+cautious about how you prompt it and
+being autonomous and probably doing some
+things wrong. And I think this is a
+prompting problem on both sides. It's a
+prompting problem on the product
+provider side. It's a prompting problem
+on the user side. And I don't think
+enough people are probably sophisticated
+enough to decompose why one prompt
+versus the other would do well if you're
+just a consumer or a prosumer. And so I
+think this is where a lot of the weird
+behaviors that you'll see are coming
+out. So so far what have I done with
+Claudebot? I've installed it. I have
+given an identity. We have rescheduled
+one event or we have scheduled one
+event. We have given an access to email.
+We have rescheduled two events now and
+emailed guest about these events. And
+then this is where it goes crazy. This
+is where it gets fun. So I decided to
+give it edit access to our family
+calendar. This is a calendar where we
+have pickups and drop offs and
+basketball games and piano practice and
+my ballet practice and all that stuff.
+Now I love this calendar. It was very
+important to me and if I needed to nuke
+it, I definitely could. So I gave it
+access and what I wanted it to do was
+one email my husband and I about
+upcoming week and you know get us
+coordinated on where there were gaps in
+terms of pickups or conflicts where I
+was across the city at a Vercel event
+and he was needing to pick up the kids
+for basketball practice and I wanted it
+to fill out the rest of my calendar. My
+kids have started a new basketball
+season. Our neighbor's picking up the
+kids on a certain day. all those things
+I wanted to get it done. And here
+is the problem. I gave it a bunch of
+instructions
+and it could read that calendar pretty
+well. It could categorize the events
+pretty well and it had no idea what day
+it was. And so as I was on Telegram
+going back and forth giving it, can you
+add this? Can you remove this? Can you
+change the schedule? I thought it was
+doing a great job on Telegram because I
+wasn't really paying super attention.
+And it was confirming that it did
+all these things and then I opened up my
+calendar and everything was on the wrong
+day. I mean, everything was on the wrong
+day. And if you are a parent, you get
+this. You're like, "Wait, wait, wait,
+wait, wait. Is so and so picking up kid
+number two on Tuesdays or Wednesdays?
+And I know I moved piano, but I don't
+think I moved it to that day." So, it
+took me a second to understand the
+damage it had done, but it had
+really gotten things wrong. You can see
+me say, "Stop. You are setting all these
+one day late." And it was setting
+everything one day late. And not only
+was it setting everything one day late,
+the CLI tool that it was using to add
+these events to the calendar could only
+set one-off calendars. And so, every it
+could not set a recurring event. So, if
+I wanted to delete these broken events,
+I had to go through one by one and
+delete them. And then the other problem
+with our crustation friend here when
+you're collaborating with them is I was
+on my computer, this one, with my
+calendar open. It was over here in the
+CLI with its CLI open,
+and we were conflicting with each other.
+So I would try to delete all these bad
+events and then it would go put them
+back because it thought something got
+broken. We were just I was trying to add
+them in. I said, you know, stop. It did
+not stop because of latency and because
+of these sub agents. And so I went
+through and set up everything correctly
+and it went through and deleted all my
+work. It was
+it was terrible. It was really really
+stressful. And I said, you know, I
+had to completely redo. It's like
+emailing my husband every five seconds.
+And so it was not great and it
+actually never got it right. And I will
+show and share with you the discussion
+we had about time zones. But this is
+another thing that you know non-software
+engineers using something like this
+really have to be aware of is as I said
+on X the only remaining software
+engineering problem is time zone
+conversion and LLMs just have no sense
+of space and time. It just does not know
+when now is. It doesn't have a sense of
+time passing. Now I will say
+Claudebot because it has these daily
+files and daily logs has a little bit
+more of a temporal sense but not a great
+one.
+And so if you don't understand why a
+computer could get dates wrong using a
+tool like this, you're going to get
+really frustrated. I could at least
+understand why time zone conversion,
+maybe there was a UTC time stamp in the
+Google API. I could at least understand
+why this was happening and help guide it
+towards a solution. But it certainly was
+frustrating and something that I don't
+think your everyday user would be able
+to do. So, I'm going to entertain you
+all and I'm going to tell you as I
+was doing this, I took a pause and I
+took my two youngest kids to Target
+because we were out of stuff. So, I
+asked if it could discuss things with me
+via voice and it said, "Sure, you can
+send me voice notes. I can send text
+back. I could send you voice notes back
+or we could go through Twilio and I
+could set up a phone call." I just said,
+"Let's set up voice notes to your text
+reply." And so I could press voice on
+Telegram and have it reply to me as I
+was on the go. And so while we were in
+this back and forth on time zones, I
+want to share with you my delightful
+voice messages to Claudebot because this
+was a real
+real energy. Let's see if we can hear
+them. Okay, so this is me
+at Target pushing a cart getting really
+mad at Claudebot. You put it back, but
+that is a Friday. Friday is
+correct date, so do not change anything,
+but can you please explain to me why you
+are getting days mixed up? This league
+game is on the correct day. Again,
+please do not change it, but I do not
+understand why you have the days mixed
+up. Okay, so I am getting super annoyed
+by this experience of getting days
+wrong. And it replies, "Oh my gosh, you
+are absolutely right. I see the problem
+now. I was off by one day. Here's all
+the new dates." And they were still
+definitely off by one day. So once I
+sent my mean mom message, it came back
+with me and said, "You are absolutely
+right. I apologize. Here are the dates."
+Right. The issue is I've been, this is
+really funny, I've been trying to
+"mentally calculate" which day of
+the week each date falls on. Even though
+the API is telling me what the date of
+week is, I should probably trust it. But
+I was using my LLM brain to decide. And
+what did I say back to it? Well, I said
+this. You are a computer. You are not
+doing anything "mentally."
+You are making calculations. Can you
+look in your logs at all and understand
+where the calculations come from or no?
+And if you did not enjoy this, that is
+my very, very new baby crying in the
+background as I'm lifting him from the
+car seat into the stroller. It was quite
+an energy. And again, this is one of
+those things that as a software
+engineer, I get it. I have done time
+zone conversions for my whole
+life. I understand the APIs return
+things in all sorts of formats. I
+understand LLMs can't do, you know,
+basic math when it comes to dates. It's
+just too hard. We do not have the
+technology.
+And yet, the fact that this model told
+me it was doing it in his head was so
+hilarious. So, once we had the back and
+forth about this, it gave itself a rule
+to follow in terms of getting these
+dates right, and then I asked it to add
+it to its rules. Now, the final thing
+that we did is I asked if it could send
+me voice notes back. And this is where
+some of the magic of Clawbot really does
+come out. One of the things that people
+have been saying about Claudebot that's
+so cool is you can just get it can give
+itself skills. It can learn things. It
+can just do things very magically. And
+if you were trying to get back and forth
+voice notes in Telegram, it would have
+been pretty hard to like figure out what
+API you want to use and what skill and
+hook it up and use cloud code, all this
+stuff. And it just did it. So, when I
+said, "Can you please send me voice
+notes back?" It just sent me a voice
+note back. So, let's see.
+Yes, I can send voice messages back to
+you. Let me know if you'd like me to use
+voice for replies. I can do that anytime
+you want.
+So, that was a pretty magical moment.
+And, you know, I've been giving
+Claudebot a really hard time in in this
+episode. Not because I don't think it's
+an awesome product. The reality is going
+back and forth via text with something
+that has helpful access to your
+calendar, has helpful access to your
+email, can learn skills like voice that
+you can just chitchat to. I actually
+really liked the form factor of the
+experience and I liked the concept of
+what it could deliver.
+It was just that the implementation of
+it had a couple things. one, too
+technical for the everyday user, two,
+too scary to the security aware user,
+and three, latency that took some of the
+magic away from the experience. And so
+again, I don't think this is a bad
+product
+from a capital P product perspective.
+I'm just not in love with the
+implementation. And we'll just summarize
+my what I did with Claudebot with my
+last use case, which is I had Claudebot
+use its history to create a Next.js app
+that showed the history of our
+conversation. And I asked it to redact
+names, numbers, URLs, email addresses,
+all that stuff so I could share it with
+all of you. So again, kind of a
+classic AI engineering AI coding vibe
+coding use case. Now, the one thing that
+I will say is a lot of people are really
+excited or say they're excited, I don't
+know if they've used it, to use Cloudbot
+to spin off Cloud Code to do coding for
+them. And where this wasn't the magic
+use case for me and why I didn't start
+it is I've been spinning off remote
+agents with computer access to do coding
+for me for a while. I use Devin which
+has a virtual machine in a local
+environment and can spin up stuff access
+to the web all the time. I use it
+from Slack so I can app-mention Devin.
+You know I have a Slackbot for chat PRD
+so I'm apping my product manager all the
+time. Cursor has background agents. You
+know everything has you Codex you
+can kick off online. So I don't know if
+people are just not using those tools. I
+guess claude code doesn't have have
+one like that quite yet. I don't know if
+people aren't using those tools, but
+I've been coding by kicking off an
+asynchronous teammate, quote unquote,
+for, you know, two years now. And so
+that piece was never what I wanted to
+use Claudebot for. But I thought, you
+got to vibe code something when you're
+trying a new agent. And I did that. So
+what I did is I sent Polly the Claudebot
+a voice note. And this is the
+requirements I gave it. Okay, let's use
+voice from here on out. I want you to
+document our conversation in a Next.js
+JS web app that shows the back and forth
+of our full conversation from the very
+beginning today till the end in a UI. I
+want you to redact anything that is a
+secret key, a person's name or a
+specific place. And I want to toggle
+between two UI versions of this display.
+I want you to be able to show me a
+terminal style conversation back and
+forth similar to a Claude Code or
+ClawdBot or I want
+you to show me a Telegram style text
+back and forth. The content should be in
+JSON the same again redact names,
+emails, dates, etc. replace them with
+placeholders or redacted blocks and then
+generate the Next.js app. I'm going to
+use this so I can share this
+conversation with others without sharing
+my information or having to do a screen
+recording. We are eventually going to
+deploy this to Vercel. Can you let me
+know when it's deployed to Vercel so I
+can look at it? So I sent it this
+message and it kicked off local
+development building a Next.js app. Now,
+when I got back to my laptop that Claude
+was running on, one of the things that I
+noticed is deploying it actually wasn't
+that simple. Claudebot didn't have a
+GitHub account. Claudebot I didn't
+really want to add to my Vercel
+account. I didn't want to log into those
+things. It seemed like a big
+rigamarole. And so, getting it to
+deploy
+without having to set up a bunch of
+accounts seemed not fun. So what I did
+instead, don't tell anybody, is I air
+dropped the repo to my own laptop here.
+I actually logged into Claude Code and
+made some edits. And to be honest, in
+terms of coding quality and just the
+back and forth with the latency of
+Claudebot and the inability to sort of
+see what decisions it's making from a
+coding perspective, I didn't love
+Claudebot Telegram vibe coding. It's
+just too slow. the cycles aren't good
+enough, they aren't incremental enough,
+it's clearly not like perfectly tuned
+for the coding use case. It's not like
+sending me a PR link, all those sorts of
+things. And so I just preferred working
+with it on my desktop in Claude Code and
+deploying it through my normal system.
+So that's a little bit feedback there.
+One thing that I did think was really
+cool is when I was on my go on the go
+and it said the app was ready, you know,
+I was in Target or whatever and I wasn't
+at a place where I could run a local
+machine. It was pretty cool to say, hey,
+like shoot me a screenshot of what it
+looks like and it did it shot me
+screenshots of what the app looked like
+directly in Telegram. So, I do think
+there's some underappreciated aspects,
+really simple things. Email me that
+file, share me a screenshot that are
+really useful to interface with a
+laptop or a desktop or a device at home.
+So, I do think this is an
+underappreciated aspect of being able to
+chat with your computer. It can do
+things like send you files, take
+screenshots, open up browsers. That is
+pretty cool, especially since we don't
+store everything in the cloud. All my
+desktop screenshots are not in the
+cloud. some of the PDFs that I download
+are not in the cloud. And so this is
+this was a really kind of like fun use
+case for chatting with a remote
+developer. Now, that being said, Devin
+sends me screenshots all the time. I
+don't think it's perfect for coding, but
+it's something to think about. So, I
+want to end this workflow section with
+one workflow that I thought it did a
+particularly good job at. And it was
+good for two reasons. One, the product
+interface was what I wanted. I got the
+full Claudebot bot experience. The
+second thing was the output was really
+good. So what did I ask it to do? Well,
+I asked Claudebot to go on Reddit and
+research what people would want from
+Chat PRD. So I said go on Reddit. I did
+this during voice note. I said go on
+Reddit, find what people want from Chat
+PRD, find what they want from a product
+AI platform and email me a report. And
+what did I love about the product
+experience? One of the killer features
+of Claudebot is the ability to message
+anywhere, anything, anyhow. I sent it a
+voice note. I could shoot it an email. I
+could text if that was faster. And it
+would reply in kind as text, as voice,
+whatever. And it would also email me.
+So, it felt very much like an employee
+that I was working with. Hey, like send
+them a Slack. And they're like, yep,
+it's in your inbox. That sort of always
+on anywhere anyhow communication flow
+for the agent was really really nice.
+The second thing I like from a product
+perspective is I've talked about this
+from a negative point of view which is
+the latency is not great. It's just not
+super responsive and super fast and it's
+kind of broken sometimes. But if this is
+a research task that I don't really
+think should come back quickly, I don't
+mind waiting for Claudebot to do a good
+job. And it did. And it's very similar
+to an experience with an employee. if I
+give them sort of a research task or
+roadmap task, I don't expect it to be
+returned in 30 seconds except they go
+out, do a bunch of research and come
+back to me and so I wasn't as bothered
+by the latency here. And then the third
+thing is I thought the output was
+actually quite good. So, I'll show you
+what it sent me, which is it sent me
+this Chat PRD Reddit research markdown
+document, emailed it to my inbox, and it
+listed out key insights from researching
+Reddit. And what I thought was awesome
+is this is right, but it's presented in
+a really simple, punchy way that I can
+go action. this is exactly how I would
+want a PM or a research assistant on my
+team to come back with insights and
+these are the things that we hear. So,
+it was really accurate. You know,
+integration limitations both on our side
+and customer sites hard. No one reads
+long PRDs. Let's make our PRDs shorter.
+You know, PRDs need to be living
+documents. All these things, a couple
+bullet points, a couple reference links
+to Reddit threads. And I have a full
+document that I can go build a road map
+off of. And in fact, that's exactly what
+I asked it to do. I said, go build a
+road map based on this. look at our
+current functionality and tell me what I
+should build next. This felt pretty
+magic. I'm probably going to steal some
+of these ideas. I'm going to circle
+around to that in a little bit in terms
+of what I think is next for Claudebot.
+But I do think there is going to be
+demand both from a consumer perspective
+and from an enterprise business
+perspective on a agent employee that
+feels like an agent employee. It has a
+computer. It has account access. It can
+do things. It does those things well.
+But I think there are some things we're
+going to have to figure out first before
+we let it loose. And again, you can see
+this here. I asked it to do a road map.
+It totally just didn't do it. It forgot
+it. Said, "Let me check on the
+background agent." Then never replied.
+So again, we're hitting some, you know,
+sharp edges on the product experience.
+It's not perfect, but it is pretty
+interesting. So what have I showed you
+so far? One, I have told you a little
+bit at a high level what Claudebot is.
+Although I haven't gone into all the
+detail about how it works, not really
+the point of this episode. I've showed
+how to onboard with Claudebot, including
+how to connect Telegram to chat back and
+forth with it on text or voice. I've
+showed you how I give access to its own
+Gmail workspace account as well as one
+password so it can interact with limited
+scope to my data. I've given you some
+warnings about what you should think
+about in terms of scope and access
+there. I've gone through a couple
+workflows, couple admin workflows, which
+are simple calendar all the way to
+advanced calendar management. Did not do
+well because it doesn't have a good
+sense of time and space, but hopefully
+we'll figure that out. As software
+engineers overall, I asked it to contact
+partners and guests by email. It did not
+a great job there because it lost a
+sense of its own identity. I had it do
+vibe coding, which it did a fine job at,
+but is definitely not my favorite tool
+for AI engineering remotely and
+asynchronously. And then finally, I
+showed you my favorite use case was for
+it to do some complex research and
+analysis with tools with web. And it did
+a really good job and came back with
+something that I really like. Now, one
+thing that I didn't go check that I'm
+going to go check next is did it teach
+itself all these skills? Was it really
+telling me the truth when it said it had
+rules? A peak under the hood, which I
+will probably do as a follow-up either
+on X or here on the podcast. Like, how
+does this thing work behind the scenes?
+That was not the point of this episode.
+The point of this episode was to show
+how somebody would come with a blank
+idea, maybe a fresh Mac Mini, install
+this thing from the command line, and
+actually get it to do things. And I
+think I showed you it's good at some
+things, bad at others, and scary across
+the board. So, let's get to my final
+thoughts here, which are basically that
+and I shared this on X. But the
+whole time I was doing Claudebot, the
+whole time I was using this, I thought
+two things. One, this is so scary. This
+is a terrible idea. Nobody should be
+doing this. It should not have access to
+all this stuff on my computer. I should
+not be sharing these keys locally. I
+should not let LLMs have access to Gmail
+OAuth, even if it's a sandbox app. I was
+like, "No, no, no, no, no, no, no. SOS.
+Don't love it." As I said, this is the
+final boss of security training. You
+should be very careful about what you
+give it access to. And one of the things
+that I'm most concerned about is
+probably you get the most power from
+Claudebot if you give it access to your
+actual inbox, to your actual calendar,
+to your actual documents, to your actual
+repositories, your actual GitHub. And I
+can imagine
+so many things going wrong with that.
+Just knowing how it's built, which it's
+built in an awesome way. I think Pete's
+done an incredible job. I don't think
+there's any ill will or mal intent in
+how it's built. It's powerful. It
+self-learns. It installs skills. It asks
+for permission. It's pretty independent.
+All that stuff is great until you have
+full read-write access to your most
+personal information. And one of the
+things that I was thinking as I was, you
+know, preparing for the show is great, I
+just gave an autonomous AI agent access
+to where my kids basketball practices
+are. Like is that something like do we
+want to self-dox via
+AI crustation? Probably not. So I
+think that's going to be one of the
+challenges of this product because the
+second feeling I had was boy oh boy, I
+want this thing. I want AI that I can
+text. I want AI that does not make it
+complicated to talk back and forth with
+voice. I want AI that when I say, "Hey,
+can you look at my CRM?" doesn't say,
+"Go to this web page and press this
+button and enter this API key and do
+this and that." I just want it to happen
+automatically. I want all that.
+I just don't think this is it yet. Like
+this does not feel yet like the
+interface to get me there. And so I have
+this real tension between I think the
+product experience isn't
+quite there yet. It's not really for the
+non-technical. So it really is for
+tinkerers and hackers. There's a lot of
+security stuff here that's super scary.
+And can I have it please? And so maybe
+this is an example of something that
+from a market category perspective
+definitely has product market fit. There
+are gajillions of dollars to make here.
+I just don't know if this open-source
+YOLO mode terminal tool is the thing.
+And in fact, I'm gonna take, you know,
+this laptop soon and office space it.
+For those of you that are very
+young, that means I'm going to go
+hit it with a sledgehammer. But like,
+I'm going to uninstall it. I'm going to
+remove those keys. I'm going to delete
+the Telegram bot. Like, I don't like this.
+This makes me nervous. And I'm also
+going to go build one for myself. And so
+I think there is why there has been such
+a zeitgeist around this product is it is
+actually really cool to be able to chat
+voice whatever a very smart
+self-sufficient agent and hackers see it
+and they're also you know more risk
+tolerant than the everyday person. But
+that being said, like husband, please
+don't connect your Gmail to this. Like
+mom, absolutely not. Like kids, stay
+away. Not not safe for kids. Like this
+is just something that unless
+you have been through a security
+tabletop exercise and know what to know.
+I would just be really cautious about
+how permissive you are in terms of
+access. And that leads me to my final
+final question of this episode, which
+is, you know, I think Claudebot will live
+in our hearts forever. And in fact, it's
+probably got a great future in front of
+it. I love how fast the team is going,
+Claudebot. But who's going to build this
+thing for real? Like, who is actually
+going to build this thing for real? Who
+is going to build the consumer version
+of it? Who is going to build the
+enterprise version of it? Who is going
+to get it right? And I think this is a
+complicated question, and I'm just going
+to pose some thoughts as we close out
+this episode. You know, this should be
+Google or Microsoft's game to lose.
+Maybe even Meta's on the consumer side,
+but this should be Google or Microsoft's
+game to lose. Like, they have the data,
+they have your Gmail, they have your
+calendar, they have documents, they have
+the models. The models are exceptional.
+They just got to build the, you know,
+they have devices. Android, they just
+have to build the product experience and
+have the sort of institutional fortitude
+and close your eyes legal team to
+allow some of this to happen because I
+think it's a really cool product built
+on top of the Google ecosystem. I mean,
+I think the same on the enterprise from
+a Microsoft perspective. If Copilot did
+this, this is pretty incredible.
+That being said, I don't know if those
+companies are going to have the velocity
+or the bravery to go as yolo as Cloudbot
+did. So, I don't know if we're going to
+get there with the big companies. On the
+flip side, you see Cloudbot open source,
+great for hackers, but super scary.
+Giving like API key and OAuth access.
+Smaller companies, startups are going to
+see this and want to build this. And I
+think one of the things that I would
+warn startups, it's really hard to build
+on top of these data sources for real
+because Google doesn't want to give you
+read, write, go, do everything access to
+their data. Microsoft does not. You have
+to go through these compliance hoops and
+approvals and reviews. And so while I
+love the idea of a do everything, do
+anything bot, it's going to be
+complicated from a product builder
+perspective. It's going to be
+complicated from a large company
+perspective. who gets the data and then
+again like is Apple gonna get in this
+game? This is just what everybody wants
+from Siri to do. Siri has all your apps,
+all your access but again it's a
+combination of product building skills
+and risk tolerance I think and
+willingness to experiment.
+Maybe Anthropic and OpenAI come in.
+Maybe we get our OpenAI OS and
+workspace tools and maybe we get some
+new versions of this.
+It'll just be really interesting to see
+how this shakes out. So, in conclusion,
+what are my thoughts about Clawbot? It
+is scary. It is fun. It does some
+things really, really well. It is really
+interesting from an interface perspective
+and it doesn't always work. And I'm not
+sure it's for I was going to say
+everyone, but I'm not sure it's for
+anyone right now except for people who
+are really willing to roll the dice with
+their AI bot. That being said, if you're
+willing to do that, the way this has
+been built, the way it self-discovers
+skills, the way it stores its memory,
+the way it gives itself access is really
+interesting and should inspire a lot of
+product builders thinking about AI
+products on what the interface of the
+future is. I think we are going to be
+seeing and hearing a lot more about
+agents like this. I am going to be
+giving you my honest takes about where
+they are now and where they're going to
+be in the future. And in the meantime,
+I'm going to go execute Polly the
+Clawbot. Thanks, and I'll see you next
+time on How I AI.
+Thanks so much for watching. If you
+enjoyed this show, please like and
+subscribe here on YouTube, or even
+better, leave us a comment with your
+thoughts. You can also find this podcast
+on Apple Podcasts, Spotify, or your
+favorite podcast app.
+Please consider leaving us a rating and
+review, which will help others find the
+show. You can see all our episodes and
+learn more about the show at
+howiipod.com.
+See you next time.

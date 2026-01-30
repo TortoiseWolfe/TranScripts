@@ -1,0 +1,260 @@
+Clawdbot IS NUTS: This New OpenSource AI Employee That Runs 24/7
+Income Stream Surfers (Hamish)
+https://youtu.be/h9EXG9BJqqI
+Uploaded: 2026-01-24 | Duration: 10 minutes
+
+Hey guys, welcome to this video. In this
+video, we're going to be talking about
+Claudebot. Claudebot is a brand new
+system that everyone is going absolutely
+crazy for on X. This video is going to
+be slightly different because I don't
+really understand what the hype is here,
+but I'm going to try my best to explain
+what is going on here. So, the first
+thing to note is installation is
+extremely easy. You just copy this
+command. Whether or not you trust this
+to run your entire life, that's up to
+you. It's an open-source system, so
+there shouldn't be anything too kind of
+nefarious on there. Hopefully, people
+have checked, but I mean, again, that's
+asking a lot of people. What this
+actually is is it's basically an AI
+assistant that will sit 24/7 that you
+can talk to on your computer.
+Right. So you can run this on a, you
+know, if you have a spare computer and
+then you can have a conversation like
+the one right here on WhatsApp directly
+with Claudebot. Now, the issue I have
+straight away with this is nobody's
+going to actually use it for this,
+right? This is the thing that is kind of
+annoying me about this project is I'm
+just not seeing the use cases. There are
+some, but it's just not as extreme and
+crazy as people are going around on X
+saying. Like, people are going mad
+about Claudebot right now. Like
+literally these these eight letters or
+whatever just are guaranteed 10,000
+impressions on Twitter right now. So
+this is what they're talking about.
+Claudebot is a 24/7 assistant with access
+to its own computer. What if there were
+10 or 100 or a thousand all running 24/7
+in the cloud with access to your files,
+your Gmail, calendar, everything about
+you? That's the future living today.
+What do you mean? Why would you need a
+thousand claude bots running 24/7? What
+would you need this for, Nick? Please
+just explain to me, Nick. I just don't
+get it. Great. You can talk to it on
+WhatsApp. Wow, I'm really not
+understanding this, guys. And maybe I'm
+behind. Got a Mac Mini for Clawbot. Had
+a lot of fun setting this up today.
+Instead of access to my accounts, I gave
+it its own Apple account for messages.
+Its own Gmail to sign up for stuff. Its
+own GitHub to push code. Okay. So, I
+mean this straight away is a little bit
+more useful. Instead of having access to
+my stuff, I would rather it has access
+to its own stuff and it can go and it
+can sign up and it can be its own kind
+of AI profile. This is a little bit more
+useful. Aaron NG, thank you actually for
+showing me a decent use case. Should we
+add a Claude bot option? Basically, run
+Claude code in a sandbox 24/7. You can
+text it, WhatsApp it, and it'll be able
+to do anything Claude code can do. Not
+true. Absolutely not true. If you're not
+watching Claude Code run, it's not going
+to be the same as Claude Code. It's just
+not. Alex Finn, bro, what the - I
+have an AI agent watching all my GitHub
+repos just coming up with new features,
+building them, shipping them, then text
+me when they're done. This is how you
+completely destroy your project, Alex.
+I don't get it. I actually like this guy
+and I think that he makes good content,
+but you know, this is how you mess up an
+entire project. Telling people this, in
+my opinion, is just dumb because this is
+not how AI coding is done. If you just
+let this cook, it will break everything.
+I promise you, it will break everything.
+The only issue with Clawbot for me is
+that it seems to be very token
+inefficient. You're going to be burning
+tokens like there's no tomorrow. Claude
+code for trading is nuts. Classic. They
+always just go with this option. Let me
+guess, this is crypto. Yep. I don't even
+need to see this, honestly. I just know
+what's coming.
+Okay. So, this one here from tech
+friend AJ. I can actually see the use
+case here. Deployed clawbot in under
+five minutes on AWS free tier. Open
+source personal AI. Full system access.
+I don't care about interfaces through
+WhatsApp. Whatever. People are rigging
+it to their Raybands for real-time price
+comparisons. One command, that's it.
+This is an interesting one. Imagine
+having an AWS thing that you can
+interact with that you just write to
+whenever you want something. I do like
+that. And the fact that it can execute
+code and run claude code and stuff like
+that is pretty interesting. Okay, so
+this here, this is where it starts to
+get interesting. So Claudebot gateway,
+see this? When I see it like this, I can
+actually start to understand why people
+might like to use something like this.
+So this is almost like a virtual
+assistant right here. So you can see it
+automates daily brief, manga, I don't
+know what that is. Evening check content
+machine generation and drafting okay
+soul.md personality and tone, user who
+you are in context, memory.md long-term
+knowledge, daily logs, voice messages.
+So this is quite cool. Imagine walking
+down the street you have an idea for
+something you leave a voice note to
+claude bot and then you come home from
+vacation or whatever and you have a
+fleshed out MVP of what you had in your
+head. That is a cool idea. That's where
+things start to get interesting. Let's
+just quickly talk about how to install
+and things like that just in case people
+actually want to use this. So,
+installation, you just run the install
+command that's on their homepage. Just
+run through their setup. I connected
+through Claude code, which I don't think
+is even - I think that's against their
+TOS. So, just be careful with that. You
+might get banned. I have no idea. Not
+legal advice. Whatever I have to say.
+Also, I don't really like it when
+companies blatantly bypass other
+companies terms of service, especially
+someone like Anthropic, because if I get
+banned from Claude, what the hell am I
+going to do? Like, literally, what am I
+going to do? I'll have to code with Open
+Router, which is going to be 100 times
+more expensive. So, definitely be
+careful with that, guys. Okay? And a lot
+of people are just like, "Oh, just do
+it." But you know, if you get banned
+from Claude and you're using it to code,
+what are you going to do next?
+Literally. So, let's talk use cases. For
+use cases, what I like to do is I like
+to go to skills and I like to have a
+little look here. This one here, X/
+Twitter CLI for reading, searching,
+posting, and engagement via cookies.
+Now, this use case right here, I just
+want you to picture something for one
+second. If you remember yesterday or two
+days ago, I made a video about agent
+skills for remotion which effectively
+allows claude code to create motion
+graphics for your business. So let's say
+I wanted to advertise harbor seo.ai. How
+can I use that for this? Well, what
+Claudebot could do would be to basically
+look through my system, my code or, you
+know, the website itself, whatever. It
+doesn't really matter because it can
+make an account. And then what it would
+do is it would come and it would create
+motion videos, right? Motion graphics.
+Once it's created a motion graphic, it
+can use Claudebot to then post these
+motion graphics and engage with people
+on X. This will get people to your
+business, right? This is actually a
+really, really good way to do things.
+Blog watcher, another very interesting
+one. Monitor blogs and RSS atom feeds
+for updates using the Blog Watcher CLI.
+Again, let's say I wanted to add a new
+feature on Scout. This was an original
+feature of scout on harbor. Right now,
+this just finds trending topics, but
+let's just say there was another option
+here. Originally, what scout was
+supposed to do was to scout your
+competitors, right? So imagine if you
+came here, you set up your competitors
+and then all I would have to do is send
+your competitor URLs to my Claudebot and
+it would basically 24/7 scout your
+competitors and then web hook back into
+Harbor and basically show you when a
+competitor has written an article. It
+would basically use Harbor to write a
+similar article in your style with your
+images and everything. And that's a very,
+very interesting use case. So, to be
+honest with you, this is actually the
+second time I'm making this video. The
+first time I made this video, I was kind
+of confused and I didn't really know
+what the use cases were. But being able
+to have a 24/7 running bot that you can
+wake up at any time that will do
+anything for you by interfacing with
+either WhatsApp or Telegram or whatever
+is actually very, very interesting. What
+I would love them to do is have a way
+that you can basically just have some
+kind of chat app on your phone where you
+can discuss things with Claudebot. Now,
+I'm pretty sure they will already have
+this, but if they don't, I would love
+this because and another thing as well
+is with teleporting. I don't think I
+don't know if people have seen this, but
+teleporting Claude code. This is a new
+thing where you can basically teleport
+between one Claude code session to
+another Claude Code session. So imagine
+if this was inside Claudebot where let's
+say I'm coding and this happens all the
+time. I'm coding on Claude code. I have
+to leave and I want to just continue my
+conversation with Claude code. If
+Claudebot can make that happen, that
+would be an insane use case. Guys, I
+think overall this is a pretty
+interesting thing. I don't necessarily
+get the hype as much as other people.
+I'm not really sure why people are so
+crazy about this because I'm pretty sure
+you could do all of this before just
+with maybe slightly customized setup.
+But yeah, I don't know. People are going
+absolutely mad for it on X. So, I just
+thought I'd make this video and let
+people draw their own conclusions. I'll
+leave the video there, guys. Thank you
+so much for watching. If you're watching
+all the way to the end of the video,
+you're absolutely legend. And I'll see
+you very, very soon with some more
+content. Peace out.

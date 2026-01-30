@@ -1,0 +1,312 @@
+Why your coding agent keeps getting DUMBER.
+Agentic Lab (Roman)
+https://youtu.be/XQWOdQ8GM4w
+Uploaded: 2026-01-10 | Duration: 11 minutes
+
+You are using cloud.md wrong. If you
+have ever thought to yourself, I would
+like to teach Claude to better
+understand my preferences, then this
+video is for you. I'm Roman. I published
+a top 3% paper at Nurips, the largest AI
+conference in the world. Now, I'm on a
+mission to become the best AI coder.
+So, here's how an uninformed user treats
+cloud.md. I treat my claw.md as a
+playbook so that if I ever see something
+happen that I want to happen
+differently, I go ahead and I add to it.
+Now, on the surface, this is a
+reasonable way to go about it. Claude
+will begin to understand more and more
+of how you like to work. For example,
+you might say, "Don't ever put SVG icons
+in the websites unless necessary." Now,
+this is a reasonable thing to do, but
+actually it will load into every single
+conversation you have ever had with
+Claude and cause some context confusion
+and context rot, especially if you do
+this over time with a lot of patterns.
+So, as your cloud.md gets bigger and
+more messy, your model performance
+begins to quietly decrease without you
+understanding why in a process called
+context rot. And many users never get
+past this and are still struggling with
+context rot to this day because their
+claw.md file is very long, over a 100
+lines.
+So, the naive solution would be to have
+the LLM summarize or consolidate the
+information. So basically compacting or
+switching up your claw.md as a weekly
+habit to make it a little bit better and
+a little bit cheaper in terms of tokens.
+So you decide that this is fine if you
+lose information and you're okay with
+that. Now from here two things will
+occur. One, information is slowly lost
+as the model tries to fit it into fewer
+and fewer tokens, meaning your patterns
+are lost to the wind. And two, every
+time the model tries to rewrite or
+compact your cloud.mmd file, there's a
+chance that it exhibits context collapse
+or a catastrophic rewrite. And if you
+don't catch this happening and undo it
+during your sessions, it will be too
+late and your model will be effectively
+nuked.
+Now, the result of all of this is that
+the context gets poisoned actually
+sometimes below baseline and then you go
+on Twitter and you post a tweet about
+why Opus 4.5 feels so much weaker and
+like Anthropic went ahead and nerfed it
+because the uninformed people are stuck
+in this cycle of these first five steps
+because they haven't found the solution
+to it. So, there are two solutions to
+this. One solution is that you can keep
+your claw.md file super lean. I think
+right now my claw.md file is about three
+to five lines and it's mostly telling
+claude to always launch opus agents as
+sub aents because it likes to not do
+that properly and a couple of other
+patterns that are globally useful in
+pretty much every session I've ever had.
+So what is agentic context engineering
+or ACE? Well, this is a Stamford paper
+that is a rag-based playbook, but quite
+a bit smarter. So, Claude gets to decide
+through a voting system what stays and
+what goes, but it will never be able to
+rewrite the whole playbook, which will
+prevent it from having the chance of
+collapsing context. So, this is the more
+creative way to do it. And it doesn't
+just mean that your clog.md file has to
+be what this follows. You can actually
+use ACE in a lot of other applications
+such as training a model on how to
+animate or training a model on a
+specific stack in your software
+engineering job.
+So before anyone says anything about
+this, yes, Claude skills are still
+incredibly useful and incredibly
+important, but they are less guaranteed
+and less deterministic for teaching
+Claude domain specific stuff. So they
+are not always called and Claude will
+frequently ignore Claude skills
+sometimes even if you ask it to do that.
+But the way that ACE works is it always
+gets injected into context similar to
+rag. So let me quickly talk about
+context collapse which is a little bit
+confusing and is a very big part of the
+paper. So watch what happens when you
+just try the naive approach and you
+basically continue to add to the
+playbook. Context grows steadily. More
+lessons are learned by you and the
+model. More knowledge is accumulated
+until you get up to something like a
+couple thousand tokens with a higher
+accuracy than when you started. Now,
+this is good and actually in a lot of
+cases you'll have a lower accuracy from
+when you started because typically
+claude doesn't need that much
+handholding anymore. But this is an
+older study and this is still relevant.
+So at each jagged spike you are asking
+to have Claude clean up the cloud.MD
+file or compact the playbook that you
+are working with. So you can see those
+little drops in the number of tokens in
+context is whenever Claude does this.
+And so the adaptation steps are the
+amount of times you have Claude do this.
+But the thing is each time that this
+happens, you are gambling with a fixed
+chance that Claude hallucinates and
+collapses the context into about 100 or
+200 tokens. So for example, let's say
+each time you ask Claude to fix up your
+playbook, it has a 3% chance of getting
+nuked. That increases by 0.25% each
+time. Now after every iteration of this
+eventually that block black swan event
+will hit and you will not be prepared
+which is what happens here and you go
+down to 57% accuracy or around a 10%
+accuracy drop in this case studied by
+the paper and you have a very cheap
+cloudmd file or playbook depending on
+your use case. Now, here's the kicker is
+that the accuracy without any of the
+context is actually higher than now that
+you have your very condensed summary in
+your cloud. MD file or your playbook.
+And this is a process called context
+pollution where a little bit of context
+actually distracts the model and makes
+it perform worse than it normally would
+without any of that context. Anyways,
+so to get into what ACE actually is,
+let's start with the flow. So you have a
+task arriving which could be any coding
+task or whatever. This is given to a
+generator which is the builder. This
+model actually does all of the work and
+it starts by semantically searching your
+vector database to find the bullets that
+were produced later. So it retrieves the
+top k most relevant bullets which are
+basically plays in your playbooks which
+I like to think of as if then
+statements. So if you're working with
+claude or you're having a model that
+you're teaching to do something you have
+if this happens then I want this to
+happen or if this happens this is good
+and have this happen. So those are
+bullets. They're very simple. And then
+the task is executed with the bullets
+put into the context very similar to
+rag. And the output from this generator
+is of course the changed code. the
+execution trace and the bullet ids. Now,
+this will go to a reflector model in
+step two, which analyzes what happened
+in the traces and it extracts any new
+lessons that were learned based on the
+traces from the generator. So, if
+something went well, it will mention
+that. If something went poorly, it will
+mention that. And these are the if then
+statements, the bullet candidates that
+it decides to add. And it can optionally
+self-refine to get these to be very
+clean bullets by doing multiple passes
+on the reflector to make sure it's
+proper. So the helpful or harmful bullet
+IDs from the first step in the generator
+goes straight to the curator model which
+basically puts the bullets into your
+vector database by embedding them and it
+compares them against existing bullets
+of course and if they're similar enough
+to existing bullets they don't get added
+so that we get distinct bullets. And
+what it also does is it will update the
+helpful/harmful counts which are
+effectively the generator agent saying
+what plays in the playbook it found
+helpful or hurtful. So this ends up
+being a voting system where a certain
+amount of the votes results in a play
+being removed or kept. Now this depends
+on the use case of course but maybe if
+you have negative3 cumulative votes on
+one of the bullets it gets dropped from
+the database. So it's found to no longer
+be useful and so that means that you're
+every time you are working with cloud it
+actually improves.
+Now for the bullet database itself when
+all which is where all the accumulated
+knowledge lives I'm just going to show
+you the bullet consists of an ID maybe
+some content maybe the embedding a
+helpful count and a harmful count which
+is basically all the data it needs. Now
+this loops and you continue a new task
+arrives or you want the model to do a
+new task and the cycle repeats. Now you
+might be asking why I'm not talking
+about claw.md as much. Well, this is
+because this is a generalizable
+approach. And applying this to your
+claw.md file may lead to some very odd
+outcomes. And I haven't used this too
+much myself, but I think it's something
+that I might start doing.
+So the playbooks will evolve
+continuously. And each task that you
+have them do makes the system or model
+smarter. So if you're using a cloud.mmd
+file because you normally would be using
+it in a naive way and now you're trying
+out ACE on it, uh your claude will get
+just better and better. So here's where
+ACE might shine if you're looking for
+some examples. So ACE is only as good as
+your ability to evaluate the outcomes.
+The key is going to be binary successes
+or failure signals. So somewhere where
+you can actually prove that something
+went right or wrong. So if you have
+something build a system do some
+test-driven development or some API
+integration these are binary these are
+test passes or fails the calls succeed
+or error and this allows us to iterate
+in a quick and easy way. Now another way
+to do this would be LLM as a judge or
+human as a judge. So if you were doing
+animations with Claude then you would be
+the judge and you would determine what's
+going on.
+The poisoning problem is something that
+ACE struggles with though that I want
+you to be careful with if you are going
+to implement ACE or think about
+implementing ACE into your cloud.MD file
+or something else. Let's go with the
+animation complex scene as our example
+here. So in your cloud MD or whatever
+global place that you want it to always
+here, you are going to ask it to please
+make your animations in 60 fps.
+Now let's say the generator runs at 60
+fps and then crashes for a different
+reason. Then the reflector is called and
+misdiagnoses the fact which is 60 fps
+caused the crash. Now use 30 fps instead
+which would be a bullet. Then what might
+happen is that the curator adds the
+bullet because it's just doing its job
+which would be use 30 fps for complex
+scenes. Now future tasks retrieve the
+bullet and now the bullet is disagreeing
+with your cloud.MD file in context which
+causes a context clash or context
+confusion and as a result the outputs
+get worse than they did in baseline.
+So no crash would be marked as helpful
+which would be reinforcing this problem.
+So a human would have to go clear this
+out or make sure that there's no
+conflicting evidence. And now bad advice
+would be propagating unless if a human
+or an LLM goes and cleans up the
+database quickly. I just wanted to bring
+that up just in case. So to summarize as
+well, if you are using claw.md, you can
+still use it. Just know that that's for
+your permanent truths and it's something
+that will always be present. And another
+thing, if you would like to read some of
+my documentation or talk to me
+personally or my group, I've started a
+school community for free which is full
+of over a hundred experienced software
+developers and engineers. We would be
+happy to help you with your workflow and
+solve any questions for free. Thanks for
+listening and take care.

@@ -1,0 +1,654 @@
+Agent OS v3: Leaner & Smarter for Building in 2026
+Brian Casel (Builder Methods)
+https://youtu.be/mcxgLB5-eZc
+Uploaded: 2026-01-22 | Duration: 23 minutes
+
+Working on legacy code bases is proving
+to be one of the harder challenges in AI
+powered development in 2026. Your agents
+can read every file in your project, but
+they don't understand why you built
+things the way that you did. The
+reasoning behind your conventions, the
+patterns that your team refined over the
+years, the architectural decisions that
+shape everything. None of that comes
+through when an agent scans your code.
+So, every time you prompt, you're
+reexplaining, you're reteaching, you're
+reestablishing context that should
+already be baked in. I created Agent OS
+to fill that gap. It's a lightweight
+system for defining and managing your
+coding standards in AI powered
+development. And today I'm releasing
+version three. It's stripped down by 70%
+yet it's more useful than ever for how
+we actually build here in 2026. Now, if
+you saw my last video on the channel
+where I said cloud code is all you need,
+I also promised a follow-up showing what
+I actually want out of a utility
+framework. This is that video. The
+philosophy behind version 3 of Agent OS
+is simple. Don't reinvent what the core
+tools already do well. Strip away
+everything that overlaps with Cloud
+Code's native features and keep only
+what fills the gaps that professionals
+and teams actually care about. Now, if
+you're new to the channel, I'm Brian
+Castle. I help professional builders
+stay ahead of the curve with AI first
+development. And every Friday, I send my
+builder briefing. That's a free 5 minute
+read. No hype, just my take on this
+transition into building with AI. You
+can get my next one by going to
+buildermethods.com. Now, agent OS has
+always been built around spec driven
+development. The idea that we should
+plan before we build, shape the work
+first, and then let agents execute. So,
+when I first released Agent OS back in
+mid 2025, the tooling wasn't quite there
+yet. So, I created Agent OS to build in
+scaffolding for writing specs and
+breaking them into task lists and
+orchestrating implementation. But since
+then, cloud code and cursor and others
+have evolved significantly. Plan mode is
+now a first class feature and today's
+frontier models are dramatically better
+at maintaining context and executing
+complex multi-step plans without losing
+the thread. So the question became what
+does agent OS actually need to do now if
+anything? The answer is it should fill
+the gaps that vanilla cloud code doesn't
+address without stepping on the features
+that it already handles well. So in the
+new agent OS version 3 I reduced its
+footprint by 70% and in doing so made it
+significantly more useful. So let me
+explain what stayed and what's new. So
+agent OS was always built on the idea
+that you define your standards first.
+You know your conventions for how you
+build things like our API responses use
+this structure or our components follow
+this naming convention. Standards are
+kind of similar to what you might put in
+your claw.md file, but agent OS gives
+you a system to inject only what's
+relevant and not load everything into
+context every time. What's new in V3 is
+that Agent OS now discovers and writes
+your standards for you. So, you can run
+a command, point it at an area of your
+codebase, and it analyzes what's there,
+looking for patterns that are unusual or
+opinionated, you know, things that a new
+developer or an agent wouldn't know
+without being told. So, it interviews
+you with targeted questions to capture
+your reasoning behind what it found.
+This is knowledge that used to exist in
+between the lines of your code or in
+your head, but now formalized and
+accessible in a way that your agents can
+actually use. Second, Agent OS gives you
+enhanced spec shaping. So, plan mode is
+now the industry standard for spec
+driven development and is built right
+into cloud code and cursor and most
+major tools. So, Agent OS enhances that
+by helping you shape your specs with
+targeted questions that take your
+standards and your product's mission
+into account. Agent OS also saves your
+plans into persistent spec folders,
+something that cloud code doesn't do by
+default. Third is profiles. So this lets
+you maintain different sets of standards
+for different project types. So maybe
+you have a Laravel profile and a
+marketing site profile and an internal
+tools profile. Set them up once and then
+choose the right one when you're
+starting up a new project. And Agent OS
+version 3 gives you a new way to sync
+your standards from your current project
+into a profile so that you can port them
+into other projects later. Okay, let me
+show you what this looks like in
+practice. So, I'm going to use my
+buildermethods.com codebase for the
+demos that I'm going to show here. And
+this is a Rails application including
+the front end as well as like the
+members area for builder methods pro,
+the videos library, our workshops. So,
+I've been working on this site and the
+backend app for a while now, and it's a
+somewhat legacy codebase with with some
+established patterns that are just
+starting to be formally documented. So,
+it's a perfect candidate for agent OS.
+Now, I have already installed agent OS
+on my system by following the
+installation instructions. You know,
+first you would clone the repo to your
+home directory on your system. That's
+your base installation. And then you
+would install agent OS into each
+individual project by using our project
+install script. So I have already done
+that in my builder methods project here.
+And so that put this agent OS folder
+into the project. And inside that we've
+got a product folder. I've already run
+the agent OS plan product command which
+helped me establish my product mission
+the road map and the tech stack through
+this codebase. It also has a specs
+folder. So, I've been using previous
+versions of Agent OS to create these
+specs. And I'm going to continue using
+that specs folder as I move forward now
+with Agent OS version 3. And then we
+have the standards folder. And this is
+where we document our conventions and
+the knowledge behind our codebase. And
+so I've already done that here in the
+builder methods codebase. And so I have
+this folder in there called agent OS.
+And inside that I've got a product
+folder. So this was generated when I ran
+the agent OS plan product command that
+helped me establish the mission for the
+product, the road map and the text stack
+for this codebase. And I have some specs
+from the previous versions of Agent OS
+in there. I can continue to use this
+specs folder going forward. And I have
+the standards folder. This is where I'm
+documenting those conventions and the
+knowledge behind my project. Now, if
+you've just installed Agent OS into a
+project for the first time, the first
+thing that you'll probably want to do is
+run the plan product command. Now, I've
+already done that here, but again, that
+will establish your product's mission
+and road map and tech stack. But the
+other thing that you'll want to do early
+and often throughout the life cycle of
+your project is discovering and
+documenting new standards from your
+codebase. Now I'm going to do this in
+cloud code but you can do this in any
+agent cursor agent or any of the modern
+tools these days. So I'm going to start
+by running discover standards command.
+And so what this is going to do is it's
+going to look around my codebase and
+start to identify some big focus areas
+that we can then dive into and look for
+some unique patterns that might be worth
+documenting. So here it found a few big
+focus areas like you know controllers,
+models, views and components. I could go
+with one of those or I can direct it
+toward a specific area of my codebase.
+Now I actually do want to create some
+standards around the views and
+components. That's something that I have
+not yet documented in my standard. So
+I'm going to go ahead and go with that
+option. Throughout agent OS now, we're
+using the ask user question tool, which
+is built into cloud code, which gives us
+that really nice Q&A interface to ask us
+these questions and proceed with these
+workflows. Now, it's analyzing all of my
+views and components, and what it's
+specifically looking for are the areas
+that appear to be unique or opinionated
+and follow a repeatable pattern. Those
+are the types of things that we want to
+actually document into standards. We
+don't necessarily just want to write
+standards that teach agents how to code
+in a conventional way because agents
+already do that. So agent OS is going to
+help to find those unique knowledge in
+your codebase. All right, so it found
+about five unique patterns in my views
+and components and all of these sound
+pretty accurate to how the codebase is
+structured. So you know I could select
+individual ones to proceed with but I'm
+going to go with the first option which
+is yeah let's create standards for all
+of them. And so instead of rushing into
+documenting these standards and making
+some assumptions, the agent is actually
+going to interview me to understand the
+reasoning behind why things were
+designed or architected a certain way.
+You know, it's asking me like, what
+problem does this particular pattern
+solve? And these are really good
+strategic and design questions that we
+want to bake into the knowledge that's
+in our system here. And again, I can use
+the suggested answers or I can give a
+little bit more color to my reasoning
+and design patterns here. So, the way
+that it works is it asks one or two
+questions about each new standard. Then
+it goes ahead and drafts that standard.
+And the key here is to keep the
+standards really concise. We don't want
+to eat up too much of the context window
+when we pull them into the context. So,
+it's going to show us the draft and then
+I can approve it or skip it or give it
+some feedback. I'll approve this one.
+So, it's going to go ahead and write it
+up and save it. And now we're moving
+right along into the next standard that
+it identified. So, it's going to ask me
+a question. And I gave it a quick
+confirmation. And now it's going to go
+ahead and write it up. Looks good.
+Create it. So, I'm going to have it go
+through the rest of these now. And this
+is a cycle that you can repeat
+periodically throughout the life cycle
+of your product as it evolves, as the
+codebase grows. And you know, especially
+after you've added a whole new section
+to your codebase, it's probably a good
+time to go ahead and discover any new
+standards that may have surfaced. Now,
+when you get to the end of the process
+of discovering and writing up new
+standards, Agent OS will index your
+standards. And it does that inside your
+standards folder, you have an
+index.yaml file. So, this is a list of
+each of the individual standards files
+within the folder that they live in. And
+each standards file gets a one-line
+simple description. And so the reason we
+do it this way, of course, is so that
+the agent doesn't need to read the
+entire contents of every single standard
+file, which would read all of that
+content into the context window every
+single time. This enables it to identify
+which standards are available just by
+reading these descriptions. And then it
+lets you choose or it will suggest
+standards to inject. This is very
+similar to the way that Claude skills
+work. Skills also are not read into the
+context by default and the agent can
+identify the skills based on their
+descriptions. In fact, agent OS can also
+help you surface available skills to
+inject along with your agent OS
+standards. So real quick, you know, like
+the difference between a cloud skill and
+an agent OS standard. A skill is more of
+a process-oriented task that you want to
+invoke and then run the same way every
+time. Whereas the standards that you
+would document with agent OS are again,
+you know, conventions and best practices
+and your opinions and your design
+patterns that it might use and apply in
+different ways depending on the task.
+So, I'm going to finish up that last
+process of indexing those new standards
+that we've just added to our list. And
+by the way, if you ever need to just
+index your list of standards, like if
+you've added some manually or something
+like that, you can always use the index
+standards command. That's another tool
+that's available inside cloud code. And
+so, now that we have a pretty good set
+of standards all documented and set up
+in my agent OS folder in this codebase,
+let's actually use them. And what's
+really nice about Agent OS version 3 is
+that you can use and inject your
+standards anywhere, anytime. You can
+inject them when you're just prompting
+in a conversation. You can just run
+inject standards there. Or you can
+inject standards when you're planning a
+spec, and I'll show you that in a
+minute. Or if you're using Claude to
+create a new Claude skill. In fact,
+let's go ahead and create a new Claude
+skill. I want to create one that will
+help me create new UI components in my
+codebase. And I'm going to inject my
+agent OS standards into the makeup of
+that skill. So here we go. First, I'm
+going to use the skill creator skill
+which was created by the cloud team and
+I installed that on my system. So I'm
+going to use the skill creator. I'm
+going to use dictation here. Let's
+create a skill for creating new UI
+components in our codebase. Okay, so
+this is the normal process of you know
+starting to create a new skill. Now this
+part of the demo is not agent OS. This
+you like any cloud code user can do
+this. Again we want to be using the core
+claude code features and functionalities
+in the best way that they are designed
+to be used. And now at some point in the
+process, it could be during the Q&A
+process, you can choose to type
+something or I can just hit the escape
+key to pause it before we start building
+the skill because before we do, I want
+to make sure that we are injecting our
+agent OS standards. So I'm going to go
+ahead and run inject standards. I'll
+just tab into that. The first thing it's
+going to do is it's going to detect what
+are we doing here? It's going to read
+the current conversation and here it
+identified that we're clearly creating a
+skill. And so it's going to ask me how
+should these standards be included in
+the skill. And there are basically two
+options available here. One is we can
+reference the standards which means
+we're going to add lines in the skill
+files with these at references. And the
+benefit of that approach is that our
+standards can continue to live in our
+standards folder and they'll be
+referenced by the skill files. So if we
+make changes and update our standards
+over time, then those will remain up to
+date. The other option is we can copy
+the contents of those standards directly
+into the skill files like kind of like
+hardcode it into the skill files.
+Depends on the context and your current
+needs and what the skill is for. In my
+case, in this particular one, I'm going
+to go ahead and choose the referencing
+option because this is only going to
+live within this one codebase and I want
+my standards to be documented in a
+single place. And so here we go. What
+agent OS just did was it's adding this
+instruction to the agent that is
+creating the skill and that is it's
+going to reference this list of
+standards. And by the way, agent OS in a
+smart way identified exactly which of my
+standards from my list of standards that
+should be included in this skill. And it
+did that by reading through my standards
+index file. All right. So, I'm going to
+leave the rest of this skill creation
+for off camera and we're just going to
+move on with the video here. So, a
+driving force behind agent OS in its
+early days last year and into this year
+in 2026 is spec driven development. And
+the way that we do spec driven
+development now that cloud code is so
+good and cursor is so good is we use
+plan mode for that. So, I'm going to
+demonstrate how I will plan out and spec
+out a new feature for builder methods.
+So, before I get into that, what are we
+actually going to spec out here? So, in
+Builder Methods, when Builder Methods
+Pro members are logged in, we've got a
+few different areas, including our
+videos library and the workshops. We
+already have some like topic filtering,
+but we don't actually have a search
+feature. And so the way that I would
+start developing this new feature into
+my application would be to go into cloud
+code and I will enter plan mode with
+shift tab until it says plan mode on. So
+you know of course I could just proceed
+with planning out a spec and having a
+conversation with Claude about that and
+then having Claude go ahead and write up
+the plan and then have it implement the
+plan and most of the time that would be
+just fine. But we do have agent OS so we
+want to make sure that we will inject
+our standards and we want to make sure
+that we are shaping up our plan in the
+best possible way and that's one of the
+big strengths of agent OS version 3. So
+now that I'm in plan mode and this will
+only work if I'm in plan mode I can run
+shape spec that is going to start the
+questions process where the agent is
+going to interview me with its
+clarifying questions and I'll describe
+it. I want to build a search feature.
+So, I think that's a good start.
+There's probably a few more details that
+I'll want to work into the plan here,
+but that'll be enough to get the process
+started. So, it's going to ask some
+clarifying questions to really target
+and enhance our specs before we go and
+actually write them up into plans. And
+so, here's one of those questions that
+is powered by Agent OS. It's going to
+ask me if I have any visuals that I
+could reference or mockups or wireframes
+or screenshots of similar features. And
+normally that's a good idea to add, but
+I think I'll just skip them. This is
+another one I always like to have the
+agent ask when planning a spec, and that
+is, are there any similar sections in
+this codebase that I should reference?
+Here you could see cloud code has taken
+upon itself to run three different
+agents and one of them is checking for
+product context and standards. And it's
+looking at agent OS here to see the
+product mission, the road map, the tech
+stack and the standards that we have.
+Okay. So it identified on its own a set
+of standards that might apply to this
+particular build based on the content
+that we've discussed in this shape spec
+process. Yeah, I think all four of these
+standards do apply. So I'll go ahead and
+say yeah, use these. And so it went
+ahead and read in those individual
+standards so that they will help inform
+the plan. So it's going ahead and it's
+writing up the spec or the plan if you
+will. All right. So Cloud Code has
+completed its work of creating the plan
+and here's that entire plan. You know it
+takes into account all of the standards
+including our product mission and
+roadmap and everything. So it has that
+knowledge baked in. But you'll notice
+that there is an interesting task one
+added to the very beginning of this
+plan. So the first thing that it's going
+to do is actually create a spec folder
+in the agent OS specs folder. Give it a
+date, give it a name, and it's going to
+save this plan along with the Q&A
+session that we shaped up. So that's the
+piece where agent OS will have cloud
+code or cursor actually save its plan
+into the specs folder in agent OS. Now,
+one thing to note is it won't actually
+do that while you're still in plan mode.
+That's why it added it as the first task
+to do before it starts to actually
+implement this plan. So I'm going to go
+ahead and proceed with this. Yes. And
+bypass permissions. And we're going to
+see it actually save the plan to the
+specs folder. So here we go. That is
+task number one. Again, you know, the
+building out the tasks from the plan.
+That's a core part of spec driven
+development that I've been talking about
+all throughout last year. Now, that is a
+first class feature in cloud code. So we
+just leave that sort of thing to cloud
+code because it is much better at
+tracking its own task list and working
+off of its own plan made from plan mode.
+And here we go. This folder right here,
+it has today's date. And so now it's
+going to actually save the planning
+documents for this spec into that
+folder. Okay, so it's just done that. So
+now while it continues with the rest of
+this implementation, we can actually see
+the spec all documented and saved right
+in our specs folder. So let's take a
+look at that. So first we have plan.md.
+This is essentially the spec, right?
+This is the plan. Everything that it
+planned out all documented and saved. So
+we have that for reference. So it found
+some similar patterns in the codebase
+that it's going to build this plan
+around. Here is shape.md. So this is
+like a recap of the early shaping
+conversation that I had with cloud code
+again powered by agent OS. And then we
+do have a standards.md which kind of
+lists out exactly which standards we
+want to include in the plan. And in this
+case we're not referencing the
+standards. It just hardcoded them into
+the standards md. All right. So it did
+finish up implementing the search
+features. Let's just check it out. I'm
+on the local environment now. So got
+some test data here. And here we go. So
+here is the search and yeah, it does
+filter correctly. Right. So like there's
+a few little tweaks that I'll probably
+make to the UI. So I'm going to get
+those details polished up and then we'll
+get this thing shipped. So like I said,
+you can inject agent OS standards
+anytime, anywhere in your normal
+development workflow with cloud code or
+with cursor or any other tool. So, I'm
+going to show you an example of this. In
+a case where we're just doing a small
+task, like a small design tweak that
+doesn't even warrant building out a
+whole spec or a plan, we can still make
+use of our agent OS standards in this
+situation. So, let me show you. As an
+example, I'm going to find something
+really small that I want to tweak. Like
+on the agent OS page, I'm using this
+kind of red brand color here. Then it
+goes to these other brand colors down
+here. I want to sort of sub-brand agent
+OS to use our red color everywhere in a
+couple different places. So, I took a
+few screenshots of the spots that I want
+to tweak that color on. So, in this
+case, I'm just going to use a simple
+prompt, right? So, I'm just going to get
+that started, you know, but before we
+get too far along, I just hit escape to
+stop it. So, so far we have a little bit
+of context in the conversation. You can
+stop it and run inject standards. So I'm
+going to run that now and let's see how
+agent OS behaves in this scenario. So
+here like under the hood agent OS knows
+that we're just you know in a regular
+conversation. We're not creating a
+skill. We're not planning out a spec. So
+it went ahead and checked our index YAML
+to find the list of standards that we
+have available and then it picked out
+the ones that are most relevant to this
+particular task because it sees that we
+are trying to do some visual CSS tweaks.
+So it found my CSS color standards which
+I have in my agent OS standards already.
+And so it went ahead and it read that
+standards file and then it output its
+contents into the context of this
+conversation. So now when it proceeds
+with making this change, it's going to
+take that into account. Now of course
+this was a super simple example and but
+I wanted to show you the motion that you
+can take when you're in a small or even
+a long conversation. You can use that
+inject standards command anytime you
+want to inject your standards and agent
+OS will have this system to identify
+which standards you want to place in
+there. Of course, if you want to just
+call out specific standards, you can
+simply at reference those in any spot
+that you need to as well. So, who is
+Agent OS for? Well, if you have a legacy
+codebase with undocumented patterns,
+Agent OS helps you surface and capture
+that knowledge so that agents can
+finally understand the why behind your
+code. If you're on a team adopting spec
+driven development, Agent OS keeps
+everyone aligned on standards and
+processes. And if you've been
+overwhelmed by framework complexity,
+Agent OS is lighter than ever. It
+doesn't try to replace cloud code. It
+fills the gaps that matter. Agent OS is
+free and open source. You can get it by
+going to buildermethods.com/agent-os
+along with all the documentation. And if
+you want support, training, and access
+to live workshops on building with AI,
+that's what builder methods pro. We've
+got hundreds of members in there who are
+sharing their projects and asking
+questions with me and our community of
+builders. And one more thing, if you're
+starting a brand new project from
+scratch where there is no legacy
+codebase, where you're building
+something from zero, I have another free
+open source tool called Design OS along
+with a full video walkthrough that's
+specifically aimed at rethinking the
+design phase when you're architecting a
+new product in Cloud Code. So, be sure
+to subscribe to the channel so you don't
+miss these updates, and I'll see you in
+the next video. Let's keep building.

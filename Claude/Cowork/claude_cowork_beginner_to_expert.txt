@@ -1,0 +1,350 @@
+Claude Cowork: from beginner to expert in 18 minutes
+Alex Finn
+https://youtu.be/Bwqy0lsEaEg
+Uploaded: 2026-01-15 | Duration: 18 minutes
+
+Wow, it actually did all that research
+and created this amazing document. That
+is incredible. Anthropic just released
+Claude Co-work and it might just be the
+most powerful AI tool of all time. It's
+like Claude Code except it's an AI
+employee that works for you 24/7 doing
+anything you want on your computer. I'm
+about to show you several use cases that
+will save you time, save you money, and
+make you more productive than you ever
+have been before. In this video, I'll go
+over what Claude Co-work is, how to use
+it, even if you've never used anything
+like it before, and show you some use
+cases that you can use immediately to
+get amazing value out of it. Let's lock
+in and get into it. So, this is Claude
+Co-work, and it can do some absolutely
+amazing things. But right before we get
+into the demo, I want to talk about what
+it is, how it works, and what makes it
+different than Claude and Claude Code.
+There are some major differences here
+between Claude Co-work, Claude Code, and
+just regular Claude. The main thing you
+need to know, and you can pause here and
+look at this if you want, but the main
+thing you need to know is Claude Co-work
+is basically an employee that controls
+your computer and can output anything
+you need, documents, slideshows, code.
+It can create things. It can research
+for you. It does everything. It
+basically takes the best of just regular
+Claude, like if you just go to claude.ai
+and Claude Code which builds you apps
+and writes you code. It takes the best
+of both of those and puts it into one
+app. It's basically Claude Code but for
+regular people, right? Claude Code
+writes you code and basically does
+anything you need that is code related.
+Co-work is the same thing except it not
+only works on code, it builds you
+anything you need at all. So it is your
+24/7 employee while Claude is a
+researcher that does research for you.
+Claude code is a developer that writes
+code for you. Claude co-work does
+everything. Research, write code,
+execute code, create files, whatever you
+need, it does it. And the coolest part
+about all this, I think the biggest
+differentiator between Claude Code and
+Claude is it controls everything. So it
+can control your computer, it can
+manipulate documents, it can control
+your browser, it has its own virtual
+environment where it will do things on
+its own. It literally is as if you hired
+someone and they had their own computer
+and did whatever you needed. So there's
+a lot here. You can pause if you need
+to, but the main thing you need to know
+is Claude co-work takes the capabilities
+of Claude code but applies it to all the
+use cases you can think of. It's claude
+code but for everything and that is a
+big game changer and let me show you
+why. So claude cowork is available in
+the Claude desktop app on Mac only at
+the moment. So you download the Claude
+desktop app and you now have this new
+tab here for co-work. Click on that.
+You're in co-work. You do need to be on
+a max plan. So, either the $100 or $200
+plan to get this working. Although,
+there is currently a wait list for the
+$20 plan as well, so that you can use it
+on the cheaper tier. Here is what the
+interface of Claude Co-work looks like.
+Very, very simple. You have your basic
+chat. Gives you some examples of what it
+can do. So, it can build and create apps
+just like Claude Code, but it can also
+do other things like create files for
+you, organize your computer, create
+documents, slideshows, send messages,
+send emails, control your browser, do
+research, whatever you need, it can do
+it. So, I have four use cases I'm going
+to show you. All four of these you
+should be able to use the moment this
+video ends and get incredible value out
+of it. But, let's start with a really
+simple one. I'm sure this is one
+everyone watching the video can use, and
+that is organizing the files on your
+computer. So, let's real quick go into
+this. We have the option of choosing a
+specific folder we want Claude to work
+out of. If you're anything like me, your
+computer is absolutely littered with
+images, screenshots, thumbnails. Like
+you can see that this is my downloads
+folder and literally the first 15 files
+are images and screenshots. Let's have
+Claude organize this for us. This is an
+absolute mess. If you had me go back
+right now to try to find a specific
+image, no way I'd be able to do it. So,
+let's open the downloads folder. And
+let's say this, and I'll put this prompt
+down below if you want to steal it. So,
+I'm going to say go into that downloads
+folder, take all the images and
+screenshots, and put them into a new
+images folder. Organize that images
+folder any way you want. And I'm going
+to say, let's go. And now, our agent is
+going to spin up, go into that folder on
+our local computer, and actually go
+through, look at every file in that
+downloads folder. I've had this computer
+forever, so there's probably thousands
+of files in that folder. And actually
+organize it. take all the images, put
+them in a separate folder and organize
+our computer for us. So, as you can see
+here, there are a lot of files. Let me
+look at all the images. Found 369 image
+files. Now, it's creating its own folder
+and organizing everything. What's really
+cool here, as you can see on the right
+hand side, it keeps a to-do list. This
+is what makes it very agentic, is it
+figures out a to-do list, it tracks its
+progress against that to-do list, and
+it's constantly reflecting to make sure
+it's on task and doing what we need. So
+over on the right you can see its to-do
+list. You can see any artifacts it
+creates. So if it creates any documents,
+slideshows, anything, we can see that
+here. And we can see the context. So
+it's working out of our downloads
+folder. And you can kind of imagine the
+workflow as we get into this right now,
+which is you wake up in the morning, you
+have your list of tasks you want to give
+your 24/7 AI employee. You give it to
+Claude Co-work. It gets to work. It
+tracks all the progress to-do list. You
+come back an hour later and absolutely
+everything's done for you. This is
+really a whole new paradigm of working
+with AI, which is incredible. So, it's
+taking a look at all the images. It's
+actually opening up the images
+themselves, seeing what they are, and
+then putting them into meaningful
+subfolders inside our downloads folder.
+It's basically having a cleaning lady in
+my computer just organizing it for me,
+which is pretty amazing. Done. I've
+organized 370 images from your downloads
+folder into this new image folder with
+10 subfolders. Wow. duplicates,
+thumbnails, photos, miscellaneous, web
+downloads, AI generated, design
+projects, logos, screenshots, GIFs. If
+this worked, that would actually be
+incredible. Okay. We have our images
+folder here now in downloads. Let's open
+that up. There's all our subfolders.
+Let's see. Let's look at our thumbnails.
+It's going to have all my YouTube
+thumbnails in it. Yep, there's all my
+YouTube thumbnails. Let's open this up
+to make sure. Yep, there it is. That is
+incredible. Our entire downloads folder
+is now organized. But that's just table
+stakes. Let's get into the second use
+case, which gets a lot more interesting.
+So, I'm going to go into a new task
+here. Let's spin up a new AI employee to
+work for us here. So, if you're anything
+like me, maybe you're an internet
+entrepreneur, maybe you have a couple
+different content channels that you
+create. Maybe you're on Twitter, maybe
+you're on YouTube, maybe you're on X,
+and maybe you're just getting started
+and you're thinking about potentially
+getting sponsors. Well, one thing that's
+very important if you're trying to get
+sponsors or make money online is you
+have some sort of media kit, whether
+it's a presentation or slideshow that
+just explains what you do, what you talk
+about, and who you're about. This is a
+great use case for Claude Co-work. So,
+here's the prompt. I have a newsletter
+with 40,000 subs called Ship It Weekly.
+Please go to my newsletter site,
+alexfinn.ai, and research it. then make
+a media kit presentation for me that I
+can send to potential sponsors. This is
+another amazing use case for Claude
+Co-work because building this
+presentation probably would have taken
+hours before and require amazing taste
+and design skills. This is something I
+can spend 10 seconds writing this
+prompt, send it to Claude Co-work, go
+off and do something else, come back a
+few minutes later and have all the work
+done for me. Hours saved just like that.
+I'm going to hit enter and it is going
+to get to work for us. This is also
+going to demonstrate a lot of the really
+amazing capabilities of Claude Co-work.
+It's showing you all the tools it's
+using over here. So, it is using the web
+search connector. So, it is going
+online. It's using its own tool to
+search the web and get current
+information. If you just go to claude.ai
+and say, "Hey, build this for me." This
+wouldn't work because Claude doesn't
+have access to current information on
+the web. Claude Co-work though actually
+has direct live up-to-the-moment
+information about what's going on the
+web. If I sent a newsletter five seconds
+ago, it would have access to that.
+Claude.ai wouldn't. So that's a really
+big strength of this tool. Another
+amazing thing here is it uses Claude
+skills. So it takes its entire skill
+system from Claude code and integrates
+it into here. So if you have specific
+skills or instructions for things you
+want your AI employee to do, you can
+create your own claude skills file that
+it will use. So it's setting up the
+presentation. It's going to create all
+the slides for the media kit. It's going
+to generate the PowerPoint file and it's
+going to validate it. That's amazing.
+Let's see what we got here. Ship it
+weekly media kit 2026. AI made simple.
+So, got the catchphrase from my website.
+That's amazing. About Ship It Weekly.
+Weekly beginner friendly guides on how
+to improve your life with AI. That's
+accurate. Newsletter highlights, AI
+tutorials, one to two emails per week.
+It's on Substack premium tier. By the
+numbers, 40K subscribers, 45% open rate,
+8% click-through. Sponsorship options.
+It even came up with the tiers for the
+sponsorships. That's pretty amazing. And
+then let's work together. Wow. Pulled my
+email. All that is fully done. I can now
+take this and send this off to potential
+sponsors. That's like literally two
+hours saved just like that. Anytime you
+have presentations, documents you need
+to create, this is the way I do it. I
+have two more use cases I want to show
+you. One is financial tax season's
+coming up. So, I'm going to show you
+something a little more financial
+related. And then I'm going to show you
+one around building apps. So what I just
+did here is I dropped in a statement
+from last year for my credit card. And
+what I want to do is have Claude Co-work
+go into a credit statement, look at all
+our purchases, all our subscriptions,
+and then make a spreadsheet of all our
+subscriptions for us, and then guide us
+on unsubscribing from those
+subscriptions so we can save money. Go
+through my credit statements and make a
+spreadsheet of all the subscriptions I
+have. Then make a column for the cost of
+the subscription and a column that
+explains how to unsubscribe. Let me know
+how much I'd save by unsubscribing to
+everything. And I'm going to say, let's
+go. Boom. Took me literally 10 seconds
+to drag those in and put that prompt. It
+already found all the subscriptions. I'm
+spending $16,000 a year on
+subscriptions. Holy hell. It made a
+spreadsheet with monthly cost and how to
+unsubscribe from each. That literally
+took 3 minutes tops, we're already
+saving thousands of dollars a month.
+And the last prompt and use case is one
+for the vibe coders. That is a project
+research prompt where Claude Co-work
+will go in, research an app idea you
+give it, judge the idea, validate the
+idea, find competitors, give you a
+report on the competitors, write you an
+entire PRD that shows you users you're
+going to target, the MVP you should
+build, a prompt for Claude Code. It's
+going to search for domains that are
+available, everything. I have an idea.
+3D AI agent manager like a RTS game. Run
+it through full validation. Research
+competitors, analyze the market,
+identify strengths and weaknesses, then
+create a professional PRD document with
+charts and tables that include target
+user, core user loop, MVP scope, tech
+stack, timeline, naming, domain
+suggestions, launch strategy, and claude
+code starter prompt. The agent goes, it
+searches the web, does research, finds
+live information, and puts together an
+entire report. Full market analysis.
+Competitive landscape. SWOT analysis.
+Targeted user. Core features for the MVP
+and the entire tech stack. Claude Code
+starter prompt. I can just take this
+prompt, give it to Claude Code, and
+it'll start building the app. It's a
+14-page PRD. Here's how you get good
+with this tool: challenge yourself.
+Every day this week for 10 minutes. Go
+in, use the app, brainstorm things you
+can do. If you don't know what to do
+with co-work, say, "Hey, this is my day.
+How can you help with this?" Send that
+in. And then just for 10 minutes a day,
+spin up tasks in co-work. Come back
+later and see what it did. If you do
+this for a full week, I promise you'll
+be really good at using this tool.

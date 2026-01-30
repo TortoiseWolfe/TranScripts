@@ -1,0 +1,535 @@
+Clawdbot Will Make New Millionaires in 2026, here how (INSANE)
+Kevin Badi | AI Operating Systems
+https://youtu.be/PrWZe0VmnGg
+Uploaded: 2026-01-26 | Duration: 19 minutes
+
+Guys, this is the second video in a row
+where what I'm about to show you even I
+can't believe is happening. But earlier
+this month, this tool called Claudebot
+was released to the world and it gives
+our coding agents its entire computer.
+And in this way, we now have 24/7 AI
+employees that work all the time on any
+task that we want. And the best part is
+that we can talk to this coding agent
+from anywhere on the planet on like
+iMessage or Discord or WhatsApp. And
+this tool has become so freaking
+powerful that I'm going to have to make
+many videos about that. But today, I'm
+going to show you just the quick
+introduction to what Claudebot is and how
+to actually get it set up so that in the
+future videos you guys can all follow
+along perfectly. Today's video overview
+is going to go through four chapters.
+I'm going to be explaining why Claudebot
+is so exciting for anyone that's
+building automations or agents or SaaS
+with AI. I'm going to go through the six
+powerful features that makes Claudebot so
+game-changing. And then I'm going to show
+you guys a quick demo of how I actually
+use Claudebot to do a lot of tasks just
+by texting it on iMessage. And then
+we're going to go ahead and we're going
+to set up Claudebot step by step. Now,
+the reason why I'm making this video is
+that over the past day, I've been
+building out different use cases for
+this Claudebot engine. And now I have
+over a hundred use cases to show you
+guys. But first, you guys need to learn
+what Claudebot is, why it's powerful,
+and how to set it up. So, why is this so
+exciting? Simply put, Claudebot can do
+any task and it runs locally on our
+computers. Hence why I already bought a
+couple of Mac Minis to make sure that
+this agent's ready to go.
+We can also chat with this Claudebot
+agent without being on our computer. So
+for the first time ever, I could just be
+on the golf course building out apps,
+building out agents and running my
+business. And we do this by messaging
+our agent through iMessage, Discord,
+WhatsApp or any other messaging platform
+that you want. So what this means is
+every agentic workflow that lived in
+n8n for example, every computer use agent
+that we built on Playwright, every
+messaging platform that we wanted to
+build automations for can now live
+inside of this simple agentic framework
+that works 24/7. This is absolutely
+magic. Once again, like I can't believe
+I'm even making this video. So here are
+the six reasons why Claudebot is going to
+change the entire AI landscape. And
+these are the six core reasons. So the
+first one is that it has built-in
+computer use tools. It has the Chrome
+developer tools and it also has the
+Playwright MCP tools. Meaning we can
+within an iMessage prompt tell our agent
+to open up its own browser and do a task
+on our behalf and it can sign into those
+browsers and hold on to those session
+cookies. So, if you guys saw my computer
+use tutorials, you saw that the reason
+why computer use agents are so powerful
+is that we can give them cookie sessions
+to any software provider. So, if I use
+LinkedIn for example, I can give my
+Claudebot my LinkedIn access and then it
+can use my LinkedIn account to send
+messages, drop comments, make posts, so
+on and so forth with every type of
+software provider. Now, the next reason
+why this is so powerful is that all of
+this runs locally. So when you sign into
+like Instagram or LinkedIn, you have
+your IP address and then you also have
+your session cookie. If you were to host
+this on like a virtual private server
+for example, then you're not going to be
+able to use any of these software
+logins as reliably because your IP
+address will keep changing. So with
+Claudebot, we can just within a prompt
+sign into any social provider or any
+software provider and then we can save
+the session cookies and then this agent
+can access that website or software
+whenever we want. Now another reason why
+running it on the Mac Mini is so
+powerful, this gives us every single
+macOS tool. So we can use the terminal,
+we can use the notes, we can use the
+Apple notification triggers. So, we can
+tell Claudebot to create a notification
+that triggers off once a day and sends
+me a text message or sends me an email
+or gives me a phone call. Now, that's
+just one reason why having it on a Mac
+Mini is so powerful. The second reason
+why is that the agent will have access
+to the GPU, the CPU, the RAM, and all of
+the memory. So, it's going to be able to
+use the full power of your computer
+without you actually being on the
+computer. Same thing goes with all of
+the files, the videos, the audios, and
+the images that is built into your
+computer or that you've saved to your
+computer. It can go and access these
+files again without you being there.
+Now, this relays itself into the third
+feature where we can essentially be vibe
+coding from anywhere on the planet. Now,
+because Claudebot has access to Claude
+Code, it also can have access to your
+GitHub repositories. And GitHub is where
+all of my code bases live, for example.
+And so I can tell my agent here to go
+grab a GitHub repository and then add it
+to any project that we want. So this is
+going to allow us to yeah obviously do
+vibe coding, but also if there's a skill
+that we want to give our Claudebot agent,
+we could just tell it to go and get that
+skill and then it can write the skill
+and add it in which we'll get into in a
+sec. Now, in 2025, the biggest AI
+automation platform by far was n8n. And
+one of the core powers of n8n was that
+we can build a workflow and then we can
+set up the workflow to run on a
+schedule. And that is just simply called
+a cron job. And inside of
+Claudebot, you have the full ability to
+set up any type of cron that you want.
+So, let's say we're working with Claude
+Code and Claudebot to build out an
+automated workflow. And I was doing this
+just by messaging the agent. And then
+the agent goes, "The workflow is working
+well." We can then set up that
+workflow to run autonomously at any time
+in the day as much as we need it to
+run. So this is going to be insanely
+game-changing and I'm going to be
+showing you guys the hundred use cases
+that I have in the next video for
+Claudebot. And it has a lot to do with
+this feature right here.
+Now, one of the most fun features which
+just felt like magic again was being
+able to just chat with the Claudebot
+agent from my phone. So, in the demo
+that I show you guys today, I'm going to
+show you how I was just literally
+chatting on iMessage, sending Claudebot
+commands, and it would go ahead and do
+literally whatever I wanted. It created
+a Supabase account. It signed into my
+GitHub. It pulled in a GitHub
+repository. And then I just decided to
+film this video. But I'm just going to
+keep working on it cuz it is just
+ridiculous. Now, the most critical point
+about everything that has happened in AI
+recently is that skills allow our agents
+to be very specialized in their
+workflows. So, we can now give Claudebot
+any one of the skills that we've built
+in our other repositories that live
+inside of the Claudebot ecosystem, so on
+and so forth. And in this way, we are
+going to build a truly autonomous, fully
+stacked AI employee that is going to
+help you and your business grow faster.
+I want to show you the demo of me using
+Claudebot. So, I'm just going to head
+over into my messages and we can see
+this agent called Zeus. So, I want to
+just scroll up to the top of the chat
+cuz this is like pretty ridiculous. So,
+we start off the conversation. I go,
+"What up?" He goes, "Yo, Kevin, iMessage
+is live." Blah, blah, blah. And
+then I start asking questions. We're
+going to be working on some computer use
+workflows and that uses Chrome dev
+tools and Playwright. I was like do you
+already have that set up? And then the
+agent goes yeah I already have Playwright
+set up and I have browser control
+enabled and all that fun stuff. So it
+says all set. You can start using
+computer use tools. And then it starts
+asking like what's the workflow
+you want to build. And then I go the
+next question I have for you is
+are you going to be able to set up
+cron schedules just for me texting
+you? Like if we have
+a workflow that's already winning, can I
+just tell you to set it up on a
+schedule? And then the agent goes, "Yep,
+I can set up cron schedules for you
+whenever you want. No need to touch the
+computer."
+Which is just ridiculous. And the agent
+goes, once we nail a workflow, I can
+immediately create a cron job with
+whatever schedule you want, enable and
+disable it, update the schedule to later
+or more often and run it manually to
+actually test that it's working. So, we
+can build a workflow, test the workflow,
+and then set it on a schedule all just
+by texting the agent on any
+messaging platform. In this case,
+iMessage. Then the next question I had
+had to do with agent skills because I
+have a bunch of agent skills in my other
+repositories like Instaly.app, like Creator
+OS. And I was like, how do you get these
+skills? And then the agent goes, all I
+have to do is get your GitHub
+repositories and then I can pull in
+those GitHub repositories and get full
+access. So then I go, let's integrate
+GitHub. What this agent then does is it
+goes to GitHub on my computer, signs in,
+and then sends me the verification code.
+It says, "Enter the code, authorize it,
+and let me know when you're in." And
+then I tell it that I'm done. And then
+the agent says, "I'm logged in to your
+GitHub repository." Which is absolutely
+ridiculous. So then after doing that, I
+was like pretty shocked. I was like
+pretty excited. I was like, "Okay, what
+do I ask it next?" So I was like, "How
+do we get cookie sessions?" because for
+us to do automations on software
+providers like LinkedIn for example, we
+need the cookie sessions to that login
+provider. So I go, are you going to
+be able to do that? The agent goes, yes,
+I can handle multiple cookie sessions.
+So after it responded with that, I go,
+that's very interesting because now, for
+example, I can build an entire swarm of
+AI employees as part of Creator OS that
+will just be a part of my business,
+right? And they can all be doing
+different actions on LinkedIn, on any
+social provider and they all can just be
+inside of this one Claudebot. And so this
+conversation continued and I wanted
+to see how far we can take it before
+filming this tutorial. And then I go
+like, can we set up a Supabase
+database? It goes, yes, I'm going to use
+this Gmail provider to create the
+Supabase. That's exactly what I did. So
+that's the first thing you got to do.
+And the second thing you got to do,
+guys, is you do got to buy a separate
+computer. I do not recommend you running
+Claudebot on your personal computer
+because that'll give it access, for
+example, to your personal iMessage, to
+your personal Gmail. And when you're
+setting up workflows, you don't want to
+be randomly sending emails to people,
+randomly sending messages, or
+potentially even getting hacked. So, I
+do definitely recommend getting a Mac
+Mini. I was just very lucky to predict
+this. So, I bought these a couple months
+ago, but yeah, that's essentially
+what you need to get set up. But now
+let's hop right back into the computer
+and let's just show you exactly how to
+get Claudebot set up in Cursor. And so in
+Chrome, I'm literally just going to type
+Claudebot installation. We're going to
+choose that first link. And this is the
+quick install command. So this curl
+command is also going to be in the
+description, so you can go and find it
+there. I'm going to copy that. And now
+I'm just going to head into Cursor and
+get that set up. Cool. So we're going to
+go open project. I'm going to click new
+folder. I'm going to call this Claudebot
+agent. We're going to click create and
+we're going to open that up.
+Great. So now we're going to add in
+Claude Code. I'm going to click that
+toggle back. We're going to hit the
+toggle on the top right. We're going to
+type in claude. That should bring up the
+chat. There we go. And we're also going
+to open up another terminal. So I'm just
+going to click this plus button. We're
+going to move up this terminal to the top.
+I'm going to paste in that command. And
+we're going to download the Claudebot
+installer. And we're just going to let
+that go ahead. All right. There we go.
+So now it's going to say like, I
+understand this is powerful and
+inherently risky. Do you want to
+continue? Yeah, obviously we want to
+continue. So, we're going to go into the
+quick start. So, the next step here is
+to choose which AI provider you want to
+be giving to the agent. For us, I'm
+always using Claude Opus 4.5 at this
+point because of how powerful it is. And
+it's going to ask you to run this
+command in a new terminal. So, the
+claude setup-token. So, I'm going to go
+and click the plus button. That's going
+to give us another terminal. And I'm
+just going to type in claude setup-token.
+Now, what this did is it opened
+up a browser in the other monitor that
+I have. And I'm just going to click
+authorize. Now, what this is going to
+give us is this OAuth token, which I'm
+going to blur out because I don't want
+to be sharing my Claude Code credits.
+They're very, very precious. But once
+you get that, you want to copy it and
+you just want to hand it over to the
+Claudebot agent. And that should give
+it access to Anthropic and all of the
+Anthropic AI models. So, I'm just going
+to name what this is. We're going to
+name it Claudebot agent tutorial.
+And now we get to choose which AI model
+we want to use inside of Anthropic. So
+I'm going to be using Opus 4.5. And now
+we get to choose which format we want to
+be communicating with our Claude agent.
+So we have Telegram, WhatsApp, Discord,
+Google Chat. What I love doing is
+iMessage because it's just so
+satisfying. So we're going to go ahead
+with iMessage. Now, one other thing you
+got to do on the computer is you got to
+give your disk full access to Cursor and
+full access to the terminal. So, I want
+to show you how that works really quick.
+I'm going to go over to the Apple logo.
+I'm going to click system settings. I'm
+going to scroll down to privacy and
+security. I'm going to go and find the
+full disk access. And we can see here
+I've given Cursor and the Node terminals
+full disk access to whatever they want
+to do on this computer. So, they have
+full access. And once you do that,
+that'll give it access to the iMessage
+and all the files and all that fun
+stuff. So the next step here is to
+configure all of the Claudebot skills
+that actually just come with the
+package. So I'm going to click yes for
+the configure. I'm going to choose npm
+as my skill install command. And now we
+have all of these different dependencies
+that we could be adding to our agent.
+Right? So CamSnap, for example, gives
+this Claudebot agent access to its own
+camera. So, like if I had a camera set
+up somewhere and I wanted to take a
+video or take pictures without me being
+there, that's what I would use this for.
+But I'm not going to go through all of
+these today. But basically, the ones
+that I'm going to turn on is Claude Hub,
+MC Porter, Nano PDF, OpenAI, Whisper,
+Peekaboo, Summarize, Things Mac, and
+there are more, but since I've already
+installed it in the past, the other ones
+are already installed. So, I'm just
+going to go ahead and now install all of
+these new dependencies and all of these
+skill sets that out the box the Claudebot
+agent will have. So, it's asking for
+some API keys. So, it's asking for like
+the Google Places API key. I don't want
+any of these, but you can obviously add
+them. Now, with my real Claudebot
+instance, I did give it Nano Banana
+access so it can create images, but in
+this case, I'm just going to say no.
+Same thing with OpenAI. Same thing with
+Whisper and so on and so forth. Now the
+next thing I want to talk about is the
+hooks. Now the hooks are very
+interesting because this is how we can
+actually see what's happening with our
+Claudebot agent behind the scenes. So
+the two hooks that I enabled is the
+command logger and the session memory.
+So I'm going to do that again here. And
+what the command logger does is any time
+that the Claudebot agent actually runs a
+command or executes code, it'll then
+store what it did inside of an audit
+file. And so we can actually review what
+it did when we get back onto our
+computer and we can use this information
+to improve the workflows that it's
+working on. The same thing applies with
+the session memory. So let's say we are
+working on an agentic workflow and the
+agent is running into errors, running
+into errors, but then it figures out a
+solution. It's going to write out what
+was that solution in the session
+context. And so we want to make sure
+that the session memory is persistent so
+that the next time that we run that
+workflow, the agent's able to go ahead
+and actually complete that task without
+running into errors. So I'm going to
+enable those hooks. Now the next thing
+that's going to happen is this thing
+called the Claudebot gateway, which is
+essentially like the front end of
+Claudebot. So once this opens up, we will
+go and chat about that. And so what this
+did is it created this website instance
+for us. So this is our entire kind of
+operating system dashboard for Claudebot.
+It has our chat, but we also have all of
+the channels. It has access to the
+instances. It has access to sessions,
+cron jobs, skills, nodes. And this is
+why I'm so excited about Claudebot
+because all of the workflows just like
+how we were doing it on n8n in 2025 are
+going to be inside of a platform like
+this in 2026. So this is guaranteed like
+the thing that you guys should be
+learning, going all in on. So now the
+agent goes, "Hey, I just came online.
+Fresh start, blank slate, no memories
+yet, no name, no idea who I am or who
+are you. So who are you and what do you
+want me to be? I could be anything
+really. Do you have any ideas?" So in
+today's video, I just want to show you
+guys how we can set this up to chat with
+on iMessage. I'm just going to say, I
+want to be able to communicate with you
+via iMessage. When you first set up
+Claudebot with iMessage, all you have to
+do is send yourself a text message. This
+is going to create something called a
+pairing code. So, I already ran that
+message. So, I'm using my personal Gmail
+on this computer and I said, you know,
+just a "what up" message. Then the agent
+responds back saying access not
+configured. And you want to share this
+pairing code with the Claudebot
+environment. So, I'm just going to copy
+this. I'm going to say this is the
+pairing code that the iMessage gave me.
+And I'm going to paste that in. And just
+like that, we've just connected the
+iMessage. So the agent goes done. You're
+approved. The notification failed on
+iMessage at first, but now it's set up.
+So I'm going to go back into the chat.
+I'm going to say, "What up, Claudebot?"
+And there we go. We got that response.
+So the agent goes, "Hey, it works. Look
+at us. You're texting me like a real
+person now. iMessage gang." So we were
+in the middle of something blah blah
+blah blah blah. And it's now trying to
+get the actual setup. But my setup is
+using a completely different Mac Mini
+and a completely different iMessage
+account so that when we have this
+conversation, it's very fluid, right?
+Because if I was messaging myself, I get
+my own message back as well. It's not as
+good. And then also, this agent now has
+access to my iMessage, meaning if anyone
+were to text me, this agent would
+actually respond, which is crazy, right?
+So, you want to set this up on its own
+iMessage account, right? So, here, for
+example, I can be like, "What up, dude?"
+And this will only respond back one
+message. And there we go. So, yo, just
+chilling, keeping the lights on. What's
+good? Ready to build something or just
+checking in. It's just ridiculous. So,
+now that you guys know how to set up
+Claudebot, in the next video I'm going to
+be running you guys through the most
+powerful use cases that I've already
+identified using something like Claudebot
+for computer use workflows, for agentic
+workflows, for essentially anything,
+even iMessage messaging. Right. So, we
+can now give contacts to Zeus and let
+him send out marketing campaigns with
+iMessage. Yeah. I'm really excited to
+show you guys the next video. So, I'm
+just going to leave it here.
