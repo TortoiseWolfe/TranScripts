@@ -1,0 +1,329 @@
+It Got Worse (Clawdbot)
+Nick Saraev
+https://youtu.be/rPAKq2oQVBs
+Uploaded: 2026-01-29 | Duration: 10 minutes
+
+So, seeing as I don't think I've had
+enough lobster tail over the last few
+days, earlier this morning, I decided to
+check in on the train wreck that was
+Claudebot. And what I found just about
+molted me right out of my skin. It's
+bad, folks. We have people being
+permanently banned from Claude, others
+building their own Claudebot skills on
+Claude Hub, getting root access to
+people's control panel. And in general,
+probably somewhere between a few hundred
+and maybe a few thousand Claudebot
+instances have now been hacked. For
+those of you uninitiated, this is
+basically the red wedding of vibe coding
+happening in real time. So, check this
+out. In order to run Claudebot on a VPS,
+which is the way that most people that
+are shelling out Mac minis left and
+right are doing, you need to basically
+post it to a publicly available URL.
+Well, turns out there are services out
+there like Shodan and others that are
+constantly scraping every available URL
+on the internet. They're indexing them
+and then they're adding them to a
+database. Now, when you sign up to
+Claudebot, it gives you a Claude control
+panel, which basically allows you to
+talk to Claudebot in this interface
+here, get an overview, see all the
+channels, instances, sessions, cron
+jobs, and more. And some people
+customize the hell out of this thing.
+Well, the wild part is if you search one
+of these publicly available index
+databases for a snippet of text that
+appears on every one of these Clawbot
+control pages, which is just the words
+Clawbot and then control, you get a list
+of thousands of servers that are
+currently running that you can access by
+literally just clicking a button. So,
+this is somebody's page right here. And
+I picked a safe one because as you see
+here, it says disconnected device
+identity required. It doesn't actually
+allow me to chat with it. Also, I did
+this because I don't want to get sued
+for having somebody's API credentials.
+But it turns out, as this really smart
+guy Jameson over here found out, if
+these servers use a tool called Nginx
+as a reverse proxy, then due to a quirk
+in the way that Nginx works and
+interfaces with Claudebot, you'll get
+full access to anybody's Cloudbot
+control page, which means not only are
+you going to be able to fully read all
+the messages sent to and from this
+person, you'll also get access to all of
+their skills, all of the config
+information, and all of their API keys.
+For anybody who knows me, I'm not
+exactly the most secure individual on
+Earth. I'm probably as loose with my API
+keys as Jeffrey Epstein was with his
+freaking letters. But the reason this is
+such a big deal is because the way that
+most people are using Claudebot is
+they'll upload all of their API keys,
+all of their tokens, and all of their
+secrets to all of their messaging
+platforms and various services like
+Anthropic and so on and so forth. And
+with that, you have access to somebody's
+whole entire life. This fella here,
+Jameson, is what we'd consider a white
+hat hacker. And what he did, because
+he's good, is he went through, found
+somebody's information here, a supposed
+AI systems engineer, and actually fully
+identified them as well as got all of
+their message history. I'm certainly
+hoping he didn't do anything with that
+information, because Lord knows what
+people would do with my damn messaging
+history. But this is just one of
+potentially several hundred examples of
+Claudebot vulnerabilities that are
+occurring right now. We have hundreds of
+security experts bemoaning just how bad
+of a situation the Claudebot story
+really is. And we also obviously have
+the situations where somebody gives
+Claudebot root access and it goes
+absolutely nuts. So why am I making this
+video? Is it just to dump all over the
+progress of somebody that has genuinely
+put a lot of hard work and effort into
+making a product that other people can
+use? No, of course not. But suffice to
+say, we are currently not winning, son.
+So what I'd like to do is show you guys
+a bunch of ways you can win. If you're
+going to use this absolute cluster
+of a product, we might as well do so
+safely. So, public service announcement.
+If you're setting this puppy up on a
+VPS, the first thing you need to do is
+you need to lock down your
+infrastructure. What's the biggest issue
+with infrastructure right now? Well, I
+guess there are two or three. The first
+is that the number one top used port
+right now for access to Cloudbot control
+is 18789.
+The issue with using this port is it's
+the default port. When you use the
+default port for any application that
+you set up, this allows bad actors who
+are scraping tens or hundreds of
+thousands of websites at once to very
+quickly scan a short list of high
+probability ports to see whether or not
+they're accessible. What that means is
+services like Shodan and anybody else
+who might have API connection there
+won't be able to scan your port at first
+go. Why? Because you're not added to
+this list of most common ports, meaning
+you're not going to be as high risk.
+Same thing with all the other usual
+suspects. 443, 80, 8080, 3000. Pick a
+random number generator. Roll some dice
+and set the config up to do that for
+you. Don't know what the hell I'm
+talking about? That's okay. Just give
+Claude Code access to whatever server
+you're using to host this puppy since
+that's all Claudebot really is anyway.
+And tell it, hey, I want you to pick a
+non-traditional port. Try port 44892.
+The second is to set your damn
+passwords. Don't leave it empty.
+Services like Shodan and others, and
+there are many on the internet, are
+constantly scanning all available
+gateways. And so if they can access your
+Cloudbot control panel and you don't
+have a password set, you're going to be
+out of luck. Now, from my
+knowledge, the vast majority of Cloudbot
+instances have their password set,
+that's a default setting, but I do have
+to point this out. The next is to update
+Claudebot to the currently best
+available version. Ideally, this won't
+cause any what are called breaking
+changes, but if you can update to the
+most available version, one of the most
+egregious of errors, which is that
+reverse proxy Nginx thing I've been
+talking about, is patched. The issue
+obviously is everybody's self-hosting
+this stuff, and so there are no
+automatic updates. You actually have to
+manually go through and push it
+yourself. Now, if you're one of those
+people that hasn't updated, make sure
+you configure gateway.trusted_proxies,
+especially if you're running behind this
+Nginx/Caddy
+reverse proxy setup. The reason why is
+because if you don't, the Cloudbot
+control panel will treat anybody that
+accesses that URL as localhost, which in
+layman's terms means it'll basically
+just open up its front doors to anybody
+that wanders in. Really, if you
+absolutely wanted to lock this down
+infrastructure-wise, you'd use Tailscale
+or some VPN. Again, just ask
+Claude Code to set this puppy up for you
+since that's obviously what most people
+here are doing anyway. Last but not
+least, pretend you're me or any of the
+other tens of thousands of people that
+have set this up over the last 3 days
+thinking, "Holy crap I'm going to end
+this year Mr. Moneybags because Cloudbot's
+going to do all my Twitter research for
+me." Well, if you haven't done any
+of this stuff yet and you pushed
+Cloudbot to a publicly available URL, go
+through all of your API keys and rotate
+them. Rotation is a feature offered by
+most services of renown these days that
+basically just allows you to change your
+API key specifically in the cases of
+leaking it like so many of us have to
+literally the entire internet. Now the
+other big attack vector was actually at
+what's called the supply chain level
+which is the suite of skills and tools
+that people are using to augment their
+Cloudbot instances with more
+functionality. I know a lot of people
+here are probably familiar with
+ClaudeHub. They just renamed it to
+MoltHub. And basically, there are a
+bunch of different things here you can
+add on like web chat, audio
+notifications, GOG, decision trees, who
+the heck knows. The issue with these
+sorts of repositories and databases is
+they're not secure out of the gate. I
+mean, some person just put this site up
+and because of popularity ended up
+being one of the most popular sites, but
+there's nothing really preventing a bad
+actor from putting up their own skill
+with some sort of malicious instruction
+to get your Clawbot to send all of your
+API tokens to somebody. And that's
+exactly what this fella Jameson did. He
+actually built a simulated backdoor
+Claudebot skill for Claude Hub. He then
+inflated its download count to over
+4,000, which because this is a new
+service, MoltHub just ranks you based
+directly off of the number of downloads
+you've gotten per unit time. It's a very
+naive algorithm. With that, he was able
+to be highlighted. And so, when
+unsuspecting users like myself go to the
+front page, see a cool skill, give it a
+click, what's going to happen? Well,
+they're going to download my super
+sneaky backdoor. I won't go too in
+depth with what this fella could have
+gotten access to. He's a pretty cool guy
+as mentioned and so he hasn't used those
+API keys for any nefarious purposes. At
+least not that we know of, Jameson. But
+suffice to say, none of these
+repositories, none of these databases or
+directories are really secure until
+they've been validated by an immense
+number of other trusted sources. So the
+unfortunate reality is you can't take
+things like download counts seriously. I
+mean I using Claude Code could
+whip up a new MoltHub 2.0 website,
+rank the hell out of it using various
+SEO techniques, get it somewhere on the
+first page, and probably get tens of
+thousands of people downloading my BS.
+What I mean is, it's not enough just to
+Google something and then download a
+skill. When we're working with agents,
+because these agents have significantly
+more autonomy, but also tend to require
+a lot more access. We need to be super
+super sure that the website that we're
+using is legitimate. What are some ways
+to do so? Try cross referencing it. Look
+it up on social media. See if there's
+anybody trusted that you know that's
+talking about this website. Obviously,
+you can never be 100% sure, but these
+are some ways you can at least avoid the
+80/20. Next, and this is really
+unfortunate because this adds a ton of
+latency and friction. I'd recommend you
+read every file in a skill before
+running it. Don't just read like the top
+level skill.md. Actually go through or
+better yet feed the entire file to a
+fresh Claude or Gemini or ChatGPT or
+Codex instance and have it tell you
+whether or not that skill does what it
+is saying it does. This sort of
+third party or third party AI
+verification can be pretty useful. If
+you have author information, you can
+also double check to see if they've got
+a real reputation, a real face, and a
+linked GitHub. Usually if they have a
+linked GitHub with some commit history
+and stuff like that. This is more often
+than not going to be a real person or at
+least it'll be a higher probability that
+they are. Why? Because typically
+developers and whatnot that put their
+real name out there, their real face out
+there and that have a verified commit
+history, they don't want to lose it,
+right? They don't want to put out some
+BS that other people quickly identify as
+a scam. And finally, for my developer
+friends out there, I just treat Claude
+Hub and any alternative repo that stores
+skills as an early npm right now.
+Basically assume that nothing is vetted,
+that every package you're downloading is
+out there to screw you in some way. And
+despite the fact that this will add
+significantly more friction to your
+life, it'll also ensure that you're not
+one of the several thousand bozos on
+this list. I honestly really really like
+technology like this, but right now I
+certainly wouldn't trust all my API keys
+with Claudebot, nor my left nut. And
+hopefully you guys understand why I'm
+saying what I'm saying. So, as the rest
+of the internet continues to spear this
+red lobster alive, best of luck. This is
+the last time I'm going to be talking
+about CloudBot on this channel. So,
+thanks for bearing with me over the last
+couple of days.
