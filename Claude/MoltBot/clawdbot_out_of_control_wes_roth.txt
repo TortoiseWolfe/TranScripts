@@ -1,0 +1,858 @@
+ClawdBot is out of control
+Wes Roth
+https://www.youtube.com/watch?v=7fltOAg8ZGI
+Uploaded: 2026-01-27 | Duration: 27 minutes
+
+Do you remember that whole idea about
+one person building a billion dollar
+company with no employees, no human
+workers? I think the clock on that has
+just started. This beefy fella is Peter
+Steinberger. Andre Karpathy posted a
+huge post just a few hours ago about
+where coding is heading. Not just
+coding, just software engineering in
+general. He's asking what it's going to
+feel like in the future, like playing
+Starcraft, playing a Factorio, playing
+music. Someone responds, "10x engineer
+can be a one-man army. There could be
+soon a one-person billion-dollar
+company." Andre responds tagging Peter
+Steinberger saying, "You can do it." So
+Peter, he came back from retirement to
+mess with AI and help build the lobster
+to take over the world. After watching
+this video, I think you'll agree with me
+this is going to be the year of the
+lobster. Oh, also Peter is polyagent
+amorous. Polyagent amorous, meaning that he
+likes a lot of agents. He does it
+with a lot of agents at the same time,
+if you know what I mean. And this is the
+thing he built, Cloudbot. Now,
+obviously, this isn't sponsored. This is
+an open source project. It's hackable,
+meaning anybody can contribute to it,
+use it. It's basically free. You
+might have to pay for the AI frontiers,
+their models, their tokens, API costs,
+but this thing is free. If you search
+for it on Google Trends, it's got one of
+the wildest search curves that I've
+ever seen. It's just flat and then it's
+just vertical. Like the entire world is
+like what is this thing? So in this
+video, let's take a look at who this
+person is. Who is this man? What in
+God's name did he just build and what
+would it look like if Arnold
+Schwarzenegger was born in modern
+times and instead of going into
+bodybuilding decided to go into AI?
+Here's a quick clip from Unicorn Mafia
+where Peter talks about his project
+Claude Code. This is where I believe it
+was just first revealed to the world.
+And at the end, I'll show you how to use
+it, how to install it, and how to get
+cranking on the thing because I mean,
+really, you should be using this. This
+is a glimpse into the future as you'll
+see. Take a look.
+I'm Peter. I'm originally from Austria
+and my latest project is Cloudbot. I was
+playing with for a while like because I
+use Claude Code or at least I use Claude
+Code also to manage my computer to do
+like I don't know random file
+management, everything. So, what would
+happen if we up the game a little bit?
+Plot is kind of like I don't know,
+Jarvis, maybe a little bit like Her. If
+you've seen those movies, it's an
+agent that runs on either your
+computer or in the cloud. You can
+install it on everywhere. It's just
+TypeScript and it can access pretty much
+anything you want. So, Cloudbot has
+access to my emails, my calendar, my
+files, through Tailscale, basically
+my whole network, my cameras, the
+temperature of my bed. It can order
+food for me. It can pretty much do
+everything. It can also do MCPs if
+you're into that stuff. But why not show
+you? Say hi. All right. So, my
+preferred, we support right now WhatsApp,
+Telegram, Slack, Discord. Somebody
+submitted MS Teams and I regretfully
+merged it. And also Zalo,
+Matrix and it has a whole plugin
+architecture. So, basically, you can
+install an npm and add your own
+messaging service. So, there's more to
+come, but let's just say let's just make
+Claude say hi.
+Hello everyone. I am Claude, the space
+lobster AI assistant. It is an absolute
+pleasure to meet you all at demo day.
+Remember, we don't exterminate, we
+exfoliate.
+Yeah, I'm a Doctor Who fan and I went
+with a space lobster theme. So, it came
+up with exfoliate. And that's where we
+go. So, it also has access to my
+cameras. I can just ask you, show me the
+cameras in my London apartment. Any
+interesting emails? Oh, but actually
+this is much better because the beauty is
+you can access it from anywhere. Oh,
+yeah. I see. I put them a little bit
+into private mode so you don't see too
+much. Also, my cleaning lady keeps
+moving them to the background every time
+she's there. Can you show us a
+picture of yourself? How do you see
+yourself? You can also do voice
+messages, of course, because it's much
+nicer. And maybe also a video. I
+think you made one before and I IQ.
+So, even you can hook it up
+in a group chat.
+Here's how I see myself. A majestic
+space lobster foliating through the
+cosmos. Hard shell, soft heart, ready to
+exfoliate. Oh, it was complaining
+because it was creating a video and
+apparently lobsters are like not safe
+for work. So, it was keeping blocked because
+lobsters are too dangerous with their
+claws. So, now it made a really cute
+little lobster and was like, at least I
+got that. There's of course agents.md
+with all the basic system prompt. I
+don't use Claude Code underneath
+anything. I use my own harness so I
+have more control over the identity
+loop. Then we have an identity file
+that's basically everything about me.
+Then we have a soul.md which is kind of
+like the core values and like how the
+agent should act. Then it also
+has an identity and the really cool
+thing is if you go on the website
+and you just want to try it out. Let's
+see if that works. I speak fluent bash,
+star customer and aggressive tab
+completion energy. It starts with a
+blank canvas. I put a lot of care
+into the first run experience so you
+don't get a random AI that's boring. You
+can make a sassy space lobster or
+smart fox or I don't know what we're
+going to do. Let's see if it
+crashes. This project kind of took
+off. If you can, oh, yeah. This
+is my GitHub. If you want to find me,
+build way too many projects. I kind of
+had to build an army of CLIs
+because I very much believe CLIs are
+better than MCPs. For example, while Mr.
+I forgot the name. Cloudflare talked
+about CLIs.
+Matt, I just used McPorter, one of my
+projects to build a CLI out of an MCP
+because turns out agents are really good
+at calling CLIs. CLIs scale really well.
+You can have like a few thousand or
+100,000 on your computer and it still
+works and it's progressive disclosure.
+So I just have to know that there is a
+CLI. Then I call help on it. Then I get
+like what the CLI can do and then I call
+it. That's kind of like how Unix works.
+And you can just package every MCP in
+the world through McPorter into CLI. And
+yes, I totally got the idea from
+Cloudflare when I built it. They also
+did random stuff in the terminal.
+Why not? Yolo here. This is like the
+one of the Cloudflare MCPs through
+McPorter. You get a nice TypeScript API
+that your agent can call. But that's not
+the point. This was the speech
+you saw was through 11 Labs. So I built
+a CLI for that. I have a CLI to
+summarize. So the model can be
+context smart. I built a CLI for Google
+because freaking Google has no CLI to
+actually manage all your stuff. I
+guess I have to do everything myself.
+This project is really interesting
+because usually when I do stuff on
+Twitter, I get a lot of response, but
+nobody really got it because it's like a
+new product defining category. Like
+nobody really had personal agents before
+and we still too much box into
+our thinking that coding agents are for
+coding when they're like really clever
+beasts and can do anything. For example,
+I tell you a story. I started this. It
+didn't, it wasn't called Cloudbot. It
+was called WhatsApp Relay because I just
+wanted something where I can type
+in little commands from when I'm not at
+my computer to run at my computer. And I
+hacked it together in like 2 hours. Very
+simple. But I usually use prompts when
+I do anything. So I wanted to
+have image support. So I built something
+where if somebody sends an image from
+WhatsApp, I just pass on the file path
+and the agent will be smart enough
+to load itself. And then I was in
+Morocco and I was playing with it a lot.
+It was fun. And at some point I wasn't
+thinking and just sent a voice message.
+And then 10 seconds later the model just
+replied with the answer. And I'm like,
+how the hell did you do that? And the
+model was like, yeah, you sent a file,
+but there was no file ending because I
+didn't program it. So I looked at the
+headers and I saw that it was Opus. So I
+used FFmpeg to convert it to WAV. And
+then I wanted to use Whisper, but you
+didn't have Whisper installed. But I
+found this OpenAI API key. So I sent it
+to OpenAI, translated it, and then here I
+am. And I'm like,
+that's why I kind of saw the
+potential. These beasts are just
+incredibly smart at general purpose
+problem solving. My god, you have no
+taste. What else can you do? Ah, the app
+is bad. What else can you do? Tell us
+a little bit. Show us. Give us the full
+rundown. Maybe also tweet that you're at
+demo day. Of course, I have an embedded
+browser as well. So, because giving a
+model full access to your whole system
+and your network is not crazy enough, I
+thought, can we up it a notch? So, I
+added a heartbeat function that just
+calls the agent in every configured
+model like every 10 minutes, get a
+heartbeat with the prompt that says
+surprise me. And the model can either
+decide to send a token back like
+heartbeat, okay? So, you don't see
+anything, or it can check up on you. So,
+I have client apps, so the model
+knows if I'm working on my computer.
+Sometimes it looks at my screen and
+roasts me. It can also click because I
+built Peekaboo so it can
+take over my full screen. Like sometimes
+I have Codex open. I go to get food.
+I'm like is this done already? And it
+would check my screen and type in
+continue for me. It has memory. So I
+would say still primitive. It's like a
+markdown file a day and then some
+vector search over it. But it works damn
+well I would say. Here you can see it's
+now tweeting. This is its own browser.
+So I use, I started with
+Playwright but I hacked it and made it a
+lot better. So it happily checks the I'm
+not a bot checkboxes. Then
+come on you can find the post button. It
+checked me in on my British Airways
+flight because I did a keynote at a
+conference yesterday. I was sweating a
+little bit because to check in it
+actually had to find my passport on my
+Dropbox, get the key out and it did all
+of that and then it was
+bitching about the shadow DOM. So,
+here we are. Did a tweet. Please don't
+do a second one. What else do we have
+here? Yeah, I'll show you how to create
+your own. So, I recommend you only use
+a really good model like Opus 4.5,
+which has pretty good prompt injection
+resistance. I hacked on this for a while. I saw
+everyone that I showed it in person was
+hooked and on Twitter I got very
+limited response. I was like, what can
+I do to actually make people believe? If
+you see the graph here, can you guess
+where I figured out how to get the
+graph? I made a Discord and I just
+hooked my bot into the public
+Discord. That was before I implemented
+sandboxing. So, I was sweating a little
+bit, but turns out yeah, this is our
+Discord. We grew within like 10 days
+to almost 5,000 people. There's a whole
+bunch of AI researchers and CEOs
+in there like the Planet Scale and
+Convex, a whole bunch of people who
+do models. So, it's a really cool place. Was a
+really crazy one. But so, and people tried to
+trick it into getting stuff
+out, but it was basically laughing at
+them the whole time. So, I wouldn't say
+this is safe. I'm sure
+eventually this will be prompt injected
+because nobody has a great solution for
+that yet. But to me, this is just insanely useful. I use it every
+day, not just to manage my life, but
+also as a co-worker. Like, I give it an
+open source repository that's like,
+"Check this out. Play around with this."
+And it tries the CLI, tells me, "Oh,
+no, there's a bug. I had to compile it."
+Blah, blah, blah. This is not better
+than this. It also helps me to keep track of my fitness goals. It has
+access to my health data. So, it knows when I didn't sleep well
+enough. It will nag me. It will
+nag me if my weight goes up. This
+is far better than any fitness trainer
+because the more information you give
+those little monsters, the more tailored
+it can be. Like it knows exactly that
+I'm at demo day right now. And it will
+keep remembering that, at least bits of
+it, if I remember it. So, I'll show you a
+little bit the first run experience
+because I'm quite proud of it. Now, you
+all have to look away because I have to
+find the Anthropic token. And I know
+those are in high demand.
+Anthropic tried to cut us off because
+they now have their the Teemo the Teemo
+one co-work. Here we go. Enjoy. Then you
+can configure the channel. I built a lot
+of skills. It installs a launchd
+daemon on Linux, on Mac OS. It also
+works with Linux. Windows works with WSL,
+works better, but it works. And then
+the first run experience is for,
+of course you can do it in web but I like
+the terminal more. I also built a TUI
+and then it basically says hello who
+am I? What am I? What are you? You are
+Gollum. Let's see what's coming there.
+Yes, he likes it. Precious. It feeds us.
+And then it also picks an emoji because
+it's kind of a thing.
+I have the space lobster emoji.
+Every creature gets their own
+emoji and I guess the swampy
+creature is good. I like the swampy
+creature. And I'm Peter and I'm at a demo
+in London right now. So there's like 100
+people watching you. Yeah, it's bugging
+out. Let's see what it's saying. We like,
+oh yeah, the ring emoji. 100 presses in
+London. So this is basically the
+startup. It has a bootstrap.md,
+again everything is very simple. You
+don't need high-tech for that. And you
+feed it with some information. It
+will create the identity files, the soul
+files, and it's also allowed to update
+them. You're recommended that
+you put it in git, so it backs up its
+own work directory. It also has
+cron jobs. It also has sub agents, so
+everything that's a little longer, it
+can spin up sub agents. It can
+remember you. Like I use it as an
+alarm clock and it has control of my
+Sonos speakers and also my computer.
+So, it can both check on how much did
+I sleep and then slowly change the
+lights because I use Philips Hue and it
+has control of the lights as well. It
+can check on the camera if I'm actually
+awake or not. Some people say I'm
+building Skynet here but with claws.
+And oh yeah, it also built a game.
+So, this is my own app
+trying to get me cookies. Make
+sound effects the Space Invader game. I
+integrate quite deeply with Tailscale.
+So, it has, one of the
+features also is a web server. So you
+can just put files in a server. It'll
+automatically be distributed. So the
+model doesn't have to do too much
+and you can totally use it as an
+experimentation. There's also native
+apps. You can put it on the wall like
+it builds a morning report with a custom
+dynamic interface where I have
+buttons. When I click a button, a prompt
+is sent back to the model and it updates
+the interface. That stuff is still a
+little bit slow, but it's a
+transitionary problem. I think this
+is a glimpse into the future.
+All right, let's claw into ClawdBot
+and see exactly what this thing can do,
+which is a lot. But first and foremost,
+it comes with a warning. Like a legit
+warning. There's a reason why this thing
+wasn't made by the Frontier AI Labs, by
+Google, by Anthropic, by OpenAI. This is
+an open-source project. The reason why
+Labs won't release anything like this
+anytime soon is because there's
+going to be a lot of people that are
+going to be absolutely wrecked by this
+thing. They're going to do something
+that they didn't know was dangerous. And
+it is dangerous and data is going to get
+lost. They're going to get hacked. All
+sorts of bad stuff is going to happen.
+As a lot of people have pointed out,
+there's going to be disasters coming.
+We'll touch on that a little bit later.
+Basically, what Cloudbot is, is it's your
+24/7 AI assistant employee that will take
+a stab at anything you want it to. You
+hook it up to all your tools, your
+calendar, your email. You can even run
+it on your main computer where
+you have all your files and whatnot. And
+the sheer amount of stuff it can do is
+amazing. It can automate a lot of
+things. It can be incredibly powerful.
+So, really fast, here's some
+things that people have managed to do
+with ClawdBot. So, here's Alex Finn.
+He just wanted to see what would happen
+if he texted Henry. That's what he named
+his ClawdBot to make a reservation for me
+next Saturday restaurant. When the Open
+Table reservation didn't work, it used
+11 Labs to call the restaurant and
+complete the reservation. As here, 99%
+of people have no clue. So, I hooked up
+my Cloudbot to 11 Labs. And yeah, I was
+pretty impressed how quickly and easily
+it's able to use the 11 Labs API to
+create a voice. So, while I haven't
+tried this particular thing, I
+believe it. So since Claude Code can be
+connected to 11 Labs to produce AI
+voice. It's connected to your calendar.
+It's able to, it also asks to
+connect to Google Places. So I set the
+Google API there. So it's able to get
+data on actual restaurants and other
+businesses and locations. Stuff like
+this is very possible and it's only
+going to get better. So as Finn is
+saying here, Claude Code can learn to do
+anything. You just ask it to learn it.
+You don't need to explain it. It'll
+figure it out. Few days ago he told it
+to learn how to talk. Here's an 11 Labs
+key. Learn how to use it. Same thing for
+being able to use Twilio. I want you
+to be able to make phone calls for me.
+Please build skills for Twilio so you
+have a phone number. 11 Labs so you have
+a voice and Deepgram so you can
+listen. Tell me anything you need from
+me. I literally just posted that into
+the ClawdBot. And let's see. Let's
+see where it takes us. Maybe it'll be
+done by the end of this video. What's
+interesting is it saying any particular
+voice you want me to use. I can clone
+yours if you want with a little smirking
+face. This is why we need AI safety to
+be a serious priority. I don't want this
+thing cloning my voice and just running
+off of it. Apparently, some people are
+using it to create Claude Code tamagotchis.
+So, it's an actual like a little
+representation of ClawdBot doing
+stuff. So, people are using it to check
+incoming spam, remove spam, incoming
+messages. You can have it sorted by
+urgent and non-urgent. Sync to Google
+Places, create issues on GitHub,
+generate a nice PDF summary of car
+conversations. You can use it to
+impersonate yourself in a group chat
+with friends. It has its own 1Password
+vault it can read and write to.
+So it can save all the passwords. You
+can give it a bunch of passwords for
+specific things you want to have access
+to. It can give you a daily morning
+brief. Research people before
+meetings and create briefing docs. I
+think you get the idea. The sheer amount
+of stuff this thing can do is kind of
+mind-boggling because you have
+intelligence plus the ability to connect
+to all the stuff that you do online and
+in fact with these voice things actually
+call real life people, get reservations,
+etc. Can be your fitness coach yelling
+at you if you're not doing enough stuff.
+It connects to all of your fitness data.
+It can go on X and do research, find the
+right posts. It can run 24/7 and getting
+you all the stuff that you need. As
+Ethan Mollick said here, "Good night,
+Claude. I hope these projects are done
+by morning." I think that in the future
+the biggest productivity hack will be to
+make sure you have enough stuff that
+you've given Cloudbot or Claude Code or
+whatever AI assistant we're using. Just
+before you go to sleep, make sure it has
+a full schedule and to-do list
+that needs to complete by the time
+you're awake. Give it a week's worth of
+tasks. Say good night and go to sleep.
+You wake up to massive amounts of
+progress, tons of completed tasks,
+reports, research completed, projects
+built, etc. It's like Christmas morning
+every morning. One of the cool things it
+asks you to do, you don't have to, but
+you can hook it up to some messaging
+service. In my case, I used WhatsApp.
+It was just the easiest, most available,
+but there's tons. You can use Slack,
+Discord, Telegram, like anywhere where
+you're chatting. You can have a separate
+workspace where you're communicating to
+ClawdBot, telling it what to do. It's
+responding back to you with what it's
+doing or taking care of some biological
+functions, texting back and forth,
+having it complete stuff for you. Here's
+Dave Kiss. He's saying he rebuilt his
+entire site via Telegram while watching
+Netflix. Embedded Notion to Astro. 18
+posts migrated. DNS moved to Cloudflare.
+Never opened my laptop. Now you can of
+course install Cloudbot on your main
+computer, but that comes with some
+dangers. It also currently is native to
+Mac, so it works the best on Mac. A lot
+of people got to buying these Mac Minis
+and just having Cloudbot live on it,
+basically doing everything it needs on
+that device, which I got to say is kind
+of insane if you think about it. You got
+this physical object sitting somewhere
+on your desk, which is basically a 24/7
+employee going about your business,
+which might be a thing in the future at
+some point where it gets too
+complicated. We have too many of these
+AI agents running around that we have to
+manage. Having some sort of a visual
+representation of each might be
+beneficial. Whether it's a character on
+screen or a physical real life
+object like this, I think it
+would help our brains keep
+everything organized. Some people even
+run Cloudbot on old Android phones. So
+it looks something like this. Each one
+is basically running its own version. So
+you got three agents, at least three
+because a lot of them can spin off their
+own sub agents to run on various
+tasks. What can you use it for? Twitter
+research, market monitoring, and
+Telegram chat daily summaries. Private
+groups signal flashing to his main
+phone. So if you have an old phone
+sitting somewhere in your drawer, turn
+it into 24/7 AI server. I'll link this
+down below if people want to run this,
+but Mac Mini energy, junk drawer budget.
+Also, a lot of people are just
+purchasing virtual private servers
+online and hosting it on there.
+So, instead of running it on your device
+or even a Mac Mini or a phone, you just
+go to one of these providers, set up
+your CloudBot on there, you can have
+many different instances, and
+basically have it run in the VPS. Here's
+a person saying, "Cloud disaster
+incoming. If this trend of hosting
+Cloudbot on VPS instances keeps up along
+with people not reading the docs and
+opening ports with zero authorization,
+I'm scared we're going to have a massive
+credentials breach soon and it can be
+huge. This is a basic scan of instances
+hosting Cloudbot with open gateway
+ports and a lot of them have zero auth."
+There are some counterarguments
+to this. This is ZD. He's saying
+there's been some noise about Cloudbot
+gateways being exposed on the internet.
+He investigated. Here's what he actually
+found. He says he pulled all Cloudbot
+instances from Shodan, 450 gateways
+discovered via MDNS and scanned them for
+missing authentication. The results:
+there were zero that were vulnerable.
+Zero vulnerable instances in the wild.
+The 10 publicly accessible gateways all
+properly configured with auth tokens. The
+other 429 aren't even reachable. They're
+bound to localhost as intended. He's
+got the full code and report available
+on GitHub. But it's important to
+understand that these are still
+vulnerable to prompt injections as the
+creator even said himself in that intro
+clip that we saw. Somebody at
+some point is going to get prompt
+injected. That's just the nature of
+how these things work. We have not found
+a foolproof system to defend against
+it. So kind of watch out for that.
+Somebody's going to get burned. There's
+a lot of liability here. That's why the
+AI labs don't want to be doing this.
+They don't want to be exposed to
+something like this. That's why it's
+open source. It's kind of at your own
+risk. And overall, I think it's going to
+move everything forward. It's going to
+help us figure out how to protect
+ourselves, etc. But there's going to be
+a few broken eggs, if you will. There's
+going to be probably some people that
+are going to lose out as a result of
+this. This is very experimental
+area we're entering. All right, so let's
+talk about how to set this up really
+fast. It's a little bit
+complicated, especially if you're
+setting up all the skills and all
+this other stuff that you need. But as
+always, AI is your friend. Use your
+favorite chatbot, ask it questions, have
+it walk you through it. If you haven't
+done stuff like this before, expect to
+spend some time on it, maybe even come
+back a few times. I was not able to run
+it on Windows, so I dusted off my
+MacBook. It's the best experience on
+MacBook. It runs natively. You're going
+to need some model, some AI model. I
+used Anthropic, but you can use OpenAI
+or whichever one you want. I'm sure you
+can connect whatever you want to it. I
+only recall seeing OpenAI and Anthropic.
+I'm sure they have all the other models
+on there as well. And then you need as
+they say here the "mouth." So some sort of
+a messaging platform. You can use
+Telegram, Discord, WhatsApp or Slack. So
+I've tried hooking up every single one
+of these. Discord requires a developer
+portal setup. So you set up a new
+Discord, create a bot. You give it some
+permissions. It can be a little bit
+difficult again if you're not a
+developer. If you're a developer, if
+you're 10,000 hours, most of this will
+be fairly easy. But for the average
+person, Discord will be somewhat
+difficult. Maybe the same thing with
+Slack. I haven't used the Telegram too
+much. I did have a WhatsApp just because
+I have to message some people that are
+only on WhatsApp. That was the easiest
+one from a technical perspective. If you
+just want to get up and running, that
+one's super easy because ClawdBot just shows
+you a QR code. You go into your
+WhatsApp, then you click on the QR
+camera button, whatever. You just hold
+it up and then you say link this device.
+It's part of linked devices and then
+you're pretty much done. If you ever
+forget how to install it, you can
+actually go to clawd.bot
+and it actually has the quick start
+installation here for you. So you just
+need to remember this basically. So on
+your Mac device, just pull up Terminal
+and just open up Terminal. Then just
+type in the command to install it.
+Again, use one of your favorite chatbots
+if that helps if you're not familiar
+with this stuff. All right, so just I
+wrote it in there and away it goes. I
+already installed mine, so how yours
+appears might be different. It just told
+me I've evolved. Try to keep up. And
+then the lobster thing. Okay, good. Good
+job, Cloudbot. If you want to double
+check everything is running fine just
+type in cloudbot version. So I'll put
+that in there.
+Let's see. Pro tip, you have to spell
+things correctly. You're welcome. There
+it is. So that's the version that we're
+running. And then run claudebot onboard.
+By the way, I'll just post this
+down into description or I'll leave a
+link to a website that is going to
+have this. I'll just post it on my blog
+so that you have the updated commands if
+needed. But this is what you would do
+right now. Cloudbot onboard. So type
+that in and that's going to walk you
+through that initial onboarding
+process. So first and foremost it gives
+you a security notice. It's saying
+understand this is powerful and
+inherently risky. Right? So you'll have
+to select yes to continue. You can do a
+quick start or manual. So let's start
+with the quick start. Again I already
+used it. So some of this stuff I already
+have it in there. So first and foremost
+the model provider. We have OpenAI, Anthropic,
+Minimax, Qwen, Synthetic, Venice, Google,
+Copilot, Open Router, Moonshot, etc. So I
+went with Anthropic. I think most people
+will go with Anthropic just because of
+how powerful Claude Opus 4.5 is. But
+whatever you select, you know, you can
+always come back and add more models
+later. You are going to need the API key
+from Anthropic's website. So get that and
+put that in there. After you put that
+in, you're going to see all the models
+that that provider has. Likely what you
+want, by default, it should have a good
+one selected for you. So if you're using
+Anthropic, you'll have Claude Opus 4.5.
+So keep current should work well. This
+is where some people might run into some
+issues. So Telegram is great. I think
+that's the one it sort of recommends you
+do. WhatsApp just uses a QR link. Again,
+if you just want to get in there and get going,
+that might be technically the easiest
+thing to get started. I've tried
+Discord. You have to go into their
+developer portal. You do have to create
+a new bot. You have to give that
+bot permissions. Then you got to give,
+you know, the secret code to
+ClawdBot. Google Chat didn't work for
+me yet. Slack works, but again, there's
+some back and forth API stuff like
+that. And I haven't tried anything else
+yet. So again, the suggested one is
+Telegram and WhatsApp is just the
+easiest, the fastest because it's just a QR
+code. Configure skills now. So these are
+all the skills that you can attach. So
+they're saying preferred node manager
+for skill installs. So npm is probably
+the most common, I would guess, bun.
+People say it's really good, but if you
+have the technical knowledge for it, so
+I don't know, maybe just hit npm unless
+you know what you like and prefer
+something. Next is install missing skill
+dependencies. So you have 1Password,
+Apple Notes in here. You have Google
+Places as well, Nano Banana Pro. So you
+can get up and running without any of
+these. So you can go hit space to select
+skip for now and then just hit enter.
+But obviously this unlocks a lot of use
+cases. So at some point do think about
+setting those up. Enable hooks. So, what
+I did here, I actually asked Gemini
+3 what it would recommend. It said
+just select all three of them and then
+go. So, I'm trying that for now.
+We'll see how well that's working and
+let me know if you have any better
+ideas. Leave it in the comments if you
+think that's foolish, but that's
+what I've started with. And so, I
+already did it. So, it's asking me, do I
+want to restart? I'll just say skip. And
+it's saying, how do you want to hatch
+your bot? Like, where do you want it to
+appear? Do you want to hatch it in TUI?
+That's the recommended, or the web UI. So
+if you do TUI then it just opens up like
+this right and it says hey what's going
+on? So it's basically this kind of
+command line interface within a web
+environment where you can go back and
+forth with it, a chatbot interface
+rather, and boom you're pretty much done
+at least with the setup. There's tons
+more things that you can add that you
+can integrate with but that gives you
+kind of the basics that you need to
+get started. So now you can message it
+through that TUI, that kind of a
+website that it opened up for you, or on
+your phone if you set up WhatsApp or
+Messenger or Slack or whatever you did
+there. You can also start messaging it
+there and chances are during the process
+something's going to fail, something's
+not going to work right. So again, ask
+your favorite chatbot. It can walk you
+through it pretty well. I've used Gemini
+3 to walk me through it and it does a
+very good job of explaining
+everything and walking me through step
+by step how to install this thing. So I
+kind of love this little meme, this
+clip that they've made. Me as a child
+commanding pixel armies. Me now,
+commanding AI agents, similar to
+Warcraft and Starcraft, Factorio, etc.
+Home World. That was a good one.
+Anyways, I'll leave some links down
+below. Get involved. Start using this.
+This is getting real. Obviously,
+be careful your security. Be aware of
+the various attack vectors. Think about
+what can ClawdBot screw up for you if
+you know it does something wrong. And
+also your security. Can there be
+a prompt injection that happens somehow?
+Just be aware of the security.
+We're kind of in the wild wild west era,
+so it's exciting, but also, you
+know, somewhat dangerous. So, I'm in the
+process of messing around with this
+thing. I'll have more videos, more
+follow-ups later. Let me know what you
+think and I'll see you in the next one.
