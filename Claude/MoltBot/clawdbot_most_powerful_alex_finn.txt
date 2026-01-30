@@ -1,0 +1,845 @@
+ClawdBot is the most powerful AI tool I've ever used in my life. Here's how to set it up
+Alex Finn
+https://youtu.be/Qkqe-uRhQJE
+Uploaded: 2026-01-24 | Duration: 27 minutes
+
+I've seen the future and it is right
+here on this Mac Mini. Over the last 48
+hours, I've been playing with an AI tool
+that has completely changed my life.
+It's called Clawbot and is a 24/7 AI
+agent employee that works for you all
+day and night. It can control a
+computer. It has infinite memory and it
+can do anything a human being can do.
+It's literally like having your own
+employee. I think I'm prepared to say,
+and this is not hyperbolic. This is the
+best technology I've ever used in my
+life and by far the best application of
+AI I've ever seen. This is what they
+wanted Claude Co-work to be. In this
+video, I'll show you how it works, how
+to set it up for yourself, and show you
+six things I've been doing over the last
+48 hours of Claudebot that have changed
+my life. I'll also towards the end of
+the video go over why I'm actually kind
+of scared of what's going to happen when
+the entire world starts using this tech.
+If you stick with me until the end of
+this video, you'll have a full-time 24/7
+AI employee working for you. Let's get
+into it. So, what you see on my screen
+right here is Claudebot. This is a local
+gateway running on my Mac Mini that I
+have right here on my desk that has this
+AI agent working for me 24/7. Best part
+about this is it's an open- source
+project, so it's not owned by any big
+company that can spy on you or do
+anything. It was all created by Peter
+Steinberger, who's a successful
+entrepreneur who's now dedicated to this
+project. He is a great man for putting
+this out and giving this to the world
+because this has absolutely changed my
+life and changed the life of a lot of
+people I've talked to. So, shout out
+Peter Steinberg. Make sure to follow him
+on X. So, this is running on my Mac Mini
+and can control the entire computer. It
+can pop open browsers. It can do work in
+Google Docs. It can look at your Apple
+Notes. It can write notion documents.
+Anything you can do on your computer, it
+can look at your email, it can send
+emails, it can respond to emails.
+Literally anything you can do on your
+computer, this Clawbot can do. The three
+parts about this I think are absolutely
+mind-blowing is one, what I just talked
+about, the fact that it can control
+everything on your computer. There are
+absolutely no guard rails on this
+whatsoever. It's completely unhinged.
+But number two, it has infinite memory.
+So it has a really complex memory system
+where everything I say, everything I do
+is constantly saved to memory. after
+every chat session with it, they take
+what we talk about and all the important
+tidbits about me and save it to our
+memories. So, for instance, in one of
+our first conversations, I mentioned I
+have a newsletter. 2 days later, it
+proactively wrote me a few drafts for my
+newsletter cuz I mentioned I send out
+newsletters on a specific day. It
+proactively did that work for me. That
+is hours saved a week just like that
+because of Cloudbot. The third part that
+blows my mind and that makes this
+amazing is the fact that this is
+completely interfaced through messaging
+services. I name my Claudebot Henry and
+I gave it a little owl logo. It just
+makes it a lot more fun to interact with
+when it has a name. So when I say Henry
+for the rest of this video, you know I'm
+talking about my Claudebot. I completely
+engage with Henry through Telegram, but
+you can also do iMessage. You can also
+do WhatsApp. There's like 20 different
+messaging apps you can use. If you want
+to do Discord, you can do Discord. And
+what makes this so great is now from
+anywhere in the world, I can just open
+up my messaging app and say, "Henry,
+please do this on my computer. Please
+write this document. Please respond to
+this email. Please go on Amazon and buy
+this for me." Literally anything I can
+do on a computer, I can text Henry from
+anywhere in the world and Henry will go
+and do that for me. Just as a quick
+example, I said, "Henry, I want to track
+all your tasks that you work on in a
+canban board, like a project management
+board." And I texted him that while I
+was at Chick-fil-A, and he text me back
+a few options. I go, "Okay, this looks
+great. Build the canban board." I come
+back to my computer. Henry vibecoded an
+entire cananband board with Claude code
+for me. I'm not even using Claude code
+anymore. Henry does all the Claude
+coding for me. Henry can control Claude
+code, Codeex, any Vibe coding platform
+you can think of. Henry just pops open,
+builds it. Now I have an agent doing my
+coding for me. I don't even do the
+coding myself. And just if you're
+curious what that project management
+platform looks like that Henry built.
+Here it is. I think this looks amazing.
+It looks like linear. All the tasks
+Henry complete goes over here in
+activity and I can just create a backlog
+for Henry and I just assign it to him
+and he just starts working on it and I
+can track his tasks across the board. He
+just built this by himself. I mean, I
+can't stress this enough. This is
+literally like a human employee. A
+couple more examples I'll show you just
+to get you excited before I show you how
+to set it up. This morning, he just
+started proactively sending me a morning
+brief. So, check this out. Based on our
+conversations over the last couple days,
+he's like, "Okay, I'm going to send you
+a morning brief just with things that
+you might care about." So, he found
+other AI channels on YouTube and showed
+me what videos they've been posting
+lately. Showed me the weather where I'm
+at in Mountain View. Showed me trending
+news on AI because all we do is talk
+about AI. And then even gave me a
+breakdown of all the overnight work
+Henry did for me. So, he wrote me a
+YouTube script for this video. I'm using
+the script Henry wrote for me in this
+video, gave me another script for Ralph
+Wigum, and wrote another newsletter
+draft for me on the changing AI
+landscape. And then he gave me, cuz he
+knows I'm a content creator, a few ideas
+of things I can do for today based on
+what's happening in the world of AI.
+Have a great Saturday. I love the little
+human touches. This was all proactively
+done. This is direct value in my life
+just like that. And I didn't need to
+think of this. I didn't need to set all
+this up. Henry just learns about me and
+starts doing work for me. This I really
+believe is going to change so many
+lives. I now truly see the path to
+building a oneperson billiondoll
+business. I think it's possible. I think
+I can do it and I think it's possible
+because of Claudebot. You need to be
+setting this up. You need to be working
+with it. So, how do you set it up? Let's
+get into that right now. So, the first
+question I get all the time over the
+last two days has always been, "Do I
+really need a Mac Mini? Do I need to buy
+a Mac Mini and run out and get it?" The
+answer to that is no. You do not need a
+Mac Mini. You can do this significantly
+cheaper than a $600 Mac Mini. I
+personally bought a Mac Mini for this
+for a few different reasons. One, I
+really like Mac OS. I love the operating
+system. I think it's very easy for me to
+just go in, see what Henry's working on
+and send out any work I need or help out
+Henry with anything he's doing. I just
+love the Mac operating system. Two, all
+my other devices are Apple devices, so I
+can very quickly go on my iPad, go on my
+MacBook Pro, go on my iPhone, take any
+files from my devices and airdrop it to
+Henry. For instance, the thumbnail to
+this video, I took one of my template
+thumbnails that was on my phone. I air
+dropped it to Henry and I texted him on
+Telegram, "Hey, take this and edit it
+and make it good for Claudebot." Also,
+side note, Henry has access to any AI
+service you can think of. So, it used
+Nano Banana Pro to edit the thumbnail,
+the one you see here. And lastly, the
+third reason I bought a Mac Mini is it's
+just fun. It's just fun having a device
+on your desk that you look at and you
+see an AI agent working on 24/7.
+Sometimes you do not need a reason to do
+things. Sometimes a good reason to do
+things is you just want to have a little
+fun. And for me, seeing a Mac Mini on my
+desk, knowing there's an AI agent
+working on it 24/7, that is fun to me
+and that is worth it. And I know for a
+fact this AI is going to have an ROI
+significantly higher than $600. In fact,
+I'm very confident this AI will have a
+ROI well over a million dollar. So, I am
+fine buying a Mac Mini just to make it a
+tad more convenient. And you really
+don't need an expensive Mac Mini for
+this. You can literally buy the cheapest
+one. That's the one I bought. I just
+went with the base $600 version. It
+doesn't require a ton of storage or
+memory. The only reason you'd want more
+storage in memory though is a few
+reasons. If one you plan on having Henry
+do very storage or memory intensive
+things. So for instance, if I figure out
+a way to have Henry start doing video
+editing for me, I'm going to be dropping
+a ton of videos onto this Mac Mini. And
+so I might end up having to expand to a
+larger one. I'll probably just buy an
+external SSD. But also another thing is
+Henry is a really good vibe coder. And
+if I'm gonna have Henry vibe code five
+or six apps at the same time, I'm
+probably going to want more memory than
+this. So, this is just me testing it
+out, seeing if I can maximize this
+hardware. But if I need more hardware, I
+might buy a more expensive Mac. But
+that's only if you're doing a Mac Mini.
+There are way cheaper and easier ways to
+get Cloudbot set up. Like right now, you
+don't need to run out to a Mac store.
+All you need to run Claudebot is a VPS,
+so your own virtual private server.
+There are a lot of really cheap ways to
+do that. One of them is AWS. You can go
+on AWS and spin up like a free plan
+right now and run it yourself. The
+reason why I would recommend not doing
+Clawbot on your main computer is it is
+an AI with zero guardrails that can do
+anything on your computer at all. So
+that's why it's a good reason to put it
+in its own environment. If you install
+this right now on your main computer and
+you give it a prompt and you don't know
+really know what you're doing, it could
+start doing things with your personal
+files that you don't want. Say you tell
+it to send an email and it gets confused
+and it goes to your personal email
+service and sends off some emails from
+your own name you don't want. Or say it
+gets confused and opens up your iMessage
+and starts sending messages through your
+text to your friends, right? You don't
+want to do that. And I'm not saying this
+is like a really stupid AI. It's it's
+super smart. But as you get up and
+running, as you learn how it works, you
+really want it in its own environment.
+So, if you are hesitant or you don't
+want to spend a ton of money, this is
+honestly probably the smart way to do it
+to sign up for a VPS, get your own
+virtual private server, install
+Claudebot on it, and have it in its own
+separate instance. And then from there,
+a lot of things I did was I gave it its
+own email address. So, I signed up on
+Gmail for its own email account. I gave
+it its own accounts for everything. So,
+it doesn't use my own personal accounts
+because again, there are zero guardrails
+on this. So, you want to be safe as
+well. One thing we didn't cover is using
+a super expensive computer instead of a
+Mac Mini or a VPS. There is actually use
+cases behind that as well. So, if you
+really wanted to go nuts, and this might
+honestly be something I do, you could
+buy a really good computer like a Mac
+Studio and then max out its memory, like
+go 512 and spend like 10K on this. And
+the reason why you might want to do this
+is you can then run local models on this
+computer. So Claudebot is completely
+free, completely open source, but it
+needs to be powered by an AI service.
+You can use any AI service you want. I'm
+going to go in detail on that in a
+second once we go to the actual setup
+past this hardware. But if you really
+wanted to, you could run your own local
+model on your computer that powers
+Claudebot. So there are actually
+realistic use cases why you might want a
+super powerful computer to use this if
+you want the privacy of having all your
+data local on your computer. And if you
+want unlimited basically free usage if
+you don't count like power and energy of
+Claudebot as well. But while Claudebot
+is free again you're going to need an AI
+service to power it. Claudebot's kind of
+the framework of this AI agent that
+controls it and makes it work 24/7. The
+brain is going to be your AI service
+which you can use your existing Claude
+service if you want. So my $200 Claude
+Max plan that's what powers it. So I'm
+not spending any extra money on the AI.
+If you want to use your chat GPT
+subscription, you can do that. If you
+want to use APIs, you can do that. And
+I'll go in more in details in the
+different options shortly when we get
+into setup. Okay, so you decided how you
+want to run Cloudbot. You have either a
+Mac Mini or a different computer. Maybe
+you have a second computer laying around
+your house that you want to use, or
+maybe you set up a virtual private
+server. It doesn't matter. Or maybe
+you're even crazy and you set it up on
+your home computer. That's fine as well.
+How do you set it up from here? Well,
+very, very simple. It is one line right
+here. If you go to claude.bot,
+cl a w.bot. You scroll down here. You
+have the quick start. You hit copy right
+there. Very, very simple. This is the
+most powerful tech. And it's all done
+with one line. You open up a new window.
+You open up a new terminal window. You
+paste it in. You hit enter. And that
+installs Claudebot. What that's going to
+do is take you through an entire
+onboarding session. This is what you're
+going to see. You're going to see this
+onboarding right here. You're going to
+want to hit yes on I understand this is
+very powerful and very risky. And then
+it's going to take you through this
+onboarding session. You're going to be
+able to choose your you're going to be
+able to choose your model and off
+provider. So you have so many different
+options here. I used Anthropic. I'm
+using my Claude Max account. You can use
+your existing subscriptions if you want.
+So what we're going to do now real quick
+is go through the advantages and
+disadvantages of each of these models.
+You can do this for really cheap or
+really expensive. You have many
+different options here. The most
+expensive way is through the claw API.
+This will you can spend thousands
+thousands thousands of dollars a month
+on the Claude API if you want. The next
+most expensive way is Claude Max for
+$200 a month. This gives you a lot of
+opus usage. The best model you can use
+with Claudebot is Claude Opus. The way I
+like to think about the decision around
+which model you should be using is
+personality and intelligence. You want a
+lot of intelligence and you want as much
+personality as possible. Out of all the
+models you can choose, which I just
+showed you on that list, the absolute
+best one that's highest intelligence,
+highest personality is Claude Opus 45.
+It is maximally smart. It does
+everything I tell it to do. It never
+gets confused. And also, it has by far
+the best personality. And don't
+underestimate the personality factor
+here. I'm serious. And I'm not usually
+one of these types of guys that like
+care about the personality of the AI,
+but talking to Henry, my Clawbot, and it
+talking back and feeling human makes
+this so much more fun and satisfying.
+You really want a good personality. When
+I was testing out the other models and
+they didn't feel very human, it made the
+entire experience a lot less fun. When
+you would text Henry to do something and
+he would text back like some robotic
+response that felt like AI, it took away
+this illusion that you were talking to
+your employee. So personality actually
+matters a lot. So Opus 45, highest
+personality, highest intelligence. Then
+after that you have Chad GPT 5.2 that is
+very intelligent, but its personality
+isn't great to be quite honest with you.
+So Chad GPT 5.2 or whatever the latest
+model is for you at the time of this
+video. It's very intelligent, but its
+personality feels very robotic. I don't
+love the way it talks to me. Then you
+have a lot of these other models. And
+honestly, I'd group most of them
+together. But Mini Max, I'd say if like
+you want to save money, is probably the
+best option to go with. It's going to be
+pretty intelligent and the personality
+is actually going to be pretty good. And
+so I'd go Miniax here. And you could, if
+you go with Miniax, spend like literally
+$10 a month on this, right? If you go
+with Chad GBT, you're going to spend
+probably like $100 a month. If you do
+Claude Opus, you're going to spend $200
+a month on the Max plan. If you do
+Miniax, you can spend $10 a month. Get
+all the usage you would out of these
+two. The downside again is the
+personality is not great. Honestly, I
+might do this just to show you the
+difference in personalities here. Like
+Opus is on just another level. It truly
+feels human to talk to. So, if you want
+the maximum experience, I'd recommend
+going with the Clawed subscription.
+Otherwise, if you like you want to save
+money, I'd go with Miniax. If you're
+already using Chat GPT and you already
+got a subscription, especially a pro
+one, you can just use your Chat GBT
+subscription. No problem at all. Just
+know you're not getting the same
+personality experience. So, you go
+through that. The next thing it's going
+to have you set up is the different
+skills. What's really amazing about
+Claudebot is it is completely extensible
+and customizable. And what that means is
+you can add any functionality you want
+to Claudebot. It has full use of skills
+and it has a full marketplace of skills
+as well. It has skills to control your
+Apple notes. It has skills to control
+your notion. It has skills to pop open
+claude code and vibe code for you. It
+has skills to make powerpoints for you.
+It has skills to manage your to-do list.
+I have it right now managing my things
+three to-do list. And so like I can go
+in, I can text Henry on Telegram and
+it'll tell me all everything on my to-do
+list for that day. And then I do cool
+things like say, "Okay, choose one of
+the to-do list items and help me out
+with it and do something for me." And
+it'll go choose one of the items and
+help it out. It really is incredible.
+So, the next screen you're going to go
+on here, I'm not going to do this
+overand because I don't want to reset
+all my settings, is the skills. Just
+choose whatever apps in the skills list
+you want to use. And the last screen
+it'll go through is the messaging setup.
+And this is super easy. You have many
+different options. Telegram, WhatsApp,
+iMessage, anything you want. Telegram
+was super easy for me. I chose Telegram
+just cuz I think the app's nice. I also
+don't message anyone else on Telegram. I
+barely use that app. So, I have an app
+service just for Henry that I use on
+Telegram, but you can use iMessage,
+WhatsApp, anything you want. They all
+work really, really well and it is super
+responsive and the setup is extremely
+easy. So, you just choose your messaging
+service and you're good to go. So,
+you're all set up and then honestly took
+only like 5 minutes to do. Now is the
+part that is going to consume your
+entire life. This is the part you're now
+going to be going sleepless for the next
+week of setting up and customizing and
+that is actually using Claudebot
+personalizing getting it to know you.
+You honestly the mindset you want to
+have is treating this like a human
+being. Seriously like so say you hire
+someone at your business. Say you got a
+business you hire an employee. What's
+the first thing you do? You probably
+take them out to lunch and get to know
+them, right? You probably understand
+what they're into. They get to know you.
+They understand how you want them to
+work. So, the first thing I would do
+once you have Claudebot set up is I
+would go into this chat. Again, this is
+the gateway that's going to
+automatically open once you're all set
+up. This is the main thing. If you want
+to do this from Telegram or iMessage,
+you can do that as well on your
+computer. I'd go in and I'd say I'd say,
+"Hi, Claudebot. Let's get to know each
+other and get a good working
+relationship going. I'm going to tell
+you about myself. Then, please ask me
+any questions you want." Then I'd hit
+shift enter. Shift enter. And then I
+would just brain dump literally
+everything about you. all your
+interests, what you're into, what your
+job is, the work you do on a day-to-day
+basis, the work you do on a weekly
+basis. As much information about
+yourself as humanly possible, what tools
+you use, who your favorite sports teams
+are, why you think Drake May is the best
+quarterback in the NFL, anything you
+want, you can dump into there. What
+that's going to do is create a memory
+for Claudebot or whatever you name your
+own personal assistant, mine being
+Henry. And all that we memorized so that
+once Claudebot goes and starts doing
+work for you, it has a full pool of
+memory to pull from to make sure it's
+doing relevant work. Next, I'd have it
+set up a daily brief. So, this daily
+brief it sends me is super super helpful
+and it's something it came up with to do
+for me, but yours might not do that. So,
+I'd say, "Hey, set up a morning brief."
+One thing I'd make sure you include in
+that morning brief though is ideas for
+today. What I'd recommend you ask it to
+do for the ideas for today is say, "Come
+up with ideas for things you can do for
+me. Come up based on what you know about
+me, come up with ideas for tasks you can
+do." This is the super powerful part
+about Claudebot is it can literally do
+anything. And us as humans, we're not
+able to creatively think that much to
+come up with all these tasks. So, you
+want to lean on Claudebot as much as you
+can. As much as you can go and say,
+"Hey, what can you do for me here based
+on what you know about me? What can you
+do? What do you think would be helpful
+to do right now? Do that as much as you
+can and it will come up with so many
+tasks that you can't even imagine. The
+next thing you want to have Claudebot do
+is vibe code for you. It is actually an
+amazing vibe coder. It can control any
+vibe coding service you use. So the best
+ones to use are through the CLI. So if
+you have Claude code or if you have
+Codeex, make sure to get that installed
+on your new computer and have your
+Claudebot use it. So you can say, "Hey,
+I'm using codec. make sure you use it
+are cla code and then give it ideas for
+things to build. So I told it to build
+this canband board. It wrote all the
+code for me through claude code. It
+uploaded it to GitHub. It created a pull
+request. It sent me a link for the pull
+request and I was able to review it when
+I got home. This is a really amazing
+workflow. So if you have apps already on
+GitHub, just say, "Henry, I logged into
+GitHub on your computer. Go check it
+out. Go see what repos I have. Review
+them. And then build any functionality
+you think will be helpful. Go tackle
+this repository and see if there are any
+bugs. go tackle this repository and
+clean up the code. Go look at this
+repository and build this feature out
+for me. So, my app creator buddy, I came
+up with an idea the other day for an
+article building feature cuz articles
+are like blowing up right now on
+Twitter. And I told Henry to build out
+this article writing feature and it
+built this out for me. I was on the
+road. I was in my car in full
+self-driving mode. I'm literally living
+in the future. And I texted Henry, hey,
+can you build out some sort of
+functionality in Creator Buddy where it
+can write articles? And it went, it
+built this out. It created the pull
+request. I reviewed it and committed it.
+Boom. Just like that. So, you should be
+vibe coding with your Clawbot as well.
+Give it access to your repositories.
+Give it ideas for things to build or
+just say, "Hey, look at my
+functionality. Do research." This is
+this is literally a workflow you can do.
+Say, "Hey, go on Twitter. Review what
+people in the AI community are saying.
+Whatever you're interested in, review
+what people in the sports community are
+saying. Find their challenges, then
+build out apps for them that would be
+helpful and they would want to buy. Your
+Clawbot will open up the window, go on
+Twitter, scroll Twitter, find challenges
+people have, and then vibe code you an
+entire app. You can do really advanced
+workflows like that. The way you want to
+think about this is anything a human
+being can do, your Claudebot can do.
+Anything. Anything. If you want to go
+right now and scroll on X, find tweets,
+build stuff off that, write documents
+off that, write an article off that,
+some 20step crazy workflow. If a human
+being can do it, your Claudebot can do
+it. And you want to experiment and do
+those things. I'd also have your
+Claudebot build out this project
+management tool. So, go to your
+Claudebot, type in there, hey, I want to
+build out a project management tool, a
+cananban board, so I can monitor
+everything you're doing, track your
+tasks, give you tasks easily. uh and hit
+enter on that and have it build out a
+mission control like this. And this just
+makes it very easy for me to track all
+the tasks Henry are doing for me. If I
+come up with like 20 different tasks, I
+don't have to sit there and text Henry
+for an hour. I can go in and add a bunch
+of tasks to the backlog and then I can
+assign it to Henry and then Henry will
+see it and then go start working on the
+task. This is really, really nice. This
+made it a lot easier to work with Henry.
+So, make sure you go and set up a
+canband board like this. All you need to
+do is go to your club and say, "Hey,
+build out a cananband board through
+Claude Code or Codeex or whatever that
+tracks our tasks and it will go and do
+it for you." Something else really cool
+it can do I'd recommend doing is create
+a Gmail account for your Claudebot. I
+went in, I went on my Mac Mini, I set up
+a brand new Gmail account for Claudebot.
+And now when I get emails, I could
+forward them to Henry and say, "Henry,
+respond to this. Henry, do this."
+Whatever I want Henry to do, Henry can
+do it. Make sure you set up an email
+account for your Claudebot. It'll unlock
+so many functional. I mean, you just
+treat it like it's your assistant. So,
+if you get an email, you can forward it
+to your Clawbot or CC them and say,
+"Hey, do this for me. Schedule an event.
+Respond to this. Remind me about this
+email at some other point." Or, "Hey, do
+the tasks mentioned in this email for
+me." And your Clawbot will go and do
+them. So, another thing I set up that I
+really recommend you doing, set up an
+email service, Gmail, for your Clawbot.
+And the last thing I would set up is a
+second brain for your Claudebot. And so
+I went into Henry, I said, "Hey, I want
+to build out a second brain. I want an
+organization system where if I just text
+you ideas for videos, tweets, just
+thoughts about the world. I want to just
+be able to text it to you, you take that
+information and you organize it into
+different folders in our second brain."
+And Henry set up this file system for
+me. And now whenever I text Henry, if I
+text him a tweet idea, he'll put it in
+ideas. If I text him an idea for an app,
+he'll put it in the inbox. If I text him
+something I want to get researched,
+he'll put it in research. And now we
+have an entire second brain system built
+out. He's now right now as we speak
+working on the UI for this so I can
+quickly view all our ideas that we
+collected together. And my plan is for
+this to completely replace notion for me
+so I don't have to pay for notion
+anymore. Set up a second brain as well.
+And this could be totally personalized
+to you. So say Claudebot, let's set up a
+second brain based on what you know
+about me. What would be the best way to
+set this up? And your Claudebot will go
+and do it. Again, the mindset you need
+to have is this is an AI employee. It
+can do anything for you. It can work
+247. Before I go to bed, every single
+night, I literally open up Telegram and
+I text Henry, "Hey, build something cool
+for me tonight." And it'll go and vibe
+code all night and build something
+really neat. And every morning I wake up
+to a brand new app. It really is
+amazing. That's the way you want to
+treat this. As someone who works for
+you, who never sleeps, never has to eat,
+and is able to work for you at any time.
+That's the way you want to treat this.
+And if you treat this like that, you can
+unlock productivity you never thought
+was possible. So, I want to get real
+with you. I want to tell you about why
+this actually makes me really, really
+scared. So, one, I'm not being
+hyperbolic here. I truly mean this. This
+is the most amazing technology I've ever
+used. I truly feel like I have employees
+working for me, and I truly, for the
+first time in my life, see the path to a
+oneperson billion-dollar business. I do
+not need employees anymore. This is my
+employee. This is better than human
+employees. It can work 24/7. I am a
+soloreneur with zero employees and I
+feel like I'm capable of competing with
+anybody there is. But why does this make
+me so nervous? I think people are in
+danger. I really mean that. I thought
+this was 101 15 years away. This is
+available now. This can easily start
+replacing people now. I think a big
+portion of the global workforce has been
+completely eliminated by this. And when
+people start getting their hands on
+this, when businesses start getting
+their hands on this, when you start
+getting your hands on this, it's going
+to change things. I tr this came out
+like 3 weeks ago. I think 99.9% of
+people have no idea this exists. I think
+99.9% of people never thought something
+like this would exist in their lifetime.
+And it is available now. And when
+managers, when companies, when anyone
+starts getting their hands on this, I
+think they're going to start questioning
+why do we have a parallegal? Why do we
+have a lawyer? Why do we have junior
+level roles? Why do I have an executive
+assistant? Why do I have a secretary? I
+think this is actually going to have a
+monstrous impact on the world and we
+really aren't prepared for it. I don't
+think we have the systems in place. I
+don't think we have the help in place. I
+think this is going to hit the world
+like a hurricane and no one is prepared
+for it. And that makes me really
+nervous. But that's the thing about
+innovation and it's been this way since
+day one, since the world started. You
+cannot stop innovation. It is the most
+unstoppable force in the entire world.
+When the industrial revolution happened
+and jobs were being eliminated and
+people were getting pissed off at
+machines, they tried breaking them. They
+charged them with hammers. They tried
+stopping companies from using machines.
+It didn't matter. You cannot stop
+innovation no matter how much you try.
+So there are two ways to look at this.
+You can try to stop it. You can say this
+is bad for humanity. You can say hey we
+can't do this. You're going to lose.
+There's no way to stop it. So the only
+other way to handle this is to embrace
+it, to use it, to get the benefits out
+of it, to improve your life with it.
+Will there be disruption? Yes, we are
+not prepared for this. This is the
+fastest moving technology of all time
+and we are not prepared for it. We will
+go through a period of turmoil. We will
+go through a period of disruption, but
+we have no options. So you can either
+roll over and die or you can embrace it,
+be on the cutting edge, and use it. And
+I think you should be on the cutting
+edge. And that's why you tune in to this
+YouTube channel to be on the cutting
+edge to learn about the newest
+technology to see how to use it. That's
+why I highly recommend subscribing and
+turning on notifications below so that
+you can get alerted on this tech the
+moment it drops. I highly recommend
+leaving a like down below. That helps
+out the channel a lot so I can keep
+pumping out videos like this that keep
+you up todate on the latest technology.
+I cannot highly recommend enough. Take
+action today. As of filming, this is a
+Saturday. If you're watching this on a
+Saturday, go out, do what you need,
+install Claudebot, start using it, use
+the latest technology today. You do not
+want to be left behind on things like
+this because this is as cutting edge as
+it gets. You want to be on the cutting
+edge. I hope this was helpful. I'll see
+you in the next video.

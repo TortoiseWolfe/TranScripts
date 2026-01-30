@@ -1,0 +1,2973 @@
+LIVE: How I'm using ClawdBot to change my life
+Alex Finn
+https://www.youtube.com/live/6RMpUnvHmJw
+Uploaded: 2026-01-28 | Duration: 60 minutes
+
+Today I'm going to be taking you through
+Claudebot, the most powerful AI tool I
+believe that's ever been made. I'll show
+you what I'm doing with it. I'll show
+you how to get more out of it and I'll
+show you how to leverage this incredible
+technology. We're going to have a ton of
+fun today. Welcome to the live stream.
+This will all be live live. We'll be
+going through Claudebot. Feel free to
+ask any questions you have in the chat.
+Any questions you have at all in the
+chat, put them there. I'll be going
+through the chat throughout the entire
+stream. We have so much to go through
+today. I'm going to pull open my Clawbot
+right now so we can just get straight
+into this. We're gonna get straight into
+this. I have so much to go through, so
+much to show you. I'm going to I want to
+show you kind of the first latest update
+I've uh I implemented. I hope everyone's
+doing well. I hope everyone's having a
+good time here. Let's do this. Let's
+share the screen. Let's just get
+straight into it. Let's get straight
+into it. Let's pray to God. I'm not
+about to share anything that is
+compromising in any sort of way. Let's
+make sure here. Let's see here. Let's
+see here.
+Okay, perfect.
+I'll share my screen. I'm not sharing
+anything compromising. Let's go. I hope
+everyone has had an amazing week. It has
+been a whirlwind week since Claudebot
+launched for me. Uh, it is what I
+believe to be the most powerful AI tool
+I've ever used in my entire life. I've
+I've implemented some incredible use
+cases. I have so many use cases and
+workflows. I haven't shown anyone yet.
+We'll be going through a few of that a
+few of those on this stream. I have
+another video coming later today that
+goes through another five unbelievable
+workflows uh I've never shown anyone
+before. The capabilities of this tool
+are unbelievable. They're unlimited.
+They're unlimited. Unlimited, as Russell
+Wilson would once say, right? You can
+extend this, customize this any way you
+want, which is unbelievable. I'm going
+to show you some of those ways you can
+customize it and extend it. today as
+ideas come down to me, I'm actually
+going to feed them to my Claudebot
+Henry. Uh, so I can remember that. Talk
+about how to make it way more proactive.
+Brain dumping. Okay, I'm getting some
+ideas as I flow here. That's how that's
+how this brain works. How's everyone
+doing? We're about to get I'm about to
+show you some amazing things. I'm about
+to show you some amazing things my
+Clawude bot does for me. This is a live
+stream. I don't know if people realize
+sometimes I feel like people don't
+realize this when they're watching this.
+This is a live stream. I am live right
+now. I'm going to show you things live.
+This is not going to be as tight and as
+quick as a tightly edited YouTube video,
+which is probably how you discovered me
+over the last few days. If you want
+tightly edited in five minute video,
+then just check out the main channel.
+This is going to be a 2hour live stream
+where we're going to do a whole bunch of
+things live. I'm going to discover new
+workflows live. I'm going to show you
+workflows live. I'm gonna answer your
+questions in the chat live. Moltbot,
+this is my number one obje objection
+getting I keep calling it Claudebot.
+People keep going Molbbot. Moltbot,
+Maltbot. Uh, yes, I'm aware it's
+Moltbot. Yes, I'm aware that is the
+latest name for this tool. No, I'm not
+going to call it Moltbot, at least for
+another month. It is what it is. Deal
+with it. Everyone still has Claudebot on
+their brain. Everyone still has
+Claudebot in their brain until people's
+mental SEO changes to Moltbot. I'm gonna
+call it Clawbot. And then once the
+energy has shifted and people's ideas
+default is now Maltbot, I'll start
+calling it Molbbot. But I think people's
+default brain still says Claudebot. So
+I'm going to keep calling it Claudebot
+in the meantime. So I will keep saying
+Claudebot this entire time. No maltbot
+yet. Please talk about OOTH method.
+Please. Uh so I'm hearing from people
+that
+let me make sure. Let's see what's going
+on here. I have nothing nothing revealed
+here, right? Uh, okay. Perfect. Nothing
+crazy being shown here. Yeah. Okay,
+good. Uh, I
+am reading that people are getting We
+got some risky things we're showing off
+today on our computer live, by the way.
+I might expose every key on the planet
+and lose my entire computer. But we'll
+see. Who knows? Who knows what will
+happen? That's the drama. Who knows what
+keys and API keys I'll expose on live
+stream today. Uh, please talk about OOTH
+method, please.
+I'm hearing from some people that using
+the Claude Oath is kicking them is
+getting them kicked off the Claw plan.
+Here's what it comes down to. Here is
+what it comes down to. Claude Opus is
+the greatest AI model of all time.
+Period. End of story. It is the best way
+to run Claudebot. It is what it is.
+I'll just say this. If you use the API
+keys, you are going to be spending
+significantly more than $200 a month.
+Significantly more than $200 a month if
+you use this tool with any sort of
+regularity. So if you use the OOTH,
+there is risk.
+There is risk. You might get kicked off.
+Is it the worst thing in the world if
+you get kicked off? I don't know. Maybe
+just put in another credit card number
+and get a different subscription. or if
+they're really going to play hard ball
+like that and stop you from using their
+service on every credit card and address
+and phone number you got, then screw
+them. Who cares? Uh, but in the moment,
+Opus is the best. And I think using Opus
+on Claudebot is life-changing.
+I really do believe that. I I think it's
+unbelievable. I think from a personality
+perspective, it's the best. I think from
+a a uh intelligence perspective, it's
+the best. Now, I will say this.
+According to benchmarks and according to
+what I'm hearing, Kimmy K2.5
+is just about as good as Opus is just
+about as good. I need to test this. I
+will test this. I will be spinning up a
+new computer with a new instance of
+Claudebot with Kimmy K2.5 attached to
+see how the workflows vary, to see if
+it's better. I will be doing that. I
+will be reporting back to you for the
+latest on which models are the best,
+which models you should be using for
+Claudebot. Make sure to subscribe and
+turn on notifications down below. Very
+critical. Also very critical because
+about an hour and a half to two hours
+after this video live stream ends, I
+will be releasing a new YouTube video
+about five use cases to implement with
+Claudebot today that will change your
+life forever. that's coming out about an
+hour and a half after this live stream
+ends. Make sure to turn on notifications
+for that. When I drop that video, pop it
+open, leave a like, watch it to the end.
+That's the best way to support the
+channel.
+They just revoked my token I use for
+Claude, but I still have my plan and
+still use Claude Coke. Yeah, here's a
+couple things.
+My guess is the people saying, "Oh, I
+got banned from Claude uh because I used
+it." are just rage baiting. They're just
+click baiting. I don't that makes no
+sense that Anthropic would turn off
+people's subscriptions and stop say,
+"Hey, stop giving us $200 a month
+because you're doing this." That's
+they're not going to go after the drug
+users. They're going to go after the
+drug sellers. You know what I'm saying?
+Do you know what I mean by that? They're
+going to go after Claudebot. So,
+basically what they're do is they're
+going to cut Claudebot off from using
+the OOTH. I don't think they're going to
+ban you for using the Claude Oath. So, I
+don't want to give you professional
+recommendations, but
+use the oath. Use the cloud off. If they
+ban you, then whatever. If they're not
+going to ban you. If they cut you off,
+then whatever. Then you start using the
+API. It's against terms of service. It's
+against terms of service. Your face is
+against terms of service. I don't care.
+Who cares? This is a doggy dog world,
+baby.
+Super intelligence is on the line. We're
+six months away from the permanent
+underclass. Just use whatever the best
+model is. Do you want to escape the
+permanent underclass or not? Don't talk
+to me about terms of service. I care
+more about the leaving the permanent
+underclass than the terms of service.
+Jesus.
+Let me make sure I make this so doesn't
+call off the chat. It's not made for
+kids. Uh doggy dog world. Yeah. Only
+watch this live stream if you're
+prepared to fight in a doggy dog world.
+Use the claw oath. Who cares? There. I
+said it. I I didn't I didn't think I was
+going to say it, but I just said it. Who
+cares? Jesus.
+>> [sighs]
+>> Just you. Who cares? If you get kicked
+off, then use something else. I've
+tested this with basically every model
+except Kimmy K2.5.
+There's nothing close to Opus. There's
+nothing close.
+Here's another prediction.
+Here's another prediction for you. I
+think we are 12 months away at the most
+from there being a bum rush for powerful
+hardware.
+We got a lot to get in today. If this is
+your first time watching the stream,
+which I imagine it might be because
+there's like 300 people in here and
+there's usually like 120. Uh we're going
+to demo, we're going to go through
+things. I'm also going to rant and tell
+and give you tips and tricks and tell
+you important things. I'll give you
+predictions about the future. This is
+one of the predictions about the future.
+Ask questions in the chat. I'll get to
+the chat. I'm going to get to the chat.
+I'm going to go through everything. I
+think we are at most 12 months away from
+an absolute stone- cold bum rush for
+hardware. I think we're already in the
+middle of it for power users. I think
+right now power users are going out and
+and buying as much hardware as they can.
+The cost of uh RTX5090s doubled from
+2,000 to $4,000 over the last week. We
+are at most 12 months away from an
+absolute stone cold bum rush for
+hardware from normies. Right now it's
+the power users doing it. We're at most
+12 months away from normies doing it.
+Why? Why is that? A couple reasons. I
+truly believe Claudebot is about to blow
+up. I don't I do not think this is a
+trend. I do not think Claudebot is a
+trend. I think this is going to be
+something that will be placed on so many
+people's computers that will be using
+it. That's number one. Number two, I
+think because of that, a lot of these
+companies will be cutting off OOTH from
+it because Claudebot uses so many
+tokens. I believe that
+a lot of these AI companies will cut off
+OOTH from Clawbot. You're already
+starting to see it with Claude, right?
+So boom, they start cutting off OOTH.
+What does that leave you with? That
+leaves you with the APIs. The using APIs
+with Cloudbot is going to be extreme.
+It's going to be expensive. It is going
+to get very expensive. It is going to
+get very expensive. At the same time as
+all of that, local models will get
+significantly better and require less
+hardware. You see it already. Kimmy K2.5
+is basically Opus level and can be run
+locally on two Mac Studios.
+You can run Opus locally today for under
+$30,000.
+And that might sound like a lot of money
+to you, but that is mind-blowing. A year
+ago, running an Opus type model on
+hardware would cost you half a million
+dollars. In one year, it's gone down
+from half a million to 30,000. So, my
+prediction
+that I'm giving you right now, and you
+can do with this information however you
+want. I think we are at most 12 months
+away from an absolute bumrush of
+hardware
+for the normie user that's going to want
+to go out once their OOTH is cut off on
+all their really powerful uh tools like
+Clawbot. They're going to go out,
+they're going to try to buy hardware so
+they can run their models locally so
+they can get unlimited usage
+for their tools like Clawbot.
+So what is so what's my recommendation
+based on that information to you?
+Strongly consider if you can afford it
+if you can afford it strongly consider
+buying hardware that runs local models.
+Even if the models aren't that great
+it's important I think at this moment to
+start to get into it to get ahead of
+that trend before it happens. I a few
+days ago bought
+a Mac Studio with 512 gigabytes of
+memory.
+It cost me I have a friend who works for
+Apple, so I got a discount. Uh I got a
+15% discount or something. It cost me
+$8,400,
+but I will be able to run a lot of
+really good models on that hardware and
+I will be able to if I get kicked off
+Claude Opus
+be able to power Claudebot with those
+local models. Will it be as good as
+using Claude Opus? No.
+But if I were to use the Claude Opus
+API, I'd be spending like $4,000 a month
+on it.
+Right? And so I think we're going to
+start seeing that more and more and
+more. And so I'm just telling you when
+the bum rush happens,
+hardware is going to be a bottleneck.
+It's going to be a bottleneck. And the
+more people buying the same supply of
+hardware, the more expensive the
+hardware gets, right? So if they put out
+a Mac studio, it costs $5,000. They make
+a h 100,000 of them and 20 million
+people try to buy those Mac Studios.
+What do you think happens to the price
+of those Mac Studios?
+Everything gets more expensive. I think
+the Mac Studio M5 that's going to come
+out in June prediction is going to be
+slightly more expensive than the Mac
+Studios from last year.
+I think the Mac Studio M6 that comes out
+next year, 2027, is going to be double
+the price of all Mac Studios from this
+year. I think this year is a slight step
+up in price. I think next year is a
+massive step up. I think it gets
+exponential and that stuff doubles. So
+again, I don't want to tell you how to
+spend your hard hard uh earned money.
+Although right now I'm going to tell you
+how to spend your hard-earned money if
+you can afford it. If you care about AI
+and technology, if you know you want to
+implement workflows that make your life
+better with AI, I recommend buying
+hardware
+before the bum rush happens. If you
+think Mac minis in 2027 are going to
+cost $600, you are insane.
+There is a zero. Do a test with Kimmy,
+dude. I'll do a test with Kimmy in a
+second. We'll do a test with Kimmy. I
+just want to get the important stuff out
+of the way. Let's get the important
+stuff out of the way. Then I'll test
+Kimmy out.
+Right now, I got my Mac Mini for $600. I
+could have got off Amazon for 500. I
+wanted to go to the Apple store
+immediately and buy a Mac Mini, so I I
+paid 600. Whatever.
+Mac minis are not going to be $600 in
+2027. The my prediction is the M6 Mac
+Mini will cost at minimum $1,000. It
+will go from $500 to a,000. I don't want
+to say guaranteed, but guaranteed
+guaranteed. The bum, it's already
+happening. I think this was the first
+domino. I think this was the first
+domino of
+the hardware bum rush. Claudebot coming
+out and everyone rushing to buy a Mac
+Mini is domino number one of the
+hardware bumrush. It's going to then
+turn into Mac Studios once people, you
+know, now they're open- source pill.
+Right now maybe they want to run Kimmy
+K2.5 locally. Now Mac Studios are flying
+off the shelf. Now your entry level Mac
+Studios $10,000. Right? That's my
+prediction on what happened. So starting
+off a little prediction. I put my order
+in four days ago for a Mac Studio M3
+Ultra with 512 gigabyte.
+I put my order in. It cost me $8,500,
+$10,000 before discount. I think that
+setup cost easily $20,000
+a year and a half from now. Easily.
+Easily. So, if you are remotely
+interested in being an AI power user, I
+recommend getting your hardware. Which
+takes us to the next question before we
+get into uh me playing around with
+Claudebot and showing you a whole bunch
+of cool things. I have a lot of cool
+things lined up for you here with
+Claudebot and with some things I built
+with Claudebot. I'm going to show you
+how to build some really really cool
+things. I'm going to answer this
+question. I'm going to look at a few
+other chats. If you have any questions
+at all, get in the chat. I read all the
+chats. Uh unless you say something mean,
+then I don't read it because I don't see
+it because all I see is positivity, no
+negativity. Right. Number we have
+there's when you're trying to escape the
+permanent underclass, there's no room
+for negativity. I ignore all negativity
+when you're trying to escape the
+permanent underclass.
+RVP dead.
+I'll say this.
+When Claudebot came out, what about the
+Nvidia? I I'll cover Nvidia DJX Spark in
+a second. Let me just answer this
+question because I think this is an
+important question and I'm covering this
+at length on my Twitter today. So follow
+the Twitter if you haven't already. Can
+you run Claudebot on Windows? Yes, you
+can.
+So, you have two options basically for
+running Claudebot, right? VPS
+and
+a local device. VPS, virtual private
+server, right? A server on the internet
+or what most people are doing, buy a Mac
+Mini. But I'm going to say Mac Mini, but
+you can replace the word Mac Mini with
+any local device. So, if you have an old
+2020 laptop, you know, anything, a
+Raspberry Pi, a Windows computer, you
+can replace Mac Mini with that. I'm
+going to say Mac Mini because that's
+just what I'm going to do.
+VPS versus Mac Mini. I strongly
+recommend Mac Mini. Again, you can
+replace that with laptop, computer,
+Raspberry Pi, any local device, Xbox
+360, whatever you want, right?
+I strongly recommend Mac Mini. Here's
+the reasoning.
+If you are a non-technical user or non
+I'm going to actually not even non
+technical if you're a nons super
+technical user
+by default
+your VPS that you sign up for is not
+secure by default. To make a VPS secure
+you have to do a bunch of technical
+work, right? You have to set up
+security. you have to do this, that,
+protocols, things like that, right?
+Download keys. By default, your VPS is
+not secure.
+If you're a non-technical user and you
+buy a Mac Mini, by default, your Clawbot
+is secure by default. Your Claudebot
+becomes insecure once you connect it to
+your email and have it search the web
+and it can get prompt injected, right?
+To make your Mac Mini not secure, you
+have to do stuff. to make your VPS not
+secure, you do nothing. It's by default
+not secure. And that's why I recommend
+for most people, especially the
+non-technical users, you should get a
+Mac Mini.
+And even on top of that, just take
+security out of the equation.
+But take security out of the equation. I
+still think it's better to get a Mac
+Mini because as I said at the beginning
+of this stream, I think it is really
+important
+to consider open source. I think it's
+really important to start investigating
+owning your own hardware. I think
+getting your own hardware will be near
+impossible for the normal average person
+for the next 20 years. I think uh AI
+models will only become more restrictive
+by the companies, right? You're seeing
+people getting kicked off the OOTH now
+for using this. I think they'll only
+tighten down, clamp down more. You're
+seeing rumors about Open AI stealing
+ideas. If you start a business idea on
+Open AI, they take a cut or something
+like that. I think they'll only start
+getting more restrictive. I think
+they'll only start taking away more. And
+so, I think you're going to really want
+to get your own hardware running your
+own local models because that is
+freedom. That is freedom, baby. America,
+baby. Freedom.
+So I recommend even even if you take
+security out of it, I think having your
+own hardware, tinkering on your own
+device, experimenting on your own
+device, doing cool things on your own
+devices is one important and two just
+fun. It's just fun. It's just fun. I got
+a Mac Mini sitting on my desk right now.
+There's a freaking AI agent running
+around all over the wazoo doing things
+for me left and right, building things,
+creating things, writing things,
+researching things. That's sick. That's
+fun, baby. That's fun.
+You're allowed to do things just for the
+fun of it.
+Hey, I'm new. I want to see you crush
+it. Let's effing go, says Robin Ekran.
+Do Do you not think I'm crushing it
+right now? Robin Ekran, if you don't
+think I'm crushing it right now, then
+get out of here. You're kicked out of
+the club. I'm crushing it. If you don't
+think I'm crushing it, I don't want you
+here.
+By the way, I'm about to crush it inside
+of uh Clawbot. Let's just see a few more
+of these me. I think this is helpful. I
+have 20 plus computers, says Chris. Ni9
+SD. That's sick, man. Good for you.
+That's a lot of computers. 20 computers.
+That's a lot of computers for one person
+to have. Have Cloudbot configure a
+firewall and IPS for VPS. For sure,
+100%. You can have CL, if you're doing a
+VPS,
+you can 100% go to your Cloudbot and
+have it do that.
+I just think for non-technical people
+having them do that. It's just like buy
+a Mac Mini, you know? It's like do you
+really like you that just that's just
+for non-technical users that's a lot of
+work and to make sure to get it right
+and to maintain that that's a lot of
+work. And I think for the average person
+that's insecure, right? You're seeing a
+lot of these posts on X about people are
+doing scans online for insecure virtual
+private servers and they're just able to
+hack it and take all your keys just like
+that.
+Hey, I found you recently and really
+resonated with the oneman business you
+are running as I am in the same boat.
+I'm in the hiring process but feels like
+Claudebot is better and cheaper than
+salary 100%. And that's why I'm nervous.
+That's why I'm nervous. Uh that's why
+I'm I'm very nervous is because I do
+believe Claudebot's going to replace
+jobs once this gets into the the
+corporate world. I do believe this will
+this will lead to the loss of jobs. I'm
+also very excited because as a oneperson
+business, as a soloreneur, this is the
+best thing that ever happened to me. I
+have employees working for me 247. It
+cost me the cost of a Mac Mini and the
+cost of a Cloud subscription. This is
+incredible.
+Claude said, "My MacBook Air didn't have
+enough RAM or memory to run a task."
+What task? What are you doing, dude?
+Dude, you make me want to order another
+Mac Mini every time I see one of your
+videos. Lol. Well, do you already have a
+Mac Mini, Aaron? Do you need more Mac
+Minis? That's I mean, listen, I don't
+think there's anything wrong with
+running out and getting hardware. I do
+not. There's people on X um consumerism
+is taking over the world. Why do people
+think they need to buy Mac minis for
+this? You don't need Mac Mini. Just get
+a VPS, which is the most technical thing
+you'll ever set up, which everyone will
+immediately hack and you'll lose all
+your information and data and your life
+will be ruined. Why don't you just do
+that instead? Why would you run out and
+buy hardware that's going to be
+quadruple the price next year and run
+your own models and have fun and do cool
+things? Why would you do cool things?
+Listen to me. Stop the consumerism. Stop
+the consumer. What do you own Apple
+stock? You're telling people to buy Mac
+minis when you own Apple stock? No. Buy
+a VPS. Buy a VPS and get all your
+information exposed.
+[ __ ] buy Mac Mini. Who gives a [ __ ]
+Holy f What is happening? I don't know,
+man.
+I don't know, man. Who knows? Who knows?
+Uh, can I use M2? You can use Mg5. Who
+cares? You can use anything. People are
+running on a Raspberry Pi, which cost
+five bucks.
+How much can you actually accomplish
+with Mac Mini versus Mac Studio? How
+limited are you? You're not limited at
+all with Mac Mini. You're not limited at
+all. Here's why I'm buying a Mac Studio.
+Here's why I'm buying a Mac Studio. I
+want to run multiple local models that
+all power my Claudebot. Right? Imagine
+this workflow.
+Imagine this workflow. And is what I'm
+about to say possible on a Mac Mini?
+What I'm about to say probably is
+possible, but
+I like the idea of doing this all
+locally. I record a YouTube video and
+you can write this down. Write this
+down. I record a YouTube video.
+It downloads onto my computer from the
+recording.
+The moment it hits my computer, there's
+a local model on my Mac Studio watching
+my downloads folder specifically for
+video downloads. It sees I downloaded
+this video I recorded off that I
+recorded for YouTube and it immediately
+gives it hands it off to a local AI
+model that processes the entire video
+and takes the transcript. It then takes
+the transcript and hands it to another
+local model who then uh builds the
+description for the video and shows the
+bookmarks of like or the chapters of
+every part of the video, right? And then
+it hands that off to Flux, which is a
+local uh image model that then takes
+that transcript and builds an op an
+option of 10 different thumbnails for
+me,
+which then hands it off to an audio
+local model that then uh converts the
+audio to 20 different languages, right?
+And then takes all of that, the
+thumbnails, the translations, the
+transcripts, organizes it into a neat
+folder on my computer that I then just
+can quickly upload and we're good to go.
+and it does all that in like 30 seconds.
+That's why I'm buying a Mac Studio so I
+can automate these multiple models doing
+multiple things at the same time on 512
+GB of memory
+now. If you're not doing power workflows
+like that, you probably don't need a Mac
+Studio with 512 GB of memory. Right?
+For 99% of use cases, for 99% of people,
+you probably don't need that. You
+probably, you know, that's not a
+workflow you want to do.
+But
+I want to do it, so I'm doing it. Who
+cares? Listen, you got 18 months to
+escape the permanent underclass.
+Actually, I take that back with I I
+changed my timelines. Before Claudebot,
+my timeline was 18 months to escape the
+permanent underclass. With Claudebot, my
+timeline is 12 months to escape the
+permanent unclass. You have 12 months.
+In six months, I think Claudebot goes
+mainstream in the corporate world. Then
+jobs start getting taken away. And in 12
+months, it's apocalypse. You have 12
+months to escape the permanent
+underclass. Um,
+how much Adderall does this guy take? I
+took Adderall once in my life. I took
+Adderall once in college uh because I
+wanted to I wanted to see what that was
+about. And also, I had really bad grades
+in college. I had a 2.4 GPA in college.
+So, I'm like, "Oh, I'm getting bad
+grades. Might as well take Adderall."
+Uh, and I took an aderall in college and
+I didn't eat or sleep for three days.
+Uh, I felt like a god. I felt like I
+could accomplish anything. I felt like I
+was king of the world. Uh but at the end
+of the three days, I went, "This
+probably isn't healthy. I haven't eaten
+or slept in three days and I still feel
+at full energy. This probably isn't
+healthy." And I immediately took the
+bottle of Adderall and threw it away. So
+to answer your question directly, Brad
+Lindenberg 1339, uh how much Adderall
+does this guy take? One Aderall in
+college.
+I stopped Adderall after Claudebot.
+[applause]
+If you're on drugs, download Cloudbot.
+You'll stop doing drugs. Period.
+What do you think of Nvidia AIP PC? I
+think it's great. There are strengths
+and weaknesses to running your AI on uh
+Nvidia chips and Apple chips. There's
+strengths and weaknesses to each. They
+each do things better than the other.
+For instance, you're not running Kimmy K
+2.5 on Nvidia chips. You would need to
+buy $200,000 worth of chips to do it.
+With Mac, you can run it on two Mac
+Studios for $30,000. Uh, but there's
+other things that Nvidia does
+significantly better, run significantly
+faster, things like that. So, what I
+would do is I'd go to your Claudebot and
+I'd say, "Hey, I'm thinking about buying
+uh chips to run models. What's the
+strengths and advant here's what I'm
+trying to do? Uh, what are the strengths
+and advantages? Which chip should I
+use?" Claudebot is the drug. Yes,
+Claudebot's the only drug I need. I
+stopped doing all drugs once. If you're
+on Fent, just get a Clawbot. You'll stop
+doing Fent.
+How secure is Claudebot? This is like
+the number one question I get because
+again, just like the people on X are
+like, "Oh, don't buy Mac minis. You're
+just pumping Apple's stock price."
+There's also, "Oh, don't use Claudebot
+because you'll die." Right?
+Do you have We Here we go. As Spider-Man
+would say,
+with great power comes great
+responsibility,
+right? With great power comes great
+responsibility. The reason why Claudebot
+is so amazing is because it is so
+powerful. And the reason why it's so
+powerful is it can do anything on a
+computer. Now, if you do anything with a
+computer, yes, there are things you can
+do that are bad, right? There are ways
+you can exp if you do the wrong click on
+the wrong things on a computer, right?
+If you click on the wrong things and you
+can expose things, that's bad. That's a
+bad thing to do. But is there a reason
+why you shouldn't use a computer?
+Because you can do bad things. Should we
+just Should we stop using anything where
+if you use it the wrong way, bad things
+happen, right?
+I'm drinking coffee for those wondering
+why am I so energetic and crazy. Cuz I
+drink a lot of coffee. But if I drink
+enough coffee, I'll overdose and die.
+So, should I stop drinking coffee
+because if I drink too much of it, I
+could die? No. You just do it
+responsibly, right?
+Can you ask your clawbot to read all
+your emails and then someone emails you
+uh a prompt injection that then leaks
+all your passwords? Yes, that could
+happen.
+But is that a reason to not use
+Cloudbot?
+just because there's a scenario where if
+you use it the wrong way, something bad
+can happen.
+No. If you're so scared to use a tool
+because bad things might happen, I have
+bad news for you. You're in the
+permanent underclass.
+The only way you're escaping the
+permanent underclasses if you use the
+newest and greatest tools. Just do it
+responsibly.
+Just do it responsibly. Don't do the
+things that get you hacked. Don't do
+that. And if you're wondering, oh, what
+are those things that
+get me hacked? Well, first of all, you
+can figure them out yourself. If you
+stop and you think, oh, what are the
+things get me h like you will figure out
+some of those best practice like let's
+just be and you can also ask your AI.
+But two, I will create a security guide.
+I will create a security guide and put
+it out.
+I will create a security guide. But
+here's what it comes down to. Your
+Clawbot has basically root access to
+your computer. And if you allow other
+people to talk to your Claudebot, they
+now have root access to your computer.
+So like security step number one, the
+most important of all is just don't let
+other people talk to your Claudebot,
+right? Don't put it into group chats.
+Don't put it in a Discord other people
+are in. If you just don't allow other
+people to use your Clawbot, you're half
+you're halfway there.
+Did your viewers jump 5x since live last
+stream? Everything's exploded 5x since
+the last live stream.
+I'm him. I'm the Claudebot guy. I tweet
+about Claudebot. I ped a picture of my
+Mac Mini. Got 10 trillion views and now
+here we are. I'm the Claudebot guy. It
+just is what it is. Here's how it
+happened. It is what it is. But I will
+give a full security guide on Claudebot.
+But in the meantime, just don't do
+stupid stuff with Claudebot, right? Just
+don't do stuff stupid stuff with
+Claudebot.
+Dopey TV1 with the $2 donation. Thank
+you, Dope Boy. That will that'll cover a
+Claude Opus prompt. Imagine, that's not
+me. It's I'm grateful. I'm grateful for
+the $2. I was making a joke.
+Imagrateful.
+Imagine students using Claudebot for
+online homework. I mean, we're we're
+we're going to change society. This is
+going to change society. I do not
+believe this is some sort of trend. The
+stupidest people on X
+are the ones that go, I just downloaded
+Claudebot and it doesn't do anything
+special. This is stupid. Don't listen to
+people.
+And it's like all they did was like
+download Claudebot and ask it what the
+weather was. And then they go on and
+tweet.
+They go on and tweet, "Oh, this this
+[laughter] is the worst. It doesn't do
+anything. I asked the weather and told
+me the weather. I could do that in chat
+GPT." Well, you're a [ __ ]
+You're a [ __ ] You want to see what why
+Claudebot's amazing? Show me how you do
+this in Chad GBT.
+What you're looking at here is a
+complete second brain with my Clawadbot
+that it built by itself. It built this
+by itself. I didn't ask for this. Every
+night my Clawudebot builds me something
+to improve our workflow. And so two,
+three nights ago, it built this second
+brain. What is the second brain it
+built? It automatically it wrote this
+app, this next.js app. And then it built
+its own skill that said, "Every day,
+record all our conversations into
+journal entries and then create
+documentation
+on important conversations we have." And
+so it builds this document viewer
+interface for me. It's now writing
+journal entries on everything we talk
+about every day.
+And it's just a self-improving system.
+Now, show me how Chad GBT is a
+self-improving system. And this is only
+one of a hundred use cases I'll show
+you. It built this entire interface to
+view memories and documents that it
+proactively creates based on our
+conversations. I didn't write any of
+these. It just wrote them.
+It just like wrote a document for
+workflow improvement ideas. So it
+created this interface and started
+writing documents on workflow
+improvement ideas.
+That's incredible.
+Please, people on X and YouTube who go,
+"Oh, this is just a trend. Chat GBT does
+all this." Please show me how you get
+chat GBT to do this proactively, without
+you asking, figuring out ways to improve
+itself by building a second brain system
+and then recording all your
+conversations and documents and files so
+you can review journal entries. Please
+show me how chat GBT if anyone on here
+if their chat GBT has ever proactively
+came up with an idea without you asking
+where they built its own app and then
+started using that app by itself
+proactively. If you can show me your
+chat GBT did that in the past I will
+give you $10 million right now.
+If you can show me that if you show me
+I'll give you $10 million.
+use used clawbot but not able to use
+ooth for and I'm hearing that.
+I'm hearing that. Play around with the
+API. Use the API a little bit. I'm
+hearing good things about Kimmy K25.
+Clawed parents can change kids
+educational lives. Thank you for the 14
+R. Thank you for the 14 R. Rob
+Cunningham 25. Clawed parents can change
+Oh, 100%.
+100%. I can't wait to have a kid so I
+can give them their own clawbot that
+does stuff for them. 100. Uh, this is
+the stupidest thing I read. This is the
+stupidest thing I read. No offense,
+Infinite Variance, but whenever I see
+tweets like this on X, I just like
+cringe.
+Giving money to Claudebot to trade for
+you is the stupidest thing you can do.
+Giving money to Claudebot to trade for
+you is the absolute stupidest thing you
+can do. Claudebot cannot trade for you.
+It can't.
+It's not that real time where it is
+actively every second day monitoring a
+stock market and then able to within a
+millisecond place a trade. That's just
+not it's it's not Claudebot's fault.
+It's the underlying AI models fault.
+None of the AI models are successfully
+trading stocks or crypto. They're not.
+Because when you try to programmatically
+trade stocks and crypto, what you're
+doing is you're going up against Harvard
+grads that are getting paid $40 million
+a year by Goldman Sachs that have built
+systems by hand that trade stocks within
+a microscond of everyone else on planet
+Earth. That's who you're competing with.
+and your Claudebot hooked up with Claude
+Opus is not outperforming a one
+microscond uh trade bot built by a
+Harvard grad who's getting paid $40
+million a year by Goldman Sachs. I'm
+sorry, but it's just not happening.
+Anyone who's telling you, hey, go trade
+crypto and stocks with Claudebot is just
+trying to get some clicks. That's all
+they're trying to do. That's it. That's
+all they're trying to do. There's no way
+if you Yes, you can get lucky and make
+money because yeah, if you just place
+random trades, you can eventually get
+lucky and make money, but you are you're
+playing a losing game. You're playing
+Yes, you can go to the blackjack table
+and make money,
+but over a long enough time period, you
+are literally guaranteed to lose money.
+So, I would just
+I just would not use Clawbot to trade.
+You're literally gambling. And if you're
+taking the most powerful technology in
+the history of mankind and using it just
+to gamble, you're wasting your life and
+you're wasting your money. Use this to
+better yourself. Use this to improve
+your life. Use this to learn new things.
+Use this to make your life easier. Use
+this to help you meet more people. Use
+this to improve your business. Right?
+There's so many ways to use this to make
+your life better. You're going to go and
+have a trade fartcoin.
+What are we doing people? Thank you for
+joining Danny CZ Y RNY 3227.
+Is the name change moldbot legit? I mean
+if the question is is it like
+legitimate? Yes, it is legitimate. They
+changed it.
+Um is it legit as in do I like the name?
+No, I don't like the name. I don't like
+the name. I think it's a I just don't I
+think it's a I don't like the name. I
+don't like the name Moltbot. I think
+Claudebot's a significantly better name.
+I totally understand why they had to
+change it from Claudebot. They literally
+just stole the IP from Anthropic. Just
+because you change a couple letters
+around doesn't mean you you you didn't
+steal the IP. It it was IP thefts. I do
+not blame Anthropic for coming after
+them. That is crazy. Um
+I mean, so they they had to change it,
+but I don't I mean I don't I don't like
+mold, but it is what it is. Whatever.
+Who cares? Uh kids voice is so whiny.
+deaf being paid by big claw. Oh yeah,
+that makes sense. Chris lonzely 72. That
+makes sense that I'm being paid by a
+free open- source tool. That yeah, they
+they are paying me big open- source free
+tools is 100% slipping me money. You got
+it. Smart man. Smart man Chris Lazini.
+100% free open- source tools are paying
+me money. That makes a lot of sense.
+Uh is there any advantage to running
+multbot on GPU as a structure uh as a
+service infrastructure? Uh maybe
+Neocloud's going to offer hosted Molbot
+instances as normies as a business.
+There are advantages, but kind of as I
+talked about at the beginning of the
+stream,
+I think it's better to run locally.
+There are advantages, quicker setup,
+maybe saving money in the short term,
+but I think there's a lot of advantages
+to running it locally, having full
+control over its environment, being able
+to watch it live 247. If you're on Mac,
+being able to integrate it into all your
+other Mac devices, right? If I want to
+give Clawbot something to do, Henry,
+Henry is my Clawbot. If I want to give
+Henry something to do and it's based on
+a document or a photo I just took on my
+iPhone, I can just airdrop that to my
+Mac Mini and he can take it and start uh
+doing things with it,
+right? And that kind of integration I
+think is great. So my recommendation is
+local hardware. I think the Mac Mini is
+a great device, but you can also just
+use old computers if you want to use an
+old laptop.
+Uh,
+what is this?
+What is this?
+Ammy right now with 500 something. What
+currency is that? I either got a ton of
+money just now or very little money. I
+don't know. But thank you either way. Am
+I right now? Thank you. Am I right now
+for the 500 of whatever that currency
+is? I appreciate it. I need Claude.
+Here's what I need. I need Clawbot to
+watch my streams and just tell me what
+the currencies are that people are
+donating me. I don't know what a PLN a
+PLN is. I don't know what that symbol is
+next to this, but we'll roll with it
+anyway.
+Thank you for it. I am grateful for
+whatever amount of money that is. Can
+you give us a cost breakdown? How many
+tokens is the bot costing you? I saw a
+video. I assume since it's orange,
+that's a decent amount of money. So,
+thank you. Uh I mean, even if you send
+me 5 cents, thank you. That means a lot.
+Can you give us a cost breakdown? How
+many tokens is that bot costing you? I
+saw a video today of a dude saying he's
+spending $300 a day via API. Also, have
+you tried using other APIs that are not
+Clawed? Uh cost breakdown,
+$200 a month for the Claude
+uh subscription, Claude Max, $250 a
+month for chat GBT subscription.
+I use Codeex 2 uh Codeex
+whatever version we're on, 5.2. Codeex
+5.2. 2 as the vibe coding tool. So, let
+me give you guys a little tip here.
+Codeex 5.2
+extra high. I use codeex as the vibe
+coding tool for Claudebot. What do I
+mean by that? I Polish money. Thank you
+for the Polish money. I appreciate that.
+Thank you. I appreciate that.
+I'll have to visit Poland sometime. I
+hear it's beautiful. Shout out Poland.
+500 Polish zodi equals $141.
+You donated me $141.
+Holy hell. You don't need to do that.
+Thank you very much. That's a lot of
+money. There is no need for that. Thank
+you. Very kind of you. I don't need it,
+but thank you. Um
+I appreciate that. Very nice of you. Uh
+means a lot. Truly means a lot. Um,
+oh yeah, tip for you to save some money.
+If you're you if you're still on the
+Claude subscription powering your thing,
+tell it first of all, if you're using
+Chad GBT, if you have any sort of chat
+GBT subscription, uh even if it's 20 the
+$20 a month subscription, install the
+codec cli and then go to your Claudebot
+if you're using Opus for your Cloudbot
+and say, "Please use codec cli for any
+coding activities."
+Right? And so what that'll do is instead
+of you using your clawed subscription to
+not only be the brain but also the
+muscles, the arms, you know what I'm
+saying? Like in instead of having Opus
+being both the brain and the coder, Opus
+will be the brain and Codeex will be the
+coder, which will save you a ton of
+tokens. Save you a ton. So, that's a
+really good tip if you're on the API and
+it's also a really good tip if you're on
+the subscription because then it'll look
+less suspicious to Anthropic and they
+won't kick you off.
+He said it, not me.
+Uh, when will you start showing
+workflows? Hey, Chris DL2QF,
+this is my stream. If you want to if you
+want to stream with workflows, pop open
+your own YouTube stream and we'll see
+who tunes in. All right. At the moment,
+I'm answering questions. Who when are we
+going to start showing workflows? I just
+went through a spectacular workflow. Did
+I not just start showing a spectacular
+workflow with the codeex? That's a great
+workflow I just gave you there. Let's be
+grateful. Let's be grateful. I think
+that was a great workflow.
+Jesus, would Olama work? Yeah, if you
+what if you Yeah, if you run local
+models, do it through through O Lama,
+you could hook that [ __ ] up to Cloudbot
+100%. I mean, that's I think that's the
+future we're heading towards.
+I think that's the future we're heading
+towards is um running local models. Here
+we go. You guys want a workflow? I'll
+give you a workflow. I'll give you a
+workflow. Um
+running local models and using that as
+the tools for your Claudebot. Imagine a
+world where you have your local cloudbot
+powered by local models doing everything
+locally and the internet and the AI
+companies and all that. The government
+can't see what all your models are
+doing.
+All right. You want another workflow?
+Here we go.
+Let me take a sip of water. I'm talking
+a lot here. My throat's getting a little
+dry from all the talking.
+You think this is easy shouting into a
+microphone for two hours? You think this
+ain't easy?
+Every morning I get this morning brief
+texted to me from my Claudebot. 8 a.m.
+It texted to me. My Clawudebot sends
+this to me.
+What's in this morning brief? Yes,
+obviously the weather. Competitive
+radar. Every night,
+my Claudebot
+goes and researches all the other AI
+channels on YouTube, right? So, I said,
+"Hey, Claudebot, check out my YouTube
+channel. See what type of content I
+make, what I talk about. Check out the
+transcripts. See what I'm about." And
+then I said, "Do research every night
+and see if other creators are posting
+videos that outperform their average."
+Right? So basically find outliers on
+YouTube in my category. And so
+competitive radar,
+it found a few outliers from Matthew
+Burman. Again, shout out Matthew Burman,
+great AI creator. Um, but my clawbot
+found Matthew Burman, posted a few
+outliers.
+Mission control. So this is a cool one.
+My Claudebot has access to my to-do
+list. So, I use things three for my
+to-do list because it has a connector
+for things three. And I have it do three
+things with things three. Three, three,
+three, three, three. Three things with
+things three. Whs
+it worked on last night. So, these are
+tasks Henry is doing for me proactively.
+I didn't even ask them to do. Henry, my
+clawbot's doing these three things
+proactively. It talks about what I need
+to do or uh what what what
+no what Henry needs to do and what it's
+going to do today for me, right? So, he
+needs to write my weekly newsletter and
+continue work on mission control and it
+tells me what I need to do today. So,
+what's on uh what's on my to-do list?
+That's amazing.
+So, it basically takes my to-do list,
+lets it know what he's going to do, what
+he already did for me while I was
+sleeping, and what I need to do today.
+It finds trending stories on the
+internet based on my interests. Right?
+New York Times, five ways people are
+using Claude Code, 5 days old. The
+register, Ralph Wiggum Loop, story
+circulating, right? And then it gives me
+ideas for today
+based on my interest in what I should be
+doing. So, it recommends me tasks to do
+today.
+How did I set up this morning brief?
+I asked Claude Code to do it or uh
+Claudebot to do it. I went on Claudebot.
+Probably why they're probably why they
+sent a season desist, right? I keep
+confusing Cloudbot for Claude Code.
+Probably why they send a season desist.
+Anyway, uh here's what you do. You want
+to set this up. The video I'm dropping
+in a couple hours covers this. So, it
+covers the exact prompt. I'll have the
+prompt in the description, but basically
+what I say is
+send me a morning brief every morning at
+8 a.m. Tell me the weather where I am.
+Tell me, go on my YouTube and find
+competitors that make similar content.
+Let me know if they have any outliers.
+Take a look at my to-do list. Take care
+of a few tasks. Let me know what you
+took care of. Let me know what you can
+take care of. And let me know what I
+need to take care of on my to-do list.
+find trending stories online based on
+what you know about my interests and
+then give me a few ideas for the day
+that will make it productive. And then I
+hit enter and Claudebot goes and does
+it.
+People saying, "Oh, Claudebot's nothing
+special. Chad GBT can do this.
+Please show me how Chad GBT can do this.
+Please show me how Chad GBT can send me
+this morning brief where it does tasks
+for me overnight because it's connected
+to my to-do list and can see what I need
+to do and it'll just automatically do
+those things while I'm sleeping and then
+research other YouTube channels, found
+outliers, recommend task for it to do
+during the day and recommend tasks for
+me to do. If you can show me how chat
+GBT can do that, I'll give you $10
+million.
+$10 million. Oh, but Claudebot's
+useless. That That's useless. what I
+just showed you.
+Bro, you actually crack me up.
+What am I a clown? I crack you up. What
+am I a clown? Oh, I'm a clown.
+I think that Claudebot has gone to your
+head. I think your face has gone to your
+head. Alex, what do you think about
+Gemini's model with Claudebot? It's It's
+fine for a tool. It's fine to be used as
+a tool. The way I like to think about
+Claudebot is you have the brain and you
+have the muscles, right? The you have
+the with Clawbot you have the brain and
+you have the muscles. The brain is what
+you talk to. The brain decides which
+tools to use. The brain is the one that
+you know wakes up and does things for
+you. The brain is what figures out how
+to be proactive for you. The best brain
+of all time is Claude Opus 4.5. And then
+you have the muscles, right? So the
+brain goes, "Oh, I need to create
+thumbnails for his YouTube videos." And
+then it uses the Gemini
+Nano Banana Pro, whatever the hell
+they're calling it nowadays to make
+those thumbnails. That's the muscle. You
+know what I'm saying? Or it's like, oh,
+I need to build this app. I'm going to
+use codec cli. That's the muscle.
+So, what do I think about Gemini model
+with Claudebot? It's good as used for
+some muscles. I wouldn't use it as the
+brain unless you're uh, you know,
+financially, you want to be financially
+tight. You know, you don't want to spend
+the money on Opus, so you use Gemini,
+which they've they give you free stuff
+out the wazu Google because they have 10
+trillion dollars locked up. [snorts]
+Arthur Vä
+says, "Claudebot is shisel
+ASF."
+Oh, as F. Okay, I got it. The project is
+cool, but it looked like credentialed is
+credential is leaked. Guys, don't use
+it. It's funny. I feel like every
+account that goes online and goes,
+"Clanbot's dangerous. Don't use it has
+like this profile picture, the like
+the the casual but not casual
+and then like some cringe filter on the
+face." I feel like every account that
+says, "Oh, you might leak everything if
+you use Claudebot. Don't use it." has
+like this profile picture that like I'm
+trying to be like an online guru. Um,
+don't listen to other online gurus
+advice. Only listen to my advice. Like I
+feel like this is like the the profile
+picture of every single one of those.
+Like the broccoli top like it might leak
+a password. Don't use the most powerful
+technology of all time because it might
+leak a password. So don't do it.
+Don't do it. Don't. or uh like when Chad
+GBT first came out. Don't use Chad GPT.
+They're spying on you. They'll leak.
+Everything you say to it will be leaked.
+Don't talk to chat GPT.
+Like, what are we talking about here?
+Claudebot is crap because it looks like
+your credentials leak. What are you
+talking about?
+What are you talking about?
+Don't use the internet.
+You might be hacked. If you use the
+internet, someone someone might hack you
+if someone if you use the internet.
+Don't use the internet. It you might get
+hacked.
+What are you talking about?
+$5 Hill Phantom. Thank you, fellow
+YouTuber here. Keep keep up the good
+work. I am using Miniax 2.1 and is
+awesome, mate. I love it and refuse to
+not call it Claude as I'm the same way.
+It's like when they switched it from
+Twitter to Axe. Like, bro, you really
+calling it X? Come on, dude.
+She's Twitter, baby. [laughter] It ain't
+X, it's Twitter. Although, I do call it
+X now. I do call it X now, which I think
+will happen with Claudebot. Eventually,
+I will call it Moltbot, but for the
+foreseeable future, I will be calling it
+Claudebot. And every one of my titles
+will say Claudebot.
+Can you make a complete masterass to set
+up Claudebot as an ultra secure? Listen,
+you don't you don't need to do the
+SLMbot. You don't need to do
+clawbot/maltbot.
+Just say clawbot or say maltbot. We
+don't need to I'll save you some
+keystrokes. You don't need to do I I'll
+know what you're talking about. Whether
+you say clawbot or moltbot, I'll know
+what you're talking about. Could you
+make a complete master class to set up
+Claudebot with an ultra security? Yes, I
+could do that and I plan on doing it. I
+I do plan on making a security focused
+uh video 100%. Thank you, by the way,
+Hill Phantom. That means a lot. $5 a lot
+of mine. Thank you very much. Uh, and
+I'm gonna check out your YouTube, Hill
+Phantom. I'll check it out right after
+this. I appreciate that.
+Alex is based. Subscribe. You're based.
+Gemini 1546. You're based, brother.
+Saps. I mean, listen,
+listen. If you don't want to use it,
+that's totally fine. If you don't want
+to use Claudebot,
+totally fine. You'll just have to deal
+with the fact you'll be in the permanent
+underclass forever.
+That's all.
+That's it. That's it. You're being dumb
+right now, says Rocky. Okay. Thank you.
+Appreciate that.
+The LinkedIn in cool guy. Yeah. Like
+every LinkedIn creator on Twitter who
+like here's 20 ways to grow on LinkedIn
+and then like a 50 tweet thread on
+Twitter that gets four likes is telling
+you right now not to use Clawbot.
+reply link below and I'll DM you my
+LinkedIn guide.
+Every single one of those people are
+telling you not to use Claudebot right
+now because it might leak your
+credentials,
+dude. Crazy. But I have taken what has
+taken me weeks to and in two days.
+Claudebot rips through it and gotten me
+out of valley of troubleshooting. You're
+right. Claude is a hammer. Claudebot
+handler. EXACTLY.
+>> [applause]
+>> I MEAN, IT'S CRAZY, RIGHT?
+There's a tremendous amount of people
+like Java being 252 and myself who use
+this tool. It's dramatically improved
+their life. It's dramatically saved them
+time. In my case, in a lot of other
+cases, it's made them more money
+and are like, "Wow, look at this. This
+is incredible. Look how much this is
+improving my life." And then you got
+people that go online and are like, um,
+I asked it to tell me the weather. Chat
+GPT can do that, too. This is pointless.
+This is a scop. This is just a trend.
+Chat GPT can do this.
+Use my N8N workflow link down below for
+my N8N master class. For only $4,000,
+I'll teach you how to sit at your
+computer for six hours putting together
+nodes and connectors to the nodes so
+that you can get an NADN workflow that
+tells you what your latest email is.
+Check out my NAND workflow.
+What are we talking about here? NAN.
+Who the hell is using NAN anymore in the
+world of Claudebot?
+Jesus. Josh Adams 8761 with the 499.
+Thank you so much, Josh Adams. Ignore
+the haters. Your enthusiasm for these
+tools, which I share, is extremely
+entertaining.
+Well, that's what we go for here, baby.
+That's what we do on the channel. We go
+we try to educate. We try to entertain a
+little bit. We try to make it fun. We
+want to make the learning fun. If you're
+if you're not trying to have fun during
+all this, then what's the point? Why get
+a Mac Mini? Uh because it's fun. Why
+can't we have fun up in this?
+Why am I not allowed to change my life
+with Claudebot and have a little fun?
+So, I want a Mac Mini and now I want a
+$10,000 Mac Studio. Let me have a little
+fun.
+Will I download a local model that'll
+only be 5% the performance of Claude
+Opus and I'll spend $10,000 to get the
+computer running? Yes. Will it be fun?
+Yes. So, who cares?
+[snorts]
+I'm here because you call the stupid
+people out directly laughing my ass off.
+I mean, what are you supposed to do?
+Ignore them? If you leave the stupid
+people unchecked, they're just going to
+be stupid people. I'm doing them a
+favor. If I don't call out their
+stupidity, they're just going to keep
+being stupid. If you call out their
+stupidity, then they'll change and
+they'll get better and they'll improve
+their lives and they'll thank me and
+they'll thank us, the Finnf Fam. We now
+have 600 people watching this. You're
+all in the Finn. If you're watching this
+right now, you're in the Finnf Fam.
+Welcome to the Finnf Fam. Stupid people
+are allowed in the finfam. We'll just
+correct them, right? We'll just correct
+them. We'll show them the way.
+Best local model for Claudebot for 16
+gigabytes VRAM, 24 GB VM. I think you
+can use um
+like GLM 4.7 flash. I think I might be
+wrong, but I mean I'm going to be honest
+with you. Either way, with 16 gigabytes
+of VRAM, you're you're
+there's basically going to be no useful
+use case for you that you'll be able to
+do. It'll be Did I miss a donation of
+$20? I feel like I just looked up and
+there was a bubble that said $20 and
+then it disappeared.
+Oh, there is. Muhammad, my bad. I'm
+going to get to you in a second. I just
+found it. Um, what I was saying was I I
+think there's um
+there's just with 16 gigabytes of VRAM,
+I don't think there's many workflows
+you'll be able to do with a local model
+that will improve what you're doing.
+Just to be honest, I still think you
+should do it because I think it's you
+should tinker. Tinkering is fun and you
+should have fun. Fun should be a big
+part of why you do anything. I'm a big
+proponent of fun. The the anonymous
+accounts on Twitter and the anonymous
+people in the chat that go, "Oh, don't
+do that. That's stupid." that you're
+going to do bad things.
+You shouldn't do things for the fun of
+it. Tell them to kick rocks. Have some
+fun. So, do I think you'll be able to do
+anything interesting with 16 gigabytes
+of VRAM? Probably not, but it'll be fun,
+so who cares? Muhammad, for $20. Thank
+you, Muhammad. Longtime viewer. Before
+we were having 600 people concurrent in
+the live stream, Muhammad was watching.
+When Claudebot compacts, it sometimes
+suddenly forgets the context and starts
+acting like a fresh session. suddenly
+asked him like, "What are we building as
+a Mac Mini? Any solutions for this?"
+Mohamad, that was the best $20 you spent
+in your entire life because I have the
+most direct solution you'll ever see in
+your entire life right now.
+I have the answer to to your question of
+do I have a solution? The answer to that
+is yes.
+You ready? The chat's moving very fast,
+so you might miss this. So, everyone who
+wants to solve the problem you see right
+now on your screen, look at the chat
+because I'm about to give you the
+solution.
+Maybe I'll put in the description as
+well. Uh, I'll put in the descript. It's
+probably a better way to do it to put in
+the subscription. Um, but just for the
+fun of it, I'm going to put it in the
+chat just to see people have to stare at
+the chat. It'll re If you're doing
+something else right now, this will
+re-engage you with the stream because
+I'm putting this in the chat. Um, you
+give this prompt I'm about to paste into
+the chat to your Clawbot, it immediately
+fixes that issue. The prompt I'm about
+to give you immediately fixes the issue.
+You ready? Here it comes. Five, four,
+three. Is it pasting in? What's going on
+here? It didn't paste in. One second.
+Pause.
+Oh my god, I almost copied and pasted
+the wrong thing in. Holy crap. Um, that
+would have been bad. All right, here we
+go. Copy, paste. Here we go. You ready?
+Boom.
+There it is. Uh, split it into two
+comments. I'll put it in the
+description, too. Here. Here's what I'll
+do. Let me put it in the description.
+Uh, so here's this story. There are two
+memor
+>> Siri, stop. Siri, shut the [ __ ] up.
+Jesus Christ. Is there any worse
+technology? Isn't that kind of That's
+kind of funny if you think about it.
+We're on this stream talking about the
+technology that Siri should have been
+and my dumbass HomePod starts talking to
+me out of nowhere spouting some
+[ __ ] How that's that's pretty
+ironic. Anyway, that's pretty ironic. Uh
+let me um
+how to fix your memory prompt. Here we
+go. You ready?
+Save. It's now in the description.
+Basically, uh, you take the prompt I
+just put into the description of this
+live stream
+and you copy and paste that into
+Claudebot. There are two
+there are two memory features inside
+Claudebot that are by default
+not enabled for some reason. For some
+reason, there are two memory features
+inside Claudebot that are not enabled.
+So, if you go in and you take the
+prompt,
+I just paste it into the description
+and you hit enter.
+I'm trying to show you if I can show you
+the output. Uh,
+it will tell you. It will it will fix
+your memory. It will fix your memory.
+So, take the prompt. There you go. Best
+$20 you spend your life. Check out for
+the prompt in the description below and
+put it into your cloud bottle. Fix your
+memory. Just like that. It enables two
+features. It enables memory flush where
+right before your context gets wiped
+with every compaction, it saves
+everything important from the
+conversation and puts it back into
+context.
+And then it also enables session memory
+search where your AI can search through
+every conversation it's ever had for you
+had with you, even the ones it no longer
+remembers to look for relevant context
+if you say something it forgot.
+Uh, massive improvement. Take the take
+the prompt from down below. I installed
+Claudebot. Will we be able to watch this
+live later? Yes. Chimra Chimra Connor.
+Yes.
+I installed Clawbot inside AWS EC2.
+That's fine. That's fine. You totally
+can do that. I have a video showing you
+how to do that. My last video shows how
+you do that. Totally fine. You're
+allowed to do that. My preferred way of
+using Claudebot
+is uh
+is Mac Mini. I think doing it I think
+doing it locally using it locally is so
+much more fun.
+So much more fun.
+And I think it's more secure by default.
+Right? When you install on e uh EC2,
+when you install on EC2, it's by default
+not secure.
+So you have to do secure things to you
+have to do like a bunch of things. Uh I
+Java being 252 with the 199. I call mine
+jackbot and will hit jackpot with
+claudebot.
+[applause] I don't know what the hell
+you just said to me, but I love it. It
+sounded nice. It sounded nice when you
+said it.
+It sounded nice when you said I
+appreciate the 199 Java Bean 252
+Claudebot for the home assistant too.
+It's amazing says Phil Blancet. That is
+a project I want to do.
+That's a pro. Should we talk to Claude
+about about it right now? I would love
+to. Uh,
+I'd love to hook it up to my HomePod.
+Just real quick though, as a warning
+about that for your home assistant. Just
+know if you make it so you can talk to
+it on your HomePod or your home
+assistant, you are giving a technology
+that is full access to everything on
+your computer onto the HomePod. So,
+anyone who talks to it now has full
+access to your computer.
+So, just know that Michael Pearlman
+3623, my old friend. My old good-looking
+friend. Welcome. Welcome back to the
+club. Welcome back to the club. I
+appreciate that. I appreciate that.
+Welcome back to the com club. Uh, let's
+see. I'm way behind on chat. Let's get
+back to it. Claude, someone's mowing the
+lawn outside my window. I'm in the
+middle of a Claudebot live stream. What
+are you doing? Can people hear that?
+Claude broke its leg. I told it to fix
+its leg. It fixed its leg. It's
+invincible. I'm in love. Hill Phantom,
+thank you for the $5. I appreciate that.
+You might have already answered this,
+but are you still using it with the
+Clawed account and not worried about
+getting banned? I am still using it with
+my Claude account. If I get banned, I
+get banned. That's life, baby. That's
+life. Who car? You can't live your life
+worried what AI subscription you're
+going to get banned from. Just live your
+life. Just live your life. I'm not going
+to sing Rihanna on this. That'd be
+that'd be a silly move. Um, is it now
+called Maltbot? Yes. Can I ask how much
+is the whole Claudebot cost you?
+Briefly.
+I don't know if I understand the
+question, but I assume you're asking how
+much it cost me. I paid $200 a month for
+Claude Max. I paid $250 a month for Chat
+GBT Pro. And I paid $600 for this Mac
+Mini. And I just paid $8,500 for a Mac
+Studio that I'll be running it on.
+That's my Claudebot lawn mower. Did you
+send your Claudebot over here to mow the
+lawn during my live stream? Apex
+Invader. Is that what you just did? You
+sick son of a [ __ ] Are you kidding me?
+Are you kidding me? You want to see what
+else?
+You want to see what else we built here?
+um
+CRM. We built a CRM.
+Imagine this world. Imagine this world
+right here. This is what we built here.
+It built this proactively. By the way, I
+did not ask it to build a CRM. It just
+built a CRM. But it built V1 of it.
+Imagine a world where your Claudebot is
+monitoring your emails, monitoring your
+text messages. Imagine a world where it
+can monitor everything you do. Sounds
+scary, but bear with me here.
+And in real time,
+records the names of who you're talking
+to, records the conversations you're
+having with that person, records the
+important details, records the follow-up
+items you need to do, the to-do items,
+records where you are, what time it is.
+in real time updates the records of that
+user for of that person for you.
+Maybe if you have some sort of camera
+device on you, it auto takes a picture
+of them so you can remember uh so you
+can remember what they look like.
+And then you go back a week later and
+you say, "Hey, did I talk to this
+person?" It goes, "Yeah, here's who that
+person is. Here's what you talked to
+them about.
+[snorts]
+That's pretty sick. I brought a tissue
+this time just in case I could blow my
+nose. So having to walk away for a
+minute.
+That wasn't a fart. That was me blowing
+my nose. [snorts]
+Bro dresses like a tech bro but is
+charismatic like a streamer. Lols. You
+think I dress like a tech bro? Wow.
+Voice crack alert. You talk for two
+hours and you're tell me your voice
+doesn't crack.
+You think I dress what? Cuz I wear a
+quarter zip. This is Amy Leon Door
+Tamara Connor. This is Amy Leon Door.
+This ain't tech bro outfit.
+This is like New York City street style.
+Am I living in Silicon Valley? Yes.
+Is all I talk about AI? Yes.
+Do I talk to women? No.
+Am I addicted to Arc Raiders? Yes.
+That doesn't make me a tech bro. This is
+Amy Leon Door.
+So don't don't come at me with that.
+Don't come at me with that. All right.
+CRM,
+imagine that world. I think that's a
+reality in the next 12 months. Every
+conversation you have, all your text
+messages to this person gets appended
+into here. all their notes, it makes
+tags. Oh, coworker or exfollower. Every
+like you make on one of their posts goes
+in here. Every reply they put on one of
+your posts goes in here. Every video you
+watch of theirs on YouTube goes in here.
+Imagine that world.
+Imagine that world.
+Mr. Wormbbeast, welcome to the Finnf
+Fam. Appreciate you, bud. Thank you for
+joining. What have you given Moltbot
+access to? Files, email, text. Would I
+be stupid to set up on my personal
+MacBook Pro? says Aren Tori Johnson7913.
+I have not given it access to email my
+emails. I have not given it access to my
+text messages. I have given it access to
+my basically complete file system.
+Why have I not given it access to files
+or email or to uh emails and texts?
+because
+I want to be 100% certain before I do
+that
+that it it the protections are in place
+for it not to get prompt injected.
+So, there's a couple issues. One, I am a
+I'm a target. Let's just be honest,
+right? I got follow like all the North
+Korean hackers would love to hack me
+because I got followers and if they hack
+me, they can put their links for their
+crap on my ex in YouTube. So, I'm a high
+target because I have followers, right?
+And so,
+there's just a lot of heat right now.
+There's just a lot of heat. And so, I
+don't want to make I get I I get a
+hundred fishing attempts a day. I get a
+hundred fishing attempts a day. If they
+found out it was monitoring like a
+specific channel, they would I'd get a
+thousand prompt injection attempts on
+that channel. So, I don't
+I'm going to be honest at the moment. I
+don't think there's a ton of massively
+compelling use cases for it to monitor
+your text messages,
+right? Like I just went over this use
+case right here with the CRM. I think
+that's a very compelling use case, but
+I'm not ready. I just don't think I'm
+ready to implement it just yet. I'm
+building the structure for it so that
+when I'm ready, I can just click go and
+it goes. Um, but while it's just a
+four-week old open-source project, I'm
+not ready to give it access to the
+emails and texts just in case of
+fishing. You know what I'm saying? But
+even without access to your emails and
+texts, I think it is an incredibly
+compelling, useful, high value tool.
+Even with just access to your file
+system and the ability to create
+documents, I still think it's a highly,
+highly compelling, useful tool that
+everyone should be using.
+Arc Raiders. Ra, it's too addicting. I
+had to stop myself. You always play Arc
+Raiders. No, I refuse. I had to stop
+myself. When it first came out, I played
+it non-stop.
+Non-stop. If you play Arc Raiders
+non-stop, you're not escaping the
+permanent underclass. I have to escape
+the permanent underclass. I have to.
+Once I escape the permanent underclass,
+I'll play Arc Raiders all day, baby. I
+don't drink. I don't do drugs. Once I
+escape the permanent underclass, who
+cares? But until then, like if you're
+wasting your time, which I'm not going
+to say I'm perfect this Friday night,
+I'm probably going to boot up Arc
+Raiders and drop in a Stella Montis for
+an hour or two. Like, I'm going to be
+honest, Friday night, I'm probably
+dropping in the Stella Montis with my
+Stitcher 4
+in my blued out kit, right?
+But I can't make it a daily activ. It
+used to be a daily activity. I had to
+stop. I have to escape the permanent
+underclass.
+should have made your Claudebot a woman.
+Problem solved. Now you talk to women.
+It's a good point. I did give Henry a
+female voice by accident. So for a
+little bit there, I guess I was talking
+to women, but then I changed it to a
+male voice.
+Alex, I worked at Google for eight years
+in Mountain View and just left a couple
+years ago. I wish I could have met up
+with you while I was there, giving you
+some free lunch. Michael J. Pearlman, I
+would have met up. I'm going to be
+honest, I'm probably not meeting up with
+99% of the freakazoids who say, "Hey,
+let's meet up." Michael J. Pearlman, I
+said this to you from day one when I
+first started streaming like 6 months
+ago. I said, "I feel a connection with
+you through your profile picture. I
+would have met up for free lunch, but
+only if the lunch is free. If I'm
+paying, I'm not even acknowledging your
+existence.
+Can you totally have it pitch a bunch of
+chicks on sites for you now?" Says Mick
+8001. What the hell does that mean? What
+do I like you saying? Can I have it like
+control my Tinder and have it match with
+a bunch of chick? Is that what you're
+saying? I guess technically. Yeah. Dude,
+just sub. I love the Henry story and I'm
+so pumped to get a moldbot.
+I think it's molt, not moldbot. Dude,
+moldbot sounds like something else.
+Myself, your memory tip goes so hard,
+bro. Godzilla G7J, you go so hard, bro.
+You go so hard. You're one of the
+hardest goers I've ever seen in my life.
+You think it's worth it to live in
+Silicon Valley? I mean, if you're
+looking to make connections like in the
+tech industry, I think you have no
+option to be honest with you. And if you
+are looking to live in beautiful weather
+year round, then yes.
+Two days ago, I checked the weather in
+New York City. It was negative4 degrees
+and 16 inches of snow. And then I looked
+outside and it was 70° and I went
+swimming. So like if that is of any
+interest to you, then yeah, you might
+want to move to Silicon Valley. Why is
+Claudebot absolutely everywhere? It has
+to be mass- paid sponsorships. A city
+where why is it so hard
+for people not to understand that? Like
+why is the scenario? Let me let me let
+me give you a scenario. Cityear 7946.
+Let me just paint you a picture real
+quick.
+an opensource
+free tool comes out that is more
+powerful than any other tool that's ever
+existed and it saves you hours of time
+and it saves you money and it gets
+things done you've never experienced
+before.
+Just let's let's play pretend for a sec.
+Let's just say that happens. Let's
+pretend like a free open-source tool
+comes out that gives AI capabilities
+it's never done before. that gives it
+the best memory system of all time that
+allows it to work proactively and do
+things while you're sleeping. Let's just
+pretend like that came out. If for
+instance something like that came out,
+would it be that crazy if people went on
+Twitter and tweeted, "Hey, this is
+pretty awesome." Would that be in Would
+that be crazy? Would that be insane?
+Would that be an insane thing to do?
+Would it be insane to make a YouTube
+video and it starts off by going, "Hey,
+this tool is awesome." Would that be
+crazy?
+If they came out with a free open-source
+tool
+that's not built by some evil
+corporation that is dramatically better
+than every other tool out there that
+dramatically improves your life, would
+it be crazy if like a few people online
+tweeted, "Hey guys, check this out. It's
+pretty cool." Would that is that crazy?
+Or
+does that mean everyone's getting paid
+by that? Let me repeat, free
+open-source tool.
+Is it crazier if that tool comes out and
+people go online and get excited? Or is
+it crazier
+if somehow that free open source tool is
+sponsoring a ton of people? That tool
+that makes zero dollars is now doing
+mass paid sponsorships. Which scenario
+is crazier in your head? people enjoy a
+revolutionary tool or mass paid
+sponsorships from a tool that's open
+source and free and not making any
+money. So you you choose to believe this
+one. This is the one you choose to
+believe that this free open source tool
+that's making zero dollars is paying a
+bunch of people to tweet about it.
+That's more realistic to you than people
+like the tool and they tell others about
+it. This is more realistic to you over
+here. That's the one you're going with.
+That's your That's your hypothesis. City
+wear. That's the hypothesis. Got it.
+Okay. That's fine. Whatever. You You
+roll with that. You have fun with that
+one.
+Crazy. You have fun with that one.
+[sighs]
+Bro has been yapping for an hour and
+still has not shown us how to use it or
+even install.
+Says, "Deadbeat Street."
+Dead beat Street. Was your expectation
+when you joined this live stream that
+I'd sit here and show you how to install
+Claudebot when you can go on YouTube and
+there's 98,000 tutorials of how to
+install Claudebot on it
+or
+I don't know what the other option was.
+I guess that was just a one part that
+wasn't a multi-art question. That was
+just a one- part question. Your
+expectation when coming in this live
+stream is I just sit here and show you
+how to install claw. You think that'd be
+interesting? You'd think I'd have 581
+concurrent viewers if I sat here and did
+the same thing everyone else on
+YouTube's doing. Show you how to install
+it.
+George Soros loves Clawbot. Alex, admit
+your connection with him.
+No, I respect the uh I respect the pivot
+to pure trolling. Right. You started off
+you're doing some light jabbing. Now
+you're doing just pure trolling. I
+respect that. That's what I would do,
+too. I respect that. I think that's
+good. That's a good one. I like it. I
+like it. What are the actual usability
+differences between Claudebot on Mac and
+Linux? Anything besides messages?
+I mean, asking about usability
+differences between Mac and Linux.
+One is an operating system built from
+the ground up by a company that just
+tries to make everything as like usable
+as possible and the other is Linux. It's
+up to you.
+If anyone's considering using Linux and
+like are concerned about the usability,
+just Google search or YouTube search
+Linux and see how other people use
+Linux. I mean,
+I think Mac OS is significantly more
+usable. I mean, you're you're going to
+be using the computer it's on. Like, I
+use the computer it's on. I look at the
+files it makes. I edit the files it
+makes. I take the scripts it writes and
+I upload it. I do the video editing. I
+have a video edit, right? So, if you
+prefer to use Linux, go ahead and use
+Linux.
+You know what I'm saying, big dog?
+Let's build some cool [ __ ] Didn't I
+just show you what I built? My CRM,
+my second brain.
+I feel like everyone begs, hey, can you
+go and chat with your AI for the live
+stream? Like, what are you doing? I
+haven't seen you chat with the AI once.
+And then I sit there and I silently chat
+with the AI for 10 minutes and then the
+audience just gets cut in half. It's
+like, is that what you really prefer?
+Like I'm showing you off things I built.
+You would you want to watch me chat with
+the AI? Is that what you want? You want
+to you want to sit here and watch me
+type on my keyboard? Is that the
+preferred live stream experience you'd
+rather have? Because I guarantee the
+moment I start typing on my keyboard and
+sitting here silently for 15 minutes
+going back and forth my AI, the entire
+count goes down from 574 to 130.
+I'm showing you some I think the good I
+think the strength of a live stream is I
+can sit here show off what I built show
+you what I built the day before in
+Claudebot right we built the second
+brain the journal entries how it records
+everything we talk about and I can read
+my journal entries right we talked about
+the
+we talked about the morning briefs how
+it does tasks for me overnight
+proactively how It codes for me
+overnight proactively. How it researches
+other content channels to see what's
+trending. Right,
+Alex? You need to chill. You will get an
+AI psychosis. It's real. No kidding. I'm
+I already have psychosis. I'm already
+psychotic. Let's get psychotic.
+If you're not getting psychotic, what
+are you doing? Thank god I recorded my
+YouTube video before the stream. I'm
+going to have no voice by the end of
+this.
+I'm preparing a new Mac Mini and plan to
+use a new user account and a new email
+address. Does this mean I need to create
+a new Apple ID for the If you're going
+to use
+If you're going to use a new user
+account, you don't need to make a new
+Apple ID. But if you're going to do like
+a new,
+you know, phone number, new iMessage or
+whatever, then yeah, you'll need a new
+one. I mean, I I don't
+I'm going to be honest. I I don't think
+it's worth all that. Like, if you want
+to make a new email, then just make a
+new Gmail account for it. uh to to do
+like a fully separate Apple ID seems
+like a little bit of overkill to be
+quite honest with you. You know, I don't
+do the iMessage system. I use Telegram.
+I like Telegram over iMessage for this
+stuff.
+Uh I think it's kind of simpler. You
+know, iMessage is kind of hacky. The
+iMessage integration. Apple doesn't want
+it integrating with iMessage. Apple
+doesn't want it like faking an iMessage
+account. So, I just think Telegram is
+it's more out of the box. WhatsApp,
+Discord, whichever one you want to use.
+Mr. VP8KW with the 1999. Thank you, Mr.
+VP8KW. I appreciate that, my old friend.
+My old uh deaf tones friend. I'm going
+to order the open source AI glasses and
+put Clawbot on there. Thanks for
+everything, my de Oh, my deaf tones
+brother. You're one step ahead of me.
+You literally changed my life. Thank
+you. PS. Congrats on your Pats as well.
+Oh, we didn't cover that either.
+Patriots Super Bowl, baby. [applause]
+We didn't cover that because I was off
+on Monday. The reason why I did not live
+stream Monday, for those here, I live
+stream Monday, Wednesday, Friday, 11:00
+a.m. Pacific. Monday, Wednesday, Friday,
+11:00 a.m. Pacific. Turn on Subscribe
+and turn on notifications immediately.
+All 564 people, subscribe and turn on
+notifications immediately. I live stream
+Monday, Wednesday, Friday, 11:00 a.m.
+Pacific. We do cool things like this. I
+show you off what I built that week. I
+answer questions, you know, we have a
+little bit of fun. We joke around. It's
+a blast. We vibe code whatever is going
+on.
+Uh and then in between I release cool
+videos like an hour and a half after
+this live stream ends, a very cool video
+releases where I go over my top five use
+cases with Claudebot and I show you how
+to build them out. Um
+which open- source glasses are you
+getting? Which open source AI glasses
+are you getting? I'm I'm curious. I
+didn't know they have open source AI
+glasses. That'd be sick to uh to hear
+about.
+Hey, Alex. I bought a Mac Mini after
+watching your Claudebot video. Is your
+browser automation working continuously?
+Mine is asking to attach the Chrome
+extension for every tab manually. So,
+there's two Chrome extensions with
+Claudebot.
+There's one where it can look at what
+you're doing in Chrome, and there's one
+where it can control its own Chrome
+browser. Those are two separate
+tools.
+the one you're talking about where it's
+asking for permission to see your Chrome
+with a Chrome extension is the the one
+that you shouldn't be using as much
+because there's not as much utility to
+it.
+That's not the automation. That's not
+the automation. That's not the proactive
+automation. You want it to spec you want
+to specifically ask it to pop open its
+own Chrome and do its own thing. That's
+where you don't need an extension. It
+will just open up its own Chrome window.
+So right now it's just trying to use the
+wrong Chrome tool. AJ, you got to make
+sure it uses the right Chrome tool.
+Instead of using Claw on Claudebot, can
+I use the regular Claude desktop opus
+for Brain and use the codeex 5.2 for
+muscle?
+I don't know what you're asking me. Are
+you Yeah, you can use your claw
+subscription. What's the diff what's the
+difference between clawed
+desktop opus and regular Claude Opus? I
+don't understand the difference between
+those two. Thanks for your content.
+Super helpful stuff. Got my Mac Mini
+coming in tomorrow. Hopefully I don't
+destroy the world by the end of the
+year. Uh Farzad, is this the Farzod uh I
+talked to on Twitter? What's up, Farzad?
+Man, good to hear from you. Um
+I really think this Mac Mini is a smart
+way to go with it. I think Mac Mini is a
+smart way to go with it. Uh, I think it
+allows you to do a lot more. Allows you
+more oversight. It's more secure by
+default and it's just more fun overall.
+It's just more fun. I I re everyone and
+their mom's going on X. Why would you
+get a Mac Mini? You should get a virtual
+private server. Get a virtual private
+server. It's like, no, it's more fun to
+get a Mac Mini. Shut up. Hey, Alex.
+Camping out on Twitch. Shout out Twitch
+community. I don't advertise the Twitch
+community. Shout out the Twitch
+community. Okay, thanks. That reaction
+is better. I actually like the stuff,
+bro.
+For Claudebot specifically, the I'm glad
+I'm glad you're I'm glad I gave the
+reaction you were looking for. For
+Claudebot specifically, the featured
+differences between what? The feature
+differences between what? I start you.
+Can you put like 5% more effort into
+writing your chat messages for Claudebot
+specifically? The feature differences
+like you just left out like probably 10
+words you should have put in there. The
+feature differences between what? Let's
+just put in 5% more effort writing these
+chats.
+I started with Claudebots and already
+have some use cases. Here's Oh, here's a
+you need here's people want more tips.
+Here we go.
+Sip of water. I got a good tip for you.
+Let me take the sip. This is called
+showmanship. This is called building.
+This is called building uh uh
+anticipation.
+By saying, "I'm about to show you
+something." And then I pause and I take
+a sip of water from my trendy Oddwala
+water bottle. I'm building anticipation
+now. You're on the edge of your seat. I
+said, "Hey, I got a tip for you." And
+then I grab my water bottle and I do
+this and I sip
+before saying the tip. That is a way, as
+we in the business say, to build
+anticipation. It's a little bit of
+showmanship, and it's a reason why this
+live stream currently has 569 concurrent
+viewers, because I know how to work the
+crowd.
+I got a tip for you. That's called
+reiteration. So, you drive your point
+home. I got a tip for you. You want to
+reverse prompt. You want to reverse
+prompt. What does reverse prompting
+mean? Sometimes I say stuff, I'm like,
+damn, that's genius. I got to write that
+down. You want to reverse prompt.
+More tweets on reverse prompting. Just
+taking a note for myself. You want to
+reverse prompt. What is reverse
+prompting? That's when you basically
+have
+instead of telling the AI what to do,
+you ask the AI what it can do, right?
+And what I mean by that is like when you
+start up your Claudebot
+and you brain dump, so you tell it about
+yourself, tell what you're interested
+in, you should then go, hey,
+what are some really interesting things
+you can do for me based on what you know
+about me? What are some really
+interesting things you can do? Right?
+Because the issue a lot of human beings
+have is we we struggle sometimes with
+creative thinking. We struggle sometimes
+with finding the unknown unknowns. You
+know what I'm saying? And so you want to
+when you're using AI to as much as
+possible find the unknown unknowns. And
+the way you find the unknown unknowns is
+you reverse prompt. You talk to your AI
+and you go, "Hey, what based on what you
+know, what can you do for me?
+I want you to be more helpful. What
+information do you need out of me to be
+more helpful?
+Those are two questions I think you
+should ask your AI, your Clawadbot. If
+you're on your computer right now, just
+do it right now. Or if you're not on
+your computer, or if I'm full screen,
+because I should be full screen because
+I'm the star of the show here. So, you
+shouldn't be looking at anything else
+except for me. You shouldn't be doom
+scrolling on the side. You should be
+full focus on me at all times 247.
+Wait till after and then you can ask
+your clawbot those two questions. But
+write down those two questions. Don't
+take your eyes off me. Write that down
+without taking your eyes off me.
+Linux is better these days. Sure, nerd.
+Hey, Alex, what are your thoughts about
+Kimmy? I need to do a little bit more
+testing before I give my final judgment
+on Kimmy.
+lol at Matthew Burman being watched.
+First of all, met Matthew Burman. Great
+guy. Very nice guy. Respect the hell out
+of him. I set up my Claudebot so that it
+searches YouTube every day for other AI
+channels and lets me know when other
+channels post content that outperform
+their average content.
+So, if I show you my morning brief from
+like two days ago, like you'll see other
+AI channels on there.
+If I show you my morning brief from like
+Oh, I can't even scroll back that far.
+Anyway, if I showed you my morning brief
+from a couple days ago,
+it it looks at every AI channel and when
+they post uh videos that outperform
+their other videos, it lets me know so I
+can see what's trending so I can make,
+you know, content about it because
+that's an awesome strategy for content.
+Elvis Presley moments with the 499.
+You're doing great, brother. Thank you.
+Thank you. You're doing great. Thanks
+for the 499. That means a lot, my man.
+Base G Nell's LFG pass. Let's go, baby.
+Patriots, we're we're winning it.
+Everyone's picking against us.
+Everyone's picking against us. Jay
+Lancaster QAW with the $25 donation.
+Thank you very much. $25. That is very
+kind of you. I use Herzner as my VPS and
+I installed Claudebot without choosing
+the LM or any of the other setup steps.
+I didn't know Chad GBT was my only
+guide. Well, I can't access the UI now
+and I am stuck. I mean, just another
+reason.
+why you want your own hardware, right?
+You don't have control over the
+environment in the VPS. If you mess
+something up, you're screwed. Like, this
+is just another reason. I mean, I just
+I' Can you spin up a new one? Like, will
+it cost you more money if you spin up a
+new one? Why don't you just reinstall
+Claudebot? Can you just do do uh Claude
+uh onboarding? CL L A WD space
+onboarding unless they change did they
+change the molt? Do you have to use molt
+now in the CLI? Is it now? Is the
+package now malt or can you do clawed
+onboarding? Either way, whatever the
+command is after you install space
+onboarding. It should take you through
+the onboarding again.
+Chat, you guys prefer WhatsApp or
+Telegram? I use Telegram for it. I like
+Telegram. And they just added on
+Telegram, they just added a couple
+really cool features for Telegram.
+You can do threading and chunking. on
+Telegram, you can do threading and
+chunking. And so anyone who uses
+Claudebot, you know, it's just kind of
+one chat, right? You can't have multiple
+chats, right? It's just this one chat.
+There's no multi-hat interface here.
+In Telegram, they just implemented
+threading. So, if you go to your bot and
+you go into the settings of the bot on
+Telegram, you can turn on threading,
+which allows you to open up multiple
+threads with your one bot, which is very
+helpful. And you could also turn on
+chunking, which makes it so like with
+all your other messaging services, it
+just sends you the message when it's
+done typing, right? When it gets the
+full generation back from the AI, you
+now can do chunking where it'll actually
+do it word for word. Like if you're
+using like chatgbt.com,
+which is really, really cool.
+Subscribe. Excited for more product.
+Thank you. Shu7398.
+Alex, I use Clawbot to make me a mashup
+app that mixes my rap and rock songs
+together for gym mixes. Every day I get
+to experience my favorite songs for
+first time. That's amazing.
+[applause]
+Yeah, tell someone show me how Chad GBT
+can do that. How it can continuously
+remix and build new playlists for you.
+Tell me. Someone show me how to do that
+on Chad GBT.
+Would you create a new Telegram account
+or No, you can use your current because
+all you're doing is creating a bot
+inside Telegram. and it doesn't have
+access to your other telegrams. You're
+just creating a bot.
+Join late. But any has anyone the by the
+way
+with the amount of trolls I have, the
+fact that I just pop open messages on
+the screen for everyone to see and I
+just start reading them is pretty
+ballsy. Let's just let me give myself a
+little credit there. The fact that I
+have so many trolls and I just spend my
+time just opening up messages without
+reading them and I just read them out
+loud in the middle of the stream.
+That's pretty incredible and ballsy.
+Join leases. Anyone use databases? Like
+you can just throw anything on there and
+I'll just start reading. I shouldn't say
+that was a stupid thing to say out loud.
+Duck DB embeddings. That was stupid. I
+shouldn't say my inner thoughts out
+loud. To improve their memory management
+every management lol join but has anyone
+used databases? You can, but I don't
+think you need to. Uh, you joined late,
+so you missed the prompt. Check out the
+description down below. I have a prompt
+you should copy and paste into your
+Claudebot. You should paste it in. It
+improves the memory, the insystem
+memory. Uh, I don't think you need
+databases to improve the memory. I'm
+going to be quite honest with you.
+Quick question. What plan do you have
+for Claude? Are you seeing token issues
+with Claudebot running all the time? No.
+I have the $200 Claude Max.
+For anyone getting started, my Clawadbot
+setup is 2015 Mac Retina running Clawbot
+hooked up to Miniax 2.5. Zero
+complaints. Yeah, you don't need a $600
+Mac Mini. You don't need a $10,000 Mac
+Studio, even though that's what I'm
+doing.
+Not to show off or anything. [laughter]
+Um, you can run this on a Raspberry Pi
+for like $10.
+I would just recommend doing that over a
+VPS would be my recommendation.
+Like I I just I think having a 2015
+MacBook Retina with one gigabyte RAM is
+better than that.
+Can I run Claudebot on my main iMac but
+just sandbox it? Yeah, 100%. You 100%
+can do that. I'm not sure how Mac works
+though where if you switch accounts, is
+it going to kill all the processes from
+your other account that you were on?
+Right. So, I think what you're asking me
+is like, can I just make a new account
+on my Mac and it just has its own
+account? Technically, you can, but
+memory management on Mac might cut it
+off.
+You know what I'm saying? when you
+switch back to your normal account and
+you want your Claudebot running 24/7 so
+that you can text it at any time on your
+phone.
+So, I'm not sure about that. I would ask
+Chad GBT Vega VGO Ben VGO Ben VGO Ben. I
+would ask G Chad GBT how the the how it
+works with Mac will kill processes if
+you switch between accounts.
+Phil Blanchet with the $10 donation.
+Thank you, Phil. That's very kind to
+you. $10 a lot of money. Thank you very
+much, my man. Have you heard if
+anybody's been able to get it working
+with Salesforce?
+I mean, there's a lot of different
+I think Salesforce has a good amount of
+op a good amount of APIs and is pretty
+open. So, I'm sure you can create some
+sort of Salesforce connector 100%. I'm
+sure you can.
+I have very little doubt. I'd have very
+little doubt there is some sort of way
+to connect it to Salesforce. Uh, I would
+just make I would just ask Claude. I'd
+ask Claudebot. Go in. Hey, I do this on
+Salesforce. How can you help out? How
+can we get this going? How can we
+connect it? OMI Glass DevKit. I'm going
+to write that down. OMI Glass Devkit.
+Thanks for that, man. I'm I'm going to
+research that.
+I had an old ASUS laptop with 32 GB RAM
+just sitting in the class. I installed
+Ubuntu and now using it for Clawbot.
+How's it work? based GL's I'm sure it
+worked great that's a great setup for it
+use whisper flow and TTS give it
+personas and co-host I'm using 11 labs
+and the chat GBT voice agent uh API to
+talk to it I am setting it up so that I
+can call it that'd be great if I can
+call it
+or I think I'm going to try to have it
+do it it build it itself I'm going to
+say like hey be great to call you maybe
+tonight you build that
+Mac Mini behind firewall defaults. Yeah,
+I mean that's that's why I'd recommend
+going with a Mac Mini is just like by
+default you're pretty secure. By default
+you're pretty secure with a VPS. By
+default you're not secure by default. If
+you use a VPS for Claude uh
+you you're not secure by default. You
+have to do things to become secure with
+the VPS. That's why I recommend the Mac
+Mini.
+Go Seahawks. Get ready to learn Cancun
+Patriots says Gemini 1546. Ooh, the
+twelves are here. We got the twelves in
+the chat. We have the twelves in the
+chat. They're here. Go Seahawks. Oh, the
+twelves are here.
+What happened last time, Gemini? What
+happened last time we saw your ass in
+the Super Bowl? You tell me.
+I have it running on my VPS started with
+GLM47 but it effed up writing its own
+prompt so switched to my Mac
+subscription. Even son opus is huge.
+Yeah, it's but here's [snorts] the great
+thing like
+we just had like yesterday Kimmy K2.5
+come out which is the closest we've ever
+had to an open-source
+Opus, right? Kimmy K25 is very close to
+Opus and you can run it on two Mac
+studios for $30,000 which sounds like a
+lot but the fact that you can run an
+Opus type model locally on realistically
+$30,000 that is amazing. So
+just think about it this way. Think
+about where we are a year from now. If
+that's where we are now, I think most
+people would agree opus is like if opus
+was the last AI model we ever see,
+that's still pretty amazing. I think
+most people would agree. Like I think
+most people would agree opus is better
+at people better than people at most
+things. So if we're here, we got near
+Opus open source locally right now.
+Think about where we are from a a year
+from now.
+You might have opus on every device a
+year from now.
+Store your markdown files in a local
+database. Massively reduces and makes
+context management smarter and more.
+Yeah, I think by default it does that,
+does it not?
+I wonder if I can use it to create my
+own whisper flow, says Franklin 3242.
+You absolutely can go to it and ask,
+"Hey, I want to build a whisper flow.
+Build it for me." I 100% guarantee it
+will. I 100% guarantee it will. Did I
+hear Oh, should I put Should I do this?
+Do people want this? Is this the thing
+people want?
+Will this make people more secure in the
+fact that their chats are getting
+through?
+I'm always nervous putting the chat on
+the screen will get more trolls. People,
+oh, I'm going to be able to see my troll
+on the screen. I don't know. We're Let's
+see how this goes.
+Did I hear Twitch mentioned V? Shout out
+Twitch community. Shout out Swizz HD.
+Captain the Twitch community. I'm using
+Clawbot on a Gamer PC 6800X2
+Windows 11 WSL with 32 gigs of RAM and a
+powerful Ryzen CPU and I feel it could
+be limited versus the Mac Mini, right?
+No, they'll perform exactly the same. I
+mean, it depends. If you're trying to
+run local models, I think you'll be
+better off than a Mac Mini. I think that
+setup will be better than the Mac Mini
+if you're trying to do local. I mean,
+it's not going to do any sort of really
+good local model, but you'll be able to
+do kind of the flash models.
+The only thing a Mac Mini will be better
+at than your setup is just like
+usability if you're into, you know,
+MacOSS.
+Hey chat, ask him for Windows desktop.
+It's same as Mac but just hype. Says M
+Leaden Drago J Love 4706. What kind of
+name
+is M Lane Andrago Jay Love 470 whatever.
+Uh Mac is just hype. Mac is just hype.
+That's that's is that the new consensus
+is Apple is just hype.
+We're like 40 years into Apple's
+existence and we've just determined
+after 40 years of dominance being the
+biggest company in the world for like 15
+years revolutionizing computing. You're
+now 40 years in and you're like, "Oh
+yeah, that's just hype. That's just
+hype." Is that is that is that what
+we've boiled this down to?
+That's Hey, just bought a Mac. Oh,
+that's hype. Mac is hype. Like that's
+what
+that's just that's just where we're at.
+Madego Jay Love 4706 C++ Linux Mac
+Microsoft. Like that's that's Oh, Mac
+hype.
+What's your Claudebot coding stack? Uh,
+so I I described this a little earlier,
+but the way I like to think about the
+Claudebot stack is you have your brain
+and you have your muscles, right? You
+have your brain and you have your
+muscles. The brain is what's drives the
+operation. It's what you're talking to
+in the chat. And then the brain decides
+which muscles to use to build stuff,
+right? So your brain's like, "Oh,
+you're asking me to code something. Let
+me code something. Let me get a coding
+model. Oh, you're asking me to do
+research. Let me get a model that does
+research really well, right? And so my
+coding stack for Claude is the brain is
+Claude Opus because it's the best brain
+in the world for this stuff.
+And then the muscle for coding is codeex
+uh GPT 5.2 because I don't want to use
+all my clawed tokens up and I think
+codeex is the second best coding model.
+So I use codeex CLI as the coding tool.
+So, I literally went to my Clawbot and I
+said, "Hey, if you're going to ever code
+something or build something, just make
+sure to use codec CLI for it. Record
+that as like a skill, a coding skill."
+And it did that. Now, it uses codec cli
+for everything.
+Kapich, man, so man, the chat's blown
+up, man. So many chats. So many chats.
+So many chats. So many chats. So many
+chats. Uh,
+by the way, great interview with Greg
+Eisenberg the other day. Thank you, Fu.
+So, it's funny. So, Saturday is when all
+this stuff kind of blew up. The Claude
+block stuff, right? Like, I think Friday
+is when it kind of started getting
+picked up on Twitter.
+Saturday was like the tipping point. So,
+Friday I buy the Mac Mini.
+I saw someone tweet about Claudebot. I
+do some research and I'm like, "Oh, this
+is kind of cool." I go out to the Apple
+store. I buy a Mac Mini.
+I put Claude, this is Friday. I put
+Claudebot on it and I'm blown away. I
+think it's the most incredible thing in
+the entire world. Like, I'm blown away.
+Like truly life-changing realization as
+it's doing stuff for me. I tweet a
+picture of my Mac Mini. I'm like 247 AI
+employee acquired. Goes super viral. two
+million likes. And then Saturday,
+everything just goes insane. Saturday
+morning, I like I wake up at like 6:00
+in the morning and I see my post is
+starting to go crazy. I'm starting to go
+viral.
+So, I immediately turn on my camera and
+I record a video about Claudebot. I'm
+like, "This is getting picked up. I got
+to get ahead of this." Uh, so I record a
+video on how to use Claudebot, which is
+probably the video that a lot of you
+people um
+discovered me on because it's like by
+far my most popular video of all time.
+Right. So, I have my video that goes
+insane in the membrane viral on
+Saturday.
+Here it is. Um,
+that's kind of the tipping point, right?
+366,000
+impressions in like three days. It's
+made $2,000 of ad revenue on YouTube,
+which is pretty crazy. And then Monday
+comes and it's like a floodgate opens
+yesterday
+and I have everyone reaching out to me.
+Greg reached out. Greg Eisenberg. If you
+don't subscribe to him or follow him, do
+it. Fantastic guy, fantastic content,
+fantastic channel. Follow and subscribe
+to Greg Eisenberg. Jason Calacanis
+reaches out. If you watch Allin or any
+of his other stuff, uh, this weekend
+startups, he reached out. He's like, "We
+got to talk about this. Get on the
+stream."
+And so, it's been a pretty life-changing
+few days. Um,
+it's been a pretty life-changing few
+days. I mean, I've gained like 20,000
+subscribers on YouTube, which is
+massive. I've gained like 30,000
+followers on X, which is massive. Um,
+all my websites, newsletters, channels
+have all blown up because of this. Uh,
+it's pretty amazing. It's pretty
+awesome. And basically the I'm not doing
+this to gloat. I'm not going through all
+this to gloat. But what I'm basically
+saying is
+what I'm basically saying is go all the
+way in.
+If you find something you're passionate
+about,
+if you find something you're interested
+in,
+don't halfmeasure it. Don't wait to see
+what other people are doing.
+Don't be passive about it.
+Go balls deep as Shu 73993 would say.
+Right. Friday, I do re I see Claudebot.
+I research. Oh, that's pretty that's
+pretty interesting.
+I don't halfmeasure it. I go out. I drop
+600 on the Mac Mini. I install it.
+I I get Claudebot going. I have this
+unbelievable realization. Wow, this is
+insane. This is crazy. This tech is it,
+right? This tech is it. And I go all the
+way the f in.
+And I sit there on Saturday from 6:00
+a.m. to 1:00 a.m. that day. 6 am to 1:00
+am that day recording videos, writing
+tweets, writing newsletters, coming up
+with new use cases,
+experimenting, coming up with new
+workflows, pushing the limits of
+Claudebot. And I've been doing that ever
+since. And I've been doing that ever
+since. And what happened? Because I went
+all the way in because I didn't half
+measure it. Things are blowing up.
+Things are blowing up.
+This is the analytics, right? This is
+Saturday
+because I went all the way in. Look at
+that. This is I mean, let's go to 365.
+Last 365 days.
+I went all the way in right here.
+Look at that line. Watch time last 365
+days. Slowly, slowly, slowly, slowly,
+slowly. Then all at once, right?
+subscribers slowly slowly slowly slowly
+slowly slowly then all at once right
+I only ever got like a hundred
+subscribers a day last few days 5,000
+subscribers a day message is this
+when you find something you're
+passionate about when you're find
+something when you find something that
+interests you
+when you find something that really
+I want to say inappropriate things, but
+I feel like I'll save that for
+offstream. When you find something that
+really gets you off, you know what I'm
+saying? When you find something that
+really gets you off,
+go all relentlessly go all the way the f
+in. Relentlessly go all the way the f
+in. Do not stop.
+When you find an obsession, get all the
+way obsessed.
+Because if you half measure it, someone
+who gets obsessed will destroy you.
+If you only go halfway in, someone else
+is going to kill you.
+You know what I'm saying?
+If you find something you're interested
+in, if you have any
+goal around winning in this world, if
+you have any goal around coming out
+successful, winning, whatever you do,
+unless you go all the way the f in,
+you're not someone else is going to beat
+you who does go all the way the [ __ ] in.
+You know what I'm saying?
+If you if you're in love with AI, if
+you're in love with Chad GBT, if you're
+in love with Claudebot, if you're in
+love love with programming, whatever it
+is, if you're in love with basketball,
+if you have any goal or interest in
+winning,
+you have to go all the way the [ __ ] in.
+Otherwise, someone else will destroy
+you.
+Friday, 11:00 a.m. Pacific. Subscribe to
+our notifications. new video coming out
+in like an hour and a half. If you want
+to The freest way to support this
+channel.
+The freest way to support this channel
+is when I post a new video, just open it
+up and watch it and leave a like and
+watch it to the end.
+Testosterone is in the air. That's what
+I was going to say. I'm like, is it This
+is like my first kind of big live
+stream. There's like 600 people in here.
+Most of the time it's only 100 people in
+here. Do I say the makes you hard? But
+you said it, not me. You said it, not
+me.
+If you want to join the vibe coding
+academy, it's my like private community.
+I do I'm going to do a workshop on
+Friday in there uh around Claudebot. If
+you want like a private workshop link
+for the Vibe Coding Academy is down
+below. Sam is definitely watching now.
+Why? Because I said makes you hard. Is
+that what Man, you guys are make no one
+in the AI industry reaches out to me
+because of stuff you guys getting me to
+say stuff like this. You think Sam
+Alman's going to reach out to me now
+that you made me say all these stuff
+things out loud? He's never going to
+reach out to me now
+because of comments like this, Eric.
+I'm going to have to keep doing all this
+with zero support from the AI industry
+because of this, Eric.
+Whatever.
+Well said, Alex. So inspiring. Thank
+you, brother, for your positive energy.
+I appreciate all you watching. really
+means the world. Thank you. It means the
+world you'd watch this. I know we joke
+around a lot. I know sometimes I crap on
+you guys a little bit, but it's all in
+good fun. It's all in good fun. Uh if
+you're going to do things, why not have
+a little fun, right? Can't kill you to
+have a little fun. You guys make this
+the most fun thing in the entire world.
+You guys make doing this the most fun
+thing in the entire world. Really, this
+is the most fun thing. I'm the I'm the
+luckiest man alive. So, I appreciate all
+you. Thanks for watching. Monday,
+Wednesday, Friday, 11:00 a.m. Pacific,
+we live stream new videos all the days
+in between. Just click on the new
+videos, watch them, leave likes. It
+means the world. Uh, love you all.
+Thanks to all the people who chatted.
+Thanks to all the people who hung out
+the entire time. Thanks to all the
+people who said positive things. Thanks
+to all the people who said negative
+things. Uh, love y'all. See you soon.
+New video in like an hour and a half.
+Watch it. Take care, guys. See you
+Friday, 11
