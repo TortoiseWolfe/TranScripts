@@ -1,7 +1,7 @@
 # Job Search — Session Continuation
 
-**Last updated:** 2026-02-02
-**Status:** 12 applied, 6 ready, 3 deferred, 10 leads
+**Last updated:** 2026-02-04
+**Status:** 12 applied, 1 in conversation, 6 ready, 3 deferred, 157 leads
 
 ## Start Here
 
@@ -82,6 +82,6 @@ User feedback: "I'm full stack, not just front-end." Update AGENTS.md search gui
 - **ScriptHammer** = 27-terminal AI orchestration (lead talking point for AI roles)
 - **MoltBot** = personal workflow customization, not a product
 - **Portfolio:** github.com/TortoiseWolfe, spoketowork.com, scripthammer.com (46 features, 680+ tests)
-- **LinkedIn:** linkedin.com/in/jonathan_pohlner
+- **LinkedIn:** linkedin.com/in/pohlner
 - **Never volunteer gaps.** Focus on what IS there.
 - **Never lead with weaknesses.** If a skill transfers, just say it transfers.

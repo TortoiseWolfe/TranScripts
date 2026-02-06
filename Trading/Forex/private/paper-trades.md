@@ -21,4 +21,4 @@ Starting balance: $10,000 (simulated)
 - **Best trade:** N/A
 - **Worst trade:** N/A
 - **Expectancy (pips):** N/A
-- **Current balance:** $10,000
+- **Current balance:** $10,000.00
