@@ -1,0 +1,169 @@
+2026-02-04T23:02:30Z - Career Strategy w/ Chelsea - YouTube
+Source: https://youtu.be/U0gHr-nyqsk
+
+Hey there, Jonathan. I was just about to
+press press end.
+Are you there?
+Oh, sorry. I was muted. I'm trying to
+get my camera on, too.
+>> Oh, yeah. No problem. So, uh, listen,
+I'm gonna, um, I'm gonna wait two more
+minutes. If no one else shows up, I'm
+not going to do the class tonight.
+>> Okay.
+>> I missed the last two weeks. Did you Was
+it Did people show up then?
+>> They did. Um, but people do come in uh a
+bit late.
+So, um, and I don't I don't there were a
+couple people
+showed up last week. Um, but it was very
+it was like, you know, two people to
+start and then a third.
+>> Yeah. I've noticed usually comes in
+about the halfway mark. I don't know
+what she's she may come in late from
+work or something. I don't know.
+>> I'm sorry. What's up?
+>> I just noticed Anna usually comes in
+about the halfway mark. [snorts]
+>> Yeah, she didn't show up last week, but
+um but yeah, so I'm going to give it a
+couple more minutes. Um if
+no one else shows up, then I'm gonna
+I'm gonna shut it down for tonight.
+>> Understandable. I just don't want to
+miss the third wake in the row.
+>> Yeah. No, no worries. So, uh let's see
+uh how we how it goes.
+>> Okay.
+I'm on standby.
+Oh, still in Pure Mentor, too. I didn't
+know I could stream to two channels at
+once.
+>> I'm sorry. What was that?
+>> I just realized I was still streaming in
+the Pure Mentor channel, too. I didn't
+realize I could be in two at once.
+>> So, I got uh I got my AI set up. uh
+using a MCP toolkit for LinkedIn.
+>> Oh yeah.
+>> So it blocked me the first time because
+it picked it up as a bot, but then I
+rescheduled it. So it's like it
+basically slows its pace so it doesn't
+just hammer it like one after another.
+>> Okay.
+>> So it basically looks through it did it
+searched like 19 jobs for me Monday and
+then wrote cover letters and three
+different versions of my resume.
+>> Oh, nice. All right. So, I actually
+applied 12 different places Monday and
+that was that was a lot I mean there I
+still had to like go through and fill
+out the applications, but it was a lot
+easier to follow up with that process
+than, you know, manually search them all
+out and then manually do all the cover
+letters and manually do all the resumes.
+So, it it basically in a in an afternoon
+of about three hours, I think I got
+through 12 applications.
+>> Gotcha. That's great.
+>> Yeah, I was pretty excited about that.
+and and three of them were specifically
+like AI, LM, LLM. So I even told them
+that in the cover letter. I was like, I
+found you through AI and I drafted this
+cover letter through AI.
+>> The only thing I don't let it do is
+actually send them, you know, I want to
+proofread it before it sends out the the
+cover letters, but it it cover it made
+that whole process a whole lot easier.
+>> Oh, that's great to hear. And you've
+really got it down.
+>> Yeah. Yeah, I'm excited about and I've
+also I've also got it it's almost to the
+point where it's uh run because I the
+first thing I did was I said it's a new
+thing that come out like in the last
+week called Maltbot. I don't know if
+you've heard about that yet. It was
+originally called Claudebot and they had
+to change the name for copyright
+infringement.
+>> Oh no, I didn't know that.
+>> So anyways, uh Maltbot will sit there
+and like run asynchrously like it'll do
+cron jobs and kind of run in the
+background. So that that's what I had
+working on the the job search. When I
+got done with that, I set it up first as
+a co-host on my Twitch channel so I can
+come in like cuz when I usually if I'm
+on Twitch, I'm not very socially
+interactive. I'm just type in on my
+screen code and I've I've missed chats
+before where somebody will come in like,
+"Oh, what language are you using?" Or,
+you know, different coding questions and
+I totally miss them until the stream's
+over and like, "Oh, I totally if I if id
+interacted with them a little bit more,
+maybe they would have subscribed to the
+channel or something."
+>> Yeah. Yeah. Yeah.
+>> So, the first thing I did, I got it set
+up as a chatbot on my own channel, but
+to do that, I have to register as its
+own channel first. And I thought, well,
+if I have to register as its own channel
+anyways, that's what I've been digging
+into this morning a little bit. I've
+almost got it at the point where it's
+can run its own channel 24/7 and it's
+making out like it's there's something
+called uh I don't remember what it's
+called, reotion or reotion, and it it's
+a it's a react app, but it basically
+makes its own animations. So, I gave it
+kind of like what I've pulled the
+scripts from yours to make the the job
+search transcripts.
+>> Oh, nice.
+>> Well, I've been pulling transcripts on
+uh Docker, so it pulled out of those
+transcripts for Okay. course content
+>> and that's what it's making videos out
+of and running on its own channel now.
+>> Oh, great. Excellent. Excellent.
+>> So, my my own channel is at about 204
+followers. So, I'm kind of curious to
+see how how how long it takes the uh the
+automated channel to surpass me.
+>> Yeah.
+Yeah.
+All right. Well, that's fantastic. Um,
+so yeah, I mean, um,
+[snorts] I
+would kind of prefer to maybe not, um,
+go over, you know, what I was going to
+do for week 13 because,
+um, this is the 13th week and there
+really isn't anyone here. Um, and I
+don't want to talk about what I was
+going to talk about today with you if
+you wanted to keep going because I
+thought maybe what might be the better
+option is to
+maybe go through some of the things that
+I went through last week. Um,
+>> okay. you know, for you, um, you know,
+for this to be actually something that
+is beneficial for you. And,
+um, you know, the the recording, I may
+even stop the recording because there's
+really no point. So, let me get over
+to that those other weeks.

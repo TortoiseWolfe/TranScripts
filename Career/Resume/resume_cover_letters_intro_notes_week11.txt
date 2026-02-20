@@ -1,0 +1,1080 @@
+2026-01-21T22:59:12Z - Career Strategy w/ Chelsea - YouTube
+Source: https://youtu.be/Rd3heczszU8
+
+have no idea what it wants.
+Hey there, David.
+>> Hello.
+>> I was just about to log log off.
+>> Oh, nobody's here.
+>> No.
+>> Well, we don't have to have I was just
+going to ask you a question.
+>> Yeah. Well, people are starting to
+enter.
+>> Okay, then never mind. That's cool.
+>> Hey, you can ask me. It's not a problem.
+I mean, we'll we'll start since I've
+lost
+>> some time, but what was your question?
+>> Well, so I know you I've been out
+because I had to have mouth surgery and
+my mom had to have a valve replacement.
+So, I've been I've not been doing much,
+but since you did my resume over. I just
+I don't know where I should put my um
+pull requests. Do you know what that I
+don't know if you know what those mean.
+Maybe you do.
+>> I don't know what you're I don't know
+what they are.
+>> Okay. Well, it's it's it's something
+that you know Alyssa, right? Alyssa um
+what's her last name? I don't remember.
+>> I I know who you're talking about.
+>> Yeah. Anyway, she said you should we
+should put our p pull request or
+something when we push to our
+repositories when we make a contribution
+with on a team. We we do we create pull
+requests and they're just little they're
+little URLs basically. That's all they
+are.
+>> I I just didn't know where I should put
+that on my resume. H. Let me think about
+that for a minute.
+>> I don't know.
+I guess I could I could AI it. I never
+just haven't thought of that.
+>> H I'm trying to think about that for a
+second.
+>> Let me think about it. Um and
+>> no hurry.
+Um well, I mean
+the short answer
+from my very quick research is that
+developers should not list individual
+pull requests as a standalone section on
+their resume. Pull requests should be
+embedded as proof of collaboration and
+delivery inside experience projects or
+open-source contributions
+depending on the context. But to do it
+correctly,
+um,
+pull requests should be listed inside a
+project entry.
+>> Oh, okay.
+Huh. you know, if it happened in a job,
+an internship, or a paid contract,
+um, you would include PRs in the bullet.
+>> I'm I'm wondering how I just never be be
+before her telling me we should do that.
+I never heard about it before.
+>> Um, I I have not either.
+Um, and
+you know,
+written correctly,
+pull requests signal to recruiters that
+you understand, you know, team-based
+development, you've worked with code
+reviews, you accept and apply feedback,
+you follow professional workflows. You
+know, these are hiring signals.
+um you know especially for junior and
+early career roles which is great but
+um
+you know it's like when do you link
+GitHub or PRs you know you link your
+GitHub profile at the top of your resume
+um optionably you can link you know the
+PR uh repository
+but you know you don't want to clutter
+bullet with PR links. That's like
+another thing. You want to keep things
+clean. I mean, I feel like,
+>> you know, and also not just listing
+them, but you have to res reference pull
+requests properly,
+right? So,
+>> you have to focus on what you
+contributed, how you collaborate, what
+outcome resulted.
+Um, you know, recruiters are about
+income and process, not like PRs and
+GitHub mechanics.
+>> Yeah, I get it. All right. Thank you.
+>> So, that's kind of
+that's my um
+that's my two cents.
+>> I think Yeah, I think it would look a
+little childish like sophomoric if I put
+like pull requests title and then put
+like three.
+>> Yeah, it's not going to make sense.
+Yeah. No, it no. And as a recruiter, I
+would be like I I would I would archive
+you in our system.
+>> I get it.
+>> Yeah. You know, like doing just listing
+pull requests arbitrarily on your resume
+is going to make you look very very
+amateur.
+>> Yeah.
+>> Um
+>> I agree. you know, but yeah, inside a
+project entry,
+um, that's the most common and effective
+effective placement for early career
+developers to list their PRs. So you
+know you have to use the pull requests
+to show collaboration code review
+experience
+>> contribution to shared co uh code bases
+like your project uh task management
+application
+>> you know built React components and
+submitted pull requests that were
+reviewed and merged into the main branch
+and Then you know maybe you can list one
+or two and then participated in work
+reviews and addressed feedback to
+improve readability and performance.
+This shows workflow familiarity you know
+without overexplaining.
+>> Yeah. All right. That makes a lot of
+sense. I I I could probably put a couple
+in because I'm working on a support
+local which is a project in this
+academy.
+>> Yeah. I mean, I would say, you know,
+list a link of the pull request that you
+know is most applicable to what you had
+the most impact.
+>> Yeah. Okay. Thank you.
+>> Sure. So, hello everyone. Week 11. Uh
+starting a little late because um we had
+some you know uh David was the first one
+to show at like 7 after. So, apologize
+for that. Um, so cover letters and short
+intro notes, that's what we're talking
+about today. Um, uh, you know, we're
+talking about,
+you know,
+these cover letters and short intro
+notes. And I really want to start by
+clearing something up. Now, cover
+letters are not about length, right? And
+they're not about repeating your resume.
+They're not about sounding impressive.
+They're about re relevance. Okay. So, in
+today's market, recruiters skim. Hiring
+manager ski. If your intro doesn't
+immediately show that you're a fit for
+this specific role, we'll move on. Um,
+for those who say that cover letters are
+not necessary,
+sure, in a strong job market, I would
+agree. But in this job market, I would
+cover bases and do every single thing
+possible to get noticed.
+Um,
+so that's really my thought about that.
+Um, you may find others that have a
+different opinion, but this is my
+opinion. Um,
+so when you see cover letter optional,
+everyone that's here, do you usually
+submit one?
+Yes or no?
+>> I have submitted in the past. Um, but I
+kind of use a template and just tweak it
+for whatever job. So I I realize now
+that probably was a no no, but
+>> I used to do it.
+All right, cool. Now, um,
+so by the end of tonight, um, you should
+have a short reusable cover letter
+structure, a recruiter ready intro
+paragraph that you can send on LinkedIn,
+and a clear understanding of when a
+cover letter actually helps. Okay. So,
+what cover letters are for. Now, as a
+recruiter, I don't read cover letters to
+learn your background. I look at your
+resume and your LinkedIn profile for
+that. And then, of course, I can pretty
+much guess depending on what job you're
+applying to. But I read cover letters to
+answer three questions fast. one, are
+you interested in the role or the
+company or both? Um, what relevant
+experience do you bring? And what
+outcome can you help deliver? And those
+are the three things um that need to be
+answered every single time. So, if those
+three things aren't clear, the letter
+doesn't help you at all. Um,
+okay. So,
+let me just put this in the chat real
+quick
+so that you have it.
+All right.
+Now, your cover letter
+is not a summary
+of your resume.
+It's proof you understand the company's
+needs.
+It's kind of like your mission statement
+of like why we should hire you and what
+you can deliver.
+So,
+the structure
+for the short cover letter that actually
+gets read,
+um,
+three short paragraphs. That's it.
+Mention the role by name,
+reference something specific about the
+role, and show intention.
+Okay.
+All right.
+Let me get that in the chat for you all.
+This is going to be pretty basic but
+definitely something um that you should
+have on hand to refer to. So as an
+example, I am applying for the junior
+front developer uh front-end developer
+role at X
+company because of your focus on
+accessible user centered user centered
+design. I've been building reactbased
+interfaces with similar priorities in
+recent projects.
+Okay,
+paragraph number one.
+So paragraph number two. So what we're
+looking for there is what you bring,
+what's the relevant proof,
+one skill area, one example, and then
+one outcome
+and let me get that in.
+Okay, there is that. Now an example of
+that in my recent projects I built
+components using React and CSS grid
+inter uh integrating API data to support
+dynamic content.
+This experience aligns closely with the
+responsibilities outlined in the role.
+And then finally, number three, close
+with value
+and intent. Right? So, I'd welcome the
+opportunity to contribute these skills
+to your team and discuss how I can
+support upcoming product work.
+That's the entire letter. No fluff,
+no repetition,
+and no filler.
+questions, comments so far?
+>> Seems pretty straightforward.
+>> Yes.
+>> Yeah.
+>> Yeah. Yeah. So,
+LinkedIn
+when LinkedIn messages
+repa replace letters. Now,
+here is when you're shifting, you know,
+the conversation a little bit, right?
+Um, in many cases, a strong LinkedIn
+message replaces a formal cover
+letterer. And and I'll explain when that
+is the case.
+One, reaching out to a recruiter
+directly,
+messaging a hiring manager,
+following up after applying
+the, you know,
+the same structure but a little bit
+shortened, right? So the LinkedIn
+message intro the structure context
+alignment
+ask or close right. So hi
+Jan I recently applied for the junior QA
+role and wanted to introduce myself.
+I've been working on manual and API
+testing using Postman and SQL which
+aligns closely with the RO's focus on
+quality and test coverage. I'd love to
+connect and stay on your radar.
+That's it.
+This works because it's short,
+specific,
+and respectful of their time,
+thoughts, or concerns.
+Okay.
+>> Any any thoughts? Any questions? There's
+got to be something.
+>> I have a cover letter that I sent about
+a year and a half ago to a company. I
+don't know if maybe you want to look at
+it or I can put I can put it in the
+chat. Uh, why don't you just pull it up
+on your screen and share your screen?
+>> Oh, okay. Good idea. Hold on.
+Share.
+I have a letter is low. I mean, it's old
+and it's it's too obsolete. It was going
+for those Tesco.
+It's too obsolete.
+>> Can you see it?
+Yes. It's a little bit small.
+>> Yeah.
+>> Oh, hold on. Let me
+>> Hold on.
+>> Yeah, that I'm not going to be able to
+see, I don't think.
+>> How's that?
+>> Can you see it now?
+>> Uh, yeah. We'll just have to make my
+screen big.
+>> Just a little bit more.
+Hold on. Hold on.
+>> There's a recent gradu
+That's better.
+Oops. Sorry.
+>> I mean,
+it's
+Hold on a second. Let me move this here
+for a second. No, no, not at all.
+>> It's just It's not
+>> not descriptive
+>> really. No, it's just not um
+you know, it's like it doesn't say why
+you're interested in the role
+>> and not what relevant experience you
+bring.
+>> That's true.
+>> I mean, it shows your enthusiasm.
+>> Well, you know,
+>> I did this so long ago. I haven't been
+applying for drugs, but I can see
+>> I've grown as a developer since then,
+and I can see why it wasn't that great.
+Well, it's not really about the
+development part. It's it's the cover
+letter itself, right? Because
+>> it doesn't talk about why you're
+interested in that role or the company
+or both.
+Um it it it doesn't
+I mean it talks about
+that you know you what experience you
+gained.
+>> Yeah.
+>> Or
+it's a boot camp. It's not really
+experience.
+>> Right. Well that's because Yeah. I have
+a lot more to write about now than I do.
+Yeah. And then I mean I understand that
+you know you really are you know
+mentioning your respiratory therapist
+>> experience but it has nothing to do with
+web development.
+>> Well I just thought it was like for I I
+edited it for like team
+you know team work and communication.
+>> Sure. Sure. Sure.
+>> That's I get it. I just wanted to get
+>> Yeah. No, I think that,
+you know, it's
+it highlights your enthusiasm and that's
+good, but I don't think you need the
+whole cover letter to do that,
+>> right?
+>> That's like a couple of sentences.
+>> But then linking it to
+>> all right, I see you're excited. That's
+great. You want to be have, you know, a
+job in web development,
+>> but why why are you even interested in
+in our company? And then
+>> you know Yeah. But
+>> No, I get it.
+>> I know it's not. No, it shouldn't be
+used at all. Really?
+>> Um, it's inferred, but
+>> right. Yeah, of course. Um,
+>> all right. I get it.
+>> Yeah, no worries. No worries.
+>> Okay.
+>> Um,
+yeah.
+>> All right. So, with
+you know, I have uh some cover letters
+actually that we can review that I was
+able to dig up. Um
+here is here's a good one. Here's a
+career changer into tech. So, hello
+hiring manager. I'm applying for the QA
+engineer role because it combines
+structured testing with cross team
+collaboration.
+Before transitioning into tech, I worked
+in operations where accuracy and process
+improvement were central to my work. Um,
+I've written uh I've since completed
+hands-on training and manual testing
+testing API validation in SQL
+through project work. I've written test
+cases, logged defects, and collaborated
+with developers to resolve issues
+efficiently.
+I'm excited to bring both my analytical
+background and technical training to a
+quality focused team.
+Um, so
+why does this work? Why don't you guys
+tell me what you think?
+It it checks all the boxes that you said
+that we uh should include about
+>> Can you be more specific
+>> um about
+you know being aware of what what their
+company is and offer given your
+background that you know you want to do
+a career change and um uh you have
+skills that you already have from the
+previous um role.
+>> Okay.
+>> And new skills that you're bringing. So
+you're bringing a set of skills from
+different areas that use.
+>> Okay. Good. So what I see is similar to
+what you said as well, Anna. So explains
+the transition from career changer into
+tech. clearly
+connects past experience to the role and
+then focuses on outcomes not titles.
+Okay. So, um here is another um
+example. So, a QA or SD role.
+Hello, hiring team. I'm reaching out
+regarding the QA engineer positioned
+position. I've been developing
+experience in manual and API testing
+using Postman
+along with writing test cases that
+support consistent release quality. In
+recent project, I've collaborated with
+developers to validate fixes before
+deployment.
+This role stands out because its
+emphasis on quality metrics and process
+improvement.
+I'm eager to contribute to a team where
+testing supports reliable and
+predictable releases.
+Thoughts?
+>> No one has thoughts. Okay.
+>> I like um that you you're specific about
+your skill sets, you know.
+>> Yep. Clear raw alignment. Yep.
+Yeah,
+>> almost sound like a resume that I've had
+in the past.
+>> Letter.
+>> Yeah.
+>> Yeah. It mentions tools in context and
+focuses on team impact.
+Right.
+>> So
+here, let's see what else we got here.
+Uh
+here is a junior developer cover letter.
+Hello, hiring team. Uh, I'm applying for
+the junior software developer role
+because it focuses on building and
+maintaining features using modern
+JavaScript frameworks. In recent
+projects, I built React components,
+integrated REST APIs,
+and collaborated through GitHub pull
+requests
+to deliver working functionality.
+I'm especially interested in this role
+because it emphasizes clean code and
+team-based development.
+I would welcome the opportunity to
+contribute to your engineering team and
+continue building production ready
+skills. Right.
+Names the role, mentions relevant tools,
+shows collaboration,
+stays concise.
+>> It just feels so generic though.
+You know, it just doesn't pop out to me.
+>> I don't think anybody's looking for pop,
+David.
+>> I guess
+>> I think they're looking for facts and
+they're looking for you to actually
+articulate what you can do rather than
+a bunch of BS
+and fluff,
+>> I guess.
+>> So, don't make it wordy. just make make
+it effective get to all those key
+points.
+>> Yeah,
+>> I would rather instead of saying they
+just built React and just JavaScript
+frameworks like talk about other stuff
+like
+>> I built this Nex.js project and you know
+I collaborated with just
+>> my team we got along great you know
+stuff like that just spice it up a tad
+>> then that's what you should do for your
+cover letter if that's what you feel.
+Uh, I don't know.
+I just think recruiters want to get
+people that are fun on their team, not
+boring, because that just sounded
+boring.
+>> Recruiters want to get
+>> want to hire people on their team that
+know what they're doing.
+>> Well, yeah.
+>> And can clearly articulate that without
+fluff.
+>> Okay.
+like
+personality.
+I'll be able to see that when I meet you
+>> and then I'll be able to decide if
+you're the right casting for the group.
+>> Because they'll tell you all the time,
+oh no, we look at the work. It's a small
+percentage.
+>> Yeah.
+>> Personality does matter.
+>> Yeah.
+Um, and just how you're going to vibe
+with the rest of the team. That's what
+casting means.
+Um,
+uh, data or analytics role. Hello,
+hiring manager. I'm applying for the
+data junior data analyst role because it
+is it because of its focused on turning
+data into actionable insights. I've
+worked with SQL spreadsheets.
+um uh and data visualization tools to
+clean data sets and build reports that
+highlight trends and performance
+patterns. In recent projects, I've
+supported decision-m by translating raw
+data into clear summaries for
+non-technical stakeholders. I would be
+excited to bring this analytical
+approach to your team.
+shows how data is used, connects skills
+to the business needs, avoids jargon
+overload.
+>> I like that one better.
+>> I mean, it's not really They're all
+really pretty much the same. Um, it's
+just talking about a different
+discipline,
+you know.
+>> Yeah. Now,
+>> what would be a good example of one for
+um
+and it could be any tech field, you
+know, just as for like a career change
+um when you want to go into some kind of
+development room.
+Um
+>> you tell me.
+>> Oh,
+>> now's your chance to write it.
+>> Yeah. Well, you know, I have what's on
+the resume, but you know, to make it
+more one, two, three sentence and make
+it more sense.
+>> Yeah, but we're not talking about the
+resume. We're talking about the cover
+letter.
+So,
+>> you brought it up.
+>> Now, we're doing a nice little live live
+session. Anna, your lead. Let's take 10
+minutes, maybe less, and we'll see what
+you produce.
+>> Oh, well, I'm just going to go off of
+what you just you just shared.
+>> Oh, no.
+>> Anna, do you have tape over your
+microphone?
+>> Sounds like you're underwater.
+>> Yeah, it sounds like you're in the
+toilet.
+>> Oh, man. You know what? My sister's
+complaining about this. I need another
+mic and I have not been able to time.
+It's a headset with a built-in mic and I
+have not been able to find one to
+replace it. So, I'm stuck with this
+thing right now.
+>> You didn't sound like that earlier
+though.
+>> Yeah. Depends on if I move around and
+you know when it's sensitive um the
+connection can get kind of
+>> little tricky.
+>> Yeah.
+>> All right. So everyone and Leo I don't
+know if you're here today if you're um
+you know not part if you're just kind of
+observing and not participating
+um but anyone that is here
+uh that uh has been speaking David Anna
+let's take let's take five minutes and
+uh come up with a rough draft of a cover
+letter.
+Okay.
+>> Okay.
+>> Let's see.
+How we doing everybody?
+>> I'm ready. But chat GBT wrote it for me.
+>> Yeah. Why wouldn't Why would you not use
+chat GPT?
+>> Oh, I'm just saying.
+All right. You want to hear mine?
+>> Yeah.
+I am writing to so I was talking about
+applying to a front-end developer
+position. I am writing to
+>> for a front end developer position.
+I am a front-end developer with hands-on
+experience using JavaScript frameworks,
+particularly React and Next.js to build
+modern user focused web applications. I
+am currently an intern working on a
+team-based Nex.js JS project where I
+collaborate through Git and contribute
+via pull requests and code reviews. This
+experience has given me practical
+exposure to real world development
+workflows, clean code practices, team
+and teamwork within a shared codebase.
+Through my internship and academic
+projects, I had developed experience
+building responsive components, working
+with APIs, and debugging front-end
+issues. I enjoy problem solving,
+learning new tools, and continu
+continuously improving the quality of my
+work. I would welcome the opportunity to
+contribute my skills and grow as a
+front-end developer on your team. Thank
+you for your time and consideration.
+Sincerely, David Proto.
+>> Um,
+I'd like to see it targeted toward a
+specific job. I know that's the one
+thing I didn't do. But I get it. I knew
+I knew you were going to say that
+because I knew it wasn't targeted good
+enough. But yeah, I get it.
+>> Um, but yeah, I think it's I think it's
+good, but I would love to see it. Yeah.
+>> I get it. I get it. We only had five
+minutes though, so
+>> Yeah. No, no, it's I get it.
+>> Okay.
+>> Anna, how's Oh, what did you come up
+with? I um You mean what AI came up
+with?
+>> Well, I mean what? Yeah, whatever. See,
+here's the thing. I don't know why
+you're like all both of you are blowing
+up your spot. Like, why would you do
+that?
+>> Well, it's just this class.
+>> Yeah, but
+>> I don't want to do this in real life.
+>> Yeah. No, keep it keep everything close
+to your chest.
+>> Okay.
+>> Class or no class?
+>> Okay. Well, anyway, this is what I have.
+I'm excited to apply for the full stack
+developer role drawn by your company
+focus on building AIdriven highquality
+software products. Your input on
+intelligent user experience strongly
+align with my background and my
+intention to contribute to reliable
+scalable solutions through thoughtful
+engineering.
+I bring um full stack development skills
+grounded in quality assurance foundation
+allowing me to build with testing
+and precision in mind.
+For example, I have designed and
+maintained full stack applications using
+React Nex.js, JS, Python, REST API while
+collaborating closely with AI tool
+result in investor a faster development
+cycles and more reliable well- tested
+features. And then the closing paragraph
+I have I am eager to bring this blended
+development and quality mindset to your
+team and would welcome the opportunity
+to discuss how I can add value to this
+role. I look forward to the next step in
+the process. That's what I
+>> Yeah. I mean, I think it's good. I think
+it's the same sort of feedback with
+David. And I think what it both of yours
+is missing is why this role and why this
+company.
+>> And if it's just a madeup role and name
+or and company, then just
+make it up.
+>> Like, yeah, it's like you say that
+you're applying to this role, but like I
+don't really know why.
+like what is it that grabbed you? So,
+here's what I came up with. Hello,
+hiring manager. I'm applying for the
+full stack developer role because it
+brings together hands-on development
+with a strong emphasis on building
+reliable user focused applications.
+It states what you're applying to and
+why. Your team's focus on shipping well-
+tested, scalable features is especially
+compelling given my background in
+qualitydriven environments and my recent
+transition into full stack development.
+I bring several years of QA experience
+combined with hands-on development uh
+hands-on development work using
+JavaScript, React, Node.js, and SQL. In
+recent projects, I've built full stack
+applications endtoend, implemented REST
+APIs, managed app uh application state,
+and validated functionality across
+stack. My QA background informs how I
+write code with intention to edge cases,
+testing, and maintainability from the
+start. I'm excite excited about the
+opportunity to contribute as a full
+stack developer who understands both how
+software is built and how it breaks. I
+would welcome the chance to support your
+engineering team with a quality first
+mindset while continuing to grow as a
+developer.
+>> Can you put that in the chat?
+>> That's exactly what I was about to say.
+>> No, here's the thing and another thing I
+I wanted to mention to you, David. Never
+mention that you're an intern.
+Say what?
+>> Don't mention you're an intern.
+>> Oh, really?
+>> Don't mention you're a junior.
+>> Okay.
+All right.
+>> I thought that was something that Well,
+because it's going to they're going to
+see it on your
+>> Yeah, they'll see it on your resume. You
+don't have to say it on the cover
+letter.
+>> Okay.
+>> Yeah,
+>> that makes sense.
+Yeah.
+All right.
+>> Yeah. It's just
+it's just how it is.
+>> Okay.
+>> You know,
+>> so because if they see that, they'll
+probably be like, "Okay, I'm going to go
+on to the next person."
+>> Um
+>> maybe.
+>> Yes. And I'll tell you why.
+>> Because you're a career changer.
+>> Got it.
+If you're an intern who just finished
+university and you're 21.
+>> Yeah.
+>> Perfect.
+>> Right.
+>> It's the world we live in.
+>> Okay.
+>> Now, if I were to
+Let me see. Hold on here. Sorry.
+All right, let's see something.
+Um, now if you wanted to take the same
+cover letter and make it a
+uh LinkedIn message, simple. I recently
+applied for the full stack developer
+role and wanted to introduce myself. I'm
+transitioning from a long QA background
+into full stack development and have
+been building end-to-end applications
+using React, Node.js, and SQL. My
+experience writing and testing software
+helps me approach development with a
+strong focus on quality and reliability.
+I'd love to connect and stay on your
+radar.
+>> No,
+that makes sense.
+>> Yep.
+So, that's kind of what we're talking
+about there.
+Um, me get back
+into my zone.
+All right.
+Hold on.
+Now,
+where was I?
+Okay. So,
+common mistakes with the cover letter
+and how to avoid them. Now, here are the
+most common mistakes that I see with co
+cover letters and LinkedIn intro
+messages.
+So
+repeating resume bullets,
+writing too much,
+generic company praise,
+no mention of the actual role,
+overuse of soft skills,
+and no clear clothes. You know, if your
+cover letter answers why, what, and the
+outcome, you're doing it right.
+Now, a little wrap up and homework. So,
+you know, tonight you learned how to
+introduce yourself with intention.
+Strong cover letters and intro notes
+show that you understand the company's
+needs, not just your own background.
+Oh, you know, a little bit of homework.
+I would maybe write one short cover
+letter using tonight's structure. Write
+one LinkedIn in me uh LinkedIn intro
+message for a recruiter or a hiring
+manager.
+And, you know, save both as templates
+that you can use and tweak so you're not
+reinventing the wheel every time.
+>> Yeah.
+and come up with a little cheat sheet
+with all of these little things copy and
+pasted and you use them plucking them
+for each role that you're applying to.
+So, you know, your cover letter is not a
+summary of your resume. It's proof you
+understand the role, the company, and
+the value that you bring.
+And that's how you stand out without
+writing a novel.
+thoughts.
+>> Okay, I'm just writing this down. It's
+proof of um that you have knowledge of
+the role, you have some knowledge of the
+company, and you have something that you
+you bring and what you bring to the
+table.
+>> Uh so is this in are you talking about
+the common mistakes?
+What are you
+>> um
+um what you just um your last sentence
+your last sentence is proof that you
+understand the role.
+>> Oh, it proves that you understand the
+role of the company and the value you
+bring.
+>> Yeah. the other one cuz I kind of
+figured out to replay this video
+anyways, but I did write down some
+things about um no generic skills.
+Um make sure you you include the actual
+row.
+>> Oh, no. No. Uh so generic company
+praise.
+That's what I said. Do you mean what I
+just said about common mistakes?
+>> Yeah.
+>> Yeah. Um yeah.
+there in the chat.
+Oh, cool.
+Yeah.
+So I think you know this should all be
+helpful.
+>> Yeah. I made a Google doc of everything
+you just mentioned and I put a asterisk
+do not mention my internship in my cover
+letter.
+>> Yeah. It's just kind of like um not
+mentioning that you're a junior.
+>> Yeah, I get it. All right. Yeah, I have
+a whole Google doc
+titled cover letter help.
+>> Great. Yeah. No, that's the way to do it
+for sure.
+>> Yeah.
+All right. Well, thank you for your
+help. That that that was definitely
+worthwhile this hour.
+>> Oh, of course. Of course. Anyone else?
+Who else has a question?
+>> Oh, there's only one other person.
+>> I think Leo's here, but we've got three.
+Yeah,
+>> we've got three people.
+>> Yeah,
+>> he Leo just chilling.
+>> Yeah, he's just chilling hard.
+>> Yeah,
+>> but I mean I think that um it's good to
+send a cover letter these days.
+>> Can't hurt,
+>> right?
+>> Especially when some of them have it as
+a requirement on their application.
+>> They do. Yeah, they do. They do. I've
+noticed that, too. Yeah,
+>> I've I've noticed that too myself. Um
+that they do do that.
+>> Yeah,
+>> they do what? I I like I missed
+>> they ask for a cover letter.
+>> There are companies that do do that and
+that have been
+>> probably just want to get to know you a
+little better. What your
+>> Sure. Well, you know, kind of shows who
+actually puts the effort in. That's
+true.
+>> Send a cover letter to.
+>> Exactly.
+Somebody I had a teacher once that I was
+taking a course in journalism during my
+high school and this teacher made the
+class the beginning class on a Friday
+and he goes the reason I did that
+because I want to get people that really
+want to be in my class that they're
+going to there he she he picked the
+worst time
+and said yeah I did this for a reason
+just so you know.
+>> Yeah.
+>> I want to weed out the people that don't
+want to be here. Yeah. Yeah.
+>> So smart.
+>> I mean, you know, when you can when when
+you have the option to do something and
+it's just another way to for you to
+shine.
+>> Yeah.
+>> Why not, you know, why not take it,
+>> right?
+Well, thank you. You've been much
+helpful.
+>> You are welcome. And uh we'll be back uh
+next week. next week if any of you are
+coming. Um, especially my regulars and
+you guys are kind of my regulars. Um,
+what think about do me a favor and think
+about what other topics you'd want me to
+cover because I covered LinkedIn
+um getting toward the end of my resume
+uh clinic. So,
+yeah,
+>> I'll come with some questions.
+>> Yeah. Or ideas.
+>> Yeah. In the meantime, we might have a
+big snowstorm.
+>> I mean, I'm in upstate New York. It's
+been snowing for me. Where
+>> are you?
+>> I'm in Connecticut.
+>> Oh, yeah.
+>> You understand?
+>> So, all right. could we come with like
+folks like me who was who I don't want
+how to say that but that can you
+recap some of the stuff that you done in
+the past like with LinkedIn?
+Um I mean I think that's what the videos
+are for. I'm not sure that you know Dr.
+Emily will want me to repeat sessions
+that are already recorded.
+>> Yeah.
+>> Oh
+>> yeah.
+>> Yeah. It's hard to find those videos.
+That's the That's the catch. They they
+you know they're in a location but
+they're not labeled. They're just dated
+and you don't know what topic is and
+with it's a needle in a hay stack.
+>> Yeah. That is feedback for Dr. Emily.
+>> Yeah. But if you go to So Anna, if you
+go to um when you go to the Google
+calendar and click on career strategy
+with Chelsea, you'll it'll if you click
+on that, it'll pop up another window and
+on that window it says career strategy
+with Chelsea playlist and it gives you
+the exact playlists for her.
+>> Yeah. Yeah, I get that. But you know
+it's a list of videos with the the date
+but it does not say what topic is being
+covered for that.
+>> So it's a need.
+>> No I hear you but for me too.
+>> Okay. What was the date range when you
+covered LinkedIn?
+>> Um
+>> it was last year.
+>> July. Yeah I started in July. So that's
+when
+>> Oh, so just go back to the beginning of
+the playlist, I guess.
+>> Yeah, for all the LinkedIn stuff.
+>> Yeah.
+>> Okay.
+>> I can't remember when I I started. I
+think that was like 12 weeks and then I
+went into resume.
+>> Yeah. Six months. It's number 46 is
+where you started. No,
+>> resume.
+>> Number 4050.
+>> Okay.
+>> Yeah. six months ago, it says.
+>> There we go.
+>> Um, LinkedIn. Okay.
+>> When I finally do get to that.
+>> Yeah.
+>> I'm sorry. I'm just uh old school that
+just hate it.
+>> When I was your age, I didn't have it.
+>> I think that you're a QA and you like
+things to be nice and organized.
+>> All right. Well, you guys have a good
+night.
+Oh, you jump on this other call. Thanks.
+Bye. Bye. Bye. Bye.
