@@ -77,7 +77,7 @@ When a user requests a cover letter:
 **Formula:** `Their need → Your experience → Outcome/Impact`
 
 **Example:**
-> "Your posting emphasizes building accessible React components—at Trinam, I developed Revit plugins used daily by 12+ drafters, teaching me to build tools that real users depend on. I've since applied that same user-focused approach to my web development work, achieving a 98/100 Lighthouse accessibility score on SpokeToWork."
+> "Your posting emphasizes building accessible React components—at Trinam, I developed Revit plugins used daily by a dozen drafters, teaching me to build tools that real users depend on. I've since applied that same user-focused approach to my web development work, achieving a 98/100 Lighthouse accessibility score on SpokeToWork."
 
 ### Paragraph 3: The Ask (2-3 sentences)
 **Purpose:** Clear call to action, enthusiasm, gratitude
