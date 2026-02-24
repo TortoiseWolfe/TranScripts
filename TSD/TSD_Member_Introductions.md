@@ -1,5 +1,15 @@
 **TSD Member Introductions on Social Media**
 
+**Video Title Format**
+
+```
+Meet TechStack Devs: [Full Name] | [2-3 Highlights]
+```
+
+Example: `Meet TechStack Devs: Jonathan Pohlner | Revit Plugins, SpokeToWork & AI Bots`
+
+Pick 2-3 highlights that showcase the member's specialization, projects, or unique angle.
+
 **Suggested Flow (3–5 minutes)**
 
 1. Why TSD — Why you joined, what you’re excited about  

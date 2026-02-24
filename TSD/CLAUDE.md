@@ -11,19 +11,36 @@ TSD/
 ├── CLAUDE.md
 ├── TSD_Member_Introductions.md            # Generic interview template (public)
 └── private/                               # Personal content (gitignored)
-    ├── TSD_Jonathan_Pohlner_Interview_Practice.txt
-    ├── TSD_Jonathan_Pohlner_Interview_Practice_Edited.txt
-    ├── TSD_Jonathan_Pohlner_Introduction_Script.md
-    ├── TSD_Jonathan_Pohlner_Slide_Deck.md
-    └── TSD_Jonathan_Pohlner_Slides.html
+    ├── TSD_Jonathan_Pohlner_*.md/html/txt # Jonathan's production-ready materials (flat)
+    ├── SuzanneAtkinson/                   # Per-member interview folders (14 total)
+    ├── LydiaBandy/
+    ├── DavidBobe/
+    ├── GlennHaertlin/
+    ├── BradenKartchner/
+    ├── RodrigoMaceno/
+    ├── AlyssaMiller/
+    ├── RickOsteen/
+    ├── KaiPannu/
+    ├── JonathanPohlner/                   # Stub — full materials are flat in private/
+    ├── JohnSchlautman/                    # Jonathan interviews John
+    ├── MelissaUsher/
+    ├── KiWedemeyer/
+    └── KatrinaWright/
 ```
+
+Each member folder contains an `Introduction_Script.md` draft. As interviews are recorded, add slide decks, cue cards, and transcripts to each folder following Jonathan's pattern.
+
+## Video Series: "Meet TechStack Devs"
+
+Title format: `Meet TechStack Devs: [Full Name] | [2-3 Highlights]`
+
+Example: `Meet TechStack Devs: Jonathan Pohlner | Revit Plugins, SpokeToWork & AI Bots`
 
 ## Content
 
 - **Member Introductions** — Generic template for TSD member interview videos (public)
-- **Interview Practice** — Raw + cleaned mock interview transcript (private)
-- **Introduction Script** — Personal elevator pitch with talking points (private)
-- **Slide Deck** — Presentation materials in Markdown + HTML (private)
+- **Per-member folders** — Draft introduction scripts for all 14 TSD members (private)
+- **Jonathan's flat files** — Production-ready script, slide deck (md + html), cue cards (html), practice transcripts (private)
 
 ## Privacy
 
