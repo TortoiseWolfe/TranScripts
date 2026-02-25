@@ -1,6 +1,30 @@
 # KDG Lead Developer — Interview Talking Points
 
-Interview with Rob Sweeney (AVP of Custom Development) — February 26, 2026 at 3pm Eastern via Microsoft Teams
+Interview with Rob Sweeney (Assistant Vice President of Custom Development) — February 26, 2026 at 3pm Eastern via Microsoft Teams
+
+---
+
+## Rob Sweeney — Interviewer Profile
+
+**Title:** Team Lead, Software Development (KDG website) / Assistant Vice President of Custom Development (per recruiter)
+**Education:** Associate's in Computer Science, Lehigh Carbon Community College
+
+**His quote about KDG:** "KDG offers the best employee growth program that I've seen. They allow and encourage their employees to continue to improve and hone their skills as they work."
+
+**Bio:** Focused on complex web and mobile apps in cloud environments. Range from single-page sites for local businesses to complex custom apps for large medical firms. Known for quickly learning new code and platforms — described as "one of KDG's most diverse programmers." Strong client relationships — can simplify complex cases for non-technical people. Trains his own development team on best practices.
+
+**Experience highlights:**
+- Event sourcing for a real estate company (payroll, reporting, accounting)
+- Custom mobile app for real estate agents (Customer Relationship Management in the field)
+- On-site client launch with real-time bug fixes
+- Medical client — custom app for equipment and patient records
+- WordPress site for a private school (events, donations, calendar)
+- Credential/security app for a major sports league using Zoho Creator
+
+**Tech stack:** PHP, JavaScript, MySQL, Vue, jQuery, React, React Native, Angular
+**Certified in:** Zoho Creator
+
+**Common ground with you:** React, client-facing communication, simplifying technical concepts for non-technical people, training/mentoring developers, managing projects independently.
 
 ---
 
@@ -60,9 +84,230 @@ Interview with Rob Sweeney (AVP of Custom Development) — February 26, 2026 at 
 
 ---
 
+## React + C# Integration (The KDG Sample Project Stack)
+
+### Architecture
+
+```
+React (TypeScript)  →  HTTP/JSON  →  ASP.NET Core Web API (C#)  →  Entity Framework Core  →  PostgreSQL
+     Frontend                              Backend                        ORM                   Database
+```
+
+Two separate projects that talk over HTTP. The React app runs in the browser, makes fetch calls to the C# API, gets JSON back.
+
+<details>
+<summary>Project Structure</summary>
+
+```
+MyApp/
+├── MyApp.sln                    # Visual Studio Solution file
+├── MyApp.Api/                   # C# ASP.NET Core Web API
+│   ├── Controllers/             # API endpoints
+│   ├── Models/                  # Database entities
+│   ├── Data/                    # DbContext, migrations
+│   ├── Services/                # Business logic
+│   ├── Program.cs               # App startup and configuration
+│   └── appsettings.json         # Connection strings, config
+├── MyApp.Client/                # React TypeScript app
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/            # API call functions
+│   │   └── types/               # TypeScript interfaces matching C# models
+│   ├── package.json
+│   └── tsconfig.json
+└── MyApp.Tests/                 # Unit/integration tests
+```
+
+</details>
+
+<details>
+<summary>C# Side — API Controller (Create, Read, Update, Delete)</summary>
+
+```csharp
+[ApiController]
+[Route("api/[controller]")]
+public class CustomersController : ControllerBase
+{
+    private readonly AppDbContext _context;
+
+    public CustomersController(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<List<Customer>>> GetAll()
+    {
+        return await _context.Customers
+            .Include(c => c.Orders)
+            .ToListAsync();
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Customer>> GetById(int id)
+    {
+        var customer = await _context.Customers.FindAsync(id);
+        if (customer == null) return NotFound();
+        return customer;
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<Customer>> Create(Customer customer)
+    {
+        _context.Customers.Add(customer);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetById), new { id = customer.Id }, customer);
+    }
+
+    [HttpPut("{id}")]
+    public async Task<IActionResult> Update(int id, Customer customer)
+    {
+        if (id != customer.Id) return BadRequest();
+        _context.Entry(customer).State = EntityState.Modified;
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var customer = await _context.Customers.FindAsync(id);
+        if (customer == null) return NotFound();
+        _context.Customers.Remove(customer);
+        await _context.SaveChangesAsync();
+        return NoContent();
+    }
+}
+```
+
+</details>
+
+<details>
+<summary>React Side — TypeScript Types (Mirror the C# Models)</summary>
+
+```typescript
+// types/Customer.ts
+interface Customer {
+  id: number;
+  name: string;
+  email: string;
+  createdAt: string;
+  orders: Order[];
+}
+
+interface Order {
+  id: number;
+  customerId: number;
+  total: number;
+  status: string;
+  createdAt: string;
+}
+```
+
+</details>
+
+<details>
+<summary>React Side — API Service Layer</summary>
+
+```typescript
+// services/customerService.ts
+const API_BASE = '/api/customers';
+
+export async function getCustomers(): Promise<Customer[]> {
+  const response = await fetch(API_BASE);
+  return response.json();
+}
+
+export async function getCustomer(id: number): Promise<Customer> {
+  const response = await fetch(`${API_BASE}/${id}`);
+  return response.json();
+}
+
+export async function createCustomer(customer: Omit<Customer, 'id'>): Promise<Customer> {
+  const response = await fetch(API_BASE, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(customer),
+  });
+  return response.json();
+}
+```
+
+</details>
+
+<details>
+<summary>React Side — Component</summary>
+
+```typescript
+// components/CustomerList.tsx
+import { useEffect, useState } from 'react';
+import { getCustomers } from '../services/customerService';
+
+export function CustomerList() {
+  const [customers, setCustomers] = useState<Customer[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getCustomers()
+      .then(setCustomers)
+      .finally(() => setLoading(false));
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+
+  return (
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Email</th></tr>
+      </thead>
+      <tbody>
+        {customers.map(c => (
+          <tr key={c.id}><td>{c.name}</td><td>{c.email}</td></tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+```
+
+</details>
+
+<details>
+<summary>The Glue — Cross-Origin Resource Sharing (CORS)</summary>
+
+In development, React runs on port 3000 and the API on port 5000. Configure in Program.cs:
+
+```csharp
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+```
+
+In production, the C# app serves the React build files as static assets or both sit behind a reverse proxy, so Cross-Origin Resource Sharing isn't needed.
+
+</details>
+
+### Key Interview Points
+
+1. **TypeScript interfaces mirror C# models** — keeps the contract between front and back end explicit
+2. **The API is stateless** — each request contains everything needed, React manages state on the client
+3. **Entity Framework Core handles the database** — you rarely write raw Structured Query Language, but you can when performance requires it
+4. **Separation of concerns** — React handles presentation, C# handles business logic and data access, PostgreSQL stores data
+
+---
+
 ## PostgreSQL Quick Reference
 
-### Create a table
+<details>
+<summary>Create a table</summary>
+
 ```sql
 CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
@@ -72,7 +317,11 @@ CREATE TABLE customers (
 );
 ```
 
-### Foreign key relationship
+</details>
+
+<details>
+<summary>Foreign key relationship</summary>
+
 ```sql
 CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
@@ -83,12 +332,20 @@ CREATE TABLE orders (
 );
 ```
 
-### Index for performance
+</details>
+
+<details>
+<summary>Index for performance</summary>
+
 ```sql
 CREATE INDEX idx_orders_customer_id ON orders(customer_id);
 ```
 
-### Join query
+</details>
+
+<details>
+<summary>Join query</summary>
+
 ```sql
 SELECT c.name, o.total, o.status
 FROM customers c
@@ -96,7 +353,11 @@ JOIN orders o ON o.customer_id = c.id
 WHERE o.status = 'pending';
 ```
 
-### JSON Binary column
+</details>
+
+<details>
+<summary>JSON Binary column</summary>
+
 ```sql
 CREATE TABLE products (
     id SERIAL PRIMARY KEY,
@@ -114,7 +375,11 @@ WHERE metadata->>'color' = 'blue';
 CREATE INDEX idx_products_metadata ON products USING GIN (metadata);
 ```
 
-### Common Table Expression
+</details>
+
+<details>
+<summary>Common Table Expression</summary>
+
 ```sql
 WITH high_value_customers AS (
     SELECT customer_id, SUM(total) AS lifetime_spend
@@ -128,16 +393,24 @@ JOIN customers c ON c.id = h.customer_id
 ORDER BY h.lifetime_spend DESC;
 ```
 
-### Case-insensitive search (PostgreSQL-specific)
+</details>
+
+<details>
+<summary>Case-insensitive search (PostgreSQL-specific)</summary>
+
 ```sql
 SELECT * FROM customers WHERE name ILIKE '%jonathan%';
 ```
+
+</details>
 
 ---
 
 ## C# + Entity Framework Core + Npgsql
 
-### Connection string (appsettings.json)
+<details>
+<summary>Connection string (appsettings.json)</summary>
+
 ```json
 {
   "ConnectionStrings": {
@@ -146,13 +419,21 @@ SELECT * FROM customers WHERE name ILIKE '%jonathan%';
 }
 ```
 
-### Register in Program.cs
+</details>
+
+<details>
+<summary>Register in Program.cs</summary>
+
 ```csharp
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 ```
 
-### Models
+</details>
+
+<details>
+<summary>Models</summary>
+
 ```csharp
 public class Customer
 {
@@ -174,7 +455,11 @@ public class Order
 }
 ```
 
-### DbContext
+</details>
+
+<details>
+<summary>DbContext</summary>
+
 ```csharp
 public class AppDbContext : DbContext
 {
@@ -185,13 +470,21 @@ public class AppDbContext : DbContext
 }
 ```
 
-### Migrations
+</details>
+
+<details>
+<summary>Migrations</summary>
+
 ```bash
 dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
-### Language Integrated Query example
+</details>
+
+<details>
+<summary>Language Integrated Query example</summary>
+
 ```csharp
 var highValueCustomers = await context.Orders
     .GroupBy(o => o.CustomerId)
@@ -207,3 +500,5 @@ var highValueCustomers = await context.Orders
     .OrderByDescending(x => x.LifetimeSpend)
     .ToListAsync();
 ```
+
+</details>
