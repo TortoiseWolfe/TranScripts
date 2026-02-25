@@ -28,6 +28,23 @@ Interview with Rob Sweeney (Assistant Vice President of Custom Development) — 
 
 ---
 
+**ASP.NET Core Web API** — The specific .NET framework KDG uses for the sample project backend. It serves Representational State Transfer endpoints to the React frontend. Not a desktop or mobile framework — it's a web server. Scaffolded with `dotnet new webapi`. This is the C# "app type" that matters most for this role.
+
+**.NET Application Types** — The full ecosystem of what you can build with C#:
+
+| Framework | What it builds | Relevant to KDG? |
+|-----------|---------------|-------------------|
+| **ASP.NET Core Web API** | Backend APIs for web/mobile frontends | Yes — the sample project |
+| **ASP.NET Core MVC** | Server-rendered web pages (older pattern) | Maybe — legacy client projects |
+| **Blazor Server / WebAssembly** | Single Page Applications in C# instead of JavaScript | Possible — but they specified React |
+| **WPF (Windows Presentation Foundation)** | Windows desktop apps | Your Trinam experience, not KDG's focus |
+| **WinForms (Windows Forms)** | Older Windows desktop apps | Legacy, unlikely |
+| **MAUI (.NET Multi-platform App UI)** | Cross-platform mobile and desktop (replaced Xamarin) | Unlikely — Rob's mobile work used React Native |
+| **Console Apps** | Command line tools, background jobs | Supporting role |
+| **Worker Services** | Background processes, scheduled tasks | Supporting role |
+
+Interview line: "I've built with Windows Presentation Foundation at Trinam for desktop interfaces and Blazor for web, but I'm most interested in the ASP.NET Core Web API plus React pattern you're using here — that separation of concerns makes the most sense to me."
+
 **Azure (Microsoft Azure)** — Microsoft's cloud platform. You haven't used it directly but your Amazon Web Services experience transfers. Same concepts: virtual machines, managed databases, identity management, storage. Azure is the likely choice at KDG given their Microsoft stack.
 
 **C# (C Sharp)** — Microsoft's primary programming language. You built Revit plugins with it at Trinam, including Windows Presentation Foundation interfaces and Blazor web interfaces. This is the backbone of the KDG sample project.
