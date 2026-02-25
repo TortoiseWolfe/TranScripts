@@ -4,6 +4,66 @@ Interview with Rob Sweeney (Assistant Vice President of Custom Development) — 
 
 ---
 
+## Follow-Up Prep — What Rob Will Dig Into From Your Video Answers
+
+### Q1 — Why interested in the role
+
+You said "I've been a lead developer at Collective Mines" and "I'm a mentor at TechJoy."
+
+- **"Tell me more about your role at Collective Minds. What did you build there?"** — Be ready with specifics: what the product was, your tech stack, team size, how long you were there.
+- **"What does mentoring at TechJoy look like?"** — Be specific: how many people, what you teach, how often. This directly relates to the mentoring expectation of a Lead Developer.
+- **"You said this stack is one you're already familiar with. How much PostgreSQL have you actually used?"** — Be honest: "Most of my database work has been with SQL Server and MySQL. PostgreSQL is the same SQL fundamentals — the differences are syntax-level, not conceptual. I've been brushing up on PostgreSQL-specific features like JSON Binary and the Npgsql driver for .NET."
+
+### Q2 — Why KDG
+
+Solid answer, unlikely to get deep follow-ups. But be ready for:
+
+- **"What do you mean by 'I put the service in software as a service'?"** — Have a concrete example ready beyond Trinam. Maybe Collective Minds or a freelance project.
+- The auto-transcript has a glitch at the end repeating "I'm going to have a lot of work." If Rob read the transcript instead of watching the video and asks about it, just say "That was a transcription error, not something I said."
+
+### Q3 — Trinam plugin (most likely to get follow-ups)
+
+This is your strongest answer and Rob will want details:
+
+- **"What was the Revit API like to work with? What challenges did you run into?"** — Talk about transaction management in Revit, the difference between modifying the document model vs. reading it, handling undo/redo states.
+- **"You mentioned automated testing. What did that look like for a Revit plugin?"** — What framework (NUnit? xUnit?), how you mocked the Revit API or used test fixtures, how many tests, what they covered.
+- **"How did you deploy updates to a dozen drafters?"** — How did the plugin get installed? Manual installs, shared network drive, an installer package? How did you handle versioning?
+- **"You said you kept pushing what was possible. What else did you automate beyond dimensioning?"** — Have 2-3 other examples ready: sheet generation, view creation, parameter management, whatever else you built.
+
+### Q4 — Collaboration and communication
+
+You described being a solo developer bridging two sides. Rob may probe:
+
+- **"You were the only developer. How would you handle working on a team where you're NOT the only technical voice?"** — This is the big one. KDG has teams. Show you can collaborate, not just own everything. Talk about code reviews, pull requests, deferring to teammates with more domain expertise.
+- **"Can you give me an example of a disagreement or conflict with a stakeholder?"** — Have one ready. How did you handle pushback on scope or timeline? What was the outcome?
+- **"What project management tools did you use?"** — Even if it was simple (a spreadsheet, Trello, Jira), name it.
+
+### Q5 — System upgrades and risk
+
+You mentioned Docker, Playwright, feature branches. Rob might go deeper:
+
+- **"Tell me about ScriptHammer. What is that?"** — Be ready to explain: your personal development environment / portfolio site / project. What's the stack, what's it for.
+- **"You mentioned Playwright for end-to-end testing. Walk me through how you set that up."** — Browser selection, test structure, what you're actually testing, how it runs in your pipeline.
+- **"Have you ever had an upgrade go wrong? What happened?"** — Have a real story. The Revit version updates are perfect — was there one that broke something? How did you catch it? How did you fix it?
+- **"You said you avoid big rewrites. What if the client insists on one?"** — Talk about presenting the risks, proposing an incremental alternative, and ultimately deferring to the client's decision while documenting the tradeoffs.
+
+### Q6 — Salary: NEEDS PREP
+
+You anchored at 70k. The posting range is 70k-90k. You went to the bottom.
+
+- **If Rob brings up salary:** "I said 70k because I wanted to show I'm not chasing the highest number — I'm looking for the right fit. But I also know the posted range goes to 90k, and I'm confident I'd earn my way there quickly based on what I deliver."
+- **Don't volunteer to renegotiate** — just be ready if he opens the door.
+- **If they offer 70k flat:** You can negotiate after you've proven value, or negotiate before accepting based on the scope of the role being larger than expected.
+
+### Q7 — Monthly commute
+
+You were honest about the logistics. Rob might want a firmer answer:
+
+- **"So are you saying yes or no to the monthly visit?"** — "Yes. I'll make it work. Pre-scheduled flights, I can plan around them. I just wanted to be upfront that I'm flying, not driving."
+- **Know your numbers:** A round-trip flight from Chattanooga or Knoxville to Lehigh Valley (ABE airport) or Philadelphia is typically $200-400 if booked in advance. Show you've thought it through.
+
+---
+
 ## Questions to Ask Rob (pick 4-5)
 
 **About the day-to-day work:**
@@ -31,6 +91,22 @@ Interview with Rob Sweeney (Assistant Vice President of Custom Development) — 
 
 **Practical:**
 - What's the timeline for the hiring process from here?
+
+---
+
+## What "Lead Developer" Means at KDG
+
+A developer builds what they're told. A Lead Developer figures out what to build, tells the client when it'll be done, builds it, and makes sure it works.
+
+What KDG's Lead Developer does beyond writing code:
+- **Manages your own projects and deadlines** — you figure out the timeline, nobody hands you a sprint board
+- **Gathers requirements from clients directly** — you're in the room with the client, not getting requirements filtered through a project manager
+- **Main point of communication and deliverables** — the client calls you. You own the relationship
+- **Makes technical decisions** — you pick the approach, architecture, and tradeoffs
+- **Code reviews** — you review other people's work for performance and security
+- **Mentoring** — Rob trains his team on best practices, they'd expect the same from you
+
+**Why you're ready:** You've been doing Lead Developer work without the title. At Trinam you were the only developer — owned the client relationship, gathered requirements, made all technical decisions. At Collective Minds you managed timelines and were the main point of contact for technical decisions across a distributed team.
 
 ---
 
