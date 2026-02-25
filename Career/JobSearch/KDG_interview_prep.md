@@ -4,6 +4,36 @@ Interview with Rob Sweeney (Assistant Vice President of Custom Development) — 
 
 ---
 
+## Questions to Ask Rob (pick 4-5)
+
+**About the day-to-day work:**
+- What does a typical project lifecycle look like here — from when a client signs on to delivery?
+- How many projects would I manage at once as a Lead Developer?
+- What's the split between writing code and client-facing work in this role?
+
+**About the team and how they work:**
+- Who would I be working with on a project — do Lead Developers have dedicated QA, designers, or is it more fluid?
+- What does your code review process look like?
+- What source control workflow do you use — feature branches, pull requests, trunk-based?
+
+**About the tech stack:**
+- The sample project lists C#, TypeScript React, and PostgreSQL — is that representative of most projects, or does the stack vary by client?
+- Are you deploying to Azure, or does it depend on the client?
+- How do you handle database migrations on client projects — Entity Framework Core migrations, or something else?
+
+**About Rob (builds rapport — shows you did your research):**
+- You've been here 9+ years — what's kept you at KDG that long?
+- You train developers on best practices — what's the biggest thing you see new developers need to ramp up on when they join?
+
+**About growth and culture:**
+- What does success look like in the first 90 days for this role?
+- The posting mentions KDG encourages continued learning — what does that look like in practice?
+
+**Practical:**
+- What's the timeline for the hiring process from here?
+
+---
+
 ## Rob Sweeney — Interviewer Profile
 
 **Title:** Team Lead, Software Development (KDG website) / Assistant Vice President of Custom Development (per recruiter)
