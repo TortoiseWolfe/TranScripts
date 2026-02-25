@@ -34,6 +34,8 @@ Interview with Rob Sweeney (Assistant Vice President of Custom Development) — 
 
 **Cloud Infrastructure** — The job posting asks for "high-load applications using cloud infrastructure." Be ready to talk about how you'd deploy a C# application with a PostgreSQL database. On Amazon Web Services that's Elastic Container Service or Elastic Beanstalk + Relational Database Service PostgreSQL. On Azure it's Azure App Service + Azure Database for PostgreSQL.
 
+**Bootstrapping / Scaffolding** — Industry terms for generating a project's starter files and folder structure. React uses `npm create vite@latest` (current) or `create-react-app` (deprecated). Next.js uses `create-next-app`. .NET uses `dotnet new webapi` or `dotnet new react`. Entity Framework Core also has scaffolding for generating controllers and views from models (`dotnet aspnet-codegenerator`). One-liner for the interview: "I'd scaffold the API with `dotnet new webapi` and the client with `create-next-app`, then wire them together with Cross-Origin Resource Sharing in development."
+
 **Code Reviews and Pull Requests** — The posting calls this out specifically, including identifying performance issues and security concerns. Talk about your Git workflow: feature branches, pull requests with meaningful descriptions, reviewing for readability and edge cases, not just correctness.
 
 **Common Table Expressions** — The `WITH` keyword in SQL. Lets you name intermediate result sets for readability. Shows you write maintainable SQL, not spaghetti subqueries.
