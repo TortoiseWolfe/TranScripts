@@ -169,6 +169,8 @@ Interview line: "I've built with Windows Presentation Foundation at Trinam for d
 
 **Docker** — Containerization tool. You use it for development environments at ScriptHammer. Relevant for deploying C# applications consistently across environments. Mention your experience if it comes up under cloud/deployment questions.
 
+**Expo / Expo Go** — Expo is the framework and CLI for building React Native apps. Expo Go is the companion phone app that lets you preview projects in real time by scanning a QR code — no full native build needed. Rob has React Native on his profile. If mobile comes up: "I'd scaffold with Expo and use Expo Go for live previewing on device during development."
+
 **Entity Framework Core** — Microsoft's Object-Relational Mapper for .NET. Maps C# classes to database tables so you write Language Integrated Query instead of raw Structured Query Language. Uses the Npgsql provider to talk to PostgreSQL specifically.
 
 **Generalized Inverted Index** — A PostgreSQL index type used for JSON Binary columns, arrays, and full-text search. Indexes the contents inside complex data types so queries into them are fast.
