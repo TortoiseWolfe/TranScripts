@@ -41,6 +41,7 @@ This is your strongest answer and Rob will want details. Answers sourced from th
   - Configuration-based testing via `app.config` for test settings (dimension offsets, checkbox states, text values)
   - WinForms input validation dialogs before operations ran — catch bad input before it hits the API
   - Quality control commands built into the plugin itself: `NumCheck` validates module numbering sequences, `QC_001`/`QC_002` validate parameters
+  - (What I'd do differently today: abstract the business logic away from the Revit API using the Repository pattern and dependency injection. That way the geometry calculations, numbering logic, and data transformations can be unit tested with xUnit without needing a running Revit instance. Only the thin layer that actually talks to Revit stays untestable in isolation. For integration tests, Dynamo's RevitTestFramework can run tests inside a live Revit session against a known test model — that's how you verify the API calls work end-to-end. I'd also use Revit's journal file automation to replay scripted actions for regression testing across version updates.)
 
 - **"How did you deploy updates to the drafters?"**
   - Built an MSI installer using WiX Toolset v4 (`Trinam'23 Plugin.msi`, 1.1 MB)
