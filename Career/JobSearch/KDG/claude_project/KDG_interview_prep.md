@@ -255,27 +255,6 @@ Interview line: "I've built with Windows Presentation Foundation at Trinam for d
 
 ---
 
-## Supabase (What I Use) vs KDG Stack (What They Expect)
-
-| Layer | My Stack (ScriptHammer) | KDG Stack |
-|-------|------------------------|-----------|
-| **Frontend** | React 19 + TypeScript 5 | React + TypeScript -- **same** |
-| **Database** | PostgreSQL (via Supabase) | PostgreSQL -- **same engine** |
-| **Backend** | Supabase Edge Functions (TypeScript) | ASP.NET Core Web API (C#) |
-| **Object-Relational Mapping / Data Access** | Supabase JavaScript client (`supabase.from('table')`) | Entity Framework Core + Npgsql |
-| **Auth** | Supabase Auth (OAuth, email/password) | ASP.NET Identity or custom |
-| **Security** | Row-Level Security policies in PostgreSQL | Middleware + authorization attributes in C# |
-| **API Pattern** | Supabase auto-generates REST + real-time subscriptions | Hand-written REST controllers |
-| **Hosting** | Supabase manages everything | Self-hosted or Azure |
-
-**What's the same:** React + TypeScript frontend (identical), PostgreSQL database (same SQL, same tables, same indexes, same JSONB), REST pattern (HTTP requests in, JSON out).
-
-**What's different:** Supabase hides the backend -- `supabase.from('customers').select('*')` talks directly to PostgreSQL. At KDG there's an explicit C# API layer in between. React calls `fetch('/api/customers')`, the C# controller receives it, queries PostgreSQL through Entity Framework Core, and returns JSON. Supabase Row-Level Security enforces permissions at the database level; at KDG authorization happens in C# middleware with `[Authorize]` attributes. Supabase Edge Functions are TypeScript; KDG's backend is C#.
-
-**How to frame it:** "In ScriptHammer I'm talking to the same PostgreSQL engine -- same SQL, same indexes, same JSONB columns. Supabase just removes the middle tier. At KDG that middle tier is ASP.NET Core Web API, which I'd be writing in C# -- the same language I used for 2.5 years at Trinam. The mental model is the same: React makes a request, the backend processes it, queries PostgreSQL, returns JSON. The difference is whether that backend is auto-generated or hand-written."
-
----
-
 ## React + C# Integration (The KDG Sample Project Stack)
 
 ### Architecture
