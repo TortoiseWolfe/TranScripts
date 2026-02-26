@@ -72,6 +72,7 @@ You described being a solo developer bridging two sides. Rob may probe:
 - **"You were the only developer. How would you handle working on a team where you're NOT the only technical voice?"** — This is the big one. KDG has teams. Show you can collaborate, not just own everything. Talk about code reviews, pull requests, deferring to teammates with more domain expertise.
 - **"Can you give me an example of a disagreement or conflict with a stakeholder?"** — Have one ready. How did you handle pushback on scope or timeline? What was the outcome?
 - **"What project management tools did you use?"** — Even if it was simple (a spreadsheet, Trello, Jira), name it.
+- **"Tell me about Collective Minds. What were you building?"** — React Native marketplace app (OneTapOneMatch) with Expo, Firebase backend, user auth, listings, and messaging. Also built a separate facial landmark detection prototype ([FaceLips](https://github.com/TurtleWolfe/FaceLips)) using **MediaPipe Face Mesh via TensorFlow.js** — real-time 468-point facial detection rendered on a canvas overlay with react-webcam. Shows range beyond standard web apps: browser-based machine learning, computer vision, canvas rendering. Led a 4-person distributed team and coordinated deliverables across both projects.
 
 ### Q5 — System upgrades and risk
 
