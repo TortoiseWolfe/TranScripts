@@ -77,8 +77,17 @@ You described being a solo developer bridging two sides. Rob may probe:
 
 You mentioned Docker, Playwright, feature branches. Rob might go deeper:
 
-- **"Tell me about ScriptHammer. What is that?"** — Be ready to explain: your personal development environment / portfolio site / project. What's the stack, what's it for.
-- **"You mentioned Playwright for end-to-end testing. Walk me through how you set that up."** — Browser selection, test structure, what you're actually testing, how it runs in your pipeline.
+- **"Tell me about ScriptHammer. What is that?"** — Production-ready Next.js 15.5 starter template and portfolio site. Live at [scripthammer.com](https://scripthammer.com/). Key details:
+  - **Frontend:** React 19 + TypeScript 5 + Tailwind CSS + DaisyUI (32+ themes)
+  - **Database:** PostgreSQL via Supabase with Row-Level Security policies
+  - **Auth:** OAuth (GitHub, Google) + email/password with rate limiting and session management
+  - **Testing:** 680+ tests total — Vitest for unit tests (58% coverage), Playwright for end-to-end (298+ tests), Pa11y for accessibility (WCAG AA)
+  - **Docker:** Mandatory for all development — `docker compose up` with health checks, hot reload, volume mounts
+  - **Features:** payment integration (Stripe, PayPal), offline queue with IndexedDB, blog with SEO, real-time subscriptions, 8 colorblind correction modes
+  - **Storybook:** Component documentation at [tortoisewolfe.github.io/ScriptHammer/storybook](https://tortoisewolfe.github.io/ScriptHammer/storybook/)
+  - **Last updated:** February 23, 2026 — actively maintained
+  - **The honest gap:** Backend is Supabase Edge Functions (TypeScript), not C# ASP.NET Core. If asked: "I chose Supabase for rapid prototyping. For KDG I'd bring that same React/TypeScript frontend and PostgreSQL experience, paired with a C# ASP.NET Core backend."
+- **"You mentioned Playwright for end-to-end testing. Walk me through how you set that up."** — ScriptHammer has 298+ Playwright tests. Browser selection, test structure, what you're actually testing, how it runs in your pipeline. The project runs Playwright inside Docker for consistency across environments.
 - **"Have you ever had an upgrade go wrong? What happened?"** — Have a real story. The Revit version updates are perfect — was there one that broke something? How did you catch it? How did you fix it?
 - **"You said you avoid big rewrites. What if the client insists on one?"** — Talk about presenting the risks, proposing an incremental alternative, and ultimately deferring to the client's decision while documenting the tradeoffs.
 
