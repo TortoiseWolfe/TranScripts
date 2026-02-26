@@ -23,12 +23,46 @@ Solid answer, unlikely to get deep follow-ups. But be ready for:
 
 ### Q3 — Trinam plugin (most likely to get follow-ups)
 
-This is your strongest answer and Rob will want details:
+This is your strongest answer and Rob will want details. Answers sourced from the actual codebase ([Trinam_23 repo](https://github.com/TortoiseWolfe/Trinam_23)):
 
-- **"What was the Revit API like to work with? What challenges did you run into?"** — Talk about transaction management in Revit, the difference between modifying the document model vs. reading it, handling undo/redo states.
-- **"You mentioned automated testing. What did that look like for a Revit plugin?"** — What framework (NUnit? xUnit?), how you mocked the Revit API or used test fixtures, how many tests, what they covered.
-- **"How did you deploy updates to a dozen drafters?"** — How did the plugin get installed? Manual installs, shared network drive, an installer package? How did you handle versioning?
-- **"You said you kept pushing what was possible. What else did you automate beyond dimensioning?"** — Have 2-3 other examples ready: sheet generation, view creation, parameter management, whatever else you built.
+- **"What was the Revit API like to work with? What challenges did you run into?"**
+  - .NET 4.8 targeting Revit 2023 (RevitAPI.dll, RevitAPIUI.dll)
+  - Manual transaction management throughout — every operation wrapped in `Transaction` with explicit Start/Commit/Rollback
+  - Used Rollback creatively for read-only operations: create a SketchPlane just to extract the Plane geometry, then roll back so the document stays unchanged
+  - Heavy use of `ReferenceArray` for dimensioning — 15+ reference arrays per command
+  - Mix of `BuiltInParameter` and `LookupParameter` for accessing element properties — two different access patterns depending on whether it's a built-in Revit property or a custom parameter
+  - Complex geometry operations: `Transform.CreateTranslation()`, coordinate system transformations, curve endpoint extraction
+  - 2,378 try/catch blocks across the codebase for error handling
+
+- **"You mentioned automated testing. What did that look like for a Revit plugin?"**
+  - No formal unit test framework (NUnit/xUnit/MSTest) — Revit's API requires a running Revit instance, which makes traditional unit testing impractical
+  - Instead: comprehensive logging infrastructure — every major command logs execution time, operations performed, and failures with parameter-level diagnostics using StringBuilder
+  - 2,378 try/catch blocks with detailed failure logs so you could trace exactly what went wrong and on which element
+  - Configuration-based testing via `app.config` for test settings (dimension offsets, checkbox states, text values)
+  - WinForms input validation dialogs before operations ran — catch bad input before it hits the API
+  - Quality control commands built into the plugin itself: `NumCheck` validates module numbering sequences, `QC_001`/`QC_002` validate parameters
+
+- **"How did you deploy updates to the drafters?"**
+  - Built an MSI installer using WiX Toolset v4 (`Trinam'23 Plugin.msi`, 1.1 MB)
+  - Installer dropped `Trinam_23.dll` and `Trinam_23.addin` manifest into `%CommonAppData%\Autodesk\Revit\Addins\2023\`
+  - Plugin auto-loaded when Revit started — drafters didn't have to do anything after running the installer
+  - Also had ZIP distribution (`Trinam23'0.2.5.3.zip`) for manual installs
+  - Versioning tracked in the ZIP filename and installer metadata
+  - Supported x86, x64, ARM64, and AnyCPU build configurations
+
+- **"You said you kept pushing what was possible. What else did you automate beyond dimensioning?"**
+  - **400+ commands total** — dimensioning was just one category
+  - **95+ dimensioning variations** — shop dims, fab dims, floor plan dims, curtain wall dims, split infills
+  - **45+ elevation/view creation** — auto-generate elevation views, section views, fabrication sections from selected elements
+  - **21+ wall duplication commands** — copy walls across building levels with parameter propagation and workset mapping (e.g., duplicate 99+ walls from one level to another in one click)
+  - **Module/panel numbering** — 10+ numbering commands with chain numbering, shift-key reordering, and QC validation
+  - **Sheet automation** — auto-create sheets and place views on them
+  - **Data import/export** — CSV and JSON round-tripping for element data
+  - **29+ detailing commands** — auto-place detail tags
+  - **Excel integration** — change module family types from a spreadsheet (`Microsoft.Office.Interop.Excel`)
+  - **REST API integration** — HTTP calls from within Revit using `Microsoft.Extensions.Http`
+  - **13 shared library classes** — geometry transforms (`Geo_MeTry.cs`), selection utilities (`Sel_EcTion.cs`), graphics overrides (`Graph_Ical.cs`), extensible storage, data extraction, tag helpers
+  - **WPF and WinForms UI** — dockable panels, copy-with-positioning controls, module numbering forms, level pickers
 
 ### Q4 — Collaboration and communication
 
