@@ -1,0 +1,587 @@
+What if
+you never had to search for a job again?
+Because AI did it for you.
+You define
+exactly what you're looking for.
+The role, the salary,
+your skills and experience.
+And then when something really cool pops
+up, you get notified immediately.
+Not a day later and 200 applicants later,
+but actively
+scanning the web for new listings
+as frequently as you'd like.
+But the thing is,
+usually when you do something like this,
+you get hit with a giant bill
+and you expose yourself to prompt injections
+and bot blockers and all kinds
+of adventures that it's best to avoid.
+So today we will do it properly.
+We will use a hardened,
+ultra-sandboxed version of OpenClaw,
+and we will run it in a virtual
+private server that we fully control.
+It will then connect to WhatsApp
+and will get it to run 24/7.
+As though we've hired a personal assistant
+that never sleeps.
+Now, to keep things as affordable
+as possible, we will do all the heavy
+lifting with Python,
+selecting job listings,
+filtering them,
+and scheduling on the system level.
+Saving our precious LLM credits
+only for quick analysis
+and very basic decision making.
+Everything else will run with bash
+on the operating system of our server,
+meaning we are not invoking OpenClaw
+for these type of stuff.
+So stop wasting credits
+if you don't actually have to.
+And if you're ready, let's roll.
+So first of all, let's set up open.
+Now if you're new to this,
+OpenClaw is an open source
+AI assistant platform that connects
+to WhatsApp, Telegram, Discord and so on.
+And it allows us to talk to AI agents
+through these platforms.
+So ChatGPT Gemini, Grok and many others.
+Now, in our case, since we want our agents
+to always be available,
+we will deploy them on a remote system
+just like deploying a website.
+And the idea is, if our website runs
+perfectly when our computer is off,
+then so should our AI bots.
+Now, to keep things extra safe,
+we will use the One-Click-Deploy
+version that automatically blocks
+any kind of shenanigans
+you will see shortly. How.
+And for this,
+we'll go ahead and navigate to hostinger.
+As we've done in previous
+private server tutorials
+by typing hostinger.com/python.
+And if you do so, Hostinger
+will know that you came from this video
+because this is my special link. Yay!
+The link is as usual in the description
+and in the pinned comment.
+Now we already have a recommended server
+size for our KVM
+or our kernel based virtual machine.
+And funny enough,
+it's the exact same server specs
+that we use for our portfolio project.
+So each of these components
+is explained there in great detail.
+But briefly we have two CPU cores
+with eight
+gigabytes of memory
+and a very big chunk of disk space.
+We have 100GB running on NVMe,
+which basically means very fast.
+So your bot will respond quickly across
+all the social media apps you connect.
+Now, once we hit deploy, you can
+then choose between different plans
+we have monthly, yearly and so on.
+Just make sure to use my use
+my code Python.
+When you go for the yearly
+or the bi yearly plans,
+it will give you 10% discount.
+On top of all these extra savings
+you get for the longer periods.
+Again, this is my special code
+and you can use it for any kind of server,
+not just OpenClaw.
+So on my end
+I'm going to go for the two year plan.
+And even though I'm already subscribed
+to a whole bunch of AI platforms,
+I am paying ChatGPT and Gemini and Grok.
+I will keep those Nexus AI credits.
+There is an offer right now that basically
+doubles the credits you buy for free.
+So if you get five, you get five for free,
+or if you get 20, you get 20 for free.
+And I'm kind of curious
+to see how long they last me.
+I'll make sure to give you an update
+in the pinned comment.
+And also, this is actually the safest and
+fastest way to get OpenClaw up and running.
+You don't need to copy API keys and
+everything will be ready automatically.
+Now the last detail here is picking
+a server location near you.
+In my case, since I live in Bulgaria,
+I'm just going to go for Germany
+and then let's click on continue.
+We will then log in of course and enter
+our credit card details off camera.
+Hello everyone.
+It's been 24 hours later and yesterday
+I've spent the whole day
+optimizing and experimenting
+and making little changes in my code, and
+I really wish I took the 40 credits.
+Okay, I took the ten instead,
+but when you're using OpenClaw
+to troubleshoot itself for many,
+many hours, I finished
+filming yesterday's
+video at around midnight.
+Okay, so that was a lot of troubleshooting
+involved.
+These credits.
+They're not going to last you for very
+long for these type of use cases also.
+Okay.
+You can of course
+use your existing subscriptions
+like Grok chat, GPT Gemini, whatever.
+But when you do so make sure you do
+so from the get go.
+Don't
+wait until your next credits run out,
+and only then try switching to your open
+AI API key or whatever,
+because there is a bunch
+of rewiring involved.
+And I didn't know that. Okay.
+And this, this 40 credits
+offer that I didn't take.
+You don't get it when you try to top up.
+You only get it when you register
+and it's like a one time thing.
+And when you're trying to top up
+will pay the full price.
+So another thing I didn't know.
+So I'm telling it to you right now,
+I thought I should film it.
+So from my observations
+40 credits is plenty, ten credits is not.
+But again, I've been using it
+for very heavy and complex tasks.
+If you're just following along with this
+video, it's not going to be this intense.
+Okay, so yeah, that's all I wanted to say.
+And let's go back to the workflow.
+And yesterday.
+Now once our payment is processed we'll
+get our very own OpenClaw gateway token.
+So let's quickly copy it.
+And don't worry,
+by the time this video goes live,
+this token will no longer exist.
+Additionally, we will enter our super
+secret and private WhatsApp number
+and we will click on deploy.
+Now, once our server is ready,
+we'll get a live OpenClaw project
+managed by Docker Manager,
+meaning our bot is encapsulated
+in a Docker container for extra isolation.
+If you're not sure what it means,
+check out my Docker Quick Start guide.
+But you don't really have to.
+Okay,
+so how exactly do we talk to our bot?
+Well,
+we simply click on this open cloud port.
+We then paste our gateway token like so
+and then boom.
+We are in now.
+And for some unknown reason at this stage
+you're getting a disconnected
+for no reason error.
+Then all you do is replace the chat
+session main
+part of your URL with question
+mark token equals
+your token, and then once you press enter,
+this should solve it.
+Additionally,
+if you forgot to copy your token earlier,
+just go back to your project
+on Docker Manager
+and click on the Copy
+Gateway token button.
+Beautiful.
+Now back in our chat, let's just quickly
+check if our chat bot actually works.
+Let's ask it. Hey buddy, are you alive
+and perfect?
+He is indeed alive and well.
+Next we will connect our WhatsApp account
+by clicking on channels
+and then show QR code and we immediately
+click on wait for scan only.
+Then we open our WhatsApp on our phone
+and then we go ahead and scan this
+QR code.
+Okay,
+we do so in our Linked Devices section.
+Now once your device is linked
+on your phone and shows up as Google
+Chrome, Open claw or whichever browser
+you've used, then back in your open
+dashboard,
+you will navigate to the config tab.
+You will then click on update
+and then when you return to your channels
+tab, boom!
+Our WhatsApp is officially configured
+and it's good to go.
+Now you only do this long process
+once when you connect a new device,
+but whatever you do, okay, make sure that
+you don't miss this wait for scan button
+because you will get stuck here for hours
+and you will completely lose your mind.
+Now, once everything is connected, we will
+go back to the chat area in the browser
+and at the same time we will open
+a conversation with ourselves on WhatsApp
+and then we will ask
+OpenClaw yo, is anyone home?
+And boom,
+open clock will respond
+on both interfaces.
+Perfect.
+And usually when we add external resources
+to communicate with it
+means that we need to be extra careful.
+But this is how this One-Click-Deploy
+image solves it.
+So if we navigate to the skills tab
+and we open the built in skills,
+we can see that
+the vast majority of them
+is actually blocked on purpose.
+And anything that may impose a safety
+risk is simply not allowed.
+What we can do
+instead is navigate to the agents
+tab, where we can customize
+the model we're chatting with.
+By the way, you can pick from this list.
+And also we can view the list of tools
+that are available to us.
+So we can do basic read and write.
+We also have an execute tool
+that can run bash scripts, and we also see
+a web search and a web fetch tools,
+as well as a cron task killing tool.
+Now these are the only tools
+that we will need for our project.
+And actually we can even bypass
+those web tools.
+We can use their low level
+bash equivalents.
+Perfect.
+So let's move on with using these tools
+for our job market intelligence spot for.
+So we'll need some starter files that
+you can of course clone from my GitHub.
+And the link is in the pinned comment.
+Now in those starter files
+we first have a resumé.
+We have two Python scripts and a bash
+script that we will review quickly,
+and we basically have a while
+loop that runs every seconds
+and executes both our Python scripts, one
+after the other.
+Additionally, we have a resumé
+where we set our preferences.
+Now, this is a Json file
+that you will need to adapt to your skill
+in your experience.
+It basically helps us understand
+who you are and what exactly
+you're looking for.
+So please go ahead and enter things
+like target roles, and you can enter
+your salary and important flags
+such as relocation and remote work.
+These will help us filter listings
+that we're not really interested to see.
+We are pulling these into our Python
+files.
+Also, make sure to include your education
+and of course your technical skills,
+which is another important filter
+that our Python files rely on.
+Next we have cool jobs.py.
+Now this file reads RSS job listings
+or structured documents
+that are meant for machine reading.
+And that's human reading.
+Very similar to APIs.
+These feeds,
+they expect computers to access them.
+So this is why our bot
+is not going to be blocked.
+Now we access these feeds through a bash
+command named C URL.
+So no playwright, no selenium
+and no pip installing anything.
+And then after we go through
+a bunch of location filters and skill
+filters, any listing that survived
+it is being saved to a CSV file
+named jobs dot CSV.
+Perfect.
+And then lastly we have a pool desk
+or pool description
+that gets the latest timestamp
+from our new CSV file, and then it pulls
+all these latest job listings
+into a Json file
+named description dot Json.
+And this Json file is the only file
+that open will actually access
+this file erases any old listings,
+and it only stores
+the most recent batch file.
+To get this up
+and running on the system level,
+make sure you set an SSH or secure shell
+password first.
+If you're not sure what it means,
+check out my cloud computing video,
+but only if you are completely lost.
+Otherwise,
+we will navigate to the overview section
+and we'll go ahead and copy
+this root password command like so.
+We will then paste it in our terminal.
+And we will enter our password.
+Beautiful. We are in.
+Then we will go ahead and navigate
+to the workspace of Open Claw.
+But how are we supposed to find it.
+Well let's just ask it.
+Let's go back to our browser.
+Let's go back to our chat and let's ask it
+save this Python file
+as Marias test.py.
+And then in a set of back quotes, it
+will then print
+yo yo yo
+and you have all done so.
+Then back in our terminal
+it will go ahead and type find slash
+dash name in our case
+a string of Marias test.py
+and beautiful.
+We got the exact URL in response
+actually the exact path.
+Now keep in mind it will be a bit
+different on your end, so let's quickly
+copy it and let's navigate there with CD
+followed by the path.
+And let's see exactly what it stores
+with less and great,
+we see a whole bunch of existing files
+on the server, and if you see
+a similar collection on your end,
+then you're in the right spot.
+Next we will copy our local files
+into our remote server for.
+This will go ahead and open a new terminal
+in addition to our old one,
+and we'll go ahead and navigate
+to our project folder with CD.
+In my case, job intelligence
+or wherever you saved the files
+you clone for my GitHub.
+Next, we will actually make sure
+that these files are there and beautiful.
+They are indeed here.
+Next we will go ahead and paste this
+lovely command
+that you can copy from the description.
+And if you'd like to find out
+exactly what it does, check out my cloud
+computing video. It's a secure
+copy command.
+Just make sure you revise the address
+of my server
+to the address of your server,
+as well as the name of my project
+to the name of your project.
+Now let's give it a quick run.
+And beautiful.
+Our files were copied,
+so now when we go back to our original
+SSH terminal and we go ahead and check
+the content of our folder with LS,
+our files were officially added
+to the server.
+Yay! Now, before
+we can go ahead and execute our loop,
+we will need to give ourselves
+permissions.
+If we don't do this, we will be denied.
+So we will type C, h, mode 700
+and we will give ourselves permissions
+for the exec
+loop as h file.
+Next we will go ahead and launch our loop
+using no hub as in no hang up.
+And this will ensure that our bot
+keeps hunting 24/7
+even after we close our laptop
+or disconnect from our secure shell.
+For this, you would have to bear with me
+and type the following.
+So no hub followed by the name of the file
+we are calling it on in our case
+dot slash exec loop dot as h,
+followed by a greater
+than symbol, followed by a name of a file
+that doesn't exist yet.
+Output dot log,
+which is a file to which we will save
+all these echoes from our shell script,
+as well as all the print statements
+from our Python files. It's a log file.
+Then we will go ahead and add two
+greater than and symbol one,
+which means print errors
+and regular output.
+And then finally we will add a space
+and another and symbol.
+And this will make sure that everything
+runs behind the scenes.
+Linux. What can I say.
+Now let's quickly give it a run.
+And okay let's verify
+that it actually works.
+Let's go ahead and review
+the content of our brand new log file,
+which get output dot log.
+And great.
+We found 28 job listings.
+So let's make sure they're actually there.
+Let's quickly
+check the content of our Json
+file with cat desk dot Json
+and boom!
+We have a whole bunch of Json objects here
+and we are officially good to proceed.
+Great.
+Our heavy lifting engine is running,
+and now you may be tempted to type
+your orders in the open cloud chat,
+just like I did several hours ago,
+but it doesn't always work
+because sometimes open forgets
+he can do things now.
+What do you currently see on
+the screen is the result of my natural
+language instructions.
+It did find me a job match
+and it did send me an alert on WhatsApp.
+Okay, you can see it here,
+but it's been more than five minutes
+and I this process
+just didn't repeat itself.
+So let me show you
+what works every single time.
+So let's quickly
+navigate to the cron jobs tab
+and we will manually set up this task
+okay.
+So we will call it Job alerts.
+And we will
+set it to run every five minutes.
+Also we will copy these very specific
+instructions from the description okay.
+Don't change anything.
+I've spent a lot of time
+perfecting them with open clock okay.
+And then once we schedule this task,
+those job alerts will pretty much start
+coming in like clockwork.
+Now, while we wait for this
+clock, let's quickly check our logs
+and okay, we see this one job listing
+that I received earlier, as well
+as the 28 listings from even earlier
+that I just didn't catch on time.
+And this is actually great news
+because it means that our system works
+perfectly, it ignores old listings,
+and it only focuses on the new ones.
+So what are we going to do?
+You know,
+for the sake of the demonstration,
+we will basically erase our data files
+and we will start collecting everything
+from scratch.
+For this
+we will remove with our M, our jobs
+dot CSV and our desk dot Json.
+Then it no longer exists.
+Now this will force Python
+to start everything from scratch.
+And we still have
+a few more minutes to spare.
+Now what if we have less than one minute
+left in our countdown?
+We'll pull out our phone and we will wait
+for some alerts to come in.
+It should happen any moment now.
+Okay, so let's just take a look
+and boom, we
+get a whole bunch of job matches. Wow.
+And this this should be the 28 listings
+that we missed from earlier okay.
+Now obviously we didn't get 28 job alerts
+because OpenClaw has done
+some additional filtering,
+much more strict filtering on its own.
+But we got about like,
+what is it, six of them, which is awesome.
+Now I'm going to keep my eye on it
+and I will update in a few more minutes.
+Hopefully we'll get more of them now
+fast forward to about 30 minutes later.
+We got two more job matches, one of them
+at 1209 and another one at 1204,
+and then anywhere in between 1144
+and 1204.
+Nothing interesting happened,
+so we got no alerts for it.
+Okay.
+Now hopefully you're seeing similar results on your end, but if you're having any.
+I just got another one at 1214.
+Amazing.
+Now if you're having any issues okay.
+On your end please leave me a comment
+below and I will help you.
+I think I've explored this OpenClaw
+so deeply I may have become an expert.
+So best of luck on your job search
+and hopefully this video help you.
+And thank you so much for watching.
+If you found this video helpful,
+please share it with the world and don't
+forget to leave it a huge thumbs up
+and all kinds of comments!
+Now, if you'd like to see
+more videos of this kind,
+you can always subscribe to my channel
+and turn on the notification bell.
+I'll see you soon in an awesome tutorial!
+This one. So in the meantime that I.

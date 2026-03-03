@@ -123,7 +123,17 @@ Career/
 │   └── private/        # Cover letter drafts (gitignored)
 ├── Facebook_Edited/    # Facebook data exports for career analysis
 │   └── private/        # Extracted Facebook data (gitignored)
+├── JobSearch/           # Job search automation & interview prep
+│   └── private/        # Personal job search documents (gitignored)
 └── TechInterview/      # Interview resources
+Claude/                 # AI agent & Claude Code transcripts
+├── ACE/                # Autonomous coding engine content
+├── Cowork/             # Claude cowork/workflow content
+├── Frameworks/         # Agent OS, future-of-AI frameworks
+├── MoltBot/            # OpenClaw (formerly Clawdbot/Moltbot) transcripts
+├── Patterns/           # Claude Code workflow patterns, subagents, meta-prompting
+├── Skills/             # Claude Code skills tutorials
+└── Tools/              # Claude Code tools (hooks, status line, desktop apps)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 └── Docker_Edited/      # Cleaned transcripts + system prompt
 Gaming_PC/              # PC build transcripts
