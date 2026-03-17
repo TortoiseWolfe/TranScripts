@@ -1,0 +1,1604 @@
+okay we're going
+live to make sure I can hear myself
+perfect
+all right let's wait for everything to
+pick
+up it's going to be a fun I'm also
+streaming on
+Kick I decided why
+not that's going to I'm get a I'm going
+to get a kick out of that there you go
+all
+right let's confirm a few things are
+running all right hope everyone's doing
+well sorry about
+that want to make sure everything
+is up and running
+I seem to hear an echo
+everywhere all right now anyone who's
+watching on
+LinkedIn of being told the stream's a
+bit flaky jump over to YouTube that
+seems to be
+the recommended stream it's most stable
+as far as I'm
+we I don't know I don't watch myself
+all right I'm going to close that it's
+very I seem to here an
+echo everywhere all
+right we are just about to
+start it's going to be a fun one I'm
+looking forward to it I hope everyone
+has their questions
+ready and this is going to be more of a
+relaxed look at it because I just just
+installed it to make sure it works and
+it
+installs
+and yeah we just need to have a little
+play with
+it so we'll see we'll see how this all
+goes so that is so just give me a moment
+to set everything up
+okay I'm just stoping
+everything well hello hello from Sweden
+hello hello
+hello hello hello hello
+okay just one moment we'll be starting
+momentarily
+and let me just prepare a few more
+things I'm I'm trying to again things at
+once so doing that
+one
+that
+and have to select the right mic
+okay recording recording
+recording no this is going to be fun
+this is going to be fun
+all right recording
+there that working that's
+all working there and finally we can
+switch this over
+to Main feed switch that on just double
+check make sure it's all working
+perfect and I just want
+to Y all right done done
+done going
+be away for a second while I sort this
+stuff
+out what are we doing
+sud bu there we go
+all right
+so we will be sting things up done all
+right let's get
+going so as I mentioned this is just a
+relax if you have any questions Chuck
+them at me I'll do my best to answer
+them and um yeah first time look
+add it all
+right all right
+so oh and by the way I am streaming on
+Kick as well so it's good to know that
+there's somebody on
+Kick I'm just trying to be everywhere
+all
+right so let's get things
+going hello and welcome to this live
+stream today we're going to be talking
+about and taking our first look at
+druple CMS now if this is all new to you
+and you're thinking wait a minute there
+is Drupal what's CMS what is this all
+about I will explain it but essentially
+we're going to take a look at the beta
+version of Drew Paul cm mess and I
+noticed this I'll take my headphones off
+cuz I don't need them anymore um I
+noticed this when Dre Boart who is the
+druple Project Lead and also I do
+believe he's still the Project Lead and
+the founder he actually posted a blog
+post on his on his site about installing
+Drupal CMS now I've known about uh
+Drupal or the whole new druple CCMS and
+things like
+that um for a
+while but it's good to see that is a Bea
+and so I just want to give a shout out
+to his blog post cuz this is what
+actually inspired me to have a look at
+it and be like all right this is coming
+along um this actually explains pretty
+well uh how to set it up using ddev so
+that's what we're going to do today okay
+we're going to go through these steps
+well it's pretty much similarish steps
+and we're going to uh install ddev well
+no we've already installed it cuz it's
+going to take too long and and you don't
+want me to run home brew because that
+takes about 10 minutes to
+run and so and then we're going to just
+have
+a look through the site and just get a
+feel of what it's all about because this
+is I believe one of the biggest changes
+in druple that's coming along so let me
+to to kind of prime you along and to
+figure out okay what is this Drupal CMS
+I thought we have Drupal let's quickly
+go through a bit of a history and take
+you know just a few minutes to explain
+it um before we jump into things so
+last do I want to say last year no it
+was probably a while ago the
+druple initiative Drupal star shot
+initiative was announced no it was this
+year actually it was this year the
+Drupal star shot initiative was
+announced and this is kind of like a big
+initiative to kind of push drw poool
+forward and uh the whole the whole uh
+the actual star shot initiative is
+actually actually has a whole bunch of
+components and you can see here on the
+right hand side you have the automatic
+updates ux experience Builder project
+browser recipes troll
+experience um marketing resources and
+I'm not going to go through through all
+of this and there are there is a lot of
+information and I think Dre has done two
+dreas notes about it and so if you want
+to learn more about this stuff just head
+over um or search for Drupal star shot
+and you'll and you'll find the um well
+the most recent one I think Barcelona
+and um Drupal con boner where he talks
+about it and shows a whole bunch of
+stuff but one of the things that came
+out of it was that Drupal needs to have
+a out of the-box
+solution because let me just move the
+mic up and it's going to be loud I do
+apologize over the
+audio there we go now the current issue
+with drup is that you install it and
+then
+what and Dre actually brought this up
+and it is a valid point you install
+Drupal and then you need to jump on the
+command line and do and use composer and
+deal with composer dependencies and it
+complaining that you're installing an
+alpha or a beta version but your
+composer is not set up and so so there
+is a bit of a you do hit a bit of a
+roadblock right now with druple when you
+install it
+however
+this this starshot
+initiative was developed to kind of take
+Drupal to the next level I believe and
+so one of the first things was to have a
+prepackaged version of Drupal and this
+is where we have druple
+CMS and so Drupal
+CMS is a packaged version of Drupal kind
+of like an installation profile kind of
+like a distribution but using recipes
+which is the new version of like config
+and a and a you know and a better
+version of installation profiles and
+distributions because drupes had these
+things for a very long
+time I
+believe uh d himself even talked about
+distributions even before 2010 but it
+never really took off because
+maintaining Upstream changes and things
+like that is very difficult and I do
+think that with config yes config has
+come a long way actually did have an
+issue today with config funny enough but
+I do believe it it is getting better
+okay it is getting better and I do hope
+that with recipes you will be able to
+just pick
+functionality kind of off a app store or
+something and say okay I want this this
+this download it run it and you're done
+so think of Drupal CMS as kind of like a
+packaged version of Drupal that you can
+install and it comes with a with a theme
+well druple comes with a theme a front
+end Theme and a backend theme but it
+also comes with a whole bunch of contrib
+modules in stalled and that's the key
+right now if you install Drupal there
+are no contrib
+modules if but with this it comes
+packaged with contrib modules and that's
+the big
+difference all right so we have another
+hello from YouTube oh hello and welcome
+from YouTube um if you have any
+questions just Chuck them in I'll do my
+best to kind of answer them and talk at
+the same time um so tonight what I want
+to do is just take a first look at this
+Drupal CMS together with you all and we
+can experience and see what it's like
+and have a play with it and hopefully
+things
+work hopefully um because you know live
+demos they never go wrong yeah we'll see
+all
+right so as I mentioned I am going to
+follow the
+um the steps here except for this part
+and that is I'm not going to clone the
+latest code because I I cloned this
+yesterday and I gave it a test and it
+worked because in the past and this has
+happened to me in the
+past when I've actually cloned a reper
+that was part of a presentation in
+between the time when I tested it and I
+actually did the presentation somebody
+committed something and then it broke
+things yeah it wasn't a he wasn't a good
+he wasn't a good experience all of a
+sudden things breaking so what I'm going
+to do is simply just clone or just copy
+a um an actual folder make it easier all
+right so what we're going to do is you
+first want to install ddev and what ddev
+is that is a distribution well it's a um
+development enir en M Docker based
+development environment um for PHP so
+it's not Drupal specific so you can run
+Lille word press any type of PHP system
+really but the good thing is is that I
+do believe the drible community has kind
+of standardized on this and said and
+officially endorsed it whereas uh in the
+past you've had
+Lando uh as well which works well um and
+then you also have ddev and in my
+experience DDE has been the most stable
+especially on a Mac generally for my
+live streams I don't use a Docker base
+environment because it is a little too
+slow and I've been burnt in the past um
+on a slower Intel Mac of course um with
+very slow environments and there's
+nothing more annoying than trying to get
+druple to work and you're live um but I
+think now with like the Apple silicon it
+is pretty quick and the docker base
+environments on a Mac are much faster
+but I have actually been thinking
+of running a virtualized Ubuntu and I've
+heard that running a virtualized a
+running Docker and a virtualized Ubuntu
+running like VMware or something is even
+faster than running Docker on like
+native Apple silicon crazy anyway maybe
+I'll do a video about that in the future
+who knows who knows so I've already gone
+ahead and set up ddev it is pretty
+straightforward to set up it's it's
+available on Windows uh Mac Windows
+Linux even the
+cloud and if you're running on a Mac
+just run Brew home brew but if if you
+used home brew in the past it updates
+all packages whenever you run it and it
+takes about 10 minutes to run it's
+annoying it's annoying seriously all
+right so I've already gone ahead and
+done that and let's jump over to my
+command line so what I'm going to do and
+oh before I mention that okay there are
+actually two versions of Drupal CMS so
+you have the first one which is a
+packaged solution so this gives you all
+the modules and vender directory already
+set up and down and downloaded so you
+just download the zip file um and if I
+take a look here so let's have a look at
+our
+folder I hope you can see that have
+Drupal CMS and yeah you have the whole
+Benders and things like
+that and all the recipes whereas this
+git one is where where we have the
+actual where just get and he goes goes
+ahead and downloads it using composer
+but Lando takes care of it so what I'll
+do let me jump over here and I will
+first of all
+copy the Git Version so we call this
+one live and just Lo it cool then let's
+go into
+there and what we can do is first of all
+run Lando I believe start so if you do
+type in just Lando oh sorry not sorry
+let me start
+again now I'm saying Lando because I
+just watched the Formula 1 um Sprint
+qualifying so I do apologize for that um
+oh no spoilers I'm not going to mention
+who came first in that anyway uh so if
+you type in ddev you can see the
+commands available
+here and what I'm going to do is just
+run ddev start and it's going to go
+ahead and start downloading in all the
+packages well it should be
+CED
+uh and it should work hopefully we don't
+have any issues in the past it's kind of
+failed
+sometimes uh yeah this is my most
+worrying time right here maybe I should
+check my heart rate on my
+watch it's like is it downloading is it
+downloading isn't it downloading we'll
+see we will see
+so just give it a second oh there we go
+so it's gone ahead and it's essentially
+running composer
+install now if we were to download the
+zip file as I mentioned um you would you
+would get all of this stuff so so it's
+going to run it it also this is the Git
+Version is if you want to contribute as
+well so it does have a lot of uh extra
+development um features in there like
+Cyprus for example for Inn testing
+and he does I do believe um like yeah
+node
+install it's interesting using
+Cyprus I under the impression Cyprus
+isn't the flavor of the month when it
+comes to these testing environments it's
+um what is it playright anyway that's
+all right I've played around with play
+right it's pretty good all right of
+course of course
+this I spent bit of a story time time I
+spent Up 3 weeks on like 18 different 18
+similar Drupal sites trying to fix up
+node vulnerabilities and it is a bit of
+a relief to see that no matter what
+you're always going to have some package
+that has some
+vulnerability anyway all right so now
+everything is running and you can see
+here we do have this URL right
+here we can I do believe
+run the dev status and this is going to
+give us a bit more
+information and you can access things
+through
+different paths and ports things can get
+a little tricky if you do have other
+environments let me just grab this and
+make sure this is
+working all right it is cool all
+right so we get this nice little look at
+this Drupal CMS this is a very good
+looking uh
+installation all right so we have a
+comment oh started a government position
+new job as a druple developer starting
+Monday had to move wish me luck well
+good luck with your new job well you had
+to move that's a bit of a change yeah
+good luck with your new job it's kind of
+funny I feel like drupal's got a bit of
+a become popular again I don't know
+maybe PHP General has become become
+popular especially lville yeah I do
+believe um I always see those memes
+about what Drupal I thought it was dead
+you know I remember people saying that
+about 10 years ago well no good luck
+with your job I do hope you have a good
+luck with all that so here we've got
+this nice little installation now before
+we jump into this uh let me just quickly
+go through a few more commands here so
+if you type in ddev uh so ddev start is
+to start it you do have I believe ddev
+list this will list out all the
+available sites ddev logs will show you
+the logs um ddev stop will of course
+stop it uh you do
+have I'm going to say d a
+lot PHP my admin well
+that right you can run PHP my admin
+that's pretty cool MySQL to access
+MySQL what else launch I do believe it
+launches
+the um the website in the current
+browser or your default browser debug
+composer and if you do want to access
+things like drush you just type in ddev
+drush and so that will run it from
+within the
+container well you're not going to run
+it from here because generally you would
+do something like this but then does
+that kind of work no it doesn't oh it
+does okay well maybe that would work
+there you go learn something new
+righty oh okay that does work um but
+yeah if you type in Dr it's the same
+thing uh what else what else what else
+uh if you want to turn on xdebug just
+turn on xdebug it does run slower so I
+highly recommend that you only run it
+when you have to just the whole site
+performance is much slower when you run
+XD buug because he has to do a lot more
+things uh export database that is very
+useful when you want to just export and
+make make sure you don't lose changes
+that's about it anyway if you want to
+learn more about ddev so if I do have a
+link up here yeah if
+you come to the docs search the docs and
+usage I
+believe there is a good CLI commands
+commands commands this one yeah there's
+a whole there's a whole bunch of
+them just check it out ah see a li this
+is one yeah you do have a bunch of them
+yeah so I do highly recommend that you
+check it
+out all right so let's go
+here and let's
+install triple CMS so now we've got this
+nice little what what are your top goals
+that's interesting skip I wonder if this
+actually pings
+back like pings to a remote
+server well I assume so this this would
+go back to druple so they can track
+this all right so what what what what
+what are we doing blog SEO forms next my
+awesome site yeah what not my awesome
+site and click on
+next all right it's
+loading here it's
+loading I always get a bit worried when
+you sits here
+loading give it a moment need a bit of
+background
+music all
+right and hopefully it's going to
+install
+right
+about
+now must be doing something in the back
+end give it a moment oh there we go
+there we go got close what's my heart
+rate at this
+point all right it's gone ahead and it
+is installing we have liftoff get it
+star shot LIF off anyway I will stop all
+right
+so let's give that a moment to
+install and it is going to go and what
+in the meantime what I will do is I will
+bring up the code
+base so I can see it so we can see the
+actual code there we
+go little too much all right
+cool jump back here oh here we go all
+right so we're redirected straight away
+into the back end all right all right so
+interesting they are using the
+Gin
+theme huh
+okay so I'll be curious to know what's
+going to happen with our current claro
+admin
+theme I liked claro I like Jin as
+well anyway all right that's good um all
+right so straight away we have a some
+type of dashboard right here okay edit
+layout dashboard this standard okay all
+right not bad not bad not bad we can
+come along in here we can add
+blocks you know put in let me Chuck in
+another oh there we go I can move that
+the top here look at that and then click
+on save all right
+cool wait where the dashboard
+go oh wait a minute I'm redirected there
+okay oh okay okay okay all right we're
+back here all right okay this is good
+bad actually all right so we've got a
+nice little dashboard now on the front
+end we have
+Olivier is that
+a okay so it's a custom one wait now
+claro is there but je installed
+okay all
+right okay we've got that and then we go
+on the front end this looks just
+standard just different color but other
+than that it's looking good all right
+let's make our way do we have shortcuts
+Co create a
+blog our basic page
+blog form
+is this web oh this is web form okay
+comes with web form installed nice nice
+I do like that that's a good choice web
+form is um
+the
+top one of the top product based modules
+and what I mean by that and I've brought
+this up many times before is that it's
+one of the few modules where you install
+something and you get a product most
+modules in Drupal are some type of
+library or some framework or something
+around
+that uh then we've got that
+and got a few other shortcuts redirects
+okay so these are just basic shortcuts
+okay cool document add a YouTube video I
+assume this goes to Media yep and
+document it goes to
+documents this goes to add block app
+page not found that's fine that's Pro
+probably should go
+[Music]
+to where are the
+blocks h
+right s about block block content where
+is the block
+content where is it
+[Music]
+blocks anyway off anyway remember this
+is beta
+okay now one other thing we I oh I
+noticed up here oh they are using oh oh
+nice nice go the goto
+button block block navigation this I
+believe is coffee coffee module not
+coffee um but a module called
+coffee which is a little um
+popup what is it what are they
+called where you can type things in
+similar to like um what it Spotlight or
+Alfred on a
+MAAC is that coffee yeah that should be
+coffee I'm sure it is use user interface
+yes it is coffee all right well that's
+good very good this is very useful
+because because you can just jump into
+say um what is it basic you know
+page do that stuff which is pretty good
+all
+right so far so good it comes with a
+pretty decent amount of um
+defaults very good amount of defaults
+which is good because one thing I do
+think
+about
+uh is
+that
+people you know we've had distributions
+in the past and the good thing about
+Drupal is that uh you can build anything
+you want so often
+people um you know people just start
+with a blank Drupal
+site so I will be curious to see how you
+know how well this is picked up because
+because you are you do have this fine
+line where you don't want to be too
+opinionated but you want to offer a
+decent amount of Base functionality so I
+can see here straight away on the right
+hand side okay we do have simple XML
+sitemap which is great that you would
+use you have URL aliases with generate
+automatic HT um URL Alias which means
+path Autos installed I did see uh what
+is it redirect you have redirect now all
+of these modules n times out of 10 they
+will be instored on my Drupal site
+absolutely they're going to be stor on
+my druple site uh then we've
+got uh web form there's a high chance
+you're going to have web form installed
+which is great so you can see that there
+are a decent amount of
+defaults uh which is which is great
+which is absolutely great I do I do like
+that all right let's go ahead and
+actually create a block post so
+here test
+blog put a description
+hello oh thank goodness finally using
+media module and not just an image field
+that's good um the okay media field
+awesome I'm liking it we can select
+that
+and what is this what is
+this seo seo seo which module is this
+and is this let me that out that's a bit
+too big is this
+uh metag
+module
+H I am Keen to see what that is because
+yeah I'm I'm discovering stuff as we
+go oh it's
+not
+interesting why didn't they install
+metatag module
+so they must add
+that into the template somehow and
+inject it interesting okay it's an
+interesting design
+Choice like both yeah I mean it's it's a
+per it's it's perfectly valid um
+especially if you just want to mod um if
+you just want to add in a title image
+and description which is used for um
+yeah a lot of like the Twitter cards
+well they're not not Twitter anymore
+whatever it's called X cards and um
+things like that what's the Facebook one
+called o o bed no it's not any I forgot
+um so that is an interesting design
+choice but no that's good we still have
+good old body field with the formatted
+long with summary good old Drupal ISM
+you got to keep that keep that kicking
+and then description is the description
+okay a nice nice um default right there
+let's go
+[Music]
+to basic page again same set all right
+it's good and it's pretty much exactly
+the
+same all
+right we've done that let's
+create all right test um what is it uh
+putting some test content
+and we'll click on save save is up the
+top here I believe yep save all
+right
+simple now let's take a look at the
+editor nice nice nice nice nice standard
+stuff this is Media mod media library
+great so we can embed perfect good
+choice do these work yes they do okay
+nice I do like that and if I select the
+link oh I think they are
+using that should be link it
+right take a quick
+look is it link it link module link it
+good that's another good one on they got
+exposed filter as well all right that is
+that is good that is very
+good they've set that
+up we've got a nice little link and it
+links to itself all right
+fine all right so when it
+comes to the editor yeah I mean things
+are
+looking things are looking pretty
+straightforward you have your standard
+set things are looking good
+what else up the top
+here have publish save preview this oh
+that's a bit of
+a might be hard to find this
+delete okay we also have the ability to
+duplicate
+okay all
+right nice
+functionality
+dup and click on Save and it is
+duplicated okay you are duplicating all
+right and it is duplicated all right
+fair
+enough okay that's okay decent right
+there we do have a trash okay
+interesting so what a minute if I go
+delete are sure you want to delete this
+then it will move it to the trash you
+can oh
+okay this is
+different it's funny enough actually
+worked with um with somebody who deleted
+a whole bunch of pages and then asked if
+oh if I can just get it back from the
+trash and I had to explain to him that
+no once it's deleted it's
+deleted so this is actually pretty
+cool right so one comment from YouTube
+can you make it so the text color can be
+changed
+that is a good
+question no now I do believe there is a
+there might be a module that can do that
+there might be a Drupal
+module but
+generally I I would probably try and
+create a style where you can apply a
+style and change a color because as soon
+as you start letting letting editors
+change text colors they just go in and
+they just change it and it stay and it
+sets the color as a
+style but I do believe that there is
+what is it druple CK
+editor color
+Pier color button color
+dialogue have a look shall we oh here
+you go
+and
+it's or okay decent amount of inst
+stores not druple 11 well has been
+updated for a
+while this one's been updated as of the
+14th all
+right interesting calendar you know what
+this might be a nice little short video
+for me to do
+and then we have
+here what's this
+one yes you're going to get editors I'm
+just replying to a comment in YouTube
+yeah you got you're going to get editors
+asking for that functionality because
+they want to change it but the issue
+is when you allow them to change colors
+they're going to go through and start
+changing colors absolutely everywhere
+and if you need to then change those
+colors in the future across 20 OD Pages
+it's all hardcoded
+in the markup whereas if you give them a
+style you try and get them to adhere to
+a style which is just a class then at
+least you can then change the color in
+the future because the class won't
+change so generally what I've done in
+the past is I've I've I've added like a
+style from here with I would you know
+you would call it primary secondary info
+warning and it just changes the color
+based off that and then and then they
+can come along in here and select
+warning info or even just give it give
+it the color name because then in the
+future or all you need to do is just go
+in and change that color to something
+else because they will ask for that
+functionality and then 6 months later
+they'll be like oh by the way can we
+easily change all of the text that's red
+to orange and then and then you're kind
+of stuck thinking well we can do it but
+going to require migration work and you
+know epic amount of reic or something
+like that so just be aware of of
+that but I'd take a look at this CK
+editor color dialog box or
+dialogue works it's been updated I
+assume this is
+it is required that need
+a oh you can embed icons that looks good
+that looks good all
+right all right so all in all so far so
+good everything's
+looking pretty
+decent I do like this trash be curious
+to see how this
+actually oh we go purge does that delete
+it that deletes it
+forever
+interesting uh let me have a look um
+what is it D
+myql let's have a look at at the table
+cuz I'm curious to see
+what is it show
+tables assume it's so there is no field
+called trash so chances are it's a
+property on
+here
+select oh deleted all right there we go
+that's what I want so that would be so
+select n ID
+title
+deleted that's set to null now if I come
+along in here chances
+are that n gets turned into
+something so let me delete
+this then come along here oh there you
+go oh he just sets the time stamp
+that's how it tracks it to see if it's
+being deleted all right that's
+simple all
+right so that that is a nice little
+feature that is a that is a nice little
+feature this this
+trash I wonder if that's an actual
+module I've only ever had one person
+have that issue in the past about um the
+trash bin but that is that that is nice
+because everyone is used to having some
+type of trash trash bin um or trash or a
+bin or whatever you want to call it um
+so it's good to see that yeah that's
+been
+implemented all right let's make our way
+through email templat so chance okay so
+it looks like they're using some type of
+emailer that's fine all right so let's
+go to
+extend oh we have uh the project
+browser this allows
+us to browse
+projects this is part of the initiative
+you can see what's been installed very
+nice very very
+nice it is a little slow but I guess he
+needs to download it
+all select select
+and then we come along oh this is
+actually very very good I I remember
+playing with this ages
+ago H why is it showing rules is there a
+druple I'll be curious to see all right
+let me select a module and see if it
+actually
+installs panels old
+school focal point
+beads let's have a look at the let's
+have a look at the current modules that
+are here so let me go
+web modules I want to install something
+that I know isn't in
+here all right so feeds isn't in here
+all right let's see if this works select
+feeds and where is the instore what do I
+do now oh down here bottom all right
+bit of a bug there that's right this is
+still
+beta
+installing is it going to actually
+install
+it fail to run okay all right that's all
+right that's all right it's trying
+[Music]
+to failed to run why is that output
+error let's take a look I've got a
+feeling that well tonight's not going to
+be a good night I can't install it let's
+have a look maybe it's because it's
+complaining
+about this all
+right let me think of a module that's
+stable
+uh let's try well let's try this
+one I'm I just want to see if it's going
+to
+download cuz he's complaining about um
+the
+platform so no it's not
+installed give this a
+go oh no color
+button we going to be able to find
+it searching it's searching it's
+searching
+and let's go back to the front let's go
+back okay let's do this CK editor color
+see if you picks up this module
+all right we're getting there getting
+there getting there why
+is
+oh oh okay all right so you can see it
+requires all right give me a module
+that's not
+installed where does this
+go where does this go can I actually
+see dependencies I don't want to
+compatible with your installation yes I
+know but I want to oh there we go there
+we
+go sorry about that I want to see a
+stable version for 11 all right cool
+let's let's install this one
+select all right select and let's go
+install why is it installing now two
+projects does it actually download
+it all right let's just do this again
+let's have a quick look and see if it
+actually downloaded it no it didn't oh
+that's a shame
+anyway well that is good to know that in
+the future so chances I probably has
+pull in here somehow I've got a feeling
+that it is his
+stability causing a
+problem anyway we'll
+see if that's a c when this can be
+sorted out that's going to be a Game
+Changer honestly it's going be an
+absolute Game
+Changer all right so far so good okay so
+this is still a working progress but you
+can see okay it is it's going up like
+this this project um browser is a big
+initiative I can imagine it is a massive
+initiative all right then we have um
+these recipes now I mentioned this
+earlier on so recipes is this
+new is this new thing where it's kind of
+like um
+config import 2.0 where you
+can ship functionality between Drupal
+sites I always thought of it as features
+who remembers features put your hand up
+if you remember features that was it is
+essentially like that so features in
+Drupal 7 was was was massive I used it
+on pretty much every single site to
+track config changes and it worked so
+well it was great you could just ship
+featur you could ship functionality
+between sites and it worked pretty well
+so you know it was a precursor to config
+config
+management um
+and and so these recipes are just your
+config defined as yaml files so here you
+can see the
+recipes and they are just modules that's
+my understanding I I've been wanting to
+actually sit down and get a proper
+understanding of recipes and do a proper
+video about it like here um but if we
+take a look here we can see that we do
+have these uh Drupal recipes druple CMS
+starter blog events pulls this stuff
+down these I believe would be let's see
+let's see are these actual projects on
+drupal.org
+they are okay so then we come along in
+here and it's empty why is it
+empty where's the actual code
+stored interesting okay H got a lot to
+learn I've got a lot to
+learn and if we go here we can see what
+is the recipes and we can see actual
+recipes here let's take a look at blog
+you have recipe. yaml so this defines
+the
+actual so install that will be the
+modules
+and then these are the
+[Music]
+actual config that needs to be imported
+okay you have
+tests standard content ah this must be
+default content okay and actually down
+installs default
+content I wonder if you can just set up
+a druple site run a command and it
+generates this for you because the last
+thing I want is to be fiddling with this
+these yaml files and around with
+that and then you have your actual
+config oh okay so I wonder what the
+actual workflow to actually build these
+would look like would you build a Drupal
+site have one Drupal site where you're
+building out this functionality do a
+config export let's say for example this
+view oh no you can actually export it
+out in the back end so you
+could so you could come what is it you
+could come here build out your
+view I don't like the fact I can't oh no
+I can go to configuration all right good
+I can go to
+configuration take me to
+configuration and then where is config
+syn can then come along in
+here single so if you want to export a
+specific
+View and then select your
+view and then just copy all that you can
+see that's it's a m amount anyway it's
+that's big um and then of course you
+would remove the U uid so I I assume
+that's how you would do it but then you
+really need to know exactly which which
+yam files need to be exported out and
+that can be a bit of a pain with Fields
+because I know
+Fields Fields has a base field so if you
+create one field you have a base field y
+an instance and then you have the
+manage display
+Amo manage form
+display yeah you have a lot of
+config you'll be yelling at at the yam
+for that yeah okay all
+right I do have to start building out
+some actual
+uh functionality like that that would be
+actually pretty cool all right let's go
+back here
+so you can see that the recipes are all
+in
+here and then everything
+is we do have the core
+recipe so you really do have to break
+things out
+eh then that pulls
+in
+interesting
+that easy
+email starter and let me guess then
+starter pulls in all the other
+ones as well okay all right
+so now let's install one of
+these
+actual
+recipes I'm starting I'm starting to get
+a little hungry now talking about
+recipes all right let's let's install
+one of these events one right let's
+install
+events all right I click down install
+down right down at the
+bottom installing installing it's not
+downloading anything so it should
+technically work oh okay cool that
+installed
+awesome now if I go to
+content I see
+event there we go and if I go to
+create I see an event nice test
+event and you've got your stuff
+here okay that works
+nice all right that is good that is good
+that is good that is good all right
+let's now take a look at the rest of the
+configuration so we have capture nice
+Autos form
+save that must be some helper module
+coffee easy
+breadcrumb consent
+manager
+antibot crop types oh okay that's pretty
+cool focal point hey I like that module
+very useful module
+or focusing on the focal
+point and we
+have SEO
+checklist robots.txt metatag oh we do
+have metatag
+here so you could install metatag node
+and then you have a module then you have
+sorry the field sort that out all right
+metat Tag's there very
+good shortcuts navigation all right
+geocoder where did that come from
+I assume the event is using
+that Symphony M light that's
+good
+huh GI address field
+who's what dependency
+is required by yes yes yes it's required
+but I want to know who is actually using
+that like which module is using that
+address is it address
+Field address is
+there code
+address oh okay
+well
+because have a quick
+look geoc is used by
+oh there we
+go
+locations it is used by the CMS
+locations uh
+recipe
+and but how can you see if it's instored
+the recipes that is what I want to know
+because I can't see that
+recipe
+yeah all right so if I come along
+in so that's the name but I can't see
+the recipe but I can't see the recipe in
+here you know what I mean unless it's
+got some other dependency okay all right
+that's
+fine now I did notice if you go to
+configuration we do have this ECA right
+down at the bottom I don't know if you
+can see it um but this is this um
+events conditions and
+actions so this allows you to create
+kind of like workflow similar to like
+what rules allowed you to
+do um but you can create it
+yourself okay cool so what is this
+useful authentication redirect so if we
+click on edit we can see here the event
+user logs
+out back to login after okay that's a
+pretty simple one
+then we have duplicate
+content all right come on
+here right this is interesting I've I've
+played around with ECA I'm not I
+wouldn't say I'm an expert in it but
+I've played around with it but this is
+very interesting I did not know you can
+do it this way so this duplicate so this
+duplicate button and also
+here is powered by
+this H that's
+interesting I would honestly think I
+would honestly think that they were
+using the duplicate module for
+that wait clone duplicate wait a minute
+wait a minute replicate there's a few
+modules no they're not interesting I did
+not know you can do that with ECA so I
+can see here that there is a operations
+link so this operations link must be
+called for this and then you can chuck
+in a link and just add it in there that
+is I did not know you can you can create
+so this link here on the right hand side
+was created without writing any custom
+code
+huh see this is why I like open source
+things and you know you can you can just
+download it install it and have a play
+with it and you learn how to build
+things that's that's how I learn how to
+code cuz I could look at the
+code that is
+awesome
+oh my mind has been blown that that you
+can do all that I would write code I
+would straight away and just write code
+to handle that and then for this after
+local so this sorry what is it alter I
+hope you can see that in the Stream you
+should be able to see it but this says
+alter alter local task so that
+is these up the top
+here huh that is awesome
+so loads it
+up this is interesting what's this clone
+existing
+duplicate but what is this is this a
+clone an
+existing and then you put in a operation
+which is create so they so they have to
+have create
+access I assume entity is accessible and
+the link and this is oh here's here it
+is see I would not know to do this
+unless I actually see it in action
+so then if I Chuck
+in
+duplicate and hit
+save this should
+change who that's awesome that is
+awesome and this will also change as
+well I've just now figured out that I
+can just use ECA to just modify a whole
+bunch of stuff in Drupal without
+touching any code that is absolutely
+awesome
+whoa or as K reev
+says that's
+cool bravo bravo whoever came up with
+that because you know I've looked at
+what is it druple
+EA it's it's a pretty full-on module i'
+I've played around with it I've I've
+done a video where I've integrated with
+open like like a short one with open
+AI but if you take a look at yeah these
+things sometimes it can
+be you know the documentation is a bit
+it's bit hard to follow along and see
+what's actually happening we have
+loops modelers plugins access
+endpoints events yeah I mean this
+doesn't like it kind of
+explains you really do need to spend the
+time mucking around with it and just
+getting your head around it because a
+lot of this stuff is like okay what what
+is this stuff
+render render
+block wait a minute okay okay okay okay
+okay let's go let's go back
+here General add link
+template machine
+name build after all right this is this
+is absolutely
+awesome all right so okay so that adds
+the link then I guess oh I did not know
+you can add in multiple so then this one
+is
+actually then
+used to
+create create the duplic
+it so here we've got prepare let me
+close this prepare entity or okay
+load
+entity
+ID weer argument so that means chances
+are there's an argument yeah there we
+go so duplicate equals and then the six
+which is the ID
+that's the ID load
+original
+entity so this makes heavy use of this
+makes heavy use of of
+tokens then we come along in here this
+just sets the message and then this one
+goes ahead and D this one goes ahead and
+duplicates it so clone cloning
+existing so that means if I come in
+here is there a clone oh okay all right
+all
+okay now I'm picking up what you're
+putting down all right all right all
+right so then this
+action existing is that all
+right I really need to get
+my get my head around this stuff and
+have a play with it it stuff's pretty
+cool all right that is cool that is
+absolutely
+cool all right
+who I've learned a lot see I'm always I
+always love to just play around with
+things and just learn new
+things that is absolutely awesome can we
+duplicate this export oh exporters
+recipe interesting
+I want to see I want to see what
+happens oh oh right I want to see what
+happens I want to see what happens T
+this test uh name space um yeah yeah
+where is this
+going temp directory do we have access
+to the temp directory somewhere here
+come on come on come on come on should
+have it there is that in I need to make
+sure
+no no no no no I want to where is the
+temp directory that is a good question
+where is it have a quick look all right
+um temp temp temp SL
+temp it's on the actual
+um it's in the container so what would
+that be is H SL1 people being here wait
+no not
+there wait is it yes it'll be in here
+somewhere here so if I
+now run this export it's export it
+recipes yeah we have it
+here there we go config we have Vim oh
+we do no we
+don't all right oh actually develops a
+full recipe for that and then we have
+um
+cat that's that okay in config what's
+there
+let's have a quick
+look
+EA
+okay now it'll be even better if I can
+get this out let's do that
+again let's get that into the F system
+so that would be let's do this one right
+all right test test um
+duplicate or public I Chuck in public
+it's
+fine
+save oh there we go there we go there we
+go there we go all right nice so we have
+our recipes
+here how to run
+it require ECA nice
+we can run it that way we got this
+here then we have an actual
+o oh it stores everything in like this
+XML
+interesting what's the difference
+between
+this oh so this is the
+model oh this must be the
+actual so that must be this model this
+actual UI y thingy here and then the
+actual operations are
+here well that's pretty easy to
+understand and then
+this
+references I would assume if we then
+take a look
+at it to R VCA
+take a
+look I should have really opened this up
+in PHP
+storm it must be some type
+of Shame it's got to be in
+here wait
+searchy
+stuff plugins
+actions
+Vin oh it's got to be somewhere anyway
+all right now this is this is actually
+pretty good this is this is good stuff
+this is very very good
+stuff it's good to have this um ECA
+because you can create some pretty power
+powerful powerful things oh email log oh
+nice
+H you can do this stuff as
+well all right so for everyone who's
+watching I mean what are your thoughts
+Chuck them in the
+comments
+about about all of this so
+interesting yeah there are a few things
+some of the things that caught my eye
+the trash bin you know that you can just
+trash content um ECA is
+[Music]
+used project browser is used which is
+good I am surprised that yeah we are
+using um gin but I do like the thing
+don't get me wrong the backend theme is
+pretty cool not going to lie to
+you it is pretty cool
+all right well let's just wrap it up
+there
+that's a wrap for this
+video so if you have any questions just
+send them over now I will stay after
+once I wrap things up
+once
+I wrap it up
+okay oh can it actually
+in stuff
+here all right so if you do want to help
+out and play around with um all of
+this find
+the what is it druple
+CMS go to
+drole and score
+CMS and on wait that this oh this is G
+gitlab let's go here drupal.org
+projectr
+CMS go check out the code where's the
+documentation for
+[Music]
+this that's not it all contribution this
+is the one you can come along in here
+and see everything that's Avail um what
+can be set up you can create okay so you
+can create your own recipes okay that's
+pretty
+cool that is actually pretty cool you
+can go ahead and create your own
+recipes all right
+oh a comment from YouTube yeah the first
+time this is the first time I see ECA
+module yeah like the ECA module is
+pretty cool I've I've known about it for
+a while um and I've been wanting to do a
+video on it but kind of need to need to
+sit down and learn it and I've I've I've
+attempted multiple tries on setting it
+up and I've always kind of hit a brick
+wall you really need to get a good
+understanding of it but it is a good
+module it is a good
+module all right let's just wrap things
+up so so that is it thank you so much
+for coming if you want to learn more
+about duple head over to webwash
+Donnet and also um check out our other
+live streams we have them in um in
+they're all they're all on YouTube you
+just click on live you'll see all of the
+streams there available and If you have
+any questions or comments leave them
+below the video and if you have any
+ideas for future videos please let me
+know anyway thanks for joining I'll
+catch you all next time
+okay well that was actually pretty
+cool that is actually pretty
+cool so far yeah I am I'm pretty
+impressed with
+[Music]
+um this
+up I am pretty
+impressed no thank you thanks for
+joining thank you for
+joining no this is this stuff's pretty
+good I am I I really do hope that
+uh I'm just having a quick
+look I I really do hope you know these
+people do take all this stuff on and um
+start building a lot of sites with it
+because it does look pretty
+good and
+um yeah I mean it's it's pretty it's
+pretty it's pretty full on you kind of
+forget what Drupal can do you could you
+do kind of forget what he can do and um
+it's good
+stuff it is good stuff
+all right so before I head
+off throw your questions at me thr them
+all at
+me what Drupal Drupal sucks why is
+druple still around I thought druple was
+dead no I'm
+joking I do get those occasional
+comments All right so um coming back to
+druple from 67 do you have any videos on
+recommended base module
+stack well uh that's a that's a tough
+one
+depends oh base module stack
+um depends what you're really doing I
+mean the most important thing is to just
+look
+at
+or have a play with this I mean this
+will give you a good idea of the most of
+the most popular modules in Drupal um of
+what's in Drupal
+CMS the thing is though you do have to
+deal with
+um you have to deal with like different
+versions of Drupal so some modules may
+be available for druple 10 only or
+druple
+11 so just have a play with it um and
+yeah I don't really have a
+recommendation for a module stack but
+yeah another comment yes I think it's
+the equivalent version of Wordpress ah H
+yeah kind of I think WordPress still has
+a better editor experience in my
+opinion I know a lot of people don't
+like Gutenberg but
+um you know for me being able to just
+drag and drop images directly into the
+editor and just writing things is is a
+is a good thing you can install
+Gutenberg on in in Drupal and I've done
+a video on that um but I think word with
+WordPress it's the ecosystem there's a
+lot of plugins that can do a lot of
+things and they are paid plugins as
+well which is which is which is an
+interesting thing about WordPress
+because web.net is is a WordPress site
+even though it talks about druple mostly
+no there there's a few
+WordPress there's a few WordPress
+tutorials on there and a tutorial on
+setting
+up wait do I have one on setting up VM
+13 to run um Windows
+11
+yeah however it's more professional than
+WordPress of
+course oh you might offend a few people
+if you say that uh I don't know
+WordPress has its place Drupal has its
+place yeah professional I mean it's a
+it's a tough thing like what is
+professional so many times I've been
+using Wordpress and I've thought to
+myself you know what it would be great
+if there was like views and there are
+plugins there are there are plug-in
+ecosystems um that are run by single
+companies that give you like the whole
+views functionality but you need to then
+invest and buy their plugin and then
+you're kind of locked into their system
+now is that a good thing or a bad thing
+you end up being locked into something
+well you're technically locked into some
+you know you're always locked into
+something it's just how easy is it to
+get your content out that's the most
+important
+thing that's what you need to deal with
+so yeah so
+yeah so there we go that is triple CMS
+in a
+nutshell but I do hope with these whole
+recipes I do
+hope that we get to a
+world
+where you can install dle
+and then just pick and choose
+functionality from some type of browser
+like project browser and say okay I want
+I want my druple side to have
+subscriptions be able to handle
+subscriptions because I'm looking at
+that right now I'm trying to figure out
+I'm trying to figure out if I want to do
+like a um do like a community website
+around well have a webwash community
+website um because all of my live
+streams are on YouTube and um and they
+are and the only way I kind of like make
+money from them is um through ads
+through YouTube but I've always wanted
+to then grab those videos well I've got
+those videos already um I've got like 25
+26 27 videos or long videos it's CL
+clogging up my hard drive and then cut
+them up into ad free versions and just
+make them a bit bit shorter and just put
+them up somewhere and then people can
+support the channel and support what I'm
+doing um by joining the community and
+also you get to join and ask questions
+and then we can do live stuff as well so
+anyway that's what I'm thinking of doing
+and I've been looking
+at potentially using Drupal to build out
+this community because when you look at
+membership sites they're not cheap they
+all you know yeah they starting at like
+$50 us a month or 100 us a month and so
+and they want you to pay one year UPF
+front so that means you're forking
+out come between $500 and
+$1,000 um and so I was looking at maybe
+do I do create a basic thing in
+WordPress or
+druple yeah I don't know but it would be
+good if I could then say in download
+Drupal and say you know I want a course
+system with subscriptions install two
+modules or two recipes and I'm done and
+that's it
+anyway I Can Dream It's like
+that all right well that is it for
+me any other questions before I wrap up
+thank you very much for joining had a
+fun
+time how is the stream going still all
+right cool perfect anyway have a great
+weekend everyone and I'll see you
+all next time take care

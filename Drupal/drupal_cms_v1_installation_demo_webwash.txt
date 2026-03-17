@@ -1,0 +1,2281 @@
+good evening good evening good
+evening all right
+just running a
+little
+late apologies about
+that hope everyone's going to be
+starting very very
+soon all right just need to make sure
+everything is streaming and
+coming through loud and clear
+okay I think everything is coming in in
+loud and clear
+all
+right yes all right perfect
+okay take my annoying headphones off all
+right so where are we where are we all
+right it's a big day
+today just fixing everything up going to
+be a pretty relaxed day
+go through all the awesome
+stuff all right I just need
+to set this up a little
+bit all right
+great and last but not
+least all right just start chucking in
+all your
+questions and I'll do my best to answer
+him druple CMS version
+one all
+right do a few more quick things
+okay there's always a ton of stuff that
+needs to be
+done all right and last but not
+least all
+right and finally going to start in a
+few minutes oh few seconds
+and we're good to go all
+right 6 Seven 8 N9
+10 all
+right done that
+and need
+to that all right perfect done all right
+cool all
+right so I hope everyone's had a great
+day it's been a big day for the Drupal
+Community let me switch
+over Main feed over to
+that hello everyone all right let's just
+get started this is
+pretty I wouldn't say it's unplanned it
+is very much planned but all I'm saying
+is this is just a nice little get
+together for druple CMS so we might as
+well just get started well hello and
+welcome to this live stream this
+important day it is January 15th and I
+do believe it's also drupal's
+24th birthday now the last time I
+actually checked my um age of my actual
+druple user account I think it was like
+14 years ago that I signed up on
+drupal.org so it's a teenager but anyway
+today's a big day druple CMS version one
+has been released now let me just
+quickly give you a quick recap of what
+has happened in the last 6 months just
+quickly just so that we're all on the
+same page and I don't get comments
+saying what's Drupal CMS is there a new
+version of
+Drupal okay so what was it eight months
+ago the starshot initiative was
+announced to make a packaged version of
+druple Drupal CMS is still Drupal it's
+itself but it but it is a packaged
+version and it's got some great things
+such as um recipes recipe support where
+you can add in functionality through
+config automatic updates a nice
+backend um system and all sorts of stuff
+and the whole point of Drupal CMS is
+that it
+is a nice and easy way to get started
+with Drupal CMS so my understanding of
+this of the naming of things because
+drupal's always had this issue about
+figuring out is it a framework or is it
+a product is that druple core as we see
+here is just what you is just what what
+we used to call druple which makes sense
+Drupal core is the framework if you call
+it that and druple CMS is the nice
+package version that we're going to be
+looking at
+today so as I mentioned this is a very
+relaxed stream we're just going to go
+through it there's a lot of things that
+are going to be new to me as well so and
+I'll do my best if things
+break uh while I'm demonstrating well
+you're going to see me debug things okay
+so what I'm going to do is well first
+let's check out the
+comments all right it looks like um
+YouTube is the place to be so if
+anyone's on any other stream especially
+like LinkedIn I know I know that
+LinkedIn can sometimes be a bit dodgy
+with the Stream or whether it was like
+that in the beginning um YouTube seems
+to be the most stable all right so few
+comments hello everyone um okay so first
+comment Drupal do not install V via
+composer okay is that Drupal CMS or
+actual druple call I haven't tried the
+composer I can see here in right here I
+can see composer create uh druple CMS no
+we're not going to be installing it that
+way we're going to be installing it
+using a
+download um then there's no
+sounds great yep hi hi hi everyone's hi
+smiley faces which is great hello hello
+hello and then we have no web
+installation all right well what I'm
+going to show you now is how to install
+it using the
+download so the zip
+file so if we head over to the CMS
+project or duple CMS
+project here
+you've got a nice explanation and you do
+have a release this is a version one
+release which is absolutely
+awesome so we've got this
+here now if you click on this version
+one you will see a download so this is
+this ZIP file I'm going to go ahead and
+download it because there are pretty
+much three steps well first of all
+install
+ddev okay I'm not going to show how do
+that because that's a whole other thing
+but let me just
+quickly show
+you so ddev is a Docker based
+environment and it is kind of the
+standard now when it comes to um Drupal
+sites especially like um like the druple
+community I believe
+has adopted it as its uh choice of
+backend
+um choice of um sorry
+development environment which is great
+and
+so I do recommend that you get this set
+up I've got it I've got to working on a
+Mac and I think also on Linux but
+windows I don't have any support so
+don't ask me for uh Windows
+support all right so one comment no
+composer interesting choice no there is
+composer you can download it through
+poser right here but I haven't tested
+that that that way out at this point so
+I'm not going to just change at the last
+minute during this stream but just with
+anything in druple there's multiple ways
+to download it so just download it
+whichever way you
+want so make sure you have Docker sorry
+ddev
+installed and oh there is a comment
+saying that ddev works with Windows all
+right well there you go okay that's
+great it works that's good um I've
+already gone ahead and downloaded it got
+it all working uh well ddev and here
+I've got a few things so I've actually
+got version one did a quick test to make
+sure version one works this is rc2 don't
+worry about that but let me just
+extract this Drupal CMS and I'll call
+this one V1 okay but come along in here
+and this is this is it okay we have our
+script that we can run
+here and what we can
+do now is if I go into my list
+of uh goodies right here all we need to
+do is open up the
+terminal let me
+just go into my
+terminal what is that druple CMS
+V1 I'll clear that so it's nice the top
+and all I need to do is run launch Tri
+cms. Shar and it should go ahead and do
+everything so it's going to go ahead and
+just run ddev start and it's just a
+simpler way of just running one command
+so I've already got Docker downloaded
+and ddev set up it's going ahead and
+just doing its thing so just give that a
+moment it doesn't it doesn't take too
+long and then in the meantime what I'm
+going do is I
+will
+get um while it's
+downloading where is
+it all right so we've got all of
+that now let's open this up
+all right let's open this up in a
+different browser now this is the brand
+new installation
+page so we've got this installation
+page and we can actually have it
+preconfigured so let's select say blog
+Okay click on
+next and this is a Drupal blog put in a
+name then I can put in my accounts so I
+just put in
+this can all this can all be changed and
+then we click on install or
+finish and it's going to going to go
+ahead and install it's actually
+surprisingly quick it is surprisingly
+quick so let that
+install and once
+that has fully
+installed there we go it
+has taken us straight to the
+page and we've got this nice back end
+which is actually gin and we have this
+nice little fancy
+layout over here as well so we have a
+lot of nice goodies that it gives us out
+of the box and at this point all we've
+done is just gone ahead and installed it
+and that is it now before we take a look
+at this let me just quickly go through a
+few things with ddev because if you are
+using ddev there are there are just a
+few things I do recommend that you kind
+of get your head around okay so
+quickly if you just type in ddev you
+will get a whole bunch of commands
+there's a there's a ton of commands here
+the two most important I believe
+are so you have DD stop this is going to
+stop
+it but but you're not going to lose any
+data unless you actually specify I think
+what is it says
+here um D- remove data okay now to start
+it again just type in ddev start and
+that's going to go ahead and start it
+for you
+and just give it a moment
+and you should see it okay and it gives
+you a nice little URL right here you can
+also type in ddev I think status that
+will give you a bunch of URLs that you
+can access the site you can actually
+access the project on a few of them and
+to run drush you want to run in you want
+to type in D Dev drush so that means
+it'll run it in the container you can go
+ahead and just run it that's the same as
+composer if you want to type in
+composer you can just go ahead and run
+ddev composer uh if you want to type in
+what is it if you want to actually SSH
+into the composer I think it's ddev SSH
+that gets you directly into the
+Container um we can go out if you want
+to go into MySQL it's ddev MySQL that
+will take you straight into the
+database container then you can just go
+what is it show tables and you can
+knock yourself out and go look at all
+the
+tables uh what else I think that's about
+yeah that's about that's the most
+important stuff when it comes to whole
+bunch of commands another little cool
+command that I like to do is just run DD
+especially if you're running things
+locally UI which gives you a user login
+link of course if I was just to click on
+that it will take me to it'll log me in
+with my default browser but I'm not
+using that during the stream I a
+separate browser so I can just but I can
+come along in here and just paste that
+in and it's going to log me in straight
+away well I get an access denied let's
+do that again come along in
+here copy
+this and then it's just going to log me
+in and I get a nice little onetime login
+and that's just a great way of just yeah
+nice quick and easy way to log in
+locally people do it also online as well
+but it's a nice way to log on um log in
+locally all
+right
+um oh yes there's a comment also
+ddev um yeah the execution that's
+another command you can run to execute
+things without sshing in all right so
+let's take a quick look at
+what druple CMS gives us okay so we do
+have a backend theme a different theme
+it's not claro it is Jin so if you've uh
+ever used the gin backend theme this is
+it we also have the new
+Navar as well you can see it comes in
+from the left hand side things are a
+little more polished than say Drupal out
+of the box and this is the stuff that
+you normally do when you're building out
+a
+project uh so if you click on if you go
+to create you'll see that you can create
+a user account straight away from create
+you can create images which are media
+types you can also go ahead and create
+blog posts basic pages and things like
+that so if we go ahead and create a
+about us page we can add in a
+description about us
+page and about us
+page goes
+here on the right hand side and I'll
+make sure my head isn't covering it it's
+not really we have
+workflow out of the
+box Ur aliases as well so path Auto and
+redirect Module come a standard which is
+great I install it on every single
+Drupal site we also have scheduling out
+of the box as
+well uh we also have coffee if anyone
+remembers coffee okay so that is where
+you can easily jump to particular
+pages s to Alfred Spotlight raycast I
+think is the popular one these days I
+don't know by saying Alfred on the Mac
+I'm showing my age because I've been
+using that for about 10
+years and
+uh so then we come along in here and
+click on Save we have a Drupal
+site all right one comment Drupal
+finally looks up to date like like it's
+2010 okay
+all right not sure what that means but
+um at the end of the day it's not really
+about the look and feel in Drupal cuz
+that can always be
+changed a look and fuel can just be a
+you know it's just a
+theme it's what's underneath all right
+so we've got
+this option so we also have on the front
+end I believe it is just standard Drupal
+theme but not that you're got to be
+changing the Drupal theme so that's not
+so that is not important all right what
+else do we have well as I mentioned we
+have workflow out of out of the box we
+also have if we come along in
+here we do have the ability to duplicate
+content uh the other thing we have and I
+have mentioned this before so let me
+just quickly create another test
+page test page test page then we to put
+another test page
+hit
+save and when you click on delete what
+it actually does is that it adds it to
+the
+trash it doesn't automatically delete it
+so so Drupal has like a like a trash can
+or bin or whatever you whatever you want
+to call it so pretty much like
+every OS you do have some type of trash
+system and
+so if we on
+delete and we go to trash we can go
+ahead and simply restore it or we can
+Purge it and that actually works pretty
+well because I've actually had this
+problem on where an editor came up to me
+and said oh can you restore this image I
+no it I think it was Pages yeah they
+like I deleted a whole bunch of pages
+can you just restore it from the trash
+bin and unfortunately I have to tell him
+it's like ah druple does not have it
+this was this was a long time ago
+and and I did think about it it's like
+well why not why doesn't actually have
+it and there is a there is a module now
+called trash that you can install and
+you can add trash bin to your druple
+site so that is a very nice
+addition so from media you can see all
+of the available media items which is
+great and then we just have the the
+standard uh stuff so if you click on so
+one thing I I I do want to mention is
+that if you do want to get access to the
+original um links so if you want to see
+structure because I don't
+know I'm not sure about this
+Navar cu the last few days I have been
+kind of fighting against it there's been
+times where I want to go to these say
+display modes but I can't go to it but
+if I go to structure then display modes
+then I can see it you know what I mean
+so that's one thing I do recommend if
+you want to sometimes go to structure
+and you want to see what's available
+then yeah you just want to click on say
+configuration and again click on there
+and then you can see everything that's
+available and that and that and there
+that's a bit of a top
+tip all right question okay would would
+like you to show us a demo of Drupal
+core itself well it's not going to
+happen tonight this is Drupal
+CMS uh yeah I
+mean that is uh if pretty much every
+single live stream I've done beforehand
+has been a demo of Drupal call but not
+tonight sorry tonight is Drupal CMS it's
+druple CMS is night to
+shine um yeah because it is druple CMS
+release so that's going to be the focus
+for this
+evening all
+right and another one isn't that just
+publish or
+unpublish just different terminology I
+believe you're talking about workflows
+no no no so if we so let's take a look
+at that right now so if you go to
+workflow um okay yes this is a very
+basic system
+but what workflow allows you to do is
+that you can set up
+Transitions and um you do have draft
+published and unpublished and workflow
+then allows you to set
+up all these other
+transitions oh no you meant
+trash well technically um well no well
+okay from a database standpoint I would
+assume that yes it is published or
+unpublished but it does kind of treat it
+a bit differently I do believe it
+places a um
+extra extra base field on the database
+datab on a database table or something
+like that I don't know the intricate the
+actual schema of it um but I do believe
+it's probably treated a little more than
+just a unpublished or
+published all right another comment if
+this is not composer based wondering how
+to update it no this is composer based
+um if you go there is an actual composer
+download um I just wanted to make sure
+that
+uh it works correctly and I I just
+personally haven't tested out this
+composer way so you can download it that
+way so new theme gin is by default for
+druple CMS yes the back end this is just
+the backend theme is
+gin all right right
+so let's go back here let's go to
+structure you do have a few extra things
+you have
+dashboards and that I believe is this
+dashboard up the top here you know it's
+nice
+yeah ads go in here and edit and you can
+add in extra dashboards which is
+great what else do we have email
+templates now I do believe a symphony
+mailer light comes out of the box which
+is great so you can go ahead and modify
+your emails it's pretty useful pretty
+useful uh and we have media types that's
+great media is supported out of the box
+SVG interesting SVG images did not see
+that before interesting okay I'll give
+that menus standard menus standard
+Drupal stuff taxonomy and then we have
+views well good old views that's just
+standard old views
+all right appearance nothing much has
+changed
+here we do have a few extra things uh
+what is it uh yeah just mentioned back
+end is
+gin but chances are you're going to
+change the front end to something
+else such as Tailwind
+or uh what is it bootstrap Which is
+popular hey all right so let's now move
+over to to installing and managing
+modules because this is this is where
+some cool stuff has happened okay the
+first one
+is we can browse and
+install
+modules now I'm not fully across exactly
+how this
+works because remember this is this live
+stream is about just going through this
+stuff and the stuff that I know so I'm
+not not 100% sure if it actually
+modifies composer at the same
+time what we can do if I can bring
+up let me just bring up the code base
+just so that we've got it
+here and hopefully we can actually see
+it all in
+action where is this
+druple all right
+now I've just opened this up in PHP
+storm just let
+it index it's going to sit there and
+index for ages isn't it oh PHP storm all
+right so this is everything that we have
+right
+here and it is going to
+absolutely wreck my CPU isn't it yes it
+is okay let's just give PHP storm a
+moment to work its
+magic just so
+that everything is coming across all
+right there we
+go
+okay all right one comment it seems
+installing modules is quite similar to
+Wordpress now well yeah I mean well
+WordPress got it from other places as
+well I wouldn't say it's WordPress only
+um just having a project browser that's
+about it but that is one that I must
+admit that is one pain Point managing
+projects managing sorry modules on
+Drupal is annoying I'm not going to I'm
+not going tog I'm not going to uh you
+know um sugar Coda it is annoying like
+word WordPress has that upper hand you
+can just automat do automatic updates
+it doesn't
+mean that you're free from Bugs I've had
+WordPress sites break because of
+automatic updates but hey it does make
+life a lot
+easier does make life a lot
+easier all right so we can come along in
+here and of course I'm not going to be
+able to show you how to do automatic
+updates cuz technically I need to wait
+for something to download and
+then update but you can see here that we
+do have a whole bunch of
+projects and you may have noticed that
+on the project page now there are icons
+for a lot of these projects and you can
+see it's got this nice little
+install so if we go and let's download
+one of these
+um which one do we want to oh there was
+back here field Group I like field
+Group let's go ahead and
+download build group
+where is it field Group field Group
+field
+Group all right let's just click on
+install and it's going to go ahead
+and
+installed there we
+go uh so now we have field group so that
+is how easy it was to just simply
+install
+it you just click on it and install now
+my question is let's take a
+look field Group field Group field Group
+where does this actually I know it
+probably goes into modules
+contrib build group it's there but where
+does
+it let me try see chances
+are interesting okay it's there but is
+it a
+dependency
+already field goup is a requirement of
+triple CMS okay SEO tools anyway all
+right
+so all right so we can go ahead and
+search our stuff now the other thing
+okay so that is just projects and
+modules works pretty well
+now we have recipes this is this is the
+stuff that I'm pretty excited about
+hopefully this will mean that I can
+install functionality build
+functionality
+once and be done with it and that is
+it and just do it once build it and then
+package it
+nicely so recipes is kind of like if you
+remember
+features features um
+where you can just
+download and package content types and
+Fields together into a module this is
+what kind of recipes is but recipes
+itself if we take a look at the
+code I've actually played around with it
+is pretty
+cool recipes you do have a lot here now
+these are well these are the standard
+ones but it essentially ships a bunch of
+config
+in a yaml
+file and I was able to get a work in at
+a basic level but then all this other
+stuff it's like okay I need to get my
+head around it need to look at it need
+to look at it further but what we can do
+is if we go back
+here we can go ahead and say well
+actually I want
+events so I can go
+ahead and then just click on install and
+it's going to go ahead and
+install that recipe so that that means
+now I've
+got going to content types now I should
+see event there you go quick and easy
+that was actually very quick and easy
+and I and I do hope that over time we
+just have a nice collection of recipes
+if you want to add in some type of
+course
+functionality add a recipe if you want
+to add in
+some profile or I don't know what is it
+user profiles user counts or just some
+type of complex thing install a recipe
+and you're done all those little things
+just you can package them in a nice way
+I just don't want to rebuild the same
+Drupal site over and over
+again which seems to happen a lot I
+don't I don't know about you but I seem
+to be creating a lot of duple sites just
+the same duple sites on and on and
+on and where is where are those
+recipes they should be
+Profile
+druple Event sites it's got to be
+somewhere
+here it's got to be somewhere here
+contrib grle
+CMS
+event that's type
+in events events
+dark
+recipes
+actually all right um uninstall there's
+a question about uninstalling recipes
+that's a good that's a good question I I
+don't know I don't know if we come here
+uninstall no you
+can't you'll just have to
+probably I think you can still I think
+you can just go ahead and pretty much
+delete whatever
+it it creates so it doesn't lock you in
+like installation profiles
+do uh so let me just quickly search for
+that where is that oh recipe's up the
+top here there we go I was going to look
+for
+it oh here we
+go all
+right so here are the recipes so you can
+see there is a lot
+there is a
+lot okay oh this oh Drupal CMS AI okay
+did not see this one maybe this was just
+recently put
+in but I don't want have to play with
+that right now because I've got things
+able to show you how to use this stuff
+anyway so these are where all the
+recipes are you can see that it
+also does ship in default products oh
+sorry default content as well does it oh
+it does all right that's pretty cool so
+on top of that it puts in default
+content
+okay and a nice little
+leaflet that's nice that's pretty cool
+discovering all these little little cool
+things all
+right that is actually pretty cool and
+then of course we have tests and that
+just t test it and you can see the you
+say you have composer here which manages
+okay so in the recipes you have composer
+which then manages the dependencies for
+it and then you
+have the
+actual recipe. yaml which then just
+ships everything across add nodes to and
+then
+this so it looks like you can actually
+override bits of config from other
+modules
+H I wonder how easy it is to actually
+develop this locally and then just I'm
+wondering if you can just run like a
+generate recipe command I did see
+somebody talk about a drush command we
+can generate recipes cuz that would that
+would be pretty
+cool that would be pretty cool
+anyway this recipe stuff does look does
+look
+good does look good all
+right so that is the recipes
+that's okay well let's now take a
+look at the AI stuff that's what that's
+all the interesting stuff well that's no
+shouldn't say that I mean look Drupal
+Drupal Community needed Drupal CMS
+okay it needed some type of nice
+packaged version of
+druple because we've had distributions
+and installation profiles for so long
+um but they they were difficult to use
+because especially dros and installation
+profiles you were locked in to a
+specific installation profile and it was
+very hard to move off it very hard to
+move off
+it so it's good to see that
+uh that yeah we do have a
+nice nice working version of druple they
+can instore out of the box let's just
+hope hosting gets a little
+cheaper so get nice druple
+hosting for you know not like 50 60
+bucks a
+month all right let's now go to extend
+and let's search for
+AI we have a lot of AI modules right
+here to play around
+with so up the top here we have ai and
+this gives us the CK editor integration
+content suggestions all these other
+things all these things what I want to
+focus on are these agents because this
+is where you can actually talk to drle
+and get druple to build things okay this
+is the interesting
+part so what I'll do is I will go
+through my recipe know pun intended on
+setting this stuff up so what I'm going
+to do is set up well use the open AI
+provider and I do know that to kind of
+get things working all you need to do is
+install the AI extras form
+integration well let's just
+do well let's just do that stuff what
+else do we need to do
+um and I do believe it is let's also do
+the AI agents Explorer and AI
+chatbot there we go install and then
+it's just going to go ahead and install
+all the other all the other dependencies
+so we don't have to worry about
+selecting every single
+module because when it comes to duple
+modules there's always five or six
+different modules you need to install
+and make sure the dependency is correct
+and things like
+that all right so now if we go to
+configuration we have a few options down
+here first thing we need to do is set up
+a provider I'm going to go for open
+Ai and you need to set up the key so go
+ahead and get yourself an API key you
+need you need an actual open AI API key
+and you do need to give over your your
+credit card I don't think they have free
+maybe they do but I think um well they
+used to give you
+credit uh if you put your credit card on
+I believe anyway have a have a look at
+it I'm going to go ahead and create a
+key I'll call this one well open AI key
+and let me just pop the key in on a
+different
+screen don't want everyone to see
+my actual key I will revoke it anyway
+after this but better to be safe and
+sorry all right let's pop that back
+in now one thing I do like about these
+Keys is that if you do click on edit
+again you do get another step that tells
+you be careful
+I know on other cms's that I've done
+videos
+on WordPress sometimes when you're using
+a product key it's just there in plain
+sight sometimes and they don't and they
+don't off off you skate it or anything
+and so I need to edit that out in post
+or you just have to avoid it if you're
+doing a live stream so that's a nice
+little step all right so we've done that
+make sure you come back here refresh and
+you should see your actual key so so so
+this Keys system if you come along in
+here systems if you go to configuration
+sorry keys this is a the there is a
+module called keys that helps you just
+manage your actual random keys in druple
+which is great which is actually very
+useful all right got that we've set up
+our keys right here saved it open
+AI let's go back
+here and what we need to do is we need
+to
+go under AI
+assistance let's click on ADD AI
+assistant and I'll call this one druple
+site Builder now if I'm doing this wrong
+if the maintainers are watching and
+saying I'm doing it wrong let me know
+because this is just I literally just
+figured this stuff out well this stuff
+in particular just yesterday um I was
+able to sit down and force myself it's
+like yep I'm going to be shock some of
+this I need to show the people how to
+set set how to set this stuff
+up you can come along here and also
+create extra instructions because this
+is actually interesting you may want to
+on a large druple site you may want to
+have multiple well multiple AI
+assistants one for managing content the
+other one for actually site building and
+you can come along in here and put in
+your extra
+instructions can see your providers down
+here but the most important thing up the
+top here well here we go agent actions
+this is where you specify your agents so
+the modules that we installed actually
+come with
+agents so if
+we go into our code apologies I will be
+looking at code a bit because that's
+stuff I'm interested in as well how how
+all this stuff works contrib our
+agents source
+plugins you can see here we do have the
+taxonomy build
+type we
+have these ones as well so this is the
+one that actually
+manages content types Fields
+taxonomy then we have our
+extra
+modules over
+here we can create we can create web
+forms that's awesome uh
+manage modules and there is
+views I did test this view one out I
+don't think it's 100% there
+yet but just remember this is just going
+to get better over time and the more we
+use it the more we give feedback the
+more we contribute it's just going to
+get better and
+better then you have other ones here
+and this is
+for and this one's the form
+integration access relies on that yep
+access to create new Fields requires and
+that's for creating Fields all right
+okay so all right so that's the code
+part let's now go ahead and just I just
+install everything why
+not and click on save all right so we've
+got this
+AI
+assistant all right we go back into AI
+here we do have our options well let's
+go back here to default
+settings you do have your settings over
+here that you can adjust things if you
+know audio to audio it probably tries to
+figure out what it supports so open AI
+only supports these ones so that's why
+these are all selected by
+default then your agents here okay so we
+have the field type
+agent you can configure a few extra
+things there's a lot of configuration
+here there's a lot to get your head
+around
+uh and I would love if if somebody did
+an actual Deep dive presentation on this
+stuff uh just so just so so you can get
+kind of an overview of how it actually
+works because one thing I've realized is
+that when you work with these AI stuff
+it's kind of like a black box it just
+goes in comes out you don't really know
+what's
+happening and
+uh yeah it would be good if you can just
+kind of get a you know try and somebody
+can just take us through process of okay
+so if you want to modify this by hand
+this is what you do blah blah blah blah
+goes It goes through
+all right so you got that stuff the
+other thing you do here and that that's
+why I installed it was the AI agent
+Explorer this is great for debugging
+things because what you can do is let's
+come along in here let's use the module
+enable if we're coming to install we
+Sorry explore we can say um return a
+list of
+modules starting with AI
+uncore and it's going to go ahead going
+to run the agent and this is a great way
+of just testing things out you can see
+that actually does multiple steps it's
+still
+working it's going ahead so it runs
+starting and then at each point it gives
+you some information and then it and
+then it
+returns information about it which is
+pretty
+cool which is actually pretty pretty
+awesome um uh we can also say you know
+return a list of
+modules focusing on image
+handling I don't know let let's just see
+what happens is this going to tell
+us well that is very vague though
+so status
+um all right all right all right let me
+see am I I'm kind of
+covering let
+me let me
+remove I'm going to disappear now from
+the feed so you can see here well let me
+just zoom in I should have zoomed in all
+right so we can see that so that's a
+question response the available modules
+focusing on image handling in your site
+image CK editor SVG focal point crop
+respon okay that okay that is pretty
+cool H okay that is
+awesome and return and
+return in in a list format always have
+to explain
+that please remember you want to be nice
+to your AI overlords let's um see what
+happens it's going to go over there
+there
+there hey there we go there we go
+image CK editor 5 responsive images
+focal point SVG image crop
+API there you
+go there you go that is pretty useful
+that is very very
+useful all right I'll bring myself in so
+as you can see you know you can just ask
+these questions so this Explorer stuff
+is pretty use use ful um all right so
+we've set things up we've set up the
+what is it AI
+assistant all right now before we go
+okay question can this AI agents be used
+to debug existing
+issues
+huh well you could well debug depends
+what you mean by debug
+issues because if it's an actual PHP
+and is producing fatal errors then you
+might have issues running this because
+it's just going
+to fatally error on you error out on you
+so you could probably ask a questions I
+think it's more I'll say no I think it's
+more about just asking questions about
+the site and also getting it to do
+things on the site now it can't do
+anything and everything like it can't do
+a whole bunch of stuff um but it can
+create like content types
+builds create taxonomy terms you can't
+create content at this
+point which I did test out and then I
+was wondering why can't I create content
+and then I read here note this agent
+cannot create or edit nodes as in
+content I like oh okay so
+yeah all right so let's turn
+on the chat bot because at this point we
+don't have a chat bot yes we go ahead in
+here we can ask a
+questions um but it's not
+that useful when it comes to just using
+it around okay because you need to come
+in this particular section so to install
+the chatbot or all you
+do is come along in
+here and let's just add it to the main
+content well actually let's just add it
+to gen this is important if you so you
+need to add a chatbot as a block to a
+region now if you add it to the default
+theme this is going to add it to the
+front end I want to add it into the
+admin section so select gin add content
+and then you want to select deep chat
+deep chat is just a nice nice chat
+JavaScript library if you click on AI
+chatbot it is going to tell you that um
+to use the Deep chat anyway so use the
+deep deep chat
+and you can specify little things like
+hello you can put in your little
+messages and I think there's advanced
+stuff
+styling that it can all be adjusted and
+now we have
+this all right let me just fix this up
+because I'm covering it what I'll have
+to do is is give me a moment need
+to all right I need
+to move myself over there now can I
+actually reverse
+my I'm trying to figure out
+in
+flip horizontally
+okay all right there we go done there we
+go
+hey I've now just flipped myself so I'm
+on I'm opposite but I'm looking in the
+right direction yeah all right cool
+so maybe we need to probably just scoot
+this up a little bit so you can all see
+it all right so here we have a nice
+little chatbot there we go it's prob
+probably the best way so you can all see
+nice in the
+feed yeah that looks good that looks
+good all right awesome so now we have
+all right so questions questions
+questions okay it would been nice
+learning to create agents with more
+specific business
+logic what type of business logic
+that'll be I'll be curious to know like
+when you say business logic because
+every because it really depends like
+what's your
+website um I think I think at this point
+you know it comes down to what you want
+it's kind it's kind of like you know
+your Drupal site every Drupal site's
+different I do believe when it comes to
+these AI agents every ai ai agent or
+assistant is going to be different
+depends on your
+content all right so what we can do
+here
+is let me where is my awesome prompt
+that I wrote so what I'll do
+is I'll create a new scratch file here L
+text and I'll copy over
+it
+this all right so let's copy this across
+now how do I do this where is this word
+wrap word wrap
+text
+view come on there must be something
+here for word word wrapping in PHP
+storm maybe it's right
+click I'm always trying to figure oh
+here we go no not
+feel
+oh normally I
+didn't deal with this stuff anyway all
+right ah let's just expand like this all
+right cool so here I've got a prompt
+that pretty much
+explains that what I wanted to do is
+create two content types so one called
+course the other one called lesson and
+we're also going to give it a few
+Fields we're also going to create a
+vocabulary such as course
+category with
+these values so let's actually break
+this
+down so can you please create a course
+system in Drupal which will consist of a
+course content type lesson content
+type and also at the top here we
+have and also a course category
+vocabulary create the
+vocab with the terms create a course
+content type with the
+following and you do do want to be as
+specific as possible that's one thing
+I've realized with machine name build
+type and that's the same for that one
+and can you please go ahead and create
+taxonomy vocabulary in and INF Fields
+all right so we've got all
+that and let's Chuck this over into
+here so this is a pretty
+lengthy let's give a
+time it did take about 20 seconds the
+last time I ran
+it
+and so let's just give it a
+moment all right another question
+exactly like drush commands passing
+arguments through the chat or telling it
+anything you want and it figures out
+corresponding or supporting arguments
+well at this point
+well that's interesting I don't I don't
+know because because you need it needs
+to support agents like the the actual AI
+agents so right now when we were setting
+up the AI assistant we had to select a
+bunch of agents to um to work on
+particular
+things all right something did go wrong
+let's try that
+again maybe maybe we need to break it
+down
+let's try this
+again it's gone
+ahead and maybe I just gave it too much
+it did work
+yesterday let's see live
+demos oh we actually did create the
+lessons it did create the lesson since
+retry last
+instructions it's going to go ahead
+let's see oh no something did go wrong
+all right let's take a
+look so you went ahead and created it
+okay that's
+fine then under course went ahead and
+created that okay so it did
+work then if we go into
+taxonomy it did go ahead create
+everything so I don't know why it's why
+why it's complaining about
+it all right now this is a great time to
+have a look at content a decision so you
+can see all of the decisions that that
+were made here so okay it did work
+that's the most important thing it it
+worked if we take a look here at the
+agent
+decisions you can see
+here that it did go ahead
+and it went ahead and created
+everything so it
+worked but this is a great way to
+actually see how things are
+run so if we come along here
+okay this is which one's this the
+field these are the questions so the
+prompt is this is pretty epic
+prompt well that's that's that's
+massive H then it generates in a
+particular format okay so it gives it my
+information then it generates in a
+specific
+format adds a
+label then the action is manipulation so
+this then M so if we take a look
+here now that's the field
+name node lesson already exists oh okay
+interesting so failed because of that
+all right cool let's
+now ask her to create
+okay please create a content type
+called project with
+a with a description field
+and then I'll give
+it what is
+it let's
+say iuck can spell it machine name
+buiild
+uncore no let's call it
+project
+description all right let's try
+that let's make it simple
+it's going to go ahead
+and let's give it a
+moment let's give it a moment all right
+cool it's gone ahead and created it for
+us we can see here yep you've created
+it all
+right
+okay perfect it's gone in
+there and we have this particular field
+or all right it's done it for
+us now we can go one step
+further well actually why Y type I'm
+going to use my what is
+it I do have
+a voice what is it voice to text here
+app on my phone on my on my
+computer can you please create a
+taxonomy vocabulary called project
+category and create the following
+terms druple
+WordPress then on the project content
+type can you
+create an entity reference field that
+points to the project category taxonomy
+vocabulary now I'm not sure if
+that's vague or too
+vague all right
+okay so yep then on the project content
+type create entity reference that points
+to the project
+category
+this field should
+be should be called what is it project
+category with
+the machine
+name of buildor
+projector
+cat all right let's do
+that so it's going to go
+ahead and hopefully it will create
+everything for us
+let's give it a second
+and so asking it all right there we
+go
+okay so now if we
+refresh we've got a
+project with our categories great so we
+can go ahead here and go to project and
+have that all right
+on the project content type can you
+change the project category build
+widget to the select list
+widget instead of the auto
+complete
+okay oh and
+and move project category below
+description let's see if that does it
+let's see if that does
+it so have a little chitchat so right
+now I've told it to change the widget
+and also reorder
+it I did actually do it though
+all right can okay you can change no no
+no no no no no I'm asking you to change
+it now it's arguing with me this will CH
+no no no no no can you please make the
+change for
+me let's
+see this is why it's important to just
+double check and read this
+there you
+go it kind of like gives up yep I've
+reordered it that's why that's why you
+need to read it there we go and this did
+not change interesting
+okay all right that that is still not a
+wait what is the actual term content
+types actual wiget you reorder it
+maybe I need to give it the actual
+specific oh wait no where is it auto
+complete what is it select list yeah I
+gave it a select
+list okay so all right all right that's
+fine you can't win them all you can't
+win them
+all it's it's important to actually read
+the response that you get from it
+because sometimes it can be a bit
+apprehensive it's like no here this is
+how you change it it's like well no you
+told me how to change it that's the
+point um all
+right so you know things have things are
+coming along nicely coming along
+nicely um let's now go back to our setup
+so we have course so we can create our
+test course here want just close this
+off okay um how to install
+Drupal wa I'll select
+Drupal and click on Save that's
+fine let's go here let
+um what is
+drole and got the course here as well so
+that is how to install duple that's
+great and okay let's just save that
+let's go back here I wanted to see I
+wanted to use a different widget here
+now last time I did this it actually
+worked okay let's try this again what no
+no no let's
+it's going to yeah
+that's on the lesson content type can
+you change the video fi widget to use
+the media library
+widget on the course yeah on the course
+content type can you change video filled
+widget i' probably probably need to be
+very specific don't I what's the field
+name totally
+forgot oh lesson video there we go let
+change
+that where is
+it can you change
+the build widget to
+use the media
+library all let's
+see goes ahead
+makes our
+changes and let's see if this
+actually has been successfully updated
+to Media Library all right so if I now
+refresh oh there we go it's now all of a
+sudden a media library there you go so
+that worked nice that is
+awesome all right let me try this one
+more
+time on
+okay on the lesson content type
+change the field course is that the
+correct machine name what's the machine
+name yeah field
+course widget to select
+list
+widget H all right let's see let's see
+if that works so I want to change this
+order complete to a select
+list does its
+thing all right has been
+okay to select list oh it
+has oh there we go all right so it seems
+yeah you you just need to be very
+specific that's one thing I've learned
+with AI you need to be specific which is
+fine which is absolutely fine that is
+pretty cool that is pretty to
+cool all right that is awesome all right
+let's now have a quick play with the
+other options where's web form there is
+web form here is web let me check is web
+form in
+instored you know what let's just do
+everything through AI is web form
+installed it seems you're asking yep is
+not in store
+can
+you install web
+form
+please all right can you install web
+form see how this
+goes all right can you install away from
+oh no no no please try again now I'm
+curious I am curious let's have a quick
+quick look readability extra
+all right warning that's fine SC all the
+way
+down that's a select list oh wait here
+we
+go why did this fail
+okay given
+enable oh so it's there is it all right
+okay it's there all right that's fine
+fine that's fine all right
+see all
+right can you can you create a web
+form
+called job
+application with a text field labeled
+name
+and just a description field I know
+let's just give it
+let's just give it something like
+that all right can you create
+a can you create a web form what's call
+it web form form called drop
+description with a text field labeled
+title and a and
+[Music]
+a text area build
+cord description
+let's see if this
+works let's see if this
+works let's give it a
+moment no no no no no you can place it
+to create no no can you create
+it all right now I want you to create it
+cuz I did turn on the web form
+agent
+okay it has been created so now if I
+refresh no it hasn't been created okay
+ah close enough it's all
+right that is all
+right so it at least it at least gives
+me steps there you go there you go all
+right so I mean that's the that's the AI
+stuff I think I think for for me as a
+site
+Builder the biggest thing is being able
+to streamline the creational fields and
+content types if if you can kind of get
+that working even if you can get 80% of
+it done that'll just make life so much
+easier so much easier if you can just
+get in there
+and you know you can just go ahead and
+just build things for you that'll make
+life very easy very easy
+all right let's
+just I'll move myself back in there we
+go I'm in the right
+area okay
+so
+now okay questions okay imagine building
+a site yes in a yeah that that is true
+imagine building a site in a meeting or
+no even better you record a a
+requirements
+meeting that's what you want you want
+you want you want to record a meeting
+and based off the
+discussion have ai generate a summary
+for you and just goes ahead and just
+creates the sites for you which is going
+to happen I can guarantee it's going to
+happen we're not that far away from it
+just record
+everything all right now the I think
+yeah the last thing how long have we
+gone
+for so so the last thing I want to kind
+of touch on
+is ECA so that is another cool pretty
+cool
+module yeah hopefully the client doesn't
+undermine the price seeing
+how
+well you still need to manage and
+maintain the website trust me as soon as
+you start making changes to it you're
+going to have
+to yeah there's still a few things
+involved in building a
+site all right let's take a look at ECA
+ECA is a pretty cool module ECA comes
+with Drupal CMS now it's been around in
+the Drupal world for a while it stands
+for what is it event create no event
+condition action ECA event condition
+action yeah we can set up workflows so
+what you can do is set up workflows okay
+all right that's up it's not the best
+example let me go back let's set up this
+workflow you can see here we have a
+workflow like
+this we can set up all these different
+types of workflows now this one's
+actually pretty cool
+because this one actually adds
+in the duplicate functional
+functionality so so this functionality
+right
+here I would
+honestly I was shocked when I saw this I
+would honestly think this was a custom
+module or some type of contrib module
+but no this was all implemented using
+ECA let me just close all
+these let's clean up the tabs yeah this
+was all
+implemented using ECA which is
+absolutely
+awesome I was very surprised when this
+when I saw saw this yeah great comment
+love ECA but haven't understood it very
+well that's the same with me I love it I
+love the idea but sometimes I really get
+stuck using
+it but what I want to do is I haven't
+tested this out but I do have an idea on
+what what I want to do because today is
+all about just playing around with
+things and just having fun with
+it I want to
+implement ECA to go ahead and generate a
+summary for me of a
+post let's do that shall we I'm kind of
+a bit I don't know bit worried if he if
+he doesn't if it doesn't work out if it
+doesn't work out but let's but let's do
+it why
+not why not I hav done it
+before let's just let's do
+it let's do it all right let's first um
+move
+this block out of the way just so it's
+not in my way where is it
+uh gin
+Jin let's disable
+it all
+right all right so let's go ahead here I
+think we do need to install
+ECA content in point that's fine AI
+where's the AI stuff AI
+integration cool Co all right let's do
+that
+all right so let's install
+that and what I'll do
+is let's go into content
+types and let's go
+to is a basic page uh let's just go blog
+post
+and add a new field
+what am I doing why am I doing this by
+hand honestly when you think about it to
+to create one field it's just I'd spend
+I'd write more and click more by telling
+AI than actually just doing it sometimes
+it's sometimes it's better just to do it
+yourself all right format formatted uh
+long what is it formatted formatted
+let's do formatted long here why not
+all right that's fine that's
+fine I did it the old fashioned way oh
+feel I feel dirty by having to actually
+type it um all right cool so that
+is that and we have a list summary here
+all right perfect okay that's cool um
+so let me go ahead
+and first of all where's
+my let me uh get some test
+content all right just one
+sec and I need to find some test content
+okay so what
+is
+druple what is druple and what I'm going
+to do is I
+just generated some test content right
+here and there we go all
+right all right that is fine no no no no
+no no no no publish and there we go
+publish done all right Perfect all right
+so we've done all of that perfect
+all right now what we need to do is set
+up so what what what I essentially
+wanted to do is on
+Save grab this content summarize it in
+point form and then list it out here
+that's it that's it okay can we use
+ECA and open AI to achieve
+that I know it's possible I've done it
+before a while ago but ECA is one of
+those things that if you're not if
+
+you're not using it every single
+day you know it's just oh yeah the UI
+can be a bit
+fiddly so what I'll do let
+me switch over to the other side there
+we go I'm on the other side because I
+know it's all going to be on the right
+hand side I really should leave my
+camera on the other side
+anyway let's go
+here
+and we need to create
+so I'll call this
+one what's
+this generate list summary save okay
+let's put in an
+action
+select what is
+this pre-save so pre-save
+content so when it's new or existing
+gets
+saved and the content type will be
+block
+post then we need to put in
+and action which
+is get a body filled but in the
+meantime we need to put a condition
+in so what's that
+condition f F value so I do believe so
+we need to put in a field so
+field value is
+empty so field value what's the
+actual Bui
+name what did I call it this summary all
+right cool copy that across
+so come along in here build
+value is sum is list summary
+empty
+so there we go is it
+empty oh didn't know that you could do
+that can pop you can pop that up there
+that's pretty cool so is list no not
+wait is list summary list no
+no is list
+summary empty all right so that means
+that is summary empty it checks it all
+right and he checks it all right cool so
+then it grabs
+then it grabs the
+body so
+task so this will be what's a task get
+field value that's right get
+field get field
+value and the field name will
+be description
+and we'll give
+it description content so we do need to
+give it a token
+name and this token then will be used
+later on important okay this token is
+important
+um ECA utilizes tokens a
+lot so this will be used a lot all right
+save
+that then we need
+to
+create another one and this is
+AI generate
+summary and what's this one
+called chat
+embedding AI what which one is
+it it must
+be is it the chat
+one add your prompts yeah that's
+it
+okay so what we need to do here is let's
+select GPT for for what is it 40 input
+please provide the token without the
+bracket so this is so this is our actual
+token UT so this will be
+description what is that it will be this
+one so we're passing in this
+value and the results should
+be summary so everything that gets
+specified out of
+that and then we need
+to so we'll leave that specific for the
+model let's leave that out for
+now and what I'll do this is the prompt
+yeah can't be empty yep yep understand
+understand understand and this will
+be what is
+it not that where's
+my please provide a list
+of oh no let me do that again where's my
+where's
+my speech to text what did I please
+generate a list summary of the following
+description so we've add that little
+prompt down here so please generate a
+list summary of the following
+description so we can put
+in body text or something like
+that I always keep changing the way
+these things are then put the token in
+there and this needs to be a token then
+please return
+Please return a
+list summary
+of five
+items
+in in
+HTML format I know let's see how this
+goes the input
+and then this can come along
+here so let's see if this
+works all right safe all right
+now what we can do is we can go
+ahead then we can
+save save
+value in field well save
+list
+summary so what is it set field what is
+it set set
+field machine name will be no
+the oh wait let's go back
+here oh no it will be what is it field
+build what is it what is it what is it
+what is it what is it it should be
+list build list summary and the value
+should
+be description is it description oh no
+no no actually no no no it should
+be
+yes and I guess just save the entity the
+trim don't trim strip no that's right
+it's all done done and done did done all
+right
+cool all right let's see if this works
+so what we've done on save so what is
+that on entity no on
+content let me start again pre-save
+content entity blog
+post checks to see if
+the field is empty so the field needs to
+be empty you then grab
+the the description field so we need to
+grab that field and then adds it to the
+Token of description content then we
+pass it over to open
+Ai and the results so whatever open AI
+gives us will come out as AI
+summary and this is the
+prompt then we need to use the set field
+value
+back into list summary using the value
+of build value and then we just finally
+set it to like
+save and what I like to do is just Chuck
+in a message what is it just so I know
+that it's been
+run AI ran but it doesn't mean it's
+saved all I know that this process has
+run that's just a nice little way of
+testing that out all
+right okay let's test this
+out oh if this works I deserve a drink
+well not alcohol but maybe coffee no
+it's too late for
+me all right let's give this a go so if
+we go to content so what is Drupal come
+along in here we need to make sure this
+is empty let's make sure it's
+empty hit
+save so now it's going to go off
+hey has
+changed
+while oh interesting all right this is
+interesting node has changed while being
+supported all right cool so what we
+probably need to
+do oh okay I think it's this
+let's set this to
+no so it did run did it right let's set
+this to no and see if that does
+it it did fire off so this is where yeah
+it's so close with this entity with this
+ECA
+stuff okay it's got to go
+ahead oh right cool it's saved all right
+so I think it was the
+saving and then we come along in
+here and we have a
+list all right it needs to be styled
+but all right there you
+go there you go so that actually that
+worked nice so now okay what is
+it uh yeah I mean there's you could do a
+whole bunch of
+things so common should you only run it
+if the field if it
+changes um yeah I
+mean well
+actually that's that comes down to
+Content requirements because sometimes
+you may not want you may want to make a
+slight change
+here but you don't want it to fully
+regenerate a summary so what happens
+then see this is where sometimes
+automation can get a bit tricky that
+like the question so there's a question
+about should we set it up so that if
+anything changes in content here that it
+automatically generates a summary and
+it's like well I always like to go out
+go go down a path of you want to be able
+to control exactly when this automation
+is run I think that's probably the best
+way and it's just best because yes you
+may want to update a new summary when he
+changes content but you may also want to
+just put in fix up a comma or something
+and it's like is it worth then spending
+the money spending the time having a new
+summary generated because sometimes
+because you know the thing with AI is
+that it sometimes generates great
+content the first go but the third or
+fourth or fifth time it just just
+generates terrible content and sometimes
+what I do is I often ask AI all these
+prompts and he generates some great
+stuff for me and I quickly grab that
+copy that out keep it because I know I
+probably won't get that back so it's all
+these little things that it's a great
+question it's like when do you define
+you know when do you want to run it so
+here we can you know we can check in a
+few extra things we can hit save
+so we can do that do that we can empty
+it
+out and it's going to go and run
+again and it's going to generate
+everything for us but then we can come
+back in here and be like oh well
+actually I want to put an extra you know
+comma here and it's just going to save
+it and you can straight away see how
+much quicker it is you know it's quickly
+saved
+it so that's so yeah I mean this AI
+stuff is um I've actually been thinking
+of a few things to that I can build out
+for my for my content stuff utilizing a
+lot of these
+stuff um especially this like
+ECA you know things like trying to you
+know generate a like often what I do
+with these live streams is I grab a um I
+grab the transcript then I try and
+generate a list list summary of a
+transcript
+which then by hand I still go through
+the video to generate the chapter
+markers because the chapter time codes
+of Tred to use AI for it it just doesn't
+just does a terrible job at it does a
+terrible job it's sometimes so much
+better if I do it by
+hand all right question is well I was
+saying if other fields are changed then
+um it will run the AI at the expense
+when the field description didn't change
+but yes maybe a checkbox well right now
+if you can change all the other fields
+as long as the list summary is there
+it's not going to run but to answer your
+question yes these are the these are the
+these are the discussions you need to
+have when you're building out this type
+of automation it's like when do you run
+it and that's and that's and that's a
+decision you need to make which can be
+sometimes very difficult um but if I was
+to go and change any any
+content any piece of content here like
+for example here here here and here as
+long as this summary is
+there then it's not going to go through
+it's not going to go through a um open
+open Ai and charge us half a cent or
+something or however expensive it is so
+that's why I wanted to put in that
+condition yes you don't want it to
+always go out and ping and ping and ping
+your servers cuz it's just going to
+waste money
+really and then somebody's going to
+write some script to then batch update
+10,000 pieces of content and then all of
+a sudden you're going to see why is our
+open AI bill so expensive oh that's
+right we forgot we have this automation
+that automatically updates content and
+things like that and um yeah
+but see yeah automation it's great until
+it
+fails so yeah there's you know there are
+a lot of things like what else man yeah
+check in your questions I mean I'm kind
+of out of ideas
+now um well let's just go and what is it
+what is it what is it
+extend go through these ones
+eh password
+compatibility
+workspace let's let's install a few few
+of these
+so AI
+Explorer loging validation
+translate all right let's go that what
+was that AI
+Explorer going there
+all right question how easy is it to
+modify the front end from a new users's
+Point well I nothing much nothing much
+has really changed on that unfortunately
+it's all it's all just front end theming
+so you will have to just download a new
+theme and modify things and um adjust it
+accordingly so I think for this version
+of
+um uh druple nothing much has really
+changed understand that this is just
+stock standard druple like from a from a
+technical
+standpoint which I which I realized that
+maybe I'm focusing too much on on the
+technical side because the whole thing
+about um triple CMS is that it's meant
+to be for the ambitious site Builder
+but if we take a look
+at where is uh composer
+this
+is where is it it is it is stock
+standard duple to to to a certain point
+and it's
+just see it even uses the druple core
+recommended
+package and then he just chucks in all
+of these extra things and that's it so
+it is quote unquote dripple so you're
+not really locked in
+to into
+anything and um
+so and that's the good thing about this
+this is something that where
+distributions and installation profiles
+like I I was a bit burned by them in the
+past where where I was put on put on a
+project to use it they want to move away
+from an installation profile and it was
+an absolute nightmare to get off it you
+had to change so many things but here
+you could essentially remove all of
+these recipes and that's the thing about
+recipes that's my understanding of it
+and if and if I'm incorrect please let
+me know but my understanding of recipes
+is that you can install it and you can
+delete the modules and not care about it
+because it is a onetime install it gets
+installed and that's it but you can't
+simply just uninstall
+things
+um yeah okay but seriously another
+question can we but seriously can we use
+AI to create a sub theme and tweak it at
+this point I don't think so but if you
+really want AI to build your front end
+create a headless Drupal site I'm
+serious go to bolt bolt.
+new and then just ask it what is it is
+it
+bolt
+new and ask it create a
+Astro blog using a druple back end
+there you go you know you can have it
+I'm actually thinking I'm I'm I'm
+thinking of actually doing that I've do
+I've doing a live stream about about
+that like just doing it and that way you
+can just not worry about drupal's front
+end if that's if you really if you
+really want AI I can I can guarantee it
+that will come out soon to create a
+theme
+because especially with the new
+experience Builder that's the stuff
+that's going in into um
+duple it's like a layout
+Builder themes will be pretty will be
+very how can I say it like you will have
+components you have separate components
+in the theme so yeah you could
+eventually use AI to generate that stuff
+absolutely absolutely all right so what
+did what did we
+do where did we get up to all right uh
+now we did that installed a bunch of of
+ah here we go that's right this stuff
+let's take a look at this
+stuff AI
+Explorer so when you install
+the AI Explorer generates this
+stuff yeah I don't really want to run
+this in a live stream don't really know
+what I'm going to get back with this
+text text to image sorry
+um let's have a look at this so this is
+just
+a what is it what what am I looking at
+here all right okay all
+right so us a promps this is just a
+helpful prompt okay
+um all right let's just uh Run Okay um I
+don't know what is the
+fastest what is
+the fastest production car I don't know
+ask at
+something all right it's a buetti all
+right it's the fastest car oh okay oh
+this is actually pretty cool gives you
+hey I like this good job with this gives
+you actual example code that you can
+just grab and do
+yourself that is awesome
+okay then raw code another
+way oh
+okay so this way is one way okay this is
+actually this is pretty cool so it gives
+you a nice explanation on how to
+actually implement this using custom
+code
+okay oh like this and you can select
+your other options there you can select
+all that stuff all right very
+good and then you can upload this stuff
+and can
+generate oh okay can
+upload audio
+files let me see if I've got an actual
+audio file that I can upload let me find
+one because I have been playing around
+with this
+stuff let me try and bring this
+up but I do know this whisper does have
+a limit of 25 Meg for audio which is
+very annoying which is which is very
+very annoying because I've been trying
+to upload like
+huge hour long not that one now I don't
+have any audio
+sucks please goes against
+anyway I don't have anything don't have
+any audio available at this point all
+right so the next one is let's take a
+look at uh what is it CK editor so if we
+go along in
+here let's go
+into
+configuration it will be text formats
+edit
+configure and let's turn
+on where is that CK editor staff oh must
+be this AI there we
+go or that over
+there AI
+tools generate
+oh okay nice turn that
+on
+reformat
+expelling tone
+summarize and fix spelling yeah why not
+Translate oh that's pretty
+cool and you can select different
+providers that is awesome that is
+awesome
+okay all
+right well now let's actually select an
+existing piece of content this is pretty
+cool okay so where is it about us about
+us
+generate and about us
+page we are a
+drole
+agency right still gone still gone it's
+saying oh okay
+cool check that in we're done
+easy easy easy look at
+that and what else do we have reformat
+oh I think I played around this reformat
+this is great if you want to
+accidentally wait what does that
+do does that fix up HTML reformat
+HTML oh
+okay so check
+change all right right let's test this
+out
+reformat oh wait can I no no no reformat
+going to go
+reformat okay so that just fixes I see I
+see I see I see so if
+I come along in here and have say
+let's just say I've got broken links
+I've done a migration and stuff totally
+broken is this going to let me just make
+sure yes C CK
+editar and let me see if seear sorts
+that out for me yeah see it kind of
+cleans that out anyway I think the
+formatting just helps you clean up
+content that's not bad
+actually but then if I can
+I big
+spelling all
+right you see I think as a content
+creator I probably do a lot of these
+things even before I get into the get
+into
+druple but hey it's there it is it's
+pretty cool
+okay where's the let's go back
+to it's
+configuration uh text formats editors
+[Music]
+configure okay so from here also let's
+take a look at some other edit editing
+stuff we got linkit which is great so
+link it is pretty
+useful and we have media as well
+and so that means with we can upload
+images directly just by well clicking on
+Drupal media and uploading it which is
+great and if we come back here I do
+believe with link it we can just select
+the link and start
+typing other content well where is it
+yeah we can select it there you
+go so that is very useful all
+right well I've got nothing else that's
+pretty much it any other
+questions before we finish up how long
+have we been going for no
+idea oh an hour and 52 minutes oh great
+that's why this a long
+stream so that is drle
+CMS it's pretty good it's pretty
+good it is pretty
+good top picks recommend yeah what does
+this take
+us oh it takes us to
+recipes come along here case studies SEO
+tools and all that all those goodies
+all
+right all right any other questions
+before we finish
+up it stretched my back
+out getting old can't see for too
+long my normal was it Pomodoro 25
+minutes have to have a 5 minute break
+yeah
+anyway all right let's leave it at
+that all right question good oh good one
+okay if needed to start a new druple
+site porting from an old one would you
+use call or
+CMS uh that's a good
+question at this point I I'd probably if
+if Drupal C has the functionality you
+are
+after then I'll probably go with triple
+CMS but I would like to see one thing
+I'm not 100% 100% sure on is just how
+upgrades will work so that's one thing
+I'm curious about how that will work
+that I don't know and only time only
+time will
+tell luckily I don't I don't have to
+build a website tomorrow
+but I'll be curious to see how how that
+works so when there is um you know
+triple CMS version what is what would it
+be 1 point is it going to be 1.0.1 or is
+it
+1.1 1.2 or 1.0.1 or
+1.0.2 I don't know
+um well my understanding is yes you can
+still upgrade it using using composer
+because it is it is composer so if you
+take a look at the composer file it is
+just using the Drupal Das core no Drupal
+SL core D
+recommended so it should work but in
+practice how does that ex exactly work
+that's why I'll be curious to find
+out so maybe yeah when 1.0.1 comes out
+we will just update these and that's it
+but I will be curious to see yeah that's
+one thing I'd probably hold off I don't
+know it's yeah as I said I don't have to
+build a website tomorrow which is great
+so but I would be curious to see uh what
+that upgrade path looks
+like all right any other questions
+okay well thank you well let's just
+finish up I will stay after but let me
+just finish things up thank you so much
+for joining if you want to learn more
+about druple the older Drupal core just
+head over to the webwash channel on
+YouTube and you'll see a whole bunch of
+other live streams I got a whole bunch
+of them um and I also have web.net where
+I try and post up these live streams if
+I have time
+uh show notes of these live streams I've
+been pretty terrible at doing that
+lately because I've just been trying to
+get out
+content um but you can learn about
+Drupal over at web.net and I am in the
+process I'm trying to working pretty
+hard of actually getting all of these
+live streams cut up and uploaded ad free
+because on YouTube there are there are
+mid roll ads um I am trying to get them
+in a webwash premium Community where
+there will be it will be a paid for
+Community all of the videos will still
+be for free on the YouTube channel and
+there will be a weekly live stream going
+out for free on the weekly channel on
+the channel um but I just want to try
+out something different and actually try
+and monetize some all the great you know
+all the all the content that I've been
+putting out because I really do enjoy it
+and I do think drup is on the cusp of
+something big
+so yeah and I do think you know there is
+a it's a good time to have a nice little
+Community where you can ask questions
+get help and yeah that's what I'm trying
+to build out right now but I need to
+edit a lot of videos so I'm in the
+process of doing that now anyway that is
+it for me thank you so much for watching
+and I'll catch you all next
+time all
+right that is it that is it thank you
+all for
+joining hope everyone's druple CS
+celebrations went well
+hope so hope
+so
+okay right thank you very much all see
+you all later or next week there won't
+be a live stream later this week this is
+it I just wanted to capitalize on the
+whole druple CMS getting launched and I
+thought you know what this week's live
+stream is going to be about
+this anyway take care take
+care all right see you all later
+byebye see you all later

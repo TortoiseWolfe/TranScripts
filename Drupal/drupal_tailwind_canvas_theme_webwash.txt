@@ -1,0 +1,2301 @@
+All right, it is 8:30 my time, so we
+might as well just get straight into it
+and I'll do my best to
+I will do my best to kind of answer
+questions. But yeah, please send them
+across. This ain't this isn't like a
+proper live stream. None of that's I
+mean this this isn't one of those
+webinars where it's like leave your
+questions at the end. Maybe I should do
+that. I don't care. I don't really don't
+care.
+Um but yeah, let's just get started.
+Well, no, sorry. Before we get started,
+I just do want to mention that been
+doing these live streams for a fair bit
+and I do have over at webwash.net a
+premium community right now which is
+available lifetime access €99. And I'm
+in the process of converting all of
+these um live streams into either
+courses and also just uploading them as
+full full live streams adree because if
+you go on YouTube they do have ads on
+them. So, if you want to support the
+channel, support what I'm doing, check
+it out. In the future, I am looking at
+putting up actual Drupal kind of like
+starter kit sites as well and just
+trying to see how that goes. Like a
+one-click setup. So, we'll just see how
+that stuff goes um in the future. But
+for now, if you want to join, €9 for
+lifetime access. All of these live
+streams will still be free on YouTube,
+but there are ads on them. So, if you
+want to support the channel, check it
+out.
+All right, cool. So, let's just get
+right into it. So, Drupal Canvas was
+released, what is it, the 4th of
+December, I believe, version one. If we
+take a look right here, was it 4th of
+December? There you go. Version one. And
+one thing I wanted to kind of figure out
+is
+how much effort will it take to actually
+set up a basic Drupal theme and a few
+components? Because don't get me wrong,
+if you take a look at one of my other
+videos where I covered
+uh Drupal Canvas with uh Drupal CMS
+version 2 alpha 1, it looks amazing. The
+Mercury theme,
+which is which is the main theme that
+powers it, looks beautiful, but I can
+imagine there's a lot of work involved.
+So, one thing I like to do, especially
+when I learn new technology, is kind of
+like, okay, give me the strip it down to
+the basics. What is the simplest? what
+is the simplest theme to put everything
+together? And that's what I wanted to
+kind of answer because because
+eventually I will be building out these
+type of sites. So, tonight I want to
+cover how to create a very basic
+uh Tailwind theme. And trust me, I will
+actually post the code for this over the
+weekend probably on GitHub. But this
+isn't going to be a fully fleshed out
+theme. It's just enough to get things
+going because there's a lot involved in
+getting a theme integrated nicely. And
+we're going to create a few components.
+So, here is a here is the actual site
+that I previously created.
+And this is a this is a pretty much a
+Drupal canvas
+site right now. So, this is a this is an
+actual test site which I used and which
+I built. And if we go into Drupal canvas
+and if I do get stuck, I will be looking
+at this just in case um things if things
+don't go well. But this is a Drupal
+canvas UI. Now I I'm not going to fully
+cover the whole Drupal canvas cuz I've
+got a separate video for that. This is
+really for site build for site
+developers and and and site builders. So
+we're going to be looking at a lot of
+code tonight. A lot of code. Um but this
+is generally the UI. And let me just
+quickly go here. If we go to content
+pages from the pages tab, you can manage
+all of your Drupal canvas pages which
+are different to pages such as content
+types. So that's the new distinction.
+You there is a new entity type called I
+believe canvas page. And so it's
+different to your standard content
+types.
+So here I've got a basic page called
+well sorry not a basic page it's a
+homepage called just homepage. page. And
+if we go and edit edit it, we will see
+that we have a page right here. And
+these are actual components which I
+created.
+And the bottom part like like the footer
+region and the header region are just
+standard regions. And if we click on the
+plus, we can see all of these components
+which are custom. And if we click on the
+layers, we can see the actual structure
+of the page right here.
+And if you then click on the libraries,
+you can also see all the all the
+libraries. And then you do have the
+actual individual pages. And then you
+have content templates which allow you
+to modify the full content view mode of
+an entity that I'm not going to cover
+because that can be a pretty much a
+whole live stream or two in itself, but
+I'm not going to cover that. But this is
+essentially what what we are going we
+what we are going to build. We're going
+to create a few components that go for
+edgeto edge. We can manage things from
+the right hand side. We can make changes
+to it like hello and it automatically
+just updates which is great. We can add
+in card components. We can duplicate
+them. We can even click on this section
+component which I created and actually
+switch it over to a 50x 50 or you know
+six column by six column or you can do
+it by 25 you know four column width.
+We're going to do all of that stuff and
+and I'm going to do my best to kind of
+condense it so this live stream doesn't
+go on for too long. Um, but we're going
+to start things off
+by just creating a basic Tailwind theme.
+So,
+without further ado, let's just jump
+right into it. So here I've got a
+another Drupal site and this is just a
+vanilla Drupal core site. So I'm
+starting from scratch and I've just done
+a few things like I've just installed
+the Jin the Jin backend theme which is
+going to be the new theme for 11.3 I
+believe. And I've also created some some
+test content just so that I'm not
+wasting time because I want it to be as
+efficient as possible.
+So,
+as I said, we're going to start off by
+setting up a theme and using Tailwind as
+our front end, as our design system
+essentially, not Bootstrap. I've I've
+done I've done Bootstrap a fair bit in
+the past, but we're just going to be
+using Tailwind for this stuff because
+it's what all the cool kids It's what
+all the cool kids use these days. Okay,
+let's jump over to our code. And what
+I'll do is I'll first start things off
+by well I've got a Drupal site already
+set up. I'm not going to go through a
+process of setting up Drupal site. Let
+me just make sure I'm in the correct
+thing. Yes, I am. And all we need to do
+now is create a theme first. Okay, just
+a theme. So I'm not going to do that by
+from scratch. I'm just going to run
+Drush Generate. Now Drush generate
+uh gives you
+not sure if you can really see it. Let
+me just zoom out that a little bit more
+so you can actually see it. There we go.
+It's probably a little bit better right
+now. Drush generate allows you to
+generate scaffolding code. Okay, there's
+a whole ton of it stuff. And if you want
+to learn more about Drush Generate and
+Drush in general, I do have a live
+stream on that. Just check it out on the
+YouTube channel. So, what we can do is
+just type in Drush Generate theme. We're
+just going to create a new theme. So,
+I'll call this one webwash
+canvas.
+Oh no, actually webwash
+tailwind.
+And we'll give it all that. And the base
+I'm going to actually set to false. I
+don't want there to be a base theme
+because it means that yes, you will have
+to eventually do more work. But for now,
+we just want to be as bare, basic, and
+simple as possible. Okay. And yeah, why
+not leave that in there? Packages. Do
+you want to create break points? No, I
+don't. Do I want a configuration? It's
+just going to go ahead and create a
+whole bunch of stuff. Now, a lot of
+these f files and things like that, they
+are they are empty. Okay, so it looks
+like a lot, but we're going to be taking
+out a lot of stuff.
+Let's jump over to our code.
+And we've got this
+beautiful looking theme right here. Let
+me just make sure. Is this vis? Hope you
+can see that nicely. What size is this?
+25 125%. Okay, that's fine. Ah, yeah,
+that's big enough. I I can see that. All
+right, cool.
+So, we have a basic theme here. Okay, it
+does pull in a whole bunch of stuff, but
+we're going to delete this stuff. Don't
+need it. And you have a whole bunch of
+folders here.
+OneJS file, which we're going to delete.
+So, essentially what we got to do is
+just
+grab that and that and get rid of that.
+Where is it? Done. Okay. Don't need
+that.
+And we will fix this up later on. But
+that's just going to produce a 404 while
+we are testing things out. Okay, that is
+fine. And the other thing we need to do,
+let's jump over to our Drupal site.
+Let me just make sure. Go configuration
+performance. Oh, here we go. Turn off
+CSS JavaScript aggregation
+and where is it? Performance
+development. Turn on dev development
+mode. and also turn off cation. Okay,
+so come in here and we should see a
+web tailwind. Okay, simple theme. Set it
+and forget it. I wish I wish it was like
+that.
+And if we go to our homepage, we have
+well, we've got pretty much this. Okay,
+pretty basic. [snorts]
+All right. So, what we can do
+is we need to fix up a few things.
+Let me go in there and Well, that's a
+bit annoying that logo. Where is it?
+Site branding.
+Turn off logo for now.
+All right. So, here you can see it's a
+pretty broken site. So, but now we need
+to just kind of put everything together.
+All right. So, the first thing I want to
+do is add in a few regions because if if
+we take a look at our look at our design
+here, let's go to the homepage.
+I've got a few regions here. So, the
+first one is
+site. What is that? Um, site branding.
+Then on the right hand side where the
+menu is, we have main menu. Then in the
+footer region, we have one footer region
+for these this three column grid. And
+then we have a footer bottom for the
+contact us. And then we have a content
+region which every theme gets out of the
+box. Like you need a content region. But
+we also need one for where is it?
+Contact us page.
+Um where is it? Oh test page. Then we
+need one which is called pre-content
+which will have the the breadcrumb
+the page title and the tabs because
+one thing while I was doing this
+experiment and playing around with it
+and and I've and I've had this situation
+in the past before with even paragraph
+powered websites because when believe it
+or not you still need to answer a lot of
+the same questions when you're building
+a canvas. site as you are when you're
+building a paragraphs powered site. You
+know, what type of components am I
+doing? What layouts are going full with?
+What's hidden and what's not? Because if
+we go to this
+um canvas page,
+we won't show the page title or the or
+the tab. So, we're hiding that region,
+but but we still need to handle
+standard Drupal pages as well as canvas
+pages.
+So that's why we have these regions.
+Okay. So we're going to have header,
+primary menu, pre-content, content,
+footer, and the
+footer bottom region. So what I'm going
+to do is I'm going to jump over in here,
+go to info, and we're just going to get
+rid of pretty much half of this stuff.
+And I do recommend that when you are
+building out a theme, don't start off
+with a thousand regions because it's
+just a pain to manage. Start off with
+the regions that you need and then just
+simply add to them. It just makes life
+so much easier.
+All right, so
+we've got our regions. Now, what we need
+to do
+is fix up our blocks. So, let's quickly
+just do that. Let's jump over here.
+and go to Well, let's clear the cash
+first. Let's be honest. That's what
+we're going to be doing 10,000 times
+tonight.
+Okay, got that.
+What's this? Schema error.
+PHP Storm's having a some issue. Anyway,
+that's all right. Okay,
+so we've got that sorted out.
+Let's go to structure block layout. And
+if we go demonstrate, okay, we're not
+going to see all the regions because the
+regions aren't actually rendered out. We
+can only see header under there.
+Header, primary menu, content, and
+footer.
+So, what we can do now is just organize
+a few of these things. So let's
+remove
+uh well some what was that user search.
+So we have main navigation site branding
+up the top
+and the help is going to go in the
+pre-content
+page. We'll go pre-content
+primary actions.
+Go there. Primary tabs.
+There's a quick way to move of moving
+these things.
+And status.
+Well, let's put status right at the top.
+Oh, come on. Click over there.
+Up the top.
+And so we have status messages help
+page title primary
+action links primary. Yeah, why not?
+That's fine. And we're done. And then
+let's just leave everything else as it
+is. Okay.
+So, we've got that stuff set up. Now, if
+we go to the homepage, refresh,
+we're not going to see much uh because I
+think we need to override a theme
+template. So now what we need to do,
+well, before we do that, let's let's
+just ignore that for now. Let's
+integrate
+Tailwind first. So that's so that's what
+I want to do.
+So what I'm going to do is let's go
+here. Let's get rid of this package.json
+JSON that's already there because that
+comes with us when we create the actual
+theme.
+And what I'm going to do is jump over to
+the terminal
+and we can easily
+type in where is it?
+MPM in it. Wait, no. Actually, this
+always gets me. We need to go to themes.
+We themes.
+And that's all it. Yep. Okay, cool.
+Close that off. MPM
+in it. Yes. Yes. Yes. Yes. Yes.
+And that is all set up. Perfect.
+And the next thing we're going to do is
+install
+our stuff. So I'm just doing npm install
+and then as a dev dependency vitind
+vit and towind css.
+So, she's going to go ahead and install.
+And that's all been set up. Perfect.
+All right. Now, what we need to do is go
+ahead
+and create
+a VIT config.
+So, this will be
+a vit what is it? Vit.config.js.
+And all we need to do is first of all
+import
+vconfig. There you go. Thank you. Thank
+you. Autocomplete.
+And it's also
+import tailwind
+from tailwind vit. Perfect.
+And well, there we go. Well, I'll I'll
+I'll take that. Don't have to type.
+And let's just bring this down a little
+bit.
+And then what we need to do is we need
+to specify where we are going to
+um
+export our CSS because remember Tailwind
+compiles it and then we need to export
+it out. So we use the actual build
+build property on that and I'll just
+copy this cross
+and essentially what this means is that
+it's going to look for
+source/css/style.css
+and then output it in a dist directory.
+So let's go ahead and create a
+disc directory right now.
+And I do believe we can create a file.
+What is that? Source
+CSS
+and then style.css.
+All right. Done and dusted.
+All right. So,
+we've created
+the foundation. So, we're not done just
+yet. Let's also jump into package.json.
+And we need to set the type
+to
+module. And I will put in two scripts
+that will help us just compile things.
+Okay.
+And now if we go into styles, all we
+need to do is what is it? Imports.
+Not that one. That's going to be
+Tailwind.
+And if we save that
+and I come along in here
+and run, what is it? MPM run. Wait. Oh,
+where am I?
+No. I need to go into the actual theme.
+So, what is that? Web.
+Uh, where is it? Oh, no. I'm in there.
+What do we Okay. npm run. What is it?
+Build. Going to go ahead and build our
+style. CSS. Okay. And this is the actual
+compiled Tailwind version.
+So what happens is
+we make all our modifications here. We
+run vit and then it'll compile it and
+save it into style.
+CSS. Now Tailwind does something a
+little different where where you
+actually specify which folders
+um
+Tailwind how can I say? So Tailwind only
+compiles the classes that you are using.
+So instead of say with Bootstrap, okay,
+you get every single you just get like a
+200k
+CSS file with every single class and
+every single you know utility class what
+you know whatever you want. Um you can
+control it absolutely
+but you just pretty much get everything.
+Okay. Now with Tailwind, you actually
+specify which folders for it to scan and
+it will automatically build a and
+compile a CSS file which which is just
+using those styles. So So your actual
+style compiled style ends up being
+pretty small which is good. Okay, which
+is very very very good cuz you can see
+here it's what 300 just under 4K easy.
+All right. So, we've done that.
+And what we can do now is just set up
+the libraries. That's what we need to
+do. Cuz if we take a look here,
+right, it's still kind of broken. If we
+view the source, okay, it's complaining
+about a few things. And that is because
+the CSS is um producing a Oh, yeah. You
+can see this stuff is not returning
+anything. All right. So, so let's fix up
+the libraries. We can come along in
+here, pretty much get rid of everything
+other than
+CSS. And what I'll do is close this off.
+And this can be what is it? Dist.
+And that can be style. Cool.
+Clear the cache.
+refresh
+and we get something that's not broken
+because you can kind of see. Okay. All
+right. It's very very very basic. All
+right.
+Okay. So,
+we take a look in here.
+Most importantly, we get a whole bunch
+of gin stuff, but we get a Tailwind
+site. And this is it. When you import
+tailwind,
+like just tailwind,
+this is this is pretty much it. So, you
+can see this is actually actually pretty
+small.
+It's pretty small. All right, cool. Um,
+just checking out. For some reason, my
+comments aren't coming through to
+reream, so I might be a little behind on
+the comments, but please just add your
+comments in. I've pretty much lost all
+the LinkedIn
+people, which is very annoying. This is
+the second time this has happened.
+Anyway,
+this is the second time. All right.
+All right. So now we need to start
+building out the
+page template.
+So let's just do that. Now the best way
+of figuring out what page template to
+copy across is to just take a look in
+here. Where is it? And try and find our
+page template. There it is. So we need
+to copy this one over.
+Sorry about that.
+Mac OS does that for some weird reason.
+Okay. So, let's just copy this across.
+And it's pretty much What is it? page
+dot. Oh, there we go. It's exactly what
+I want.
+And I'll copy
+this and put chuck it into page.
+And I can go ahead and just throw in
+my own stuff just to make sure
+it's
+overridden.
+And if we refresh,
+we should see there we go a bit of bit
+of code. Okay. So now what we can do is
+we need to organize all of this stuff.
+So I'm going to go in here and just get
+rid of everything
+and we're going to put in the header
+or the header area.
+So essentially what we're doing here is
+we're adding in uh we've got a header
+and a footer. Oh, sorry. No, a header
+and a primary menu.
+And
+we have BG white and it's got a shadow
+and we've got a container and these now
+this is your standard Tailwind stuff.
+I'm not going to I'm not going to cover
+Tailwind. There's a whole bunch there's
+a whole EOS, you know, Tailwind is very
+popular. There's a lot more videos about
+it. But essentially the whole thing
+about Tailwind is that you put put
+things together using styles.
+So, we've done that. And if we go to our
+site, let's take a look at it.
+We can kind of see things, but things
+aren't looking correct. Okay, things
+aren't really styled. So, as I
+mentioned, Tailwind
+only uses the classes which you have
+specified, but you need to tell Tailwind
+exactly which folder and files to search
+for.
+So, what we're going to do is let's jump
+over to style. So, the main source
+and you want to define your sauces, not
+ketchup or anything or barbecue sauce.
+No, no, no. Your sources right here.
+Now, I'm going to chuck in three of
+them. So, essentially what this means is
+that it's going to simply go back back.
+So, back two folders. Then it's going to
+check pretty much every single tweak
+file in templates and every single tweak
+file in components and pretty much um
+every single
+theme file, but there's only one. Okay,
+so we do that and let's go ahead and
+actually run the watch.
+So it's going to go ahead and run the
+watch. Now, sometimes
+this has to you got to like restart it a
+few times for it to get going.
+All right. So, that's now running. And
+if we come back here, what's going to
+happen? Well, we should should start to
+get a good lookingish type of
+type of thing. So, things are starting
+starting to come together.
+All right, we've got a few questions
+here.
+All right. Um Okay, one question you
+All right, so we've got a one question
+in
+YouTube.
+All right.
+Oh, sorry. Sorry. Oh, these are
+questions about an interview. Oh, well,
+I hope I hope the interview went well. I
+just noticed this now. Sorry about that.
+Wasn't paying attention.
+All right. So, oh, so, oh, so in the
+interview they actually asked you about
+what what is a recipe?
+Oh, interesting. Who's using recipes are
+still too new? I surprised I actually
+asked you that.
+That's interesting that Yeah, you got a
+you got a question about recipes.
+cuz I'm still playing around with them
+and still haven't built it.
+But you wouldn't really use recipes if
+you're building just a one-off bespoke
+custom Drupal site. Or or maybe you
+would. I I don't know. Maybe I'm just
+thinking I'm just trying to think out of
+trying trying to think if there's a
+reason for it. Maybe there is.
+All right. So, let's continue. All
+right. Cool. So, we've got this kind of
+working, but we still need to style
+things out. Let's quickly do that stuff.
+Now, we need to fix up a few blocks,
+and specifically, we need to style out a
+few things. So, we first want to style
+out the me uh the actual site
+branding and
+the and the menu.
+Okay. So, we need to style all of those
+ones.
+All right. Yeah. Yes. It was for a job
+full stack ruport. Oh, okay.
+Interesting. Interesting. Yeah, because
+well coming back to your comment about
+um recipes cuz for me recipes is more
+about you're building a product that you
+want to reuse over and over again. I
+guess if you are working well I know
+I've worked in government departments
+where they do want to spin up a lot of
+multi-sightes or like a multiple
+websites. So that kind of makes sense if
+you want to build up build up a recipe
+that you can apply over and over again.
+But one but one thing I I'm trying to
+think of talking about recipes and
+because this comment actually came up in
+one of my videos today. Somebody asked
+if they should use Drupal CMS or version
+two. And I said, well, if you want to
+use Drupal Canvas and you want to use
+version two of Drupal CMS. But that then
+got me thinking, what is the upgrade
+path for people who have used Drupal CMS
+version one and want to use version two?
+Because as far as I'm aware, there is no
+upgrade path with with recipes. You just
+apply that recipe to your site as a
+template and you're done.
+That's because you know, yeah, you could
+technically set up Drupal Drupal Canvas
+yourself, but then you have to do it
+yourself. So, I don't know. It's a good
+question.
+You could technically migrate, use AI to
+write some migration script,
+do [clears throat] that stuff. Write
+some cool migration scripts. I don't
+know. Yeah, you could do that.
+Yeah, I don't know. Anyway,
+all right. So, now we need to add in a
+some
+some custom CSS classes to kind of style
+things out. And the age old question
+when it comes to
+Drupal theming is how do you add these
+classes? You can add these classes by
+overriding a template. You can add a
+class by overriding a pre-processor. You
+can add a class by JavaScript. I've seen
+that. Yes, you can. I've done that. I've
+been guilty of that especially when you
+just need to get the stuff done. And you
+can also apply classes by using just SAS
+essentially and and Tailwind you can
+create what is a components in Tailwind
+and then just target an element and say
+um
+and then just say okay I want this to be
+a button and so on and so forth. So
+there's so there's many ways of doing
+it, but what we're going to do is fix up
+the button, sorry, the site branding
+by adding in a pre-processor.
+Oh yes, I like that comment. Yes, I
+found recipes incredibly useful for
+trying out ECA functions. Oh, yeah,
+that's right. Yeah, absolutely. No, I
+totally agree. Didn't even think of
+that.
+Yeah, I've actually downloaded recipes
+from the ECA website as well. And yeah,
+see that? That absolutely does make
+sense. Absolutely does make sense.
+All right. So, what I'm going to do is
+let's override the block. I'm just going
+to copy this. But what I'm going to do
+is I only want
+this to run on a specific block. And
+that is system
+system branding block.
+Because if we take a look
+over here,
+take a look at our block, you will see
+that the it's called system branding
+block.
+And I do know we can use that as a
+pre-processor. So what we can do
+is we can add it here.
+And then we can just add in a variable
+which then act sets the attributes and
+then sets these classes. And the good
+thing is is that this only gets added to
+well it should I'll double check it
+should only get added to the system
+block system branding block. So now let
+me just clear the c
+and we should
+get a better looking. There we go. And
+if I configure it and let's turn on
+site logo, it should resize the logo.
+Right, there we go.
+There you go. That has now been fixed
+up. And the good thing is, if you take a
+look in here,
+the logo's been set up. And most
+importantly, you can see it just here is
+being added.
+And the thing is though, Tailwind now
+because we have a watcher on every
+single time we make a change. This is
+important. This is very important.
+This is absolutely important
+when you have a watcher because we have
+it set up in here.
+It checks to see if this file has
+changed and we have the watcher turned
+on and it's going to grab these classes,
+check it, compile it, and then throw it
+into here. So, if we search for probably
+what is it W 200?
+No, I probably won't see that, but it's
+in there somewhere.
+All right, so comments, comments,
+comments. Good, good, good. Bring them
+over.
+Um, I always end up with a very large
+theme file. Any strategy used to divide
+them up and organize them better. Um,
+one solution that I've seen is people
+just create a whole bunch of include
+files. So, you may break things out into
+separate include files. I think
+oh, what is it?
+Drupal Radics does that.
+So if we take a look at the source code
+for Drupal Radics.
+Yeah, here you go. So Drupal Radics
+goes through and just grabs everything
+from the includes and then just requires
+them in. So that means you can come
+along in here and you can break things
+out into into separate into separate
+files. So you may want to add all your
+block stuff into into the block file
+form into form. That is that is a way of
+doing it.
+But I do but I do agree the the theme
+file can get very big.
+But this is this is one way of doing it.
+All right. It's interesting.
+It's an interesting way of doing it if
+you want to organize
+your files.
+All right, so we've got the logo set up.
+Now, let's sort out the menu. Now, for
+the menu to appear nicely, cuz remember,
+we want to have it displayed this way.
+So, this is my test site that I've
+already built. We want to add in a few
+items
+such as like flex and things like that.
+Again, we can override a tweak template.
+We can override a, you know, we can
+override a bunch of stuff, but what I'm
+going to do is just override a
+pre-processor. With me, when it comes to
+like these little things things, I just
+want to do it as simple as possible. And
+then if we need to override the the
+tweak template, the tweak template
+should be the last thing you have to
+override because it means you then have
+to maintain it.
+So, I'll try I try and avoid that.
+So, if we come back,
+what I'm going to do is grab there.
+That's what I want. All right. So, let
+me copy this. Pretty much just copy it
+as well, cuz all I need to do is paste
+that in. Change block to menu. And this
+should be
+menu.
+No, what is it? uh underscore I think
+main
+and if we just put in Ivan test like I
+normally do
+and then I clear the cache
+and then refresh I should see oh there
+we go I haven't test all right cool
+that's working so now all I need to do
+is put in
+uh what is it uh flex and then space
+X. Uh, what is it? Six.
+And there we go. Okay,
+that's a cross. What happened with my
+logo?
+Where did the logo go?
+Oh, maybe it was caged.
+Was this the logo? Oh, maybe I need to
+replace it. Where? Where is the
+original? There we go. Let me chuck the
+logo back in.
+Yes, override.
+And it's there.
+All right.
+All right. So, we've got things
+happening. There we go. Things are
+finally coming together. And now what we
+can do is just add in a few more stuff.
+So, let's go back to the page. Where is
+it? Did I override the page? All right,
+cool. Let's add in a few more regions.
+Well, don't need that one. I know that
+anymore.
+Remove grow. But essentially, we're just
+putting in all the contain all the
+actual
+regions.
+You can see that things are coming
+along. And if we click on say contact
+us, this is an actual page.
+things are still looking unstyled
+because that's a standard thing with um
+Tailwind is like it comes unstyled.
+And finally,
+let's throw in
+the
+footer.
+And we've got the footer here.
+And if I save that,
+refresh, it's looking empty. But let me
+quickly just go and put stuff in there
+because I could have put stuff in there.
+All right. So, let's put in the
+Oh, what is it?
+So,
+so copyright. No, what is it? Footer.
+Put the footer in.
+I'll put the con uh copyright down at
+the bottom.
+And then the about us.
+And finally, I'll put the quick links
+because these are the stuff that I've
+created earlier.
+And hit save. And if we go to the
+homepage. Okay, we still need to style
+out a few things. So,
+occasionally you need to come along in
+here and then just restart it. So, this
+is kind of starting up the watcher
+again.
+Let me just go in there and compile it.
+There we go. And let's refresh.
+And that is not styling. Anyway, we'll
+take a look at that later on.
+I probably missed something.
+Well, actually, that one's looking good.
+Well, let me remove the display title
+from there.
+Let me configure that stuff. That's
+looking good.
+That's looking good.
+And that is looking good. All right.
+Perfect.
+Now, occasionally we just need to
+Well, let me just run this. Just run
+that. Cool.
+Okay,
+give me a moment while I debug this
+stuff. It's always fun stuff.
+So, there is a grid. Grid grid grid grid
+up the top here.
+That is all getting added into a Oh, I
+know why. because I forgot that we need
+to remove a region.
+So what we need to do is pretty much
+come up the top here
+and put in region.html.twig
+and just return nothing essentially.
+So where is that region?
+So region.html HTML.
+I'm going to copy that whole thing,
+but I'm just going to remove everything
+else.
+So, it's literally just that.
+Hit the refresh.
+Clear that.
+And hopefully
+We set it in. All right. Perfect.
+That is all coming along nicely.
+Okay.
+All right. So, we've put everything
+together
+and now we need to kind of style out
+some basic elements. So that is
+topography,
+headings and things like that. Now I am
+just going to copy this across just to
+make it nice and easy.
+But essentially what we need to do
+is come along in here
+and we can create let's just create a
+component. Now, no, this isn't single
+directory components just yet,
+but what I'll do, I'll put in what is
+it? Buttons
+dot CSS. I'll also create one for the
+tabs as well.
+So, tabs
+and I'll create one for the typography
+as well.
+So, things like headings and stuff like
+that. So the buttons I know we're going
+we are going to need. So let me just
+grab that. And this is one of the
+features of another feature of Tailwind.
+So instead of me going in and changing
+the button class everywhere because
+Drupal generates these button classes,
+it's just best to apply
+all of these styles essentially to the
+one button class. So then we can go
+ahead and just use button
+on on uh the the button class and then
+it's just going to look like an actual
+button. It's it's automatically going to
+get these styles because I don't know
+people seem to have a lovehate
+relationship with Tailwind. When you see
+some of the classes that Tailwind
+generates,
+it can be a lot. I'm not going to lie to
+you. When I see that sometimes I see
+memes, it's like, well, that is a lot.
+And you can see here, yeah, to style a
+basic button that I kind of put
+together,
+there's a a lot of classes in there.
+So, let's also fix up the tabs because
+remember the tabs, where's that? Contact
+us. Yeah, we need to fix up these tabs
+and make them look nicer and prettier.
+And what I've also done is I've gone
+ahead
+and created an actual like a w-canvas
+you know--tabs class so that the tabs
+gets nicely applied and we just need to
+apply those tabs uh that class to our
+tabs. And finally, we're going to chuck
+in
+the
+base uh well, we're going to chuck in a
+base style for headings. This is one
+thing, yeah, that kind of is is a bit
+annoying about Tailwind is that it comes
+with n. But that that's the thing. comes
+with absolutely no styles.
+And um
+you can see that
+you need to style up a few things here.
+So we've added in a H1 all the way to H6
+and also
+an uh a link also link styling as well
+and also paragraph styling as well.
+So if we come along in here and let's
+just make sure
+everything is run but no we need to
+actually import a few things as well.
+So essentially that'll be
+suggest import
+components and what is that buttons
+and I'll just import this stuff and what
+is it
+tabs
+topography and we're done. All right.
+And straight away you can see that it's
+gone from 8K to 14K. Okay. So, that's
+been picked up, which is great. Come in
+here, refresh,
+and links are coming along. Our headings
+are coming along, but our tabs still
+need to be fixed up because we need to
+add in
+essentially what we need to do
+is add in
+a class on the actual block. box. So, if
+I come along in here,
+if I add in the
+WW canvas tabs, it should look like look
+like that. There you go. See, that looks
+pretty cool. I like it.
+It actually looks pretty nice.
+Okay, so that's all sorted.
+Let's jump over
+to our final.
+Uh what is it? Uh themes.
+Bring that down.
+Or is it block? [snorts]
+I can just copy this.
+Now you can actually use just a single
+pre-processor block.
+function that you can do, but sometimes
+I like to just break them out. So, this
+will be local
+tasks block.
+And all I need to do
+is add in what is it? The tabs class.
+And if we come back here, refresh
+And um
+all right, sorry I missed the questions.
+Okay. Um All right. There is a comment.
+Okay. You can load you can override the
+development service YAML. You don't have
+to clear the cage all the time. Um yes,
+I am aware of that. But isn't now I
+might I I might I might be wrong, but I
+thought setting
+all of this stuff pretty much does the
+same thing. I'm I'm turning off I'm
+putting everything in development and
+not and not cing stuff because one thing
+I have noticed with that even even if
+you have even if you have development
+all this all this development stuff
+turned turned on. I have overridden
+a pre-processor and it and it hasn't and
+it technically hasn't picked it up.
+Let me just make sure this is correct.
+So, local tasks block.
+But if I clear the cage, let me just
+clear it.
+It gets picked up. So, yeah, I'm not 100
+like I I I honestly thought now I could
+be wrong. Hey, I get things wrong all
+the time. I I just thought essentially
+you don't have to change the
+development.services because this now
+controls it because you're telling it
+not to c anything. I may be wrong. Maybe
+there's extra features there.
+Anyway, that's my bad.
+All right.
+All right. Comments. Okay. Yes, I've
+seen the argument for Yeah, copious
+inline styling cluttering up.
+Hence the functions.
+Yeah, Daisy UI. Yeah, you mentioned
+about Daisy UI. Yeah, I was going to do
+Daisy UI at first, but then I was like I
+didn't want to [snorts]
+I thought I'd probably end up spending
+way more time just configuring things
+with Daisy UI, but I will be doing one
+on I want to do a live stream on using
+Daisy UI with UI Suite and see how that
+works. But I do like Daisy UI. That does
+make things a lot easier.
+a lot.
+Okay, so we've got pretty much
+everything sorted out.
+And last but not least, I just want to
+chuck in just one more basic styling.
+Okay, so things are coming along nicely.
+And that is a contact forms need to be
+fixed up. As you can see, they're kind
+of not the greatest. So what we're going
+to use is we are going to use
+uh Tailwind CSS forms and this just
+gives you a very basic very very basic
+styling
+very very basic styling on forms.
+Oh yes. Oh yeah. Daisy UI makes it easy
+to switch out different style components
+instead of style the buttons yourself.
+So if you want to add in easy like you
+know very very basic styling on forms
+then check this out. And this is
+actually pretty easy to set up. All you
+need to do is we'll pretty much run
+these commands. So let's run this
+and let's jump over where is it to here.
+Am I in? I am. Cool.
+Throw that in there. It's going to
+install it for us.
+And then we need to go into what is it?
+Style. CSS, I believe.
+And we can actually come down right down
+the bottom. And one thing you can do
+here is specify how you want the styles
+to be applied. So if it's base that
+means it'll apply the styles based based
+off no pun intended the actual type of
+the element. If it's class if the
+strategy is class that means it will it
+will apply the style based off the
+class. So you need to make sure that
+your elements have form-input form- text
+area.
+I think for us it's easier just to put
+in this base. So what I'll do is I'll
+just copy this
+Run this under there. And I will get rid
+of class.
+Save that. Did that compile?
+Let's make sure that compiled. Yes, it
+did. Now we're at 20K. Remember, we were
+at 3K and now we're at 20K.
+So, we're getting there.
+Getting
+there in styles.
+No, we're getting there in style. There
+we go.
+All right, we come along in here.
+Refresh. All right, things looking good.
+Now, if we go to the contact us, we're
+going to get a basic well better looking
+a better looking form. Of course, it
+needs to be styled. You need to fix
+things up. If you were to have a look at
+the what is it login page? It's not it's
+not the best but
+that's for another time. And oh also
+check out the buttons. Hey look at the
+buttons.
+I think I also think if you put in
+dash dash premium no sorry primary.
+Oh because it's not being used. That's
+why needs to be used.
+The thingy actually needs to be used for
+that. Okay.
+Oh, here. Oh, here we go. Wait, why did
+that work?
+Oh, you need to put both of them. Okay,
+sorry, my bad.
+You need to put both button and button
+primary. And that's what it looks like.
+It is pretty interesting just to see how
+many how many Tailwind styles you can
+put on an actual button. It's like, how
+many how many Tailwind styles do you
+want on a button? Yes, I want
+everything. I want everything on there.
+All right, so we have got
+everything kind of set up now. I think
+we're going to get to the fun part soon.
+Don't you worry. I I can I can guar I
+can guarantee all the comments now
+coming in. It took you 1 hour to get to
+the point of actually talking about
+components. Well, there's a bit to it we
+need to talk about. You know, we need to
+set things up. We need to set up the
+stage for things. So, we are getting
+there. Slowly, slowly, slowly.
+All right.
+So, now it's time for Drupal
+Canvas.
+So, we have our basic theme
+and we can go ahead and download Drupal
+Canvas. There is
+nothing fancy is required to install it
+other than just downloading it and
+install it. However, I did come across a
+bug which has been mentioned
+about installing it from the UI. So if
+you do a clean
+install from just by going to extend,
+you do get this type of error. So I
+recommend that as of this recording. Now
+things will change. I can guarantee you
+it's going to change and it will be
+fixed up as of this recording.
+you need to install it using Drush or
+you will get these errors like this JSON
+schema validator error and you can't
+recover from it because it half installs
+tables. So just be aware of that. But as
+of this recording um it's still an issue
+but chances are when you watch this
+after the fact it'll be fixed.
+So, let's jump over here
+and go ahead and just download it and
+install it. Well, no, download it. And
+using Drush, what we're going to do is
+open up my terminal and type in Drush in
+Canvas.
+And yes, and it's going to install
+library
+uh media library and media
+Okay.
+So, we are now ready
+to get going.
+If we come back to our site here,
+refresh,
+go to content, we should see pages.
+And if we create a page,
+we get and sometimes you need to click
+on the scale
+for for it to appear. So just be aware
+of that. I've I've noticed that a few
+times where come along in here,
+you go come to pages. You click on edit.
+You just don't sometimes you see it,
+sometimes you don't. And here we have
+our actual
+page. So we can go ahead and just chuck
+it anything we want in here. Okay. Well,
+kind of. Okay, so let's quickly just go
+through the UI. I've covered it before,
+but I just want to cover it again. From
+the right hand side, you manage your
+props for your components. So, like for
+now, that's the title and that's the
+page data. But when you drop in a
+component, you'll manage it from the
+right hand side. You can preview things
+just by clicking on preview. Then from
+the left hand side, you can add you can
+have a look at your components. You can
+see there's not many components cuz this
+is a vanilla site.
+Then you have your layers and your
+structure. Then you've got your manage
+manage your library. Again you can
+create you can manage all your your
+components. You can also create code
+components which is a JavaScript
+component.
+Then you can create your pages like we
+have. And then you can also manage your
+content type. So your content templates
+and that we're not going to cover
+because I need to spend more time on
+that. But what I want to do is create
+just a basic homepage.
+So let me change this to homepage.
+Put in a URL of homepage. And to save
+it, you need to just select it and then
+publish it.
+And if we go to the homepage, we still
+can't go to the homepage from here, can
+we? Oh, set. Oh, that's cool. I didn't
+know that. I'll set I'll set that as a
+homepage. And if we go to the homepage,
+why is it not set as the homepage? Oh,
+maybe there's nothing there.
+So, it's not set as the homepage. Oh,
+maybe I need to
+Oh, there we go. I need to publish it
+again.
+[gasps]
+All right. There we go. That's the
+homepage. All right. Nice. Nice. Nice.
+Now, one question you might get and when
+you're trying to figure these things out
+is how do I go get back to the canvas
+page?
+So, you can click on edit that will take
+you back to the canvas page. There is if
+you click on say content, you will see
+this little Drupal canvas. Now,
+depending on the toolbar that you're
+using, it may appear right at the top
+here or it may appear
+in this secondary toolbar. I like to use
+the gin toolbar.
+I personally don't really like I'm not I
+now to be fair, the navigation
+uh yeah, the navigation module, the one
+that adds the right hand side, no, the
+left hand sidebar, I'm still 50/50 on
+that. It's nice. It looks nice, but
+sometimes it kind of gets in the way
+because it because it kind of adds a
+chrome around your content and it adds
+it just takes over too much. So that's
+why I like the standard toolbar. And and
+you can control all of this just by
+going to appearance
+and then go settings on jin and then
+just select your item right here.
+I think I've selected this one
+horizontal. But if we select legacy,
+you'll see up the top here. That's
+exactly. Yes, you'll see up the top
+here, you have triple canvas. But I like
+to use the modern, not the classic. I
+like to use the modern one,
+which adds it here. And this secondary
+menu, believe it or not, is off on the
+front end. So I turn it off on the front
+end.
+All right. So if we go here, okay, this
+is our canvas page. So we first need to
+create a component. We need to put
+something in there essentially. So let's
+go ahead and do that now.
+So what we're going to do
+is jump over to our terminal and create
+a component using Drush. Believe it or
+not, we can use Drush and then type in
+what is it? S SDC
+and our first component is going to be
+called text. So let's select our machine
+name. So this is our actual theme.
+And our component is just going to be
+called text. Keep it simple.
+And the machine name of the component is
+going to be called text. Yes. Uh,
+don't worry about that. Do we need CSS?
+No, we don't. No JavaScript. Do we want
+to add in a prompt props? Yes, we do.
+And this one will be just called text.
+Machine name text. And it's going to be
+a string.
+Do we want to add another prompt in? No.
+No slots? No. All right.
+And that's it. That's all what's
+required.
+Now we come up the top here
+and we've got our
+simple
+very simple text
+directory well sorry text component
+and this is all automatically generated
+generated for us and I do recommend that
+if you if you do get stuck with this
+stuff just look and see how other
+components are created that's probably
+the best way that's how I learned a lot
+stuff. And look at the Mercury theme.
+That's the one that is used in Drupal
+in Drupal CMS version 2. Take a look at
+that because that will really explain
+and teach you a lot of stuff.
+So now what we need to do is add in
+our prop
+in here. So instead of text, I'll just
+call it text. Okay.
+And this is the most simplest and should
+be the simplest.
+Let's just leave that as it is
+and clear the C.
+And if we refresh
+and go click on add, we should see text
+right here. And if we move that and add
+that in and we have to add a little prop
+hello or something in there, it's now
+appearing. Okay. So you can see on the
+right hand side our our our prop is just
+a
+text field. But let's make it a rich
+text field
+cuz all we need to do is we need to make
+one change
+and that is put content
+media type and I'll also add in an
+example. So straight away this example
+gets added in. So it allows HTML and
+then because we're doing that we need to
+pass in raw.
+So it displays it as raw.
+And if we come back here
+and refresh
+now, this prop isn't going to change.
+What we need to do is we need to delete
+it. Well, remove it from here and then
+just add it back in.
+And straight away we get a text
+actual bit of text in there and we can
+go ahead and style it. And he
+automatically stalls for us. Look at
+that.
+So there you go. You've now created
+your own single directory component. And
+that's it.
+That is the simplest that is the
+simplest way of doing it.
+Very simple. Very
+very simple.
+But we're not finished just yet. What I
+want to do is let's put in the ability
+to align
+align the text left, center, or right.
+And so what we can do
+is I'm just going to put in a bit of
+a variable in here. Essentially this all
+this does is it sets the align class
+left center and right and then adds a
+text left
+adds then a text center and and these
+are the tailwind classes
+but we still need to add these
+here.
+So that is align
+align class and I'll just throw in
+the text content
+just so that we have a
+a class there. All right. And now what
+also what we need to do is we need to
+add another prop.
+And the prop is going to be pretty
+basic. Let's
+go in here.
+And essentially that is a line and then
+a string. This is all just standard
+stuff. Okay. And we just put a
+uh enom in there where we select our
+options. We set a default and we set an
+example. So that is automatically
+selected.
+and we come along in here. Let's remove
+this one.
+Refresh.
+Then move that across. And now what we
+have is we have a drop down. We can move
+it.
+And write isn't working because what we
+need to do is
+just run this again occasionally.
+Where is it? dev
+just run that.
+There you go. Write is working. So if
+styles aren't working correctly,
+just you know make sure your compiled
+that you have compiled uh
+Tailwind correctly. All right. So we've
+got got a quick question quick question.
+How do you expose or set a text format?
+That's a good question. I think that is
+actually controlled by
+by uh canvas. I'm not 100 because well,
+let's have a quick quick look. I think
+canvas actually sets that.
+And to and to actually answer your
+question. I'm not 100% sure on on how
+you would actually modify that.
+Let's go in here. Canvas
+config.
+Here we go.
+So there are text formats. So you have
+block and inline.
+Let's have a quick let's have a quick
+look.
+Uh interesting. Okay. So it does lock
+it. So yeah, you do have block HTML
+inline HTML and they are blocked but
+they are locked. So you can't change
+them.
+That is a good question. How do you
+change that?
+But you can see that's how Yeah, I
+didn't even think of that. That is a
+good question. I did not even think of
+that.
+That's that one. Yeah, you can't add in
+that many.
+But then you would often
+you would often create then a component
+to kind of do most of the heavy lifting
+with the custom styles.
+I think
+so that's probably why they're like you
+know what don't worry about it.
+Maybe that's it.
+But yeah, you can't actually modify it.
+That is weird. Anyway, I'm sure there's
+a valid reason for it because yeah, when
+you think about it, we are passing raw
+as the filter in twig and generally,
+yeah, this is kind of like a no no, but
+we are and and that's how that's how
+Mercury was doing it. And I was like,
+you know what, maybe well, if it's doing
+it, then should be fine.
+Yeah. Anyway.
+All right, cool. So now
+now that we have a basic
+a basic text
+component, let's add in a heading
+component. Again, you know, these
+heading components and text components
+are kind of the standard thing. And
+that's one thing I also noticed was that
+when I was building this stuff out,
+there was just a lot of standard site
+building that I had to do. And I think
+with every Drupal site, every every new
+site that you build out, you might you
+might start creating a list of or a
+collection of components that you reuse
+over and over and over again, such as
+like text, rich, you could call it rich
+text, heading or header, and things like
+that.
+So, what we're going to do now is
+let's go ahead
+And before we jump on, I'm trying to
+figure out why
+is the CPU going absolutely
+got a high load of CPU right now.
+It's got to be one of these tabs.
+Give me one moment.
+Got to figure out exactly which tabs
+they are.
+Oh no, it's fixed up now.
+It was Anyway, I closed a whole bunch of
+tabs. It was uh Chrome beater which I
+used during the stream. Anyway,
+that is all sorted.
+Okay,
+so now let's create a header component.
+So what we can do or a heading
+component, sorry. Let's jump over.
+What? Let's jump over to here and again
+create another
+SDC.
+This one's going to be Yep. still in the
+same theme
+component is going to be called heading.
+Heading. Yep. Yep. No CSS. No
+JavaScript. Do I want to create props?
+Yes. And the first one's going to be
+called
+heading text.
+make it a string. We can modify it later
+on. The next one is going to be called
+level because I want to control if it's
+an H1, H2, H3, and so on and so forth.
+Oh, I always do this. This has happened
+a few times. I just I just wasn't paying
+attention. All right, let's start again.
+Because he kind of, you know, he says,
+"Do you want to add another prop?" It's
+like, and I I just think I'm just adding
+more.
+That's just user error. Let's start
+again. All right. Webb. Yep. Component
+heading.
+All right. No. No.
+Yes. Component is a prop. This one's
+heading text
+string. Yes. This one's going to be
+level.
+And we're going to add this as a number.
+Yes. We're going to add another prop.
+This one's going to be a line. So, we're
+just going to copy the same the same
+stuff before as before.
+And it's going to be called string. No.
+And no slots. All right. Done.
+All righty.
+Where is it? Let's go back in here.
+So, we've got a very basic setup. And
+now we need to break out and fix up
+these styles. Well, these sorry, not
+styles, these components.
+All right. So, I'm just going to copy
+this over and just take you through it.
+They're pretty much exactly the same.
+So, we have a standard string. Okay,
+this is just going to create a string
+prop. Then we're going to have a menu,
+sorry, a level
+with a bunch of options. So, drop down
+options.
+And we're going to then do the assign as
+well. And we're going to
+And this assign is pretty much exactly
+the same as as the text one as well.
+Where is it? Pretty much exactly the
+same. And this is something you should
+be aware of is like if you are creating
+a whole bunch of components, use AI to
+generate it. And that's kind of the good
+thing about these components being in
+code
+uh is that you can easily you can e this
+is perfect for AI to just go in there
+and build them out, especially doing a
+lot of the grunt work. And it knows Twig
+very well because Twiggy is a
+is used outside of the Drupal community.
+It's not a Drupal thing. So, I can go
+ahead and create and and one thing I've
+used AI for a fair bit while I was like
+testing stuff out and building out this
+stuff was asking
+what what is Twig capable of? Because
+Twig is actually if you look at the
+documentation and spend a bit of time
+learning it, it is full on the stuff you
+can do with it. We can extend block
+regions. And what I mean by block
+regions is that Twe itself has this
+thing where you wrap HTML with a block
+statement. And that means then you can
+override that in other layouts as well
+and other tweak templates. It's pretty
+powerful. The stuff you can do with it.
+I was pretty amazed when I found out
+about it. And it's just good to ask AI.
+It's like why
+why can I do this in Drupal or or how
+does this work and so on and so forth.
+So, you really shouldn't be writing and
+and you know, spending time building out
+all of these props yourself. Just get AI
+to write most of it and then just come
+in here and tweak it and you're done.
+Kind of little cheat code.
+Bit of a cheat code. All right. So,
+we've got all that sorted out
+now with the twig templates. The twig
+templates actually pretty easy.
+This is it. So again we just assign
+we have a variable up here which um
+assigns a class to the
+align classes. It just sets that. This
+is just copy paste from the other
+components. We set the level and then
+here you can see that it's setting the
+heading level and that's it. And then we
+have the heading text and that is all
+that is required.
+And I'll just mention one thing about
+AI. It's actually pretty good where you
+can tell it create a prop and it'll come
+in here and it will create it for you
+and then also update the tweak template
+and do all the grunt work of just all of
+these little variables and things like
+that because you'll be surprised like
+there's a lot of um there's a lot of
+boilerplate code involved.
+Okay, this this example isn't isn't that
+bad, but essentially what this does is
+this allows you to then override and
+pass in and an an align
+a line value when you are when you are
+using the the component through another
+through another tweak template. But if
+you want to override say attributes or
+classes on an attribute array,
+if you look at the code, the actual
+HTML, like I think I saw once in Radics,
+there's a lot of like just boilerplate
+code to allow you to easily override
+existing classes or utility classes.
+And so yeah, for a you know, when it
+comes to that stuff, AI is great at
+that. So you can just focus on designing
+it and making sure it looks pretty.
+That's it.
+Okay, so we've set all that stuff up.
+Let's clear the cache. Make sure
+everything's nice and fresh.
+And if we refresh,
+go here, we should see heading.
+Let's chuck that up the top.
+Center it. Let's make it a H3.
+And let's give it a center. Oh, no.
+Let's center this one as well.
+Now
+we have
+Where's our homepage?
+Our working homepage. And that's it. So
+you can see we're slowly starting to
+build things out and just building out
+our components. Okay. So that's so that
+is that. Okay. So now let's go ahead and
+create a component that allows us to add
+a section in because often you'll see
+that
+well based off Mercury and a lot of the
+other page builders that I've used in
+the past often you want to put in a
+section component first and then you can
+place another component within that
+section and that is what a slot is used
+for. So props are used
+props are used just to manage things
+from the right hand side. A slot then
+allows you to then drop another
+component within a component kind of
+like a nested component.
+But what I want to do now is create
+another one
+called
+section. We'll call this one well I'll
+call it section grid because I want to
+add a card component but call but I'll
+call it section grid.
+So what we can do
+is jump over
+to our terminal
+and I need to just double check.
+There we go.
+All right, let's start this again.
+Again, we're just going to create it.
+And so this is going to be called, was
+it? Section grid.
+I spell section right. Yeah, I did.
+And no, no components. Yes. All right.
+I'm going to add in a title.
+Yes. I want to add in another prop.
+And this one I want to put in highlight
+cuz what I want to do is have a little
+check box that just gives it a different
+background color. Okay, the background
+the background color is hardcoded. That
+I understand, you know, you can modify
+yourself, but let's just keep it simple.
+And we want this to be a boolean. And
+yes, I want to add in another prop. And
+this is going to be columns.
+So I want to be able to select the
+amount of columns
+And that's going to going to be a
+string.
+And no. And yes, we want to add in a
+slot. So this one's going to be called
+grid.
+No, that's it. Simple.
+Okay.
+So now if we come along in here, look at
+our components.
+We do need to clean things up a little
+bit here. So, what I'll do
+is I'll pop this in.
+And so these are the actual
+props. Okay. So, we have title that's
+just a basic string, title, description,
+highlighting. Then we have have we can
+add a highlight. Then we create again
+just a drop down. Essentially
+the align dropown is the same as this
+dropdown. Okay, you just put in your
+options here and that's it. And then we
+add in a slot.
+So we've added in a custom slot there.
+Okay.
+And if we open up our HTM well our tweak
+template
+and let's just replace it with all of
+this.
+So again we have another class variable.
+As you can see it's all it's all classes
+when it comes down to everything. Well
+everything is classes. Let's be honest.
+Well no a website is always a form and
+and and an array of objects. That's what
+I've always said.
+You can see here with like tow wind and
+SDC. It's all classes, mate. It's all
+classes.
+Uh
+we have our grid class and it's setting
+the defaults, but then it's controlling
+if 100 is selected, then it selects
+those Tailwind classes.
+Uh we have a background, so it's hard
+coding this BG gray 300.
+It's hard coding it, but again, you can
+make it a drop down. That's not a
+problem. But then, you know,
+you're going to be spending years and
+years building out components because
+because when you think about it, there's
+so many permutations when it comes to
+components. You can create components to
+manage and control your styles in many
+many ways.
+And then we have our container. That's
+fine. We have our H. Well, we've got our
+H2 there. Again, you could probably
+control
+the heading value, but then the heading
+could be a slot as well.
+And finally, we have our grid. Now,
+because this is a slot, we need to use
+the block statement. And this is a twig
+twig feature. It's not a Drupal block.
+It's a twig feature.
+So now if we put all that stuff together
+and
+let's clear the C
+and refresh,
+we should see
+section grid. And if we pop that in, now
+we've got this new grid slot right here.
+And we can drop in our existing items.
+And what happens is they actually go
+inside
+and I think for some reason I do know
+that these classes aren't getting
+aren't getting processed. So what we
+need to do as usual, we just need to
+kick off Tailwind
+to compile that correctly.
+refresh. And there you go. Now we see
+it. Now we see it as a grid because if
+we come along in here, set it 100 by
+100. It's going to set it like that,
+which is fine. And we can also give it a
+nice little light background. And we can
+give it a grid section heading. Look at
+that. We can add that in.
+We can add that stuff in right there.
+And if we save the page, let's go to the
+homepage.
+We have our nice little grid section and
+components. Now, this grid section works
+really, really well if you have a card
+component. And that's something I've
+noticed. Every design system has a card
+component. So, let's quickly just make
+one.
+uh which will look like
+well where's the homepage on this test
+on this test site? It will look like
+this
+right here. We have an image,
+a card title, and a card summary.
+So, what we're going to do
+is jump over.
+Well, let me see if there's any
+H. All right, the stream's still
+working. Good. Just want to make sure
+our stream is still working. Hasn't died
+yet. That's right. I can still I can
+I'll be able to slice things. So, if
+people are watching the recording of
+this, I probably mentioned something in
+the video that that Yeah, I had to kind
+of slice the video together. That'd be
+right.
+Okay. So, let's jump over and create a
+card component.
+And I'll call this one
+SDC
+web bush tailwind.
+So, it's going to be called a card.
+Let me get the slots. I need to I want
+the props and everything. The props and
+the slots.
+Yep. Yep. Yep. Yep. No. No. Yes. I want
+to add a prop. First one's going to be
+called media. So, we're going to add in
+a new one called media for the uploaded
+image.
+And that's going to be
+Yes, we know that we need to edit that
+after the fact.
+Yes. And the next one's going to be
+title.
+And it's going to be what is it? A
+string.
+And the next one is going to be a
+summary.
+That's a string. And another one. We've
+got a few more. We need to add in the
+link URL and link label.
+And I do believe that is a string as
+well. And the final. Yes. Yes. Yes. I
+don't want to be caught off again.
+Link label
+and the string.
+And that's it. No. No. And we're done.
+All right.
+Now we have our
+component right here with our slots. And
+I do believe if we
+clear the C.
+Uh let me fix up these tabs. One moment,
+please.
+Oh, no. Actually, I want that tab over
+there. All right. Now, if we refresh,
+all right, this is a good example. Now,
+you may notice that we can't see our
+component.
+How do you debug when you can't see a
+component? Well, first of all, if
+something is blatantly broken, you might
+get a fatal error. That's the first way
+you will notice that something is
+broken. The other way is if you come
+along in here
+and go to
+appearance
+components, you see this new page. Now,
+this is thanks to Drupal canvas and this
+shows you all of the components and you
+can enable or disable block components
+and you can also see if there are
+disabled or incompatible components.
+So here you can see that our SDC webwash
+Tailwind card
+is incompatible because Drupal CMS
+doesn't uh Drupal canvas does not know
+does not know of a block type of widget
+to allow populating media prop. So, what
+we need to do
+is let me just copy all this.
+We do need to make one change. Well,
+really, we're going to clean up a whole
+bunch of stuff, but what we need to do
+is pass in this ref.
+And this and this sets the schema
+definition
+for how media objects are handled.
+So if we refresh,
+we shouldn't see that. Well, let's just
+maybe we need to come in log in here.
+All right. Well, we can see card
+component. Has it gone from there? Has
+it? Where's it gone?
+Well, for some reason, it's still there.
+And let's just maybe I need to clear
+clear the cage again. Always need to
+clear the cage a few times.
+Oh, here we go. Card component right
+here. And
+that's interesting. Anyway,
+now it is visible.
+And what we can do
+is let's just copy over the
+twig.
+And this is essentially a pretty simple
+component. So we've got the
+media source up the top here. So this is
+the actual image. Then we have just
+the H3. And this is just basic twig.
+twig styling. All you need to do is just
+go through and uh
+and
+and just put in your if statements.
+Make sure everything is
+everything is displayed and rendered
+correctly. And we've got the
+href here.
+Let's go back in here. Let's clean this
+up. Let's remove that.
+And oh, I want to make sure.
+Just want to make sure we compile and
+make sure everything is nicely compiled.
+There we go.
+Let's refresh.
+And we can put in a card component.
+There we go.
+And let's put in what? Where's my
+images?
+Here we go. Let's put in a thumbnail for
+how to use Drush.
+There we go. How to use Drush.
+how to use brush and then click here.
+And best of all, we can duplicate that.
+Let me put in
+another one. There we go. Commas.
+how to use Drupal commas
+and we can easily just throw in another
+card component
+and on the grid we can switch it to 44.
+So it's like four like what is it? No,
+four columns or it can be 100 columns
+each or 100 width.
+And this is all just with a bit of HTML.
+And that's it. Now you can see just it's
+so powerful. Very powerful.
+And here
+you can see our components.
+That's it.
+So, I do recommend that when it comes to
+creating like especially card
+components, you want to have some type
+of section or grid component that kind
+of groups it because then it gives you
+way more control and you can and you can
+just um you can just control things in
+an easy way. And also, most importantly,
+you can add padding because that's one
+thing I also noticed when you're dealing
+with paragraphs. you're going to deal
+with exactly the same issues as you do
+it with um styling paragraphs as you
+will with styling these. You know,
+making sure the padding is correct
+between the components, making sure they
+resize correctly. And then you're going
+to get the client saying, "When I use
+these two components,
+you know, they they
+they don't have a perfect padding
+between each other." And so, yeah, I
+mean, you're going to you still have to
+answer all those questions. So you're
+not you're not you know triple canvases
+are going to sort everything out for you
+unfortunately.
+They're going to sort out everything.
+All right. So now what I want to do is
+just look at our last component.
+And that's going to be a nice hero
+image.
+Well, a a hero
+a hero block.
+So, I'm going to do this in a nice and
+quick way because you don't want to see
+me create props and slots again.
+Let's go back to
+the correct tab. Well,
+and this one's going to be called
+hero image.
+No, no,
+no. No. All right, we're going to still
+put in the components. Don't worry, the
+slots. Don't worry about that. Well, the
+props.
+And what we can do
+is pretty much just put in
+these ones. Okay, so we have again media
+pretty much exactly the same as we did
+previously. We put in a heading text,
+subtitle,
+link,
+link label. That's pretty much it.
+And let me put the hero image in.
+And here it is,
+the hero image HTML. We have the images
+or the image up the top here. And then
+we just have the heading text, title,
+link, and also the link label.
+So, let's just clear the c for that.
+Refresh.
+Let's go back in here.
+Let's go to add. And we should see
+our components. And if we click on add
+media, let's put in a nice
+a nice image.
+I'll put this one in.
+These are actually my images that I took
+photos of. What is it? Plane.
+And we get this nice hero. And if we add
+in
+well what what what we need to do is
+compile as usual.
+Go in there. Tell needs to compile. And
+now here we go. It's compiled. It's
+added in a nice little nice little bit
+of um opacity. And we've added in
+heading text and subtitle
+text.
+And here from the layers section, we can
+see and we can move things around up and
+down. We can we can technically move it
+inside, but you won't won't want to do
+that.
+Probably move that out.
+So it fits nicely
+outside.
+Now we can go in there
+and save it. And we are
+then
+done with our large hero
+image component.
+So, as you can see, creating these
+components, they are fairly repetitive.
+But once you've created a few of them,
+you're sort of just putting it together
+and putting the same props and just
+thinking about, okay, what how do you
+want to build out these components? What
+options do you want to give to the
+editor to to modify? There's a lot of
+stuff you need to just think about when
+it comes to these things.
+And
+if you're building
+paragraph powered sites, you still have
+to come up with these these an you still
+need to answer these exact questions.
+So yeah, don't think using canvas is
+going to make life thousand times easier
+when you're building out a site. You
+still need to figure out, okay, well,
+what what are our components? What are
+we going to allow? And you just need to
+put it all together.
+Now, one thing we need to change on our
+site is we need to make sure
+we need we need to make sure that
+there's no container on the canvas page
+on the C canvas pages because you'll see
+that we do have from an HTML standpoint,
+where is it?
+We do have this container right here
+which pretty much contains everything.
+Well, this background image is a what is
+it? I think it's like a full width or
+something. And also, we want to hide the
+page title and essentially this whole
+precontent
+region.
+So, we want to hide it if we are on a
+canvas page because we're just assuming
+that canvas is going to take over
+everything.
+So, let's go ahead
+and make that change. And it's actually
+relatively simple.
+What I'm going to do is I'm going to
+jump over
+to page
+and I'm going to make a few changes
+here,
+but I'm just going to grab it.
+from here. And all we're doing
+is
+all we're doing at this point is adding
+in
+this variable is canvas page. So this
+pre-content will only appear if the is
+canvas page is not is not there. and we
+just set a few classes.
+So if it if we're on a canvas page,
+it will adjust the padding to zero so
+that there's no padding. But if so, if
+we are on a canvas page, yes, there's no
+padding. If we aren't on a canvas page,
+that means we're on just a standard
+Drupal page and we just want to add add
+a bit of padding. And that's the same
+for this container. We are just adding
+this container and uh MX auto just to
+kind of center things and putting in a
+padding as well if we're not on a canvas
+page. Now this variable is a custom
+variable. So what we need to do
+is add it to our pages
+and where is it?
+I've got this bit of code. Now, if
+somebody knows a cleaner way of doing
+this, please let me know. Um,
+because essentially what we're doing is
+we're setting a variable if the route
+name is the canvas page canonical
+page essentially, which is fine. So,
+that works on the front end. But then I
+noticed that when I was editing the
+actual
+the actual um what is it page, it was
+still showing the regions.
+So this is what I came up with. But
+there are a few routes that start with
+canvas API layout. So that's why I've
+got here string starts with and then it
+does it.
+Let me make sure everything is cleared.
+Let's go there. Refresh. And straight
+away you can see that yes, the title and
+all the all and the and the edit button
+is gone.
+So that means that if we go to say
+contact us, we can still see it because
+these aren't canvas pages.
+That's very important.
+But if we go to the homepage, this is a
+canvas page. Now to edit this, we need
+to go back into pages and then just go
+there and edit. And best of all, now we
+no longer see the actual um
+the page title or the tabs.
+So there you have it. I think that is it
+when it comes to
+creating from a basic basic standpoint.
+Let me just make sure that is it. Yeah,
+I think that is it
+when it comes to creating your own
+single directory components.
+So as you can see there is it doesn't
+take that long. Of course once you know
+it's perfectly simple but then you know
+of course once you know anything
+everything is simple.
+That's a that's a funny statement, but
+yeah, once you understand how it all
+comes together, and if you do have a
+good set of single directory components,
+which you know, components have been
+around for a while now, then I don't
+think it'll be that hard to get them
+working with
+Drupal canvas. So, the steps are fairly
+straightforward. You first of all want
+to create your theme. So, in this case,
+we have a Tailwind theme. And then you
+want to create your
+components.
+And you want to try and decide that's
+that's the other thing I also noticed is
+is that you want to try and decide how
+many how much control is your
+how much control do you want to give
+canvas when it comes to modifying your
+Drupal site. Do you want it to control
+absolutely everything? Because you can
+get it to control block regions and
+things like that, which we haven't
+really covered yet. Well, in this
+um in this video which we will cover
+later on. So there's that that you need
+to be aware of. Now you can control the
+regions and if you take a look at the
+Mercury theme and Drupal CMS version
+two, you can control a lot of stuff. But
+again, I'm sure there was a lot of work
+involved to kind of put that stuff
+together.
+So
+that's pretty much it. Thank you so much
+for everyone who was here. Let me just
+hope there's uh still people here. My
+stream hasn't gone offline. I don't
+think it's gone offline, which is great.
+I will try and I will pro probably slice
+this stuff together
+and
+re-upload it as just a standard image,
+sorry, as a standard video.
+And so, yeah, these streams will be put
+into private because I will probably I
+will slice them up together. we'll put
+them together and then just um
+upload it as one big video.
+So anyway, that is it from me. Thank you
+so much for watching. If you want to
+learn more about Drupal, head over to
+webwash.net.
+Also, if you have any comments
+for other
+or if you have any comments or opinions
+or you want other things covered, let me
+know.
+And yeah, it's been fun. And as I
+mentioned, if you want to help out with
+the channel, check out
+Webash Premium. You won't have any
+streaming issues there because this is
+all uploaded um ad free. But yeah, if
+you want to help out the channel, check
+it out.
+€99 lifetime access, one time, not a
+subscription. Will be a subscription
+eventually, but I'm just building out a
+few things. Anyway,
+that is it for me. Thank you so much for
+watching and I'll catch you all next
+time.

@@ -136,6 +136,8 @@ Claude/                 # AI agent & Claude Code transcripts
 └── Tools/              # Claude Code tools (hooks, status line, desktop apps)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 └── Docker_Edited/      # Cleaned transcripts + system prompt
+Drupal/                 # Raw transcripts (5 WebWash Drupal CMS/Canvas tutorials)
+└── Drupal_Edited/      # Cleaned transcripts (5 files) + system prompt
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
 ```
@@ -150,6 +152,7 @@ Four projects with system prompts and knowledge bases:
 | Resume Review | `Career/Resume_Edited/RESUME_SYSTEM_PROMPT.md` | 11 transcripts in `Resume_Edited/` |
 | Cover Letter Review | `Career/CoverLetter_Edited/COVERLETTER_SYSTEM_PROMPT.md` | (uses Resume + LinkedIn as reference) |
 | Docker Best Practices | `Docker/Docker_Edited/DOCKER_SYSTEM_PROMPT.md` | 2 transcripts in `Docker_Edited/` |
+| Drupal CMS & Canvas | `Drupal/Drupal_Edited/DRUPAL_SYSTEM_PROMPT.md` | 5 transcripts in `Drupal_Edited/` |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 

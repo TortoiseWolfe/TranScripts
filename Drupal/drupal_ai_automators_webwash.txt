@@ -1,0 +1,1690 @@
+Let's start the stream and see how we
+go.
+All right. I just want to hear myself.
+Make sure I'm coming in nice and loud.
+Oh, there we go. Perfect.
+I can hear myself, which is great.
+All
+right,
+that's that. Uh,
+let's just pop this off.
+Have to muck around with these.
+tabs. That's for sure.
+Okay.
+All right. What is happening here? What
+is happening here?
+Give me a moment.
+All right, that's fine.
+That is fine. That is fine. Okay, so
+we've got that one up and running. Next
+thing is I need to What do I need to do
+now? Um,
+blue sky. That's right.
+going live
+using AI automators and we'll chuck that
+in
+Drupal AI.
+Okay, I think that is it. And last but
+not least,
+where is OBS? There we go. It is right
+there.
+And I'll pop in
+OBS so I can see it.
+And I need to turn on the recording as
+well.
+Give me a moment.
+No, not that screen. The other screen.
+and then select the right
+microphone. I select the wrong one.
+And we can move that over there.
+Start recording.
+Okay, I think we are
+good to go.
+All right, make sure everything's
+working.
+Yes, it is. All right, sweet. Switch
+over to the main feed.
+Switch over to that feed and we're going
+to have a fun night tonight. All about
+AI. AI people, that's what people want,
+right? artificial intelligence.
+All right,
+cool. All right, let's get started.
+Get right to the top there
+and everything's Yep. Let me just make
+sure.
+Close that off. All right, cool.
+So, just before we begin, I just need to
+do a quick ad. Sorry about that. You can
+skip ahead. I do have a premium
+community over at webwash.net/premium
+/premium where at this point I've got a
+bunch of these live streams that are
+slowly going up and being um edited for
+premium consumption. So zero ads. But
+I've tried something different. This
+live this live stream that I'm going to
+that I'm going to do today. I've
+actually recorded well I recorded a
+version of it this morning. So I'll see
+which one ends up being better. This is
+still me. This is all live. It's not a
+recording. But um I did a two versions.
+So a practice session and I'll see which
+one ends up being good. So if you want
+to support the channel, I've got a
+lifetime deal for now which is 99
+gives you lifetime access. I've got a
+whole bunch of plans with this once I
+get I get more people. There's also a
+private community, but one thing I do
+want to look at is potentially doing
+builds where we build a Drupal site from
+scratch. And then if you're part of the
+premium community, you get the whole
+setup like like pretty much a starter
+kit. And I do have a working prototype
+of a NextJS site in Bootstrap that I
+want to build and and it's working.
+Anyway, if you want to support the
+channel, head over to
+webwatch.net/premium.
+All right. So, we might as well then get
+into it. That is the ads. So, maybe I'll
+chuck in an ad at the end. But anyway,
+and I'll also promote other free other
+free videos and all the current and
+future live streams will be free over at
+Webwash. Okay. All right. So, let's get
+into it. Okay.
+Artificial intelligence. Now, it is
+everywhere these days. Honestly, it is.
+You cannot go online
+on any top of the social medias and
+avoid art artificial intelligence. It
+was meant to make our jobs obsolete 6
+months ago. Well, no, a year ago. One of
+the CEOs of one of the um AI companies
+said in 6 months we will all be out of a
+job. But we're still here. I'm still
+building websites. I'm still building
+Drupal sites. And I'm still talking
+about Drupal. One day AI will replace
+me. Fair enough. But
+right now, Drupal is having a bit of a
+renaissance, I think. Well, Drupal's
+always been great, don't get me wrong.
+I've always been a fan of Drupal, but I
+do think that the push for Drupal AI is
+pretty important for Drupal's future.
+Now just last week I believe there was a
+Drupalcon Vienna and for Dre notes for
+the Dre notes um keynote and that's Dre
+Boyart who is the founder of the Drupal
+project always has a keynote and he
+mentioned that we need to head into the
+storm of this AI we don't know what's
+going to happen but Drupal is poised to
+really benefit from it which I totally
+agree so there is this AI initiative and
+if you want to learn more about the
+project just head over to
+drupal.org/project/ai / project/AI
+or just Google Drupal AI and this module
+is a suite of modules essentially and
+you do have a lot of modules in it such
+as AI core explorer automators search
+assistant CK editor content and so on
+and so forth and then you also have a
+bunch of providers that you can
+integrate with and you also have then
+other modules that use Drupal AI
+and extend it. Now, I've covered how to
+use
+Drupal AI in general, but that was for
+the previous version of the module.
+Okay? And so, if we scroll down, where
+is it? Scroll down. Scroll down. Scroll
+down. That was for version 1.1. I do
+need I do need to update that one
+because now it's version 1.2. So, it is
+a little different. So for this stream I
+want to focus on just one module and
+that is AI automators because AI
+automators is where you can do a lot of
+stuff. Now a lot of people do talk about
+AI agents and don't get me wrong AI
+agents are great but they're pretty
+complex to set up but I think AI
+automators they're pretty easy to set up
+once you just get get a bit of
+understanding with them. So that's what
+I want to focus on today. Now now what
+is an AI automator? Well, an automator
+is just a bit of essentially it's a
+prompt which is attached to a file or
+sorry to a field in Drupal. So when that
+field gets updated or inserted
+the prompt will be run. So you could do
+things such as set up an set up a
+automator on a summary field which uses
+the title of the article as context and
+you can write a little prompt to say can
+you generate a summary using the context
+below and then just goes ahead goes to
+all of your you know one of your LLMs
+comes back and it gets saved. That that
+is a very basic example. Now I want to
+show you a few examples tonight. I want
+to show you how to convert audio into
+text and how to use CK editor buttons
+with these automators and also how to do
+uh chained automators as well. So we
+have a lot lot to cover. So again, if
+you want to learn more about this, head
+over to drupal.org/roject/ai.
+And here I've got my Drupal CMS site. I
+I am using Drupal CMS because it comes
+with an AI assistant recipe and it just
+makes it much easier and quicker to set
+things up. So, we're going to be using
+Drupal CMS, but you could you do do all
+of this on on a vanilla Drupal core
+website. I believe that's what it's
+called, Drupal Core. Okay. So to start
+things off, click on extend
+and
+let's go to
+recommended and we should see here AI
+assistant. Go ahead and install it. Now,
+of course, we need to add in a key. So,
+let me just pop this out and I'll move
+this to the other screen because I don't
+want people to take my keys.
+And I anyway do rotate the keys. So,
+you won't see it all. There we go.
+And I'll give that a moment. And
+hopefully the API stays online. There's
+nothing more nerve-wracking than doing a
+live demo
+with dodgy API endpoints. All right. So
+all we've done now is we have installed
+the recipe and the AI assistant recipe
+has gone ahead and installed all the
+modules and configured things.
+And
+now all we need to do is refresh
+because that's that's the interesting
+thing. Okay, when you install these
+recipes, it does it all through Ajax
+and it doesn't actually update the UI
+because you need to essentially refresh
+it.
+All right. Now, the other thing we need
+to do is also clear the cage cuz I do
+know we're missing one extra button
+here. So, let's jump back over here and
+type in DDev Drush CR
+and let's refresh. And there we go. And
+now we have this nice little assistant.
+Now, this is new in uh Drupal AI 1.2.
+1.1 had a little um little chat thingy
+down on the bottom
+right, I believe. But this time it is a
+little different.
+All right. Oh, finally got some
+comments. Okay. All right. Was going to
+ask how can we set this stuff up in
+core. Um, well, the best way is to just
+look at the recipe. So, set it up in
+Drupal
+in Drupal CMS and then just yeah, set
+up. I mean the assistant when it comes
+to setting it up
+I don't the assistant does a lot of
+these like basic configurations but if
+you want to just get into it just just
+go ahead and um have a look and see what
+the recipe installs and what you can do
+is if we jump over into the code and go
+to recipes Drupal AI if you want to have
+a bit of fun with this you can kind of
+see all the modules that are getting
+installed
+and you can see which configuration
+Yeah, you can see basic configuration is
+being set here,
+but maybe I can cover how to do it in
+the future. And we also have a hello
+from Brazil again. Well, hello. Hello.
+Hello.
+Where is it?
+I will make sure
+I do a little comment in there. Hi. And
+as usual, I get a message from kick
+telling me, "Do I want more viewers?" As
+usual, I block them. Okay.
+All right. So, we have Let's jump back
+over here.
+And we know that we've set things up
+because we have this little assistant.
+Now, if we click on this little
+assistant, we get a little message box
+right here. And what we can do is just
+type in
+what's up, if I can spell that
+correctly. And hopefully everything is
+working. And yes, it is. Feel free. And
+because I've already tested this stuff
+out today, you will get a little uh
+cookie
+thing where you need to accept the
+cookie. Unfortunately, it's not showing
+up here. I should have cleared the cache
+so you can see it. But you will see a
+little uh thing pop up which says you
+need to accept the cookies and I do
+recommend that you do that. Now if you
+do want to modify things, what you can
+do is go to
+configuration.
+Let's go to configuration here
+and I'll close that. So where was that
+again? Sorry. configuration.
+And
+if you scroll down all the way, you
+should see AI right here. Let me close
+this one as well. All right, you should
+see AI. And then from here, you can set
+the default settings. So this is if you
+want to run multiple providers. So you
+can run claw well you can run open AI
+anthropic any providers that are
+supported and then you can select a
+different model. So for example if
+you're if you want to use the text to
+speech if you have different different
+providers you can select them from here
+and then you can select a different
+model. The default the default is pretty
+is pretty good. I'm I'm I'm pretty happy
+with the default but you will see the
+ability to change the providers and
+models in a whole bunch of places. And
+if you want to come come ahead and do
+that, you can do that. If you need to
+change the key, another important thing
+here is the key to changing the key.
+There you go. Bit of a pun. Uh so come
+into system and then keys and and Drupal
+AI uses the key module. So that is a
+standard way of just managing keys in
+Drupal. And right now it is stored in
+the database. locally for like a test
+site that is fine but on production I
+highly recommend that you set up the
+keys as an environment variable at the
+server level and never store them in the
+database and you can configure keys in
+Drupal with the key module to pull it
+from an environment variable and that
+way you can just rotate your keys and
+it's not stored in the database because
+trust me you might get a new agency
+that's maintaining your website they
+pull down your database and then they
+have access to all all of your keys and
+then if you click on edit you will get
+that little step which is a great little
+um confirmation to say be extremely
+careful because if I click on edit it
+will show the actual key. So that's how
+you can modify the keys.
+All right. So now that we have
+everything working,
+let's go ahead and create a basic
+automator. So what I'm going to do is
+I'm going to go back to extend.
+Now, I will just mention that with this
+assistant button, you'll notice that it
+does kind of change. I don't know what
+it is, if it's some type of JavaScript,
+but I notic that when this assistant
+button is on
+when I hover over these links, it
+doesn't quite something's up with the
+style in the hover state. And you have
+to kind of hover over on this side.
+Yeah. I don't know. Just Just be aware
+of that, honestly.
+All right, I got another comment.
+That's awesome.
+All right, got another comment saying
+finally able to watch them. Thank you
+very much.
+All right, cool.
+Okay. So, let's go ahead and
+click on extend
+recommended. And what I'll do is I'll
+install the events content type or the
+recipe, sorry, cuz that's what I want.
+And once that is installed, we're going
+to go ahead and install the required
+modules. So let's go to
+list and I'll search for AI
+automators
+and
+CK editor integration.
+The AI CK editor integration and click
+on install.
+All right. So now we have a content type
+called event
+and essentially what I want to do okay I
+want to set up two automators actually
+two two
+and what we're going to do is when we
+create an event we're going to enter in
+a title and the automator will
+automatically generate a description for
+us so it'll it'll it'll add a
+description right here into the
+description field and it's going to
+generate tags for us based off the
+title. So, if I add a title in such as
+how to set up Drupal on Google Cloud and
+AWS,
+that will be the title and it'll kind of
+start the process and generate a
+description for us and the tags. Okay.
+So to do that first we'll just take off
+the the the required field option on on
+description because we need to save the
+form. So let's go to structure content
+types and let's go to event
+and let's go onto the actual description
+field because that's where we want to
+add our automator. And let's remove
+required.
+And then right down at the bottom you
+will see enable AI automator. If you
+can't see that make sure you install the
+module essentially. Okay if you can't
+see it then you have your automator
+types. Now this list it automatically
+determines which automator is available
+based on the field type. So, if you look
+at the code, and I highly recommend you
+do because it is it's a very
+enlightening process because you can
+actually see all the plugins that are
+available and I spent a fair bit of time
+looking at it and just getting an
+understanding of it. And there is a
+bunch of um attributes and also a few
+methods that do control which automator
+type is available depending on certain
+conditions. And one of the things is a
+uh the field type.
+So let's select LLM text because that's
+what that's the type of data we're
+dealing with. And then you have your
+input mode. Okay, base mode just means
+that we're going to use the title as the
+context. So it's just going to pass it
+through. And then here you can see we
+have a few options. Context plays a huge
+part in
+in AI. Okay, that's that is one thing
+I've learned. Yes, the prompts are
+important, but having context given the
+AI example data is very very important.
+Um, I know that from personally doing a
+lot of content the last few few years.
+So, but if we scroll up, we do have the
+ability to pass in tokens, but let's
+just stick with the simple stuff. So,
+what we're going to do is set up make
+sure you select title because that's
+that's that's the context we want to
+use. And I'm not going to bore you by
+typing out a
+prompt. I'm sure I'll be typing
+something out, but here is the prompt
+which I created earlier. Generate a 200
+character SEO description blah blah blah
+using the following context. And then we
+just pass the context across. Okay. And
+that is it. And then if we scroll down,
+click on advanced, you do have workers.
+So this is how it's actually applied.
+Direct just means that it will run when
+you save the form. But if you do have
+long processes, you can time out. Then
+you do have a Q and chron which needs
+you need to run cron. And then you have
+batch which isn't recommended which does
+it through the batch que. Then you do
+have some extra options depending on the
+automator type.
+You do have this option where it's edits
+when changed. So by default what's going
+to happen is if the field is empty it's
+going to run the automator as soon as as
+soon as there is a value in a field then
+it's not going to run it. So you can put
+in just something manually yourself if
+you don't want AI to generate it which
+is fine but then if but then if you do
+if if this automator is run and then it
+saves it in the value if and then saves
+a value saves the saves value in the
+field
+or finally get that out then it won't
+run again but if you want it to run
+every single time you edit then have
+this checked but you shouldn't have it
+checked unless you know what you're
+doing.
+All right. So that's been configured and
+now what we want to do is set it on the
+tag. So we need to jump over to the tags
+field and scroll down enable it and then
+we will select taxonomy. Now notice how
+the list is different here and that is
+because we are on a taxonomy well an
+entity reference field technically
+and you want to select base mode and
+make sure you select title. I often
+forget because it defaults to
+revision log and then you're wondering
+why it's not working. And I did use this
+actual placeholder. It'll be good if you
+could copy out this placeholder. And
+what I've got here is
+is I've got this one right here.
+And
+I've got a basic prompt which is based
+on the context given generate three or
+five tags with the context and
+everything else should be the same. Make
+sure it's direct.
+Sometimes you may want to adjust the
+weight of an automator especially if an
+automator depends on another one.
+So just be aware of that.
+And everything looks pretty good.
+and click on save settings. All right,
+now let's test everything out. Now comes
+the fun part. Let's hope API uh OpenAI
+is not having problems tonight.
+All right, so everything's been
+configured.
+Let's go to content, add content
+event,
+and I will use a text. No, what is it?
+speech to text which is
+hosting a Drupal site on AWS and Google
+Cloud.
+All right, it throws in this blank
+audio. Hosting a Drupal site on AWS and
+Google Cloud. All right, cool. So, this
+is the event. Let's set a date and time
+to be next Friday at 20. It's pretty
+much like one of my live streams. There
+you go.
+And so it's the 31st of October
+at 8:30.
+Description is empty. Tags is empty.
+Now, if we click on save and we go back,
+we should see a description and tags
+filled. And we can tell if things are
+working because the response takes a few
+seconds.
+If it happens instantly, then you know
+it's not working. But you can see that
+it's taking a bit of time.
+And you can straight away see that that
+the tags have been added, which is
+great. And if we go and edit, we can't
+see description because it's used for
+SEO. Go in there, we have a description.
+There you go. So, as you can see, it has
+generated a description for us and a
+bunch of tags. And the good thing is you
+can go ahead and make your changes and
+save it. And you saw how just how
+quickly it it saved. And that's the
+benefit of just of just having it
+inserted once. You can now go ahead and
+make whatever change you want and save
+it and and that and that is fine. If
+however you're like actually let's
+remove everything and let's have a
+generate again. Simply remove the text,
+save it
+and then if you go back in it's going to
+generate another bunch of text for you.
+And there you go.
+So that is a very very basic um the most
+basic setup when it comes to AI
+automators. Let's now take one thing,
+you know, let's now take take things to
+the next level and let's set up a
+workflow where we get the audio
+transcript
+transcribed into text. So, we upload an
+audio file and we do that through a
+media type. So, what we're going to do
+is let's go to structure media types.
+And Drupal CMS doesn't use doesn't
+actually have a media media type for
+audio. So, we can go ahead and create
+one. And let's call this one audio
+used for audio files.
+And we'll select the media source to be
+audio file. And you want to create it.
+and it's automatically going to create a
+file field for us. Click and save and
+manage.
+Okay.
+So, at this point, we have our basic
+audio media type. This is just standard
+Drupal 101. And if you want to learn
+more about Here we go. I'm I'm selling
+other live streams. If you want to learn
+more about media handling in Drupal and
+Drupal CMS, check out a bunch of live
+streams. I do have a bunch of live
+streams over on the YouTube channel
+where you can learn more about just
+media handling in Drupal. So, if you do
+want to learn more more about it, head
+over there.
+So, we've created our media type. Let's
+go in and create a field because we need
+to store the we need to store the
+transcript somewhere. So, click on
+We'll click on plane plain long because
+it's going to be a lot. We'll call this
+one just transcript and click on
+continue. And if we scroll all the way
+down and click on AI automator, what
+we're going to do is select audio to
+text. Very important. Audio to text. And
+now and well, we can only select bass
+mode. And then audio file is just going
+to be auto audio file because that's the
+only other field on it. And that is it.
+And that is it. All the magic happens in
+this audio to text.
+And if you go to advanced, you have a
+few other options there. But let's just
+leave everything as it is. Oh, you can
+change a few options here. So instead of
+instead of changing the default settings
+in in the in the configuration section,
+if you just want to change the provider
+for this automator, you can do so from
+here. And you can also add in extra
+prompts as well. And you can also adjust
+the temperature,
+but we'll just leave the default
+settings. And we click on save.
+Okay. So, we've got all of that. And
+now, if we go to our
+media page, click on add media audio.
+I'll call this one, well, let me grab
+the
+MP3 file. So, this one is a post promo
+summary. So, it's me promoting
+something. And this is the display
+errors
+post promo.
+And if I click on save,
+it's going to use the whisper the
+whisper one model to transcribe it and
+it should save it right in here. There
+you go. Now, this is pretty accurate.
+This is pretty accurate. I've used
+Whisper a fair bit in the past, and it
+picks up pretty much everything. It
+picks well it picks up my funny accent
+first of all which is tops. Um the other
+thing is that it knows the word Drupal
+and Drush which is good. The only thing
+that it does kind of struggle on is
+things like here web profiler. I do know
+web profiler is two words and it's in
+camel case
+but it's but it's no sorry it's as one
+word in camel case but other other than
+that it does a brilliant job honestly.
+and and this will actually be very
+useful for a few things that I'm doing
+where I can just drop a video in and um
+it could probably transcribe the audio
+from it, but straight away you have a
+transcript and that's it. It was an
+automator. All you had to configure
+Yeah. was the automator and that's it.
+And it's gone ahead and generated a
+transcript for us. And now you've got
+it.
+And that was pretty easy to set up. All
+right. So, we have looked at how to set
+up automators
+on a content type and a media type. Now,
+I want to show you how to use them in CK
+editor because because
+the ability to add them to CK editor is
+pretty cool. What you can do is
+essentially create create your own
+custom button. And so and so what what
+we're going to do is if we go to content
+I want to create an automator where I
+can come here to CK editor have a
+dropown and have a button which says
+generate full full details. So so the
+event so the event description and I do
+have a pretty big prompt that I'm going
+that I'm going to use that I actually
+use for a bunch of my live streams where
+it just generates it and on top of that
+I want two versions. I want a standard
+size version and then I want a version
+which is less than 300 characters
+because I know I think Blue Sky only
+allows up to 300 characters on uh
+whenever you post something. And we're
+going to use AI automators to set that
+up. Okay. So, what we need to do is
+let's go over to configuration and we
+need to go to automators
+and let's click on automator chain
+settings and let's add one. And this
+one's going to be called
+generate
+full details. And let's click on save.
+And if we go in there and edit, we can
+see uh up the top here, we can see
+manage fields, manage form, display, and
+manage display. Now, this is just an
+entity type and that's it. So, all we
+need to do is create a bunch of very
+specific fields.
+So, if we come to manage fields and
+click on create a new field, we first
+need to add in an input field.
+So I'll create one called input
+and I'll make sure that it is a text
+plane long because then the module uses
+that as our actual chat field
+essentially where we can put in our
+input.
+And the other thing you need to be aware
+of is that it needs to be set to
+required.
+Let's create another field and this time
+we'll select text formatted long and it
+needs to be a text formatted long when
+it's passed to CK editor and this one's
+called output. So then this is where
+some of the logic happens
+most of the time but then if you have
+multiple automators you will separate
+that out into separate fields
+and let's just save that. Okay. All
+right. Now the input field we just
+leave. Okay, we don't have to set
+anything up in this case. The output
+field, if we scroll all the way down and
+click on enable automator, what we have
+to do
+is select
+text
+and we want to select input as our base
+because that is the context we are going
+to use. Then we need to grab a big
+prompt.
+Where is it? Where is it? Where is it?
+I'll just grab that. Give me a moment.
+And I'll paste this one in. And you can
+see here that the import at the bottom
+we have the context. And you can see the
+available context right here. But most
+importantly,
+I've got like four examples of what I
+want want it to look like. And these are
+actual real world examples. And that's
+what I meant where context plays plays a
+massive part. Having access to data and
+being able to pass that to your prompts
+is very important. And that's where I
+think Drupal can really shine. If all
+your data is already in Drupal, well,
+you could easily set up a prompt and and
+set up a few custom tokens and pass in
+some test data, some actual real data to
+your prompts and you can and you can
+then tell it to style things like this.
+And then here I've got the actual prompt
+and then I've got examples and I'll pass
+that through.
+And then if we scroll down, you want to
+make sure that you select direct
+and everything should be
+configured.
+Okay. So now that we've got that set up,
+we need to we need to now add it to CK
+editor. So what I'll do is I'll go to
+configuration
+text formats and editors and click on
+configure. And if we scroll down, there
+is this uh AI CK editor button.
+I do think there's an issue with the
+icon, but anyway, just grab that. Make
+sure you add that one and move it
+across. And you should see AI tools
+right here. There are a whole bunch of
+other ones. Maybe I'll cover that in a
+separate video. Uh, but I did cover that
+in the first getting started with Drupal
+AI, and I don't think it's changed that
+much. so you can easily follow that live
+stream and and I'll show you how to do
+things with that.
+All right. So, here we've we have the AI
+automators CK editor. Now,
+it this is a little buggy because when
+you enable it and refresh, it kind of um
+loses its place and you'll and you'll
+see what I mean. If I click on enable,
+it's going to throw me back to the top.
+But, you know, just be aware of that.
+And if it really annoys you, well then
+fix it up and submit it as a issue. Um,
+all right, let's just quickly set this
+up. All right, so what so what we're
+essentially doing is enabling it and
+then we have our full details here. We
+are then enabling our generate full
+details and then we need to configure a
+few things. So first of all, we need to
+define what is what is used as our as
+our input. Now this is a little
+confusing because it says inputs and
+then inputs. This is the input field
+that we created and you need to make
+sure that it is set as required. If you
+don't see it here, that means you
+haven't set it as required. So go back
+to AI automators and set it as required.
+So let's so let's do that. Then
+everything else should stay the same for
+us. The output is the output. The module
+automatically figures this out because
+the output is a text formatted long and
+the right mode is just replace which
+means just chuck it into the editor and
+that's it. Okay. And if we scroll all
+the way down, click on I always forget
+that that in Drupal CMS it's in the top
+right, but in normal gin it's down at
+the bottom. Sorry.
+All right, that's all saved. And now if
+we go back to our event, we have this
+nice little
+automator button right here. AI, sorry,
+AI assistant button. And if we click on
+that, we get a nice little pop-up right
+here. And we have our input and we have
+our output.
+And all we need to do
+what I'll do is let me grab this
+and I will
+generate a prompt which is
+can you generate an event description
+using the following title
+and I will paste that and I will also
+keep that just so that I don't have to
+say that 20 times.
+tonight.
+Okay. And if we click on generate, it's
+going to go ahead and run the automator
+on the output. And hopefully if
+everything is set up and working, we
+have a
+prompt. Sorry, we have a response right
+here. And you can see that it is pretty
+I do know it is pretty much the style
+the same the same style as my live
+streams. And you want to make sure here
+actually read this because AI is great
+at hallucinating. I'm sure everyone
+who's used AI knows that. And sometimes
+it might look like it's working, but
+when you actually pay attention to it,
+you're like, why is it talking about
+that? But you can see here that it is
+specifically bringing up a AWS and
+Google Cloud. And when you are testing
+things out, I do recommend that you put
+in specific keywords that you want to
+make sure that
+that those keywords are getting passed
+through so you know that the AI isn't
+falling around or screwing you around to
+put it bluntly. And that's it. Okay, so
+at this point we have our full details
+and we can click on save changes to
+editor and we're done. There you go.
+We're good to go.
+Let's well let's publish our event. And
+we have our event description. How
+simple was that? Okay. Simple simple.
+Let's go back to edit. As I mentioned,
+we want to generate the full details,
+but now I want to generate a summarized
+version of it because always when I when
+I prepare my live streams, I have an
+event description that goes out to all
+of the socials. So, what is it?
+LinkedIn, Twitch, Kick,
+YouTube, that's about it. Um, I think,
+yeah, those ones. I'm sure I'm missing
+one. Oh, and X as well, or Twitter. Um,
+but then I do have a shorter description
+as well.
+And
+to set that up, what we can do is go
+ahead and create pretty much a similar a
+very similar automator. So, let's go
+back and create another one.
+And this one will be called
+generate
+summary.
+Let me put that in. I like to do
+uppercase so I can actually so it stands
+out. Generate summary. And let's click
+on that. Okay. And we can let's go to
+manage fields. And let's reuse the input
+and output because we can
+because pretty much every automator
+needs an input and output.
+But let's take things one step further
+and let's make the length configurable
+because yes, I did say I want it to be
+less than 300 characters. But what
+happens if you want it to be 100? What
+happens if you want it to be 250
+sometimes? And what we can do is let's
+put in another field. And this will be a
+text plane. And we'll call this one
+length.
+And we'll make it required.
+And we'll click on save.
+And let's just I don't think the order
+matters, but I just like to adjust the
+orders. Why not?
+And what we can do is now jump over to
+manage fields and then go output
+and go all the way down again. Just
+enable AI automator, select text. And
+you will notice that you do the similar
+stuff over and over again.
+But this time
+we need context from both the input and
+the length. So in this case what we need
+to do is select advanced mode.
+So you may notice that we have that that
+we no longer have placeholders. So how
+do we get the actual values from those
+fields? Well, well, we use tokens. And
+most importantly, if I bring this up,
+you will see that we do have an
+automated chain, and that is the entity
+that we're on. And you can see that we
+do have our fields right here.
+Hopefully, you can see that in the
+stream. Probably not. Um, but I don't
+want to zoom it in too much.
+Oh, maybe I'll just zoom it in more just
+this ones.
+There we go. You can see here we have
+the input and we have the length.
+So, what I can do is I can grab my
+prompt, which I did prepare earlier.
+Let me grab that and I'll chuck it in
+right here. And essentially what I'm
+doing is I'm just again using just just
+writing a custom prompt to rewrite it.
+And I've given it the event description
+which is going going to be passed in
+through the input. And then I just say
+output it and utilize paragraphs and can
+and also add it add add a few hashtags
+and wrap it with a block quote. Believe
+it or not, it's actually a bit
+annoyingly difficult to get AI to
+actually to output things in a very
+specific way.
+Seriously, it is. Sometimes it just
+outputs it in a weird way. It's like,
+no, output it this way.
+All right. So if we go down to advanced
+again just make sure direct is set up
+and that is it.
+Let's make sure input is required.
+And now let's go to our text formats and
+editors and we need to do the same thing
+and let's go to automators summary and
+let's select input as the import. We
+don't have to select length. I do think
+I do believe length just appears.
+But we're going to change things a
+little differently. So what we're going
+to do is we are going to select the
+existing full text in in the editor and
+we're going to use that. So we don't
+have to type out or manually uh copy
+things. So that's why we're we're going
+to select input as the text selection
+input. It's going to be required.
+And what it's going to do is we instead
+of replace we're going to put prepend.
+And let's just make sure everything is
+okay. Oh, and enable it of course.
+So enabled input selection required
+prepend output. All right. Done. Hit
+save.
+And now if we come along in here and
+refresh,
+we should see summary, which is great.
+So now all we need to do is select this
+and go summary. And you can see that it
+has been added here. And we can put in a
+length.
+Let's just close that up. Not sure why
+it's a big one, but anyway, let's set it
+to say 200. I'll set it no 250. Okay.
+And click on generate.
+And what it's going to do, it's going to
+pass the input and length to the
+automator. And then the automator then
+goes off and does its thing.
+And we come back here. It's going to add
+the input back in. And then it's going
+to prepend it. Prepend the summary below
+it. So we can then just click on save
+changes to editor. And we haven't lost
+what we have already written. And that's
+it. You can see here it's added it to a
+block quote and it's added that in. And
+we click on save and we have a nice
+little summary. So you could do things.
+You could create a automator that just
+generates quotes or something. I don't
+know whatever you want. There's a whole
+bunch of stuff you can do.
+Now
+using these two automators separately is
+a bit annoying because it's a two-step
+process. Now, what I want to show you is
+how to set up one automator to do both.
+Why not? Because, you know, when you
+think about it, it's like why
+why do things two times when you can
+just do it once? So, let's go ahead and
+create a third automator. Oh, we're
+going to be creating many automators
+tonight. Don't you worry.
+And what we're going to do is let let's
+go back here. Let's go to
+chain settings. And this one's going to
+be generates full plus summary details.
+And we have all of that set up. And what
+we need to do
+is generate
+well, let's put in again the
+input.
+Let's add that in.
+the output
+and we need to generate a full I'll just
+copy this so I don't have to type it in.
+We need to create
+a text formatted long for our
+full details.
+So let's go ahead and do that. And
+essentially we're doing the output
+settings this time. Let's go ahead and
+I will grab the epic prompt. Where is
+that? Where is that? Where is that?
+Give me a moment.
+And what I want to do
+is if we scroll down, enable it, set it
+to text
+base, base mode. That's correct. And
+then we set it to input. And let's put
+in our epic prompt. And we're done.
+Okay.
+And of course, make sure it's set to
+direct, which is the default anyway.
+That's the first one. Now, we need to
+create another one for summary.
+So, do not go to reuse. Click on create
+new field.
+And this one
+is called formatted long.
+Scroll down.
+And let me just
+grab the
+prompt for that.
+All right.
+And this time the Yep. We'll select base
+mode and generate full details. That's
+what we're going to use as the base. So
+whatever is generated from the full
+details will then get passed. So this
+prompt we're going to tweak a little bit
+and we're going to remove the length. So
+let me set it to say 200. And I'm going
+to just use context here. Let me grab
+this and we're just going to use that as
+the event description. So you can kind
+of see that we're now stacking things.
+We have the input which is then used to
+generate the full details. Then we have
+the
+uh what is it? Then we have the summary
+which is using the full details and then
+finally the output is going to use both
+full details and summary to then
+generate the output.
+So that's all been set up. Perfect. And
+finally
+we can come along in here click on
+output scroll down
+and click on text.
+And
+let's grab this.
+And this will be
+tokens. Well, where's the top up? Up the
+top here. Tokens.
+And you want to make sure that these
+values match up. So, generate full
+details.
+Of course, you want this stuff to
+generate generate full details and
+generate summary details where they
+match up right there.
+And that is it.
+And if we go to AI automator run order,
+you want to make sure that this is
+configured correctly. So first the full
+is using the input as the source. Then
+summary is using the full details and
+then the output is using full and
+summary and you want to adjust the order
+if you need to but in this case it's
+working perfectly.
+All right so we have a comment. All
+right. Are you thinking of creating a
+case that triggers an automator with an
+endpoint? Um well that you'll need to
+write probably custom code for it unless
+there's already integration for it.
+But you can just write a plugin for it
+essentially. So, no, I'm not going to be
+covering any of that stuff today. Well,
+technically the
+well, they they all hit endpoints
+technically. Um, the speechtoext one
+sends the file to to the automator. But
+when you say endpoint, what are you
+referring to? Like a JSON endpoint or
+just like a search endpoint or using um
+SER API which is like the search engine.
+Um, yeah, there are there are a few few
+things at the end of the day. You can
+write your own custom code to do pretty
+much whatever you want. Of course,
+that's with anything. Um, but yeah, I
+won't be covering that exactly right
+here tonight.
+All right, so we have set all of this
+stuff up.
+Now, let's enable it and test it out.
+Let's go back into text formats and
+editors. And finally,
+we can jump over
+to AI tools
+CK editor and we have this full one
+right here. Let's enable it
+and let's select input.
+I do believe everything is pretty much
+the same except for of course output.
+And
+yep. Yeah, that looks all good. Good.
+Good. Good. And we do need to make one
+change. We need to move the horizontal
+line because the horizontal line if it's
+the if the button's not there then
+because we are using
+this limit allowed HTML
+it's going to be allowed now. So let's
+go ahead and save it.
+All right. The comment is yes referring
+to an API call. Yeah I mean
+there's a few ways. Again, it depends
+how you want to process that API call.
+So, if the
+if you want to pull in data, let's say
+you want you want to scrape a bit of
+data, well, not scrape, but just but
+just get a bit of data from like a JSON
+a JSON endpoint and then use that in
+your in your response. You could create
+a plugin for that. And if you do go to,
+let me show you quickly
+in here
+AI.
+Where is it? Automators, source,
+plugins.
+Then you do have automator types.
+No, I think it's I think it's this one.
+Yeah. So you have all of these
+and you can see that you do have a lot
+here. You have speech generation.
+Uh where is it? Audio or audio to
+string, audio to text. There are some
+pretty cool ones. Video to HTML is
+pretty cool. It actually uses ffmpeg
+locally and I was testing that stuff
+out. Um video to image. So, what you
+could essentially do is come along in
+here and then just write your own plugin
+to pull in that information. And that's
+probably what I would do. And the good
+and the good thing is is that you could
+easily just extend one of these one of
+these ones, these existing ones, and
+then just slightly modify it.
+The other option is to use probably ECA.
+But that's the thing. It's like I feel
+like now with with Drupal AI there seems
+to be multiple ways of doing similar
+things just like well with in Drupal as
+well but you can do it through say an
+automator automator gets you probably 80
+90% there but if you want to customize
+really customize things then then you
+could look at using ECA and then
+integrating that with your field but
+then if you reach a limit with that then
+you can always write custom code
+and I do think that that's what what we
+are as developers going to have to think
+about. It's like okay, you want to
+integrate with this endpoint, you want
+to integrate with that endpoint and so
+on and so and so forth. And that's where
+the tricky part comes in. It's like,
+well, how do you pull in all this
+information?
+But no, that is a great question. Thanks
+for that. All right, so now we've set
+everything up.
+Let's now
+test it all out. I always love testing
+things out.
+All right. So, let's go ahead.
+Where's my prompt? Let me just get my
+prompt so I don't have to
+bore you all with my talking.
+Okay,
+let's remove this. So, essentially I
+want all of this generated in one go.
+Come along in here. We have full summary
+plus no generate for plus summary. Let's
+paste in this thing and let's see what
+happens.
+So, it's going to go ahead and generate
+and it's running
+two automated and well technically three
+times
+and just give it a moment. And there you
+go. You can see the horizontal lines
+been put in and it's just generated just
+gener generated for us. And we click on
+save changes to editor and save. And
+we're done. There you go. This live
+stream's ready to go.
+And and you can see just how easy that
+is to set up.
+Now, just before we jump onto other
+things, I want to show you how how you
+can see these logs because this is all
+great when things are working, but what
+happens when things aren't working? What
+happens if you're getting a funny
+response and you don't know exactly what
+context is getting passed and you want
+to figure out, well, why is it like
+that? Why isn't it like that? Why is it
+working? Is it working correctly? Isn't
+it working correctly?
+So, let's go to extend
+and search for AI logging
+and just install this module.
+And then what we can do
+is let's go to AI. You should see
+logging and then go to settings. And we
+need to enable both log requests and log
+responses.
+And if we come along in here, click on
+AI logs, we see nothing because we
+haven't logged anything.
+So if we go back to our
+event and again, let's just do the same
+thing. Come along in here. Summary. I'll
+paste this in and click on generate. And
+essentially it will be three requests
+because it's one for the full, one for
+the summary and one for the output. So
+give that a moment. It's going to go
+ahead do its thing. Throw it in there.
+Yes, everything's looking good. Click on
+save changes and we're done. And now if
+we come along in here,
+we can see our three requests. If we
+scroll across and click on view, you can
+see that this is the first one. You see
+that a lot has been passed in here. And
+often you want to make sure that that
+you can't see the context or the actual
+context variable which says just context
+all the tokens. You want to see them
+actually rendered. And that means oh
+sorry where is it? It's this one. And
+that means that it's actually generated.
+And you can see all of these other tags.
+And you know,
+this is pretty fascinating on exactly
+like what's happening in the back end.
+And most importantly for me as somebody
+that has to pay for these tokens, I
+always like to look at the tokens and
+see how much it how how many tokens were
+spent.
+So that is that one. And you can kind of
+see exactly what was sent. And then if
+you scroll down, the next one should be
+the
+summary, which is correct. And finally
+the last one is the full
+well is all of it and then it's just
+added and returned as the output and
+that's it.
+So so if you are having some
+hallucination issues then make sure you
+enable AI logging to see exactly what is
+happening.
+All right. So,
+before we finish up, let's just do a bit
+more site building because I'm not done
+yet. Because
+what I want in my
+in my epic live stream setup. I I want
+the ability now to generate social media
+posts based off the events because what
+I do, I don't know if people have
+noticed, but what I like to do is for
+every single live stream that goes out,
+I like to do one or two social media
+posts beforehand and one or two social
+media posts after when things have
+happened. Like a like a pre-show and a
+like a pre pre-promo
+and then a post promo. So like pre-show
+promo and a postshow promo and you know
+let's just automate it because why not
+you know and so what I want to do is I
+want to be able
+to come to an event and then off the top
+here have a little tab which says social
+posts and then go ahead and create a few
+social posts. Now what we're going to do
+is let's let's go and create a content
+type and
+a few fields.
+So the content type will be so let's so
+let's do that.
+Can you please create a new content type
+called social post?
+Okay, that's it. Um, now I wanted to
+reuse the content field.
+Can you reuse and attach the
+field_content
+field and create an entity reference
+field with the machine name of field
+parent and target the event content
+type.
+All right, you want to be very specific
+here and create an ant reference with
+the machine field and target the event.
+All right, let's see. Let's see. Let's
+see if this works. I'll just copy this
+cuz sometimes when you give it a bit too
+much information, it kind of loses it.
+All right, let's see what happens. Is it
+going to ask for confirmation? Let's
+see.
+All right, it's contacting agents now.
+It's using the agent stuff. This is all
+out of the box with the AI assistant in
+Drupal CMS. You wouldn't get this if you
+just installed this on a vanilla Drupal
+site or Drupal core.
+All right, let's see what happens. Let's
+go here. I I want to see the logs as
+well. I always love to see the logs.
+All right. O, there's there's a lot
+happening here. There's a lot.
+Generic two provider. Anyway, let's go
+back here. What? Still going. It's still
+thinking. Okay.
+Why is there no scrolling there? Oh my.
+For some reason, there's no scrolling.
+Bit of a styling thing. Wait, let me
+just double check that.
+Anyway, all right. So, I can kind of see
+things have been created. All right,
+fair enough. I'll give you that.
+Now, if we go to structure content
+types, we have social post, which is
+great.
+And it did not attach the content
+field annoyingly. Okay, that's fine.
+I'll do that myself.
+And we hit save. All right, done. And
+dusted. And now if we check out the
+logs, let's check out the logs and see.
+Wait, which one is the one? You can see
+it's sent a few requests.
+So, AI assistant.
+So, what is it? It's that one. I'll open
+these up in tabs. I'm curious to see.
+It's always fascinating to look under
+the hood. You can see here. Yep.
+All right. You're going to configure
+Drupal site and then extra data.
+It's a massive prompt.
+And then we got the next one.
+Ah, tool bundle. So it sends all that
+information.
+Then he sends all the fields.
+More fields and then extra information.
+Oh my. How how many tokens is that?
+9,000 tokens. Interesting. Okay. Okay.
+Okay.
+Does it again. Another
+8,000 tokens.
+Well, you could you could go through
+your tokens pretty quickly.
+Where's this one? Another 6,000 tokens.
+Okay, so yeah, tokens for everyone.
+Tokens, tokens, tokens. All right.
+Anyway.
+All right. Where was I? All right. Cool.
+Cool.
+Okay. So we have our content type here
+and if we click on content add content
+social media post we should be able to
+select our event. Perfect. But what I
+want to do is I will just throw in a
+view. Now I'm not going to create the
+view because
+don't want to waste time. So I'll just
+import this view in hopefully. Well no I
+do need to install one module. I know
+that. Where is it? bundle.
+Add content
+by bundle. Okay, that's already there.
+All right. So, what I'm going to do just
+to save a bit of time.
+Let me go to scripts. I'm going to do
+this the old fashioned way cuz believe
+it or not, this is the good thing about
+config. You can just chuck it in
+and then click on import.
+Yep. And now it's going to simply create
+a view
+that gives us if we go here up the top
+here, we'll give us social posts. And
+then we can just go ahead and and we
+have a list of social posts that are
+attached to this event. Very important.
+Now, we could also put in functionality
+to autopop populate this uh parent
+event, but we're not going to bother
+bother with that for now. But
+essentially what I want it to do is I
+want it to go and grab the description
+and event date from the parent event and
+just populate like a social media post
+in here. And that's it. Okay.
+So to do all of that, let's go.
+Let me close this. I'll open up a new
+tab.
+social posts and we're going to click on
+content
+and scroll down. Select text
+and the import needs to be advanced
+because what we need to do is we need to
+let me zoom in nice and tight so I can
+
+see this. We need to go and find well we
+need to find the parent field. Where is
+it? Parent. Parent parent. Where are
+you? Here we go. Right here.
+Content. And then you'll see I hope you
+can see in the video you have node field
+parent entity. And then you have access
+to all the fields on the parent. So the
+one that we want is content field
+content and also event
+field build event date.
+Okay. Now of course I've prepared a
+prompt earlier. Not going to waste
+everyone's time.
+And here it is.
+And you can see that yep the task is to
+generate a social media post to promote
+an event. You'll be given it an event,
+description, and title. H sorry, event
+description and date and time. And
+output it in this
+in this way. Okay.
+And you want to make sure everything is
+perfect here. Yes, it is. And we're
+done.
+Okay. So, we've done all of that. And
+now what we can do is come along in
+here. We can select or we have to select
+a host. Then I'll put in social post
+one. Then if we save, it should go
+ahead, go to the parent,
+grab the details, and then just generate
+a social media post for us. And there
+you go. It always puts an emoji up the
+front. I don't know why. And most
+importantly for me is like, is this date
+and time correct? So 31st Friday, 31st
+of October.
+It is. No, look at that. That is good.
+That is good. Okay. So,
+as you can see, it's very easy using
+tokens to then grab context from other
+referenced
+um content.
+But to actually generate this, we have
+to save the form. Let's fix it up and
+let's set it up so that we can use a
+thing called build widget actions which
+gives us a button here below the editor
+and it will just automatically populate
+this details for us and that's it.
+So what we need to do is go to extend
+and search for search for action because
+I know it's somewhere here field widget
+actions. There we go. And this is part
+of the Drupal AI module. It's it's just
+a subm module. And click on install.
+So give that a moment.
+Then if we go back into content, social
+posts,
+let's edit our
+build content. And this time you will
+see another worker. Select field widget
+and click on save settings.
+And then what you need to do is go to
+manage form display and find the build
+which is right here. Click on the cog
+wheel
+and you should see build widget settings
+right here. And then you can select
+your action. you can enable it and then
+select your actual automator.
+Now, playing around with these these um
+field widget actions,
+they may or may not if if you do have
+some type of custom widget, it may not
+work. It only really works on the common
+widgets. So, so just be aware of that.
+That's one thing I've noticed.
+Okay. So once that's all configured,
+click on save.
+And now what we can do is come back in
+here.
+Well, let's actually go ahead and create
+another one. So the good thing is we can
+go to our parent event. We can go to
+social post. We can see all the social
+posts here. Let's create another one.
+We'll call this one social
+social post 2. And you could do things
+such as having a drop down and you know
+where you specify your social media
+posts and then where from a dropown you
+can have LinkedIn Facebook X whatever
+you want and then adjust your prompt and
+say in your prompt if this option is
+selected adjust it to be more businessy
+cuz you know LinkedIn it's all business
+stuff. If it's on X I don't know
+chucking some other stuff in there. So
+you can do a lot a lot of stuff. Then
+here okay you've got this automator text
+suggestion. Now this label can be
+changed. So I think if we go in here
+where is Oh, here we go. Oh,
+generate
+post.
+Click on update. Click on save.
+Let's refresh. And there you go. It's
+got generate post right there.
+And I'll call this one social post two.
+And the good thing is we can put in
+an event, but we don't have to save it.
+At first I thought, oh, do we need to
+save it? Because technically this this
+field isn't populated, but no. If we
+click on generate post, it's going to go
+ahead
+and generate it for us and it's going to
+pull in the title.
+Look at that. Look at that. That is so
+cool. And if you do actually not select
+anything there,
+I think I think just just the token
+comes through. Oh no, it's going to
+hallucinate.
+Yes. See,
+you would often read this and be like,
+"Oh yeah, yeah, it's working, but it's
+not. It's not. It's hallucinating, but
+then straight away you can see that yes,
+the token's getting passed." If you're
+seeing the tokens, then something is
+definitely wrong and it is not getting
+passed. So just be aware of that.
+Um, now one thing I I do also want to
+mention is if you are going to use these
+tokens,
+oh, sorry, if you are going to use these
+field widget collections and you want to
+use it on a taxonomy,
+let's go here. It won't work, as far as
+I'm aware, it won't work on this um,
+tagify widget. You need to switch it
+over to use the autocomplete tags style.
+So, if we were to set it up, let me just
+quickly do that. Let's go here. Event
+fields
+and let's switch this over to
+build widget.
+And if we go to field widget right here
+and then go to tags,
+right? You can't you can't see stuff
+here. Okay, that's that's what I was
+mentioning. The reason for that is
+because it's only supported on certain
+widgets. So, what you need to do is
+cancel that. Select autocomplete tag
+styles. Then, if you go back in, you
+should see auto uh widgets actions and
+then you should see the tax the
+automator taxonomy and add that in. And
+then you can select this one and then
+say uh generate tags.
+generate tags.
+Enable it.
+Click on save.
+And now if we come along in here, we
+should see a button,
+but then we have a different widget. If
+we save it, it shouldn't save it. Well,
+it shouldn't save the tag. Sorry, that's
+correct. Come along in here. Click on
+generate. It's going to use the title
+and generate it in there. So, just be
+aware that the field widget action is
+only going to work on popular widgets.
+And you can see just how quick and easy
+that was to set up. So, there you have
+it. If you want to add some auto
+automation goodness to your Drupal site,
+take a look at
+AI automators because I I posted this
+stuff up, what was it yesterday or
+today? And one of the one of the main
+guys in the um Drupal AI initiative
+actually mentioned that everyone focuses
+on the AI agents which is right. But
+this AI automators is actually pretty
+powerful as well. And for me the AI
+automators
+in my opinion is is easier to get set up
+and going because because the concept is
+very simple. You just chuck a prompt in
+there, add a bit of context and you're
+done. If you look at the AI agents,
+there's a lot of complexities involved
+in setting it up. But of course, the AI
+agents do help you to do a lot of stuff.
+So anyway, that is it from me. Thank you
+so much for watching. If you want to
+learn more about Drupal, head over to
+webwash.net.
+So, thank you so much for watching. I'll
+catch you all next time.

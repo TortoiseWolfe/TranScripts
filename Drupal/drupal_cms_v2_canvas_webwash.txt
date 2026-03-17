@@ -1,0 +1,1525 @@
+Good evening. Good evening, everyone.
+Just want to make sure I'm coming in
+nice
+and loud. Let's go.
+All right.
+Here we go.
+Okay, perfect. I can hear myself.
+Take my headphones off.
+Bring the mic in nice and close.
+And
+I'm actually ahead of schedule for once.
+Hey,
+that is awesome.
+Okay.
+Okay. So, I got that sorted out.
+Now, I need to pop this out.
+in here. And I'm expecting some random
+chat bot on kick to tell me if I want to
+increase my viewers or something. Seems
+to happen.
+And that seems to happen. All right.
+It's going to be an interesting one
+tonight.
+Okay,
+for once we're ready to go and it's
+2 minutes to go.
+Look at me. I am ahead of schedule.
+All right, let me grab this. Um, oh no,
+not recording that.
+recording this
+and also recording that microphone. All
+right, cool.
+Okay.
+So,
+and finally,
+we have this.
+All right,
+everything's recording. Nothing's broken
+at this point. Oh, yeah. Let's hope the
+Open AI
+status. Let's have a look at that, shall
+we?
+Oh, okay.
+APIs. It doesn't look the greener. Oh,
+that's actually
+No, today there's been
+All right. There was
+response API back in uh background mode
+failures. All right, let's hope it
+stays. Anyway, we'll see. We'll see.
+Okay, let's get into it.
+Let's get into it. You have any
+questions, please chuck them in. I'm
+more than happy to answer them.
+Now, just
+before
+Now, just before we begin, I just want
+to mention because I have to pay the
+bills that I do have a premium community
+over at webwash.net
+and I'm slowly putting on um uploading a
+lot of these live streams which are
+adree and available in the courses area.
+So, you get access to all of these
+uh live streams which are cut up as
+courses. And the next one is AI
+Automators, which I've pretty much
+edited, but I just need to upload it.
+And he's a onetime payment of 99
+for lifetime access. And you get access
+to also a community as well, which I
+want to kind of build out. Um, but I
+need I need the people essentially to
+kind of build it out. So, if you want to
+support the channel and also have all
+future,
+you know, if you still want all future
+um live streams to be free and all that,
+all the current live streams are going
+to be free and all the future ones will
+be as well. Come and support the
+channel. All right, so with that, let's
+get into it.
+So, Drupal CMS
+version 2 alpha 1 that was released I
+believe
+around the last Drupalcon which was
+Vienna. So I thought to myself, let's
+take a look at it and see what has
+changed because I remember I remember
+when it was announced the Starshot
+initiative and then the version one of
+uh Drupal CMS came out and now we're up
+to version two and the biggest change
+for version two is of course Drupal
+Canvas. Now for everyone um who doesn't
+know what Drupal canvas is, Drupal
+canvas is a new page builder essentially
+in Drupal. Now it's previously it was
+known as experience builder but they had
+to change the name due to trademark
+policies or something like that. So now
+it is called Drupal canvas and Drupal
+canvas believe it or not um there is a
+release candidate too for it. So it is
+pretty stable from what I've heard. Um
+apparently it is being used within Aquia
+already. So if you want to learn more
+about Drupal Canvas check it out at
+drupal.org/ / project/canvas.
+And if you want to have a play around
+with Drupal CMS, just click into the 2
+the 2.0 alpha. And to run it to install
+it, all you need to do is create a
+folder and then just run these commands.
+So you just jump in. Of course, you want
+to use DDEV for your environment. And
+then you just run a few of these
+commands. And if I jump over then to
+here and the readme, you then want to
+unpack it and then launch it. And that
+will pretty much give you uh the
+installation page. Now, I was going to
+do it live, but in the past, I've been
+bitten before by Composer. All of a
+sudden pulling in a brand new module
+update, which then happens to break
+something. So, I don't want to do all of
+that now, but what I will do is show you
+what the installation looks like because
+things are different or version two of
+Drupal CMS. So, if we jump over here,
+okay, we have the standard installation.
+There's nothing really fancy about this,
+right? It's still the
+good-looking installation page. Now, I
+remember when the Drupal installation
+page was uh lacking, if you would call
+it that, where it just looked pretty
+pretty pretty plain, but this Drupal CMS
+one looks pretty good. All right. Now,
+let's just enter in the names. I I'll
+enter in Drupal
+canvas. And then you click on next. And
+now you get to choose between two site
+templates. You have starter
+and you also have bite.
+All right, we got our first comment
+here. What do you think of using DDEV
+Docker when developing in Mac?
+I would highly recommend to use DDEV and
+Docker on a Mac.
+Um,
+yes, I it is the best
+I haven't got any problems with it.
+So, yeah, I'd highly recommend it. I'd
+highly recommend it.
+Now, one thing to be aware of the the
+term site template. It's not a theme.
+Okay, this is the thing that confused me
+when I was playing around with this for
+the first time. I was like, okay, so
+what is there a new theme? I do know
+that that there is a new Mercury theme.
+So, is there a bite theme and a starter
+theme? And it's like, no, no, no, it's
+not. Essentially what it is,
+if you come into recipes,
+you see this bite,
+it is the where is it? Type here we go
+up the top here. So site templates are a
+form of a recipe
+and think of it as the best way to kind
+of think of it is like another type of
+installation profile.
+And I do believe that Drupal CMS starter
+is
+the starter. Yes. Okay. Yeah. See that
+one is the starter. And then all of
+these other recipes, what do they have
+as type? Okay. Type triple CMS. Okay. So
+these are kind of the general recipes
+that just configure things. But then a
+site template is really just a template
+of a website. It's functionality, not
+its look and feel. But it also can be
+its look and feel. But that's the thing
+that the terms might be a little
+confusing if you're a old Drupal
+developer like myself cuz that's the
+first thing I looked for. So just be
+aware of that. So what we're going to do
+is we're going to go ahead and install
+this bite. So let's click on next and
+I'll just add in
+my email address
+and I'll click on finish. It's just
+going to go ahead and do its
+installation.
+So, we'll just give that a moment
+and once it's installed, we will have a
+working
+triple CMS version 2 alpha 1 site.
+Now, I do say alpha 1, so it is the
+first alpha, so don't expect it to be
+absolutely perfect.
+And if I do get a few things wrong, just
+chuck chuck a comment in because I'm
+also learning this at the same time as
+well.
+So, we'll just give it a moment to
+install. So, you can see this is all
+absolutely live. Must be installing a
+lot of things.
+And finally come to the end
+and we should have a goodlook
+Drupal CMS site. And there we go. Look
+at that.
+Now, straight away you might be
+thinking, "Wait a minute. Where's Olive
+Arrow?" Well, no. Now we have a new
+theme called Mercury. Now, this theme
+does look pretty good. But I must admit
+it looks it looks nice.
+So that's the new theme. So let me open
+this up in incognito so we can see it in
+its full glory.
+So you got this nice little header. Got
+these um three items in a grid icons.
+Explore.
+It's pretty much just a goodlooking
+agency type of website. Now, I
+understand this isn't groundbreaking,
+but when it comes to Drupal sites, you
+know, a lot of people complain about,
+oh, you know, Drupal sites don't look
+good. Well, that really comes down to
+the design really,
+you know, I'm not I'm not fussed about
+the design. I just want good I don't
+know, configuration management or
+something. I don't know. So, then up the
+top here, we have a few pages. We have
+feature. We have all these components.
+Got this like teaser component.
+Then we have no where is it? Pricing.
+nice pricing table which is pretty cool.
+Resources,
+blog,
+and contact. And this is all controlled
+by Drupal Canvas, by the way.
+All right, so let's go back here. So
+from a backend standpoint,
+not really sure what has changed with
+Drupal with version two of Drupal CMS
+cuz it pretty much looks the same. Okay,
+you have the standard gin as the back
+end.
+There are a few changes. So if you come
+to the dashboard, you will see this
+recent pages and we'll talk about that
+in a moment. Then you have content.
+Okay, you have pages. You have a new tab
+called pages. What is this? One moment,
+please. Then you have your media, which
+is just your media um assets. And then
+you have your trash, which is a trash
+module. And you have your standard
+stuff. Then if you come along here in
+appearance you have Mercury which is the
+modern Drupal CMS prototype theme
+and extend right standard stuff. I did
+notice however that for this site
+template to now this is some something
+important. So if so if you install
+version one of of Drupal CMS and you
+come to recommended add-ons you will see
+a lot of recommended add-ons whereas
+right now we only have four.
+If we come along here, and this is
+something that I learned today. If you
+come into recipe, is it here? Oh, no.
+Recommended. The recommended.yaml
+has the actual recommended
+um modules here. Oh, sorry. Recipes.
+Then if we come to standard, where is
+it? Where is it? Starter recommended.
+And then here you can see all the extra
+ones as well for the starter one.
+That's a little cool thing I thought I'd
+mention.
+All right, let's jump back here.
+Then if you come into what is a
+configuration, this is just standard
+config. I don't think there's any other
+modules. I can see see like tagify
+coffee. I'm saying coffee, not coffee.
+Um, easy breadcrumb scheduleuler. That
+was all in version one, I believe.
+Symphfony Mailer Light, that was all in
+there.
+Just trying to think. No. Okay, that was
+all in there. Oh, I do think a few other
+a few changes with ECA is that we have
+the modeler API. So, that kind of
+changes
+ECA
+and you can do a few more things with
+it.
+So, there are a few changes, but mostly
+the biggest change for version two is
+canvas and that is the big change. So,
+let's now take a look at that. So you
+might be thinking okay so where do I
+actually go and modify things? Well if
+you come to the homepage and you click
+on edit you will be taken to a new UI.
+Now one thing to be aware of is that if
+we go back and we go to content you will
+see these new pages. Now any page okay
+air quotes
+any page now that's controlled by canvas
+is its own entity.
+you won't see it. Well, you won't see it
+on this content page. And if you come to
+content types and you see this basic
+page, that is not it. Okay, that's one
+thing to be aware of. So, this is a bit
+of this is a change to what we're
+normally used to in Drupal.
+If you really want to get into it, take
+a look at the code. There is a I think a
+canvas page entity and it's not a
+there's no bundles so you can't create
+your own in like your own canvas as far
+as I'm aware you can't create your own
+canvas page type and you can't chuck on
+extra fields. Um I think it's probably
+got its hard-coded fields where it
+stores everything. So things are a
+little different. Okay. And of course,
+if you want to access the canvas page
+directly, just type in /canvas and you
+go in there and you can go and
+jump around and do whatever you want.
+So,
+first things first, if you want to see
+all the pages that are controlled by
+Drupal canvas, come to content and then
+pages and take a look here. And then you
+can click on edit and it will take you
+to the actual page.
+Now, let's go to the homepage. That's
+the main one. So, here we have the
+homepage. This is the UI. Now the UI, if
+you have used other page builders in the
+past, then this should look pretty
+similar. And when I say page builders, I
+mean the modernish type of page
+builders, kind of like the block page
+builders like the Gutenberg, the
+Elementor, the I don't know whichever
+ones they are. They all kind of have the
+same style where you control the block
+from the right hand side and then from
+the left hand side you have your
+components and then you can have your
+component. Where is it? Here you have
+your layers or your or your tree
+structure. And then you have a few more
+options as well. And the the look and
+feel is very similar. Just click and
+drag and chuck it in. So from here you
+can display it in different sizes. We
+have mobile, tablet. We can zoom in if
+we want or we can zoom out. Where did
+that go? Oh, there we go. Went down
+there. Let's make it 100. I think if you
+click on that, it kind of zooms in. If
+you press uh command or control um and
+zoom, what is it? Ah, there you go. And
+scroll and use the scroll wheel, it
+zooms out. If you don't, it just zooms
+um sorry, scrolls up and down. Let's pop
+that back in. Up the top here, you can
+jump between pages. And then from the
+right hand side, you can change
+uh the page data. But then if you click
+on one of the blocks or the components,
+what are these technically called? Are
+they called called components? Is that
+what we're calling them? Library. Yeah.
+Okay. Let's call it components. Okay.
+Components. Um if you click on the
+components. Well, the thing is though,
+Gutenberg calls them blocks. I think
+Elementor calls them widgets or
+something. Yeah, everyone seems to call
+it something different. So, we're going
+to call it components.
+And then you can modify specific
+components. And then you can view the
+preview, which is actually pretty cool.
+Now, finally, you know, Drupal's got to
+have a proper preview because I can't be
+the only one that that literally
+starts a Drupal Drupal project and turns
+off preview because I know that it's
+never going to work and there's always
+going to be bugs coming in when an
+editor uses the preview feature and then
+complains about it. So, I always turn it
+off. But, this is actually pretty pretty
+cool. All right.
+Then on the
+left hand side as I mentioned we have
+the library. We can see all of the
+available components. Now these
+components uh can be views. They can be
+blocks as well and they can also be
+components that are supplied by the
+theme.
+Then we have the layers or the tree
+structure or I don't know what you call
+it. Yeah, the layers. All of the
+components that are on this page. So you
+can kind of zoom down and click on it.
+Does it take you down there? No, it
+doesn't. But that will kind of
+highlight. Where does it highlight?
+There you go. That highlights that.
+And
+then if we
+click on what's this manage library, we
+have all of the
+all of the components that we can
+manage. I think you can still click and
+drag. Yeah, you can. What? Maybe not.
+Where is that? Then you have your
+patterns. And then you can create your
+own custom components. That's going to
+be pretty good.
+Then you've got your pages. And these
+are your individual pages. So these
+pages should match
+the pages up the top here,
+right here.
+And then finally, you have your
+templates. And now this is pretty cool.
+This is going to change, especially for
+me as a site builder or developer.
+This essentially replaces
+the
+manage display page.
+So what is it? So whichever way you
+design your Drupal content, it's going
+to change yet again. So I've gone from
+what is it? PHP templates to twig to
+display suite. Yeah, display suite to
+using like fences module was it or that
+kind of cleans up your fields to using
+paragraphs to using layout builder and
+now there's going to be another way that
+we're going to be building out our
+Drupal sites
+using pretty much this type of layout.
+So yeah, it's going to be interesting in
+the future. The way we build Drupal
+sites and the way we manage content is
+going to change a lot.
+So that's the UI. Now, of course, the
+best way to to just use this is to just
+get in there and build something with
+it. So, let's go to pages and make sure
+we're on the homepage. Okay. And you can
+see that all of the components,
+most of them are purple, but then you do
+have these this header one. Header is
+green and footer right down the bottom
+here is green as well. And these
+components appear on all the pages.
+So let's go ahead now and just add in a
+button
+next to the menu. So what we can do is
+click on the plus icon, double click
+into header, and you can see now now we
+are editing the header. If you take a
+look up here, uh, where the home button
+is, sorry, where the home drop down is,
+and then double click on it, you'll see
+that now you're kind of into a grouped,
+you call it like a grouped component.
+All right, so let's grab button. Let's
+move it across. And it does kind of snap
+in. And we've got a button right there.
+And then we can add in a button called
+sign up.
+We can add a link. I'll just put a test
+link in there for now. And then you can
+make it smaller.
+You can also
+change the icon direction. And you can
+also put in these other icons as well.
+And then if you click on review changes,
+this shows all of the components that
+need to be saved. So let's just publish
+them.
+And then if we
+preview it, we've got now a nice
+button there. And we just did that
+without requiring a developer and and it
+just worked.
+All right. So, I got a few more. So,
+I've got a few comments in YouTube. So,
+please please bring in your comments.
+Okay. Page structure. Oh,
+I think that's referring to when I was
+waffling on about Yeah. the left hand
+side and then hello from Brazil. Wow.
+How you doing mate? How you doing?
+So adding this stuff to the header is
+easy. Let's now chuck something into the
+footer again. Scroll right down to the
+bottom.
+Double click in the footer
+and let's put a bit of text in there and
+kind of snap it in. You can see that
+sometimes trying trying to figure out
+where things can snap in.
+Again, this is just my experience from
+using these kind of block editors. Like
+if you use notion or something like
+that, they're very similar. They kind of
+like snap in. Sometimes you might be
+able to snap it in between, but you can
+kind of see that. Yeah, it kind of snaps
+in there. Add in a bit of um you know,
+text goes
+text goes here. And you can make it bold
+and then chuck it in there. Save it.
+Save all and you're done. There you go.
+And now if we
+let's go to our homepage
+and we have a head up the top here. We
+click on pricing page again. It's
+changed up the top here. And then right
+down at the bottom we have our custom
+bit of text. All right. Few comments.
+All right. I just threw this in
+um if I'm allowed canvas. Oh, just
+chucking your questions. Yeah, that's
+fine. That's cool. That's the whole
+point. Don't. Please put your questions
+in. I don't care. This This is just
+meant to be relaxed.
+This is all meant to be relaxed.
+All right. Canvas responsive break
+points. Um, that's probably controlled
+by the theme level. So about canvas
+responsiveness, break points, that's
+still controlled by the theme.
+Understand that there is still a full
+theme behind this. So, if we take a look
+at our
+code, let's go take a quick look at it.
+Um,
+where is it? Theme contrib Mercury. You
+still have a whole theme. So,
+now one thing to be aware of, this is
+using Tailwind, which is awesome.
+Some people may or may like may or may
+not like Tailwind depending on how many
+classes you can handle on an element
+but this is just the theme at the end of
+the day and you can see all the
+components. These are all of the
+available components. This is using the
+standard what no single directory
+component. So there's two types of
+components. You have the SDC which is a
+standard single directory component and
+then you have your code components which
+are built in JSX.
+I don't want to say React because it's
+not technically React. I think it's
+Pact, which is like a version of React,
+but these are your components.
+And you have your old you have your good
+oldfashioned Drupal. Look at that. That
+that that is fascinating. Such
+such a little amount of templates,
+which is fascinating to me. Which is
+absolutely fascinating.
+Yes. Okay. Um, how does uh, yeah, Drupal
+canvas work behind the scenes? Is it
+integrated with SDC? Yes, it is single
+directory components. It is heavily
+integrated with single directory
+components. That's the whole point of
+it. So, every component you see up the
+top here,
+let's close this
+and go here. All of these are
+single directory components.
+So
+then what we have
+Okay, so let's go back here before we've
+got another one. Oh well, thank you very
+much. Oh, got a super comment. Looking
+forward to a new version of triple Oh,
+CMS. Perfect.
+Thank you very much.
+Nice.
+Got a super comment. Cool. Awesome.
+Okay. So, as you can see, changing the
+header and the footer is relatively
+simple. Well, relatively simple because
+we have a nice theme. Okay. And so if
+you are building I assume when you're
+building a Drupal site from scratch
+unless you're using a pre-existing theme
+there is a bit of work involved in
+getting these components built out and I
+do believe that there is talk that a lot
+of it a lot of discussion that I see
+online about this stuff is that you use
+story what is it
+story book to kind of build out your
+components
+and then you export that stuff out.
+All right, another comment. What about
+integration with UI Suite? Yeah, I I
+don't know. I don't know. I I I have no
+idea how this is going to integrate with
+UI Suite. Or can you use them at the
+same time? I don't know. That stuff cuz
+to me, this is kind of a competitor to
+UI Suite because UI Suite has design
+builder. What is it? Design builder,
+which I do want to cover soon. I really
+want to cover soon in a stream. Um
+so I don't I I cannot answer that.
+Uh yes I have tried UI Suite and I've
+done a video on using UI Suite with um
+well using Bootstrap with UI Suite. So I
+have covered that.
+Um so I suppose the Drupal CMS has an
+option to disable canvas
+if it's not in core integrated.
+Well, it's not in core that I'm not 100%
+sure on at this point. It's just a
+contrib module. So you don't have to so
+just don't install it. That's about it.
+Um if you are going to use Drupal CMS
+then it comes with canvas. So can you
+remove it? Well then I I I don't know. I
+guess you could remove it but then do
+you might as well just set up Drupal
+Core. Now is Drupal Canvas ever going to
+be part of Drupal Core? I've got no
+idea. No, I don't know.
+That I do not know. That would be
+interesting. That would be interesting.
+But I have a feeling that Drupal CMS is
+kind of becoming Drupal Drupal. Even
+though we have Drupal core and we have
+Drupal CMS, but to be fair, a recent
+project that I did start I did start
+with with just Drupal core because it's
+the leanest and I didn't want absolutely
+everything. So yeah.
+All right. So with that, let's go ahead
+and create a page because that's what we
+would do, right?
+All right. Uh oh, comments are coming in
+now. Okay. Why would they keep layout
+builder? Well, no. The the whole point
+is to phase out layout builder. This
+will replace layout builder. I'm 100%
+sure of that. So, uh yeah, this will
+this will fully replace layout builder.
+So, I do kind of see this as uh
+just the the new I don't want to say
+layout builder 2.0. Well, I have kind of
+said that in the past, but I feel like
+this is a new iteration kind of like a
+new way of thinking of what
+of layout builder essentially. So, we'll
+see how it goes. See how it goes. All
+right. Oh, what happened there? Sorry.
+Mac OS does that. I hate it when it does
+that when you just slowly tap on the
+side. Anyway, all right. So, let's go
+ahead now and create a page. Okay. So,
+what we're going to do is we're going to
+come into
+pages and click on new page. And let's
+call this one FAQ's.
+And on the right hand side here, we put
+in our standard fields.
+All right. So, Drupal CMS use uh use
+cases are similar to WordPress on bigger
+projects. I've collaborated
+well is Drupal I'm not sure about Drupal
+CMS generally the Drupal projects that I
+I work on have a have an enterprise
+aspect of it where they it's hard it's
+hard it's hard to explain without
+mentioning the details of the projects
+but yeah where you really wouldn't
+wouldn't use WordPress for that
+all right so creating a page is fairly
+simple come in here put in a title
+You can put in these are standard fields
+I believe. And then we have our main
+page content, which you probably can't
+see cuz it's flushed out. I don't know
+in the stream if you can see that, but
+it pretty much says page content right
+in front of me where the mouse is. All
+right. So, what we want to do is come
+along up here and let's put in
+a section cuz that's what I've noticed
+that you have. You have this section
+layout, sorry, section component, which
+is a layout component, and you chuck
+that in. And you have a header, grid,
+and footer. You can't really see the
+wording cuz it's fl because it's
+washed out by the background.
+Then in header,
+so let's add in a heading into the
+header. And we'll call this one
+frequently asked
+questions, but I can never spell that
+correctly. We'll throw that in there.
+Then you've got your different sizes.
+Now, this is a component. Remember, this
+is a heading component. So, you can
+change all of these options and you can
+center it. And you can also put a link
+in there.
+Then, we can put in a bit of text.
+Well, let's put a little bit of text
+under but still in the header.
+And I'll throw that in there. And I will
+what? Center it. No, no, no, no. The
+other way. Center. There we go. Let's
+make it a little bigger.
+Okay. So, we've got that. And now what
+we can do is we can put in a grid. So,
+here we have a grid. So, if we click on
+the section. All right. The section has
+regions essentially. I assume this is
+called regions. And then the content
+layout. We can control the grid. and go
+50 by 50
+and let's put in an accordion. So, where
+is it? Where is it? There is an
+accordion here. All right. So, we have
+an accordion container. So, let's throw
+that in there. And the reason why it's
+on the left hand side is because I've
+put in 50/50
+and we then put in an accordion section
+within
+the accordion container. Then when we
+put sorry no a collapsible section.
+Let's now put in another collapsible
+section up the top there. And then if we
+go to the page structure we should make
+sure and this is why the page page
+structure is pretty important
+you then
+make sure that's under accordion
+content. And then you can go ahead
+and where is that?
+Question.
+Question one. And we can put in let's
+put in there question two.
+Question two. And let's just throw in a
+bit of text within that prop
+essentially.
+And well, no, that's a slot technically.
+And we'll just throw it in there.
+And there we go. All right. Another
+question. All right. Can you add custom
+CSS classes per item? On some
+components, I think you can, but again,
+it comes down to if the component allows
+it. Now, I'm sure somebody's going to
+create a module where you can do it, but
+at this point, no, not really. All
+right. So, let's go ahead and save
+everything.
+And let's take a look at our page. So
+here we have an accordion. Look at that.
+Look at that. Now we can exit this and
+let's make the header no sorry the first
+one open by default.
+And that is open by default. Awesome.
+Okay. Simple. That was actually pretty
+easy to make.
+Now because
+this is a 50x 50, so it's two column. We
+can set it to 100 and it's just going to
+go full wide. We can set it to 75 by 25.
+Can you actually click and drag? No, you
+can't. That's hardcoded. Okay, that's
+fair enough. Then you have three column.
+Okay, that is pretty cool. That is
+pretty cool.
+And if we put in 50 by 50, let's also
+put let's chuck in the background. Why
+not? Let's see what it looks like.
+Oh, it's a bit too flushed out.
+Can we add a No, we need to put a darker
+color.
+Oh, that looks pretty cool. Look at
+that. Look at that background. Nice,
+nice, nice, nice, nice. All right. Now,
+in the
+Oh, okay. See, now if I want to add in a
+background color
+Oh, I know what I can do. I know. But
+but let's just play. Let's just continue
+playing with this. Okay. Now
+we do have Wait, where is it? Group. So
+now what I want to do is add in
+a group. Here we go. Now the reason why
+for a group because we can change a
+background color. Then I can chuck in
+where is a web form? I can put a web
+form component in there. And I do know
+that there's a contact us.
+And yes, that looks a bit
+flash. You can barely see it. Now again,
+come up the top here. Select the group
+because then on the group, I want to
+change the background
+color. Okay. Yeah, let's do do it at
+that. Let's add a bit of padding. Maybe
+a small padding. And let's make it
+rounded.
+There we go.
+All right. You got a nice little bit of
+padding. You could do the same thing
+with the
+with the collapsible items.
+Background GIF. Yeah, that's it.
+Oh, GIF has GIF files. Some of them are
+ridiculous when it comes to compression
+when you have like um obviously like
+10meg GIF files when it's like just use
+MP4 or something for the for the videos.
+All right. So, if we go ahead and save
+this
+and is there a quick way to actually
+jump to the page?
+No, there isn't. Is there like a quick
+link?
+No. Okay. All right. Fair enough. So,
+come along in here. Refresh.
+Where is it? Where is it? FAQ.
+Open up incognito.
+and we get this. All right, we could
+probably put put a group put this
+according in a group fill this out.
+And I do know let's have a look and see
+how this looks cuz I think last time I
+did play around with this there was yeah
+I mean that yeah that styling needs to
+be fixed up for web form. So you are
+going to have these like compatibility
+things that you need to kind of fixed up
+as well. All right but that's been
+submitted. All right
+comment. Okay. What is the final
+JavaScript size?
+It's optimized.
+Well, if we take a look at the sizes,
+let's go to the homepage.
+Oh, no. Let's select a page that doesn't
+have too much. Um,
+so right down at the bottom.
+Well, I don't know if you can see that.
+Probably my face is Where's my head in
+the way? Uh, not really. Okay. Up the
+top here.
+Yeah, I mean jQuery is the biggest. Oh,
+good old jQuery. Yeah, I don't think
+it's that big when it comes to
+JavaScript sizes.
+jQuery is still the biggest Wait, which
+one's widget.mmin?
+Oh, friendly challenge. Oh. Oh, that.
+Oh, okay. Oh, that's the capture. Oh,
+okay. That's the capture.
+And then this is all the other stuff.
+This is using, I think, Astro.
+So
+meh it's not that bad in size at all
+and of course it is using I think V uh
+there is a build part build component to
+it as well.
+So if we come back here there are now
+other cool you know cool looking
+components you can you can throw in. So
+we can chuck in where is it? Uh where is
+it? Where is it? Where is it?
+You hover over it. Wait where did I see
+it? Where is it? Hero. Okay,
+you have,
+you know, you do have these like big
+hero images
+side by side grid section grouping. You
+know, you do have a lot of these.
+See if we pop that in there. Let's
+remove that one. That's like nice big
+hero as well. But again, this comes down
+to the theme that you are using. So
+your Drupal site is only going to look
+as good as your theme, which has always
+been the thing about Drupal sites. And
+that's why, you know, it doesn't make
+sense to say, "Oh, you know, Drupal
+sites look ugly." It's like, yeah,
+because you don't have the correct
+theme. That's why.
+[snorts] All right. So that's how you
+create a page. And that is how you
+create a page.
+I'd be curious if there was ever a use
+case now to throw on fields. What if you
+want to add custom fields? I don't know.
+I'm just I'm trying to think about that
+cuz if we take a look. Okay,
+let's take a look at the code. I do know
+that there is
+where is it? Canvas
+there's a lot here. There's a lot
+for me to learn as well.
+Entities. And you do have what is it the
+canvas?
+Is it here?
+It's under entities page. There you go.
+So this is I believe the content entity
+and
+there are probably properties on it.
+Yeah, there's base properties like t um
+title components
+and then you have all of this stuff here
+as well. Yeah, there's a lot there.
+All right, comment. And what themes do I
+re well do you recommend? I have no
+idea. I don't know which themes are
+compatible with canvas yet. No idea. Um,
+if you're looking for general themes,
+depends what you want. Do you want
+Bootstrap? Do you want Tailwind?
+Depends. At this point, everything's in
+kind of flux now. Everything's kind of
+in flux.
+Okay, this is an interesting off-topic
+question. From your experience, how do
+all of Okay. From your experience on how
+all these languages evolve, PHP,
+JavaScript, do you think AI might come
+up with a new language?
+I feel like we are slowly drifting away
+from code due to AI. Oh, that's pretty
+that's pretty deep question on a Friday
+night. Um,
+do I think Well,
+I feel like the way we talk and the way
+we prompt has will probably change the
+way we communicate because there's
+certain key words you want to put in
+when you prompt things.
+Now, there has been, I think, evidence
+of AI talking to each other and coming
+up with like a secret language where
+they can communicate much faster. I've
+heard about that. Will it come up? Will
+will AI make its own language? Well,
+absolutely. I mean, once it's going to
+happen. Maybe not next year. Um, but
+eventually, why not? Like,
+they have they have let AI build things
+and they 3D then printed those things
+that they have built and it's all been
+built in funny ways. So, absolutely
+could happen
+or maybe it'll just be an iteration on
+top of other things. Who knows?
+That's a very interesting question. I
+like it. I like it. All right.
+So, the page has been created. Let's now
+go ahead and create a content type and
+modify the look and feel of the content
+type.
+So, let's do a bit of old-fashioned site
+building. Let's create a content type.
+And I'll call this one task.
+And
+oh yeah, one new thing I noticed I think
+with I do believe it's version two of
+Drupal CMS, not version one but version
+two is that it does automatically create
+these fields and there is a ECA model
+that adds them.
+All right, let's add in tags.
+Don't want to recreate it. Let's also
+add in content.
+And let's create a new field.
+I'll call this one
+estimate.
+And let's create another one select
+list. And we'll call this one status.
+And I'll give this to-do.
+Next one is in
+progress
+and last one is done. So all I'm doing
+is just creating a drop down. And one
+thing I have noticed with this uh
+allowed value fields there is kind of
+like a funny bug sometimes where if you
+quickly write it out and then click on
+save without clicking away from it
+because there must be some event
+subscriber and JavaScript that it
+doesn't save what's been selected.
+And you want to go back in and make sure
+it's been saved. Yes, it has. All right.
+Perfect.
+Let's go to field widgets.
+Let's move these right down to the
+bottom.
+And let's just move these up the top.
+And we're done.
+And let's throw in this. All right. Done
+and dusted.
+And if we come here, we should see task.
+And we can see our task.
+So what is this? Task one
+to-do one day.
+And I'll just throw in some stuff. This
+can be tag right down the bottom. Tag
+one, tag two. Okay. Click on save. Now
+we're going to fix this up. Don't worry.
+Doesn't look that great. Let's put in
+another task.
+build Drupal site
+to-do.
+What is it? Five minutes these days.
+Five.
+And
+then we'll just chuck in a few tags
+here.
+Views
+blocks. Okay. All right.
+Cool. All right. So, we've done all of
+that. Now, let's go ahead and configure
+this. So, what we can do, let's refresh.
+Let's go into templates and you'll
+straight away see tags. And if we click
+on add a new template and then select
+our content type, we do get the full
+content
+dropdown.
+Now, one thing that you'll probably
+figure out is that for certain
+content types, you can see here that we
+have a card template and a full content
+template. Now, I assume these are just
+the view modes because there is a view
+mode called card and there is a view
+mode called card on page, but we can't
+select it. So, I don't know if there's
+some extra configuration. Maybe it can
+only be done through config.
+But for now, we'll just stick with full
+content. So, we have our full content.
+And so, if we save this, what do you
+think is going to happen?
+Is this Maybe we need to put something
+something empty in there.
+Let's put in section.
+And that's published.
+And if we refresh, all right, there you
+go. It's disappeared. And I just noticed
+up the top here, you can preview it
+using
+a particular an actual specific um piece
+of content. That is pretty cool. That is
+awesome. That is very good. All right.
+So, let's go back here and what we're
+going to do,
+let's throw in well a
+breadcrumb first. Always access what is
+it? Usability. All right. Sometimes this
+happens. Just refresh it.
+Just refresh
+breadcrumbs.
+Let's throw that in the breadcrumbs at
+the top.
+And let's throw in a heading.
+And we can throw in a text below that.
+Oh, no. Let's throw in a text here.
+And we can also
+put in Can we put in the estimate?
+Where? Where would that be? Well, let
+Okay, let's sort this out. Now, first
+things first, we need to map the field
+to this component. So, if you click on
+this little link field, you will see the
+available fields that can be mapped
+across. Now, one thing I did notice is
+that it doesn't work at this point for
+text lists.
+So, that is
+where is it? Where are you?
+So, it's not appearing for this field.
+And I cannot map the tags across. And I
+also can't map
+entity fields, so image fields over to
+it as well. Whereas the preconfigured
+ones I can. So I have a feeling maybe
+the UI part isn't done, but you can do
+it through config.
+Okay. Um I've noticed I'm minor/ major.
+So, which one is it? Is it minor or
+major issues? Well,
+there is a RC1, but first versions,
+you're always going to have problems
+with it. Like, it's a first it's a first
+version.
+See, the way I like to put it is no one
+actually enjoys like forget forget
+canvas, okay?
+I always like to tell this to editors
+and editors never like it when I say
+this. Writing online sucks no matter
+what. There is no system out there that
+makes writing fun. You just deal with
+it. You just you just learn the quirks
+of it. Now, this is nothing to do with
+Canvas. Okay? I have written 3,000word
+blog posts in Gutenberg. Do I like it?
+It's not that great, but you learn to
+deal with it. There's always bugs. It's
+always going to be little little little
+things that just don't don't snap in
+correctly.
+I remember, you know, no, what is it?
+Don't want to show my age. early late
+90s using Word, making one change on
+page one and then page 10 it pushes
+everything off. It's just formatting.
+It's all it's all it's all that stuff.
+What do I think needs to be done?
+I'm not
+I don't know. I don't know. [laughter]
+I only started playing with this stuff
+yesterday. Really like really properly
+played with it yesterday. Install it and
+have a play with it. That's the best way
+to learn. I have no idea. There's a
+whole there's a whole team of people.
+There's a whole team of people that are
+much smarter than me building this
+stuff. So, I've got no idea. I've got no
+idea. Just use it and have a play with
+it and then work around it. And that's
+it.
+All right. So, let's go in here. Select
+our dynamic. Where is it? Here. Yep.
+Select title. And now title is coming
+across.
+And uh
+this is actually pretty cool. Yeah.
+Switching that across is pretty awesome.
+Pretty awesome.
+All right. And now let's switch over
+rich text. Now you can see that with the
+text component there must be some type
+of um system where it figures out the
+correct where it figures out the correct
+uh
+build type. So here we have content
+and then process. Now that's getting
+passed across which is great.
+And I do think that for the estimate,
+see what if you want to add in just a
+field type, like a field with a label.
+How would you do that? That's
+interesting. Anyway, let's put this in.
+Let's make this none. Can we make it
+really small?
+No. Font size.
+Well, that's interesting because I can
+only select estimate. Can I select
+estimate from anything else?
+No. No. Oh, maybe you can put badge.
+Oh, here we go. Look at that. Look at
+that.
+What is a
+icon? What's a good um [laughter] robot?
+5 minute estimate.
+What if I want to put a label in there?
+See, you'll probably have to have a
+component for that now. Anyway, okay.
+So, that is that. All right. Now, let's
+save this. That's pretty cool. That's
+pretty cool. Come along in here. Where
+is it? View. View. Where? What? I'll go
+view. Save pages. And we've got a nice
+little estimate down here.
+All right. We got a little alien here.
+Is that a button or is it a Did I put
+put a badge in or button? Oh, no. That's
+a button.
+Oh, no. It's a badge. Anyway, okay. So,
+there you have it. That's
+that's just a like a little basic build
+out of a content type.
+Now, let's create an actual component.
+And we're going to create a simple
+component for this well simple one. And
+to do that, what we need to do is go to
+this manage components
+card, sorry, code. And then you'll see
+here code component. And we'll call this
+one task summary.
+And here is a bit of uh
+JSX. Well, this is the JavaScript, but
+it's essentially like the React style,
+but it's not React as far as I'mware.
+It's Pact. That's what the documentation
+says.
+And this is pretty much a uh
+a little editor where you can go in here
+and make your changes.
+So let's go ahead and from the I hope
+you can see. Let me have a look. Yeah,
+you can. You can just see it here. From
+the component data section, you have
+props, slots, and also data fetch. Now
+the props are just like props that you
+pass into a component. If you if you've
+done any like React work before, you
+would understand what that means. is you
+just pass in a variable to it and a slot
+is where you pass in other components
+into it as well. So it's an area where
+other components can go into. Now this
+does follow single directory components.
+Single directory components has a
+similar concept. If we go here let's go
+I nearly threw my mouse off
+the table.
+All right. Where where is it? Where is
+it? themes single dire compon themes
+contrib
+components
+there you go so you have these
+components here so you have props and
+you have slots down there so it's a very
+similar concept and I and I do think SDC
+single directory components was was you
+know modeled
+like that like that in particular so if
+we want to add in let's go back
+If we want to add in a prop
+called
+estimate. So let's put in. Now this is
+camelc case. So that will be so what is
+it? One day. So let's just put that in.
+We can select the type.
+We'll just keep it as text. Now if we
+replace this with
+estimate
+now you will you'll see that nothing's
+kind of working but then you'll see that
+here
+it's going to complain about things.
+Okay, you can't find estimate undefined.
+That's because we need to just pass it
+in
+estimate
+and then that appears there. So, you
+need to see the preview for it to work.
+Okay, that's the first thing. If you
+don't see it in the preview, it's not
+going to work.
+Now, let me go ahead and just throw in a
+bit of code that I generated. Well,
+let's be honest. I asked Claude to
+generate for me because then because we
+are using Tailwind on the front end, we
+can add some great things like this.
+Seriously, we can we can add in.
+Now, as I said, I feel like,
+you know, some people love or hate
+Tailwind because of all these classes.
+So yeah, I'm sure I'm going to get
+comments about it. But what but what we
+could do is we can place in so let me
+put in estimate. I can put in the here
+estimate like that. And then now that's
+getting passed through to the component
+and we can now add this component
+to to our page because this is a this is
+essentially a code component.
+All right, a comment. All right, this
+might be a be a beginner's question.
+That's all right. We're all beginners.
+How do modules and components differ in
+Drupal? In what case would I choose a
+solution pricing table versus CRUD? All
+right. So, well, from a Drupal
+standpoint,
+a module
+is a bunch of files that that that kind
+of ship functionality whereas a
+component is something that appears on a
+page. The word module is thrown a lot
+around.
+Um, now it depends with your pricing.
+How are you using that pricing data?
+If you add it as a component to a page,
+you can't really query it because it's
+just added into a single field. Whereas,
+if you add it
+in the database and you and you have
+like a pricing content type or something
+like that, then you can query that
+content. So, you may want to treat it
+differently. So again again it depends
+how you want that data used because if
+you have a e-commerce website for
+example
+the pricing will be on the product and
+then you can query things like that.
+All right. Okay. So all right another
+one. Okay. How the dynamic values work
+on the component? Well you pass it
+through. So here I've got a prop that
+gets passed through and it gets
+displayed here.
+Now again as I mentioned previously not
+all fields can be mapped across
+uh dynamically yet. So what we can do is
+we can
+now add this to the components. Now
+there is kind of a steps in here. So you
+create your your component your code
+component and right now if it's saved so
+let's just publish it. Okay it's saved
+but if we go here
+well let's go back to
+our page and if we go to add you won't
+see it anywhere here
+because you need to now add it.
+See this add to components you need to
+now add it to the components section. So
+you click on this and it's like this
+component will be moved to the component
+section and will be available on the
+page.
+So now it it is available. So we can go
+here go to add scroll all the way down
+to the bottom you will see our summary.
+We can click and move it across and it's
+going to be added.
+And these are our these are our props.
+Okay. We can come in here and make our
+changes or we can put in our estimate
+there and it's going to be passed along.
+But again, I I was planning to show how
+to pull tags in across this way, but I
+just couldn't get it to work. So, I'm
+still learning this thing. Uh there
+there is another way, and I'll show you
+that in in a moment. So, we go in there,
+save it,
+and if we refresh,
+let's open this up in incognito,
+we can see our components right here.
+Now, be aware that this is JavaScript.
+So, if we come along in here and switch
+off JavaScript,
+it won't work.
+Okay, it is JavaScript and based off my
+limited
+hacking around this is using a Astro
+like an astro island which is a
+component. So if we inspect that
+where is it
+relative?
+Yeah, it's got like an astro island here
+component
+and it's using some astro hydration.
+Yeah, I mean it's it's got it's got a
+few things here.
+This whole rendering pipeline to
+actually render these items out. There's
+a lot to learn here. A lot of new cool
+things to learn.
+Now, if we want to make changes, this is
+where things get a little tricky. So,
+let's go back here. So, we can go in
+here and modify
+the code. We can change the code, but we
+can't change
+Let me just
+move myself to the other side so you can
+see.
+We can't change.
+Can I move this up? Oh, I can. Oh,
+perfect. Don't I don't have to move
+myself. There we go.
+We cannot change the the props or the
+slots. And the reason for that is
+because it's already been added to a
+page. So you you don't want to go in
+there and start changing changing your
+props because it's just going to break
+your site. But you can modify this code.
+So you can go in there, modify, save it.
+Now, if you do want to change the slots
+or the props,
+if you go back, what you need to do is
+if you come along in here and go
+rightclick, remove from components, it's
+going to tell you that it's being used
+in content. Okay? So you just need to
+remove it.
+Scroll down and go remove from
+components and you're done. Now I don't
+know how easy that's going to be if you
+are using a component on 20 or 30 pages
+or if you have hundreds of pages and you
+need to what go through every single
+page. Maybe maybe you'll do something
+where you can version version control
+props or components or just create a new
+component and just duplicate it
+essentially. So what you do?
+So then when you want to make your
+change to it, what you can do is come
+back to code,
+make your change. You see here
+you've got your change here. You can go
+ahead and do whatever you want. And then
+yeah, you're done. You can go in there
+and add it back in. But just remember,
+as soon as it's added to a page, it
+cannot be changed. The props cannot be
+changed, but the code can be.
+So just be aware of that.
+Awesome and elegant component.
+Very good. Very good. All right. Okay.
+So now let's continue doing a bit more
+site building. So if I go back,
+let's now create a tasks page.
+No. Well, okay.
+All right. So question is, I can't
+globally modify across all pages once a
+component is added and placed. No, you
+can modify the code, but you can't
+change any of the props or the slots
+because they are used. You can still
+change the code, but if you want to add
+in another slot,
+then you can't make that change.
+All right, so let's go ahead and create
+a view because you can actually chuck
+views in, which is pretty cool. So,
+let's go in here, add. I'll call this
+one tasks.
+task
+block.
+And we'll keep this very simple. Let's
+just keep it very simple.
+Now, if you want to learn more about
+views, check out one of our views, uh,
+getting started with views in Drupal
+modules, h sorry, videos. There is a
+live stream on it.
+All right. So, we've created our block
+view.
+Now, what we're going to do is go back
+into here, pages, add a page.
+I'll call this one
+tasks.
+And I will add in
+a
+breadcrumb,
+a section,
+a header,
+latest
+tasks. And we should see our tasks view.
+right here.
+And if we hit save
+and go to slashtasks,
+we have our task view. And if we click
+on our
+task, we can see our task, but the
+breadcrumb isn't working. Let's fix that
+up. And the way to fix that up is to
+just make sure that the path has
+slashtasks in it. So what we can do is
+go to
+URL aliases
+search for pattern
+select content
+and this will be what is it?
+Tasks and then node title
+and then
+tasks.
+And now we can come along in here
+and we need to just update this URL. So
+we just save it. That should be
+slashtasks. There you go. The
