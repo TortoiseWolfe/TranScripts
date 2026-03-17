@@ -23,6 +23,9 @@ TSD/private/
 credentials*
 secrets*
 
+# Symlinked repos that belong in /repos, not nested here
+GrimGlow_planning
+
 # OS files
 .DS_Store
 Thumbs.db
