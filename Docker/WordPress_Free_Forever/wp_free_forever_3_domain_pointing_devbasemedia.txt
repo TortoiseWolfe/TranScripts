@@ -1,0 +1,112 @@
+hey everyone Chris here again last video
+I left you hanging because we got
+WordPress set up on Google cloud but we
+could only access it via an IP address
+so realistically if you set up something
+you're gonna want to tie a domain name
+to your WordPress instance so how do you
+do that
+really this this procedure will work for
+anything on Google Cloud you could set
+up any instance of Google Cloud have an
+IP address and tie it to a domain name
+to start with let's look at this
+instance that we created in the last
+video it has an external IP address but
+problem with this external IP address is
+its ephemeral if I were to stop this
+server and restart it I might get a
+signed a different external IP address
+we want to guarantee that this server
+always comes up the same IP address so
+how do we do that
+well if you just click this little menu
+here and go to network details you'll
+notice that this is listed as ephemeral
+and from here we can choose external IP
+addresses so here we are we have an
+ephemeral IP address if you just drop
+that down we could change that to static
+and we can give it some name so in my
+case we'll call it word press ok and now
+what's happened is this external IP
+address is now reserved as a static
+address and I can guarantee that every
+time I restart this instance will be
+this address so that's step one and
+that's just to guarantee that we're
+always at the same place I'm just gonna
+copy that into my clipboard step two is
+to tie this external IP address to your
+actual domain name so in order to do
+that you need to go over to where your
+domain is registered now I happen to
+have my domain registered with Google
+domains I have a video on how to
+transfer a domain to Google domains I'll
+provide a link to it but this procedure
+should work for any domain name provider
+really the easiest way to do this is to
+find your dns settings for your domain
+name so I'm gonna actually set up dev
+base mediacom to point at my Google
+Cloud instance so right now dev base
+media if i go and google it if i go and
+type in the address
+you'll see I have it just redirecting to
+my YouTube channel rather than that what
+we're going to do is we're going to send
+it over to the domain name so in order
+to do that what you need to do is you
+need to add a few custom resource
+records for this domain name okay first
+of all I'm going to remove the domain
+for word that I have on this domain you
+may not have this and next I'm going to
+add my a address this is basically the
+address for this domain name and it's
+gonna go to that static IP address that
+I reserved so I'll add that and another
+custom resource record that you need is
+a cname record I think this is canonical
+name this will let us redirect wwe's
+mediacom to debase mediacom so that you
+know you probably want the ww2 also
+resolved so I'll click Add and believe
+it or not this is more or less setup
+this is the easiest way to do this now
+this likely isn't gonna happen instantly
+so you may just need to be a little bit
+patient you're likely gonna want to go
+and reload your domain as many times as
+you can and so you can see right now
+it's obviously not working at all I just
+need to be a little bit patient now
+rather than just reload my browser
+constantly I do have another option for
+querying this so if you want to query
+your domain name without constantly
+hitting reload in your web browser there
+is actually a command-line tool you can
+use if you're on Linux you can type dig
+and then and then the name of the domain
+you want to query and you notice that
+for me here that is the external IP
+address that we set in the cloud DNS so
+this should work so if I want to verify
+I can go to dev base Mediacom and what
+do you know it goes to my WordPress
+website so that's how you set up your
+domain name to point at any instance on
+Google Cloud so still one little problem
+with this guy though notice this little
+thing connection is not secure
+what if I want to open up HTTPS on this
+and ensure that these connections are
+always going through an encrypted link
+well that's something I'll discuss in a
+future video but for now thanks for
+watching
+[Music]
+now
+[Music]

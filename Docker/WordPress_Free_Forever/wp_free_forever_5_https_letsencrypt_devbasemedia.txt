@@ -1,0 +1,350 @@
+hey friends chris here again today we're
+going to talk about how we enable
+https for a website specifically a
+website that is fronted by an nginx
+server so this is a follow-up to the
+previous video where we put an nginx
+reverse proxy in front of a wordpress
+website
+it doesn't have to be wordpress it can
+be anything running on nginx
+but we're going to use the example that
+we've already been working with so
+for example here i've got a website
+running
+nicondell.com and it's uh specifically
+marked as not secure that's not a very
+good message
+these days so we want to enable
+https or ssl or whatever you want to
+call it
+on this website to begin with we can
+just talk about the concept about how
+this is going to work
+so last time i showed you that we
+created an nginx proxy a reverse proxy
+sitting in front of
+wordpress again it could be anything in
+behind
+what we're going to do is we're going to
+enable a new port
+on nginx port 443. 443 is the secure
+port
+and the way it works is there are a set
+of certificates that
+your server has it hands out a public
+certificate
+out to the world the web browsers can
+validate that that certificate is valid
+so how does it know if it's valid well
+it goes and looks at a certificate
+authority
+so in our case we're going to use
+certificate authority called let's
+encrypt
+it's a free cert authority very easy to
+use
+and that's how we're going to get our
+https certificates
+so let's get directly into it i'm going
+to go back to my google cloud platform
+this is the
+instance that i'm dealing with and i
+will ssh in okay so just a quick review
+if i go and look at the
+configuration files for nginx in etsy
+nginx
+remember there's sites available
+and i have a specific file set up for my
+domain
+so of course you do need to have a real
+domain name for this to work
+the domain name needs to be already
+configured pointing at your server
+all the previous videos cover this so
+i'll provide links to those
+you get to this point and you've got an
+nginx server with your domain pointing
+at it
+you should be able to secure it so how
+do we do it
+well the folks here at let's encrypt
+they provide an
+application that we can run called
+certbot
+okay and it's all about delivering these
+certificates i talked about
+so if we go back over to our instance we
+need to install
+this application certbot so if you've
+been following my videos
+i'm running ubuntu 1604 here on google
+cloud platform
+so since it's ubuntu i can install
+i can use the apt application to add
+additional repositories of software
+so the first thing i need to do is i
+need to install
+software properties common
+and then i'll do a sudo apt
+update just to have the package manager
+realize what's going on with it and now
+i'm going to add
+a new repository so this new repository
+is where the
+the cert bot application will come from
+so sudo
+add apt repository
+and of course i'll add all these
+commands in the video description below
+okay so what we did is we essentially
+just added a new software repository so
+i can install
+certbot it knows where to get it so once
+again i'll do a
+sudo apt update just so it can refresh
+its cache
+and you'll notice now it sees the cert
+bot packages
+and we will install certbot itself so
+sudo
+apt install yes
+it's python
+certbot engine nginx because we're
+installing it for nginx
+you might get prompted with this asking
+you for a location
+you can choose whatever you like
+okay if all that went through then
+certbot got installed
+so here's the thing now what we're going
+to do remember
+we have a configuration file for our
+website i'm going to
+cut out the contents just so you can see
+them again
+so what's going to happen is when we run
+certbot it's going to go
+and it's going to modify this file
+and it's going to point at the
+certificates that it's obtained
+from let's encrypt now it's going to
+also go and get the certificates but
+let's let's run the command and just see
+what happens so we say sudo
+cert bot and we're running it for nginx
+and we're going to say we want it to run
+for these websites we want it to run
+for nickandell.com or whatever your
+domain is and www.nickandel.com
+what let's encrypt is going to do is
+it's actually going to kind of
+challenge our server to make sure that
+we actually do have true control over
+that
+domain so as long as our domain is set
+up correctly
+then this should result in obtaining a
+certificate so let's run it
+and of course i made a little error
+because i need to specify two minus d
+options so let's try that again
+all right so you need to enter a valid
+email address
+if they need to contact you so i will
+fill something out here
+and you can choose to agree
+this is up to you what you choose for
+this stuff
+so you see there it's challenging okay
+now this is interesting it asks what you
+want to do if somebody hits your website
+unsecured do you want to let them
+through unsecured
+or do you want to force to redirect to
+the https url
+i'm going to choose to redirect
+okay now it's done so let's look again
+if i cut out that file
+there's a lot of a lot more stuff in
+here now than there used to be
+in fact i'm going to open it with vi
+so our proxy pass stuff is still there
+but
+now it's listening specifically on port
+443
+and it is actually pointing at
+some certificates that are managed by
+certbot
+okay and then there's some stuff in here
+about the
+the redirection the forced redirection
+to 443.
+so let's restart our nginx server
+okay restarted so now in theory if i hit
+the domain i should be secured so i'm
+going to do this by hitting
+a new private window sometimes caching
+gets in the way of things
+i'm actually going to specifically go to
+http
+http and see if it gets redirected
+all right so notice i've got the little
+padlock
+parts of the page are not secure such as
+images so we need to fix
+that but it does mean that part of the
+website is set up and correct
+if we look at the certificate
+it actually shows that it's issued by
+let's encrypt and
+it expires in about three months
+so we're going to do something about the
+expiry because we want it to auto renew
+but the certificate is there
+now again this seems to have like
+completely messed up our
+wordpress website this is not the same
+format as what was there before
+and the problem is that it's attempting
+to obtain
+some things via http instead of https
+and this is a a wordpress specific
+problem
+if you're not using wordpress then you
+won't have this issue
+but we can fix that as well so if i go
+back to my server
+you remember all of our wordpress
+content is in this wordpress docker
+compose directory
+if i go into wp app
+you notice there's a bunch of files in
+here there's one called wp config.php
+i'm going to edit that
+actually you know i'm going to have to
+sudo it because you see
+it's owned by a different user so i'm
+going to sudo
+vi wpconfig.php
+and this is the basic configuration
+options for wordpress
+and we need to add a little section in
+here so that we can handle the
+the ssl reverse proxy so i'll put a
+little section in here again i'll paste
+this into the
+video description okay so if we do
+arrive
+using https mode we will actually enable
+it on the server
+so let's save this
+and i'm going to need to restart
+wordpress so
+we'll use docker compose stop
+okay and then docker compose start
+okay there we go we're all restarted so
+let's try this again
+once again i'm going to try another new
+private window just so there's no
+caching
+and i'll go to specifically http
+okay still a small problem okay
+i believe i know what the problem is and
+it's it's because when we when we edited
+that
+wp config file
+you'll notice that we're specifically
+looking at this this header
+x forwarded proto which is protocol
+so we need to make sure that that header
+is passed along
+to our wordpress our wordpress instance
+from nginx
+so i can go back over to etsy nginx
+available sites sites available
+i can edit this file
+you notice the the stuff that i'm
+passing along these headers
+i've passed along the x forwarded for
+the x forwarded host but i'm not passing
+along the
+the x forwarded proto so i'm going to
+send that as long along as well
+and this way it knows that we're asking
+for https okay so i'll save that
+and i will restart nginx
+okay so now the uh the https pro
+protocol should be passed along to the
+wordpress site and let's see what
+happens
+okay so this is starting to look correct
+um it looks like it's still serving some
+non-secure items one last thing i might
+want to do
+is i might want to go to wp admin and i
+might want to specifically say
+under the general settings that we are
+running on https save that and just for
+good measure what i'm going to do is i'm
+going to go
+over to the wordpress docker compose and
+i'm going to restart wordpress
+docker compose stop
+and docker compose start
+all right so one last thing we want to
+check is to make sure that that
+certificate auto renews so um
+what we can do is we can actually run on
+a schedule kind of like an
+auto renewal for the cert bot and it
+will only renew if it's like up for
+renewal
+like within i think 30 days so normally
+the command to run
+a a renewal is certbot renew
+if we run it you'll actually see that
+it's not time yet
+but what we can do is when it finally is
+due for renewal this actually will work
+so we want to run this essentially every
+day okay so
+cron is a tool that will allow you to
+run commands on certain intervals
+so i can edit uh the cron tab the cron
+table
+with this command sudo crontab e
+and what we'll do is i'm going to add a
+line to this
+and what we'll do is we'll say 45 so
+this is minutes
+so basically at 2 45 am
+every day so this is every day
+i'm going to run sudo
+cert bot renew
+so i don't even need the sudo because um
+this is the cron
+the cron table for uh the root user so i
+can just run cert bot renew
+and what i'll do i'll actually write the
+output to a file
+so that if any given time i want to know
+like what happened last night i can see
+uh
+i'll call it renew i can go and look in
+the temp directory
+and see kind of what happened when this
+last ran
+so i'll save that all right so now every
+night at 2 45 a.m
+the cert bot should attempt the renewal
+and eventually
+we'll hit the point where we do need to
+renew the certificate and it will just
+auto renew for us
+so that's everything i wanted to show
+you i'm really happy you were with me on
+this whole journey thanks for your
+support
+look forward to future videos
+you

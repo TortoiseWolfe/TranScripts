@@ -1,0 +1,125 @@
+so a little bit of a different subject
+today I'm going to talk about how you
+transfer a domain from GoDaddy into
+Google domains so I've been doing this
+with my domains why would you want to do
+that well first of all if I just go and
+hop over to the Google domains pricing
+the pricing is really really good
+seventeen dollars Canadian per year
+that's probably lower in u.s. dollars
+and the default features are very good
+as well you get the privacy built in
+domain forwarding was already there on
+GoDaddy but there's also email
+forwarding I have two domains that are
+parked so this will be pretty good for
+me because I can just forward emails
+into my main gmail account so how would
+we do it well you start by going to
+domains google.com and it tells you to
+search for a domain name but I'd like to
+transfer instead okay so you click that
+okay
+now I've already got one on its way in
+so you may not have that incoming
+transfer but you can type in the domain
+name that you do want to transfer so I'm
+sure I'm going to transfer in the domain
+that goes with my youtube channel dev
+base Mediacom
+I'll let continue so now this is going
+to require me to do certain things so
+over on GoDaddy I have dev based
+Mediacom law it's like a default
+security feature your domain is locked
+to prevent transfer out well obviously I
+got to unlock it and then I'm gonna get
+an an authorization code from GoDaddy in
+order to do the transfer so if I go over
+to my GoDaddy account here's my domains
+this one is in transit right now but
+this one I'm going to transfer so if I
+go to manage and there's a couple of
+things first of all notice that the
+contact information is set to be private
+well I need to turn that private
+registration off otherwise what's going
+to happen is the transfer will bounce
+now you may not have private
+registration on your domain I paid extra
+for it so what you need to do is remove
+the privacy they'll give you a little
+bit of a scary message but yes I'm gonna
+remove the privacy okay
+so privacy's been removed if I continue
+scrolling down notice it says the domain
+lock is on so I click Edit and I can
+turn the domain lock off okay
+so privacy has been removed and the
+domain lock should be off and it says
+pending it takes a few minutes for this
+to actually take effect but if I pop
+back over to Google domains and I click
+refresh so notice here it already is
+unlocked so now if I head back over to
+the GoDaddy page I can say transfer
+domain away from GoDaddy so I'll click
+that so they give you a bunch of stuff
+I've already done these things okay now
+they want to know where I'm transferring
+to you don't need to tell them you can
+just say continue with transfer they'll
+say oh you can save 20% well I'm about
+to save 50% so I don't care about that
+continue with transfer so they are going
+to send me an authorization code so I
+need to wait for that to arrive in my
+email so here they've sent me an
+authorization code this is a one time
+code that is only used for this transfer
+so I'm gonna copy that head back over to
+Google domains and I will paste the
+authorization code in there and hit
+continue
+so it's found a website but really I'm
+forwarding dev base mediacom to my
+YouTube channel at the moment but if you
+actually had it connected up to a
+website it should pick up the name
+servers and it should forward them I'm
+gonna continue so by default privacy
+protection's on and auto renew is on
+that's all fine they're gonna charge me
+money now this is kind of cool this
+domain I only registered it in July of
+this year which was only a couple months
+ago and I kind of expected that Here I
+am in September I thought I would renew
+the domain and it would be good for
+another year as of this date but in fact
+it's keeping my full registration up to
+July 13 2019 quests adding a new year so
+it's like I'm not really losing anything
+in this transaction I'm just saving
+money so I'm gonna proceed to checkout
+and hopefully you have your address
+filled out already if you don't you'll
+have to fill it out and hit by and
+that's it so notice now I've got dev
+base mediacom in
+so what's gonna happen is within a few
+days it's actually gonna do the transfer
+go daddy's gonna sit on the domain a
+little bit hoping that I'll change my
+mind but I'm not gonna change my mind in
+fact they'll send an email saying are
+you really sure you can you can stop
+this if you want to but you don't need
+to stop it so I hope that was useful to
+you you know a lot of my audience likely
+has a domain name out there and this is
+a way to save some money get a few more
+features out of the box for free so
+thank you for watching
+[Music]

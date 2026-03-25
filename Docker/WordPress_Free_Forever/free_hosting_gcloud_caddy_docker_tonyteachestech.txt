@@ -1,0 +1,283 @@
+How to Host a FREE Website on Google Cloud (Step-by-Step) - YouTube
+Tony Teaches Tech
+
+You can host your own website on Google Cloud for
+free and I'll show you how step by step, even if
+you never worked with cloud servers before. We'll
+create a virtual machine on Google Cloud's always
+free tier. Install Docker, set up Caddy and get
+your website live on a custom domain with HTTPS.
+Don't worry about hidden charges. I'll break down
+the limits so you can stay completely free. And by
+the end of the video, you'll have a secure website
+on a cloud server that you can experiment with and
+make your own. So, let's get started. Okay, so get
+yourself over to cloud.google.com. You will need
+a credit card to sign up. But like I said, don't
+worry. I will go over the limits so you can stay
+within them later on in this video. But first,
+let's go to your Google Cloud Console by clicking
+this button up here and then this hamburger menu
+in the upper lefthand corner. Click that. Come
+down to Compute Engine and then Overview. And
+we'll get out of here. And then we want to click
+on this box that says Create Instance. And now
+if this is your first time using Google cloud,
+you'll probably see something here about enabling
+the Compute Engine API. So go ahead and do that.
+And once you've done that, we can configure our
+virtual machine. Now you should be aware that uh
+there and I'll have this linked below. There
+are these specific parameters, these specific
+specifications that we need to stay within uh
+when we configure our virtual machine, so that
+way it's always free every month to month. So
+as you can see here, we have to pick an E2 Micro
+machine in one of these data centers. So let's
+go ahead and start with that. And I'll just keep
+this up on the screen here so we can reference
+it throughout the video. Um, for the region,
+um, US Central 1 in Iowa is one of those. So,
+I'm just going to keep that. And then as far
+as the machine type, we need an E2 type machine.
+And then specifically, we want a e2-micro, which
+is going to give us uh that two virtual CPUs and
+1 gigabyte of memory. Let's move on to the OS and
+storage and click this change button. And a lot of
+these operating systems are free and open source,
+so you can choose whichever one you like. Um,
+I'm going to pick Ubuntu because I prefer that.
+And we're going to pick specifically the latest
+long-term support version, which is Ubuntu 24.04
+LTS. And be careful, uh, because our machine is
+an Intel processor. We don't want the the ARM
+version here. We want the x86/64 version. So,
+let's click on that. And then, as you can see,
+we can get up to 30 GB of SSD storage for free as
+part of the always free tier. So, we'll pick that.
+And we want to make sure that for the boot disc
+type, we have a standard persistent disc as it
+says in the specifications. And then we can select
+that. Let's go to data protection next. And we
+will disable backups just because that they could
+potentially incur an additional fee. And then
+under networking, we want to enable HTTP and HTTPS
+traffic. And I do want to point out down here,
+I know there's a lot of confusion. If you expand
+the network interface, um you might think that
+if you upgrade your uh network service tier from
+premium to standard, you'll get 200 gigabytes of
+uh bandwidth per month. But that's actually
+not the case. This option is only relevant if
+you have a paid virtual machine through Google
+Cloud. What we are limited to, as the specs say,
+is one gigabyte of outgoing traffic per month.
+We'll talk a little bit more about this later.
+It does seem limiting, but there are ways around
+this with something like um a CDN or whatnot,
+but for now, just keep the premium network service
+tier enabled. Under observability, we disable the
+install ops agent for monitoring and logging.
+Again, that could incur a fee. It is free to
+enable, but we're just going to avoid that. And
+then under security, um, we do not want a service
+account. And I don't think there's anything
+under advanced that we're going to enable here.
+Actually, if you do go down to provisioning model,
+make sure that you have standard selected as
+opposed to spot. Spot is the preempted version and
+we need the non-preemptable VM. So, just make sure
+you have standard and you should be good to go.
+Uh, but at that point, we have a monthly estimate
+that's around $7.31. Yours might look a little
+bit different depending on how many days are in
+the current month that you're enabling this.
+Uh, but like I said, we get two virtual CPUs,
+1 GB of memory, 30 GB of solid state storage. And
+um, I I will put this in the linked blog post just
+so you guys can be 100% sure that you are enabling
+a always free tier compatible virtual machine. So,
+they have this command line equivalent code and
+I'll I'll put what mine looks like and you can
+compare them side by side. Unfortunately, there's
+no way you can paste this in unless you actually
+do the command line. But this is what you your
+configuration needs to look like. And if that is
+the case, we can go ahead and create our virtual
+machine. So, go ahead and click on create. And
+that'll just take a couple minutes here. When that
+finishes, I'll catch back up with you. All right,
+our virtual machine is up and running. As you can
+see here, it says this instance is running. So,
+let's connect to it. And we can do that via SSH.
+There's a couple different options. We're just
+going to do SSH in a browser window. So, that'll
+open up this one. And you'll see this popup that
+says allow SSH in browser to connect to VM. So,
+click on authorize. And you'll have to authorize
+that through your Google account when the first
+time you do this. So, go ahead and do that. And
+then we'll click on continue. All right. And now
+we are logged into that virtual machine in that
+remote data center in Iowa in my case. And what we
+want to do is install Docker. So, we're going to
+set up a a website via Docker. And we can install
+Docker with this command right here. And don't
+worry, I'll have all of these commands linked on
+my website. Um, so you can just copy and paste
+from there. So, what that does is download this
+get-docker.sh script. And what we want to do is
+run that. So, we can do a sudo sh get-docker. And
+if you're not familiar, you can tab complete to
+not type out every single letter. Hit enter. And
+that's going to go ahead and install Docker and
+Docker Compose. All right, that has finished. So,
+we have Docker and Docker Compose installed. And
+uh the last thing I'm going to do is add
+our user. In my case, Tony, the Tony user,
+which I think does come from your Google account,
+the name on your Google account. But anyway, we
+want to add that user to the Docker group. So that
+way, we don't have to type pseudo every time. So,
+let's do that. And now for those changes to take
+effect, let's just exit out of our SSH session by
+typing exit. And then we can come back in the same
+way that we did before. So open in a new browser
+window. And we won't have to re-authenticate
+with Google this time. That was just a once and
+done thing. All right. And we are back on our
+SSH session. And what we're going to do is set
+up the most basic Caddy website possible. We're
+just going to set up a Docker Compose file. So,
+let's go make a directory called site. And
+we'll go into that directory. And there's
+nothing in here obviously, but let's make
+a file in there called docker-compose.yml.
+And in here, um, let's again paste this from my
+website. We are going to define a service. Uh,
+we're going to pull down the Caddy image and
+we're going to just call it caddy_demo. There
+is an underscore there. It's not really showing
+up that well. Um but we're going to expose ports
+um 80 and 443 which is HTTP and HTTPS. So to get
+out of here control X, capital Y, hit enter. And
+now we can do a docker compose up -d. Dash d
+is damon mode so it runs in the background.
+And that's going to go ahead and pull down that
+docker container and start it up. We can confirm
+that with docker compose ps to see the the list of
+processes. And um as you can see here it is up and
+running. So now at this point we are technically
+serving a website over the internet. And let's
+test that out. So let's minimize this. Uh we have
+this IP address. Not this one. Not internal. The
+external IP address um that we can go to in a
+web browser. And the reason this is happening,
+basically when you click on this link over here
+it's taking you to an HTTPS version of your
+website. And we don't have that enabled yet. So,
+let's make sure we're explicitly going to http:///
+the IP address. Hit enter. When you do that,
+you should see the default Caddy landing page.
+All right. So, this is cool and all, but it is uh
+not secure. And it doesn't have a domain name. So,
+at this point, what we want to do is associate a
+domain name that we own with this IP address. And
+if you don't have a domain name, go ahead
+and get one. There's a bunch of different
+places. I'll have something linked below for my
+recommendation. Um, I have uh my domain names,
+some of them registered with Netim right now and
+we're going to use this one for the demo today,
+loolanta.org. So, wherever you registered your
+domain name, go there. Find something regarding
+the DNS settings or the zone file. And we
+want to basically add uh DNS records. So,
+I can do that here by clicking in this button,
+create a new record. And what we want to do is
+add an A Record. The target is going to be the
+IP address of your virtual machine. So let's go
+ahead and copy that and then we'll go back to your
+domain name registrar and paste that in. And then
+we'll confirm. Okay. So now that IP address is
+associated with my domain name. This next one is
+optional. We can add another DNS A Record with the
+same target, but this time we want it to be from
+www.loolanta.org to our IP address. So, let's go
+ahead and create that one, too. All right, we got
+both of those. So, let's go back into our virtual
+machine. And the next thing we want to do is tell
+Caddy we have a domain name associated with our
+website. So, we can do that with a Caddyfile. So,
+um let's use nano, the text editor, to create
+a new file called Caddyfile. And then in here,
+you want to do something very similar to this.
+So, put your domain name here. And then in between
+the two curly brackets, what this is saying is
+basically the root of our website is going to be
+served from the /srv directory which is actually
+inside of our docker container. So let's also go
+ahead and configure that. But let's save this.
+Crl x, capital y, hit enter. And let's make a
+public directory here with mkdir public and then
+go into that directory and then use nano to make
+a index.html file. I'm going to paste in here um
+a very simple HTML structure. It has a title for
+the website as a Caddy Demo. It has some styling
+here, some CSS styling, a big header, one element,
+like comment, subscribe, a paragraph, and then a
+link. So, let's see what that looks like on the
+web browser. So, we'll save that. Crl X, capital
+Y, hit enter. And the last thing we want to do is
+modify our. Let's go back a directory. We want to
+modify our Docker Compose file. So let's open up
+uh that file again with nano. And at the bottom
+we want to add a section here for volumes. So
+basically what this is doing is mapping that srv
+directory to the public directory where we just
+created the index.html file. And same thing uh
+for the the Caddyfile. We want to map that into
+the docker container. So um let's go ahead and
+save that. And now what we can do is restart our
+docker container to reflect those changes. So we
+can do docker compose down and then docker compose
+up -d like we did in the beginning. And it looks
+like everything came up just fine. So let's go
+ahead and minimize this. And now instead of going
+to our IP address, let's go to our domain name. So
+loolanta.org in my case. And we can explicitly
+specify https. Hit enter. All right. And there
+you have it. We have our website hosted on a cloud
+virtual machine, loaded from that index.html file
+with our styled header one element, a paragraph
+and a link here which actually takes you to my
+website where you can find like I said all the uh
+configuration files and everything that you need
+to copy and paste so you can follow along step by
+step. Now, the one big problem with hosting a free
+website on Google Cloud, as I alluded to earlier,
+is the fact that it only gives you one gigabyte of
+outbound data transfer per month. So, let's say
+your website is 2 megabytes in size. That's only
+like 500 page views that you can have uh per
+month before you have to start paying, which
+I think it's 12 cents per gigabyte of additional
+traffic beyond the free tier. So, um, it's cheap,
+but you can see how that could get expensive
+pretty quickly if you have a very popular website.
+So, you can enable something like a CDN through
+Cloudflare that's completely free. You'll probably
+10x depending on your cache rate, you're 10x the
+amount of pages that you can serve. So, let's say
+5,000 pages per month on the free tier. Uh, but
+if that is still something that's very limiting
+to you, you expect to have more pages, page views
+than that, more visitors, um, I recommend that
+you check out this video next, which has, um,
+there's probably dozens of different ways that
+you can host a free website online. So, it'll go
+over some of that. And I do keep a up-to-date list
+on my website, which I recommend that you check
+that out as well. Everything's linked in the
+description or on my website. Thank you guys
+for watching. I'll see you in the next one.

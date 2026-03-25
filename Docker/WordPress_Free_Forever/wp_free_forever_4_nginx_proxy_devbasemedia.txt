@@ -1,0 +1,423 @@
+hey friends this is chris again last
+time i left you with a
+wordpress blog that we had redirected a
+domain name to
+however there are some issues with it
+for instance this domain is not secure
+and actually even you may have this
+issue as well even though
+i redirected a domain name to it
+i often will still get the ip address so
+we need to do a couple of things we need
+to fix that
+ip address thing and we need to add
+https to this website
+but before i can add https i need to do
+a little bit of extra work to prepare
+so what we're going to do is we're going
+to put an nginx proxy in front of this
+so before i go into that let's fix this
+quick little problem
+we have to go into the admin console for
+our site
+you may be presented with a login screen
+that's fine
+and if we go under settings and go to
+general you notice here
+there's a section for wordpress url and
+site address url
+so you should change these to match the
+actual domain that you set up
+so last videos i'd use devbasemedia.com
+i'm using a different one today
+that's fine because you're going to have
+a different domain name as well
+so i just set those go down and save the
+changes
+okay so now after saving the changes if
+i go to the website
+we should see that the domain is
+preserved so that's the first little
+change really easy
+the second change we need to make is we
+need to put an nginx
+reverse proxy in front of this first you
+might ask
+why why am i doing that the website
+works perfectly fine
+well ultimately we want to secure this
+website
+and it's easiest to secure it if we
+interact with
+nginx so you probably don't even know
+what i'm talking about let's draw a
+little diagram
+alright so if you think about the way
+things are set up today
+we know that wordpress is running inside
+docker and it's exposing itself on port
+80 which is the normal port for
+web traffic so if anyone comes along
+they
+will type in the domain name and
+ultimately they'll be directed to
+our wordpress instance running on port
+80. what we want to do is we want to put
+something in front of this
+that can intercept the the traffic from
+the internet
+and ensure that it's https secured
+so i'm going to fast forward a little
+bit you're going to get a nicer diagram
+okay so through the magic of video
+editing we've got an updated diagram
+and what we're going to have is we're
+going to put a piece in between
+so i've labeled this nginx now what is
+nginx
+it's a web server nginx has some
+additional functionality it can actually
+act as a reverse proxy that means that
+nginx can accept all your traffic from
+the internet
+and then it can redirect all traffic to
+something in behind
+okay so our goal really is that nginx
+should be accepting
+all traffic on port 80 for our domain
+then it's going to have to act as a
+proxy
+in front of our actual wordpress
+instance now problem number one
+we know that two things can't run on the
+same port right
+so nginx can't run an 80 wordpress can't
+run on 80.
+so we're going to do is we'll change
+wordpress to run on something like 8080
+okay and then what will happen is when
+we've done this
+nginx will be configured so that it
+knows that anything coming in for
+domain.com or whatever the domain is
+that we're working with
+will actually flow all of its traffic
+through to port 8080
+on our machine which is our wordpress
+instance
+so we're going to do this because
+ultimately we're going to change this so
+that it can accept also traffic on port
+443 which is the secure port
+but we need to set this up first so how
+do we do this
+well let's pop over to our google cloud
+platform
+and we need to ssh into our instance of
+course
+all right so we're inside the instance
+so we're going to look around again
+remember we have this wordpress docker
+compose directory
+if i go in there
+if you recall it's the
+dockercompose.yaml file that actually
+controls
+the way wordpress is configured so if i
+open that up
+you'll notice up at the top it
+specifically has
+this instance running on port 80. so the
+way this actually works in docker
+is we're exposing port 80 on our machine
+and that traffic is being directed to
+port 80 inside
+the docker container okay so wordpress
+runs on port
+80. it's assumed that wordpress is going
+to be exposed
+on the normal internet port what we can
+do
+is we can actually change this
+i'm saying is i want to expose port 8080
+on my physical machine
+and any traffic on port 8080 will direct
+to port 80 inside the docker container
+so if you don't know docker that well
+it's okay like you don't really need to
+understand the intimate details
+all you really need to know is we're
+going to change our wordpress instance
+so it's going to run on port 8080. so if
+i save that
+so this is a significant change to the
+way the docker containers are set up so
+what i'm going to do is i'm actually
+going to do a docker
+compose down what this will do is it
+will actually destroy
+the docker containers described in the
+docker compose file so the wordpress
+instance
+will disappear it's essentially
+uninstalled now don't worry your data
+doesn't disappear
+because if i look inside this directory
+i still have wp app
+wp data that stuff is the actual content
+of your wordpress blog
+but if i look at docker ps right now
+i'll see that i have
+no containers running because they're
+all they're all deleted
+if i do a docker compose up minus d
+everything will be recreated and what's
+going to happen is everything will mount
+on top of what was already there
+so it was already there was your
+existing blog but the difference is if i
+do a docker ps
+just to see what's running if i look at
+the wordpress instance right here
+you'll notice that it's it's telling me
+that it's exposing itself on port 8080
+like publicly and it's directing to port
+80 inside the docker container
+so we actually have this running on 8080
+right now if i were to go back
+and try to hit this instance
+it gives me an error of course that's
+trying the wrong port
+but this is trying we try the port 80
+port
+now you might think that you could just
+say port 8080 but when we set up this
+instance we only exposed a couple of
+ports out to the public internet port
+8080 was not exposed out to the public
+internet so
+right now this website's actually not
+accessible
+so i'm going to close that
+so we're in an interesting situation my
+website suddenly is not accessible what
+do i do
+well if i go back to my ssh
+instance i need to install first of all
+nginx so i do sudo
+apt apt install
+yes engine x
+okay so nginx is set up and
+nginx by default runs on port 80. so
+what happens if i go and hit
+my website so i'm going to open it in a
+new private window the reason i'm doing
+this
+is because i might have some old garbage
+cached in my web browser
+if i just go to the domain now
+you'll notice that it goes directly to
+an nginx welcome screen
+so we know that nginx is running on port
+80. and
+we've got this docker instance running
+in port 8080 and we can't access the
+docker instance on port 8080 how do we
+get to our wordpress instance
+all right so you're going to learn a
+little bit about nginx here
+so first of all where's all the nginx
+configuration
+if i go to etsy nginx
+and do a list you'll notice there's a
+directory called cough.d so you think oh
+that's where the configuration is
+but there's a couple of interesting
+website a couple of interesting
+directories here
+sites available sites enabled
+so we want to set up a site
+available to the internet okay that's
+going to pass
+it's going to actually pass through our
+nginx instance so if i go to sites
+available and look at the directory
+listing
+you notice there's a file in here called
+default i'll open it in vi
+so a lot of it's actually commented out
+but notice
+it's running on port 80. okay and
+actually even this here is somewhat
+interesting this route
+this is where the html screen that we
+see right here is stored
+if you want you could go and edit that
+but what we want to do is we want to
+make
+our new website available through nginx
+so what we need to do is we need to
+create a file
+inside sites available i'm going to say
+sudo vi again you can use
+whatever whatever editor you're most
+comfortable with vi
+is a little bit awkward to use but i'm
+used to it
+and you can name this whatever you like
+i'm going to name it www.nick
+www.nickindell.com.com
+because that is the website that i'm
+going to make available so i want it to
+be very clear what i'm doing
+okay so i've got an empty
+file here and what i need to do is i
+need to set up
+this this redirection okay so let's type
+some magic words so we're going to do a
+server configuration and we need to
+enclose these in curly braces
+and we can still say root is
+var www.html if we want
+we're going to listen on port 80.
+a lot of this is just boilerplate stuff
+i think this allows traffic in from
+anywhere
+to port 80 anywhere on the internet
+now here's the first important piece
+server name so i'm going to say
+nickindell.com
+okay so that's the domain we're going to
+use and we're also going to allow
+this
+so if i arrive at the server and i
+arrived at the server
+using one of these domain names this is
+the configuration that's actually going
+to be picked up okay
+i'm going to say starting from location
+forward slash which is starting at any
+request any url
+on nickindell.com
+again enclosed in curly braces what
+we're going to do
+is we're going to say proxy pass so
+we're going to pass
+all traffic through to http
+127.0.0.1 port
+8080. all right so
+as many of you may know 127001 is
+essentially localhost so it's saying
+if any traffic comes in for
+nicondell.com or www.nicondell.com on
+port 80
+we want to pass the traffic through to
+myself my own machine
+on port 8080 we know what's running on
+my own machine on port 8080 is that
+wordpress instance
+okay and we need to pass a few more
+things along okay
+okay so this is all the configuration
+really all we're doing here on these set
+headers is we're making sure that the
+header information from the request is
+passed along
+to our wordpress instance on 8080. of
+course
+i'll put all of this text into the the
+description of the video so
+you don't need to type it all out
+yourself and finally i'm going to save
+that
+if you had a problem saving it it might
+be because you didn't sudo
+because this file is protected by root
+i look so i now have nicondell.com.conf
+this is still only in the sites
+available directory
+we actually want to use sites enabled
+because we want to enable this so if i
+go into sites enabled
+so you notice what they have in here by
+default is
+this is actually a a link a symbolic
+link
+so like this default link is pointing
+at the default file that's insights
+available so we're going to do something
+similar okay
+you may not be too familiar with
+symbolic links but i'm going to
+essentially just create a pointer to
+another file
+so i'm going to say link ln symbolic so
+it's a symbolic link
+and first i need to say what i'm going
+to link to so it's going to be
+etsy nginx
+sites available www.nickendale.com.com
+and i will call it in this directory
+www.nickkindell.com.com
+i got a permission denied because of
+course
+sudo i need to do this as root
+okay now if i look at the directory
+listing again i have
+a new one and if i cut that out
+i see the contents there that's exactly
+what i typed
+now nginx needs to be restarted for this
+to take effect so i need to say
+sudo service nginx
+restart
+assuming all went well assuming i have
+no syntax errors in here
+it will pick that up and be happy with
+it so
+what happens now if i go to nicodell.com
+and look at that i actually have the
+contents of
+the blog so what's happening is the
+traffic is actually flowing through
+nginx
+and as we saw it's getting redirected to
+port 8080
+inside this machine now this is kind of
+interesting because it means i could
+actually run many different
+docker instances on this machine we have
+a wordpress instance here
+we can have something else entirely
+running on this machine and i could
+create
+additional domain configuration files
+and if i owned more than one domain
+i could say yeah yeah i have
+abc.com running on port 80 and i want
+you to redirect it to one two seven
+zero zero one maybe ninety ninety
+because i have another service running
+on this machine of course
+i don't have to be limited to stuff
+running on this machine if i had more
+than one machine
+available to me maybe i created more
+than one vm on google cloud
+i actually could have a single front
+door with my with engine x
+i could pull traffic through from other
+other places
+but for now this is set up correctly
+okay like
+this is a website that is working and
+it's working
+through engine x so that positions us
+for the next
+step and that is actually to add https
+to this website and that's the subject
+that we will consider in the next video
+thank you for watching i really
+appreciate your views
+[Music]
+oh

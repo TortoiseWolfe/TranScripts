@@ -1,0 +1,293 @@
+Self-Host the Right Way (Docker + Cloudflare Tunnels) - YouTube
+Tony Teaches Tech
+
+You can self-host a website at home or in the
+cloud, secured with SSL and make it publicly
+accessible without opening a single port on your
+firewall or router. And I'm going to show you how
+step-by-step even if you've never set up a server
+before. We'll launch a secure virtual private
+server running Ubuntu just $6 a month, but you
+could actually do it for free either on your own
+hardware or by using my DigitalOcean affiliate
+link below to get $200 in server credits,
+which earns me a commission and supports
+the channel. Then we'll install Docker,
+deploy our WordPress containers, and use
+Cloudflare Tunnels to provide a free CDN,
+firewall, and SSL certificate for our website. So,
+let's get started. I'll be using a cloud server to
+host WordPress to ensure 24/7 availability of my
+website. But if you're self-hosting at home, like
+on a Raspberry Pi, for example, you can definitely
+still follow along with just a few tweaks. So,
+go ahead and grab your free DigitalOcean credits.
+Like I said, I'm an affiliate for the company
+and I will earn a commission if you use my link.
+So, thank you for your support. And then meet me
+over in your DigitalOcean dashboard where we will
+set up our server. So, what we're going to do is
+click on create and then droplets. And now for the
+server, as far as the physical data center where
+it will reside, pick the region that's closest to
+you. I'll pick New York here. And then for the OS,
+we want Ubuntu 24.04 LTS, which is long-term
+support. And then for the droplet type, we want
+uh basic just for this demonstration. If you have
+more needs, you can always pick a general purpose
+or CPU optimized or one of these other type of
+dedicated CPU plans. And then for the CPU options,
+again, for this demonstration, I'll pick a regular
+$6 a month plan. So, scrolling on down here,
+we do want to set up an SSH key. You probably
+won't see this if this is your first time using
+DigitalOcean. So, what you want to do is click on
+new SSH key and follow these instructions here.
+And then once you have that, you can select
+your SSH key. It's just much stronger than
+a password. And the script that we're going to do
+next is uh highly dependent on having an SSH key.
+And uh to do that script, you want to go to
+advanced options. We will enable IPv6 uh which is
+a good thing to have for a website nowadays. And
+then the initialization script is what we want.
+And where it says enter user data here, we want to
+go to my website which is also linked below in the
+description and copy this cloud-init script right
+here. So let's do that. Copy. And then back here,
+let's paste that in. And basically what this is
+doing is: I have a whole video tutorial series
+on my channel about how to set up a VPS, how to
+secure it, how to prevent root from logging in,
+locking down SSH, firewall, all that good stuff.
+This does that. So you can either go ahead and
+watch all those videos, which I do encourage you
+to do. Uh but to bypass that, to automate it all,
+we're just going to use this cloud-init script.
+Um the only thing you're going to want to do here
+is change my username. Um, I'm going to create
+the user Tony. But you want to come through here
+and change all of these references to whatever
+username you want to have on your server. So, go
+ahead and do that. And then the last thing we want
+to do here, as far as the host name is concerned,
+I'd like to pick something short, something
+like WP for WordPress. And then we can go
+ahead and create our droplet. All right. So, our
+server is up and running at this IP address. So,
+let's go ahead and copy that. And now, if you're
+on uh Mac or Linux, you want to go ahead and
+open a terminal window. And if you're on Windows,
+you want to use a command prompt. And what we're
+going to do with that is use the SSH program
+to log into our server. So SSH, your username,
+in my case, Tony, at that IP address, and then
+we'll hit enter. And the first time you do this,
+it's going to ask about the authenticity of your
+host. Uh we do trust that connection. So type yes,
+hit enter. And if you do this quick enough like I
+just did, you'll see permission denied public key.
+That is because that cloud-init script is still
+running on your server. It's not finished setting
+up yet. So, let's just give it a minute or two
+and then we'll come back and try again. All right,
+let's try that again. So, we'll do SSH. And
+now we are logged into our remote server. So,
+the first thing I'm going to do just to make sure
+our cloud-init script worked is copy uh from my
+website again and paste this command in here to
+look at the log for that. And as long as you see
+at the very end Your server is configured and
+ready", things are probably working. So we can
+continue with the tutorial. Now just in case you
+are self-hosting at home, we want to make sure
+that we remove any type of Docker installation.
+We want to get the official uh Docker sh install
+script. So let's paste this command in here
+to remove all Docker instances. And then with
+a fresh clean slate, let's go ahead and use the
+curl command to download the get docker.sh script.
+And then we'll do a sudo sh get-docker.sh to
+install Docker and Docker Compose. Cool. So
+that has finished. We have Docker and Docker
+Compose installed. The next thing add Tony to
+the Docker group. Um so you don't have to type
+pseudo every time. Let's execute the usermod
+command. And then we'll do a sudo reboot uh just
+to make sure that those changes get applied. And
+when the server's back up and running, we can go
+ahead and log in via SSH yet again. All right,
+we're back on our server. So, let's go ahead and
+take care of installing WordPress and the database
+that goes along with that, which we're going
+to be using MariaDB. Uh, to do that, let's make
+a directory in here with MKDIR. And then you can
+call it whatever you want. I'm going to call mine
+uh just tonyswebsite. And then we'll go into
+that directory. And before we even make our
+Docker Compose file, let's create our environment
+file with all of our passwords just to keep those
+separate from the configuration file. So, uh,
+we'll use the nano text editor to create a file
+called .env to store those in. And, uh, again, you
+can get this from my website. Paste it in. Um, we
+need a database user password, a name, and a root
+password for the database. Please change these
+values to something that's more secure than what
+I have here, but for the sake of demonstration,
+um, I'll just keep those. So in order to save
+this, what we want to do is type Ctrl X, Capital
+Y. Hit Enter. And now that is saved onto our file
+system. Next thing we want to do is use the nano
+text editor to create our docker-compose.yml
+just like this. And then again from my website,
+let's go ahead and paste in the configuration
+file data which is going to look something like
+this. So under the services uh category, we have
+WordPress, which we're going to install the latest
+version of that. And then for the database,
+we want a MariaDB, latest version of that. Um,
+a couple other things, we're exposing port 8000.
+And all those values that we just created inside
+of our environment variable file. Uh, we can see
+those here. So, database user, database password,
+like I said, just so those aren't in plain text
+in our configuration file. And then we have a
+couple volumes for WordPress data and database
+data, which we do um have mapped here to the
+internal container. So that looks good. So we'll
+do a Ctrl X, Capital Y, Hit Enter. And as far as
+Docker is concerned, that's pretty much all the
+configuration that we have to do at this point.
+So we can do a docker compose up -d for daemon
+mode, which will run this in the background. And
+as you can see, it's pulling those images. All
+right, that's finished. And just to make sure
+everything is up and running, I always like to do
+a docker compose ps to see the list of processes.
+And as long as we see uh WordPress and WordPress
+database, both of those are up and running, we
+should be good to go. So, let's minimize this real
+quick. And again, grab your IP address. If you're
+running locally at home, if you're self-hosting
+at home, you're going to want to use localhost
+instead of your IP address. But what we can do is
+basically go to your IP address or localhost:8000.
+And we should see the WordPress installation
+page show up, which is great. At this point,
+do not proceed with installing WordPress
+because it'll install under the IP address.
+Let's go ahead and set up a Cloudflare tunnel
+first. So, let's actually get out of this and
+go over to your Cloudflare dashboard. If you
+don't have a Cloudflare account, it is free.
+And the reason we're using a Cloudflare is
+pretty much the crux of this tutorial, which is
+um it's not only giving us an SSL certificate, a
+CDN, and all that good bot protection, but also
+it's allowing us to publicly host this website
+from literally any device, a cloud server at home,
+Raspberry Pi, like I said, uh without exposing
+your public IP address. And the way we can do
+that is with a Cloudflare tunnel. So, step one, go
+ahead and get a domain name into Cloudflare. Super
+straightforward process. Uh, I'll probably have
+a video up about that soon, but it's like I said,
+straightforward. Get your domain name in here on
+your dashboard homepage. We're going to be using
+tonytravels.com. So, once you do that, then
+we can go ahead and go over here to the left
+hand side where it says zero trust. And then
+we'll click on networks. And then over here,
+click on manage tunnels. What we're interested
+in creating is a Cloudflared tunnel. So,
+let's click on add a tunnel and you can name
+it whatever you want. I'm going to do WordPress
+VPS. Save that tunnel. And then because Ubuntu is
+based on Debian, we're going to click on Debian
+here. And then, like it says, we want to install
+Cloudflared on our system. So, let's go ahead and
+copy that and go back into our terminal window and
+we can paste that in. Hit enter. Let that do its
+thing. All right, that's finished. And then, like
+it says down here, let's minimize this. After you
+install Cloudflare, we can install a service to
+automatically run the tunnel. So that's perfect.
+Let's go ahead and copy that and paste it in. All
+right. And yeah, you might have missed it, but
+down here below the connector does now say that we
+are connected. So what we can do now is click on
+next. And under the published applications tab,
+pick the domain name that you want to associate
+this with. Like I said, I'm going to be doing
+Tony Travels. There won't be a path for this,
+but for the service, we're going to do HTTP. But
+regardless of if you're self-hosting at home or
+if you're on a cloud VPS somewhere, for the URL,
+we want to do localhost:8000. And then finally,
+click on complete setup. All right. So, you
+can see I have a couple other tunnels here.
+More content on Cloudflare tunnels from me in
+the future. But let's go back in here. What I
+want to show you is exactly what's going to
+happen. So basically anytime somebody comes
+to tonytravels.com on the public internet, the
+Cloudflared daemon that we just installed is
+going to connect back to our server via localhost
+port 8000. We don't even have to make that HTTPS
+because it's going to be handled on Cloudflare
+side. We don't have to expose any ports. And
+basically what's going to happen is that website
+is going to load under this domain name. So we can
+actually try that right now. Let's open up a new
+tab and go to tonytravels.com. Hit enter and we
+get that same exact WordPress installation page.
+So, let's go ahead quickly go through this and
+then we'll install WordPress. All right, WordPress
+is installed. Let's go ahead and log in with those
+credentials. Hit login and there we go. This is
+our WordPress admin dashboard. We can see the
+public facing website here. I'm not going to go
+through WordPress setup in this tutorial. There's
+a lot of tutorials about that, including on my
+channel, so check those out. Uh, but one thing
+I do want to check in here is going to tools and
+then site health. Click on the info tab and then
+under WordPress we can see that we are running
+version 6.9. And then as so as far as the server
+is concerned we have PHP version 8.3.28. Now let's
+say that that version of PHP didn't work for us or
+if we wanted a different web server. We can go
+to a repository like hub.docker.com and find a
+version that works for us. So let's say that we
+wanted PHP version 8.4 with WordPress version
+6.9. Instead of using latest in our Docker Compose
+file, we can just copy this string and update PHP,
+which is so much easier than updating system
+packages. So let's actually do that right now.
+Uh let's open our terminal window back up.
+Nano docker compose. And instead of latest,
+we'll do 6.9-PHP 8.4. Ctrl X. Capital Y. Hit
+Enter. And then we'll do a docker compose up
+-d to pull that package. All right, that looks
+good. Let's minimize that. Go back to our site
+health page. Before we're using PHP version
+8.3.28. Let's refresh the page. Now we'll go
+to server. Now we got PHP version 8.4. So like I
+said, much easier. There is one last thing that
+we want to do. The cloud-init script in the
+beginning did open up port 8000 so we could
+see that across the internet. We don't need that
+open anymore. Let's leave SSH open. Let's close
+down port 8000 with this command right here: sudo
+ufw delete allow 8000/tcp. Hit Enter. And then to
+confirm that worked, we'll do a ufw status again.
+And now we only have port 22 accessible. Let's
+do one last check to make sure our website still
+loads even though no ports are open. And it does
+just fine. There's so much more you can do with
+Cloudflare tunnels and Docker. And believe me,
+I have a bunch of videos planned for both of those
+topics and more. So definitely subscribe to this
+channel. YouTube thinks you're going to like this
+video. Watch that next. I'll see you over there.

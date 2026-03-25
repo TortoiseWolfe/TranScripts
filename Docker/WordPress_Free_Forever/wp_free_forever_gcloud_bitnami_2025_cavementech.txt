@@ -1,0 +1,160 @@
+In this video, we are going to set up a
+WordPress site on Google Cloud with all
+certificates and related stuff that will
+be totally free for lifetime.
+For doing this, we need two things.
+First, a domain name. You can buy your
+own domain or if you already own a
+domain, you can make a subdomain for
+your site, which is what I will be doing
+today.
+If you buy a domain that is going to
+cost some bucks, but you can also have a
+free subdomain from several sites.
+Second thing is we need an account on
+Google Cloud. Google does provide free
+credits for you on new account setup,
+but we are interested in the free tier.
+The free tier gives us one
+non-premptable E2 microVM instance per
+month in one of the specific US regions,
+30 GB of standard persistent disk, and 1
+GBTE of outbound data transfer from
+North America.
+This limit is by time, not by instance.
+Each month, all of your E2 micro
+instances are free until you have used a
+number of hours equal to the total hours
+in the current month.
+So in short, you are only really going to
+be charged if you get a lot of visitors
+from China or Australia and even then it
+will be a very small amount.
+So let us get started.
+Okay, here I am in my Google Cloud
+Console.
+Click on compute engine.
+On the top you can see a search bar.
+Type in WordPress Bitnami. It is a
+preconfigured WordPress VM that we can
+use to fast deploy our VM.
+Your VM configuration will open. This
+page gives you all the details,
+but we are just going to click launch.
+Now we have to configure our deployment.
+This part is very important.
+First the deployment name. You can leave
+it as default.
+Next the zone. To stay in the free tier
+you must select a zone from one of the
+US regions that are included in the free
+tier.
+Now the most important part, machine
+type. By default, it is E2 small, which
+is not free. We must change this. Click
+on it and select the E2 micro instance.
+This is the one that is included in the
+always free tier.
+Next, boot disc. Set it to standard
+persistent disc with 25 GB space, which
+is perfect for us. and well within the
+30 GB free limit. Leave all the other
+firewall settings as default. It is
+already set to allow HTTP and HTTPS
+traffic.
+Now we just click deploy.
+And there we go. The deployment is
+finished.
+Here is our site external IP and the
+WordPress admin page link. We can also
+see the admin username and password.
+Let us use the given credentials and log
+to our site.
+And here we can see we have successfully
+logged in and we have the basic
+WordPress site functioning.
+Now we need to point our domain to the
+IP address. So that users visiting the
+domain will be pointed to the right
+server.
+Now I am in my DNS manager. I am using
+Cloudflare.
+We need to create an A record to point
+our domain to the server IP we just
+copied. I am going to add a new record.
+The type is A. The name is my subdomain.
+If you are using a main domain, you would
+just put at the IPv4 address is where I
+paste the external IP from Google Cloud.
+Now, this is critical if you are using
+Cloudflare. Make sure the proxy status
+is set to DNS only. That is the gray
+cloud. If this is proxied or orange, the
+SSL tool we are about to use will fail.
+We must set it to DNS only for now. We
+can turn the proxy on later.
+I am also going to add a second record
+for www just in case.
+If you use Cloudflare DNS, this
+propagates almost instantly. If you are
+using another registrar, you might have
+to wait a few minutes.
+All right, back in Google Cloud, let us
+go to our VM instances page.
+You can find it in the navigation menu
+under compute engine. Here is our
+instance.
+You will see a button labeled SSH. Click
+that.
+This will open a secure terminal
+directly in our browser. No special
+software needed.
+Once you are connected, we are going to
+run one command to set up our SSL
+certificate. The command is sudo
+/opt/bitnami/bncert-tool.
+This is the bitnami https configuration
+tool. It makes this process incredibly
+simple. Just follow the prompts. First,
+it asks for your domain list. Type both
+domains separated by a space. Hit enter.
+Next, enable http to https redirection.
+We absolutely want this. Type Y and hit
+enter.
+Next, enable nonwww
+to www redirection or www to nonwww.
+This is your choice.
+Finally, do you agree to the Let Encrypt
+subscriber agreement? Type Y and
+enter.
+Now, enter your email address. And
+that is it.
+Right now, the tool is automatically
+generating a free Let Encrypt SSL
+certificate.
+It is installing it in the Apache
+configuration. It is setting up
+autorenewal, so you never have to worry
+about it again. And it is handling those
+redirects we just chose.
+It will ask you to press enter to
+continue.
+And we are done.
+You can now close this SSH window.
+Okay. Moment of truth. Let us open a new
+tab and go to our new site.
+Make sure to use HTTPS.
+And look at that, it loads perfectly and
+we have the secure padlock. Our SSL is
+working.
+You have successfully set up a
+completely free secure WordPress site on
+Google Cloud. You can now go to admin
+panel and start building your site.
+So, that is the complete process.
+As you can see, it is pretty
+straightforward when you know the steps,
+especially using the Bitnami tool to
+handle the SSL and knowing where to find
+that password. Thanks for watching. I
+hope this demo was helpful.

@@ -1,0 +1,282 @@
+everyone Chris here again today I'm
+gonna talk about how you can get
+WordPress running for free basically
+forever on Google cloud platform and in
+addition to this I'm going to be showing
+off a little bit about docker because
+I'm gonna be doing it through docker
+using docker compose specifically
+basically because I don't really know
+how to set up WordPress and I don't
+really want to figure it out so that's
+the advantage of docker you can just run
+stuff and not know how they work so
+first of all let's talk about Google
+cloud platform you know it's a cloud
+platform similar to AWS one kind of
+interesting feature that stuck out to me
+was this always free usage limits you'll
+notice that it says you get one
+non-preemptive of1 micro VM instance per
+month in one of these regions so
+basically you can get an f-1 micro
+instance for free forever as long as
+it's in one of these regions now what is
+an f-1 micro instance well it's a
+laughably small instance it has one
+virtual CPU it only has about 600
+megabytes of RAM it's ridiculously small
+and it's not really appropriate for
+running WordPress but we can make it
+work so the idea here is we get
+something that works
+you get a nice WordPress blog going over
+time if it's successful you can grow the
+VM but it's a nice way to dip your toe
+into WordPress blogging without needing
+to commit any money so let's get started
+go to cloud google.com and you can set
+up a new Google cloud account I already
+have mine set up so I'm gonna go
+directly to the console the good news is
+when you get started you actually start
+with a like a three hundred dollar
+creditor or something for a full year so
+here we are I'm in my cloud platform
+you'll notice that I'm still in my free
+trial and what I'm going to do I think
+it's been so long since I've done this
+you do need to create a project when you
+first get going for me I can just go to
+the top here and click new project I'm
+not going to use this other project for
+this video and you can give it some name
+so I'm gonna call it WordPress
+for free and we will create this that's
+gonna take a little while but once the
+project is created you can go up and
+switch to the project okay now this
+project has nothing in it what we're
+gonna do is I'm going to go down and I'm
+going to go to compute engine and VM
+instances okay so I'm going to go ahead
+and create an instance and name it
+WordPress and we are going to create it
+in US central one now here's the trick
+by default this starts out as a one
+virtual CPU instance with 3.75 gigs of
+ram you'll notice that that would cost
+us normally $24 a month I'm going to go
+and flip it to a micro instance 0.6 gig
+of ram pretty pretty laughable it would
+cost 428 per month to run it but since
+this is if it's your first f1 micro
+instance it actually will cost nothing
+because the first 744 hours of usage are
+free you can do the math on that that's
+a full month now you got to choose what
+OS you're gonna run with this
+by default it gives you Debian Linux 9
+I'm gonna change this because this
+instance has so little RAM we need to be
+very careful with what's on it so there
+are these minimal Lube unto instances
+I'm gonna choose 1604 and I'm gonna
+select that and we'll open up HTTP and
+HTTPS traffic and we will create the
+instance okay so we have an instance in
+u.s. central 1 we can connect to it with
+this SSH link here and that will open a
+new window that will connect via SSH
+alright so to start with let's look at
+this image a little bit if I run top
+you'll notice that it's got very little
+ram free we're gonna have to do
+something with that so the way we can
+cheat is we actually can create a swap
+disk it's not a super great idea to run
+swap on a
+on a webhost but this instance is so
+small and initially the idea is your
+traffic will be low enough that it won't
+really matter too much if over time your
+blog does better you can grow your
+instance so to start with I'm going to
+create a Linux swap file the way to do
+that is with sudo eff allocate and we're
+gonna create a four gig swap file that
+that's an L by the way not a one and I'm
+gonna put it right on the root in a file
+called swap file ok so let's go and have
+a look there's my four gigabyte swap
+file so we need to use this as actual
+swap memory basically but first of all
+we need to change the permissions on
+this so I'm going to change it to 600 on
+swap file I do need to do sudo on that
+have another look at that and we'll see
+that readwrite only for root has this
+now and we need to tell the system that
+this actually is swap ok so I think what
+this does is it formats the contents of
+the file so that it is a swap file there
+we go so it actually set up swap space
+inside that file and we can turn it on
+swap on we're gonna use swap file ok now
+if I go top again now we see there is
+four gigs of swap space free so if I go
+over the very tiny amount of RAM that I
+have I will go in a swap and at least I
+won't crash the server now we want to
+make this change permanent so first of
+all I don't know if these micro
+instances have VI installed no so I'm
+gonna do a sudo apt install em
+okay so what I'm gonna do is I am going
+to open up the FS tab and basically what
+I'm gonna do is I'm going to make this
+swap file permanent for my system okay
+so I just need to add a new line at the
+end of this if you don't know how to use
+VI you can use any other editor I just
+happen to use VI okay so the magic words
+for this are swap file that's the file
+we're gonna use none swap SW 0 0
+basically it means I'm using forward
+slash swap file as a swap partition and
+I'm going to save that ok so that wrote
+up 2 FS tab if I want to be sure that
+this works the way I think it does I can
+exit and I can stop my VM and then
+restart it ok it's stopped and I'm now
+gonna start it again ok start it back up
+and I can reconnect by SSH ok and I'm
+back if I just run top will see that the
+swap space is still in place so we have
+an instance now that can do something
+however we want to run WordPress on this
+I said we were gonna run it with docker
+specifically docker compose we're gonna
+need to install docker on this machine
+so this is a very minimal machine if I
+type docker right now you'll see it's
+not installed so if we go to get docker
+calm there's a shell script here that
+the people at docker provide if I get
+this onto my machine then it should
+install docker so let's let's give that
+a try so ok so I'm going to do a curl on
+this and I'm gonna help put it to
+install docker dot SH ok
+I have installed our I need to change
+this so I can execute it to do 755
+uninstall docker and then I will do a
+sudo install docker ok now it also says
+during the install if you'd like to use
+docker as a non root user you should run
+this so sudo user mod docker so I'm
+basically I'm adding my user to the
+doctor group there we go ok so now if I
+run docker container LS for instance ok
+so I added my user but I need to logout
+and login ok let's try that again there
+we go
+so docker is working however I want to
+install docker compose as well ok so
+I've gone over to the docker compose
+documentation and you'll notice it says
+to run this command to download the
+current stable release of docker compose
+really similar to what we just did now
+I've been having some trouble pasting
+this into here so I'm just gonna type it
+out I did this before with Google Chrome
+and probably that's what makes the
+difference there I've typed it out ok so
+it downloaded docker compose and it put
+it in user local bin docker compose it
+does say that we need to do a siege mod
+on that guy we need to make it
+executable so that's fine
+okay and it does help to type chmod okay
+so now in theory I can run docker
+compose version
+okay so I have docker compose installed
+as well so we are all set up and we
+should be able to install WordPress on
+this thing now I forked a github
+repository from another guy who had
+figured out how to run WordPress inside
+docker compose so I'll put the link to
+my forked version in the description
+below this may continue to evolve a
+little bit as I tinker with it but we'll
+get that URL there oh and we need to
+install git as well so sudo apt install
+yes get and we'll try that again okay I
+can go into that so we have a docker
+compose yamo file this thing is set up
+to run on port 80 you'll notice right
+here we're exposing port 80 if you don't
+really know docker a docker compose it's
+not really necessary to be able to run
+this but let's let's actually run it so
+you run docker compose up and D is
+detached so we don't see logout quite as
+we're running it and what it will do is
+it will download the MySQL and the
+WordPress images from docker hub so here
+it's creating the docker containers so
+let's just have a look
+docker container LS we have two things
+up
+one thing is MySQL and one thing is
+WordPress so here's the advantage of
+docker I don't want to figure out how to
+set up an install MySQL I don't want to
+figure out how to set up an install
+WordPress but the advantage of docker is
+using a script like docker compose in
+this instance we can download container
+images of these two things it'll bring
+them up pre-configured to talk to each
+other so no mystery alright so now did
+this actually work well if we go back
+over to our compute engine you'll notice
+there's an external IP on here if we
+just
+go to the HTTP version of this so it's
+three five one eighty eight forty nine
+one so okay and hit enter now it may
+take a little while because WordPress
+needs to initialize the first time
+alright so I had some timeouts and I
+wasn't really sure what the issue was so
+what I ended up doing was I ended up
+restarting my instance I went over to
+the compute engine and I stopped my
+instance I started it again
+and then what I did was I went into my
+session and I did a docker compose start
+not up docker compose up creates a new
+instance so I did a docker compose start
+to start it up again seems like it
+needed some time to initialize once it
+was fully initialized I was able to hit
+the instance at the IP address so from
+here I mean I can just go ahead and
+create my WordPress instance no problem
+so this I could run it forever for free
+essentially as long as it's the only f1
+micro instance I have running now there
+are some issues I mean obviously we
+don't want to run it just on this IP
+address forever you're kind of probably
+going to want to bind it to a real
+domain name so that's what I'm going to
+show next is how to set this up against
+the real domain name thanks for watching
+and like or subscribe
+[Music]
+now
+[Music]
