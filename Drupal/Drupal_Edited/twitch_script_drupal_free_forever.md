@@ -1,7 +1,7 @@
 # Drupal CMS v2 Free Forever — Twitch Stream Script
 
 **Channel:** TurtleWolfe on Twitch
-**Format:** Live coding / tutorial stream (~45-60 min)
+**Format:** Live coding / tutorial stream (~60-75 min)
 **Prerequisite knowledge:** None (beginner-friendly, but Docker experience helps)
 **Real-world context:** Building the Eduity LLC website as a live example
 
@@ -45,6 +45,11 @@
 
 Same e2-micro as the WordPress tutorials, but we need a swap file because Drupal + MariaDB + PHP-FPM needs more than 1 GB RAM.
 
+> **Links:**
+> - [Google Cloud Console](https://console.cloud.google.com/)
+> - [GCP Always Free tier](https://cloud.google.com/free/docs/free-cloud-features#compute)
+> - [Tony Teaches Tech — Free GCP Hosting](https://www.youtube.com/watch?v=XNf3d1oi2pM)
+
 ```bash
 # GCP Always Free tier specs (2025-2026):
 # - e2-micro: 2 vCPU, 1 GB RAM
@@ -53,7 +58,7 @@ Same e2-micro as the WordPress tutorials, but we need a swap file because Drupal
 # - US regions only: us-central1, us-west1, us-east1
 ```
 
-**Create the VM** (same as Tony Teaches Tech GCP tutorial):
+**Create the VM** ([console.cloud.google.com](https://console.cloud.google.com/) → Compute Engine → Create Instance):
 
 1. Google Cloud Console → Compute Engine → Create Instance
 2. Region: **us-central1** (Iowa)
@@ -76,19 +81,26 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 
 ### Path B: Any Server + Cloudflare Tunnels (recommended)
 
+> **Links:**
+> - [Cloudflare Zero Trust Dashboard](https://one.dash.cloudflare.com/)
+> - [Tony Teaches Tech — Self-Host with Cloudflare Tunnels](https://www.youtube.com/watch?v=iPlUO9xu36c)
+> - [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free/)
+
 This is the better approach for Drupal. Works on:
 - A $6/month DigitalOcean/Hetzner VPS (2 GB RAM, comfortable)
-- Oracle Cloud free tier (4 CPU + 24 GB ARM — very generous)
+- [Oracle Cloud free tier](https://www.oracle.com/cloud/free/) (4 CPU + 24 GB ARM — very generous)
 - A Raspberry Pi at home
 - Your existing development machine
 
 > I'm going with Path B because my client Eduity already has a server with Portainer. But the Docker Compose file is identical either way.
+>
+> Either way, we have a deploy script that automates the whole thing — swap, Docker, firewall, the works. It's `scripts/deploy-gcp.sh` in the repo. Adapted from our WordPress deployment script.
 
 ---
 
 ## Part 3: Docker + Docker Compose Setup (~5 min)
 
-### Install Docker
+### Install Docker ([docs.docker.com/engine/install](https://docs.docker.com/engine/install/))
 
 ```bash
 # Works on any Ubuntu/Debian system
@@ -104,7 +116,9 @@ sudo usermod -aG docker $USER
 mkdir ~/drupal-site && cd ~/drupal-site
 ```
 
-We need two files: `.env` for secrets and `compose.yml` for the stack.
+We need two files: `.env` for secrets and `compose.yaml` for the stack.
+
+> **Note:** Docker Compose v2 uses `compose.yaml` as the default filename. The old `docker-compose.yml` still works but `compose.yaml` is the modern convention.
 
 ### Environment file
 
@@ -135,10 +149,16 @@ NGINX_VHOST_PRESET=drupal11
 
 ## Part 4: Docker Compose Stack (~15 min)
 
-### The compose.yml walkthrough
+> **Links:**
+> - [Wodby Docker4Drupal](https://github.com/wodby/docker4drupal)
+> - [Drupal CMS v2](https://www.drupal.org/project/drupal_cms)
+> - [Wodby Drupal CMS image](https://hub.docker.com/r/wodby/drupal-cms)
+> - [Docker Compose file reference](https://docs.docker.com/reference/compose-file/)
+
+### The compose.yaml baseline walkthrough
 
 ```bash
-nano compose.yml
+nano compose.yaml
 ```
 
 ```yaml
@@ -162,7 +182,7 @@ services:
       retries: 5
 
   php:
-    image: wodby/drupal-php:${PHP_TAG}
+    image: wodby/drupal-cms:${PHP_TAG}
     container_name: "${PROJECT_NAME}_php"
     depends_on:
       mariadb:
@@ -181,7 +201,7 @@ services:
 
   crond:
     init: true
-    image: wodby/drupal-php:${PHP_TAG}
+    image: wodby/drupal-cms:${PHP_TAG}
     container_name: "${PROJECT_NAME}_crond"
     environment:
       CRONTAB: "0 * * * * drush -r /var/www/html/web cron"
@@ -243,6 +263,88 @@ Open `http://your-server-ip:8080` in a browser. You'll see the Drupal installer:
 
 ---
 
+## Part 4b: Production Evolution — Chattanooga.Digital (~10 min)
+
+> That baseline works great for getting started. But for a real client project, we need persistence, backups, and reproducibility. Here's what our actual `compose.yaml` looks like for the Chattanooga.Digital / Eduity project.
+
+### What changed and why
+
+```yaml
+services:
+  mariadb:
+    image: wodby/mariadb:${MARIADB_TAG}         # Pinned: 11.4-3.34.5
+    volumes:
+      - drupal_db_data:/var/lib/mysql
+      # NEW: Database snapshot auto-restores on first boot (empty data dir)
+      - ./db-snapshot.sql.gz:/docker-entrypoint-initdb.d/01-snapshot.sql.gz:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]  # Simpler than baseline
+
+  php:
+    image: wodby/drupal-cms:${DRUPAL_CMS_TAG}    # Pinned: 2-1.3.5 (not drupal-php!)
+    volumes:
+      - drupal_codebase:/var/www/html
+      # NEW: Bind mounts for persistence and customization
+      - ./themes/byte_theme:/var/www/html/web/themes/contrib/byte_theme
+      - ./modules/byte_menu:/var/www/html/web/modules/custom/byte_menu
+      - ./files:/var/www/html/web/sites/default/files
+      - ./scripts/add-trusted-hosts.sh:/docker-entrypoint-init.d/30-trusted-hosts.sh:ro
+
+  crond:
+    image: wodby/drupal-cms:${DRUPAL_CMS_TAG}
+    environment:
+      CRONTAB: "0 * * * * drush -r /var/www/html/web cron\n0 3 * * 0 /usr/local/bin/backup-offsite.sh"
+    volumes:
+      # NEW: Backup script for weekly GitHub Releases upload
+      - ./scripts/backup-offsite.sh:/usr/local/bin/backup-offsite.sh:ro
+
+  nginx:
+    image: wodby/nginx:${NGINX_TAG}              # Pinned: 1.28-5.46.8
+    ports:
+      - "${DRUPAL_PORT:-8080}:80"
+
+volumes:
+  drupal_db_data:     # Database — survives 'down', wiped by 'down -v' (auto-restores)
+  drupal_codebase:    # Drupal code — survives 'down', wiped by 'down -v' (Wodby reprovisions)
+```
+
+> **Key differences from baseline:**
+>
+> 1. **`drupal-cms` image** instead of `drupal-php` — includes Composer, Drupal CMS recipes, everything pre-installed
+> 2. **DB snapshot auto-restore** — `db-snapshot.sql.gz` mounted to MariaDB's initdb. Destroy volumes? It rebuilds automatically
+> 3. **Theme bind mount** — edit theme files on host, reflected in container immediately. But Wodby overwrites on fresh boot! `start.sh` runs `git checkout` to restore
+> 4. **Files bind mount** — uploaded images persist in `./files/`, survives even `docker compose down -v`
+> 5. **Custom module bind mount** — `byte_menu` Twig extension lives in the repo, not inside the container
+> 6. **Weekly backup cron** — `backup-offsite.sh` dumps the DB and uploads to GitHub Releases every Sunday at 3 AM
+
+### The Makefile
+
+```bash
+make up          # ./scripts/start.sh (boot + restore + CSS rebuild)
+make down        # docker compose down (keep data)
+make destroy     # docker compose down -v (wipe + auto-restore from snapshot)
+make restart     # destroy + up
+make snapshot    # drush sql:dump + tar files/ (save current state)
+make backup      # manual DB backup to files/backups/
+make logs        # tail PHP logs
+make shell       # bash into PHP container
+make status      # docker compose ps
+```
+
+### Persistence model
+
+| Component | Survives `down`? | Survives `down -v`? | How? |
+|-----------|:---:|:---:|------|
+| Database | Yes | No → auto-restores | `db-snapshot.sql.gz` via initdb |
+| Uploaded files | Yes | Yes | `./files/` bind mount |
+| Theme | Yes | Yes | `./themes/byte_theme/` bind mount + `git checkout` |
+| Custom module | Yes | Yes | `./modules/byte_menu/` bind mount |
+| Drupal core | Yes | No → Wodby reprovisions | `drupal_codebase` volume |
+
+> Run `make destroy && make up` — your entire site comes back exactly as it was. That's the persistence model.
+
+---
+
 ## Part 5: Making It Public — Cloudflare Tunnels (~10 min)
 
 ### Why Cloudflare Tunnels?
@@ -255,7 +357,7 @@ Open `http://your-server-ip:8080` in a browser. You'll see the Drupal installer:
 
 ### Setup
 
-1. Create a free Cloudflare account at cloudflare.com
+1. Create a free Cloudflare account at [cloudflare.com](https://www.cloudflare.com/)
 2. Add your domain to Cloudflare (transfer nameservers)
 3. Go to **Zero Trust → Networks → Tunnels → Create a tunnel**
 4. Name it (e.g., "drupal-eduity")
@@ -292,24 +394,40 @@ sudo ufw status
 
 ---
 
-## Part 6: Quick Canvas Tour (~5 min)
+## Part 6: Chattanooga.Digital Canvas Tour (~5 min)
 
-> Now that we're live, let me show you what makes Drupal CMS v2 worth the extra setup.
+> Now let me show you the actual Eduity site we built. This is Chattanooga.Digital — the real client project.
 
-### Canvas page builder
+### What Byte recipe gives you out of the box
 
-- Navigate to **Content → Pages → New Page**
-- Drag and drop components: headings, text, images, accordions, hero blocks
-- Components are **Single Directory Components** (SDC) — real code, not shortcodes
-- Grid layouts: 50/50, 75/25, 100%, three-column
-- **Preview** actually works (unlike old Drupal)
+- **Hero billboard** with background image, overlay opacity, content positioning
+- **Service cards** — four cards linking to individual Canvas pages (Smart Planning, Job Mapping, Complete Stack, Chattanooga.Digital)
+- **Community Partners** section
+- **Testimonials** carousel
+- **Blog latest posts** — auto-populated from blog content type (Views block inside Canvas)
+- **CTA** with dual buttons
+- All dark theme, Tailwind CSS, mobile responsive
 
-### Content templates
+### What we added for the client (appended, not replaced)
 
-- Go to **Canvas → Templates**
-- Create a template for any content type
-- Map fields dynamically to components
-- This replaces the old "Manage Display" page
+- **"What is Eduity?"** — intro section with client's copy
+- **Digital Development** — side-by-side layout with SVG graph (automate → customize → innovate)
+- **Job Mapping** — expanded description with O*NET reference
+- **Smart Planning** — side-by-side with process diagram SVG + interactive accordion (3 steps with practices)
+- **Technology Leadership** — section with CTA
+- **Benefits** — 3 audience cards (Individuals, Companies, Regions) + 4 benefit cards with [Phosphor icons](https://phosphoricons.com/)
+- **"Who is Eduity?"** — company section
+
+### Anchor navigation
+
+- Menu has `Benefits` → `/#benefits` and `Company` → `/#company` — scroll to sections on the homepage
+- Existing page links (Services, Blog, About, Contact) still go to their own pages — nothing was removed
+
+### Contact form customization
+
+- Added "I would like to" radios: Get in Touch / Newsletter
+- Added "I am interested in" checkboxes: Chattanooga.Digital, Digital Development, Job Mapping, Smart Planning, Technology Leadership, Other
+- Existing fields (name, email, message, captcha) untouched
 
 ### Canvas AI (bonus)
 
@@ -322,25 +440,29 @@ sudo ufw status
 
 ## Part 7: Everyday Commands (~3 min)
 
-```bash
-# Check container status
-docker compose ps
+### With the Makefile
 
+```bash
+make up          # Start (auto-restores DB, theme, CSS)
+make down        # Stop (keep data)
+make destroy     # Stop + wipe volumes (auto-restores on next up)
+make snapshot    # Save current DB + files to committed snapshots
+make backup      # Manual DB backup to files/backups/
+make logs        # Tail PHP logs
+make shell       # Bash into PHP container
+make status      # Container health
+```
+
+### Direct Docker commands
+
+```bash
 # Run Drush commands
 docker compose exec php drush status
 docker compose exec php drush cr          # Clear cache
-docker compose exec php drush cim -y      # Import config
-docker compose exec php drush cex -y      # Export config
-docker compose exec php drush updb -y     # Run updates
+docker compose exec php drush uli --uri=http://localhost:8080  # Admin login link
 
 # Install a new module
 docker compose exec php composer require drupal/module_name
-
-# Database backup
-docker compose exec mariadb mysqldump -u root -p"$DB_ROOT_PASSWORD" drupal > backup-$(date +%Y%m%d).sql
-
-# Update container images
-docker compose pull && docker compose up -d
 
 # View logs
 docker compose logs -f php
@@ -349,7 +471,70 @@ docker compose logs -f nginx
 
 ---
 
-## Part 8: Cost Breakdown (~2 min)
+## Part 8: Programmatic Content with Drush (~5 min)
+
+> Canvas drag-and-drop works great for manual editing. But for automation — adding 50 components from a client's Word doc — we use Drush PHP scripts.
+
+### Why programmatic?
+
+- Canvas drag-and-drop via Playwright is unreliable (components miss drop zones)
+- Client sends content in ODT/DOCX — we need to batch-process it
+- Reproducible: `make destroy && make up` restores everything from the snapshot
+
+### The pattern: `scripts/build-homepage.php`
+
+```php
+// Load the existing page — don't replace, APPEND
+$page = \Drupal::entityTypeManager()->getStorage('canvas_page')->load(8);
+
+// Build a component
+$tree[] = [
+  'uuid' => \Drupal::service('uuid')->generate(),
+  'component_id' => 'sdc.byte_theme.section',
+  'component_version' => 'a917d5c9be8f2830',  // From canvas.component config
+  'inputs' => json_encode([...]),
+  'parent_uuid' => NULL,  // MUST be NULL for root items, not empty string!
+  'slot' => '',
+];
+
+// Append (not replace!)
+foreach ($tree as $item) {
+  $page->get('components')->appendItem($item);
+}
+$page->save();
+```
+
+### Key gotchas we learned
+
+- **`parent_uuid` must be NULL** for root components — empty string `""` bypasses PHP's `??` null coalescing and causes a 500 error
+- **Component versions are hashes**, not semver — query `canvas.component.sdc.byte_theme.*` config for `active_version`
+- **Text components require `text_size` and `text_color`** — they're mandatory even though the schema doesn't make it obvious
+- **SVG images need media entities** — create `file` + `media` (type: `svg_image`) entities, reference by media ID
+- **SVG text on dark themes** — change `fill="rgb(0,0,0)"` to white, add `object-contain` CSS to prevent clipping
+
+---
+
+## Part 9: Real-World Client Workflow (~5 min)
+
+> Here's how an actual client content update works, end to end.
+
+### The flow
+
+1. **Client emails** ODT file + SVG/PNG diagrams
+2. **Extract content** — Python to read ODT XML, copy images to `files/`
+3. **Create media entities** — `drush php:eval` to register SVGs as Drupal media
+4. **Write append script** — PHP that adds Canvas components after existing content
+5. **Fix for dark theme** — SVG black text → white, add `object-contain` CSS
+6. **Add menu links** — `menu_link_content` entities (additive, don't delete existing!)
+7. **Customize webform** — add interest-area checkboxes to contact form
+8. **Snapshot** — `make snapshot` saves DB + files
+9. **Verify persistence** — `make destroy && make up` — everything comes back
+
+> Total: 46 components appended, 2 menu links added, 2 form fields added, 2 SVGs fixed. Zero existing content touched.
+
+---
+
+## Part 10: Cost Breakdown (~2 min)
 
 | Item | WordPress (typical) | Drupal (typical) | This Setup |
 |------|---------------------|-------------------|------------|
@@ -367,7 +552,7 @@ docker compose logs -f nginx
 
 > So there it is — Drupal CMS v2 running with Canvas, Tailwind, and AI features, publicly accessible with full SSL, for basically free.
 >
-> The compose file and .env template are on my GitHub. Link in the chat.
+> The compose file and .env template are on my GitHub: [github.com/TortoiseWolfe/drupal-v2-sandbox](https://github.com/TortoiseWolfe/drupal-v2-sandbox). Link in the chat.
 >
 > Next stream: we'll customize the Mercury theme for Eduity's branding and build out their 7-page site live. That's the Chattanooga.Digital project — stay tuned.
 >
@@ -379,16 +564,21 @@ docker compose logs -f nginx
 
 This script synthesizes content from:
 
-| Source | Content Used |
-|--------|-------------|
-| DevbaseMedia (2018-19) | Original GCP free tier + Docker pattern |
-| CavemenTech (2025) | e2-micro specs, Bitnami comparison |
-| Tony Teaches Tech (2025-26) | Cloudflare Tunnels, Caddy auto-SSL, modern Docker patterns |
-| WebWash — Drupal CMS v2 + Canvas | Canvas UI, SDC components, Canvas AI |
-| WebWash — Drupal CMS v1 Install | DDEV, recipes, ECA automation |
-| WebWash — Tailwind Theme Setup | Custom Tailwind theme + SDC for Canvas |
-| Wodby docker4drupal | Compose patterns, health checks, Drush exec |
-| Eduity project engagement | Real-world 7-page site requirements |
+| Source | Content Used | Link |
+|--------|-------------|------|
+| DevbaseMedia (2018-19) | Original GCP free tier + Docker pattern | [YouTube playlist](https://www.youtube.com/watch?v=5YkkqjwRqN4) |
+| CavemenTech (2025) | e2-micro specs, Bitnami comparison | [YouTube](https://www.youtube.com/watch?v=oGxNMB6gFGY) |
+| Tony Teaches Tech (2025-26) | Cloudflare Tunnels, Caddy auto-SSL, Docker | [GCP video](https://www.youtube.com/watch?v=XNf3d1oi2pM) / [Tunnels video](https://www.youtube.com/watch?v=iPlUO9xu36c) |
+| WebWash — Drupal CMS v2 + Canvas | Canvas UI, SDC components, Canvas AI | [webwash.net](https://www.webwash.net/) |
+| WebWash — Drupal CMS v1 Install | DDEV, recipes, ECA automation | [webwash.net](https://www.webwash.net/) |
+| WebWash — Tailwind Theme Setup | Custom Tailwind theme + SDC for Canvas | [webwash.net](https://www.webwash.net/) |
+| Wodby docker4drupal | Compose patterns, health checks, Drush exec | [github.com/wodby/docker4drupal](https://github.com/wodby/docker4drupal) |
+| Eduity project engagement | Real-world 7-page site requirements | — |
+| TortoiseWolfe/GCP `boot.sh` | GCP VM bootstrap (swap, Docker, Secret Manager) | [github.com/TortoiseWolfe/GCP](https://github.com/TortoiseWolfe/GCP) |
+| TortoiseWolfe/wp-dev `enhanced-boot.sh` | Production deploy script | [github.com/TortoiseWolfe/wp-dev](https://github.com/TortoiseWolfe/wp-dev) |
+| Drupal CMS v2 | The CMS itself | [drupal.org/project/drupal_cms](https://www.drupal.org/project/drupal_cms) |
+| Cloudflare Zero Trust | Free tunnels + SSL + CDN | [one.dash.cloudflare.com](https://one.dash.cloudflare.com/) |
+| Chattanooga.Digital session (2026-03-25) | Programmatic Canvas content, SVG fixes, persistence model | [github.com/TortoiseWolfe/drupal-v2-sandbox](https://github.com/TortoiseWolfe/drupal-v2-sandbox) |
 
 All source transcripts available in the TranScripts repo:
 - `Docker/WordPress_Free_Forever/WFF_Edited/`
