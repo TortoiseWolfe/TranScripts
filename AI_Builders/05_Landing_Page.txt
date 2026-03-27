@@ -1,0 +1,343 @@
+landing page right here. And uh other
+things are we need to create certain
+components. Uh so those are uh navbar
+and hero. So inside of components I'm
+going to create uh more components. So
+new folder and I'm going to name them as
+landing. And inside of landing I'm going
+to create uh two components and a barrel
+export file. So inside of here let's
+name this as hero.tsx.
+So this is going to be the hero
+component and let's create uh navbar.tsx
+TSX
+RFCE
+export default number or are we
+exporting it default? No, we'll just
+export the function like this. Export
+uh function
+navbar and this has to be capital
+like this. And this is not going to be
+an error function. A simple function
+like this
+export function navbar like this import
+reactor or I think this is not needed
+importing of react now and we'll head
+over to the I'll going to copy this
+paste it and uh name this as hero right
+here and let's create a barrel export
+file. So I will create index.ts file and
+I'll import those components here and
+export it. So export
+n hero from hero and navbar from navbar.
+So what this will make is inside of here
+inside of our landing page we can import
+them very cleanly. So inside of this div
+we are going to have navbar
+and
+hero like this. And you can see that
+everything is cleaner. It's from landing
+not landing/h hero and landing/navbar.
+So that are the barrel exports. And
+let's give this a class name of relative
+min height of screen overflow hidden.
+Save this and let's head over to the
+browser and you can see it's removed. We
+have nav bar and hero. So let's create
+our navbar first or let's create hero
+component first. It's much it's much
+smaller and we don't have any logic in
+there. So let's do it. Just a minute.
+All right, let's head over to hero and
+inside of hero this is going to be
+having a class name of relative flex min
+height of screen then we'll also give it
+a flex of call item center justify
+center and padding x of six and inside
+of here goes our another div with a
+class name the class name is going to be
+pointer
+events none then absolute
+then insert of zero
+inside zero overflow hidden
+and again inside of this we'll again
+have absolute
+insert of zero
+background gradient
+background gradient to bottom and we
+don't need this.
+Okay, class can be written as linear but
+I don't want to write it for now. So
+from I'm going to give it a from color
+from is going to be # 1 A053
+then via
+hash
+0 F0 A2
+E and again we'll give it two with hash
+1 C 1 C 1 C like this. Let's head over
+to here. And we have this gradient.
+Awesome.
+Now, what next? Uh,
+this is a self closing div right here.
+Not this, this one. So, this is just for
+the gradient. So, this is a self-closing
+div. After this, what else? We again
+have one more self-closing div. So I
+guess there are so many self-closing
+divs. So it's just for the colors. So
+I'm going to copy them and paste it.
+I'll show you in a minute. Let's see the
+results. Okay, we have the gradient.
+Perfect. Now let me show you. View word.
+Okay, word is already there. Let me do
+it again. Yeah. So we type uh this div
+right here. Then we have this div.
+Then we have this div.
+Just copy all of them.
+Okay. Now after completing this div, I'm
+going to have another div with class
+name as relative and inside of this I'm
+also give it as z of 10 lex width of
+full.
+uh max width
+max width of 2 XL flex call
+item center and
+text center and again inside of this I'm
+going to use a link tag
+and uh the link tag is going to have an
+href
+of sign up sign
+up
+and we'll also give it a class name not
+like this
+class name equals to group margin bottom
+of 8 and inside of this link will go our
+batch component. So badge
+the link component. Okay, we need to
+import it. Batch and
+is it a self-closing tag? No, it's not.
+And this badge is going to have variant
+as
+secondary.
+Then I'll give this a class name.
+And uh I'm going to grab those class
+names
+gap two border border white or
+background white padding x of three
+padding y of 1.5 text small text white
+80 backdrop blur small transition colors
+duration 150 and when we hover change
+the background to 10. Now comes the HTML
+part. We will have two spans with just
+uh new introducing smarter experience
+something like this. So these are the
+two spans
+and I'm going to see this. Okay. New
+introducing a smarter experience. It's
+here. Perfect. Now what next?
+Link is complete. Then we'll have an
+headline. So after this badge and link,
+I'm going to have an H1 with build
+something
+lovable. And let's give it a class name
+of
+text 4 Excel
+font bold
+leading tight
+tracking right
+tracking tight. Sorry, no tracking idea.
+And text of white.
+When it's small, then text of 5 XL.
+And when it's medium, we'll give it a
+text of 6 XL.
+Perfect. Let's see it in action. Build
+something levelable. Good. Now, we need
+to have that input card.
+So let's do it.
+So after this H1, I'm going to have an P
+tag that just tells
+read apps and websites by chatting with
+AI this thing. And after this, I'm going
+to have another div with class name as
+margin top of 10
+width of full not fit width of full. And
+again inside of this goes a link tag.
+Whenever we click on this uh we need to
+head over to sign up. So link
+and uh href is sign up last name is
+just block not all of this extraordinary
+classes. We'll just use block. And let's
+end this link.
+And inside of this link, let's have our
+div which will have everything. So I'm
+just going to grab those UI
+inside of this link tag. We'll have
+this. We need to import icons first.
+I'll show you the code just a minute.
+Okay, we copied
+this thing right here.
+So a div again a P and some icons and
+the plan and everything just uh visual
+thing nothing logical
+done now I'll head over to this uh app
+and you can see this it's here
+it's still not Perfect.
+I'm not sure why. I guess because we
+might have missed
+a div.
+Okay, so instead of this div, this is a
+section first, not a div.
+And
+did I made uh make mistake in something
+else?
+I gave it a max width of 2 Excel but
+there's an error here. Save it and
+refresh it. Okay, max. Okay, this is max
+width of 2 XL like this. Perfect. So,
+it's looking perfect now. When we click
+over this, it should take us to signup
+page and it's redirecting us to here. If
+we head over to sign up,
+it's redirecting here here. If we head
+over to dashboard. Okay,
+because we are already logged in that's
+why.
+Perfect. So this is done. Now let's do
+the navbar. So navbar is not complex but
+inside of navbar we also need to have
+the clogged signed in and signed out
+components. It's pretty small component.
+So let's get it over with. Instead of
+this, I'm going to have
+header. Instead of header, let's give it
+a class name of fixed,
+top of zero,
+then z of 50, and width of full. Now
+again inside of this, we'll use a nav
+component.
+We'll give a class name of MX auto legs
+height of 16
+max width of 6 XL
+item center
+gap of two
+text large
+then what else okay it's not here so MX
+auto 16 max width of 6 XL I center and
+we need
+justify center and uh padding x of six
+like this. And now inside of this I'm
+going to have the link with our logo. So
+logo.svg
+was already imported and I showed you
+this thing not this thing.
+Okay, logo is something different and we
+don't have it. So let me check.
+Okay. So logo.svg is same as icon.svg.
+So I can do one thing. I'm going to copy
+this
+uh and inside of public directory
+we'll
+paste it. And let's rename this to logo.
+SVG. And uh it should be here. And we
+need to import the link from next link.
+Next up, let's see the output loable
+clone. Perfect. We need to have the
+navbar now. Other things of the navbar.
+After the link, we are going to have
+another div
+item center gap of three. Again, inside
+of this, we are going to use signed out
+and uh signed in button. So those are
+components from cloak. So
+paste it. Need to import signed out.
+Okay. need to import it manually. So
+input
+find and
+out
+from clock next JS is it send out
+look next and this is
+in
+and
+out.
+I'm able to see that there's no exported
+member.
+Let's import the button from UI button
+as well. We'll fix this in a minute.
+This should be there. Let's head over to
+node modules. You would haven't deep
+dived into node modules, right? So,
+let's find clock from here. Clock then
+nextjs and inside of this we have test
+types and we need to find index.d.ts.
+TS.
+Okay. Strange. We don't have the uh sign
+in and send out button here.
+That is very strange. So, let's do one
+thing. I'm going to
+find it in here.
+I cannot find it in here. But
+need to see if the uh if this has been
+changed and if we are using a different
+version. So let's head over to
+package.json
+and
+block next.js. Okay. So currently I'm
+using the 7th version and for the app I
+have used 6.37.4.
+So I'm just going to change this to
+6.37.4.
+Save it. And uh
+I'm going to open up
+the terminal
+head and go to the front end app. Stop
+it. And I'll just write npm install.
+Okay, added three packages. Let's write
+npm rundev now. Should work now. Yeah,
+it is here.
+We need to take care of versions as
+well.
+And inside of the navbar, what did we
+do? We take this signed out button. If
+we are signed out, then we need to show
+login and get started. And if we are
+already signed in, then we'll show the
+dashboard button. So for now, dashboard
+would be for us dashboard would be
+visible.
+All right, it's here. But
+width full is not applying fixed. Then
+top of zero, zed of 50, and width of
+full.
+This is perfect. But I guess we might
+have to change something inside of the
+layout.
+Marketing layout. Or
+did I miss something here?
+Let's give this uh background number
+200.
+It's perfect. The width is full. So I
+might have missed something in the class
+names.
+I would have Yeah, instead of justify
+center, we need justify between.
+Perfect. Let's remove this.
+And yeah, we have our landing page
+ready.
+And
+if we head over here again
+dashboard if we logged out if we would
+have logged out then sign in and login
+page would be uh sign in and login
+button would would be there. So our
+landing page is also complete now. Now
+next up is let's create the dashboard
+here with all the crud of creating
+projects and everything. So let's do
+that.
+Okay, so now we are at chapter four and
+chapter four is about creating the
+dashboard, the crud of dashboard,
+creating the sidebar, the layout and
+everything. So first thing first, I'm
+going to close all of this and inside of
+app inside of this app we have the

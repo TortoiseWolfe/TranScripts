@@ -1,0 +1,230 @@
+this is the preview panel we are just
+passing the div so instead of that let's
+create the preview panel component so uh
+what should I do is inside of editor I'm
+going to create this preview
+iPhone panel dot tsx and this is going
+to be a client component and inside off
+here. First, let's write export
+interface
+preview panel props. It's going to have
+files as record string string and on
+error
+on error
+uh error which is going to have message
+of string and the return type is void.
+That's it. And now after this uh we need
+to create a function that extracts the
+dependencies. So we already had created
+this in back end but let me paste it
+here. Extract dependencies. So this is
+going to be base dependencies. React
+react then we will have package JSON
+content. Uh then we'll return if there
+is no package JSON content then we'll
+return base dependencies. We get
+package.json content from files of
+package.json. We parse all of this and
+we return base dependencies with pass
+dependencies and we return it. So that
+is just the extract dependencies and
+then we need a function to uh convert
+all of this file to send back uh files
+which is we just need to uh remove the
+trailing slashes. So we already did this
+uh inside of our page.tsx2 tsx to send
+sand back files somewhere. Uh we did
+this. So let me search to send back
+files. Okay, it's in project preview.
+Project preview.
+Okay. Yeah, we did this in in the uh
+that and we also did this file. So let's
+grab this from here. And we also have
+extract dependencies from here. So
+preview panel I'm going to paste this to
+send pack files after this uh
+what else? Uh let's create an error
+listener. So error listener is just if
+there's any error while compilation of
+project it just returns us this. So on
+error we use use sandpack from uh
+sandbox react
+and uh we get uh sandpack as listen from
+that use ref and last ref. And then we
+have this use call back hook which would
+just uh uh
+did I did something wrong
+Okay. So after error listener we have
+this use effect. It would just run
+when we have an error and it would call
+the handle error function. And after
+this, let's close this. And after this,
+we need to uh uh subscribe to the error
+by subscribing to the hand uh error
+message error message bus. So
+use effect. we have this unsubscribe
+function. We uh
+just uh
+listen using this function. So we listen
+if there is an error. So if sandbox has
+any error, it throws it and we listen
+via this and this would be called
+uh and uh it would be called via use
+effect dependencies and we handle the
+error from that. And after this we'll
+just return null
+like this.
+And now we also have a batch of lovable
+batch on the sandpack. So this is a very
+simple uh component lovable batch which
+would have
+used state and uh uh a tag. So a tag
+would just uh let head us to slash uh a
+uh slash of our apps or dashboard. So
+that and we have uh the image with built
+with clubable something like that. And
+now let's uh have our entire component.
+So inside of this export function
+preview panel and
+let's return from here a div
+like this and in here first we get the
+sandpack files. So sandpack files is
+equals to two sandpack files and we get
+the dependencies with extract
+dependencies. And this div is going to
+have class name sendpack stretch
+str
+and then we'll give it a height of full.
+Height of full width of full and inside
+of here we'll have sandpack
+provider.
+And this might be no this not a
+self-closing tag. And now the template
+for the sandpack provider is reacts.
+And if we head over to project preview,
+we might have used sandpack provider
+here. And let's grab all of this from
+here.
+And let's paste it here. So I don't have
+to write it. Template then theme files
+options and custom setup of
+dependencies. Done. And now uh whenever
+we have error so on error then we uh
+show the error listener
+this thing and after that we have send
+pack layout and send pack layout is
+going to have sendpack preview. This is
+self-closing. So send pack layout is
+going to have style
+style as height 100%.
+height
+100%.
+Border as none,
+border and border radius zero like this.
+And
+now sandpack preview is going to have
+okay I need to import sandpack layout
+and sandpack preview is going to have
+show navigator show refresh button then
+show open in quotes and box as false and
+actions button
+actions children. Okay, actions
+children. This is going to be lovable
+batch.
+And then we'll have style
+style not style tag style prop
+as height
+of 100%.
+Like this. And our preview panel
+component is done. Now what next? Uh
+let's get this preview panel on the
+page.tsx. So inside of this page dot tsx
+uh let's uh import uh the preview panel
+dynamically. So at the top
+after this I'm going to
+import the preview panel also. We need
+to import dynamic. We import from
+preview panel and we need to have the
+preview skeleton. So preview skeleton I
+guess that is already completed or not.
+No it's not done. So I'll just create
+that component inside of editor and
+review
+skeleton.tsx. So this is a skeleton
+component. This is that component. We
+don't do anything react here. We just
+have some JSX. We input the skeleton
+component and show it. That's it. And
+now let's import the preview skeleton.
+That is done. And now let's use this
+preview panel inside of our component.
+So let's do that. And uh
+we also need to have the handle send
+back error thing. So
+um
+handle sandpack error. So if we go to
+the preview panel
+files and on error okay we need to pass
+that.
+Let's head over to our page.tsx and at
+the bottom where we have written just
+the preview panel
+let's use our preview panel component
+here just a minute.
+So
+preview panel and we give it files and
+instead of onload we'll give it on error
+and in here we'll just have that uh
+pending
+handle send back error function which is
+for autoheal. So we'll do that
+afterwards.
+So that is done. Now let's refresh it.
+It's not loading my projects. What
+happened if I open up my dashboard
+terminal?
+This is working.
+It's getting failed. Let's restart this
+npx worker dev.
+And if I refresh it,
+still not working. If I inspect it, head
+over to network.
+Yeah, it's here. And now you can see
+that preview. Can you see that social
+media app? And if I click on here, you
+can also see the sandpack preview. So
+that is working. So this is also done.
+Now we need to work on the autoheal
+feature uh so that whenever we have an
+error it would be fixed automatically.
+So let's work on that autoheal feature
+or uh let's work on it afterwards. First
+let's grab the other modules which is
+when we click on this let's show the
+code editor panel. So let's do that. So
+we can also toggle the size from here.
+This is also complete.
+And when I click on this uh preview
+spending, we'll do that now.
+Okay, let's refresh it.
+And yeah, it's here now. Also, let's try
+to update it. Uh
+make the theme dark.
+And uh this auto scroll to bottom is not
+working. We need to fix that as well.
+Perfect. So this uh dark theme is also
+complete and this is working. So this
+live preview section is entirely
+complete. Now let's work on the code
+editor and then we'll polish the app
+more. Uh after the code editor, we also
+need to work on the history panel, the
+uh SAS module which is clerk billing. So
+let's do that.
+Okay. So now let's work on the code
+editor. So first thing I'm going to
+close all of this files and uh next up
+uh what I want to do is let's create the
+components that are needed. So first I'm
+not sure if we have created the code
+editor panel. No. So let's create that.

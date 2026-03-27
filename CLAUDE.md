@@ -140,6 +140,8 @@ Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
     └── WFF_Edited/     # Cleaned transcripts (DevbaseMedia, CavemenTech, Tony Teaches Tech)
 Drupal/                 # Raw transcripts (5 WebWash Drupal CMS/Canvas tutorials)
 └── Drupal_Edited/      # Cleaned transcripts (5 files) + system prompt
+AI_Builders/            # Raw transcripts (14 chapters, Kishan Sheth Lovable clone tutorial)
+└── AI_Builders_Edited/ # Cleaned transcripts (14 files)
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
 ```

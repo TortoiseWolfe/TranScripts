@@ -1,0 +1,908 @@
+prompt.ts.
+So I'm going to paste in the code. So
+what exactly this file will do is it has
+the exact prompt of the system where uh
+what we send uh to the AI. So just let
+me down that we need this file. So I
+need to give you this
+Okay. So what we are doing here is first
+we are importing the type of project
+file and then we have this base system
+prompt. So in here we are telling uh uh
+to the AI agent that you are an expert
+react typescript developer. you know uh
+typescript CSS and you are working on
+react project
+then we are telling uh it to return as
+react components and how the output
+format should be so we need the format
+in XML style tags not in markdown fences
+like this we are telling AI that we
+don't need code like this we need in XML
+format so XML would be this file tag and
+end of file tag And the file tag would
+have the path as the path of the file
+and then the actual code. So AI should
+return code like this not like this.
+Then some rules of the file tag. Then we
+are uh giving it a text stack of react
+in with typescript uh tailwind CSS
+functional components with hooks uh
+default exports and things like that.
+Then what about the code quality and
+token efficiency? Then styling
+guidelines how it the application should
+be styled and the app completeness. Then
+we also need realistic mock data inside
+of the application. So we are telling it
+to never use placeholder products like
+product one item one lower or something
+like that. It should design the mock
+data and return us that so it looks
+realistic. So uh we are also giving it
+the data type pattern like we need
+something like this and something like
+this and with that we also need images.
+We don't need uh uh empty components. We
+need images. So you can get the images
+from placeholder images from pix photos.
+Uh then it can get the avatars from
+here. It can uh get some fallback images
+from here. So that is for that. Then it
+we are also giving it design patterns.
+You can add uh any more patterns that
+you want to add from here. Then uh
+dependencies. So dependencies we need
+telling that for icons always use lucid
+react react router DOM for routing
+recharts for dashboards and analytic
+analytics with th those charts and
+graph. And to manipulate date use date
+FNS and for animations use framework
+motion. So this should be injected
+inside package.json file if uh the
+dependencies like that. And if you have
+any other UI uh guidelines like we are
+using shaden components inside of this.
+If you have any other requirements like
+you want to use material UI then you can
+just add in here that use material UI
+for UI and change the uh design patterns
+according to material UI and it would
+generate like that. So uh easy stuff
+then iteration rules like uh uh when
+modifying an existing project we don't
+need to reoutput the files that are not
+changed. We only need the files that has
+been changed. So something like that.
+Then the package.json rules like uh uh
+how the dependency should be added in
+here uh like in the dev dependencies and
+dependencies like that.
+Then after that
+we have this format existing files
+context. So uh this is useful to give
+the existing file patterns. So now we'll
+get all the files in here. So it could
+be 10 files, 20 files. And what we'll do
+is we'll get the uh file. We have the
+file path and file content inside of
+that. So we create the XML tag again
+like file path with file path and then
+we give it a file content and then we
+have uh this entire file blocks. And now
+uh we tell AI uh whenever we want to uh
+reiterate on this that return this and
+this is an existing project and all of
+this files in this tag this new existing
+files XML tag all of the files are
+existing only output the files that are
+changed do not reoutput the files that
+are not changed. So we are telling that
+into our prompt. So that is that then
+for building the system prompt we are
+having this function of build system
+prompt.
+Then uh we uh use our format existing
+file context into this and return the
+base prompt plus file context for this.
+Then message pass. So this is for how
+much old messages we want to send. So uh
+we are sending the old messages of the
+user as well to remember to let the AI
+remember like what we have exactly chat
+with AI. So this is for that and uh this
+is for summary length. Then this is
+prepared chat history. So get the recent
+chat messages and the message rule
+should be assistant and return all of
+those messages. So that is that that is
+the system prompt file and I'm going to
+save this and then next up what we need
+is the file parser. So uh this is for uh
+telling the AI to get us output like
+that. Now the AI would get us the output
+but we need to parse all of that uh
+things. So in here I am going to create
+a new file name as file
+parser.ts
+and I'm going to fetch my code again.
+Paste it. I'll write it down so that you
+can have it.
+All right. So
+let me explain this file. Now we are
+getting the project uh uh file type from
+projects. Then uh the type uh file type
+uh tag reax. So this is this file path.
+So how should uh the reax should match
+it. So we are having the reax like that.
+We I have given breakdown of the reax
+like that. Like this is the opening tag.
+This is the closing tag with new line.
+Then capture group one the file path.
+Capture group two file content. And uh
+this is the closing tag.
+Then uh this G uh is for matching all
+this responses.
+Then strip markdown fences. So uh we
+tell AI exactly like do not use dot uh
+slash this tild icon uh for the AI
+responses but many models uh still do
+return that so we are uh having this for
+backup like if it does return content
+like that then we just strip those again
+for uh if if it it returns like that
+then
+yeah now we need to parse files from
+response. So we have this files array
+then we get the file type reax then uh
+uh we match every reax here. If it
+matches then only go inside of this we
+get the path of the match and we get the
+content of it and we stripe the markdown
+fences from the content store it uh
+restore it in the content again. Then we
+also validate if the file path is valid.
+So this function would be below here. So
+we are just checking that uh the file
+path is perfect
+or else we are returning. So this is the
+function for that explanation is here
+and uh then we are pushing the files
+into the files array and we are just
+returning the files. So this component
+uh this function does that and after
+that we have this merge file. So this
+merge file function is useful when we
+are reprompting things and we have
+existing project files and we just want
+to uh have the files that are changed
+and preserve the old existing files. So
+this function uses the map data
+structure and does all of that. So that
+this is for that and uh this function
+extract explanation. So this is for
+extracting the EI response explanation
+like not the code but EIO is also going
+to response with some text with
+explanation and stuff like that. So we
+are extracting that explanation using
+this uh uh extract explanation function.
+So this is for that. I'm going to save
+it. And what next? Then I guess we need
+to install the versal AI SDK. So
+what we are using here is the versal AI
+SDK package
+this one. So this is like an OM for AI.
+So what that means is we write a single
+uh code for
+uh
+like uh for a model and uh whatever
+model in future we want to use or inside
+of our application here it would
+automatically uh use that uh thing. So
+our code is uh automatically rewritten
+uh inside. So for that we are using the
+Warsel AI SDK. So uh that is that now
+just a minute.
+I'll grab the packages that we need to
+install.
+So uh if you want to add anything other
+than that you can uh just check the docs
+and it also has this streaming here
+streaming uh UI thing that uh it's
+provided like uh inside of our
+application we are not using the
+streaming UI we are using our own
+serverside event so we could also had
+use this thing uh from versel but for
+compatibility ility with hono and uh
+more customizations like sending images
+and everything uh to the chat we are
+doing this but we could have used it
+there's uh workarounds for using this as
+well but for me to explain uh I I used
+this for explaining to you the
+serverside events what it is and how it
+can be useful so I have done that so now
+let's install the packages that we are
+going to use.
+Just a minute. Uh,
+I'll head over to my VS Code. I'll open
+up the terminal
+inside of the worker directory right
+here. Yeah, we also have this worker.
+I'm going to paste this inside of worker
+or
+Yeah, inside of worker. Yeah. So, we
+need the AI package. So, this is the
+main AI package. Then we need the AI SDK
+for Enthropic, OpenAI, Google, Deepseek.
+So whatever model you want to use, you
+just have to add it. Like if you don't
+want to uh have support for anthropic
+and Google, you just want to have OpenAI
+or DeepSeek or if you want any other
+model like uh
+where can I
+find the providers? Yeah, provider
+options.
+They are given for OpenAI anthropic. You
+can get the other
+provider specific documentations.
+There was something
+fromwhere. I picked it up.
+Yeah, this is the AIS SDK provider. So,
+it has support for all of the AIS out
+there like most of the things like XAI,
+GRO providers, we have Deep Seek and
+other things as well. It also has
+provider for 11 Labs. So, we you could
+use anything any provider from here and
+just uh use it in your project. So we
+are using all of these. I'm going to
+install all the packages.
+Done. Now I'm going to write npx worker
+dev to start my worker locally. uh
+didn't was not able to find the
+I'll just minute
+npx worker dev.
+Let's fix this error afterwards. Like we
+don't need to run it now. Let's let's
+work on the other code first and then
+I'll fix it or else let me just fix it
+first. Just give me a minute.
+Okay. So, I've got the issue. The issue
+was just we are using the wrong command.
+It's not npx worker dev. It's npx
+wrangler dev
+like this and it would work.
+All right, it just worked. So now our
+uh
+just a minute at what phase we were.
+Yeah, we just installed the SDKs
+uh different SDKs and uh now we want
+have to do one more thing. We have to
+just a minute. I'll open the exact
+property.
+We also need to add uh compatibility
+flags inside of the wrangler JSON. So
+inside of wrangler JSON
+after the compatibility date right here
+I'm going to add this compatibility flag
+and we need to add this NodeJS compact.
+So this is because
+uh uh we need uh NodeJS compact because
+uh the universal AI SDK uses some NodeJS
+APIs internally like crypto for request
+signing and uh cloudfare workers need
+this flag to provide those APIs. So uh
+we are doing this because of that. And
+I'm going to restart my worker. And
+inside of my API client,
+I am going to
+copy this route from here. And let's
+head over to env.lo.
+I'm going to comment out this and paste
+that route for here. So that we use the
+HTTP localhost version, not the deployed
+version. So I'm just for testing I'm
+using that. Now next up is we need to
+set up that multimodel support uh the
+provider thing. So let's do that. So for
+that inside of
+AI
+right here I'm going to create a new
+folder named as
+row Y.
+Inside of that I'm going to create
+index.ts.
+And now inside of this let's create the
+uh uh provider details and everything.
+So uh first we need an interface named
+as model config. So this is the name of
+the provider, display name, API model
+ID, credit cost, tier of the model, is
+it fast or premium, speed of the model,
+quality description if it supports
+visions and max output tokens. So this
+is that and now then we have this uh
+model registry uh uh thing that will
+just have details for every models. So
+I'm going to paste that as well and I'm
+going to show you everything. So this
+export const registry is just we have
+clotsson 4.5 support. So the provider is
+anthropic display name is clotsson 4.5.
+The model ID for uh API model ID is
+going to be this this specific thing.
+Then cost for this using this model is
+two credits on our credit system. Then
+tier is premium uh speed is medium and
+quality is very high and description is
+best quad code quality headle for
+complex features and architecture and
+this supports vision. So we can send
+images to this and the max output tokens
+is 16,384.
+So every model right here supports the
+vision. The only models that doesn't
+support the visions are the deepseek uh
+ones deepseek v3 and deepseek r1. And
+the uh output tokens are also different.
+So, Deepseek V3 has 8,192
+and uh uh DeepSc R1 has 16,384.
+So, make sure you do that. And now I'm
+also going to have a default model. So,
+export
+const.
+And for default model we are going to
+use GPT 40
+4
+mini like this and then we are going to
+create a function of export con uh
+export function get model. So export
+function
+get model
+we get the model as string in here and
+we get the env. So env is our types from
+env and the return type is language
+language model. So did we define that
+language model?
+Okay. Okay. So the language model is
+from the AI package. So let's import it.
+So after this I'm going to import
+type
+from AI and the type is going to be
+language model like this. And in here
+let's pass that language model. What
+else in here?
+That's it. And let's call the uh not
+call but let's do the function.
+What's the issue here? Language model.
+Okay, it's it just needs a return. So
+let's do that. Now first con config is
+equals to model registry and we'll pass
+in the model. So we get the model config
+and if we don't have the config we'll
+just throw new
+error that
+unknown
+unknown model
+and
+then we'll have
+a model like this
+and now we'll use the switch case to uh
+create the models and use everything. So
+switch config dot
+provider and then if the case is going
+to be enthropic then we are going to
+return
+create
+create
+enthropic. This needs to be imported
+from the uh AI SDK packages. So I'll
+import all of them at the top. After
+this I'm going to import all of them.
+Create Enthropic, create OpenAI, create
+Google generative AI, create DeepS from
+all of these packages. And at the end
+now what should we do is we'll pass
+create entropic and we'll read the API
+keys from env dot enthropic API key and
+then we'll pass config
+dot API model id and one more thing we
+are using API key uh from env.anthropic
+Enthropic API key not from uh
+process.env.
+So uh in cloudfire workers that
+process.env would not work. Uh in
+cloudfire workers or uh in this adk
+package there was some issue uh in that.
+So for that use case we are using
+env.anthropic API key. So env from our
+hono env. So make sure to use that and
+let's ref return a default case which is
+going to be throw new
+error that
+provider not
+implemented
+and this is going to be config dot
+provider like this
+and now let's do for other cases so
+other cases are Open AI, Google and
+Deepseek. So all of them have the same
+thing. Just OpenAI create OpenAI, Google
+create Google generative AI get the API
+key and deep create deepse and get the
+API key. Now you won't be having this
+API keys. We need to get this API keys.
+So what I'm going to do is I'm going to
+show you how to get those API keys. So
+just a minute.
+I am going to head over to open AI right
+here
+API platform
+and uh we can start building from here
+API dashboard. So we need to login. I'll
+login with Google.
+I use Mac own.
+Then you just need to
+write personal here.
+and uh you are an engineer or whatever
+you want to here do that we'll create
+the organization I'll invite my team
+later and to create the API call we'll
+use my test key and project name as
+loable
+clone or we can use this API key as
+lovable
+clone
+API key like this we'll generate the API
+I key
+and you need to copy this API key
+and uh copy this API key and you need to
+head over to the
+wrangler.json no not wrangler but
+env.local and you need to create the
+environment variables here. So not
+env.local local but it was inside of
+dev. Yeah. So inside of dev where you
+need to create uh those API variables.
+So a open API key and then the open API
+key then we need the Google API key if
+you want to have support for that. Then
+we'll have deepsek API key and we'll
+have anthropic API key. So for testing
+purposes, uh, OpenAI and Deep Cheek are
+very cheap. I'll just show you my, uh,
+Deepseek one. Just a minute. So, how
+cheap was it for me to develop? So, I'll
+just show you just a minute.
+Okay. So,
+this is my
+Deepseek platform and uh as you can see
+that my monthly expense was only 0.04 04
+USD and uh I added just uh $2 onto my
+Deepseek account and uh it was like
+using very less. So as you can see that
+my monthly expense was just 0.04
+uh and uh it's not use using much
+tokens.
+Last month also it was just 0.0515 0515
+while I was testing this application and
+creating it for both DeepSync R3 and V
+V3 and R2 whatever the name of the model
+is. So
+uh you can just head over to top up here
+and you can add the balance. So I just
+added a $2 balance here and uh you could
+I guess uh yeah minimum is $2. So you
+can add $2 here and it would work. So $2
+is in Indian currency around two 180
+rupees at the current moment. So it's
+very cheap. So 180 rupees and I've used
+this pretty much like I've used so much
+of this when when I'm using this I'm
+using it so much. So this uh uh you can
+see that in here it's not very much data
+but I have another account where I use
+it and the usage is very much but
+pricing is very cheap. So deepseek is
+also cheap and the results are very good
+but it doesn't support images. So for
+that you need to use other models and
+you can generate the API keys from here
+and paste it. So this is this was for
+deepseek and uh that's all. So what I'm
+going to do is I'm going to close this
+and if you had continue here you you
+also need to add some API credits uh on
+the AP uh on open AI. So you can add a
+minimum of five credits and I also did
+five credits and I did it around one
+year back and I've used in so many
+applications for the cheaper models of
+GPD 40 nano or mini whatever it was but
+it was very cheap so $5 credits is
+sufficient but if you don't want to do
+multimodel thing you just you can just
+add it on deepseek or openai on any one
+platform. form and it's good to go. I
+would not show you for Google because
+for Google uh you have to do uh mandate
+for 15,000 or $200 something like that
+and uh I did that on my account but it's
+not feasible for uh you learners so I'm
+not going to show you but uh you can
+find tutorials on how to get an API key
+from Google uh Gemini and uh do that and
+the other model entropic. So for
+anthropic also the pricing is very high.
+So just a minute if I can show you that
+as well. I added something like 2,000
+rupees or uh around uh $20 something
+like that on Enthropic. So
+I'll show you that just a minute.
+Okay. So this is for Claude. So the
+output of Claude is very high, like very
+high, very high. So it's very good. So
+last month I utilized Claude's uh token
+of $1 and this month it's around
+Oh, not 30 days.
+Yeah, 30 days is reasonable. So, $1.16
+for uh my entire last 30 days usage. So,
+I used Sonnet and Haiku for stuff. And I
+tal topped around. I'm not sure
+where can I see my balance.
+Okay, claw service organization is
+disabled or like
+it's unavailable for now.
+But I added I assume I added5 to $20
+only. Not much. So, uh that's that I'm
+going to uh use my API keys and I'm not
+going to show you uh those API keys. And
+now let's move forward. So we have got
+multimodel support as well. Now you
+remember that we added this sanitize.ts
+file right here in the services. So this
+is uh now I'll explain you that. So uh
+this is for creating a new project now.
+So we have project max project name
+length is 100 max message chat limit is
+10,000 then sanitize project name and
+sanitize chat message and if it's a
+valid model ID. So now all of those
+would be used and uh then what else? Now
+we need to create the actual chat route
+for creating the project. So now let's
+do that.
+Okay. So now let's head over to the
+routes chat.ts. And now after this get
+route I'll have another route for
+the project. So that route would be uh
+post with project ID. So,
+I'm going to paste this uh
+comments right here.
+And uh
+multi-line comments.
+And this is prompt from my copilot. Uh
+you can just ignore this.
+And now
+let's write chat routes dotpost. Now we
+need the project ID. And uh
+then we need to close this. And now
+first let's get the user ID. So const
+user ID uh C.V.
+user ID. Then we get the project ID uh
+C.est.param. param.
+Okay. And we need body as await core
+request.json
+message as string model as string.
+Images is going to be image attachment.
+Make sure that you import it from type.
+And now after this let's get the user
+message. So const uh user message equals
+to sanitize chat message and we'll pass
+body dot message or
+this could be an empty string
+and if we don't have the user message
+then we'll return C.json message cannot
+be empty validation error. Yeah that is
+that. Now let's get the model ID. So
+const
+model
+id is equals to body domodel or default
+model. Make sure that you import default
+model. And then uh let's check if there
+are images and if images length is not
+uh greater than five because we only
+support five images. So const images
+is equals to body dot images or empty
+array. And we'll check if image length
+greater than five then we'll just return
+maximum five images allowed. And then
+what we have is con image of images size
+in bytes. So we are checking if all the
+uh uh image is under 4 MB. So this is
+for that. And now we'll get the model
+config from model registry.
+Then if you don't have model config,
+we'll just have invalid model selected
+or we'll just have unknown model
+whatever you want to check. Now uh
+let's do the ownership check. So we get
+the project C.NV metadata.get
+and get the project with project ID and
+JSON. And then if there is no project
+then we return project not found. And if
+project do user id not equals to user id
+then we just uh return unauthorized.
+After this uh we need to check the
+credit. So const credit check is equals
+to check credit. We'll pass the user id
+model config.creditost
+nc.env.
+And I guess we don't have this function
+check credit. We need to create that. So
+this check credit would be inside of the
+services credits.ts.
+And uh after the initialize credits, we
+are going to create this check credits
+function. So
+export
+export async
+function check
+credits
+and we get the user ID as string env as
+env. And we need the credit cost as
+number like this. Then return type is
+yeah this is that but
+uh
+after this the return type is promise
+promise and uh
+types are going to be allowed boolean
+and credits are as user credits
+and then first we get the credits. So
+con credits is equals to await get
+credits then we check if credits do
+remaining triple equals to unlimited
+credits then we return allowed true if
+it's unlimited credits then no need to
+check or else we return
+allowed as credits remaining uh greater
+than equals to credit cost and then uh
+we return the credits. So if remaining
+credits are one and the credit cost is
+two then we uh uh return allowed as
+false and return the credits. So that is
+all that this function does and let's
+head over to chat.ts again and let's
+import the check credits and uh is this
+c.nv env.
+Just a minute. I think we need to change
+this thing right here.
+User ID model config.credit cost and env
+user ID. Yeah, perfect.
+We just solved a bug using TypeScript.
+Now
+uh if uh the users model is
+what we want to do is
+yeah what we want to do is uh if the
+users plan is free and if they want to
+uh work with the premium model then we
+just need to return an error that
+premium models requires a pro plan. So
+this is exactly that and in this I'm
+going to write C.json return.
+Okay, this model is only available only
+available for pro users. Perfect. And
+with the error we are also going to give
+it a code and
+plan as
+perfect plan credits credit check
+credits plan something like this
+perfect. So now after this we are going
+to have
+if uh it's not allowed then they have
+exhausted all their credits. So uh if
+not allowed then
+return c.json you have exhausted your
+credits credits exhausted remaining and
+required.
+Perfect.
+And
+after this
+uh if there is an existing project we
+will first load it. So const version key
+as project id v project.curren version
+files.json then we get the version
+object as c.nv files.get version key and
+we check the ex existing
+uh project now. So what I'm going to do
+right here is conex existing
+files as project file like this
+equals to an empty array and then if
+version object is there
+then const
+version data is equals to await version
+object.json JSON as version.
+Let's import the version from types
+project.
+We get the version data and uh we push
+the existing files. So existing
+files equals to
+version data dot files
+model
+files or our
+error uh array.
+Okay, this cannot be reassigned. So this
+is going to be a let
+done.
+Then let's uh get the chat history. So
+this is correct. But this is going to be
+chat session is equals to a c.dv envag
+metadata get chat session and chat with
+project ID and JSON then we get the chat
+history from chat session do messages
+and now let's do the system prompt after
+this so const system prompt is equals to
+build system prompt and pass in the
+existing files import the system prompt
+and let's import this chat session from
+types and after this
+uh what should be there. So
+we need to give the uh uh old messages
+tree uh to the AI. So for that con raw
+messages is equals to
+raw messages.
+It's an type of array with raw user or
+assistant and contained a string and we
+initialize an empty array.
+Then for const message of chat history.
+Perfect. Then if message roll equals to
+system then we'll skip it or else we
+push it to the message. So if message
+dot roll
+equal equal systems then continue or
+else raw message.push ro message or
+content message.content content like
+this.
+And after this
+we have const
+trimmed
+history equals to prepared chat history
+with raw messages.
+Prepared chat history is already created
+in this file.
+And then
+we will have the SDK messages. So
+cons SDK messages model message trimmed
+history map. Yeah, this is perfect. Then
+we'll have
+message dot roll
+triple equals to user.
+Then we'll have role as user content as
+message dot content
+or else we'll have role as a send
+message as this like this.
+What's the error in here?
+Okay. So to check this, this is not
+inside of this object right here.
+Okay, perfect. And let's import the
+model message from AI.
+Now what next? We also need to append
+the images with the message if uh there
+are any images. Then we need to stream
+the AI response
+and uh then we need to pass the files uh
+from the AI response and then store the
+new version in R2 and we also need to
+deduct the credits after successful
+generation and we need to save all the
+messages to key value as well. So let's
+do that and after that we need to send
+the final event as uh that it is uh
+working and done.
+Now after this just a minute what I'll
+do is I'll just grab all of my route. So
+instead of writing everything with AI
+I'm just going to paste it right here.
+So
+okay. So after this
+I input everything that is necessary.
+Just a minute.
+So streams should be
+stream text
+would be from AI. Okay,
+I'll show you the code in a minute. Just
+let me import the files.
+Reduct credits and extract explanation.
+We need to create the deduct credits
+thing first.
+Yeah, we just have the deduct credits.
+We also need to import model registry.
+Okay. So what we are doing here is
+uh after uh uh getting the user model
+and then we are what we are doing after
+all of this is start the streaming of
+the uh server side event. So we'll
+return server side event. So let's start
+the streaming. So we get the AI
+response. We get the model and we have
+the stream text from AI. So we get the
+model system messages and uh max output
+tokens. And uh
+we uh send uh the event of type chunk
+for each uh of this response and uh
+return the text of chunk from text
+stream and uh then we uh parse files
+from the complete response. So
+we are passing the files
+then we merge the files we store the new
+version in R2
+then then
+this is all for storing in R2. We update
+the project metadata
+and then we deduct the credits. So for
+deducting of credits we need to have a
+function of deduct credits. So
+just going to create that as well. So
+let's head over to credits.ts and after
+this I'm going to have dedux credits.
+Let's change in user credits and
+unlimited credits.
+So unlimited credits is going to be
+minus1.
+Let's create that con
+unlimited credits equals to minus1 like
+this.
+And for deducting of credits if uh if
+it's unlimited credits then we don't
+credit rem uh deducted and we check the
+remaining by deducting the credit cost
+and
+uh set the remaining credits as the new
+credits and or key value store and
+return the credits inside of here. Let's
+grab the dinner credits.
+And then we save the chat messages to
+key value store.
+And then
+we send the final event of files and we
+end the uh uh
+the streaming. So we send the event as
+done and we set the data with files.
+And if there is any error we just handle
+it
+and then we uh send serverside event of
+error and that does that of this uh
+creating the uh
+chatouts post uh so creating a new chat
+so this is the AI generation and
+everything so our AI engine is
+completely done now we will do the chat
+messages So
+we uh when we head over here we need to
+create the components for this chat
+message bar and sending those messages
+and with that we call this our AI engine
+everything and start creating uh the
+files and everything. So in the next uh
+phase we'll be working on this chat
+panel here and then we'll do the preview
+panel. So let's do the chat panel now.
+So,
+uh, a engine part is complete. I'm also
+going to include this file in the
+description of the video so you can get
+all of this code.
+Okay. So now let's start with our chat
+system. So first we need to do the
+message bubble. So all the bubbles that
+you see of the message, we are going to
+have three types of message bubble here.
+First is the users generated uh bubble
+which would be on the right side.
+Whatever message we write would be here.
+Then the AI generated that would be here

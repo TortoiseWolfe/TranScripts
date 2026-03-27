@@ -1,0 +1,161 @@
+that or not. So handle
+model change. Okay.
+So let's get this here.
+Paste it. And uh now inside of this uh
+let's wrap this in a use call back. So
+handle model change
+use call back hook
+and
+then the function
+this will get okay this is an async
+function and this will get the model ID
+as string. Now inside of this first we
+set selected model ID as the model ID
+and
+this should run
+when we have the get token
+and the project ID.
+This is set
+selected model ID and uh then we'll set
+the project
+with previous previous
+model ID like this and let's try and
+cache to update the project create API
+client get token clients dot projects do
+update project ID model with model ID
+catch fail to update model and tools dot
+error fail to update model try again
+let's save this and this would be passed
+automatically I guess yeah it's being
+passed so no need to do any change here
+and now let's create the model uh
+selector component and import it inside
+where we need it so first Inside of the
+components
+editor, let's create
+model hyphen
+vector.tsx.
+And uh this is going to be a client
+component.
+And uh
+let's do one thing. I'm just going to
+copy and paste it. So making this a
+client component. We have model selector
+props selected model ID on model change
+user plan and if it's disabled then the
+speed indicator the speed of the plan
+quality indicator model selector
+component if it's open or close which
+just uh pop over so we get the selected
+model ID the display name and uh
+group models according to their provider
+like if entropic is providing anything.
+So we have opus and uh uh sonnet in
+anthropic something like that and I'll
+select and we have this popover and to
+open the popover we have this and
+trigger for this button which would have
+a display name
+and this is the popover content we just
+uh map the group models and uh uh just
+show them I'll just
+word
+can better see all of this
+and
+I'll save this and model selector where
+is this used
+inside of the chat panel. So let's head
+over to the chat panel and uh in this
+where is it used? So what we are going
+to do is in here we will check if
+uh
+this credit exhausted is false
+then we will have a div
+Wrap this around brackets.
+And this div is going to have a class
+name of border top.
+Border
+border
+of 50.
+Background card 50.
+And backdrop blur small.
+Now inside of this first we'll have the
+model selector. So
+let's have a div with padding x of three
+padding top of two and inside of this
+let's grab our model selector and pass
+it down the all prop. So selected model
+ID is the selected model ID. Then
+on model change on model change user
+plan as user plan and disabled. If it's
+streaming then we need to disable this.
+And then let's grab this chat input.
+This should be inside of here after this
+div right here.
+Save it. And let's head over to our
+browser. And if I refresh it, you can
+see that we are using GPD4 menu. And I'm
+going to disable this iteration errors
+the preferences and hide for this
+session. Close. Now let's try to change
+the model. I'm going to use the uh set
+4.5. And uh if I refresh it, is it
+maintained? Yeah. Now you can see we
+have a set 4.5. And I'm going to create
+a new project. Not this one. So,
+so let's create a new project. I'll name
+this as social media app for
+let's just name it social media app. And
+I'm going to use set 4.5.
+Social media app.
+Create. And let's head over to here. And
+now let's write my prompt. So create
+a social media app with dark theme
+or AI agents.
+Then
+use framer motion for animations.
+All the components
+should be working
+and I need responsive ready
+components
+for all the screens.
+So I made so many errors while typing.
+Let me correct that.
+components
+agents and now let's give it the prompt.
+It's thinking
+and it's creating the application. Let's
+wait for it to
+Okay, it did generate it, but uh there's
+some issue.
+So, let's try to fix it. I'm going to
+copy this and paste it right here. And
+let's see if the AI can solve it.
+Let's head over to the code and
+see inside of
+I think it has fixed and yeah we have
+our uh app here. You can see
+all of the UIP is actually working.
+You also got the animations.
+Pretty cool, right?
+The UI is pretty perfect. Like I
+like what it has created. So we can
+iterate over this and create more things
+if we want to and uh with this our
+lovable clone app is complete and uh
+there might be some features remaining
+and uh due to video length I cannot
+complete it. Uh so these are those are
+some minor features. If you want them,
+you can just uh buy the source code from
+the description of the video and uh
+you'll have those.
+So this is also responsive
+and you can check the versions
+and the code. So yeah, this is complete
+and with this we are ending our video
+and uh let me know uh how did you like
+this and if you need any more videos
+like AI videos like this please show
+some love in the comment section and
+I'll create more videos like This

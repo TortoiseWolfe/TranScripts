@@ -1,0 +1,2567 @@
+going to open up my terminal.
+I'm going to open up uh new here.
+Uh just a minute.
+And first, I'm going to uninstall the
+Wrangler first
+to install the latest Wrangler.
+So, let's head over to the worker first.
+And I'm going to uninstall Wrangler. npm
+uninstall Wrangler. and then npm install
+- g wrangler
+to just install the latest version
+and then I'm going to log out from my
+account wrangler logout so my cloudfare
+account if I'm logged in then I'm going
+to log in so
+I'm going to login just give me a minute
+I need to open up my profile
+All right. All done. Now Wrangler login
+and this would open up Cloudflare. So
+this is open up for me and I'm going to
+login
+with my account.
+Continue.
+Hello.
+Okay. So I granted authorization to
+Wrangler. You can check the docs from
+here. worker docs and now
+you are also logged in here. Now what I
+want you to do is we are already inside
+worker and now we are going to set up
+the KV name space. So Wrangler KV
+name space uh create metadata
+and done. We are going to copy this ID
+and uh like to would you like Wrangler
+to add it on your behalf? Yes, please
+add it. Would you what binding name
+would you like to use metadata or local
+dev? Do you want to connect to the
+remote resource instead of local
+resource? Yes, we need to do that. And
+now let's head over to Wrangler.json.
+And you can see that we have two KB name
+spaces. This is the new one which is
+remote and this is the old one which was
+for our local. I'm going to comment out
+this for now.
+Perfect. And let's do the same for the
+R2 bucket. So, Wrangler
+R2 bucket. Sorry, this is not 42. R2
+bucket create
+lovable
+cologne files and I'm also going to
+comment out this for now
+and let's hit enter.
+Okay, we need to enable R2 first.
+If I uncomment this, would that work?
+No. I need to head over to my CloudFire
+dashboard.
+Workers
+Just a minute. I'll enable that in a
+minute.
+Okay. So to enable R2, we just have to
+go to storage and databases. And we just
+need to head over to R2 object storage
+over here. And now I need to uh add my
+payment method, the credit card details
+and everything here. You will not be
+charged. As you can see, total due is
+$0. You just need to add it if you uh
+like uh in their free uh usage, it's 10
+GB per month and dollar0. 155 per
+additional GB per month, but we are not
+going to cross 10 GB uh per month. So
+don't worry. So we are not going to pay
+anything. We are just adding our card
+here. So I'll add my card or if you
+don't want to do this step, you can
+follow the application locally. But I'm
+going to uh visualize the app. So I need
+you to show this.
+Okay. Done. So I have added it. And now
+I just have to create a bucket. But I
+can create the bucket from here. So let
+me try to create a bucket from here. Uh
+let's run the command again. R2 bucket
+and let's see if we are able to create
+it. Yeah, it is created.
+R2 buckets loable clone files
+binding is also this.
+Yeah, we need to add it on Wrangler.
+Yes. Yes.
+Okay.
+Bucket name should be files not loable
+clone files.
+Uh
+is it created here?
+Let's see if we can delete it.
+Let's delete it.
+Done. It's deleted. Now we'll do it
+again. So
+we need the bucket name as
+uh label clone files and binding is
+files. So
+let's comment this out and let's try to
+do it again.
+Yes. Binding name is files
+and
+yes
+and and
+okay, it didn't add it or I didn't save
+the file. list. I'll just reopen that.
+And yeah, I have it here. We have files
+and this one is the remote one. So,
+binding is files. Bucket name is lovable
+clone files. And we'll just
+comment this one out and delete this one
+out. Save it. And if we refresh the page
+here, we should have the bucket here.
+Yeah, we have it. Now, what next? Just
+give me a minute.
+We have created the art bucket. We have
+updated the Wrangler JSON C files. And
+uh now we also need to deploy. But
+uh
+what should we do is first we need to uh
+put up the secret. So wrangler uh secret
+put and we need to set the secrets. So
+if we head over to env first we need to
+set the clerksure. So clerk is sure
+and uh
+the value would be this. So I need to
+copy this and I'll add the value. Then
+we need to put JW keys URL. So
+yes, I need to create the worker.
+Okay, done. Now we'll do this again for
+log jwk's URL
+and we'll copy this.
+Paste it.
+Done. Now I guess we need to deploy our
+workers. So uh the command for that was
+I guess
+npx wrangler deploy. So npx wrangler
+deploy
+like this.
+And let's see if it works.
+Okay,
+this is just a warning. So this is our
+actual path. So we need this path. And
+now we will head over to env.local local
+on front end and in here
+there might be some configuration that
+we need to add. Just a minute. So that
+was next public worker URL. So that
+would be used in the API client. So next
+public worker URL and this is going to
+be this for now. And if we head over to
+the API client and at the top you can
+see that we are using it from here if we
+have it from env variables. So I think
+everything is wired up and uh
+let's
+try to
+uh run our worker. So npx
+wrangler dev and also restart our nextjs
+application. It already reloaded the end
+war forment variable. But let's restart
+it and worker.
+It's running but it's running on 8787.
+I guess it's already running or on
+remote.
+Okay, it's already running. So, uh it's
+already deployed. So, it's running. So
+if we head over to compute here, workers
+and pages,
+you can see that we have workers here uh
+cloudfire worker. So this is our lovable
+clone recording. We have R2 files, R2
+bucket as named as files and KV name
+space as metadata. If we head over to
+here, we don't have anything. And same
+as for metadata, we don't have anything.
+So let's create the account and let's
+see if we are able to see the data here.
+So localhost colon
+3000.
+It's not loading.
+I guess I need to remove the next
+folder.
+Let's route do that rmrf
+dot next and npm rundev again.
+Reload it.
+Yeah, we are here. Now we just need to
+login.
+Continue with Google.
+Continue.
+Now let's try to create a project.
+What's the error?
+No access token available.
+It's available now. Let's create the
+project. uh social media app
+basic
+social media app create the project
+is created and if I head over to here
+and let's head over to KV namespace
+voila we have our data live on CloudFrer
+we have this user ID this is a user ID
+from clerk. Then we have our project
+with this project ID. You can see YNV
+YNV. So it's there. And this is the
+credits of the user as you can see.
+Remaining 50, total 50, plan free,
+period start and period end date. So
+this is our cloudfire
+uh key values. We can uh see this the
+entire thing. We can edit this. We can
+manipulate this or add entry here. So
+this works as a database and uh now I
+can show you the R2 object storage as
+well. If I head over here lovable clone
+files and you can see that we have a
+project directory. So every project has
+it all own directory and inside of that
+directory we have versions. So our
+version zero was created and inside of
+that version.0 we have this files.json
+file and that files.json file would have
+our starter template. So I can open this
+up on my VS code right here and let me
+view what app and you can see that we
+have an files object inside of this we
+have uh array of uh the path app.tsx
+then content of this. So everything
+would be stored in here like this. So
+everything is working and uh Cloudflare
+is also set up. Now let's start with the
+editor shell component and uh let's
+start do the magic.
+Okay. So now what I want to do is I want
+to create this page uh the header the
+sidebar of chat the layout like the
+iframes and everything. Uh so let's do
+that. So first we are going to create
+those components. So for that just a
+minute inside of
+here we have this page.tx tx not this
+one this one we have this page tasx
+right here and uh
+do we get the projects page no it's not
+written here so this is project and
+project ID so am I doing something wrong
+here is the right route different no the
+route is same so the redirection I guess
+is uh not perfect so inside of dashboard
+uh instead of projects. We just have to
+have project like this.
+And if we are on the dashboard now, why
+it's not working.
+Okay, it's here.
+Let's refresh this. Yeah, now when I
+click on this, we are at the projects
+page. Now, inside of projects page, uh
+let's do the components that we require.
+Uh,
+just a minute. What are the components I
+need to check?
+Okay. So, inside of main page.tsx, DSX.
+Uh we are going to have the
+editor a layout first I guess. Yeah,
+edit a layout. So we need to create and
+edit a layout component. So
+uh
+inside of components
+I'm going to create a new folder named
+as editor. And inside of editor first
+for barrel export we are going to have
+index.ts. And let's create editor
+uh hyphen layout
+dot
+tsx. Let's write rfce
+and name this as editor layout and not
+export default. We are just going to
+export const editor layout. And let's
+let's export editor layout from editor
+layout like this. And let's head over to
+page.tsx of this project. And I'm going
+to import
+this editor layout right here. So just a
+minute.
+All right. So we are just going to
+return the editor layout from here. So
+nothing else.
+Editor layout,
+not edit,
+editor layout. Make sure to import that.
+And if we head over to the screen, we
+have editor layout here. Now, inside of
+the editor layout, we will have the
+header, which would have the logo and
+project name, the preview, the share,
+and everything. Then we'll have a chat
+panel, and we have the preview panel. So
+uh inside of editor layout
+what components should we use first? So
+we are going to have a div there with
+editor header. So let's also create an
+editor header component. So inside of
+components
+in here I'm going to create editor
+header.tsx DSX
+RFCE
+not RFC RFC
+and editor
+header
+like this. We don't need to export
+default like this. And inside of editor
+layout I'm going to have a div. And then
+we'll have editor header.
+editor header like this.
+And this div is going to have a class
+name of flex, height full,
+width full,
+flex call, and overflow hidden
+just crashed. Okay, it's here. Editor
+header.
+We have the editor header here. Now,
+what next? After
+this,
+we need to have the chat panel and the
+review panel. So,
+first uh what should I do? Um
+let's have the uh
+tabs which are component or edited tabs
+or let's do the
+just a minute. What was the name of the
+component?
+Yeah, it is going to be the chat panel.
+So, let's do the chat panel now.
+Okay. So,
+let's create the chat panel component.
+And inside of this editor,
+I'm going to have
+chat panel dot tsx
+RFC
+rce. No, we don't need class component.
+RF.
+Let's write RFC and remove the export. I
+don't know the exact shortcut.
+This is going to be chat panel. Chat
+panel. And let's use the chat panel
+inside of this. And after the editor
+layout, we are going to have a div right
+here
+with class name as
+CN
+and uh
+CN with
+hidden if it's small then hidden. MD
+flex flex one
+overflow
+overflow hidden
+and then after this
+uh if we are dragging then select none.
+So uh we need to create a state of
+dragging. So let's do that. I need to
+create a state like this right here. Is
+dragging set is dragging. So this is
+useful for resizing. So after this we'll
+check if is dragging.
+Uh
+what should we do here?
+Is dragging. And we'll just give it a
+class name of
+select none.
+And what's the issue here? So we need to
+close this. Close this and this. Yeah.
+And now
+we also need to give this a ref of
+container ref. So
+let's create a ref here. So con
+container ref is equals to this. And
+let's give this a ref here. ref
+container ref like this. And inside of
+this, I'm going to import our chat panel
+component
+like this.
+And we also need to mark this as client
+component because we are using
+these hooks. So if we are using hooks,
+we need to mark that as a client
+component. So chat panel is here and
+after the chat panel, we need to have
+the drag handle. So that would be used
+for dragging. So also need to do that.
+And after that we need to have the right
+panel which would have the tabs of uh
+panels. So that is complex. What should
+we do?
+Okay. So now we have the chat panel.
+We'll have the tab. So first let's also
+have the drag handle. So what that would
+do is just give us the
+things like what we have to change. So
+I'm going to comment this and write this
+as drag handle.
+And after that I'm going to create a div
+right here.
+And this is going to be a self-closing
+div. Class name is equals to
+CN
+with panel
+resize.
+Panel
+resize
+handle.
+Then shrink of zero.
+And
+if it's dragging
+then we need to have panel resize
+handle
+active like this
+and then we need to give it on pointer
+down move and up. So okay we have this
+panel. So yeah, it's here and this
+classes are being applied from our
+global CSS. I guess if we search it
+inside of here when we pasted this, we
+already have this panel resize handler.
+So all of this has been covered. And now
+let's head over to editor layout again.
+And now we need the uh
+panel. So if it's the preview panel, we
+need to show preview panel or else we
+need other panels. So, I'm just going to
+see just a minute.
+Okay. So after this I'm going to have
+another div with class name relative
+flex one
+overflow hidden
+and inside of this let's write the text
+as preview panel for now
+and it should be here. So
+on the
+above div the container ref there should
+be side by side. So
+here this is going to be flex headful.
+No I think I messed up. We
+we created a ref, right? So this is
+here. Yeah. No, we haven't messed up. So
+initially this is hidden medium of flex.
+Flex one and overflow hidden.
+And this is the container ref.
+It's flex. Then why it's here?
+preview panel. Okay, the preview plan
+panel should be inside of this.
+And yeah, this is the chat panel and
+this is the preview panel. So now we can
+drag and do everything and now we can do
+the stuff. So what next is uh we'll
+initialize the states and everything and
+start creating those components. Uh
+first we'll do the editor exact page
+with states. So we are going to use the
+concept of smart and dumb components. So
+these all right here the editor layout
+then editor header chat panel those are
+those all our dumb components and the
+smart component is our main component
+right here which is the page.tsx. So
+this is going to be the smart component.
+All of the logic and everything would be
+here and it would be passed down as
+props. We won't be doing prop drilling
+because prop drilling is something when
+we are doing uh props to five level of
+components or more. We are just going to
+do it uh for two or three level of
+components. So we have not used any uh
+state management library or context. So
+to make it simple. So we are just using
+it in this component which we refer as a
+smart component. And uh
+let's start doing it. So
+uh
+we also need to do the layout. I guess
+layout is already done right for this
+the this dashboard page has the layout
+right with the sidebar and everything.
+So layout is already done.
+We need to have the
+page.tx right here with all the states
+and everything. So let's do that. This
+is going to be pretty long. And uh
+uh I also need to refer every piece of
+code right here.
+So let's do it now. first. Uh
+so first What I'm going to do is editor
+page. Uh this is not project page.
+This is going to be editor page. And
+inside of here we get the parents. So we
+need the project ID. So we get the
+parents from here. And the type of it is
+going to be parents
+and uh promise
+project ID of type string like this.
+And now let's get the project ID here.
+So const project id
+is equals to
+use parents from next navigation and
+from here not use parents we are just
+going to use the use hook from react and
+uh we'll pass in the params here and
+then we'll get the o token so get token
+for a calling APIs use o from clock
+nextjs
+and then we also need to initialize the
+router. So con router is equals to use
+router from next navigation
+and then
+we need the rate limited but we haven't
+created the rate limited hook. Then
+we need to create uh some refs. So,
+uh, I'm just going to copy that and I'm
+going to
+tell you all of that.
+Yeah, we have these refs. Make sure that
+you import the user ref. And we have
+this autoheal uh ref. So, this would
+just count the number of times uh if any
+autoheal uh request made like if it
+detected any error then it would
+automatically try to heal that error. So
+we can do three times uh automatically.
+So this is to count that. Then we have
+just uh generated ref uh to check if the
+last generation was AI initiated or uh
+it was manual uh edited. So we need to
+check that. Uh I'll let you know why we
+are doing that when we uh reach to that
+section. And then a streaming ref. So
+this is for uh server side event
+tracking like if uh we are still getting
+the AI response then uh we are going to
+store that in a streaming ref to check
+uh things and uh max autoheal uh
+attempts which is for that uh we would
+just autoheal for three times and uh
+after that we would just tell that we
+are not able to fix it. Then uh this is
+spending prompt ref. So this pending
+prompt ref was done from dashboard here.
+So as soon as we created the project we
+have this session storage uh pending
+prompt. So we navigated to that project
+and if we check from session storage
+that if there is any pending prompt then
+it should start creating uh the AI uh
+request as soon as uh we have it and
+remove it from session. So that is for
+that
+uh there's a component.
+Yep.
+Now comes uh next part.
+Then we'll have a ref for handle send
+message
+after this.
+So this uh ref holds the latest handle
+send message call back. So it would be
+uh used for auto send effect. Uh
+whenever we want to uh uh we save the
+file or do something it should uh auto
+send the message. So this is for that.
+Now
+let's do the next uh use states. So we
+are going to use so many states here. So
+for that
+I'm just going to copy all of that
+states here and I'm going to explain you
+why we are doing that. So
+yeah, first
+make sure to import state hook
+use state and import the project type.
+Okay. So this state is for uh setting
+the project details. So we fetch it via
+use effect as soon as we have the ID of
+the project and get the project details
+and set it. Then we get the files of the
+project and store it in files and set
+files. Then active files. So uh if we
+are on the mono editor and uh we want to
+uh like uh we are editing any file
+manually then we need to set which is
+the active file to uh send it to the
+iframe. So this is for that. Then for
+all the message history it is stored
+here. So we need to render the message
+history right here on this panel the
+right panel. So that is for that. And
+what's the use error use should be from
+clock right.
+Okay we need to mark this as a client
+component. So use client
+and then the errors are for other
+things.
+We'll fix we'll fix this. Uh so this is
+for the chat history. Then is streaming
+to uh whether check if the AI is
+currently generating a response. Then uh
+this is just for loaders. Then version
+history. We have the timeline, right? So
+we need to store version history
+metadata. and uh uh this right here is
+uh all the versions. Okay, so sorry I'm
+just repeating this uh and if the
+versions are loading then we need to
+show the spinner, right? So this is for
+loading the versions and this is for
+credits how many credits the user still
+has. This is for that.
+Then
+if we have total credits like if it's
+not unlimited then uh we need to see the
+credits. So for each year response we
+first check it if the user has the
+credits or not. So this is for
+maintaining that. Then we have the
+user's current plan free or pro that is
+for that. And now we uh uh get the
+selected model. So if the state is just
+the uh initialized so we have the
+default model ID as chat GBT4
+uh like that. So this should be imported
+from lib models and we need to create
+that lib file as well. So I am going to
+uh
+get that file. So inside of lab
+lib lab yeah lab
+I'm going to create that models
+ts file and I'm going to paste this code
+I'm going to give it to you in the uh
+description let me write this down
+just a net
+models.ts
+from lib.
+Okay. So I'll show you this uh file.
+This is uh just the demo data. So this
+has model info. So we just have ID,
+name, provider, tier of the model,
+speed, quality, credit course,
+description and supports vision.
+Supports vision is if uh we can send
+image into that model. So this is for
+that. Then we have this model info which
+has models. So we are using entropic
+models, openAI models, then Google
+models and deepc versions. So deep sea
+versions models doesn't have support
+vision. So it we cannot send images to
+that. So this is for that and we have
+all the info that we render in UI. Then
+we have this default model ID which is
+GPD 4 mini. So this is very cost
+efficient but deepseek is also cost
+efficient. So we can use deepseek or for
+mini. Uh then uh provider labels. So
+this is just for headers. So Anthropic,
+Open, Google, Deepseek we have four. If
+you want to add more you can add it. and
+uh edit this file. Then
+this is the provider order. So first is
+anthropic, openAI, Google, DeepSeek like
+that. Then the speed of the model. So we
+get the speed and if the case is very
+fast then we uh return fastest, fast and
+medium like that it's just text then we
+uh have that lightning bolts right on
+the model. So we are returning if it is
+very fast then three bolts fast is two
+medium is one and model quality
+quality stars
+and get model by ID we are just getting
+the model ID from this this one
+basic file right so I'm going to save it
+and let's import that default model ID
+right here then we have this credits
+exhausted uh it would check if the user
+is is in free plan then uh if the
+credits remaining is uh less than zero
+then we are going to have this true. So
+and we also check if it's unlimited then
+we mark this as short circuit and uh
+it is always false. If credits exhaust
+it's if it's on the pro plan and if it
+has minus one then it always uh have
+false and then we have the viewing
+version. If we are viewing any old
+version then we need to set which
+version we are using then current files
+ref. So this is for
+Okay. So this is for when we are viewing
+any older version and if the users click
+back to current then we need to uh show
+our new files right in the code sandbox.
+So this is for that and this is for
+difference of the files on the timeline.
+Uh so this is coming from that and uh
+we've got all our state I guess what was
+needed. Next up would be to use effect
+with our project data and set all the
+details for that we will do it
+afterwards. But first let's pass down
+the props that we uh need.
+And we also need some more uh uh refs.
+So I'm going to get those first.
+After this
+we have these refs. So autos save timer
+ref. So this is for debouncing of
+autosave. Like if we are doing any
+changes in the file then after few
+seconds we are going to autosave it.
+Then uh this is uh if u the user is
+typing for more than like continuously
+30 seconds then we will uh just uh
+manually hit the save if it's still uh
+writing so we don't lose the data then
+uh uh we just save the last saved files
+and this is for manual edit I guess uh
+this might not be required part but
+we'll keep this for now and uh then if
+uh the data is loading then we need to
+show the editor layout skeleton so I'm
+going to copy a component which is just
+a simple skeleton of the editor layout
+so before this I'm going to paste this
+right here and this is just a skeleton
+component
+editor layout skeleton which has some
+divs and skeleton from UI skeleton
+basic skeleton right and now we are
+going to have if it's still loading then
+we need to show the skeleton right here
+so I'm going to have it just a minute
+If
+is loading then return editor layout
+skeleton
+like this and we don't need this and
+since uh is loading is true we'll be
+seeing this uh editor layout skeleton.
+So let's keep this for now. So we have
+the project details here. The chat panel
+would be here. The preview tabs the
+share and the clerk uh o icons. Then we
+have this preview panel and the chat
+panel. So this is the skeleton we had
+designed. And as soon as we get the data
+from API, we'll show our components. So
+we'll do that afterwards. And now let's
+pass all of the state inside of editor
+layout. So I'm going to pass the states.
+And uh we also need to create certain
+functions for rename, delete, model
+change, then set active file, files
+change, send message and there are lots
+of lots and lots of uh components that
+we have to not components but uh states
+that we have to pass and create the
+functions that we need. So uh first
+instead of doing it here we are going to
+do it on the editor layout uh interface.
+So we'll create an interface on
+editor layout. So let's head over to the
+editor layout and in here before this
+I'm going to paste this interface right
+here. So this is editor layout props. We
+get the project ID. We get the project
+name. We get the files. We get the
+messages. So the messages type is going
+to be chat messages. Make sure that you
+import it from types chat. Then is
+streaming. So currently are we getting
+any input? And we have this function on
+send message. And if uh it's an image
+attachment as well and on files change
+then active files
+uh yeah on files is uh changes. Whenever
+we change files, we should uh invoke
+that function. Then we store what active
+file is it is. Then if active file uh
+does change in the Monaco editor. Then
+we have this preview panel. So this
+preview panel is the uh preview panel
+component itself. So we have written
+react.react node which means it's an
+react component. Same for uh code editor
+panel and history panel. So we are uh we
+are uh controlling those states from
+above. So uh uh we are
+uh passing it from there but we could
+have just uh imported the those from
+here and that would work as well. But
+since we are passing everything from
+above I just did that.
+And this on back to current is if we are
+viewing any uh different revision not
+revision but version but and we need to
+get to the current version. Uh that's
+for that and
+on restore viewing I need to check what
+this is about. I'm not sure. Just a
+minute.
+Okay, it's just restoring uh uh the
+version.
+Then get the credits remaining. Then
+total credits if the credits are
+exhausted and what is the selected model
+ID if we want to change the model. Then
+users plan uh on rename of project and
+on delete of project. So these are all
+the interface that we are going to uh
+not interface but props that we are
+going to pass and this is the interface
+and uh then we are going to use that
+here. So in here let's dstructure that
+and then we will have editor layout
+props and let's get all the props from
+there. So you can get all the props from
+there and
+I'm going to
+paste it. So we have all the props
+needed right here. I'm going to save the
+files and I need to define some
+constants. So
+for chat panel we are resizing it,
+right? So we need to have some
+constants. So min chat percentage. So
+minimum uh uh if we are uh if we are
+resizing the panel so the minimum chat
+percent should be 20. It cannot be below
+20. If it would be below 20 then it
+would just mess up the layout. So this
+is the threshold for that. And the max
+it cannot uh uh increase from max size.
+And for default it would be 30. And for
+minimum chat pixels we are giving an uh
+uh absolute like uh minimum uh pixels uh
+which prevents it from becoming uh
+unusable. If it's very small then it
+would not be usable. So we need to have
+certain limits on that. So these are the
+constants for that. And uh now what
+else? I'm going to save this file. And
+uh then I think we need to get the data
+from use effect and uh then we can pass
+out all the data in here and uh then we
+can start working on the editor header.
+So get the project details and credits
+and everything and then design the other
+things. So let's get started onto that.
+Okay. So next step I'm inside inside of
+this editor page. So what should we do
+next is create the functions and get the
+APIs and everything. So first up is
+uh
+not sure what to do. Just a minute.
+Okay. So let's get the data from
+the use effect.
+So first we need to load the project and
+loading of the project we get first the
+project its history chat histories and
+versions and credits. So we need all of
+those data. So for that I need to head
+over to the worker first and uh inside
+of worker uh you remember we only had
+the routes for project right? So the
+project is done. So we have uh projects
+of getting the files and projects
+details. But we need to get the chat
+history, the versions of the project and
+the credits. So for that we need to
+create all of those things that we need.
+So let's start creating that. So first
+we are going to head to the chat and we
+are going to create a chat route. So
+chat.ts ts and let's also create a
+credits
+ts route
+and let's also create versions here. So
+we'll be needing versions right? So
+versions dot
+ts and inside of chat
+first let's initialize our huno. So
+const chat routes equals to new huno
+import huno from huno and we'll pass in
+the bindings
+and this bindings is not from honotypes
+bindings is going to be type env from
+types and then we are going to have
+variables
+from app variables
+and remove this variables
+and then we are
+going to have this
+object like this and call it LA. Yes,
+chat route set is done. And now we also
+need to export the chat route. So
+export
+chat routes like this. And now inside of
+this we'll add all our methods. And
+let's use this inside of index.ts
+like this app dot route
+chat. And this is going to be chat
+routes.
+Make sure that you import chat routes.
+And let's do the same for credits and
+versions. So I am going to head over to
+chat. Copy this entire thing. Head over
+to credits
+and just replace this to credits routes
+like this. And let's head over to the
+versions as well. Paste it. And we'll re
+replace this to version routes like
+this. And let's head over to index.ts.
+And in here we are going to
+have app dot uh route.
+This is for credits. And
+we're going to have
+credits routes. And we are going to have
+app dot route versions and version
+routes. Import the versions. Okay. So
+this is done and now let's head over to
+credits.ts
+not credits but chat.ts Yes. And we need
+to get all the chat, right? We are not
+going to do anything other. We just
+going to get all the chat first. So
+let's create that uh route which just
+gets the chat history. So I'm going to
+do a comment here and uh this is going
+to get our data.
+So we'll have chat routes dot get
+project id async c and we get the user
+id we get the project id and then we'll
+have con and project is equals to await
+c. envadata get project and we get the
+project with project id and type json.
+Make sure you import the project type
+from types project.
+And we also need to close this one right
+here like this. We don't get any error.
+And after this project, we'll just check
+if we don't have the project then we are
+going to return project not found 404
+like this. And then
+we'll also check if project do user ID
+not equals to current user ID then uh
+the access is unauthorized. Then we'll
+get the chat history from the key value
+store. So chat history equals to await
+c.nv.m metadata.get.
+This is correct. But this part needs to
+have chat session
+and
+we need to get the chat session. So chat
+session should uh is a type that needs
+to be defined. So
+instead of types we created types for
+project but let's create type for chat.
+So chat.ts ts and inside of this I'm
+going to copy and paste the file. You
+can get it from the description of the
+video. So we have image attachment ads
+as type. So we get image in base 64 and
+type of the media name. Then we get chat
+message.
+Then we get the chat session. That's it.
+And I'm going to save this file. Inside
+of credits I'm going to import chat
+session.
+We have it and then we have chat history
+not like this but chat with project ID
+and JSON and then
+we'll just return C do.json JSON chat
+history not like this but
+messages
+as chat
+chat history
+dot messages
+or an empty array.
+Okay,
+chat session has this messages then why
+okay it's not an type of array it's just
+chat session like this and yeah we'll
+return that so we'll get an empty array
+now because we don't have any uh chat
+history we need to post it first but
+this is just for getting to those APIs
+the data And we can move forward with
+this section and uh when we are uh doing
+the next section I guess the AI engine
+and chat system will uh create the post
+system there. Now we also need the
+credits. So for credits uh we just uh
+have a single route in there which gets
+the total credits of the user. So I'm
+going to copy and paste the API type to
+make AI uh let it work. So we have API
+credits get the users credit balance and
+response should be like this. So we are
+going to have chat routes dot get and
+this is going to be slash
+and then we will have async c like this.
+Close this. And inside of this, we'll
+first get the user ID. We get the
+credits from uh get credits. What is
+that function?
+Get credits.
+Okay. So,
+have we written that function? Get
+credits inside of services of credit.ts.
+Get credits. Yeah, it's written. We can
+just use this to get the users credits.
+So inside of credits.ts,
+not inside the services but workers.
+Yeah, this file.
+Why this is all of this data? I guess
+I've
+Okay, so this is my bad. Uh we have
+written everything on the other file. So
+I need to cut this out and paste it all
+here.
+Not everything.
+This entire thing is for credits. But
+this thing only chat routes.
+I need to cut this and I need to paste
+this inside of
+here. And uh I need to cut all of this.
+Save it this file and use it inside of
+this.
+Downside of using tab and AI everywhere
+I didn't check. So this is going to be
+credits routes get and we'll get the
+credits by await c.nv.m metadata dot
+get. Uh but we should just use the get
+credits function. So await
+get credits from services and we'll pass
+in the user ID and c.env PNV and we'll
+just return C.JSON JSON we get the
+remaining as credits dot remaining total
+credits dot total plan is credit plan
+period end is unlimited
+that's it and I guess credits routes is
+just this we have returned the credits
+and uh if we head over to our page we
+also need to get the versions we get the
+credits we get the chat and we need to
+get the versions of uh things. So
+inside of versions,
+okay, this is a pretty big file that we
+need to do. Just a minute. So
+I'm going to paste this comment which
+would have get API projects and project
+ID and get all the versions of that
+project and uh close the comment and
+let's do it and uh we also
+need to have a function named as get
+owned project. So
+what we will do is first we'll check if
+the project that the user is requesting
+for inside of this versions is owned by
+this user is itself and then we also
+need to have a function to version meta.
+Okay, I'm going to copy and paste that
+so
+that it makes workflow speedier.
+After this, we have two functions right
+here. First is uh get owned projects.
+It's just checking if the this project
+is owned by this user with the user ID
+and return the project if it is or else
+we'll return null. And two version meta
+is just extracts the version meta from a
+full version object. That's it. Nothing
+more. Import the version and visual
+version meta from types.
+And we are just returning the version
+number type prompt model created at file
+count changed files and restored from.
+So I'll show you everything when we post
+the things in the uh uh API and show you
+in CloudFire mod uh dashboard. But now
+we are just setting up the base things.
+So this is for that.
+Now we need to create our actual API
+down here. So
+we'll have version routes.get
+So I'm not sure if we need list all
+versions with metadata or we need the
+so just let me check.
+Yeah, we need all the versions of the
+project.
+So
+projects hyphen ID version. So I guess
+this is the base route. And if I head
+over to the index.cs CS and yeah
+this is the base route we are just going
+to have a slash here so inside of
+index.ts TS right here we have API chat
+this is perfect API credits this is
+perfect but for versions this is
+different so this is going to have API/
+projects then we have the project ID
+because versions are going to be for
+project with ids versions are not
+orphaned like we cannot have a version
+as a standalone instance it is
+communicated uh it is uh linked with a
+project ID. So we get the ID from here
+and we just use the slash inside of
+version.ts. So that was what confusing
+me. So inside of here we just get
+version routes.get
+with just a slash and everything would
+be handled from top and we'll have a
+sync C and close this. And first let's
+get the user ID and then let's get the
+project ID from C.request.porum
+id and then we check if this project is
+owned by this user and if not then we uh
+return it like project not found or
+access denied and
+project ID should be of type string.
+So
+why it's crying about
+it is of type string.
+Let's save this and we'll fix this
+afterwards.
+This typescript error. Not sure why it's
+being caused. It shouldn't be.
+Project ID.
+We will just
+have if project ID then only get it if
+not project ID then return project ID is
+required like this. Okay.
+And
+after this what should we do?
+We should have all the versions. So
+we will have con version promises. So
+there might be more than one version,
+right? So this is going to be promise
+version
+or it's going to be null if we don't
+have anything.
+This is like this. And then we get the
+current version and push it to version
+promises like it. Yeah. So for let v
+equals to0 v less than equals to version
+project.curren version and if the
+current version is five then 0 to uh
+four should run or 0 to 5 should run
+then v++
+and version promises push push c.enviles
+we need to get the files not the uh
+other thing so c.env.files files which
+is from R2.get
+we have project id /b
+/ v then we will have v_ub1 v2 v3 like
+that v and then we will have files dot
+json like this and uh this is not going
+to be a JSON object
+like this and uh
+we will have then here first. So,
+and we need to remove this from here
+type
+and inside of then we'll get the object
+and uh
+we'll check if
+there is object then we'll return object
+dot
+JSON.
+Sorry, like this object do.json
+and the type of this
+is going to be
+as promise
+version
+and uh if there is not then we'll just
+return as null like this.
+We have the object.
+We get the object. Then we'll check if
+object is there. If object is there,
+then we'll uh object.json
+as okay, we need to
+parenthesis here or we'll just return
+null and if there is an error, then
+we'll just return null. Okay, then this
+is done. Now we'll get all the versions.
+So const version is equals to await
+promise.all version promises
+and then
+we will get the version metas. So
+we don't need the files we just need the
+versions metadata. So version metas is
+equals to versions dot
+filter.
+Let's have this code and I'll check if
+it's perfect. So version metas and uh
+version metas type is version meta and
+array and I guess it is perfect because
+we don't have any typescript errors
+still. I'm going to have it versions
+filter. So v is version and if it's not
+null then return it and then we'll map
+it with to version meta. So it just
+returns that this thing. So we don't
+need to return the files or any other
+things in it and uh we'll sort it
+according to the newest first. So we are
+just sorting it uh new
+date. No we don't need to sort it by
+date but we'll sort it with the version
+number. So we'll have it by b do version
+number minus a dot version number to
+make it simpler.
+And we'll return C do.json JSON versions
+as version metas and current version as
+project dotc current version. I guess
+that is done and we also need to save
+this file index.ts and now we have all
+the data that is required in our use
+effect right here. So let's call the use
+effect and get the data there. So this
+is going to be a big thing. So after
+this I'm going to have use effect
+like this and this use effect is going
+to load as soon as we have the project
+ID get token and router. So project id
+get token and router it should load it
+and then we will have a function named
+as const load project
+equals to a sync and this and we need to
+uh call this. So we'll just call this
+project because we are doing this
+because this is an a sync function. And
+uh
+what else
+inside of this? Let's wrap this around
+try catch block.
+And I guess we'll also need finally. So
+inside of finally, we set the loading
+and loading versions as false.
+So finally and finally is going to be
+set loading false and set is loading
+versions
+false like this. And now if we head over
+to our screen you can see that skeleton
+is gone. And to make it work, we can do
+like this. Set time out
+for 200,000
+milliseconds.
+Do something like this.
+Okay. So
+that effect is running. So as soon as
+the page is loaded, uh it runs for 2
+seconds. We have this and finally it
+gets executed and uh our skeleton is
+gone.
+So we'll just revert this out. Was just
+checking if it works perfectly. So we
+have all the data now after this try. So
+we need to get the data now. I was just
+checking the loading states and
+everything. So let's get the data now.
+Okay. So now let's do the actual uh
+getting of all this. But we also need to
+set up our API client with the chat and
+version. So let let's head over to API
+client. And in here like projects we
+need to do for chats
+chats like this. So
+just a minute
+chats and we have a function of get
+history.
+We get the project ID is string and then
+we do authenticated fetch
+and uh
+authenticated fetch is going to have
+messages
+chat message like this.
+And we pass in the get token
+and the route
+which is API/ API/
+chat
+project ID like this
+and we get the messages like that
+after chats. What else? After chats,
+let's do for credits. So credits, we get
+the credits. We just need that one
+route. So get
+authenticated fetch credits
+not this but it's
+the entire period end and unlimited and
+plan and everything we get all of those
+details from here. So we need to have
+that remaining total plan period end is
+unlimited and then
+this route that's it for credits and
+after that we need to have for versions.
+So versions and uh we are getting all
+the versions for that project. So we
+have list we get the project ID and we
+call authenticated fetch. We get the
+versions as not number but versions
+meta
+and get token and route as API project
+ID versions like that. Perfect. And now
+we can use it onto our page.x. If we
+head over to the page.tsx tsx and now
+inside of load project first we have the
+try right inside of try we get the
+client so client is equals to create API
+client make sure to import API client
+and then uh what should we do is const
+equals to await promise dotall and uh we
+get client projects get with project ID
+and uh
+like this but I'm going to write client
+dot projects dot
+get and pass in the project id
+then we will get client
+dot projects dot get files
+we pass in the project id then we get
+clients dot chats dot dot get history
+we pass in the project ID
+then clients
+client dot versions dot list we pass in
+the project ID and we get clients dot
+credits dot get we pass in the project
+ID and not project but project ID to get
+the data
+okay no we don't need to pass in the
+project ID here because we It's credits
+are not associated with project. It's
+associated with account. And now we get
+the project response here.
+Then we get uh files response.
+Then we get chat response.
+Response. We get versions response and
+credits response. And after this as soon
+as we get it we set the project as
+project dot project response. project
+like this. Then we uh based on that we
+set the selected model ID. So set
+selected model ID as project uh
+response. Domodel or
+default model ID. And then
+what we will do is set credits remaining
+as credits dot
+uh
+credits response
+credits response dot uh if it's
+unlimited then minus one or else credits
+remaining then
+credits total is credits dot dot tuto
+and set user plan as credits dot reddits
+response dot uh plan. Then we need to
+set the files. Now for files uh it's
+different.
+Okay. So
+con files record is going to be files to
+record and files response do files. Now
+we need to create this files to record
+uh function. So
+I'll just grab that and create it
+at the top outside of this.
+I'm creating this function files to
+record. We get the project file here
+and uh then
+we need to remove the markdown fences
+here. So uh it has the uh uh
+triple dots which uh has the uh
+file name and everything and uh file
+type and everything. So we need to strip
+that down. So for that we also have this
+function right here. Strip markdown
+fences and it removes it from reax uh
+checking it from reax and just removes
+it. So that's it.
+Okay, then we have the files to record
+uh strip markdown fences and then we'll
+just uh uh store the clean file and uh
+return it
+and then we also need uh record to files
+something function which is sending
+files to the API.
+like this. So we have just have this
+function record to files object or
+entries uh record it's a helper function
+and
+I guess we are returning from here.
+Yeah, we need to close this.
+And then inside of our use effect, we
+have files to record function.
+And then we'll have set files as files
+record. And then we'll have current
+files ref.curren as file record. Then
+we'll have set messages at chat response
+do memes messages and set versions as
+version responses dot versions. That is
+correct. And now we need to have the
+initial active file. Uh so we need the
+first file when we uh check the mono
+editor. So which file should be the
+first? So we will have const file paths
+is equals to file responses dot
+okay file responses dot files dot map
+we get the path we just need the paths
+and if we have an app.tsx then that
+would be the entry point so file paths
+dot includes
+slash source /app.tsx.
+If it includes that then we'll set
+active file as
+source
+app.tsx
+and if we don't have an if uh if we
+don't have it then else if we are going
+to check if file paths dolength is
+greater than zero then we'll write set
+active file as file paths of zero. So
+whatever the first file is, we'll set it
+if we don't have the uh app.tsx inside
+of editor inside of the code view. So
+I'll revisit this section uh when we are
+doing that.
+And now we need one more try catch block
+inside of this. And for catch we are
+just going to skip it. But inside of
+this we are going to get that pending
+prompt and store it inside of the ref.
+So const storage
+key is equals to pending prompt project
+id and we'll check if not check but get
+that pending prompt and if there is a
+pending prompt then we are going to have
+pending prompt ref or yeah pending prof
+dot currently equals to pending and then
+remove the session storage entry like
+that.
+Let's save it. And now inside of this
+error block
+uh what we'll do is why would it uh
+would uh generate an error? Uh if the
+project is not found only then it would
+generate an error. So we are going to
+push it to dashboard if it's an invalid
+project and we don't need an error as
+well here. So we can get rid of that.
+That is it. We have got our data and uh
+we have screwed it and let's
+reload here and check if things are
+working.
+I click on this.
+I'm getting redirected to dashboard. So
+there is some error
+console log
+error and
+Let's see what the error is. And I'm
+going to open up my console. Click on
+this. Head over to here.
+Okay. API credits is not found.
+404 API chat not found. API credits not
+found. Okay. I need to deploy this
+worker changes. So we might be running
+on local. And after this changes, we
+need to deploy the uh worker again. So,
+npx wrangler
+deploy
+and then the worker would be able to
+find those API endpoints and everything.
+So, let's try to deploy it
+because our hosted worker doesn't have
+all of this new data.
+We may switch to the local version. Uh
+after this we just need to change the
+API URL and start npx wrangler dev. And
+now let's try to reload it.
+And yeah we don't have any error now. As
+you can see it's able to fetch the data.
+So we just had to deploy the worker
+again. That was the only issue. And what
+next? Uh,
+let's head over to
+what was next? Yeah, we just need to
+remove this and have it here. Remove the
+error as well
+because the error was generated by us,
+not the code. The code was not wrong.
+Now we need to pass this things to this
+editor right here editor layout and then
+work on the editor
+header and the editor layout component.
+So now let's pass the things that are
+needed. So
+I am going to copy all of that and visit
+all step by step or I'm not going to
+copy it to make you understand. So first
+we'll pass in project
+and uh sorry this is going to be project
+ID. It's going to be project ID. Then
+we'll pass project name and that is
+going to be
+project dot name. But
+uh we are storing the project name like
+this here. So I'll do that
+con project name is project name or
+untitled project. So
+this is
+this is going to be project name like
+this. And that is done. What next? Then
+we need to send the files. So files
+is files
+then we will send messages as messages
+then we'll check if a is streaming is
+streaming
+and then what else?
+Let's uh send all the states first. So
+active file is
+active file.
+Then credits remaining is credits
+remaining. Credits total is credits
+total. Then
+is credits exhausted is is credits
+exhausted. Then we'll have selected
+model ID, selected model ID in user
+plan. Then what else?
+we'll pass in the viewing version. So
+viewing version as viewing version
+and uh then we have some components. So
+uh just a minute.
+Okay. So we'll pass in that preview
+panel as preview panel dev. code editor
+panel as code editor panel div and
+history panel as history panel div.
+We'll uh change this to actual
+components afterwards but for now it's
+this. Now we need to send some functions
+of handle send message handle files
+change handle model change and handle
+rename and handle delete. So and handle
+restore version and if there is any
+error so we need to handle that as well.
+So let's create uh functions after this
+we have u
+on send message we will have handle send
+message. So we need to create the
+function here const
+handle send message and we'll have
+pending
+send message implementation like this.
+And after on send message we'll have on
+files change.
+We'll have
+handle files change and then we'll have
+const handle files change
+alert pending file change implementation
+write this not sure if this is uh the
+correct thing we are just using AI for
+now and After this
+on active file change we'll have
+set active file.
+We don't need to create it. Uh we
+actually have it as a state. Then we'll
+have on model change equals to handle
+model change. Let's create that function
+as well. Handle model change alert
+pending implementation.
+Then after this we're going to have on
+rem on rename and handle delete. So on
+rename is equals to handle rename and
+let's do on delete equals to handle
+delete. And after that on back to
+current is going to be handle back
+to current. And let's create all of
+those functions.
+So handle rename pending rename
+implementation
+handle delete pending delete
+implementation handle back to current
+and this is also
+alert pending back to current
+implementation.
+So this is done. So what's error here?
+Okay, handle delete expects more
+argument. So what is that?
+I guess we don't have any ID here on
+handle delete because we know the
+project ID. So we just have to delete
+the project from here. And we have all
+the necessary things that are required
+here and we have passed it. We'll do the
+function implementation afterwards. But
+for now all of this is done and we can
+move on to the editor layout component.
+So the actual wrapper is done. Now we
+should move here and uh start working on
+things as required.
+Okay. Okay. So now let's head over to
+the code editor and
+uh I am inside of editor layout and now
+inside of editor layout let's choose the
+editor header component. So for editor
+header component I am going to uh first
+head over to the editor header component
+and inside of here let's uh have its
+props and everything. So, I'm going to
+just a minute.
+I'll get the editor header props here.
+I'll paste it. So,
+we need uh project name. We need files
+active tab on tab change. Uh then mobile
+panel. Then uh we need on mobile panel
+change project ID user plan credits
+remaining credits total on rename and on
+delete and device mode and on device
+mode change. Now for the interfaces
+uh
+let me check where to get those
+interfaces.
+Okay. So device mode is going to be from
+device mode edit. Okay. So we need to do
+that and uh apart from that we need the
+editor tab value. So editor tab value
+where do we get it from?
+Edit from the editor tabs. And we also
+need yeah we just need to create two
+components which is editor
+editor tabs and device toggle. So let's
+do that. Inside of editor, I'm going to
+create editor
+tabs.tsx.
+And then I'm going to create a device
+toggle
+tsx. And let's do the device toggle
+first. And this is a client component.
+Use client. And let's write the
+component RFC. And this is just export
+function device
+toggle. This is device
+toggle
+like this. And now let's create the
+type. So export type
+device mode is equals to desktop
+or
+Yeah, it should generate it
+tablet or it's going to be phone
+like this. Then we are also going to
+have devices. So for devices I am going
+to paste this and uh mode is desktop
+table or phone and icon is going to be
+the icon that we need. It should be
+imported from lucid react
+and the label is desktop, tablet and
+phone. So it's just the pixel label
+there. Now after this we are going to
+have the interface. So uh props
+interface. So export interface
+device
+toggle props and then we'll have device
+mode as device mode and we'll have on
+device
+on device mode change
+as mode
+device mode and then just what so this
+is state and set state like that. And
+what else? Then the component is pretty
+simple. We get the props in here.
+Device,
+let's give it a type first. So
+intellense would work. So device toggle
+props. And in here, this is device mode
+and on device mode change. And inside of
+here, we are just going to return and uh
+we'll have the button which will just
+change the tab. So I'm going to copy
+that component right here.
+I paste it. And now you can see the
+device toggle. We need to import CN. And
+uh we have this div. We map this devices
+uh and we check uh if that tab is
+active. So we get the device mode and if
+that device mode triple equals to uh
+this device do mode then uh uh that tab
+is active. So for that we give this
+class or else we give the other class
+and on click of that we just uh change
+the device mode with the uh this. So
+that is it and we render the device
+icon. That's it. So this device mode uh
+device toggle is done and we would be
+able to import it here device mode. Now
+we need to do the editor tab value. So
+editor tabs is going to be uh
+uh the it the tab changes between the
+preview and the code. So um it just uses
+the sandbox preview or the Monaco editor
+code. So
+for that we'll have use client here.
+Then what else? Uh
+let's export the type of edit tab value.
+So export type and we will also have the
+history here. So edit the
+tab value
+equals to preview
+preview
+or code
+or history
+like this. Then we will have editor tabs
+props. So export interface
+editor tabs props
+and we'll have active tab
+as editor tab value and on tab change
+on tab change is going to be tab and
+editor tab value which would return
+void.
+And then we will have the tabs. The tabs
+is nothing but uh the preview code and
+history. So
+I'm going to
+get it from my code and paste it. So
+tabs we need to import the icon. So icon
+I
+code two and this icon of history from
+Lucid React.
+So import those. And this is just the
+tabs like we have for device. And then
+we have pretty simple component. So
+we'll just export function
+editor tabs.
+So we just have this and the type of
+this is editor tab props. And we get the
+active tab and on tab change and we just
+return um
+like uh we had for button. So going to
+grab that code and paste it. So import
+CN and we have this uh div with tabs.m
+map. We check if it's active. And on
+click of that, we uh change the tab. And
+this is the class names.
+That's it. Pretty simple. I'll save
+this. And let's import this inside of
+editor header. So we have our editor
+header complete.
+Done. And now inside of editor header,
+what should we do is we'll get all the
+props that we need. So I'm going to
+dstructure it and give it a type of
+editor header props. And I'm going to
+dstructure everything from here. So this
+are all the props. And
+what should be done here is first
+uh yeah first we are going to have a
+function a sync
+function
+handle
+open preview and this would just alert
+that
+uh preview open is
+preview open is pending. So this would
+just open the preview in code sandbox.
+So this is for that and we need a use
+state snippet for use state for that. So
+use state snippet. So this is is opening
+preview and set is opening preview and
+initially this is false. import use
+state
+and in here now let's do our code just a
+minute
+now I'm going to remove this div
+instead this is going to be a header
+here header is going to have a class
+name of flex height 12 shrink of zero
+item center
+border bottom
+then we'll have border border
+and background
+uh bg background and px of 1.5
+small padding x of three
+and inside of this we are going to have
+a flex
+item center
+item center gap 1.5
+small gap of three
+and inside of this we'll have link to
+dashboard which will just show us the
+logo so I'm going to paste it right here
+make sure import link from next link hs
+dashboard
+class name area label
+and image of logo.svg. This should be
+next image. We'll change this
+afterwards. And if I head over to the
+browser, you can see that we have the
+lovable logo. And if you click on this,
+we are uh we can redirect it to the
+dashboard. So that is working. Now let's
+do the other things in here.
+And uh what else? Now we need the
+project name plus that drop-down for
+project. So let's do that.
+After this link, we are going to have a
+div with class name of flex. Then flex
+call
+and inside of this we'll have a
+project menu component. So that needs to
+be created and we'll do that. But let's
+write a span here which is previewing
+preview last saved version
+just simple text and let's give this
+span a class name of hidden
+padding 1.5
+text excess
+text muted foreground
+and if it's small then we'll give it a
+block and for mobile versions it's
+hidden and now we'll have project menu.
+So project menu should be a component
+inside of here. So let's create that
+project menu.tsx
+and project menu would be a big
+component I guess because it's a
+drop-down and will have the drop-own
+values and everything. So all in all it
+would be calling the props from the main
+component. So
+let's create it. So first I'm going to
+have the interface uh for project menu
+props. So this is the new interface. We
+get the project name, project ID,
+credits remaining, credits total, user
+plan on rename and on delete. Then we
+need the theme options for theme
+switching. So we got the three three
+themes. Uh we also need to import this
+theme from theme provider and moon from
+Lucid React.
+Sun from Lucid React, monitor from Lucid
+React. Yeah. So the theme options uh we
+have three themes uh light, dark and
+system, light is the light mode, dark is
+the dark mode and system is whatever uh
+theme is configured for your system
+would be here. Like if you have
+configured dark theme for your system
+for your OS then it would automatically
+use the website as the dark theme. So
+that is that and now let's create the
+components. So export function
+project menu and
+uh
+let's give the type of project menu
+props and uh let's get all the props and
+I'm going to have all the props here
+credits total if there is no value for
+that then the default is 50 and now
+inside of this we first get the user as
+use user from clerk nexjs.
+Then we get the router. So const router
+is equals to use router.
+Then we get the theme. So const theme
+and set theme
+from use theme hook.
+And then we need several of states for
+uh is rename model open if it's uh
+delete model open and the rename value
+and rename input ref to to store the
+input values. So
+these are all the states and ref is
+rename open set is rename open delete
+open set is delete open rename value set
+rename value and rename input ref and uh
+use effect. We going to have a use
+effect here which would run as soon as
+we have the project name and we set
+rename value as the project name. So as
+soon as the model opens we have the
+actual project name here. So the user
+has to just uh change it. Then um
+when the rename dialogue opens we need
+to automatically have the focus there.
+So we are having the input ref here. So
+we'll have a use effect here which would
+uh if is rename is not open it would
+just return and uh in the 15
+milliseconds uh we'll just uh focus on
+that input ref. So we'll pass this ref
+to the input right down there.
+After that we have other con uh
+functions which is
+uh handle rename confirm and handle
+rename key down. So let's do that as
+well. So handle rename confirm is just
+calling its parent function uh the onre
+name which we received from props. So we
+trim the value and it trim is not same
+as the project name then we call the on
+rename function from props and uh set is
+rename model to false and then
+uh we will just cover the escape and
+conf uh escape and enter key to uh u as
+a shortcut like if we uh press enter key
+then we will have handle rename confirm
+And if we uh press the escape key then
+we'll just close that model. And
+we will show the credits. So in here we
+have this uh variables is unlimited. If
+the credits are minus one then uh it's
+uh unlimited or else we'll have the uh
+total credits remaining then uh uh is
+pro if the user is pro and display
+remaining is total credits remaining and
+we calculate a percent of uh of credits
+according to that because we are showing
+a progress bar there. So now I'll get
+the actual component as well and
+I'll just show you
+from now we'll return
+this fragment here and I'm going to show
+you the component. Let's wrap it
+and let's import drop-own menu. So this
+is the drop-own menu in which all of
+this would be displayed. Then the
+trigger for that and uh if we click on
+the project name we trigger the drop-own
+menu. We need the icon chevron down from
+lucid react. And now comes the drop-own
+menu content.
+Then the drop-own menu item.
+First is go to dashboard. So this is
+just a link to dashboard. Then drop-down
+menu separator component.
+Then we get the user info. So user image
+URL from clerk then username and then we
+show if the user is pro then we show a
+badge of pro plan or free plan then we
+show the credits remaining and the
+credits progress based on that and uh
+after that we have a route to settings
+make sure to import settings icon from
+lucid react then we have
+button to drop down menu item to rename
+the project. So it would just open up a
+model which would rename the project. So
+uh we have this pencil icon and then a
+period submen. So this is for the
+colors. So we have drop-down menu sub
+and drop-own menu subt trigger
+palette from listed react drop-own menu
+subcontent.
+And we'll just uh show the themes here.
+And uh we need the check. Check is uh uh
+the icon from Lucid React. We need the
+trash icon. This is for deleting the
+project.
+And for help, we will just redirect it
+to settings.
+And now we have the rename dialogue
+here. Then we also have the delete
+confirm dialogue. So now this dialogue
+is from UI uh dialogue. We have the
+dialog content,
+dialogue header,
+dialogue title,
+dialogue description
+and then we have the input and we are
+attaching that rename ref here so that
+we can focus on it and this is just an
+input. Then we have dialog footer button
+from UI button. for cancel and submit.
+Then we have this alert dialogue for
+delete. So
+just basic react nothing special.
+Okay. Alert dialog header is not being
+imported. So did I import it from any
+other component?
+alert dialogue header.
+Yeah, imported alert dialog footer and
+alert dialog cancel and alert action.
+That is it. And let's save this. So this
+is self-explanatory
+and
+we are not passing the data to the uh
+header here. So we are not able to see
+the data. So let's pass it from the uh
+we have the project menu. Project menu
+is complete and now we need to use the
+project menu inside of here. So let's
+pass it as well. So inside of editor
+header in here, let's use the project
+menu not project preview uh project menu
+component.
+It's a self closing tag. And inside of
+here, let's give this a project name
+of project name,
+let's save it. And uh
+okay, so project menu is using use
+router. And we need to
+have use client at the top here. So use
+client. Save it.
+Okay. So we use use router from next
+router but we need this from next
+navigation like this
+rename value trim undefined. So
+rename value dot trim in here or inside
+the disabled. So rename value dot trim
+So what is the rename value?
+Okay, perfect. So we have got the
+credits. We have used zero credits. We
+have everything here. Now
+the theme is also changing.
+We can head over to settings.
+Now
+we are able to rename the project and we
+need to pass the other props. So let's
+pass all of that. Let's head over to the
+editor header and after this I'm going
+to pass all of this props here. Project
+ID, credits remaining, credits total,
+user plan, on rename and on delete. And
+let's refresh this.
+We are still not getting the project
+name. Are we passing it? We should have
+the project name, right? Project name is
+from the top level. So if I head over to
+this page here. So we are getting the
+project name here. And what is the
+project name? The project name
+is here. If we don't have the project
+name, then it is untitled.
+So,
+should it be something different? Just
+let me have a book.
+We are getting the project name. So
+let's write project name as custom here
+and let's see if that works. No, it's
+not working. The project name is not
+coming here. So I guess the issue might
+be something else. We are passing it the
+custom name here. And if we head over to
+the editor header
+where we are using the project name, we
+are just passing the project name inside
+of this project menu. And inside of this
+we are getting this project name. We are
+setting it as the rename value
+handle rename confirm. And we are using
+the project name here.
+Let's hard refresh the page and see
+still not here. Let's write something as
+custom name.
+Yeah, that is coming. But why this
+project name is not here?
+In here, I'm passing this inside of
+editor layout. If you head over to
+editor, okay, from editor layout, we are
+getting the project name and inside of
+editor header, we are not passing
+anything. So that is the issue
+ops passing. So we'll do that afterwards
+and uh
+not afterwards let's complete it now
+because
+the end we are going to need that and
+that would cause an issue. So let's
+remove all of the changes that we made.
+Something crashed.
+Okay, it's working now.
+Let's pass in the props that we need.
+Just a minute.
+Okay. So, let's head over to the editor
+a layout component. And inside of edit a
+layout, I want you to do uh
+some states. So the states is the active
+mode, active tab, device mode and chat
+with percent.
+So we have editor tab value from editor
+tabs, device mode from device mode. And
+this is for chat with percentage just
+that we uh see it with default chat
+percent. And let's save it. And now
+let's pass in all the things that is
+required in the editor header. So editor
+header first needs the project name
+which is going to be
+project name and if we save it if we
+head over to the browser we have the
+name right here. So that fixes things
+but we need to pass the other things as
+well. So let's complete this. So then
+we'll pass in the files which is files.
+Then we have active tab which is active
+tab. Then on tab change is going to be
+set active tab.
+Then we will have mobile panel which
+would just be the
+mobile panel component. So let's have
+mobile panel and we need to define this
+right mobile panel and it's just a state
+not a component. So we'll just have here
+mobile panel. So use state snippet
+mobile panel and set mobile panel and
+inside of here we are going to have it a
+type of chat and the types for this is
+going to be chat or
+content
+like this. Then we have the container
+ref. So mobile panel is here.
+What else?
+On mobile panel change.
+On mobile panel changes
+set mobile panel. So for what this
+mobile panel is, it's just when we are
+on the responsive, we are just going to
+show chat and content uh like that. We
+are not going to show other options uh
+like we need to have the live preview or
+anything else. We are not going to show
+that. Uh so we are keeping compact on
+the mobile mode.
+Next is uh we'll pass in the project ID.
+So project ID is the project ID. Then we
+will pass in the user plan. It is going
+to be user plan. Then credits remaining
+is going to be credits remaining.
+Credits total is going to be credits
+total. Then on rename will also pass on
+delete. On delete is on delete.
+On rename
+is on rename.
+And device mode is
+device mode
+on device mode change is set device mode
+like this. And let's save it. And we
+have everything that we need here.
+Perfect.
+Works. Now this piece of thing is done.
+If we try to rename the app, we get the
+error that pending rename
+implementation. So, we'll do that
+afterwards.
+Now, let's move forward with our header.
+What else should be done inside of
+editor header?
+Let's head over to the editor header
+component. We got the drop-down. We got
+the span. We'll end this divs. And then
+we'll have pills for showing the
+uh tabs for preview or code. So let's do
+those uh tabs. So in the mobile version
+this is hidden
+on medium screens. SS block then
+absolute
+left 1 by 2
+then minus translate
+x of 1 by 2
+and in this again we'll have another div
+with flex
+item center gap of 0.5
+rounded full
+not right full rounded equal and
+background secondary of 60
+bg secondary / 60
+and padding of one.
+And now inside of this div we are going
+to map the tabs. So tabs dot map.
+Why is my AI not working?
+Don't we have the tabs of
+Where are those tabs
+of preview code and history? We wrote it
+somewhere, right?
+Let's head over to editor tabs. Yeah, we
+need this tabs from here.
+This piece of code of taps do map is
+just like this.
+Why we are not using this component? I'm
+not sure. Let's use this component
+inside of here.
+Instead of this div,
+I'm going to use the editor
+tabs.
+And this needs the prop of active tab.
+So active tab is
+what is the active tab? I'm not sure. So
+are we storing the
+here on tab change and
+where do we get the active tab?
+from props. Do we get the Yes, we get
+the active tab from props. So, let's
+pass the active tab here. And what else?
+On tab change. So, let's pass on tab
+change as well. And let's
+complete this
+preview code history. Yeah, perfect. So,
+we have preview code and history. So
+these history should show versions code
+would show the uh moniker editor and
+preview would show the preview here. So
+that is done editor header. What else?
+Then we will have the uh uh button for
+mobile panel and uh
+what else?
+mobile panel has just two buttons of
+preview and chat. So, uh I'm just going
+to copy and paste it. It's just a basic
+JSX. And if we head over to VS Code,
+after this we have this right here
+import
+message square.
+But this is just basic GSX. If we are on
+the uh smaller screen, it is there. And
+for bigger than uh medium screens, it is
+hidd.
+And
+you can see that nothing is visible
+here. But if we close this and make it
+small,
+still not visible. It should be visible.
+Not sure why are the changes not loaded.
+Did we save the file? Yeah, we did save
+it.
+Not sure. We'll fix that. We'll fix this
+afterwards. It's not a big deal.
+Now, we need uh the device toggle. And
+then we'll need the live preview button
+and uh the export button and the user
+button. So, let's do all of that. So,
+after this button right here, we'll
+close this div, I guess.
+Which div is this?
+Yeah, we'll close this div right here.
+And after this div we are going to have
+another div of ML auto and uh flex
+shrink of zero
+item center
+gap 1.5
+and small gap of two and uh inside of
+this if active tab
+ripple equals to preview
+Then
+whenever only the preview tab is active
+then only we need to show the device
+toggle. So if we are viewing the history
+or anything then or the code then we
+don't need to show this. So this is for
+that
+div class name hidden medium flex for
+smaller screens. This is hidden
+item center
+gap 1.5.
+Inside of this we'll just use the device
+toggle component that we just created.
+We'll pass in device mode as the device
+mode and on device change is on device
+mode change and let's do a
+perfect the CSS is not perfect. So,
+if I
+copy this piece of code right here and
+paste this
+after this, would this work?
+No. So,
+I just missed the CSS, so I need to fix
+it. Just a minute.
+Okay. So,
+let's keep this here and let's try to
+close all of this divs. So, I'm going to
+close this div right here, which closes
+this.
+Then,
+Okay. So now let's try to close this
+div.
+This div and this div right here closes
+everything.
+Now I guess that is perfect.
+This two divs closes then
+this div.
+Okay, I guess this thing is outside of
+this div right here.
+Okay, perfect. So that is working and
+that is done.
+Now we need the export button. So let's
+do that without messing the code.
+After this right here inside of that dev
+only we are going to have a button to
+show the preview and an export button.
+So I'm going to copy that button right
+here. So this is the button. We need to
+import button from UI button. And if
+it's disabled, if the preview is
+opening, then it's disabled. So is
+opening.
+So uh
+we did have okay. So we just wrote is
+opening instead of as preview opening.
+So we'll just have is opening here. and
+is opening here.
+And then we have handle open preview.
+And let's have loader two. Let's have
+external link
+review open as pending. Done.
+Now what next?
+Let's have the export button. So before
+the export button,
+I'm going to have the user button from
+clock. So
+I'll just paste that code and
+import the user button from clock
+next.js. Paste it. And we have this
+here. And this is not inside of this
+button. Outside of this
+perfect and now we need the export
+button. So for export button
+we'll uh
+create a separate component that would
+just uh
+show us the pro things and everything.
+But for now instead of that let's have
+just the export button. So I'm going to
+have button
+And we'll write export here. And I'm
+going to pass in this props here.
+And we just have the export like this.
+And when we click on this, it would uh
+open up the uh model if we are not on
+the pro plan. And this is pro only
+feature. And uh then
+I guess this is done.
+Let's also write an on click handle
+here. On click
+alert
+export pending
+like this
+done. So
+editor header is done. Now we need to do
+the other things which is we can resize
+this panels then let's do some chat
+panel things here and some preview panel
+things. So let's do that.
+Okay. So now what I want you to do is
+let's do this resize thing first. So
+let's try to resize this panels and uh
+uh for that
+let's head over to editor layout and
+after the editor header we have this
+container ref where we have the chat
+panel and uh
+let's have some divs wrapping this
+Just a minute. Okay. So, we are going to
+have a div right here which would be
+last name shrink
+zero. Then we'll have overflow hidden.
+And uh then we'll manually apply some
+styles.
+Style
+width.
+We'll have
+chat with percent
+with as chat with percent and percentage
+and then we'll also give it
+a min width
+of min
+chat pixels like this.
+And we're going to get this chat panel
+and paste it here.
+And then we would have the drag handle.
+So
+uh we have this drag handle. So now we
+need to give this an events of on
+pointer down on pointer move and on
+pointer up. So
+let's create those things. So on
+pointer down
+we are going to have handle
+pointer down then on pointer up
+handle pointer up
+and then we'll have on pointer up not up
+but on pointer move
+equals to handle
+pointer move and let's create those
+functions right here. So
+con
+handle
+pointer down there's going to be an use
+call back. So as soon as we uh get it so
+we uh
+set the uh
+so we just can capture the pointer event
+and uh save it so that uh we start the
+track uh handle. So I'm going to
+copy and paste this piece of code use
+call back. So we get the event prevent
+any default. Then we set the current
+target to set pointer capture with
+pointer id and set is dragging to true.
+So we start dragging and then we have
+handle pointer move. So
+uh let's uh have the up thing first. So
+after this
+up so release pointer capture we are
+releasing the event and set is dragging
+to false and then we need the pointer
+move event
+and we'll paste this piece of code so
+you can just write it. I've got this
+from stack overflow to be honest. So I'm
+not able to explain you this perfectly.
+So what's happening is we are checking
+the state if it's not dragging and if we
+don't have the container ref then we are
+returning and then we get the container
+rectangle by getting the uh container
+ref dot current. So this containers
+current uh bounding client rectangles
+uh height and width things. So we get
+the percentage and uh compute the
+minimum percentage and uh effective
+minimum width uh according to that and
+set the width chat width percentage
+something like that.
+Not sure what exactly is happening. And
+then we have a use effect which would
+run as soon as uh the component mounts
+to keep in sync this piece of code
+to keep in sync the chat panel with
+window resizes.
+So just write this down
+and with this. Okay, as you can see we
+have 30% of the screen here and now I
+can resize this. You can see that it's
+being resized.
+So our resize is also done. I'm sorry I
+was not able to explain you this
+properly but uh to be honest I also
+copied and pasted this code with stack
+overflow and some AI. So uh please bear
+me with that.
+Now resizing is done. Now what we need
+to do is when we click on this we need
+to instead of showing the preview panel
+we need to show the code panel and
+history panel. So that is the last piece
+of code here uh remaining with the error
+boundary as well. So let's do that. So,
+first uh what I wanted to do is
+just a minute.
+Okay. So in this file after this we have
+this div right here which just which
+just shows us the preview panel but I
+think it's not like that.
+Uh
+we'll remove this uh and inside of this
+we are going to have div
+with class name
+like this. Then we'll have CN
+and we'll have
+absolute
+insert of zero
+and then we'll have active tab triple
+equals to preview.
+If active tab is preview then we'll have
+Z of 10
+and it should have the visible class
+name
+or else it should have Z of zero and
+invisible
+invisible
+class. So we are checking if the
+attribute tab is preview then uh we are
+get giving it a z of 10 and visible
+class name uh so that we show it. So
+inside of this div we'll have again
+another div which would uh see if the
+device mode is not desktop.
+Just a minute.
+Okay. So in here I have this piece of
+code
+this thing here. So we have some class
+names and other class names and
+according to the uh device size uh we
+are showing the widths and we need to
+create this panel error boundary
+component. So let's create it. Panel
+error boundary
+dot tsx and the parallel error boundary
+tsx component is a class component and
+it's a client component and first we
+have error boundary browses uh name and
+children. Then if it uh has errors, we
+initialize the constructor. Uh then set
+the state. Get the route state from
+error. We have the component uh catch uh
+life cycle hook. Then we have the handle
+reset button and we just show the UI for
+the error and try again to reload that
+component. So
+this is a class component. This was used
+in earlier days of React
+to catch errors. And there's no other
+way to do this. We need to use the class
+components. And now we have the preview
+panel here. We click on code. It's not
+visible. So now let's do the code.
+So if I head over to my code here,
+uh we'll leave this two divs and then
+we'll have a div again with class name
+CN
+which would have absolute
+insert of zero
+and if active tab triple equals to code
+then
+we'll have Z of 10 and visible
+or else we'll have Z of zero and
+invisible
+and
+inside of this we'll have panel error
+boundary and we'll have the code editor
+panel component here.
+Okay. So, name of this is going to be
+code editor like this
+and code editor is here.
+And now we need to do the history
+panel is going to be the same. So after
+this div right here, we have this div of
+history panel and just the same with
+showing history panel. Going to save it.
+And if we head over to here, history
+done. And then
+we need to do one more thing whenever we
+uh are dragging our panel. So we need to
+block the I frame from mouse capture. So
+to do that we have this this just write
+this code and it would uh just uh fix an
+error which would call be caused in
+future we are just writing it so we
+don't forget it. So this is uh for this
+dragging and whenever we load the code
+setting box uh iframe here that would
+cause an issue but this fixes it. So
+this is done now and we have added a
+layout complete. Our error boundary is
+also complete. So I guess everything is
+done but we just need to export
+everything from this uh index.ts for
+barrel export. But uh we can do that
+afterwards because we still need to do
+many components here. So we can do that
+afterwards. So no need to do that now.
+And uh now uh this makes uh this section
+complete. And the next section would be
+the chat section which would uh not chat
+but AI engine. So when we uh type
+anything it would just call the AI and
+start generating. So we have that
+section now for AI setup of everything.
+So our section five is complete and now
+let's start working on section six.
+Okay. So now let's work on our AI
+engine. So first I want uh to have the
+system prompt. So inside of worker
+and inside of source AI I'm going to
+create a new file named as system

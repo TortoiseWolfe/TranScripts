@@ -1,0 +1,938 @@
+things here. Let me close all of this
+and let's head over to the credits.ts
+and
+credit service files.
+This uh yeah, this one. So, in here uh
+let's see if we have got everything. So
+I think we need to have an uh function
+for uh deduct credits and uh yeah we
+need to have a function for deduct
+credits here. So
+have we already done that?
+Get credits.
+No deduct credits is not done. So
+export async function
+deduct credits and we get the user id
+credit cost and env promise of user
+credits. Credits is await get credits if
+uh it's unlimited credit so we just
+return the credits or else we have
+credits remaining is equals to matt
+domax zero credits remaining minus
+credit cost. We update our uh metadata
+and we return the credits. That's all.
+And now we also have a function for uh
+upgrade plan. So export a sync function
+upgrade plan.
+In here I will get the user ID and env
+uh then we get the credits. Then if
+credits do plan. No, this is not we
+want. Instead const
+upgraded as user credits
+and
+then as pro and remaining as unlimited
+credits like this. Update the metadata
+and return upgraded.
+Now export
+async downgrade plan. When we downgrade
+we
+will get the user ID and envi
+from
+create billing period. Now const down
+graded user credits we get the remaining
+we get the total plan as free period
+start period end get this and
+what else uh update the metadata and
+return the downgraded
+that's it
+downgrade plan is done upgrade plan is
+done a credit cell is done And just a
+minute I need to check where we are
+using this data credits.
+Okay. If we head over to the chat.ts and
+in here
+we have this deduct credits
+that was already written and if I click
+on this it's here.
+Okay. So we have already written this to
+the credits but this is inside of
+credits route. We had to have this
+function inside of the services but
+doesn't matter.
+It doesn't matter. It works. So
+inside of this I can safely
+comment out this for now. We don't need
+conflicts. So we have upgrade and
+downgrade plan that is done. Now let's
+head over to the credits route and
+I guess everything is done here.
+Inside of this we are getting the
+credits. So this is done. Now we need to
+do the billing routes.
+Just a minute.
+So inside of this routes I'm going to
+create
+billing.ts
+and from here const
+billing routes
+equals new huno.
+We get the bindings as env variables as
+app variables. import env from types app
+variables from types and import huno
+from hono and then const not const but
+let's export default billing routes or
+we can export it
+billing routes like this
+and now let's have it a single uh route
+billing routes Get
+this is plan change route
+plan change
+async.
+Now first we get the user id then con
+body equals to await e.t request.json
+and inside of this
+we get action as upgrade or downgraded.
+So action
+is
+upgrade or downgrade
+like this. And if there is no
+body dot action
+and
+then we'll return missing action.
+Now let's have the credits.
+Now if
+body action is uh upgrade then we uh
+upgrade the plan. So
+credits
+equals to
+await upgrade plan. So we just need to
+pass in the user ID and C.NV.
+That's it. instead of upgrade plan.
+Yeah, we just need those
+and it would upgrade it to pro. So
+everything would be handled. And now
+else block
+else credits equals to downgrade plan.
+Make sure to import the downgrade plan.
+Save it. And
+now let's return C.JSON.
+This is going to have success.
+First it's going to be success
+as true. Then
+credits
+remaining credits. Remaining total
+credits. Total plan credits. plan period
+end
+credit period end and is unlimited just
+that and this is done. So billing is
+also done. Now we need to have a web
+hook handler. So web hook handler would
+be on the honu back end and the front
+end as well. So web hooks would be used
+for clerk web hooks. So whenever our
+plan is upgraded or downgraded, we will
+have the web hooks which would uh just
+uh check uh what event
+clo uh gave us. So event type could be
+subscription item.active or subscription
+item.ancelled or ended. So in those
+scenarios uh we just handle everything.
+So that is for clerk web hook. So let's
+do that in just a minute. And after that
+we also need to update our front end
+with a web hook uh route as well. So
+we'll do that.
+Okay. So let's do that.
+So let's create a route for
+web hook
+web hooks.ts
+and inside of here let's get the horno
+and everything. So
+con web
+con web hooks routes is equals to new
+horno and export web hook routes.
+import everything
+and this would be at top. I'm not sure
+if we need the get credits and user
+credits. And now let's create a
+interface for clock billing web hook
+payload. So interface
+clock
+billing web hook payload.
+And now in here first we are going to
+have the data.
+Yeah data. Then we'll have ID in here of
+type string.
+Then we will have
+LAN
+lan which is of type string. So it's not
+of type string but an object where we
+have
+id as string
+name as string then slug
+as string
+after plan we have the payer
+where we have the user id as string
+email as string after that we have
+status
+of type string. We have Per ID
+of type string.
+And with this we close this. And then we
+have type of string
+and time stamp
+of number like this.
+So this would have the data ID would be
+the subscription ID uh item ID. Then we
+get the plan info in here. We get the
+payer details like who paid for this
+plan status of this and uh payer ID and
+then we have event. So event could be
+subscription item doactive or like that.
+So uh we will handle all of that. Now
+let's have web hooks dot post
+and we'll have slash
+with async route.
+We get c here and uh let's do our magic
+here. So just a minute I need to
+get this fix. Yeah. So clerk uses vix
+internally for web hooks. So const swix
+id is equals to c dot request dot c dot
+request
+dot header
+and this is swix id then we get the fix
+time stamp and swix signature like this
+and if we don't have any of this we
+return missing swix headers then we get
+body. So const body equals to await C
+dot request dot
+C dot request.ext and then we have the
+web hook. So const web hook is equals to
+new web hook
+and we write
+E do env.env
+envir
+web hook secret we need to define this
+in our div env
+uh after we create the web hook so we'll
+do that and from where this web hook is
+called so h is not capital here web hook
+need to see yeah web hook is being
+imported from swix
+So I'm not sure if we have installed
+swix. So web hook
+from swix. Okay, swix is not installed.
+So let's install swix.
+Open up the terminal inside of worker.
+Let's write npm installix.
+Done. Now npl npx for angle angular dev.
+Let's close this. We have switch and we
+have initialized the web hook. And now
+what else?
+Let's get the event. So let event as
+clog billing web hook payload like this
+and then we try to verify the web hook
+and if uh it's not correct then we
+return with inhaled web hook signature.
+So we have event is equals to web hook
+doverify. We pass in the not all of this
+but we pass in this fix
+id
+as
+a uh not like this but I'll pass in the
+body first and then I'm going to pass
+the swix ID which is going to be swix ID
+the time stamp and swix
+uh uh signature like this. Perfect. So
+uh this is of clock web hook payload
+done. So we will just verify the web
+hook. If everything is perfect and if
+it's not tampered with and if the
+signature verification fails then we
+return with an error that it fails. And
+now if uh we are after this and if we
+haven't any generated any error then we
+can process the event uh successfully
+because it's uh from clock. So event
+type is equals to event.type type and
+then we'll have console log uh
+web hook
+received
+and then we'll have event type like this
+just to log it on console
+done and then we'll switch with event
+type. So switch event type and then
+inside of this we will have the uh all
+the collo cases. So case this is
+subscription
+item dot active not created
+active not activated active then we're
+going to have con useriz ID is equals to
+event data pair user ID
+and
+this data pair
+could be empty and then we'll have const
+plan slug event.
+slug. Now if we don't have the user ID
+if
+no user ID
+then
+we just control error that missing user
+ID in web hook payload
+and uh we just break from here
+also we check if landl equals to row.
+Then we just console log
+upgrading
+user with this user ID
+to grow plan
+and then we use a upgrade plan function
+and pass in the user ID and NC.V. That's
+it. So our plan would be upgraded. And
+then let's break from this. And now our
+subscription active is done. Now let's
+uh handle the case for cancelled. So
+case
+subscription item dot cancelled.
+And inside of this I'm going to first
+get the user ID. Get the plan slug. And
+uh we just have console.log log
+downgrading user user ID to free plan
+and
+I guess that is it
+and let's break.
+Now after this uh whenever a
+subscription has ended we downgrade the
+user to free plan. If the subscription
+is ended and user haven't paid. So
+subscription item dot updated not
+updated but ended
+and then first let's break
+and before that we get the user ID we
+get the plan slug. If we don't have the
+user ID, if no user ID, then we're
+saying user ID in webbook payload. And
+if
+plan slug equals to pro then we
+downgrade the user.
+So console log downgrading user to free
+plan and await downgrade plan.
+Perfect. So that is done and after this
+we have event for
+if we have case for uh payment pass due
+then we don't need to do anything in
+here. A cler would handle this
+automatically by retrying the payment.
+And uh
+let's do for subscription.pass past due.
+If we get this, we just want that
+payment pass due for user clock will
+return.
+And then we have the default case which
+would be unheld unhandled web hook type.
+That's it. And after this we'll just
+return
+return
+C.
+So let's have return C do.json
+and this is going to be received
+received as true and type as event type
+like this.
+And that is it. So web hook handler is
+also done. Now we need to mount all of
+this routes inside of the worker. So
+let's do that. So if we head over to the
+index.ts right here and inside of this
+we need to mount all of the routes. So
+at the top after the O middleware or
+before the O middleware. Yeah, we don't
+need the O middleware for the web hooks.
+So app.trout web hooks then /c clock
+billing then we have the web hook routes
+imported done and we need to have the
+version routes version routes are
+already here and we need to also have
+the billing route so app.trout route
+API/ billing billing routes. Make sure
+to import billing routes
+and I guess this is it.
+Now
+that is it. Now let's do uh this on
+front end. Just a minute.
+So inside of front end, inside of app,
+I'm going to have a new folder called as
+API. And inside of API, I'm going to
+create web hooks. Inside of web hooks,
+I'm going to create clock uh billing,
+not clock billing. Let's create
+route.ts. And web hooks has another
+file, another folder which is clock
+billing
+and this route goes inside of that
+folder. So API/webhooks/clog
+billing routes.ts.
+And now in here what we want to do is we
+just uh get the body of the web hook
+event. And uh we just uh
+I think what we are doing here is
+just a minute.
+I think this would just uh handle our
+API. Just a minute.
+Okay. So, I had an issue. Uh we don't
+actually need this API. Our web hook uh
+back end would actually handle all of
+the things. So I'll just uh remove that.
+Now next thing is our workers all set
+up. And now inside of front end we need
+some UI components uh which would be
+required which is the credits display.
+Credits uh display uh
+that would be in the sidebar. So
+uh remember
+inside
+this right here this credit display is
+uh not done. So we need to do that and
+we need to create an upgrade call to
+action component which would be used
+when we use any uh thing which is not uh
+available in the free plan like if we
+create more than three projects or if we
+click on this export button with a free
+plan so it would be visible. So that
+needs to be done and then we move on to
+clerk billing configurations and then
+the pricing page and the app checkout.
+So let's do it step by step.
+Okay. So now let's go to the VS code
+and uh let's create the credits display
+component. So inside of editor
+let's create
+credits
+display.tsx
+and uh in here let's get the clock plan
+id. So I'm going to have pro plan ID is
+equals to process.env
+next public clock pro plan id and uh
+interface
+interface
+credits data
+as we have the remaining
+as number. Then total as number plan as
+free or blue period and a string as
+unlimited boolean. Then
+we will have uh
+how much time
+uh the uh to restore the uh new billing
+date. So this is for that days until and
+now export function credits display. So
+exports
+exports function
+credits display and let's give the type
+here
+to props as credits data and let's
+dstructure
+remaining then total plan period end and
+is unlimited
+and uh
+now inside of this First let's get the
+token. So get token is equals to use
+clerk not use clerk but use o from clock
+nextjs.
+And then we have use state snippet where
+we set credits and set credits. It is
+going to be null
+and make sure to import use state and
+the types of is credit data or null
+like this.
+Uh what else?
+Oh uh I had uh this issue. We are not
+getting any props here because we are
+getting the calling the API. So we are
+not uh getting any props here. So that
+was an issue from my end. Now again use
+state snippet and we write is loading
+and set is loading and this is true as
+soon as the component loads and we call
+the use effect hook at the start of the
+component
+as soon as the component mounts and
+let's get the use effect and
+export function like this and uh now
+let's create a single fetch credits and
+let's call the fetch credits and inside
+of this
+uh let's have try catch block try catch
+and inside of catch we'll just have
+console dot error field to fetch credits
+and we'll have a finally block where we
+set is loading to false and inside of
+try let's get the token
+Okay, so we are getting the token from
+top. So I will write conclient is equals
+to create
+API client
+and we pass in the get token in here
+and uh we get data from clients.
+So con data is equals to await
+client dot credits dot get method
+and then we set the credits with data.
+So we have got the credits and now
+we uh just return a skeleton if it's
+loading. So in here I will return this
+and import UI skeleton
+and after this
+uh if there are no credits then we'll
+just show that credits is unavailable
+like this. If there are no credits,
+we'll have credit card with Lucid React.
+And after this,
+we check if the plan is pro, if the
+credits are exhausted, and we check the
+progress percent for the component like
+this.
+And then we return our JSX.
+Uh I'm just going to copy the JSX.
+Yep. So div with header row where we
+show the credits and if it's uh
+unlimited we uh if it's pro plan then we
+show infinity and unlimited then we show
+the progress bar here from UI progress
+and make sure to import CN and this is
+the progress bar for free users only
+that shows how much credits are used and
+how much are remaining then we show the
+plan label and call to action or
+uh if it's a pro plan
+sorry if it's a free plan uh uh sorry if
+it's a pro plan then we just show manage
+subscription or else we use the uh
+checkout button so check out button
+needs to be from
+uh clerk nextjs experimental I'm not
+sure if we are able to use it uh
+from
+Clark.
+Okay. So, clerk.
+Next is experimental.
+From here, I need the check out button.
+So, this is still uh clerk uh billing is
+still in uh experimental mode. So use it
+as your own risk. We have check out
+button. We also need the pro plan ID. So
+make sure we'll uh uh do this
+afterwards. And uh let's get this zap
+and save it. And uh this components is
+done. And uh now if we head over to this
+app layout,
+we have this credits at the bottom. Not
+this
+logo, but this credits. So we had this
+todo, remember? So instead of instead of
+this div, we'll have the credits display
+component right here. And let's see if
+it works or breaks things. If we head
+over to the dashboard and yeah the
+component is here. Uh we have the
+credits and resets and day the plan and
+upgrade to pro that would not work
+because we don't have the clock billing
+setup and the pricing page and
+everything. So we need to fix that. But
+as far as I see that component is
+working and that is done and now uh
+let's do the upgrade call to action
+component. So upgrade call to action is
+whenever user side uh tries to send a
+message with zero credits it's show up.
+Then whenever user you tries to use a
+premium model and free plan it shows.
+Whenever users try to create a fourth
+project on free plan, it shows that
+model and uh whenever uh we are on users
+tries to export on a free plan uh it uh
+shows. So uh let's uh create the
+component. Uh so let's head over to the
+components right here inside of editor.
+I'm going to create upgrade CTA.ts. TSX
+and inside of this this is going to be a
+client component. Then export interface
+upgrade CTA props and this is going to
+have a reason of type string and reset
+days
+as
+number
+like this. Now we'll have const pro
+features
+equals to this and let me get the pro
+features
+just text and then export function
+upgrade CTA with props and we'll just
+return
+this is going to have div. So let me
+grab the JSX. I'm not going to write it.
+Let's grab the zap.
+Let's grab the check from Lucid React.
+Get the button.
+Get the link.
+That is it I guess. Yeah, that is it.
+And now we need to use this model
+uh upgrade CDA. So let me check where
+are we using it.
+So inside of the chat panel we are using
+this.
+Um
+okay. So let's head over to the chat
+panel first. Chat panel. And after
+this scroll area,
+after this scroll area we have chat
+input.
+Okay. So before this chat input I'm
+going to have
+uh
+is credits exhausted.
+If it's exhausted then going to have a
+div with class name as border top
+border border
+and padding of three and
+then inside of this we'll have the
+upgrade CTA
+which would have the reason
+as
+You have used all 50 free messages this
+month
+like that.
+So it would be there. Then
+where else we should use it?
+I guess for now let's uh keep it here
+and for others we'll use it afterwards.
+upgrade CDA. Um,
+let's try to do one thing inside of my
+CloudFire dashboard. I will head over to
+storage. Not storage but compute
+workers.
+I was just logged out.
+Let's head over to my worker.
+Let's head over to the KV name space.
+And in here, let me try to find
+the user. Yeah, credits user. So, my
+credits are 47 remaining. Let's change
+this to remaining to zero.
+Okay. Edit
+zero. And let's save this.
+And now if I refresh this
+You can see that I have zero credits.
+And if I head over here and I'm able to
+see this upgrade to pro
+and
+we have used all the credits and this is
+disabled.
+So
+perfect. So
+just a minute. If I head over to the
+upgrade CTA
+and yeah, perfect. So, this is done. So,
+uh everything is complete in here. Now,
+we need to set up clock with web hooks
+and everything. So, to do that, I'll do
+one thing. I want you to install ngrock
+package. So, npm install ngrock-
+g.
+Now we need to okay uh it already exist
+on my machine so this would work for you
+but as it's already installed on my
+machine it would uh it's giving me an
+error file already exist. So now to
+expose our uh worker URL, our local host
+worker URL, we have not deployed the
+worker yet, but to expose the local
+worker URL to internet, we use ngrock.
+So to for the web hooks to work, we need
+uh ngrock. So
+inside of my wrangler, let me close it
+and let me let me try it again. Let me
+try to open it again. Uh
+am I getting my Wrangler port here? No,
+I'm not. So, let's head over to the ENV
+local
+and we are using Wrangler on 8787 port.
+Right. So, I'm going to do ngrock
+ngrock after you have installed ngrock
+http
+h 8787. So whatever request comes on
+this port I want you to uh expose this.
+So it's done and now ngrock has given
+this URL the free URL. And if I open
+this and let's view site and if I head
+over to health in here you can see that
+it's working. It's like returning our uh
+local health. So we need this from here
+when we create the web hook. So let's uh
+do the clock's web hook. Just a minute.
+Okay. So I am inside my clock dashboard
+with my project as low clone recording.
+Now in here uh I want uh to first enable
+billing or else let's configure the web
+hooks first. So inside of here we have
+developers section inside of configure
+inside our developers. Let head over to
+web hook web hooks and we need to add an
+endpoint. So the endpoint would be our
+ngro URL and then we will have our
+route. So to check the route let's head
+over to our index.ts of worker source.
+We have this web hooks/col
+clock billing. So I'll copy this and I'm
+going to paste this. Make sure that
+there's only a single slash.
+And uh that is done. And now I want you
+to search for subscription. And I would
+search for subscription created,
+subscription ended. And uh let's head
+over to web hooks and check what events
+are we using. Subscription active.
+Subscription cancelled and ended.
+Subscription active. Subscription
+cancelled and ended. Then past due
+and subscription. Due
+to subscription.pass.
+Perfect.
+Now let's create the web hook. And from
+here we can actually test our web hook
+if it's working or not. So from here I'm
+going to pass in an uh subscription item
+dot cancelled event and it would send an
+event like this and send example.
+And let's see our console.
+Okay, it just got an
+internal server error. So, we have Okay,
+secrets can't be empty. So, we need the
+web hook secret from here. Signing
+secret. So, I'm going to copy this web
+hook signing secret. And uh
+from here you can see that we had this
+web hook.
+Yeah, cloak web hook web web hook
+secret. So inside of dev.env where uh
+this file
+this file I want you to write
+clerk web hook secret equals to
+this signing secret from here. It would
+be different for you. So I want you to
+write
+this thing inside of that file. Make
+sure that there are no spaces.
+I want you to write it uh down there. I
+cannot open that file because I have my
+uh AI and AI APIs there and I don't want
+to expose them. So I want you to paste
+uh them there. I'm going to pause my
+screen. Okay. So I've pasted it on my
+Davin vars. I'm going to remove this.
+And uh if I open up my terminal,
+I want you to restart the worker.
+And you can see we have the clock web
+hook secret. And now if I head over to
+my browser and let's try to resend this
+event. So this has been failed. But
+let's replay this.
+Let's try to send an example from here.
+Okay, it was sent and as you can see
+succeeded. So it did work. So as you can
+see web hook received downgrading user
+this user to free plan. So perfect. So
+it's working. Our webbook setup is done
+and clocks uh this setup is also done.
+Now I want you to enable the billing for
+clock billing. So I want you to enable
+this billing. So we are using clerk
+billing because uh internally clerk uses
+stripe and we are using clock billing
+because it's very easy to use like we
+are writing uh 2 to 3,000 lines of code
+in just 5 to 10 lines using cloak
+billing. So as our SAS project uh if you
+want to integrate payments into your SAS
+projects with O this is the best
+approach to do that like uh I've not
+seen any approach that is this easier
+like you just enable billing use their
+components and done with the clerk o e
+ecosystem this works pretty seamlessly
+and inside it utilizes stripe so you
+don't have to go to the stripe dashboard
+and configure things can do things. Clo
+handles everything internally and uh it
+uh handles things like uh charm and
+clock billing cost only 0.7% per
+transaction. Very cheap. Now let's move
+further. Enable user billing.
+Turn on individual subscriptions for
+users.
+Enable billing.
+We save this.
+And
+let's head over to the subscription
+plans. And from here you can see that
+there's a free plan.
+And uh we need to add the details to the
+free plan. Let me grab all of those
+things that I need. Just a minute.
+Yeah. So, I'll grab the JSON and I'll uh
+show you the JSON.
+So, inside of my VS code, let's close
+this. Open up a new file. And you can
+see that I have here this here plans
+this. And from here you can see the plan
+name is free, key is free, description,
+monthly price publicly available, true
+and uh we need all of these features
+with name, key and description. So all
+of this should be same. Make sure that
+all of this are same and uh
+limits KV credits record. So this is for
+internal things. We just need to use all
+of these features and everything in clo.
+So I'm going to copy it from here and
+you can see it from here as well. And
+for the pro plan we have pricing as 25
+and annual price is 20. And these are
+the features.
+Make sure the keys are correct.
+And now let's use it. I'm going to get
+the description from here
+and paste it. Then this is publicly
+available. Now I'll add the feature.
+I'll head over to VS Code and name is 50
+credits per month
+and key is credits 50.
+Grab this, paste it, create the feature.
+And we have the feature here. Now I'll
+add other feature.
+done. So our features are here. I'll
+save the plan.
+So this is the free plan and we don't
+have any uh plan ID for this and we
+don't need it as well. Now let's create
+a new plan which is going to be the pro
+plan. So name is pro key iss pro and uh
+this is the description and the monthly
+price and annual price. So this is going
+to be pro pro description no free trials
+publicly available monthly base fee is
+going to be 25 annual base fee is 20
+which makes uh
+240 per year. Now let's add the features
+and uh
+uh
+let's add unlimited credits.
+New feature
+unlimited credits.
+Enter projects.
+done. So, my features are done. I'm
+going to save it. And this would get me
+and
+plan ID. Yeah, this is my plan ID. I'm
+going to grab this plan ID. And let's
+head over to env.local.
+And from here uh what was the
+uh yeah the name is next public
+clerk
+uh pro
+LAN id equals to this and yeah so this
+configuration is completed and now let's
+head over to users from here
+sorry billing
+now we have zero revenue now let's try
+to integrate all the clock components
+and everything so just a minute
+okay Now let's do the pricing page. So
+let's head over to the VS code and
+inside of app we have this marketing and
+inside of marketing I'm going to create
+a folder named as pricing
+pricing
+and
+page.tsx tsx
+and in here
+I'll write export let's write rfce
+export default page and this is rising
+page
+and
+in here
+first I'm going to give this a class
+name of relative
+min height of screen
+then bg background. Now inside of this
+I'll grab the navbar
+component from components landing
+and then let's get the main tag. So I
+have a main tag with class name MX auto
+max width of 5 XL
+padding X of six padding bottom of 20
+and padding top of 28.
+And inside of this, I'm going to have a
+link tag which will go back to home
+link tag. Make sure import from next
+link and arrow left from Lucid React.
+Link tag is done. Now we'll have a page
+header
+basic JSX and then we'll have the
+pricing table from clock nextjs
+and pricing table is from clock nextjs
+perfect and then we have a p t tag which
+would show all plans include live
+preview code editor version control and
+dark mode just a Next. Save it. And now
+let's head over to our level clone. And
+when we click on this
+rate to pro, this should take us.
+The checkout component cannot be
+rendered when billing is disabled.
+Billing is enabled.
+Let's head over to the pricing from here
+and see if it is working.
+Yeah, this is working. So, we are
+getting the clock pricing and
+this is working. And when we click on
+subscribe, we have the checkout
+component and this is here. But
+let's do the check out from there.
+So
+we have this and
+just a minute I'll just refer the docs.
+All right. So we already did the uh
+check out button inside of credits
+display but we needed to provide the
+plan period of month here. So provide
+this prop here. We already have given
+the plan ID inside of checkout button.
+We are inside the credits display
+component on line 130. And now let's try
+to create a subscription. I'm going to
+reload my page and
+upgrade to pro.
+Let's pay with a test card.
+Payment was successful. Continue
+and
+refresh the button. And now we are on
+the pro plan.
+Now if I head over here,
+it's just hydration errors.
+And now I can do unlimited chats because
+I am on the pro plan. So everything is
+unlimited. And if I head over to my
+clerk billing and you can see that we
+got a revenue of $25.
+And this is my user that uh created the
+subscription. So perfect. So clerk
+subscription is also complete. Now one
+thing that is remaining that we need to
+do is uh let's do the models different
+models. So we don't have access to
+different models. I've shown you this
+pretty bad UI. Now let me show you a UI
+which is very good. So let's do that.
+Okay. So now let's do the multimodel
+thing. So first I want you to head over
+to the first let me close all of this.
+We have space in the workspace and let's
+head over to page.tx of project ID and
+in here I'm not sure if we have created

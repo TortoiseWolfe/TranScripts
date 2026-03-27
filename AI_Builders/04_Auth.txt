@@ -1,0 +1,664 @@
+here. Let's head over to configure and
+uh and the API key is right here.
+Uh we need the JW keys URL from here.
+Copy that and head over to the source
+code. Head over to do uh dev.wes where
+and in here I'm going to write cloak -
+gwk's URL
+equals to uh this URL and
+I'm going to also have clerk
+issuer like this and this and we'll just
+remove dot well-known JW keys keys and
+if we head over to that URL right here
+you can see the clerk JW keys is
+everything details. So this would be
+useful for validating our JWT
+from clerk. So if it's not malformed and
+if it's perfect and then we can grant
+user the access. So that is for that. So
+uh I guess this needs to be saved and we
+need to restart our uh dev server as
+well after that. But after this what
+should be done is
+in inside of index.ts of the worker the
+front end part is done. We done the
+integration and everything as you know
+now we need to create an o middleware
+right here. So inside of this source
+middleware I'm going to create an
+o.ts ts or inside a folder. No, inside
+this just
+ots
+and inside of this o.ts
+what I'm going to do is uh first uh
+we'll get the JW keys then uh we'll
+create our o middleware and inside of
+that we'll validate our JW keys. So
+first
+let's create cached uh JW key type. So
+let cached JW keys. So we are caching it
+uh for 30 seconds to uh not abuse it.
+Type of
+create remote JWK set and null equals
+null like this.
+And we need to import this. So this
+needs to be imported
+from Jose. So import
+and JWT verify from Jose like this. And
+we'll also import create middleware from
+hono. So import
+create
+middleware from not far middleware but
+hono.
+Oh no factory like this.
+After that what next? We need the env
+and app variables. So import type
+envir
+uh app variables like this and
+okay it's never reassigned so that's not
+an error. And we'll also have cast JW
+keys URL which is string null like this.
+And then we have a function of JW keys
+JWK's URL and FK cache JW case and cache
+uh JWK's URL equal triple equals to uh
+JW keys URL.
+Okay, if it's the same then return the
+cache JW case.
+Okay, that is perfect. Then cache JWK is
+equals to create remote JWK set. Okay,
+that is also perfect. We are just
+returning the cache JW case like this.
+This is going to be different. So create
+remote JWK set and uh
+what else? create remote JWK set new URL
+JWK's URL and we'll pass an object
+with cooldown options.
+The cooldown duration is going to be
+30,000 and cast max age is going to be
+600,000. So
+like this.
+and then cache JW keys URL equals to JW
+keys URL and we'll return the cache JW
+keys. So we are just caching it right
+here. Now we'll create our O middleware.
+So export con O middleware is equals to
+create middleware bindings enviables
+like this. So this is going to be an
+object again.
+Bindings is going to be env variables as
+app variables and then a sync c next.
+This is all right. And uh
+we need to close this bracket.
+Okay. Error is gone. Now inside of this
+what should we do first? We need to get
+the author, right? Yeah. So, we are
+sending the authorization as
+authorization
+uh colon be error and then the token.
+So, we'll get that from C do. Request
+dot headers not headers but just C
+do.est dot header
+like this.
+And
+if there is no O header or O header that
+doesn't starts with beer then we'll
+return C.JSON un
+uh unauthorized or we'll just uh have
+missing or invalid
+authorization
+header
+like this. And uh we'll also pass in a
+code
+which is going to be
+unauthorized
+and error code is going to be 401. Yeah,
+that's perfect. Let's save this. Okay,
+so if there is no O header or if O
+header is malformed or it's not starting
+with beer, then we need to return that.
+So it's malformed if it's not starting
+with beer. I'll show you what the
+authorization token will be when we send
+it from front end. Now
+uh token is equals to author and uh
+instead of substring we are going to
+slice uh the seven characters. So that
+might be 1 2 3 4 5 6 and seven. We are
+going to slice this seven characters.
+And after that our actual authorization
+JWT would be there. And after this we
+are going to wrap everything in a try
+catch block.
+And inside of try what we are going to
+do is const JW keys is equals to get JW
+keys. We don't need to have a wait here.
+Yeah, we don't need to have it. Hey,
+it's an async function but not needed.
+So C.Env.clo JW keys URL. So it will get
+this from C.NV dot clock JW keys URL. So
+env are automatically loaded from dev
+envir. And uh where is this coming from?
+If we head over to types and uh in this
+env we uh have this. So this is club JW
+keys URL. So that type was for this for
+making it easier. And
+after this we'll have con.
+Yeah, it's correct. Yeah, it's correct.
+Await JWT verify. We'll call
+JW case. So no, we didn't need to call
+this. So we already have that JW case
+here. So we'll pass in JW case. So we'll
+pass in the token.
+Wait JWT verify. Pass in the token. Pass
+in JWKs. And we'll pass in the issuer
+which is C.V.CL
+issuer.
+And
+there is an error. Get JWKs. We got the
+JWK.
+And I think we need to use a weight
+here. Yeah,
+let's see if it works or not.
+Then
+uh we get the payload. So from the
+payload uh after uh if it's verified and
+if it's perfect then we get the payload
+from the JWT the actual data. So from
+there what we'll do is inside of the
+payload we'll get our user id which is
+going to be from payload dots sub type
+of string and if there is no user id
+then we'll return c.json JSON error JWT
+missing
+or missing sub claim works code
+unauthorized and 401 perfect now if
+there's no error then we are going to
+have C dot set user ID as user ID so we
+are setting the user ID across the
+entire application uh as we have this
+here app variable so the entire app
+would uh reference our user ID after
+getting from this middleware. So
+whenever we want to use it, we can use
+it as user ID. So we are just setting it
+here. C dot set. Now uh what next?
+Okay, return next. Okay, instead of
+return, we are just going to use a wait
+next
+um call it to the next middleware.
+And inside of error, what should we do?
+So let's get message. So const message
+equals to error
+instance of sorry error instance of
+error
+error error dot message unknown error
+during authentication or
+we'll just have JWT verification
+field
+and
+we'll return like this error message
+this message and code of unauthorized
+and 401. That's it. So our middleware is
+ready and we can use it inside of our
+index.ts. So if we head over to index.ts
+after the health route, we are going to
+write app dot use
+and this is going to be API
+star. So for all the API endpoints, we
+need to run this O middleware. Make sure
+the O middleware is imported. Yep, it's
+already here. Let's remove this. So, we
+have the O middleware now. And uh what
+next? Uh
+let's check if this O middleware is
+actually getting the token. So, inside
+of here, console.log log will get the o
+header
+and uh let's get the token as well.
+Console log token
+and console log user ID
+authorization might be sent
+automatically. I'm not sure. Let's uh
+restart the application. I need to open
+up terminal again.
+Let's reload this.
+Done. And now if we head over to
+8787.
+Let's head over to
+health route but it would not use it
+because
+it's above this. So let's bring the uh
+this
+above just for testing and refresh it.
+We are at the health route but it's not
+getting at the O middleware.
+Let's reload this.
+Okay. So, yeah, this needs to be
+/appi/halth.
+We are just uh getting the health route.
+So, let's change this to API/
+health like this.
+missing or invalid authorization header.
+We didn't find that
+author got undefined.
+Uh
+let's check do we have the author. Okay,
+so it won't work because we are uh
+hitting the API directly not from front
+end. So front end uh this uh token would
+be on localhost 3000. If I head over to
+here inspect
+and uh application
+localhost 3000 then
+block would have its authorization code
+somewhere here. So it would send it
+directly from here. But uh as we are
+calling it on 8787 so it's not calling.
+So we need to set up an API client on
+front end and call it from there. So
+what I'm going to do is inside of here
+lib folder. I'm going to create an API
+client.ts.
+And inside of API client.ts ts let's
+write export const
+worker
+worker URL which is uh http8787
+but first let's try to get it from
+process env dot uh next
+public worker URL or if the environment
+variable is not set then get it from
+8787 so that is that now let's uh export
+an interface export interface of
+API error
+and the error is going to be the string
+and the code that we are sending from uh
+here as you can see error and code. So
+we are setting the interface for that
+here and uh first we need to get the
+token. So uh we need the get uh user
+session token. So we are uh
+uh writing a type for that. So get token
+function equals to promise of string or
+it could be null
+like this. And then
+we are going to uh create a function of
+authenticated fetch which uh attaches
+the authenticated uh uh token to every
+API. So um uh we'll create the API
+client afterwards. But first uh what we
+are going to do is first let's uh create
+this function which attaches the clock
+token. So uh
+a sync function
+authenticated fetch
+is
+uh first t and inside of this
+get token is equals to get token
+function path uh instead of let's write
+this
+get token and input
+this is different. Okay, we'll change
+this.
+Okay. So instead of this get token get
+token function is correct. The input
+should be path of type string
+and instead of init we're going to have
+options
+which is of request in it. Perfect. And
+we need to give this
+like this. And this is promise of t.
+And uh what else?
+Okay, we just need to return a value
+from here. So in inside of this we'll
+get the token. So con token is equals to
+get token. If there is no token then no
+o token available
+or we can say that not authenticated
+not
+authenticated
+no session token
+available like this perfect and
+just throwing the error now we'll get
+the response so constant response equals
+to await worker URL and we'll provide
+the path
+and uh inside of this
+we'll pass in the options which has been
+provided. Then we'll pass in headers. So
+in headers we are going to pass
+content type as application JSON and
+we'll pass in the authorization as BR
+token which we expect in back end and
+we'll also dstructure options do headers
+and pass set like this
+and this is not optional like this.
+Perfect. Now after this
+we'll check if uh response and uh
+what should we have here is if
+response is not okay then we'll have
+error data as API error or let's remove
+this
+const
+error body equals to await responseg
+JSON catch and instead of null this is
+going to be
+uh
+error
+unknown error
+and code of unknown error like this and
+we'll also give this
+as
+yeah we can give it an AP error path
+like this. And
+now uh if we are rate limited then we
+need to dispatch custom event of rate
+limited. So what I'm going to do is
+on back end when we are rate limited we
+are providing this 429. So
+also uh this is not API error instead
+this is error
+of string and retry after number like
+this. So what this will do is uh we are
+getting the error body if there's an
+error and we are also checking if we are
+rate limited then after what seconds we
+can again uh retry. So we need to shoot
+that to front end. So for that this
+retry after is that and uh uh we are
+getting the retry after like if it's
+greater than 60 uh sorry not greater
+than 60 but if it's uh anything then we
+can show that or if it's not there then
+we'll show just 60 seconds we have rate
+limited for 60 seconds and we'll just
+dispatch an event in window object of uh
+rate limited
+and that's done. Now after this we are
+going to throw a new error that uh
+request field something like that. So
+throw new error error body dot error and
+uh
+if there's no error like that then we'll
+have
+Okay, request field with status response
+status like this. And if it's perfect,
+then we are just going to return
+response.json
+as
+promise of t like this. So what we are
+essentially doing here is let me close
+this and we are just uh getting our
+token and appending that token as
+application be a token content type is
+application JSON other passing other
+headers and other options that we uh we
+want to send and we'll call this uh
+authenticated fetch from our below API
+and if the response is okay we are
+sending it and if the response is not
+okay then we'll are checking if uh it's
+an 429 error that means if we are rate
+limited then we need to uh show that
+into the UI and if we are not rate
+limited but there's any other error then
+we are just throwing that new error so
+we are uh handling those scenarios now
+after this comes our export function uh
+create API client so inside of this we
+uh get the token. So we'll just return
+something like uh projects
+first projects and
+we'll have the list method here which
+will just have authenticated fetch uh
+will
+pass in projects.
+So the return type would be
+projects uh project array
+like this.
+And I guess we need to import this from
+type project. And
+now we'll have get token and our route
+as / API/ projects like this. And
+that is all. So this is a get route will
+get all the projects of this user. So
+why does this have an error? Okay, this
+needs to be down below outside of this
+parenthesis, right? And uh we are
+getting the projects. So projects.list
+uh when we call create API client dot
+projects.list
+then it would uh return this. So
+that is done I guess and uh let's head
+over to index.ts again here and we are
+going to revert this change of health
+and have this like here. Now we are
+going to create a projects route here.
+So after this I'm going to use projects
+route. We are not going to test it in
+health. We could do that but let's test
+it properly. So app dot get uh not
+type.get but app.trout/
+API/
+projects. If it's like that then we are
+going to have all our project routes
+here. So we have not defined that. So
+inside of routes we need to create the
+project routes first. So inside of
+routes I'm going to create a new file
+named as project dot ts and inside of
+this first let's create project
+routes.get
+slash that will get all the projects of
+the user. So
+uh what should I do here? Just a minute
+here first let's define project routes.
+So project routes equals to new huno
+we'll call this and the type is going to
+be bindings but import huno then
+bindings as env and variables as set
+variables perfect and we need to import
+this as well
+and inside of this no inside of this we
+don't need anything but now we'll attach
+the events so project routes dot get a
+sync function like this and
+let's close this and inside of this
+I am going to first get the user ID from
+const
+user id equals to c dot where dot user
+id as we defined in the middleware. So
+we have that here.
+Now we'll get the project ids. So
+we'll write const
+project
+ids equals to await
+e dot env dot metadata
+meta data dot get
+type would be string of array and
+we'll set
+user projects
+with dollar user ID
+and uh the type would be JSON like this
+or it's going to be an empty array if
+there's no data. What's an error?
+E.NV dot metadata doesn't exist.
+getting this C. So C do env
+metadata. So have we defined it
+correctly? Let's head over to the
+types.dv
+metadata. Yeah, it's perfect.
+right over here.
+Can we quick fix it?
+It has generated a lot of code.
+What's it doing?
+We have it. I think we need to restart
+the TypeScript server. restart TS server
+and
+let's fix it afterwards.
+Okay, wait. C.NV dot metadata.
+Then
+if we'll fix that uh just a minute. If
+the user doesn't have
+Okay. If there is no project ids. So if
+no project ids or or project ids.length
+triple equals to zero
+then
+we are going to return c.json projects
+as an empty md array and
+uh
+what else like if there are projects
+then we are going to fetch all the
+projects uh with promise.all. So await
+promise.all All we'll get project ids
+dot map with project id and
+inside of this what should we do project
+ids map or we can just have a oneliner c
+dot env dot
+okay So
+bindings do metadata. Okay. So I get the
+error. So D c.env dot bindings dot
+metadata
+or this is just c.env.m metadata
+dot get projects with project ID as JSON
+and the type of it is going to be
+project.
+Let's import this project type. So
+project type should be imported from
+types of project. Have we done that? No,
+we haven't done that. So inside of
+source, we are going to create a new
+folder named uh named as types. And
+this is going to be having a
+project.ts file.
+And the project.ts file would have this
+data. the project project file version
+version meta just that we have in front
+end.
+You can find this in the description of
+the video. And let's import this
+project.
+And uh what else?
+We have a look
+project with project ID
+JSON.
+That's it. And after that
+we'll uh just remove any projects that
+are uh corrupted. So const valid
+projects is projects dot filter and
+project is not null and we'll sort it by
+dates. So sort uh ab new date b.tupdated
+time get time. Yeah we'll just sort it
+according to this and we'll just return
+that by c.json JSON projects valid JSON.
+Save this and
+project routes is not defined. Okay,
+it's defined now.
+We need to export it, I guess.
+Okay,
+export project routes like this. Head
+over to index.ts and let's grab project
+routes.
+And that is it. Let's reload our
+Wrangler server.
+Head over to H7 and let's head over to
+health. That's perfect. Now let's head
+over to API.
+It won't work but I just want to check
+we don't have the authorization header.
+So now let's try to call this from front
+end. So
+let's head over to any of the front end
+file uh for example local 3000. So
+inside of app uh inside of this page.tsx
+uh
+let's call con
+projects is equals to API
+create API client dot
+export.
+I'm not sure if this would work.
+This should probably give us an error,
+but I just need to verify.
+If we head over to / route,
+no session token available.
+through new error.
+I guess we are.
+No, no, no. It's perfect. It should be
+here. So,
+no session token available. Let's try to
+login again and check it. If we head
+over to sign in
+and I'm going to delete all of this
+and
+let's head over to sign
+Okay.
+Is it inside the cookies?
+Lots of tokens.
+Yeah, it would be inside of cookies. We
+are checking inside local storage. So
+should be here somewhere.
+It's reloaded and
+no session token available.
+Am I missing something here? Not sure.
+Let me check.
+Okay. So, I found the issue and removed
+the problematic code. So, we are going
+to do that again now. And inside of
+here, we are going to get the token from
+use o which is a clock function. Then
+we'll get use effect. I'll also mark
+this component as client component by
+use client. We are just testing it and
+we'll fetch the products where we'll get
+the token first. Then uh parse the
+payload and we'll uh see JWT is this and
+we'll call our API client and pass it
+our get token. And we have one more
+error here. We need to solve this. Not
+one but few errors. So not here but uh
+in the API client this should be like
+this get to confction. So the error that
+was showing here
+would be gone. Yeah it's gone. And one
+more thing that we need to fix is in the
+env we have this trailing slash. We need
+to remove this. We just need to have
+this accounts.dev dev and no trailing
+slash. I'll save this and I'll restart
+my npx uh wrangler dev server to reload
+those env. And inside of here, let's
+save this and let's reload this page. It
+would call uh it and get the data. It's
+here. And I guess we can see the token
+as well. So you can see we have O header
+and token and user ID everything from
+our O middleware. So this thing right
+here
+we can remove all of the consoles from
+here. We don't need it now. We are just
+testing stuff. So it's fixed and
+authentication is done.
+Two sections are complete in our code.
+We'll just remove all of this and let's
+refresh it. And yeah, we don't have
+anything. Let's head over to page.tsx
+and I'm going to remove all of this
+code. We don't need it. We are just
+testing it.
+Give this file again. Done. We are not
+calling anything.
+Is anything else is left? Just let me
+check.
+No, I guess everything is complete in
+the authorization section.
+Uh yeah, the authentication and
+authorization of clerk is done with JWT
+decoding and everything. So now uh let's
+get to the next phase which is
+development of the landing page. So
+let's do that.
+Okay. So now let's work on the landing
+page. So uh currently our landing page
+is this. We need to delete all of this.
+So uh inside of this I'm going to remove
+all of this and write RFC. And this is
+let's name this as

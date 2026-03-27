@@ -1,0 +1,1051 @@
+which would support markdown. And third
+is the system generated messages which
+is if we uh autoheal then it should be
+here. Then if we restore a version then
+it should be here. So those are the
+three type of messages messages we want
+to do. So for that we need to create a
+message bubble component. So let's head
+over to our code editor and inside of my
+app components in the editor I'm going
+to create a message bubble
+tsx and uh should this be a client
+component? Yeah, this is a client
+component because we are going to use
+states here. Use client and uh after
+this let's create an interface to get
+the message bubble props. So export
+interface
+message bubble props. And by the way, if
+you noticed my autocomp completion is
+working now. It was because I didn't
+have a subscription for Copilot. I just
+got a premium subscription for Copilot.
+And because of that I have now unlimited
+inline suggestions for copilot and it's
+working.
+Now message is going to be of type chat
+message from types. Then we'll also have
+a streaming as boolean and we'll also
+have is auto heal
+in progress. Uh so we are going to have
+uh the auto heal.
+Now we need to have the file tag reax.
+So remember the XML uh tag that we have
+file then path. So we need to uh strip
+raw files from that. So for that we are
+going to use this reax
+now.
+then
+we need to also catch the partial file
+uh uh reax. So sometimes the AI would
+not complete uh the uh code then it
+could be an error. So to detect that we
+use this partial file reax then we will
+have strip file tags. So strip file tags
+would just uh remove the file tags from
+uh the uh front and back. So for that we
+have this function stripe file tags uh
+which would just get the content and is
+streaming as boolean to check if it's
+still streaming and uh return type of
+string. Now
+I guess we are not using a streaming
+here but we'll keep it. Then uh we get
+the cleaned uh uh cleaned uh code from
+here. Then uh
+if it's partial file reax, we just
+replace it. And uh uh if there are any
+leftover file tags uh that survive the
+rejects, then we replace it with an
+empty string and return the trimmed
+string. And after that
+uh
+we will have a helper function which
+would test if we do have any file tags
+inside of that. So this is for has file
+tags. This is for that. And uh then
+we'll create a function for format model
+name. So function format model name. We
+get the model as string return type of
+string and then we get the model info.
+So const model
+info
+equals to get model by id from lib
+models and we pass the model here. All
+right, this is
+model in here or we can keep it model
+ID.
+Get model by ID. We'll pass in model ID
+and then
+if there is
+model info
+then we'll return
+model info.name
+or else uh
+what we will do is uh
+um if we are using any old models then
+we'll just return uh claude chatgd and
+something like that. So if
+model dot includes
+uh
+claude then we'll return claude and if
+modelinccludes Gemini then we'll return
+Gemini GPT4 is GPT4
+GPT4 mini is GPT4 mini and uh deepseek
+is deepseek perfect so after this we'll
+return the model. If uh nothing matches,
+then
+we also have const auto auto heal
+prefix.
+That would be the app
+has a build
+runtime error.
+And then we ex have a function for
+extracting of attempt number. So
+so if we are doing
+uh autoheal then we can only do autoheal
+for three times. So for that we have
+this not this but
+extract attempt number this here. So it
+would just match uh the number of
+attempt.
+So if the message is something like
+that, I'll just show you parses attempt
+x of three. So if attempt one of three
+is there, then uh it would just parse
+the attempt number like if it's 1, two
+or three. So that is for that.
+Then we also need to format the time. So
+for formatting of time I'm going to
+create a function function
+format time
+we get the timestamp as number not
+number but we get it as string and we
+return a string. So return new
+date
+with time stamp to local string
+and hour is two digit and
+okay hour is not two digit instead we'll
+have it numeric
+and minute as two digit
+let's have it now let's create the
+export function message bubble and then
+we get the message as streaming and as
+auto in progress. We don't need to pass
+any default values
+and let's close this.
+Now
+we don't need this from here. Now, now
+we have one thing uh we are using light
+box to show the image and to show that
+we will have light box. So let's do that
+afterwards I guess and uh
+message bubble can be shown afterwards.
+Uh, just a minute.
+Okay. So, we are following a different
+approach. First, let me clean this. And
+uh instead of doing this first uh the uh
+chat bubbles first we are going to do
+the other thing which is actually
+hitting uh the API and sending a prompt
+and this uh uh this message bubbles
+would be done at last so that you know
+what we are actually doing. So uh I was
+using the other approach. So we are
+using now a different approach. So first
+what we are going to uh going to do is
+in the editor page this page we are
+going to create the handle send me
+message first so that uh uh afterwards
+we will create the chat input component
+where we write the input and when we
+send it it would hit the API and uh it
+will call the API and after that uh what
+I'm going to do is then uh uh we will
+have the uh message bubbles here. So
+let's do it step by step like that. So
+uh first is I want you to head over to
+the editors page. So inside of this uh
+project page. So this is here uh we have
+this editor layout and we need to create
+this uh handle send message function. So
+we have this alert pending send message
+implementation. So let's uh create this
+first or should we create the
+components?
+Okay, let's create the component so that
+you know how to call that and
+everything. So just a minute. So
+inside of this editor layout, what has
+to be done? Just a minute. We need to
+have the chat panel. So,
+do we have the chat panel here? Let me
+check.
+Yeah, we do have the chat panel in here.
+And inside of chat panel, we have
+nothing. So, let's head over to editor
+layout. And uh what should be here
+inside of chat panel? Uh we are going to
+pass messages. Then first, let's pass
+the messages. So, messages equals to
+messages. Then if it's streaming on send
+message then
+after this we'll have credits remaining
+as credits remaining is credits
+exhausted as is credit exhausted and uh
+total credits. No, we don't need that.
+We'll remove this. Instead
+after this we'll have select
+model ID as selected model ID. Then on
+model change
+is on model change and the user plan
+need to close this and this right here.
+Okay. So what's the error here?
+I think inside of chat panel we need to
+give the the types and everything in
+here. So let's do it. And inside of that
+uh this chat panel we are going to use
+the chat input the message bubble and
+all of the things in here. So this is
+the chat panel right here. And now
+inside of this we are going to have
+those bubbles and the uh that uh chat
+input here. So
+now let's create the interface that we
+are getting here. So export interface
+chat panel props. So we are getting
+messages as chat messages. Make sure to
+import messages from type chat. The
+streaming is boolean. Then onside
+message we get the message of type
+string and images as image attachment.
+Make sure you import images attachment
+and return type is void. Then we get
+credit snailing as number is credit
+exhausted as boolean. Then selected
+model id string and on model changes
+model id string void and user plan is
+free of glue. Perfect. So now uh we'll
+pass chat panel props here and
+yeah we need everything from here. So
+I'll get it and paste it in here.
+Remove this.
+And uh now
+first what should we do is
+let's get the messages end ref. So we
+need to know how much to scroll when we
+uh load this. So const messages end ref
+is equals to react dot use ref html
+element
+and we'll have use ref instead of react
+dot use.
+And then after this we'll have const
+selected
+model
+equals to get
+model by ID and we get selected model
+ID. Then uh we also need to have uh
+support visions uh uh if the model
+supports vision or not. So const
+supports vision equals to selected
+model
+dot supports vision
+or false like this. And then we are
+going to have a use effect. So whenever
+this component loads it should scroll to
+the bottom of the content. So we could
+have so many messages and we need to
+scroll to the bottom of the messages. As
+soon as the messages are here and if is
+streaming is false then currently it's
+streaming. So we need to scroll as well.
+So for that we have this and then we'll
+have messages and ref dot current scroll
+into view behavior smooth. Perfect. And
+now after this let's have our chat
+panel. So let's give this a class name
+of flex height full
+flex call then background vg background
+and now inside of this I'm going to have
+the scroll area from UI scroll area and
+let's give this a class name of flex
+one
+flex one and overflow hidden
+And now inside of this I'm going to have
+another div with flex
+flex call
+and gap of five and b of four. Now
+inside of this uh I'm going to check if
+uh it's an empty state with no messages
+then we need to just have some
+placeholder data that
+uh messages
+better. I'm not going to write this
+HTML. I'll just grab that code.
+So I'm going to paste it right here.
+I'll show you step by step. So
+messages.length if it's uh if there are
+no messages then we need this div. So
+this is a basic div. Now this is for
+gluing icon. Make sure to import this
+icon from lucid react. These are the
+class names.
+Then we have a text of what do you want
+to build? Describe your app and a will
+generate working code with the live
+preview basic HTML. Then we also need to
+have some suggestion chips. So for that
+I going I'm going to have some icons
+from Lucid React. So this code is
+this and then we'll get the message
+square
+from Lucid React and we are just mapping
+it and if I save it and if we head over
+here so this is the UI that we have when
+we click on this it would just send the
+message with the uh uh like that. So on
+click on send message suggestion label.
+So or landing page. So it would just uh
+start creating a landing page like that.
+So this was the component. Now let's
+move forward. Now we will have message
+bubbles here. So let's do the message
+bubbles and then we will have the
+uh
+what should we have?
+Then we will have yeah the message bar.
+So after
+this conditional react
+we will have
+messages dom will get message and index
+and
+this and we'll just use the message
+bubble component that we created
+and
+we will pass key as message dot id
+then
+we'll pass in the message as
+message
+then is streaming as if it's streaming
+and uh not like this so let me write it
+if
+is streaming so
+is streaming
+and end message dot roll triple equals
+to assistant
+and index triple equals to
+message.length minus one then it's
+streaming
+and is autoheal in progress. So is
+autoheal in progress. So if it's
+streaming and message roll is not
+assistant but user and uh index triple
+equals to message dotlength minus
+2
+and
+that is it.
+Perfect. Make sure to import the message
+bubble.
+Didn't I save this? Okay, I need to
+return a GSX
+message like this. And we head over
+here. Yeah, it's perfect. And now we
+don't have any message. So it's like
+this. So message bubble is done.
+We don't have any project need to create
+it because I think I'm on my local. So
+let's create social media
+app create.
+I'm getting an error.
+console.
+Let's try to create.
+It's returning internal server error.
+Why is that?
+Let me open up the worker if I see.
+Okay.
+KV get failed.
+Is this because
+of any
+we are running from local 3000 right?
+So, if I head over to my index.ts worker
+source
+uh local 3000 and uh let's head over to
+devs.wares
+and in here I think this might be
+because of this.
+Let's delete this for mean right now and
+let me restart the worker.
+Let me recreate it.
+Social media app.
+Let's clear the errors. Create.
+And yeah, it did create the project. So,
+it's here. Okay. So, it worked. Uh, so I
+had those empty variables here. That was
+the error. Now, it's gone. I'll fix
+that. Uh I have fixed that and now let's
+move forward again. Now after this let's
+have the uh message uh panel. So uh the
+chat input component. So let's do that.
+Okay. Just a minute. And now let's head
+over to the chat input component. I'm
+not sure if we have created that
+component inside of components.
+Chat input. No, I don't think we have
+it. Chat input. No. So let's create the
+chat input component. So chat input.tsx.
+Let's write RFC
+and export function.
+Yeah, chat input. Perfect. And let's
+remove the react import. And let's head
+over to our chat panel. So inside of
+chat panel I guess we are yeah after
+this div I'm going to have the chat
+input
+right here and if we save this and head
+over to here then we have this chat
+input here. Now we need to do some
+styling here but we'll do that
+afterwards. And now let's pass in the
+prompts that are needed. So on send
+equals to on send message and then is
+streaming is it streaming then credits
+remaining
+credits remaining is uh credits
+remaining is credits exhausted is
+credits exhausted and if it's supports
+vision so supports vision supports
+vision like this let's head over to the
+chat input component and let's do a
+styling. So let's do the interface
+first. So export
+interface chat input props and uh on
+send is message string void and this
+could also have the images. So
+images image attachment make sure to
+import images attachment then is
+streaming as boolean credits remaining
+as number is credits exhausted as
+boolean and support vision as boolean
+done and now inside of this we will pass
+in all of those props. So on send is
+streaming credits remaining credits
+exhausted and support visions and this
+credit exhausted is false by default and
+support vision is also false by default
+like this. And now let's do the further
+thing.
+What should we do here is let's do the
+styling of the components first. Uh
+let's do it. So
+in this component as well. So what we
+are going to are going to have is for
+images we are going to have three type
+of support. You can drag and drop the
+images. You can open up the file input
+and have the images and the third type
+is you can copy and paste the images. So
+if you copy the image from anywhere and
+if you paste uh it in the input text or
+control uh by command V or control V it
+would be automatically loaded here from
+internet. So something like that. So for
+that we are uh doing that. So let's have
+the value. So first use state snippet to
+have the value of the chat. So value set
+value. This is going to be an empty
+string and use state. And then we will
+have con text area ref equals to use ref
+HTML area element like this.
+And then we will have a con file input
+ref
+is equals to use ref HTML input element
+null. And then we will have attached
+images array. So use state snippet
+attached images set attached images
+state and this is going to be an empty
+array and type of this is going to be
+image attachment and this is going to be
+an array type. Now
+uh
+whenever the component mounts we need to
+autofocus the text area. So I'm going to
+have a use effect hook.
+It should run as soon as the component
+is mounted without any dependencies. And
+it should just have text
+area.curren.focus like this.
+And
+we also need to resize the text area
+based on the panel width. So I'm going
+to have use effect
+which would
+changed on value as well. So uh whenever
+we have the value greater like uh
+multi-lines then also we need to change
+the length width. So let's do that now.
+const
+exterior
+exterior
+is equals to text area.curren current.
+And uh now if exterior is there then
+we'll have text area dotstyle
+dot height as
+auto
+and text area
+dotstyle
+dot height
+equals to
+math
+dot min
+area dots scroll height and width 200
+pixels like this.
+And then what should we do is
+just a minute.
+Yeah, let's have the chat input
+component from here now. So div with
+class name as padding x of three padding
+bottom of three padding top of 1.5
+and inside of this we'll also have onrop
+with handle drop and on drag over uh
+e.prefault. So let's create a function
+const
+handle drop equals to
+component like this and
+let's have onrop
+equals to handle drop.
+Okay, this is handle drop like this. and
+on drag over
+we'll have e
+as e dot prevent default. So as soon as
+we drop any image inside of this
+component we need to uh stop what uh the
+uh html event does. We need to have this
+handle drop function called. So we'll do
+that now. After this, we'll save this
+first. And
+I don't see our component here. Yeah. Uh
+because we don't have the text area
+inside of this. So, let's do it. So,
+just a minute.
+I'm going to have this class name, which
+is going to be
+a big class name. Just a minute.
+Inside of this, I'm going to have this
+class name. Make sure to import CN and
+wood. And we have this class name right
+here. And now inside of this, we are
+going to show the attached images. And
+uh what else? We will also have the
+paper clip button to show the images and
+everything. So, we'll do that
+afterwards. But first, let's have the
+text area.
+Just a minute.
+Inside of this, what I'm going to do is
+I'll have a div with class name as flex
+items end gap of two padding x of three
+and padding y of two. And inside of this
+uh let's have an hidden file input. So
+first we'll have this hidden file input
+and let's create this handle file
+select. So
+con handle file select is an empty
+function
+like this for now and this input is
+done. After this we are going to have
+the text area.
+So we have this text area component
+which would have ref as text area ref
+value as value on change set value on
+key down we need to have the handle key
+down and handle paste for pasting the
+images and we're going to remove this
+for now
+and if it's disabled we'll have as
+disabled and like that and after that we
+are going to have a button which would
+uh
+just uh would send the handle send. So
+after this I'm going to have a button.
+Make sure to import the button from UI
+button and send horizontal from lucid
+react. Now let's do the handle key down
+and handle paste. So let's create this
+functions
+const
+handle paste handle key down and let's
+create handle send.
+After let's uh do the is disabled. So is
+disabled is if it's streaming or if the
+credits are exhausted then we have is
+disabled. So is disabled
+equals to is streaming or is uh
+exhausted. And then we'll also have this
+as content if value.trim
+not equal equals to zero. Or else we can
+do like this value.trim trim dot length
+greater than zero and attach images
+greater than zero then it has content
+and yeah those errors are solved and we
+have this describe what you want to
+build so this should be at the bottom
+not sure why it's not here
+if we send it nothing would happen here
+now uh because we have those empty
+function of handle send message so we'll
+do that First uh let's have the attached
+images component. So going to get that
+outside of uh
+this div. Just a minute.
+after this uh what should we do is
+yeah I'll paste this code right here of
+attached images. So if we have any
+images attached then we need to have
+this component to show those images. So
+we map all of those images in a
+good component and then we also have
+this handle remove. So con remove image
+like this
+and
+we also need to define this max images.
+So max images is a const of five and max
+image size and we also need to create
+accepted types. So at the top here I'm
+going to create this maxim images as
+five maxim image size is 4 MB and accept
+accepted types as PNG, JPG, GIF and
+webp. We have all of those and we pasted
+the component
+and the button of remove image. And
+let's import the X
+from Lucid React.
+And I guess this is done.
+If I copy an image from dribble
+dribble,
+let's copy this image.
+head over to here and paste it. No, this
+is not working because
+we need to have that handle paste. So,
+we need to do that. And uh also we need
+to have that paperclip button now. So,
+let's do that as well.
+So inside of this uh
+div before this input if our model
+supports vision then we have this button
+of paper click
+and this paperclip is from lucid react
+and we just have this button which would
+be disabled if our attach uh length is
+greater than image max images and it
+would be only visible when our model
+supports the vision. So that is that if
+I save this and if I head over here
+because we are current model is chaty
+forum mini it supports the so if I click
+this now this would open up and if I
+select this image
+should be here but it's not here. So I
+think we need to handle those uh
+functions now. So let's do that of on
+click file input ref.curren.click.
+So whenever it's clicked we'll have
+handle file select and whenever this
+handle file select would run it would
+set the image inside of it. So let's
+wrap that function now. So first of all
+let's uh do the handle file select. So
+handle file select it's a
+use call back function. So like this use
+call back.
+If uh we got the files then we have this
+handle files uh uh
+handle files uh function which should
+just set the image. So we need to have
+that as well. After this
+we have this handle files use call back.
+We get the files and we first check how
+many images are remaining. Then we get
+which files uh we need to process. Then
+we also get the toast if uh there is any
+uh maximum images are used. Then this
+process file would be just a minute as a
+function again
+which would read the file as base 64.
+So after this I'm going to have this
+function right here
+of process file. So process file first
+checks uh that only JPGP and GG GIF and
+WEBP are supported. Then max size is
+matched. Then we read the uh file as
+base 64. And if it's failed to read the
+image then it shows the error and then
+it just uh reads the file. That's it.
+And
+okay, process file should be before
+this. So I'm going to cut this from here
+and paste it here.
+So handle
+process file. And then we will have
+handle file. Handle file should be
+before this as well.
+And then we have handle file. Select
+done. And now if I head over to here,
+click on this and let's get that image.
+And yeah, you can see that we have that
+image now. And this cross button as
+well. Now we need to remove this image.
+So you can see we have one of five. Now
+uh let's try to remove that file. So for
+that we had that uh this function remove
+image. So what I'm going to do is
+that function
+we'll have use call back set attach
+images. We get the index and we just
+remove it from the attached images. So
+if I get the images again
+close this it's deleted. So that is
+done. Now what are the other functions
+now?
+Uh let's handle the paste. So let's do
+the handle paste and handle key down.
+So let's grab the handle key down first.
+So handle key down is this. Whenever we
+press enter then uh we just uh call the
+handle send button. And uh what next?
+Let's create the handle. Send
+this errors.
+Okay, it should be before all of this, I
+guess. and send.
+Yeah,
+use call back. And we don't need this
+rate limited for now. And
+we can remove this rate limited from
+here. And yeah, so this is our handle
+send. We get the trimmed value and we
+check if it's credit, it's not
+exhausted. And if it's not streaming,
+then we call on send message. uh and
+then we will have uh also attached
+images uh send the attached images set
+the value as empty and set the images as
+empty again. So this is our handle send
+uh function being called. Then let's do
+the handle drop. And
+so after this we have the
+handle drop where it is
+handle drop. Yeah. Let's remove this and
+uh going to have this. So
+did we have this handle files? Yeah. The
+handle files is here but we need to have
+it at top again before
+handle drop and we also need the process
+file. So process file should be at the
+top.
+Okay. Now handler drop is we just check
+if the model supports vision and uh we
+uh get the event and get the event dot
+data transfer files and check if it
+start with image and then we just call
+the handle files component and then
+we need to have the uh handle copy
+handle paste sorry. So
+handle paste is also very simple. We
+just get it from clipboard. So handle
+paste instead of this I'm going to have
+this handle paste. First we check
+support vision. Then we get the items
+from clipboard items. We get the image
+files. all of the images from clipboard
+uh items and map it and get it as file
+and push it into this image files and we
+again send it uh it to our handle files
+function. Done. So I guess all of this
+is complete. And if I head over to
+dribble, copy an image from here. Paste.
+It still doesn't works.
+Paste.
+Okay, I guess this is not being copied.
+And let's open image in new tab. Copy
+the image. And
+yeah, now it's working. So it's here.
+It's done. And now we need this input at
+the bottom. So let's fix that. And
+create UI. If we call it, then we can
+have that pending send message
+implementation. So it's calling the
+upper component. So that is done. And
+now let me check if its parent component
+has
+anything.
+Okay. So this uh inside of
+chat panel
+this is not inside of scroll area. This
+chat input this is outside of scroll
+area like this. And now it's at the
+bottom. Perfect. So this is done. Now we
+need to have the handle send message
+actual calling of this API and server
+side uh events uh thing. Uh so let's
+handle that and then we will have our
+message bubbles here.
+Okay. So now let's head over to the
+page.tsx of the here. And now let's uh
+create this handle send message.
+And instead of this, what I'm going to
+do is paste this function right here.
+Make sure import toast from sono. And
+let's uh go by go line by line
+everything what I have pasted.
+So okay. So we have this handle send
+message which is uh use call back
+and we also have image attachment.
+So uh we get the content in here. uh
+images and we check if it's an autoheal
+or not and
+okay then uh we reset the autoheal
+counter then we will check if we are
+viewing an older version. So if we are
+then we first go back to current version
+and then uh we do changes and we have
+this just generated ref uh so that uh we
+are making that uh we are starting a new
+generation which is not complete yet.
+Then we create a user message that
+message of this. So the user has created
+this message. For example, create a
+social media app and this is the message
+id and the content. Then we get the time
+stamp and we get the images. Then we set
+the image messages and we set is
+streaming as true. Then streaming ref
+current as true. Then we get the AI
+message uh ID. So MTI message ID and uh
+we get the message ID. we pass role as
+assistant and content is just uh empty
+because we uh get it first and then we
+stream the uh response in it. So uh this
+is for that. Then time stamp is this and
+we get this message ID outside because
+we need to store it and we get the model
+ID. Then we set the messages of that MTI
+message. Then we uh get the CL token. We
+also get the worker URL
+and call the API of post onto our
+Wrangler and then uh we get the response
+we get the uh error body and we don't
+need this rate limited thing for now.
+we can remove this piece of code
+and uh then if there is no response then
+we just throw a new error. Now we will
+read the servers send event stream. So
+we initialize the reader then decoder
+for text decoder then we will have
+buffer and while true. So while this
+condition at the end, we will have this
+condition.
+Okay, I'm not sure where it just ended.
+Just a minute. Let me close this.
+Okay, I'll uh send you the uh uh show
+you the condition at the end. So we get
+the done and value. If it's done, then
+we break the loop. And if it's not done
+then it would still continue. I guess
+this would just end the loop right here.
+If done is there then we will break the
+loop. So while true. Yeah while true.
+Condition would be here. I'm sorry. I
+just forgot how while loops work. I'm
+very sorry. So condition is right here.
+While this is true, this condition is
+true. So this would run infinitely and
+we are breaking it. If we receive the
+done event from back end then we just uh
+decode the code and uh parse it.
+Then uh after we set the messages we
+have this function of refresh messages
+refresh versions. So it would just
+refresh our version. So uh we'll do that
+and uh
+I don't need this
+rate limiting stuff for now. I'll remove
+that. We'll write this refresh versions
+uh message u function in just a minute.
+Get the messages. Catch any errors.
+Remove this.
+Limited.
+And I guess this is done.
+Okay. Refresh versions and project.
+Let's do the refresh versions. Now
+after the use effect
+I'm going to collapse this and
+after use effect this use effect I'm
+going to paste in
+this refresh versions. So refresh
+versions is clan dover versions.list
+list just getting all the versions again
+that's it and setting it in the versions
+so that should be it and what error do
+we have again
+I close This
+Okay, just a minute.
+Okay, handle back to current should be
+at the top, I guess. So, let's
+get these at the top. All of these
+functions
+give this
+And now
+if we refresh the page,
+React has detected change in the order
+of hooks called by data page.
+Did I made any error here?
+Just a minute.
+I think we only need to have
+the
+handle back to current
+at top like this.
+And we'll back to current cut it. And
+we'll paste it here.
+Save it. And let's see
+what else are we calling here. Refresh
+versions handle back to current.
+Let's close this.
+There are still some errors. Let me try
+and fix it and I'll get back to you.
+Okay. So, it has been fixed. The only
+change that we needed to do is uh if you
+have this right here, not this one. Uh
+yeah,
+we have this if is loading return layout
+skeleton. This should be at below after
+all of the components. So, uh make sure
+you do that. And now let's test our API.
+So inspect network and let's have this
+this side and let's call our create
+project API. So create
+social media app and just a minute I
+need to paste in my API key for uh open
+AI. So let me do that.
+Okay. So that has been added and now
+let's try to send the message create
+social media app and I'll send it and
+let's see
+response we didn't get any yeah we are
+getting the serverside events in the
+response as you can see so it's working
+and it has started creating the
+application
+so voila our this part is working now we
+just need uh the message bubbles here
+and uh the generation progress. So that
+is only remaining in this part. So that
+is done and uh I guess this is complete.
+This is done event. As you can see it
+has generated the social media app and
+then it called the versions API. So this
+is our new version
+which has four files
+header, post list, postcard, footer. So
+it did created and now we can also
+preview it here. Uh after we uh complete
+this section, we'll just head over to
+the live preview and uh this is almost
+complete. So let's do that now. Okay. So
+I'll head over to the message bubble
+component. I'm going to remove all of
+this and I'm just going to paste my
+component and I'm going to show you uh
+we also need to have this generation
+progress component. So let's create
+generation
+dash progress
+tsx and let me grab that component as
+well and I'll just explain you. So
+just write it. Okay. So this generation
+component is uh it just renders realtime
+progress of AI generation. So phase one
+is thinking. It would just show
+thinking. Then phase 2 is generating
+files with the uh files that are
+generated.
+And just a minute my VS code just closed
+itself. I'm not sure why. Let me open
+it. Okay. So I opened it. So phase three
+is done. It would show the summary card.
+Then it would be used by the message
+bubble. So make sure that you have used
+client. Then props we get the content is
+streaming and changed files. Then file
+progress uh it's path and status. File
+open reax file complete reax parse file
+progress.
+So this is all uh documented. So you can
+just read the component that you would
+understand what's it working. Then
+generation progress
+first we get the files for uh progress.
+Then we check if it's streaming or it uh
+doesn't has any files. So it's thinking.
+So for thinking we have this uh icon of
+plain circuit and we have this thinking
+and analyze your request. analyzing your
+request then it doesn't has files then
+return null and uh then if it's still
+streaming then we are generating the
+files and we show the files
+and uh then we show the file list of all
+the files
+then we show a progress bar and that is
+it I'll save this and inside of message
+bubble we use that and now
+from here we are going to continue uh we
+had written all of this so we'll just
+start with component so first we get the
+image then
+uh we get the user so if this message is
+from user or is it system message or a
+generated then display content
+remove the file file tags and uh remove
+the part partial incomplete blocks as
+well. Then show the progress.
+Then if it's thinking and for auto heal
+now the component
+and if the message is from system then a
+pillshaped message
+then our actual component.
+If it's from user, then we show the user
+or bot the icons
+or model uh name.
+Then the image thumbnails.
+Then if we click on mage, it should open
+up the lightbox component to show us uh
+the images. So I'll wrap the file so you
+can see everything.
+then our message bubble.
+Then we use the react markdown component
+here and react uh remark gm. So this
+would also uh add support for tables and
+every other markdown components
+and we show the generation progress
+here.
+And that is it. If we save this now and
+head over to our UI, you can see that we
+have this message and six files
+generated. Now I'll also add a new
+message that add a sidebar
+component
+and send it. And you can see that it's
+analyzing
+and now it's on generating phase. So it
+is generating the files.
+And it is done I guess.
+Yeah, it's done. And now this uh section
+is complete. And now let's work on the
+live preview section.
+Okay. So now we are going to do this
+preview panel component. So for that
+first let's close all of this. And have
+we created that preview panel component?
+I'm not sure. So let's head over to the
+page.ts. tx right here and inside of
+here what is the preview panel okay so

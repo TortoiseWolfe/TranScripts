@@ -1,0 +1,2576 @@
+layout.tsx file. Right? So, what I'm
+going to do here, just a minute.
+All right. So,
+this page right here is our layout page.
+So in here I'm going to have our sidebar
+and uh uh the projects cards and
+everything. So let's do that. First I'm
+going to create a nav item. And uh the
+name of this component should be app
+layout. Layout works but
+let's name it app layout. Looks good.
+And uh we get children in here. And we
+need to pass the children down. So we
+get children here.
+And uh the type of it is going to be
+read only.
+Read only
+children
+of React dot react node like this. And
+this is read only.
+Perfect. Now what should we do next?
+Just a minute.
+Okay, we have got the children and let's
+create nav items as well. So we are
+going to have dashboard analytics and
+settings as the nav items. So going to
+paste it here. Nav items. We have
+dashboard. The route is dashboard and
+layout dashboard is the icon. We need to
+import all three icons.
+Then we have analytics and settings.
+That's it. And now we are going to uh
+have a grid here. So grid would be
+something like let me show you a diagram
+if I have of how the layout is going to
+look just a minute
+new file. Yeah. So this is going to be
+the app layout. So in here uh sidebar
+and main content sidebar logo project
+stats configuration and the avatar. main
+content is going to have a dashboard,
+project settings and all of the content.
+So we are going to create a layout like
+that.
+And first we also need to check if we
+are on the project editor then we don't
+want to show the sidebar because uh we
+actually do the creation of project and
+everything there. So const path name
+equals to use path name
+and
+this is going to be a client component
+as well. So let's mark this as use
+client
+and let's uh grab uh path name and also
+create a state for sidebar like if the
+sidebar is open or closed. So use state
+snippet and it's going to be sidebar
+open set sidebar open and this is going
+to be false initially and let's import
+state as well from react and next is
+we'll check if it is the editor page. So
+is editor page equals to path name dot
+starts with not editor but project. So
+if it start starts with projects like
+this then not projects but project with
+the id then it is the editor page. So we
+don't need to show the editor page we
+just need to show the rate limit banner
+and uh we'll show the children. So
+we'll check if is edit a page
+then we'll return
+a div with the children that is correct
+but this div it's going to have a class
+name of flex height of screen flex of
+call back bg background
+and text foreground
+and now inside of here we are going to
+have a rate limit banner
+So we are just going to write rate limit
+banner for here. So when we actually
+implement rate limit components and that
+will replace it. So let's write a todo
+here as well. Todo
+rate limit banner. So we need to
+complete that. And after that we are
+going to have another div with flex
+flex one
+overflow hidden
+and inside of this goes our children
+like this.
+Okay. So if it is editor we just need to
+show this and now comes our actual
+component. So this return here will have
+div with class name flex height of
+screen and flex of call
+bg background
+and text of foreground
+text foreground like this. Let's head
+over to the chrome and yep it's here.
+And
+what else? We'll remove this app layout.
+And we'll just copy this rate limit
+banner from here. Paste it. If it's rate
+limited, then show rate limit thing
+here.
+And uh we should comment this out as
+well. Rate limit banner is only uh
+visible if there is rate limited.
+So now we'll check if sidebar open. If
+sidebar is open then we need to
+so
+div.
+So this is for the mobile sidebar
+div with class name as fixed inset of
+zero z of 40
+background black
+of 60
+backdrop blur
+small backdrop blur small. And if it's
+medium then we need to hide it. So it's
+just for mobile and on click
+on click we are going to just have set
+sidebar open.
+Set sidebar open as false like this.
+Done.
+Can remove this braces.
+Now let's have the actual sidebar.
+Just a minute
+after this div and this div is a
+self-closing div.
+Let's have an aside tag and inside of
+aside
+this needs to be closed like this and
+it should be here like this. Okay,
+inside of aside tag, we going to have
+class name.
+Class name with brackets like this.
+The end
+we pass fixed
+insert Y of zero. And we need to input
+CN from leuttails. and set y of zero
+left of
+zero
+of 50.
+Then we need flex width of 60.
+Then we need flex call
+border R
+border sidebar
+border class
+background sidebar
+then transition
+transition uh transition transform
+and duration 200
+and it's medium. We need static
+and medium translate x of zero like
+this.
+Apart from that,
+if sidebar is open, then translate x of
+zero or else minus translate x of full
+like this. And now inside of here goes
+our actual content.
+Okay. So
+what should I do here is
+I'll get the branding info.
+So I have this div inside of here.
+Import next link. I just imported this
+div imported link
+and
+This right here we have link of
+dashboard. Uh when we click on the logo
+we uh will show we will redirect to
+dashboard. Then when we click on the
+button uh it will close the sidebar if
+it's the responsive sidebar. And uh as
+you can see it's responsive medium of
+hidden. So, uh, let's head over here.
+And we have the icon here. And if I turn
+it to responsive mode, you can see that
+it was closed.
+Right after this, we need the separator
+component. So after this button and this
+div, I'm going to have
+separator from
+separator like this.
+Do we have it? No,
+no worries. Now we'll uh map our nav
+items. So
+I'll just grab those after this and
+paste it here. nav items. So basic nav
+uh class name nav items the nav items
+are above this we are just mapping it.
+So nav items do map uh we are checking
+if it's active with the path name uh and
+if it's active then we give it a class
+name like that
+and on click of that we'll also set
+sidebar open as false
+just that save it and head over here
+it's here perfect
+now what next uh credits
+display. So we need to show credits. So
+for that I'm going to write credits
+display or let's create the credits
+component but
+I don't think we can show it right here.
+So let's write
+credits
+and
+add credits component
+like this.
+So we have credits
+and what else? Again we'll have
+separator.
+After the separator we'll have the user
+button. So user button is from clerk. So
+what I'm going to have is dot flex
+item center
+gap of three padding x of five and
+padding y of four. And inside of this
+I'll use the user button from clock
+mix.js and
+it's a self-closing tag. So inside of
+here we'll give it an appearance
+which will have elements and avatar
+box of size
+eight like this.
+And after user button, I'm going to have
+a span
+with class name as text small.
+Then text muted foreground
+and I'll write account here
+like this. And
+we have the sidebar here. So this is the
+credits and if I click on this, we'll
+see the clock window. We can manage our
+account from here.
+log out as well. Let's try to do log
+out. We haven't logged out, right?
+Okay. So, we are logged out and you can
+see that we now have login and get
+started buttons here. So, let's log in.
+Perfect. But the sidebar should be of
+the pages height. So I'm not sure why
+it's not that height screen was given to
+it. So flex and height screen is given
+and uh again uh the
+a site should have hide screen.
+Let's give this hide screen.
+Perfect. It's here now.
+Okay, we routing is also working. You
+can see that it's being changed.
+Oh, sidebar is perfect. Credits would be
+done afterwards. Now, what next? Now,
+we'll have the project cards and
+everything here. So, that is done. And
+we need to display the main content. So
+main content area would be
+just a minute. Let me check.
+Okay, we need to have one more thing.
+The responsive sidebar is still not
+wrapped up. So if I close this right
+here, not close it, but
+you can see that we don't have any
+hamburger to open that sidebar. So for
+that after this aside right here,
+I'm going to paste this divs.
+I pasted this code right here.
+And we are just having an header with uh
+level clone image and hamburger menu
+imported from Lucid React. And when we
+click it, set sidebar open as true. And
+then we will have main content after
+this header. It's the children's of the
+component. So now you can see that we
+have this dashboard page. And we also
+have this header. If I click this
+sidebar is open. If I click outside or
+click anywhere, it gets closed. So that
+is done and uh
+let's refresh it.
+Just done.
+Just a minute. Is the text besides this?
+If I delete this, okay, the text is
+besides this. So, we need to have a gap
+when we uh create that content.
+So,
+we'll do that afterwards. So, flex flex
+one. This is perfect.
+Did I miss anywhere? Flex hide screen.
+Flex call
+and
+this aside was given a fixed as inside
+of
+zero as well.
+Width is 60. So we need to have a
+padding of 60 everywhere I guess. So on
+the next components we'll do that. And
+our app layout is complete. So next is
+we are going to have dashboard
+components like empty state create
+project dialogue project cards project
+grid and then creating a barrel export
+for that. So let's do that now.
+Okay. So let's do the empty state now.
+So uh for that uh what should we do is
+inside of components right here we're
+going to create new folder named as
+dashboard
+and inside of that let's create some
+files. So first is we need an empty
+state.tsx component and an index.ts
+which is going to be a barrel export.
+We'll do that afterwards. So let's
+create the function which is empty
+state. So
+export function
+empty state like this and we are going
+to return some JSX from here and we also
+need to give it a prop and prop type. So
+let's create an interface. So export
+interface empty state props.
+And this
+right here is going to have on create
+project
+like this void and uh
+it's on create project is useful uh
+because we are going to have a project
+button here and make sure that you use
+the props here and what we are going to
+do inside of here is we are going to
+have text and buttons uh like create
+your first project and stuff like this.
+So div class name we'll give it a flex
+flex one
+like this. Then flex call
+item center justify center padding x of
+six and we're going to give it a padding
+y of 20 as well. After that uh let's
+have another div with class name as flex
+size 16.
+Then we are going to have items center
+justifies center rounded to Excel and
+background of muted.
+And inside of this I'm going to have
+icon named as folder open.
+Make sure that you import it from lucid
+react. And I'm going to give it a class
+name of size of 8.
+Then text muted foreground.
+That's it. And let's close this div. And
+after that I'm going to have an H2 which
+will have contents as has no projects
+yet.
+And let's give this a class name of
+margin top of six. Then text excel
+then we'll give it a font semi bold.
+And then we are going to have a P tag.
+And the P tag is going to have create
+your first project to start
+building with AI.
+Describe your
+idea
+and watch it come to life.
+Done. Now you also need to give it some
+class names. So
+I don't need the AI suggestion. Margin
+top of two, max width of small. Then I'm
+going to give it a text of center.
+Also text of small.
+I'm giving it a muted foreground color.
+The text done. And now we'll have a
+button which will
+be imported from UI button. class name
+is margin top of six. So
+this is going to have the text as create
+project and we'll have on click on
+create project. That's it. So when we
+create click this button our prop uh
+function would be called on create
+project. So it would just uh open up the
+model to create the project. So with
+that our empty state component is done
+and now we need to create a dialogue
+which will just uh create uh get the
+project details and create the project.
+So we are going to have create project
+dialogue
+tsx and inside of this what should we
+do? First of all this is going to be a
+client component. Then uh we will need
+the AI models. So we are going to use
+eight AI model selection from here. So
+these are the AI models. Uh we have got
+support for J uh Chad GBD, Gemini, uh
+Claude, DeepS. So we need the uh value
+of the model and the label. So make sure
+that you don't miss it because if there
+is any spelling mistake here right here
+on this model values then this would not
+work because in the actual API calls we
+are going to mention this and uh if we
+are using the provider for openi then
+openai needs this value to get to know
+which model we need. Same goes for other
+models. This if you have missed this or
+change the uh this uh it's just for UI
+this is label. So this doesn't matters
+but make sure that you don't miss this.
+And after that
+uh
+we need to have an interface
+create
+project dialogue props and the props is
+going to be if this is open or not. it
+is for boolean and on open change it is
+going to just open the model or close
+the model and on submit
+on submit it's going to have data which
+is uh name description and model
+yeah that is correct but what I have in
+mind is instead of like this data is
+going to be create
+project data like this and this is going
+to return void and let's create an
+interface here as well. export interface
+create project data like this and inside
+of here name string perfect then
+description string is perfect but AI
+model we don't need AI model this is
+going to be just model and model is
+going to be of type string as well done
+now next thing let's create our
+component and export it so export export
+function uh create project dialogue and
+we'll get uh open on open change on
+submit which is of create project
+dialogue props and we'll return an
+uh do we need to export default? No, we
+don't need to export default because we
+are exporting it. No need to do that.
+Now before this function we are going to
+have some states and uh model and
+description. So use state snippet. This
+is for name set name and initially this
+is going to be empty. Make sure that you
+input use state and then for
+description. Perfect. And then for model
+so for model we are going to uh by
+default use the AI models of 0 value. So
+we are going to have GPD4 mini as the
+default model or we can also have
+DeepSeek V3. Uh both are very cost
+efficient. Uh Deepseek is very
+costefficient. So most of the things
+that I use for demonstration in the
+video or while development we will be
+doing would be done in uh deepseat
+because it is very cheap and the results
+are also very good. So you could do that
+as well. Now uh we will have a function
+for handle submit. So what that would do
+is just check the values and call our
+onsubmit button and then after that is
+done we'll just remove all the steel
+values. So function handle submit and uh
+like this and we need the event here. So
+event
+react form event html form element. Yeah
+that works. Then we need event.tprevent
+default. Yeah we do need that. But
+before that we need to get the trimmed
+name. So const trimmed name is equals to
+name.trim. And if there is no trimmed
+name we are just going to return from
+here. So we don't uh
+uh submit uh an empty name or a space.
+So like that. Now name is going to be
+trimmed name here. Description is going
+to be description. Model is going to be
+model. And we also need to trim the
+description. And so if there is no
+description on the project, it
+completely works. But there's going to
+be a name of the project. So make sure
+you do that. Now after all of this done
+is we are going to set the name as
+empty. Set description as empty and set
+model uh as AI models of 0. And on open
+change do we need to change that? No, we
+don't need to change that. We'll handle
+this scenario from the upper function.
+So this is done. Now let's create the
+component itself.
+Now I'm going to remove this comment
+right here. I don't need that. Let's
+give this a class name or instead I'm
+going to remove this and use the
+dialogue function. Not function but uh
+dialogue from our UI components. So
+dialogue open and onopen change will use
+the onopen change. Yeah, AI is correct.
+Let's
+we'll do this afterwards. Let's import
+all of this first. Dialogue is imported.
+Dialogue.Content. Yeah. So,
+dialogue.content. We need to give this a
+class name of small
+not height but small width of medium
+like this. Then dialogue header nothing
+there. And instead of this we'll have
+dialog content component. Make sure that
+you import dialog content from UI of
+components and dialog header from UI
+dialogue like this. Dialog title.
+Make sure to import it from this.
+Okay.
+Dialog content.
+Okay. It doesn't have a closing tag.
+We'll fix that.
+Now dialogue header, dialogue title,
+dialogue description. So
+dialogue description and this is
+dialogue title. Dialogue description is
+give your
+project a name and
+a name and describe
+what you want to build. You can always
+change this later. No, we don't want
+that text. Your description
+will be sent as the first AI prompt.
+Perfect. And let's remove this.
+And dialog header closes here.
+That is done. And now we need the form
+component. That is correct. But I think
+we need to remove this. There's a lot of
+text and everything here. I don't need
+that. Instead, let's close the dialogue
+content
+and the dialogue first. Yeah. So after
+dialogue header,
+we will have our form component inside
+of here. So form handle submit. It's
+perfect. But the class name is going to
+be just have a space Y of four.
+space y4
+like this and let's
+complete the form component. Now inside
+of this we are going to have a class
+name of space y2
+space y2
+label
+html 4 is going to be project hyphen
+name class name is going to be text
+small
+and font medium
+then we are going to have project name
+here and after this I'm going to have
+the input component.
+ID is going to be project name.
+Placeholder is going to be my awesome
+app.
+value is going to be name
+on change
+is going to have event
+set name
+event dot target dot value like this
+and we'll use autofocus here.
+So this was for project name. Then we
+need the uh model selection and then
+we'll have description and then we'll
+have button for the dialogue. So what
+I'm going to do is I'm not going to
+write that code here. So after this div
+I'm going to paste this
+import select import select trigger
+to import select from UI select
+this from select trigger.
+Okay, we'll fix that afterwards. But we
+just imported this.
+This is for just drop down with AI
+models and map the AI models.
+This one mapping those AI models and we
+imported select things from select
+component
+and this is wrong. Dialogue description
+should be from UI dialogue as well.
+Remove that UI input UI dialog UI select
+on value change set model
+U state
+did I did something wrong here
+okay set model is of type string like
+this
+and the error would go on here yeah
+that's no longer the error now after
+this we're going to have the same thing
+for description. So after this div right
+here, we have one more div with
+this and we'll import text area from UI
+text area. Just a div with label text
+area and on change done and then we'll
+have dialog footer component and inside
+of dialog footer we're going to have our
+button to cancel or create. So dialog
+footer make sure that you import from UI
+dialogue and button from UI button. So
+dialog footer button cancel button and
+variant is outline. And uh for submit
+type is going to be submit. It should be
+disabled when there is no name or no
+description. And then we'll create it.
+And on click of this the form would be
+submitted. And here we have on the form
+we have handle submit and we have this
+handle submit. So when we click this uh
+button right here this function would be
+triggered eventually by form submission.
+So that's it. And this component is also
+wrapped up. Now next is going to be
+project card I guess. Let me check.
+Okay. Okay. So now we are working going
+to work on three major components. Uh
+one is the project preview, one is
+project card and one is project grid. So
+essentially uh project preview would be
+um it would be the sandbox preview of
+code sandbox preview of the actual
+application. So uh we'll give the files
+to code sandbox uh for all the projects
+and it would load a thumbnail like a
+view and uh that would be that view
+inside would be inside the project card
+component and all of those project card
+components would be inside a grid which
+is a project grid component and that
+project grid would sit inside our
+dashboard component. So we are going to
+create those three components. So first
+let's start with the project preview
+component. So inside of here I'm going
+to create project preview.tsx.
+Just a minute.
+Okay. So now I'm going to use this as a
+client component. And first we are going
+to export uh function
+project preview like this. And we also
+need an interface. So I'm going to
+export interface project preview props
+like this. And this is going to have
+files
+as a record
+string string
+uh which is going to be a file name and
+path. Then onload
+uh on load we are just going to call
+this function which is going to be void
+like this and
+we are going to uh set the virtual
+height and width of the application. So
+the height and width is going to be uh
+width is going to be uh 20 1024 and
+width height is going to be 640. Now
+uh what we are going to create a
+function first which is going to be uh
+transform our files to a code sandbox
+expected format. So for that I'm just
+going to paste this function right here.
+So two sandbox uh two sandpack files. It
+will get the files and what we are going
+to do is uh first we'll initialize this
+as an empty object. Then for each uh
+this uh files we are going to uh run a
+loop and from that we get the path and
+content of it. So then what we are going
+to do is uh we'll uh create a sandpack
+path which is if the path starts with a
+source uh directory then we are going to
+slash it uh slice it. So uh 1 2 3 4 four
+slices. So we are just going to remove
+the source and we are just going to have
+the uh actual path and if it's just the
+path then we'll just return the path.
+That's it. And uh then we'll have
+sandpack files with the index and uh
+index or whatever it is. And uh we'll
+just have the code as the content and
+the path as here.
+And we'll just return the sandpack
+files.
+That's it. Uh so we are just uh parsing
+it uh as uh not parsing but transforming
+it uh the file format into sandpacks
+expected format. So what will happen is
+something like this. So for example
+uh if the directory is like this source
+app.tsx tsx like this. If this is the
+value, then we need to strip the source
+and we only need to send app dot tsx
+like this inside of the sandpack. So we
+are going to strip this source uh if we
+are checking it and stripping it and
+sending all the files. So essentially we
+are just doing that. And now next up
+what we are going to do is we're going
+to extract all the dependencies from the
+package.json JSON file which would be
+created. So function extract
+dependencies
+uh we uh get files record string string
+and the record again here
+is going to be string
+string like this. Remove this array.
+Uh
+is this correct? files record
+string string and yeah it is correct.
+What's an error here?
+Okay, we just need to return a value
+from here. That's it. So we'll have
+const based dependencies. So based
+dependencies is again record string
+string and inside of here we are going
+to return react of 18.2.0 zero whatever
+dependencies there are we just want to
+react uh return react and react DOM so
+these both are essentially required for
+our application and then we'll get
+package JSON contents as files of
+package dojson we'll get the package
+dojson file and if there is no package
+dojson file we'll just return the base
+dependencies and now what we are going
+to do is a try catch block
+and if there's an error we'll just
+return the base dependencies and inside
+of try what we are going to do is we'll
+uh parse the JSON content so pared
+equals to JSON dot uh JSON content and
+what should we do here
+yeah
+we get the pass dependencies and then
+we'll return base dependencies We'll
+dstructure that base dependencies. So
+we'll get the react this string. We need
+to wrap this like this. Okay, it's
+autosaving so matters. Nothing matters.
+So uh it will return react and react
+dom. And if we have any external uh
+dependencies or anything then it would
+also return that to the dependencies
+here. So uh if there is react and react
+dom inside of this then it would just
+override this uh and it would work and
+if there is nothing like this then
+we can return an object like this. Yeah,
+perfect. And uh
+okay then while the sandpax is building
+the application every syntax preview
+would be uh the uh building the
+applications installing the
+dependencies. So that would take time.
+So while uh that is being done we are
+just going to show the skeleton loaders.
+So for that we are going to uh create a
+function which is load notifier. So as
+soon as the
+uh sandpack bundle is done we call this.
+So we have onload function and it would
+be void and inside of this what we'll do
+is we'll have const uh
+listen
+from use sandpack hook use sandpack
+and we need to import this use sandpack
+from code sandbox react. So at the top
+I'm going to import
+not this
+from code sendbox send pack react and
+from here we need the use send pack and
+while we here we are going to get the
+send pack
+provider component
+then we'll also get send
+back
+preview
+and we'll get send back layout.
+Send back layout. Yeah, that is it. So
+this dependency is a bigged one. So
+around 1 MB.
+Next up, what should we do? We call this
+use send pack. Okay, then
+what next?
+We listen this using use effect. So use
+effect
+like this and we listen for listen and
+onload. So whenever both of these
+changes or if anyone changes we'll uh
+load this effect and we'll check if
+onload is not true
+then we'll return and we'll create this
+function like this const uh unsubscribe
+equals to listen message if message dot
+type triple equals to done like this. If
+it's done then we'll onload uh use this
+function onload or else we'll uh wait
+for it again and whenever this component
+is unmounting we'll unsubscribe. So we
+just need to return unsubscribe I guess
+return unsubscribe like this.
+All right. Now
+we have project preview function which
+will get the files
+and
+onload and this is going to be project
+preview props type. And now
+inside of this we'll get the sandpack
+files and dependencies. So const send
+files is equals to two sandpack files.
+We already defined this function and
+dependencies is going to be extract
+dependencies and now we'll have our
+return. So now return is going to be
+just simple sandpack components. So
+first we'll have a wrapper. So origin
+top left
+and we'll give this a style attribute
+which will have our
+height and width. So style width is
+going to be virtual width
+and height is going to be
+virtual height like this. And then
+inside
+of this
+we are going to
+have sandpack provider. First we'll have
+the div for sandpack stretch. So send
+back
+stretch
+to just stretch the application and give
+it a height of full width of full
+and inside of this goes our sandpack
+provider.
+Now
+first let's give this some props. So
+template is going to be reacts.
+Then theme is going to be dark.
+Then files is going to be send back
+files.
+Then options
+is going to have
+external resources. So we need to pass
+Tailwind CSS CDN because it doesn't
+loads Tailwind CSS. We are
+passing it like this. http https colon//
+cdn.tailwind
+css.com
+like this.
+And
+then we also need custom setup. So
+custom setup is going to have our
+dependencies
+dependencies like this. Done. And now
+inside of sandbox uh preview we are
+going to have load notifier first. So
+load notifier on load onload like this.
+Make sure to import load notifier
+range. It cannot be used as a
+load notifier. Have we imported it?
+No, we okay. Load notifier is a
+function. So
+function load notifier. Yeah, this one.
+So function load notifier.
+And
+okay so after this we also need to
+return null like this here.
+Okay perfect that is done. Now we also
+need the sandpack layout after this. So
+sandpack layout inside of this we'll
+give it a style attribute which will
+have a height of 100%.
+Then
+border
+of none,
+border radius of zero.
+And inside of this we'll have send back
+preview.
+We'll give this show navigator as false.
+We don't need all of those uh things. We
+just we just need to uh have a preview.
+So we'll have show open encode sandbox
+false. Then we'll give show
+refresh button as false. And we'll give
+this a style which will have height of
+100% like this.
+And I guess that is it. And this is the
+self-closing tag.
+And that is done I guess. So our project
+preview component is ready. Next step
+would be project card which would use
+this sandpack provider component and
+then we'll have the project grid. So
+let's do that.
+Okay. So now let's create the other
+component. Inside of dashboard, I am
+going to create new file named as
+project card.tsx. And while we are here,
+let's create the project grid as well.
+So, project
+grid.tsx. And inside of project card,
+what should we do first is make this
+component as use client.
+Use client.
+And then we'll import the project
+preview with SSR false.
+like this. Make sure you import dynamic
+from next dynamic. We are uh doing this
+because sandpack requires browser APIs
+and should only load on the client. So
+we are explicitly telling that import
+this uh component uh with uh server side
+false
+and after this we need the virtual width
+and thumbnail height. So const virtual
+width this is going to be 1024
+and uh this is going to be const thumb
+some nail
+height.
+This is going to be 160
+like this. And after
+this we are going to have project card
+props. So export interface project card
+props and it would have the project
+and we'll get the project type from
+types project. Then we'll get the files.
+Files is going to be record string
+string. Then we'll have on rename and on
+delete functions. So on rename
+uh we'll
+get the id of stripe string
+and we'll have type as void and this is
+going to be on rename like this and then
+we need the on delete with id as string
+void as well. Then
+after this we need a function to get
+relative time. So it would just uh get
+the ISO 8601 date string time stamp and
+convert it to years ago, month ago,
+week, uh day, hour, minute like that and
+uh return or just now. So for that I
+have this function ready. So get
+relative time get the date date string
+and uh get the current time then uh we
+get uh then
+and uh difference in seconds. So now and
+then so what then was now is the current
+time and then was the time for which the
+project was created. So this is that
+date string and then we get the
+difference in seconds like if it was
+created in an hour ago then it would be
+around 3600 seconds something like that
+and we get difference in seconds and
+then we get the units of it like if the
+if it's here then it would be like this
+for a minute it would be like this and
+after that um
+yeah we format uh uh we create a
+formatter and uh uh get the time. So
+actually this uh piece of code I've
+picked it up from net I haven't written
+it. So it's just it just formats the
+time that's it and then we get the
+project initials if there is no sandpack
+sandpack preview. So we have function
+get initials
+as we'll get the name as string and
+return the type as string and we'll just
+return
+the name dotsplit
+uh this and not map
+we'll have name.tsplit split dot slice
+02 then we'll get the part part of 02
+uppercase or else
+yeah this is perfect. So we are just
+getting
+uh two initials. If the project is
+social media app then we'll get uh
+something like SM with the space social
+media. So SM. So we get the name of the
+app like that initials of the app. Then
+we'll have export project card which
+will
+be like this. And this is going to have
+project.
+Then we will have files on rename on
+delete from project card type is going
+to be of project card props. And then
+what we will do is we will first get the
+router. So
+this is going to be con router is equals
+to
+use router.
+This is going to be from next navigation
+or router I guess it's from next
+navigation.
+And uh what else?
+Uh let's get the initials as well. const
+initials equals to get initials with
+project.name. const thumb
+nail ref is equals to
+use ref
+and uh we'll have this as html
+div element and type uh not type but
+initial value would be null. This is
+thumbnail ref. Then use state snippet
+scale and set scale. This is going to be
+zero initially if we want to scale the
+app
+boot use state then const has files
+equals to files and then object dot keys
+files.length greater than zero. Yeah, if
+we are just checking if it has files and
+then we'll also have con not this but
+use state snippet with preview ready and
+set preview ready. Initially this is
+going to be false. And now
+what else?
+Now uh we need to uh compute the scale
+factor. So
+uh the app would be 1024 wide. So we are
+just going to use an observer for that
+and
+import use effect.
+We get the thumbnail ref. Okay.
+Our spelling is wrong. Thumb
+thumbnail ref
+dot current. If there is thumbnail ref.
+uh sorry if there is no thumbnail ref
+dot current then return it and if we do
+have it then we'll check with the
+observer and uh set the scale according
+to that like what's the content of that
+uh width and uh we divide it with
+container width and uh uh container
+width and virtual width which is defined
+in here and then uh according to
+whatever it's getting we'll scale the
+application according to that and we'll
+observe uh the uh the thumbnail using
+this. So this is basically uh if the app
+is small or big we need to have
+everything as a same size. So for that
+we are using uh this and for the ref we
+are going to uh use that ref at the
+bottom in the application
+in the element. So return
+div
+and first we are going to have on click
+here
+on click router.push push projects
+project id this is going to be project
+not projects like this and this is on
+click now inside of this div we are
+going to use a card component and uh
+we'll just uh
+use everything so for that what I'm
+going to do is I'm going to copy the
+component because it's just HTML
+no logic
+yeah we need to import things so I'll
+show view first is uh view what app
+we'll get card from UI card. So this is
+just a card component
+with basic CSSL CSS.
+Then we have this div which has the
+thumbnail ref get cn
+and we set the style and now we are
+checking if it has files. If it has
+files then only we need to uh show the
+sandpark uh sandpack preview or else if
+it doesn't have files then we'll just
+show our uh uh letters preview which
+would be
+I'll show you the initials. So here we
+have used initials. So first we also
+have the skeletons. So this is uh I
+guess uh skeletons. Yeah, this is all
+the skeletons and we are also using the
+skeleton component. And if we don't have
+the sandpack preview, if we don't have
+files and we are don't we are not using
+the sandbag preview, then we are just
+passing the initials of the app. And
+then we have project info which will
+have the project name and time ago like
+3 hours ago, just now or something like
+that. And then we'll also have
+drop-down. So drop-down would be for uh
+edit and things like that. So we need to
+import it from UI dropdown and drop-down
+menu trigger as well.
+Import the button as well. So
+we'll get more horizontal icon from
+lucid react and drop-down menu content
+from UI drop-own menu.
+Okay. So,
+this drop-down first has the uh more
+horizontal button uh not a button but an
+icon. So, that would be three dots and
+that three dots would trigger the
+drop-down and that drop-down has the
+rename and delete uh functions with on
+on click which uh just calls the uh
+parent comp uh parent functions which
+has been passed down from props. So that
+is it and this project card is complete
+and now we'll get over to the project
+grid component and project grid is also
+very simple. So let me write the
+interface first and make this as a
+client component as well. And first I'm
+going to export interface project grid
+props.
+And this is going to be having a
+projects
+as
+project type with array. Make sure to
+import project type from types project.
+Then we have project files
+which is record string
+record string string or else it is going
+to be
+undefined like this. And then we have on
+new project which is going to be void.
+Then we have on
+rename which will have id string void
+and same for ondelete.
+After that we'll have our project grid.
+So export function project grid project
+files projects and project files on new
+project on rename on delete and on uh
+project grid props and then let's do
+this first let's close the return and
+this
+like this and let's give this a grid not
+flex
+let's remove all of this let's give this
+a grid
+gap of four.
+Small grid calls
+two, medium grid. Okay, not medium but
+large grid of calls three and Excel grid
+calls of four. So this is going to be
+Excel.
+Done. Now inside of this,
+I'm going to use the card component. So
+make sure that you import from UI card.
+And this card is going to have some
+class names. So flex height of full.
+Do one thing. I'm just going to copy
+that code. It's just HTML.
+Okay. So this card has this class name
+on click and then on click uh when you
+click that card it would just create a
+new project of uh and it has the text of
+new project
+and then we are going to map the
+project. So the first card right here if
+we have consider
+uh
+this as project cards
+and the first one is going to be the new
+project card and then we have all the
+projects. So that is for that. And now
+after this card we are going to have
+projects dot
+map project
+and we'll give project do ID project is
+going to be of project files is going to
+be project files project ID on rename on
+delete and that is it.
+Now the files equals to project files
+project do ID this is something of issue
+here and if I head over to the project
+card
+head over to the project card props
+files is something like this. Yeah now
+the typescript work perfect. So our
+project grid is also complete. Now let's
+import all of this inside our index.ts.
+So
+uh
+have this export project card from
+project card export type from project
+card import all of this and just export
+it.
+This is the barrel export file. So our
+dashboard components are complete and
+now what we need to do is uh create
+workers uh worker routes for uh getting
+all the projects getting files of the
+project creating a project updating a
+project and deleting a project. So we
+already did a route. So if we head over
+to the worker and uh source inside of
+routes project.ts ts we already created
+this route of uh project routes.get to
+get all the projects. Now we just need
+to create uh four routes of getting the
+project files uh specific project files
+uh getting a single project then getting
+uh I guess uh creating a project uh
+updating a project and deleting of a
+project. So in the next session we'll
+complete that.
+Okay. So now I am inside my worker
+projects.ts file. So inside workers
+source routes project.ts file we uh we
+already have this route for getting all
+the projects. So now let's create other
+routes. Uh by the way while we are here
+uh I'm going to paste one thing.
+So
+this is a comment
+just comment for endpoints like we have
+all the endpoints here like uh get API
+projects API projects ID. So get API
+projects is list all the projects for
+the authenticated user. Then we have get
+API projects ID to get a single project
+ID with ownership check. then create a
+new project which generates the stat
+files as well and update the project
+name or the model and uh then delete a
+project and all of its file. So we need
+to create this endpoints and one more
+thing uh remember this uh typescript
+error that we were getting. So this is
+because I imported env from hono but
+instead I have to import it from types.
+So we have NV there and all of the
+TypeScript errors are gone.
+Okay. Now let's uh get the API
+endpoints. Okay. So I'm going to copy
+this and paste it right here. So you
+know which endpoints we are working on.
+I'm going to close this. And after this
+I'm going to copy this one right here
+and paste it. and let's write project
+routes.get
+uh
+by id. So what we are going to do here
+is project routes dot get by a sync c
+and
+let's close this. And now inside of this
+let's get the user ID first. So c do.
+user ID and let's get the project ID. So
+it could be inside C.est.param.
+This param is ID. So let's get it and
+then uh let's uh get the project from
+our key value stored. So project is
+equals to await c.env metadata.get the
+type is project and we'll check for
+project
+id and get it as json. We got the
+project and now uh we'll check if we
+don't have the project then return
+c.json JSON project not found but with
+this we'll also return the code which is
+not found
+not
+found with 404 and after this we'll also
+check for ownership if project owner ID
+not equal equals to user ID
+like this uh
+not this but project dot user ID not
+equal equals to user ID Then we'll just
+uh unauthorized and instead of
+unauthorized we'll just say access
+denied
+and the error code is going to be
+forbidden.
+You can write it anything and 403
+remains the same and if everything works
+then return C.json as the project. So
+our API endpoint is complete with the
+help of AI
+and let's do this.
+So I guess uh guess if we write comments
+it's getting better and better with
+comments the code generation. So might
+be because of that. So I didn't have to
+write a single line of code here.
+Everything every logic and everything
+was done by the AI itself. We just uh
+did some changes but instead of that it
+was 90% correct.
+Now let's uh do the uh project routes
+and uh for this we need to uh do several
+of things. We also need to create the
+credit system. So uh if uh we are on a
+free plan then uh a credit system just
+checks if the user on which plan the
+user is and whatever the plan of the
+user is uh according to that we can
+create the project. So for uh uh free
+plan the free project limit is I guess
+three and for upgrade for pro it's uh
+like uh more unlimited not more. So this
+is going to be a big file. So what I'm
+going to do is let's do this afterwards.
+First let's complete the other stuff
+because this is going to be a long pro
+uh thing because uh we also need to have
+the other things. So let's complete the
+uh
+other thing which is get files as well.
+So we also need to have one more route
+with this.
+It was not here right? So we need to
+write it
+uh get
+/ API/
+projects
+uh not projects but slash API.
+Okay, it was projects API/ project/ id
+and files get all the files for a
+project with ownership check. Perfect.
+So, it's doing automatically. So,
+project routes.get uh ID files are sync
+C.
+It's correct. Let's close this.
+uh we get the user ID, we get the
+project ID and then we get the project
+and project project ID. Perfect. And uh
+if we don't file the project, then we'll
+return project not found. And if the
+user ID is not equals to user ID, we
+give access.enied. And now we get the
+version and its files. So we don't want
+to follow this. Instead const version
+equals to await. And we need to create a
+version object first and get the version
+key. So after this I'm going to first
+create con version key equals to
+project
+dollar project.
+Now this is going to be project ID
+slashv
+project dot uh current version project
+dot current version like this /ash files
+dojson
+and we get the version key and now let's
+get the version object. So con version
+object equals to await cenv
+dot files dot get
+version key not as JSON
+like this. And
+now if we don't get uh version object
+then we'll just return C.json JSON 404
+files not found and not found and then
+we'll have const equals to await version
+object dot JSON
+and this is going to be as
+files
+and this is not record but this is going
+to be an array of
+objects like this which is going to have
+path as string and uh content as string
+like this
+and then we'll have return c.json JSON
+files
+version dotfiles and we'll also give the
+version which is the project.curren
+version. So we are just getting the
+files from that and our API is complete.
+Now
+uh let's do the project update. So
+what should we do?
+Um
+I'll write a detail comment here for
+patch that
+updates the uh
+users project or model
+only the project owner can update it and
+I'll also write a comment of request
+body which is going to be like this name
+string and model string like this.
+Perfect. So I guess with this it will uh
+easily create the code. The AI will
+easily create the code
+and uh let's start writing it. So
+project routes
+dot patch with id C. Let's close this
+first.
+Now inside of this con user ID is equals
+to C doware id. Let's get project ID and
+name and model
+would be not like this. We get it from C
+dot request.json. But we'll do this
+afterwards. First let's get the project.
+So project
+and if uh project is not found and user
+ID is not found, we'll return it. And
+now let's get the body. So const body
+equals to a C.est.json.
+And let's give this a type
+name string model string like this. And
+if body dot name is there then con
+sanitized
+equals to sanitize project name. So we
+need to create this sanitize things. So
+what I'm going to do is I'm going to
+copy that entire file inside of
+services. I'm going to create a new file
+name it as sanitize.ts
+and paste it. Also let me write it down
+so that I can give you this in the
+description of the video in the starter
+files. So I need to give you sanitize.ts
+in the worker.
+Okay. So what's the code here in this
+sanitize? Uh let's paste it. So max
+project name length. So uh 100
+characters. Then max chat message length
+10,000 characters. Then sanitize project
+name. It just trips uh trims it removes
+the HTML tags, remove the control
+characters and uh then uh returns us the
+project name. So uh then we sanitize the
+chat message like remove the control
+characters and uh trim the message and
+is valid model ID. So this valid model
+ID valid models do has. So where is the
+valid models? Okay, we need to pass the
+valid models and we'll just check if it
+has the model ID. So if you mess it up
+then it will just fail. So that was
+sanitize and let's use it in here. So
+sanitize equals to sanitize project name
+and we'll pass body.name. Then if
+sanitize is there
+then
+we will have project
+dot name is equals to sanitized
+and then
+we'll close this and we'll check for if
+body dot model
+and then we'll just have project model
+is equals to body domodel And then we'll
+have project dot updated is equals to
+new date. And then let's update our C
+dot metadata. So C.ENV do metadata.put
+project uh with project id. So key value
+and uh this is going to be key and this
+is going to be the value. So
+JSON.stringify
+and uh project. Perfect. And we'll
+return the new project. Perfect. So this
+patch is also complete.
+And
+now let's do the delete thing. So for
+delete uh how we will be able to delete
+uh this is going to be remove project
+from metadata from KVI, remove chat
+history from KV. So KV is key values and
+uh removing the project ID from the
+users project list and deleting all
+version files from R2. So let me get the
+comment and paste it so I can get it
+better. Now project rights dodelete and
+uh this is good. Let's close the bracket
+first and we get the project ID. We get
+project
+like this. If there is no project then
+access denied and
+yeah now what next?
+Now now the let's remove the project ID
+from the users list. So
+const existing
+existing
+ids equal to await c.env metadata.get
+get string user projects and user ID and
+with JSON like this. Then we'll have
+const
+R2 object. So we'll delete all the R2
+objects for all the files. Await C.NV
+dot files list and prefix with project
+ID.
+Then we'll delete all those files.
+And then we will do
+uh delete promises. So const delete
+promises. So we'll map all these R2
+objects. So delete promises is equals to
+R2 objects doobjects dom. We'll get the
+object and we'll have C dot
+env.files.delete.
+Perfect. And then
+we'll have
+await promise all.
+And instead of just delete promises,
+we'll pass in an array which would first
+delete project metadata from key values.
+So env metadata delete project ID. Then
+we need to delete the chat history. So
+chat history key is just chat like this.
+chat with project ID. Then we'll have
+C.NV metadata.put
+user projects user id JSON.string dvy
+and this is going to be updated ids
+updated ids. So we don't have the
+updated ids right we need to do it. So
+after existing ids right here we are
+having this updated ids and uh we also
+need
+to change this.
+So what essentially we did here is we
+got all the existing project ids of this
+users and filtered that project ID and
+from here uh we are just uh giving them
+the new updated ids of the user
+projects. So it's much better like we
+can calculate this at runtime but since
+we are using cloudflare. So cloudflare
+is uh is a c uh mainly is it's it's used
+by developers for speed. So while we are
+doing that we'll do this all and uh we
+know that we will get uh more queries
+right now but when the user uh gets
+their values they don't have to
+calculate that all on runtime it would
+be very speedy so for that we are do
+doing this and since we are using
+cloudfare uh we are just utilizing
+cloudflare's powers. So now return
+c.json JSON uh message. Do we need to
+send a message? Yeah, we'll send a
+message and also success as true.
+Success true like this. And we have our
+delete project route as well. So project
+delete is done. Project patch is done.
+We get all the files that is done.
+Getting an individual project by ID is
+done. getting all the projects is done.
+Now we need to create this uh of
+creating new projects. So let's do that.
+And uh I'll also need to show you how
+this key value works and uh how this
+cloudfire kv uh works and what would be
+stored in cloudfire kv. So this that
+would be done once uh we create the
+actual uh project from the UI or I can
+show you one more thing. Just a minute
+I'll grab the docs.
+Okay. So now let me explain you this
+Cloudflare concepts
+of key values. So this is Cloudflare's
+key value pattern that we are using. So
+essentially first uh why we are using
+CloudFare key values. So Cloudfire KV.
+So it's a key value store. Uh you give
+it a string key. it stores a JSON value
+and uh it's much faster and uh now
+uh for uh files we are using uh R2. So
+KV has a CloudFire KV has a file limit
+of 25 MB value limit and it's designed
+for small frequently read data and
+project files can get large. An AI
+generated app might have dozens of files
+totaling several megabytes and R2 is an
+object storage like S3 designed for
+larger blocks. Plus R2 has zero eress
+fees. So tabletic files is free. So we
+are using R2 for file storage here and
+key value uh key KV is used as key
+values and store and acts like a
+database here. So uh let me explain you
+the pattern. So projects uh key pattern
+is projects then user id and uh then it
+has value of all the user ids all the
+user uh project. So whenever we want to
+get uh a project of a user what we'll do
+is uh if we open up here what we are
+doing is uh
+do we have something like user projects?
+Did I mess it up? Just a minute.
+Okay, we do have it. I'm sorry. Okay, so
+projects and uh
+this is getting project ids.
+Okay. Yeah. Project project ID. Yeah. So
+uh whenever we uh want uh all users
+project so we just uh use this key and
+it will give the array of all the
+projects. Then if we want a metadata for
+a single project then we'll have project
+colon project id then it will give uh
+single project metadata. So what that
+means is we have the name of the project
+the model has generated version and
+everything. Then uh if we are storing uh
+chats like we chat with AI right so if I
+say create a dashboard then create a
+button inside of that dashboard then
+that's chat and the responses generated
+by AI the chat message so what we are
+doing in that is we are storing all of
+that history inside of the chat message
+array and whenever we want to get a
+specific chat of a project we uh find it
+by chat colon project ID and we get it.
+Now comes the R2. So what R2 is and how
+we do it. So for every generation like
+if we type a single thing create a
+dashboard component. So that is a
+message and that is a version. So what
+we do is inside of our two file storage
+we have this project id/v0.
+This is the version number and then we
+create the files.json JSON files and
+inside of that files.json file we have
+the entire uh project files with the
+path and the value and we parse it uh
+with code sandbox on the front end and
+uh
+for n number of versions we have n
+number of uh uh key value uh r2 keys. So
+that's how it works. And uh what next?
+Yeah whenever uh one more thing. So
+whenever we are deleting the project
+where is it here inside of here as you
+can see the uh R2 objects. So we are
+getting all the R2 objects with project
+ids slash uh uh so we are just uh giving
+it a prefix of project ID. So as you can
+see project id / the prefix and it will
+get all the versions and uh we are
+running uh c.env.files files on map with
+all of this on and we get all the delete
+promises and delete all the objects and
+we wait for it with promise.all and wait
+for it to delete complete and
+everything. So uh that's all that I
+needed I wanted to make you learn about
+CloudFire KV and R2. So KV is the
+database and R2 is storing our files and
+everything. Images would also be stored
+in R2. So I'll also show you how to see
+all of that data inside of CloudFare
+dashboard. So for now I'll save this and
+now I'm going to uh uh create the post
+method which will have the credit system
+and which will also have the
+initialization of project with the
+starter files and everything. So let's
+do that now.
+Okay. So now let's do the post route. So
+for that first let's head over to here
+and in here uh I'm going to write some
+comments. Uh or else I'm going to just
+copy and paste it. So
+yeah create a new project with a unique
+nano ID. Project metadata stored in KV.
+The users project ID list updated in KV.
+starter template file stored in R2 as
+version zero and this is the request
+body. We get the name, model and
+description. So let's get started with
+that. So first patch project
+routes.post.
+Let's complete this. And inside of this
+we'll get the user ID. We'll get the
+body. So const body equals to a c
+request.json.
+Perfect. And then
+uh let's get the sanitized name. So uh
+const sanitized
+name is equals to sanitize project name
+body.name and if there is no name then
+we'll just uh have invalid project name
+and code is invalid name like this. Then
+we need to check the credits. So
+uh for credits first we need to create
+the credits.ts service. So inside of
+services
+we are going to create a new credits.ts
+credits.ts service. And inside of this,
+what I want you to do is first export
+interface
+user credits.
+We'll have remaining credits which is
+number. Then total is number. Then we'll
+have plan which is going to be of free
+or just pro.
+Then we'll have period
+period start which is string and period
+end is going to be string. That's it.
+Now we'll have con default
+default free credits is going to be not
+1,000. We just going to provide it 50.
+Then we'll have unlimited credits. So
+const unlimited
+credits
+as minus one. So minus one uh is uh or
+unlimited
+then we'll have free project limit. So
+if the user is on a free plan then they
+can only create certain number of
+projects. So for that we are going to
+have export con free
+project limit
+as three.
+Then what else? Then we want to create a
+billing period which means uh the start
+period and the end period of that user
+for each month. Like for example the uh
+for example the date today is 3rd March
+and uh for 3rd March uh uh to 3rd April
+the period start date would be 3rd March
+and the end would be 3rd April. So that
+is the billing period. So let's create
+the billing period. of function
+create
+billing period
+and uh this create billing period is
+going to uh have a written type of
+period start and period end of string
+and inside of this first we'll get the
+now then we'll get period end so con
+period end equals to
+new date with now
+and uh
+then we'll set the month. So um now and
+end is same for now. Then what we are
+going to do is period
+end dot set month
+is period end uh dot get month plus one.
+So just uh increase the number of month.
+Then we'll return the period start as
+now dot2 is a string and period end as
+two dot is a string. Perfect. Now
+we'll uh create another function which
+checks and reset the period of the user
+like uh
+uh for every this period of month we
+give 50 credits. So if the period is uh
+over then we need to have a new period
+and then we need to reset the credits as
+well. So let's do that. So async
+function
+check
+and reset period inside of this we'll
+give credits which is of type user
+credits and uh we also need to pass in
+user ID which is again a string and
+we'll pass in the env. So we need the
+env from types and the promise is going
+to be user credits. Perfect.
+And what else? Yeah. Now let's get now
+is equals to new date. Period end is
+equals to new date. Credits dot period
+end. And what we will check if now less
+than period end then
+we'll return the credits. uh which means
+that period period hasn't expired. So we
+don't need to renew those credits. If
+user has uh the credits expired then
+it's not uh this function's task to
+update that. Now if the period has
+expired then what we'll do is we'll call
+our uh create billing period this
+function to create a new period which
+will have the start date and end date.
+And now what we'll do is reset the
+credits as user credits equals to an
+object which would have first the
+credits then
+we'll have remaining uh if the credits
+plan is free then we'll have default
+free credits or else unlimited credits
+and period end and period start date and
+then what we will do is we need to
+updates our credit system. So this code
+is perfect. Env.m metadata.put credits
+with user id JSON.stringify reset
+credits and then we'll return the uh
+those credits. So this piece of code is
+perfect check and reset period. Now uh
+let's write our actual function that is
+needed in the projects which is uh get
+the credits. So export async as sync
+function get
+credits
+which will have the user id and env
+return type of promise user credits and
+con credits is equals to await env.m
+metadata.get get and the type of this is
+user credits.
+User credits. We get the credits with
+user ID as JSON.
+JSON. And then if there are credits, we
+need to remove this piece of code. And
+if there are credits
+then we'll return check and reset
+period.
+So credit user ID and env. So if there
+are credits then if we also need to
+check if it's not expired the period is
+not expired and uh
+if there are no credits for the user. If
+we don't find it then this uh this is we
+need to initialize the credit. So
+initialize
+credits with user id and env. So we need
+to create this initialize function as
+well. So after this export async
+function initialize credit we get the
+user ID we get the envo
+which is going to be free. uh
+or pro like this and I'm going to close
+this and this is of user credits
+right this is showing me an error okay
+we don't need to close this okay and now
+inside of this first const period
+we just initializes the credit right So
+we'll get the period and then const new
+credits is equals to user credits and
+inside of here we'll have remaining if
+plan is free then default free credits
+or else unlimited credits then we'll
+have total if uh
+yeah we need to
+have total as default free credits
+because if uh we are on a pro plan then
+we are not going to have the checks as
+well. So default free credits here then
+we'll pass in the plan period start and
+end and then after this we are going to
+have await envadata.put
+put credits user ID JSON stringify new
+credits. We'll store that and return the
+new credits. Perfect. And we need to
+call this initialize credits with user
+ID and uh the second was env. And then
+we also need to pass in the plan which
+is going to be free for now. So get
+credits and pass in the plan.
+That's it. Then there are other methods
+as well that we are going to use but uh
+we'll not create uh that for now like
+checking of credits and deduction of
+credits and upgrade of plan downgrade of
+plan. So we'll do that whenever that is
+necessary. Now inside of project.ts
+let's check our credits first. So const
+credits
+equals to await get
+credits.
+We'll pass in user id and c. env. And
+now we'll check if credits dot plan
+triple equals to free
+then we'll first uh get the existing
+project id. So we need to check if it's
+a free plan then we uh if uh the user is
+not beyond the three project limits. So
+we'll get existing
+id is equals to await c.env.m DNV dot
+metadata get of type string and we'll
+have user projects with user id and type
+as JSON and now const project
+count equals to if there are existing
+ids and then we need the length of it or
+else zero and we'll check if project
+count greater than equals to free
+project limit and we need to import this
+from credits uh then we'll return that
+uh free plan is limit limited to uh
+three projects. So instead of this
+error, I'm going to have this error
+right here.
+Code is project limit reached
+like this.
+Is there something wrong? Yeah, we need
+to remove this.
+Okay. Uh where will we at? Yeah,
+project limit and we'll pass in the
+limit which is going to be free project
+limit and current
+is project count.
+Then if things are perfect and we don't
+have any error
+then we are going to create project ID.
+So project ID is equals to nano
+ID of 12. We need to import nano ID.
+This is nano ID and nano ID can be uh
+imported from the nano ID package. I'm
+not sure if we install that. Let's try
+to import it. Import nano ID. Nano ID.
+Yeah, we have installed it. And
+after this right here nano id
+we'll get the date. So
+con now is equals to new
+date to ISO string and then we'll create
+the project object. So project type of
+project and id is project ID. We'll pass
+in the user ID. Name is sanitized name.
+description is body. No, we don't need
+the description. We are just seeing the
+project. So, we don't need description.
+We'll get the model which is body dot
+model or else the default
+body.mod or the default model is GBD4
+mini and uh then we'll have current
+version which is going to be zero
+because we are just initializing the
+project and we'll have we'll remove the
+description. We'll have created add and
+updated at. We'll save it and
+that is it.
+And let's create the initial version of
+the project. So con
+conitial
+version. So this initial version would
+uh create the starter template and
+everything. So we need to have that as
+well. So
+let's create the starter files, things
+and everything first.
+Okay. So now I want you to head over to
+the AI folder and inside of that I want
+you to create a file which is default
+project.ts
+for default project template. And in
+here I'm just going to paste my code
+which will create the project. So I'm
+going to uh give it to you in the
+description starter file. So let me
+write it down so I can I don't forget
+that I need to give you default project
+file.
+Done. Now I'm going to paste it
+and let me explain you. First we are
+importing the types. Then we have this
+get default project file function which
+just return uh returns an array of
+objects which has path as the directory
+of the applica app and the content which
+is the uh which is the uh actual code of
+that file. Then we have app.tsx. This is
+the default react starter file. So we
+have the uh app.tsx file. Then index.tsx
+file which is just importing the react
+uh our app uh react app. Then we have
+index dot css file basic CSS nothing
+more. Then we are uh having the
+package.json file which only has the
+dependencies as react and react dom and
+dev dependencies are types of react and
+tss and typescript nothing more. And
+then we are creating the initial version
+version zero. So create initial version
+we get the default project files and
+return the version number as zero prompt
+as initial project setup model files uh
+change files. So we just uh uh map all
+of these files and get the files path
+and uh
+we give this type as manual created at
+new date file count as file length.
+Nothing complex. And now let's head over
+to projects.ts and let's use this
+initial version here. So
+constitial
+version is equals to create initial
+version. Make sure that you import this
+function and we pass project name and
+project model here. Now let's have con
+existing ids equals to await.env
+metadata.get
+user projects with user ID and JSON. And
+then we'll have updated ids as project
+id uh with existing ids and we'll get
+the project ids or else if there are no
+existing ids we'll just give this
+project ID as the value. That's it. And
+now we'll use the promise.all method to
+um uh update the project ID and uh add
+the project inside of it. Then what
+else? Then we will have put for user
+projects and updated id uh should be
+there for user projects and we also need
+to update all of these files in R2. So
+project id v 0 uh files dojson.
+So this is the initial uh uh path with v
+0 and the actual value inside out uh
+would be files with initial version
+files
+and then we are going to return c.json
+JSON as project with uh success status
+code of 201 created. And that is it.
+With that our post is also complete and
+we have completed all our API routes
+default project template and we need to
+uh do one more thing. We need to uh map
+uh route in the worker. But I think we
+have already done it. Uh as we had the
+startup function we have exported the
+project routes and if we head over to
+index.ts we might have this project
+routes here. So all of this is complete
+the API side of this project CRUD is
+complete. We just now have to do this in
+the dashboard page. So everything
+skeletons empty state creation of
+projects card projects grid everything
+is complete. We just need to have
+everything now on the dashboard page. So
+let's create the dashboard page now.
+Okay. So now let's move over and I am
+going to page.tsx of dashboard right
+here.
+This one inside of app dashboard we have
+p page.tsx.
+And uh what I'll do is instead of first
+doing it here uh let's create the API uh
+client. We already created that but
+let's add the methods. You can see that
+we have already done the list. So uh
+let's do the other methods here. So that
+we just have to use it. So inside of
+this projects we'll also get have a get
+method with id string and uh we'll have
+authenticated fetch. We'll pass in
+project of type project. Uh then get
+token API projects with id
+and yeah that's it.
+So this is for get and for
+create not this first let's get for get
+files.
+How in the hell AI is able to know what
+I want? So this is pretty awesome.
+I'm also planning a VS code clone in
+future. So we have also planned WhatsApp
+clone. WhatsApp clone is almost done.
+WhatsApp clone v2 it's business WhatsApp
+clone with AI. So that is done. The
+after that uh comes the binance clone.
+It's in the works around 70 to 80% of
+work is done. It's web 3 application. we
+are not doing smart contracts but
+actually we are working with the uh web3
+libraries and everything uh if uh I get
+a good response in that video then I'll
+definitely work something with smart
+contracts and then we also have a bit
+torrent clone in the uh the bucket list
+and we also have VS code clone github
+clone so much to come let's get started
+with this so authenticated did fetch
+we'll get the files as project file not
+record. So this is going to be of
+project
+file from types project uh types. Then
+we also have the version from here. So
+version is just going to be number
+and in here we'll have / ai projects id
+files that is correct and then we have
+for we need for create. So create name
+uh instead of this what I will do is we
+will have data which will dstructure
+name model and description like this and
+then authenticated fetch project get
+token uh / API projects method post body
+JSON stringify data that is also perfect
+after that we just need the update and
+delete one. So now update update is
+going to take id with string data is
+name string model uh string
+authenticated fetch project project get
+token / ai projects dollar id for
+project we want to update then method is
+going to be patch and body json
+stringify data and now comes delete. So
+delete ID string authenticated fetch
+success boolean get token / API projects
+dollar id uh
+method delete. Yeah that is all. So
+how cool is that? I had to write very
+little code in this file and I just had
+to hit tab and all of this was done
+automatically. How cool is that?
+software development has evolved a lot
+and now we are inside the dashboard
+page. So inside of this what should we
+do is let's uh
+do some work here. We'll have the states
+and everything. So first we'll get the
+token. So const
+get token
+is equals to use o. Make sure that you
+import use from clock nextjs. Then we
+also need router. So const router is
+equals to use router.
+It should be imported from next
+navigation.
+Then we need to have state for projects.
+So use state snippet projects set
+projects. And initially this is going to
+be empty array
+import use state sheet and the type of
+this is going to be
+projects array. So like this make sure
+that you import project. So after
+fetching all of of our projects projects
+would be here. Then what next?
+Uh
+yeah, we need to have a state for
+loading. So use state snippet loading
+set loading and this is going to be true
+initially. This is going to be in the
+loading state. Then we need a
+state for opening the dialogue for
+creation of the project. So use state
+snippet again dialogue open use state
+and initially this is going to be false
+and uh then we need the delete target
+rename target rename value and rename
+input ref. So we'll do that when we are
+doing that. Uh apart from that
+we need a map of project files like
+this.
+This is for the uh code sandbox.
+Then let's fetch the project. So I'm
+going to create a function con fetch
+project is equals to async. And inside
+of this I'm going to wrap
+try
+catch block not this
+catch.
+And if I get an error then console
+dot error error fing projects and show
+the error and we'll have a finally block
+which will just have set loading as
+false.
+So the projects are loaded. Now inside
+of here const client is equals to create
+API client and we'll pass the get token
+function here and then we'll get the
+data. So con data is equals to
+awaitclient.p projects.list function and
+then we'll set the project as data.
+projects and
+we need to close this function. And now
+we are going to fetch the projects as
+soon as the components load. So use
+effect
+and uh this is going to be fetch
+projects because we are using the fetch
+projects and we'll just call the fetch
+projects here.
+Import the use effect hook.
+What's wrong here?
+Okay, use effect should be outside of
+this function. My bad. Perfect. And uh
+this needs to be wrapped inside uh use
+call back. So I think we need to just
+wrap this inside of use call back. Yeah,
+that's it.
+And we can just use use call back hook
+not react.all back. Perfect. Now
+uh
+after this we also need to do one more
+thing but let's do one thing. Uh
+let's create this and let's uh have the
+components there. So if there are any
+projects then show us the projects. So
+flex flex call gap of six padding of six
+inside of this then we'll have flex
+item center
+justify between not baseline between
+and now inside of this we'll have an h1
+which will have my projects and this h1
+is going to have a class name of text to
+excel
+and font bold.
+After this H1, I'm going to have a
+button which will set the dialogue as
+open when we click on it. So I'm going
+to just copy paste it. Import the button
+from UI button. Import the plus icon
+from Lucid React. And this will just
+open up that model.
+And now
+what?
+Let's do one thing. I'm going to
+go into the browser and let's head over
+to the local host 3000.
+Let's head over to the dashboard. By the
+way, you when I open a new tab, you see
+this uh daily dev extension here. This
+is pretty useful uh for reading uh blog
+posts around the world. So it uh curates
+according to my interests and have news
+videos or blog posts here. So uh you
+should definitely check it out.
+Daily.dev. It's a Chrome extension.
+Let's head over to the dashboard.
+Okay. Ekma script file had an error.
+What is the error? Use effect has an
+error.
+Okay, we don't need the use
+react use call back use effect.
+What exactly is the error?
+Use effect from React. Do I think
+we need to mark this as a client
+component?
+That is the error.
+Yeah, that was the error.
+Okay, my projects and create project is
+here. Reload the page.
+It's not visible here.
+Why is that happening?
+Okay. So
+if I hide this
+flex call,
+I have given a flex call class here. So
+it is because of that inside of layout.
+Where is that flex call?
+We remove this
+and yeah we have my projects here.
+Perfect. So I did make a mistake inside
+of layer.tsx inside of this main return.
+We don't have to use flex call. Here we
+have the projects here and create
+project here. Now what else?
+Just a minute.
+Now we are fetching the project. So if
+we do have the project then first let's
+uh have the skeleton.
+So let's head over to our page.tsx again
+and after this button and this div right
+here we'll check if it's loading. If
+loading then we'll show the skeletons.
+So just going to copy those skeletons
+or we're going to have this. So this is
+the div and let's import this skeleton
+from UI skeleton. It's just a div with
+gap 4 grid and array and we are going to
+have four skeletons.
+Then if we are going to check if project
+length
+project dot
+length greater than zero
+then we are going to show
+projects grid
+and we'll pass in the props or else we
+are going to show the empty state
+and we are going to pass on create
+project
+equals to set dialogue open as true
+and
+we need to pass props here. So
+project dotlength greater than zero.
+Okay, then
+this and projects grid we need to pass
+in the prop. So we'll pass in the
+projects equals to projects. Then we'll
+fire pass in the project files. I'm
+going to we need to get the project
+files and on new project
+we need to
+set dialog open as true.
+And uh we also need to have on rename
+that is going to be handle rename and uh
+on delete which is going to be handle
+delete. So we need to create this
+functions.
+So
+first we need to get the project files.
+So project files is again
+project files and handle rename and
+handle delete. So we have the state for
+project files. Now let's fetch the
+project files of each project. And then
+we also need to have the handle rename
+and handle delete. So also let's create
+those functions.
+const
+const handle rename ID string
+what else handle rename ID string
+and
+let's leave it like this for now const
+handle
+delete ID string and this
+and uh what else.
+We need to fetch the project files,
+right? So,
+I'm going to
+grab my use effect.
+Paste it. So
+if the projects dot length
+projects
+okay this is going to be projects and
+set projects
+project set projects and in fetch
+projects this is going to be set
+projects.
+Now project's length is is
+equals to zero. Return now is mounted is
+true. So we know that the component is
+mounted and uh
+we get the client and uh for each
+project if uh it's already fetch we uh
+return it. But uh if it's not then we
+get uh the files and then we uh convert
+project files to record string string
+and for each file record we get the
+content and set project files. If there
+is error then we uh set the object
+empty.
+So it shows us the fallback gradient
+and I guess that is that and this is
+going to be projects.length and projects
+here like this.
+Now if we head over to here you can see
+no projects yet. And if I click on this
+this should open up the dialogue to
+create the project. So now let's have
+that dialogue.
+So in here
+after this I'm going to have
+create
+project dialogue and uh open equals to
+dialogue
+open
+and uh on open change is going to be set
+dialogue open.
+Then on submit is going to be handle
+create
+project. So we need to create this
+method as well. Handle create project
+where which would just create the
+project. So after this
+we'll have const handle create project
+uh data is create project data or name
+model description works inside of try we
+get the client we get the response as
+clients.p projects.create create and
+then we push to
+this. But uh
+instead of this first I am going to try
+session storage
+dot set item
+I'll explain you this why we are doing
+this session storage thing dot set item
+and this is going to be pending
+pending prompt
+result
+or response dot project do ID and then
+we'll have data dot description dot
+trim
+like this. So why we are doing is as
+soon as uh we uh create the project we
+are going to the projects uh route and
+then we uh need to auto send that first
+route so that AI can start creating. So
+uh what we are doing is as soon as we go
+to that route we'll read from session
+that this is the prening prop and auto
+send it. So for that we are doing it and
+router dotpush
+we need to have catch here
+catch if there's any error or whatever
+it is session storage is just
+unavailable
+we don't need to do anything
+okay data do description as error
+data dot description.trim.
+Okay. It's not.
+Yes, it is. Data
+dot description. Okay. This is going to
+be the
+We don't need the error
+this
+router.
+Now inside of this if we get error then
+we are going error createing project and
+then we'll have const message equals to
+error instance of error error dot
+message or
+fail to create project. And then we're
+going to have
+toast
+dot error
+message.
+And this toast
+should be imported
+from toast sona. So let's import it.
+Import toast from sona.
+And that is it I guess.
+Yeah, we can we are able to create the
+projects as you can see it. It's opening
+the model.
+Perfect. We have all our models here.
+And with this it can also create
+projects. So let's create a social media
+app chat 4 mini. This is a super simple
+social
+media app
+create it and we are at the project and
+you can see that we have the ID if you
+go back we have the project and you can
+see that I frame uh of codes and box is
+also loaded so this
+is the actual preview of the application
+it's not the gradient it's the preview
+of the application and now on click on
+this we also have the rename and delete
+So we need to have the functionality uh
+this functionality completed of rename
+and delete. So let's do that. So for
+that just a minute I need to confirm
+what we need to do. So we need to have a
+rename dialogue and uh a lot dialogue
+for delete. So I'm just going to copy
+and paste the code.
+It's not a big deal. Rename and delete.
+So after this div or
+no before this div we're going to have
+this dialogues here.
+I'll show you this. We are getting this
+dialogue from components UI dialogue. We
+need to have the states of rename target
+and set name rename target. So let me
+import everything first.
+I'll show you the code once uh it's done
+from my end.
+Okay, this is done. Now I'll get some
+other functions that we need and uh
+then
+I'll show you the entire code. So now
+what else we need is the delete target
+the refs and everything. So up here
+after this project files I'm going to
+paste this piece of code. Delete target
+set delete target and this it's a state
+rename target set rename target rename
+value set rename value and rename input
+ref. We have use ref here. we need to
+import it from react and uh afterwards
+uh
+we need to have handle rename function.
+So
+uh
+we have this handle rename. So I'm going
+to replace or delete that and paste this
+function here. Handle rename. We get the
+projects by the ID. So from ID we filter
+it and get the actual project. If we
+don't have the project, we'll return.
+Then we set the rename value of the uh
+project uh that the new project and set
+the rename target as the id. And uh
+after uh the uh dialog renders, we'll
+just uh autofocus it. So that is done.
+And now
+for renaming uh actual renaming we are
+going to
+have this function of confirm rename. If
+rename is confirmed then if we don't
+have any rename target we'll just return
+and if we do have it we get the trimmed
+uh value of rename and uh we get the
+original project from its id project
+dotfind p uh and p do triple equals to
+rename target we set rename target from
+here as the ID and we get the original
+project and if you don't have the
+trimmed or or uh or trimmed triple
+equals to original name. If uh both are
+same then we just set rename target as
+null and return because there's no
+change to be m made then we are setting
+the optimistic update here. So first we
+set projects as the new name and set
+rename target as null. So for the UI it
+happens pretty fast. That is the
+optimistic update. And uh now we call
+the API and uh in here
+what we are doing is we call the API and
+tell air to update this project and then
+we'll just show that project has been
+renamed and uh if there's any error we
+are just reverting this change of
+optimistic update.
+uh the user would just uh uh know that
+it has failed and will uh uh error with
+a toast that failed to rename a project.
+Why we are doing this is uh if we update
+a project, we want it to happen at that
+moment into the UI. The user doesn't
+have to wait for a minute or 30 seconds
+for the API to uh complete and the
+database things to happen. we don't want
+to show that. So what we are doing is uh
+we are assuming that the API is going to
+hit and it is going to do its work. So
+we uh update our front end first and
+then call the API and uh if the API is
+successful then there's nothing to be
+done but if it fails then we just revert
+our UI to its previous version. So that
+is all uh we are doing here and then we
+have handle delete. So for handle delete
+when we do that we just open the
+confirmation model with set delete
+target ID and when we confirm that we
+want to delete we'll do the same thing
+here
+confirm delete this function if delete
+target then return try uh create API
+client uh delete the function set
+projects uh remove that and set projects
+files. Remove the state files as well
+and we just uh show that project is
+deleted or else we just show that
+project delete failed. Try again. And
+finally we set delete target as null.
+That is it. And now to fix this errors
+we need to import input from components
+input. And I I need to show you this
+right. So we had this create project
+dialogue. Now we have this dialogue for
+rename. So we import the dialogue from
+component UI. Dialog content, dialogue
+header, dialog title, description and
+then the input tag. Input tag is just
+the new
+rename value and we are also handling
+the key events like if we enter uh hit
+the enter button or escape button uh it
+should work. If we hit enter then
+confirm rename should hit. And if we uh
+press the escape button it should just
+uh close the model. And then we have the
+dialog footer of uh cancel and rename.
+That's it. And then we have alert
+dialogue for deletion. It's just it's
+just asking for confirmation that uh
+should we delete it or not. That's it.
+And now let's save this and let's see if
+it runs perfectly. And I'll try to
+rename this first. Rename model is
+opening. So instead of social media app,
+let's uh write lovable
+balloon here. Rename. It's done. And I
+think it's working. If we refresh the
+app, it's here. And now let's try to
+delete it. Delete. And it has been
+deleted. Yeah. So that is working. So
+entire project CRUD has been completed.
+So this uh marks the completion of our
+section 4 which was pretty long. And uh
+the next uh session would be if we
+create the project for example social
+media clone super simple
+social media app
+we created. We need to now create this
+editor shell here. Uh editor shell would
+be uh chatbar here. The layout, enter
+layout would be here, a header here. So
+let's do it now.
+Okay. So now let me show you how our
+data is in Cloudflare dashboard. So we
+need to do some setup. So now we are
+going to deploy our worker so that we
+can actually see what the we can
+visualize the data. So there are several
+of steps we need to do first. So, I'm

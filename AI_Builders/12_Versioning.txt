@@ -1,0 +1,791 @@
+white theme. So let's try to uh do all
+of that. So I'm going to close all of
+this and let's head over to the versions
+route in versions.ts.
+And in here uh just a minute we have
+created the get route for versions. Next
+is what we need. Uh
+okay the get route is done. Now
+we need to create a version to get uh
+specific uh uh versions file. So
+uh
+this is going to be the route like this
+and the response just a minute like
+this. So let's create uh create it
+versions routes.get/ get slashy- uh
+hyphen v colon v
+and
+inside of this we get the user ID first
+we get the project id and uh this is not
+version string but we get const version
+number is equals to parson c dot request
+paramv and
+like this and
+Then we check if is
+not a number version number
+or
+version number less than zero. Then we
+are going to return C.json invalid
+version number validation error or bad
+request whatever it is should work. Now
+we get the project by get own project
+and if there is no project then we just
+return no project found and uh then we
+check version number uh with is greater
+uh than project's current version. So if
+we are requesting five versions but we
+already only have four versions 1 2 3 4
+then it's invalid. So we return that and
+uh after that let's get the version
+object from C.NV.files.get
+project id v version number files.json
+perfect and then if there is
+no version object then we return c.json
+JSON version not found and after this
+we'll have version
+and the type of is
+version
+and we return
+files as version do file version number
+and meta as to version meta like this.
+Save it and this route is done.
+Next up, we will have route for just a
+minute.
+Next up,
+yeah, we'll have a route for uh getting
+difference between two versions. So, we
+have a UI for that. So, we need to
+create that.
+Uh
+now we'll have version routes get - uh /
+v1 def col v2. So we get boot the
+versions and
+inside of here we get the user ID first.
+We get the project ID and we get the
+version one and version two like this.
+And then we check if uh version v uh
+version one version two uh if it's not a
+number and uh version is less than zero
+for both of these values and uh we also
+check if version one equals triple
+equals to version two then we return
+invalid version numbers and then we get
+our project. If we don't found any
+project, we return the error. Then uh
+what we do is
+we don't need to do that. But
+if not uh or else let's uh get both the
+versions in parallel. So const
+Object one,
+object two, await promise.all,
+c.nv.files.get
+project id v version one version two we
+get both the files and if any of the
+object is not found one or both versions
+was not found. Perfect. And then we get
+the object as JSON for version one and
+version two with this. And uh let's
+create a map for our files. Files one
+map files two map and uh
+f.path.
+So we are setting f dot path and f dot
+content. So key value. Yeah, perfect.
+Then we need to compute the changes. So
+con changes equals to an empty array.
+But the type of this is going to be
+array
+and this is going to be path string type
+added removed or modified old file not
+old file but this is going to be old
+content
+content and this is going to be of type
+string or null.
+And this is going to be new content
+string null like this. Now uh we check
+all the files in version two
+that is not existing in version one. So
+we get for const path uh
+file two of map file map two not like
+that. So let's write for const
+path
+content
+path and content
+of files
+map 2.
+Okay, this is file map 2.
+And inside of this we first get the old
+content. So all uh old content
+is equals to files one files
+file map one dot get path like this
+and then
+if
+old content
+triple equals to undefined
+then
+uh uh if it's undefined then it it it
+exists in version two but not in version
+one so it's added. So changes dotpush
+path type addedit new content and uh old
+content should be null new content
+content.content content
+or we can just have content like this
+and
+okay did we miss anything
+content and
+full content as null
+project file is not assignable to type
+string
+Okay. So this content is of type string.
+So inside of this
+uh file map one
+is of map of type string. String
+string string
+and this is also string
+string.
+Let's remove this and
+okay it should be content like this.
+Perfect.
+f.path and f dot content like this
+and there would be no error here.
+Perfect.
+Now our if condition is done. Now else
+if old content uh not equal equals to
+content then it's modified. So changes
+dotpush path type as modified old
+content as giving the old content and
+new content as new content and after
+this uh if uh both the files are
+identical then we just skip it. So now
+after this uh we check for the files
+that were removed from version uh two
+but that existed in version one. So for
+const path content of file map one and
+inside of this if uh file map.2 has
+doesn't path then we uh do changes
+dotpush path type as removed old content
+content and new content as null like
+this. And
+this is done. And now we just sort the
+files. So changes dot sort a b
+changes dots sort
+a colon b
+and in here I'm going to have const
+order is equals to
+modified
+modified zero added one remove two and
+then We have order a type minus order B
+dot uh type or no we don't want to do
+that condition and just return
+from
+version one to uh we just
+have
+what do we have here?
+Just a minute.
+We get the number from yeah v_sub1 and
+v_sub_2 here. So we'll just pass that
+from v_sub_1
+and this is v_sub_2 and we pass in the
+changes like this. And our diff viewer
+is done. Now let's do a route for
+restoring our previous version. So we'll
+get a comment like this. We need API
+projects version number versions and the
+number of version to restore.
+And uh what should be done here is just
+a minute.
+version routes.
+Uh /v
+restore. Perfect.
+Let's close this up. And inside of this,
+first get the user ID. We get the
+project ID and this is not version
+number but restore from. So const
+restore from equals to parse int.
+And this is C do.est.parum. bottom V 10
+and
+if is none we get restore from or
+restore from less than zero
+we return bad request and we get the
+project and if no project then we return
+no project found then if restore form
+greater than project uh current version
+number exceeds uh current version and
+then
+we get the version object object uh from
+files.json and this is not version
+object but but we name this as source
+object and then if there is no source
+object then we return version files not
+found and we get the source version as
+source object.json JSON as version and
+now we get the new version number is
+equals to project.curren version + 1 and
+the new version and uh
+this is going to be different. So we get
+version number from new version number.
+Then we have the prompt and type as
+restore. Type restore and prompt
+restored from version. Like this we get
+the model as source version domodel
+created at uh new
+this is
+new date.now dot
+do ISOS string like this.
+And what else? Uh we'll give this file
+source version.file. files. We give it
+file count as source version.files dot
+not source version dot file
+files.length.
+We give it changed files source versions
+dot
+files dot map
+like this. We give restored version from
+restored from and what else is
+remaining? Version number is done. Then
+prompt is done.
+Model is done. Files is done. Changed
+files is done.
+Then type is done.
+Created at is done. File count is done.
+And reshoot from is done. Okay. We have
+all the properties that we need. Now we
+have uh
+we get the new version and store it. So
+project
+dot current version is equals to new
+version number. And then we have project
+dot updated at is equals to new version
+dotcreated at. We can use this and we
+have await promise.all. We change the
+files and uh uh
+we have this project like this done.
+Now we also
+persist a system message uh to the chat
+session that uh after version is
+restored we want to have a version
+restore message here. So that is a
+system message. So we need to do that.
+So let me grab my code for that.
+After this I have this try catch try. We
+get the chat key. We get the chat
+session.
+We create the system message.
+And if we find the chat session then we
+push the messages into the message
+arrays and uh uh uh just have it put. So
+we have the new chat messages and
+chat session is having error for this
+project ID.
+It's telling the project ID is
+undefined.
+ID.
+Okay, we need to mark this like this so
+that we do get it
+and we have this jet session and then
+if there is no jet session like there if
+there are no files then we just do it
+like this and uh we console the error
+and return the files. So this is done.
+What else?
+Now we if we do any manual edit then we
+also need to store that. So for that
+I'll grab my AP route and show it to
+you. Like if we make any changes from a
+file then we need to make sure to uh
+store that as well. So we have
+this version
+routes.post post. We get the user ID. We
+get the project ID.
+Is the route different.
+Okay. We get the uh post request. We get
+the user ID. We get the project ID. We
+get the project. If there is no project
+at 10 error, we get the body of the
+project. Then if there is no files, then
+file array is required. We check the
+changed files.
+Uh
+get the current object. We get the
+current version, current files map and
+uh set it. Then we check which files
+were changed and
+push it inside of this. And we also
+check which files were removed. If
+nothing was changed, don't create new
+version. Now create a new version with
+version object. Store the new version
+and update the project and return the
+version number
+and new version meta. So that's it. We
+have all the routes needed for our
+versions. Now next thing is let's create
+the component for version timeline.
+Okay. So now let's head over to the
+files and I'll head over to the version
+timeline. So I don't know if we have
+created that component. No we haven't.
+So inside of components inside of editor
+we are going to create that file version
+timeline.tsx.
+And let me grab the version skeleton
+first. So I'm going to paste this at the
+bottom. Version timeline skeleton. So
+this is just a skeleton function. And
+now what should we do is
+let's create the version timeline
+prompts uh props. So interface
+version timeline props and we get the
+versions
+as versions meta
+versions meta have we created that
+versions meta.
+So inside of project.ts
+project.ts TSF files. We have this
+export versions meta
+should fetch it.
+Not this
+version from
+Okay, this is an interface.
+Okay, it would able to fetch now
+versions meta like this.
+And
+then
+we have current version which is number
+viewing version
+which is number on view version
+is version number void.
+Then on restore version like this
+on compare
+version
+we get the not just version number so we
+get from as number and two as number and
+if it's loading boolean
+then we get a version type badge. So
+that is for uh if it's an EI then we uh
+have the version as EI generation. If
+it's a manual edit then we have it a
+manual edit or if it's a restore from an
+older version we do that. So function
+get
+version type
+badge
+we get the type of version metatype like
+this. And if uh switch type case AI then
+we are going to return uh label
+uh AI generation color not color we
+don't want this
+instead we give it an icon of bot
+and uh variant
+as default
+default as const like this.
+And
+then we have for case manual where we
+return label as manual edit icon as not
+undefined but pencil
+from lucid react variant as secondary
+and then we return restore which is
+label as restore icon as this is not
+history but this is going to be rotate.
+Rotate
+rotate and
+rotate CC
+W like this. Something like this. We
+have an icon named as this.
+Yeah, rotate CCW.
+And then the variant is outlined and as
+con. Save it.
+We need to close this and
+yeah
+we need to return version time like
+this. Then we'll have format uh version
+timestamp. So going to paste it. We get
+the iso string. We get date and now and
+all of that things and we just show the
+time according to that. And now uh
+we create a function to truncate a
+prompt. So
+we create a function for con function.
+Truncate prompt. We get the prompt
+string max length is equals to 50 or 60.
+Return type is string. Inside of this we
+check if prompt length uh less than
+equal to max length. We just return the
+prompt. Or else we return prompt dot
+/0ero with max length
+minus 3 and plus dot dot dot like this
+and we return it like this. Simple JS.
+Now let's create our uh version
+timeline. So export
+function
+version timeline. We get the versions
+current versions viewing versions on
+view version on restore version on
+compare versions and he's loading from
+this
+and uh
+we get the ref. So const current ref
+equals to use ref HTML div element null
+and uh
+we get uh
+use state snippet for restore confirm
+version and set restore confirm version.
+This is going to be null. Make sure to
+import each state. And this is going to
+number or null. And I think we need to
+mark this as a client component. So
+let's mark this as use client.
+And now inside of this, I guess we need
+to have an use effect uh where we scroll
+to current version on mount. So
+instead of this
+we show this uh use effect
+where current ref dot uh if we have that
+then we scroll into view that and uh we
+show if it's loading then we show the
+version timeline and uh if there are no
+versions we also need to consider that.
+So
+let me do that just a minute.
+After this I'll check
+if version.length
+ripple equals to zero then we need to
+return a component
+with some div. So
+I have this div with file code and no
+version history yet. Send a message to
+generate your first version. Going to
+save this. And now let's create the main
+return component
+return
+and then the component. So I'm going to
+grab that code and paste it. And I'll go
+line by line to show you that let me
+enable word rap.
+And from here first we have the header
+which says version history. Then if
+there's length is greater than two then
+we can show the compare buttons. But if
+there is only one version then no need
+to show the on compare version. So let's
+get the button from UI button and
+cannot find on compare versions. So we
+need to name our function as on compare
+versions in inside of this as well on
+compare versions. And
+where were we on compare versions? Yeah.
+So we uh on clip of uh compare versions
+we uh open the compare panel and then we
+have this icon get compare from lucid
+react. Let's import the scroll area for
+the timeline from UI scroll area. We map
+all the versions in here.
+Let's import CN as well.
+And uh this is just the UI with uh
+showing the data.
+We show the type of generation
+and
+variant type badge dovariant.
+There's an error in that. I'm not sure
+why.
+Just a minute.
+Let's head over to the
+here and
+it's variant. Right. So
+just a minute.
+If I switch this function
+with my function.
+Let's see where it's used again. Type
+badge. Okay, this still has error. So
+let's see where the badge is imported
+from. Okay, we got the badge from Lucid
+React. We don't need it from Lucid
+React. We need it as a component. So
+that was the error. So in here the batch
+should be from UI batch. Perfect.
+And then truncate the prompt.
+We have the metadata of model plus files
+plus time stamp.
+restore button for restoring the
+version,
+compare with current,
+and restore version dialogue. So, let's
+import this UI dialogue.
+Let's import all of the components that
+the dialog needs. Dialog header,
+dialogue description,
+dialogue title,
+dialogue footer,
+and I guess that is it. With this, our
+version timeline component is complete.
+And now I can close this. And uh now we
+also need to have a component for
+version def. So
+I'm just going to grab that component
+and we can paste it. I'll explain you.
+So inside of components
+right here,
+it has so many components.
+Now let's create version
+dev.tsx. I'm going to paste this and
+let's see use client div change
+interface. We get path type old content
+new content version def props from two
+changes and on close. We get change icon
+of added removed modified and we get
+language.
+Then uh we need to show the mono editor
+here uh for the changes. So have
+imported it here. Monaco editor. Yeah,
+we have get uh imported the diff editor
+from here from the Monaco editor. So
+uh now the version diff now we have
+selected file index selected change we
+get the language from it and we get how
+many changes and if there are no changes
+we just show no difference found between
+version one and two.
+Now we get the div header.
+And where is this coming? Okay, div
+header.
+I'm not sure where this div header is
+coming from.
+Okay, it was down. Sorry.
+Okay, div header. We have the file
+selector from here.
+Now the Monaco editor for div editor and
+then this div header component.
+All right, I'm going to save it now.
+Let's head over to the page.tsx
+of our project.
+So page.tsx tsx of project and then here
+after the code editor panel let's uh
+import the version timeline
+just a minute
+okay let's first import the version def
+with ssr false because we are using the
+mono editor so version def
+components editor version def and editor
+skeleton. And uh after this
+let's head over to below
+our component in here where we are
+showing the history panel and uh
+the history panel should have the code
+of dev where we show the version
+timeline and div editor. So in here
+instead of this I'm going to use this
+right here. Now
+inside of history panel we have flex
+hide full we get the CN where we have
+timeline.
+Now we get the version timeline.
+We need to fix the viewing version,
+handle view version, handle restore
+version. And on compare,
+we'll have the handle compare
+versions
+and it's loading. We just have loading
+versions. Now for the def state, we have
+the version def from two changes on
+close. So this is done. Now we just need
+to uh create uh those. So viewing
+versions. So if we head over to the
+versions timeline first
+uh
+what is the
+yeah so
+this was throwing an error error viewing
+version. So viewing version is a number
+in here.
+Okay. So this can be a number or this
+can be null.
+And yeah, that fixes the error. Now
+let's create this functions of handle
+view version, handle restore version and
+handle compare function. I guess they
+might be calling the API and we also
+need to have them on the API client. So
+let's do that now.
+Okay. So now first let's head over to
+the API client and in here inside of the
+versions we only have this single file
+uh not
+we only have the list. Now let's do for
+the get div restore and save manual. So
+after this list
+I'm going to have forget
+where we pass in the project ID and
+version number
+and we get the authentic authenticated
+fetch where we pass in versions. Uh
+this is
+first this is the meta
+at as versions meta
+not working.
+I'm not sure why
+authenticated fetch
+and we're just closing this.
+Why it's causing error?
+Okay,
+after this we have get we get the
+project ID, version number and
+authenticated fetch. We give meta. We
+also give files which is going to be
+project file
+array
+and then we give version number
+as number.
+>> I didn't get that. Could you try again?
+And
+after this like this we get the token
+API projects project ID versions and the
+version number
+like this
+and why okay
+we had to do it like it now only error
+is this
+authent indicated fetch.
+We gave this correctly. Then we called
+it and gave it the get token
+and then the route.
+What am I doing here?
+Let me remove this.
+And after this we are closing this one
+right.
+Let me paste it here.
+Perfect. So it's working now. Not sure
+what was wrong. And now
+let's get for div as well.
+Diff. We have this for div.
+Now after this what else? We want it for
+restored.
+This is for restore. Calling the restore
+AP endpoint. And now for saving of
+manual.
+Save manual.
+Save it. And now let's use all of it
+here. Handle view version. Handle
+restore version inside all of this. So
+first let's get the view version.
+So
+I'm going to have this after this and
+let's see
+and view version use call back or sync
+version number
+uh if we are correcting a current
+version we go back to the current
+version or else we
+get the ABA can't get the response and
+save the files and set viewing version
+and set F state like this. Save it. And
+that would solve this. Now let's create
+the handle restore version.
+And we also need the handle compare
+version. Right? So let's do
+them. So I'm going to close this and
+after this I'm going to have this. So
+first handle compare versions use call
+back create API client get the response
+set def. That's it. And this is for
+handle restore version. We get the
+version number. Get the client. Get the
+response. Get the restored files from
+it. Set the files. Set uh current files
+ref. Last files ref. And update the
+project metadata. Set viewing version as
+null. Set div state as null. And we will
+exit the viewing mode. And we add a
+system message that restored to this
+version. We refresh the versions. And
+that's it.
+And let's see if it is working in the
+UI. Okay. Inside of version timeline,
+the type icon
+web batch dot icon, we cannot fetch
+that. So, let's head over to that
+version timeline, right? Version
+timeline. We have a error on line 143.
+143
+and this is not working.
+Cannot read properties of undefined
+icon.
+So
+for what version it's not working? So
+alert
+we
+give it version.t type and see for what
+it's not working.
+It's getting undefined. Version.
+Why it's returning undefined for version
+type. So let's write a console for
+version
+like this. Let's refresh it. Inspect
+head over to console. We get two
+versions.
+In the version we only get the file
+count.
+That is it.
+This is the issue. So versions do map.
+We're only getting that.
+Oh,
+that might be from our
+version. not here but
+so let's see where we are getting this
+versions let's get the set versions
+okay so it's getting from set three uh
+okay from here
+where we load the project so let's
+console the versions from Here
+versions
+from root as version response
+let's save it like this
+version from root we get current version
+and we get four versions. So
+the fourth version only that did stored
+the file count. Other version stored the
+everything but okay the zero is only
+having the file count. So when the
+initial project is created
+it's only this.
+Why it is like that?
+I guess it would be an old project. So
+let's uh fix that. So inside of versions
+timeline, let's do one thing.
+Uh
+if
+we uh don't have the
+version number then we just return. So
+if we don't have version dot version
+number,
+we just
+return null
+like this. And this might fix the error.
+Yeah, it has.
+Now let's head over to the history tab.
+And we have all the here version one,
+version two, version three. And if we
+click on this div here, we are able to
+see the div panel. And you can see all
+the edits that we made with the file
+changes.
+And let's restore to this version.
+Okay, it says restored to this version.
+And if we head preview then our this
+version re restored. And if we click on
+this
+and if we head over to the preview then
+you can see that we are viewing uh the
+other version. And let's restore this.
+Head over to preview.
+And this has been done. So this has been
+restored. So our restored functionality
+is working perfectly. Now let's work on
+the clock billing and credits
+functionality. So let's uh feature get
+everything uh with uh SAS app with clerk
+billing. So let's do that.
+Okay. So now let's start with the
+billings uh and credit sections. So
+first let's head over to the credits.ts
+TS and let's do the credits route. So,
+this is going to be a very big section
+because we're going to have so many

@@ -1,0 +1,308 @@
+is a demo for the lovable clone. So uh
+the stack that we have used is Nex.js uh
+Cloudfire for storage of files and
+Cloudfire uh workers. Then uh we have
+used cloud for authentication and
+payments. And we have used uh code
+sandbox to display the lab build and uh
+various AI models that uh generates the
+code. So let's get started. Uh so this
+is the landing page and we need to login
+first.
+Uh this is the clock login. So I'll be
+logging with Google using clo.
+So this is my project dashboard. Here
+you can see that I already created a
+project named as socially and you can
+see the live preview from here. We can
+click on it and uh we can interact with
+it from here or we can uh continue
+building the app. So I'll head over to
+the dashboard now and from here we can
+create a new project and uh we have this
+sidebar which shows dashboard analytics.
+Analytic shows the usage of our
+application with different models,
+projects and everything and uh the
+settings section. Then we have the
+credit system in place. So the entire
+app runs on credit system and SASbased
+thing which is uh linked with cloing. So
+free plan has usage of 50 credits per
+month and for the pro plan it's there's
+no cap and in free plan there is only
+limit of to using certain free models
+and in the pro plan you have access to
+entire thing. So uh let's create the
+project. So let's create an
+Netflix clone
+and I'm going to use uh models from here
+and we are going to use deepse v3
+and we uh will describe a prompt here
+create
+a Netflix clone
+with
+demo data
+make the UI
+just like Netflix
+and I'm going to hit the create button.
+So it will start creating the project
+and uh start creating the files.
+This all uses Cloudflare workers and for
+model we are using Deepseek V3 for now.
+Uh while it is generating I'll show you
+the editor layout. So this is the chat
+interface. We'll see all the chats
+happening here and it is sending
+serverside events for streaming of live
+code and everything. And uh this panel
+is resizable just like lovable. Here
+we'll see our actual uh build and uh
+from here we can test different sizes as
+soon as the app arrives. I'll show you
+that. We can see our code changes.
+Then we also have history here. I'll
+show you that in a minute.
+From here we can see our uh plan, our
+credits. We can head over to settings.
+We can change the appearance to light
+mode. So the app is also supported in
+light mode. We'll set it to dark mode
+again
+and uh let's wait for it to create the
+application.
+Okay. So it has generated the code and
+you can see we have the UI here and uh
+we can scroll over it and see things
+from here.
+We also uh did this built with lovable
+batch.
+So as you can see we have the
+application. Now we can uh head over to
+code here and you can check the entire
+code from here.
+It's just like VS code. So this is using
+Monaco editor.
+We'll head over to history and from here
+you can see that we had this initial
+project setup which creates the basic
+files of our application and the core
+react react app. Then we had our version
+one which was our prompt that create a
+Netflix clone. So we can diff the files
+from here.
+So you can see each and every file here
+that was added and changed like the
+package.json
+uh we added the lucid react dependency
+and in the app.tsx we modified these
+things. So everything is available here
+and we can see the new files as well and
+we can restore to a earlier version as
+well. Uh I'll show you that afterwards.
+Now we can export the code from here but
+for that we need to upgrade to pro. So
+uh let's upgrade to pro just a minute.
+I'll also show you that our credits uh
+got reduced uh to 46 from 47. Uh and
+each model here uses different credit
+system like the higher model uses two
+credits and the lower model uses one
+credit. And uh to use a higher models we
+need to have on a pro plan. So let's go
+to the pro plan first. So upgrade to pro
+we have this plan which can be build
+annually or monthly. So we'll subscribe
+to this
+will pay with a test card.
+So this is the cloak gateway
+continue.
+We just uh paid for this uh subscription
+and uh
+now we can access the HA models.
+Just a minute I'll show you
+I'll show you the cloak dashboard
+to billing
+from here. And you can see that we just
+created uh this
+subscriber.
+So it's working live. This is
+dashboard.cloud.com.
+So billing is also working.
+And now next thing is let's use clouds
+on it.
+And uh I'm going to prompt improve the
+app.
+So this will use uh uh clots on it and
+it would just create awesome UI. So I'll
+send the message.
+It's working. Let's wait for it to get
+completed.
+Okay. So the app was updated. You can
+see there are various UI changes here.
+We also have this model.
+So, it just uh generated a better app
+and there are major improvements listed
+here. Now, I'll show you the app in
+responsive mode. This is the tablet
+version. This is the mobile version.
+Now one more thing uh we can preview
+this application. So when I click on
+this, it will get us a code sandbox URL.
+I need to click this again.
+Yep.
+So yes, proceed to preview.
+And you can see that our app is dis uh
+deployed and it's uh accessible.
+Now let me show you the history and I'll
+restore to this original version the
+version one
+and it just got restored to version one.
+We'll head over to the preview
+and
+I think we need to refresh
+and this is the version one.
+Let's restore to version two again.
+Let's refresh it.
+And yeah, it has been restored.
+So we can switch between the versions as
+well. Now uh when we are on the HA model
+and uh like we can send images not in
+the deepsek because it doesn't support
+it. So we can send images from here and
+it would create a UI exactly like that.
+So what I'm going to do is I'll head
+over to dribble
+and uh let's select some UI. I'm going
+to select this UI.
+I'm going to copy the image or open
+image in new tab and copy the image from
+here. Head over to level loable clone
+and I can paste the image directly here
+or I can upload it. But I'm going to
+paste it. So as you can see it has been
+pasted and we can have five images from
+here and I'm going to uh add a prompt
+that
+create uh UI like this
+and hit enter.
+We can also see what image we provided.
+And let's wait for it to complete.
+Okay. So we've got an error and uh it
+just uh
+uh automatically known that it had an
+error. So we have this autoheal feature
+where if there's any error, it would
+automatically try to fix it. The AI
+would try to fix it automatically. It
+didn't work. So let's try to fix it by
+prompting it again.
+Fix the error.
+Okay, so the error was fixed and I'll
+redemo this auto heal feature in just a
+minute. So the UI is completely changed
+now
+and
+the results are awesome.
+Now, as you can see that we are on the
+pro plan. The credits are unlimited.
+I'll head over to the settings from
+here. And uh there are also certain rate
+limits on the application. I'll show you
+that in a minute. Now, you can access
+your account and bill billing section
+from Clerk from here. So, this is a
+widget by Cler. We can head over to
+security from here. see the active
+devices, see the billing details,
+statements, payments, and cancel our
+subscription or change the payment
+method. And let's head over to analytics
+now.
+And from here, you can see your total AI
+generations, projects, credits used, uh
+any edits, what type of model you are
+using. If uh any other model was used,
+it would be here. You can see your total
+projects here. Uh if you are on a free
+plan, it could show you your credits
+usage here and your recent activities
+across different projects. And uh let's
+do one thing. Let's head over to the
+dashboard. Let's head over to the
+Netflix clone. From here,
+we can also export the code from here.
+So
+it just exuded the code and uh it's a
+zip file. Uh the CloudFire worker
+handles this and all the files are in
+here. Now let me showcase this autoheal
+feature again. Uh I'm going to switch to
+a lower model uh to save costs. So let's
+use Deep Seek uh V3 again. Uh let's say
+create a component
+that imports
+the package
+so that it creates
+an error.
+Let's send this message
+and it's creating the error component
+appending it to app.tsx
+didn't create any error but created the
+component.
+Let's see in the code error component.
+Okay. So it's importing the package but
+not using it. So let's writefg
+here. call that function and uh as you
+can see it might have generated this
+error and it started autofixing that
+error
+and yeah it was fixed. So if you head
+over to the code head over to the error
+component that uh error compon error uh
+package was removed automatically. So
+our autoheal worked. So maximum three
+attempts would be done for autoheal and
+this makes our lovable clone super
+smart. Okay. So this is done. Now let me
+show you the cloudfire dashboard.
+So I have this lovable clone worker
+and uh I have R2 bucket and uh key value
+name space. So I'll show you the bucket
+first
+and these are project files. So for
+Netflix our project was something like
+the ID was KWVI
+and uh this is a Netflix
+clone uh directory. So we store every
+versions and uh uh on each versions like
+if I head over to version 11 we have
+this files.json file. So inside of this
+files dojson file we have all the files
+in JSON format and we can download this
+file and see like if I download this and
+if I open this in my editor just a
+minute
+we can see the model that we used for
+this and then the file path and the
+contents of the file. So this gets sent
+uh to the code sandbox and it parses
+this and uh then we see our output.
+Now
+we also have key values.
+So key values stores the
+project data not this one.
+So we store everything here like uh the
+credits for the user the project. So we
+store the project ID which user uh
+created that project the name of the
+project the model used and everything is
+showed in the key value pairs. Here we
+can view this as well. The data for this
+it gets paused and uh used in our
+application.
+Okay. So now let's get started with the
+project. So first make sure that you
+have installed NodeJS. This powers the
+our Monstack applications. So make sure
+that you have installed NodeJS. Uh then

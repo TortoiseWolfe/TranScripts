@@ -1,0 +1,47 @@
+Next is Lovable Clone. What you're about
+to watch is the most complete fullstack
+tutorial I have ever made. Like what if
+you could actually build Lovable the AI
+app builder yourself? Not some
+simplified version, not a toy project,
+the real thing with every feature. And I
+mean every feature. You type in what you
+want. The AI generates full React
+components in real time. You can see the
+code streaming in the files being
+created and your app updating live in
+the browser. You pick from eight
+different models, Claude, GPD40, Gemini,
+Deepseek, and if something breaks, it
+autoheals itself. On top of that, live
+sandpack preview, Monaco code editor,
+full version history with diffs, image
+uploads to prompts, zip export, code
+sandbox export, dark mode, credit based
+billing with clerk. It's genuinely
+production grade and the stack is just
+as solid. NextJ 16 with React 19 on the
+front end. Cloudflare workers with Huno
+as the back end. Edge deployed. Zero
+cool starts. Sandpack for preview.
+Monaco for editing. Clerk for O and
+billing. R2 and Kiwi for storage. The
+multimodel system alone is worth the
+watch. Eight models across four
+providers each with different speed
+tiers, credit costs, and vision support.
+You can swap between them in one click.
+So what are you going to build? Full
+authentication, AI code generation with
+streaming, live preview, a real code
+editor, version history with a diff
+viewer, a complete billing system with
+credits and export to zip or code
+sandbox. All of it from zero. I've
+broken the whole thing into 12 chapters.
+Starting from project setup, going
+through o the editor, the AI engine,
+chat, preview, versioning, billing, all
+the way to deployment. It's over 12
+hours step by step. All right, enough
+talking. Let me just show you. So this

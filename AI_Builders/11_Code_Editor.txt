@@ -1,0 +1,420 @@
+I'm going to create code editor
+panel.tsx.
+Just a minute.
+And let's write RFC here. We just export
+the function and rename this to this
+code editor panel. And uh
+now we also need a file explorer
+component. So file
+explorer.tsx
+RFC
+uh
+let's rename to file explorer
+and export function like this.
+Now let's head over to the
+page.tsx tsx of project and in here what
+we need to do is we need to import the
+code editor panel so
+and we use that in here so at the top I
+am going to after preview panel let's
+import the code editor panel uh we also
+need to have the editor skeleton so we
+need to create that component so new
+file editor
+skeleton
+tsx and let me grab it.
+Just grab it and paste it. Simple
+component with skeleton import and just
+some skeleton.
+And I guess that is done. Let's close
+this and let's import the editor
+skeleton inside of this. So this is code
+editor panel we just imported with
+dynamic
+and save this and
+what else?
+Now at the end here
+in this instead of this div we are going
+to use our component
+code editor
+code editor panel like this and inside
+of this we will use files
+as files then active file as active file
+we don't need on error we need onactive
+file change
+set active file
+on file content
+change then
+uh we will get the path and content and
+then we'll set the files with previous
+and previous and path and content like
+this. Perfect.
+And
+That should be it.
+Set files and we get the path
+and content.
+Let's do it from the uh this code editor
+panel component. So this is done I
+guess. Now let's head over to the code
+editor component.
+And if we head over to here
+again it's not running. I need to
+restart my worker.
+refresh it and let's try to
+get those things.
+Okay, social media app. And by the way,
+you see the UI, it's like it's not good
+because it's very uh using the photo
+model. So when we use the other models
+the UI would be very good. So now we
+have this code editor panel. So it's on
+top of this. Not sure why. So instead of
+edit layout
+where we have the panels
+why it's still displaying us that
+we are inside of this div.
+Okay, I guess we messed up a div.
+Just a minute. I'll verify it.
+Okay, I'll start with this div.
+This is perfect. Now inside of this, we
+have this.
+Now this and this. Again, we end three
+divs in here, not two. So three divs in
+here. Then we have this div
+which is code editor panel and then
+history panel
+and then it's dragging and from here we
+just need to remove one div. And I guess
+if I refresh it
+and click on here.
+No, this still not perfect.
+So this preview panel
+should only be visible.
+We are at the preview panel. So active
+tab triple equals to preview then only
+this or else we need to have the
+invisible class name visible or
+invisible and Z of zero
+and with this
+and a letter boundary preview
+and
+this this active tab equals to code Z of
+10 or else invisible.
+If we head over to history, okay, it's
+only happening in the code editor panel.
+History panel works perfectly. Why is
+that?
+Absolute insert code triple equals to
+code Z of 10 visible Z of zero invisible
+panel error boundary code editor code
+editor panel
+history panel
+and we get this absolute. I guess that
+components would sit on top of this.
+That should be it. So, let's head over
+to that components and see what we are
+doing.
+Yeah, I guess we are doing in that. So,
+no need to do something here. So, let's
+head over to the code editor panel. And
+inside of code editor panel, I'm going
+to uh do some stuff first. So let's have
+export interface
+code editor panel props. We have files
+that record string string active file as
+string on active file change file path
+string and on file content change file
+path and content like this. And uh after
+that
+we have a function that gets the
+language from path. So I'll get it here.
+Con get function get language from path.
+We get the file path and uh we split it
+with every dot and not every dot just a
+dot and we pop it and we have it to
+lowerase and with uh that we get the
+extension. So if it tsx then the uh
+language is typescript. If it ts it's
+typescript, jsx and js is javascript.
+CSS is CSS, JSON, HTML, MD and plain
+text. So that is all the things that we
+support and yeah we will have this
+change in here and uh
+then we also have a function that would
+get us the file name. So con get file
+name it would split with slash. So uh we
+get the uh from the file path we get the
+file name.
+And uh
+what else? Now inside of this
+first let's have an ref for editor for
+uh uh referring the monaco editor. So
+const editor ref is equals to react dot
+use ref or just use ref
+use and this is going to be parameters
+of on mount
+uh where we are getting this on mount
+from
+and we get editor onmount and everything
+from mono editor. So all of this from
+Monica react
+and
+we have that on mountain type here. Then
+we get this
+of zero
+or
+this would be null like this and initial
+value is null.
+Then
+we need to uh give Monaco editor the
+configuration for TypeScript. So let's
+do that. So uh handle editor will mount
+will have that uh function. So wrap it
+in use call back. And what I'm going to
+do is we have we get the Monaco instance
+and we set
+monaco.languages.typescript.typescript
+Typescript defaults set compiler options
+and we set all of these options and uh
+then we set some diagnostic options
+and uh
+as soon as the editor is mounted
+then we'll have handle editor dead mount
+on mount we'll get the use call back and
+just store the editor refur in the
+editor. like this and
+then we will have uh on editor change.
+So const
+handle editor
+change use call back we get value as
+string or undefined. If value triple
+equals to undefined, we return uh not
+return but
+we actually call this function here on
+file content change. Okay, so this is
+value not equal equals to undefined.
+Then on file content change active file
+and value and we have this brackets and
+we file active file and onfile content
+change. Now const active
+content
+equals to files active file or else
+empty string and languages get language
+from path and like this.
+And now let's do our markdown jsx. Uh in
+here
+we'll give it a class name flex and
+height full height full. Inside of this
+we'll have hidden for small
+width 52
+shrink of zero
+and if it's medium we'll give it block
+inside of this we'll have file explorer
+and we'll pass in the files
+then we'll file
+pass in the active file and not uh on
+active file change but on file select
+like this
+pass the div and after this we'll have
+lex
+lex one
+lex call
+and then inside of this we'll have some
+another do which would just have the
+file tab showing active file name. So
+I'm going to paste all of that. Just a
+minute.
+This is that and get the file text.
+And
+after this two divs,
+we'll have another div
+which would just call the editor.
+So this div with editor we give it
+height language value theme on change
+before mount onmount and options
+give this and
+you can see the file explorer text here
+and we have our app.tsx defaultly open.
+So we have the Monaco editor here. Now
+we just need the uh file explorer here.
+So that would be it. And you can see the
+active file name here as well. So let's
+do the
+uh what was the name? File explorer. So
+let's do it. Just a minute.
+Okay. So now let's head over to the file
+explorer. And in file explorer first
+this is going to be a client component.
+And now after this let's create an
+interface for tree node. So actually uh
+this entire component works like a tree
+with recursive because as you can see in
+the editor we have to recursively uh
+check for each folders and each files to
+show the tree like this. Uh so this is a
+best example we are just replicating
+something like this. So this actually
+works uh recursively. So uh let's create
+tree node. So tree node is
+having a name of string. Then path as
+string then children as tree node of
+arrays something like this. And then
+we'll have export interface file
+explorer props. It is file record string
+string active file of string on file
+select file path as string like this. We
+also dstructure it here. Then
+we will create something as build file
+tree function. So function
+build file tree. We get the files as not
+record string but array of string like
+this and this is tree node array
+and
+inside of this first we'll get con root
+as tree node and this is an
+empty array
+then okay also this is three node array
+And we'll have for const file path of
+file paths or this files. Then we'll
+have const parts is equals to file path
+dotsplit and current level as root.
+Perfect. Then again a loop
+for uh getting the inner things. So for
+i equals to0 i less than parts.length
+length I ++ con parts parts of I and
+until this this is correct and this is
+const is file equals to I part length
+dominus one
+then check existing node current level
+find node node name equals to part and
+if it's not an existing node then not an
+existing node Then
+we will have
+existing node equals is file
+then name as part and path as file path
+and like this and current level.push
+push existing node
+and if it is not a file
+and then existing node
+it is not a file and existing node dot
+children then we have current level is
+equals to existing node dot children
+like this and we'll return the root
+not return the root first.
+Uh
+we are going to have after this for loop
+we are going to have another function
+which is function sort tree. So let's
+remove this
+function sort tree nodes like this tree
+node and
+return type is tree node array like this
+and inside of this returns node dots
+sort ab
+like this
+And
+inside of this first we check A is
+folder
+like this B is folder and if A is folder
+and B is not folder return minus one and
+uh return one according to that and then
+return A.name local compare B.tame.
+So this is just for sorting the files uh
+by folders then files and with all
+everything alphabetically
+and then function
+sort
+recursively. We get the nodes as three
+nodes and return type of re node like
+this. And
+inside of this we will have const sorted
+equals to
+sort of nodes then const node of sorted.
+If node dot children then node dot
+children is equals to sort recursively
+node dot children return sorted
+and then
+return sort recursively of root. So this
+is just uh recursion.
+So recursion for building file tree and
+we return everything inside of that via
+recursion
+and then we have our actual component.
+So
+we have some states in here.
+First
+grab it via use state
+and uh
+it cannot file the name node. So okay
+this is not our that component I'm
+sorry. So we have function tree node
+item
+around 60 lines.
+So I'll show you this.
+We also need to have tree node item
+props.
+We get the node depth active file and on
+file select
+gra the use state from react.
+We first check if it's a folder and if
+it's active if it's folder then we show
+something like this with chevron on down
+and chevron on right and icon of folder
+and if uh uh if it's open and then we
+need show the tree node item.
+So this is the tree node item we call it
+and we show it. Now, let's have the file
+explorer component. So, I'm going to
+grab it and
+just show you like this.
+So, file explorer and this is
+what did I write on the interface?
+Okay, just a minute.
+files active file and on this is on file
+select
+file path string something like this
+and we have file paths tree from build
+file tree then
+the files and we just show the tree view
+with tree node item component and we
+save it and
+it should work.
+Okay, it just shows that CN is not
+defined. So where do we have used CN?
+Okay, we need to import this CN and file
+text.
+Okay, I showed you this but I didn't
+show you this.
+Save it.
+And yeah, this is the thing. We can
+collapse and do this. And we can see
+every file from here.
+And with this our
+uh code editor is also done. We have
+done our preview. We have our code. So
+this is done. Now we can uh move forward
+with the history or we can do the SAS
+billing with clock. And uh after that is
+done uh there are nothing major left in
+the application. We just have the
+history panel then preview and export
+buttons uh fixing this bug right here.
+Then
+don't think anything much is left then
+we need to also do the analytics and
+settings page and the credits display
+here. That is it I guess. If we head
+over here you can see the credits here
+as well. We have left 47 credits this
+month for this plan. So most of the
+things are complete. Major things are
+the SAS billing and the history page. I
+guess I apart from that uh others are
+very small. So let's do that now.
+Okay. So now let's work on the versions
+feature. So I'll show you once again
+what I meant is in the history we need
+to see all the versions here and we can
+restore to that version. So let's do
+that. So currently this is our dark
+theme. We also have a version of the

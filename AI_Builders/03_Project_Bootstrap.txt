@@ -1,0 +1,1203 @@
+we are going to use Nex.js. NextJS is
+React framework for the web. So we going
+to use this framework for front end. For
+back end we are going to utilize uh
+Cloudflare workers.
+Going to teach you how to cloudflare
+workers. It's a awesome product. It has
+a lot of benefits. We are going to use
+uh uh R2 and KV of Cloudflare.
+uh more details about that later when
+them then for UI uh we are going to use
+shad CN
+it's the go to UI uh for 2026 we are
+going to use that and for authentication
+we are going to use clerk clerk handles
+all the ins and out authentication we
+are not going to write any core logic
+for authentication it is all going to be
+handled by work. Let's get started with
+the development. So, first I'm going to
+pop up my code.
+the head
+and going to create project here npx
+create next app at latest to use the
+latest next JS version is 16 and name my
+project as next servable
+clone recording because I do have the
+original version So
+just goinging
+and yeah I'm use the recommended
+settings. It will install all the things
+that are needed. Tn CSS
+TypeScript.
+Let's wait for it. And by the way why we
+are using Nex.js let me tell you that we
+using NexJS with version 16 and it
+internally uses React 19 as well. So it
+provides uh first benefit is it provides
+us app router. So app router is a
+file-based routing with layouts.
+It's pretty useful like in react we have
+to use uh react router DOM and
+everything and uh write every routes and
+everything to manage things. But in this
+we just need to create files and folders
+and it would automatically map uh that
+uh route. So it's very awesome. Then we
+get server components. Server components
+is also provided in react 19 but it's
+very easy to use in
+XJS. That's what I consider. Uh so for
+server components it's not shipping any
+JavaScript code to the browser.
+Everything is handled in the server and
+uh everything is sent to you as a
+compiled code the browser.
+It's pretty useful. Not sure if I
+trained you good approach. And then we
+also have middleware support. So what
+happens is we can intercept every
+request and check like for example if
+the user is authenticated or not before
+even the page loads. So that is
+middleware uh which Nex.js provides. And
+there are also server actions and things
+like that which handles backend. So
+NexJS is a full stack framework but we
+are going to use cloudflare. So we are
+not going to use actions. So next thing
+now we are going to use some radex
+primitives for UI. So we need to install
+that.
+Okay. So now I have opened my VS code
+inside of that directory. And I'm going
+to spin up a new terminal from here.
+And uh now we need to install some Rex
+UI components. So let's do that. Just a
+minute. I'm going to copy that from here
+and just going to paste it this and
+and you can see that we are installing
+certain radics UI packages. So you can
+just uh grab it from
+uh the radix UI website or you can do it
+whenever necessary because we are just
+setting up things here. So these are the
+primitive components for dialogue
+avatars then drop-down label popover
+progress bars role area select uh
+separators react slot and react to tip.
+You can just uh write it from here or
+just go to the Redux UI website Redex UI
+here and you can
+head over to the primitives and you can
+just get started and for example we need
+alert dialogue you can just copy this
+from here like this and paste it. So we
+need that. I'm going to install it.
+While this is being installed, uh we
+also need class variance authority and
+that is it installed.
+No, not sex and tail version
+not installed. So to add that styling
+utilities, I'll explain you. We are
+using that. So we need to install class
+variance authority clsx and tailwind
+merge. So why we are using that?
+So we are using this
+uh class variance authority uh TVA for
+uh writing of uh class names easily. So
+uh it's useful when we are coding uh and
+writing so many class names in CSS. Uh
+I'll show you exactly how it works when
+we are at that stage and uh apart from
+that uh
+what we need.
+Yeah. Now let's install the uh Lucid
+React package and next themes. So we are
+going to install this npm install lucid
+react soner and next themes. Lucid react
+is uh npm library for icons. Then soner
+is for toast notifications and next
+themes is for managing light and dark
+mode. So let's install that.
+Apart from that,
+yeah, we will also install other
+dependencies of code sandbox uh and
+monaco editor. So need these
+dependencies code sandbox, send back
+react and mono editor react. So code
+sandbox is uh like uh it's a sandpack
+like it uh bundles all the react
+components and all the dependencies all
+the typescript code gets compiled and
+everything gets done in the browsers and
+uh uh it would show us in an I frame. So
+that is code sandbox. So code sandbox is
+generally uh it's it would be used in
+our application as the preview of the
+actual application. So we're using that
+and monaco editor react is uh it's the
+editor like this editor you see in the
+VS code it's powered by monaco editor.
+So it's the same editor in the VS code
+that we using onto our application. So
+we are using monitor monaco editor react
+package. Let's install that as well.
+And then we need uh clerk. So we are
+using clerk for authentication and also
+need clerk teams for that. And uh
+we just installing dependencies that we
+need at the start. So we need clock
+next.js and clock themes. Clock next.js
+JS is the actual SDK for authentication
+of clock and clock themes is used for
+switching off mode of clock widgets.
+Then
+need markdown rendering uh npm library.
+So these libraries are uh whenever AI
+responses going to come back to us then
+it would have markdown in it. So to
+render that markdown onto our chat
+panel, we need this react markdown
+package and react uh remark gfm. So
+let's install that.
+Okay, that is done. And then we need
+event source parser. So we need this
+last library npm install event source
+parser. So what this will do is uh we
+are sending server size server side
+events uh for the AI code
+uh file rendering and everything. So
+for passing those serverside events uh
+this package is useful. We could do this
+manually as well. We could have just uh
+not used this library but it's very easy
+to uh parse events and everything using
+this library. So we are using that.
+So that is done. And next we need to
+install sheets. So for sheets
+and
+uh here you can head over to docs
+and px shad analyt
+copy it and paste it here.
+Yeah we need to install that.
+uh select uh component library we are
+going to use redex
+and
+for preset
+which preset would you like to use? So,
+um
+let's use uh Lucid Gest.
+Let's wait for it to get compiled.
+Compiled but install the dependencies.
+Now why we are using shade CN? So shade
+CN is a gamecher like what it will do is
+it will install our components inside of
+this uh UI library here is itself. So if
+you want to add any more functionality
+to it to this or customize how it looks
+you can just add it here or you can add
+a variant here and you can use it. If we
+are using any other kind of library like
+material UI or chakra UI then those
+dependencies are installed inside of
+node module. So uh there's no way to
+customize that. There are certain ways
+but there are very that are very heavy
+but shad revolves uh around this. So
+every component is a lightweight
+component which lives inside of here. So
+we can customize it entirely.
+We are using sheets here and everyone
+nowadays uses sheet.
+All right. So,
+and this is done. Now, let's install
+certain components that we are going to
+use of sheets.
+So I'm going to have npx sheets and
+latest add button card dialogue drop-own
+menu input label popover progress scroll
+area select separator skeleton text area
+tool tip badge alert dialog and avatar.
+So let's install all of those
+dependencies.
+And our components are here as you can
+see it. Now we might have a global CSS
+file. Here it is. So inside of here I am
+going to do
+I'm going to remove this from here
+entire thing and I'm going to paste my
+code here which is of here and then done
+15 lines. So I'll give you this code in
+the description of the video. So these
+are uh lovables uh theming styles and
+everything that we have defined. So it
+would be useful in our application. So
+I'm not going to type it everything line
+by line. Uh we are just going to copy
+and paste this. So you can use those
+animations, those themes and everything
+from here. We don't have to write it
+from scratch. And I need to
+plugin I guess of tailwind typography.
+Uh let's comment this for now. We'll
+install that afterwards and I'll save
+this file. And next step. Uh
+not sure what was the next step. Just a
+minute.
+And then inside of library uh this is
+the utils file where we have this export
+CN function where we will use TWW merge
+and clsx the class v authorities and
+everything that we installed. So it is
+exported from here and it would be
+useful from here.
+Apart from that uh move on to
+layout.tsx.
+So our layout.tsx has just importing
+CSS.
+Uh what else should be here?
+Let's change this metadata instead of
+create next app. This should be
+lovable clone
+AI powered
+web app builder like this and
+uh description is
+let's write
+yeahition is correct. Let's write this
+for now. And we also need icons. So need
+to install the icon as well the PG icon
+of lovable. So we are going to scrape it
+from the actual loable website. So to do
+is for now is icons
+this icon
+and inside of this I'm going to pass in
+URL of
+this but this is not going to be a fav
+icon. This is going to be icon dot SVG
+and the type is image SVG like this. And
+I am going to
+have my icon. SVG here inside of the app
+directory which is the serable clone
+logo. So how can you get it?
+We'll head over to
+F
+right I click on it here
+we have this SVG here. So yeah, you can
+just copy this element, this SVG from
+here. We got this uh
+the lovable heart and uh you can just uh
+paste that code inside your SVG file and
+then you would have the SVG like it. Let
+me do it
+or what I'll do is this. Save this. Give
+the file name
+icon one
+dot this. So you can see that we have
+this SVG this SVG as well. So we have
+both the SVGs now. So you can see the
+SVG like that. I'm remove this SV here.
+Okay. So now the next step is we'll head
+over to layout.tsx. tsx and
+in here we'll suppress the hydration
+warnings. So suppress hydration warning.
+We don't need those uh hydration
+warnings complaining uh in the client
+side. Then we'll wrap uh some providers
+here. So uh inside of here what I want
+you to do is
+uh inside of components I'm going to
+create a new file named as providers.tsx
+like this and let's write rfce here. Uh,
+but I don't want def
+that. That's true. So this is going to
+be a client component the providers and
+from here we are going to use the clock
+themes and everything as a provider but
+for now we are going to put function
+providers with children inside of that
+and childrens are going to be of react
+node or we can have it provide a props
+but react node
+don't need to that and return children
+like this. So we'll save it for now and
+let's use this here.
+Providers
+providers component and let's pass in
+the childrens like this and it's done in
+layout. We'll just have to configure the
+providers in this file. So the providers
+is going to be theme provider first. The
+themeing provider is going to be useful
+for for default theme at the current
+theme
+dark and light mode. Then we'll use
+clerk with theme. Uh the
+middleware would be used for clerk
+widget theming. Uh and then we'll have
+rate limit provider. So rate limit
+provider would be useful for our
+components and everything's uh rate
+limit. So we'll use that. So for a theme
+provider, what I want to do is
+get a super simple component which would
+just read our theme. So we'll do that
+afterwards. Give this what?
+Okay. and then
+some directories for our application.
+Inside of app
+going to create a new folder named as
+marketing with route groups
+of marketing
+other pages
+the landing page first and uh this is
+advertising page well. So have marketing
+create
+page.tsx tsx
+like this and uh we'll also have a
+layout file but we don't have any
+specific
+layout so we don't need that and
+that
+we need the auth be app.
+So
+this right here I'm create another route
+which is going to o this is going to be
+used for clo o so
+it so in of o actually clock gives us
+this information if go to
+clo.dev
+dashboard sign in
+the new I'm also working on a
+working on a binance clone as well so
+that subscribe to the channel so let's
+name this
+let's this loable
+recording thing
+and we are going to enable Google
+don't want any other you can enable it
+here pretty simple
+get the application
+for nextj we are going to this look
+middleware to the app we'll do that and
+for directories
+have they given the code
+this.
+Yeah, this is the page we
+grab in this
+head over to our VS code going to
+here this.
+So instead of o we have this sign in
+all route catcher sign in and then we
+h26
+and then we want the same for sign up.
+So let's head over to the clock here. Do
+we have for signup? Don't have it. We'll
+just copy this and change sign in to
+sign up.
+Instead of O we need a new file.
+This is going sign up
+like this
+up and this it
+up like this. Sign in folder. signup
+folder
+and we have h.tsx inside of this, right?
+Hope this is correct. And do we need a
+layout tsx file?
+I guess we do need a layout file. So
+inside of O
+this we are going to create a layout dot
+ESX file and inside of this
+default
+this is
+layout and inside of this uh we'll also
+pass in the children. So
+would have
+and the type of this is good
+only.
+And this class name is going to house
+classes which is flex
+green.
+Then item center
+justify center
+like that background zinc of 950.
+And we're just going to pass in those
+children.
+Right. Layout is done.
+still needs to be done. So, uh it's very
+simple. Let's do the
+H first write
+component and this just going to return
+lineup component from clock.
+You see how simple this would be.
+block
+up.
+Yes.
+And we have our
+Copy this
+here. Paste it. This is going to be
+sign in instead of
+this. I can change this sign in page
+page.
+this. Well, this is going to be signed
+up page
+this and start our server right
+npm run dev.
+It's
+30,000. I'm going to close
+this
+And you can see that we have this
+lovable clone here. Let's head over to
+root layout right here. And
+change this to loable clone. And this is
+done. That is done. Now let's see if we
+have page.
+Okay.
+To add the clock provider, we haven't
+added that the layout. So need to fix
+that. then we will be able to see the
+sign and sign up of cloak. So let's fix
+that.
+Okay. So now for fixing that error let's
+head over to the providers component
+that we just created and inside of that
+let's use the clock component clock
+provider here. So I'm going to create a
+new function here. So function
+clock with theme
+and uh inside of this goes our children
+and inside of here I'm going to write
+con theme not like this but we are going
+to get theme from use theme hook. So use
+theme
+and from where does this comes
+uh use theme is from theme provider. So
+we need to create a theme provider
+component as well. So
+inside of theme provider we are just uh
+creating a custom hook. So we'll get the
+initial uh our theme which is of light
+or dark mode. So what I am going to
+create is inside of let's close this and
+this is going to be theme theme provider
+tsx like this. We'll paste uh my code
+here. So this code is a client
+component. Then we have the types of
+theme like dark or system. Then local
+storage uh key. So we are storing our
+theme preference in local storage. Then
+context value of theme and set theme. We
+are creating the context. Uh so
+initially the theme would be dark and we
+have set a function as well of set theme
+and we have this resolve theme. So
+resolve theme is uh our OS preference.
+So what if our theme uh preference is of
+system then uh it will check if prefers
+color scheme is of dark then have dark
+or have light mode. So this is
+completely CSS based uh based on
+JavaScript.
+After that uh we are applying the theme.
+So we are applying it to document
+element of root and we are adding that
+class name of dark and light and based
+on that our colors would load and then
+we have theme provider props for our
+actual provider and we have theme set
+theme use effect and uh inside of this
+use effect what we are getting is if we
+get the default theme as soon as we get
+the default theme then it's uh applied
+that's it
+and whenever the theme changes we need
+to change things on our system
+set a function of set theme and provider
+and wrapping that around children and we
+are exporting an accessible hook. Oh,
+pretty simple basic React stuff. No need
+to explain. And inside of this, I'm
+going to use it right here. So, not
+here, but we have this use theme. So,
+we've got our theme from here. So, we'll
+have theme like this. And inside of
+this,
+what should we do? Yeah,
+let's check uh if it's a dark theme or
+light theme. So if it's uh const is dark
+equals to if the theme is dark or your
+system or whatever it is then it's just
+returning true or false based on that
+and
+we are going to return
+the clock provider
+clock provider like this and inside of
+this we'll pass in the children
+And in the clerk provider we are going
+to pass in appearance
+like this. Then we'll pass in B theme
+prop. So this should be B
+theme. If it's dark then we'll pass in
+dark or else undefined.
+And we need to
+have this dark. So this dark comes from
+clock themes. So we need to import that.
+So import
+dark from clock themes like this. And
+this is done. Now we just need to use
+this clock with thing right here. So
+uh first we'll wrap this around our
+theme provider and our default theme
+would be dark
+like this.
+Close this with theme provider. And
+inside of this we'll again use cloak
+with theme like this. And
+let's get this and let's save it here.
+Save it. And now we have our clerk
+provider. And we might not see that
+error. You can see that we have our
+clerk signin page here. And we can also
+head over to the signup page. Takes it
+to the clerk hosted page.
+Sign up.
+Yeah, we have the sign up as well. Now
+we need to configure our clock
+application. So I'll head over to the
+clock dev again
+dashboard
+and from here loable clone recording.
+I need to
+yeah we need to set up middleware as
+well. Layout is done. We have the club
+provider.
+Next up, what do we need?
+Yeah, that is done. We need to just set
+up the middleware, but it's proxy now.
+So, what I'm going to do is
+let me just check my code real quick.
+Okay. So,
+let's create
+proxy dot
+ts and let's head over to clock. I'm
+going to copy this, paste it clock
+middleware config.
+And uh what we are going to do is
+we'll just protect our some routes. So I
+want uh certain routes to be protected.
+So for that what I'm going to do is
+const is protected
+route like this. And uh what we'll do is
+create route matcher. So
+create
+route matcher from clock nextjs server.
+So we'll get that from here. pass in an
+array and
+what we'll pass is first if it's a route
+with dashboard
+with wild pattern then it should
+see that it's an protected route and
+same goes for project and settings page
+so this is going to be slash
+project like this and then we'll have
+settings page like this.
+These three should be protected. And
+inside of clock mware, I'm going to have
+an async function here with
+not the just the request. We need o as
+well. Ou and request. And inside of this
+sync
+we'll check if is protected route and
+we'll just pass in the request
+request like this. And if it's uh
+there then we'll have await O dot
+protect from clock like this
+and uh we'll close this. We'll close the
+other braces and
+this is done. So O.protect is clerk
+method. So o is provided by clerk to us
+and uh we are just telling that we need
+to protect these routes. So uh it should
+only be accessible if the user is signed
+in
+or else it would just redirect. Now let
+me refresh the page
+and u no no errors. So clock middleware
+is done. Now we need to set certain
+enviables for clerk and things. So I'm
+just going to not a folder but
+dot envlo
+and inside of this our clerk uh
+environment variables would go and uh
+then we'll able to login and sign up.
+Okay. So now I want you to head over to
+clog, head over to configure. And inside
+of configure, I'll head over to
+developers.
+I'm not sure where I have to go. Uh just
+a minute. Yeah, in here. API keys. Yeah,
+I'm going to copy this from here and
+head over to my code. And inside the
+env.local, I'm going to paste this. I'm
+going to delete these keys. So you
+cannot use this and uh then we need to
+have some cloak route configuration. So
+uh sign in URL is this signup URL is
+this. Then after sign in URL is uh this
+and after signup URL is this. So after
+sign in and sign up we need to force it
+to go to the dashboard. So that is for
+that. So we need to set those via envir
+environment variables and uh clerk would
+be done. So let's see if authentication
+is working using clerk
+sign up. We are on the signup page. If
+we click on sign in, you can see that
+now when we click on this signup sign
+in, it doesn't take us to the clerk
+hosted page and that development mode is
+also gone. So now I'm going to continue
+with Google.
+I just need to login.
+And we are at route 3000. Not sure if we
+are signed up. Let's head over to users
+here. And if my user is here, yeah, it's
+here. We're able to create the account.
+So, it's done. It's not synced to our
+back end. We don't have our backend
+setup. So we are using uh Cloudfare
+workers uh as the back end. So we need
+to configure all of that. But
+this user creation is done on the clerk
+end. So authentication is done. So this
+setup is complete. We'll delete this
+user. And now what next I need to check.
+We need to create other routes pages. We
+were at the last uh step. We were
+creating this o pages. So this o thing
+is done. Marketing inside of marketing
+we need to create a pricing page. But at
+the end we are going to use clerk's uh
+pricing uh UI. So not a big deal. We are
+not going to use that for now but we'll
+do that afterwards if it's needed. And
+now inside of this I'm going to create a
+new route group which is going to be
+app. And inside of app, I am going to
+first create a layout. TSX. And all our
+routes are going to be here. The project
+route, the setting route, the dashboard
+route, and the analytics route. So
+inside of layout.tsx,
+uh I think uh that should be here. the
+rate limiting banner, our sidebar should
+be here for projects and uh those uh
+settings and everything. So that should
+be here but we'll do that
+afterwards. Uh let's write RFC here. Uh
+so make this as layout component. And
+now inside of this I'm going to create a
+new folder named as first let's have
+dashboard. So dashboard will have
+page.tsx. TSX
+RFCE.
+This is going to be dashboard page.
+Now let's have analytics
+analytics and
+page.tsx
+RFC
+analytics page like this. And then we'll
+have project page. So project and inside
+of this again page.tsx
+RFCE
+projects page like this and
+then we'll have settings page at last
+settings
+and uh
+settings should have a route group
+pattern. So
+new folder and inside of this
+double braces and we'll have rest like
+this and we'll have page.tsx inside of
+this. So all of the routes are covered
+like for clock buildings widget we also
+need a certain route. So that would also
+be covered. And uh this project is not
+uh like this. It would be with a project
+ID. So project ID should be there. And
+then we'll have like this. So project/
+project ID page.tsx.
+So like that dashboard is simple
+page.tsx and analytics is also simple
+page.tsx.
+Now, what other thing should we do?
+Uh,
+I think that's it for now.
+Let's write RFC here.
+Let's head over to our app.
+Are there any errors? No. Let's head
+over to dashboard.
+are not able to access the dashboard. I
+guess we deleted the user, right? So if
+we do have the user then only we will
+able to access that dashboard. Let's see
+if it's working.
+Okay. So the dashboard is here now. We
+are able to access it after the user was
+created.
+Let's refresh it.
+Yeah, user was created. And if I head
+over to
+hash and then head over to dashboard
+again.
+Yeah, we able to access that. So that's
+working. So uh our directory setup is
+also done. Now what next in the list?
+Just a minute.
+We need to define several types. So
+what are the types that we need to do?
+Just a minute. I'll check it.
+Okay. So we need types for project,
+chat, and analytics. So let's do that.
+Okay. So now let's get started with the
+types as I talked about. So outside of
+this I'm going to create a new
+directory. Uh let's call it types like
+this. And inside of types I'm going to
+have three files. First is analytics.ts.
+Next up is chat.ts.
+and other is project.ts.
+Do we have a space in here?
+Yes. Yeah. Fixed. Now, now uh first is
+uh I'll get the types for analytics. So,
+first is we will have uh let me do one
+thing. This is not a code. So, I'm going
+to paste it and I'm going to give you
+the source code for that. So let me
+write it down so I don't forget to link
+this in the description of the video. So
+I need to give you types files
+also need to give you the global CSS. So
+I'll make sure that I don't forget that.
+So I'll paste it here. I'll explain you
+now. Uh this is for analytics. Sorry not
+here. Let's head over to analytics and
+paste it. So in here analytics uh first
+is our model usage. So this is of
+breakdown of usage per AI model. So
+which model ID it is the name of model
+the count for model and percentage of
+total usage of AI generations from 100.
+So that is for that and this is just
+TypeScript types. So uh it makes uh
+helps us in intellisense and uh then
+activity item. Okay. So every activity
+like what have we done like if we have
+created an AI generation or have we
+triggered a manual edit from the file
+system or if we restored to an earlier
+version. So that is activity item the
+type of it then the project name project
+ID model which model we are using if we
+have given any prompt and created a time
+stamp
+again after that project stat. So this
+is statistics for project like project
+ID, project name, version count, how
+many total number of versions uh the
+project has. Then AI generations like
+how many generations uh of AI has been
+done. Then last activity when was done
+analytics data.
+So this is analytics data of to uh total
+users everything. So total projects,
+total generation, total manual edits,
+total restores, everything about the
+users account. So that is for that. So
+all of the analytics pages data would
+use this. We'll use this afterwards.
+Then we have data for chat.ts. So in
+here we have this image attachment like
+if we are using any image and that then
+we are converting it into base 64 to
+sending it to server. So that is that
+and media type is the type of the image
+if it's PNG jpg u we have given
+description here and the name of the
+image uh if there is
+then chat message like what is the type
+of message like if it is a string then
+uh again if we are attaching any image
+with that then a role is uh if the
+message is given by user or if it is
+given by any assistant or if uh there
+credits credits expired and we are
+trying to do chats then that kind of
+message is a system message. So that is
+that
+and uh then content of the message
+timestamp version number model change
+files images pretty explanatory
+selfexplanatory
+then chat session chat session contains
+project ID the all the messages created
+at create updated at so this is uh
+useful in the chat panel where uh all
+the data would be displayed so this is
+for that and now we need the data for
+project. So inside of this, I'm going to
+paste this. Now we have this project. So
+this project is the users current
+project that we are working on. The name
+of the project, user ID, ID, the model
+that is currently being used, current
+version of the project. Then project
+file. So the files of the project would
+be here. And now uh that project file is
+being used in here as an array. So we'll
+have lots of files. So every file would
+have a path of the file and the content
+of the file. So that is used in here.
+Now other things that are here are the
+version number, prompt, model files as I
+told change files. So this would be
+again an array. So change files would
+have the content of the files and uh
+type. So again this is AI manual
+restore. I explained it earlier created
+at file count and restored from. So it's
+just a version details. Then this is
+version meta. So this version meta uh is
+different. This doesn't have all the
+files. You can see that here we have all
+the files inside of project uh file uh
+array here. But uh there's no files
+here. We just have file counts and
+change files. So this is uh only for
+meta. This is a lightweight version
+metadata for the version timeline. So
+the timeline component. So that is being
+displayed from this. I'll explain you uh
+this again when we are at uh that. So
+let me save this.
+Save this. Done. And I'm going to close
+all of this files. Okay. What's not
+saved? Validator.ts. Okay. This is from
+next. Uh I don't need to do anything
+here. Let me close all of this files. So
+done. Now, next up uh in the list is
+going to be I guess setup of Cloudfare
+workers. So, I'm going to open up a
+terminal from here.
+Let's delete this. We have this the
+server running. So, let's make sure that
+is running as well. So, now in here I'm
+going to create a directory. So, MKDR
+worker.
+What next? Just a minute.
+Okay. So now after this I want you to uh
+do npm init- y. So let's head over to
+the worker directory first worker. And
+inside of here I'm going to write npm
+init- y to initialize uh npm not mp but
+package.json. And now inside of this I
+need to install hono jo nano id and
+fflate. So I'll explain you what we are
+using here. So uh Uno is a ultra light
+web framework for edge runtimes. Uh it's
+expressjs. Uh think of it uh like an
+express.js JS but it design it is
+designed for cloudfare workers and it is
+a very small package like it is uh of
+just 14 KB and uh if you are familiar
+with express then it's like express then
+Jose we are using Jose for uh JSON
+object signing and encryption so it's
+used uh when we want to verify clogs JWT
+uh with the back So it's used for that.
+Then we are using nano id. So nano id
+just uh generates unique id uh instead
+of u ids we use nano id which is much
+shorter and unique and url safe. So we
+are using that and uh uh ffleate. So
+ffle is useful for javascript uh uh zip
+uh operations. So we are going to export
+our project at uh as zip. So uh for that
+we are using fflate. So all the packages
+that we need was installed. Now we need
+to install the dev dependencies which is
+wrangler typescript and cloudflare
+worker types. So we need Wrangler
+TypeScript uh Cloudflare worker types
+and yeah uh Wrangler is a cloudflare CLI
+uh it's like versal for workers so we
+are using that
+now what next while this is being
+installed inside of worker I'm going to
+create several of directories first we
+will create source directory tree and
+inside of source we are going to create
+uh what do we need? I guess there was
+this middleware.
+Yeah, we need several of files. So,
+first inside of worker, I'm going to
+create uh
+what's called
+Yeah, we need to create a Wrangler.json
+file. So, let's see if there's a command
+that can generate it. Just a minute.
+Just a minute. I'll just check it.
+Okay. So, to check if Wrangler is
+installed, we can use this from
+Cloudflare. So,
+npx wrangler hyphen iPhone version and
+uh
+yeah it's installed. So, the version is
+4.72.0.
+Now,
+for configurations, we need the Wrangler
+JSNC files. So, we can use this from
+here.
+But
+okay so it can automatically create this
+file. So inside of this file we need the
+uh name of our worker and uh KV name
+spaces and R2 buckets. So KV name space
+is key value things. So the key value
+things stores it like database and R2
+bucket stores our files and everything.
+So let's see if we can create it using
+the npx command. So npx wrangler
+kv name space. So for key value pairs we
+create a new name space and create a
+command with the name as metadata.
+Okay, it's creating in the uh
+remote location which is my CloudFire uh
+uh actual CloudFire dashboard. But we
+are running this locally. So let's
+create a new file here which is going to
+be wrangler.json
+C like this. And inside of this let's
+write few things. So uh first it's going
+to be dollar schema. So schema is going
+to be at node modules node modules
+slash wrangler
+/config
+schema dot JSON like this. Then the name
+of this worker. So
+name is going to be lovable
+cologne recording.
+After that I'm going to give it a main
+file. So main file is going to be source
+index.ts. We need to create this file.
+And after that uh let's give it a
+compatibility date. So this is going to
+be 2025
+0101.
+And then let's give it the KV named
+space. So KV named space and uh our two
+buckets. So what I'm going to do is just
+a minute.
+I'm going to paste
+this right here. Key name spaces array
+binding of metadata. We'll get our KV id
+here and our two buckets which is files
+and this bucket name is lovable clone
+files inside of this worker and uh
+we'll get the ids now. So let me create
+uh those. So I'll run that command
+again. npm npx wrangler kv name space
+create metadata this thing and we'll get
+the ID.
+Okay.
+Value expected on line one.
+Okay. We have not saved that file. Let's
+saved it. And let's
+it again.
+It's doing on remote. So for local
+what are the available flags? Let me
+check config.
+Okay. So
+is there something local for this?
+This is directly adding key values and
+this is directly adding this. So local
+flag is used for that. But what did we
+use?
+Yeah, we used this but it's still
+creating in remote. So let me check just
+a minute.
+Okay. So, um I did research about it and
+it tells me that for local uh any ID
+works but when you deploy it uh we need
+to change the binding to something
+unique. So I've used metadata so it's
+giving me error and uh I think we don't
+need to change the ID for now. For now
+it would just work perfectly. And now
+let's uh
+work on other things. So I'm sorry for
+that. Uh next thing is inside of this
+what should we do? We need to create the
+index.ts which uh initializes the new
+hono app and uses the star pattern.
+We need to have routes services
+middleares
+generations and everything. So
+we'll use that. Just give me a minute.
+Okay. So, next thing up is inside of
+this worker, I'm going to uh write ts
+config dot JSON.
+And I'm going to paste this tsconfig.
+And uh I'll make sure that this is
+included in the description of the video
+as well. I'll just create a demo git
+repo and include all of this inside of
+that. So don't worry. So ds config is
+there. Next up we need the
+dev.env.dev.env
+not env butdev. So this is just uh
+environment variables. Uh we'll
+configure this later. No need uh for it
+now. Then let's create an index.ts
+inside of worker
+uh inside of source directory
+index.ts
+and types.ts TS
+also create some directories which is AI
+this is for AI generations providers
+then middleares this is going to be for
+O not middleares just middleware
+then we are going to use
+not use but but create routes all of the
+routes would go inside of this and then
+services
+like this. And what should we do next is
+let's create the uh index.ts first.
+Before that, I would like to create the
+types.ts inside of this.
+So inside of this types.ts we have the
+environment variable files. So we need
+the metadata then uh KV name space and
+things the files which is our R2 bucket
+and clock issuer clock JW keys URLs uh
+then AI API keys then clock web hook
+secret and uh front end URL of the app
+and uh app variables is user ID. This is
+from clock. So uh I'm just saving this
+whenever it's needed. Nothing special.
+And inside of index.ts, what I'm going
+to do is let's initialize everything. So
+first let's initialize our hono app. So
+const app equals to
+uh this is going to be
+new
+owner
+new horno and uh we what we'll do is
+we'll import huno from hono not
+automatically getting imported so let's
+import it so import huno from huno like
+this and uh we need the env from deps as
+well and o middleware from o it's not
+created yet then
+let's uh comment this out and uh with
+env we also need the app variables that
+we just created and automatic
+suggestions are here we initialize new
+huno with env and app variables like
+this what's The error env has no
+properties in common with type env. So
+instead of this what we'll do is we'll
+write bindings
+like this bindings.
+Okay. This should be
+object bindings inv app variables
+is going to be variables.
+So variables like this app variables
+done initialize it. Now we need the
+course middleware. So we are going to
+use app dot use just like we use in
+express. So app dot use star async c of
+next. And inside of this
+what we are going to do is const allowed
+origins equals to c.frontendurl front
+end dot URL but it's not in an array. So
+front end URL if uh we have given the
+front end URL in my variable or else
+it's going to be local is 3000
+then let's have con middle where equals
+to course
+and uh inside of this
+first we need to import the course so
+it's not automatically imported I'm not
+sure why so we need to import it from
+hono course so import course from hono
+course like this. Now inside of this
+let's pass an origin. So origin is going
+to be an array
+with allowed origins
+hello methods is going to be get post
+put delete and options. We also need to
+add patch
+done. After that we will have allow
+headers which is going to be content
+type authorization.
+Max edge is going to be not this but 600
+and credentials is going to be true like
+this. So that works and next we'll
+return our middleware. So return
+middleware C of next and we're calling
+the next function after that. So it
+would uh go onto the next phase. Now we
+need to have some public routes for
+testing. So first public route is going
+to be a health app uh health route to
+just check if the app is working to
+check our configuration. So I'm going to
+use health like this.
+And inside of here I'm just going to
+return C.JSON
+data. Okay. And I'm also going to return
+the time stamp. So, and stamp is equals
+to new date like this. All right,
+perfect. And it's saved. Now, next, what
+should we do? Uh, we just need to test
+this application if it's working or not.
+So,
+let's write uh npx wrangler dev. And
+where's my terminal?
+npx wrangler dev this command to start
+it. It's ready and it's serving on the
+local 8787.
+Let's head over to here
+and
+let's this is working. So this uh W
+wrangler is working. Now we just need to
+get the health route and
+health is not working. So there is some
+error.
+I missed anything.
+Yeah, I need to export the app. We
+didn't do that.
+So, inside of here, export
+default app like this.
+And it's done. Let's reload the URL now.
+Let's recompile this.
+Okay, we are getting status of okay and
+time stamp. So, our back end is also up.
+front end is also up. So setup of our
+hono and uh clerk and front end and back
+end is done. So basic thing of our
+application bootstrap is done. We can
+move on to the next phase now which is
+the actual authentication and storing
+everything and uh verifying the user
+with uh clo GW keys and everything. So
+let's get started onto that.
+Okay. So now let's get started with
+clock. So uh clock authentication. So
+most of our setup is done. So we just
+need to validate our GWD and stuff like
+that and protect the route based on
+that. So first uh what should we do is
+let's head over to dashboard of clerk
