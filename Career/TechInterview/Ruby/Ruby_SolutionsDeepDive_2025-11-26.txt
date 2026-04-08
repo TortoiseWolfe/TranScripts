@@ -1,0 +1,1229 @@
+All right. Happy Thanksgiving week to
+those who are celebrating. [laughter]
+Uh maybe I'm sure I could find like a
+big ham or something here somewhere. Um
+but yes, happy Wednesday to everyone and
+let's dive right in. So, we're going to
+be doing some mock interviews today. And
+I I don't know why I can't keep track of
+my thoughts right now. Before we dive
+into today's session, what questions do
+people have? Practicing preparing
+general thoughts. What questions do
+people have?
+Well, I just more or less stated mine
+already. And you know, I like the idea
+of um going through it out loud. I'm I'm
+sort of a writer and it's the idea that
+you the interviewer can't see me writing
+my thought process out. So, you know, I
+have no choice but to talk it through.
+And a good piece of information is to
+know that you have to talk it through.
+It's best to talk it through when you
+start reading it. Um I I never actually
+thought of it that way, but but yeah, if
+it doesn't sound right, you know that
+you have to go and look at it again.
+>> Um that's very that's a that's a good
+observation.
+>> Yeah. So that's my personal preference
+is reading it out loud from the
+beginning. But if you do want to read it
+to yourself first, I think that's
+totally fine. What you said though is
+writing it out. I think there is a way
+to do that. You can still use pen and
+paper if you need to and then
+talk about it or talk about what you're
+doing or you can open like Microsoft
+Paint or you can even, you know, we're
+using Zoom so you could open a
+whiteboard and like type using keyboard
+on the whiteboard or draw on the little
+whiteboard. um
+like there are ways to to do the the
+writing things out without
+um having to just like only talk about
+it because if that's the way you think
+then that's the way that you need to
+process the problem anyways. So the best
+way to do that is just figure out how to
+incorporate it into the the digital
+digital scope. When I first got started,
+I was writing I had a pen and paper on a
+little notebook right next to me and I
+would take a minute, write down
+everything, track numbers through the
+list or figure out how he's going to
+approach the problem and draw things out
+on pen and paper and then come back to
+the problem and actually work on it.
+Since transitioning to doing these where
+we're, you know, all I have to kind of
+showcase all my thoughts here, I've
+gotten more accustomed just by
+practicing to doing like the code
+comments or even like copying the like
+array or whatever data structure we're
+looking at into the code comment and
+kind of walking through it like that.
+But that's not how I started. And if I'm
+on my own, I probably would prefer to
+grab a pen and paper there, too. And I
+think you can do I think there's a
+better way to do it than just cutting it
+out completely, I guess, is what I'll
+say.
+>> Okay.
+>> But you kind of have to experiment.
+That's that's the whole the whole
+process of it is experimenting.
+And this is good for in the internship
+or even in, you know, in the real world,
+quote unquote. Um there are lots of team
+meetings, design meetings, production
+meetings, all that kind of stuff where
+you have to explain what's what a
+problem is or what's going on in the
+behind the scenes or what's going on in
+the front end or what's going on with
+your development. Like how are you
+explaining those features? And if you're
+a pen and paper kind of person and
+you're not in a physical office, you're
+on a Zoom, then pull up a whiteboard and
+like let me draw out what this problem
+is for you guys.
+>> Uh do we have whiteboards attached to
+Zoom?
+Yeah, they're kind of if you go to the
+more settings, there's a thing called
+whiteboard.
+>> I believe everyone should be able to do
+it. It might depend on the Zoom settings
+and only I can do it, but
+>> Oh, okay. Well, yeah. Oh. Oh, yeah,
+there is. There is. [clears throat]
+Yeah. Okay. I'll have to play with that
+offline, but thanks. I didn't even know
+that was there. Okay.
+>> Yeah. Thanks for the question. Any other
+questions people would like to ask or
+just anything people would like to talk
+about? Um, anyone want to share any
+coding accomplishments from this last
+week?
+>> I got a encrypted messaging app to work
+yesterday.
+>> Cool.
+>> I was pretty proud of that.
+>> That's fun.
+>> Still touching up like little details
+like you can find a connection, but then
+it's a little confusing how to send them
+a message, but the the basic
+functionality is there.
+Just working on the UI.
+Yeah, unrelated, but I just recently fig
+uh saw that like
+you can basically do the internet
+without the internet. I I don't even
+know how to describe it. Like you can do
+websites and you can do
+netbased protocols without going through
+the internet. So if you want to like
+I don't know avoid the government or
+something you could do that technically.
+That seems a little out of my league
+currently though.
+>> Are you talking about the dark web?
+>> No, I I don't know. Maybe I wanted to
+say that. I'm not sure. But it was it
+was more about like what do you do if
+like the internet or if like the
+connection systems go down in your city
+do like a power outage or something like
+that? How can you make sure that there
+are still like that you can still have
+connections to the global space? And so
+people were like brainstorming ideas
+um using older systems
+but like modernizing them. So, I I don't
+really understand it, so I can't explain
+it that well, but that's kind of where
+it came from is that um you know, there
+was a big power outage here in Spain
+um in like April
+and everything kind of shut down and so
+like if you needed to access your bank
+and you don't have cash and you need to
+buy food, like can't can't do any of
+that. So, like how do you call for help?
+how do you do any of these things
+without the internet um in in a big city
+like this? So, that's kind of like where
+the need came from.
+>> It's very interesting. Almost seems
+impossible to be able to
+uh get things running without the
+internet connection.
+>> I know. But apparently there is like a
+lot of alternatives. So, who who would
+have thought?
+Yeah,
+>> I could I could almost see bypassing
+every step except for the last one. It's
+like if the website's on the internet
+and the internet's how you get to the
+website, like you still got to if your
+end destination is still the website,
+it's still on the internet. You just
+bypassed
+all the routes to get there and got to
+it directly somehow,
+>> right? I mean, the the structure of the
+internet is is multi-layered, right? So
+like maybe you can cut out some of the
+layers but not all of them.
+Um
+I mean so yeah
+>> but I can also see the advantages like
+you know because we've had major outages
+at AWS and Cloudflare. I think there's
+another one this last year.
+>> So I can see when major outages like
+that you want some kind of workaround to
+get to the end point but it feels like
+the endpoint would still be on the
+internet at some point. I don't know.
+Right. Curious what you got there, but I
+don't know where to go.
+>> I mean, there's still an IP address that
+you have to connect to and that has to
+be publicly available. So, how do you do
+that without the internet?
+>> I guess
+>> can you go through the phone lines
+>> potentially
+because remember Well, okay. Back in the
+day when they had modems.
+>> Yeah. Dial up.
+>> Thank you. Dial up. Yeah. Um,
+that's the way a lot of people used to
+originally get on AOL.
+>> I mean, that's still how it works now.
+It's just we use Wi-Fi, right?
+>> Yeah. People just don't use the dialup.
+But, you know, I was thinking as an
+alternative to the internet. Is there
+some way you could like um get to the
+website through a dialup?
+>> Maybe a slower bandwidth like maybe it's
+just SMS streaming or something.
+I I didn't even know this, but I just
+recently watched a uh video on YouTube
+about undersea internet cables, like the
+big humongous like fiber optic cables
+that they laid on the ocean floor.
+And that's how we connect from continent
+to continent. I didn't even know that
+was a thing. Yeah.
+>> I thought it was all like satellite.
+>> Yeah, I did know about that, too. That's
+for like fiber the fiber um higher speed
+>> internet the length the total length of
+the those fiber optic cables is like
+>> something crazy like thousand hundreds
+of thousands of miles long.
+>> Well, that's an example as well is the
+like the corded plugged in kind of cords
+and then like using satellite so using
+you know radio waves or whatnot. Those
+are two different ways of translating
+information. So even though you're still
+having access to the same like website
+or the same like kind of systems, the
+way to transfer information is
+different. So I think that's kind of
+maybe the idea behind it as well is like
+how are you translating the the
+information if not through like it's
+through the web but not through the web.
+I don't I don't know. Again, I don't
+know. But I I think there's some
+interesting stuff there. [clears throat]
+>> And how fast would it be too? I mean,
+um, if you didn't have the internet and
+let's say you reached your website
+through dialup or however you were going
+to do it, what would be the download
+rate if you were going to try to get
+something off the website?
+>> Well, and see, that's I don't think it's
+was necessarily for websites. So, I
+think it could be like if that was your
+long-term plan, you would obviously need
+more planning to figure out how to do
+that. But I think the idea was more
+about like communication
+>> which would be a lot simpler, right?
+Like you don't need to worry about
+um well and then that raises another
+question because you can like send text
+messages through the web. So that's like
+not connecting to a specific
+>> like website but it's connecting to a
+specific endpoint.
+>> We spent too much we spent too much time
+on this topic.
+>> [laughter]
+>> Um, I was just kind of looking at a
+couple different problems. Um,
+I'm coming across I don't know. I don't
+want to give things that are too easy
+for the mock interviews, but I also
+don't want to but maybe that's good
+because we could go through them quicker
+and just kind of get practice for where
+people are at. So, yeah, we'll start
+with these. I've got two here. They're
+pretty easy, so I think I would give
+shorter time for them.
+Um, so let's see if we can get through
+two of them and we'll do 15 minutes
+each.
+And I fully believe that everyone can
+get through either of these. All right.
+So, who is interested in doing a mock
+interview today?
+>> I don't want to hog it. Anybody else?
+>> I don't mind it. I don't mind it either.
+>> All right, we got our two volunteers.
+Great. Um, so we'll start with
+Lisa because
+John went last time [clears throat]
+and we'll do
+we'll do this one. [clears throat]
+All right. So, I'm going to put this in
+the chat if you want to open that up.
+So, the idea here is just to practice
+all of the the skills that we've talked
+about week to week. Um, I'm not so much
+focused on getting all the test cases
+passing, but I think you can. Um, but if
+you do, then that's great, too. But more
+about like making sure you're taking
+your time with each step, right? So, are
+you reading through the full problem?
+Are you sending out your thinking? Are
+you pulling out the key information? Are
+you building a game plan? Are you making
+assumptions? Are you testing your
+assumptions? Are you testing
+incrementally as you write your code? So
+on and so forth. Um,
+you know, focusing more on the process.
+>> Can you see the screen?
+>> Yep.
+So I'll give you about 15 minutes for
+this and then we will circle back.
+>> Okay.
+I see given a large large integer
+sending an integer
+array digit.
+So we have digit we have list
+where each digit
+okay the digit are ordered from most
+significant to least significant from
+left to right order. The large integer
+does not contain any leading zeros.
+Okay,
+so
+I have a list of integers. So what this
+is saying?
+Oh. Oh.
+Oh, yeah. I remember this one.
+Okay. So, I have a list
+um of integers and we want to increment
+uh by one. So my solution on this one
+was to
+convert
+to um one number
+and add one
+and then convert it
+back to
+a list of integers.
+Okay. So,
+um
+let's see. All right.
+And we we would return
+we would uh return
+with a new number
+list.
+So in order to convert the list I need
+to convert them into individual
+numbers. So I need to convert them into
+a smaller number. And let's see how I
+did that. Let's see. All right. So,
+call it
+equals
+equals number. So, I want to
+do that. So, for
+Sub=
+Z.
+This is called
+digits
+might be
+if I do this right syntax
+Um,
+doesn't
+think that's the way we did it.
+Okay. So, we want to test that and I
+want to check
+each time to see if it's actually
+working.
+Did that convert that right? Of
+course not because I don't know. Let's
+see.
+Make sure you're reading the errors.
+>> Gotcha. Yeah,
+I think
+I think that was syntax.
+Okay. Ant object. Um,
+so we probably might want to make it.
+See if that's right.
+Um is it append?
+>> Okay. Attribute has an attribute append
+whole digit I digit I.
+Um
+wait a minute. Let me think about this.
+We want the the number. We want to add
+it. So,
+but I don't want to add it.
+I want to add it like a string not like
+a so um for example if the number is one
+two three
+um just to explain this I want to add it
+like 1 + 2 + 3
+and then convert it into a digit add the
+one and that's what I need to do so the
+conversion should be in
+so should I
+So this is the number that I'm pulling
+from digits.
+Should it be plus
+I know this works this way. I just I
+don't see is it okay to check the
+conversion what how to do the syntax on
+this?
+>> Absolutely.
+string.
+Oh, I'm sorry. Backwards.
+Um, yeah, I could do it that way, too.
+So, can we do the list the way
+to string? So,
+um
+Okay. So
+once I get the for loop,
+I want to
+um
+think I need to convert it first.
+It's easy.
+Oh,
+plus one.
+Now
+we need to convert convert it back
+because now we've added it to 124 which
+is the result that we wanted to be given
+in this case. Um we want to convert it
+back. So, in order to do that,
+I got to look that up, too.
+Um,
+and I have my solution. And it actually
+works. So, one second. Let me figure
+that one. Let's see.
+So
+be a strip, right?
+Split.
+So to do that real quick is um
+um
+ready
+Um
+get that wrong. See
+equals string.
+Um,
+why is that not coming to me for digits?
+I could do another one of those. So,
+No, can't do it though.
+Read the arrow. She says
+in is the object notable.
+Um, it's a type error. Type error.
+Um and
+I have to convert that
+should
+we need a splitting. So, we need to do
+the split.
+Uh split. No.
+In a
+so would be in whole dot
+split.
+Is that right?
+It's not right.
+All right. So, we've reached our 15
+minutes. Um, and I want to keep us
+moving, but
+um, yeah, why don't you walk us through
+the problem real quick? So, the problem
+is, um, basically, um, see, I really
+need to know the syntax. Um,
+we're given a large integer um, and we
+want to take that large integer and
+increase it by one. Uh, there are no
+leading zeros. Um, and it's left to
+right order. The significance of this is
+if you want the output of the next
+number in the lit and you want it in
+digits not into the whole number itself.
+So in order to increment it we would
+have to convert it into a whole number.
+So um the best way to do that is to
+convert it into um either a whole number
+get to the whole number add one and then
+convert it back to the list. Um so in
+this process this is where it's actually
+converted into um the string itself and
+then I converted it into um a whole
+number added one and then I was in the
+process of once I got the syntax down
+for this uh would be converting it back
+to um um a a list of digits. Um, so it
+would be 1 2 3 4 and I think if you look
+down here, it's already here. I just
+need to put it into the list. So that
+was the that's the and that would
+resolve the uh issue
+>> solve the problem and it works actually.
+>> Yeah. So I you know you at the me at the
+beginning you kind of mentioned that you
+had seen this problem before. um which I
+think is great actually for this case
+because that allows you to focus okay I
+know the approach um so I can focus more
+on the process part which you were and
+that was really good um kind of like
+when we did the lesson on reverse
+engineering solutions a while back it's
+like make sure you understand the
+problem then delete everything and how
+would you kind of rebuild it from
+scratch so that's what you're doing here
+and I really enjoyed the
+you you started going through the the
+loop and then you got a little stuck and
+you're like all right let me take a step
+back. Let me go up to my comments and
+like spell this out. I'm going to do 1,
+2, 3. But how do I actually do that? How
+do I add to a string? I don't want to
+use a pen because that's an array. So, I
+have to do maybe the plus. I liked
+hearing that thought process and I liked
+that you kind of walked it out in the
+code comments and that seemed like that
+helped you. And then that also showed me
+that you understood the problem and
+understood what you were doing and I got
+to hear that process. So, that was
+really great. Um, I liked [laughter] I
+like seeing you or hearing you say,
+"Read the error. Read the error." Um,
+so that was good. I feel like it's very
+easy to just kind of see like, oh,
+there's an error and it's with this line
+and it's with this like this part of it.
+So maybe I so I understand it, but then
+once you actually read like, oh, this
+thing doesn't do this thing. And then
+you have to sit there and think about
+it. Well, what does that mean? Um,
+that's how you kind of work through the
+errors. So, I think you're definitely
+probably a few minutes away from getting
+it um completely typed out
+>> and I know you know what to do next.
+It's just like making sure you have the
+right syntax and the right the the right
+methods and stuff.
+>> Yeah, I I wanted to make sure that I
+wasn't I got a little nervous because I
+didn't I wouldn't make sure that I
+wasn't going stepping over my bounds
+when I was looking at the format for
+map.
+Um because
+>> no. So all that stuff you are able to
+look up. If you want to look up how a
+function works, if you want to look up
+how the syntax, if you want to look up
+how to do like a simple a simple thing,
+as long as you're not looking up like
+how do I um I guess what would be the
+example here? How do I take a list of
+integers and turn them into a number and
+math on them? You know, where it's like
+going to give you a full code template.
+That's what we want to avoid. But in
+this case, you're looking up a very
+discreet item. How to use map, how to
+use split, how to make a conversion from
+a string to an int. All of those things
+are totally fine.
+So if this was the case, I could have
+cut and pasted this and
+um
+>> yep.
+Okay.
+>> And that's where you want to take the
+time to actually understand the document
+that you're seeing. Maybe run it, maybe
+test it a little bit, play with it in
+the editor, and then come back and and
+add it here. But it is close. I mean,
+it's very close. And the for loop you
+had earlier would have worked as well.
+Um, you just needed to do a couple a
+couple different things there. Um, so
+yeah, I mean that was that was good. But
+your process stuff was really good. I
+really like that. And then it's just
+getting through those final touches and
+kind of
+>> Yeah, I haven't your confidence with
+those decisions.
+>> Yeah, I think um yeah, I I know I'm like
+super close. Um, I don't know if I need
+to convert it back to um
+um whole number. No, it already is a
+whole is integer. I didn't know if I
+needed to convert it back to string and
+then do that. Um or um
+if I could convert it from this point
+forward. I think I can.
+>> That's where maybe you could go back
+again like you did before and say, "All
+right, I need to take a step back. I
+need to think about what I have." And
+what I have right now is I have hole. it
+is the integer version of the number I
+need. So, what are the next steps I need
+to take? That's what you do like you did
+at the beginning. Type it out. That kind
+of thing. Um, I think that's a perfect
+moment to step back again and jump out
+of the code and say, I need to diagram
+this really quickly and then I can jump
+back in.
+>> Yeah, I started getting nervous.
+>> Yeah, I know. The time the [laughter]
+pressure gets to you.
+>> Thank you, Ruby. I appreciate it.
+>> No, I appreciate you as well. Um, all
+right. Are you ready, John?
+Yeah, go ahead.
+>> All right, I'm going to put the next
+problem into the chat. Same as with
+Lisa, we're going to give you about 15
+minutes if you want to open that up.
+Make sure you're logged in and share
+your screen.
+Oh, you've done this one. Okay.
+I got to see
+I got to see if I can find another one.
+And
+I did have Let's see. Let's see.
+Okay, I do have another one here for
+you.
+Put that to the chat.
+>> [snorts]
+>> All right, cool. So, we'll use this one.
+[clears throat]
+Same as before. We'll give you about 15
+minutes and yeah, good luck.
+Given a sorted array distinct integers
+target value
+return the index
+target is found
+not turn index where it would be
+or inserted order must write an
+algorithm with zero log n runtime
+complexity
+>> you can avoid that for the moment.
+5
+012. Okay.
+Well, basically we're searching for it.
+If it's not found, telling where it
+would be found, it was there. Target
+two.
+If it was in order would be at index
+one,
+seven, zero, one, two. Okay, seven's not
+there. It would be found. It would be
+found at index 4 if it was inserted.
+Mouse is acting funny.
+Not sure if it needs batteries or what.
+Change a setting on it.
+I'm just trying to get a copy of that
+over here.
+Okay.
+I think what I did wrong last time
+do more JavaScript instead of Python.
+So, we want to make sure turn the numbs.
+Nums target.
+Oh, I didn't.
+Yeah, it's nice. Well, doesn't last
+long, does it?
+based on the screen.
+Lo
+All
+right. So
+I want to return the index.
+group seven
+cards here.
+Oh, sorted
+it anymore.
+All right.
+Uh
+Searching for the index.
+So, this would be a moment where it'd be
+nice to know what's going on with your
+thought process as you're working
+through it. Um, just a reminder for when
+you are prepping.
+>> Just trying to remember how to get the
+index. I get turns out it's actually
+just the index
+which is kind of nice.
+Guess it's the good thing about Python.
+I don't usually just call things what
+they are.
+So what I'm actually looking for is the
+index of
+target.
+So index
+see if I got it there.
+Oh,
+forward.
+Okay, it's actually a good thing two is
+not in the list.
+Let's do one of my test cases. Yeah,
+targets two. Okay, that's progress.
+Actually,
+it's not always going to be there.
+It's even more confusing because you
+want to find an index of something
+that's not there.
+So guess what for loop?
+So if nums
+index
+equal to Target
+first.
+Oops.
+like the fact I was trying to turn
+something that was undefended.
+It was not in list. We knew that.
+Oh,
+>> okay. So, we have gone a little over. I
+just wanted to see um where you're going
+with this.
+Okay.
+>> Yeah. I don't know if I'm close to
+getting it. [laughter]
+>> Um I mean I think you I think you've
+done you've accomplished a bit. So like
+if I had to break it. So that's actually
+what I wanted to say is that it's hard
+to know
+in this case
+what you think about this problem
+because you haven't shown us what you
+think about this problem. [laughter]
+Does that make sense? Like
+[clears throat]
+>> I don't think out loud I guess
+I probably should have done more pseudo
+code to try and figure out how to get
+there first.
+>> Yes. or even breaking out what are the
+steps because I you like I remember
+interrupting you. So sorry for
+interrupting your train of thought there
+where you were just kind of staring and
+then like scroll like clicking in the
+for loop and then clicking back to the
+index and you were trying to decide what
+to do next and there was like a solid
+minute or two where no action was being
+taken. You were thinking through and I
+could see that you were thinking through
+but we have no idea what's going on.
+What questions are you deliberating?
+what um what problems you're working
+through. Those are all things that we as
+the interviewer need to hear and see to
+think about to see how you think through
+problems because
+>> if you it could be that you are asking
+all the right questions and doing all
+the right things but in your head and
+>> you could get to an end result but
+that's not going to look good because I
+don't know what your process looked like
+to get there. So, I can't say if you
+have a good problem solving process that
+would be a good fit for the role that
+I'm looking for. If you're not able to
+communicate what you're thinking about
+as you're kind of working through
+problems. So, even if you can solve
+problems,
+being able to explain what's going
+through your process and walk us through
+your process is a big key for interviews
+specifically.
+>> Um,
+>> I think that's more than just a tech
+interview.
+>> Yes, it is. I see that I see that in
+other parts of my life where I'm
+thinking through something, but I'm not
+explaining what I'm thinking through to
+people around me necessarily. So, I
+start taking action on those thoughts
+and they're like, "What are you doing?"
+Like, "Well, I have this idea." Like,
+"Well, what was the idea?"
+>> I do try to keep it focused on
+>> Yeah, I do try to keep it focused on
+like the tech interview, but yes, they
+do always have other applications
+outside of it. Um
+>> [snorts]
+>> uh so actually I like to say that I
+usually like to say that things that
+apply for the technic interview apply
+outside the tech interview as well but I
+don't know sometimes people don't like
+hearing that like well this is just my
+way of doing it so I'm not going to
+change that sometimes maybe you do I
+need to be flexible about that. Um so I
+mean like for the code that you have
+here I think you are on the right path.
+If I had to break up this problem into
+chunks, it would be what? It would be
+you kind of kind of said it a few
+different ways and in different parts,
+but like um determine if the number is a
+part of the list, yes or no. If it's
+not, how do I return what should where
+it should be? Um,
+and as you're working through the
+process, you remember that index was a
+method that you could use that would
+tell you if a target was in the index or
+not, but then it was throwing a value
+error because it couldn't find it. And
+so then you were working on a new
+problem. All right, well, what do I do
+if it doesn't find it? So, those are all
+different ways that the problem has to
+be chunked. And if you had if we had
+been able to see that those chunks
+existed before you started working
+through them, it might have been a good
+reference point for you to see, okay,
+first I have to do what? I have to go
+through the list and see if my target is
+in there. That can be something I can do
+in code later. I have to figure out
+later, but first I'm going to write that
+as a chunk that I have to do, a problem
+that I have to break down. Second part,
+if it's not there, what do I do? If it
+is there, what do I do?
+All right, if it's there, I can return
+it. That's simple. That's easy. If it's
+not there then I have to say what what
+do I have to do? You have to return
+where it should be if it was there. Um
+which is a different kind of problem
+altogether. And so maybe you have to
+break that down. So then you could start
+writing code there or you could continue
+chunking it even further before writing
+your code. Um either way would be good.
+And then that way as you're working
+through you have these reference points
+of this is where I am and this is what's
+coming next. And as you're thinking
+through your problem, you're not
+thinking about like, oh well, I'm
+worried about this step three steps from
+now about what to do if I don't find it.
+We're not worried about that right now.
+We're only worried about how to get
+through the list to see if my target is
+there. And I think you were going
+through a couple of those like problems
+thinking steps where you're trying to
+think of a problem that is a few
+problems down the line instead of
+focusing explicitly on the problem in
+the moment. But I can't be sure of that
+because we weren't really seeing that
+process. Um, so I think it's possible
+that you have a lot of the steps there.
+Um, but we need to see that. Does that
+make sense?
+>> Yeah.
+>> Would this be what is uh the problem
+where we would go and do binary search
+for the possible number if it's not
+there?
+>> Um,
+>> so
+this this problem is basically asking
+you to write a binary search. That's
+what it that's what it means. It's write
+an algorithm with O log of nin runtime
+complexity. So it wants you to write a
+binary search. It's just not telling you
+outright, hey, write a binary search.
+Um, but for the purposes of today's
+session, I didn't want to focus on that.
+I just wanted to focus on what is your
+process of working through the problem
+regardless of what it's specifically
+asking. Um, but yes, so it wanted to do
+a binary search. And part of the
+algorithm of the binary search includes
+the aspect of what do you do if you
+don't find it? Um,
+>> right.
+>> Okay.
+>> Which is to return negative one. But if
+you've gotten to the point where you
+can't find it, you have basically you're
+always having. So you would be between
+two numbers. So you would by virtue know
+what the index is. Um because the goal
+of binary search is to return the index
+of the position of the target or
+negative one. But if we change the
+negative one to something else like
+where it should be your final result
+will be two different indexes. So you
+should be able to determine which index
+to to give it based on that um from a
+high level. But in this case tackling it
+from a different direction of just like
+how do I do these step by step um not
+focused on binary search algorithm or
+not focused on a specific efficiency
+what is my process go through the list
+find target if target's not f found go
+through the list figure out where what
+indexes it should be and then return
+that index um and you can do that
+through a binary search or you can do
+that through a different process
+Another method be add the number to the
+uh add the target to the list sort it
+and then pull the index
+>> I mean is that a way
+>> so if we look back at the problem
+statement and this is also another good
+thing about pulling key information out
+of the problem what does it tell us
+about the array in the first the first
+sentence
+>> it's sorted
+sorted array
+>> sorted and distinct. Those are both
+really key pieces of information to
+know.
+>> So, you don't have to sort it or you
+don't have to do anything special with
+it. You can just increment through it
+and figure out
+what should be here, where, when, how,
+why, you know, all of those things. Um,
+now you did bring up the index method,
+which is a good route to take. However,
+we kind of learned this a few weeks ago
+is that index when it doesn't find a
+target, it raises an error. So, it
+throws an error. But there is another
+method that does exactly the same thing,
+but instead of throwing an error, it
+returns a negative one. So, at that
+point, you kind of need to know that to
+make the decision of like, oh, well,
+index wasn't the right one, but if I
+look up index, I can find the right one.
+Um or
+>> you could take on the effort of how do I
+handle when an error is thrown. Um which
+might be too much effort for a leak code
+problem but there is syntax there is you
+know there is a way to code for when an
+error is thrown and how to catch it more
+or less. Um so that is still an option
+but you kind of need to know that or
+know to look up that concrete element
+how to catch when an error is raised in
+Python.
+Yes.
+>> Hey, um, Ruby, you know, this is one of
+those problems that is easy to
+understand what it's asking for you to
+do, but I I got a little sidetrack here
+or a little confused when I'm looking at
+the actual function itself.
+Um, I understand
+for example like the nums colon list in
+I mean that's the array of integers. the
+target colon int that should be your
+target in that you're looking for
+>> what about what is self what what is
+that
+>> so in most cases you can ignore that
+it's because of the class so leak code
+has for the purposes of running these
+test cases they've chosen a class-based
+classbased approach and so you have at
+the top class solution and then search
+insert is a function excuse excuse me, a
+function that is written within the
+class. So that would be the same thing
+as using like
+the append method for an array or um we
+looked at like the find and replace and
+count methods on strings.
+If you created an object or a variable
+from the solution class,
+you could do variable search insert and
+call it like a method. Um,
+which is a long-winded way of saying
+that self is just the way of tying the
+function to the class. It's a required
+parameter as a class member. Um, but for
+the purposes of writing your function,
+you can ignore it.
+So we will see that a lot in a lot of
+these leak code problems or
+>> in le code.
+>> I think it's I've seen it in every one
+so far, haven't I?
+>> Yeah, it's in every single one. Yeah.
+>> Almost like you could ignore death. I
+mean class and death is always going to
+be there. So I don't really think about
+them.
+>> Yeah. If
+>> if I were to reexlain it, I would say
+you could think of it as instead of
+class solution, if this was class string
+and definition instead of search insert
+definition
+replace. So when we use the here, I'll
+I'll steal this.
+>> Yeah, it was actually on the repeated
+substring pattern problem, the one that
+you gave out last time, which I have on
+my screen right now. I just I don't know
+why I got mixed up with that. I guess
+because it's like it's a long function
+with a like the parameters and it's like
+very long. The line is very long. So I
+just I don't know some I just I paid too
+much attention to that this time.
+>> No, it's good to be able to break that
+down as well. So text is
+I mean behind the scenes this is a
+builtin class but behind the scenes you
+have a class called
+string. I mean, it's not it's probably
+not called string exactly like this, but
+more or less it's called string. And
+then it's doing Oops.
+Oops. Gosh.
+Okay. Yeah, there we go.
+And then it has a function defaf replace
+which takes some parameters. It's going
+to include that self. And then in this
+case they have you know string one and
+string two.
+So behind the scenes it kind of looks
+like that like
+this variable
+is
+creating a
+object from the string class. um it
+doesn't have to define it like we would
+for a custommade class but it knows that
+because we have these quotes here that
+this is a string. So it's using the
+string class and then we can call this
+method replace on that string and then
+pass these parameters. So this would be
+string one and this would be string two.
+So behind the scenes in the Python like
+built-in library there is something that
+looks something similar to this. Um and
+so Le Code is using that
+class-based framework to build
+um their test case
+stuff. I'm not explaining that well.
+They're using classes to help run the
+test cases against whatever code you
+write.
+>> Okay. So basically it's just something
+that we will see in leak code because
+they need to
+um
+it's something in the code in order to
+okay I don't know how to articulate what
+I'm saying but I I think I know what
+you're saying.
+>> Yeah. behind the scenes what they're
+doing is they're instantiating the class
+as an object and then they're calling
+the function that you are writing out
+search insert and for the parameters num
+and target they're like they've made a
+loop that goes through all of their test
+cases and they're calling list and
+target the nums and target for each of
+their test cases and passing it through
+the class object that you are writing.
+Got it.
+So yeah, it's good to know how to read
+the parameters um
+even if you don't use them right.
+>> You know, I like to think of it as they
+made a platform for you to write your
+code in.
+Lead code did.
+>> Yeah.
+>> And so that class stuff is all the stuff
+under the hood that enables you to go to
+that section where it says write your
+code,
+>> right? Yeah.
+So, we can during the test use um look
+up our syntax like like I needed to look
+up map.
+>> Yes.
+>> We can't do that. Okay. Because in that
+case that was my issue and once we got a
+fit once I figured it out it works. So,
+>> right.
+>> Zoom zoom.
+>> So, it's good to not have to do that. So
+because it eats up time, but you are
+certainly allowed to do that as much as
+you need to and people
+>> definitely do that during the interview
+and pass. So it is a part like it is
+something you can do. Um
+>> but in the long term, you know,
+>> actually in the long term, you're going
+to Google stuff a lot as well. That's
+just part of it. But building that that
+uh knowledge base of what are all the
+methods, what are all the different
+approaches, what are all the different
+things so that you don't have to look up
+as much.
+>> Well, cool. And you only gave gave us
+what 15 minutes a piece. Is that what
+you did?
+>> Yeah. So, I could have,
+>> you know, I keep telling myself the more
+I do these the the more I do of these
+kinds of problems, the less I'll have to
+go and Google stuff. Uh, but you know,
+sometimes I find that it I get it and
+then it just sort of slides out of my
+mind kind of. Um,
+>> yeah.
+But, you know, I at least I'm going to
+hold the hope that the more and more of
+these I do, the less I'll have to go
+back and find what what syntax to use,
+googling. Um, I hope that works anyway.
+Well, and that's why it's good to do
+that here because when you have to go
+through the process of looking it up in
+front of us on the audience and then
+explaining how your code works line by
+line and explaining why it meets the
+solution, you're going to have a lot
+easier time of holding on to that that
+piece of information
+because you've kind of trauma it into
+yourself. [laughter]
+>> Trauma it.
+>> Okay.
+Traumabrained it. All right. [laughter]
+All right. So, we are quite a few
+minutes over, but does anyone have any
+questions before we close out today?
+>> You you you stopped you've stopped
+giving us homework. So, okay. So, I
+guess that was my question. We don't
+have homework.
+>> We don't have homework. Um, I we're kind
+of going to keep doing these like
+basically speed drills of just like
+focus on the process, work through the
+process, here's a problem, do your
+steps, get that experience, and through
+that through that kind of repeated
+structure, um, you're working on honing
+your skills and
+kind of getting the stress and nerves
+out of performing.
+If you want to come at night, we are
+usually on Mondays and Tuesday nights,
+we're doing a late night study of
+Hecker.
+>> Cool.
+>> So, you're more than welcome to join us.
+>> Yeah, I've been cracking people's peer
+programming sessions lately.
+>> Come on, bring it on.
+>> Yeah.
+>> And, you know, I I got to say that it's
+quite different to stand off and look at
+somebody try to crack the problem and
+then doing it yourself. That need to do
+it yourself. you know. Um, but that is
+like what what did you call it? Trauma
+burning. It is trauma burn. [laughter]
+>> Trauma.
+>> Yeah.
+>> It burns it in your brain.
+>> It does.
+>> Over time, it feels less like trauma. I
+promise.
+>> Okay. All right.
+>> All right, everyone. So, thank you for
+joining us and thank you to our
+volunteers. You both did a great job.
+And I will see you next week.
+>> Bye.
+>> I'm telling you, I'm close.
+>> All right.

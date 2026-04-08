@@ -1,0 +1,747 @@
+hey guys super excited to be here today
+I'm Dr Emily and today we are talking
+about the three things that you need to
+nail your technical interviews and so
+just for those of you that are just
+joining us hi I'm Dr Emily I'm the
+founder of the joy of cootie Academy
+where we help train students give them a
+guaranteed internship and help them get
+their first development jobs as software
+developers so super excited to be here
+and talk to you guys about how you can
+really nail your job process too because
+there's a couple things that might
+surprise you surprise you all right I'm
+just going to look away for a second to
+grab my marker because I want to make
+sure that I write this stuff down for
+you so you guys can see it right and if
+you're here let me know leave in the
+comments right on the Facebook live like
+let me know that you're here so I can
+see you and I love answering your
+questions so if you've got them please
+let us know and I'm experimenting with
+with my setup and my green race you guys
+could tell me what you think I love it
+so good excellent all right so we want
+to nail our technical interviews right
+so just for those of you that don't know
+the way it works when we're working to
+get our first software development job
+and this is true whether you're looking
+at the mid five range like the 40 to 60k
+range the 70 to 90k range or the over
+100k range like regardless of what
+technical level you're looking at you're
+going to have a technical interview so
+three things we want to nail for this
+foreign
+things
+to nail
+your Tech interview
+all right so that's what we're talking
+about today
+okay so we really want to focus on the
+technical interview now
+how does a technical interview differ
+from a traditional interview well
+technical interview is a component
+specifically for software development
+jobs right where you don't just have a
+face-to-face interview where you talk to
+people you also have this technical
+expertise this is how the companies
+typically you know assess your skills
+right so everybody submits a resume
+right so everybody's got a resume in
+there you've gone through HR and so now
+you're getting interviewed they're going
+to vet you to make sure you have the
+skills that you say you do or the skills
+that they're looking for in in a job
+setting right so you know you've gone
+you've gone through all this effort
+you've learned the skills so you've got
+it down you've made your you've crafted
+your resume boom you sent it to them and
+they're like great we like the look of
+you awesome now do this thing and then
+maybe we'll have a phone interview right
+typically in my experience what I've
+heard from students that are going up
+for job applications is that they
+typically will vet you through the
+technical interview process first
+because that's usually less labor
+intensive for them okay and then they're
+going to get you to the face-to-face
+interview range the technical interview
+can have a couple different components
+to it so sometimes the technical
+interview are questions
+um they're just problem solving style
+questions so and these are like data
+structures and algorithms style
+questions you can prepare for these
+questions in a bunch of different ways
+so one option is you prepare using you
+know hacker rank
+or lead code
+and these would be data structures
+and algorithms
+okay so algorithms can you can can we
+still see if I'm over here yes we can
+algorithms
+yes we can spell I love it excellent so
+data structures and algorithms you know
+that's what we want to have a code up
+here so the websites that I most often
+see students using to get prepared for
+technical interview questions is hacker
+Rank and leak code now that's one way
+that the technical interview can go so
+you really want to practice now inside
+the joy of coding Academy we use hacker
+rank because I like their interface
+better
+um but you know link code is also a very
+popular one but basically any website
+that allows you to practice a lot of
+problem solving problems and you know if
+you're going to do something like hacker
+rank you don't want to practice language
+specific problems you want to focus on
+the ones that are under data structures
+and algorithms because at the end of the
+day it's not about how many languages
+you know it's how you use them right and
+so the problem solving that you can use
+whatever language you want on hacker
+rank you can use C python Java whatever
+you want you can use it right so we
+really want to focus on these problem
+solving problems data structures and
+algorithms and so that's one style of
+technical interview
+there's another style of technical
+interview and that's where they actually
+say hey
+spin up a sample application that looks
+like this and they'll just give you a
+language or they'll give you a worksheet
+and they'll have you follow along and
+like build spin up some basic
+application or give you some sample code
+and ask you to edit it so I actually
+prefer those types of interviews because
+it's a much better assessment of who you
+are as a developer because to be honest
+in a software developer or web
+developers day-to-day they don't do a
+lot of data structures and algorithms
+work right so we really want
+um to be prepared for all of them so
+okay let's say you have a really
+practical technical interview where they
+just hand you
+a you know a task they're like here go
+build a you know PHP based website that
+can do X Y and Z right or spin up a
+marine stack or create a react app that
+does X Y and Z right they might just
+hand you something a task to do
+okay so how do we prepare for that
+there's a couple ways that we really
+want to be prepared and there's two
+reasons for this so we really really
+want to practice our skills of spinning
+things up right so assuming you've got
+your portfolio
+right if you've got a couple projects on
+your portfolio good you should be good
+to go but there's another thing that you
+can do to prepare for this foreign
+let's see if I can get that glare down a
+little bit I'm not sure I can awesome so
+it's your vocabulary Okay so
+you know what is actually maybe I can
+move this over for you guys
+let's see we're I'm I'm still learning
+to use this new fun fun thing okay
+vocabulary all right so
+who cares about vocabulary well there's
+really two reasons why you really want
+to be attentive to the vocabulary and
+terminology because if they're giving
+you a task to be able to do it you have
+to understand the words that the
+interview is giving you right so if they
+say you know use you know this tool to
+set things up or create a variable that
+does this or create a script or use this
+design pattern right like if they give
+you instructions you need to know what
+the words are and in fact I was just on
+the phone with someone yesterday who
+said that you know they've been striking
+out on interviews they're not in the joy
+of Cooney Academy they're thinking about
+it
+um but they've been striking out on
+interviews because they didn't know the
+vocabulary and so they would be asked
+questions they had some Live technical
+interviews where they had to answer
+questions live that can happen too and
+they weren't able to answer them because
+they didn't understand the words that
+were being used to ask so you do want to
+be attentive to the terminology it's not
+just about getting a pretty website up
+but also understanding what you did and
+why you did it right like these are the
+secret tools of the trade for to become
+a really highly paid software developer
+right so what kind of vocabulary words
+are we talking about well at the bare
+minimum if you want the vocabulary of
+the seven Basics right variables Loops
+ifs functions conditions statements any
+words that the the error that come out
+as error messages it's really helpful to
+know what those are like if it says
+statement this well what's a statement
+you can Google all those things it takes
+time and energy or you can you know
+follow a training program that will just
+teach teach you that like the joy of
+coding Academy but however you get the
+vocabulary right you want to have that
+in place and be attentive to it so
+reading websites that talk about the
+Technologies you're using hey how would
+I spin up a react app okay this tutorial
+is going to tell you and when they use
+terminology if it's a good tutorial
+they're going to use the appropriate
+terminology and so you're going to want
+to follow that too and kind of
+internalize it and practice it even you
+know if you don't want to just read over
+it quickly like oh I want to get this up
+and run and get this done no no pause
+learn the vocabulary too not don't go
+overboard like we don't want we want to
+find that sweet spot in the middle we
+don't want to do everything all the time
+okay excellent so the vocabulary is
+going to really help us in two ways one
+it's going to help us with the
+open-ended technical interview where
+you're just expected to build something
+it's going to help us on the actual
+interview when we're talking to them why
+is that so important well guess what
+happens after you go through the
+interview after you go through the
+interview you're going to work on a team
+they're going to be communicating
+lightly either face to face or you know
+online and they're going to use the
+appropriate terminology for things and
+so if you're going to be up to the speed
+of the team and get onboarded and be
+productive quickly be a good investment
+for the company you're going to need
+those words too right you're going to
+need to have those
+so you want to make sure that you have
+that vocabulary down that it's not just
+about getting the code running it's
+about okay how can I communicate about
+the code right the other thing is
+you know you're we don't know everything
+about the technology we're probably
+gonna have to Google right
+so when we're going to Google we get way
+better results when we use that the most
+common terms for things right so one
+easy way to Google is you just copy and
+paste the error message boom done but
+that doesn't always work right sometimes
+we have to take a level up to describe
+our problem and so you know one of the
+reasons I'm really fast as a coder is
+because I got really good at figuring
+out what Search terms to look for so I
+can quickly get right to the web page
+it's going to help me solve my problem
+faster because I know the terminology I
+know what these things are called so
+then I can then in turn search more
+effectively this just up levels it when
+we involve chat GPT in the mix right
+because now it's about how well can I
+prompt chat GPT chat EPT is going to be
+using the terminology too so we really
+want to get this vocabulary and
+terminology in there and if you guys
+want us to have a session on that post
+in the chat like comment on this video
+if you're watching the replay let me
+know happy happy to go into that more
+detail okay so we really want the
+vocabulary for a lot of reasons to talk
+and tell on the interview and to be
+successful once we get the job because
+at the end of the day
+if you prepare like we don't really want
+to prepare for the interview I mean okay
+we have to do a little hacker Rank and
+Lead Code Practice because we have to
+get over this hump
+but at the end of the day it's about
+being successful on the other side of
+the interview right it's not about the
+interview like the interview is a
+gatekeeper for the actual thing that we
+want which is the job with the salary
+we want to plan and prepare to be
+successful for the job and then the
+interview becomes easy
+right because we're already what they're
+looking for we're just showing them that
+and so it right does this make sense we
+really want to prepare for our job as a
+software developer because ultimately at
+the end of the day that's what the
+interview is doing right it's helping
+filter us to make sure that we're a good
+fit for them and you know we've been
+seeing in the past couple of weeks we've
+been doing lives around you know how to
+get your job fast we talked to a
+recruiter how to format your resume like
+and I followed up with that last week so
+we're really working on this topic you
+know for the past few weeks and at the
+end of the day it's also about how you
+fit and jive with the team right the
+human element becomes a huge part of the
+software development process and the
+interview process but it's about
+connecting with your interviewer and the
+team to make sure you're a good fit and
+so being able to communicate
+intelligently with the proper
+terminology about the code that you're
+writing the technology that you're
+creating it's huge right it's huge okay
+excellent and the last thing that we
+really need to nail our technical
+interview is obviously we have to have
+the technical interview right we need to
+have it so we want to have
+a resume that gets noticed
+okay we really want a resume that's
+going to get noticed all right and so
+how do we do that so a couple weeks ago
+we spoke with Miles Savage who's a cloud
+engineer and recruiter outside of New
+York City and he walked us through
+exactly how to format our resume and you
+know I followed up with that last week
+and we talked about a couple different
+ways that we can really
+um you know format our resume because to
+be honest miles gave us so much so much
+amazing goodness about how to get a
+development job right now and it was
+amazing and you know we talked about
+readability how you list out your Tech
+skills we can use Google's XYZ format
+for sharing our experiences and our
+project experiences on our resume to
+really showcase our expertise you know
+we talked about that the length didn't
+really matter and we spoke about that
+you know our portfolio should be pretty
+simple
+it's just a GitHub page it's just our
+GitHub profile we can have one or two
+projects the deeper the better right so
+we want quality over quantity here for
+sure and a surprising Factor but not in
+hindsight another surprising Factor was
+our LinkedIn profile we really wanted to
+format our LinkedIn profile and have at
+least 200 connections which is it's
+quite a bit but if you start exploring
+your friends and family and colleagues
+right it should happen really really
+fast you should be able to expand into
+that Realm and so why is LinkedIn
+important well because developing
+software and delivering technology that
+works is actually a human endeavor right
+the computer is executed but we work
+together hey bro good to see you man
+awesome awesome yeah so we want to make
+sure that we have all of those elements
+and we really really want to get noticed
+so if you've been watching and you have
+any questions now would be a great time
+to ask if you do
+um but these are the things that I think
+will be the most important for getting
+you in the door and through that
+technical interview right now ideally
+the Tactical interview is just form and
+it's not what makes or breaks your
+ability to get hired right so you know
+this three things snail your technical
+interview is part of it but at the end
+of the day you want to get your resume
+noticed and you want to get that offer
+wouldn't it be awesome if you could be
+like the only candidate for a job offer
+and that happens for Joy of Cody Academy
+students all the time because we are
+working our connections and you can do
+the same too right like you can look at
+meetups you can go out there you can you
+hit LinkedIn get out there but really
+people hire people right you're going to
+be hired based on your ability to
+communicate with a computer but you're
+going to get hired based on your ability
+to communicate with people right and
+you're going to be successful based on
+your ability to communicate on a team
+and with stakeholders at many different
+levels of your project right so
+communication is our recurring thing so
+we're definitely talking about
+communication today but you don't it can
+be easy so inside the joy of coding
+Academy right now we have a hundred
+percent success rate for students that
+have gone on the job market right they
+they've all gotten jobs uh right now we
+have one that's in the process uh we
+have two that are in process but like so
+far 100 success rate of students that
+have gone on the job market super
+excited and so it doesn't matter how
+many layoffs there are right a bunch of
+them are this spring right so it's but
+the the approach we use is you prepare
+the skills the job requires and then you
+find a connection you format your resume
+you work on your communication skills
+and we have we have ways of helping our
+students do that so that when you're
+when you have that opportunity in front
+of you you're ready for it you're ready
+to reach out and grab it and that's how
+we work with our students so if you
+would like some support on on getting
+through the interview process definitely
+let us know you know reach out you can
+you can find me on Facebook uh inside
+the joy of Cody Academy we would love to
+support you on your journey help you get
+those skills and the confidence and the
+experience right like with the
+guaranteed internship so you actually
+have experience when you go for those
+job applications right so it's not quite
+such a such a big gap but just to kind
+of share with you some of the stories uh
+from students that we've had you know
+some of our students have had job offers
+within as low as three months because
+they came in with prior experience and
+they got job offers right away some
+students were the only one that had the
+um the ability to apply for a job so for
+example I had a student who had a
+connection if you applied so this was
+Liz Baker just a couple weeks ago about
+a month ago we interviewed her and she
+talked about how
+she applied for one job and went through
+the interview process did a technical
+interview and within two weeks had an
+offer
+done so there's another intern graduated
+we're super excited for and you know one
+of our most recent
+um interns who's leveled up to Junior
+developer he is so I made a couple phone
+calls and kind of passed his resume
+around and he's the only candidate for a
+position it's an internship but it's a
+paid internship that they'll pay to
+relocate him to where he wants to move
+he wants to move from Michigan to
+outside New York City they're going to
+pay for him to live where he wants to be
+for three months over the summer with
+the intent to hire him in September
+right so it's a three-month internship
+and it's totally paid so I don't know
+about you guys but how many people would
+totally go in for an internship that's
+paid that gets you that pathway to that
+job the dream job that you're looking
+for right he's the only candidate it's
+literally for him to lose
+so amazing right so when you have that
+Network in place and you can build your
+own network but if you want to just
+borrow ours reach out I'll tell you
+about the joy of coding Academy where
+you can get you ready and get you get
+you into that first Dev job no problem
+all right guys awesome thank you Katie I
+know we're super excited for that
+success rate uh we love it and we just
+we work with our students one-on-one
+that's how we get that success rate a
+lot of places it's like you get your
+piece of paper see you later I was a
+college professor for 10 years and it
+was literally like okay here's your
+degree
+good luck you know and yeah no that's
+why I started the joy of Cooney Academy
+so we can really be Hands-On with you
+and work with you together every step of
+the way and so yeah there's there's
+nothing
+um to stand your way there yes Josh I
+got a certificate for my boot camp they
+suggested leak code yes would you say
+leak code and hack rank are the best way
+to further my education excellent
+question so Josh this is such a good
+question so Lee code and hacker rank are
+going to help you prepare for your
+technical interview right and so that's
+the best way to prep for the technical
+interview but it's if you say you want
+to have more education right so I you
+know I have a follow-up question I have
+an answer but I have a follow-up
+question is you know where do you think
+you you need to grow as a developer to
+get that job because if you finish a
+boot camp presumably you're ready to go
+on the job market I know that's not
+always the case how we get students
+inside the Toyota Academy all the time
+they're like oh my goodness I thought I
+learned all these skills and I still
+don't have a job what's going on I
+myself took I did three computer science
+degrees and still in some self-taught
+right didn't you it's okay as a coder so
+I know that like your first program
+might not be your last
+um so I would say Josh my follow-up
+question is you know where do you think
+you need to grow the feedback I get from
+students and people who have gotten job
+offers is that the make or break piece
+on your resume is your experience and so
+Josh I would say working on a team for a
+client which we can totally help you
+with inside the joy of coding Academy if
+that's you know something you'd like to
+pursue but you know we offer a
+guaranteed internship and we have our
+students work on teams for an actual
+client because it is the most powerful
+way to get ready for that job there's
+two things one is showcasing that you
+have the skills to someone who can vouch
+for them right and so having that
+network of people that can be like hey
+you're really awesome let me go see if
+anyone I know is hiring and it's a
+win-win for everybody because the people
+that are hiring all I hear from
+companies is oh we can't find good
+people right all I hear from students is
+how do I get the jobs right and so it's
+a win-win for them because they're
+looking through all these resumes anyone
+can put a you know a react through a
+react app together and put on their
+GitHub profile right but did they really
+do it did they build it do they know how
+to communicate about it like there's all
+these pieces but when you come through a
+team collaborative experience you have
+all the skills that they're looking for
+that then it's easy and it shows up like
+that in an interview when you talk to
+somebody who knows what they're doing
+because they're talking with vocabulary
+at a different level right they're
+talking at a different level like
+imagine you could point to a live
+website that a company is actually using
+to move their business forward you can
+say hey I built that on a team here's
+how we did it these are the choices we
+made right like when you're doing it
+like that's why the experience matters
+is because it means you already know how
+to do the work that they're hiring you
+for and so it becomes a slam dunk it's
+super easy and you have a recommendation
+of someone who can vouch for you who can
+vouch that you you can show up and do
+the work right like oh my goodness
+that's the other reason why connection
+is so important a it makes sure your
+resume gets looked at but it also helps
+you kind of cut through the red tape
+because it's like oh so and so
+recommends this guy I trust her I trust
+him okay like you know they say they're
+a good worker let's bring them in right
+the people that we recommend you know
+the students we have we get like our
+graduates are amazing and so it's super
+easy easy for me to just like call
+somebody yeah like literally for Kevin's
+position I literally called a guy that I
+knew from a couple years ago and he's
+like I said I have this amazing student
+he's like Emily say no more like let's
+get on and he's interviewing me today
+like he's the only applicant like so
+it's a pretty high chance of success so
+like it can be that simple because when
+you've got the connections that can that
+you can work through excellent what's a
+good way to network excellent question
+Josh so one of our other students Jean
+Marie she is she has a lot of experience
+in this space and so she's she's
+excellent at it and I would recommend
+these same things but I wanted to to
+give a shout out to her because she's
+doing such a great job at it so she's
+going to meetups so that's one way
+um you can go to meetups if you do have
+a boot camp experience if you can
+connect to some of the Educators in that
+space if they're connected
+um that that's something that you want
+to look into
+um you know so in our organization we
+have senior software Engineers who have
+anywhere from eight to 30 years
+experience they're part of the program
+I'm a retired Professor I work with
+software engineering researchers all
+over the world and software engineering
+researchers study software engineering
+teams so we're therefore connected with
+software Engineers all over the world uh
+we have another you know software
+engineering Professor on staff as well
+so like we have a really big network but
+you'd want to check your education if
+you have education check your education
+connections for sure you can go on
+LinkedIn right just like we talked about
+you know for getting on your resume and
+also you know going to meetups having
+intelligent conversations
+having intelligent conversations about
+the technology that you're working with
+is super super important because you're
+going to be expected not just to be able
+to do the work but to also talk about it
+because when you run into roadblocks
+you're gonna have to interface with our
+teams right and so you're going to have
+to communicate about that and so that's
+that's what I would recommend for
+um you know really furthering your
+education is getting that team
+experience because the tools are
+different trust me like I know a lot of
+I don't know every boot camp program
+that's out there but most of them that
+I'm aware of stop your learning with the
+problem solving like they stop here with
+the ability to get a web page up on your
+own and they and you might use git right
+you might you have some comfort would
+get but when you're using git on a team
+it's next level when you're doing
+continuous integration when you're
+working in a devops pipeline like those
+are the things that differentiate
+someone who's kind of dabbling from like
+okay this is a serious player who's
+ready to build software at scale right
+so that's my recommendation if you want
+to grow your education grow your network
+and you know elicit podcasts actually I
+know that's not networking but for
+vocabulary
+podcasts are so so the way to go
+in fact one of our senior developers
+he's been in the Facebook group before
+his name is um Tyler he actually
+this is so cool so he I don't remember
+what his first job was but it was like
+totally boring and he was bored out of
+his mind and he wanted to be a coder so
+he wrote scripts to automate his day job
+so he could spend all his time coding
+and he all he does is listen to podcasts
+all the time to like stay current and
+stay connected to one of the latest
+technological changes are and be on that
+Forefront and so that kind of investment
+in learning is something that's really
+you know a Hallmark of really great
+developers of the people that make it to
+that senior level and Beyond and senior
+level is usually high 100s like right
+around 200k to 300K so like the entry
+level is high fives to 100 okay and then
+it goes up from there and that can
+happen in like two three years doesn't
+have to take a long time like when you
+know your stuff you get fast tracked for
+sure awesome awesome I thought I saw
+okay I thought I saw some other kind of
+question come in the comments but uh
+Facebook just moved it around on me but
+if you have any other questions lay them
+on me love to answer them super excited
+to help you guys get your first offered
+on the jobs and really get the train
+need to make it a slam dunk if you again
+if you want support with it let us know
+inside Jordan Coney Academy we are happy
+happy to help you great to see you guys
+Katie brolio Josh anyone else who's
+watching at home awesome awesome talking
+to you guys and if you have questions if
+you're watching the replay don't
+hesitate to post a minute chat happy to
+answer them there all right guys keep up
+the awesome work and I'll see you soon
+happy Tuesday

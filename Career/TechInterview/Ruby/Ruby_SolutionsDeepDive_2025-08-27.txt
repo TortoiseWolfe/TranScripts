@@ -1,0 +1,1044 @@
+All right. So, welcome to this week's
+session of nailing the tech interview.
+Um, today is Wednesday, so typically we
+deep dive into some of the solutions
+solutions that we might have cover um
+solutions to problems we might have
+talked about on Sunday. Um, someday
+actually Mindy had already solved the
+problem that we looked at.
+But I'm curious, Mauricio, if you had a
+chance to try this problem on your own,
+if you tried the brute force approach,
+if you tried
+a different solution of some kind for
+the best time to buy and sell stock
+problem.
+>> No, it's pretty much along the same
+lines. So
+>> you you tried it but you got the same
+answer. Is that what you're saying?
+>> Yeah, because the brute force
+time out. So
+>> Mhm. Okay.
+>> I had to use the pointer or what
+whatever the name is for the other
+technique.
+>> Sorry, I got distracted by something on
+my desk. Okay, cool. Yeah, I want to I
+think I'll just quickly talk through
+that though just for the replay. Um,
+let's see.
+Just got to move some
+stuff around here in my notes.
+So, this is the problem we looked at on
+Sunday, Anna, since you weren't here.
+Best time to buy and sell stock. Um, the
+general idea being that you want to find
+the best day to buy and then a singular
+day after that to sell. So, the best day
+to buy would be when it's at its lowest
+here at one and then selling at six.
+And then
+we got someone else joining.
+And then for this next one,
+there is no good day to sell and buy or
+buy and sell because it all goes into
+descending. So, you would never get any
+profits. So on Sunday we had discussed
+potentially a brute force sol solution
+of just looking at all kind of two value
+pairs with the nested array. So compare
+seven. If I bought on seven, could I
+sell here, here, here, all the way into
+the end and make a profit? Yes or no? If
+I bought on the next day, could I sell
+on any of the following days to make a
+profit? Yes or no? and would that profit
+be better than the profit I made if I
+sold bought and sold yesterday's stock
+until all you know so on and so forth
+until you get to the end. So that had a
+big O of O squared
+um and we can take a peek at that what
+that might look like as well. But Mindy
+had already found the ideal solution
+which was that
+actually you know what uh before we dive
+into that again because we did look at
+it on Sunday let's actually just walk
+through
+walk through this brute force here and
+why it it won't actually work for us
+well I guess it does work but I'm going
+to talk through some of the thinking
+behind it as well
+because I always like to say that if you
+can start with a brute force just to
+test your idea, make sure it works. That
+might be the best way. If it works, it
+does. It works. That's great. If it
+doesn't, then you can kind of course
+correct from there. So, the main thing
+we're looking for is to track
+profit.
+And if we can't make any profit, then we
+just return zero.
+So, we had looked at a return statement
+of
+I had it before, I think. return
+but we can just change it to profit
+here.
+So we are given a prices array. We want
+to find the max difference between two
+indexes. Finding the two indexes. Yep.
+Greatest difference. So brute force
+method array. Find all the pairs
+tracking them in price
+and then tracking profit. So if we
+subract with profit and we just do
+I'm actually going to say n equals
+len of nums
+i and range
+n just the length of our array.
+So, I'm going to assume that I'm buying.
+Huh? Why is it?
+Feels like that's kind of weird. Yeah.
+Cool. So, if I buy at the I, so that
+would be nums
+I
+this key word. Okay. So assuming that
+I'm buying at the I index and then we're
+going to do a J index to compare against
+the other days where I might sell.
+So for J in range
+I + one
+and then still to N.
+And then we're saying if I sold
+that would be equal to
+nums at the J index.
+So either one or five or six.
+And then I'm going to subtract the price
+that I bought it.
+And then we'll just do a simple
+comparison there. So profit
+going to equal
+sell if sell
+is greater than profit otherwise
+profit
+and then return profit. Let's see
+what is this. Oh prices.
+It's my bad. Prices. Prices.
+prices.
+Okay, so that looks like it works fine.
+And this is an easy problem. So usually
+the Oven squared solution
+does work. Medium problems, you
+definitely see the timeout, but
+sometimes Oven works on the easier
+problems. That doesn't mean you
+shouldn't try to keep going. Even if you
+get it working, you can always
+test for efficiency there,
+but it would be nice. Okay, so yeah,
+time limit exceeded, but the clues here
+is that we got to
+198 passing out of 212 cases. So that
+tells me that those 14 missing cases
+there probably would pass if my solution
+wasn't over squared inefficient
+so on and so forth. If what I was seeing
+was that we got to like 75 out of 212,
+I might be a little bit more nervous
+that either
+it's inefficient and it could be wrong
+or it's so inefficient that I need to
+not only rethink my efficiency, but
+maybe even rethink my approach to the
+problem. Um, but in this case, I think
+we're pretty clear there that we just
+need to find an efficiency.
+Now, here's something definitely with
+the medium problems that even on the
+medium I mean even on the easy problems
+I think if we come up with a solution
+and especially when it's getting to the
+point where
+you're almost passing all the cases or
+even if this was a little lower like 150
+out of 212 I think that might still be
+okay and you're thinking well what if I
+just try like a few efficiency tricks
+but keep the same overall approach
+keeping the overall O of N squared
+nested loop approach, but try and
+optimize it by starting from the end of
+the array or you know switching plus and
+minus or doing trying to do little
+tricks. I think that is something that
+you might want to avoid. If we're
+looking at timeout execution because of
+your overall approach, then what you
+want to then think about is dropping
+your big O to at least a rung beneath
+it. So, when we look at like the big O,
+I can't I feel like if a session goes by
+without me pulling up this graph,
+something's wrong.
+Let's see.
+So, O of N squ is way up here. The next
+one up would be Actually, I don't like
+this one.
+The labels are kind of funky. This one's
+better.
+Can I open the image?
+Nope. I sure can't. It's going to take
+me to this article.
+Okay, here we go. So, for open squared,
+the next best thing is going to be O N
+log of N. If we and you can see there's
+quite a a breath here. So if we were
+trying to just optimize the O of N squ
+solution, maybe it would go from
+performing at this level to performing
+at like here or like at best like it's
+over here. But we're probably not going
+to get it to pass that timeout execution
+within this this range here. So we'd
+want to drop the whole other rung to the
+next best one of n log of n.
+And if we can't make sense of a solution
+that works at that level, O of N, so on
+and so forth. In this case, the solution
+that Mindy brought to us on Sunday was
+an O of N solution. There may or may not
+be an O in log of N solution. So you
+kind of have to go back to the drawing
+board and figure out, all right, how
+would I approach this problem just if I
+removed that second
+loop? So I'm not thinking about it as in
+terms of oh I have to find a solution
+that's O N log of N or I have to find a
+solution that's O of N. I just know that
+I have to remove the element that's
+making this O of N squ. So the big
+element that's making that O of N
+squared is having two loops. So the only
+way that I'm probably going to make that
+more efficient is by replacing the
+second loop.
+And I could replace that with some kind
+of search. Or actually, that might even
+>> I'm curious. What if you um take the
+array and convert it into a dictionary
+and then just do the the high and max
+type calls on it or that would make it
+worse because of whatever was going
+behind the scenes with the dictionary.
+>> Yes. So, so the things going on behind
+the with the dictionary might not help
+um because it might change the indexes,
+but also what's important here is that
+the order
+like we have to we have to buy on one
+day and then sell on a day that comes
+after. So, if we switch to a dictionary
+data structure, that might make it more
+difficult to
+figure out what day is what, like what
+what index key value pair to check. But
+if I wanted to rephrase what this
+problem is doing,
+I'm kind of at any given day, like if
+I'm buying on the one,
+I'm looking for like you were indicating
+there, Anna, the max price that I can
+sell it for. So, I'm not just I don't
+need to just check between five and
+three and six and four. I could replace
+this with like a max check to find the
+highest number.
+and then do that computation
+that wouldn't change the coefficiency
+but it might help think about the
+problem in a in a different way. So if I
+was just looking for instead of for I in
+range
+if I said oops
+max value
+equals
+the max of
+what prices
+using this same
+actually I don't even need all of that
+prices
+from
+O
+okay prices
+I + one to the end
+so if we did
+I + one I might want to also change that
+to make sure we're leaving some room
+there. Um, max value prices of i + 1 to
+the end of the prices array and I'm
+looking for the max value in that. That
+kind of replaces
+this loop here.
+And then I can say
+cell equals
+max value
+minus pi. Let me just make sure that
+still works.
+Okay, so this is still an O of N
+operation.
+So the overall is still going to be
+O of N squ max
+O.
+But if I knew somehow, I know binary
+search isn't going to work because these
+aren't sorted, but if I knew of some
+kind of searching or some kind of
+approach that would help me reduce from
+O of N to something less, like O of one
+or O of
+log N. Um, if I knew something better
+than just literally checking them one by
+one of how to get the next highest
+value, then that could in theory drop us
+down to a lower efficiency.
+But even just thinking about it in in
+terms of this might help you craft
+a solution where you don't have to find
+the max value this way. Um, so that's
+where you kind of jump to, all right, I
+can't think of a way to completely
+replace this part with something that's
+less than O of N. So I have to kind of
+figure out how to do it within just an O
+of N approach. And then that's where we
+get to
+the solution that Mindy showed us.
+I'll just switch these over.
+where you're kind of calculating as you
+go along, but instead of thinking about
+max, you're kind of evaluating
+the max the minimum price
+that you're buying at and then looking
+for a way to sell it. So, we're
+calculating
+at each of these.
+If it is
+lower than the numbers that came before
+it, we'll reset that to our minimum
+price. So one is less than seven, so we
+set it here. We don't set it there. We
+don't set it there. So on and so forth.
+But in this one, we'd say, okay, six is
+less than seven, so that's our new min
+price. Four is less than six, so that's
+our new min price. So on and so forth.
+And then we calculate the difference
+there. And then calculate the profit
+that can be made at that point. So
+instead of calculating profit for each
+pair, we're kind of calculating
+profit from
+any of the lowest integers that we have
+found up along the way. So, it's kind of
+a tricky way of thinking about it and it
+kind of flips the approach from this one
+where we're saying I want to find the
+max that comes after my current value to
+instead of saying I want to look at the
+minimum along the way and calculate the
+profit from that.
+So if you couldn't make that leap just
+by like looking at the problem and
+trying to break it down, I think again
+this is where we talk about all right,
+you've got almost 98% of the test cases
+passing. You have done your due
+diligence to evaluate this problem to
+see if you can get to a lower efficiency
+on your own or look for a different
+solution that's better on your own. If
+you weren't able to find one, that's
+when you can look at the solutions tab
+or look up online, how might I approach
+this? And then now you have this kind of
+approach that you can add to your mental
+toolkit
+so that when you see problems like this
+in the future,
+that's where you can
+try this approach out. My approach
+actually was I was thinking maybe I
+could try two pointers. I needed to
+clarify that because I called it sliding
+window last Sunday, but I meant two
+pointers. I ultimately found out that it
+didn't work. Um, what I was trying to do
+is that if I start from here, can I
+can I kind of close in from either side
+until I find the best pairings of buying
+and selling with the idea being that a
+number
+towards the end might be a higher value.
+And so if I'm kind of checking for the
+best value pairs there of selling at
+this end and buying at the other end,
+maybe I can find it like that. But since
+these numbers are kind of not in any
+kind of order there, um it just didn't
+work out. So that was something that I
+had pulled out of my mental toolkit. I
+applied it. It didn't work. Great. Go
+back to the drawing board. Maybe you
+come up with the solution. Maybe you
+look up the solution.
+But it's it's a process that you kind of
+have to get used to.
+So, I just wanted to go over that really
+quickly because
+I I mean I don't even think Mindy pulled
+this out on her first try. She probably
+tried something like this first, thought
+about it, worked on it, came to the
+solution after some time.
+Maybe I'll ask her next time. Um,
+but I think when especially if you look
+at like tutorial videos and stuff like
+that, it's like, oh, they just pull out
+this super complex algorithm right at
+the start. But it's never like that
+unless you've seen the problem before.
+If you haven't seen a problem before,
+you kind of have to work towards it.
+All right.
+So, Mauricio, since it's just
+Oh, no. Yeah. Turtle will see your two.
+So, we didn't get a chance to do a mock
+interview on Sunday, but if someone is
+interested, I will be open to doing a
+mock interview with the time we have
+left if you want to get that practice in
+for the tech interview. So, are either
+of you two interested available to try a
+mock interview?
+>> I mean, I was I was, but not anymore.
+>> Oh, right.
+>> Yeah. uh just been having a lot of
+issues so I'm kind of discouraged.
+>> Um let's look into that actually. Do you
+do you have uh did you try going into
+like an incognito window and logging in
+and trying it there.
+Mauricio?
+>> Yes. Sorry, I was on mute. No, I
+haven't. Um,
+can you hear me?
+>> You have or you haven't?
+>> No, I haven't.
+>> I would try that next. I've not seen
+that error before of not being able to
+submit them.
+Um, but I wonder if trying on an
+incognito browser might help. Like there
+might just be something with
+your browser tab caching a lot of
+information or something.
+Yeah, let me I had to log in. Hold on.
+How about you Turwolf? Are you mock
+interview ready?
+Uh possibly I can try it.
+I need to be. So
+>> it's low pressure for for these. I like
+to give the option now that you just
+work through pseudo code. So how far
+would you get just from the pseudo code
+and then if you have if we have time and
+if you're like feeling motivated to then
+you can try and jump into code. But I
+think the focus for us here is just the
+working out loud in front of others and
+breaking the problem down into steps.
+>> Okay. You do that on hacker rank or leak
+code or matter.
+>> Yeah, I would provide you a problem.
+I've got one from leak code.
+>> Okay. So I should open a tab with leak
+code on it to share my screen. So we're
+done.
+>> Yep.
+And when I open on incognito,
+it doesn't show the code I already have
+there. So
+trying to copy and paste it.
+>> So you're copying and pasting your code
+in. Is that what you said?
+>> Yeah, because uh it doesn't show it. I
+mean, I thought it was going to show it,
+but it doesn't. I don't know why. And I
+already wrote it and it's on my other
+window. So, and I already submitted and
+everything and it shows that error, but
+when I go to the incognito, there's no
+code there for for that problem. So,
+>> yeah, because the way that it saves it
+isn't to your memory.
+So, that's why I'm wondering if maybe
+you just had like too much stuff saved
+in memory and it's just like
+overwhelmed. But in incognito, it
+doesn't save any of that information.
+And so if you want to pull up your code
+from before, you have to either retype
+it, copy paste it, or check like the
+submissions tab.
+>> It doesn't let me copy paste either. It
+just
+don't copy paste, I guess.
+So, does it show code for other
+solutions that I already did or for
+nothing?
+>> And incognito, it wouldn't show
+anything. I mean, you It's still there.
+You just have to go to the submissions
+tab to pull it up.
+>> And I can Can I run it from the
+submissions tab?
+>> Yes.
+Not sub solutions, submissions.
+Uh,
+>> yeah, I went to submissions.
+Oh, hold on.
+It's showing me something else.
+>> Can you share your screen real quick?
+Um, Mauricio.
+Okay.
+So, yeah, if you go to submissions, new
+results,
+I mean, it says accepted and you got a
+score
+of 15.
+So, if you see open in editor right now,
+>> I actually haven't done this one. I
+don't know why it shows that.
+>> I mean, it's showing that you have done
+it
+>> an hour ago. An hour ago. An hour ago.
+>> Is this my But is this my submissions or
+everybody's submissions?
+>> No, this is only yours.
+So, these would all be your submissions.
+So, if you do open an in editor
+right there at the top of your screen
+there.
+>> Oh, yeah. This is another one. Okay.
+This is the other one. What? That was
+>> Well, yeah. Hold on. Click open in
+editor right there.
+>> Where?
+>> To the right and down.
+Up. Up. Up to the right. Yep. Right
+there.
+And then scroll down to your editor.
+and then click submit.
+Just want to make sure you're not seeing
+that error anymore.
+>> See, hangs in fetching a little bit and
+then it doesn't show me. I was only 17
+points away from my next star. This is
+like
+>> So, it's not showing you that because
+you've already got the points. Yeah, but
+it doesn't move the point thing. It's
+>> Yeah, because you've already solved
+process your submission. Please submit
+your code again. Can you see that?
+>> Yeah.
+>> Yeah, that's
+>> I'd be more curious about a new problem
+because you've already submitted this
+one.
+>> Like you've already got the points from
+this one. You're not going to move your
+points bar up and
+>> No, but yesterday I was just only 17
+away. I submit one 20 pointer that work
+and on top of that sub mean this 10
+pointer and the bar didn't move the
+needle didn't move I was I was still 17
+points away
+>> okay
+>> so yeah I'm stuck and
+if I open an account I start from zero
+the points well
+>> I I would like to see I would like to
+see um a new problem unsolved problem
+submitted
+to make sure double check but I don't
+want to hold you to that while we're
+just sitting here. I would try another
+problem where you are certain that you
+haven't solved it before.
+>> Yeah, I did two yesterday. None of them
+worked. Uh
+but yeah, I can try a third one
+>> on the incognito browser specifically
+though.
+>> Okay.
+>> But yeah, try try that later.
+All right.
+Are you ready? What's your actual name?
+Turtle Wolf.
+>> Jonathan.
+>> John. Are you ready, John?
+>> Yeah. Screen back open.
+>> All right. So, I've got a problem for
+you. It is a medium problem. So, that's
+why
+>> um
+that part
+I don't know. I've done a medium before.
+I've been practicing the the easy ones
+on here.
+>> Yeah. So that's why this one is just
+focused on pseudo code, breaking down
+the problem, pulling out what you can,
+seeing what steps, what approach you
+might take, typing it out, and then
+seeing what you might do from there.
+It's kind of just thinking about how are
+you thinking about this problem, how are
+you sounding out the problem.
+>> Take me a second. It's signed in. I
+thought I had it in a flash pass
+>> and then just share your screen as well.
+>> Oh,
+yeah. I was practicing the I was trying
+to update the stuff on the resume
+yesterday, so I cleared my cash.
+I logged out a lot of things.
+I may have to reset my password for
+recode to get back into
+the water All
+right. Share screen.
+>> Cool. So, I dropped um the problem in
+the chat.
+Don't game.
+>> Mhm.
+>> We have been looking at this recently. I
+don't entirely understand it
+so far.
+Do you have that open?
+>> Yeah, it's on screen.
+>> Yeah, it's on.
+>> I'm just seeing the blind 75 playlist.
+I don't know what would change my mouse.
+It's been acting fine last couple of
+weeks. I click on something, but it
+doesn't stay a hold of it.
+It's kind of got to keep
+>> Yeah, you got to find that that sweet
+spot at the top of the
+>> Well, it'll grab it for a second and
+then it'll start moving. It's like it
+slips off of it somehow.
+>> Yeah.
+>> Or something.
+There we go.
+Can you turn up your audio a little bit
+as well?
+>> Uh,
+sure.
+>> Mic
+background noise.
+go too loud.
+>> No.
+>> All right. So, we'll just give you like
+15 or 20 minutes. Read through the
+problem. Once you feel like you
+understand the problem, give us a
+summary and then start putting some uh
+pseudo code in there. See what you can
+pull out, how you might break the
+problem down, how you might approach it,
+all that good stuff.
+And I'll keep track of time for you.
+Oh,
+or you can do it.
+I have a question.
+>> Sure. Can you put it in the chat?
+>> Okay.
+So that's that's basically the whole the
+whole function comes down to a boolean,
+right? It's going to be true or false.
+It says nums here. So
+Okay. So, this isn't the one that has
+the clouds of electricity. That was kind
+of th
+this is the simpler version.
+That's a bad
+double click. It helps.
+She went sat.
+Okay.
+So, your jump length is based on the
+position in that makes more sense.
+But you can't get to four because when
+you're on zero, your jump length is
+zero. So, you can't jump to four.
+saying
+to me that's half the half the problem
+just understand what the question's
+actually asking you
+when you arrive at three no matter what
+it's maximum jump length is zero I'm
+assuming that's 0 one two so when you're
+on three
+that's your jump length is based on the
+value of that index and you can't you
+don't have the power to jump off of it
+basically.
+So
+that's the case.
+example like a picture of what we're
+supposed to like a graph or something
+supposed to be large.
+All right, so that makes a little more
+sense. At least I understand what I'm
+trying to do now. What? That took 6
+minutes.
+9:30.
+That's movable.
+Yeah. So, you have to go to your email
+and click the special link.
+coming up on my take a minute to bounce
+off of it.
+Neighborhood.
+Okay, so that looks like it worked. And
+then just
+>> you just might want to refresh.
+>> Sorry.
+>> So weird.
+You clicked the link from your email.
+Yeah.
+>> Wonder.
+What?
+install.
+Not sure what made the difference. I was
+wearing the other day. Must have been
+happy.
+There we go.
+>> Wrong answer. But it
+that's good. So returning nums was
+wrong.
+The output. Yeah. So it's now it's just
+returning the array.
+Python I'm praying for my
+Sounds.
+space there are zeros.
+Okay. It actually did return false.
+Perfect. False. Didn't return false.
+possessions are very
+Chocolate
+Okay. Got one of them output false.
+Expected false
+just under 15 minutes. All right. So,
+get two on this one.
+Hey,
+it's a hard hack. It probably only works
+for those two test cases.
+Should I keep going? So, trying to
+actually make it work more than that.
+So go ahead and submit.
+Okay.
+But not every test case that they submit
+might have that many in it. So let's say
+index is out of range. So it's giving me
+a test array that
+maybe a zero array.
+Am I understanding that part correctly?
+Cam jump.
+last executing it. Yes, there we go. So
+if nums is zero.
+Okay. So at least it makes sense to me
+why it crashed.
+So for those cases
+okay let's pause there
+actually another thought though negative
+one
+maybegative -2
+All right. All right. Shut up.
+Hey, wait. That was accepted.
+Okay.
+Okay. Now, shut up.
+>> So, why don't you walk us through the
+problem and then tell us a little bit
+about your code here.
+All right.
+Yeah, the description tab
+upper left. Yeah.
+>> So, we're taking in an array of numbers.
+You're initially positioned at the first
+index.
+Is that a hint? So, we so maybe a while
+loop on this one.
+You're initially positioned at the
+array's first index. Each element in the
+array represents your maximum jump
+length at that position.
+So for each
+index you need to call it I guess maybe
+frog is a bad example.
+Cubert might be closer. So you're
+jumping through
+each index and if you can jump off of
+that array
+to the next one it's going you're either
+going to be able to jump off of it or
+not. So maybe the floor is lava. So if
+the index is zero
+then you burn on it otherwise you can
+jump to the next one.
+So
+true or false each time you jump to the
+next index. So I can jump two, I can
+jump three, I can jump one, I can jump
+one and jump four.
+So as long as I can jump that allows me
+as long as that allows me to jump then
+I'm still out movement. But any one of
+these zero then my jump meter goes to
+zero. and I can't jump out of that
+index.
+That was my understanding of it. So
+maybe I had a false assumption. You're
+given an integer array of nums. They're
+initially positioned at the first index.
+Each element in the array represents
+your max. So it's not it's not actually
+how far you jump, but it's how far you
+could jump at that position. That's what
+I was think. I might have misread that
+part. But you can either jump out or you
+can't. So, I can jump four, but it
+doesn't mean I've got to jump four.
+>> So, you see how you're catching all
+these little little assumptions that you
+picked up on your second read through
+here at the end.
+>> Yeah,
+>> that's what I like to see um at the
+beginning. Right. So you jumped into the
+code which is totally fine but I think
+for the purposes of
+the mock interview here and what we like
+to see um in the technical interview as
+well is that this is a medium problem.
+So it's going to be a little bit
+complex. You could jump into the code
+and just give it a test run. But it's
+going to be helpful if you take apart
+those messages and say what are the
+assumptions I'm making about this
+problem? How do I what do I know about
+this problem? What do I not know about
+this problem? Can I distill that really
+quickly, briefly into a few lines,
+comments, um, or explain it to myself,
+to the interviewer before I jump in to
+the next part of coming up with the
+solution?
+That is where you're going to find a lot
+of wins because you can iterate on the
+code endlessly and forever. But if you
+distill the problem and then pull out
+everything that you need to know, make
+some assumptions, test them out, you're
+going to be able to make those progress
+milestones leap leaps and bounds. you're
+going to be able to progress through
+them. Does that make sense?
+>> Yeah. Is there a way to bookmark this so
+I can come back to other than just I
+mean like I can bookmark the whole site.
+Does that get this problem?
+>> It'll bookmark this problem. Yeah.
+>> Yeah. Okay.
+Okay. Well,
+>> yeah, definitely keep working on it. We
+will probably look at it um next
+Wednesday and then I'll probably find
+maybe a similar problem for for Sunday
+for to discuss. But Sundays are our mark
+interview days. But last Sunday was kind
+of a throwaway. So, um, but yeah, this
+was a good approach, I think. I mean,
+you you got some code going. You passed
+the test cases on the the initial test
+cases. I don't know about any of the
+other 200 or something test cases Le
+Code likes to throw at you, but you got
+some success there. So, that's that's
+pretty fun.
+>> Thank you.
+>> I got more traction than I thought I
+would. That's especially when you said
+it was going to be medium instead of
+easy because I've not practiced medium
+at all yet. So, that was that was
+encouraging.
+All right. So, Mauricio, you asked a
+question in the chat, which is if the
+tech interview academy is with easy
+problems, why are the mocks on medium
+problems? So, a few reasons for that.
+Um, the tech interview that you're going
+to see on the job market in the real
+world is going to be medium to hard
+level. So, it's always good to get a
+step ahead and start practicing at those
+higher levels. I also think with medium
+problems is they're not most of them
+anyways are not just like some super
+tricky math problem thing. It's usually
+an easy a few easy problems like merged
+together. So it's like an easy problem
+might have a few steps that you have to
+take to get to a solution. Whereas a
+medium problem is going to be like a few
+steps, a few more steps or an approach
+that applies thinking beyond what an
+easy problem would would
+require is the word I'm looking for. So
+it kind of really pushes you to stretch
+your mind and think about how can I
+break this down into as few steps as
+possible? How can I make it clear that
+I'm thinking about this problem from
+start to finish? And can I craft a
+solution that operates on all of those
+problems that I broke down? So, it's
+really just a a problem-solving
+stress test, I guess. Um,
+the other bit is that
+I kind of want to hoard as many easy
+questions as I can so that I have lots
+of opport.
+We do cover easy questions on Sunday
+where we do like a little bit of pseudo
+code and talk about the problems or we
+might even do a mock interview with the
+easy from now and then now and then. But
+mostly I like to try and use the medium
+problems for the mock interview because
+actually also of what we just talked
+about with John here is that moving
+forward I'm not super concerned about
+getting a code solution written out for
+the mock interview. I'd rather see you
+work on the problem solving, the
+breaking the steps down, pulling out
+those assumptions that we talked about
+of where he even literally just read it
+of like, oh, I don't have to make that
+many jumps. I can make up to that many
+jumps. So, that is very useful piece of
+information that we can pull out of the
+problem statement, put into our pseudo
+code, our comments, and build a plan
+around that. So, that's more of what I
+like to see focused on for these
+sessions. um especially for the mock
+interview and that doesn't require code.
+Um that is the problem solving piece.
+So that is a lot of explanation but I
+hope that makes sense. And then you also
+ask what's the expectation just write
+the pseudo code on the media problem. So
+there's kind of layers to it. There's
+like what we just discussed of what
+assumptions can I pull out of the
+problem? What is it telling me? What is
+it not telling me but that I'm making a
+guess about? What can I what can I
+gather from the examples about their
+explanations, how they work? What do the
+constraints tell me? Is there any useful
+information in the constraints? Making
+sure you're reading through the full
+problem and seeing exactly what it's
+telling you and also maybe what it's not
+telling you. And then kind of building a
+game plan from there, whether that's in
+I'm going to write a for loop to go
+through this step by step. Then I'm
+going to make a variable to do XYZ. You
+can do it more granular like that or you
+can just say I need to traverse through
+this list. I need to count the amount of
+jumps. I need to see if I can make it to
+the end. Like the level of pseudo code
+detail you have is up to you and the way
+that your brain works, I guess. Um but
+just kind of making sure that you're
+thinking about all the steps that you
+might need to take in advance so that
+you're not trying to actively work
+through them in your mind and code at
+the same time. Kind of multitasking.
+that's going to slow you down a little
+bit.
+All right,
+any other questions before we hop off
+today about the technical interview,
+about practicing, prepping, anything?
+>> Yeah, for Sunday I can take um another
+mock. Is that possible?
+>> Yeah, totally.
+>> Okay. I mean, I thought uh there was a
+sketch of like certain days for mock and
+certain days for rest of the stuff.
+>> Yes. Yes. Usually there are I've been a
+little bit bad about it lately. Um so
+Sunday is our mock interview day, but if
+I don't get any volunteers or if I don't
+have a good problem that I want to work
+on, then we try it again on Wednesday.
+No, I mean I think it's it's it's good
+to have flexibility on like if you're
+already on a Wednesday, just jump in or
+whatever,
+>> right?
+>> Because sometimes, at least the way I
+see it, sometimes it it's correlated
+with your confidence that day. That kind
+of influences the fact that you're being
+watched and under time pressure. So
+>> there's better days than others. So if
+you're feel better in a Wednesday,
+should be have the opportunity to jump
+in. Yeah. But generally moving forward,
+it's usually going to be um
+Sundays are kind of reserved for mock
+interviews. Wednesdays are rever
+reserved for exploring different
+solutions that you might take to the
+medium or easy problems that we covered
+on Sunday. So yeah, we might change it
+up a little bit week to week, but that's
+the the general approach.
+>> Okay. So, so you need to kind of request
+right ahead of time if you can take it
+certain day.
+>> You don't have to, but it does help me
+to make sure that I know someone will be
+there.
+>> Okay. All right.
+>> All right. Any other questions?
+Perfect. All right. Have a great rest of
+your day, everyone, and
+>> next time.
+>> Thank you.

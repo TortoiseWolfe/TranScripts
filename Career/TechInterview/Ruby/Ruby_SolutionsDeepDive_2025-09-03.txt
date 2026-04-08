@@ -1,0 +1,1291 @@
+All right, welcome to Nailing the Tech
+interview. Today is Wednesday, so we
+will be looking at some solutions from
+problems we worked on on Sunday and last
+week. Um, the two problems. Well, before
+we dive into that, does anyone have any
+questions they'd like to ask about the
+tech interview, practicing, preparing?
+Any questions?
+No. Okay.
+So, let's start with the problem we
+talked about on Sunday. Can place
+flowers. Did anyone or did everyone get
+a chance to work on that one?
+>> Yeah.
+>> Okay.
+What about you, Rebecca?
+>> No. Okay.
+And then Lisa, did you get a chance to
+work on that one?
+>> Yes.
+Okay.
+What about you, Jenny? Did you get a
+chance to work on canned place flowers?
+>> Yep.
+>> Okay. And who else? Mindy. Mindy wasn't
+here. Okay. Now, did all of you get
+working solutions?
+>> Yes.
+>> Yeah.
+>> Okay. Great. All right. What about jump
+game? Did everyone get a chance to work
+on jump game?
+>> Yes.
+Okay.
+What about you, Lisa?
+>> No, I didn't.
+>> I did not as well.
+>> Okay, good. This is good, actually. All
+right. So, Okay, Rebecca, you did work
+on it a little bit, but didn't finish
+it. Okay,
+so here's what I'd like to do.
+And then Mauricio, did you get um jump
+game solved?
+>> Yes.
+>> Okay, cool.
+So, I'm gonna place these
+in the chat. And what I would like to do
+before we go over them
+is that we're going to play with the
+breakout rooms again. Um,
+I think what I would like is that if you
+didn't finish or didn't work on Can
+Place Flowers, I'd like for you to spend
+some time working on that one or
+wrapping that one up. Um, and same with
+Jump Game. If you finished Cans Flowers,
+but haven't worked on Jump Game, then I
+would like for you to work on that one.
+um either just getting pseudo code right
+now or seeing how far you can get any of
+the above. I just want everyone to be
+kind of familiar with these problems
+from the problem solving to early stages
+coding phase before we move forward.
+Does that is that work for everyone?
+Okay.
+So, let's see. And then Mindy, you you
+can choose either one. It doesn't
+matter. We talked about Cam Place
+flowers on Sunday, but um I think it
+would be better for you to work on jump
+game if you hadn't worked on that one
+before.
+>> I haven't worked on jump game, so I will
+do that.
+>> You have or haven't? Sorry, I can't
+hear.
+>> Sorry, I couldn't hear you.
+>> I I did not. I have worked I did work a
+little bit with can place flowers. So, I
+did work with that. So, we'll see what
+goes on with the jump key.
+>> Yeah. Good. Perfect. All right. So, I'm
+going to put everyone to breakout rooms.
+Again, we're just going to do about
+um let's see.
+Since a lot of you will be doing jump
+game, I think we'll give you about 15
+minutes for that.
+Yeah, we'll do 15 minutes. Um, I don't
+expect you to get very far in 15 minutes
+because this one is a medium problem,
+but I also don't want
+to spend forever on
+I don't want to spend forever on it. So,
+we'll do that. All right. So, I'm going
+to put everyone into rooms. Um, just
+consider this some dedicated practice
+time for today. And then we will
+immediately go over both of these
+problems right afterwards.
+So, I already finished both. What do I
+do? Just review.
+>> You're going to hang out with me.
+>> Okay.
+>> Let's see. I need one, two, three, four.
+Four rooms.
+All right. So, I'm going to put you into
+a breakout room. You'll be by yourself,
+but I've provided you the problems at
+the links. So, just make sure to open up
+the one you are going to work on before
+you get moved to the room because I
+don't know if that chat follows you. and
+I will see you in 15 minutes and we will
+go over both of these problems.
+Also, I think I
+I think I Okay, so it saved my um my
+settings from last time. If you finish
+early and you want to come back, there
+should be an option to leave the
+breakout room at any time.
+So, I'm not sure how to do that, but if
+you're in the breakout room, just look
+at your options.
+Okay,
+perfect.
+It It automatically threw you into a
+room where you zone.
+I had to move you back. I think everyone
+is where they need to be, though.
+All right. So, what I would like to see
+then is would you mind sharing your
+um code for jump game?
+Mauricio.
+>> Yeah. Just hold on a second.
+>> Sure.
+So I think this is it. Can jump. Yeah.
+Scription here.
+Yeah.
+So I did one solution and then I try I
+kind of compress it afterwards realizing
+that some stuff wasn't necessary and
+>> made a compressed one here that also
+works.
+So, first I was I started thinking that
+I'll keep up with the farthest I get
+in the jumps.
+But if I'm on the
+like this is for a corner case I found
+like if the is just one element and it's
+zero, I cannot go anywhere but I can put
+an an element there. So I return true
+for that one.
+>> Mhm.
+>> And then I uh go through the through the
+array through the
+through the
+you know whatever I'm jumping rocks or
+spots or whatever.
+And then at the moment I'm on a spot
+that is greater than I keep with the
+farthest. I keep up with the farthest
+here. But at the moment I'm in the in a
+spot that is greater than the farthest.
+I return false because it means I I from
+that point on I cannot get farther than
+that because I already I'm already in a
+spot that is greater than the farthest.
+So it means
+calculating that spot won't get me
+further. So it returns false. So I
+cannot get to the end because
+>> okay
+>> I'm still looping and I got further than
+the furthest. So by definition getting
+further than the furthest implies that
+I cannot get for I don't know if I'm
+making myself clear but when this gets
+calculated and and I
+and I'm already past the farthest it
+means I cannot get further because
+>> Mhm. whatever number they're seeing it
+would get me uh the farthest would have
+been recalculated and get me this
+wouldn't have this condition wouldn't be
+true.
+>> Okay. So that's why when I get this
+condition I return false
+and I put another another one here is if
+I'm if the farthest is uh
+greater or equal than the
+than the length of the array minus one
+then return true as well. And then I
+start uh looking at it closer and I
+realize that
+basically
+I can only deal with the farthest
+condition and returning false and
+keeping up with the farthest
+and uh this part over here is kind of
+unnecessary.
+>> Mhm.
+>> Because keeping track of everything
+here. So if if this loop doesn't get
+broken when I'm when my when I'm when my
+current is greater than the farthest, it
+means that I got to the finish line to
+the end of the array. So I will return
+true.
+I I realize this is the actually
+important piece
+of the algorithm and that's what
+grants me either false or the only
+possible solution is true. So if if you
+if you don't break out of here with
+false it means it's true. So I got to
+the end.
+>> Okay.
+I think that makes sense. I think we did
+something similar but I just used
+different
+>> Yeah, it's kind of hard to explain for
+me but
+especially this condition why
+why this condition I mean it's hard to
+put in words why this condition when it
+hits that condition it means kind of got
+further so it means false
+>> because you already evaluate here right
+>> so I'm already in a rock or in a point
+where I try to evaluate okay where can I
+jump here farthest. So I take the
+previous farthest and I and I calculate
+where I'm in plus
+how far I can get. So it will give me
+the index of the farthest. But if this
+is still
+uh
+is still makes the the forest before the
+current after evaluating this means
+yeah I got it stuck there. I cannot get
+further than that. Even if I'm past I'm
+evaluated a number past the furthest.
+Yeah, I think I'm following. But I'd
+like to see some print statements to
+help like solidify. Could you add some
+print?
+>> Where do you want them? I have one here
+for before true. And
+I can put one in the loop if you want.
+>> Yeah.
+>> Doesn't let me copy. Yeah.
+>> So, do you want it before furthest or at
+the beginning or at the end of the
+>> beginning would be good.
+>> And do you want both or you want me to
+take this up?
+>> You can leave that one and then we'll
+just if you just want to run both.
+>> Yeah, leave both.
+Okay. So current and bar this both
+equals zero at
+zero and this the input here is the
+23114. Yeah. Wait, is it? Yeah. 23114.
+And then the next one farthest becomes
+two
+because that was from the last
+iteration. Got it? That's the jumping.
+And then the next one it becomes four.
+Sure. Where four is coming from?
+Okay.
+Right.
+>> Yeah. And I get stuck here. Four. Four.
+F4.
+>> And then eight. Yeah. I'm not really
+sure. I'm not I'm not following how
+that's working, but it is working.
+>> Yeah. Probably because if I if we take
+this out, I mean,
+oh, it's clear to see the other part.
+in inside the loop.
+>> So it goes current zero farthest two and
+it gets stuck on four and it keeps
+looping the other uh indexes.
+>> Mhm.
+>> Okay.
+I have I think it's a similar approach
+but it's a little bit different. Um
+>> yeah but then I have this other approach
+if we can run it uh
+which is uh
+where I finally arrived to like a
+compressed solution that is not that
+confusing in other words. So
+it will be this solution right here
+just a few steps the main step here that
+I already explained and otherwise
+otherwise true. So
+can go here.
+Uh we can do a print statement right at
+the beginning.
+Oops,
+I'm using a different variable.
+Okay. So,
+>> two four.
+>> Okay.
+>> It gets on four because this is the
+forest, right? So, the current is still
+not greater than the forest. So, it
+keeps going.
+So far, this is basically just like the
+index that you can reach.
+>> Yeah, the index uh the index I when I
+jump the index the farthest I can get.
+So it keeps track of the farthest I can
+get here.
+>> But then you're still evaluating every
+index before.
+>> Yeah, I'm evaluating every every jump,
+every consecutive index. But you used to
+have one that if farthest was greater
+than
+uh n minus one that you would return out
+early but you just removed it. Yeah.
+Because whenever this evaluated if I if
+if I finish or if this condition didn't
+result it means I it means I reach the
+end. So
+>> yeah.
+>> So by elimination is true. So,
+>> okay.
+All right. Thank you for sharing that.
+I'm We're going to go over this again
+slower for everyone else. Um, but this
+is good. I mean, it's very similar to
+what I have, but a little bit different
+like we talked about. Um,
+200 milliseconds. That's probably
+because we're on Zoom,
+but maybe not. Well, I think it's
+actually because you took that return
+statement out that allowed you to return
+out before going through everything.
+Um, but yeah, congratulations. Good job.
+How long did this take you?
+>> I don't remember. I mean, I didn't time
+myself. I just doing the solution.
+>> But generally, do you have like an idea
+of how much time you might have spent on
+it? Like more than 30 minutes, more than
+40 minutes?
+>> Yeah, probably within that.
+>> Okay.
+Good job.
+All right, Rebecca, I saw you had your
+hand raised. Did you have a question?
+>> I was just in a break room by myself.
+Was that intentional or was I supposed
+to be paired up with someone? That's
+all.
+>> No, you were just going to work on one
+of the two problems
+>> by myself.
+>> Yeah.
+>> Okay.
+>> Um but I'm going to call everyone back
+here in just a minute. So
+>> Okay.
+>> That's okay.
+But you said you had started it, but you
+didn't finish it.
+>> Yeah, I wanted to see more of what
+Mauricio was doing, but he he's not
+sharing his screen anymore.
+>> All right.
+>> Yeah, we walked through it, but we'll
+walk through it again here in just a
+little bit.
+>> All right.
+>> What's going on there?
+>> What does that do? It just gives me the
+answer that I have wrong. Right. So when
+you click use test case, it drags it
+down into your test results. So now when
+you click the run button or the play
+button.
+>> Oh, here.
+>> Yeah,
+>> it'll give me the some kind.
+>> Okay.
+>> Yep. So that way if you had print
+statements or anything in your code,
+>> it would give me that there. But I don't
+have print statements. Yeah. Yeah.
+>> So, the debug thing, I don't know. It's
+I've never used it, never had to use it,
+but like you said, it's locked behind
+the membership, but if you ever want to
+know like if you submit it and you get
+>> you hit the wrong answer block there,
+you can always just pull that test case
+in and keep working on it.
+>> Yeah, I saw that. You know, I was going
+to try what um Mauricio did. So, this is
+not part of my code. Um,
+I don't even know what this comment is
+anymore.
+So,
+anyway,
+should I stop sharing my screen?
+>> Yeah, we can do that. But hopefully that
+helps you in the future.
+>> Okay.
+All right, welcome back everyone.
+How did everyone's uh breakout session
+go there? Did you get your problems? How
+far? Okay, we'll go one by one. So,
+Lisa, how did that go for you?
+>> Um,
+partially done. Um, I do I do know I
+need a while loop. So, I was working
+through the while loop right now. So I
+got some pseudo code and then
+right before we checked in I realized
+the value
+um the steps are
+not consistent. So that means I need to
+go to a while loop. So I just started
+working on that. Um
+>> this is for jump game.
+>> Yeah.
+>> Okay.
+I hope I'm in the right area.
+I mean, you could use a while loop here.
+I I didn't, but you can.
+>> Excuse me.
+>> Um, but I was working through um I was
+well
+>> working through the pseudo code.
+>> I was doing a pseudo code and I stepped
+through it and I started a for loop and
+um
+I just started doing uh stepping through
+Um, I mean, I can show it to you, but
+it's not it's not
+>> That's okay.
+>> So, but you just got it started.
+Basically, you were just kind of getting
+the early code started.
+>> Yes, ma'am.
+>> Okay. Mindy, how about you? How did it
+go?
+>> Pretty well. I was trying to figure out
+how to um get the value of the next of
+the biggest of the jump. How's that?
+>> So, I was trying to figure out how to
+get that and almost through.
+>> So, there we go.
+>> Okay. Thank you. Um, Jenny, how did it
+go for you?
+>> You're on mute, by the way. Okay.
+>> Oh, sorry. Um, pretty good, I think. Um,
+looks like my code was successful. So,
+um,
+I guess that's a good sign.
+>> Were you working on jump game?
+>> Yeah.
+>> And so, you're saying it was successful
+for the test cases or for hitting
+submit?
+>> Oh, well, I didn't submit, but yeah, the
+test cases.
+>> Okay, cool.
+>> Yep.
+If you submit, what do you what do you
+see?
+>> Uh, let's see.
+Uh, accepted.
+>> Oh, okay. And you started you started
+that in the last 15 minutes or so.
+>> Uh, well, I had I had a little bit of
+the
+>> Okay.
+>> I didn't finish it, but I uh had a
+little bit I like did like maybe
+20% of it before. Okay, cool. Do you
+want to share and show us what you got?
+>> Uh, sure.
+Let's see.
+Uh,
+oh man. Let me move this thing out of
+the way.
+>> JavaScript. It's been a while.
+>> Yeah, I only I don't like
+>> Python. Yeah,
+>> Python.
+So, um, yeah.
+But yeah, so I just did I basically I
+like to write like little notes up here
+like this is basically the summary of
+it. Um my initial position is that the
+first array or the first index of the
+array. Each element of the array
+represents the max jump length at that
+position return true. Um if you reach
+the last index and then else is return
+false. Um, and then I kind of started
+with, you know, I initialize the max
+reach, which is at zero. Um, and then
+I'm looping through the nums array. Um,
+and then I basically check each
+if each index is at its at its max
+reach. Um,
+>> um, if it's more, we would do false. If
+it's already at it, then we would return
+true.
+Um,
+and
+yeah, so that was kind of
+what I did
+there.
+Awesome. So, if we step through your
+code here, it's going from zero to
+length of the nums array. Mhm.
+>> And then you have that if condition to
+check if we if the index is passed
+further than max reach, which max reach
+in this case means the furthest index we
+can go, right?
+>> Yeah.
+>> So if our current index position in the
+nums array is further than the actual
+jeep jumps or leaps that we can make,
+then we can't go any further. We can't
+reach the end. So we'll return false.
+>> Yep. And then you're updating max reach
+at each index jump to say it is either
+the current max reach or
+the current jump position of whatever
+number we're at at our current index.
+>> Right?
+>> And then if we from our current reach
+are able to jump past the length of the
+array, then obviously we can reach the
+last index. So we'll return true.
+Yep.
+>> Okay. Awesome. So, this is exactly uh
+what Mauricio did as well in Python. So,
+now we have two versions. So, that's
+fun. JavaScript version and the
+uh Python version. Um so, awesome job.
+That's that looks great. Very clean,
+very smooth, very nice. What's funny is
+both of you did it that way and I feel
+like my ways
+I did something different about the same
+but different. And I feel like
+I I don't know how we all got to these
+different ideas.
+>> All right. Thank you for sharing.
+>> Yep.
+>> Okay.
+So, can someone share for us what they
+got for can place flowers?
+Actually, you know what? I'll I'll go
+ahead and do it.
+Might as well.
+Okay,
+open up all my windows here.
+>> So, just to recap for cam place flowers,
+we have a flower bed of potential
+plotting places. Some of them have been
+plotted, some of them have not. Um, one
+represents a spot that has already been
+planted with a flower. Zero represents
+an empty space.
+So, that's the kind of quick summary of
+there. We're also given integer n, which
+represents how many spots we would like
+to plant new flowers in. We can only
+plant in zero spots, and we can further
+only plant in zero spots that have free
+adjacent spaces.
+In this case, if there was a zero on the
+end, that would also the outside of the
+parameters of the array would also count
+as an empty space. So you could plant at
+the edge here as long as this space was
+free. So we talked through that one a
+little bit on Sunday. Um, so again, just
+kind of that restatement here. Given a
+list of potential spaces, one is a spot
+that has been planted. Zero is empty. N
+represents the amount of spots we have
+been instructed to plot.
+And I had an assumption that all test
+cases would follow the non-adjacent
+rule, which I believe is still to be
+true. I actually didn't peek too hard at
+the test cases um for this one to see
+what they looked like, but
+I feel like this is probably a safe bet.
+So the approach that we came up with or
+that I used at least was I was going to
+use the n that we received as plants to
+plot as a countdown so that each time I
+am able to successfully plot a flower I
+will
+decrement that variable so until we get
+to zero
+and we'll go through the flower bed one
+at a time checking for the indexes on
+both sides and use an if statement to
+determine if we can plant or not and
+then if n is greater than zero after
+iterating through the flower bed then
+we'll return false that we were not able
+to plant all of them. Um a couple people
+or at least one person posted in the
+discord channel and they had some nice
+nested actually it was one if statement
+with a lot of conditions in it that
+looked really nice and clear. Um I
+decided just for clarity to separate
+that out. So, and I also used enumerate
+because Brian always tells me to use
+enumerate. So, we have that there. So, I
+just did if the flower bed
+index minus one for the left hand side
+is zero or actually this is yeah this is
+just grabbing what the position of the
+side is. So if we were here at the
+middle, pre would grab this index
+position. Post would grab the next index
+position. And then if we are at either
+of the borders, I'm saying if it's less
+than zero, then we'll just set zero. If
+it's greater than the length of the
+array, then we'll just set that to zero
+as well. So we have those else
+conditions.
+And then that helped keep the if
+statement pretty clean. So if the
+current value that we are at is zero and
+both pre and post are zero then we can
+plant. So we'll put that flower down
+decrement that and then our little last
+condition true or false
+which oh
+going to let that run again.
+So I saw a couple of different
+approaches to I mean using the same
+general approach but a couple different
+ways that people broke down the if
+statements. Um, yeah, this one pretty
+much went perfectly as we planned for on
+Sunday. So, I just wanted to give that
+recap for everyone.
+All right, I am going to actually
+remove this.
+I had an initial attempt that didn't go
+well. So, after about 10 minutes of
+doing that, I said no, that's that
+doesn't look right.
+Um, so jump game. Quick recap here as
+well. You are given an integer array
+nums. You are initially positioned at
+the array's first index. We saw Jenny's
+pseudo code for that.
+Um, and each element in the array
+represents your maximum jump length at
+that position. So return true if you can
+reach the last index or false otherwise.
+Here this one is true because we can
+jump from the first index to the last
+index. So their explanation is that you
+jump one step from index 0 to one.
+So this allows us to jump to three and
+one. But they say jump to three and then
+from three you can jump to the end.
+This one says you will always arrive at
+index 3 no matter what. So this one one
+two three can only jump to the zero
+position. This one can only jump to the
+zero position and this one can only jump
+to the zero position. So none of our
+jumps will end up on the last index. So
+we return false because we cannot reach
+the last index.
+Our constraints here are pretty minimal.
+Nothing super useful there. Um, but
+that's why I'm interested by the
+approaches that you both took because
+you're kind of saying
+at this point
+I know that I can reach one, two, three
+here.
+Yeah. Um, oh, got some comments.
+Oh, Jenny got married. Congratulations.
+Okay.
+So, I'm going to show you guys what I
+did because it is actually different
+from what both of you both of you
+shared. Um, and I'm going to explain my
+thinking a little bit here. Lately, I've
+been doing
+this where I'm I'm starting out by
+setting the length to n just cuz I feel
+like it helps me when I'm what am I
+doing? When I'm writing.
+So, that's just a simple length of the
+array kind of thing to use for the for
+loops, y loops, whatever I'm going to
+use it for. I've just been finding that
+helps me I don't know why. And then this
+one I don't think. No, I do.
+And then I set jump here to initialize.
+Actually, let me let me pseudo code this
+first.
+So my thought
+was that
+when we're going through each of these,
+and I think it's a similar train of
+thought to both of you, that at two, the
+max we can jump is
+here.
+But of course, how the explanation has
+it is that if you jump from this one,
+you can reach all the way to the end.
+So, you have to include
+this three here in your thinking. I
+mean, I guess you don't have to. You
+could jump for this one, which then
+jumps to this one, which then jumps to
+the end. But in other test cases, you
+might have to
+use something that's in the middle to
+get around like a zero that might be
+here or get through some other variables
+um or other positions. So, not all index
+positions will lead to the last index.
+So you have to specifically choose the
+right places you can jump.
+For example,
+in this case, if I jumped
+from here to the furthest that it could
+jump, which would be one, then that one
+can only jump one. So I'd be stuck at
+the zero. But from this one, we can
+reach the last index here.
+So even though you can jump to one,
+sometimes you have to jump to an earlier
+index position. That's kind of the the
+sneaky part about this problem
+specifically. So if that's something
+that you were getting stuck on, that's
+kind of
+>> Yeah, I have something to add there. I
+mean, you can jump uh to the furthest
+from the index zero and all the you can
+also jump from all the indexes before
+that I mean before the farthest. So you
+have all those options from zero to the
+to the farthest
+every time.
+>> Yep. So you do have to evaluate all of
+the different places you can jump from
+as you're kind of moving along.
+And so you both ended up with a fun
+little calculation which I think is
+similar to mine. But my kind of thinking
+here was that
+well first evaluate for some edge cases,
+right? If you if the first
+first index
+could be zero,
+so
+return false because you can't make any
+jumps.
+Second edge case or assumption you might
+make is that
+if
+let's say um if the length of the array
+length
+of nums aka n is
+only one. So there's only one value.
+You're already at the last index. So
+you've already reached the end, right?
+And return true. Those are some some
+little edge cases there that you could
+build into your your code um in the like
+logic portion of it, but I kind of just
+took those out early and that kind of
+looked like this. So again, I set my end
+to length of nums.
+And then to catch those edge cases,
+if nums
+zero
+equals zero or n equals 1.
+Oh, wait. Is that right? No, that's not
+right. I need this one to be false.
+I'll just copy that.
+You don't have to start with edge cases.
+That's just
+something that I did. Um, so kind of
+just moving those things out of the way.
+Then I was thinking instead of trying to
+figure out the furthest to reach I this
+is where I
+I'm confused how we both kind of got to
+the same or all of us got to the same
+place but did something a little
+different. So my thinking was that this
+one can jump up to two spaces. So I'm
+going to hold that as like my jump
+variable. So
+jump equals started off with num zero.
+But as I move through, I'm also going to
+decrement that jump there. So if I move
+to the next index position, then the
+furthest I can jump still from that
+initial jump position would be one more.
+So 2 - one, I've made one jump. And if I
+made another jump, that would be 1 min -
+one. and then I would have to make this
+jump if I got to that point. But then at
+each step, similar to both of you, I'm
+saying if
+if this current jump point is greater
+than my previous jump point, then I'm
+going to reassign. I'm going to update
+and then do an evaluation there.
+So that's where I'm we kind of had the
+same idea, but we did two different
+approaches. I decremented my jump at
+each index and then both of you had a
+condition instead where I'm not going to
+decrement how much I can jump. But if I
+reach a position that is beyond
+how far I can actually go,
+then
+that's where we would like what would be
+a good example of that? This one maybe.
+So three would be the max you could jump
+and you would have that set at the
+beginning. And then the next one you're
+saying is two greater than three? Nope.
+So three is still the max I can jump. Is
+one greater than three? Nope. So that's
+still the max I can jump. Is 0 greater
+than
+three? No. But our current index
+position is 0 1 2 3. and three would be
+so actually I think you still keep going
+maybe
+you either I'm not sure your code either
+quits out at zero or four the furthest
+that you can jump is this position so
+once you get to this position
+you're saying all right the index has
+gone further than what our maxed jump is
+so we're going to quit out there
+so versus what I would be doing which is
+Okay, I'm saying I can jump three
+places. Now I can jump two places. I'm
+also evaluating if two is greater than
+two. And then I decrement again. I can
+jump one place. Is one greater than one?
+No. I can jump zero spaces. I reached a
+zero. So now I'm going to quit out
+early. So it's a little bit similar,
+but it's also a little bit different. So
+we're in range. We still have the
+general same approach of
+going through the length of the array. I
+actually went one short because in my
+>> Can you put it on the Discord when
+you're done so we can take it to compare
+with with what we got?
+>> Yeah, I'll post it in the Hackerink
+Discord channel.
+>> Okay. So, I stopped shy of the last
+index position because
+whereas yours checks if you've gone past
+the furthest index you can jump, mine
+would go to the end
+before potentially exiting early, I
+think.
+So, that's where I'm saying
+I've made a jump, so I'm going to
+decrement even just from the start. Um
+and then we're doing that evaluation
+jump equals
+jump if
+jump is greater than nums I
+else
+nums
+I
+bird.
+No, it's just Yeah.
+So, in this case, what I would be saying
+is
+actually I'll just put it a print here
+and I'm gonna
+put it right there.
+So for 2 3114 we start out with two and
+then I immediately
+decrement it. But then I also actually
+let's see.
+So jump on it one. Yeah. So
+actually move that one down. I think
+it'll be a little
+more clear.
+So for the first iteration, I can jump
+two. So we're going to say the furthest
+I can jump is two. The next iteration,
+the furthest I can jump is three. So
+we're going to say that the next
+iteration, even though this one is a
+one, I can still jump two more spaces.
+So I'm going to keep the two that I've
+decremented from the three. And then in
+the next jump, I'm going to decrement
+that two to a one. And then that's where
+we reach here.
+And so from this position, I can jump
+one and reach to the four
+versus this one.
+Three. It just kind of happens to match
+up either way. Like
+3 minus one for the decrement is going
+to be equal to 2 minus one is going to
+be equal to one. So they kind of matched
+up perfectly either way.
+And then I'm saying
+jump. So if I reached a point where jump
+equals zero, that means that either from
+decrementing
+my jump positions, my furthest jump
+positions or I mean that's kind of the
+only way actually um that I can't go any
+fur any further than this point. So even
+if there were more spaces here like if
+we had you know a couple of more numbers
+after this point
+because I've reached the zero here and I
+can't jump further than that zero then
+the zero is kind of the the thing that
+ends our ability to keep jumping. So at
+that point jump equals zero. So
+return
+false
+if jump.
+Oops. Plus I and then this is my
+condition just to break out early
+is greater than or equal to n minus one.
+So at this point if we got to this
+position so two and three. So from the
+three you can do one two three and that
+gets us to the last index position. So
+this is just that catch statement that
+says if we're already able to reach the
+last index position from our current
+jumping position then we don't need to
+check any further because we've reached
+the end.
+I want to see that
+on some other cases. So, I'm actually
+going to remove
+this and pull out some stuff here,
+which is funny because
+112 out of 175 cases, but I'm kind of
+missing
+a key part of the logic there,
+I find. Okay, so what happens here?
+Oh, that's just the 32104. Never mind.
+Maybe if I take out.
+No. Okay.
+I wanted to see different ones, but
+that's okay.
+Oh,
+here we go.
+174 out of 175.
+Oops.
+Oops.
+Use test case. Ah, so this was a
+condition from earlier.
+If num zero equals zero, return false.
+But actually,
+I don't need that
+because I check for the zero down here.
+So if we had set jump equals num zero,
+so jump would be zero.
+Jump is still zero here. If jump equals
+zero return false. So this would be our
+fail condition for this. But instead
+because it is already the last index,
+we need
+that to just be true. So
+I think
+what does that get us? Yeah. Okay.
+So it looks like everyone did pretty
+well on this one. Like there's not a lot
+of variation in people's submissions.
+Everyone's kind of just in this bucket
+down here.
+Memory is different across submissions.
+Okay.
+But before that, because I feel like
+both of you came up with good solutions
+really quickly,
+I actually had a pretty bogus idea, I
+think, at first. So, just to recap for
+this one, I want something more
+complicated than this,
+but I don't have any good examples off
+the top of my head. Maybe if I did here.
+Let's see. Um,
+three. One, two, three would go there.
+One, one, four.
+Maybe I'll just
+No.
+Yes, Rebecca.
+So, yours said it beat like 20%. I don't
+know if these statistics are
+significant.
+Um, I typed in the same code and it said
+it said I did it in 13 milliseconds and
+beats 82.33%.
+But it's the same code. I don't
+>> Yeah, it's just
+>> it's just because of um I'm presenting
+on Zoom, so it's taking up more
+>> processing speed.
+>> Okay.
+um that we're just like sometimes it'll
+it'll jump a few milliseconds just
+between different submissions like if I
+think I saw somewhere on someone's
+computer screen that like 290 people are
+live on leak code. Um so if like a bunch
+of people are submitting all at the same
+time.
+>> Okay.
+>> Then your server response is going to be
+a little bit slower versus if I
+>> All right. That's cool. I'm learning.
+Thank you.
+Okay. So, let me see. I had a few. I was
+testing out some ideas earlier on that
+were really bad, but I wanted to show
+that. Um, yeah, here we go.
+Before I got to this, I did spend some
+time doing something else. So, I just
+wanted everyone to know that not every
+idea is a winner.
+So my idea initially when I read through
+this problem was okay, so
+I'm going to ignore this three and I'm
+going to jump the furthest that I can
+jump at any given point. So the two is
+going to go to the one and then the one
+is going to go to the one and then the
+one goes to the four. Great. Three is
+going to go to the furthest it can go
+which is the zero. Can't jump anymore.
+Great. And then that seemed promising to
+me. So that's what I had had some code
+here. So jump equals our current jump
+point. And then I used the while loop. I
+was saying I'll update the index to that
+current jump point plus I. So I'll go
+from two immediately to one. And then if
+I hit an issue, which I did, like for
+example, if I reach a zero spot or
+or uh yeah, that's kind of it. If you
+hit a zero spot, that kind of blocks you
+from going further like this one. But
+maybe an earlier index allows you to
+jump towards the end. Then I was like,
+"Okay, well, I'll jump as far as I can
+go and then I'll kind of go backwards
+until I find a spot that can jump to the
+end, unless I don't, in which case
+then I'll try and break out because I
+can't jump any further." Um, and this
+tragic line of thinking did
+unfortunately get pretty far, I want to
+say.
+Do I have any prints in here? No.
+Nope. Nope. Apparently not. I think I
+had
+another iteration that did better.
+There was a version of this code that
+got to like 170 out of 175. So I know
+this isn't right, but I don't know why
+what I might have done there.
+You still have those edge cases right up
+there. But
+oh, time limit exceeded. I must have
+changed something here that messed that
+up. Um,
+I'm not gonna look for it.
+But yeah, so you can see I was starting
+to lose a little bit because I created a
+variable called circular, which means
+that if I got into a position like this
+where the time limit exceeded because I
+would say, "All right, I've reached a
+zero. Let me go back and see if I can
+find a jumping point that will reach the
+end." And then I hit that three and then
+we jump all the way back again. So, I
+was just kind of going in a loop of jump
+from three to zero, go back, go back, go
+back, jump from three to zero, go back,
+go back, go back. And I had to create a
+condition to try and catch that. And so,
+I was like, I think I've probably hit
+too many conditions here. Let's try and
+think of a better way.
+And fortunately,
+I did.
+>> Yeah. When you start coding for every
+single nuance you find, it means you're
+going bad ways.
+>> Exactly. which is why I give that
+advice. If you start adding all these
+little conditions or tweaking pluses and
+minuses or what if I just add this one
+line to my if statement, that's usually
+a sign that maybe you should step away
+from the problem for a little bit,
+rethink it, come back. Um because you're
+probably there's there's some there's a
+barrier in your thinking there. So
+that's what I did. I spent about 10
+minutes on that and was like, "Nope,
+this isn't right." Came back, tried it
+again, and I think I got this one in
+another like 15 to 20 minutes. And I was
+like, "Okay, great. I just needed to
+rethink my thinking.
+But for this one, I like I said, it's
+it's similar to what both you and Jenny
+did, Mauricio, but it's a little
+different. And I don't know how to
+explain explain it any differently than
+how you explained yours. I'm just doing
+the decrement and then I'm doing the
+calculation, same calculation that you
+do pretty much of
+creating the maximum reach or highest
+jump. And then I just have some
+conditions to exit out early. You can
+see I actually don't even have a return
+outside of my for loop. It either
+returns false, returns true, or returns
+nothing, which I think is then
+interpreted as false.
+Okay, so I know this was a little bit
+different than how we usually do things.
+Um, I wanted to give everyone the chance
+to work on the coding themselves and
+then also give everyone a chance to
+share their work, explain their
+thinking, talk through it, sound it out.
+Um, that was kind of the focus of today,
+not so much on the explaining every
+detail of the solution or breaking the
+solution down line by line like I have
+tried in the past. Um, I still wanted to
+show the differences in solutions that
+were
+used. So, Mauricio has his version. I
+had my version. I also kind of showed a
+snippet of the other version that I had
+and I I had kept pushing that one
+because it was getting pretty far like
+170 or 150 out of 175 and then I was
+like, "Nope, we need to stop." Um,
+so there are a couple of versions if you
+really look through the the code that
+was shared today that you can kind of
+see how people might have gotten to
+certain thinking. Um, but really I want
+everyone to spend the problem solving
+time in their own head instead of
+showcasing the problem solving
+that I'm doing, if that makes sense. So,
+I hope I hope this kind of switch up.
+I'm not sure if we'll keep it around. If
+you have any feedback, leave it in the
+weekly check-in forms on Discord. Um,
+but I think that's going to be some of
+the new focus moving forward is more on
+you guys doing the problem solving and
+showcasing and me just kind of providing
+the the backup code in the end.
+Does anyone have any questions,
+thoughts?
+So from now on you're going to just
+leave a problem for us to do and then
+you come back with your solution and we
+all share or that's what you're saying.
+>> Yes. Depending. So if if we get to a
+point where no one had the opportunity
+to work on it. Maybe I'll give people
+time to work on it in the session. Um
+but that doesn't guarantee right that
+everyone will get to a working solution
+in that time frame. In which case then
+we can work through the full problem
+line by line. or if people have
+questions about a problem, they want to
+work through it line by line, we can do
+that. Um, Sundays will always introduce
+new problems and then wind Wednesdays
+will kind of just be a recap, make sure
+everyone got to a working solution kind
+of thing.
+Yes, Rebecca.
+Um during the technical interview, can
+you keep like the cookbook open as a doc
+or should I print it out or
+>> So the cookbook from mod one I believe
+is
+>> uh would actually not be permitted for
+the technical interview. There's a lot
+of code that's been added over there
+that um
+>> by former students who shouldn't have
+been adding to that document, I don't
+think. Um,
+>> I don't think I have an old version
+anyway.
+>> Okay,
+>> I don't have anything added.
+>> There really shouldn't be a lot of code
+in your
+like if you want to have notes for
+yourself, that's fine, but it should be
+really basic stuff like building a for
+loop, accessing an index of an array,
+accessing a key in a dictionary, stuff
+like that. not like full solutions of
+>> I think one of them is like reversing an
+array or solving some kind of problem
+because then you're kind of templating
+away the problem solving. In general,
+when you get to the internship and
+you're working with production code,
+obviously having a template is fine.
+You're not trying to solve a problem or
+a challenge
+that hasn't been solved before, right?
+But for the coding challenges, it's a
+little different. So you don't really
+need any kind of real cheat sheet or
+anything just your own intuitiveness.
+>> Yes, I that's what I think anyways. Um
+but again I do allow people to bring
+like basic syntax stuff and again you
+can also use Google during the joy joy
+of coding technical interview. So if you
+want to Google how do I use the sort
+method or how do I use a max method or
+how do I make sure that my for loop
+syntax is correct, you can do that that
+kind of thing. Yeah, I'm just a little
+bit confused of what's allowed to Google
+and what not to Google. So,
+>> and you can always ask in the moment as
+well.
+>> Yeah.
+>> All right. Just curious. Thank you.
+>> Yeah, good question.
+Any other questions?
+>> I just want to say I enjoyed the
+session, Ruby. Thank you very much.
+>> Thank you, Mindy.
+All right. Well, with that, I will hold
+you captive no more. Um, and then on
+Sunday, we'll take on some new problems,
+give another person the opportunity to
+do a mock interview to practice, and see
+you again next time.
+>> See you. Bye.

@@ -1,0 +1,1177 @@
+Oh, I have a question. A serious
+question, Ruby. Um,
+>> okay.
+>> What is
+the low code internship? Do you know
+anything about that?
+>> Yes. Um,
+so the low code internship is
+well, there's a lot going on with it
+right now. Um it was created as a way by
+Sam who was one of the students turned
+coach I guess um who had a lot of
+experience building and managing
+WordPress sites for clients and it's a
+low code because you don't require a lot
+of coding background or skill
+not skill but coding knowledge to create
+WordPress sites. It takes a lot of
+domain experience, a lot of technical
+experience. Um, because WordPress has a
+lot of plugins and a lot of moving parts
+to manage, but it was a way to get
+involved with, you know, web design, web
+creation, hosting, managing clients, um,
+building websites for clients of all
+kinds, businesses, e-commerce, all that
+good stuff without having the like full
+coding knowledge that you would to
+create a full stack application. Um
+>> so there is one I think there's one
+project currently going on the inclusive
+IQ project
+that is
+having it has a lot of people working on
+it right now I think trying to complete
+it. Um, I think it's near completion,
+but it was a way for people who got to
+like the explorer phase or past mod 2,
+um, and were kind of just looking for I
+want to start making money now while I'm
+still learning or conversely, maybe full
+stack is a little bit too difficult for
+me. Is there a way to stay in this, you
+know, domain while not having to focus
+so much on the coding? So, that there's
+kind of a lot of reasons why it came
+about. Um, why do you ask?
+>> I just I just noticed that it was an
+option
+um that I just I didn't know anything
+about it. I don't know much about
+WordPress.
+>> Yeah.
+Yeah. I don't know how much longer the
+low code
+uh option is going to be available.
+>> Oh, so it's not permanent.
+>> I don't I'm not sure. There's a lot of
+stuff that are in flux with with that
+whole project and that whole
+opportunity. Um I think they might still
+do some low code stuff in in the future,
+but I think for your purposes
+specifically, I don't I don't know if
+you need to worry about it.
+>> Got it. Yeah, I I get that feeling, too.
+Okay. Thank you.
+>> Yeah. All right. So,
+thank you all for joining today for our
+weekly nailing the tech interview
+session. It is Sunday. So, Sunday is t
+typically dedicated to our mock
+interview day. Um, so I will be looking
+for some of you, one of you lucky
+volunteers to do a mock interview with
+us today. Um, before we dive into that
+though, does anyone have any questions
+they'd like to ask about the technical
+interview, practicing, preparing,
+anything like that? What questions do
+people have?
+Yeah, I mean I was doing uh more
+problems and I did one medium problem,
+the magic square, but I found out going
+through it that
+to me for me to be able to actually
+solve it, I have to do some research.
+>> So starting with the link that I
+suffered there, uh have to go through
+all that reading in Wikipedia. I think
+it's a Wikipedia link and find a
+constraint there that all the rows,
+columns and diagonal should be equal to
+15. But I also learned that uh I
+couldn't try to generalize a way to turn
+the square into magic. But the only
+possible way to guarantee a minimum cost
+global solution was to provide the
+algorithm to the
+uh you know all the magic squares 3x3
+magic squares either generated uh by the
+algorithm or already you know already
+defined.
+Uh I did research and I found that that
+was the only way to actually guarantee
+that you will find a minimum cost. So
+the route I was taking was to
+uh you know try to generalize as I said
+uh some somehow algorithmically without
+providing that but it turned out you
+know to a very complex solution that
+actually didn't guarantee the minimum
+cost. So I went a long time to then turn
+back, circle back and have to do
+research to take me out of that hole and
+realize there is no way through that
+hole and I need to actually provide the
+magic squares
+somehow and test against them uh the one
+that is provided. So all this goes to
+the fact that you may get a problem that
+requires extra research or they are they
+don't give those like they filter those
+out because it's too much or
+or what what about extra research in a
+problem.
+>> So you said there's a special algorithm
+to find the minimum cost. What is the is
+there a name for it? Is there was just
+like
+>> no no no it's not a special algorithm
+but the fact that you cannot solve it I
+mean according to my research I don't
+know you cannot solve it without
+providing the eight magic squares 3x3
+there's only three eight magic squares
+3x3 possible
+>> in total like that are possible
+>> in total yeah so you cannot you cannot
+create an algorithm without providing
+those and there is two way of providing
+those you define those and give it you
+know already defined
+each each each
+of the eight and then you look through
+them and you know compare against the
+one that is given and calculate minimum
+cost blah blah blah or you generate them
+algorithmically which is you you do the
+permutations on a one to nine and then
+you check the permutations against the
+conditional which will be like all rows
+and columns and diagonals equal to 50.
+So something like that. And then you get
+you get that way the same eight only
+possible eight and then you check them
+against yours and find out the minimum
+cost. Keep track of the minimum cost.
+Checking each one of the eight. But my
+point is I mean the research that I did
+is that you cannot resolve without
+having those eight either way to
+compare.
+>> Mhm.
+So to get to that point of realizing
+okay I cannot go any other way that
+requires research because reasoning and
+taking you know taking the square and
+trying to find an algorithm that
+generalize because what I was doing was
+trying to find the intersections like
+okay the intersection between row and
+column that both are 14. So if I add to
+that I get 15 or which have one
+difference between them. So I can just
+add here and it will go there. But it
+start getting a pretty spaghetti code
+and there were too many uh conditions
+like too many options and you start
+getting really complex but it wouldn't
+uh cover I mean it wouldn't guarantee
+the minimum cost anyways. So
+>> I found out on the research yeah the
+only way is given the eight magic
+squares.
+>> Okay. Um
+there are definitely especially in the
+medium and hard category problems that
+require like specific knowledge like you
+said to be able to confidently solve
+them. Like there's no brute force
+approach. There's only do you know this
+specific thing. And usually in those
+cases, it's because they come from
+challenges that are like based on
+specific algorithms that are studied in
+that are needed, not needed, but that
+that are just like popular or
+well-known. Um or based on some kind of
+like math theory that's really
+wellknown. I can't say for sure what
+this one is because I haven't worked on
+it before, the the magic square one.
+>> Yeah. But but you require I mean if you
+don't know those things, you require
+extra research. So yes, that's my point.
+Are you allowed
+>> in this case? Um I think for like an
+interview,
+>> no, probably not. Like you wouldn't be
+able to research like
+that would be considered looking up the
+solution, right? If you have to look up
+how
+>> No, but I didn't look up the solution. I
+just through the research learned that.
+Okay.
+>> Yeah, but you wouldn't be able to like
+do the research during an interview,
+right? you wouldn't be able to say how
+do I break down this problem?
+>> Okay, so that's the point and break down
+the problem
+>> since the problem required that
+knowledge and I didn't have it and the
+only way to get it was through research.
+I'm you're I'm stuck, you know.
+>> Yes,
+it's likely. I mean, I'm not going to
+I'm not going to say it's impossible
+that you'll face that in the real world.
+There are definitely problems like that.
+I think they're few and far between.
+Like you're not going to run into a
+problem that requires a specific
+specific approach that you would only
+know if you were familiar with this
+specific problem unless you were doing
+like a Facebook or Amazon or Google
+level interview. I think the vast
+majority of them that you will face in
+the job hunt are going to be things that
+you could probably work through to a
+solution without knowing the most
+efficient or specific solution to it
+ahead of time. Does that make sense?
+Like with every problem we do, there are
+certain levels of efficiency that you
+can take. There's like the brute force,
+the most inefficient. You're just
+getting a working solution and then
+there's like everyone agrees. We've all
+tried these different levels of
+efficiencies to get to a solution and
+there's the like most efficient solution
+that takes it from an O of N squared
+approach down to like an O of N, what
+have you. Those are going to be the
+kinds of problems that you will face
+where there is a way to get to an answer
+even if you don't know the best way to
+do it right away. And then the next
+challenge would be how can you make this
+more efficient. That's not to say that
+you wouldn't face something like this
+cuz you you still technically could. Um
+but I think it's it's more unlikely. But
+there are a lot of medium problems that
+I mean not a lot. there are a good
+percentage of medium problems or hard
+problems that do have that like do you
+know this specific thing that you need
+to know to solve this problem and I
+still think there's a good like there's
+there's things you can learn from that
+even now if you know now that you know
+what you know from having to research it
+like it's still a good um use case to
+use that knowledge to work backwards and
+build out the solution like you can
+still learn a lot from developing a
+solution to this problem
+But it is it is kind of yeah it's kind
+of frustrating definitely.
+>> Yeah. I mean I would have never I would
+have never find a solution going through
+the path I was going but I was I will
+never gone I will never become aware of
+that fact without the research.
+>> Yes. The good news is that you will not
+see a question like that for a joy of
+coding technical interview. I can
+promise you that.
+Yeah, that's hop in the short term.
+Yeah, hopefully short term because I
+want to be stuck on this face forever,
+>> right? Yes.
+>> Um, but there are I feel like there are
+the most popular ones that are like that
+are easy to find. Like I use the blind
+75 leak code playlist. I talk about it
+all the time. That one has some really,
+excuse me, challenging, complicated
+questions on there. or some of them
+require a specific knowledge, but
+they're so popular and wellknown that
+it's available that you are able to kind
+of get that background info. So, I don't
+think there's like a lot of problems
+left out there that are generally built
+to that to like truly stump people
+because if like what value would there
+be in interviewing a candidate to try
+and stump them to not be able to solve a
+problem? Like it just doesn't make a lot
+of sense. So, I don't think you're going
+to see a lot of that where they're like,
+I'm trying to stump you. Except at a
+place like Google where they're like, I
+want to see how you break this problem
+down to the tiniest level and how you do
+all these complicated things and can you
+create some magic algorithm on the spot.
+That's not going to be the vast majority
+of situations you run into.
+But yes, I will I actually do want to
+I've pulled it up. I'm gonna take a look
+at that later and see more what you're
+talking about for the magic square. I'm
+curious. Maybe we'll cover it in a
+future session like on a Wednesday or
+something.
+>> Yeah, I did arrive a solution but uh
+yeah, without the research I couldn't
+have.
+>> Yeah, I'll take a look at that one. I'm
+curious now.
+Any other questions people might have
+about technical interview or practicing
+prepar preparation preparing
+Okay, cool.
+So,
+we I've got some problems for us here.
+Um, but first of all, let me ask, is
+anyone interested in being our volunteer
+for today for the mock interview? anyone
+who wants to test out their their
+skills.
+I mean, I will go if just to get used to
+me being watch, but if somebody wants to
+go, I I'll let them go if because I went
+last time. But if nobody's willing, I
+will go.
+>> That's okay. I won't put you on the spot
+two weeks in a row or two sessions in a
+row.
+So, with the remaining time we have, I
+think we'll just do an overview
+of a problem
+and then
+that'll be something we can continue to
+work on and build into for Wednesday.
+So, let me share my screen.
+I found this one and it's interesting
+and I'm hoping that some of you will
+tell me why it's interesting, but we'll
+go over it first. So, best time to buy
+and sell stock. This is technically an
+easy problem. Um, and we'll take a
+better look at it. So you are given
+array prices where prices I is the price
+of a given stock on the eth day. That's
+a lot of jargon. You want to maximize
+your profit by choosing a single day to
+buy one stock and choosing a different
+day in the future to sell that stock.
+Return the maximum profit you can
+achieve from this transaction. If you
+cannot achieve any profit, return zero.
+All right. So let's look at our examples
+here. Prices. So this is our prices
+array.
+715364.
+Our expected output is five. And so I'm
+looking at this. Return the maximum
+profit you can achieve. So they're
+expecting to get a profit of five. So
+you buy on day two at one and sell on
+day five. Excuse me.
+Wait. 1, two, three, four. Oh, yeah.
+Okay. Not zero. Next. Buy on day five.
+Price equals six. So, profit is 6 minus
+one equals 5. Note that buying on t day
+day two and selling on day one is not
+allowed because you must buy before you
+sell.
+All right? So, you couldn't buy on this
+day and then go back in time and sell on
+this day.
+>> So, it's moving into the future. You can
+only buy
+buy before you sell or sell after you
+buy.
+>> The constraint doesn't include a time
+machine.
+>> Right. Exactly. And then in their second
+example here six oop sorry 7 6431.
+In this case no transactions are done
+and max profit is zero. So if we take a
+look at that and see why each day that
+we could buy
+You can kind of see it in reverse. It's
+all descending. So 7 to 6, 6 to 4, 4 to
+3, 3 1. So if I bought on any given day,
+I would only expect to lose money and
+never gain money. Whereas in this one,
+it goes up and down, up and down, up and
+down. So there are multiple points where
+you could make a profit. If I sold
+bought here and sold here or bought
+here. Actually, you can even buy here
+and sell on there and get a dollar or
+buying here and selling here or here.
+But in this case, there's no day where
+you can make a profit. So, you return
+zero.
+All right. So, I'm just going to pull
+that out. And
+generally, what I recommend is just
+printing out what our parameters are.
+Prices
+just to see if our inputs match what I'm
+expecting.
+Yeah. So, we're given prices array.
+There's our prices array.
+Expected five. I returned nothing. And
+then I'm just going to add a return
+statement there. We are expecting an
+integer. So, I'll just start with zero.
+And if I had to resummize in my own
+words what I'm expecting here. So we are
+given price
+price array prices array
+and
+we want to find the
+what is it
+like max
+difference
+between
+two indexes
+where
+index i is
+greater than j, right? Um, now that's
+also very mathy just because that's how
+my brain thought about it. I want to
+find the greatest difference between any
+two numbers from the end to or from the
+beginning to the end. And I need this
+number
+to be oh not greater than less than.
+I need the first number at the beginning
+of the array to be less than the ending
+number
+so that I can make a profit.
+And then we want the highest version of
+that. So in this case I would be less
+than six and it returns a profit of
+five. But I could also do five, which is
+less than six,
+and that would also meet this case. But
+I'm looking for this case. Or if I
+wanted to say it in more plain text, I
+could say
+looking for the lowest I can buy and
+then highest
+I can sell
+after that index. if I wanted to say it
+in a different way, but I like my way
+better. Uh, this first way. So then I
+could break that down into two different
+use cases here, right? So my first thing
+that I have to figure out is
+finding the two indexes that meet
+the condition of I less than J.
+And then I also want to find
+the two
+indexes that have
+the
+greatest difference.
+All right.
+So, does anyone have any ideas about how
+we might solve this problem opening to
+the to the room?
+Uh my idea will be like a nested array
+where the first go through through all
+and the nested array goes to
+uh i + one starting on i + 1 till the
+end and a conditional inside to check
+that the the number is greater
+and keep track of the of the maximum
+profit inside. Mhm. So your idea would
+be to do kind of finding all the two
+value pairs that we can. So seven paired
+with 1 5 3 64. Increment the outer loop
+to have one. Pair that with 5 3 64. So
+on and so forth until you get to the end
+and find the
+the max there. So how would you keep
+track of
+the max? Did you say that? Sorry. Yeah,
+I said that uh you have a conditional
+inside to check the if there is a
+profit, right?
+>> Mhm.
+>> If uh I minus the inside greater than
+zero
+and then keep uh profit equal uh
+equal the previous profit.
+>> Yeah, that makes sense.
+I'm going to call that brute force.
+And then
+do you have any idea what the big O on
+that is, Mauricia?
+Yeah. N2. I mean N + N * N minus
+uh N minus
+whatever
+I am at the time. Hold on. Probably N2,
+right?
+>> N squ. Yeah.
+N squ. Yeah.
+[Music]
+>> Yeah. N square. Awesome.
+Now, you don't have to know the big O of
+your solution for the technical
+interview that I give. Um, I do like to
+challenge you all to think about it
+though, especially on a line by line
+brace basis to figure out how it builds
+up. I think it's definitely helpful in
+considering how your approaches,
+how efficient are they, and it helps you
+think about different approaches that
+might be more efficient or lead to
+different solutions. So, I'm going to
+call this the brute force because that
+is a a pretty big O there. But I do
+think it would solve
+this problem.
+>> Yeah, try to go for the first one pop. I
+mean, like not the most sophisticated,
+but the first one that pops up just to
+handle the constraint of time so I get
+to a solution fast and then I'm done
+with it.
+>> And that's great. I think that's the way
+to do it. always work towards getting a
+working solution first and then think
+about all right what can I do now to
+improve this um do we have any other
+ideas for how we might approach this
+problem
+>> have we found the minimum price yet
+>> the minimum price
+what do you mean by that
+>> um well since we want the max profit
+best time. I had already solved the
+problem, so I don't know that this is
+the way that you want to go. But the way
+that I did it was
+I set the minimum price to
+um a very high number
+>> so I could compare it. And then I said,
+okay, so the best difference is going to
+be zero.
+And then um
+>> okay
+>> we can go through in a loop and we can
+check for a minimum price to see if the
+price is less than the minimum price and
+replace it or
+um keep the minimum price that we have.
+>> Now how are you calculating the new
+minimum price? How are you move
+iterating through it? I said for P and
+prices the minimum price. So we're going
+to pick the smaller of the two prices
+for minimum price is equal to P if P is
+less than the minimum price else minimum
+price.
+>> Okay.
+>> And getting the
+the profit piece though.
+>> Yeah. So the profit is going to be
+the the profit is going to be the
+difference of the price of P minus the
+minimum price and we're going to when we
+pick the diff when we go through to get
+the biggest the best profit we're going
+to do best pro best difference is equal
+to the diff is equal to this P minus
+minimum price if this difference is
+greater than the best stiff or else it's
+the best diff.
+>> So you're tracking um profit as well.
+>> Yeah,
+>> profit and minimum. Okay. Yeah, that
+sounds
+like this approach up here but with the
+added uh
+added element of tracking
+men price because that's going to be the
+most likely to get you the highest
+return, right?
+>> Mhm.
+highest return
+and then you're also tracking the profit
+and then comparing
+at each stage. How what does your uh
+what does your loop look like? Is it a
+nested loop like this?
+>> No, it's actually three lines
+>> for P and prices.
+>> I want to see it for P and prices.
+>> Okay, I can't share.
+>> Yeah, let's see.
+>> I'll share. Oh, I cannot start. I can't
+start the screen yet.
+>> That's okay. There you go.
+>> Okay, let me share.
+Uh, hold on. Sorry. Oh, yeah. I've got
+So, you can see it, right?
+>> Mhm.
+>> So, um,
+what I did was,
+so we have to have at least two elements
+and the minimum price is a very high
+price. so that we set it to the very
+highest price and the best difference is
+going to be zero. So that we check for
+the corner cases. If we have less than
+two, we're going to return zero. Um
+if so my loop that we were talking about
+is for P and prices,
+the minimum price is going to be P if P
+is less than the minimum price. Else
+we're going to keep that minimum price.
+Okay,
+>> then we've got the difference is going
+to be P minus the minimum price, which
+is the current P is the current price
+that we're going through, right?
+And then um so that's the difference.
+Now the best difference, the maximum
+profit basically is going to be the
+difference which is P minus the minimum
+price if the difference is greater than
+the best diff. Otherwise, it's still the
+best stiff that we have. And then we
+return the best stiff. So, it's three
+lines in a for loop.
+>> I like that. Um,
+I do
+let me see.
+So, this is an easy problem. If this was
+a medium problem, I think we could find
+a way to break that. So, I'm just going
+to type that out
+>> probably.
+>> Okay. Go ahead. No, I like it. Wait,
+keep you keep sharing your screen. I
+look at it real quick.
+So,
+I want to see
+men price
+equals.
+Yeah, you said something really high.
+>> In case you can't tell, Ruby, I've been
+practicing. Okay.
+>> No, I like it.
+Um,
+and then you said best difference is
+zero. I like that because
+you're starting with
+the null like the not the null case, but
+yeah, kind of like the null case where
+you're saying if I find nothing, if I if
+there's no way to make a profit, then
+I'll return zero. So, best difference
+starts at zero. And then you're saying
+for P and prices
+I just want to see if I can break it.
+Men,
+>> break it. Go ahead.
+>> Oh, wait. You're saying diff.
+>> Uh, do you need me to stop sharing now
+or can I stop sharing?
+>> No, hold on. Let me
+>> Let me finish copying you.
+need
+something.
+>> Can you scroll up a little bit to see
+the whole algorithm?
+>> Sure.
+>> Um, Zoom is getting in the way. So, I've
+got to figure out a way to move that
+thing, but I'll move it that way. And
+then you can see um
+you can see more of it maybe.
+>> Yes.
+Are you okay with that, Ruby? You got
+everything.
+>> Hold on.
+Greater than.
+>> Okay. Yeah.
+>> All right, Mauricio, you got everything
+you need?
+>> I mean, yeah, but you scroll it up
+again. So,
+>> sure. Whatever.
+I mean, can you keep it that it shows
+everything?
+>> Sorry.
+>> I mean, can you keep it like it shows
+everything like from line 13 down?
+>> Yeah. The problem is is that the zoom
+controls kind of get in the way. So, I'm
+trying to fix that. Okay. So, I could
+probably make my screen a little less
+big.
+Can you see everything now?
+>> Mhm.
+>> Yeah.
+>> Okay. So, is that what you're looking
+for?
+>> I mean to see it. Yeah.
+>> Okay.
+>> All right. I'm stopping the share.
+Great.
+>> Take over.
+>> Now, what would you say is the
+efficiency for this?
+I don't know.
+>> Why isn't it stopping the share? Why
+isn't it letting me stop the share?
+>> It is. I'm sure.
+>> Yeah.
+>> Oh, okay. I see. I see.
+>> It looks like O of N.
+>> There's only one for loop. So,
+>> yeah, it looks like O of N. I mean O of
+P.
+>> Yeah. O of P. Yeah. O. Yes. So this is
+cool. So we're starting with something
+infinity as the men price best
+difference.
+>> Yeah. But I don't I don't follow that
+algorithm.
+>> Sure. So in this case we're saying that
+for example
+so our minimum price just to set
+something we need it to be higher. You
+could set it to anything. So prices I
+goes from 0 to 10 to the 4th. So, we
+could also set it to I think that's
+10,000. So, we could also just set this
+to like 10,0001 or something, you know,
+10,000.
+>> So, it's kind of counterintuitive if
+it's minimum why you say it to so high.
+>> We're starting with a a higher value.
+So, that way anything in here can be up
+to 10 to the 4th. So to find the actual
+minimum value, we're starting with
+something that's higher than it could
+possibly be so that we can anything cuz
+as soon as we hit the first P in prices,
+it will automatically be the new minimum
+because this or this is higher than it
+could possibly be with any of our test
+case data.
+>> Okay, just to get it rolling that.
+>> Yeah. So this is just to initialize it.
+So we have something because if we set
+something here like you know five or 10
+or whatever that might not actually be
+the men price and then we wouldn't be
+able to find the correct answer. So
+we're just setting it to something
+that's higher than the possible bounds.
+So that on that first run it would be
+set to seven and then it would be set to
+one. So min price equals
+one if p is less than min price helps
+min price. So in the first round, we'd
+set it to seven and then we would set it
+to one. We'd hit five. Five is not less
+than our minimum price. So we would keep
+our minimum price of one. Same thing
+with three, six, and four. And so
+ultimately throughout the full loop for
+P and prices, minimum price would be set
+to one and then remain at one.
+The second piece here is finding that
+profit like above. So
+current P. So if we were at 7, minimum
+price would be 7. So 7 - 7 would be
+zero. And then once we get further
+along, like say we are at five, our
+minimum price in this case is one.
+And we would say difference = 5 - 1.
+That gives us four.
+It would be better than zero. So
+if five is better than or greater than
+zero then we will set that to best
+difference of or four whatever I just
+said the difference is
+um so at each step we're calculating
+what the difference is. So in this case
+it would be four so we'll set it to
+four. In this case 3 - 1 would be two.
+So we're going to keep that four value.
+And then in this case 6 - 1 is 5. So we
+set it to five. And then finally four
+minus one three. So we keep the five. So
+that's how it's doing it. So it's pretty
+good. However, this assumes one thing
+which is that the minimum value is
+always going to be
+um
+it assumes that the minimum value of the
+entire like array basically is going to
+prov like provide the highest
+difference.
+Whereas I think we could break that by
+saying something like
+if this was three and this was one,
+what would we see there?
+Oh, it still passes in that case. Let me
+think of a
+that's still five and it comes here. Ah,
+okay. So I'll I'll move two things
+because the highest value there is
+there.
+Yeah, let's try that.
+What?
+Dang it. Sorry. It's taking a lot of
+effort actually to make this not work.
+Three.
+I'll really try my best this time. Okay.
+Am I crazy? What am I doing here? Two
+and five would be
+Oh, that's the same output. Oh my god.
+Okay, hold on.
+>> It's okay, Ruby. Go ahead. Break it.
+>> I'm gonna change.
+Do we have repeating values ever?
+Not sure.
+5 76314. It doesn't say anything about
+them being unique. So I might assume we
+could have
+repeating values, but I'd like to not
+have repeating values. So if this was
+two and this was three and this was six,
+that should probably do it.
+What?
+36.
+[Music]
+>> The reason is because we are finding the
+minimum price.
+>> Along we were calculating it all along.
+Yeah. No, this is good.
+>> You're changing. Yeah, it's a
+>> good job.
+>> Thank you.
+>> Like I said, I've been practicing. You
+wouldn't know that from the ones that
+you give me, but I really have been
+practicing. Okay.
+If we had done if we had found the men
+outside of this, that's what I was
+thinking. It would not work because we
+would be saying that one is the men and
+so the difference would be one there.
+But we're calculating men all along. So
+at this point, three would be the
+smallest. We calculate the difference of
+three and so we set that biggest
+difference. Then one does become the new
+minimum, but 2 minus one doesn't
+overtake our best difference. So that is
+pretty sleek. That's and that's why we
+set it that's why we set those values
+outside of the loop first so that we can
+make sure that we have something to
+compare it to.
+>> Yeah, cool. That's good. I tried to
+break it. I wanted to make sure. So, I
+think we've
+>> It's all good. It's all good.
+>> All right. be nitpicky, but I would
+separate the the P and the less than and
+the minimum price in that min price
+calculation.
+>> Yes,
+as far as naming goes, this is also
+really good showcasing of well-n named
+variables. Overall, this is great. This
+is great job, Mindy.
+>> Thank you.
+>> Did that satisfy everything for you,
+Brian?
+Yeah, it just makes it, you know, a
+little easier to to read because I
+overlooked that when I was like, "Wait a
+minute, what's going on?"
+>> Yeah. When
+>> when you when you read about Pythonic
+ways, it's usually puts
+oneliners favor oneliners.
+>> Yeah, it's very concise. Nice job,
+Mindy.
+>> I agree. But but I agree that it's more
+h human friendly if you break it out as
+an usual if statement
+>> is more easier to read and
+>> so this would work though having your
+big O solar solution. So if that's where
+you started and you got a working
+solution that passed all the test cases,
+that's great. And then you can think
+about it more and see what else might I
+what else might I try to reduce that
+efficiency from having two nested loops
+to just one loop and this achieves that.
+Could we do better than this? I don't
+think so.
+>> No, me neither.
+>> So we still have to go through the whole
+thing.
+>> I wanted to look at the um runtime here.
+I do see that some other people's are
+like running quicker than ours,
+especially this one over here. Um,
+memory is still pretty good though. That
+could just be because I'm o running over
+Zoom um or some other language is more
+optimized to run this. There might be
+another solution that has the same like
+big O efficiency but might find the
+answer quicker. Um, so something that
+came to mind for me
+would be
+sliding window because we could maybe
+apply sliding window here
+where we work from the outside in
+because we know that we want an I and J
+pair, right? Of subtracting
+a higher value from a minimum a minimum
+value.
+So if we started with seven and four,
+that's not going to be a maximum profit.
+So we would want to increment this side
+to find a smaller number. That's where
+we would get. Okay, great. So we found
+this pair, we get a new bigger
+difference. So we increment this one
+from this side. We get a nice value
+there. and then we do three and then
+five
+and don't find anything better.
+So that might be a approach. I think it
+would also work in this case seven and
+one. So we'd want to decrease this side,
+decrease this side, decrease this side,
+and then we find nothing. So I think
+sliding window could work here as well.
+I don't know if it would be any more
+efficient.
+Kind of want to see
+You only have a few minutes, but
+yeah, let's try it.
+All right. And range. Oops.
+Range
+because I want access to both of those
+indexes prices.
+So I could say
+[Music]
+start equals
+prices
+zero
+end
+equals prices
+land of prices
+minus one. So, I'm going to set those
+for sliding window to the beginning and
+the end. And then we're going to
+actually not do that, but we're going to
+do
+I forgot how sliding window works for a
+second there. While start is less than
+end,
+maybe. Yeah, less than end.
+We'll do difference.
+Gonna comment this out.
+One, two, three. But I am gonna steal.
+Going to steal this
+return
+best difference.
+So in this case we do the same thing
+sort of difference equals
+difference equals
+start.
+No end
+minus start
+and then
+We'll do that.
+Really, I'm just copying and pasting
+from your solution. It would be the same
+like kind of calculations, but how we
+increment or decrement through
+because yours is linear, right? We're
+going one at a time and saying
+calculating at each level. This one is
+kind of coming from both sides. So, it's
+nonlinear.
+In that case, let me make sure this
+makes sense. If equals end minus start
+best difference equals diff if diff is
+greater than best difference
+else best difference. Yeah. And then
+we'd want to increment
+based on that ending. So if
+I is greater than
+no not I. If start
+greater than end
+start equals
+plus equals
+x = 1
+else
+and minus equals
+I think that makes sense. So if start is
+higher than end then we want to
+increment start
+and then this is actually prices
+end
+prices
+start.
+Let's try that.
+Oh, I thought I said it.
+Oh.
+So then,
+so what's going on here? Let's see.
+Oops.
+And best
+actually let me do start
+and
+difference.
+I think this is what I want to do.
+Star is also
+Oh, am I just returning zero for all of
+them? Okay. So, what's going on? We're
+not getting inside of my while loop.
+While star is less than n Oh.
+Sorry. Zero and five
+start and end.
+0 1 2 3 4 5. Yep. And then best
+difference is
+4 3 2 1.
+So I'm only
+if start is greater than
+oh yes
+I had gotten these reverse of prices
+start is greater than
+end.
+It's getting confused about am I using
+index or value here. So I needed to
+switch that to use the prices value. So
+if seven is greater than four
+then we'll move start the index up.
+So that works in this one.
+Doesn't work in that one. Y
+I'll put one expected three. So zero and
+four
+zero one two three four seven and two go
+down to one.
+Oh no we go up here.
+Three and two.
+Three.
+No, that one stays at four the whole
+time. So, three is
+greater than two.
+Uh,
+and then the last one it should do.
+Think we are out of time.
+>> Yes. So maybe sliding window wouldn't
+work. Or I need to fix my if else
+condition. So I'll play with that. I
+feel like sliding window should apply
+here. So I'll keep playing with that. I
+think I maybe need to fix my
+condition here.
+and figure that out. But in the
+meantime, this does work. But my mind
+went to sliding window. So I'm going to
+see if I can make that work. Otherwise,
+I would have started with brute force
+and then said, I think sliding window
+could work. And that would have been my
+approach.
+>> Well, you realize that I did this months
+ago, right? So I'm going to say that not
+having to do it right on the spot and
+recognizing the problem certainly helped
+me to solve it faster. And I don't know
+if you've solved this one before. So,
+just saying.
+>> Oh, no. I'm not worried about it because
+what I would have done was would have
+started with this
+just to get something and then I would
+have said, I think I can apply sliding
+window and then tried that
+>> and done what I was just doing, which is
+kind of debugging to see what's
+incrementing and what's not and why.
+>> Well, it's a good session. I appreciate
+you, Ruby. Thank you.
+>> I'll keep trying that. I'll post in
+Discord if I figure it out what's going
+on with my sliding window or sliding
+window just doesn't work here. Um
+otherwise we'll talk about it on
+Wednesday. So I know we're a little over
+but does anyone have any questions about
+today or preparing for the technical
+interview or anything? What questions
+might people have?
+>> I'm going to watch Tron. I'll talk to
+you later.
+>> Nice.
+>> Let me know how it goes.
+have
+>> the well the neutron because that's what
+we were talking about was that it's got
+>> it's got D punk in it, right? So yeah,
+>> there's actually a new Tron movie coming
+out with um Jared Leto in it.
+>> I'll I'll have to check it out because I
+haven't watched sci-fi in a while. I
+mean, Star Wars doesn't count when
+you've seen them 20 million times,
+right?
+>> Yeah.
+I remember watching Tron. I don't
+remember if I liked it, but I'm easy to
+please because I like pretty colors.
+>> It's fun.
+>> The new one.
+>> I thought the one you were talking about
+was the new one. So, that doesn't come
+out came out first already, right?
+Hasn't come out already.
+>> The newest one
+>> comes in October, right?
+>> Yeah. The newest one is hasn't hasn't
+come out yet,
+>> right? So, the one you watched was the
+old one. Okay.
+>> Yeah. From like 2015 or something like
+that.
+>> Yeah, that's right.
+>> Okay. Yeah, I was confused there.
+>> Well, you all have a great rest of your
+day.
+>> Yes.
+>> Bye, everyone.
+>> Okay. Bye. Thank

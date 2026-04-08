@@ -1,0 +1,1205 @@
+All right, welcome to this week's
+Nailing the Tech interview. Today's
+Sunday, so I've got a few problems lined
+up for us to talk about, work on. Um,
+and if someone is available and
+interested in doing the mock interview,
+then we will do that. Before we get
+started, does anyone have any questions
+they'd like to ask about the technical
+interview? Um, practicing prepar
+preparations, anything like that? What
+questions do people have?
+No questions. Cool. I don't know if you
+can hear it, but it is thundering like
+crazy outside where I am.
+>> Where are you?
+Um, well, Spain, but
+>> okay.
+>> Just very there's a storm going on.
+>> It's kind of far away. Yeah.
+>> All right. So, let's see.
+[Music]
+Pull this out. Pull this out.
+Um,
+okay. So, I've got
+Oh,
+sorry. I just need to check something
+real quick.
+Okay, perfect.
+Can share my screen.
+John said, "Sorry about yesterday. I've
+been on trouble for a while. Got you."
+Yeah, no worries, John.
+Just for anyone wondering as well, the
+link to sign up for the technical
+interview is in mod 2. There is a
+section towards the bottom before the
+optional content called I think it's
+called preparing for the technical
+interview or just the technical
+interview. I'm not sure. Can't remember
+the the little group name but something
+revolving around the technical interview
+and it has a sign up sign up link there.
+So that is a part of mod tube.
+All right. So, I'll go ahead and post
+this into the chat as well.
+We're going to start by looking at an
+easy problem, go over what it is, look
+at the constraints, look at the details,
+and then we will practice implementing
+with a harder problem, a mock or
+breakout rooms, maybe with a medium
+problem. Um,
+so let's dive in.
+All right. So valid anagram given two
+strings s and t return true if turn true
+if t is an anagram of s and false
+otherwise.
+All right so pretty short concise. Um
+just going to jump straight to the
+examples. S equals anagram t equals
+nagarum
+output true. I feel like for something
+to actually be an anagram, it's supposed
+to be like a real word,
+you know, but you
+maybe for the purposes of this it
+doesn't matter. Let's see.
+Okay, so it's a place. So maybe it is
+real.
+I'm going to pretend. I mean, it doesn't
+matter. We don't I don't think we have
+to verify cuz we're just getting one for
+one. You get one word and then one word.
+If it was like
+a long string and you had to find
+potential anagrams within it, maybe I'd
+be more concerned about that. That would
+be actually pretty hard, huh? Um, so
+tangent aside, I'm not going to worry
+about if these are real words or not,
+but just rather
+are they anagrams of each other? Anagram
+meaning that they share all the same
+letters but are rearranged. Actually,
+let's see what they say here. An anagram
+is a word or phrase formed by
+rearranging the letters of a different
+word or phrase using all of the original
+letters exactly once. Okay, so that's
+interesting piece there.
+That is something I might want to
+include in my comments already is
+something that I want to pull out.
+Anagram
+uses
+all the original original letters
+exactly once. So that means that we are
+expecting for these if these are to be
+anagrams they must include all the same
+letters and they must include the same
+count of those letters. So three A's,
+one N, two G's, one R, one M or one G. I
+think I said two G's. So then in their
+second example, rat and car false
+because we have a C, an A that's shared
+and an R that's shared, but the C and
+the T are different. And then just
+checking my constraints here, the length
+of S can be greater than or equal to 1.
+T can also be greater than or equal to 1
+and less than 5 * 10 4th. So, John, this
+is actually a good point to call out
+from last week where we were looking at
+the constraints for
+I can't remember the name of that
+problem. We were looking at the
+constraints for that problem though and
+it was the jumping the line jumping for
+the kangaroos or something and it was
+specifically that s or the whatever this
+was had a less than or equal than symbol
+or less than symbol in between these two
+characters or these two variables so
+that we knew that this one was going to
+be greater than this one. This one
+they're just comma del deline.
+So that should tell us,
+I mean, I've already said it, but that
+should tell us that they could both be
+equal to the same thing, right? Is that
+what you would gather from this? Anyone?
+Everyone?
+>> Yes.
+>> I guess does that not make sense to
+anyone that you would assume that these
+two would be potentially equal?
+That would that would make I mean that
+would make a good assumption or test. So
+if the links are different then
+immediately spit it out.
+>> That's a good call there
+because actually you would expect them
+to be the same length, right?
+>> So we expect them to be the same length.
+So that can be our first case there.
+First case
+different lengths equals not anagrams.
+>> So you're saying because it's a comma
+they're they're like at the same scope.
+It's more like a list.
+>> Yeah. Like they could say exactly it's a
+list where
+this and this
+>> supposed to fall somewhere between 1 and
+5 to the 10th square.
+>> Right. Exactly.
+>> Okay. Okay. That makes more sense to me
+then.
+>> Yep.
+Yep. Yep. Yep. Because you could also
+just put these on separate lines and
+just say like s.length is between 1 and
+5 to the 10 4th. T.
+between between 1 and 5 to 10 4th which
+I think they did in the last problem as
+well. They had two other variables that
+were like basically represented the same
+thing and they had the same boundaries
+but they put them in two separate lines
+whereas this one they just kind of
+shorten that by putting them both on the
+same line but they could be the same
+length and in fact we expect them to be
+the same length. All right. So, S&T
+consists, this is just pointing out
+because we talked about constraints so
+much last week. So, so S&T consists of
+lowercase English letters. That's also
+helpful because we're not looking for
+numbers or anything. We're not expecting
+anything unexpected, I guess I should
+say.
+Oh, they do have a followup here for us.
+But since some of the test cases are
+going to include Unicode characters,
+I'm not going to not going to worry
+about that. That's just kind of like a
+fun what if
+question I guess because usually the
+follow-ups are like can you solve this
+in a lesser oe efficiency.
+All right. So just to resummarize here
+what we're looking at
+given two strings
+and we must determine if they are
+anagrams
+and I want to add my return case as
+well.
+Return true if they are or false if they
+are not. And I'll just start out with a
+simple return of false.
+Uh,
+and then we wrote anagram uses all the
+original letters exactly once, we expect
+them to be the same length. So I'll just
+go ahead and write that honestly. uh
+if s or I mean let's let's see len of s
+is not
+not equal
+to l of t they're not the same length so
+they're obviously not going to be
+anagrams return false so that seems
+pretty straightforward
+any ideas about how we would approach
+basically basically all the other test
+cases. So, we're looking for how to
+determine if two
+strings of equal length are anagrams.
+What ideas do we have?
+Like I've seen this one before, maybe a
+pre-code camp, but I think it was uh you
+basically flip it backwards and then see
+if it's equal to itself.
+>> Wait, sorry. Say that again.
+You reverse it. Reverse the string and
+then see if it's equal to itself because
+an anagram is when it's spelled
+backwards, it's still the same thing,
+right?
+>> No, that's a palendrome. So that's
+close. But an anagram is a word or
+phrase or by rearranging the letters. So
+they could be in any order. Like this
+one reversed,
+>> this one reversed would be margarine.
+What I would do is um
+um
+send the letters to the dictionary and
+do a count for each letter.
+>> Okay. Okay. So use dictionary
+to count the letters
+and then I'm assuming
+compare that all letters
+have same count.
+>> Yeah.
+>> Okay. And then Chris also suggested to
+sort the strings.
+That seems reasonable. Sort the strings.
+And then how would you go about
+comparing them once they're sorted?
+>> Yeah. Index, would you?
+>> How so? What do you mean?
+So, um, if you sort the strings
+and they're equal in characters,
+um, they'll say that, um,
+S0 should equal T0
+and all the way down to the length.
+They should all be equal.
+So if you have three A's
+in S and only two in
+um Mhm.
+T then it would be unequal at one point
+and once you get that false
+value um you spit out false. So
+because you want all TRS, right? Right.
+Um the same for example too. If we were
+to sort it and um
+by by character
+the A would come up as true the R would
+come up as true but the C and T would
+not equal
+>> right.
+Yeah. So if we had sorted them and
+assumed that I guess it would be like
+what a a a
+g yada yada yada. So we would say okay a
+here a here a here a here so on and so
+forth. They'd equal this one would be a
+c r a t a rt.
+Yeah a rt. So a and a would match and
+then you would get r and c. They
+wouldn't match,
+>> right?
+>> So, that would be a false.
+>> Yeah, that's good.
+>> That'll work, too.
+>> Yes, potentially. Yeah, we could
+probably do that as well, Chris.
+Or potentially
+see if sorted strings
+pass the
+equals equals check.
+That looks oops equals
+check.
+>> So if you're doing two swords, would
+that be the
+O to the N squ?
+>> I was just about to ask about the
+efficiency of these. All right.
+Um
+let's start up here. So yeah, sort the
+strings. If you sorted both of them,
+what do you think that would be? Big O
+of that
+or what's this? What's the big O on just
+a regular sort?
+Is it minus one? No,
+not quite.
+It is.
+Oops. Oh, of n log of n. Yeah, Chris
+posted it just now in log of n
+>> and since you're doing them separately,
+this sorting this string would be O N
+log of N. And then this one would also
+be O N log of N. And so the total
+complexity there would be 2 N log
+2 N log of N. Yeah, 2 N log of N. So
+then we eliminate the constant. So it's
+just m log then still for both of them.
+So that holds true. This for loop would
+be an o, right? And then this if
+conditional check would be what? What
+would just what would just be uh what
+would be an equal check there.
+Also known as a constant check.
+In my head, the Jeopardy music is
+playing.
+So, since this is just an equivalence
+equivalence equivalency check, that
+would just be O of one. Does thing equal
+thing 2? So, that's O of one. So, we're
+looking at our our largest here, which
+is just N log of N. So the total there
+would be n log of n. Not horrible. I
+think it would still pass all of these.
+And then if we looked at this one,
+what do we think bigo for this one would
+be?
+So using a dictionary to count the
+letters in each and then compare that
+the letters have the same count.
+What do we think for that one?
+For this line, what do we think? putting
+all the letters
+into a dictionary.
+>> I thought O.
+>> Yep. ON because you only need to go
+through each of them once.
+>> And you could do it since we know
+they're the same length, we could
+actually do both of them at the same
+time in separate dictionaries. And it's
+helpful because we know exactly how many
+inputs we're going to get. If it was
+variable inputs, we might have to kind
+of think outside of the box for that
+one. But we have two inputs, so we only
+need two dictionaries to check, two
+dictionaries to add to, and we know
+they're going to be the same length. So
+we could do that all in one loop. So
+that's O of N. And then for this
+comparison here, what do we think for
+that?
+Not quite. Chris Chris said O of one. Um
+because it's it's different from this.
+We're not checking if the dictionaries
+are equal because they're objects and
+you can't use an equivalency for
+objects. So you'd have to manually check
+by the key value pairs.
+So in the best case that one is probably
+also O of N. Yeah,
+exactly. So overall we're looking at two
+O of N's and they're not stacked or
+inside of each other. They would be two
+separate operations. So that overall
+would be O of N there as well.
+Um, so this one if you feel confident to
+implement it would be a better O of N.
+But this one also seems pretty
+straightforward, you can use the sort
+method. Then you can use potentially
+equivalency check or just using a simple
+check at each index along the way. So if
+this one seems more straightforward, try
+this one first and then work on going
+back and looking at the more efficient
+approach, seeing how much better that
+one does.
+And then, oh, long comment here. Kai
+said, "Loop over each string and add
+each character to a dictionary. You
+would count up with one word and
+subtract with the other word.
+Remove keys if there are zero in the
+count. The dictionary is empty at the
+end. It is an anagram." And return true
+uses only one dictionary. Celeste space.
+So for that to work, they'd have to be
+sorted, right?
+>> No.
+>> So you would be trading
+>> Yeah. You'd be trading the space of one
+dictionary for the big O of time
+complexity of a a higher O complexity.
+Not a horrible idea or not a bad idea.
+Sorry.
+>> Wouldn't you just be checking using uh O
+of O of one for the in function?
+Like if something you were saying add
+and remove. So
+>> yeah. So like you
+know if it's in there if if it's not in
+there you add it at a count of one
+>> and then so you just really count up one
+word and then when you go to the next
+word you just be saying if this is in
+here subtract. If this is in here
+subtract if it's zero you know remove it
+from the dictionary. So by the end you
+have a dictionary that has nothing
+uh in it.
+>> No, that makes sense. Now if you did the
+dictionary with one first, so add all of
+these to the dictionary and then check
+this one and subtract out the N, that's
+gone. Subtract out an A, reduce count,
+subtract out G, that removes that one.
+A, remove count, remove count, and then
+end up with an empty dictionary. So that
+does make sense and you could do that
+and still keep the O of N. So actually
+yes, that would work. I retract my my
+statement. You would not need to sort
+that.
+>> If you were trying to like super
+efficient, make it super efficient and
+do it at the same time, then it would
+need to be sorted,
+but they're not sorted, so you can't do
+that.
+>> Yeah.
+>> No, that looks good, too. I like that.
+So then
+that's a I mean
+yeah because in this case we're creating
+two dictionaries.
+It's still happening in one o of n loop
+but you're creating two space holding
+objects.
+Whereas in the second your approach, you
+would be just adding one to the
+dictionary and then instead of doing
+this compare piece, you're still keeping
+two O of N loops, but you're reducing
+your memory space from two dictionaries
+to one dictionary. So yeah, I mean
+overall it looks like it would fit the
+same general O of N structure, but have
+better memory. Yeah, I like that.
+I'm going to write that.
+Create a dictionary with one
+then subtract or remove keys
+with the second.
+If dictionary
+is empty
+anagrams.
+Okay, that's fun.
+Then this is
+option option one option two.
+Now, obviously, you don't have to think
+about these that in-depth to come up
+with like five different solutions, but
+it's a fun thought experiment while
+we're all here, right? And then Mauricio
+also added into
+uh Discord a solution
+which looks something like
+for letter N.
+Check if
+letter is in S
+and if oh
+I'm going to write it like this if
+condition if condition
+[Music]
+there we go
+letter is NS s and
+s
+count
+letter
+is equal. I'm guessing is equal. Oh,
+okay. T.ount
+letter.
+That seems to be the general
+the general approach. So you have one if
+condition and then at the end you return
+true if they if it never returns false
+along the way.
+So,
+I don't I don't know if that's super
+clear just written like this. It's it's
+more clear because I'm looking at the
+code, but um so basically you would say
+all right
+for well they're saying for letter N. So
+you start with N and then you would say
+is N
+in S? Yes. So you'd have to compare n to
+all the letters in here. And then
+they're saying is count of n in t. So
+you do a count which would be one. And
+then you would do a count of n in s
+which would be one to make sure they're
+equal.
+So I'm actually going to separate these
+into two lines here. What do we think
+the big o for this is? Mauricio. Do you
+want to take a guess?
+Uh
+the worst case will be of O of N. I
+think
+>> O of N. Why do you think this?
+>> So
+>> because if I don't exit early, I will
+have to go through everything.
+>> So you're saying in the best case then?
+>> Yeah, the worst case because I mean the
+worst case in terms of cost of time.
+I'll have to check every single letter
+of T. And
+so that would be the worst case, right?
+So even if you only check a single
+letter,
+you still have to run both of these
+conditions. So I'm going to keep that in
+mind. So if we only did
+we can even ignore that one and just say
+okay is letter ns what would be the bigo
+for that
+>> I don't know the code of of internally
+about in how it does that so
+>> so what that does because this is a
+string
+it would say
+is n equal to a is n equal to and and
+that it's O of N then.
+>> Yep.
+It's different for dictionaries and sets
+then it would be an O of one, but for a
+string it's going to be O of N. And then
+for this one, what do we think about
+S.ount of letter?
+>> Don't know the code either, but if it's
+go through everything, that's O N2, I
+guess.
+>> Yeah, that's O of N.
+O of N. And then
+that would be in the best case if you
+check these first ones.
+Well, actually you would pass that that
+case. So this one would fail. Nope. No,
+that one would pass too.
+>> Yeah, I already ran it. Pass everything.
+>> Yeah. No, I know.
+So this one is also going to be O of N
+here.
+at the top
+and then these are nested inside of
+them. So when you have an O of N nested
+inside of an O of N, what does that one
+give you?
+>> Square.
+>> Yeah, O square.
+Where's my effort? There it is.
+Um yeah because if
+and as count letter dot
+I'm actually wondering
+this might be in the best case it might
+be worse than O of N squared but I think
+in the best case at least or the average
+case it would be O squ I'm not sure how
+would I evaluate
+because you do O=
+O N. But then you're also doing an and
+with an O of N.
+If But if this one didn't pass, then you
+wouldn't do these. So that would be
+fine.
+I'm going to look at that later. But I
+think I think Oven squ would be would be
+a safe bet.
+See, and you didn't think that Oven squ
+wouldn't pass
+and it did. So
+congratulations. depends on the test
+case.
+>> Yeah, it does. How many test cases did
+this one have?
+>> Sometimes I put a truckload of data. So
+then it breaks,
+>> right? Yeah.
+Funny enough, these are already sorted
+in order of big O complexity. Um so this
+one being the most efficient,
+second efficiency I guess, and then last
+in efficiency. Um, and again, this is
+why I say
+>> the good news is I did it in like 2
+minutes and run it and it worked.
+>> Yeah, exactly. I was just about to say
+this is why I advocate for brute force.
+You came up with the solution and you
+tried it and it worked. So that's
+awesome.
+>> Yeah, that's my record out of 100
+problems or whatever. It's like less
+than two minutes.
+>> Cool. Very good. Now then your next
+challenge then is to learn why why this
+is O of N why this is O of N the count
+method and the use cases for ends
+>> I'll have to look at the code of count
+method and whatever else
+>> because it's good that you can come up
+with a solution but it's also it's it's
+better to know even
+how that that code efficiency breaks
+down. All right. So, thanks for playing
+along on this thought experiment here.
+All right. Does anyone have any
+questions about that before we move on?
+>> So, I have the experience that burning
+out the time sometimes thinking about a
+sophisticated
+uh most efficient solution and then I'm
+burn the time. So the the method in your
+mind should be just hit the brute force
+and then if it doesn't work go back to
+sophistication
+right
+>> because the time doesn't time pressure
+doesn't allow for too much you know
+fanciness and whatever
+>> too much fancy yeah I always advocate to
+well I kind of advocate for two
+different things I always say if the
+first thing that comes to mind is a
+brute force approach
+try that out, see what happens, and then
+after it's passed, that's when you can
+refine it, think about better ways to
+approach it. At the same time, I also do
+like to keep an open mind. If in the
+early stages of the problem, if I'm
+looking at it and I think, okay, here's
+an idea of how I can approach it, but at
+the same time, in the back of my mind,
+I'm thinking, I think there's another
+way I could do this, I might take a
+minute or two to write out my second
+thought approach as well. and then
+evaluate at that moment even before
+thinking about efficiency which one
+seems more realistic like which one
+seems like something that I can
+confidently achieve and if I hit any
+errors I know why I'm going to hit
+errors like if one calls me to do a
+certain I know that it's it would
+probably pass all the test cases but I'm
+not sure about how to implement exactly
+every detail just yet versus another
+approach which maybe has a few more
+steps um but I know that I can
+accurately and confidently do each of
+those steps or course correct around
+them if I get an error, then I'll go
+with that second option, right? So,
+don't just go with the first option that
+comes to mind necessarily. Um, but so
+it's kind of I hold two conflicting
+thoughts about it. If the first thing
+that comes up to mind is brute force,
+cool. Don't be afraid of the brute
+force. If it's going to work, it's going
+to work, right? But also take a few
+minutes just to consider, do you have
+any ideas of alternatives? It's never
+going to be a waste of time to do that
+because
+what happens if you try your first idea
+and then it fails? Now you have to go
+back to the drawing board anyways versus
+in this kind of approach you already
+have plan B in the wings ready to go.
+>> But plan B should be after brute force,
+right? Because if you do plan B ABC
+before even starting, it's kind of takes
+too much time. Like
+>> that depends. That's why I don't like to
+think about efficiency right away. If
+I'm thinking about alternatives, I'm
+thinking about which one do I think I
+can code up and and work with because
+you can definitely come up with a brute
+force approach to any problem, right?
+But sometimes the brute force approach
+to a certain problem is going to be
+nasty. Like it's not going to be easy to
+do. it's going to take a lot of steps
+and it might take a long time to
+implement if you don't understand the
+problem versus a lot of problems you
+might see them the brute force can also
+be obvious. So it depends on the
+problem. Like sometimes the brute force
+is obvious. It'll only be a few steps
+and you can just do it. Versus if you
+aren't really clear on how to solve the
+problem and you have a brute force idea,
+but it takes a lot of steps versus a
+second idea where you know how to do all
+the steps but you're not sure like you
+maybe are not sure if it's going to pass
+all the test cases right away. I would I
+would think more carefully about that.
+>> Yeah. Because sometimes you don't have
+all that information. You have to try
+something, right? So if it's not that
+long then the the brute force should be
+tried first just to rule it out if it
+doesn't work and then then you think
+about the other approaches.
+>> Generally generally yes I will generally
+agree with you.
+Chris says
+then it's not equal to
+T return false. If sorted equals S, if
+sorted of S equals sorted of T, return
+true, else return false. Beats on 15%
+only. Real slow. But you typed it out
+and it did pass. So that's cool. So we
+know that our Oven squar solution passes
+and we know that uh our O of N log of N
+solution option two passes. Cool. Good
+job both of you. All right, so we've got
+20 minutes left, so I'm going to I'm
+going to rush us forward.
+I would like each of you to take some
+time or actually let me ask it this way.
+Does anyone want to volunteer to be our
+mock interviewee today?
+>> Chris says next week.
+>> You said uh medium.
+>> Yes.
+Yes.
+>> That's okay. I won't I won't force you
+to do it.
+>> No. I mean, if it's in a medium,
+probably I won't get far. So,
+>> that's okay. You don't need to get far.
+>> Okay then. Then I try whatever comes
+out.
+>> All right.
+Let's roll with that. Then I'm going to
+post this into the chat if you want to
+open that up and share your screen.
+Perfect. All right. So, this one is
+similar but a little bit different. So,
+we'll give you 15 minutes just to look
+through this one. You don't have to get
+to the code. Um, just consider how you
+might approach the problem. Sound it out
+for us. Practice resummarizing. Maybe do
+some pseudo code. If you want to start
+some code, that's fine, too. Um, but
+we're going to keep the time limit
+pretty quick on this one for 15 minutes.
+All right. and everyone else will hop on
+mute and good luck.
+>> So, we don't go to break rooms or
+anything.
+>> No, I don't I don't think we have time
+to uh
+to to divvy out the break rooms this
+time.
+>> Okay.
+So it seems uh
+you get an array of different strings
+and then you have to group them by
+anagrams.
+So whatever makes anagrams got to be in
+a group in a two-dimensional array.
+Uh if if there is no just one, it's got
+to be on its own.
+And the constraints,
+the length of the strings, the array of
+strings could be 10 to from 1 to 10 to
+the 4.
+The length of each string could be
+greater than zero and less greater or
+equal than zero, less or equal than 100.
+And uh
+every string is lowerase English
+letters.
+[Music]
+Yeah, I can only think about brute force
+under pressure. So
+to write something, I'm going to write
+that.
+So I will traverse
+All
+right.
+And uh
+compare first each
+with others
+for anagram conditions.
+uh which is same letters
+and uh
+then
+find
+and then also add Yeah.
+[Music]
+Oh, probably it's better to add to a
+dictionary,
+but
+dictionary
+dictionary
+of number of letters.
+So I will add like
+and whatever number of letters
+There will be a list here. So
+I append to that list
+uh append
+that string
+if so if I also do Count
+can the letters
+now?
+I do all that uh finish all comparisons
+and then
+I'll have to
+reference
+I mean like travers dictionary Sorry.
+By key
+and then add to
+output
+add to a list two dimensional array each
+one.
+So like
+append each value of that dictionary.
+[Music]
+Yeah, that's what I can't think of. So
+traverse array for
+STR and
+STS.
+[Music]
+Sh.
+[Music]
+[Music]
+if that's possible that syntax but
+[Music]
+[Music]
+[Music]
+[Music]
+[Music]
+[Music]
+[Music]
+[Music]
+Okay, let's go ahead and pause there.
+All right. So, can you walk us through a
+brief outline of what the problem is
+asking and then kind of step us through
+your code after that?
+>> The problem is asking to it gives a
+array of strings
+different strings that they could be up
+to 10 to the four strings in that array.
+Mhm.
+>> Uh each length of each string could be
+from one and up to 100. I mean from zero
+up to 100.
+>> Mhm.
+>> And uh it's always lower lower string.
+And what he's asking is to group them by
+anagrams. So for instance, bat here
+doesn't have any other that is an
+anagram
+of bat. So it goes by itself and this
+one tan is an anagram of not and vice
+versa.
+T is an anagram of eight.
+Uh I mean all these are anagrams between
+them. Each can be arranged as the other
+with the same letters and same count of
+letters whatever.
+So yeah, that's what it's asking. And
+the output should be like in a
+two-dimensional array of groups of
+anagrams.
+So under pressure, I couldn't think
+about sophistication. So I went for
+brute force again even though it's
+probably won't work. it will time out
+whenever I'm done but
+too much you know too nested and the
+count I mean the sort and all that
+but basically the idea was to go one by
+one and compare with the others and it
+and it if it meets some anagram
+condition
+uh I was thinking on my original
+condition but that would imply more
+nested It's stuff. So I went for the
+sort. I was thinking about yeah the
+count of letters and
+and uh
+the other condition I used before. I
+don't remember but
+>> that would imply go letter by letter.
+So I went for
+>> Yeah. Now you can see why we spent so
+much time on the easy problem, right?
+Coming up with all the different
+approaches.
+>> So use someone else's thought idea for
+how to approach it.
+>> So if I'm If if it's a hit, then I get
+the count and then I have a dictionary
+to group them by key. The key will be
+the length and I append both of them
+and then I keep going whatever and then
+I return, I guess.
+>> So, I like your overall idea. You you
+kind of lose me a little bit with the
+dictionary approach, but I'm willing to
+I was willing to kind of let you go
+through your code and see see where that
+goes. Um overall though I think your
+approach makes sense right so you're
+taking
+you're checking that first eat and then
+you're checking all right are any of the
+other one anagrams using the approach
+that we already discussed just you know
+10 15 minutes ago we know that the
+anagram check part of it is a step and
+that we can do that confidently and we
+know how to do that and then the next
+step of saying all right we've
+determined do we've determined we've
+determined that they are anagrams so how
+are we going to track them and group
+them to match the output format. Um, so
+this is where it kind of loses me a
+little bit because if we think about the
+first one here or even if we looked at
+the last one, so when you have bat,
+um, so eat and bat
+aren't anagrams,
+but let's say that bat had an anagram
+somewhere else in the string. So eat, n
+and 8 would all have the same length,
+right? So they'd be in the same anagram
+group, anagram group of three. So you
+would append those strings there. But
+then if bat or even nat and tan, those
+are also two groups of anagrams, but
+they have the same length, right? So
+your anagram groupings would be
+you'd have all five of them in the same
+dictionary component, right?
+Of anagram length being three.
+Do you understand?
+>> I was muted. Yeah, that's a bug
+because I will overwrite uh whatever
+comes first. If it's a
+I mean whatever I write first to the
+dictionary, I will override with the
+next uh threeletter thing.
+>> Well, you wouldn't overwrite it, but
+you'd add them all to the same group
+>> or add them. Yeah, add them to the same
+group.
+>> So, you'd have all five of them in the
+same group. So I think
+what I would what I would have liked to
+have seen because there's actually um
+there is one other problem in here just
+before I add them at the same group but
+uh
+I add them to the same list. So yeah
+they they won't be in a list of anagrams
+but in a list of the same number of
+letters. Yeah, but there is a this is a
+kind of just a logic thought. I think
+that would be probably you'd probably be
+able to correct that once you kind of
+saw it later on. But you do have a
+syntax approach here that you might want
+to check as well. So for string in range
+length of strings, what is the variable
+string going to be?
+>> What do you mean?
+>> So for string in range length of
+strings. If you were to add a print
+statement on the next line right under
+that, what would that print out at any
+given index?
+>> Print string str.
+>> So can we
+>> I mean it will it will print out uh oh
+yeah it will print out the range. It
+will print out the the numbers zero to
+len strings minus one because it's
+range.
+>> Yeah. So I have Yeah, it's it's wrong
+too.
+>> Yep. So then when you get to your if
+check there, the string.sort equal to
+other string.sort,
+is that going to work like you think it?
+>> No, I'll have to uh reference it by
+subscript.
+>> Perfect.
+>> Yeah, it's all the pressure. It's all
+>> No, it's totally fine. So, what I would
+like to see there then is just kind of
+double-checking along the way because it
+it's very easy to make to make syntax
+like calculations because it's really
+it's just really easy to do. You all
+have watched me do it several times
+almost every session, right? I do the
+same thing. So, I always print it out
+along the way because then I'm like,
+"Oh, nope. That's an index. I need to
+put that into into this format where
+it's checking at the index position or
+cuz I think your original approach was
+just going to be for string in strings
+in which case you would have had the
+actual string object but then you
+changed it to use the index because you
+knew you were going to have to use the
+the string plus one. So I can see why it
+happened.
+And if we add that little print
+statement along the way just to say, all
+right, is what's happening at this part
+of my code what I'm expecting to happen?
+Then we can kind of catch those things
+along the way. And then at the same
+time, okay, so you've got that, you fix
+that, then we get to the anagram group
+part. I think that would be the next
+place where I would add a print
+statement and run my code and say, all
+right, I'm testing out my anagram group
+idea. Maybe my code's not fully fleshed
+out yet. I'm not returning things yet or
+putting them in into the optimized
+groupings to match the out expected
+output, but let me just see what my data
+looks like. That's when we would then
+catch. All right. Oh, okay. I see. So,
+Nat, tan, 8, E, and T are all in the
+same dictionary group instead of
+separated like I wanted them. Now, I can
+course correct. But if we don't use
+those print statements along the way,
+then you're going to get to the very end
+before you start start seeing some
+errors and things breaking down. So
+that's really the only thing. Um I think
+>> I couldn't see any other way to use keys
+there. So maybe using a dictionary is
+not a good idea at all, I guess.
+>> Yeah. And that's okay. I mean, I think
+the general idea you have will work. It
+just needs a little bit of tweaking.
+That's all I was going to say. So I
+think overall this was great and I liked
+how you broke it down. You understand
+the steps you need to take. um it just
+maybe you would need more than 15
+minutes to come up with the to debug a
+little bit to come up with the right
+solution to pass all the test cases. And
+I do want to add this caveat that I
+don't expect like you don't have to hit
+run for the first time and all your test
+cases pass. It's very often that we run
+into errors, rewrite a few things, come
+back and debug. Like not everything you
+write is going to work the first time.
+That's just reality. That's how it
+happens in the real world, too. So, it's
+always good to see these steps of having
+to say, "All right, this approach I was
+taking wasn't going to work, but it's
+very close. I only have to tweak a few
+things, and I know what I need to do
+next." So, that's what I like to see.
+So, good job.
+>> Probably here, you can put a a list and
+then just uh add it to another list and
+then append it to this one so it gets in
+this format already.
+>> Yep, that's kind of what I'm thinking,
+too. So see you already know what you
+would do differently next and that's
+perfect.
+>> Yeah, that's that's what my brain could
+do under pressure. I mean it's really it
+really hurts me that
+>> being under a hammer of time and all
+that. So
+>> and that's why it's great that you
+practice today practice getting getting
+that that experience being under
+pressure. And if you want to practice
+more and this goes for everyone um use
+the peer mentors. I often tell the peer
+mentors to expect you uh to to say like,
+"Hey, can you guys just watch me? I just
+need that peer review pressure watching
+me code live. Um I just want to work on
+this problem for like 20 minutes and
+then if you have feedback for me at the
+end, great. If you don't, that's fine,
+too. I just need the practice."
+Yeah. Yeah. It's
+ideally it will be desensitized to that,
+but it's getting hard to get to that
+point.
+Well, I think you're doing great. I
+mean, I only gave you 15 minutes and you
+almost had a full solution worked out.
+So, I don't there's nothing to sweat
+there on on my on my end. It looks good.
+You're on the you're you're on the right
+track.
+>> Okay. Thanks.
+>> All right. So, thank you for that. And
+does anyone have any questions about
+that problem or anything that we covered
+today before we close out for the
+evening? Or any questions at all?
+Yep. Kai said great work and I agree.
+Great work.
+All right. Um so yeah just again we
+spent a good bit of time considering
+ideas and different efficiencies for
+that first problem. Um I think it's a
+good experiment. I think it's a good
+experiment to
+write get working code and then go back
+and thinking about efficiency like you
+don't have to do the steps we did today
+of like all right what are all the 10
+different ways that I could approach
+this code and let me map out their exact
+efficiency along the way. That's just
+kind of for the sake of today's meeting.
+But once you get your test cases passing
+and you've solved a problem, I do think
+that's a good idea at that point to go
+back and say, "All right, let me revisit
+this problem. Let me do my due diligence
+and think about how I can approach this
+and kind of change what can I change and
+how might I adapt to this problem to
+make it better, right?" And then you can
+see by doing that you are now weaponized
+so to speak to take on harder problems
+maybe at the medium level um with lots
+of different approaches and you're going
+to need to have efficiency in mind when
+you get to those medium problems because
+an O of N squared solution probably
+isn't going to work at that level. um
+depends right on the problem but you're
+kind of looking for a reduced efficiency
+or better efficiency to get all those
+test cases passing or I guess I should
+say efficiency matters a lot more at the
+medium level and a little bit a lot less
+at the easy level. So it's good just to
+have those ideas in mind and then also
+just to give you more opportunities to
+throw things at the problem and see what
+sticks.
+All right, thank you everyone for
+joining me today. And if you want to
+work on either of those problems and
+come up with solutions, I encourage
+that. And we will circle back on
+Wednesday and kind of get those typed
+out.
+>> All right. Thank you.
+>> Have a great day.
+>> Thank you. Thank you.

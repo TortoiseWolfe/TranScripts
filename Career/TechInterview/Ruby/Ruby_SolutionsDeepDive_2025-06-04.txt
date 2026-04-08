@@ -1,0 +1,1479 @@
+Okay.
+blowing up all my windows here. All
+right, welcome everyone. Thank you for
+joining this Wednesday's session. Um, so
+again, just a reminder since we just
+started doing this. Um, Sundays moving
+forward, we're going to be doing Q&A,
+highle problem solving. Um, just getting
+to the coding pseudo code level of
+hackerinker or le code problems. Um, and
+then turning it over for a mock
+interview to give people that
+opportunity to practice speaking out
+loud, having the eyes on them, having
+the pressure on um, getting comfortable
+with the problem solving skills in front
+of an audience, all that good stuff. And
+then on Wednesdays, today we will take
+those same problems and we'll explore
+those solutions. Um, explore alternative
+solutions, dive into algorithms or just
+big O or anything like that. Um and also
+if if we have time permitting or if the
+week is feeling light, maybe you can
+bring a problem that you're working on
+and struggling with and we can explore
+different solutions there as well. This
+will be the schedule moving forward. I
+am in the process of moving country. So
+it's going to be a little hectic for a
+little bit, but this is kind of the
+structure moving forward. Um because I
+am seeing a few new faces today from
+Sunday. Does anyone have any questions
+about this before we get
+started? So, Rebecca asked, "What does
+DSA mean? Data structures and
+algorithms." All
+right. Okay. I'm gonna save that this
+time because I didn't save it last
+time.
+Cool. All right. Before we get started
+with today's problems, does anyone have
+any questions about the technical
+interview practice
+preparation? Anything that they'd like
+to ask? What questions do we have?
+Everyone's rock solid, ready to
+go. Yeah. Okay. That's what I thought.
+That's okay. We'll get into the problems
+today and if we have questions at the
+end, we can circle back.
+Um, what did I want to start with
+today? Let's see. So, a couple of people
+are here today that were here on
+Wednesday or Sunday. We've already
+getting that mixed up. Did you guys get
+a chance to practice either or both of
+the problems that we covered? And which
+problems? I'm seeing some nodding, so
+I'm waiting for the chat.
+Yeah, you can unmute if you'd like.
+Um, yeah, I I I couldn't solve it, but
+it seemed like the water uh container
+thing was
+um like max area of a histogram problem.
+I don't know, but it seemed that way,
+but I don't know how to solve it, but
+Okay. But you gave it an attempt at
+least. How far were you able to get?
+Were you able to get some of the test
+cases passing? No, I'm really like a
+beginner here at the technical
+interview. My very first time was Sunday
+and I haven't even completed project
+five, but I'm in the um I'm in the um
+you know learning the lessons, watching
+the videos, doing the practice things
+stage and um the next step is supposed
+to be to take do your um meetings and so
+here I thought I'd just Here you are get
+a head start on that. Yeah. Yeah. So,
+this was a medium problem, which is not
+what you'll see in the joy of coding
+technical interview. So, don't get too
+afraid, you know, jumping into the deep
+end here. Um, but we like to practice
+with the medium problems because it is a
+little bit harder. And if you're getting
+really if you're doing a really good job
+on the easy problems, it's good to
+challenge yourself, stretch yourself a
+little bit, and practice at the higher
+level. especially since the job
+interviews on the or the job hunt
+technical interviews will more than
+likely be medium to hard level
+problems. Eric said, "I wonder what
+happens when you are given a problem at
+a tech interview that you are unable to
+finish in time. Guessing you just have
+to Oh, sorry. I lost my thought
+midsense. Guessing you just do as much
+as you can and maybe leave pseudo code
+where you have missing code." Yeah, I
+mean I think everyone's experience is
+different. I've definitely heard of
+people not like either finishing being
+expected to do multiple problems, only
+getting through one um out of like maybe
+two or three and still moving on to the
+next round. Um because what they're
+really looking for is a couple of
+things, right? your confidence in
+speaking out loud and presenting on
+communicating your thoughts about how
+you're approaching the problem, how
+you're breaking the problem down into
+steps, how you're communicating those
+steps, and even if you don't know like
+the perfect algorithm to solve that
+problem, if you are at least talking
+about the problem at a high level and
+can showcase that you understand what
+the problem is asking you and can
+showcase that you have an idea of how
+you would approach it, even if you don't
+technically like master the execution, I
+think that still goes a long way. And
+that's why we also talk about like big O
+a lot in our weekly sessions now, just
+because being able to explain concepts
+at that level is a a really good factor
+in determining your eligibility to move
+forward in interviews. But yeah, I mean,
+it depends on the company, I guess.
+Thank you.
+All right. Any other questions before we
+dive in?
+Discord is going
+crazy.
+Okay. So, I think we'll have time to go
+over both problems today. I don't I mean
+we don't necessarily need
+to go over the easy problem because that
+could be I don't know. We're going to do
+it so doesn't matter. Um all right. So
+everyone should be
+seeing birthday cake candles
+here. Get my Zoom windows all sorted
+out. All
+right. So on Sunday we talked about the
+highle game plan here. Um the goal of
+the problem is
+to count how many candles are the
+tallest. So we're given an array of
+candle heights. We're supposed to find
+the maximum height in the array of
+candles and then provide a count of
+those. So down here in this well in this
+example you're given 4413. So to find
+the max you would find the four and then
+we would return two for our final output
+because there are the max has a count of
+four in the final
+array. One more poison joining and then
+in this example same thing going through
+the array there are a max of the max is
+a three and there is two of those so we
+would return a two so on and so
+forth. So, this is a hacker rank
+question, not le code. I kind of mix
+back and
+forth. So, if you do hacker rank
+birthday cake candles, I can also just
+put it in the chat
+here. Oh, someone already did completely
+missed that. Thank you,
+Ally. All right, because the next one we
+do is actually on leak code as well. So
+what we did is we took the problem
+overall, we looked at the constraints,
+we looked at all of the um inputs, the
+return, and we turned that into code
+comments um pseudo code and then made a
+game plan. So our task is count call
+count the tallest. We're passed an
+integer array of candles. We want to
+find the max height of a single candle.
+And
+then we talked about the big O of using
+the max method in Python. Then we want
+to get get the count of quantity of the
+candles at that height, which is a weird
+sentence, but I I think you understand.
+And then return integer of the count of
+the tallest candles. And then I just put
+in a zero as a placeholder because
+sometimes you'll get errors if you don't
+return what it wants you to return at
+the
+start. So I wanted to go over this
+quickly because there are really only
+two steps, right? And we kind of talked
+about that if you're given.
+So just to confirm, it's always good to
+confirm your inputs
+here
+candles. So we're given an array 3213.
+That's what I'm
+expecting. We already know that the max
+method exists in Python. You've probably
+seen this while you're using your
+projects. So that's kind of a a quick a
+straightforward there. Um Oh.
+Oh, I didn't print
+it. I didn't I didn't do a lot of
+things. I'm I'm still waking up today. I
+know it's like 300 p.m., but I had a
+long morning. All right. So we'll just
+call
+this handle max equals that print handle
+max. Yeah. Okay. So debug we know that
+the max is that and we already talked
+about this last week but if you Google
+what is the o like the big O complexity
+of the max method in Python it's O of N.
+So that's pretty good. We could do it
+manually, but there's not a lot of
+benefit if you already know the max
+method. Um, being able to explain how it
+works again will be good for an
+interview. And then getting the count,
+we also might know, but if you didn't,
+it would be totally free game to say
+Python count method. Oops. If you have
+an idea that a method exists and you're
+like, okay, yeah, we can see that it
+does. And it's pretty simple to use
+count and you just kind of pass whatever
+you need to pass there. So if we do that
+count handle well actually what do I
+want to
+do? This is an easy
+problem. I'm going to make
+sure that I know how to use it the right
+way. Um, I wouldn't I wouldn't like
+linger on and again, sorry I'm jumping
+all over the place. If you're in an
+interview, obviously you could first ask
+if you need to make sure that you can
+Google something. I wouldn't linger in
+Googling or lingering and looking stuff
+up. Um, it's really just to confirm your
+suspicions and then maybe get a quick
+view of what you might use or how you
+might use it. But you really don't want
+to spend a lot of time searching because
+then that's taking away from your time
+actually solving the problem.
+Okay. So, yeah. So, pretty simple here.
+They have an array. You can call the
+count method on the array and then you
+pass the value that you want to
+count. So, that's pretty
+straightforward. So, we'll do
+candle
+candles. And we
+want candle max as the
+value. And
+then we can just return
+that. Yeah. So that works. And then if
+we just submit. Yeah. Eric put it in
+there. Yeah.
+So, this one is a little bit simpler
+because there are only really two steps,
+but you could do it the long way as well
+if you didn't know these methods existed
+or if you weren't given permission or
+access to look up that these specific
+methods
+existed. And that's totally reasonable.
+Plus, I kind of wanted to talk about
+this for one reason or two
+reasons. So, technically, this would be
+O of N.
+This count
+method is also O of
+N. Now we're doing them separately, so
+it's technically two O of 2 N, I guess,
+which in the grand scheme of things
+isn't going to matter. Like as the
+problem scales up for an input, an O of
+N solution just means that you're
+visiting every every input that's passed
+at least once. Um, and so when we looked
+at that graph, it kind of raised at a
+steady rate because for each new input,
+that's just one new thing that's going
+to get checked. Um, and so when you do
+the when you think of big O, because
+you're thinking of the range of inputs
+from one input to a million, billion,
+whatever inputs, we kind of drop the
+constants, right? So O of 2 N is just
+going to boil down to O of N. But I
+think it's also important to say that
+you are doing two O of N calculations
+here and it would be possible to do it
+in
+one potentially. Um I I'm pretty sure
+that you could. So being able to even
+explain that would also be useful.
+Again, not for joy of coding because I'm
+not going to quiz you a lot on big O
+unless you want me to. um or unless you
+did really really well and I'm like well
+we got we got some we got to talk about
+something. Um but I think it's just good
+to know in general because it'll help
+you break down problems and think about
+your problems in a new way. It also
+gives you more like expertise in job
+hunt technical interviews. Um but yeah
+so this problem really just two steps
+and then if you wanted to do these
+in like using a for loop I think that
+would be totally fine. In this case,
+it's just a timesaver. And then you
+could also boil this down to one line,
+but I think clarity is usually a little
+bit better if you have things kind of
+more verbose and we have nice variable
+names and all of that good
+stuff. So, yeah, just wanted to quickly
+wrap this problem up, not spend too much
+time on it because we did talk about it
+last week and it's an easy problem that
+you all could practice on. But, do we
+have any questions about this before we
+move on?
+Yeah. Can uh how can I find out the
+second max from this array?
+The second what? Second max. I mean uh
+the second number less than the max. If
+they ask me the interview, okay, find
+out the not the maximum one uh which is
+the next to the maximum. How to find
+that? Just an idea.
+So, you're just putting me on the spot.
+Is that all that it is? Um, well, no
+ma'am. I'm just trying to learn it. How
+to do that? Sorry. What?
+I'm just thinking about how to get it.
+Yeah. Um, well, I would you would still
+probably want to find the max and then
+you would just ignore that one and find
+and you could probably have two
+variables, max, second max, and go
+through and it's if it's if it's max
+value, keep moving. If not, set the
+greater than equal than similar to how
+you would with max. I don't think that's
+too too
+crazy. Or you could sort it and do the
+second from the last position. There's a
+couple different ways to do that. All
+right. So, we'll drop this one.
+Well, that would assume Brian max minus
+one that they are in
+sequential order, but it could be like
+the max is 13 and the second highest
+would be like five, so that might not
+work. That was me experimenting
+earlier. All right, so this one, um, so
+Rebecca said that she tried it. Did
+anyone else try this problem last week
+or since
+Sunday that might have been here on
+Sunday? I think just Brian.
+I tried it, too. Oh, yeah. How'd you do,
+Kai? Uh, I ran out of time, but you had
+the runtime error. No, no, I I Sorry.
+No, I just ran out of time to like fully
+finish it. Oh, okay.
+I
+uh yeah, I didn't I didn't quite I I
+kept on feeling like there was something
+missing. Okay. Like I wanted to approach
+it from both sides.
+Um
+but I I was having a hard time stepping
+through it.
+Okay. All right. So Brian, you said you
+arrived at a solution. Do you want to
+tell us about your solution?
+Yeah. So I I generally kind of think um
+I'm studying data science right now. So
+I kind of think like a uh in terms of
+like statistics and probability
+distributions and I think the
+probability that you're going to get the
+max area is going to be on the ends. I
+mean, it's possible you could have like
+a a list of like ones and then like have
+a some tens in the middle or something
+like that, but um so I kind of went at
+it from left and right and just compared
+like
+uh the
+max
+um of like the left from the right and
+then iterated up from the left and then
+back to the right and then just used the
+axe function between the two. Um, and it
+worked.
+Cool. Do you know what your big O on
+that would have been?
+No. Okay. But I the reason I talk about
+it like that was because
+um yeah I mean you know if you're using
+like if you're trying to go through
+there and
+you know it's kind of like I don't know
+if anybody knows like data science but I
+think of it in like terms of like grid
+search and randomized search whereas
+like grid search it's like you
+guaranteed to come up with the best
+model but it takes so much computational
+time to do that. And this is kind of the
+same thing. It's like if you're going to
+go through and calculate all the the
+areas of all those, if you get a big
+list, I mean, you got like a list of
+like 20 lengths and you're trying to go
+through there and calculate all the
+areas of all the possible
+combinations. I mean, the computation
+time on that has got to be Well, I mean,
+it's area, so it'
+be it'd be n squared, right? N* N. Yeah.
+Yeah. So I figured, you know, if I kind
+of come at it from both
+ends, then that's got to be more
+efficient than than N squared, I would
+think. Yes. And it is. So you have a
+little bit of that background knowledge
+to think about the problem in that way,
+which is great. I think if you're just
+getting started and you don't know,
+again, I always recommend the brute
+force just to get something down and
+just to get some test cases moving um
+until you can learn the more efficient
+method. But if you already come in
+having an idea of the more efficient way
+of doing it and you feel confident doing
+it, that's
+great. So, let's talk about it then.
+Going to move some stuff around.
+So, same as what we did for the easy
+problem on Sunday, I'm going to come at
+this again fresh and kind of put things
+into co comments. All right, so
+container with most water is the
+problem. I'll drop that into the chat as
+well.
+Oh, you know what, Ruby?
+Um, so I clicked on that analyze um,
+complexity. You know what I'm talking
+about? Mhm. On runtime. Yeah. And it
+says it's O to the N. It tells you that.
+Yeah. I feel like they don't usually
+tell you that.
+So, um, let me see. Stop sharing for a
+moment.
+And then space complexity. It says O to
+the one.
+I don't know what that actual.
+Oh, you clicked analyze complexity. So,
+yeah. All right. I see. And that looks
+like it might be using AI to figure that
+out. Cool. I did not know you could do
+that.
+I didn't know that.
+So, we'll we'll take a look at that at
+the
+end because that is
+neat. All right, let me share my screen
+again. All right,
+great. I lost my chat.
+Zoom. All
+right. All right. So, starting from
+scratch, container with the most water.
+You are given an integer array height of
+length n. There are n vertical lines
+drawn that s such that two end points of
+the i line are i z and i height i. So,
+as we talked about on Sunday, that
+sentence is kind of just like a real a
+real nasty sentence for them to write.
+It doesn't make a lot of sense on first
+glance. So, find two lines that together
+with the x-axis form a container such
+that the container contains the most
+water. And then they have a quick um
+sentence here. Return the maximum amount
+of water a container can store. Notice
+you may not slant the container. And
+then in their example here, they're
+showing us this is the height array with
+values 1 8 6 2 54
+837. They're expecting an output of 49.
+And their explanation is that the
+vertical lines are represented by
+array. In this case, the max area of
+water blue section the container can can
+contain is 49. And so we see that they
+have all of the values in the array
+represented as heights.
+And then they have two highlighted ones.
+This red line here, that is the eight
+representing that second
+um position there. And seven, the last
+position. The blue line tops out at the
+seven here. So that's something to pay
+attention to. And then they're telling
+us that the output is 49. They also give
+us another example height of 1 one. And
+the output is 1.
+So if we look at our constraints
+again, n is going to equal
+height.length. That's pretty common. Um
+the value of it. Nope.
+The in so the length of the array can be
+between 2 and 10 5th. This is helpful
+because that means we're always going to
+get at least two values just like in
+example two. So we'll always be able to
+at least do the area calculation. So we
+don't have to kind of look for that edge
+case of what if I get an empty array or
+what if I get an array with only one
+value. We can always do some sort of
+calculation there. So that is
+helpful. And then height of i is also
+going to be between 0 and 10 4th. So we
+can get a zero which would make
+calculations kind of
+tricky. Um I don't know if you might if
+we want to build that into our
+considerations from the top or not but
+we can at least mark it. So I'm just
+going to take and pull out the
+statements that kind
+of catch my
+eye.
+So given array
+height
+representing they call vertical
+lines. We want to go down here. Write
+this.
+Return the max amount a container in
+bold.
+Container is
+represented as
+the area. And I put that in quotes
+because at a first glance you might not
+know how they're calculating the area.
+So container is represented
+as
+represented as the area between
+two vertical
+lines.
+Okay. So I'm just going to start with
+something like that. Like we're given
+height array. It it gives us these
+vertical lines. We know that we can
+create a container and that the
+container is represented by
+two index points. I index points in the
+height
+array. We know we need to calculate can
+also write that as
+well. We need to
+calculate the max area a
+container in
+store and then we want to return that
+max as an integer.
+So, I'm just going to add that again
+here. Just an empty. I know I'm
+returning an integer, so I'm just going
+to add a simple return there to get us
+started. So, if we were looking at this
+again with fresh eyes, if you weren't
+here on Sunday, you may not like kind of
+put the picture together right away. So,
+how are we getting 49?
+Um, but as we're looking at
+it,
+yes, I see we have someone joining as
+well. So, when asked, could the max be 8
+by8, which is actually what our mock
+interviewe asked on Sunday as well. So
+that is a
+great assumption or test case to try and
+figure out is why is 8 by 8 not the
+answer since those are the two
+highest items in the array. Why is it
+that these two are not the the valid
+answer but this one and the second
+highest
+is. So they kind of give you some clues.
+The above vertical lines are represented
+by this array. Right? In this case, the
+max area of the container is 49. And so
+they're saying
+area. Um, and if you think back to your
+high school math
+days, area is typically generated as
+length times width, right? Um, and so we
+know that we have these heights. So that
+might give us one of the values to
+calculate. And so then the next value we
+might calculate would be the distance
+between them. So if we kind of take a
+look at it from that point, this is our
+first one with a height of 8. And then
+its distance between the second one is 1
+2 3 4 5 6 7. So we can assume ideally or
+we can at least make an assumption to
+test that the distance between these is
+probably going to be seven.
+And then the next thing we see is that
+the blue line is drawn from the seven
+line over to the eight line, but it's
+kind of cut off there. So they're
+representing the area as the blue
+area. That would be our second seven. So
+just kind of using the context clues of
+their diagram, we might put the pieces
+together that they're using seven as the
+length between the two index positions
+and seven as the minimum of the two
+heights of the vertical heights and
+doing a calculation there to get 49.
+So, if we made that assumption and we
+looked at the two highest ones that are
+both eight, we could say the distance
+between these is 1 2 3 4 5. And so 8 * 5
+would be 40 and 40 would be less than
+49. So those are both assumptions that
+we could test. But in this case, it
+seems like a reasonable assumption,
+right? Because 40 is less than 49. So
+that is kind of actually a kind of proof
+there that we might be on to the right
+direction there for looking for a
+solution. Now if you don't like pick up
+those clues that they kind of sprinkle
+in there the first try and you kind of
+need to take time to think about it. My
+suggestion is always go to pen and paper
+or in the code comments and literally
+just kind of spell it out using their
+example array here. How are they getting
+49? So on Sunday we saw Jenny. She was
+thinking, okay, maybe if I add all of
+these values between 8 and seven, that
+might do it. So she tried that. She had
+an assumption. She tested it out. She
+got the answer of 44, which is not the
+answer they were looking for. Um, and so
+then she needed to make a new
+assumption. So you might not get it on
+the first try, but as long as you are
+making assumptions and testing them out,
+testing them in either just pen and
+paper or in the code, then you are at
+least making steps forward. So I wanted
+to talk about that because I think
+people well what we talked about on
+Sunday is that people kind of struggle
+with just getting those first steps of
+how do I get from understanding the
+problem as a like as a starting point.
+how do I understand the problem and then
+how do I translate it to code comments
+and then how do I translate it to code?
+So the answer there is that you might
+have to do a little bit of each. Like
+you might have to read through the
+problem a few times, move to pen and
+paper, draw it out, move to code, test
+out some assumptions, and then go back
+to the beginning. Okay, maybe I
+understand this problem a little bit
+better now, go back to pen and paper,
+try and figure out how you would write
+it out, get the pseudo code down, and
+then start your final draft of the code.
+So that can seem like out of place
+because it's a more iterative process
+than maybe you would be expecting, but
+that's kind of the crux of it,
+especially as you're learning it. Um,
+anytime you're learning something, you
+kind of have to iterate iterate through
+a few duds before you get to the final
+solution. Right? So I'm just going to
+read through some of these comments real
+quick.
+Okay. So I have my assumption that I
+made which is
+that we
+use min height of
+two I'm going to call the vertical line
+end points vertical
+line
+endpoints as
+one factor of
+Okay. And
+then we'll
+use distance
+between the two
+I positions of the vertical
+lines. kind of verbose that as
+the
+length yeah I'm going to rewrite this
+as the height variable
+for calculating area and then we'll use
+the distance between the two I positions
+of the vertical lines as the
+length calcul
+calcating
+area. I'm going to keep putting it in
+quotes
+because it's not really area. We kind of
+talked about this before. It's more like
+they're asking for volume, but then
+they're saying it's actually an area
+because that's another point. So, that
+is kind of the highle approach, right?
+And then we want to make sure that that
+actually makes sense and we can test it
+out.
+Um, and then I'm also going to take this
+line out here from the
+constraints that
+says we will
+always have at
+least at least
+two data points. So with that in mind,
+we can always calculate both of these
+things. We can use the heights of two
+end points and we can use the two end
+points to calculate the I distance. So
+we can safely assume that since we're
+always given at least two, we can always
+do at least two values, we can always do
+these two steps
+here. Does anyone have any questions
+about that? Is there anything that's not
+making sense so far?
+I'm going through it a little bit
+quicker because we talked about it on
+Sunday. We saw someone attempted on
+Sunday and now we're just kind of doing
+the like high level of it.
+Okay, I'm going to keep on moving and
+grooving. So
+my my recommendation is always to try
+the brute force, especially as you're
+getting into the as you're in the early
+learning stages. Um even if I know like
+the final solution and I have an idea
+like Brian had the more efficient
+version of a solution in mind that he
+tested out and it worked, even then I
+usually like to start with a brute force
+method just because I want to make sure
+that I can test some of the early test
+cases without jumping to like a more
+complex approach.
+um or a more efficient approach. And I
+think that's good to just kind of get
+like a code template out, get kind of
+past the first steps of all right, I
+don't know how I might necessarily
+approach this in the code, so I'm just
+going to get something written out. If
+you're doing the brute force, you can
+take those opportunities to mess things
+up to test assumptions, wipe it all out,
+and say, great, I got that out of the
+way. Now I can jump right into a more
+efficient solution.
+So I think with those two things in
+mind, what I'm what I am thinking
+here is that since we're finding we're
+using two different I positions as data
+points, I know I'm going to at least one
+for loop, right? 4
+I in
+range for the first vertical
+line. And then I'm probably going to
+need a
+second loop of some sort or a second
+index position. So a J index to
+represent
+the second data point slashvertical
+line.
+So regardless of what final solution I
+end up with, I know I'm going to need at
+least two references in the original
+array. I'm going to need a pointer to
+one value to which would represent in
+this case the eight. And then I'm going
+to need a second reference pointer to
+another value so that I can calculate
+the height and the length to create the
+surface area. So maybe that looks like
+two loops, maybe that looks like
+something else, but I know I'm going to
+need at least two different reference
+pointers. So I'm going to keep that in
+mind. I'm going to write that out. And
+I'm going to keep it simple at first by
+using two loops. So for i and range
+um and
+then I know I'm calculating surface area
+or area I guess they call it. So, I'm
+going to call that water
+area. Just going
+to initialize that at zero. And then I'm
+going to go ahead and replace my return
+here with
+that. Okay. So, I know that I'm going to
+need to return the area at some point.
+So, I'm just going to go ahead and
+initialize that variable and add it to
+the return because I know that that's
+what I'm going to return. And then the
+next steps will be getting something to
+actually calculate
+it. So height
+here and then I'm just going to
+say I'm actually going to write it out.
+So they put us they told us in the
+constraints N equals height.length. So
+I'm just going to write that out. N
+equals length of
+height. And I'm going to do I in range
+N. I'm just going to test that out as
+well.
+I and
+oops
+I forgot my
+colon. Yeah. Yeah.
+Yeah. All right. Cool.
+So I'm going through each of the values
+and I'm seeing all the values of the
+array just like I want. So I can gut
+check that 187 or 186 254 837. So that's
+good.
+And then for generating that second
+index or reference pointer, I'm just
+going to go ahead and write this out as
+well for J in
+range. And
+then I think we can make a good
+assumption that we're not going to want
+to start from the beginning here. We're
+always going to want to check something
+that comes
+after. But I'm going to add the I + 1
+and end again
+there. So if I walked through this like
+just
+in code comments or on pen and paper,
+what I'm saying is that I'm going to go
+through the I I'm going to use I to get
+the first set of values um of the array.
+So 0 through 8. And then I'm going to
+hold that in place. And for each of
+those index values, each
+of 1 8 6 so on and so forth, I'm then
+going to create a second loop that
+starts from i + 1 so that I can make
+some comparisons for the second endpoint
+or second vertical line that I'll use.
+So if we start from the beginning, then
+I'm going to compare against every other
+value in the array. If I started from
+here, I'm going to only compare against
+these so on and so forth until you get
+to the
+end. Now, the reason I would start off
+this way is because then you're actually
+testing. But you're not starting at
+zero. Sorry, what's that? Ruby, you're
+not starting at zero like the
+um your first pointer or your first
+line, it starts at one. Isn't this a
+little bit confusing?
+I don't see who's talking right now. All
+it's okay. Sorry. Um, yeah. So, you're
+talking about this right here, the print
+out here, right? Like your indices are
+starting at
+zero, you know. Yes. So, normal, but I
+printed two. So, I printed the index and
+then I also printed the values of the
+array height I. So, we're starting at
+zero for the index and going to the
+length of the array, which is eight or I
+guess nine technically or wait, what is
+it? 1 2 3 4 5 6 7 8 9. Yeah, so length
+of nine. So, we're going from 0 to 8.
+And then right beside it, I'm printing
+out the value in the array. So, if we
+look at this array right over here, it's
+1 8 6 2 5 4 8 37. Does that make sense?
+I guess we'll have to see.
+Okay. Um, all
+right. So, I'm going to do the same
+thing. Just test that out.
+J. And actually, I want to do I
+J. And if you think that I'm doing a lot
+of printing, you're right. And that's
+because I like to make extra sure that
+I'm seeing the values that I'm expecting
+so that I can move forward at each step
+iteratively with confidence that I've
+made an assumption. I've tested the
+assumption and now when I move forward,
+if I hit an error down the line, I know
+that I my error is only going to be one
+step back instead of potentially all the
+way at the beginning. I don't have to go
+from the beginning of my code to figure
+out, all right, where was the assumption
+that I made that was wrong and where is
+this error coming from? I know it's
+always going to be at least one level
+back or maybe two levels
+back. All right, so we're starting with
+that I index going through and then J is
+going through all of those. So I + 1
+starting at one all the way to the end
+at 8. And then we've got the one for I
+while J starts at two. So that looks
+good. And if I hop towards the end, five
+starts at six. 7 8 Good. six 7 8 and
+then seven and
+eight. Now, since we're doing I + 1 here
+for the J, I don't actually need to go
+all the way to the end. I could probably
+put that short one and still get the
+same output. So, I'm just going to make
+sure that that still looks
+good. So, zero still goes to
+eight and 78. Yep.
+So not super necessary,
+but all
+right. So with this I know that I can
+confidently get all of the potential
+combinations um of two end points that I
+want to use for my calculation. So I can
+and we can actually test that by saying
+all right so we know
+that index position one and seven is the
+actual solution. So if we go down here
+one and seven is in there. That's good.
+And we also want to test out eight and
+eight. Um, which is position one and
+positions position six. So one
+and
+ah one and six. So that's also in there.
+So those would be the two most likely
+culprits there. And we've got both of
+those in our printouts there. So I feel
+pretty good
+um moving forward that this is going to
+get everything that I need. And
+then at any given point I can also I'm
+going to update my print statement there
+just to triple check that I can get the
+distance between them.
+So distance in this case would be pretty
+easy, right? We're just taking that
+second endpoint, which is also always
+going to be a higher index position
+because it's always coming after the i
+position, and just kind of subtract that
+and see what it gives
+us. So that looks good. Distance of one
+or length of one, I guess. Distance of
+two up to eight. Then towards the end,
+still looking good. Distance of one,
+two, three.
+So I'm going to use that calculation
+moving
+forward. Length is going to
+equal actually maybe I'll call
+[Music]
+it
+container
+length. I'm going to be a little more
+selective because they give us an array
+named height. So my instinct is to use
+length and height. But since height is
+already taken, I don't want to like
+override my variable names and get
+confused. So container length I'm just
+going to say is J minus
+one. And then all we need is that
+container
+height, which we still need to figure
+out. So
+our pseudo code up here is that we're
+going to use the minimum height of the
+two vertical end points. And they have
+this point in here. Notice that you may
+not slant the container. So if this
+container was slanted, then we would
+start from the eight and it would be
+like a a sloping line down to the seven.
+So they're saying that the container is
+always going to be a flat area on the
+top. So we're going to have to use the
+minimum of the two end points, whatever
+they are. Now, we just talked about max.
+So
+oops, that's going to be
+pretty pretty easy. We'll just say men
+between
+the height array of I and
+height of
+J. And then we'll say
+container area
+equals container length multiply by
+oops inner
+height. And then I just want to print
+that out to make sure that that looks
+good and that we're actually
+getting the solution value there
+somewhere in
+the So for all of those J pairs, we're
+going to calculate the
+area. Yeah. 0 times one. That makes
+sense. We go along here. There's that 40
+before the two 8 by8s. So that looks
+good. And there is the 49 which is the
+answer. So that looks good. And we can
+kind of see these are all the different
+Oh, there's actually two 49s in
+there. So that's interesting. There is
+at least one
+other set in here that could potentially
+be the answer. So if they had wanted us
+to return the index positions, that
+would be an extra challenge actually of
+saying if you have return the two index
+like the index positions of this one
+would be one and eight of
+the two end points that have the most
+surface area or the most
+area, they would expect you probably or
+they would tell you to return either the
+first one or the last one. So since
+we're seeing that there's actually two
+in here that are at 49, that would
+actually make this problem a little bit
+harder. So thankfully they didn't ask us
+that. They're just asking us for that
+output. But there are some problems that
+will ask you to do something like that.
+So this is a good way to kind of spot
+check that we can potentially get values
+that are or container values that are
+um multiple that can produce the same
+max output. But otherwise, I'm not
+seeing anything higher than 49, which is
+also a good sign since 49 is the highest
+that we're supposed to be able to
+get. So, everything is looking pretty
+good so far. I'm feeling pretty
+confident about this solution and I'm
+testing things along the
+way. And then next, we just want to take
+that water area and
+say if
+I could actually write this in one
+line. Water area
+equals container area. If container area
+is greater than
+water
+area
+else water area. So, I could put that
+into an actual if statement with an
+indented position, but I'm going to keep
+it like this. Um, so we're going to set
+the new water area. I could probably
+call that something better, like max
+area, but I don't want to rename it. So,
+water area is going to equal container
+area if the container area is greater
+than the current water area. Else, we'll
+keep whatever the pre-existing max water
+area was, and we'll test that out.
+So, we got wrong here. Expected
+one.
+Cool. Anyone have any ideas what that
+might
+be? Any
+thoughts? Are you going to find out the
+max water area from that array?
+Sorry, what?
+uh are you not trying to find out the
+maximum water area that contains within
+I and J loop
+nested loops.
+Yeah.
+So if you write down water area uh equal
+to max water
+area and the container area, I think
+that will give you
+the max
+number. Yep. All right. I'm seeing some
+comments in here. Brian said greater
+than or
+equal. And
+then when is saying container length
+should be J minus I, not J minus one.
+Yeah, look at that. Um, so did I
+purposely do that or was that an
+accident? We'll never know. Uh, but
+what's good here is that I had tested
+everything up until this point. So I
+knew it was going to be something in
+this code. Now since for this case we
+were actually getting all the answers
+that I wanted somehow that magically
+worked. I'm actually really unsure how
+that worked in that case.
+So, I want to go back and
+see where the container errors
+were. So, there's our 40. There's our
+49. Only one 49 this time, so that's
+good.
+See, errors can be sneaky. You can be
+seeing everything that you expect to be
+seeing and there's actually a bug in
+your code. So, that's why it's really
+good to test everything at each layer.
+You'll notice that I actually skipped
+printing out
+um container length and container height
+to make sure that those values were
+correct or what I was expecting. And I
+instead just did I'm just going to do
+this, do this, and then calculate the
+area and I'm going to print the area. So
+if I had printed at each of those steps,
+I probably would have caught this bug a
+little bit earlier. But I kind of just
+kept moving and grooving to advance the
+problem along. And everything actually
+looked all clear up until the point
+where that second test case was wrong.
+So that's why you should always be kind
+of testing along the way because
+everything can look right up until the
+point that it's
+not. So now that we fixed that container
+length equals J minus I and not J minus
+one. Oh, I submitted when I wanted to
+run, but that's
+okay. Taking a good bit of time.
+All right, I'm gonna go back and just do
+the run here to make sure that we got
+those test
+cases. So, yeah, that looks good. And
+then what we're seeing here is time
+limit
+exceeded 55 out of 65 test cases
+passed. So, this is actually pretty
+promising news, right? That means
+that all of theif the first 55 test
+cases that we were given passed and it
+was going to keep going up until 65, but
+it ran out of execution time. So I think
+we can confidently say that this
+approach does give us the correct
+answer. It's just that for le code and
+hacker rank, they're going to cut the
+execution time after a certain amount of
+time and we are hitting that time limit.
+Oh, I also want it to show us what the
+complexity is there. Oh, so you can
+check complexity, Brian, but only a
+couple of times a day,
+apparently. So, I clicked it twice and I
+ran out of time. Um, but I already know
+that this is O of N
+squ because we're doing those two nested
+loops there.
+So at this point, and this is what I
+like to tell everyone, if you're getting
+to the point where you have tried the
+brute force approach and you're getting
+like twothirds of the test cases
+passing, which we confidently are, I
+think that's a good point to say, all
+right, I've given this everything I can.
+If you want to go back and try and
+improve the efficiency, see how you
+might approach it to make the code run
+faster because you know you have the
+right solution. We just have to make it
+the big O, not O of N squ, which is
+pretty bad.
+um then you could do that. Or if you try
+that and you're kind of getting stuck,
+well, you still got twothirds of the
+test cases running. So that's a pretty
+big win there, especially for a medium
+problem. So then I would say you can
+jump to the solutions tab here. See what
+people are are saying, see what they're
+kind of printing out. You can filter.
+It's already filtered by Python. So
+you're seeing a lot of these. A lot of
+people are saying two
+pointer, but I would not jump to the
+solutions until you have at least
+twothirds of the test cases passing.
+That's why I like to give that
+recommendation because you want to at
+least give it a pretty solid effort,
+especially with brute force to make sure
+that you understand the problem. You can
+sound write out the pseudo code. You can
+write out code that's functioning. Get
+test cases passing. And only once you've
+gotten to that point should you feel
+comfortable and confident to say, "All
+right, I'm not I'm probably not going to
+get the the final solution here on my
+own. Maybe there's some knowledge gap
+that I'm missing." Then jump to see what
+people are
+posting. So people are posting that this
+is a two-pointer solution, which Braden
+also posted up here somewhere in the
+chat. So yeah, that's correct. And
+they're even saying improves time
+complexity from O of N squ which is what
+we have down to O of N which is a really
+really good big O for this problem. So
+my recommendation would be they kind of
+walk through the approach step by step
+which is really nice and I would read
+it go through it see what they're
+doing. They actually wow they're really
+in depth here about how they're
+explaining it so that's kind of nice.
+And then at the end they usually put the
+code. Again you can you know do whatever
+you want but I would not recommend
+copying this and putting it in there and
+seeing like how it works. I would say
+read through it see if you can
+understand what's happening and then
+leave that tab altogether and try and
+implement it from scratch on your
+own. So they are recommending a two
+pointer approach.
+I'm going to keep some of these
+things. Am I? Yeah. I'm actually just
+going to comment out
+this. We are going a little bit over
+time, but that's okay.
+So, if you weren't familiar with the
+two-pointer approach before this
+problem, then this would be a great
+opportunity to have learned about that.
+Um, basically, anytime you see an O of N
+squared solution where you're doing two
+nested loops, that's at least a red flag
+to consider. Hey, maybe there is an
+algorithm or something that would make
+this more efficient like the two
+pointers. the two pointers method is not
+always going to be the right answer for
+solving a problem. In this case, it is,
+but having that at least um that kind of
+flag go off in your mind that says, "All
+right, I'm doing two nested loops or I'm
+doing a nested loop here. There's
+probably a better way to do it, but I'm
+just going to get some test cases
+passing first and then consider how I
+can make that more efficient." That kind
+of thing. Abu is twop pointer a
+complement way to replace a nested
+loop. No. So that's what kind of what I
+was just saying. It's not always going
+to work for a nested loop or an O of N
+squared solution. Um it depends on the
+problem that we're solving. So one of
+the things that would tell us that this
+is a good two pointer solution.
+So the general idea
+and here is that if we're looking at the
+graph
+here we're still using the two index
+positions I and J or sometimes referred
+to as left and right for the two
+pointer. You're still holding those two
+reference those two index positions and
+you're coming at it from each side. So I
+would start over here and go this way
+and then J starts over here and goes
+backwards. Now you could still try that
+with the O of N the nested nested loop
+approach but it's not really going to
+save you a lot of time efficiency. Um so
+what they're doing is instead of doing
+two loops they're still doing they're
+actually just doing one loop. And then
+what makes it different or what makes it
+different is that only one of those
+position values is going to move at a
+time. So what I mean by that is that you
+start with each of these at like if I
+wanted to write that out, I would say I
+equals Z and J
+equals right length of
+nums minus one.
+that
+last uh position there in the
+array. And then as you move through, one
+is going to move at a time. So you're
+either moving the I index forward or
+you're moving the J index backwards
+until they either get a solution that
+you're looking for or they meet in the
+middle and then you would want to break
+out of the loop.
+And so with that in mind, what really
+comes down to the two-pointer um method
+is finding the specific case to either
+increment the I position or decrement
+the J position. And that's where the
+two-pointer really comes into um play
+here is that if you can identify a good
+if condition or a good condition kind of
+like with recursive um functions, you
+want to have the right condition to
+either increment or
+decrement the i and j. And so in that
+case, what we're looking for
+is probably we're not worried so much
+about the smaller values here. I mean,
+this would be good, but if you did
+one, the distance between this would be
+like what? Eight. So, one time seven.
+This is going to be that's a pretty low
+area versus the next one, which is a lot
+higher. And that's where we get that 49.
+So, we're not so much concerned about
+the smaller bars here. We're kind of
+more concerned about the taller ones
+because that is what's going to likely
+get us the highest surface area.
+So that's probably going to be a good
+condition to use for determining which
+to increment or decrement. So the basic
+outline there is that I want to
+increment I and decrement J until they
+either meet
+or one surpasses the other. So a really
+simple opener to that is that while I is
+less than J. So while I has not
+surpassed J and we're kind of going in
+circles there, we want to keep that loop
+going. And
+then I = I
++ J
+equals J minus
+one. And then I'm just going to print
+that as well just to get an idea of I
+and J.
+forgetting those
+colons. I means nums. Oh,
+height of height.
+That should do
+it. All right. So, let's
+see. So, this looks good. So, I is going
+up while J is going down.
+So, so I already performed the first
+calculation before I did the print. So,
+it would start at 0 and 8. But then
+we're doing the calculation I + 1 J
+minus one. So we're getting one and
+seven as the starting. But at the actual
+start of the loop it would be 0 and 8.
+So we're doing the + one the minus one +
+one minus one + one minus one. These
+meet in the middle. So they actually
+have an exact match. They both meet at
+four. And then the while loop breaks
+out. So the idea here is that we're
+comparing both end points. So this end
+point with this endpoint and then just
+kind of closing them in together until
+we see a the match that we want. Now
+it's not going to be even like this. I
+was doing them
+evenly, but what you would actually want
+to do is have one move, make a a test
+comparison, and then determine if I want
+to move the I or the J, move another
+one.
+So in that
+case we kind of want to wrap these
+here. And this is just like a really
+really
+really high level explanation of two
+pointers. I would I would advise
+everyone to look that up and practice
+implementing it on their own and
+learning about it on their own. But just
+to kind of since we've gone over time
+here a little bit, I'm going to breeze
+through this a little bit.
+So, the condition that we had talked
+about, I'm actually going to pull these
+out
+again because these were
+good and they're still going to apply.
+So, J minus I is still going to be the
+length that we're looking for. Container
+height, we're still comparing between
+the height of I and J. That's still
+going to be something that we want to
+do. And then the area calculation again
+still something that we want to
+do but we can
+use
+these to determine what we want to
+increment. So, in this
+case, I've kind of already hinted at it
+a little bit, but the way that we want
+to determine which one to increment is
+going to be based on the height of the
+the two end points that we're on. So, in
+this
+case, since we want to focus on the
+higher vertical lines and we're starting
+at zero and
+eight, we probably want to keep this one
+because it's pretty high, right? like
+seven is the second highest value in the
+array. So we want to ditch this one that
+starts at one and maybe increment the i.
+And then in that case we want to keep
+this tall one. So we might well we
+calculate the surface here area of 49.
+So that would be good. But we don't know
+that that's the max just yet. So we'd
+want to ditch this one because it's
+lower and jump over to eight. And what
+is this one? Three. This one's still
+lower. First, we'd want to do eight and
+eight. Those are both still good. So,

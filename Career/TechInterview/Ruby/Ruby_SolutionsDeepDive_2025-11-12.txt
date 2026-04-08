@@ -1,0 +1,1526 @@
+All right, so welcome to this week's
+nailing tech interview. Today is a
+Wednesday, so typically on Wednesdays,
+what we would do is review problems that
+we covered in Sunday or maybe last week.
+Um, and kind of go over some of the
+solutions, the mindset, what code
+existed for it, and look at
+alternatives. Um, so I we didn't have a
+session on Sunday, but I did post a few
+problems for everyone to try. Did
+everyone get a chance to try those? So,
+I know Mauricio did um and Linda just
+said that she has started her pseudo
+code. What about our our two other folks
+here?
+>> I didn't get a chance.
+>> Okay, no problem.
+Well, actually, I looked at the
+the Discord and for some odd reason it
+wasn't showing up for me. I meant to
+click on the link, but I was on my
+mobile device and I wasn't going
+through. I didn't have data or anything.
+>> Huh. Okay,
+that sounds weird.
+>> Yeah, I'm gonna look at it now. Okay,
+>> that is weird.
+>> Okay, what about you, Russell?
+Sorry, I was reading a read me while you
+were asking the question. What was what
+were we asking?
+>> Yeah. So, um, on Sundays and Wednesdays,
+since you are new to our meetings here,
+um, I usually post kind of connected
+problems for everyone to test and try
+out, um, did you get a chance to see or
+look at any of the problems that were
+posted to the weekly schedule?
+>> No, I haven't. This is kind of yeah, as
+I'm new here, I figured I would get my
+head in the headsp space and see what
+it's all about and then um yeah, if if
+if the Sunday and Wednesday are
+connected, then I'll I'll have to hit up
+the Sunday one.
+>> That's okay. We didn't have Sunday one
+this time, so it was just a homework
+assignment. But either way, it's up to
+whomever to There's still something to
+learn today.
+>> Sweet.
+>> All right, so
+>> Oh, sorry, Ruby. I see it here. It was
+in the weekly schedule. I was looking at
+the hacker rank channel and the hacker.
+>> Yeah, I always post them to the weekly
+schedule afterwards what we covered and
+if there were any quote unquote homework
+for people to work on.
+>> Okay.
+>> So, let's start with the easy.
+>> Yes, please start with the easy one.
+Oh, let me uh
+remove all that.
+>> So, it's good that you asked that
+because that's actually what I have
+written here as well. Um, Linda.
+>> Oh,
+>> before we got started,
+>> I do have kind of a question though with
+regard to lead code and the way they set
+these things up. I noticed that lead
+code um has a class that you're supposed
+to be working off of. I'm still in that
+mindset for I want to do my own little
+function.
+Um is it possible in lead class to like
+just do away with the class and put your
+own function up there or I mean or do
+you have to use what they put up there?
+>> You do have to use what they put up
+there. This is a function here.
+>> Okay. Okay. That whole class thing kind
+of throws me off a little bit, but yeah,
+I do see the function.
+>> So, the class is because when they're
+running their test cases,
+>> they the way that they're setting it up
+is that they have the class with the
+solution in it and then they might be
+adding some of their own information to
+that class to keep track of it. and then
+like run test case 1 2 3 4 against
+solution repeated string and like maybe
+they're they're creating this object
+from the solution and then calling the
+test cases based on that. There could be
+a number of ways that they're handling
+it in the back end.
+>> So you do need to keep the class.
+>> Well, actually
+that's an assumption that I've made. So
+let's test it out.
+Well, I probably need a return in there.
+Let's see.
+Sorry, I didn't capitalize it correctly.
+>> Yeah. So, they do require it.
+>> Okay.
+>> And it looks like Yep. Exactly. What
+they do here is that when they are
+calling the test cases,
+>> they are creating an object from the
+solution class and then calling the
+function that we're given as a
+method and then passing in what I'm
+presuming are the test cases.
+>> So they probably just have all the test
+cases in a file and then they just one
+by one
+>> call them from from here. Yeah, the
+terms hackerang let you see the main
+function but this one doesn't
+>> right well you know that that explains
+it um a lot you know I because I know
+for example when we do these solutions
+with W3 schools we can just go and use
+their little platform and we can like
+paste our own functions and do whatever
+we want this however I can
+>> I mean you can do whatever you want here
+too like you can use this function with
+the prints and inside here anything that
+you're doing right here in W3 schools
+you can do right here.
+>> Okay.
+>> And if you want to you can write.
+>> Yeah. That's what I wanted to Yeah. I
+wanted to kind of do it like that. But
+you know
+>> I mean it's not going to really change
+your outcome. So I would just be
+wondering like what what you're gaining
+from that. But
+>> I think it's familiarity because I'm in
+sort of like a foreign environment with
+it
+>> and it's just something familiar that uh
+sort of turns the anxiety level down a
+little.
+>> But then I'd have to uh
+I guess maybe I could do it like this.
+>> I don't know. I've never I've never
+played around with it. Well, look, I
+don't I don't want to waste time and
+reinvent the wheel then, but you know, I
+was just wondering
+do you I mean, I'll just work with the
+class because as you said, okay, you
+know, the the problem is defining
+something as a an object some I mean,
+it's got its own objects. It's got its
+own method. I don't want to mess that
+up. I don't want to mess with that
+thing.
+>> I don't remember how to end a class.
+Maybe I need to
+I'm not sure. You'd have to play around
+with that. I don't I haven't built a
+class in a while, but like
+>> Okay.
+>> I mean, it's certainly possible.
+>> Okay. But Mauricio, I I I agree with
+you. It's like hacker rank. You kind of
+see what they're doing. Lead code, you
+don't kind of. Um Okay.
+>> I'd be curious. I might look at that
+later. But yeah, I mean you can do
+whatever you want as long as you are
+understanding how it works.
+>> Um, so I mean you use classes, you even
+build classes in in module 2. Um, I
+haven't done that in a while. So I
+should go back and review that as well.
+>> Yeah, I know we played with them in
+module five a lot.
+Um, okay.
+>> All right. So let's look at this problem
+real quick. So repeated substring
+pattern. I put it in the chat the link
+here. Given a string s check if it can
+be constructed by taking a substring of
+it and appending multiple copies of the
+substring together. All right. So what
+do they mean by that? We are given the
+string ab
+and the output is true because you can
+take this substring
+the string within a string ab repeat it
+twice and get that full string. Okay,
+this one is false because no substring
+contained within can be repeated to get
+the full string.
+And then we see ABC repeated a couple
+times here. So ABC ABC
+oops
+ABC ABC. So the substring ABC four times
+can be repeated to equal the same
+string. So that one is a true.
+We're looking at our constraints. The
+length of the string can be between 1
+and 10 4th and it only consists of
+lowercase English letters. So that's
+good to know. So when I was looking at
+this briefly beforehand
+um just to outline what they told us
+given s a string of potentially
+repeating substrings
+and then I have some assumptions here
+and then just to include that return
+return true or oops true or false if
+it contains repeating
+substrings
+and then as always I like to start off
+with just a blank return to make sure
+we're not getting any of those errors.
+So, they're expecting a boolean. So, I'm
+going to return a boolean.
+Um, and then I had some assumptions as
+well when I was looking at this. So, we
+notice a few things. Um,
+they only have a few characters here.
+This one is longer, but this one is only
+three characters. And they're only using
+like A, B, and C. Um,
+so some assumptions that I made or
+questions that I had. Does a single
+letter repetition count? And I made a
+test case for that. So what happens if I
+only use I kind of deleted it actually.
+What happens if I only
+have a string with one value? Because we
+do know that a length of one is
+possible.
+And so they are expecting false. So this
+is not a repeated substring because
+there's only one occurrence. So we can
+say we've tested that and they do not
+count a single letter as a repeated
+string um or as like the value of one to
+not be. And then I also asked a second
+question based off of that. What if it
+was the same character but repeated?
+And kind of a second assumption here is
+assumption
+my caps
+assumption
+do none even lengths or I guess another
+way of saying that
+odd lengths
+uh count
+count.
+So, we'll start with this first one
+here.
+Let me rewrite this because it's kind of
+not right anymore. Okay. So, my first
+question was, what if I just have one
+character? Does that count? And no, it
+didn't. But what if it's one character
+but repeated?
+And we can test that as well.
+I mean, I spoiled it here. It does, but
+looking at that one I just added there.
+One, two, three, or four. I'll do three.
+So for a repetition of the same
+character but three times they are
+expecting a true which means that yes
+you can just have a string of one
+character repeating as many times as it
+is and that would be considered a
+repeating character or a substring built
+of repeating a string built of repeating
+substrings. Um, and then just the last
+one, what about non-even lengths?
+Because I was thinking if we're going to
+have repeating substrings,
+like probably all the results would be
+even, right? Like if you're adding if
+the substring is the length of two or
+three to repeat, you'd have to do it at
+least twice. And so like any odd number
+repeated would be kind of even. Um, I
+later, well, let's see.
+I test. So this would be it wouldn't
+matter is what I was going to say there.
+So they don't care if it's odd or even.
+>> So work also. Aa would be true too,
+right?
+>> Sorry, what was that?
+>> A a would be true too, right?
+>> Yes.
+>> Okay.
+>> I think so. Um and then I also realized
+that like if I just took off one of
+these ABCs, that would be an odd number
+as well. So, it was an assumption that I
+had that I realized later was like a
+silly assumption to have, but that's why
+we make them so that we can test them.
+So, if this was just ABC repeated three
+times, it would have a length of nine,
+which would be odd, but it would still
+be repeating. Um, so I I think it was a
+good question to ask on myself to
+congratulate myself. Uh, but it didn't
+matter. So
+tested
+links can be odd.
+So that's just because you and I were
+talking about that right before we
+started the session of like what do you
+do? I think if you're having a question
+or assumption about the problem, write
+it out. That's just at the very top of
+the problem. Write out what am I
+thinking about this problem.
+Even if I haven't started developing an
+idea of how I'm going to approach the
+problem, I just need to get some
+questions that I can ask and then see if
+the problem answers it for me, which
+this one doesn't have a lot of
+information. So, it doesn't or that I
+can test. And you saw that with Le code
+at least, it's pretty easy to just kind
+of generate these little test cases
+here. Um,
+but with hackerink, you can also use
+like assert. You can create your own
+assert and see what would return there.
+Um,
+>> so basically what you're doing is for
+example, you're hitting like case one,
+case two, and whatever, and then you're
+putting your little test and quotes
+under that. Um,
+>> that that is cool. They don't do they
+don't have that in Hacker Rank.
+>> Yeah, Hacker Inc. allows you to add your
+own test cases, but it doesn't tell you
+if the output is like what the expected
+output would be. So in this case,
+they're telling us if I create my own
+test case, they tell me what they're
+expecting based off of that test case.
+So since I gave it this string, they are
+expecting the value of true. So they did
+the the analysis and the evaluation.
+Hackerink, you kind of have to um work
+around that a little bit. So you can do
+somewhat of the similar thing, but not
+as much. So when you put a down there,
+did that come back false or true?
+When you put like a single A in there,
+>> that came back as false. It was not
+considered a repeating string,
+>> which if you think about does make
+sense. And so sometimes I would even
+write these assumptions instead of just
+saying I tested it. No, it didn't. I
+would rewrite it as
+um length of one is not considered
+repeating.
+>> But if you repeat it, it's true.
+>> Tested tested this.
+>> Yeah,
+>> exactly. And so it makes sense, but you
+kind of need to have that assumption and
+then you need to test your assumption.
+All right. So, I'm thinking what we'll
+do is that let's jump into some breakout
+rooms and have people kind of continue
+this train of thought. What other
+assumptions might you ask? What do you
+think about this problem? How you might
+approach it? Um, just kind of generally
+pseudo code out what ideas you have
+about the problem. And if you want to
+test out some of those assumptions that
+you're making using the test cases,
+using print statements, writing like a
+basic for loop, go ahead and do that.
+Is everyone open to this? Everyone want
+to jump into some breakout rooms.
+>> Uh
+I
+>> What about I mean
+>> you can stay with me and we'll we'll
+chat.
+>> Okay.
+>> I don't know what I'm doing.
+I mean um you know first of all I'm not
+I want to have two parameters up here
+and it looks like I only what is it have
+one self which it relates to the class
+and
+>> I was really kind of looking for like
+something like um the substring and
+string or
+I I'm sort a little. Let's see here. I I
+don't know if I know enough to be in a
+breakout,
+>> but you can discuss with those of us in
+the breakout and we'll see if we can get
+our heads together.
+>> Yeah, there you go.
+>> Oh, okay. Um, so when we go in the
+breakout, we'll we'll have to share our
+individual screens in the breakout or
+how's that?
+>> Yeah, if someone wants to take the lead
+and open up the problem and just kind of
+be the writer.
+>> Okay.
+>> And discusser, I guess.
+Okay.
+>> All right.
+Let's do it.
+Let me try to remember how to do that.
+And then yeah, just wherever you get
+we'll give we'll just give everyone
+about 10 minutes for that and then we'll
+come back. Um
+where do I do Okay, here we go. Back up.
+and I'll just put everyone in there and
+then just have someone take the lead on
+sharing their screen and then work
+together. Come up with some assumptions.
+See if you can test them. If you have an
+idea about how to approach the problem,
+maybe just type that out as a pseudo
+code of here's what you're thinking
+about it. You know, anything that you
+guys want to do and then we'll come back
+in about 10 minutes and just kind of see
+what you all ended up with.
+Okay.
+So, you should see that join link there,
+great.
+All right, Mauricio. So, while it's just
+you and I, let's look at your solution.
+I know you posted a hacker, but would
+you like to walk us through it?
+Did I lose you?
+Sorry. Uh let me share
+you see the screen.
+>> Yes.
+>> Okay. So
+I mean after reading the problem and
+kind of understanded the
+thinking about it,
+the main insight was that uh if I string
+it's going to form the string uh by
+repeating itself.
+uh I need a s string that you know fits
+uh evenly inside the biggest string.
+So that that's why I go with this uh
+this loop
+from one to the length of the string.
+>> Mhm. and the first first thing I check
+for each index that that will be kind of
+the length if it if it's uh model zero.
+So it it divides evenly. So I'm only
+interested on the super strings that
+divide evenly into the length of the
+main string
+because without that I'm not having a
+string that fits that condition that
+it repeats into the big one. as far as
+length is concerned.
+>> So I I filter that out and then I keep
+going and kind of extending
+extending the S strings uh from the
+beginning to increasingly
+higher indexes. So longer S strings
+from the beginning. And then I do a
+check here that I take each of those
+little silver strings
+and
+multiply by the how many times
+uh how many times uh the
+the length I am right now which is sub
+here fits into the main length which is
+the length of the main string.
+>> Mhm.
+So if I take that super string and
+multiply it with with how many times it
+fits in the big one,
+I will get uh a a string a string
+repeated of the same length of the big
+one.
+So once I have that uh I could just
+compare a simple compare if to see to
+check if they actually the same and then
+return true if they are and return false
+if they are not.
+>> Okay. So if we're looking at the example
+here I think this makes sense. Um let me
+say that first of all like logically I
+can see how you came to this conclusion
+right? You're kind of saying we're
+starting from the very first character
+and if we can repeat that build the
+string to its length based off of that
+character or that length of characters
+then and they match then yeah it's
+repeated and we keep going and doing
+that until we have run out of
+window sizes to check. Um so if I'm
+seeing this correctly you would start
+with something like the an abab.
+We would start with the A. Okay. So if I
+take A and repeat it to the length which
+was four times. So if I had all four
+options be A, would four A's be equal to
+AB?
+No. So we're going to go to the next
+index which would be two. And then we're
+saying from 0 to two is AB.
+Yeah, that's right. I had to check
+myself there. From 0 to two is AB. So if
+we do AB repeated until it equals the
+length of four ab that's four. So does
+AB AB equal AB AB? Yes. So then we
+return true. And then we do the same
+thing for the longer ones. Does ABC
+or does a equal does?
+>> Yeah. But I will filter if if this
+condition doesn't check true.
+>> Right. So if n so if the length of it uh
+yeah divided by my current window size
+there of sub or index one character um
+is equal to zero.
+So there's no remainders. So that means
+yeah so if it goes in evenly and that's
+a good condition. So a would go in e or
+yeah a single character would go in
+evenly to four because one goes in
+evenly to four but then so would two but
+then you would
+>> I guess this doesn't show well in these
+test cases but I can see for longer
+strings and longer test cases where that
+is a good check to add
+>> making sure that the window size that
+you're using does evenly go into the
+length of the string. So like
+>> yeah because otherwise I mean three
+won't work because the length is four.
+So it I don't even bother because then
+it will be three and three will be three
+will be too little and six will be too
+much. So
+>> yeah exactly.
+Yeah. So then for like the last one,
+you're saying, you know, A
+repeated 12 times doesn't equal AB
+repeated three or four times doesn't
+equal. And then you're getting to that
+last one, ABC, which is a length of
+three. So does the three go in evenly to
+12? It does. So we'll keep moving. And
+then we build the repeated string from
+the ABC to test it out. So yeah, I think
+that's um
+that makes good sense. Now if you had to
+discuss what the big O of this would be,
+what do you think that it is?
+M it will be uh I have to go through
+all n here
+>> because
+>> I go you know I got increasingly moving
+checking all the points uh but since I
+have this filter
+uh I mean I still iterate but some
+iterations I skip so
+>> right
+>> I don't know how to uh calculate those
+skips but I mean
+>> well I wouldn't worry about that but
+yeah keep going
+>> yeah so roughly of of n minus one I
+guess because I start from one
+>> well then what are you doing with the
+the repeated bit though
+>> what I'm doing
+>> mhm what do you think that what that is
+but that will be
+I mean that's like a multiplication of
+the sub string so that's uh if the
+string is of size k that will be
+that will be n
+divided
+by sub times So,
+oh, sorry.
+>> Okay. So, I
+>> So, there's many. So, I added this many
+times each time. I guess the
+multiplication.
+>> Mhm.
+>> Because it wouldn't be an O of one. It's
+because you're putting strings together.
+So, it would be an O of something. Um,
+yeah, like you said, since going through
+every value would be O of N, maybe it's
+like O of M or O of K or something like
+that.
+>> But that all kind of does boil down to
+still O of N.
+>> Yeah, but this is memory or or speed.
+>> It's both.
+So to build specifically, I know it's a
+calculation
+>> because you're saying like
+>> how do you calculate a speed from this,
+>> right? it it's it so it looks like a
+calculation but it is building a string
+and to build the string you're basically
+concatenating the string together a few
+times and those are O of N uh operations
+>> yeah but memory or or or
+>> so if it's an
+I mean
+>> I mean time
+>> of course complexity to generate the
+repeated string would be O of N
+Yeah, because I mean as many times as I
+can cut an egg because it multiplicates
+it will be n
+uh divided by itself. So
+uh first it will be like over
+over one over two over four.
+So,
+I mean, I don't know how to do the math
+there.
+>> So, when it comes to like, how do I say
+this? When it comes to like the little
+efficiencies, so like maybe you're not
+considering every single you're using
+the in mod sub to kind of filter out
+some of them. But even if you're not
+hitting every single one, you are still
+moving through a set amount, a linear
+amount of inputs. So even if you filter
+some of them out, you're filtering them
+out consistently under a consistent
+um like condition.
+So it's still O of N for the overall
+even with your condition in. It's a
+slightly better performing O of N. But O
+of N isn't about the performance on like
+a small scale versus a large scale. It's
+the performance across from small to
+big. Right? So even if it performs
+slightly better on the smaller scale,
+it's not going to perform that much
+better at a large scale. So even with
+the like filtering condition of N mod
+sub equals 0 to make sure that the
+string count that you're looking at goes
+in evenly, it's still going to be O of N
+at like at the the the worst complexity
+calculation.
+>> So over 50% is not good enough. I'm not
+saying it's not good enough, but we're
+we're we're evaluating what is the big
+O, right?
+>> So then the second piece is that you
+have the repeated string in there. And
+so the repeated string
+is also an O of N computation there
+because because it's the the string
+concatenation. So if it was just a
+normal calculation, it would just be O
+of one. But since behind the scenes,
+Python has to concatenate this like AB *
+3. So AB plus AB plus AB, it's building
+that string there. And so that's an O of
+N operation. So when you have the O of N
+nested inside of an O of N, or I guess
+it's technically like if you wrote out
+the mathematical complexity, it would be
+kind of like you said like O of
+O of N minus one time O of N or O of M
+kind of thing. But at the end of the
+day, it kind of just boils down to O N
+squ. Does that make sense?
+>> Not much because I mean I'm
+making n uh many times smaller as as as
+I mean as as I progress through the
+string, this sub is going to be bigger.
+So this factor here is going to go
+smaller and smaller. So I mean
+>> yeah but you still have to build the
+string out. So like the string building
+out it's not that like
+it doesn't matter how like small the
+string is that you have to concatenate
+doing the string concatenation as an
+operation in like any language Python
+Java JavaScript whatever to build that
+string behind the scenes it has to
+manually go okay
+first character second character third
+character over you know over each
+potential character it's going to be and
+build that string and that's an o of n
+operation
+to build the repeated string.
+So if you click the analyze complexity,
+let's look at it.
+>> Yeah, I was looking for that.
+>> It's right there under 7 milliseconds.
+>> Yeah. So squared and that's in the worst
+case. It's like you said, there are
+calculations of big O that calculate
+like the best case. And so that's why
+you have like the O of N times O of K,
+you know, minus one or whatever. Um, but
+typically when you're considering big O,
+it's in the worst case. So in the worst
+case, if every option was validly
+divisible and so on and so forth, and
+we're considering all options, in the
+worst case, it's still O of N squ. That
+doesn't mean it's not a good solution.
+It's a good solution. It's the It It
+makes sense,
+but you want to be able to answer those
+kinds of questions for the the job hunt.
+>> Okay.
+>> All right. I just realized it's time to
+bring back our breakroom folks.
+So, thank you for sharing that. That was
+really great. And I'm actually going to
+use your approach
+um for our walkthrough as well.
+Yeah, just they have a countdown before
+they get closed out and joined back to
+us.
+All right, welcome back everyone. So,
+how did your breakout session go?
+M
+um we were trying to figure out how to
+run the test cases and that took up a
+bit of time
+uh cuz
+>> I'm just not used to the the leap
+format.
+>> Um I think we did make some headway in
+that we did see that yes like basically
+what you did. Yes, it will work and
+we'll get it true. If we have more than
+if we have the element repeated, if we
+have the element by itself, we'll get a
+false. If we even have the same element
+but it's repeated, uh we'll get a true.
+Uh we tried to put our own string in
+there.
+>> Uh
+>> sure. Do you want to show it off?
+So bas basically we did exactly what you
+had done where we just returned false in
+the function and then tested the saw
+what it expected as the output and how
+it compared to our false output.
+>> Okay.
+And so you said you tested another
+string.
+>> Yeah, we did. I'm trying to get it up
+there right now. Uh hold on a second.
+I'm a little frazzled. Okay. Can you see
+it?
+>> Mhm.
+>> Okay. Um, we we tried another string.
+Uh,
+>> we
+>> goodness. Where is it?
+>> Case four.
+>> It was four. Okay.
+>> Well, actually,
+I thought we were doing AB C A B C D.
+But okay, that one didn't come off.
+>> That was case three.
+>> That was case three. Thank you. Ah,
+there it is. Okay. Um,
+all right. We we played around with this
+and it actually
+came back as false
+I believe because um in looking at this
+it's because the things that repeat the
+AB it's interrupted by C and it's
+interrupted.
+>> I think the output of false is just
+because that's all we return from our
+function. So regardless of input, it's
+always going to return false.
+>> Actually, you know, I think this should
+have worked. It should have come back as
+a true, but you're right.
+>> Well, so if you click the test case, it
+looks like it might have reverted there.
+So if you click um
+>> test
+>> at the top on the left to the left of
+that, you were in the right spot, but
+yeah, to that
+>> test case.
+>> Yep.
+>> Okay.
+>> And then go back to the the third one.
+>> Third third case.
+>> Okay. And then if you Okay. No. Yeah. So
+I see A B C. Okay. Yeah. So it doesn't
+have the D in there anymore.
+>> Okay. We put a I thought I put a D in
+there, but
+>> Yeah. So go ahead and pop it back in
+there.
+>> Run it.
+>> Well, put it put it back in the uh in
+there. Go ahead and edit it from there.
+>> Oh, okay. AB
+A B C A B D
+A
+>> B C ABC. Okay, so some of those should
+work. I'm going to run it.
+>> All right,
+>> open up case three.
+>> Case three. And it came back as false.
+>> So it wanted false
+>> and it expected a false.
+>> So what was your assumption? Your
+assumption was that it would be true.
+>> I thought well this is just me speaking.
+Uh I think the other guys might have
+seen maybe believe differently but I
+thought that because you have a
+repeating set of letters like you've got
+ab
+you've got at least three times that
+that repeated
+but it's separated by C. It's separated
+by D.
+Um,
+it's separated by C again.
+Um, to me, you could have had, let's
+see, 1 2 3 4 AB's or AB ABC
+1 ABC 2 ABC 3.
+I would have seriously thought I would
+have gotten a true
+>> and I'm surprised you got a false.
+>> But you were you were testing to see if
+it returned true if there was a
+repeating substring.
+>> Yes.
+>> Okay. And
+>> we're not telling it that in our in our
+language up here. We're just telling it
+>> to return false. So, it's going to do
+what it's told. I I like the uh the just
+kind of clarifying what it's expecting
+of us. And I feel like given that and
+then going back and reading the first
+sentence of the description.
+>> Mhm.
+>> Given a string s check if it can be
+constructed by taking a substring of it
+and appending multiple copies of the
+substring together. So I feel like that
+sentence then kind of makes a bit more
+sense like oh the entire string is just
+a substring appended together multiple
+times.
+>> Mhm. Does that make sense to you Linda?
+>> Yeah. Um so we're looking for a basic
+unit that's repeated. That's what that
+tells me. um
+>> the whole thing has to only be that unit
+repeated regardless of if there's
+anything else other than that unit
+repeated then it's not
+>> so true
+>> so we are looking at something much
+smaller when we do our input of s up
+here we're looking at something uh how
+do I change the test case again um
+>> yeah you have to click the first one
+>> okay
+>> you're in the right spot and then you
+just click into there and edit it
+>> okay um so we're looking at we we would
+have to find something much shorter than
+what we put in. It would have to be
+either AB or something little. Um
+because
+if So what you're saying is Wait a
+minute. Are you saying that the
+substring
+I thought that we were looking at two
+things? I thought we were looking at a
+substring that's inside of a larger
+string.
+>> Yes.
+>> Okay. And I guess my first disconnect is
+why I'm I would be looking for something
+like string and substring is parameters.
+What I'm seeing up here is something
+that uh I guess refers back to the
+class.
+But the only real parameter up here is
+one thing. It's a string. It looks like
+we only have one string. We don't have
+like a string and a substring. And
+that's the thing that throws me off
+because I really don't know what I'm
+truly supposed to be looking for if it's
+only one string up here. Uh now what um
+Russell what you were saying um you were
+saying something to the effect of the
+string is that s up here repeated
+however many times
+>> or not
+>> or not. Um, so you're looking at
+repetitions of of S up here of the
+string. You're looking at repetitions of
+the string.
+>> Not quite. S is is the resulting string
+and you're trying to see if there is a
+substring that repeats over and over
+again to make up S. And so when you
+click on test case three,
+>> Mhm.
+>> ABC is S. So if you feed ABC in, can you
+break ABC down to find a substring
+that's repeated over and over again to
+make ABC?
+>> Well,
+>> that's
+>> great. So you you're asking for you want
+sub the like potentially repeated
+substring to be given to you as a
+parameter. So if you're looking at abab
+and I'm given substring AB, can I like
+take the substring and concatenate it
+and make it equal to the string that I'm
+given? and see if that if they're equal
+or not.
+>> Okay?
+>> And that makes sense, but the only thing
+is is that you're not given substring.
+You have to figure out
+>> all the possible combinations of what
+substring could be or if there are no
+possible combinations, return false.
+>> Okay. So, we are looking at the at the
+string and we're going to
+be dividing it or wait a minute. Hold
+on.
+>> If you go back to the left side of the
+screen where it provides the examples.
+>> Yes.
+>> And just for instance, you go to example
+two.
+Yes.
+>> When S is ABA, can it be made up? Can it
+be manufactured from any substring
+repeating over and over?
+>> No, because it's not a multiple of
+>> either A or
+>> of what? What is it not a multiple of?
+>> It's not it's not a multiple of um Okay.
+of either A or B
+>> or A, right? Like there are three
+potential combinations you could or a
+couple combinations you could do. A
+repeated AB repeated or aba would just
+be a single substring.
+>> Okay.
+So
+if it's A or if it's B and we did
+A.
+Okay. I don't want to get off track, but
+if we did A AB,
+that would work, wouldn't it?
+>> Would it? Why would it work?
+Um,
+wait a minute. Hold on a second.
+No, it might not work. Um,
+because that is S
+is the basic unit and we're trying to
+see
+see this is okay. I'm not sharing
+anymore. That's okay.
+>> Yeah, I stole it from you. Sorry. You go
+ahead and keep talking.
+>> Okay. Uh it it would help me if I could
+see it though. Um I I I'll go over here
+and and and maybe look at it, but um
+h it it it seems to me that um
+S is the unit that we're looking for.
+And as Russell was saying it
+what we're asking is
+see that I wait a minute I am just I'm
+going to have to go off and think about
+this some more because it works my logic
+will work if I have two parameters. It
+won't work if I only have one. Um,
+>> so you have to adapt what your
+understanding of the problem is to like
+what you want it to give you to what
+it's given you.
+>> So you want it to give you like AB here
+>> and then say does AB repeated equal this
+string
+>> yes or no
+but they're not doing that. So you have
+to take it and break out these and say
+okay if I repeated this first character
+for the full length of this and created
+you know a a a
+would it equal that yes or no
+>> it's a no right so then we take in the
+second piece so now we are looking at if
+I copy that you have to build your own
+substrings here so now I'm going to try
+with AB that is another substring
+>> okay
+>> that we're looking at. And if I repeat
+that a bunch of times, that's going to
+be, you know, ab a
+does that equal this? Yes or no? And
+then finally, you get to the last one,
+which is ABC.
+Repeat that a few times for the length
+of it. And then you say, does that equal
+it or not? And if we repeated that three
+times in this case, it would equal
+in the other case that you were talking
+about if this was
+a a or ab aa something something like
+that.
+>> You're saying that you would think that
+it would be true because there is a
+repeating character here, but it's not
+asking if there are repeating characters
+within the string. It wants to know if
+the entire string that you are given is
+made of repeating characters. Not a
+single repeating character or maybe two
+repeating characters but the whole
+thing. So since
+>> Oh, hence it would work with abab but
+not ab aa.
+>> Yes, because ab is the thing that we
+would want to well we would start with a
+again, right? So we would either take a
+and repeat it for the entire length of
+the string.
+And if it had been all A's, I would
+pass. Or if it was AB AB,
+but because this is an AB and an AA,
+>> Mhm.
+>> that's not going to work. We're not
+looking at isolated parts of it. We're
+looking at the whole thing as a singular
+unit.
+>> So for example, ABC ABC would work,
+right?
+>> Yes.
+>> Okay. or ABCD. ABCD would work.
+>> Okay.
+So, when we're thinking about the code
+or even your pseudo code game plan, I
+mean, we kind of just talked about just
+in that moment there of
+>> Yeah, thank you for that because that
+it's becoming clear.
+>> How might you how might you do that like
+with the ABC
+that's what we're kind of your you're
+kind of go your game plan would have to
+be building out those substrings. So in
+what we just talked about, you could
+start with just the first character. If
+I repeat the first character towards the
+length of it, we have a length of four.
+And I just did four A's. Do they equal?
+Yes or no? Continue on. Now we look at
+what the next potential unit. And since
+they have to be
+repeating, we can assume that it's going
+to be repeating from the beginning,
+right? Like the first string that will
+repeat will have to be from the
+beginning of the string, right? So it'll
+either repeat from here or it won't
+repeat at all. Like we couldn't say
+C A B A
+because the C is in there. So we would
+need it to be cab
+and not cab.
+So whatever's at the front has to also
+be repeated towards the end.
+Um, so then yeah, following that same
+logic,
+we build our next substring. So maybe
+you you're making that a variable,
+making your maybe you're just making
+that like a length of characters to
+check from the beginning and then you
+build out that that string from that
+substring. Compare it to your original
+string and see what you get.
+That is what you might consider for
+the approach. Like if I was coming up
+with my brute force approach or like the
+first thing that came to mind, that
+would be what I would do is that I would
+build out each of these strings each
+time based on
+let me
+let me do it like that. So
+>> I would string one at a time and I would
+start with okay window size of one first
+character a a and then I would do the
+second one. So, AB AB
+>> and then that one seems that one would
+pass. But if it hadn't, I would keep
+going and do the ABA aba so on and so
+forth until we run out of options to
+test or we find a valid match.
+Would we have to iterate through each
+element of the string to find out
+whether or not uh we've got a sequence
+that's repeating?
+>> Um I mean up to a limit, right? Like at
+some point
+with this approach, you would find you
+would either find a series of repeating
+strings
+>> and you're building that out and you're
+comparing it
+>> or you don't. In which case, yes, you
+would be evaluating every every
+character there and then returning false
+because you didn't find anything, right?
+>> Yes.
+>> Okay. So, I know this one is kind of
+like
+it's mentioned as easy, but it it does
+take like a second to like wrap your
+head around about how you might approach
+that and even how you might construct
+the code for that. But that's why it's
+always really important to make sure
+that you understand the problem that
+you're asking those assumptions, testing
+those assumptions before getting code
+written out because then you're going to
+be stuck in this codew writing cycle of
+like I'm just throwing everything at it
+until I can get something working
+instead of kind of breaking the problem
+down until you have an idea of how it
+might work that you can test out.
+So, what we just talked about while you
+guys were in the breakout room, Mauricio
+and I were looking through his code and
+what he coded was pretty much what we
+just discussed of building up those
+substrings and building out the repeated
+string of each of those smaller ones
+that he was creating and then testing
+that comparison of does the string that
+I built match the one that I was given?
+Yes or no? and then add adding a few
+conditions inside of that to help
+to help speed up the process a little
+bit.
+>> Um I'm I'm I saw Mauricio's code on on
+the website um in Discord.
+>> Um I guess I had a question about well
+what exactly was sub in there? I mean,
+that's your loop variable, and you're
+looping through one through the length
+of the string.
+Um,
+I don't quite know what's going on here.
+Uh, can somebody tell me?
+>> Well, now you have the tools you need to
+answer that question on your own, right?
+like you know what the problem is asking
+of you
+>> and you have this understanding of how
+you can test it, debug it, print it. So
+well, first of all, I would encourage
+you to write your own code first and
+then if you want to understand
+Mauricio's code, use your knowledge that
+you have now and kind of break it down
+into parts and say, how is this code
+building out? What can I test in this
+code to make it make sense?
+>> And using what I know, does it match up
+with what I'm seeing?
+But I was just what what's sub though? I
+mean, uh, because, you know, I'm almost
+like the chicken and the egg thing.
+You've got the string and you don't
+really have you're going to have to
+divide the string some kind of way. Um,
+so, okay, I will go back and think about
+that some more. But, you know, it just
+um
+how how do you f if you've got only one
+parameter, you're going to have to
+divide that parameter some kind of way
+uh to see whether or not it repeats.
+And I don't I'm I'm having problems
+actually conceptually finding out how
+how do you do that? If you've got one
+thing um and you're seeing how many
+times that one thing repeats
+um how do you determine the basic unit?
+>> So that's what we talked about
+>> this whole
+>> in the whiteboard session is starting
+with the first character, right?
+>> Yes. And if I repeat that first
+character, does it match up?
+>> Okay.
+>> And then we have to change our unit size
+if that one didn't work to be the first
+two characters. So that that's now our
+our smallest unit size that is possible
+to test. And you kind of have to keep
+following that train of thought until
+you either find a match
+>> or you run out of options to test.
+Right.
+>> Okay.
+>> I see. I'm gonna have to go offline and
+draw some pictures. I think help.
+>> Well, that's a good lesson as well.
+Like, we can explain it until I'm blue
+in the face, but until you get in there
+and work it out for yourself, this comes
+with code as well, you're not going to
+be able to make full sense of it. That's
+why I don't recommend looking at
+solutions or any any kind of tips or
+tricks until you have been able to at
+least work through some of the test
+cases on your own.
+Right. That's what we talked about a few
+weeks ago. Yeah, Linda, with the reverse
+engineering stuff, like you got to give
+it your
+>> your best effort before jumping into
+that.
+>> Yeah.
+>> All right. So, do we have any questions
+about this before we close out today?
+Oh, what's what are we going to be doing
+next time?
+>> So, we will look at new problems to
+cover on Sunday, but we might continue
+this because we only got through the
+easy problem and I linked a medium and
+hard problem that were kind of on the
+similar path, but a little bit
+different.
+So, those are all in the weekly schedule
+Discord channel, and I'll reply to it
+now as well. So, it's kind of closer to
+the the bottom.
+>> Yeah, I had a question. uh we we're
+always told to use the four pillars to
+problem solving and uh on the first uh I
+think it says find your template. So
+wouldn't the template will be equivalent
+to a pattern
+like
+>> no so I mean
+>> bonus uh sliding window etc. It could
+be.
+It could be. But in this case, I feel
+like I've I've kind of talked about this
+before, but I don't think that the first
+one about using a template always
+applies for
+these problems because when you're
+thinking about like the real world uh
+real world examples, um I want to do
+some kind of thing in my application.
+Are there any templates or things that
+other people have done similarly that I
+can just kind of like grab and put in
+and then modify until I get what I like
+they're close enough so that I can take
+away some of like the brunt force or the
+the upfront work. And that makes sense
+in this case
+unless you already know what you're
+going to do. Having a template doesn't
+make sense. Like you have to know what
+the problem is asking of you before you
+can request a template. And by the time
+you get to that point, if you're working
+on a time crunch, if you're in the
+interview, like you don't want to just
+Google
+part of the solution to P.
+>> Yeah. But let's say you you have done
+hundreds and then you recognize a
+pattern. So you know, you got you're
+pretty much sure that it's a type of
+problem. So you're going to go for that
+pattern. So in
+>> So if you know what the pattern is, then
+you don't need to paste it in. You can
+just type it out.
+>> That would be a template, right?
+the algorithm will be the template.
+>> It could be, but I think that wouldn't
+look good in a in an interview if you
+were just going to go and paste in like
+I know this is going to use a sliding
+window, so I'm just going to paste in a
+sliding window like template.
+>> No, of course it's got to be a sliding
+window uh adapted to what the problem
+requires. But if the core of that
+problem can be solved with a sliding
+window, I mean, you know the algorithm,
+you have mastered the algorithm, you
+just not memorize it. you understand it.
+So you know the the the the principal
+elements of it. So you use them and
+adapt them to the problem and then solve
+it. So you have a starting point
+>> uh to go by that will save you time if
+you can do it as that association.
+>> On this scale it doesn't work and I
+guess it would depend on the interviewer
+but I think most of them would not like
+that. on the scale of what these
+problems ask of you. Starting with the
+template is basically pasting in a
+solution, even if you have to modify it.
+It's pasting in most of the work that
+they're expecting you to show. Because
+an interview isn't just getting the code
+working right, it's showing that you can
+break down the problem and that you
+understand the problem. It shows how you
+move through a problem. Are you thinking
+critically about it? What assumptions
+are you making? What questions are you
+asking?
+>> Yeah. After you go through all that bug
+along the way, how are you checking what
+you're writing? How are you checking at
+each step? Those are all problem solv
+after after you got off all that verbose
+and you have determined this is
+definitely a sliding as my the best of
+my ability this could be solved by a
+sliding window and I'm going to bet on
+that. So you start that's your starting
+point. So you go after you explain
+everything and everything you go with
+it. And since you already know the
+sliding
+window basic algorithm, you're going to
+expand it, twist it, tweak it, or
+whatever you need to do according to the
+problem, but it's still going to be a
+sliding window solution.
+>> I mean, it depends on the interviewer,
+but I think most of the time, no,
+because they would be asking you, all
+right, great. You know, it's a sliding
+window. You can explain how a sliding
+window works. Demonstrate that. Like, do
+it.
+>> What do you mean? like demonstrate that
+you can do it, code it out. Like show us
+what how you would code that out. Show
+us the steps that you would taking even
+if you can explain it. Like that is what
+they would be looking for and what steps
+you're taking along the way.
+>> Yeah. Yeah. But in your mind, I'm
+talking in your mind, you know that. So
+you're going to go for that. So that
+will be your starting point as far as
+conceptually
+solving the problem.
+I don't know if I'm explaining myself
+real good but it seems to be through
+school of thoughts what what you're
+saying and the pattern recognition after
+doing many problems school of thought
+out there.
+>> Okay. So so then your question is like
+not even writing any code or writing any
+pseudo code
+it is quote unquote template
+understanding that there is applying an
+algorithm or applying a data structure.
+I wouldn't call that a template then
+that's just like understanding
+>> you go through the reasoning
+but because of you have done so many at
+the same time you go through it you
+recognize you have that tool you said
+okay I could definitely go with a
+sliding window here so a sliding window
+in its most basic form is an algorithm
+right so that's your starting point and
+and you can go from third and it it has
+variance according to the different
+problem. So since you already understand
+the problem you can take that basic
+algorithm and do the variance and arrive
+to a solution given that you are right
+in understanding that that that that is
+a sliding window so to speak. I mean,
+yeah, if you're taking the basic sliding
+window, writing it out yourself, and
+then saying, I'm going to use this
+approach, but modify it to work through
+this problem. Yeah.
+>> Okay. Yeah, that was my question.
+Thanks.
+>> I mean, there are problems that require
+that actually where it's like it would
+be it's not using binary search, but
+it's using the concepts of a binary
+search and then modifying that algorithm
+to solve the problem. like there are
+problems that are specifically dedicated
+to doing things like that. But when you
+when I think of template, I'm thinking
+of like starter code. So I wouldn't call
+that a template. I would call that
+understanding the problem and being able
+to know what what to apply to it. What
+data structure, what algorithm, what
+approach, what logical approach.
+Yeah, I was asking because we we are
+always referring to mod 2 and the
+pillars of problem solving and all that
+as a main reference. So that's why I
+ask.
+>> Okay. All right. Any other questions?
+>> Yeah. Uh yeah. Uh,
+is there a built-in method in Python
+that will tell you whether or not a
+letter is repeated?
+>> Um,
+in what way? What do you mean?
+Well, you know, I was trying to figure
+out um what the sequence I know you went
+over it and I'm going to have to
+probably look at this video again, the
+video of this session before it fully
+sinks in. But I was just wondering, for
+example, when we were talking about AB,
+is there a way is there a method already
+written into Python? Uh something like
+maybe for the lack of something called
+like repeat, you know, uh where you
+could uh put like the string in like you
+go string repeat parenth and then put
+your string inside the parenthesis and
+then close parenth. I mean, is there a
+method in Python that would allow you to
+look within a string um and tell you
+whether or not um the the letters the
+elements within that string showed up
+more than once?
+>> Well, I was going to say no,
+>> but then Stephen posted he he was
+thinking about the count method,
+>> well, that actually would work. You
+would have to add on to it a little bit.
+I mean, you'd have to say like you'd
+have to get the result of count of the
+the string. So, you'd have to know what
+substring you're going to use, like a or
+ab, and then you'd have to save that
+count to a variable and then compare
+>> that count against like the potential
+length. But, I mean, that is basically
+what we discussed. So, like, yeah,
+technically.
+>> Okay. Well, you know, I guess I'm going
+to have to let it sink in, though. Uh,
+cuz
+>> But you've written down, so you'd be
+able to uh rip. That was what I was
+thinking cuz we did count and I was
+thinking that you know when you're given
+something like a string and you it's one
+thing you you know and you have to break
+it up uh you have to iterate through it
+and you have to
+see how many times that that pattern
+occurs and then you want to put that in
+a counter somewhere
+um so that when you see it again you can
+take the counter again.
+Um,

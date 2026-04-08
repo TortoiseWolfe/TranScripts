@@ -1,0 +1,1541 @@
+All right, welcome to this week's tech
+mailing the technical interview. Um,
+today is Sunday, so typically we will
+look at some new problems, do some
+pseudo code. Before we get started, does
+anyone have any questions they'd like to
+ask about the technical interview,
+practicing, preparing, anything of that
+nature?
+>> Yeah. how long you should stay with a
+when you are stuck in a particular
+problem before looking for a solution.
+>> So I think there's a couple of things
+there. Um
+when you say stuck
+I guess where are you referring to? Are
+you referring to like understanding the
+problem or just getting a working
+solution?
+just not being able to solve the
+problem, not being able to come up with
+something that,
+you know, pass anything. So,
+>> okay.
+>> Yeah. So, there's I mean I you could
+probably say that there's
+probably a few different phases to um
+elite code or hacker problem solving
+challenges. There's reading and
+understanding the problem. um breaking
+down the problem requirements and
+understanding the sample inputs and
+outputs.
+Pseudo coding
+a working solution. I guess not even
+that pseudo coding um
+what you how how you interpret the
+problem and any assumptions you might
+have.
+Then jumping into some code that you can
+test and debug
+and
+print and run all that kind of good
+stuff. um tackling any errors you might
+come across or
+getting stuck not passing all of the
+test cases, right? And that's again part
+of the problem solving process. So
+there's multiple I guess parts to a
+problem overall that can trip you up. So
+I think I can give general advice that
+if you have a problem working
+or I mean not if you have a problem
+working if I've been working on a
+problem for
+okay wait let me think about how to say
+this if I have code written and it's
+just not passing all the test cases I
+like to aim to get at least twothirds of
+the test cases passing before
+looking up a solution for how to get
+everything passing.
+The time range that I would say it takes
+to get there can differ. If it's for an
+easy problem, if I've spent like an hour
+or more on an easy problem and I haven't
+gotten twothirds of the test cases
+passing, then I might I might look up
+some additional resources, say,
+what's the deal here? For a medium
+problem, I don't know. I might actually
+spend an hour or so on it and then not
+look up a solution, but come back the
+next day or maybe two days later, let it
+just like kind of simmer in my mind for
+a little bit and then come back and say,
+"What can I try now? Start kind of from
+scratch a little bit."
+But I think your approach
+differs from what part that you're stuck
+on. If you're stuck on
+breaking down the problem and
+understanding the problem,
+you focus on the information that
+they've given you. Focus on the
+constraints, your inputs and outputs
+and assumptions. Right? Those are the
+best things to focus on. What is this
+problem telling me? And how can I write
+that into the simplest verbatim text in
+my own words? Can I get a visual diagram
+drawn out for my own self? or can I use
+some kind of resource or tool that helps
+me process information? I'm a visual
+learner, so I have to draw. Um, but if
+you can use a whiteboard or if you can
+use coding comments, like whatever works
+for you.
+Reviewing the inputs, outputs, and
+constraints
+help you understand the problem. Walking
+through the problem step by step. If
+they have the sample explanation,
+walking through their sample
+explanation, what is it telling me? Can
+I write that in my own words? Can I draw
+that out?
+If you're stuck in the next part where
+you have the the problem kind of
+understood but you're not understanding
+necessarily the constraints or the
+inputs and the outputs, what can you do
+there? That's where Google comes into
+play. If I don't understand what a
+constraint variable means, can I look
+that up? If I don't understand the
+output format, can I print something so
+that it shows me? Um, is there any
+errors that it's putting out that can I
+read the errors and understand what the
+error is telling me about my output not
+working?
+Um, but printing, debugging, and
+googling terminology helps at that
+point. If you've got all of that done,
+but you have some code written and
+you're stuck getting a code written from
+I guess next part is pseudo code. Can
+you think of an actual pseudo code plan
+for how to translate your understanding
+of the problem into a solution
+that is going to have a variety of
+approaches there as well? What content
+are you familiar where with? Can you go
+back to mod 2 and think of a similar
+problem that uses similar information,
+uses a similar data structure? What data
+structures might fit this problem? Can
+you test one, try it out? What kind of
+does it need a loop? Does it need a
+function? Does it need? What does it
+need? Can I look up resources that help
+me understand what this problem needs?
+So then I can write a pseudo code game
+plan to break the problem down into
+actual steps. If you've got all of those
+done and you understand the problem, you
+understand how you want to approach the
+problem. You have an idea of the data
+structures and coding approach that you
+want to use at a high level, but you're
+stuck getting a working solution from
+that approach. Maybe you can't get the
+syntax right. you're hitting some
+unexpected errors. You expect your code
+to be passing all the test cases, but
+it's only passing some of the test
+cases. That's when you're using the
+problem solving of what assumptions can
+I make? What can I see? What is my code
+doing at any given point against a
+passing test case or a failing test
+case?
+Can I see what those changes are
+happening based on what it's expecting?
+What am I giving it? How am I getting to
+that that detail? So, if it's expecting
+an integer at five and I'm giving it an
+integer at seven, how am I getting to
+seven? Let me go through my code, add
+some print statements to see why am I
+returning seven when it wants a five.
+Why are they expecting a five? That's an
+assumption. How can I see what that
+assumption is? Why am I giving it a
+seven? That's an assumption that I can
+test out. What other assumptions about
+this problem can I make that I can test
+out? Once you get to the actual codew
+writing part, it's all about what
+assumptions can I make and test? Do I
+need to re-review the problem, make new
+assumptions? Do I need to take my
+existing code,
+make some assumptions about how it's
+working, make some comparisons between
+the expected output versus what I'm
+returning, so on and so forth. So,
+what you do can kind of change based on
+what part of the process you're stuck
+on. Um, and it's going to be unique to
+every problem. So, I can only give you
+the general process there.
+And if you take a problem to like a peer
+mentor office hours or a Q&A session,
+they can definitely help you break down
+those even further if you need to. Does
+that answer your question?
+>> Yeah, it's usually
+I mean I have all the the code written,
+but I get stuck there. It looks like
+it's not the right approach and it's not
+passing.
+So, do you have an example that you've
+been working on recently?
+>> No, I just took the last
+I hadn't done anything in the last three
+days because I kind of gave up. Uh I was
+too stuck.
+I did problems up to Thursday, I think,
+or Wednesday.
+And I mean, I eventually finished them,
+but I had to do some research and stuff.
+So I decided to not doing anymore
+because he was like running a treadmill
+getting nowhere and I don't even know
+why. So I haven't done anything since
+Wednesday. So but I don't have any any
+problem right now that is stuck. So
+>> okay
+>> but it's usually that like I
+when the once I get stuck I find myself
+with code written everything it doesn't
+pass and it looks like the path I'm
+going through is not the right path and
+but I cannot find any other path to
+reformulate the approach. So I get stuck
+in a loop there of
+>> Mhm.
+>> not having the right conceptualization
+of a solution
+but not being able to come up with an
+alternative one. So
+>> at that point I feel that I need to look
+for a solution.
+>> So once you've gotten to that point
+you've already gone through a couple of
+steps, right? So maybe it's revisiting
+those earlier steps to say what
+assumptions did I make about this
+problem? Did I write them out? Did I
+test them out? Can I go back through
+this problem and visualize it somehow
+and make sure that I understand the
+problem thoroughly before looking up any
+solutions?
+So like if you've gotten to that point,
+maybe it's revisiting the earlier points
+and seeing how you've gotten to the
+conclusion that you've gotten to. But if
+you've looked up a solution, then
+there's also things you can do after
+that.
+going back a few days later and trying
+again from scratch. Now that you know
+the solution, have you written have you
+coded out the solution that you looked
+up in your own
+term? Like I guess in your own hand with
+your own hands more or less um and then
+come back like a week later and try to
+do it again from scratch. I think there
+is lots of work you can do at that point
+too because you can
+now that you know a solution and you
+understand how that solution fits to a
+problem or if you don't making sure you
+understand how that solution fits that
+problem and why it works. Then you can
+think about how you can
+take that idea of a solution and use
+maybe a different data structure, maybe
+a different approach, having the same
+general concept of the solution in mind,
+but trying something different so that
+you're still
+you're still problem solving and you're
+still thinking and even though you know
+a solution, you're trying something new.
+You're trying new code. That's why I
+always like to go um back to older
+problems, especially if I know that I
+haven't done it the most efficiently. I
+look for other solutions to that problem
+or I I try I don't look them up. I try
+other solutions to that problem. I try
+to make it more efficient. I try to
+improve it because I'm learning new
+things by doing that. I'm improving my
+problem solving and I am testing and
+debugging and getting all that stuff out
+there as well. And now I have three
+approaches to this problem that might
+work. And I can take those solutions and
+apply them to other problems. So instead
+of having one solution that I had to
+look up, I have three solutions that I
+know and I could potentially extrapolate
+to a new problem.
+That's my turning process anyways.
+>> But that's after looking them up, right?
+>> Yeah, that part specifically is after
+you've already looked them up. But there
+are lots of things like we talked about
+that you can do pre-doing that before
+you do that.
+>> Yeah. I mean I get caught on like kind
+of I cannot find another path. So that
+kind of push me to look for a solution
+to look look it up, you know, because I
+cannot see another path of the one that
+I've tried and it doesn't work.
+>> Yeah. I mean I've looked up solutions
+before. It's
+especially if it's not something you've
+ever seen before. If it involves
+utilizing like a named algorithm or a
+technique that you're not familiar with,
+no amount of scratching your head and
+debugging and testing is going to get
+you to that solution, right? Because you
+needed to learn something you didn't
+know. Especially with medium problems
+that comes up. But each time you do
+that, you've learned something new. You
+add it to your toolkit. Okay, I know I
+need to use this kind of approach or use
+this kind of data structure and then you
+can take that next step of what other
+problems can I use this data structure
+for.
+Google
+that like lead code problems that use
+XYZ data structure or XYZ algorithm and
+practice a few of them.
+Now mostly you can get through
+everything using just mod 2 concepts but
+some of the problems that require like
+the most optimized or efficient solution
+>> or they won't pass all the test cases
+um from like a timeout error. Okay, so
+let me rephrase that. Most of the
+problems on hacker rank and le code you
+can solve just with the concepts learned
+from mod 2. You don't need to know any
+special algorithms or any special
+approaches. That being said, some might
+not pass all the test cases and time out
+due to inefficiency
+where you need to know the super
+optimized version of the code of the
+solution using one of those things. So,
+I think that's a different a different
+issue. If you can get like a lot of the
+test cases passing, but it's timing out
+and then you have to look up the
+solution for the optimized version,
+that's one thing. It's good to know know
+that and learn that and add it to your
+toolkit, but I wouldn't say that that's
+like a bad thing or that that you
+couldn't have that we that there was
+something that needed to be taught to
+you before taking on this problem. Like
+there are lots of named algorithms and
+lots of unique approaches to things out
+in the world. Like you can't just sit
+there and learn them all. I mean there
+are textbooks there are textbooks
+written to algorithm training. So you
+can't just memorize them all. Um,
+but if it's something where like
+you could do it in mod 2 language, but
+the solutions require something
+that just like you aren't solid in or
+confident in like I've definitely we
+learn hashmaps and hashets and
+dictionaries in mod 2, but there are
+some advanced applications of those
+things that maybe you will see in a
+problem that requires
+maybe some research into that topic
+before you use it. So, you're not always
+going to be able to solve it just on
+what you know for mod 2, but I think
+working back in how can you take that
+solution that you had to learn and
+translate it back into the mod 2
+fundamental concepts. Can you do it in
+mod 2 fundamental concepts only? And how
+do you bridge that knowledge gap? But
+that's not for every problem. I would
+say that's like for like 20% of
+problems. 80% of problems you should be
+able to solve just using mod 2 concepts.
+Yeah. And that that mainly I've done
+medium the last couple of weeks though.
+So I got into that very very often in
+the last couple of weeks because
+probably because they were medium most
+of them like 95% of them I don't know.
+>> So that's good. That's good practice to
+have. We don't use medium problems for
+the joy of coding technical interview.
+they will use like baseline starting app
+medium problems for job hunt technical
+interviews. So it's good to practice
+those. But I wouldn't get hung up on
+like okay I couldn't get a solution
+working in you know my first attempt or
+my second attempt and I had to look
+something up. I wouldn't say that that's
+like something you should beat yourself
+up over or feel that is something
+lacking like
+medium and hard level hacker and can
+leak code problems were meant to trip
+you up. like that's how they were made.
+So
+>> yeah, I usually look I usually research
+like hints. So in some of them I have to
+get to a second or third hint on some of
+them just with the first hint was enough
+to see it. But usually in all of those
+there is a key particular
+way to look at the problem that embeds
+the whole key to solve it and coding is
+easier after that.
+>> Yeah.
+>> But you don't see that very easily. So
+you get stuck or you take another path
+that doesn't work. So,
+>> so something you can do too is that if
+you have been working on a problem for a
+long time and you're kind of stuck in
+that understanding part, take it to a
+Q&A, take it to a peer mentor office
+hours there every day, almost almost
+every day and say like, "Here's where
+I'm at with this problem. I can't get to
+the next step. Can you give me any
+pointers?" And usually that should mean
+like them asking you questions and
+pointing you to specific things like
+reread this line or what is this telling
+you those kinds of questions so that
+you're still able to make the
+connections on your own instead of just
+saying oh you need to use this data
+structure um because that's not going to
+be helpful for you. But if they can ask
+you questions or give you pointers to
+help you make that next logical key
+knowledge step um definitely use the Q&A
+and peer mentor office hours for those
+resources. If you've been working on
+something for a long time,
+>> yeah, I usually get to the I mean all
+the coding and stuff and then it doesn't
+pass certain number of test cases and
+then I find myself coding for those and
+then I realize now it's not going to
+work this path. Uh but I cannot see any
+other path. So that that's when the loop
+I was talking about starts and then I
+gave up at some point and had to
+research or get more hints or look up
+for a solution.
+>> Mhm.
+Okay. Well, you've got a couple of
+options now for you for thinking about
+how to
+>> Yeah. Sorry for taking so so much. Yeah,
+I'll go over all this on the video and
+keep that written to go through that
+whenever I hit the bumps again.
+>> Mhm. Yep. Okay. Any other questions
+about technical interviews, practicing,
+preparing, preparing, preparations,
+anything like that?
+Okay. Um, just by use the chat or unmute
+yourself, where is everyone at in their
+in the curriculum? Are you at the
+technical interview phase? Are you in
+mod 2? like where are you at? What are
+you practicing?
+>> I'm at the end of mod 2. So I finished I
+think it's project five, but that was
+really rough. So kind of just going back
+through all those concepts like we've
+been talking about and solidifying that
+knowledge for the hacker rank. So being
+able to read it to that's what they're
+asking
+versus getting stuck on like taking the
+words into code.
+>> Okay, cool.
+What are you about you? Um, Natalia,
+>> I um I finished Mu actually a month ago,
+but then I had some things happen and I
+kind of had to had to pause like
+prepping for the tech interview. So now
+this week I can start prepping for the
+tech interview again. And so I've been
+revising like some mod one stuff and
+I'll start revising some mod 2 as I'm
+going through hacker rank. Um, yeah,
+that's basically where I'm at.
+>> Okay, cool. I think everyone's in a good
+spot then. Um, what I'd like to do today
+then for moving forward is that
+I think I kind of well, let's see.
+I have two problems here. What I want to
+do is briefly go over
+one. I'll I'll put this in the chat.
+share screen.
+Okay, so I want to briefly go over this
+problem, repeated string, and talk about
+some of the things that we were just
+talking about, me and Mauricio, about
+the different phases, steps, right, of
+breaking a problem down. And then I
+think I'd like to use a second problem
+to give everyone some practice time to
+work on that.
+So,
+oh, looks like I lost some people here.
+Gracias is rejoining. Welcome back.
+Okay, so briefly going through this one
+again. I'm going to write this out. I
+might add to this. I don't think it's
+like officially written down anywhere,
+but if I had to break this process down
+into steps, I would say
+reading and understanding
+problem.
+And this applies not just to hackerank,
+but into any problem that you're facing.
+Right? If you're working on a client
+ticket or you're working on one of the
+mod 2 projects, reading and
+understanding the problem is going to be
+your first step. If I can spell anything
+correctly. Reading and understanding the
+problem. Understanding
+constraints, constraints,
+inputs. Actually I'm going to write that
+as understanding
+requirements which is like constraints
+inputs
+and outputs
+and then I might move on to three
+explaining
+the problem in my
+own words
+and writing assumptions.
+assumptions.
+Yeah, writing assumptions
+for
+pseudo code.
+That is writing pseudo code
+for how I how should I say that? writing
+pseudo code to
+sorry let me
+there's a there's a good way to write
+this and I'm not sure how to say it
+writing pseudo code to
+translate
+solution into steps I'll I'll say
+Writing suit of code to translate a
+solution into steps. That sounds good.
+Potential potential solution into steps.
+And then
+we'll say
+start writing
+and testing
+assumptions and code and testing
+assumptions
+and
+right start writing code.
+Code
+test assumptions about
+problem
+and testing assumptions
+from pseudo code.
+So that might look like
+well we'll get to that what that might
+look like. All right. And then six and
+kind of
+ambiguous step is
+debugging.
+Debugging slash
+problem solving.
+Uh, what are errors telling me?
+What
+is my code doing?
+And what do I want? Oops.
+What do I
+want it to do? Okay,
+maybe I could shorten that. Testing
+assumptions about problem
+and
+assumptions from pseudo code debugging
+problem solving. What are errors telling
+me?
+I guess yeah.
+Do I understand error?
+What is my go doing? And what do I want
+it to do?
+versus what do I wanted to do? I'm not
+going to worry about that one too much.
+If I had to break down into steps, maybe
+they'd be different from this, but this
+is just kind of like a loose idea. And
+you can obviously merge things together.
+So, if I'm understanding
+I tried spelling that twice. Maybe I
+wrap these up into two things. Like I'm
+reading the problem and I'm reading the
+requirements. I don't have any questions
+about them. That's one step. I get into
+my pseudo code. I don't have any
+assumptions or I have one assumption and
+that assumption is answered by the
+constraints.
+Cool. That is
+can wrap right into pseudo code. So I'm
+explaining my problem my own words and
+that writes right into the pseudo code.
+No problems there. Writing code, maybe I
+don't even hit any errors or don't have
+any issues.
+Everything runs flawlessly. Maybe I have
+to make like one adjustment from a
+syntax error or um I added some print
+statements along the way and
+made a like wrong assumption about the
+kind of loop I needed to use. So I
+switched that over. Not any like issues
+with my understanding of the problem. So
+this is more of like
+um
+do I understand
+the problem
+with my problem? I'll say it like that.
+So I don't have a problem with my
+problem, but maybe my coding approach is
+just needed some tweaks. So that that
+could all all of these six steps could
+be done in three steps then. Or if you
+don't really like to like pseudo code or
+explaining things in your own words, so
+you just kind of or it's a simple enough
+problem that you've seen a bunch of
+times, maybe I just read the problem. I
+understand it. I sound it out loud in my
+own words for the interviewer and I get
+right into writing my code because my
+pseudo code would basically be just what
+exactly the code that I'm going to
+write. Um,
+so maybe I skip that step. So then you
+can whittle it down to like two steps,
+two or three steps. This is for if you
+need to take it every single step one at
+a time and you need them specifically
+outlined as what action I'm taking at
+each part of the process of solving a
+problem. Um and this last one when I say
+do I understand
+understand
+the problem with my problem if I am
+having a bunch of errors or if my
+approach doesn't seem to be hitting all
+of the test cases then maybe my
+understanding of the problem is
+not correct. Uh, and so what is the
+issue or what is the problem with my
+understanding of the problem? And so
+that's where we talked about
+re-reviewing
+kind of walking through things line by
+line. Um, kind of re-evaluating, do I
+understand this problem? Can I v take
+more steps to visualize it? Can I take
+more steps to see what is my code doing?
+What do I expect it to do? Or
+conversely,
+um, looking at the inputs and outputs,
+it's expecting a certain output. I'm
+giving a different output.
+So, what is my code doing? And what do I
+want it to do to meet that output?
+Yes, I can paste that into the chat.
+Um, so this is just kind of like a
+general phrase that can apply to any of
+these things.
+What are the constraints, inputs, and
+outputs? Do I understand them? How can I
+make sure I understand them? Can I print
+them? Can I um draw it out in a visual?
+Can I do XYZ thing with it so that I
+make sure I understand the problem?
+I've explained it. Maybe I've written
+some assumptions. Can I test my
+assumptions? What are what is the issue
+with my assumptions if I have any?
+Pseudo code, same thing. Testing, same
+thing. Um the code, same thing. What
+errors am I getting? How can I test it
+out? So this kind of step is just like a
+miscellaneous step that can apply to any
+of the the former five, but you take you
+take a different action based on what it
+is. If you're at the code, you take
+coding steps. If you're at the pseudo
+code or problem code thing, you reread
+the problem. If you're at this part
+constraints and understanding the
+problem and inputs, maybe you're looking
+up what do these constraints mean. Maybe
+you're looking up, they want you to
+return a certain data type and you need
+to look up what that data type is to
+understand it. Um, yeah. So, this step
+looks different based on where you are.
+Okay. So, what does that look like in an
+action, right?
+So, repeat a string. There is a string s
+of lowercase English letters that is
+repeated infinitely many times. Given an
+integer n, find and print the number of
+letter a's in the first n letters of the
+infinite string. Um, so that's a
+horrible sentence. I didn't like I
+always hate reading these problems for
+the first time because it's like trying
+to translate a language that I've never
+um learned. But it takes a few tries and
+then once you read it again, you kind of
+get it again. So just take a deep
+breath, read through it again. So
+there's the string s of lowercase
+letters repeated infinitely many times.
+So we see here's our string s. So far
+I'm seeing abc a c. Okay.
+Given an integer n,
+find and print the number of letter a's
+in the first n letters of the infinite
+string. So we're given n equals 10. So n
+is the
+the length of the s string that can
+repeat infinitely that I need to care
+about. So
+this is less than 10. So I'm assuming
+that it needs to repeat. So we see
+something there. So actually I'm just
+going to keep reading. So for their
+example the substring we consider ABC
+ac.
+Okay. So they're just repeating this
+string. Um, but instead of repeating it
+infinitely, they're saying it can repeat
+infinitely. So if we looked at that, it
+would be our It's not going to let me
+copy that. It's not going to let me copy
+that either.
+So currently I'm still in phase one.
+Oops,
+which is reading and understanding.
+And maybe I need a visual to understand
+that. So, it's saying ABC
+CA is our initial string. And what am I
+seeing in this example? They have a
+longer string, but it looks like maybe
+it's just broken up into a few different
+things. So, the length of this is 1 2 3
+4 5.
+So, it could repeat multiple times like
+that, but they're only repeating it
+twice.
+Oops.
+ABC. Oh, that's helpful. ABC A C A B C
+A C Oh gosh. Sorry you guys. My string
+was wrong here. ABC
+A C. Okay, there we go.Oop.
+So, if I repeat it twice, does that
+match what I'm seeing over there? ABC
+AC ABC. Yes, it does.
+um the first 10 characters of the
+infinite string, there are four
+occurrences of A in the string.
+So we're working with two inputs here, S
+and N. That I understand
+S is going to be a string that can
+repeat multiple times. I think I
+understand that. And we are given an
+integer N,
+which in this case is 10. And then we
+need to do something with the first 10
+characters of this potentially repeating
+string.
+So keep moving. I'm still I'm still
+right here in phase one currently.
+Complete the repeated string function in
+the editor below. Repeated string has
+the following parameters. S a string to
+repeat and the number of characters
+consider. Okay, so I think I understand
+that. I'm going to
+I am going to put that in my own words.
+So, I'm kind of jumping to three right
+here, but I'm going to come back. Why
+could I not spell understanding right?
+Under understanding.
+So, I'm going to jump to to phase three
+a little bit here and I'm going to come
+back. So, it's it's not an exact science
+as you can see.
+So phase three given s
+which in my own words I'm going to say
+is the
+um smallest set
+of characters
+or smallest range yeah smallest range
+of characters in an infinitely
+repeating sequence.
+So, it's the smallest range, meaning if
+I get an infinite amount of letters or
+an infinite series of letters in a
+string, it's going to break down into
+the smallest range of abc a c repeating
+over and over. And then I'm also given
+n, which I might have to construct,
+which is the
+uh integer
+representing
+the length I need to construct
+for my string.
+Oops,
+my string.
+I'm going to shorten this.
+And which is the inch representing the
+length I need to construct
+out of S
+out of S. Now, that's an assumption. So
+here's my first assumption.
+Assumption is that
+S
+will be shorter
+then N.
+So then in the back of my mind I'm
+asking how can I verify
+verify this? But for now it's just an
+assumption. I'm writing it out. I might
+just think this, but in this case, I'm
+writing it out. So, back to phase one.
+That's that returns the frequency of a
+in the substring. So, now we Oh, so
+going back a little bit.
+My goal here is to print the number of
+letter A's in that string. So, now we're
+kind of getting this is a mixture again
+of understanding the requirements,
+inputs, and outputs. So once I've gotten
+to my function description, sorry,
+function description, returns, and
+inputs, that's where we're moving into
+understanding my constraints, inputs and
+outputs. But I'm also doing a little bit
+of
+um
+I'm also doing a little bit of phase
+three here and that as well because I'm
+I'm thinking about
+my goal.
+Sorry. So my goal here and I'm going to
+write that as a return statement.
+Return the
+number of
+character A's.
+Oops.
+How does this character A turn the
+number of charact in my constructed
+string?
+So
+this part here would be considered phase
+four where I am
+I would I wouldn't I do this all in one
+place but because I'm trying to separate
+them by the phases it's it's kind of
+looking jumbled
+but I hope this makes sense. So phase
+four, what is
+the goal
+representing
+that didn't look right? Okay, so my goal
+is to
+return the
+number of character
+a's
+in an infinite string up to int n. So my
+pseudo code for that might be
+build string up to integers
+[Music]
+using variable
+which I will name
+infinite
+string.
+Your level of detail of the pseudo code
+step is up to you. You don't have to get
+into like your exact steps here. It
+could just be an outline of what you
+might do, but for the sake of showcasing
+this, I'll be a little more descriptive.
+So, I'm going to build a string
+out of S
+and up to N
+up to N in length
+using variable infinite string.
+Then count
+using a for loop
+the amount of
+ter car a.
+So I will also need a variable for that.
+Need a variable for count. And then
+lastly return
+count.
+So that step I might just write some
+initial code there. Count zero
+infinite.
+Actually I won't start there. I just
+want to get my my situation set up here.
+So return count. Um I think it's always
+good to start out with a return
+statement that matches your expected
+integer. So, it's telling me return
+integer the frequency of a in the
+substring. So, I'm going to get
+something just written out for that
+return statement. Um, because otherwise
+you might see errors in when you go to
+run code if if a return isn't included
+or if a return doesn't match the
+expected data type that you're that it's
+looking for. So if it was expecting
+an integer, but I return an array or a
+list, it's going to give me an error,
+right? Well, it didn't give me an error.
+But for the the the opposite scenario
+would definitely give me an error. If it
+was an expecting an array and I gave it
+a
+integer, it would give me an error in
+here because it it wouldn't be able to
+parse it the way it wants to.
+So that's actually a good caveat there.
+It didn't give me an error that I was
+returning the wrong data type. So that's
+why I need to make sure that I mark that
+correctly. Return count
+as integer of the character a. So I need
+to make sure I'm returning the right uh
+data type there. So that is part of
+understanding
+constraints. So I will write that as a
+phase two there.
+Phase two
+understanding constraints.
+Um
+what's next? Where do I go from there?
+So at this point yeah let's keep going.
+>> So let me have a question. Yeah.
+>> Um,
+so if we build out if we build out the
+repeated string, so we have to build out
+the string.
+Uh, is there a formula there to build
+out that original string so that we can
+do the count? For example,
+in this particular example, it has five
+characters and it's a length. And if I
+was to
+say subtract from the in value and then
+um
+build
+um what I was thinking of is string
+times number. So how do I determine that
+number is to maybe minus that value and
+then calculate how many times I need to
+repeat it so that I have the string.
+This may be being force a forced logic,
+but I was just thinking from that.
+>> So, you're thinking ahead, which is
+fine. Um, but right now, even though
+I've written out all these different
+things related to pseudo code,
+>> I still haven't finished reading the
+problem to understand it.
+>> Okay?
+>> So, I'm going to save your question for
+a little bit. So, even though I started
+writing out like pseudo code,
+>> I still don't I still haven't read
+through the full problem and I haven't
+read through all the constraints,
+inputs, and outputs.
+So, I'm not yet ready to make a full
+pseudo code plan and I actually haven't
+even written out all my potential
+assumptions. So, that's a good question.
+Um, let's put a pen in it.
+>> Got it.
+>> Okay. So, input format is
+a single string s second line contains
+integer n. So this is where I made that
+initial assumption here
+that I can test out is that uh s will be
+shorter than n. We've gotten through the
+constraints. So now I can see if I can
+verify that first assumption that I had
+about the problem is that s will be
+shorter than n. So s is going to be a
+value between
+1 and 10. These brackets here
+is referring to its length. If I have to
+guess, we can look that up if you didn't
+understand that. Like
+what does
+uh looking for the symbol on my
+keyboard.
+Straight line. Straight line. Straight
+line. Straight line.
+Not seeing it. Hold on.
+This keyboard.
+Keyboard. Keyboard. Keyboard.
+I don't see it. Can someone type it into
+the chat here? The like straight line
+bracket. This little symbol right there
+next to S.
+Thank you very much.
+Okay. What does
+mean in math notation?
+Right. Let's see if it tells me
+typically represents the absolute value
+of s magnitude non- negative value
+regardless of the sign for example3
+would be three okay
+what if I say
+of a string
+okay so great so in mathematical
+notation this blah blah blah represents
+the length of the string which is the
+count of symbols of characters in the
+string And
+maybe I'd have to jump into like a Stack
+Overflow to see that. It looks like they
+also answer that question here.
+Yeah. So, it looks like they might
+answer that question in here, but they
+do have some other symbols in there. So,
+maybe you have to use a forum or
+resource to find that, but if you
+weren't sure about what the symbol
+means, you could look it up.
+So, we know that that means the length
+of the string is going to be between
+one.
+It's greater than or equal to 1. That's
+what that symbol means. And less than or
+equal to 100.
+Now n is going to be greater than or
+equal to 1 and less than or equal to 10
+12th.
+For 25% of the test cases, n is less
+than or equal to 10 6.
+So I'm going to come back to that. But
+my first question here is that I made an
+assumption that s will be shorter than
+n. Do my constraints tell me if that is
+true or false?
+>> Anyone know?
+>> True.
+>> So why do you believe that that is true?
+The s will be shorter than
+>> because um the string is less than 100
+but um n is like to the power of 12
+which is like a huge number.
+>> So this represents a range right? So the
+length of S can be one
+>> or it can be 100. N can be one or it can
+be up to 10 to the 12th.
+>> Yeah. So because it didn't tell me at
+any point that like length of s
+less than
+less than symbol less than
+length
+length of length of s less than n
+less than some number right I actually
+can't make the assumption that s will
+always be shorter because based on what
+they're telling
+S could be 100 and N could be
+technically
+one.
+So
+>> true.
+>> In that case, my assumption would be
+false.
+>> And the constraints are telling me that
+I cannot determine that S will be less
+than N. N could be a value of one. And
+the the opposite is true as well. S
+could be a length of one and N could be
+100,000,
+100,000.
+That could definitely be the case.
+So, I'm going to say false.
+And actually, what I might do is rewrite
+that as I've now learned something
+that's going to go into my
+explaining the problem in my own words.
+I'd actually maybe write that. Yeah. Oh,
+no. I'd keep that there. Okay. So,
+S can be longer than N.
+Check for this. And then I would think
+about how to add that to my pseudo code.
+So, I'm saying build out string up to
+the end length. Maybe that includes a
+conditional check. Add conditional check
+for length.
+of S versus N
+because S could be shorter
+or longer. I'm being very very verbose
+here. I'm including a lot of thoughts in
+a lot of words. I probably wouldn't
+include this much typing in tech. Like,
+yeah, I definitely wouldn't type this
+much in a real problem, but just so you
+can see every little like every single
+thought that's going through my head,
+I'm just writing them out.
+Um, yep. So that's my first assumption.
+My next thing there is
+if we're looking at these, what does
+this tell me? This is just useful
+information. It's not really anything I
+need to act on, but it's telling me that
+like majority of the test cases are
+going to use n less than 10^ the 6
+instead of 10 12th. Um because 10 12th
+is quite high. So I might be like in the
+back of my mind, I might be thinking,
+ooh, 10 12 that's kind of that's a lot
+that's a long string. it might take a
+lot of um code efficiency to count all
+of those up, but they're telling me that
+25% of the cases will be less than that.
+Um, so maybe I still need to think about
+efficiency, but
+or actually maybe it's telling me the
+opposite that I do need to think about
+efficiency because only a fourth of my
+test cases are going to be less than 10
+the 6 and 75% of my test cases are going
+to have a very very long in which means
+I'm going to have to build out a really
+really large string or
+maybe I need to change my game plan. So
+if I'm explaining the problem in my own
+words
+um reading and understanding the problem
+actually I would say that is reading and
+understanding the problem but since it
+comes from the constraints it's kind of
+a mixture of
+a mixture of two phase I'll write it
+again here
+phase two
+a lot of test cases will have a
+large N.
+So code efficiency
+is a consideration
+and that makes me think
+do I need to build
+that string
+because that's going to eat up a lot of
+memory. Right? Where am I? Where's my
+symbol? Okay, my symbol. Do I need to
+build that string? takes up a lot of
+memory
+or if I want to write that another way
+big O space.
+So we'll keep going and then they have
+their explanation. So aba n of 10. So if
+I repeat aba up to a length of 10, there
+should be seven A's and then they're
+walking through that explanation.
+First n equals 10 letterings are ab a ab
+aa a ab aa ab a ab a ab a ab a ab a ab a
+ab a ab a ab a ab aa because there are
+seven a's we return seven. Then our next
+example here is a and then we have a
+really really large N. And so because
+all of the first n integers of the
+letters of the infant string are a
+because our string a is only one
+character we return
+n as the count. So that's something
+else. Based on reading
+the inputs and outputs the inputs and
+outputs here.
+If a character is one
+has a length of one
+has a length of one
+I can oops just return n right because
+if it has a length of one then an
+infinitely repeating of that is just
+going to be the same character over and
+over again. Now, another assumption I
+might have is, is my string always going
+to include the character A?
+Because
+my function description doesn't tell me
+that S will have an A in it. It just
+says a string to repeat. My return says
+the frequency of A, but it doesn't say
+that A will be included. Just says a
+single string. Nothing in the
+constraints tell me that A will be
+included in S. So understanding my
+requirements or even understanding the
+problem I might say my assumption to
+check is a always included
+included
+that would be something I want to test
+how do I verify
+verify
+verify
+this one we got from the constraints I
+don't need to verify it They literally
+told us that um do I need to build a
+string me big memory of space? How do I
+verify?
+And now, okay, so I've read the problem.
+I think I understand it. I've read
+through the constraints and requirements
+and inputs. So now I'm going to even
+though I've kind of written all over the
+place, I'm going to officially move
+myself into this phase three of
+explaining the problem in my own words.
+So, we're going to give it an we're
+given an in uh sorry, we're given a
+string s which may or may not include
+the character a and we are going to have
+to make that string repeat a certain
+amount of times so that it equals the
+length of our integer n.
+Once we have that
+calculation, we need to determine how
+many times the letter a appears
+in that n amount of integers.
+That makes sense to me. I've written it
+in my own words. So, I'm going to move
+on to the pseudo code. We've kind of
+already started. Um,
+my goal is to return the number of A's
+in an infinite string. Yep. And I've got
+that included in my return.
+So, now I'm going back to my assumptions
+that I made. How do they build into my
+pseudo code? So, is a always included?
+I'm going to
+put that into my pseudo code right away
+from the top because those were
+assumptions that I got from earlier
+phases. Um,
+test
+that a is included in the string
+s. Okay, so that's my first assumption
+to test.
+The next one that I wrote out over here
+is do I need to build the string?
+Because I kind of had this idea that
+maybe I would build the string of s and
+n using a variable and then I would
+check for that length to see if it was
+less than or shorter than. So I could
+still do this part, add a conditional
+check to see if they are longer or
+shorter. But now I have maybe a new idea
+which is where we are getting to Lisa's
+question of
+um how do I decide how many time how to
+build that string right do I need to do
+well a do I need to build the string and
+two if I am how do I do that do I get
+the length of s so if I just for the
+sake of me thinking out this problem
+maybe I need to determine length of s
+then
+see if it divides
+oops divides into n right so if the
+length was five and the n was 11
+is that going to be an even um so maybe
+I might say see if it divides into n
+evenly
+so that might give me some clues as to
+what I need to think about if it doesn't
+divide evenly
+how many digits are left over. So now
+I'm thinking maybe use
+modulus, right? So five goes into 10
+evenly. So I just need to do
+repeat s
+x amount of times. Even amount of times.
+So maybe I need to save that as a
+variable.
+Uh maybe save that as a variable.
+You going to add a question mark there.
+Lots of lots of questions here which is
+good. So one way that I learned to build
+out that that string
+uh I used a while loop and what I did
+was um
+add the text based on if it's if the uh
+length of
+my um so what I did is copy a string to
+a another variable say x and um I took x
+and If if the length of x is less than
+the n value,
+add it. Um add s. So what that does is
+once the length gets greater than n, it
+stops.
+I'm kind of trying to listen and build
+it as a multitasking. So,
+make sense.
+>> Yes.
+>> It's not brute force though. I mean,
+well, I guess it is brute force.
+>> Okay. No, that's good. So, using a while
+loop, I'm going to step by step append.
+So, I'm going to start with my S string,
+save it to infinite string. So, we start
+out with ABC.
+Then I'm going to start my while loop
+with a condition that if the length of
+infinite string is less than n, do
+certain action. That certain action is
+append
+the characters s to infinite string. Hit
+the next cycle in the while loop. Is it
+less than or equal to n? Yes. No. Do
+thing. Add more characters. Is it less
+than or equal to n yet? Yes or no? Add
+more characters if it's less than. And
+then we break out of that loop once it's
+greater than n.
+Um, and then that's when you were
+saying, do I need to do some math? Maybe
+do some math or how much over in it is,
+>> right?
+>> So those are those are some approaches
+with doing this. So if that's where you
+wanted to start with this problem and
+get some pseudo code going, I would say
+that's a good starting point. write the
+pseudo code for potential solution. And
+then I'm going to start writing my code,
+testing out these assumptions, testing
+out this approach, get some code
+written, add some print statements in my
+while loop, print statement, checking
+that length of string equals this. Does
+it match what I'm expecting? Is it less
+than n? Does that match what I'm
+expecting? Is my code appending
+properly? Can I print that out once we
+break out of the while loop? Do I have
+this length of string that is greater
+than n? Can I test that with a print
+statement? So on and so forth.
+Now the problem you might get into is
+that they gave us this kind of hint here
+for efficiency.
+Maybe this code works just fine and I
+don't need to make any improvements.
+But what if I run this code and even
+though it passes most of the test cases,
+three of the test cases are failing due
+to timeout errors. meaning that it is it
+would pass all of those test cases but
+hackerink has given me a specific amount
+of time like 9 seconds to pass all of
+the test cases and if I don't pass all
+of the test cases within that time limit
+then it's considered a fail and I get a
+time execution error
+which does happen especially with the
+medium problems in which case you need
+to think about the efficiency of your
+problem
+um
+so that's where go back to this
+assumption here of
+do I need to build it with that string
+because it takes up a lot of memory.
+So that's where I was thinking here.
+So we're looking at the O time u the
+complexity time complexity
+>> actually we're looking at space
+complexity due to time complexity or no
+we're looking at time complexity due to
+space complexity yes
+>> can I improve efficiency
+um code takes too long to build string
+and string takes up a lot of space
+you know I'll leave that caps. I didn't
+mean to do it like that with caps, but
+that's how we can do it. So, this would
+be phase six in this scenario.
+And I already have some pointers to it.
+Um, but even just getting that time
+execution error would be enough to say
+efficiency
+A6.
+Can I improve the efficiency of my code?
+takes too long
+to build the string and string takes up
+a lot of space.
+>> So we could try to generate maybe a
+formula of some sort or notice a pattern
+that's going on
+um to do
+>> so what do we start with the string
+right?
+>> Yes.
+>> Now we know what can we do with the
+string here?
+>> We can do a length on how the length of
+it. So we know that it's five characters
+or
+>> anything specifically about this output.
+What is our goal?
+>> Our goal is to define to count how many
+characters there is a
+>> yeah I'm trying to see where I wrote
+that phase.
+Base four goal is to return the number
+of characters a in the string. Can I do
+that with just s first?
+Yes. I mean you can you can do a count.
+Um
+is is would this be under enumeration or
+is this just a count regular count of
+>> that would be O of N if that's what
+you're asking. Maybe I use a for loop or
+maybe I use the count method.
+So get count of character a in the
+initial
+s string
+which in this case in our example here
+is two.
+And then we can still use this code from
+up above right because we're saying what
+do we do to determine how it divides
+into n evenly or if I've built out a
+long string. I'm still doing the same
+thing. I don't need to actually use a
+string. Like I could just use the length
+variable like or use a variable
+for length.
+Um and just say okay the length of s is
+five. So while five is less than n add
+five. While less than n add five. So you
+could still use this code if this is
+where you started or if you used a
+modulus, you could still use that code
+to determine how many times
+um the infinite string does go into n.
+But in this case, I'm only concerned
+about this, right? Like
+so
+using code from before to determine
+how evenly it goes into n.
+I can multiply
+the that I'm going to write this on a
+new line.
+I can multiply
+that by the
+count of a I received
+from S. So if I start with my two, I
+have two here. Um and then if I say does
+S length of five go evenly into 10? Yes,
+it does. By how much? We know it goes in
+two times. So I'm going to take that two
+that I got and I'm going to times it by
+two. So I know I get two A's.
+So two A's and then this string goes in
+evenly two times into 10. So 2 * 2. And
+this example here, ABA, there are two
+A's in there as well.
+Length of 10. Um so
+three.
+>> It doesn't go in evenly. It stops at
+nine, right?
+>> But I can do evenly. It goes in three
+times. So 3 * 2 is six. And then how
+many is left over? We have one left
+over. So grab the count of a's from
+whatever is left over.
+And maybe that's two. Like maybe it was
+11 instead of 10. So then I need to say
+how many A's are in AB? It's still one.
+And then we take that and add that to
+what we did before which was the six.
+>> So we can make a we could take the
+modulus
+Either way using the modulus or even
+using this approach we could do the for
+loop here the while loop I mean
+>> and say two um so the count equals two
+so while
+while length of
+uh while count of length or whatever we
+call this use a variable for the length
+is less than n add it so it's saying
+five and then we add the five and then
+we also add to our account our initial
+count of how many A's is two. So we add
+a five and we add a two. So that gives
+us four. Add a five, add a two, that
+gives us six. Now we're going to add a
+five and n is no longer going to be.
+So maybe I would add another condition
+in there somewhere. But we'll the while
+the n has now gone or while the length
+has gone past the n. Now I need to back
+up and figure out how many
+A's were in that that excess.

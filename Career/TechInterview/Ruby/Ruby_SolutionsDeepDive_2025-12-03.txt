@@ -1,0 +1,826 @@
+All right, welcome everyone to this
+Wednesday's nailing the tech interview.
+Sorry that we had a late start. Um
+I'm on a different coaching account, but
+we'll get it start sorted out
+eventually. Anyways, um all right. So,
+before we get started,
+does anyone have any questions they'd
+like to ask about prepping or preparing
+for the tech interview? Um or any
+questions they'd like to ask in general?
+What questions do people have?
+>> Um okay, I have a general question to
+ask. Um
+when you are making a list um do you
+have to initialize the list before you
+use it within a loop?
+Is that the proper like structure for
+that?
+Um,
+for example, uh, if you're going to I'm
+I'm going back to that um, let's see,
+the non-re repeating string problem that
+was in leak code. Mhm.
+>> And there was um
+you have several loops that you're
+dealing with and one of them is um okay,
+one of them involves setting up a list
+that you're going to put characters in
+that you want to use to compare later.
+And my question is, as just a matter of
+structure, when you're setting up a
+temporary list like that, do you have to
+initialize that list before you start
+using it in whatever loop you're going
+to use it in?
+>> What do you think the answer is?
+>> I think it would probably be you got to
+set it up outside. You can't set it up
+in the same loop that you're using it
+in.
+Um, why do you think that?
+>> Um, it depends on what you want to when
+it cuts off. Um,
+>> it it depends on how long you want it to
+go on. And if you want to go on for the
+life of the loop, it seems that it has
+to be in existence before you create the
+loop. So you put it outside the loop and
+then you'd refer to it inside the loop
+when you start trying to use it.
+>> Does that make sense?
+>> That is exactly correct. So yes,
+>> good. And I didn't even have to share my
+desktop.
+[laughter]
+>> So that's variable scoping.
+>> I'm so proud of you, Linda.
+>> [laughter]
+>> If you go back to mods one early early
+mod one or maybe early mod 2 um that is
+considered like variable scope. So what
+is the scope of a variable in a function
+in a loop in a class um each each one of
+those has a different scope right?
+There's like global scope and then
+there's local scope and then there's
+like even more local scope where if
+you're inside of a loop or an if
+statement that variable is only going to
+persist within that one loop.
+>> Yes.
+>> Or that one if and will be reset each
+time.
+>> So yeah, that is actually a really good
+thing to like nail down. And so you
+being able to explain it that way was
+perfect because that is something that
+trips people up a lot especially when
+they're getting nervous in the
+interview. um and they forget like where
+does the scope go? So
+>> yeah, you know,
+>> I'm glad you could answer your own
+question.
+>> Well, you know, I find that as I go over
+these problems, it's the easy stuff
+that's tripping me up. For example, how
+to convert between a string and an
+integer was a thing that I kind of
+bumped into. And that's stuff that I got
+early on,
+>> you know. I mean, I learned early on,
+but you know, it's like now I'm trying
+to use it. For example, this morning I
+was just going back and trying to review
+that input uh number type thing in
+Python where let's say you want to add
+two numbers up and there's they're
+strings. You have number one and number
+two and you want to say input the
+number, you know, in parenthesis you go
+input parenthesis quote number one close
+par uh close quote parenthesis and the
+same thing with number two. And then
+when you try if you try to add num one
+and num two together
+um and let's say num one is five and num
+uh two is two you get 52 you don't get
+seven and you want seven. Um, and so
+this and so you have to be able to shift
+between
+a string, uh, which is what you get when
+you input these numbers from like your
+little input function to integers. So
+you can actually use them to add to each
+other. Um, but that was the other thing
+that, you know, it's like, boy, this
+stuff was elementary stuff and it's
+tripping me up.
+But anyway, so what I'm doing, you know,
+um, is okay, I'm going back to my 3x5
+cards
+>> and I'm writing this stuff down because
+we can have cards in the interview,
+right?
+>> Yes. They just can't have like real code
+on it. You can use pseudo code or just
+like basic um examples of like a for
+loop might look like this but nothing
+where you're like actually performing an
+algorithmic function or an algorithmic
+step within it if that makes sense.
+Usually nothing more than what you could
+Google right so like you can Google how
+a method works or how basic syntax would
+work but any more than that you might be
+veering into like solution territory
+which isn't a great showcase. Um, so
+basically about the same level of what
+you would Google, you can put onto note
+cards. Yeah.
+>> Okay, great. Because the kind of stuff I
+want to put down there is, oh, how do I
+convert a string to an integer? Okay.
+Well, I'll put num three equals int
+parenth num three close parenth down on
+a note card
+>> and that will be card. Okay. Okay. Good.
+Good.
+>> Yeah,
+>> it's a good one to remember the
+different ways of handling it. There's
+also like math ways of handling stuff
+like that sometimes, but casting it as a
+string is probably a lot easier.
+[laughter]
+>> And before I don't want to hog up the
+time, but the other thing that I want to
+mention that I ran into um that I'm
+putting on a note card
+>> is when you get in a situation where
+you're originally looking at the length
+a range. you're looking at um the range
+and you're looking at the length of a
+list, but you want to compare an element
+of the list to a variable. But, you
+know, you're starting out with saying
+for i in range um length
+um
+of the list. Okay. uh and then you get
+you want to ask it something if um an
+element of that list
+uh equals let's say a variable
+>> you know how to how to write that um in
+terms of for example if you're calling
+in your parameter the list to be s what
+you'd put um down there in your if
+statement would be I guess s bracket it
+I close bracket uh equals and then the
+variable. Um but you know how to get it
+out of the situation where you're
+talking about length to actually looking
+in the list, seeing the value in the
+list and being able to compare the value
+in the list against a variable or
+whatever you want to compare it against
+that's also a v uh that's also a value.
+Mhm.
+>> So this I would be I would be careful
+about this because that's correct. Um
+however that might be something that I
+would print in the moment just to double
+check anyway. So like as I'm going
+through
+what am I accessing at this point? Is it
+the index of the list that I'm moving
+through? Is it the actual value inside
+the variable or the list that I'm
+looking at? Like what am I looking at at
+any given point? Right? Let me print
+that out and make sure that I'm seeing
+expecting what I'm seeing what I'm
+expecting.
+>> Um because
+for i in range, right,
+>> does create an an innumerable
+index way of getting through a list.
+>> But there are other for loops. So you
+could do four
+character in string, right? And then
+you're going to get the actual value
+each individual value that is in that
+string or in that list. Um it would be
+the same. So you could say you know for
+x in an array and then it would be what
+the actual values are in that array. And
+then there are I think there's at least
+one other type of there's like a four
+each and then a four n. Um I'm not sure
+if those are
+that might be JavaScript
+>> exclusive. Maybe not, but there are a
+few other there are a few other for
+loops in general. And so, especially as
+you're expanding into other languages,
+you want to be mindful at any given
+point like what kind of for loop am I
+using and how do I know how do I check
+at any point what a variable is and what
+it represents and how I'm using it. So,
+like being comfortable accessing an
+array or a list through index notation
+or bracket notation
+>> is definitely something to get familiar
+with. Definitely. Um, just like how to
+access a dictionary key and a value is a
+good practice and good thing to know,
+but you also want to make sure that
+you're adding not just like memorizing
+those steps, but also making sure that
+you're checking as you do it.
+>> Great. Thanks. But yeah, that was my
+experience. I found that like the really
+basic stuff was sort of tripping me up a
+little. Uh, and you know, it's it's not
+so much figuring out what the problem's
+asking for sometimes, it's getting a
+little flustered as to how to write it
+out. And I found just, you know, it was
+kind of disconcerting. But I found that
+some of the trip ups was stuff that I
+was supposed to have learned early on.
+So anyway, at least I know what I'm
+having problems with. [laughter]
+>> And that stuff gets easier with
+practice. the more that you're
+practicing using those things, the more
+it kind of sticks around.
+>> Yeah. Okay. Thanks.
+>> All right. Any other questions before we
+>> move forward?
+>> Yeah. After this, the next phase I'm
+confused because some people say is the
+explorer, some people say is the
+the internship.
+Who? Who's saying what?
+Where are you hearing your information?
+>> What
+>> where are you getting your information?
+>> Uh from people talking about that.
+>> Okay. Um, as far as I know, we're still
+using the explorer phase, and that would
+be signing up for Trello, going through
+the nine or 10 tickets that are on
+Trello for the explore phase, which
+includes um working on a really basic
+JavaScript app. And then using that
+JavaScript app that's in like it's in
+like a basic editor on
+code
+camp, I can't remember. It's a basic
+editor just like hacker rank and elite
+code. Um it's a little like game in
+JavaScript and then you take that and
+convert it to a react application and
+then you work on some next application.
+So building full stack projects. So if
+you already have that experience maybe
+you can jump ahead a little bit or get
+sign off on your experience.
+Um, but I think for the most part, if
+you haven't had the experience building
+out full stack apps on your own, then
+the explore phase is still going to be
+something that you are going to want to
+move through. Um, I think it might be
+changing in the future to get people
+closer to the internship, but it depends
+on what your experience is.
+>> Currently though, I think we're still
+doing the explorers.
+>> And then also,
+>> so the career strategy thing is not
+change. It doesn't change that that
+explorer things. You still do the same
+thing regardless of what you talk in the
+career strategy.
+>> Sorry, what? Can you say that again?
+>> The career carrier strategy called
+doesn't
+>> change the contents of the explorer
+phase. What you have to do in the
+explorer phase remain the same
+regardless of the output of the career
+strategy call.
+>> So the career strategy session with Dr.
+Emily is supposed to take place at the
+end of the explorer phase.
+>> Okay. So it's constant explore phase.
+Okay,
+that's what I want to know. So it's
+whatever it's in the platform already
+recorded on videos and whatnot, right?
+>> Mhm. Yep.
+>> Okay. Thanks,
+>> Mauricio. Doesn't it also depend on
+whether or not you've done the explorer
+phase yet? Because it depends on how you
+access how you're doing the tech
+interview. because I've already finished
+the um I've already finished the
+explorer phase because at the time when
+I joined the tech interview was after
+the explorer phase and now they've
+changed the configuration around. So I
+think it just depends on which way
+you've done you know which way you've
+gone ahead and done this. So
+>> yeah, he's pre-explorer.
+>> Yeah. So you'll it sounds like you know
+what sounds like Ruby you know what
+you're talking about.
+>> I hope so.
+>> Yeah. Thank you.
+>> Okay. Any other questions?
+All right. So, we've got a full house
+tonight. So, who would like to be our
+volunteer for the mock interview today?
+I wanted to be, but I'm on my phone
+because my computer is is training a AI
+model. So, it's taking like almost all
+the RAM.
+>> So, I don't know. I can do it on the
+phone. So, I guess I cannot do it.
+>> How about anyone else?
+>> We'll do.
+>> Okay, great. And then if we have time,
+we'll give someone else an opportunity
+as well.
+Um, we'll see. All right. So, I'm going
+to put this in the chat if you want to
+open that up and share your screen using
+the green share arrow in Zoom.
+And everyone [clears throat] else can
+open that if they want to follow along.
+Oh, no. Math.
+Okay. So, y'all want to log in first
+before we get started?
+>> Good. Thank you.
+>> Oh, we miss you. I do. I miss you.
+I miss my studying.
+>> All right. So, this looks good. And we
+will start with about 15 minutes. see
+how far you go and then we'll decide if
+we want to keep going to 20. Um but
+yeah, everyone else will hop on mute and
+let Lisa show her magic.
+>> Oh boy. Uh write a a rhythm to determine
+if the number n is happy. A happy
+number. So what is happy? So happy means
+the following requirements. It starts
+with any positive number. Replaces a
+number by the sum of square. Sum of the
+square.
+Sum of the square.
+So
+9 * 9 is 91.
+1 * 1 is 1.
+Okay. Repeat the process until the
+number equals 1.
+where it will stay or it loops endlessly
+in a cycle which does not equal one.
+Those numbers for which the process ends
+in one are happy numbers.
+So
+return true if n is a happy number and
+false if it is not.
+Example 19.
+So we break 19 out
+18.
+Then we take the 82
+get 68.
+and we get 68
+to 100 do 100 to equal one.
+So that's true.
+Okay. So
+we take
+C
+separate it.
+That's it.
+So choose
+one.
+So
+we go through that we would probably
+want to
+separate n. So n is the integer.
+So
+There we go.
+Make sure to read there.
+Okay.
+It has a length.
+So,
+so we have to convert it to time.
+So, that's what I did before.
+So we want to break this down again into
+one digit, two digits to list.
+So it's interval.
+So, if I I put it back to um
+um let's just call it
+champions. Bonus.
+Oh my god.
+for me.
+Get out my
+Take this out here.
+Spinning.
+Okay. So the condition is if it equals
+one
+um you're going to return true and if it
+goes through the entire process it falls
+through um it's going to return a false
+because it'll never reach that
+condition.
+Um so let me look at close.
+Got to get this calculation down here.
+Because we want to do
+Okay. here.
+Where did my five come from?
+All right, Lisa.
+Uh I'm I'm I'm lost in this section
+right here. So I understand it. I
+thought
+>> Okay. So walk us through what the
+problem is.
+>> So we're taking an integer right here.
+We're breaking it down into digits. One,
+however many digits it's going to be.
+>> Um and then we're going to take each
+digit. So this one um
+I might have probably should have done a
+while loop. Um,
+we're going to take it and we're going
+to square each number. So, one, we're
+going to square. And then we're going to
+take nine and we're going to square. And
+then we're going to add it together to
+equal a sum. And we're going to test to
+see if that sum equals one. If it's one,
+it's happy. If it's not, then we if it's
+greater than one,
+we need to repeat the process. So, we go
+back to back up here. So, I probably
+needed to create maybe another for loop
+or a while loop where that it repeats
+that until it gets down to one
+or
+a single digit.
+Is it like
+um so um again if we walk through this
+again so the one and nine squared is 82.
+We would break this number up again
+into
+an eight and a two and then we'd square
+it and then add the sum which would be
+68.
+Again, that's not one. So, we would
+break it down again to 6 squared.
+8 squared is 100. So, then we'd square
+those numbers and it would equal one.
+So, that would be a true statement. And
+the number two, um, it's down to its
+prime number. So, that would be a false.
+Um the assumptions here is that if you
+can't break it down any further or if
+square of itself
+um for example if this was a six and
+it's squared it would still be a 36.
+We'd have to break it down even further.
+So when it can't go any further
+two is a prime number so it couldn't go
+any further. three. Um,
+or it could end it could be an endless
+loop
+which does not equal one
+which would be a false.
+So, um, the condition is is once it hits
+one then it's a true if it's not then we
+have to return false.
+Makes sense though
+in my mind.
+>> So if you had to break that down into
+steps, what would you say your steps
+are?
+>> Steps are break the um the number apart
+into single digits.
+In this case, I did it via um
+put it into a list of um
+strings.
+Then I had to convert it back to a digit
+and square square the number, add the
+number, sum it up,
+and then we should do the test. Does it
+equal one? If it's not, then we got to
+go back up to the loop
+and run the loop again.
+So steps are
+um convert the number.
+Square each individual number.
+Add to sum
+test the um
+so equals
+one.
+If it equals
+one
+then
+uh
+return true.
+If not
+Repeat.
+So, when do you know when to return
+false
+um endless cycle
+you're going to have to do a break at
+some point. So um
+based on looking at example two um the
+constraint would be a single digit um if
+there's only a single digit.
+So I think the constraint would be um or
+a prime number. Well, no. Because 2^2
+= 4
+probably the condition would be um
+if that single digit equals another
+single digit.
+So that would be an assumption that we
+could write out to check.
+>> Yeah.
+And since you're in Le code, you could
+even create a test case.
+So, um
+[snorts] is um
+greater than one and less than I'm going
+say less than one.
+six
+lesson six. That's a great place to
+start for that. I would test that out.
+It seems like you have the first step
+outlined at least of converting the
+number and doing trying to calculate the
+square root sum or not square root but
+the squared sums. So can you walk us
+through what your code is doing?
+Um what the code is doing is uh this is
+where um it's actually converting it
+into a string
+>> so that I can um separate the two
+numbers the the number
+>> into individual digits.
+>> Uh the next line which I probably should
+put in the for loop. The next line is um
+the for loop where we look at the
+individual units. And the reason I
+printed not sure where I'm getting that
+five though.
+Um
+um
+I always print I always do the print on
+the eye to see if I'm getting the index
+or if I'm getting the uh value. In this
+case, I'm getting the value because we
+want to look at the value.
+Then I'm converting it back to
+integers so that I can do some
+multiplications.
+Now this is where I get kind of scary is
+the the
+how do we attack the um
+this individually?
+Do I separate the num? Let's see for i
+and digit.
+Um, I would certainly take that digit,
+the first one,
+square root it. Mhm.
+>> Squared it. Squared. Sorry, not square
+root.
+Um,
+what I could do here is
+leave it at that.
+and do a plus.
+I like this. So
+that would add the square root of the
+next digit.
+>> Mhm.
+>> And um
+so that would sum up
+because we're doing the plus or we could
+do a sum here. That would do. And then
+that's where we do the test. Does the
+test equal one? If it doesn't, this is
+where we test it is as soon as we get.
+So
+I need another four.
+So, I'm kind of sensing that hearing you
+talk it out loud and walk there line by
+line is kind of helping you see that
+some of the logic you were testing out
+might not have worked and now you're
+kind of recalibrating.
+Um,
+>> yeah.
+>> Are you feeling that as well?
+Well, I'm I'm seeing either I need
+another for loop or I do the actual
+conversion first
+and then go back into the digit.
+>> Mhm.
+>> So, if I put a for loop in there
+converting it from a string to break it
+out
+and
+uh we do this continue to test it to see
+if it's one. If it's one, we still
+return true, but to return it back up to
+this for loop. So add another for loop,
+say right up here,
+um
+just to convert. Um
+maybe while
+we'll put it right there. So I don't
+know. That was what I was thinking, but
+Um maybe it is an embedded for loop and
+>> yeah so I think maybe it would have
+helped to spend a little bit more time
+in the pseudo code to think about all
+right I know I need to break these down
+into individual digits and then square
+them and then sum them and then you
+jumped kind of right into doing that and
+I that's a good place to start just to
+get something going but then we kind of
+got stuck on that step and if we had
+maybe taken a step back and thought more
+about all right well what does that
+process look like how do I want to step
+through it and then how do I add on to
+it later? Um,
+>> that might have saved some time in in
+the initial work through of trying to
+solve the the squaring and the summing.
+Yeah, the squaring. Um, the squaring and
+the summing and then kind of pulling
+back and evaluating what is the overall
+strategy? What do I want to do? When you
+pull out the two constraints of it, they
+either add up to one or I have to keep
+going and it cycles endlessly. That
+makes me think that I want to kind of
+walk it through a few more steps to
+figure out, all right, if it can go into
+an endless cycle, that sounds like it's
+going to be more than one operation,
+right? So, that's where you can pull out
+maybe I need a while loop from the very
+beginning. You don't know necessarily
+how you're going to use it just yet.
+That's when you came up with the
+eventual plan of check between one and
+six as a potential condition. Um, but
+there are some signs from the problem
+statement that might we could have might
+avoided earlier on if we had converted
+those into statements and thought about
+how does this affect my overall code
+game plan.
+>> Does that make sense?
+>> Uhhuh. Um, yeah, just manually walking
+it through. I mean, um,
+>> yeah.
+>> Okay. [clears throat] So, I can help you
+understand the problem. I think you um
+are on a path to working out some
+solutions here, getting some test cases
+going and I think your code is starting
+to build up into something that's going
+to at least get you through to the first
+step that you outlined and then you
+outlined some of the future steps which
+I think look good. So, you're on the
+right path. I think it's just kind of
+honing in on that, breaking things down
+before we jump into code and then
+knowing when to step back and say, "All
+right, these are it's kind of taking a
+little bit too long to sort out these
+steps. Maybe I need to kind of hit the
+drawing board again and take a debrief
+and figure out how do I want to step
+through this.
+>> Okay.
+>> All right. Thank you.
+>> Thank you. Um,
+>> and I I didn't give you the full 20
+minutes, so
+I'll say that as well. It was somewhere
+between 15 and 20. [clears throat]
+But yeah, so everyone, if you would like
+to try out that problem for yourselves
+and if you get something working,
+share that in the hacker rank channel
+and Discord. Otherwise, ask questions
+about it. Throw that in the hacker rank
+on Discord and say, "I've gotten this
+far. Here's what I've done. Maybe I'm
+looking for like what I can do for the
+next step." If anyone has any
+suggestions, I'm always thinking about
+if you're going to ask for help. How do
+you ask for the next step? So, not just
+thinking like, I'm stuck. What do I do?
+But here's what I've done. Here's where
+I'm thinking in my train of thought.
+Does anyone have any advice for the
+exact next step that I might consider?
+All right, that was great, Lisa. Thank
+you.
+Okay, so we've gone a little bit over,
+but we started a little bit late, so I'm
+not too worried about that. Does anyone
+have any questions [clears throat]
+before we wrap up?
+>> Um, yeah. I I just wanted to make sure
+the format then. So from now on, we're
+going to be doing mock interviews. Um
+and you're not going to be giving us any
+homework in advance that we can work.
+Except this is like homework. This
+>> it is homework a little bit. Yeah.
+>> Yeah. Okay. Okay.
+>> But we're not going to review it. That's
+the thing.
+>> Oh, okay. So this was it. We're not
+going to
+Okay. Okay. Okay.
+Now, if we we could spend a few minutes
+in the next session if someone wants to
+walk through their solution or wants to
+walk through where they've gotten
+through um that's totally fine. We can
+explore it a little bit more and again
+talk about what a next step might be
+like in person. That would be totally
+fine. I just want to make sure that we
+also reserve enough time to do more mock
+interviews.
+>> Uh one last question. I I seem to be
+like full of questions, but I got to get
+it out there. Um, I know that the school
+is going to start sun setting um around
+February.
+Uh, Ruby, how long are you going to be
+here? I mean, are you going to be here
+through February?
+Um,
+I [laughter]
+>> Okay.
+>> No, I mean, I don't know. I I don't know
+how to answer that question because um I
+haven't talked about it with Dr. Emily,
+so I don't know. I'm still hosting the
+meetings for now. That's She said until
+November next year. So you
+>> November next year. Yeah.
+>> Yep. That's how long she wants to
+continue providing support. It's just
+only new signups end in February and
+then everyone who is still here by that
+sign up end date will continue to have
+support through the weekly sessions up
+until
+>> November.
+>> November of yeah the following year. As
+far as like will I still be doing these
+sessions or will we swap in maybe a new
+peer mentor or someone from the
+internship? Who knows? I presume that
+this meeting will still continue. I
+don't know if I will be the person who's
+always doing them. Um just because a
+year is a long time, but for the
+foreseeable future, I don't have any
+plans of not being here.
+Any
+other questions?
+Okay. All right, everyone. I hope you
+are continuing to practice these and in
+between. I know we're not reviewing
+these solutions as in depth anymore, but
+I'm always happy to discuss them in the
+Hackerang channel, like I said, or we
+can spend a few minutes at the beginning
+of sessions to look at them. Um, but I
+think there's still a lot of learning to
+be done in breaking those solutions down
+yourselves and also in getting the live
+practice. So, woohoo. Keep up the good
+work and I'll see you next week.
+>> Bye-bye.

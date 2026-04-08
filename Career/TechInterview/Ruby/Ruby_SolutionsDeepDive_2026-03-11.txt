@@ -1,0 +1,395 @@
+or 20 minutes.
+>> Yes,
+>> not always, but you know, a lot of
+times. And so the thing is is I have to
+shift my mindset and my way of doing
+things to adapt to not only, you know,
+the tech interview, but you know, real
+interviews where I'm going to be doing
+these similar kind of things on a timed
+basis.
+>> That's a good point. And I do want to
+clarify that there is you're talking
+about the optimize piece which is great.
+You don't have to be at that level for
+the tech interview here. Um getting
+something ugly out, something that's
+just like brute force, something that
+just has that gets the answer solved.
+It's the starting point and then you can
+continue to work on that as you build
+and hone your skills. So the
+optimization piece does come with time
+um and more practice of course. But
+>> yeah, well, I'm pretty good at
+optimizing code, but optimizing code in
+15 or 20 minutes, that's a challenge.
+>> Yeah. And you don't have to do that yet.
+Um, but I think the best thing might to
+be to see your process actually, if you
+wouldn't mind being our mock interview
+volunteer today.
+>> Um, well, I guess I can give this a try.
+You know, my process isn't very solid
+right now, but you know,
+>> that's okay. The one I have lined up is
+pretty easy. Um,
+>> okay.
+[laughter]
+And you're you're like, "Yeah, easy for
+for you." Sure. Um, but I
+>> No, I'm I'm you know, I don't
+I'm I'm not approaching this in a you
+know, skeptical manner, but you know, I
+just, you know, I I kind of, you know,
+it's kind of like that old saying about,
+you know, you got to know your
+limitations. All right. And I I guess my
+perception of my limitations at this
+point in time is that uh you know I'm
+I'm not I don't think I'm ready for
+prime time. But maybe I am. I don't
+know. [laughter]
+>> Well, and that's the thing is that if
+you're not ready for prime time, I can
+see exactly where things might be
+falling apart and then I can help guide
+you on the right path.
+>> Okay. Well, all right. So, I'm already
+logged into I'm already logged into
+Hacker Rank. So I guess I just need the
+URL for you.
+>> So I'm actually use code.
+>> Okay. I may be logged into that as well.
+>> So I'll put that in the chat if you want
+to open that and share your screen. It's
+the share arrow.
+>> Okay. All right. I get that.
+So you don't just use hacker rank, you
+use leak code as well. For the tech
+interview, I use hacker rank, but for
+these sessions, I don't want to use up a
+lot of the problems that we might use
+for the interviews.
+>> Ah, yeah. Okay.
+>> Right. All right. I get that. Okay.
+>> All right. Well, let's uh let's rock and
+roll.
+>> Cool.
+>> Let's uh let let's see if I'm a flake or
+if I'm good. [laughter]
+Okay, I've got the exercise up and I'm
+pretty sure I'm logged into one of my
+tabs here in um you know in lead code.
+So I guess now what I need to share my
+screen.
+>> Yep. Great big green share arrow.
+>> So let me uh Okay.
+All right. That's that one. That's that
+one. This is the one I want to share.
+Okay. Okay.
+>> Perfect.
+>> All right. Um, can you see my screen?
+>> I can, but if you could zoom in a little
+bit, that would be great.
+>> Zoom in. Um,
+>> if you hit the uh three dots at the very
+top,
+>> um, in in Zoom
+>> in your browser.
+>> Uh, oh. Uh, okay. Yeah. All right.
+>> There's a zoom like four options down.
+>> Okay. Sure. Okay. So, what percentage do
+you want me to be? Let's aim for like
+125 maybe.
+>> Okay,
+there we go. Is that good or you want me
+to go bigger?
+>> That's great.
+>> Okay. All right.
+>> All right. So, we'll give you this
+problem. Um I'll just hang out on mute
+here for a few minutes. We'll give you
+about 15 minutes like you said and then
+after that we can talk about next steps
+or just general what to what would what
+happened.
+>> Okay. So, I'm gonna I'm gonna I'm I'm
+I'm going to play like you know we're
+doing the real thing. So yeah,
+perfectly.
+>> Okay. So number number of employees who
+meet met the target. Okay. There are n
+employees in a company numbered from 0
+to n minus one.
+Okay. Uh each employee I uh
+okay has worked for hours. I
+uh in the company. The company requires
+each employee to work for at least
+target hours.
+Okay,
+you given a zero indexed array.
+All right, zero indexed meaning that the
+first uh array item is index zero. So 0
+through n minus one. Okay, as I'm
+reading it, uh of non- negative
+integers, okay, so they're positive
+numbers. hours
+of length n.
+Okay.
+And a non- negative integer target.
+Okay. Return the integer denoting the
+number of employees who worked at least
+target hours.
+Okay. So,
+all right. And then the example shows
+input hours equals 012 34 target equals
+two. So, that would give you a count of
+three. All right. Uh, who met that?
+Okay. just based on this example. And
+then example two, target is six. All
+right, you're going to have zero of
+course because none of them met the
+target. All right. All right. And then
+the constraints are one is less than n
+which is equals hours.length
+is less than 50. Okay. So
+I said
+so equals 50.
+Okay. Uh let's see what is that length
+thing. All right. Um
+okay. Input hours target company wants
+each employee. Oh, I should be running
+on it. I guess you're keeping time for
+me.
+Is that correct?
+>> Yes, I'm keeping time for you.
+>> Okay. All right. Okay. So, Okay. So,
+what is this length thing?
+All right. I don't understand that.
+Okay. zero is less than equals hours I
+target is less than 10 the 5th.
+Okay. So the target is less the target
+number the the basically the floor you
+know the the um uh target when you know
+something is incremented to the result
+is going to be under 100,000 hours.
+Okay. So I see that
+um all right and the number of hours
+could be zero okay which would mean that
+every employee would be added to this.
+All right. So, okay. Given this.
+All right. On the right hand side, I see
+a function of number of employees who
+met target self hours. Okay. All right.
+Okay. So, self indicates
+that we've got to do a um basically that
+this is a um object-oriented function.
+All right. Uh,
+okay.
+I haven't really touched this. Okay.
+>> [sighs]
+>> Okay.
+All right.
+Oh no,
+I don't I don't do that.
+Okay. Number of employees
+hours list.
+Okay. So what this what this function is
+is saying with this at the end is it's
+going to return an integer.
+Okay. So that's what that's telling me.
+All right. Uh this is something that
+Okay. So all right. So target self.
+Okay. Okay. So self is
+Okay. So self would be the array of
+employees.
+Okay.
+So what I want to do is
+>> I'm just going to quickly interject
+because you haven't used leak code it
+sounds like. So self is just referring
+to the class. You can ignore self pretty
+much always for the le code problems.
+>> Okay. All right. Yeah. I thought that
+self was referring to the class. I was
+for a second I was thinking that I had
+to define the class but I realized I
+didn't need to do that because the class
+is defined elsewhere.
+Okay. So, okay.
+Uh, so I guess first of all,
+um, I guess what I probably want to do
+is is since we really want to change one
+thing at a time. All right. Is
+Oh, I have to log in. I guess I'm not
+logged in.
+[sighs] I better log in. aspects of the
+problem explained out cor, you know,
+perfectly correctly. And the other thing
+is I I do like the idea of adding in
+comments, all right, with the key, you
+know, with the key aspects of the
+problem right in the in the code se
+section.
+>> All right, I think that that's really
+helpful because when you do that, then I
+don't have to eyeball going back and
+forth and whatnot. All right. And it
+kind of forces you to just, you know, to
+to process the information. All right.
+And and get it set up as a set of parame
+requirements for your code when you do
+that.
+>> Exactly.
+>> So I think I think I I think that that's
+a that's a best practice and I'm I'm
+going to start to implement that.
+>> Perfect. I'm glad that could help. Um so
+we'll get into questions in just a
+second. I realized that I paused the
+recording and never started again. So,
+all of that stuff will not be in the
+recording, unfortunately. Um,
+>> that's too bad.
+>> I'm going to re quickly resummize really
+quickly what we were talking about,
+though. So, again, I think if you want
+to have a checklist that you paste in as
+a template, that's great. Here's some of
+the things that we talked about. Um, I
+always like to start with printing out
+the parameters. Pulling out the key
+information from the problem. This is
+what we pulled out. These are what the
+parameters mean in my own words. In your
+own words is important. These two I got
+from the constraints. Making sure that I
+understand that both hours I and target
+can be zero and that I know that the in
+the hours not length having a minimum of
+one is important because I will always
+have a minimum employee hours worked.
+Once I understand the information that I
+pulled out of the problem in my own
+words, I can use that instead of using
+the problem.
+Taking the step to write pseudo code
+even on simpler problems where you may
+not need it. Always great step. So don't
+skip the step. Use that as practice to
+so that you can apply it to every
+problem you run.
+And always read your errors. So always
+read errors and
+read to understand. Even if you have to
+Google what it means, I'd rather you
+Google to see what it means than to keep
+trying to brute force through an error
+or swapping little variables and stuff
+like that. So that's like the quick
+twominut spoiler of what we talked about
+for the last 20 minutes. Sorry, that's
+not all in the recording. Um, so that's
+this. So,
+okay. So, now that we've kind of talked
+about like what my general best
+practices are, and I'm glad you had that
+insight for yourself about what what you
+would like to do moving forward, do you
+have any other questions that you'd like
+to ask about the tech interview before
+we close out or anything that you want
+to know? No, I think we're over time and
+I appreciate you're being generous of
+your time, but you know, I also
+acknowledge that, you know, there was a
+two-way street here going, but in any
+case, uh, no, I don't have any questions
+now. Um, it sounds like you validated
+the process, the preparation process
+that I'm doing right now. All right.
+With, you know, that checklist. All
+right. And so I I like the fact that you
+brought that up because I had already
+anticipated a need for that to keep
+myself focused and and and and not skip
+any steps. I will probably blow that out
+a little bit and add a couple more items
+after today's session.
+>> All right.
+>> All right. And um you know, since we're
+closing out, I I I I thank you very much
+and I hope you're feeling better soon.
+>> Great. Thank you so much. Yeah. And
+again, for those kinds of things where
+you're wondering like what would be a
+good approach, I would love for people
+to come here and ask those questions
+instead of like making assumptions on
+their own. Uh just like with the coding
+that we do, write out your assumptions,
+get the answers. Don't like make up your
+own answers. Um if you can get a
+resource for it, whether that's Google
+or whether that's these meetings, use
+your resources. Another great coding tip
+that also just kind of applies to life.
+All right. So, thank you for being our
+volunteer today, Dan. You did a great
+job. Um, and I will see you all next
+time.
+>> All right. Thank you.
+>> Thank you. Thank you so much, coach.
+Thank Thank you so much, Dan. Uh, it was
+the meeting was really very informative
+for me. I learned a lot from you guys
+and I hope uh you feel better, coach.
+Uh, don't forget to try all the tips
+that uh Mr. Dan gave you. And I just
+want to give you my tip that I use when
+I I'm sick. I just uh take a different
+soups like chicken soup or vegetable.
+>> Oh yeah.
+>> Oh yes, that's an excellent one.
+>> There's scientific there's scientific
+basis for chicken soup by the way.
+>> Yeah.
+>> What is it? Do you know?
+>> Uh the scientific basis is that it
+works.
+>> Okay, cool.
+>> And it it's proven to work in in
+studies. So yes, chicken noodle soup or
+s chicken, you know, particularly
+chicken noodle soup with the chicken
+broth and stuff is good. Um the chicken
+bullion cubes had a lot of salt in
+those. Probably not recommend those.
+Although soup has a fair amount of salt
+in it, too. But you know, chicken noodle
+chicken soup is is a really good thing.
+>> That's an excellent thing for, you know,
+for all kinds of illnesses.
+>> It's good to know. I have a bunch of
+cans of chicken noodle soup, so I'm
+going to do that. And I'm going to go
+get some cranberry juice as well. Um,
+right.
+>> Thanks for gonna get some And you're
+going to get some enhanced exercise.
+>> Yes, exactly. Going to do some more
+steps today. Even though it is snowing
+here, but I can just kind of jog around
+the apartment.
+>> Yeah, but if you've got if if you're an
+apartment building or something, you
+probably got stairs.
+>> Yeah, we do. And I'm at the very
+>> Oh, stairs are excellent for exercise.
+>> Up and down. [laughter]
+>> Yep. Yep. You do about six or eight of
+those. All right. and you'll have done
+your due diligence for the day.
+>> All right, thanks everyone and have a
+great rest of your day.

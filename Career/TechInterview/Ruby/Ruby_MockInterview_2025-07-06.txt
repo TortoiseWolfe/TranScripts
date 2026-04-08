@@ -1,0 +1,1005 @@
+Okay. So, welcome everyone to this
+week's nailing the technical interview.
+Um, so today is Sunday, so we'll be
+focusing on the mock interview, giving
+someone an opportunity to practice
+working in front of all of us here,
+sounding out their thinking, um, working
+through some logic, just getting some
+basic problem solving skills with the
+added pressure of being observed. Um,
+and before we jump to that, we'll do a
+an overview of an easier problem where
+we kind of just walk through like the
+pseudo code of it, breaking out the
+different parts of a problem, easing us
+into the mock interview. Um, and before
+we jump into all of that, we'll open up
+with some questions. So, what questions
+do people have about the technical
+interview? Um, practicing, preparing,
+problem solving, any of that stuff? What
+questions do people have?
+I'll just say like I'm I've been trying
+to make it here but my schedule has been
+wonky um to get and I've watched a few
+lives. Uh I don't I when I've watched
+the lives I'm like of course I blank on
+all the code and because I'm trying to
+finish the Redwood uh tutorial right
+now. I feel so far removed from Python
+and where we started
+um that I I'm trying to wrap that up so
+I can focus specifically on this.
+And I just want to watch people like
+it's super helpful to watch people like
+how they break things down. I know we
+all do it differently, but just to
+revisit like that kind of coding and
+hacker rank.
+Yeah, definitely it takes some adjusting
+to get from one to the other. Um, keep
+in mind though you can use whichever
+language you want. I've been using
+Python a lot more recently because
+that's closer to what people are
+learning in mod 2. Um, but in a lot of
+the older sessions, I was using
+JavaScript to display for everyone. Um,
+yeah, for the technical interview, you
+can use whichever language is most easy
+for you. Um, and if you're still just
+kind of getting up to speed, definitely
+still try these problems after the
+session and the replay at your own time.
+Um, maybe just try one in between. and
+you're stuck on a redwood part and
+there's an error being thrown, take a
+break, try hackering problem, go back
+for that one to start airing and then
+jump back over. Yeah. Yeah.
+Okay, cool. Any other questions before
+we move on?
+All right,
+good.
+So,
+I'm going to share my screen.
+Okay, so everyone should be seeing
+ice cream parlor over here on the side
+or on the main screen, my side screen.
+Um,
+I'm getting notifications everywhere.
+Jeez.
+Okay, cool. So, I'm just going to read
+through this one and then we'll kind of
+break it down into some steps here.
+So, two friends like to pull their money
+and go to the ice cream parlor. They
+always choose two distinct flavors and
+they spend all of their money. Seems
+reckless, but okay. Given a list of
+prices for the flavors of ice cream,
+select the two that will cost all the
+money they have. Their example is that m
+money, I guess, is six. So, they're
+bringing $6. And the costs of the ice
+creams are 1 3 4 5 and six. So the two
+flavors that cost one and five meet the
+criteria using onebased indexing. They
+are at indices one and four.
+Okay, so there's kind of a lot of
+information there, but we'll just keep
+moving.
+Complete the ice cream parlor function
+in the editor below. Ice cream parlor
+has the following parameters. int m the
+amount of money they have to spend and
+int cost n the cost of each flavor of
+ice cream.
+So, it's m here and cost here, but we're
+getting m array. Um, just to be like
+super consistent, I'm just going to name
+it cost here cuz might as well I can.
+And one of the very first things I like
+to do as always is just print those out
+and make sure that they match what I
+expect.
+Need that
+We'll come back to that. So four and
+then so our input here
+there's a lot of inputs here. It tells
+us down below.
+Let me get my bearings here. So it looks
+like we're getting
+actual two sets of data which we can
+keep reading to see that. Yeah. Input
+format. The first line contains integer
+t the number of trips to the ice cream
+parlor. The next t set of lines describe
+the visit. So each trip visit is
+described as follows. Okay, so that
+makes a little more sense. Um,
+sometimes they like to do this thing
+which is kind of confusing where the
+first sign will be the amount of quote
+unquote test cases they're sending in
+the test cases. Um, so basically it'll
+be the input format that we saw above
+but twice. So this would be m the money
+for that they bring and then we have an
+array down here and then line three is
+telling us the length of that array. So,
+money that they have paired, length of
+an array, array of ice cream flavors,
+money they have, length of array, array
+of values of ice cream that they have,
+and then it's getting the expected
+output of 1 and four, which kind of
+matches
+this example up here. And our numbers do
+not match those numbers, but that's
+okay.
+1 14 53 2. Yeah, those are different
+numbers.
+And then one and two assuming for this
+test case. So if you see that, if you
+see like a really long input, just go
+and check for like the test cases thing.
+Um,
+where they're telling you
+I don't know why they do that. It's not
+I don't think it's to trick you. What
+what they're doing basically is that
+behind the scenes they're still you can
+treat it as it's as like as if it's just
+one test case. They're still going to
+call ice cream parlor once per those
+test cases. So they're going to call the
+function that they give us with m and
+cost
+once for the first set of values and
+then again for the second set of values.
+So you don't have to change your
+approach
+versus any other problem that you see.
+Um, it's just about understanding the
+input that they're giving you. If you
+see a lot of numbers like this, you
+might want to try and parse it out to
+make sure that the numbers match up. But
+what I am seeing is that it does match
+up with this first set of data right
+here. M of 4 and then the 14532
+14532.
+And then I'm it's not showing the second
+test case because we're getting this
+error. And so that's the other thing I
+want to talk about real quickly because
+we do see this a lot. If you're seeing
+this line right here, FTP.ight
+join or anything to do with the FPTR.
+That's usually because it's expecting a
+return
+and we're not giving it a return
+matching the data type that it's
+expecting.
+I see that a lot and it trips people up
+a lot. So they're return they're
+expecting a return of an integer array
+of two. So I'm just going to pass an
+empty array
+go.
+Okay, so that got rid of the error and
+now we're seeing both sets of test cases
+and they're printed on separate lines
+because again they're getting called
+separately each time the function is
+getting called. So this should match a
+little bit better to what I'm expecting.
+the four for the money and the array 1
+14532 plus four for the second money and
+then length of the array and then 2243.
+So 4 22 43.
+So okay, that was a lot of things that
+we kind of just
+went through right there. Um but really
+all I'm doing is making sure that what
+I'm getting passed in the function
+parameters matches what I'm expecting or
+understanding of the input here. And
+then if I'm seeing a lot of stuff here,
+maybe I'll just read through this input
+format to get that extra detail about
+what all those things mean.
+So I'm going to keep moving and then
+just come back to that.
+So the first thing that I'm seeing here
+though is that
+they're describing cost of n
+the cost of each flavor of ice cream.
+So cost they have an array here and then
+again they're saying integer
+use for the return type and then they
+have a two in there. So that's a strange
+way to do it. But what they're saying
+here is that the indices of the prices
+of two flavors they buy sorted
+ascending.
+So they're telling us they want an
+integer array, hence the brackets,
+right? And then they want two values
+specifically. So that's why we're seeing
+the one and five. So I'm actually going
+to go ahead and start pulling
+information out of here now.
+So tool friends pull their money. They
+always choose two distinct flavors. All
+right. Given a list of prices for the
+flavors of ice cream. Select the two
+that will cost all of the money that
+they have.
+Okay. So we're given
+given m which
+represents
+money to spend and then we're given
+cost array or list, however you want to
+describe it.
+O I'm still getting used to my keyboard.
+my new Spanish keyboard
+represents.
+You're much improved on the keyboard
+from last week. Thank you. Potential
+ice cream flavors to buy. Okay.
+And then we want that return there.
+Again,
+just going to spell that out a little
+bit.
+Return the two indices
+that represent
+the ice cream flavors
+chosen.
+So, we can already make a few
+assumptions based on just this first
+section up here. Um, one is that
+we're
+Oh, that's not right. Where's the uh
+here? Yeah,
+we're expecting actually going to add
+assumption there.
+Expecting to always
+turn to
+values.
+Um, they also tell us
+indices. They said use onebased
+indexing. That's also something to add
+to our return statement because that's
+important.
+Use onebased
+indexing
+instead of the default
+of zero. Right?
+So when they're saying the flavors that
+cost one and five add up to six. So
+we're using one based indexing which
+would be 1 and then 1 2 3 4 4 instead of
+zero and three.
+Okay.
+So that is helpful. And then
+reading through this again, each trip is
+described as follows. The amount of
+money that they have pulled, the number
+of flavors offered at the time
+in space separated integers denoting the
+cost of each flavor. Okay, so this is
+again describing that sample input. So
+we start with the number of test cases
+that they're going to give us. Also
+described as the number of trips to the
+ice cream parlor. So basically two test
+cases
+and the amount of money that they have
+pulled. That's that four there.
+Three, the in space integer. Oh, no,
+sorry. Two, the integer end the number
+of flavors offered at the time. So
+that's that next line, which is
+basically again just the length of the
+array that they're passing in the next
+line. And then n space separated
+integers denoting the cost of each
+flavor.
+So cost of each flavor of ice cream.
+Okay. The index within the cost array
+represents the flavor of the ice cream
+purchased. So, they're spelling it out
+again there. Just making sure I'm not
+missing anything. So, the number of test
+cases that they can pass us can be
+between 1 and 50.
+Um, the cost that we're expected to
+search against or the poolled money I
+guess can be between two and 10 to the
+4th. So, they're always expecting to
+spend some amount of money.
+That is also helpful.
+M will be at least
+value of two.
+Probably always
+the last line says there will always be
+a unique solution.
+Yeah, we'll get to that.
+All right, so n meaning the length of
+the array is no, that's good.
+So we're always going to have at least
+two values in the array. That's also
+very helpful for us. So cost
+will always have
+at least two
+ice cream flavors. I'm using the
+language that they gave us,
+but you might find that it's better or
+easier for you to just simplify it even
+more than that of just saying m equals,
+you know, I don't even know number to
+divide against the array and then cost
+array equals
+values to add up to to sum up to m.
+However you want to describe it, just as
+long as you're putting it into your own
+words to help your own self understand
+the problem, that's always a good step.
+All right.
+And then this is helping us understand
+the values that we'll expect to see. Oh,
+there's some fun stuff in here. So cost
+I will be between 1 and 10 4th.
+Oh, I don't know what that means.
+A I E one. That's a set a set symbol.
+Oh, is this? Yeah. Subset.
+Okay. So then that would mean
+one to n. Okay.
+That is helpful. Thank you. So what
+they're saying here is that each of the
+values will be unique. We won't expect
+to see any repeating numbers
+in
+the list if that's what that means. Um
+how do you know that Luc?
+Well that E that means it's a set. What
+what does the symbol before mean?
+Universal quantificate a e for all for
+every
+a * e to n 2 * for all natural numbers x
+2x i
+to the n.
+Okay. It used to be in algebra.
+I don't remember.
+Well, that's helpful. So, now I can
+remember that and we all can remember
+that. If you see the A and this E thing
+here, that's probably telling you
+something about the information there.
+In this case, I think it's telling us
+that we're only going to see Oh, but I'm
+already wrong because that's two and
+two.
+So it is
+there are repeating numbers. So scratch
+that.
+So I guess it's just telling us that
+we'll expect values of one to the n.
+Honestly, I might ignore that.
+I would probably just ignore that. I
+don't want to spend too much time on it
+anyways. Um but this line like Mindy
+mentioned is really important. There
+will always be a unique solution.
+So that means that we are always
+expecting
+there to be two.
+Yeah, I think that kind of verifies
+this assumption here. We're expecting to
+always return two values. Um
+like aka we will always find a sum of
+two numbers that add up to m.
+So that is helpful.
+And then for that second example here,
+they're explaining it down below. Sunny
+and Johnny make a trip to the parlor.
+First time they pull $4. That matches
+what we thought. Of the five flavors
+they have, one and four have a total
+cost of 1 + 3 equals 4. So one being
+that first one cuz we're doing one base
+indexes. So 1 2 3 4. And then four
+meaning that three value add up to four.
+The second time they pull the money
+together. $4 of the four flavors
+available that day. meaning 2 2 4 and 3
+flavors 1 and two have a total cost of 2
++ 2 equals 4. So 1 and two are both twos
+and they equal four.
+Okay, so I think that's pretty clear,
+pretty straightforward problem
+as far as understanding what they're
+asking of us.
+And our goal here would be to
+what?
+Given m
+find two values in the
+cost array that
+sum up to m. Right? And again we can
+always
+expect to find those two values.
+So Brian says upside down a is universal
+qualifier and predicate logic. It means
+for every all. Okay.
+I don't know if that helps me understand
+it more but thank you. And then Adam has
+a link here. Adam, does the link
+actually help us understand anything
+more about this problem?
+Not I'm don't I don't mean that in like
+a mean way. I mean, does it actually
+explain? It just um it just shows the
+symbols. Okay. Um Yeah. Yeah. It
+explains Yeah. the the set symbol, the
+the not included and for all and not a
+set um things like that. So, if you see
+something tangentially or or or some
+other um similar type of thing, I would
+like to assume that this is clarifying
+information of some kind, but I don't
+think it is. I think it's literally just
+telling us that whatever our our length
+of the array is,
+1 2 3 4 5 1 2 3 4. Yeah, I think it's
+telling us that whatever the length of
+our cost array is,
+it will contain values between one and
+that length only.
+And and then we can also expect some
+repeating numbers and I'm going to
+include that as a note as well. We can
+have repeating
+numbers.
+I don't think it helps us understand the
+problem any better, but
+it's interesting. It's good to know. It
+just means for all I's from the the set
+is one to n. So it means it includes all
+i from one to n. All i from one to n.
+One from
+all i from one to n. Well, it doesn't
+include all because then we would expect
+to see a one there.
+So I think it means for every it's no
+it's not with regard to the answer it's
+just with regard to the problem.
+No no no. So in this cost array here we
+have 22 2 43. So there's no one. It just
+the values can be between one and n
+is what I'm taking that to mean. Yeah. I
+I posted what AI says it means in there
+for you and it's it's basically exactly
+what he's saying. It's just it's
+guaranteed to be one and between 1 and
+10,000 or whatever n is. So in this case
+they're saying n can be 10 to the 4 or
+10,000
+and so you're saying 1 and n. Yeah, that
+makes sense. So it's good that we have
+all broken down the meaning of this. Um,
+unfortunately, it doesn't really impact
+the problem at all, I think, but there's
+probably a problem in the future where
+that might be relevant. So, it's good to
+definitely know and it's good to be able
+to read the constraints to understand
+each part of it. Um, but the main thing
+that we're pulling from the constraints
+is just that line right there.
+All right, Ryan, you also included
+for J and enumerate cost start equals
+one. That's for one indexing. Yeah.
+Uh, so you went back and looked up how
+to use the enumerate to get the zero I
+mean the the one base index. Yeah, I I I
+knew it but I I thought that I was doing
+it anyway
+if that makes any sense. I I overlooked
+it. But that's the way to do um that's
+an example of how to do one indexing in
+Python
+and enumerate
+and we would be going to
+we passed in the cost array so iterable
+item. Yeah. So index should start at one
+with that. Yeah. I'm just going to read
+this help text. The enumerate object
+yields pairs containing a count from
+start which defaults to zero to a value
+yielded by the iterable argument. A
+numeric is useful for obtaining an index
+list. Yeah. 0 sequence 0 1 sequence one
+two sequence 2. So we pass in the
+iterable object meaning the the object
+that we want to add a index to and then
+the default
+or an optional parameter of a starting
+index
+and it's dot dot dotted out here but it
+does default to zero. So we could set
+that and actually I don't even think we
+need to write start. We could probably
+just write Yeah, you could probably just
+put one in there and then just print
+that out to see real quick
+index
+value.
+That's useful.
+Yep. So one value of one and then again
+we're looking at this array here 1 14
+532. So index one value one index two
+value four index three value five 4 3 52
+that looks good 14 532
+index 1 to 5 and then this is for the
+second test case above of 22 43 so 2 43
+1 2 3 4 Yeah, that looks good.
+Cool. So that is definitely helpful
+instead of just doing a four i and range
+whatever whatever you want to use there
+using enumerate is a helpful substitute
+here because we do want that one base
+indexing for returning the indices that
+represent the values we're looking for.
+So that's really good. That's awesome.
+Um
+so yeah what would our approach be here
+then?
+Everyone, what do you what do we think?
+I like list comprehension.
+A list comprehension.
+And what are you going to do with the
+list comprehension? We're going to be
+able to say um
+let me see. So we do
+we find the pairs
+and we say it's equal to an array
+of the index element of i, comm, the
+index element of j, which would be your
+second number that you're going to get.
+And you do for i. You want me to type it
+out? Would that be easier? No, you can
+keep explaining.
+So your array is um the pair of numbers
+for I the index number in the array
+where comma I in the enumeration of the
+array with start equal to one and for J
+index where J is enumerated
+is the enumeration of the array with
+start of one. if I + J is our target of
+month. So you're thinking basically an O
+of N squared solution meaning we're
+doing the four I in range 4 J and range
+to find the two value pairs that add up
+to M but then you're describing it as
+instead of doing it as two nested loops
+we write it as a single line list
+comprehension to find those two pairs is
+list comprehension
+um A is it an is the order uh the O of
+it less than doing it with a standard
+for loop or is it the same? It's the
+same.
+Ah okay. I just when I look at things
+like that I think list comprehension
+because I think it's an easier statement
+to read but maybe not. So no. So list
+comprehension is just another way of
+formatting it, but ultimately it does do
+the same like
+it has the same performance as writing
+it out more verboseely as a for loop.
+Okay. Well, I think they had better
+performance than a for loop. Is that not
+right? It might have better like space
+complexity,
+but even then not really because a list
+comprehension is creating an array. So
+it might have like marginally better
+runtime performance because you're not
+it's not reading multiple lines. But I
+don't know actually it depends on the
+language because the language parser in
+the background would still ultimately be
+doing the same thing when building a
+list comprehension versus
+a for loop. I'm not sure that's
+something I would definitely Google
+that. That's interesting. But if you're
+creating a list comprehension list
+comprehension ultimately would be saved
+to a value which is taking up more
+space.
+versus a for loop which wouldn't take up
+space in the memory because you're not
+saving it to anything.
+Okay. Okay. So, but your idea generally
+is that you would use the I and J nested
+loops to find the two pairs. Okay. That
+is a good brute force solution. Do we
+have any other ideas of what we might do
+here?
+Yeah, you can find the compliments.
+Yeah, that's what I was looking for. So,
+we've talked about this in previous
+weeks, but um this is like the perfect
+setup to a couple of different things.
+Um, so since we know that we have the
+value that we're looking for essentially
+because if you think about this as
+problems we looked at before with like
+the two pointers and the binary search,
+you would be looking for the you be
+given the target and then you'd have to
+find the two numbers that add up to that
+target, right? So we're given our target
+six and we're looking for the two
+numbers that add up to six. So if you're
+starting from here with the one, you
+could say 6 - 1 is five, which would be
+the complement. And then we'd just be
+looking for five in the remaining of the
+array. If we don't find it, move on to
+the next I three. So 6 - 3, we'd be
+looking for three in the remainder of
+the array. So on and so forth.
+Um and we in previous sessions we talked
+about this as an alternative of doing
+um the nested because it could reduce it
+from O of N^ 2 to O of N log of N.
+Um but that is again assuming that these
+values are sorted
+which I don't know if we can assume but
+maybe we can
+I don't think we can assume that
+in these cases yeah these are not sorted
+so we would have to sort it
+but you could do that as well. I think
+both of those are great examples. Um
+there's also this
+we could use this as well for doing that
+instead of the four i and range um to
+get those. So we would do two nested
+loops of these. So yeah, those are two
+potential potential solutions there. Oh
+just question why why would it have to
+be sorted?
+Um for binary search it would have to be
+sorted. Oh for binary search got it.
+Okay. Yep. Yeah, but otherwise no, not
+really. You could you could brute force.
+Okay. Because I was just thinking if you
+if you iterate through just trying to
+find the complement because it's a
+unique case anyhow, then you wouldn't
+have to ne I mean deal with sorting.
+Mhm. Right. Or
+Yeah. And that brings up a potential
+other solution as well
+is that we could use a set or a hashmap
+there. Just like in the previous
+problems
+where we if we're always expecting to
+find another value, we could turn these
+into a set or create a hashmap
+slashdictionary
+and find the values the complement that
+way. So all three of those would work.
+Um, so we looked at it for harder
+problems before, but they would also
+work for this technically easy problem,
+which is why I brought it up.
+All right, so we've spent quite a bit of
+time on that one.
+I didn't mean to do that. Um, but if you
+guys would like to finish this problem,
+posting that in the chat there, ice
+cream parlor,
+and we will look at that further again
+on Wednesday and explore those
+solutions.
+Okay,
+so
+we do have about 20 minutes remaining.
+Um, and I would still like to get to a
+mock interview if if people are
+volunteering. So, do we have any
+volunteers for doing the mock interview
+today?
+It's my my window. How about I'll go for
+it. Even though I already got struck
+down with my list comprehension, I'll go
+for it. Okay.
+Okay. I think so. I'll I'll do it. Go
+ahead. Because I I'm going to see you on
+Tuesday for it anyway. So, give me one
+like. am going to have Tuesday so that I
+can just be ready. Okay. Oh, I can't
+promise that. Oh, man. I mean, here I am
+sticking my neck out, but that's okay.
+What I can do, I put a problem in the
+chat for you if you want to open that up
+and share your screen. Okay.
+And we'll do sharing. Hold on.
+I gotta Oh man, hate when the mouse is
+not being cooperative.
+All right, here we go.
+And we'll share the screen
+and search in rotated. Okay, you guys
+can see my screen, right? Yep. And maybe
+can you scroll up a little bit?
+Uh, you have to log in again. That's no
+Of course. Your test case window is like
+scrolled all the way up for some reason.
+Well, let's do this.
+Tech systems. I'm going to
+Oops. It doesn't matter. It doesn't show
+the password. Okay.
+What is this? This is a login screen.
+Oh, this is a wrong login. Goodness,
+that was a tech systems login. That's so
+funny.
+Okay. I thought it was that one. Jump
+back into the chat. It just Okay. Screen
+sharing. All right. So,
+where am I? I think you closed it. Did
+I? Man, that was a weird looking thing.
+Okay. Um, let's go back to the meeting.
+We'll go to the chat and we'll go there
+and we'll do login. That's where I got
+it was a login up above and you got to
+make everything go away.
+So after this, I'm gonna hack your
+Gmail.
+I don't think you can.
+I mean, I suppose you could if you based
+on the sound of your keyboard clicks.
+I'm going to Ah, there you go. Yeah, cuz
+I mean locate. Yeah. Okay, hold on. You
+might need to use the Gmail link at the
+bottom there.
+Okay, it says success. Oh, that's for
+Cloudflare. That's not for signing in.
+Okay. Or I can use my Git my GitHub.
+Yeah, whichever one you usually use.
+There we go. I thought it was that one.
+Okay, this account already exists. Yes.
+Sign into my GitHub, which I'm signed
+in. Okay, now it's taking you to GitHub.
+Now you're about to use GitHub to join
+Leap Code.
+Yes, Emperor. Yes, I've already got
+that.
+So, please sign into that account
+first and then
+Sorry, I'm confused.
+It said sign in to Embreze, right?
+Try the Gmail button below.
+Okay, I'm
+okay.
+Wait, what? What did you do? Go back to
+my sign in.
+All right. And
+make that go away.
+And the Gmail, I'm assuming it's that.
+There we go.
+[Music]
+Okay. Continue.
+And
+yes,
+screens.
+I thought it was that one.
+It's saying
+I know. I already have.
+Okay. I don't know why it's giving me
+such a problem.
+You can look at the top of the left.
+Yeah, there are. Let me let me go to
+where I'm already signed in.
+Oh, I thought I was signed in there.
+Oh my goodness.
+Well, if somebody else wants to
+I did a I did a forget password. That
+helped. That made it a lot quicker for
+the Gmail.
+Okay. Um
+sign in. Let's do forgot password.
+I'll do that. I mean, I'm sorry, guys.
+That's okay. Does anyone else? Yeah, you
+guys can go ahead for today.
+Sorry,
+cuz we are. Yes, I have a big mouse
+pointer because I can't find it
+frequently.
+Okay.
+All right. Well, we might just end early
+because we're kind of running out of
+time to do the mock anyways.
+I'm sorry, Ruby. Successfully. No,
+that's fine. We were cutting it close
+anyways.
+All right. Well, we can go ahead and and
+Oh, yeah. Yes, Adam. Oh, yeah. Just a
+quick question. And I'm wondering uh
+does anybody or do you have any um
+uh
+have you ever come across uh data
+annotation um
+work
+the company or heard of it? Yeah. Or
+heard of it?
+Yes.
+Is that um
+I'm I'm I'm strongly looking at that. I
+haven't uh signed up or anything. I was
+wondering if anybody had any firsthand
+experience.
+Oh, Brian. So, what did what was your
+process like? What did you do?
+Um, it was just a uh
+I think they gave me some kind of
+assessment.
+But do you remember what the assessment
+was? Not really. How long ago was that?
+A long time ago. Long time ago. And
+every time every time I go to data
+annotation, it says, "Thank you for
+taking the assessment."
+Yeah, that's like mine, Brian. So, good
+luck. You have to get in when they're
+like actively looking to
+apply or uh onboard new people.
+Um I know Katrina
+has worked with them. Um, I also they
+were hiring for like software
+engineering background people. Um, I did
+the assessment a couple months ago and
+got in, but I don't do it that much. Oh,
+okay. But I will tell you the assessment
+is
+not
+like not easy. Um, it's not hard. It's
+just you definitely want to brush up on
+like big O for example. You want to be
+good at bigo. You want to be good at
+like understanding efficiency, reading
+code. They had an emphasis on Python
+application application. So brushing up
+on your Python as well would be a big
+plus. And then
+the assessment I did had a project as
+well, like a little
+take-home assignment using Python.
+So you definitely want to be prepared.
+No, it sounds like something um if if I
+were to try it more towards the end of
+mod 2 then
+end of mod 2 and also I would say after
+you're really comfortable with the
+hacker time ranges that we recommend.
+Okay. All right. Awesome. Thanks. I did
+finally get in but I know it's too late
+so I apologize. Sorry about that.
+No worries.
+Yeah, thanks everyone for the feedback.
+All right, so we just have a few more
+minutes. Does anyone have any other
+questions about the technical interview
+practice preparation or anything else
+that they'd like to ask before we close
+out?
+Um, did you get a chance to look at the
+um the code I sent for the last problem?
+Sunday's uh Wednesdays. Oh yeah, I got
+your message. I didn't get a chance to
+read it in depth. Um,
+we can definitely look at it. I'm
+planning on looking at that problem
+again on Wednesday.
+Did it pass all of the
+test cases? Yes. Um, using traversing
+the array
+from left to right to right to left seem
+to work.
+Cool. A lot better. So, it's just a
+method or something or tool I can put in
+my my my tool tool belt. And how long
+did it take you to get to a solution?
+Too long.
+Well, it was a couple hours actually.
+So, couple of hours. Okay. Wow. Yeah, it
+was a little too long for um the
+assessment.
+So, just got to speed it up. No, that's
+good. I mean, this again was a medium
+problem that had like a 35% acceptance
+rate.
+So getting an answer at all is really
+great. That's better than
+65% of the other people who took the uh
+took on the challenge. So excellent job.
+Hey Ruby, do you guys have the videos
+sorted out like just for your interview
+prep, the replays? Is there a link for
+just those? Yes. So it's posted I'll
+post it here as well. It's posted in the
+hacker rank channel. Okay. One of the
+penned messages
+and then I also have the link right here
+into the chat. Awesome.
+Thank you.
+Yeah, we've been on a two-pointers and
+binary search kick lately.
+Um, so I've been kind of focusing on
+Yeah, I just signed signed into coach.
+So
+those kinds of problems hopefully next I
+can get some practice in and then I can
+volunteer. Yeah. And the problem we
+covered today is a great practice
+problem and if you want to review I have
+the last few weeks that
+that'll be yeah definitely. Awesome.
+Thank you. Or if you just want to Google
+what is binary search, what is two
+pointers,
+what is a big O of N squared. All three
+of those would what is a hashmap? All
+four of those would give you potential
+solutions.
+And I always like to say start with the
+brute force approach. Whatever comes to
+you naturally, whatever is the like most
+verbose way of you can get to an answer
+just so you can get some t test cases
+passing and then work on cleaning it up
+afterwards.
+So for this rotated sorted array, I got
+76
+test cases passing. Cool. So, I'm on the
+right track.
+Um, we probably I'll probably save that
+as a mock interview for next week.
+Um,
+since we didn't really get to do it
+today, but if you want to practice it,
+that's totally cool because we'll go
+over it again the following Wednesday,
+so like two weeks from now.
+But you and your data science
+background, I'm sure you'll get through
+it no problem.
+Maybe did you get through the one we
+covered last Wednesday?
+Uh Lisa was just talking about
+uh maybe
+uh which um I'm confused. Was it the
+missing numbers one or is it the uh
+maximum product subarray?
+a subarray with contiguous um
+numbers.
+Have to use No, I think I got through
+the missing numbers one though because
+that that sticks out. I have to go back
+and it's on my other computer.
+Yeah, I don't think I got through that
+one though. We'll go through a bunch on
+Wednesday, time permitting.
+Okay.
+All right. Well, thank you everyone. If
+we have no more questions, we'll go
+ahead and close out for today. Um,
+and see you all on Wednesday. Thank you.
+See you on Tuesday. Bye.

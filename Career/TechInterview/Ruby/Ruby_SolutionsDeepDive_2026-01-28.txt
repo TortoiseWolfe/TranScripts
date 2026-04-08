@@ -1,0 +1,1148 @@
+All right, welcome to this week's
+nailing the technical interview. Um,
+we're going to work on a mock problem.
+We already have a volunteer. Thanks,
+Linda.
+Before we get started though, do either
+of you have questions about the tech
+interview, practicing, preparing,
+anything you'd like to ask before we
+jump in?
+Are we allowed to take templates in?
+>> Yes, to a degree. Like it can't be
+like full code solutions. Um templates
+would be like a basic for loop syntax or
+like a list of common functions you
+might use like kind of small stuff.
+>> Okay. Okay. Thank you.
+And I guess for me uh do you have any
+suggestions uh for just studying for
+this? I mean any insights
+>> any anything different than we've talked
+about for
+>> C++ stuff
+>> week after week after
+um I mean no not really
+like the uh the template the rubric
+thing that I pulled together which is in
+mod 2 now I believe
+>> yeah that was very helpful actually it
+was
+>> that kind of has like everything that we
+talk about week to week to week
+>> all kind of distilled into one place.
+>> I think I linked it in Discord, too. I
+can do that again, though.
+>> Oh, yeah. That would be great. I think I
+missed it. But I'm I'm revising mod 2,
+so I'll probably like come across it on
+the way.
+>> Yeah, I think it's in the beta and then
+I think it'll also be in the live soon.
+You did post it uh at hacker rank uh in
+the tech joy server.
+>> Okay, that might that one might be
+outdated. I'll post the new one.
+>> Oh, you did a new one. Okay.
+>> Well, I was changing it like every week,
+like every few days. So,
+>> yeah, I can post that again. Any other
+questions or thoughts before we dump
+jump in?
+>> No, nothing for me.
+Nothing for me either.
+All right, Linda, are you ready?
+>> Okay.
+>> Now, this one is a little bit like
+wordy.
+>> So,
+>> we're going to have to do some thinking,
+but you have you have the group here.
+>> Okay.
+>> No, it's good to know.
+>> All right. So, I'm going to put this
+into the chat if you want to open that
+up and share your screen. So, what we're
+doing is that we're going to go through
+like reading the problem together.
+Linda's going to read it out for us and
+then as a team we'll kind of help her
+problem solve and she'll guide us but
+we'll be the like the backboard to
+bounce ideas off of to get our pseudo
+code steps ready um figure out how we
+want to approach the problem and then
+once she is ready to start coding and
+then we'll set an official timer and get
+that going.
+>> Perfect.
+And then just make sure you're logged in
+as well.
+>> Oh. Oh, that's right. That's right. Hold
+on a second.
+>> I am logged in.
+>> Yeah, you are logged in. Yeah.
+>> Okay.
+>> All right. So, why don't can you go
+ahead and
+>> kick us off?
+>> All right. Uh 682
+baseball game. You are keeping the
+scores for a baseball game with strange
+rules.
+At the beginning of the game, you start
+with an empty record.
+Okay.
+uh you are given a list of strings
+operations
+where operations
+bracket I the value they it's got a
+value I guess is the
+operation you must apply to the record
+and is one of the following
+an integer X record a new score of X
+uh plus
+record and this is a string record a new
+score that is the sum of the previous
+two scores.
+>> D
+record a new score that is the double of
+the previous score. Let's see.
+Invalidate the previous score removing
+it from the record.
+>> Um, let's see. Return the sum of the
+scores
+on the record. After applying all of the
+operations,
+the test cases are generated such that
+the answer and all intermediate
+calculations
+fit in a 32bit integer and that all
+operations are valid.
+Example ops integer integer five to C v
+which is plus outputs is 30 and the
+explanation is add five
+to the record to show
+add five to the record the record is now
+five to add two to the record the record
+is now five it's oh it's an array
+52.
+Um C invalidate and remove the previous
+score. Record is now five. Uh D which is
+record a new score that is double of the
+previous score. Um add 2 * 5 = 10 to the
+record. The record is now 5 10 and plus
+add 5 + 10 equals 15
+um to the record. The record is now 5 10
+15. The total sum is 5 10 5 + 10 + 15 is
+30. That's the first. Okay. Um the next
+example
+if um is yeah okay 5 -2 which is also an
+integer or C D
+okay C is
+uh invalid oh okay you you're just doing
+what it says d 9 which is an integer
+plus plus and the output's 27
+uh add Five. Uh, the record's now five.
+Add -2. The record is now five. I have
+an array of five -2
+or add four to the record. The record is
+now 5 -2 4. Um, okay. C, invalidate and
+remove the previous score. The record is
+now 5 -2.
+Um let's see. Um
+D add 2 * 2 =4. The record uh to the
+record. The record is now 5 -2 -4 9. Um
+add 9 to the record. The record is now 5
+-24
+9.
+um add and this plus is add -4 + 9 = 5
+to the record. The record is now 5 -2 -4
+9 5 add 5 + 9
+um plus is add nine the last one + 5 the
+second and the last plus the last one
+equals 14 to the record. The record is
+now an array 5 -2 -4 9 5 14. Total sum
+is 5 + 8 -2 + -4 + 9 + 5 + 14 = 27. The
+third example. Oh, thank God this one's
+short. Um, it's input is ops.
+Those are strings. Um,
+and let's see the output. Oh, I'm sorry.
+Yeah, ops equals
+um
+one which is a string and c which is a
+string and the output is zero.
+One add one to the record. The record is
+now one.
+Invalidate and remove the previous
+score. Um the record is now empty array.
+Since the record is empty, the total sum
+is zero.
+Okay, you know um
+first of all
+we are going to have we are going to be
+building an array. Uh our output is
+going to be part of an array.
+Um, let's see. Our input is also an
+array. So, I guess I should start making
+my notes over here. Um, now also make
+sure to review the constraints here.
+>> Oh, wait a minute. Hold on a second. Ah,
+yes. Um, the constraints,
+uh, one is less than or equal to
+operations.length
+length which is less than or equal to a
+thousand.
+>> What does that mean?
+>> Okay, so
+one is equal to or less than the
+operations length.
+Does that mean we can have like less
+than one like decimals or fractions?
+Um, but we can't go over a thousand in
+terms of the length of our output, which
+would be an array. So, is this talking
+about the length of an array? I I'm not
+sure.
+>> No. What is operations?
+>> Uh, op. Okay. Is it defined in the
+problem up here?
+Ah, yes, it is. um return the sum of the
+all the scores on the record after
+applying all the and operations. These
+must be the operations appear, right?
+No,
+>> no,
+>> read that line right there at the top
+there.
+>> Okay. The very top.
+>> Nope. The second paragraph. Yeah.
+>> Oh, okay. Um you are given a list of
+strings
+operations. So it's the list of strings
+and it's the length of the strings.
+What does length usually mean?
+>> Um how long how long it is? Um how long?
+So in this case how long what is
+>> um since our output
+is basically an array and array
+consisting of well no it's they're not
+all strings. I would think that you're
+talking about the length of the array.
+Mhm.
+>> So then operations llength means what?
+>> Um let's see the length of the array.
+>> Uhhuh.
+>> Okay. Is that what that means? The
+length of the array.
+>> Yes.
+>> Could be equal to I don't understand the
+less than one, but I could understand it
+being equal to one and less than a
+thousand in length. I could get that.
+>> That's what that means. Yes.
+>> Okay. All right. I don't understand the
+less than or equal to but uh operations
+um I
+um is C
+D and plus and let's see
+C um hold on a second C is invalidate
+and remove the previous score. is add
+um whatever you know add to
+no I'm sorry um I'm looking at the
+example um C is invalidate the previous
+score D is record a new score so they're
+talking about that and um let's see
+those are operations
+uh or a string representing an integer
+uh in the range
+-3 * oh those are really big really
+small numbers um and 3 * 10 4 really big
+numbers. So you can't have something um
+either that small or that large um a
+string representing an integer in the
+range. Um and for operation plus
+uh there will always be at least two
+previous Oh well that's a comfort to two
+previous scores on the record to add
+them and then for operation C and D
+there will always be at least one
+previous score on the record because one
+of them uh you I think C is you delete
+the previous one and D um let's see You
+hold on. D you record you record a new
+score that is double the previous score.
+So you need to have something there
+ahead of the last digit. You have to
+have a previous. Okay.
+>> So here the constraint is giving you a
+lot of information, right? Like maybe
+something you want to write down
+perhaps.
+>> Okay. Um,
+>> so I wouldn't copy and paste them
+usually if that's how you like to start
+>> edit them maybe, but I would recommend
+putting all of these things into your
+own words like what do you know about
+the problem so far? What is the goal of
+the problem? And then how will these
+constraints help you form a solution?
+>> Okay. Uh, okay. I will I will note
+those.
+Okay. It's a I I really take a lot of uh
+comfort in the last two that you'll
+always have a previous score because
+that is really crucial into either um
+doing an operation with the previous
+number or deleting it. You know, those
+those two are very valuable. These other
+things, I don't know if they're really
+going to come into play, but I will
+indeed note them. Okay, here goes. Um, I
+think for me the first thing I want to
+do is to just get the um, what do you
+call it? The operation straight in my
+head. Um, okay. An integer x.
+An integer x.
+this way.
+And
+so at least I know what these things
+are.
+Uh, the first thing that I'm going to do
+is
+Okay. Um, in looking at what my input
+is, I know my input is going to be um a
+list. I know that.
+>> Um, let's see.
+>> So, I might I might write that down.
+>> Okay. Thank you. Um
+and I Okay. And I'm going to be building
+like um another list as my output. Um so
+I really do need to initialize
+something. Uh, I don't know what I'll
+call it, but I might call it like um
+total sum or something like that. Um,
+and I know that I want to read in the um
+I want to read in the input list. Uh so
+and I want to read them in um character
+element by element. Uh so looking at um
+for
+so we're not writing code yet.
+>> Okay. All right. Okay. Okay.
+>> If you want to write it in pseudo code
+that's fine but we're we're
+>> this is just the brainstorming phase,
+right? Like we're coming up with an
+idea.
+>> Yes. Okay. So you could write it as okay
+four for four blah and operations
+>> or you could write it as iterate through
+the operations and parse out each
+element at a time. You can write it
+however you want. It's just um
+>> this is not the real code. I get it.
+>> Yeah, you're not jumping into I'm this
+is how I'm going to write my code
+because we're still thinking about what
+the solution would look like
+>> for each element
+in ops.
+Again, this is not real stuff. It's just
+me thinking.
+>> Yeah.
+>> Okay. For each element, um
+um
+first of all, if I'm going to make an
+output list, I want to put it up here
+before the for loop.
+And
+I know that I'm going to have a bunch of
+if statements down here, which is the
+reason that I copied um
+this this, you know, for example,
+um let's see,
+element
+is
+an integer. There
+um
+see element is an integer
+uh return
+or
+I I don't okay I would say something
+again this is pseudo code it's not the
+real thing um I would say total sum
+Append.
+Yeah, that's right. Append.
+Wait a minute. That's not right. Total
+sum of pen
+um element.
+Um and see the next thing you're looking
+for if um
+if if
+element
+is
+plus
+um
+yeah if element
+um
+is Plus, let's see. What are you
+supposed to do that with that? Um,
+record
+a new score.
+Oh,
+okay. With that being said, you know,
+something tells me that I should
+probably have um another list ready to
+go up here called score
+and I should initialize it
+because um
+I would want to say something like um
+either replace or um I don't know the
+proper syntax for saying delete u
+delete score.
+Okay. And you know just so on with these
+um if statements. Uh the last well the
+last two if element is
+the
+pin
+actually score
+a pin
+uh element
+um and C
+if
+element
+is C
+um
+invalidate or I would wait a minute
+invalidate the previous score removing
+from the record. Um,
+and again I don't exactly know the
+syntax for that. Okay. But and oh yes
+and at the very end.
+Okay. Oh, this is how you lengthen that
+cuz I want to have more more room.
+Is there a way of lengthening this?
+>> You gotta wait until the uh arrow shows
+up right there.
+>> Okay.
+>> Oh, right. Yeah.
+>> Ah, there we go. There. There we go.
+Okay. You know, I don't think I need
+this this stuff here anymore.
+I I just need more room. Okay. Because
+what we want to do is we want to return
+We're going to return
+um
+total sum.
+We want to return total sum. That's what
+we want to do.
+Okay, that's what I think we want to do.
+Um,
+okay.
+So,
+that's basically my pseudo code.
+um in terms of making it so I need to
+look up how to delete
+delete things and because I really don't
+know how to do that and this other thing
+that sort of gives me pause is deleting
+the previous score although because I'm
+afraid there's I think there is a
+difference between um C where it says
+delete the previous score And plus,
+where it says delete the score like plus
+>> is that what it says?
+>> Uh plus record. Oh, okay. Record a new
+score. That is the
+Oh, that it says something entirely. I
+got that wrong. Um so what that is is um
+if that is plus uh record
+a new score that is the sum of the
+previous two scores. I don't know how I
+didn't get that right. Um so that is not
+a delete that is um okay. um
+record a new score that is the sum of
+the two previous scores.
+Um
+okay, we're starting out with score
+being zero.
+Um
+have we put anything in? Okay, we're
+deleting. we're pending right here if
+it's D.
+Um
+so we do have okay so with this one uh
+score would be um let's see score would
+be
+equals um
+sum
+of um now again I don't know how to
+write this but my I want to say
+something like score score equals
+uh
+score
+minus two, something like that. I know
+that if we were dealing with um a
+looping variable, something like I, and
+you were looking at an array, and you
+wanted to get the number, you wanted to
+get the element after the one that you
+were looking at, you would say I + 1. If
+you wanted the element before the
+element you're looking at, you would say
+I minus one.
+I'm using that same thought with this. I
+don't know if it's going to work, but I
+will look it up. I'm saying that score
+equals the sum of score minus 2. Now, I
+don't know what that's going to give me.
+Um,
+and that's something I would have to
+look up. Um, but I just want to check
+and see whether or not I've got the
+right definitions for my if statements.
+Uh, okay. If the element is an integer,
+uh, we are to record, okay, record a new
+score.
+We record that as a new score. And what
+I've done is I put that in
+total sum, but we're we're recording a
+score. So that might be that I should
+put that as a score instead of the total
+sum.
+>> So what data structure does that need to
+be?
+>> Um,
+you mean element or what? What? I'm
+score. Uh, score. Oh, thank you.
+And for that matter,
+wait a minute. Uh, okay. If we were
+going to use total sum, and we might not
+at this point, that would that would be
+an array also. Let me get the zero out.
+Okay.
+Okay. Uh, so let's see. Um,
+all right. we record a new score uh if
+the element is an integer. Okay, we're
+going to add it. Um and we're starting
+out in the definition with the score
+being nothing. It's empty. Okay, so so
+far so good. Um if the element is plus,
+uh record
+a new score.
+Okay. uh record a new score that is the
+sum of the previous two scores. That
+like I said, I don't exactly know the
+the syntax for that, but that's what I'm
+trying to say with that. Okay, with D,
+record a new score um that is double
+if it's D, record a new score that is
+double the previous score.
+Okay, the pre
+So that would be um
+um score would equal
+uh previous score
+times do
+again
+that I don't know if this is the
+previous score but it's whatever would
+be in score at that point times two and
+then the last one is invalidate the
+previous score
+um removing it from the record um
+delete previous score.
+Now, this business about previous
+um
+I believe that that's going to be
+covered by whatever is running in the
+array, whatever you're putting in the
+array. It's almost like I don't know if
+this is what we should be using. It's
+almost like you want to pop and push
+things.
+Um
+>> could be.
+>> Okay. And I don't know if is this set
+set up for popping and pushing?
+Is this platform set up for popping and
+pushing?
+>> Yeah,
+>> it is.
+So I could say pop whatever. I could say
+um
+Okay, I might I might actually do that.
+Uh pop
+I don't know if this is right.
+>> See? And wait a minute. But where do you
+do it? You pop it off the front or you
+pop it off the back?
+I'm going to say you pop it off the
+back. Um
+but anyway uh that's my take. Uh does
+anybody have any suggestions?
+>> So what is the overall goal of the the
+problem?
+>> Okay. Oh uh I have to return the sum of
+all the scores
+uh on the record after applying all of
+the operations. Now let's see the the s
+the samp the sample output is an
+integer.
+>> So that should indeed be initialized as
+a basically a counter.
+>> Okay. And um
+I really do think on some level that
+what we're really looking at like you
+notice with all of these operations
+you're doing things with the score. You
+know you're appending the score or
+you're you know adding something to the
+score or or multiplying the score. Um,
+so I really do think that um,
+let's see.
+Well, actually, hold on.
+And then at the end you want to return
+the total sum.
+>> Now what is score at any given
+uh position in the the the loop?
+>> I'm sorry I didn't understand that. Can
+you repeat?
+>> So in your for loop what is score going
+to be at any given element index?
+>> What's it going to be at any element?
+>> Yeah. What is it going to look like?
+>> Uh,
+it's going to look like
+either a string. Actually, it's going to
+look like a string. It's going even the
+numbers are strings.
+>> So, score is going to be a string.
+>> Yes,
+>> not an array.
+>> Oh, it's going to be an it's going to be
+an array made up of strings.
+>> Okay. So, in this loop,
+at this piece where you're saying,
+>> "Wait, wait, wait, wait, wait. I see
+what you I think I I think I see what
+you're saying. Um, at some point you're
+going to have to convert the strings to
+integers again because you want to end
+up with an integer. Um, and when you
+look at all of these, um, so I need to
+do something like uh because this won't
+work if it's a string. If I said um you
+know uh add score to total sum unless
+score is now um what do you call it? an
+integer? Um
+>> yeah but what is score?
+>> Um
+you mean what is it a string? Is it an
+integer? Is that what you're saying?
+Or is it an array? Um score.
+Okay. Score
+right now. It's going to be okay. Okay.
+Um.
+Oh,
+>> see.
+>> So, use the example. Use example one.
+Walk through it really quick with your
+code
+>> and just add little comments of what
+what these elements are going to be at
+at each iteration. Okay, good. Um, the
+first letter is um the first letter is
+an integer.
+>> It's okay. They're all strings though. I
+mean, but okay, it's it's a number. Um,
+so I would put that I would u put that
+in score. I would in fact I'm going to
+do that. Um,
+I have made an array and I'm going to
+the first letter I mean the first
+element in that array is going to be
+five.
+Um,
+>> so what would that look like if you
+debugged if you said print score right
+now? What would that look like?
+>> Uh, it would
+it would be an array. It would look like
+this. I'll just type it up here.
+>> Yeah.
+>> Okay.
+Okay. Um,
+so, okay, we we've done that and we've
+appended this to score. So, score is
+going to have five in it and it's going
+to be an array. Um, the next one two
+should be the same thing. Um, the next
+number is two.
+Uh, the next the next
+>> Okay. So, then what happens at the
+bottom though with total sum?
+Uh with total sum.
+Okay. At this ah thank you. Uh with
+these two
+total sum
+should be um
+because score
+I said score was um an array. So, but I
+don't think that's going to work
+because score is
+okay.
+Score is an array and I'm trying to come
+out with an integer for um for total
+sum. So, I'm going
+I'm going to have to add the elements of
+the array together.
+Uh, that's what I'm going to have to do.
+Um, but I I don't know at what point I'm
+going to do that. Um, but let's see.
+Okay.
+What I could do is this. Um, and again
+I'm talking is I'm just talking in real
+time while I'm thinking.
+>> Um,
+>> I could continue for the moment I am
+going to comment out the total sum
+because what I'm trying to do is build
+an array that is going to basically do
+what these operations require of it. For
+example, uh the C up here. Um
+I need to
+pop. Okay. It would be
+okay. Two would be gone.
+>> Mhm.
+>> Um I would still have five. Um
+with D. Uh let's see.
+Uh I would be multiplying um 5 by two.
+Okay.
+And that would be 10.
+So,
+>> so,
+>> okay.
+>> Is that what it looks like after the D
+operation is that you have a single
+array with 10?
+>> Uh, no. No, cuz I'm I'm just at C right
+now. Uh, I'm not at D yet.
+>> Well, you're doubling it. That's a D
+operation.
+>> Oh. Oh. Oh. Oh, thank you. Um,
+I don't No. So C, you removed the two,
+right?
+>> I I removed Yes, I removed the two. And
+C means um let me see what did C.
+Okay, C was I removed the two.
+Okay, D means um
+I put it on the wrong line is what I
+did. Um D means um
+3
+5*
+2
+= 10.
+Okay. Um
+and
+D. Okay. And D.
+Okay. That's where we are now. 10. Okay.
+But we're not getting when
+plus. Oh, and plus. We didn't do plus
+yet. Um,
+>> well, hold on. Let's make sure we're
+doing D, right? So, what happens at D?
+>> Okay. Uh, for D, you're supposed to um
+multiply the score times two.
+>> The score or what specifically?
+See,
+um,
+we're supposed to record a new score
+that is double the previous score.
+Um,
+okay. So, the previous
+the previous score
+The previous score was uh five.
+>> Mhm.
+>> Okay. And then times two is 10. So we
+should get 10. We should get 10 for for
+D.
+>> So then what the score look like after
+you do that?
+>> Okay. Well, let's see. Uh it should be
+should have 10 in it.
+So it should just be 10
+>> after we've done
+Okay.
+Yeah.
+>> So look at the example. What does the
+example say?
+>> Um
+all right. Add five. We did that to the
+record. The record is now five. Um add
+two to the record. The record is now
+two.
+um invalidate and remove
+uh the previous score
+uh okay which
+is now
+which is now five okay you did that
+>> um okay then um let's see
+add 5* 2
+Okay. Um, that is deep at 5 * 2 to the
+record. And oh, I should have gotten
+510,
+not just 10. I don't It didn't say to
+take the five out, did it? No, it
+didn't. So, that should have been 510.
+Um, and then
+>> So, then what do you do at D then to get 510? What does that
+operation need to look like? Um,
+let's see.
+Uh,
+okay. It should, uh, it should be added
+to the array.
+Uh, it shouldn't replace
+anything. I'm going at it like that. 10
+is going to replace everything in the
+array, but it is not. it should be
+probably appended to the array that's
+called score. Um, so
+and since
+okay, I should put an append down here.
+Um, I should put uh score equals or
+score append
+score times two.
+That's what I should put down there.
+So, I know we're just kind of talking
+high level, but what do you have to do
+to do score times two? It's not just
+taking the array times two, right? Like,
+you have to do something with that.
+>> Um, you you need to make it into um an
+integer.
+>> And how are you going to get that? Let's
+say we have an array of five values and
+you get a d. Do you double all five
+values or do you double what?
+>> You just double the you just double the
+integer. Which integer? I'm saying you
+have an array of five integers and then
+you get a D. What do you do next?
+>> Um, oh, okay.
+You have to multiply.
+Let's see.
+you have to multiply five times two and
+then add it to the array.
+>> Right? So let's say that your score is
+not just five. Let's say it's 5 2 3 4.
+>> That's your array is 5a 3 comma 2 comma
+4. That's the score currently.
+>> Let's just pretend.
+So you have a score value of 5324 or
+whatever.
+>> What do you do when you hit the D with
+an array that looks like that? with a
+score array that looks like that,
+>> um, you double the previous you double
+the previous score. So if you're looking
+at 5324,
+uh, you double
+two
+>> 5324.
+If it was 5324,
+uh you would
+double the previous the previous score.
+If the if we're going if the previous
+score is the second one from the last,
+if it is two, we would double that. Um
+>> why would it be the second one from the
+last?
+I'm just assuming that it's um what do
+you call it?
+Oh, okay.
+Um
+Oh, would it be five times five? No.
+>> Okay. So, do me a favor. Next to the if
+element is D,
+>> write in a comment score equals
+bracket 5324
+in bracket.
+>> Okay.
+>> Okay. So, we're tracking score outside
+of the loop, right? It's its own thing.
+>> Yes.
+>> Now, we're evaluating the element. The
+next element that we're getting for each
+element in ops, that element that we're
+getting is D.
+>> So now we've dropped down to the if
+block. If element is D. Okay. So now
+we're in this if block. This is what our
+score array looks like. What do you do?
+>> Uh you again I don't know what previous
+would be. Would it be um would it be
+five? Would it be three? or would it be
+two? Would it be? Um,
+>> so you have two examples you can look at
+to see how they're pulling the previous.
+>> Yes. Okay. Looking at D. Um, it says add
+2 * 5 = 10 to the record. Record is now
+510.
+So um,
+we did it right, didn't we?
+>> Uhhuh. So then check the next example
+>> right here. Um
+>> yes. Yeah. But what's the next example?
+>> Uh okay. Um add five.
+>> No, sorry. Example two, not the next
+line, but the example two.
+>> Okay.
+>> So they have a bunch of operations. They
+have the five, -2, 4, C, and then they
+hit the D. So what do they do when they
+have the D?
+>> Okay. Um
+they got -2. Well, they they multiplied
+two
+uh times -2.
+And you're supposed to multiply
+um for D, you're supposed to multiply
+the score uh times two.
+>> So, what was score in the line above?
+>> Um in the line above, the score was uh 5
+-2.
+Um, in this one, um, if we're dealing
+with with, uh,
+Okay. Five
+5 * 2 5 10.
+You know, I I think I was right. Um,
+>> you were I'm asking you about a
+different example now. I'm asking you if
+we had a different variable
+>> 5324.
+>> Yes.
+>> What would you do with the D?
+>> Oh, okay. Um, I would get um let's see.
+Um,
+I would multiply uh two times four.
+>> Okay.
+>> Okay. Okay. I would do that.
+>> So then how are you going to get the
+four? That's what I'm asking.
+And your score.append score times two.
+The score in the in the append the score
+times two is
+the four in this case the previous
+value. Right.
+>> Yes. So, how are you going to grab that
+value?
+>> Um,
+I would Okay, I would pop it I would pop
+it off the end and multiply it by two.
+>> Okay.
+>> And uh I don't know how to write that.
+Um, but I would I I would take um I
+would say something like um score
+um
+or pop pop score or you know pop score.
+So it would come off the back and I'd
+multiply by two.
+I do something like
+>> Oh, I didn't mean to do that.
+Um,
+which would pop the four off the end.
+Um,
+times two. Mhm.
+>> And I would uh
+I would want to uh append that to the
+array score. I would want to say
+something. I don't know if you can even
+do this, but I'm going to This is what I
+do.
+I guess something like that.
+>> So then what would score look like after
+you do this?
+>> Well, um,
+let's see.
+Score would be
+5328
+now. Does that is that right?
+>> I think it is because
+>> you doubled the preview score, but are
+you supposed to delete the preview score
+as well?
+>> Let's see.
+No, you're not. It says uh
+you're supposed to um record a new score
+that is double the previous score, but
+you're not supposed a new score that's
+double the previous score, but it
+doesn't say anything about deleting it.
+>> Yeah.
+>> So, you get that.
+>> But your code didn't do that, right?
+your pseudo code?
+>> No, it doesn't look like it did.
+>> Okay, so these are the kinds of
+considerations. Um,
+all right. So, we spent a good amount of
+time on this and we've gone a little bit
+over. So, thank you, Linda, for for
+walking us through the steps of the
+problem.
+>> Um, let's see. I think where where I'm
+seeing you struggle a little bit here is
+that I I think we really need that step
+of taking the parts of the problem and
+putting it in your own words in the
+comments of you get you get X. What is
+it? X is an integer. We need to track it
+in an array. Okay, next line. You get a
+plus. What does the plus do? It takes a
+previous score and doubles it. Um and we
+keep both scores like that kind of line
+by line where you're not doing pseudo
+code of code. You're just doing like
+what does this operation mean?
+>> And then you're comparing that against
+the examples to make sure that you're
+what you've written out in your own
+words
+>> in words not in pseudo code is matches
+what the example is doing. And then if
+it's not then you can make some course
+correction of like okay so in my my line
+I wrote I'm going to pop off the last
+piece and double it and then add it to
+the score again. Okay well great. Let's
+look at their example. That might have
+like a mismatch there. there might be a
+misalignment.
+I I think that needed piece because we
+kind of had to keep going back and like,
+oh wait, well, what does the plus mean
+again? Or wait, what does the D mean
+again? Or what does the the C do? And so
+if we just had that in our own words at
+the top of the function, we might not
+have to kind of jump around as much and
+we might have to look at the problem as
+much to figure out those operations want
+us to be doing because you would have
+written it in a way that made sense to
+you the first time. Does that make
+sense?
+>> That makes perfect. You know what you
+just said is the same thing Claude said
+in the trainer that I I wrote. It's the
+exact same words. Um, put it in your own
+words before you do anything. Um, and I
+thought that I could skip to the pseudo
+code cuz I thought that I understood
+what the problem was asking for.
+>> Okay. So, but even if you understand
+what the problem's asking for, isn't it
+a good step to write down your
+assumptions about the problem? Yes, it
+is. Uh, so in the future, you would have
+wanted to see a bunch of like like I
+started out with a bunch of text, me
+writing it out that's commented. Um, but
+it putting it in my own words.
+>> Yes,
+>> I jumped into this. Okay,
+>> I did. Yes, I asked I asked if you
+wanted to do that. Yes.
+>> Yeah, and I just ran right over that.
+Okay.
+>> Okay, that's cool. So now you see the
+importance of that and doing it every
+time. Even if I feel I know a problem
+backwards and forwards, I'm still going
+to do that step. I don't skip steps
+ever.
+>> Okay?
+>> That's the whole point of having a good
+list of steps that you take. You take
+them every time. You don't change your
+habits. You don't get lost. You don't
+get confused. You take the steps. The
+steps are there to help you.
+>> Okay?
+>> Right? And then you're building your own
+steps. Like you are building the steps
+that help you.
+>> And then I'm just kind of giving advice
+from my template, right? my rubric that
+I made that says like here are my
+suggested steps but you can make your
+own steps but as long but if you've made
+your own steps like you did you kind of
+have to follow them every time right
+>> yes that's correct
+>> so where I'm seeing you get stuck there
+is that kind of circular logic of I I
+skipped a step and now I'm forgetting
+how what I'm supposed to do at each
+piece
+>> and I'm making a lot of assumptions
+about the problem that may or may not be
+true and then I have to go back and
+double check the example
+>> and I'm I'm not kind of seeing how those
+things are playing together very Well,
+>> okay. Okay. Well, thank you for that.
+That is very, very valuable. Next time I
+will definitely write this out in my own
+words before I start even trying to do
+the pseudo code.
+>> Yeah.
+>> Okay.
+>> Okay. Well,
+>> so this this problem did have a lot of
+pieces to it, a lot of
+>> a lot of elements. Um, but I do think
+that there is still the needed piece of
+of nailing your steps process so that
+you can speed up this process because I
+think we spent like 40 minutes going
+through this. And once you got to the
+end of this, you probably have something
+that would be ready to turn into code,
+but that process needs to take like 10
+minutes, not 40 minutes.
+>> Yeah. See, that's the thing that's
+bothering me in my studying. I can
+eventually get it, but it takes me a
+very long time. And so for that reason,
+I haven't actually scheduled my tech
+interview yet because it does take me a
+long time.
+>> But do you see how it might have taken
+less time if if you had followed your
+steps that you you were building out?
+>> Yes, it Yeah, I can see that. I can
+definitely see that.
+>> So, yep. Keep practicing following your
+steps and do them every time
+>> and you will see your time decrease over
+time.
+>> Okay. Well, great. Thank you. I'm gonna
+stop sharing because, you know, we're
+over
+over the time right now.
+>> All right. Well, thank you, Linda, for
+being our volunteer today and I I hope
+you it sounds like you got some good use
+out of that. So, um
+>> Oh, good. Thank you so much for spending
+the time with me going through it.
+>> Okay, great. You're welcome.
+All right, everyone. So, let's close up
+for today. Do you have any questions you
+want to ask before we hop out?
+>> None for me. No.
+>> Okay, great. All right. Well, I will see
+everyone next week and we will try some
+more problems.

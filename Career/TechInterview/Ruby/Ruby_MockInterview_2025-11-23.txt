@@ -1,0 +1,1150 @@
+All right. So, welcome to today's
+session, Sunday. Um, again, moving
+forward, this will be the last, I
+believe. Let me check the calendar
+again. I believe today will be the last
+Sunday session.
+Sunday,
+I think.
+>> Yes. Okay. So today will be the last
+Sunday session and then we will be
+continuing the Wednesday sessions moving
+forward but just the Wednesday sessions
+and we'll be doing the same thing that
+we're doing today. um which is just
+giving people the opportunity to do mock
+interviews and practice from wherever
+they are. Whether that's pseudo code,
+practicing through full problems um or
+even from the rubric, any like section
+you want to focus on, communication,
+technical knowledge, um problem solving,
+behavioral, any of those that you want
+to focus on are all parts that we can
+look at.
+Now I can't close my calendar. [snorts]
+What? Okay.
+So with that in mind, do we have any
+questions that people would like to ask
+before we get started about the
+technical interview getting started
+getting not getting started for most of
+you? Um any questions?
+>> Uh yeah. Um, and this is sort of unorth
+orthodox, but [clears throat] I did
+indeed bo boy work through that find the
+content children problem and I think I
+came up with a good solution. But it's
+not a random problem. We've done it
+before. But for me, it would help if I
+could walk through it time allowing. I
+know that this space is really for
+people to experience the technical
+interview as a mock thing where you
+actually throw a random problem at them
+and they have to read it on the spot and
+figure it out. My my situation would be
+a little bit different. I figured it
+out, but I want to walk through it. So,
+what I'd like to do is if there is time
+at the end, I'd like to do this. Um,
+>> why don't we just do it now? Can you do
+you want to walk us through it? Well, I
+mean, you know, yeah, I can, you know,
+uh, assuming because I want to give
+precedence to somebody who's ready to
+actually sit down and do something cold.
+This would not be cold,
+but yeah, I'm ready. [laughter]
+Okay. Um, let me see. This was um I
+believe the leak code problem. It was
+Let me go and see if I can find it. It
+was the uh find content children.
+Uh let me go and run and see if I can
+find it. Uh let's see.
+I don't know if it was hacker rank or
+leak code. I think it might have been
+leak code. Oh, wait a minute. I think it
+was Yeah, it was leak code. Okay. Um
+I am going to just share. Okay. Um,
+first of all,
+hold on a minute.
+Let me come back over here.
+Uh, I am going to share.
+Okay, I'm going to go over here. This
+was something that I came up with
+another person um
+in uh the peer programming channel with
+and I don't like it.
+>> I came up with I came up with something
+different um that I'm going to to share.
+But first of all, I'm going to go
+through the problem and I'm going to
+just try to talk it out. Um
+the problem is assume that you are an
+awesome parent and you want to give your
+children some cookies but uh you should
+give each child at most one cookie. Each
+child has I uh agreed factor of GI which
+is the minimum size of a cookie that the
+child will be content with. And each
+cookie J has a size SJ. If SJ is equal
+to or greater than GI, we can assign the
+cookie to J the child. And the child I
+will be content. Your goal is to
+maximize the number of your content
+children. Um and output the maximum
+number.
+Okay. Uh, I am going to get rid of all
+of this.
+Okay, I'm going to just take it and put
+it someplace else.
+Okay, and I'm going to start from
+scratch.
+Um, okay. In looking at this, this
+verbiage did not do a thing for me. So,
+I came down and I actually looked at
+what the inputs were. Um, okay.
+Evidently, you've got the cookies that
+are over here, uh, one and one, and then
+you've got the children that are G, uh,
+one, two, and three.
+I feel like, uh, at the get-go, I need
+to be able to sort through both the
+children and the cookies that are
+available. So, what I'm going to do as a
+first step is go,
+>> Can you guys see this?
+>> Mhm.
+>> Okay, good.
+Okay, I'm sorting through the kids. I'm
+sorting through the cookies. Um, okay.
+And I think I need a pointer to both of
+them. Um, cuz I mean, how am I going to
+be able to match up the kids and the
+cookies unless I can point to each one?
+So, I'm going to initialize um a pointer
+to each kid.
+Um, and I'm going to just call that um
+kid pointer.
+And I'm going to um have a pointer
+uh to each cookie.
+And my sense, wait a minute, hold a
+second. And my sense of this um is that
+literally a kid if a kid is one a cookie
+has to be one. You got to match a kid to
+a cookie. So in my prediction and is
+that because there is a one here in the
+kids and a one here in the cookies,
+you're going to have a output of one. Um
+so this is what I'm going to do. I'm
+going to make um I'm going to say while
+um let's see uh the kid pointer is less
+than the number of kids.
+Hold on a second. Uh yeah.
+uh the kids that we have. And while um
+the number of cookies
+is
+less
+than uh the cookies we have
+if
+uh the number of cookies
+Or if a cookie uh is equal to
+or greater than
+the number of kids cuz that's in the
+problem. Uh they can have either their
+number or more cookies. The kids can
+uh then Okay. Um, maybe I should just
+move on to the next child.
+I'll have to actually.
+Okay. And then um
+I'll have to advance the number of
+cookies too.
+And what I really want is I want the
+child pointer and the cookie pointer to
+be the same. And this is something I
+just I'm just going to say that I this
+is something I just hammered out um
+after I read the problem several times
+because it wasn't really clear to me
+until I just really looked at the inputs
+and the outputs at the end.
+Um, okay.
+And I'm going to run it. Uh, but
+basically what I did was I'm trying to
+match like in this one. It's one kid,
+one cookie, so I'm going to get one.
+Okay, this one,
+uh, there's two, uh, kids and two
+cookies, so I'm going to get two. Uh so
+let's see what we get
+and there is
+okay
+check
+on nine.
+Okay. While
+I Oh, wait a minute. Yeah. I is less
+than length G
+and
+J is less a. It gets quirky sometimes.
+Okay.
+Okay. It's still not right.
+Um,
+>> now don't get confused. Read read. Make
+sure to read the error.
+>> Okay. Um, let's see.
+Error name. Oh, okay. Name
+L.
+Oh, look at that. Okay.
+I didn't put in length.
+All right. Let's see.
+Okay. But it didn't pass case two. And
+case two is over here. Um,
+okay. You have two children and three
+cookies.
+Uh, okay. Uh the greed factor of two
+children are one and two. You have three
+cookies and their sizes are big enough
+to gratify all of the children.
+Uh you need to output two.
+Well, I actually thought that that was
+what I was doing.
+Uh, I thought that because there were
+two children and two cookies that I
+should output two. Maybe that's too
+simplistic, but you know, it worked for
+the first one. Um,
+let me see. Uh, did I do everything I
+was thought I was supposed to here? Um,
+let's see. Let me go back through this.
+I'm sorting the kids. I'm sorting the
+cookies. Um I have my pointers I and J.
+While I is
+less than uh the number of kids and J is
+less than the number of cookies. Okay.
+if um the number of cookies
+is equal to or greater than uh the
+number of kids.
+And what am I saying down here? Um
+if the cookies
+Okay, the cookies are greater than the
+number of kids.
+Okay, I'm I think I'm okay so far. Um,
+okay. Then move to the next child, then
+move to the next cookie, and then
+return. Ah, um, I think something's
+going on with
+this up here, the equal to or greater
+than, but we were told over in the
+instructions to make it that way. Um,
+so I don't know what I'm doing wrong.
+So, what's the first thing you should do
+then?
+>> Uh, put a print statement somewhere,
+right?
+>> Okay. Um,
+let's see. Can I just do the second
+case? I'm not quite
+Can I just hit this one and have it
+Oh, okay. It's already Yeah, it's
+already on it. Okay, good. All right.
+Uh, let me see what I I'm really kind of
+curious as to the cookie situation as
+opposed to the uh kid situation.
+Um,
+I'm going to put a print statement um
+right here.
+And I want to see what
+um
+oh goodness I want to see what uh S of J
+is.
+Um I want to see how many cookies are
+involved.
+S
+and I think I also want to see how many
+uh kids are involved.
+And I'm going to run it.
+Okay.
+All right. Um,
+let's move this over a little
+so you can see it a little better.
+Okay, it looks like when I ran it,
+um, the first thing I ran
+Okay, the first thing that I ran was the
+number of cookies
+and the number of kids was next. So
+that's the number of cookies. One cookie
+to one kid. Okay. And the second time it
+went around it was two cookies to two
+kids. Now that should work. And I don't
+know why it's not.
+I do not know why that second case is
+not working because I am doing what it's
+telling me to. Um,
+>> so what does the print tell you here?
+>> Uh,
+the print saying that there is one,
+first of all, there is one cookie.
+There's one cookie. Uh, there is one
+kid. There is one kid. Then when I run
+two over here, I get
+two cookies and two kids. Uh, I don't
+reach the third cookie. [clears throat]
+>> That may be a thing.
+Um,
+how would I
+reach the third cookie?
+>> Do you need to reach the third cookie?
+>> Well, no. I don't think so because
+they're satisfied. You've got a matchup.
+You've got a matchup between kids and
+cookies. Now, how do you determine that
+the match has been met?
+>> Um,
+wait a minute. What's this one doing up
+here?
+>> There you go.
+>> What is that [laughter] doing?
+Oh my goodness. All right, we're going
+to run it again.
+Oh, okay. That was what I did wrong.
+All right. Uh, but this is the thing.
+Um, I wanted to my thing is to be able
+to actually explain what's going on step
+by step.
+>> I mean, I think you just did. You just
+missed the return there.
+>> Okay. But for me um just you know it
+gives me satisfaction and confidence
+uh to know what I'm what I'm writing as
+I'm you know what I'm doing and so that
+was the reason for labeling stuff and I
+think I'm going to label some more
+stuff. Um, okay. That was the pointer
+for I mean the big thing is what you're
+doing is the big bottom line thing is
+you're comparing the number of kids to
+the number of cookies. It's like if this
+character in uh matches up for kids over
+here with this character in cookies,
+even if it's more than one of them, if
+it matches once, that's enough. Uh if
+you've got two kids, um if you've got a
+one and two over here with the kids and
+a one and two over here for the cookies
+and that matches up, that's that's what
+you want. Um if I put let's say a three
+over here and a three over it would
+match up and you would uh you would uh
+have a output is a three rather than a
+two
+and
+that to me is being able to explain the
+problem. Now my thing is this. if you
+had hit me with this out of the blue
+like that young man last Wednesday where
+he was doing this because he was just
+hit with it out of the blue. I wouldn't
+be able to do it yet. And so what I'm
+doing is I'm trying to do as many of
+these as I can. But is that the kind of
+thing that you want when we go through
+an interview? That kind the what I just
+did. Just walk it through like that.
+>> Yeah. Yeah, I think everything you did
+was uh perfect, actually.
+>> Oh, okay. But no, I mean, because I've
+never been in an interview before, ever,
+and not even a mock one, and I just need
+to know what the rhythm of these things
+is.
+>> Well, there's only one way to fix that.
+[snorts]
+[laughter]
+>> Linda, I just want to say you did a
+really, really good job. and you did a
+really good job labeling what you were
+trying to do
+>> and you you really tackled the problem I
+think really well. And if you look at
+the rubric that Ruby put out
+>> um I think you did exceeds on almost
+everything. And the only thing that I
+would have said was um you know in terms
+of this you were returning one the whole
+time without figuring out what your
+counter was at but once you figured out
+what the counter was you were doing just
+fine. I I just want to compliment you
+how well you did
+>> on the on the mock interview. Good job.
+>> Thank you. And the other thing is I
+won't cry out for help in the future.
+Okay. when I get stuck.
+>> Why not? Come on.
+>> I won't cry out for helping. But okay.
+But okay. But no, this helps me because
+it at least tells me now what to expect
+and what the flow is like. That's very
+important to know what the flow is like.
+Okay.
+>> Yeah. So, the one thing I will say, um,
+I think that would have been a great
+showcasing for for a mock interview. Um,
+but the only thing is is that I know
+that you you've solved this problem
+before, right?
+>> Yeah.
+>> So, working from memory, this is great.
+This is exactly what I would want you to
+do having known the solution before.
+Come back to it a few days later and be
+like, "All right, let me work through
+this again now that I know the like
+general approach. How can I make sure
+that my technical knowledge is still
+good, that I can still sound out the
+problem, and that I can still code
+through any errors?" So, I think that
+was actually excellent. And again, your
+communication throughout throughout is
+exactly what I'm looking for. The only
+thing though is that when you ran into
+trouble, the first thing you were doing
+was making an assumption about, well, I
+think something's wrong here. And that's
+great. You want to make those
+assumptions, but then you weren't really
+sure what to do next. So that's when I'm
+like, okay, so what do we do here? And
+that's then you answered that's where we
+bring up the print statement. Exactly.
+and then you didn't quite get an answer
+that you were wondering. So then you
+were thinking maybe I should change
+something. And I think that's where we
+start getting into the the loop like the
+like mental loop of well I'm not sure
+what's going on here so I'm just going
+to start toggling things. And I think
+you did such a great job of reading line
+by line to figure out well that looks
+good. Well that looks good. I've added
+my print statements. It should be good
+here. But then we we went to the return
+statement and just went okay and then we
+return. And so how do we kind of catch
+those things? And I think one thing to
+do at that point if everything is
+looking good and your print statements
+even looked they're like okay yeah this
+is looks exactly what I want. We're
+getting to the three and we're leaving
+and then I just need to return the
+output that I'm hoping for. Taking a
+step back reading through the problem
+again and then asking what are my key
+things that I need to look for? What
+inputs am I given? What outputs am I
+expected to return? And what is driving
+the problem? In this case, the driving
+of the problem is, are all the kids
+assigned cookies? Yes or no? How many of
+them? And so that's kind of the key
+question that you were missing is how am
+I determining what cookies have been
+fed? And so when you were explaining it
+through, you were saying it correctly
+like I'm I have my greed, my greed
+counter, my cookies or my people and my
+cookies, my kids and my cookies. So when
+I increment the kids and that means that
+they got a cookie and so that's great,
+but then we also need to tie it back
+into well what am I keeping track of to
+return how many of the the kids have
+been given a cookie and that's when you
+realize oh that's the eye. Does that
+make sense?
+>> Yes it does. Yes it does. And I realize
+now why it crashed when I put one in
+there. That's kind of interesting
+because it just it wouldn't it it breaks
+the loop. I mean, it won't it um it just
+breaks it if you put a one in there.
+>> So, now I want to see if you press
+submit. Does this pass all the cases?
+>> Okay. Now, what am I supposed to do now?
+>> Submit.
+>> Submit.
+>> Yeah.
+>> Submit.
+>> Okay. Yeah. Great.
+Uh I am curious though that one okay
+processing it through if I got down here
+and returned one
+um I did get an error but essentially
+what's going on there? Um
+>> well your error wasn't about the return
+one it was about the while loop right?
+>> Yeah
+>> the naming.
+>> Yes.
+>> So that's why it's always good to read
+the error names.
+>> Yes. So what's your question?
+>> Okay. Um I think I just answered my own
+question. You know why was the error why
+did one make it an error? What did one
+actually do to the code itself?
+Um it sort of broke the the the read
+through with the code. If you put one
+here
+uh it just sort of like stops. It
+doesn't do anything. It just shuts it
+down.
+No, that's not true.
+>> What happened is that
+Well, let's see if you can figure out
+what happened. [laughter]
+>> I'll just put the one back.
+>> Put the one back.
+>> Put the one back
+>> and then run that again.
+>> Run it again.
+>> Cuz one case actually passed and that
+was the first case. Yeah. where it was
+uh the first case was how do we get back
+over here?
+>> Description at the top.
+>> Yeah. All right. Oops. Okay.
+>> Description. It's right along the the
+same area just on Yeah. Right there.
+>> Okay. Um because I noticed that one
+actually was the proper return for the
+first case. [clears throat]
+>> Um and that one actually still passed.
+So this is registering as the expected
+output for one
+>> case two is
+and it doesn't care where you get the
+one from whether you hardcode it in as
+one and put it in return or whether you
+actually go through the loop. That's
+what it was. That's the reason it passed
+one even when one was in here and it did
+not pass two because two is looking for
+something else entirely. It's looking
+for one and two.
+>> Well, it's just looking for two, right?
+>> I mean two. Okay. It's looking for two,
+>> right?
+>> Okay. Got it. All right. I'm going to
+put this back.
+Okay. Well, anyway, look, thanks for
+letting me do that. Um, and
+I got my studying cut out for me. So,
+I'm gonna stop sharing at this point
+>> and uh make room for somebody else.
+>> Great. I think that was great. Thank you
+for walking us through that.
+And then the next question I would ask
+you is, you know, what's the big O of
+that? But that's okay. We I'll
+>> think the big O is is probably very good
+on that one. [clears throat]
+uh simply well I mean look I've set up
+two pointers uh I'm you know
+it seems like I'm going through more
+stuff than I probably should
+um
+but and I and when I did well do you
+want me to get it back up here because
+um one of the bits of information that
+they do give you is information about um
+let me see hold Hold on a second. I'm
+going to submit it. Okay.
+Okay. And let me share again. Hold on.
+Okay. It gives you information
+uh about how this ran
+and Okay. Now, it didn't It looks like
+it only beat about 5% of the other
+people who tried it. Um, which I don't
+know if that's that doesn't seem like
+that's that impressive. Uh,
+>> uh, let's see.
+I don't know what it's talking about.
+That's just my code here.
+I don't think that tells me anything
+that we haven't seen already.
+>> Right.
+>> The big Oh, how would you actually
+determine what it is? The number of um
+microsconds it ran or
+>> so that that comes from your code like
+what is your code doing
+>> programmatically and then you have to
+map it to
+big O notation.
+>> Yeah. Uh the idea that let's see I beat
+um 27 51%
+I guess of the other people that ran it.
+But I just wanted to know, is there
+anything that tells you what the big O
+was? Um,
+>> yeah. I mean, AI can analyze it for you,
+but you have to determine
+>> Oh, I would have to determine what it
+was.
+>> Um, okay. So, I'd have to look at it by
+the structure of what's up here.
+>> Yes. Uh, and so, well, first of all,
+with regard to looking at the methods
+that are built into the Python library,
+I assume that they're in there because
+they are fairly low O, you know, uh, the
+G sort and the the sort, the dot sort. I
+don't think that that would cause more
+time. I do think though that having
+separate pointers probably slowed things
+down.
+Um, but I really
+don't know a better
+way of doing it without having a pointer
+for the kids and a pointer for the
+cookies.
+Um,
+>> that would be something we have to talk
+about um another time.
+>> Okay. [snorts]
+Okay. But I will give that to you as
+homework is to figure out what the big O
+is here.
+[laughter]
+>> Okay, I will do that. Okay, because but
+okay. Okay.
+>> Or [snorts] maybe just a while loop or
+something. I I I don't know. But I will
+go off and I'll figure that out.
+>> I mean, for from my perspective, it it
+looks good. Um it does have a higher big
+O and there probably are more efficient
+solutions, but I think just for getting
+a solution out there, that's totally
+good. Okay.
+>> So, Mauricio was asking if we still want
+to do a mock interview. Does that mean
+that you are interested in doing a mock
+interview, Mauricio?
+>> Yeah, why not? [laughter]
+>> Okay, so we have about 20 minutes left.
+If you don't mind going like five
+minutes over, we can still do that.
+Um,
+I mean I I pretty much consider that a
+mock interview. It just focused on a
+different aspect.
+So thank you, Linda.
+I just want to find someone that's easy
+but not too easy.
+Ah, yeah. Here we go.
+All right. I'm going to put this in the
+chat if you want to open that up.
+Sure.
+[clears throat]
+>> All right. So, we are looking at
+majority element here. Um, for this one,
+I'm just going to give you 15 minutes so
+we can keep it timely. Um, so just keep
+going for and and then we'll go from
+there. I'll determine if you still need
+more time or if you're wrapping up. Um,
+and we'll just kind of go from there.
+So, yeah, good luck.
+Okay, so there is an array of nons
+and then uh
+they're looking for the majority element
+which is the one that appears end over
+two times.
+So you have to return the majority
+elements and in this case it's three
+because three over two is 1.5
+and it's more than that. So two times.
+So
+so this is two times and here
+the majority element is two because the
+size of the array is 1 2 3 4 5 6 7 uh
+divided by two is 3.5.
+So more than that is four. So we have 1
+2 3 4. So it's two. So the array is uh
+the length of the array it's n and the n
+could be between 1 and 5 * 10^ the 4 and
+the values of the array can be between
+minus 10 - 10 9 inclusive all the way to
+10^ the 9 inclusive.
+So
+you'll have to just uh count the
+frequency of elements
+and the length of ah I have to do the
+pseudo code first.
+So a figure hashmap
+for frequency
+and uh calculate
+n /2
+which is length
+over two of the array. Okay.
+And then
+try to match [snorts]
+a frequency
+with
+and over two
+and return that value. Return that key.
+So that will be I'll have to look for
+it. [gasps]
+I want to see
+and
+What I can do instead of that I can do
+frequency
+frequency of nums
+num
+equal
+I could say get
+num and
+none
+zero plus one
+that's another way to do the same thing
+to get it in the hashmap
+so once I have into the hashmap I need
+to calculate the length
+the length can be leng
+it could be a good
+and then
+over two.
+So I need to
+I need to go through the whole array
+first. So this will need to be outside
+and
+match the frequency with n /2.
+So
+if I go
+to address the frequencies only the
+values uh
+for
+the in
+frequency
+values.
+If they equal
+n /2
+then then
+I'll have to return the number
+return.
+Now I have to go through both. So
+K
+return.
+Okay.
+I know. It's got to be greater though.
+greater than into the two
+return to
+so it says you may assume that the
+majority exist so it's it's always going
+to exist so
+I guess you don't need
+to return something else here
+so let's see what if this blows up in my
+face or
+No, I didn't.
+Okay.
+Hopefully, I was done this time.
+It's only 20%, but at least I finish.
+>> Very nice. And that was only 10 minutes.
+So,
+>> yeah, sometimes it's like that.
+Sometimes I just want to burn my house
+down and leave it. [laughter]
+>> Yeah, this one's nice because you've
+used frequency a lot lately, right? Like
+we've seen frequency in a lot of
+problems.
+>> Yeah, I've been I've been really working
+hard on this even though I'm not, you
+know, telling anybody.
+>> But this is good. I mean, so I think
+that shows that you're really confident
+in a subset of the data structures, um,
+and even the approach for problems of
+this type. And so then it's just making
+sure that you're rounded out for the
+other types of problems you might see.
+And I think you probably are except for
+maybe like one or two tricky ones. Um,
+so yeah, this was really good.
+>> Thank you.
+>> All right.
+>> Great job. I may
+>> I just I just want to say great job,
+Mauricio.
+>> Thank you. I I probably schedule uh my
+second attempt soon and I will talk to
+you on the DM about uh
+some changes
+in my situation. So
+yeah.
+>> Wait, sorry, what did you say? I
+couldn't hear you. [clears throat]
+uh two things that I probably schedule
+the second attempt soon and I'll uh talk
+you in the DM about some changes. Uh
+>> I discuss with Dr. Emily as well in my
+situation right now.
+>> Okay.
+>> Okay. Sounds good.
+Um, so the only thing for this one I
+will say is that
+they give you some
+information here.
+I just kind of want to discuss this
+briefly.
+There's some things that you can glean
+from this. So, I mean, they tell you
+that a majority element is one that
+appears in over or more than an over two
+times, which we saw Mauricio use. Um, I
+mean, if you were to say it another way,
+you could also probably say the number
+that appears the most frequently, which
+is why you use the idea of a dictionary
+or a frequency
+um, array kind of thing. Three would be
+the most frequent number there. And then
+they're saying that you may assume that
+the majority element is all always
+exists in the array. Meaning that
+there's always only going to be
+one number that is
+n / two greater than n /2. Um or you
+might also consider that to mean there's
+only going to be one number that is
+going to be most frequent. The only
+caveat between them giving you this
+formula here and saying that there's
+only one majority element versus like
+just find the most frequent element is
+well there's a a little bit of
+complexity in saying a majority element
+with this formula um that might like
+throw you up throw you up [laughter]
+throw trip you up.
+The other thing is
+um that when you're using this formula,
+you could, you know, potentially cut out
+early, right? Like if you're building
+your frequency dictionary and you find a
+number that has just reached that
+threshold of we've surpassed n over two,
+um well, since we've been told that
+there's only ever going to be one number
+in a test case that passes that
+threshold, then we don't need to keep
+building our dictionary. we don't need
+to keep considering any other numbers
+because we found it. Uh assuming that
+you've built everything out correctly.
+So that's the only feedback for you is
+that I know this one seemed like a slam
+dunk for you because it was. Um but it's
+still always good just to check your
+bases as you're going along to make sure
+that everything looks right. You built
+your frequency dictionary. How can we
+confirm that that looks how it's
+supposed to look? Can we print that out?
+Can we make sure that the dictionary was
+built the way that it should look
+compared to our numbers that we're
+seeing? um that way you don't get to the
+end of your code have this long code
+block of several lines and we haven't
+tested any of it, right? So if we hit an
+error, who knows where that error is
+going to be up the chain. So that's the
+only feedback I have really. Um similar
+for Linda, right? Like we got to the end
+of that code block and we hit an error
+and we had to kind of go back in pars.
+It's like, okay, well it's telling me
+it's on this line, so I know it's on
+this line, but where what's going on
+with it? If we had gotten to writing out
+the while loop, hit the print first to
+check it, then we might know, okay,
+well, it's exactly in this line.
+Something about the logic of this line.
+I don't have to wonder where the logic
+kind of fell apart cuz I've only just
+written that.
+But otherwise, excellent.
+They have this followup. Could you solve
+the problem in a linear time and in O
+one space? So, oh O of one space. So,
+what do you think, Maraio? Did you did
+you hit hit this uh benchmark here?
+>> No. Where it says that?
+Ah, followup.
+>> Yep.
+>> Uh yeah, that refers back to what you
+were saying like doing an early exit in
+the same loop by checking the value
+early in the same loop. Well, not quite.
+So, you did solve it linearly because
+linear time is O of N, right? And so,
+you went through
+well, you had two loops, but they were
+both O of N loops and they weren't
+within each other. They were separate.
+So the overall O of time complexity was
+linear O of N. O of one space though,
+how much space does a dictionary take?
+takes over n because I go through all
+the elements.
+>> Yes. So they are saying here that
+there's potentially a solution that is
+still o linear time. So it still goes
+through and loops you know once or maybe
+in two separate increments um but takes
+up only the space that it takes up to
+store a variable basically.
+>> So are they saying that [clears throat]
+it without a dictionary?
+>> Yes. [laughter]
+Oh,
+>> I know. Yeah, I'm even sitting here
+thinking, hm, that's interesting. Um,
+[snorts]
+so this is more of just like testing
+your skill set that would probably make
+that a medium problem, maybe. Um,
+but the solution was great. I mean, it
+was excellent. So, that's where you were
+seeing that there was potentially an
+improvements in other people's
+approaches. That's probably because they
+were taking they probably did exactly
+what you showcased and then took the
+challenge of doing the followup and
+tried solving it using O of one space
+there. So that would be a good challenge
+for for everyone else as well to see if
+you can figure that out.
+Now there is one more thing I wanted to
+showcase before we closed out today.
+And Linda, this mainly um I got this
+idea thinking from you, but I had wanted
+to talk about it a little bit a while
+ago as well.
+So, when we're thinking about um
+let's see,
+when we're thinking about like preparing
+for the technical interview and how does
+it showcase in the real world and real
+world problems, I wanted to talk about
+this example here because everything
+that you're learning and practicing for
+the tech interview definitely does come
+back
+in
+in the internship and beyond. like there
+is definitely skill sets you were
+building there that are going to take
+you from good to great when it comes to
+performing in the real world. So this
+here is something that I actually had to
+write for a little project that I have
+and so it's called the full text search.
+So it's very similar to the idea of the
+string replace um that we talked about
+for Python string. They have the
+built-in string method replace where if
+you, you know, if you pass it a string
+and you say find all occurrences of this
+substring within it and then replace it
+with a separate substring, how does it
+do that? And so, Linda, you took that
+challenge. I think Mauricio, yeah,
+Marcia did that challenge as well and
+built an actual class for it as well.
+So, this is similar except it has kind
+of an additional challenge on top of it.
+So here I wrote kind of the basis of
+what the function or class might do
+which is here is a full text search.
+This search is to take a string and look
+for all match replacements on the
+string. This in reality we want to
+highlight all potential matches
+regardless of their case. So this this
+and even this should all be replaced.
+Um, but also we want to add a highlight
+wrapper around them which you can do
+with HTML. There is a HTML string called
+uh let's see where is it at? I have it
+written down here somewhere.
+Oh, actually this isn't in here but it's
+just called highlight. It's very
+straightforward.
+And
+but you want to keep the original
+casing. So if you manipulate the string
+that you are given to find all
+iterations of the string so of all of
+its different casings when you return
+the string with the replacements done
+you want to keep their original case
+matching. So [snorts] the approach that
+comes through for
+replace may or may not include this. In
+fact, if I had to look,
+I might say,
+let's see.
+I want to I'm going to test that really
+quick.
+[snorts]
+Python string replace.
+Maybe it does.
+[snorts]
+So, I like bananas.
+And then I'm just going to do with a
+capital.
+I don't feel like typing all of that,
+though.
+See if it if it matches that.
+It doesn't. So, it replaced the first
+one that had an exact uh case match for
+bananas and replaced it with apples. So,
+I like bananas, bananas. and then it
+only replaced the first one. So the next
+level beyond that is doing a
+noncase exclusive replacement function.
+So could we find all cases of banana
+within a string regardless of what is
+capitalized at any given place and then
+find and replace it with another string.
+And then in my case, I was also
+highlighting it so that you could see
+that and use it for uh
+use it for the project that I was using
+it for. So then the end result would
+look
+like what I had shown here,
+which was that those words were
+highlighted.
+So this was the code for doing the
+search part. It didn't do the
+replacing with the highlight. It was
+bolding them instead. And actually, I
+think it was only this function isn't
+actually the right function. I pulled
+out the wrong function, but it does
+something similar. Um,
+so this was a real use case that I had
+for a real world project and it's
+similar to what you would learned with
+the replace string replace function and
+similar to something you might see in a
+leak code problem, but then there are a
+few layers of complexity outside of it
+to apply it to a real world project. So
+it would be even different from leak
+code because it would be like doing a
+medium problem and then doing a medium
+problem but a little bit harder because
+you have to apply it to the real world.
+And that's what we're talking about when
+we're talking about all of our
+practicing. If you know how to make the
+replace function, doing something like
+this is a lot easier because you start
+with that baseline of okay, well, I just
+use the idea of replace, right? Find a
+string, replace it, and then if I can do
+that, what adaptations or changes do I
+need to solve the next goal of
+[clears throat] replacing all cases of
+it and then returning those cases back?
+And then even more than that, how can I
+replace it and add in HTML wrappers
+around it to do this highlight feature
+or even a bold feature so that it bolds
+them or italicizes them. So there's a
+few layers of abstraction away from the
+replace method, but starting from the
+replace method is going to be your
+template code more or less that you can
+build up from. Um so I wanted to
+showcase this because it's not something
+we get to talk about a lot in our weekly
+meetings but um yeah here it is a real
+world example of why preparing and
+studying for the tech interview and
+practicing those data structure
+principles algorithmic principles and
+even practicing the string and not
+string but all the methods and libraries
+from Python classes is a good way to
+build up your technical knowledge and
+foundational skills so that you can do
+neat and interesting things in the real
+world and not struggle with them.
+So that's it. That's that's all I have.
+Um
+>> now we post that in the Discord, please.
+>> Post what?
+>> That application in the real world.
+>> Well, so it's not live yet,
+but um
+if you want the challenge, I can post it
+as a challenge.
+No, I mean I want the code. I don't want
+the challenge.
+>> I can help you with there. You got to
+take the challenge.
+>> Okay, then forget it.
+>> All right. Do we have any questions
+before we close out today?
+>> Um I just the format for next Wednesday,
+someone's going to volunteer and do a
+mock interview. That's the thing.
+>> Yep.
+>> Okay.
+>> Ruby, hi. How are you?
+>> Good. How are you?
+>> Good. Are you still in Spain?
+>> I am still in Spain.
+>> Oh, how wonderful.
+How wonderful. [snorts]
+>> It's getting cold now. I'm I'm chilly. I
+have to actually wear like jackets and
+stuff when I go outside, which is funny
+because it's still like 60°. [laughter]
+>> That's wonderful.
+[clears throat]
+>> All right. So, if we don't have any
+questions, we can go ahead and close out
+for the evening. And yeah, you have
+those couple of thoughts that we left
+off with. Um, if you want to take that
+challenge of the easy problem that Morao
+worked on, but coming up with the more
+efficient version with the O of one
+space, um, or if you want to try this
+full text search highlight replacement
+challenge, that's also available for you
+purely just for your own educational
+benefit. Um, we won't spend too much
+time like reviewing that or anything
+unless you want to showcase it. But
+otherwise, we'll continue with our mock
+interviews on Wednesday.
+All right.
+[laughter]
+>> Thanks.
+>> Great session today, Ruby. Thank you.

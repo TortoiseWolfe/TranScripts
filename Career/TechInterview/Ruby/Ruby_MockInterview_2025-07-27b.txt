@@ -1,0 +1,269 @@
+All right, welcome to this week's Sunday
+session of Nailing the Tech interview
+where we focus on the mock interview.
+Um, before we get started, does anyone
+have any questions they'd like to ask
+about
+Joy of Coding? Um,
+tech interview. Wow, blanked on that
+word. The tech interview uh for joy
+coding for the job hunt practicing
+preparation. Any questions at all? What
+questions do people have?
+Okay.
+No words.
+>> Yes, Rebecca.
+>> I looked at this ice cream parlor. It
+says it's easy and I timed myself before
+even looking at it. And to just read it
+and understand what it was telling me
+took me 15 minutes and I'm supposed to
+complete a an easy within or less than
+15 minutes for the technical interview.
+I only digested it like I didn't even
+start coding and I finished reading it
+in 15 minutes. So
+>> yeah, that one is a little unique. Um
+we've talked about it before. So, it's
+also referred to as the twosome problem,
+um, which we went over in leak code.
+That one is the hacker version, which
+they dressed up and renamed as ice cream
+parlor for some reason. Um, but the
+general idea is the exact same for both
+of them, um, just on different
+platforms. So, when we talked about it
+the first time we saw it, it is actually
+more of
+I mean, I guess you could it could be
+considered easy, but I would also kind
+of consider it more on the borderline of
+medium. Um,
+so I wouldn't feel too like worried
+about having spent 15 minutes just
+trying to digest the problem. But I do
+think it's a good exercise to just see
+how long it takes you from start to
+finish. I mean, even if you spend 15
+minutes reading it, five minute pseudo
+code, and then like 10 15 minutes to
+solve it, if you're still doing that as
+like a starter run, um, if you're if
+especially if you're just getting
+started on hacker rank and leak code
+problems, I think that's a excellent
+goalpost to be in. Do you feel like you
+understood it by the end of that 15
+minutes? Yeah, I I I was trying to solve
+it with a dictionary, but it may not be
+solvable with a dictionary. And um uh I
+don't know how to get the indices
+necessary indexes of of the numbers. I I
+get the numbers from the array that add
+up to the total money, but I don't I
+can't figure out how to how to get the
+computer to return the index. That's
+where I get stumped. Sure. Well, it
+sounds like you're on the right path.
+I'll say that. So, definitely keep
+playing with it and see where you can
+get, how far you can get.
+>> Thanks.
+>> All right. Any other questions?
+Okay. So, today we're going to do what
+we normally do. I'm gonna go over an
+easy problem. We'll pull out some pseudo
+code, talk about how we might work on
+the problem, and then we'll jump into a
+mock interview. For the mock interviews
+moving forward, I think I want people to
+focus um mainly on what we cover in the
+session of just reading and digesting
+the problem. Just like you were talking
+about Rebecca, pulling out what we can,
+what assumptions we can make, writing
+some pseudo code, getting a game plan
+written, and focus exclusively on like
+presenting yourself, making like
+presenting that you understand the
+problem, presenting your pseudo code,
+writing your pseudo code, and no code at
+all. So, we won't touch code at all for
+the mock interviews at least for a
+little while moving forward. I think
+that'll be a better strategy because I
+notice that we all have this tendency to
+just jump right into the code and I I
+don't think that that's uh the best plan
+going to serve us the best in in
+practice and preparation. So I think I
+want to remove that barrier for everyone
+and just have everyone focus on okay I
+just have to write some pseudo code
+explain the problem as I understand it
+explain what I might do maybe get some
+like steps written out and then stop
+once we have reached that point before
+you would jump into code does that make
+sense
+okay
+cool so basically exactly what we're
+about to do for the easy problem is what
+I want people to do for the mock talk
+interview.
+So with that I will share my screen
+clicked the wrong button.
+Okay. So oops we are going to be looking
+at contains duplicate
+right there.
+Uh, let me pull up my chat real quick.
+So, given an integer array nums, return
+true if any of the values appear at
+least twice in the array, return false
+if every element is to state. Okay, so
+just a one-s sentence explanation, not
+too crazy. Um, we can pull some stuff
+out of that. So with their example,
+let's look there first. We're given nums
+integer array
+1 2 3 1 and they are expecting an output
+of true because the element one occurs
+in the indices 0 and three. So we don't
+have to return the indices or do
+anything with that. We just have to see
+if any of the numbers repeat multiple
+times or more than once at least twice.
+They say
+1 2 3 4. All these values are unique, so
+we return false.
+All elements are distinct. And we've got
+a few repeats here of a bunch of
+different numbers, so they're returning
+true.
+All that looks pretty straightforward.
+Um, I know there's kind of a jump
+between the easy and the medium
+problems, but this one seems pretty
+achievable, right? So, nums.length,
+length the length of the array that
+we're given can be between 1 and 10 to
+the 5th
+1 to the 10 to the 5th I believe is like
+100,000
+and then nums I so any of these values
+inside the array
+can be between -10 the 9th and 10 to the
+9th so we can get some crazy numbers in
+there not too worried about the size of
+those numbers I think we're just we'll
+focused on repeating
+all All right. So
+just to restate everything in my own
+words, we are given
+given an integer
+array
+and we
+oops
+need to find
+if I had to say this another way
+frequency
+of any given number.
+I might say it like that. So, we're
+given an integer array and we have to
+find the frequency of any given number
+inside of that array.
+And then a few lines down, I'm just
+going to add my return statement.
+Return true.
+If any
+numbers repeat,
+false,
+otherwise
+all numbers
+unique.
+Um, and that's kind of all we really can
+pull out of this one.
+I know I mentioned not doing code, but I
+think this one is kind of a freebie.
+just printing out the parameters to make
+sure that they match what I'm expecting.
+So, nums always ignore self. It's just a
+part of their setup. But we are given
+nums. So, if I wanted to see what nums
+was,
+don't do this to me.
+All right, I'm going to copy this.
+I don't know why code's being weird.
+Okay, it logged me out. Cool.
+One second, you guys.
+Just going to log in once it loads for
+me.
+Okay.
+All right. Cool. I kept all of my
+information. Good.
+All right.
+So, print nums.
+So they give us this 1 2 3 1 and that is
+what I'm expecting. They're expecting
+the output of true
+and false. So that matches everything
+I'm expecting there.
+All right. So what ideas do we have
+about solving this problem? Does anyone
+have any ideas for what we might do?
+Yeah, I'll go. I'll um
+I was thinking um transversing the list.
+So, we probably need a for loop.
+>> Okay.
+With within that for loop,
+do a count. Um so you know so four I in
+the array.
+>> Mhm.
+>> Do a a count of
+how many times that value say I is in
+that array. So just do a count and if
+the count is greater than one
+set the value to return true.
+>> Okay. So how are you tracking count of
+what the value is?
+>> So the value would be four I and loop.
+So that's your index.
+>> Uhhuh.
+>> So that's the index of the array. So
+when you track
+the if the count has to only be greater
+than one, right? So if I initialize I
+can initialize a counter if I want.
+Um,
+>> so that would be a variable.
+>> Yeah.
+>> Okay.
+>> And we start with one.
+Okay.
+So, you're saying you would start with
+this value and traverse through the list
+and see if that value repeats anywhere
+else.
+>> Right. And then you're thinking you
+would do that for each of these. So then
+you'd move on to the two. See if the two
+repeats anywhere else.
+>> It's the four loops. So you use the
+value of I. So, so if I say for i in
+array,
+>> uh,
+>> I use the i value, which is the index of
+the array and look up the value
+and see if the value equals the same as
+I as as the value of i
+and do a count on that.
+>> Okay? And if it's true, if it's more
+greater than two,
+uh, I mean greater than one,
+then that means it's true.
+>> That makes sense.
+>> Yeah. So, you're expecting one loop or
+multiple loops.
+>> Uh, one loop. Well, one
+um
+four.

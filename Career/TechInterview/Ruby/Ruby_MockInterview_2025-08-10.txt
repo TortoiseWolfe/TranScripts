@@ -1,0 +1,1048 @@
+Okay. So for hacker ranking
+certifications I think it depends. I
+did.
+I mean, you saw me post in the Discord
+chat that I had done.
+Oh god.
+>> Yeah, you had JavaScript and you had
+something
+>> JavaScript intermediate and front end.
+>> Nice.
+>> React, which I'm not even seeing those
+on this certificate thing anymore. Okay.
+So there's JavaScript
+basic
+problem solving problem solving Python
+SQL.
+Yeah. So either they renamed the
+software engineer one or they got rid of
+the front end one. I'm not sure. Um
+that's weird. I haven't looked at these
+in a while. I did it because I thought
+it was fun and like you said it might be
+good to have on a resume. I honestly
+don't think interviewers care about it.
+I don't think like companies really care
+about it too much.
+Um
+>> well no that's that's good enough for
+me. I'll I won't bother then.
+>> I don't know. I they're kind of fun
+though also at the same time. So, like I
+enjoy doing them and I enjoy including
+them on my like LinkedIn and resume and
+I do have them on my LinkedIn and
+resume,
+but I don't I honestly don't think that
+people look at them too much. Um, but
+it's kind of just common that everyone
+has some kind of like certification at
+online school or certification in
+JavaScript and XYZ thing. So, I think
+they're cool, but if you don't want to
+do it, I don't think you need to do it.
+And here, I'll I'll share for everyone
+what we're talking about.
+Oh, that's my personal information
+there. There's my
+stuff.
+Certify. So these are the certifications
+that you can do on hackerink. So there's
+software engineer intern, it covers
+problem solving and SQL and software
+engineer. It covers problem solving SQL
+and REST API.
+So those are all things that you would
+work on in the internship
+um on Joy of Coding.
+They're usually timed. This one's 1
+hour, four questions. And for the one
+that I did, which was front-end
+developer parenthesis react, so it was
+react focused, it was like
+I think there was like one or two
+multiple choice questions and then two
+like projectbased questions where you
+had to
+basically like code a little mini
+project.
+Um, but it wasn't really it wasn't hard
+at all. But this one's different because
+it it would be more of like a full stack
+kind of thing. So, I'm not sure how hard
+it is, but I don't remember them being
+very hard. Demonstrate your problem
+solving. It's equal skills. And it tells
+you basically what it has
+in it. These are people who must have
+done it.
+I wonder if there's other what this
+does.
+Oh, fun.
+Super engineer.
+What about
+it?
+to full stack. Oh, here's ah here's the
+one I did. So, they still do have it. I
+don't know why it wasn't showing up on
+that list. So, I did this one. Frontend
+developer React. What's the difference?
+Quality problem solving. Basic React.
+So, it's all the same except it's just
+JavaScript and not React. Okay. Frontend
+Angular.
+So, if you want to do the one I did,
+it's here.
+Um,
+but you I would even say you could do
+any of these like smaller ones. I think
+these link to the subcertifications.
+Skills directory. Ah, yeah. Skills.
+Skill directory. Yes. So, I actually
+haven't done this one. Problem solving.
+And then they usually have levels. So,
+basic, intermediate, and advanced.
+And so, you could level up. You could
+basically say start with the basic, see
+how you do. do the intermediate, see how
+you do.
+Brian said, "I like data camp for data
+folks, but to Ruby's point, I'm a
+certified data scientist, but companies
+do not really pay attention to that."
+Yeah, it depends if if the role requires
+like a certain I think this is where it
+gets tricky is that some roles like for
+project management will require
+sometimes a certain project management
+like level. And so there's like official
+certificates or courses you would do to
+be like a certain kind of project
+management certification certified, but
+for development there's not really an
+equivalent for that. So, this is just
+kind of a
+I don't know like self-promotery thing
+that Hacker Inc allows, but I think it's
+still fun and it's still to give
+yourself a
+kind of snapshot into how you're doing
+based on where they think you should be.
+So, like if you were doing problem
+solving intermediate and advanced, I
+actually don't know. I imagine this one
+would be pretty hard.
+So work with data structures like trees,
+graph traversal, find the shortest path,
+dynamic programming knowledge.
+This I would assume would be like maybe
+the equivalent of doing a bunch of hard
+level hacker problems.
+Intermediate hashmap stacks cues
+no distances algorithm use optimal
+solutions to solve. So this would
+probably be along like the medium level
+problems and then basic would be along
+the easy level. I mean that just at like
+a glance that's what it seems like. So
+that would actually be a good test for
+everyone if you want to try this and get
+the problem solving basic. That would be
+a good equivalent to what we do at Joy
+of Coding having like an easy level
+challenge that you have to do in a
+certain amount of time. This would be a
+little bit different. you probably get
+like two or three that you'd have to do
+within an hour versus me giving you one
+to do within 20 minutes. Um,
+but this is fun. I mean, I might
+actually do these just for fun because
+I'm weird like that.
+Ah, here we go. Here's
+here's the full list of things.
+That's interesting.
+Now, last time I checked, they didn't
+have a JavaScript advanced.
+Yeah, see they don't. They give you an
+advanced drop down, but there's no
+certificate thing there. I did the inter
+intermediate one, but even this one is
+outdated, I found,
+unless they've updated it recently.
+Um,
+it used like a really old version. It
+was based off a really old version of
+JavaScript. It was like, I don't know,
+like ES10 or something. and JavaScript
+is on like ES 18.
+So, it wasn't bad. It just wasn't great
+either. But some of the other ones might
+be better. I would certainly try the
+Python one.
+Let's see what else is on here.
+Python. Python. Python.
+PowerShell. That's fun. So, problem
+solving is there.
+Python
+There's a lot of good stuff on here
+actually.
+So they might be fun if you have worked
+in a specific like knowledge area like
+if you've done selenium which is usually
+like a um like a quality assurance
+automation software testing tool. So if
+you have experience with that, that
+might be it might be good actually in
+that case if you were applying for a
+role that asked for people to have some
+experience with Selenium. If you had one
+of these little certificates, that might
+actually be something that's worthwhile.
+But I think there's very rarely an
+overlap where if I was applying for like
+a software engineer position and I had a
+software engineer certificate from
+Hackerink, I don't think they'd care too
+much.
+But if they wanted you, if you were an
+otherwise good candidate, like you look
+good on paper for for your skills and
+your experience, you were at the junior
+developer level that we do at at Joy of
+Coding, you gotten that junior developer
+level ship, you have projects to
+showcase, client projects to showcase,
+and you were applying to some place that
+wanted like experience with React and
+SQL and XYZ thing and they had
+certifications for here, it certainly
+wouldn't help. It might give you a
+slight edge, but I don't think it would
+I don't think it would hurt you by not
+having them is the big thing.
+Tech communication. There's a lot of
+these.
+So, these are kind of cool. I might I
+might look into these more myself just
+for like the fun aspect of it.
+Um yeah that's that's those oh yeah I
+wanted to look at this
+type strings modular program design
+object-oriented
+built-in functions like map lambda so
+then what's intermediate
+closures and decorated object-oriented
+collections exceptions context regular
+expressions
+woof concurrent programming programming
+file, operation, unit testing, logging,
+deployment. Okay,
+that's kind of crazy. So, this would
+basically be like a really good summary
+of everything you learn in mod 2. It
+would be like all the mod 2 projects
+scaled into like one certification
+for to be basic. I imagine this might
+actually be kind of tricky to do within
+an hour time range. So, I'm curious
+about that.
+for intermediate.
+Okay.
+Uhhuh.
+So this is like basically advanced
+object-oriented programming
+stuff.
+Regular expressions.
+These would be things that you have not
+learned a joy of coding. Um,
+and honestly that might not even be
+useful
+in your career. It depends
+if you were like
+I think these would be good for data
+science maybe if you had intermediate up
+to advanced Python certificate
+but I don't know
+that's kind of a lot
+yeah
+okay well so yeah that was a good
+deviation Sorry, I kind of got absorbed
+into that. All right. Um,
+okay.
+So, why don't we
+actually kick off this meeting? Sorry
+about that. I kind of got stuck in
+there.
+I'm going to explore those. If if you
+all want to do those together and like
+compare notes, I'd be fine with that.
+That'd be fun.
+I'll probably
+do the Python one
+and the software engineer one I might do
+but that's not required for all of you
+because I don't I don't think anyone
+here is in the internship
+except for Abu.
+Okay, so welcome to nailing the tech
+interview. We kind of got carried away
+there with certificates. TLDDR, don't
+feel like you need to do them, but if
+you want to, could be good practice,
+good fun. Um, before we move forward,
+does anyone have any questions they'd
+like to ask about the technical
+interview, Joy of Coding, how to
+practice for it, preparing for it, any
+thoughts or questions you might have,
+what questions do people have about
+that?
+>> Hi. Uh
+um yes Mina it's quite early here in my
+part of the world. I just wanted to ask
+you I remember uh several well I don't
+know maybe 10 years ago even but several
+years ago I I know there was a site
+where I could um uh basically uh answer
+questions for exam uh for a certificate
+and it would you would pay a membership
+and then it would go for a month or two
+or three months and you could do all the
+time some exams testings not for real
+but you would just get those questions
+that come to that certificate um um exam
+is there something like that uh now that
+or or it's or it's up to you just to go
+to YouTube and watch the videos and
+questions and answer answer them like
+that. I just wanted to see if I can um
+because I'm I will be preparing for
+certificate. Um it's related to the
+business analysis.
+Um and it's quite specific. So
+yeah, is there something like that that
+you know of?
+>> I'm not sure. I mean I think hacker does
+have some stuff like that.
+Or you could even if you're focusing on
+a specific kind of thing that you're
+practicing for, you could see if hacker
+rank has a similar one. Or even what I
+just saw when I was looking at it, it'll
+have all the sub pieces too. So the
+software engineer one had like problem
+solving, SQL, a few other things,
+communication or something like that as
+like subsklls. So if there was something
+you were specifically thinking about,
+you could look at what the relevant
+skills would be and try those. Um,
+>> so so this hackering this website does
+it
+you can just mock do exam mock exam if
+you want.
+>> Yeah, they have lots of they have lots
+of mock exam stuff kind of on there as
+well.
+>> Okay.
+>> Yeah.
+>> All right. Thanks.
+>> Any other questions?
+Well, the the tech interview is just a
+hacker rack problem or it has other
+pieces to it.
+Yes. So, for the joy coding technical
+interview, we only use hacker rank. Um,
+I like to practice on lead code during
+these meetings, but you don't have to do
+that in your own practice if you don't
+want to. I find the hacker rank ones are
+better at this level because they give
+you all the information that you need
+whereas the leak code will intentionally
+like leave information out to kind of
+make you do the extra work which is good
+practice but kind of makes it harder um
+because you kind of have to
+like find all the edge cases kind of
+thing or like even make a lot of
+assumptions based off the information
+they leave out. Um, so yes, hacker rank
+at an easy level is what we do for joy
+of coding. If you do the problem solving
+track on hacker rank, which is what they
+like immediately recommend for you as a
+starting place and you're practicing
+those and you're getting to the point
+where you can solve easy problems. I
+recommend about three in a row
+consecutive that you can solve under the
+20-minut time limit. That's a really
+good starting point to say maybe you're
+ready for the technical interview.
+uh three problem solving. So three other
+type of problems.
+>> Yeah, the problem solving track includes
+algorithms and data structure
+data structures as topics for all their
+problems. So it's a mixture of those
+kinds of problems which is everything
+that's from mod 2. Um so yeah, if you
+did the problem solving track, it would
+be basically everything from mods one
+and two but in a hackerink form.
+Okay, thank you.
+>> Any other questions?
+Okay. So, I am looking at this which is
+posted. I'll show you actually. Oops.
+So, in Discord on the Hacker Rank
+channel, one of the pinned messages I
+posted a while ago is all of the subject
+areas that are covered in mod 2 that
+will be may be tested on at the tech
+interview. So you might get a problem
+that focuses on well those are kind of
+not inclusive that focuses on arrays and
+lists or focuses on dictionaries
+um or focuses on having searching and
+sorting be a part of it. You might have
+a linked list problem. So these are all
+the general areas that you should study
+and review from MAU and feel pretty good
+about before taking the technical
+interview. If you're doing the problem
+solving track in Hacker Rank, you will
+hit all of these. I'm going to scratch
+out input output. You won't be required
+to utilize input output. Um,
+this refers to file input output, which
+is a part of mod 2, the projects, but
+there aren't I'm not going to give you a
+hacker rank problem that uses that. Um,
+but everything else in here is pretty
+standard.
+And when I'm looking at this, we've
+actually covered
+all of these subjects pretty like pretty
+extensively over the last several months
+of challenges. Um, so I'm kind of
+running thin on problems to to stretch
+my to stretch you all to uh get to that
+level. So if you look back at all the
+the checklist, oh, that is another
+pinned item. So this is
+yes, this playlist here is all of the
+weekly tech interview sessions. So if
+you worked back through all of those,
+you would definitely cover all of these
+materials, but that's kind of hours and
+hours.
+Um, so moving forward, I might focus
+Sunday on just doing mock interviews and
+not working on
+like explaining things as much and just
+give people the opportunity to test
+those out
+because we're kind of running out of
+problems and I don't want to use them
+all up. But I just wanted to showcase
+those two things for everyone if they
+weren't aware that those were there.
+So, that being said, do we have any
+volunteers today who would like to try a
+mock interview or want to
+test their skills out? Um, we have two
+options available. I would recommend
+that you we could do I'll give you an
+easy problem and you just do pseudo
+code. You don't have to type out the
+code. It's just kind of thinking through
+the problem, pulling out what is
+required of it, where you're expected to
+return, how you might approach it, but
+you can do it all in code comments or
+using Microsoft Paint or whatever you
+want to use. And then we have the
+additional challenge that if you want to
+add code to it, we can do that as well.
+So, do we have anyone interested in
+doing either one of those forms of a
+mock interview today?
+anyone at all. Don't be shy.
+Brian, how are you feeling today? Are
+you computer ready?
+How much training you have to have had
+previous to take a mock interview? I
+mean how many problems should you have
+done before it or you should have gotten
+a hackerank certification on problem
+solving or what is the level of training
+to consider you ready to start taking
+technical interviews?
+If you've completed mod 2 up until
+projects two or three, I'd say that's a
+good enough point to
+try it.
+>> Okay.
+>> Um to answer your question, Ruby, um I'm
+I'm exhausted.
+>> Okay.
+I'm um I'm in the process of moving
+right now, but I think I'm going to
+schedule
+uh the interview. Um sooner sooner than
+later. Um but today I'm just I mean
+um I'm I'm just not up to it today. I
+need to get some rest.
+>> All right, no worries.
+There is the option of not using code
+though if you just want to work on
+reading through a problem and
+summarizing it getting a game plan. I
+think you can knock it out.
+>> Um but how about how about next week?
+Can I
+>> have taken it? Um I will do it next
+week. Is that is that fair?
+>> That's fair. I'm so tired.
+>> Lisa, how are you feeling?
+>> Pseudo code ready.
+>> Um,
+can we do the pseudo code?
+>> Yeah, you can do just pseudo code.
+>> Okay.
+Okay, cool. Um, I think it might be
+easier if you open up Hacker Rank and go
+to your list of unsolved problems and we
+just kind of pick one at random.
+>> No.
+Okay. Yeah. So, if you click on problem
+solving,
+five star Python, good job.
+>> Unsolved. And you can filter by easy as
+well.
+Let's see.
+Keep scrolling.
+>> You want to try jumping on the clouds?
+>> Sure. Sure.
+All right. So, a reminder for this,
+we'll treat it just like the actual tech
+interview except for you can stop at
+pseudo code. So, read through the
+problem. Once you feel like you
+understand the problem, make sure to
+summarize what it's asking you. Um, kind
+of give us the shortened TLDDR version
+of what it's asking and then jump into
+pseudo code. maybe pull out some
+statements that you might want to use
+and break down into a kind of game plan
+of how you want to solve the problem.
+And then we'll stop there and we'll give
+you about 20 minutes or as long as it
+takes for you to feel like you have all
+of your stuff written out.
+>> Okay.
+>> Uh can you see the screen or should I
+increase it?
+You could zoom in, but it looks good.
+Yeah, I would just click zoom one more
+time.
+Yeah, that's good.
+And then everyone else will just hop on
+mute and let Lisa showcase her skills.
+heads
+and
+play on camera
+is equal to
+the current
+plus one R2
+minimum number of jumps it will take
+to jump start position.
+is always possible to win each game.
+Six.
+Okay. So, there's two clouds. One is
+cubis and one is thunder. Okay.
+So
+Thanks so
+Okay.
+Each phone is what we mix.
+Sorry.
+Thank you.
+Okay. So you can only jump + one
+or
+two.
+So in this scenario with this array
+[Music]
+spell this out real quick.
+Yes. So it was on cloud zero.
+Um, I couldn't jump to one because it is
+one.
+So,
+you want to jump to
+two.
+Oops.
+So two
+Since we want to do
+so 2 +
+3 or 4
+and then we want to take the least
+number
+to get the least amount of jumps
+or take the greater number.
+So that would be four.
+So four.
+So 0 one one and it goes to four.
+So, we've got five and six
+= 1.
+So, you choose
+Still look at six
+seven
+and then
+6= one. So you choose
+Sh.
+Three,
+two,
+one, four.
+Oops.
+Damn it.
+In this case, we would do
+Alisa, check where you're at because
+you're not in the function currently.
+So for
+range
+Thank you for that.
+French
+and
+Oops.
+I think I need some of that coffee.
+zero for now. So
+steps
+Come on.
+Come on.
+Okay.
+Hello.
+Heat.
+Step's going to be killer.
+Okay.
+I don't know if I can do this much. All
+right,
+>> that's okay. We can stop there, Lisa.
+>> Okay,
+>> thank you so much. This was good. Do you
+want to walk us again through the
+problem just at a high level? What is it
+asking for?
+>> Um, it's okay. Okay, so this is a game
+and you get an array
+um a value of an array. The values range
+from 0 to one. Um
+zero meaning it's safe to jump and one
+meaning it's not safe to jump.
+So you can go
+you can jump one up one or you can jump
+up two depending on if it's safe or not.
+So, we're trying to find the least
+number set steps or jumps towards the
+length of the the array.
+Um, and we return the number of steps
+on.
+>> Awesome. Um, do you want to tell us
+about the constraints? I'm curious about
+the constraints.
+>> The um
+Yeah. What do all of these mean do you
+think?
+>> So the range of
+oops let me come into this
+there are um
+n is actually the is an integer and it's
+the length of the array
+>> can be not not greater than 100 and not
+smaller than two.
+Um because of the number of jumps they
+would be not smaller than two.
+The oh I need to put that in
+the uh CI is the values um right
+>> zero and one.
+>> Okay. you had anything other than that
+in the set then um it should be invalid
+or
+we should return a null.
+>> And what about that third one? Um the
+third one um
+is um
+this would be um the value of C. the
+first um
+value of the array minus one on the
+second which should equal zero.
+>> So that would be the
+>> that's essentially saying that the first
+value will always be zero, right?
+>> Yes.
+>> Kai asked a great question in the chat.
+Is the first index C 0 always going to
+have a value of zero? So that is a great
+question that we can ask when we're
+pulling out our pseudo code of what
+assumptions can we make about this
+problem. If we're given the chance to
+jump of one or two, can we always assume
+that the first value is safe? So the
+constraints are always a great place to
+look for assumptions checking because it
+does tell us that the first value is
+always safe. And like you said, we're
+always going to have at least two values
+in there. So we're always going to be
+able to jump at least one. Um, so we're
+always going to make be able to make
+some kind of move, either a jump of one
+or a jump of two to return something,
+right?
+>> Um, that being said, it could be zero
+and one, which means you wouldn't be
+able to do any jumps, right? That would
+be an assumption we could test out as
+well.
+>> True. Okay.
+I think that the first and last is zero
+>> from what I'm seeing there. Just to
+>> Yes, thank you for the clarification,
+Brian. So, it says C of zero and then it
+says C of N minus one. So, N like you
+said being the count of all the the
+length of the array. But like when we
+use the four in range, if you use n,
+it's actually going to be one more than
+the index values we typically use
+because arrays are zerobased. So if we
+have a length of five, the indexes are
+going to be 0, 1, 2, 3, and four. So
+it's saying that if we have a length an
+n of five for example then c of 5 minus
+one so c of four which would be the last
+position in the array would also be
+zero. That's also a really good thing to
+know because that means that you're
+always going to land on the last spot.
+Um because they want you to get to the
+end to see how many number of steps
+you're going to take, which helps you
+figure out how you want to traverse that
+loop, right? Because you always want to
+make sure how do I know when it's over?
+Well, when we can reach the end safely.
+>> Yeah.
+Um,
+>> yeah, I think you did a good job of
+pulling out some of the statements
+there, saying we have the two types of
+clouds. Here's what the array that we're
+given as an input looks like. You either
+get zero or one. Zero is safe, one is
+not safe. I like that resummarization of
+the problem because that kind of makes a
+little bit easier of saying, all right,
+you're given an array of 0 or one. You
+could land on a zero because it's safe.
+One is not safe. And then you want to do
+the least amount of jumps using one or
+two. Now, when they tell you least
+amount of jumps, does that does that
+kind of indicate that they would have a
+preference of you jumping by two or
+jumping by one?
+>> For me, it was jumping by two because
+you have the least amount of jumps when
+you jump further.
+>> Now, where does that help you to to
+think about that?
+>> Okay. um
+in the in the description of the
+problem.
+Um when I started looking at this right
+here
+>> in your code, is that going to be
+something meaningful? How is that going
+to help you with your your code there?
+Um,
+that's a good question. So, what I was
+thinking what I was thinking and I had
+and I really didn't think this out as
+much as I I was thinking I was going to
+go ahead and increase the eye
+and jump it move it up,
+>> but now you're thinking,
+>> huh?
+>> Um,
+go ahead.
+um once I find the step that I need to
+go to. So I was going to go with
+um
+the the greater value
+of I + 2.
+>> Yes.
+>> So when you're building out your
+conditions there because you kind of
+have an eitheror situation, you're
+saying if i + 1 or i + 2. But if we want
+to do the least amount of jumps, we kind
+of have a preferential choice there of
+using the two, right? So if you're
+building out your conditions, you might
+want to say if the plus two is available
+and still in range. We saw that out of
+range error. Nothing to be afraid of,
+just something to consider. Um, then we
+would prefer to do the two jump. If we
+can't do the two jump because it's
+either out of range or equal to i or
+equal to a number one, then we kind of
+fall back to that that plus one jump.
+And then what you were kind of hitting
+on there is that you were thinking about
+incrementing the i. But in this case,
+it's kind of weird, right? Because you
+either want to increment by one or
+increment by two. For I in range has
+like a very built out sequence
+of events. You do
+I of zero run code. I of one run code.
+You don't typically manipulate the i.
+You could, but what what might what kind
+of loop might you use instead of a four
+in range that has indexes that might
+that are a little bit more flexible or
+where you can create your own index?
+>> Well, why doesn't you while doesn't use
+index?
+>> It doesn't, but could you kind of modify
+it to to meet your needs there?
+I think you could use a four I range,
+but I might start with a while loop to
+see if that is easier because I feel
+like when you're
+jumping around with the i in a range, it
+it kind of hurts my brain a little bit.
+But I feel like a while might be better
+suited for this one since the index
+isn't fixed. And then we just kind of
+set that that condition for the while
+loop to make sure we're not going past
+the length of the array,
+>> right?
+>> But if you want to stick it out with the
+four iron range, I think that could
+totally work.
+Yes, Abu, we can control the index here.
+It's just I don't like doing that with
+four iron range because
+I just like the look of it.
+>> I mean, well, it No, it's fine. It's a
+start. It was just It was just a start.
+And it might not It probably won't work,
+but it was the the logic um that I was
+just kind of working out. I got four eye
+on the brain right now. Four four loops
+on the brain. Um
+>> no, I think you did a great job. So, you
+got out what your kind of game plan was.
+You could have just stuck to pseudo code
+and just done the I'm going to do a four
+for four for loop. I'm going to check
+the condition of I + 1 and I plus two
+and then I'm going to do the next step
+and next step and then turn it into
+code. But I'm glad that you jumped right
+into the code because you did. I mean,
+you got almost to the end there. Um, I
+just stopped us because we were close on
+time and we're a few minutes over now.
+But I think this was good. So, thank you
+for for being our volunteer today, Lisa.
+>> Okay,
+now get solve it. So,
+>> yes.
+>> Um,
+I think I might look at the while loop,
+but um,
+>> and then I just wanted to point out some
+of those things like the constraints. I
+always recommend to look at the
+constraints just to see what they have.
+I like the visuals on this one. This one
+gave us pretty good visuals, right, of
+the little clouds and you can jump and
+it's telling you like, oh, four is bad.
+Don't jump there. But you can jump from
+zero to two to three to five. So, that's
+kind of fun. They don't always include
+those. Um, otherwise, I think you kind
+of hit all of the other conditions that
+we were thinking about for this one.
+>> Um, the only question I had is would it
+be better would it um that I keep track
+of what cloud I'm bouncing off of?
+So
+um for example on this the cloud so when
+we jump two spaces
+>> yeah the for loop you kind of get lost.
+So maybe it is a while it should be.
+>> Yeah. So if you scroll up in the problem
+on the left hand side can you scroll up
+to the top? I think there was something
+I was looking for. Um
+Uh yeah, so it says it is always
+possible to win the game. I think that
+statement there gives us a lot to work
+with. So because the starting point is a
+zero and the end point is a zero. It
+kind of doesn't matter whether we choose
+a one or a two at any given point. like
+you're not going to get trick yourself
+into saying, "Oh, well, I chose a two
+here and so now I'm going to lose the
+game because I can't jump one or jump
+two from this position that I'm in." So,
+but that's not true. You can always jump
+a one or a two, no matter where you are,
+as long as you're on a zero position.
+I'll say that again. So if you're
+jumping through and you're in the middle
+of the array, like on that zero there,
+no matter what the rest of the array
+looks like, whether zeros or ones,
+because you're always going to be able
+to get to the end, and you can always
+jump either a one or a two, you're
+always going to have the option of
+jumping one or two until you get to the
+end. There's never going to be a point
+where it's like, "Oh, you can't get to
+the end. This game is unwininnable."
+They're telling you that you will always
+be able to reach the end. And I think
+that's pretty helpful. Like that's good
+information to know because then you
+don't have to build out those edge cases
+of keeping track of of well I jumped to
+two before this so now I have to decide
+if I am able to do like a one or two or
+if I have to go back and figure out how
+to do that.
+>> Okay.
+>> All right.
+>> She's got to be quicker. She's got to be
+quicker.
+>> Yes.
+>> Good job, Lisa. I just want you to know
+that um I really liked what you were
+doing. I I like the pseudo code that you
+wrote out. So just a little feedback and
+saying yay for volunteering.
+>> Oh, sure. Thanks. Thanks, Mindy. I
+appreciate.
+>> Yeah,
+>> I need some coffee first. I'm sorry.
+>> I'm I'm with you on the coffee.
+>> All right, cool. Thank you. Does anyone
+have any questions about this problem or
+about anything at all before we
+close out today?
+>> Okay.
+>> Yeah.
+>> So, oh yeah, go ahead.
+>> What uh how do you classify this
+problem?
+>> How do you mean
+>> like is there like in terms of like the
+solution? Is there any sort of
+identifying
+term or common term or language to
+describe it or is it just
+just a general problem?
+>> Yeah. Um,
+give me one second.
+I want to make sure that I'm that I'm
+thinking of it right.
+Yeah, I think you could just consider
+this linear programming. Like there's no
+specific algorithmic trick to it.
+There's no specific like
+formula that you have to know. It's
+really just X Y Z 1 2 3
+then you're at the end. Um,
+you could certainly make a a less
+efficient approach at it, but I think
+the most straightforward approach is the
+probably the best approach to this
+problem, the easiest.
+>> Okay, thanks.
+>> Awesome. Yeah,
+>> because it's focusing on a few things,
+right? is focusing on index
+manipulation, iterating through a li a
+list,
+your knowledge of loops. Um, all of
+those are kind of the mod one early mod
+2 fundamentals. And so that's why it's
+at the easy level. And then you build up
+to the harder end of the easy where you
+start getting into some of those things
+where you're doing sort searching
+sorting. Oh my gosh. searching, sorting,
+maybe some sliding window, um some of
+those algorithmic things or using
+hashmaps, using those other data
+structures, stacks and cues, but it's
+the easy level, so it has to include a
+mix of everything, right? So, this is
+one of those
+earlier mod one and mod 2 hackering
+problems. And then some of the other
+easier problems are the later stages of
+mod 1 and mod 2, but they're all still
+in that that same general area.
+But Kai, since you mentioned it, the
+last thing that I haven't um
+that we haven't touched on is trees. I
+don't know if I'm going to get into
+trees, to be honest, because I I'm kind
+of scared of them a little bit. Um, but
+if we have time moving forward, I think
+I'll I might I might give it a try
+because it's not it's not we don't cover
+trees really for the joy of coding. So,
+I don't want to detract from that, but
+I we might look at some of them.
+>> That would be great.
+>> That's really the last thing.
+>> We've done them all.
+>> We've I mean, we've covered every other
+data structure like pretty pretty
+heavily at this point.
+Okay,
+that's great.
+>> All right, thanks everyone. Um,
+I will see you on Wednesday. We'll look
+at some other problems and keep going
+diving deep into some solutions.
+>> Ruby,
+>> is there anything? I can I can talk. So,
+thank you.
+>> Anything you want us to look at besides
+this one or
+>> Yeah, you know, I was thinking about
+that. But we didn't
+we didn't really do anything. I actually
+um
+I don't think so. I think we're going to
+look at some examples of stuff on
+Wednesday that I don't have like good
+problems to share just yet. Um
+>> so yeah, you're free. Work on whatever
+you'd like.
+>> Thank you.
+>> All right. Thanks everyone.

@@ -1,0 +1,1418 @@
+here.
+Yes. All right. So, welcome to this
+week's technical interview prep. Thank
+you everyone for joining. Um, so we're
+still following the new two choice
+weekly schedule. Sundays are going to be
+mock interviews, um, kind of code
+overview, pseudo code, that kind of
+stuff. and Wednesdays are kind of diving
+deeper into those problems that we
+covered, looking at solutions, looking
+at alternative approaches, bigo
+efficiency, different data structures,
+all that good stuff. Um, so today is
+kind of
+the interview pseudo code mock interview
+day. Um, before we jump into all of that
+though, does anyone have any questions
+they'd like to ask about the technical
+interview, getting prepped for it,
+practicing for it, anything like that?
+What questions do we
+have? I've already heard all the generic
+answers, so I can't think of anything
+specific.
+Accidentally paused the recording again.
+You're scheduled, so at this point, you
+know, it's just kind of getting there.
+Okay.
+Any questions at
+all?
+Okay, got a last minute joiner guys
+joining us. Mind if I ask Walter a quick
+question? Sure. Okay, Walter, what
+uh it sounds like you got most of it?
+Like if you're 90% there, is it just
+like you're using AI to tell you to put
+a a parenthesis in or
+or change change a a loop? Like what
+what does what does it the AI end up
+doing for you mostly? Just out of
+curiosity, it just it just seems like it
+it um reorders some of the line of code.
+Um and also um
+[Music]
+um suggest
+uh doing a couple of lines a little
+differently and that's where I learn
+about new
+syntax. It's it's not a question of
+parentheses or commas or stuff like that
+being left out. Okay. I mean, that
+happened a couple of times, but it it
+doesn't it's it's a little bit more
+involved than that. So, I wouldn't call
+that syntax in. I'd call that problem
+solving. Yeah. Yeah. So, if you're
+letting GBT do the problem solving, then
+you're kind of cutting yourself short
+there. It's a problem.
+Yeah. I've played with pseudo code a
+lot. Um, and I don't know if I'm doing
+the pseudo code right. I write out
+longhand sentences. Okay, I this is the
+problem. This is what I got to
+do. And then I say to myself, okay, uh,
+what command will do
+that? and I start
+getting into a
+situation where I'm looking into
+previous problems I worked on and trying
+to get inspired by chunks of code
+there. When you're writing pseudo code,
+you don't have to know the exact command
+or exact thing that you want to do as
+long as you have a general idea. And
+then if it's something like I know I
+want to use something like account
+method or a min or a max method but I
+don't know exactly what it is. You can
+just continue writing out your pseudo
+code. Google that one specific thing
+like Python or JavaScript max method and
+then sub that in when it's time to
+actually write the code. But it should
+be like an iterative process like you
+write your pseudo code, you get it
+going. If it's not working the way you
+thought it would, test the assumptions.
+What assumptions did you make? What's
+not working? what's not meeting that
+assumption. Go back, rewrite a little
+bit, maybe hit your pseudo code again.
+It's it's all iterative. Yeah, I know.
+All right. Any other questions about the
+technical interview or technical
+interview prep? We had a few other
+people join here in the
+last minute or so.
+Um the technical interview, uh how does
+that work? Is it like is it like one of
+these QA sessions where where um I share
+my screen and and you watch what I do?
+Yes. But I'm but um am I in PyCharm or
+VS Code and you're watching what I'm
+doing in those two idees
+or or do you provide something else like
+um Le code and hacker rank wants you to
+write the code in their space. So, how
+do you do it? Yeah. So, we use hacker
+rank. Um, so what we'll do is it'll be a
+short 30 minute session. We spend 20
+minutes on a hacker question on easy
+level and then we have a few follow-up
+questions, might ask you about your
+code, might ask you some behavioral
+interview questions and then I'll make
+my official recommendation for what you
+should work on before you come back or
+um moving you on to the next phase.
+Okay.
+Um, just gonna catch up in the chat
+here. Lisa, what is the next step for me
+in the tech
+interview? Well, Lisa and I have met
+before.
+So I realized um for some people who
+have taken the tech interview or
+planning to take take the tech
+interview, I usually give my
+recommendations at the end of the
+session um for what you should work on
+or continue working on whether you pass
+or fail. Um and usually just kind of go
+over those in person, but I have since
+realized that it's very easy to forget
+the things that we talk about in a in a
+quick 10-minute gap. Um so I am going to
+start sending those as follow-ups after
+our meetings. Um, so you will always
+have concrete steps to kind of work on
+there if you want them. Um, so Lisa, I
+will send you those notes that I have
+for
+you when after this
+meeting. Um, okay. Thank you.
+Glenn said, "Don't have any questions?
+Fly on the wall. Gain some experience."
+Okay. And then Glenn also said,
+"Understanding both data structures and
+algorithms is a part of problem solving
+similar to learning vocabulary rules,
+grammar to use English efficaciously."
+Yes, that's very
+true. All right, so let's go ahead and
+jump into
+today and then again for everyone
+who joined a little bit later. Um so
+today's Sunday session we're doing
+pseudo code highle overview of a problem
+and then we'll open it up to the room
+for a mock interview to get someone the
+opportunity to practice sounding out
+loud verbalizing their thinking kind of
+tackling a problem solving and being in
+front of an audience to have those views
+on it. Um it's not so much about coming
+up with a solution. It's going to be a
+medium problem. So it'll be a little bit
+harder than what you'll get in the
+technical interview that we do at Joy of
+Coding. Um but it's really just to kind
+of get you to work on those steps that
+we expect you to follow um to get a
+successful pass. So that will be the
+second half of the
+session and then to get
+started going to share my
+screen. Cro I have a question. though.
+So, um do you do you get mostly students
+who like go through this practice but
+then come back pass or when they fail
+the technique come back still to like
+keep working until they eventually pass
+to these meetings? Yeah. Yeah. Yeah.
+Um it's I don't know. It's kind of all
+over the place. Some people have come
+back for a little while and then left.
+Some people Kai is still coming so
+thanks
+Kai. But I think that's cuz he wants me
+to do stuff. So, he wants you to like
+cover certain topics, but there's a lot
+of stuff to learn and I feel like you
+need to refresh all the time.
+Oh, sorry. I missed that. What did you
+say, Kai? I said that there's a lot of
+stuff to learn and I think you need to
+refresh all the time. And unless you're
+actively doing it every day or every
+other day, sort of being exposed to it,
+it's really easy to forget some of the
+uh patterns that you start to get used
+to the more you do it.
+Yeah.
+Yeah. So, but yes, I think a lot of
+people because the next step after this
+is either the explorer board or for a
+lot of people who were coming in before
+now, they were going on to the
+internship. So, then once you get to the
+internship, it's like that's going to
+take up a lot of time. So, I don't
+necessarily see those people, but I
+would love for everyone to keep coming
+back. I
+mean, I I enjoy that. Um, but yeah. All
+right.
+because you will want to continue
+practicing for when you get to the job
+hunt. Um, it is likely that you will
+still see technical interviews and they
+will be on the the medium
+level, but I know that the internship
+and stuff kind of takes a lot of mental
+energy.
+So, there's that. All right. So,
+everyone should be seeing to some here
+up in the corner here. Um, just going to
+check. I think that I can see my little
+screen share, but it's always so tiny.
+Going to open up my chat and
+participants through
+Zoom. Oh, Jenny asked, "Do we only have
+time for one mock interview?"
+Yeah, we might. I Well, maybe. We'll see
+because usually I like to give everyone
+about 20 minutes. So it depends on how
+much time we take. But yeah, usually
+it's just
+one. All right. So for this problem,
+we're just going to read over it, get an
+idea of what the problem is asking us,
+talk about some potential approaches,
+and then do some like highle pseudo
+code. And then I will leave that all for
+you to take on as a little homework
+assignment to work on this problem
+afterwards. and then we will likely go
+over it on
+Wednesday. So given an array of integers
+nums and an integer target return oh my
+highlight return indices of two numbers
+such that they add up to
+target. You may assume that each input
+would have exactly one solution and you
+may not use the same element twice. You
+can return the answer in any order.
+Okay, so let's take a look at what all
+of that means. So we have the nums array
+2 7
+115 target is nine. They are expecting
+an output of
+01 which are the indices 2 and
+7 because num 0 and nums 1 equals 9. So
+we return
+01. So then if we kind of resummize
+this, we're going to be
+given given array oops an array of
+integers and uh I'm going to separate
+that out even more. given an array of
+integers and target equaling
+a number int I guess an
+int and then what we want to do is find
+two separate indices in the nums
+array and
+ends label that
+nums doing things in the nums
+array that add up
+to
+target. I think that makes sense. So
+we're given an array and we have to find
+and we're also given target which could
+be any number and we have to find which
+of these elements can add up to that
+number. There will only ever be one
+solution. So that
+means only two
+numbers
+will be
+summable to reach target I
+guess and we can return the answer in
+any order. So that means that we could
+return the indices as 1 zero or 0
+1. So I'm going to write that down here
+too. Return
+Index
+location of the two
+numbers
+that can sum equal to
+target. Order of
+index indexes index indices
+indices does not matter.
+which is kind of a hint, but also maybe
+kind of a trick. Like they might be
+telling you that there's a certain
+solution that you could look at that
+would have you go through and get the
+indices from a non sequential
+manner.
+Um, all right. So then I'm just going to
+keep looking at these examples. So nums
+3 2 4 I would expect two and four to be
+equaling the target of six. So that's
+index one of two, index two of four.
+That makes sense. Nums three and three,
+target six. So
+01. So only one valid answer exists. It
+seems like they are expecting to always
+have an answer. Yeah, I think that's I
+mean that's an assumption that we can
+make. So I'm going to go ahead and write
+that assumption.
+One and only one solution would be mine,
+right?
+assumption. We will
+always have two values that equal
+target aka we
+wouldn't would not return empty
+array. I could be wrong. So that's why
+we're calling it an assumption here. But
+I think that's something to look at. So
+nums length, the length of the array
+that we're given can be between
+two and 10 to the 4th. That kind of is
+further proof of this statement that
+we're always going to be able to add two
+things to get the target. But at the
+same time, you know, we could get an
+array with zero and one and the target
+v10. So that assumption could still be
+wrong. But that's kind of proof that
+we're closer to that assumption. So the
+length of nums can be from anywhere from
+2 to 10^ the 4th, which is going to be
+like 100,000 or something like that.
+the i each value in the integer is going
+to can be negative 10^ the 9th to 10^
+the 9th. So I think that's
+also something to add here
+um integer values I guess. Yeah,
+integer integer values can be
+negative. So if our target
+was 15, we could have
+something the values could
+be -5 + 20.
+So that's something that we could
+possibly see is that if we were given an
+array of um integers, we could have
+negative numbers in there all the way
+from neg five up to positive 20 and we
+could get a target of 15 where the value
+would be a positive number plus a
+negative number. Um so we can't always
+eliminate values that are just higher
+than the target because there could be a
+negative in there. So that's good to
+know. And then the target itself can
+also be
+negative to
+positive. And then there's a followup.
+Can you come up with an algorithm that
+is less of O of N^2 time complexity? So
+this is also kind of a hint in a weird
+way. So they're saying, can you come up
+with an algorithm that is less than O of
+N^2 time complexity? meaning that they
+are kind of expecting you in a worst
+case scenario to come up with a solution
+that is O of
+N^2 which if you've been following along
+for a long time then you would know that
+O of N squ typically is considered like
+two nested like a nested loop where
+you're going through each value once and
+then you have another loop inside of
+that to compare each index position
+against all the other remaining index
+positions. Um, so you're basically
+visiting each each index of n
+twice. So that would be in the worst
+case scenario at a minimum they're
+expecting it could be O of N squ and
+then they're also saying that there
+would be a more efficient version of
+that
+solution. So this is where I would stop
+is we've got well no I mean I wouldn't
+stop here. So given an array we have an
+array of nums. We know we have to add
+them to get a target.
+So if I was expecting a brute
+force brute force of
+oops
+o to the yeah o
+squared or or worse
+approach. What might that look like?
+Does anyone have any ideas for what I
+might do to solve this problem?
+Um, also I I am actually going to add on
+to this. So it doesn't say it anywhere
+in here, but I am noticing that this
+array is sorted, but this array is not.
+And I think that that is
+important. So array will
+not be sorted because that will also
+change our approach a little bit there.
+either we'll want to sort it and do
+something with it or maybe we'll want to
+not sort it, but keep that in mind. So,
+yes. Anyways, so does anyone have any
+ideas for what a brute force approach to
+this problem might be?
+Off the top of my head, I I think we
+have to go through the length of the
+array, you know,
+like with in a loop like
+for for i in range length of the
+numbers. That would be my starting point
+I think.
+Yeah. Okay.
+Um,
+then you you got to go through the
+indices somehow. And now I'm stumped.
+The indices are only important at the
+end. You can always
+separate like you can always separate
+out your concern so to speak. So if our
+first goal is just to
+find like we know we have to return
+index indexes to at the end which
+reminds me I'm just going to go ahead
+and pop an empty array in there because
+we might get some
+errors
+[Music]
+um if we don't. So they're expecting an
+array of two indexes. So I'm just going
+to return an empty array to get started.
+Um, but I don't have to think about that
+right away cuz my first thing that I
+want to figure out is how I'm going to
+add two values to equal a target. Once I
+get to that step, then I can figure out,
+all right, how can I work backwards from
+there and figure out how to get the
+indexes?
+I've got one other thought one quick
+question back to um when it says you may
+assume the each input would have exactly
+one solution and you may not use the
+same element twice. Yeah. Isn't there
+example three violating that?
+No, I think what they're saying there,
+that's a good question. I think what
+they're saying there is that you can't
+use the same index twice. So you can't
+say index of zero and index of zero
+because those two would both equal six.
+So when they're saying element, I think
+they're referring to index position and
+not value.
+Oh,
+okay. All right. Okay. So that's a good
+clarification.
+Okay. So I think we can add that. So
+it's going to have to have two elements
+then or two. Yeah.
+To right or would it
+need I guess unless you had the actual
+number then you could have just the one
+element but then you'd have nothing else
+that would add up to it because it's one
+that would violate one solution.
+Right. Okay. All right. Yeah. So in this
+case because they have two threes here.
+If this was a longer array, I wouldn't
+expect to see any other threes in there,
+I
+guess, or Yeah. some other combination
+of, right? You wouldn't see a five or a
+one. Yeah, exactly. Or a four, right?
+Yeah.
+Okay. Got it. Thanks. Okay. Eric said,
+"If nested loop is O of N squared, would
+a nested loop that the inner loop only
+looks at greater indexes reduce the O of
+N?"
+Um, no. So, I mean, yes, but no.
+So, it's still O of N, but it's kind of
+weird in that it's kind of um I think
+they consider that
+uh they might I don't know they might
+change the the way it's written to not
+be O squared, but it is still ON squared
+because I might have misspoken where I
+said each thing will be evaluated twice.
+It's not necessarily that. That's that
+for each input that we get, we are
+um our like lookup time or our
+performance time is going to be a fact
+like that kind of factorial of a squared
+approach where even if you're starting
+from like the middle of
+the index and then saying plus one and
+looking through the remainder of them
+and going from there, you're still
+taking each input and you're going
+through a series of additional inputs
+for that input. I'm not explaining this.
+Well, let me No, no, you are. You are.
+So, it it it's reduced. It's just
+not really uh worth mentioning. It's
+it's not substantial.
+So, does that infer that there's a way
+to solve this without a loop?
+Um,
+no, I don't think so. Okay.
+All right. Thank you.
+Are we going to put the formulas down?
+For example, we know that
+um the values in the array and as you go
+through the array, you got to go through
+the other array again. Um I mean a
+nested loop. So
+um is it going to count as far as um
+memory? um are you going to run into
+um memory exceeded when you do the
+nested loop. if you run into. So, for
+example, if I do a nested loop for I of
+range equals
+length and then in there I put another
+nested loop for I of range
+[Music]
+um n minus the the next value because
+you can't
+do you can't add 0 plus 0 on the index.
+You have to have an additional number.
+So that should march through each
+value. Is it going to exceed am I going
+to get a time exceeded if if the array
+is large? Am I going to run out of
+memory? You
+could since they gave us this hint. I
+don't think so. It it's not necessarily
+a
+like how do I say this? It's not
+necessarily that it always will or
+always won't. It depends on what test
+cases they give us. So if they give us
+like 300 test cases, it's definitely
+going to time out because the amount of
+test cases that we're going to get
+through and the likely size of those
+based on our constraints going from -10
+to the 9th to positive 10 9th within a
+length of 10 to the 4th, it it would
+likely run out of time. But if it were
+fewer test cases like only, you know, 40
+or 50, then we could probably still
+squeeze by with an O of N
+squared efficiency. So it's not so much
+about the the time execution error isn't
+so much about the code that we're
+writing as much as it is a combination
+of our code efficiency and the like time
+limit that they give us for the test
+cases that they give us. So it's kind of
+a mixture of both. So in some cases your
+Oven squared approach won't time out and
+it'll be enough to solve the solution
+and sometimes based on the language that
+you choose. So, we're working in Python,
+but if I used a different coding
+language and used a similar approach in
+that language, it could time out there
+as well versus one that doesn't time out
+here. Um,
+but in some other problems, it won't
+time out or it will time out based on
+that same exact like kind of code
+solution just based on the test cases.
+[Music]
+Awesome. Eric said, I may have an idea
+that would be less than O of N squared.
+You could loop through the indexes, do
+the math to calculate the number that
+would sum the target number, then search
+through the array for that desired
+number. So, is that less than O of N
+squ? Could
+be. Could not
+be. But yeah, I think that's I will I
+will consider that
+a alt
+approach. Alt approach.
+Oops. Maybe
+improved efficiency. It depends
+on Oops. It depends on
+um well, is it one loop? Because you
+said search through the array for the
+desired number. So, it really it depends
+on the coefficiency of whatever
+searching method that you're going to
+do.
+Maybe I'm terrible at explaining things
+so maybe maybe that's what happened. But
+like if it iterates through and looks at
+the first index. So like in that first
+example it would look at the
+two it would subtract that from the
+target which would be seven. And then
+you do a find for seven. If it finds
+it then you can exit immediately.
+It didn't even loop through 100%. It
+looped just
+Yeah. But then you have to do the
+searching. And so any searching method
+is going to be potentially it could be
+best case O of N log of N or more
+typical case because this is an unsorted
+array as we've talked about. It's going
+to be well actually what I meant to say
+is on the best case scenario it would
+probably be O log of N which would be
+better than O of N. Um, but in the worst
+case scenario, because this is an
+unsorted array, it would likely be O and
+log of N, which I you'd probably hate
+that I pull up this graph every time,
+but No, I love it.
+Big O
+graph because Moch most of the searching
+algorithms are going to
+be well again, it's based on if it is
+sorted or unsorted.
+Um, man,
+I always choose this article and it's
+always so far down. All right, so O log
+of N is really great, right? Like it's
+pretty close to O of one. And in the
+best case scenario, you have a sorted
+and indexed
+um array, then a searching algorithm can
+potentially perform at log event in that
+case depending on which searching
+algorithm you use like binary search
+versus any of the other searches. But in
+the case where it is an unsorted
+array then in that case it's most likely
+going to be n log of n and o of n would
+be you know way down here. It's still
+better than o of n squared. So I will
+give you that it is better than our our
+potential brute force
+approach but which would actually fit
+their um their request. Can you do it in
+less of O of N squ? But again, that also
+depends on your implementation of the
+solution, but it may not be um better
+than O of N,
+but I will keep that. No, I don't No, I
+don't think it Well, it if it found it
+early, it'd be better than O of N
+because O of N infers going through the
+full range of the loop, right? Not
+necessarily. So again, this is where I
+kind of misspoke earlier. Typically, it
+can mean that you're going you're
+evaluating
+um like each of your inputs once, but
+really it just means that as your inputs
+scale up, the amount of like efficiency
+that your code is performing scales in
+the same manner. So, if you have five
+values that come in an input, but you're
+only looking through three of them, that
+is still ON. And then if you change that
+from five to 100 inputs and you're
+looking through an equal amount of those
+inputs. So instead of one out of five,
+three out of five, and then it's like 30
+out of 100, that's still O of N because
+it's scaling in the same manner. Okay.
+No, I don't mean to take up uh all the
+time with that. No, that's fine. Target
+equals
+15. So index
+0 equals 7. So you would do find the
+complement of 15
+minus 7 which is 8 and
+then do
+search
+algorithm to see if
+complement
+exists in the nums
+array. I I don't think it's I mean I
+know it. I'll go red.
+Ooh, that's bad. I'll go red. Um, is
+that right?
+Nope. I'm We're going to ignore that. I
+don't know. Maybe improve
+efficiency
+around
+N log of N. So that's good. I like these
+two approaches. and then we'll kind of
+we'll save the a potentially better
+approach for Wednesday if we come back
+to
+this. All right. So, I think that's a
+good a good spot. You've considered a
+couple we have all considered a couple
+of different approaches that you might
+take brute force. You're going through
+and you're checking every single value.
+So, I'm at two and then I'm looking at
+all right maybe I'm doing the same thing
+that we talked about here, finding that
+complement. So, 9 - 2 is seven. So we'll
+loop through each of the remainder of
+the array in a nested loop and say does
+seven exist in here. If it does or
+doesn't we'll move
+on. So like for in this case we start
+with three. We know that if this was
+going to find a match in this array, it
+would have to also be a three. 6 - 3 is
+three. So we look here and we say is 2
+equal to three? Yes or no. Is four equal
+to three? Yes or no? Since we didn't
+find it, we'll increment that outer loop
+to two. And then we'll go back into the
+nested loop. We're looking for a four.
+Great, we found the
+four. So with this brute force approach,
+you are checking every single
+combination
+of sums until you find a match.
+Um, which will ensure that you find a
+match if it exists. And they're telling
+us it exists. So that one will
+definitely work. It's just will it be
+efficient enough to beat the clock,
+right? And then Eric gave us this
+potential approach of improving that
+where we are doing a similar thing.
+We're still looking through the first
+array and finding complements. But
+instead of doing a nested loop where
+we're kind of figuring out
+the remainder of the targets one by one,
+we can use a searching
+algorithm which might take these do like
+cut them in half, find if it's greater
+than or less than
+um an improved search method basically
+that's not O of O of N or O of N squ.
+Um, so in a similar way, but just kind
+of maybe a more efficient
+approach. And then our last step would
+be to then return the indexes that add
+up to that
+target. All
+right, we took a we took quite a bit of
+time on that one. Sorry,
+y'all. I'm just catching up in the chats
+here. All
+right. All right. So, this is the two
+sum. I'm going to pop this in the
+chat. I would love for people to take
+this problem on, see what you can do
+with what we've talked about today. Um,
+try your own solutions and then we'll
+circle back on Wednesday and talk about
+potential solutions
+here. All right. So, we still have a bit
+of time. Would someone like to use today
+to try a mock interview?
+Oh.
+You're looking at me. I think I I guess
+I should try.
+Huh? It would be I mean, so we're not
+Yeah, we're not expecting you to get to
+a solution here, especially in the time
+that we have remaining. It's really just
+to get the opportunity to practice in
+front of an audience, get that kind of
+pressure, the eyes on you, and practice
+sounding out your thinking.
+Well, um, come up with a a a problem and
+I'll I'll I'll at least try to talk
+about it with pseudo coding and okay,
+what about whatever few moments we have,
+let's do it. All right, I'm going to
+drop this problem in the chat if you
+want to open that up and share your
+screen.
+It's at least similar to the problem we
+just discussed. I'll say that. Uh yeah,
+it's threesome instead of twosome. Huh.
+Yeah.
+All right. Let me uh let me
+uh make another one. Yeah.
+Um, give me a minute. No worries. Okay.
+Um I'm going to try sharing now. Uh oh,
+I got to I got to expand this.
+Okay. And
+share.
+Okay. All right. I have threesome from
+late code on the screen. Do you see it?
+Yep.
+Uh,
+okay. You have an
+array
+and they're
+[Music]
+outputting three
+numbers because negative 1 and negative
+1 are there twice. There's two -1 01.
+Okay. So what they're trying to do here
+is return all the triplet
+triplets
+that are
+equal. Okay. So
+this this one
+here. Okay. We we'll have to uh
+Okay, we have a function defined three
+sums.
+Okay, and so in this
+case, I'd have to I don't know if you
+want me to take the time to do that.
+Enter nums equal. Okay.
+or wait a
+minute. I'm being flooded with all kinds
+of ideas here. Um I'm I'm seeing here
+that we got
+to
+take I keep referring going back to the
+indices. Um in this case we have 0 1 2 3
+4
+5
+4 I
+in
+nums.
+Um, we have
+to use the length of that array. In this
+case, it's
+six. But we can't say that because we
+don't know. We want this to work for any
+length, right?
+Then we have
+to go through the indices. In this case,
+we need three indices that add up to
+target. So I'm I'm thinking that this
+will use a nested
+loop like two sum.
+So
+for
+J in
+uh here we go with the
+syntax
+zero.
+No, but we have to grab two more. So I'm
+going to say plus two.
+Wait a minute.
+equal to
+the we'd have to show we'd have
+to there's a lot of ways to get three
+numbers out of the six that are
+there. So, we'd have to cycle through
+that quite a few times before we get
+three at a time.
+[Music]
+Uh, that would have
+to that would have to equal another
+No, we got to we got to cycle through
+the array, pick three
+numbers, and see if it
+equals another list.
+So this would have to come here.
+We're going to go to the next one and
+test
+those. So, I'm going to say J +
+one
+was I don't I don't know.
+And I'm saying two equal signs because I
+know it has to be
+equivalent. Okay, I'm done. I I this is
+this is how I get get going on this
+stuff. So instead of jumping into the
+code right away, why don't you kind of
+talk us through the problem a little
+bit?
+Go go go over high level. I I kind of
+started doing that in in example and
+I'll talk about example one. We got a we
+got an array with six entries and we're
+looking
+for the two groups of three that are
+equivalent.
+Okay. Like for instance,
+uh the the numbers at indices 01 and two
+are equal to the numbers that are at 1 2
+and four and that total is
+zero.
+So I have an idea what they what they
+want to do here. It's again bringing it
+to into the code.
+So explain your idea. The idea is I got
+to go
+through all the possible groups of three
+and and until I find the two that are
+equivalent.
+Okay, in this
+case
+um -1 + -1 + 2 is 0. -1 + 0 + 1 is also
+zero. That's why the output is
+that.
+Okay.
+Uh, how do you break those
+out? Okay. I I don't know.
+Okay. Yeah. I mean, this is not an easy
+problem. Is that considered a 15minute
+problem? No. No. No. Oh, okay.
+though it is considered a medium
+difficulty problem. So you might be
+expected to solve it in under an hour if
+you were in like a job hunt
+interview. Let me make sure I'm sharing
+that right. Yep. Okay. But you are
+right. Like so they're having you go
+through these numbers and then find
+three pairs
+that three values in that array that sum
+up to zero. And in this case, there are
+two sets of three numbers that are not
+the same that will add up to that. So,
+you had a great start of your saying, I
+know I'm going to need at least two
+nested loops to kind of compare those
+values. And I think I heard you say that
+you might need another one as well. Um,
+yeah. uh I was thinking of u uh you know
+I to go through the numbers J to go
+through the first set of indices and K
+to go through a third set of indices
+that you would be right
+so yeah that's a I mean that's a pretty
+good observation so I I kind of hope
+that you wouldn't have jumped into code
+and kind of try to walk through the the
+explanation of the problem and maybe get
+some comments out but otherwise you did
+understand what the problem was saying
+you kind of understood as you were
+working through it using the code. All
+right, as I'm kind of typing out this
+code, how am I going to get those three
+pairs? Kind of getting to that point
+where you're like, "All right, I I know
+I'm going to need potentially three
+three uh index pointers here, I, J, and
+K." So, I think to get to that level is
+really great. Um, and then we kind of
+cut early because we're low on time, but
+yeah, I think that was a great great
+job, Walter. I will just make one
+observation between this and the Tucson.
+Okay. the uh this one here we're looking
+for numbers in the array that are
+equivalent whereas in the twosome we
+were looking for indices. Yeah. So
+something I had to sort out in my mind.
+Yeah.
+All right you had a question.
+Yeah.
+Um th this third this this three uh sum
+problem it says that I cannot equal to J
+and I cannot equal to K and J cannot
+equal to K. Yet example three all of
+them are zero. Yeah let's look at
+that. All right. And then example two
+two of them are one.
+So in this case we're given nums the
+array right and then in their solution
+they're
+sayinggative1 and negative one into and
+then negative 1 0 and one will match up
+actually let's just go to through the
+problem really quick from start to
+bottom it has to have three numbers
+that's a requirement
+yeah given an integer array of nums
+return all triplets nums i, j and k such
+that i is not equal to as you said and
+that nums I plus nums J plus nums K is
+equal to Z. Uhhuh. So in this case when
+they're
+saying and that equal to Z is important
+there as well. So in this case what
+they're saying I J and K are are what
+what are they referring to?
+They're different integers
+but what are different indices? Yes. So
+when they're using the keywords here of
+I, J, and K, they're referring to the
+index. And then when you call the array
+at that index you're getting these
+values. So negative 1 0 1 2 so on. Okay.
+So when they're saying this I agree that
+it is kind of tricky. H and it might be
+on purpose. They're saying that the
+index position I cannot be equal to J or
+K and then vice versa J cannot be K.
+They can be the same number but
+different indices. Okay. Yep. So when
+they're saying negative one twice here,
+they're saying this one is likely the
+zero index position and this one is
+likely this one here at that higher
+index position. Mhm. Because there are
+at least two negative ones.
+Yeah, thank you. Yeah, that's a good
+question. Uh the thing I missed here was
+that the the the the three nums have to
+have to uh equal zero or be equivalent
+to zero.
+Uh when when um Rebecca was talking,
+that was another piece of information
+that I didn't consider.
+Yeah.
+All right. Maybe I'll work on this, too.
+The puzzle's got me going. I'm just
+going to write out some some here. Find
+three ins that
+sum equals zero because that is
+important. Like you said, it's in there
+right at the end next to all this. All
+of the three integers must equal zero.
+And similar to the two sum, this like
+weird complicated way of saying it, I
+can't be equal to J. K. J can't be equal
+to
+K. We
+cannot reuse
+Indices but
+values can
+be
+repeated in the
+sum
+calculation. That would be like my kind
+of shorthand way of saying that we can't
+reuse indices but the values can be the
+same. Um, just kind of going off of what
+we already talked about in the two sum
+since we already know in the twosome
+that that's what they wanted that we
+can't reuse the same indexes. Um, but
+the numbers can be the same. We saw that
+with the 33. It's going to be the exact
+same here. And then just like last time
+as well, our
+return is not index
+positions. Oops.
+position
+positions, but actually it's like it's a
+2D array really is what they're asking
+us to return. an
+array actually I'll just write a
+2D array of all
+possible three sum combinations
+um the
+nations and again here I think they said
+it
+yeah oh cannot be oh solution must not
+contain duplicate triplicates okay yeah
+so we can't have any repeated. So we
+can't have like in this case you could
+make negative
+one and two. Um and then in a longer
+array you could still have more negative
+1's and more twos. So you get a like
+eight negative 1's in the array and
+eight twos in there. So there's going to
+be lots of different ways in which you
+would arrive to the solution that
+includes two negative 1's and a two. But
+kind of like a set if we have it in our
+final solution already. we can't add
+those combinations again.
+So even at different
+indexes,
+the threesome
+values cannot be used twice. So that's
+kind of even like a a further
+stipulation from this stipulation. So we
+can't reuse indices and we also can't
+reuse
+the values as a whole of three like as a
+whole set of being
+three three values together. So we could
+use negative one in all of our different
+solutions but we can't have the full
+three set of numbers be used more than
+once. Yeah. So this one's tricky. Is is
+that whole set of three numbers is it
+the number or is it the
+index value?
+So you're saying
+like like you said if there was another
+set of negative 1gative one two like in
+that
+array you could have good clarification
+you could have that there because that's
+they're different index values even
+though they're the same numbers.
+So you're saying we have negative ones
+here but then we also have the negative
+one here but there's only two negative
+ones up here. I'm saying uh in that
+input array, let's just say you had
+another set of two negative 1's and a
+two. Yep. Or you had another two even
+just alone.
+That would be the same triplet in terms
+of the what the values are, but it would
+be using technically, you know, two
+repeating index values, but one new
+index value.
+Yes. Yep. So even if they're at
+different indexes, if the values as a
+set of three are equal to any of the
+other previously found sums, you can't
+use
+them. But in you asking that question, I
+think you also asked asked asked a
+different question, which is that if I
+use an index in part of one solution,
+can I reuse that index in part of
+another solution? Um because based on
+what I said here, you might think no,
+but yes, you could. We cannot reuse
+indices
+in within a triplicate. I'll call it
+that within a
+triplicate. But values can be
+repeated at
+different and see it's getting
+complicated but as long as you can
+understand your pseudo code um that's
+fine. We cannot reuse reuse indices
+within a triplicate answer. So in this
+case, we couldn't say if there was only
+one negative 1 in here, we couldn't say,
+okay, index 0 plus index 0 +
+2 would equal that sum because that
+would be reusing the same index position
+for negative 1. But in this case, we can
+because there's another negative 1 at a
+different
+index. Um, so that is fine. And then we
+can use the same
+index
+value in
+multiple triplicate triplicate
+solutions. So that's another
+consideration there. So we're using
+negative one here. It could be the zero
+index or this index here. And then we're
+using negative one again. So regardless
+of which one of these it is, even though
+we've already used both of these numbers
+and their indexes in this first
+solution, we can reuse it again if it's
+in a different solution.
+So each set of three the indexes cannot
+be used twice but across groups of
+threes we can use a certain index value
+more than
+once.
+Would it be safe to say that we could um
+add two of the values and then minus it
+from the zero
+and then again do a search for that
+number and then pull the indices to
+build the output
+potentially. Yeah, that's potentially
+something that we could at least try
+because there's there's no, you know,
+there's no absolute certainty until we
+put it into into action. Yeah. So, I I
+think it was was Kai was pointing out or
+with back to his question. So like on
+example one the output and the second
+one you could do I mean it's not a valid
+solution but you could do 0 one negative
+one but that is not valid because we
+already
+have one 01 right
+and it doesn't say well does it
+say it doesn't say if the order matters
+or not
+right I'm assuming They're using the
+where the first come first serve because
+they put that right first negative one
+the the negative one that precedes the
+zero otherwise it would come after the
+zero. Yeah. But I think we can assume
+that because we have the two negative
+1's and a two right and the two comes
+before this negative one. So I'm also
+going to add that as a consideration. So
+the more you look at it the more you
+kind of see as well. So
+order of
+numbers and
+answer answer
+arrays does not
+matter. Similar to the last one in
+twosome they said we just need the two
+index positions. We don't care if
+they're out of order when you send them
+to us. So you could say 1 0 1 or you
+could say 1 0. That doesn't matter as
+long as the numbers fit within these
+other parameters that have been
+established about not reusing indexes in
+the same group of three and not
+repeating
+um not repeating groups of three across
+the answer set. Yeah. So, this one has a
+lot of kind of cases like that to
+consider. you might not need to
+establish all of them right at the
+get-go, but I think it's helpful in kind
+of considering potential solutions that
+you could look at. Um, and we could
+probably continue to look at this some
+more and find even more considerations
+here. For example, it's possible that
+you won't get a match in this case. So,
+in the two sum, they're like, you're
+always going to get an answer. There's
+always going to be at least two values
+that equal up to the target. In this
+case, you could have a full integer. I
+mean, you could have a full array up to
+the constraints of 3,00. So, you could
+have a length of 3,000. And none of
+those 3,000 integers are going to sum up
+to
+zero. So, that is also
+important. There may not be a
+valid three sum.
+So again, just like before, I'd always
+add that empty return. Kai said 37
+acceptance
+rate. Yeah, this problem is not for the
+week. Let's say that. But the reason I
+have these two problems that we
+discussed today, and I put this in the
+chat as well, is that twosome is
+considered an easy
+level. Um, but this one is considered
+medium. I would actually probably say
+you could bump those up a level um
+depending on your familiarity with them.
+The reason that they are ranked as easy
+and medium, especially for this one, is
+that these are and have been like
+continue to this day to be very popular
+in tech interviews in the job
+hunt where they might start with
+something like the twosome. They'll give
+you a twosome or twosome equivalent like
+problem statement like this one. Ask you
+to work through it. Ask you to sound it
+out. And then they'll add on conditions
+that eventually lead to giving you
+threesome where you have to figure out,
+all right, if we change these parameters
+and now it looks more like the threesome
+problem, what would you do then? Either
+way, you could get the twosome problem
+as a job hunt technical question and you
+could get threesome as a job hunt
+technical question. Um, but more than
+likely if you're seeing threesome, you
+would have first seen you would have
+seen twosome first as a part of the
+interview set. But there are companies
+who are still using both of these
+problems actively today. So because
+they're have been popular for a long
+time for technical interviews and
+they're still popular today, the
+rankings of them are a little kind of I
+think they're skewed downwards because
+they're so popular in the
+industry. So working on these problems
+is actually going to be very good for
+you. So try and work on these before
+Wednesday. That being said, I do not
+think that we will be able to work
+through solutions to both of these
+problems on Wednesday unless I rush
+through them like really really quickly,
+which I don't want to do. So, what we
+might do is start with the twosome and
+then see how far that goes and then
+start on the threesome, see how far that
+goes and then I might kind of tack that
+on to another session where we wrap that
+up to figure out how where to go with
+that. Um, or we might not. It it depends
+on what what you all want to do. Um, but
+we will at least look over to some on
+Wednesday. Do you do you feel like if we
+just tackled the threesome that twosome
+would become apparent?
+No, I they because I I did look this up
+beforehand to see like I because I
+looked up
+um I actually kind of stumbled onto some
+and preparing like as a problem to use
+to prepare for today and then in looking
+up like Tusome usage and interviews
+which I somehow ended up on a Reddit
+thread there a down spiral of things
+people were like yeah I saw this problem
+the other week and it was like posted
+within the last year.
+Um but in my my research there
+the the approach to the threesome
+solution is based on twosome but the
+worst twosome approach. So let me think
+about how to rephrase that. When we were
+looking at the twosome we talked about
+the brute force o of n squ and then we
+were talking about ways that you could
+make it more efficient and there's maybe
+an even more efficient solution. The
+threesome solution does not have like a
+more efficient solution. It is only the
+brute force solution.
+Is it only the brute force?
+Yeah, but it's not the same brute force.
+Okay. I mean you could efficient. Yeah,
+you could I will take that back. It is
+mainly the brute force solution. Like
+you can optimize it a smidge but not
+much.
+Okay. Yeah. I mean the the brute force
+solution feels like a place to
+start. The part that I I I don't
+understand with the threesome is it's
+the once you get the
+triplets how that adds like it's finding
+the multiple triplets part that gets
+confusing to me. Yeah. And with a
+problem like this it's really really
+really important to break it down into
+one step at a time. first finding a
+group of
+three and then maybe stopping and then
+considering all right now that I found
+my first group of three and I've added
+it to an array as an answer solution can
+I look at the test cases is that is that
+group of three and all of the their
+answer arrays at least like can I at
+least start with just getting the
+negative 1gative 1 and two don't worry
+about getting all of the problems or all
+the answers just get the first answer or
+one of the answers at least
+And then you kind of take it, all right,
+now what's the next step? How can I get
+multiple of the answers? And that's
+going to take maybe that takes a couple
+of iterations before you confidently get
+that and figure out the right conditions
+to say, all right, we've already got
+this one, so we can skip that answer.
+Move on to the next one. Keep looking
+for a new answer
+set. Yeah, break these problems down as
+much as you can. All right, everyone.
+We have gone over as usual uh despite my
+best efforts. But we will be back on
+Wednesday. But I'm just going to give
+everyone a heads up now. Next Sunday and
+next Wednesday, so
+June I believe
+15th and Wednesday the 18th, I will be
+moving to Spain. So I won't be
+available. I won't even have like Wi-Fi
+or anything really. Um so the 15th and
+18th will be cancelled and removed from
+the calendar. and then we should be back
+on by the 22nd barring any issues. Um
+but yeah, so next week sessions are
+going to be off but this coming
+Wednesday we will still be
+scheduled.
+Right. All right. Thank you everyone and
+have a great rest of your day. Take
+care. Thank you. Thanks Ruby.

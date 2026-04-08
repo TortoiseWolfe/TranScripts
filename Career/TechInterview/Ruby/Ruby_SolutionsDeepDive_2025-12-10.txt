@@ -1,0 +1,999 @@
+All right, welcome to this week's
+nailing the tech interview. Um, it's
+Wednesday. I'm used to doing the It's
+Sunday, it's Wednesday, but we're only
+doing Wednesdays now, so we're going to
+be doing a mock interview today. Before
+we get started though, does anyone have
+any questions they'd like to ask about
+the knock tech interview? um practicing,
+preparing, or any thoughts that they'd
+like to share.
+Okay.
+So, with that, we will start on a mock
+interview. So, Linda has volunteered for
+us. So, Linda, I'm going to pass this
+problem to you in the chat. If you want
+to open that up and share your screen
+again, and then we'll take a look at it.
+Okay.
+Oh, it's loading. It's loading.
+[clears throat]
+Um,
+and I'm going to share screen
+and
+>> Okay. Can you guys see it?
+>> Yep. Perfect.
+>> All right. So, we'll just go ahead and
+throw 20 minutes on the
+clock and then yeah, we'll all hop on
+mute and let you get going.
+[clears throat] Good luck.
+>> Thank you.
+>> [clears throat]
+>> Second example.
+That's eight.
+See?
+Oh. Oh. Okay.
+See.
+Uh, okay. I'm going to start talking.
+Um, and I'm going to be thinking as I'm
+talking, so I may not make a lot of
+sense at first. Um, but here goes.
+Okay. What we are looking for is
+basically a descending order.
+Um, we're, for example, in the first
+example, we are given
+um, okay, I don't know if I'm going to
+do the whiteboard people. I may just
+come over here and do my comments uh
+over here. Um
+but basically uh for the first one we've
+got five. And so intuitively what I'm
+looking at is the first row
+if five
+uh the first row
+is one.
+The second row should increment
+uh by one. So that would be 1
++ one.
+And if we had
+enough, if we still had uh enough in the
+input, uh let's say if we had six, uh we
+would increment it again.
+So what we've got, we would one uh okay,
+the first row is one, the second
+is 1 + 1.
+The third
+is 2
++ 1. And that's the reason
+And that's the reason that this is
+incomplete because uh we're it's five
+not six. Um
+so
+the output um now
+because the third row is incomplete we
+return two. I guess my question here is
+if um we had six instead of five
+uh we would return three.
+So
+and I believe it works out in the second
+example a little bit more. Uh the first
+row would be 1.
+Okay. The second row would be uh 1 + 1
+is 2. The third row would be um 2 + 1 is
+three. The fourth row would be um 3 + 1
+is 4, but we only have two. And so I
+guess the thing that I'm trying to Oh, I
+think I see it. Um,
+we only have three complete rows. And up
+here, we only had two complete rows. So,
+you're not counting the incomplete row.
+So, I I can I can see what they're
+asking for. Woohoo. All right. Now, the
+next thing is how to code this. um which
+is basically where the rubber meets the
+road. So
+um
+n uh we're told up here is five.
+Okay. Um
+let's see four.
+It's an input. Um, so and we don't
+really
+uh I need to I need to actually do the
+algorithm that indicates that we're
+going um for I need to make an algorithm
+that says this basically my pseudo code
+the first row um let's see four
+four
+Um
+I
+in
+um
+see
+um
+uh Okay,
+going to comment that out
+for and I'm going to have to put some
+stuff up here to accommodate this. Um
+I am going to uh put something like
+storage
+because I need
+this is this is what I'm going to do um
+for I inn if
+um
+Okay.
+I
+Okay. If
+n
+is
+equal to
+or
+greater
+Then I oops I
+you know this
+I don't want to say it's a recursion
+problem because I don't think that
+actually fits. Um but I my purpose is to
+try to do this straightforward basic
+meat and potatoes coding way. And so I
+really want to essentially say in my
+code what I said in my pseudo code which
+was um
+we have let's say five I'm going to put
+five
+okay for and I don't even know if I need
+a for loop for this but we're given
+we're given five we're given n so um
+for
+I don't know if I need to actually loop
+through that but
+for I N
+um
+ah okay um let's see
+five
+okay row one
+is one um for I and E
+If
+row
+okay if it's
+if five is equal to or greater than but
+we're not looping through or are we see
+that that's where I'm getting my
+cognitive disconnect here. Um
+I am in um
+>> okay let me pause you real quick. So
+we're about 10 minutes in.
+>> Yeah.
+>> Yeah.
+>> To move forward, I would like you to
+just focus on answering a few questions.
+So what is the problem asking you? What
+is the goal of this problem?
+>> Okay.
+>> What do you expected to return?
+>> Yes.
+>> What drives forward
+your code or your pseudo code at any
+step? So
+>> okay,
+>> what is the goal of the problem? What
+are you expected to return? How do you
+move forward in a single step?
+>> Okay. Um,
+we're expected to come up with the
+number of complete rows given our input
+in. Um, and I just don't know how to
+write that out. I do know that um
+intuitively
+we're looking at something like um
+and again I'm going to just pseudo code
+it again. Um,
+we're looking at something like um
+if we're looking at five,
+we want um we want to almost like divide
+five
+into like uh we want to go five
+divided by
+one. No, we don't. Um,
+five.
+We're looking at
+n as five. Uh, let's see.
+Um, minus one.
+No,
+we're looking at it in descending order.
+So, we want we're looking at we want to
+go five
+and then uh
+we want to
+let's see first row
+all the way up to five. We're going to
+go one like like I did when we started
+out. So, um one
++ 1
+= 2.
+2 + 1
+= 3.
+3
++ 1.
+Okay.
+Um,
+you know this I think it's a recursion
+problem but I don't know recursion
+enough to actually employ that as a
+technique.
+Um
+see the first row for
+for
+which is for
+one n
+five
+if
+okay that wouldn't make any sense to say
+if n + one here
+um
+see one and five
+for i and n
+if I
+first move.
+I do know that.
+Let's see. So see 5
+- 1
+= 4
+uh or
+-
+2.
+2
+=
+2.
+2
+- 3. You can't do that.
+This would give us two steps.
+Um because what we're really dealing
+with is we're dealing with 5 minus one
+is four. Four was the steps the the
+stair steps. Uh the first one the first
+stair step is one. The second stair
+stair step that we are subtracting from
+our input is two. The third one um would
+would be for example um
+okay we can only we can only go two
+steps. Let's see if this plays out with
+the second example too. The second
+example was
+eight. Our input was 8. So we're going
+like 8 - 1
+= 7.
+7
+- 2
+= 5.
+5 - uh 3
+= 2.
+And then 2 -
+4
+equ= a negative number, you know, okay,
+call that. But in this one, I notice
+that we're getting our three rows. Um,
+so, so,
+um, I'm gonna say something really
+simple like, um, you're gonna get in
+and you're going to, uh,
+subtract,
+uh, the number of I mean number of rows
+um,
+you you in ascending order. So, you're
+going to go n minus one
+uh and then uh n -1. Whoops.
+Uh
+- 2
+and then n
+- 2.
+minus 3
+um and so on
+um until
+n is less than zero.
+Okay, I think that's what I want. Uh but
+again, the I need to be able to put it
+in code. And to tell you the truth,
+Ruby, I don't know if I'm going to be
+able to do that within the time that's
+given, but I will certainly try. Um,
+okay. Um,
+so
+n minus one if, um,
+and I'm not
+okay. If I'm going to say
+um if
+n minus one
+um
+equals or is greater than zero.
+Oops.
+Um,
+then you should keep going. Uh,
+and again to answer your question about
+what's powering this thing, what's
+driving the loop, um,
+I need to put something in here like a
+counter or something that's going to
+drive it. Um, and
+but I have to think about what that is.
+I'm not sure. And you know since I'm
+challenged for time I may not do it may
+not be able to do it. Um but what I
+really want to do is like continue
+and then um if
+if and I'm just going to just paste the
+rest of this stuff. If
+You know, this looks like a while loop,
+doesn't it?
+Um, yeah. Uh, I probably, but again, you
+know, I have to do this do this stuff
+out longhand or, you know, sort of walk
+through it. But yeah, you know, I think
+I could be doing this with um a while
+loop. Um
+let's see.
+>> Okay. So,
+>> minus
+[laughter]
+really getting into this now. Um let's
+see. Hold on. Just just just let uh just
+hold on a second. Um uh let's see. minus
+wait
+n minus
+1 - 2 n - 2 uh yeah n minus
+2
+- 3
+um until
+uh else
+um
+uh just stop.
+Okay, I'm going to stop now. Um but
+okay um else and I'm just going to say
+before I stop um else uh let's see I
+don't need to say n is less than zero.
+No I don't need to do that. Um
+else. Okay. And then uh
+what I need to return uh what I need to
+return is I have I want to stop at the
+at the point um
+where n is less than zero. So, I'm going
+to come over here and just say, uh, you
+know, this was my logic. Uh,
+wait,
+okay, n -1 - 2, n - 2 - 3,
+um, and so on.
+Um,
+n minus 2. Yeah. Um but but then you you
+need to when it gets to
+um until n minus0
+uh then you want to return um you want
+to return
+and again I should have put a counter up
+here uh because I'm counting the number
+of rows. Um, so I should have basically
+said used a while loop. Uh, initialized
+the counter.
+I should have said while
+I'm running out of time, I know, but you
+know, I'm sort of getting into this. Uh,
+while
+um in wait while it is not true. Uh,
+wait a minute. while
+uh while see n is
+not less than zero or while n is equal
+to or greater than zero. Um, so let's
+see. Ah, whoops. Ah.
+Um,
+if and again, I I need to work on this,
+but I know what I wanted to do. And at
+the end, uh, what you want to do. And
+each time I go by uh one of these
+uh I should instead of saying continue I
+should have probably said counter
+augment the counter
+um augment you know I mean I know this
+is longhand but you know it's it at
+least makes sense to me and I'm I kind
+of know what I'm
+Um, [clears throat] let's see. Uh,
+I kind of think that this probably would
+have gotten rid of um all of this stuff.
+Um, but I'm going to leave it in anyway.
+And at the very end, I'm going to say
+return counter because we are Where is
+that? Okay. because um we are looking at
+uh
+because we are looking at uh the number
+of rows. We're counting we're counting
+something. We're counting the number of
+rows. Um okay. Anyway, I'm done. Um I
+know that this is probably not going to
+run, but I'm going to try it anyway. Um
+and it's not running which is okay. Um
+it's telling me something like while is
+equal um okay
+unindent does not match any outer
+indentation.
+Okay. Um
+outer indentation.
+See
+See expected
+it's on line eight
+expect. Oh yes indeed. Okay. Um,
+okay. and
+see. Oh, uh, indentation error again.
+Um, line
+line on line 68.
+Uh don't quite follow that one. Um if
+statement index expected an indentation
+block after if statement on line 68.
+Uh return counter
+that.
+Okay. Um, let's see. I don't quite Let's
+see what I'm What's going on down here?
+Expected five.
+The indent expected and indented block
+after the if statement. Oh, they're
+talking about um this line right here.
+But I don't really want to do that. Um,
+all right. I'll do it.
+Okay. Um
+>> time limit exceeded.
+>> So question for you.
+>> Okay.
+>> Your condition is built on your inval.
+Does your in value ever change?
+>> Uh,
+well, it will change with a new input.
+But for example, if I put five in, that
+should remain until I'm done running the
+while loop.
+Um
+I would expect that um somewhere in
+hacker ranks uh coding it would have the
+other example down here the input is
+eight being fed in next um
+>> not that I mean in your code is in chang
+>> in my code in my um
+oh as I go through this um no not really
+because this would be 5 - 1 is less than
+zero. Count it once. 5 - 1 - well
+actually it is changing. 5 - 1 is 4 - 2
+is 2.
+And then
+but oh I think I see what you're saying.
+Um 5 - 1 okay um is greater than zero.
+So that would be five minus that would
+be four is greater than zero.
+Um, okay. And then we are using five
+again. So, no, it doesn't change. 5 - 1
+is 4
+- 2. Okay, that's two. But then again, 5
+- 2
+is 3 - 3 is 0.
+Um so you'd be getting um
+let me see this first one
+would be
+four. Um and yeah the counter would
+augment once.
+Uh the second one would be
+um
+let's see uh 5 minus one is 4 - 2 is
+three that would be three. Um and the
+next one down here
+uh that would be 5 - 2 is 3. 3 - 3 is
+zero.
+So while uh I guess to answer your
+question, yeah, it is changing. Uh and
+you know this actually is
+it it would act I mean I think it would
+actually give me the output that I want
+because on the third step um up here
+it's an incomplete row and we're not
+counting it but
+>> right but for a larger n like say 100
+you can't manually write if statements
+to account for a dynamic n Can you?
+>> No.
+>> So, n would need to be updated, right?
+>> Yes.
+>> For your while loop to work, if n isn't
+updating, what's it going to do?
+>> Uh, if n
+it's not going to move forward. It's
+just going to stay in place. Um,
+okay. Th this is this is the interesting
+part. I thought that I was powering it
+forward by saying things like n minus
+one, you know, because I am getting
+different numbers here,
+>> right? But how do you set a variable?
+How do you update an a variable?
+>> Well, you you like plus uh the variable
+plus one. Um, so for example,
+uh, I would say something like, um,
+I don't want to say N, but I'm used to
+saying I and I + one. Um, I know that I
+initialize the counter, but I don't.
+Okay.
+>> Yeah,
+>> the counter.
+>> No, I mean, you can you can update in
+>> Oh, okay. Because I I was wondering
+about that. Um, so n
+uh
+plus equals Whoops.
+Now, do you want a plus or what is your
+if statement? What is your statement
+doing?
+>> Okay. Um,
+it is uh it's going down. It's
+decreasing. It's um
+Okay. And so, um,
+that's the way I would keep it moving,
+but you know, as I said, intuitively, I
+thought the way I was keeping it moving
+was to do this here within my,
+>> right? You're doing a calculation, and
+the calculation is going to return a
+number, but you have to update your
+variable if you want your while loop to
+end.
+>> Yes. Um, okay. And also, what level do I
+want it to like that?
+>> What do you think?
+>> Um,
+yeah, I do. I I think that I should put
+it there.
+>> So, will your while loop ever end?
+If okay, it's going to go on forever
+unless
+>> it's going to go on forever as long as n
+is equal or greater than zero. As long
+as it's a positive number, uh it's going
+to keep going. Uh so we want to decrease
+it. Um
+I think I'm going to move it over there.
+>> And there you go. Yeah,
+>> I think I'm gonna move it over there.
+And um with regard to the counter,
+uh let me see.
+>> The counter is fine. I think the counter
+is fine. So what I'm seeing here is that
+I mean your first comment here is
+exactly what you want to do, right? And
+you did kind of somewhat get to that
+point just in reverse, right? Instead of
+adding, you're subtracting.
+>> And I think that's the right approach.
+So I think your overall approach is the
+right approach.
+um
+>> you kind of had the answer from the
+beginning and then you kind of had to
+work through how am I going to carry out
+each step until the end. And I think
+that's where you're getting hung up is
+that you're trying to solve every step
+of the problem before you actually do
+anything in the problem. And you don't
+want to calculate how you're going to do
+each interaction, right? You that's
+where the while loop comes in. you're
+just kind of focusing on one step at a
+time. So what would be my first step?
+Well, I'm going to create that first row
+and then my n is going to reduce by one.
+What comes after that? Well, then I get
+a new row. So what do I do on my new
+row? Maybe that's that's where the while
+loop starts to come in mind. So that's
+the second iteration.
+>> I have a new row. Its length is + one
+plus one longer. So that's where you did
+your second row is 1 plus 1 equals 2.
+Okay. So now what do I do with that two?
+That's where you eventually got to. I'm
+subtracting that two from my n and
+that's how much I have left and then
+move on to the next thing.
+>> So I think you were focusing on how do I
+do each step at each row, but really you
+just kind of need to break it down to
+what do I do on the first row? What do I
+do on the second row? Can I put that
+into pseudo code? And then can I put
+that into an action? It sounds like a
+while loop because I'm doing something
+at each row and I need to increment. And
+what am I incrementing at? It's a very
+clear increment. I'm adding plus one for
+each row and I'm decreasing in at each
+row. So those are a couple of key pieces
+of information that I'm doing one step
+at a time. So what do I do in those one
+steps at a time instead of how do I do
+all 10 steps at once? Does that make
+sense?
+uh kind of at a higher level. Um
+uh but one of the things that I really
+want to capture because I agree with
+you, I did know what it wanted. I just
+couldn't say it. I mean, I just
+couldn't.
+>> And is this a problem with me not being
+familiar enough with data structures,
+which I think might be something that I
+need to look into? Um or but you're
+saying
+so so according to you Ruby I would have
+been better off with maybe breaking this
+up line by line and then trying to code
+under it maybe.
+>> Yeah.
+>> Okay. For example, um like the first row
+um Okay. And then the second row, let's
+see. It's kind of hard to say what area
+it is that you're struggling with
+because what I'm seeing isn't
+necessarily like
+I don't know. I don't think you have
+like a a technical issue of
+understanding the while or the if or
+variable manipulation necessarily. And I
+don't think you have an issue with
+problem solving necessarily.
+I think what I'm seeing is that you're
+having trouble thinking
+programmatically.
+>> Yeah.
+>> You're having trouble putting an
+algorithmic step into a series of steps.
+You kind of need to see the whole
+thing outlined all at once.
+>> And I'm I think Dr. Emily has lots of
+videos about that in in module two.
+That's going to be a big hurdle for you
+if you stick in that kind of mindset.
+You kind of have to break it down into
+letting the code even just like in an
+abstract way, letting the code do that
+work for you. So instead of how do I see
+the full scale mental model of what the
+code is doing, how can I say what the
+code is doing on an algorithmic level in
+a step by step. Give it instruction, it
+does instruction. give it while loop. It
+does a while loop until a certain action
+is complete. Instead of having to say
+I'm going to subtract n minus one minus
+one n minus one minus one minus one, how
+do I feed that into a while loop? How do
+I make something that does it in an
+algorithmic way?
+>> Okay. Um, so practically speaking then,
+um, my Y loop would probably cut in on,
+um, the second row, right?
+I think your Y loop could start from the
+from the very top, but you could do you
+could initialize your something and then
+create the while loop or you could start
+with the while loop al together. I mean,
+I think there yeah, there's there's a
+few different things you could do there,
+but getting to the while loop would have
+been the first thought for me. And I
+think you did know that you wanted to do
+a loop.
+>> You just weren't sure what kind of loop
+and you weren't sure what you're going
+to do with that loop. So, that's where
+I'm a little confused is that you kind
+of knew that you needed to do a process,
+like an iterative process, but then you
+weren't sure what how to break that out
+into what are my iterative steps.
+Okay.
+>> So, sorry Rebecca, you said you had a
+question. What was your question if you
+don't mind?
+>> No, I think I figured it out. Sometimes
+I often get um an error. It says int
+object is not iterable, but I think it's
+saying that what I had coded for the um
+in the um
+the the I did a for loop.
+>> Yeah. Um it they they don't understand
+when it says int objects not iterable.
+It's saying that it's they can't iterate
+through the
+the
+um basically n.
+>> Yeah.
+>> Yeah. You can't do four i and five,
+right? You have to make a range.
+>> That's all. I kind of figured it out on
+my own after a while. Perfect.
+>> Thank you.
+So, in this case,
+Linda, I I even like how you started to
+break it down at first, but then I you
+kind of lost me a little bit and then
+you convert it into code. You circle
+back and it started to make sense to me
+again. Um, so [laughter] that's where I
+wasn't sure how to give you proper
+um, steps on what to work on there
+because I feel like you do have a lot of
+good understanding here and a lot of
+good
+um, steps that you're taking, but
+there's a
+there's something there that I'm not
+sure how to put into words about
+switching your mindset from
+from what it is now to something more
+programmatic.
+So explain to me what my mindset is. I
+mean I my first approach and this is
+crucial because this is going to apply
+to the way I look at all of the
+problems. Um okay I I figured out going
+over here by the example what I figured
+that and you know it surprised me that I
+figured it out kind of out of the gate
+what was going on. Um, you're right. The
+breakdown comes in putting it into code.
+And that's where, you know, I just I
+don't know. Um, I had to basically go
+get the example, the input, and try to
+walk it through before I realized I
+needed a while loop. I was trying to do
+this and as you pointed out I was trying
+to do this manually uh cuz I could see
+for example with five oh okay 5 - 1 is
+four okay and then you want that's the
+first that's the first step um four the
+second step literally is four minus two
+um and then the third step would have
+been
+two uh minus three but that is a
+negative number and it's not a complete
+step and the only amount and the amount
+of complete steps that you do have is
+two.
+Now to put that in code
+um I can see I can see why we want to
+use a while loop. uh but
+the algorithm itself how do I capture
+this business here that I did manually
+that is the thing.
+>> Yeah.
+>> Yeah.
+>> So,
+so this is where you start right here at
+the beginning. You said if five first
+row is one second row is yada yada yada
+and then you moved into try to how do
+you step through it? I think you could
+have continued with breaking it down in
+just this example in the comments first.
+Um, so if five, first row is one. Okay,
+so what needs to change for before I get
+to row two? So maybe I need to look at
+row two first. Second row is 1 + 1
+equals 2. Okay, I'm having an idea now.
+I'm seeing the model where we have the
+one coin in the first row, the two coins
+in the second row. We need three coins
+in the second row, but we can't fill it.
+So what do I need to do in that first
+row? Do I need to update my n value? Do
+I need to add a counter? What needs to
+happen in that first row, that first
+step before I get to the second row?
+Like, what am I doing with my my given
+inputs? And what am I going to return?
+So, the that's where I always start out
+with saying, what am I returning? You're
+returning the count of rows that you can
+properly fill.
+>> And so, I would write my return
+statement rows. All right. So, I know
+I'm going to have something with rows,
+right? So what am I doing with my row
+variable in that first step? So if five
+my first row is one, can I fill that one
+value?
+>> Well, how do I do that? I do my n minus
+one. So n minus one, you already have
+that condition. N minus one is going to
+be greater than zero. But you don't even
+need to write that code yet. You can
+just say in your head 5 - 1 is going to
+be four, which is going to be greater
+than zero. Okay, so I'm doing a
+calculation there to update if I can
+fill that row. So, how do I know if my
+row is filled? Because I can put enough
+coins [clears throat] in that slot. So,
+if I'm tracking a row variable, what am
+I going to do with that row variable in
+the first step? I'm maybe going to add a
+counter to it and use the one. Or I'm
+going to figure out how many coins I
+need to fill into that row and then
+subtract it from n or any number of
+steps you might take in that first row.
+And then you're going to repeat that
+process for the second row. And that's
+where you're kind of keeping track and
+writing out what are the variables I'm
+using, what am I tracking, what am I
+doing at each step. And you can do that
+in pseudo code without having to write
+any code first.
+>> Okay.
+Okay.
+Okay.
+>> Does that all make sense?
+>> Yeah. Yeah, it does. Uh it it it does.
+And so what I'm going to do is go back
+and try to figure this out. And I like
+what you saying uh the idea that yeah
+come up with the overall idea but break
+it down what you want by what you want
+returned
+uh step by step by what you want
+returned. Um, in my instance, you know,
+where where I first started out,
+um, yeah, in the first step, I do want
+this. I I, you know, if but I need to be
+able to write the code in such a fashion
+that I need to put a else down here so
+that I don't have to write the rest of
+these things down manually.
+>> Yep. Um, and so that's what I'm going to
+go off and try to figure out. But,
+>> and maybe that's where your pen and
+paper process helps you. I wouldn't
+focus on getting writing code right from
+the get-go of like, okay, I think I need
+a loop, so I'm going to start writing
+for blah blah blah.
+>> I wouldn't I wouldn't approach it that
+way because then you're already focusing
+on code and you're not focusing on the
+problem, the process. So that's why when
+I do pseudo code, if I'm doing pen and
+paper, I'm using the raw numbers that
+they're giving me and I'm just saying
+first step, okay, 5 minus one equals
+four. Great. And then I'm going to draw
+a box around that to say that's row one.
+All right, row two. I need to put two
+coins there. I'm going to do five minus
+two. But wait, I don't have five coins.
+I have four coins now. So I'm going to
+write four minus two. And I'm going to
+do it that way without any code
+references, without any kind of
+structure to it. And then I'm going to
+go back write that into pseudo code. I
+need to do this XYZ step. I need to do
+this in my next step. And then what does
+that look like in code? Well, that
+sounds like a while loop. And that
+sounds like I'm tracking this variable.
+And that sounds like I'm returning this
+variable.
+>> Yes.
+>> Okay. Well, great. Thank you.
+Yeah, because I think aside from that
+initial setup there, if you had taken
+your original idea and even your final
+approach here and you had just like
+eliminated a lot of the in between, I
+think you would have gotten to a
+solution really quickly because I think
+this approach will work once you kind of
+finesse it down a little bit more.
+>> I had gotten rid of all all of that.
+>> Yeah. instead of trying to hard code it
+line by line if you had um worked on the
+step-by-step process. So I think as you
+continue to finesse it down into a few a
+few lines of your step-by-step process,
+this solution should absolutely work. So
+you definitely got there. Um
+I don't see an issue with that and I
+don't see an issue. You even recognized
+you needed to switch to a while loop and
+you were reading through the errors,
+understanding the errors, understanding
+the syntax meaning and correcting your
+syntax meaning. Turtle Wolf pointed that
+out. John pointed that out in the
+comments. He gave you congratulations
+and I agree that that's a really
+important step is being able to read
+through the errors, understand them, and
+make the correct changes there. So,
+you've got a lot of the stuff right.
+It's that first step that's kind of
+hanging you up though, right? is how do
+you put things into step by step
+algorithmically
+versus
+the other process that we were doing.
+>> Do you have any suggestions for uh
+dealing with that? Just more practice.
+>> Yeah, I mean even what we just kind of
+talked through right here. You had
+written out, okay, I understand the
+problem. It wants me to do this. I'm
+going to write that into one short
+statement. What does this problem ask me
+to do? You did that. You understood it.
+Great. If it takes you a little while to
+get there, that's fine. and keep working
+on it. Keep pen and papering it until
+you understand what the problem is
+asking you minus any code. Once you
+understand what the problem is asking
+you, that's when you say, "All right,
+I'm going to write that down into one
+sentence or two sentences. What is this
+problem asking me? What are all these
+steps that I may be seeing are there?"
+And then I'm going to separate those
+into lines. Here's maybe a step one, a
+step two. Do I need to make it an
+iterative loop process? Is it just a
+simple math process? um like what what
+are my steps here? Like what are the
+individual problems that I'm solving?
+And then what am I going to do at each
+step? What do I need to Yeah. What do I
+need to do at each step? I mean, it's
+just kind of a series of question and
+answer assumptions and guessing and then
+testing and
+>> all that.
+>> Okay. Well, look, thank you. This was a
+valuable experience.
+>> Good. I'm glad. And I think I would like
+to continue to see you practice doing
+these here live. I think
+>> I think if you if you get past that next
+little hurdle here, we could see you
+flying through these in no no time.
+>> Okay. Well, look, thank you very much.
+And you know, this is not as scary as I
+thought it would be. So that
+>> it never is, is it? [laughter]
+>> A win, too.
+[snorts] Oh,
+>> all right. Thank you, Linda. That was
+great. Um, before we hop off, does
+anyone have any questions they'd like to
+ask or anything they'd like to discuss?
+Okay, cool. All right, I will see you
+all next week. Yes, next week. Um, it
+might take I we'll have to look at the
+calendar. I think Christmas is on a
+Thursday, Christmas Eve is on a
+Wednesday. So, I'll probably give a
+heads up next week that um I imagine a
+lot of sessions will be canceled that
+week, but yeah, I won't be hosting my
+session on the week of Christmas and
+probably not the week of New Year's
+either. So, we might have a little gap
+there. Um, but we will have next week's
+session on the 17th and then we'll keep
+you updated from there.
+>> Sounds good.
+>> All right, have a great week everyone.
+>> Thank you. Bye-bye.

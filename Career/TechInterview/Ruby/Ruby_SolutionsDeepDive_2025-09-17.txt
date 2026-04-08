@@ -1,0 +1,981 @@
+All right, welcome to this week's
+nailing tech interview. Today is
+Wednesday. I missed last Sunday. I
+wasn't feeling too great. Um, but here
+we are. And on Sunday, I provided a
+coding challenge for people to
+optionally work on. Um, it would have
+been the mock interview for Sunday if we
+had done that. but it's in Discord. So,
+if you haven't seen it, that's where it
+was. It's I'll also post it here. It is
+course schedule.
+It's a medium problem.
+We'll take a peek at that today. Um
+before we dive into that though, does
+anyone have any questions about the
+technical interview practicing
+preparing? Any thoughts? Any questions?
+No. Okay.
+Um, so did anyone I know Mauricio did,
+but John or Stephen, did you get a
+chance to look at this problem, work on
+this problem? Probably not, John,
+because you have been working on claw.
+What about you, Stephen?
+>> I have not.
+Okay,
+cool.
+>> Yeah, I just uh I came in last week and
+um I'm just want to be a fly on the wall
+for now while I get used to solving
+these problems and see how you guys go
+through it. But um no, I I I wanted to
+obviously um do the
+uh comment on Sunday, but I realized
+that you cancelled and I didn't see that
+last problem on the uh channel until
+just maybe 30 minutes before I logged
+in.
+>> Sure, that makes sense.
+>> I know something about the schedule.
+Schedule the
+>> Yeah, score schedule. That's the name of
+the problem.
+>> Schedule. Yeah, I started reading
+through it. I just didn't get to it.
+Yeah, no problem.
+So, what we'll do is actually I'll leave
+it up to you all because
+I was thinking we could use time to do
+breakout rooms to go over or to practice
+pseudo code for this problem, but I know
+Mauricio's done it. Um,
+how do you guys feel? Would you like to
+do practice pseudo code on your own or
+would someone like to do a mock
+interview? I'll accept either of those
+as potentials.
+>> With only four of us here, it already it
+already feels like a breakout room.
+>> Yeah.
+>> My vote for today is to keep it small. I
+mean, it already is small, so I would
+keep it together.
+>> Okay.
+I mean, I think we could do
+Well,
+well then, so then I would be Let's I
+would be looking for someone to be a
+candidate to do a mock interview. So,
+how do you feel about that, John?
+>> Uh, I'll try. I got I got to get back
+into it anyways, so I'll try it.
+>> Okay,
+let's see. I I'll choose
+>> I was just saying I need to schedule
+mine soon anyway. So, this will give me
+an idea of how far off I am.
+>> Yeah, exactly. So, let's see. I'll try
+and find one that's maybe easy since you
+haven't gotten too much practice. Um,
+but I can't promise that not having
+looked at them before.
+Actually, maybe what we'll do is
+if you want to
+log into Hacker Rank and pull up the
+problem solving
+um track and then we'll just choose from
+uh the list of ones you haven't worked
+on before
+>> because I think I've used
+I think I've used up all the easy
+problems of my my list here.
+[Music]
+>> Cool.
+Yes. If you scroll down
+It looks like you scroll down quite a
+lot. What's going on here? Let's see.
+>> It's jumping all over the place. Um
+>> smaller more bearings.
+>> Weird.
+Let's see. If you type in search problem
+solving, what comes up?
+>> We want our Python.
+Yeah. Oh, no. I think that's a coding
+challenge, actually. Go ahead and click
+it.
+Okay. So, if you go to algorithms at the
+top there, the link.
+>> Yep.
+>> Small. My old man eyes are squinting at
+it. All right.
+Here we go. Perfect. All right. So, then
+if you filter by status unsolved
+and easy
+difficulty, easy.
+Do that. It looks like you worked on a
+few of them at least though. All right,
+let's do
+let's do number line jumps. That looks
+>> You said it looks like I saw some. Where
+does it show that?
+>> Well, you've already filtered them, but
+I saw it before you filtered it.
+>> Oh, okay. I got you.
+>> So, yeah, let's do number nine jumps.
+>> Number number Okay.
+>> Yeah.
+>> All right.
+>> All right. Right. So, you just want to
+make sure the language at the top right
+there is uh the language that you're
+wanting to use.
+>> Can you post the link on the chat,
+please?
+keyboard's not backwards. Maybe the
+batteries get low on the keyboard.
+>> I don't think it lets you do that. I
+think you just have to choose.
+>> I mean, the cursor's flash, so it looks
+like you would be able to go back.
+All right. and be
+in the chat.
+>> There you go. Number one.
+>> Cool. All right. So, what we'll do is
+that we'll have you read through the
+problem. Um, typical steps that we
+usually do. Make sure that you are some
+restating the problem for us so that we
+can follow along. um pull out any
+information that will be useful to you
+maybe into some pseudo code. Write some
+code comments about what your
+assumptions are about the problem. Sound
+out your thinking as you're going along.
+And if you get to code, if you get to
+coding, um I would advise you to explain
+your thoughts along the process there or
+make little comments along the way to
+help give yourself a break to explain
+what you're doing. Other than that,
+we'll just take 20 minutes. Everyone
+else will hop on mute and stay on mute
+and we'll just give you 20 minutes to
+work through this.
+>> I already solved this one. So, yeah,
+>> you already solved it. All right.
+location, velocity, location, velocity,
+first hanger, second hanging.
+So, it's it's Yes, because they're both
+hidden.
+After
+one jump, they're both at three.
+Starting location velocity.
+Starting location. Okay.
+Okay. I'm up to date there, I think.
+the boolean
+based on location and velocity.
+Single line of force
+Something feels off there. That's
+location velocity.
+Feels like that location's too far, too
+deep for that. Well,
+it feels like that should be a no that
+they're saying. Yes.
+So, I've got a I've got a mis assumption
+here to figure out. There's a code smell
+on that.
+Okay.
+12 is what I'm not getting to, I think.
+Yeah. One starts at zero
+has a velocity of three. So 1 2 3 1 2 3
+1 2 3.
+The other one starts at four. This one
+starts at four.
+has a velocity of two.
+So, yeah,
+they can hit they can't line up on 12.
+I don't understand where it gets 12
+after same number of jumps.
+location location.
+Okay, so it knows here. So it doesn't
+really care about where the 12's at. It
+just knows that
+seems like if it's infinite, they would
+eventually line up.
+It's not It's not It's close enough to
+see.
+Oh, so it's already Okay,
+the Okay, so they're jumping at the same
+time. That's what I'm missing.
+It's the fourth dimension.
+All right,
+so
+I understand they're probably about half
+the battle, right? Are we over 10
+minutes? Should we start sitting? Should
+I start trying to explain what I think I
+understand?
+>> Yeah. So, explain what you you're
+thinking. It's only been a couple
+minutes.
+Uh
+the function is expected to return a
+string. So it's going to return a
+boolean of true or false.
+I have to convert the boolean into a
+string I guess.
+So it's going to take in four integers.
+First integer is going to be the lo. See
+they said location.
+Yeah. So x is location, v's velocity.
+So, it's going to take the starting
+point of the first kangaroo, the
+starting point of the second kangaroo,
+the speed of the first kangaroo, and the
+speed of the second kangaroo.
+And then determine if they're ever going
+to be able if any one jump allows them
+to hit the same spot at the same time.
+We got the basics there. Or should I
+keep elaborating on that?
+Up to you.
+>> Up to me. All right.
+I'll try and get into the s code so I
+can actually cuz that's the part that's
+All
+right.
+Your code here.
+Look, there's a way to make able to make
+that full screen. Got a lot of wasted
+space around it. Was
+that full screen?
+Not really an array though, is it?
+some reason I wasn't expecting him to
+take it directly like that. I guess it
+does.
+Not sure what that was. Not expected,
+but
+room.
+That's
+the law of K one is not equal to Kane
+two.
+If
+one
+One velocity equals equals
+[Music]
+I'm missing something basic There
+actually got rid of all squigglies. At
+least that feels a little better.
+Don't know if that'll pass any of the
+test, but we can give it a test run,
+right?
+>> Yeah. As many times as you need.
+basically timed out. I got an infinite
+look for something
+out
+which makes sense. While while king one
+is not equal to king two
+[Music]
+Actually,
+let's start out with the assumption of
+end false
+ever equals true.
+They are on the same square
+line. You want to convert it true and
+return them
+gets it stuck in infinite loops cuz
+they're on infinite line. They're just
+keep on jumping forever.
+See where that hits.
+Wish it didn't time out. So
+line 48
+line 48.
+unsupported operand types for full in
+Oh, yeah.
+>> Why don't we go ahead and pause there?
+>> All right.
+>> All right. So, can you resummize what
+the problem is asking you and explain it
+to us?
+>> Yeah. So,
+zoom zoom. It's got a picture down here
+that helps.
+Oh, picture didn't get bigger.
+Am I getting bigger or not? I guess I'll
+have to do.
+So, you start out with the code back on
+the screen, too.
+So, you start out I start out assuming
+that they're not in the same spot.
+Maybe that's a false assumption. I guess
+if they are, then it would convert them
+over. If the if they ever were on the
+same spot, then the intention is to
+convert the boolean back to true. So,
+it's going to start out with the
+assumption that they're not on the same
+spot.
+>> I'm going to go ahead and stop you. So,
+how can we check that assumption? Are
+there any clues in the problem statement
+that might tell us?
+Okay. So, I could put a check
+uh yeah could put a check for location
+one equal to location two.
+So, just put that check early on and
+return true before it even starts doing
+anything else.
+>> That is a good plan. I like it. But is
+there anything in the problem that might
+give you a clue
+more directly than that? I don't know
+what you mean.
+So, could we check the constraints to
+see if they might tell us if the
+starting point conditions will be equal
+or not?
+>> Okay.
+>> Uh, see, so what does that tell you?
+Location one should be less than
+location two.
+And will they ever be equal from a
+starting point?
+>> I don't know that I would pick that up
+from this.
+>> So, is it a less than or is it a less
+than or equal?
+>> So, this one's less than or equal and
+this one's just less than.
+>> So, then can x1 ever start at the same
+position as x2?
+>> Okay.
+So because because this one in the
+middle doesn't have the equals
+underneath it,
+this one's always got to be less than
+that one. So location always has to be
+less. So how Okay. So the con so it is
+in the constraints.
+So should I try to codify that over
+here?
+>> Codify how? What do you mean?
+>> Like make a check for it. I don't have
+to check for if it's in the constraints.
+It's already going to that's already an
+assumption I can make that I don't have
+to check for it.
+>> I would say yes. It's already in the
+constraints that you don't need to check
+for it.
+>> Okay.
+>> So that being the case, yes, I can
+assume
+if if location one's always going to be
+less than location two, then yes, I can
+assume the answer starts at false.
+>> Yes.
+>> Okay.
+>> All right. Keep going.
+>> Okay. Okay, so Kang's Kangaroo one's
+location equals. And I don't know that I
+have to rename them. I probably could
+have wrote written the same thing with a
+bunch of X's and V's in it, but it it's
+already confusing enough like it's not
+human readable. So that was all that was
+the whole reason I took the extra time
+to convert these variables into
+something that actually meant something
+to me.
+>> And I appreciate that. You can also just
+do it right in the parameters. Like, so
+instead of having X1, V1, X2, you can
+just rename them. Yeah, I do it all the
+time.
+>> I like that idea, too. Okay, now we're
+talking next level. All right.
+>> Yeah, I didn't know that. Yeah. See,
+when it says uh like write your code
+here, I didn't know that we were allowed
+to touch this part of that. So,
+>> I mean, you're allowed to do whatever
+you want. Will it help you solve the
+problem? Maybe not, right?
+>> Okay. Okay, fair enough. I like that
+idea, too, then. Yeah, because that
+would that would make the code a lot
+tighter because that would save me all
+like what at least four lines right
+there of renaming variables.
+>> Yeah.
+>> Okay. Yeah, I like that. Okay. So, from
+that point, they're saying it's an
+infinite loop. So, that makes me think
+that I should go for a while loop
+because I don't know how if I don't have
+a four I don't have a range to put my
+four range in
+>> because I don't there it's on an
+infinite line. So, we do need the while.
+So if kang one's position
+and with their velocity added
+is not equal to kangaroo 2's location
+with their velocity added.
+See am I doing maybe this shouldn't be
+not
+yeah that should actually be a fail.
+So from what you just said and also from
+when you were originally reading the
+problem, I did notice a few things. So
+you'd mentioned like, oh, it can
+probably go on for infinity, right? The
+two kangaroos. And you also had a
+comment about the like the bottom
+explanation about their starting points.
+>> So you had said some stuff out loud that
+sounded like maybe good assumptions.
+Hint hint, wink wink. um that you never
+really circled back to when you were
+writing your code, but that kind of
+impacted the way you wrote your code.
+So, this is why I always like to say if
+you're saying something out loud or
+saying to yourself or if you're like
+having an assumption while you're
+reading the problem, it's always good to
+just literally write it in the comments.
+I have this assumption that X1 will
+start before X2 and that the kangaroos
+can jump for infinity infinity and so on
+and so forth. So that way you're kind of
+keeping those things in mind when you're
+thinking about your code and how they're
+going to impact it.
+>> Does that make sense?
+>> Yeah.
+So your first error that you got, do you
+remember what it was?
+>> No, not at this point.
+>> It was a time execution error.
+>> Oh, yeah. The infinite the infinite
+loop. You're right.
+>> Yes. So what usually controls getting
+stuck in an infinite loop?
+>> Well, fair was related to this while
+loop.
+um and that assumption about them being
+uh at different locations.
+>> So if you go back to the problem and
+scroll all the way down.
+>> Yeah. All the way down to the bottom.
+What is that second uh what is that?
+Yeah. What does that explanation say?
+the head. The second kangaroo
+has a starting location
+as a head further to the right of the
+first kangaroo starting location because
+the second kangaroo moves at a faster
+rate and is already ahead of the first
+kangaroo. Okay? So, not only are they
+never gonna be equal,
+it's never going to catch up to it
+either.
+>> In that in that one example test case,
+that was true. So, not always, but in
+that one test case.
+>> Okay.
+>> Does that help shape does that change
+the way that you might think about this
+code?
+>> Yeah. And here's another thing. I was
+just trying to get it to change uh
+true and false into a string, but I
+actually need it to print no, not just
+print false.
+>> Yep.
+>> Okay.
+So, was that 20 minutes?
+>> No, that's that's type that's type
+strictness. Python has some type
+strictness there. And in the comments
+above the function, it does say
+um above the function itself, def
+kangaroo, it does say
+uh wait, scroll back down smidge. Yeah,
+the function is expected to return a
+string. So that type message there, a
+string, it means that it literally needs
+to expect a string. If you return a
+boolean, that's going to be interpreted
+as either a boolean or maybe even a zero
+and a one. If it expects an integer, it
+might cast it for you, but it's not
+going to cast a boolean as a string.
+>> So, what were you saying? It's picking
+that up. It's getting that from these
+comments.
+>> Yeah, the function is expected to return
+a string. Do you see that comment?
+>> But I thought the whole point of the
+comments is that it was they weren't
+compiled.
+>> Well, no. That it's not impacting the
+code. It's just telling you that it's
+expecting to return a string
+>> telling the compiler that
+>> but if you scroll down it will
+>> there is code at the bottom that parses
+your return statement right yeah it the
+under if main so in there is going to be
+code that parses your answer your return
+answer and it's expecting a string so if
+it doesn't get a string it's going to
+error right because why are you passing
+me something other than a string I'm not
+expecting expecting that I can't handle
+that. I didn't code for that. Does that
+make sense?
+>> Yeah.
+So, I need to put something that says
+instead of just returning the answer is
+true, it needs to take the
+the boolean answer and convert that into
+a string of yes or no.
+>> Yeah. And I do remember you calling that
+out um that you might need to do that,
+but then we just kind of left it at true
+and false.
+>> Yeah. Yeah. I was still trying to get
+through the logic. I I figured if I get
+through the rest of it, I could figure
+out how to convert that at the end.
+But all right, that was good practice.
+>> And there's one other thing. I noticed
+that you had started off your if
+statement, which seemed kind of cool,
+like
+kang one plus equals velocity equals
+kang 2 plus equals kang 2 velocity. Kind
+of trying to wrap the increment
+and the comparison together. I don't
+think you can do that in Python,
+>> right?
+>> Um, so obviously you you kind of saw
+some errors and then trying to try to
+change it back to just doing the
+operation. Um, but now you'll see if you
+look at it, you never actually update
+Kang one's position. So the original
+while condition
+would also have kept you in an infinite
+loop. But your current if condition or
+wild block code, the if condition and
+the return is a secondary factor that
+would also keep you in an infinite loop
+because you're always comparison like
+does starting point plus velocity equal
+each other? Yes. No. Does starting point
+equal velocity? Yes or no? And it's
+doing that same one-time operation over
+and over and over again and never
+actually updating it to that next
+velocity.
+>> It's hard to imagine doing that 20 every
+20 minutes at a job all day long. Like I
+think my brain would break it by by the
+end of the week.
+>> Right. Exactly. Yeah. Which is why it
+has a timeout limit factor there.
+>> All right.
+So those are just a couple of things
+that I think you could maybe have
+avoided if you had started with just
+listing out some assumptions starting
+out with some pseudo code of saying okay
+what do I need to evaluate here I do
+think it's a good idea to get some
+preliminary code out if that helps you
+think through a problem but always
+having a step to go back and say all
+right I've gotten some code so that I
+can see how how the how the pieces are
+moving right but now I need to take a
+step back and think about what is the
+overall system that this problem is
+asking asking me to implement? What
+requirements do I need to consider? What
+outputs do I need to consider? Um, what
+assumptions did I make that I need to
+evaluate? Those things are going to
+impact you. And if you deal with them at
+the front end instead of as you're kind
+of pushing through it, it saves time
+because you're not mitigating errors
+along the way. You've kind of planned
+around those expectations. And if you
+hit an error later, you have more freed
+up mental space to kind of deal with it.
+Oh,
+>> but overall I think you um got off to a
+good start, right? Like you made the
+code clear for you having the the naming
+be more clear. You kind of understood
+that the kangaroos are kangaroos.
+Kangaroos are going to jump along a line
+for infinity and that they're expected
+to meet up potentially. Um and you have
+correctly determined that you would need
+a while loop for this. I think that's a
+good observation there and that you're
+going to be needing to make those
+comparisons. So, you have all the bones
+there of an operating solution. Um, we
+just kind of have to work around some of
+those problem solving steps.
+>> Yeah,
+>> good job.
+>> Thank you.
+>> All right. Thank you. And I can tell
+that you uh are coding in JavaScript or
+TypeScript a lot right now because of
+your while condition and if conditions
+being in the braces. And then wait, do I
+need to add something here? Oh yeah,
+colon goes here because it's in Python.
+Um
+>> so I can definitely see the JavaScript
+shining through there.
+>> It's like the accent of a foreign
+language,
+>> right? Which you do, you can use
+JavaScript in your tech interview if you
+want to. Like there's no language
+restriction there. I just use Python for
+these um because that's what you started
+in in mod 2 like you're using Python
+there. But if you like to practice in
+JavaScript or another language in your
+free time more, you can use that as
+well. It's not a problem.
+>> Okay. Yeah, I may try a couple of them
+in Typescript. I don't know if that
+makes it easier or not.
+>> Yeah, TypeScript will make you enfor it
+will enforce those type restrictions
+right as you're going along, which I
+think is a good thing, but it might take
+up a little more time. Um, but
+JavaScript at least doesn't force you to
+do that. You just kind of have to be
+mindful of it. Same thing with Python.
+>> Well, all those index cards I wrote out,
+I have it in uh they start in Python,
+but then I was taking those and
+converting them on to uh I would start
+in Python, then I do it in JavaScript,
+then I do it in TypeScript, then I'd do
+it again in C.
+So, I actually solving them in four
+different languages.
+>> That sounds like a nightmare.
+>> It was fun though, actually. But I
+realized I was running out of time. I
+had to get this and then I was like,
+"Oh, I gota get my template caught up.
+This is a good time to do it." So, I
+kind of put it on the back burner.
+Anyways, yeah, that was that was good
+practice. Thank you.
+>> Yeah. All right. So, does anyone have
+any questions about anything they saw
+today? Any comments they want to add? Or
+does anyone have any questions about the
+tech interview that they'd like to ask?
+>> I have a question about this problem.
+>> Sure. So
+if you go to the example of the problem
+where it shows x1 = 2 but a little bit
+further says after one jump
+they're both at x three. So x3 is the
+location right location three right
+>> after one jump. Yeah.
+>> Wait, sorry. Can you ask your question
+again?
+>> Yeah, I'm getting to that. I was just I
+think I'm answering my own question as
+talking to you because you just said
+after one jump my question was going to
+be why is that inside the parenthesis I
+see x1 + v1 v1 is the speed so it says
+then it says it's equals to equals to 2
++ one and I think the one is after one
+jump right
+>> so the four inputs they give you are the
+kangaroo x1, x2 is the second kangaroo,
+and then you have v1 and v2, which are
+the velocity. So in this case, the
+velocity is the amount of spaces they
+can jump in each jump. So every
+iteration of whatever you're typing for
+the loop, whatever, they're jumping,
+they're making one jump, but they're not
+jumping one space necessarily. They're
+jumping one
+velocity amount of steps. So if the
+kangaroo one has a velocity of two, it's
+jumping from one to three in one jump. 3
+to 5 in one jump. At the same time, the
+other kangaroo, if it has a velocity of
+one and a starting point of two, it's
+going from two to three to four in each
+jump. So they're making the jumps at the
+same time. One goes from if they're both
+here, one starts at zero, one starts at
+one. This one jumps one. At the same
+time, this one's jumping like two or
+three steps. It's still one jump, but
+they're jumping at different paces. Does
+that make sense?
+>> Yeah, it makes what you're saying.
+>> Oh, you're kind of cutting it in and out
+there.
+>> Can you hear me now?
+>> Yes.
+So, I understand what you're saying, but
+what I don't understand what it says
+inside the parenthesis. It says x1 + v1
+equals 2 + 1. So, why is it 2 + 1?
+>> Let me see. Are you talking about in the
+problem description somewhere?
+>> Yeah. Yeah. Right where it says example.
+>> Okay. So, after one jump, they are x= 3,
+x1 + v1 = 2, right? So x1 is 2, v1 is 1.
+So then it's saying 2 + 1
+is that calculation
+>> because the velocity is meters per jump
+and the position is meters. So
+>> yeah, so kangaroo starting point is at
+two and it can jump one step at a time.
+So they're making for its first jump,
+we're saying 2 + 1 equals 3 because
+they're kind of referring it into like
+position like xy coordinates almost or x
+coordinates.
+>> So if you start at a coordinate of x= 2
+and you add a jump of 1, you're going to
+be at x= 3. So it's going to be the 2 +
+1.
+>> Okay, I understand. Now um you also told
+um uh John that to look at the
+constraints.
+>> I don't understand this. What can you
+explain that? Can you go over that? Like
+how do you how does that help? Like what
+what exactly should we look for in there
+when looking at a problem and looking at
+constraints?
+>> Sure. So perfectly candid. Sometimes the
+strength constraints don't give you
+anything,
+but it's a good practice to always check
+because more often than not, they do
+help you
+um
+either eliminate some assumptions you
+made about the problem by answering
+those questions or removing certain
+doubts that you might have about the
+problem. Um, and sometimes they even
+give you hints about the problem within
+the constraints. Like it'll say
+literally hint something something
+something's going to happen. And you're
+like, okay, great. That's additional
+details that I can add to my pseudo
+code. So in this case, it's necessary.
+Oh, it's not necessary, but it's helpful
+to know that X1 is going to be less than
+X2
+because
+if they were able to be equal,
+then if you didn't evaluate that, like
+let's say in their example here, they
+have this one starting at zero and this
+one starting at four.
+So you're kind of making those
+assumptions there that they're going to
+be jumping jumping jumping. So if your
+first calculation in code is to do
+do the first jump
+and like after that then check if
+they're
+in the same place, right?
+If they could be equal at the start,
+then you would never be able to
+determine if they met up unless your
+first thing that you did was outside of
+your loop or outside of your code. If
+the first thing the first thing you
+would need to do then would be check if
+starting
+places oof
+pieces are the same.
+So that gives you that would be an
+additional like that's an assumption
+that you could make. Um do they start in
+different spots or can they be in the
+same starting spot? Do I need to code
+around that assumption? Like do I need
+to check if they're at the same striding
+spot? Do I need to check if they're at
+the same starting spot or can I make an
+assumption that they're not going to
+start and so I need to do the jumps
+first before checking if they're in the
+same place. We can kind of eliminate a
+couple. We can eliminate an assumption
+and we can eliminate a code equivalency
+check right outside at the top of the uh
+code or top of the function because we
+are being told here that x1 will always
+be in a spot that is less than x2. So
+they won't ever equal as starting points
+and x2 is always going to start at a
+spot that's later or higher than x1. So
+that's actually a lot of information
+that we can use when we're making our
+our coding game plan, our pseudo code.
+Like there's a like actually quite a few
+coding decisions there that are made
+just from that simple piece of
+knowledge.
+V1 velocity and V2 velocity being
+between 1 and 1,00
+um not necessarily
+something we need to care about when
+we're considering our code. like it's
+not I don't think that's something
+that's necessarily
+necessarily going to affect the coding
+decisions that we make. Um other than
+just knowing that like it's kind of a
+big number. Like a kangaroo can jump
+10,000 paces in one jump potentially for
+the purposes of this test case is kind
+of crazy.
+But it also doesn't tell you that they
+will be equal. Like we don't know if V1
+is going to be greater than V2, less
+than V2, if they can be the same. it
+doesn't give us any of that information.
+So, we have to kind of think about that
+as well is
+how like there are a lot of variables
+about what the velocities can be and all
+we know is that they can be a number
+between 1 and 1,00 and those numbers are
+going to be potentially different,
+potentially the same, and we don't know
+which one's going to be bigger. So,
+those are a couple of different data
+points just in what I just said there
+that you kind of need to factor in when
+you're making your coding game plan. So
+that's why it's always good to check the
+constraints just to read them. Make sure
+you under first of all make sure you can
+understand them like what does the
+because it's not always just going to be
+less than or equal then they're going to
+have like a length maybe it'll tell you
+the length of certain information or
+it'll give you like little hints like
+there won't always be just like less
+than or equal then it'll there will be
+other symbols that you might see. So
+being able to understand it is your
+first kind of task, your challenge. And
+then the second part is discerning
+what information you can pull out of
+that and how is it going to affect the
+coding decisions that you make.
+Does that help?
+>> Yeah, it does. Um I actually agree with
+you what you said at the first part that
+sometimes it does it doesn't help you
+because sometimes I think that I
+understand what the problem wants me to
+do and by looking at constraints
+more.
+>> Oh I kind of lost you again. You said by
+looking at the constraints something
+something. Yeah, that I said that
+sometimes I look at the problem and and
+it's already hard enough to understand
+but I think I understand it and then
+when I look at the constraints it
+confuses me even more. That's what I was
+saying.
+>> Yeah, definitely. So then that might be
+the first thing that you need to work on
+when you're working on problems is
+taking that extra step when you start a
+problem to understand the constraints
+before even starting your timer. And
+that's totally fine if you well if
+you're timing yourself like or even just
+like your mental timer of how much time
+I'm spending on this problem. If the
+first thing you do is making sure you're
+understanding the constraints, take as
+much time as you need to do that. Google
+what you need to Google. Figure out what
+you need to figure out. Review mod 2 to
+figure out what certain things might
+help you do and then start mentally
+evaluating how much time you're going to
+spend on the problem. Um
+>> okay. I think that's a a very valuable
+starting point, like a goalpost to get
+to.
+>> Sounds good.
+>> John, you're sharing your screen. Did
+you want to show us something? Yeah, I'd
+asked a couple weeks ago about uh React
+and since we're on hacker rank, I don't
+think they show up on lake code at all,
+but I noticed under if you go to get
+certified
+>> Yeah,
+>> they've got like front end developer,
+they've got React problems here and even
+let's see.
+>> Yeah, I've done that one. Fun fact. It's
+It's okay. It's not It's not hard.
+>> They're not okay.
+just because I I feel like the that's
+the ones I bombed out on. I had an
+interview again. It's been years ago,
+but I had an interview with uh Home
+Depot to do React with them once.
+>> Yeah.
+>> And they were they were doing like, you
+know, basically coding React live in the
+was the the tech interview.
+>> Yeah.
+>> So, I needed to address that at some
+point.
+>> I mean, that's definitely something you
+can see, but you will get a lot of React
+experience in the explorer phase and in
+the internship.
+Okay.
+Uh,
+cool. Any other questions?
+All right, thanks everyone for joining
+me for this fun hour, I guess. Um,
+thanks to John for being our volunteer
+and I'll see you guys next time.
+All right. Thank you.

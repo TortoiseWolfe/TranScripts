@@ -1,0 +1,1484 @@
+All right, welcome to this week's
+handling tech interview. Today is
+Wednesday, so we are going to take a
+peek at some of the solutions that we
+covered. Well, some of the thing
+backtrack. [clears throat] We're going
+to take a look at the problem that um
+Mauricio did on Sunday for the mock
+interview. Um so Mauricio, would you
+mind showcasing where you ended up with
+that?
+>> Yes. Uh, let me bring that back up.
+So, you want uh the version that the
+first version with two loops or the
+latest?
+>> Um, either one actually is fine.
+>> Okay, let me share.
+Okay. Uh
+right. So initially I did kind of do
+brute force. It's commented there
+because I finally was able to come out
+with a oven solution. But initially uh
+well to recap the type of problem uh we
+have an an array of of balloons of
+different colors that are in the colors
+uh then the array is named colors and
+[snorts] each color is designated with a
+letter and we have another array ray
+corresponding to each position in the
+colors array that has the time that
+takes to remove each balloon.
+So basically the goal is to don't have
+any consecutive color balloons. So we
+cannot have two balloons of the same con
+color adjacent to each other. So the
+idea is to remove uh whatever we need to
+remove to hit that goal. But there is
+another condition that it has to be the
+lower cost. So we have to choose from
+that needed time uh the lower cost of
+the balloon we're going to remove. So
+so basically that's it and the
+constraints are that the
+the colors length is equal to the need
+time length because there's
+correspondence one and one to one for
+the color and the time it takes to
+remove it. uh they could be from one to
+10 to the five uh balloons [snorts]
+and the the values of the needed time
+also can be between 1 and 10 to the 4th.
+So the the way I went for it initially
+was to
+just loop through the color array
+up to link colors minus one because I
+was thinking um
+we have to come up to here because we
+always going to need to compare with the
+next one. So we stop here the outer loop
+and
+I take the each index and make it first
+from the outer loop that mean the that
+means the first position of the soup
+soup array that has consecutive
+balloons. So for instance
+in this example I'm looking to to get
+the first index of this piece that has
+consecutive the first index of this and
+the first index of of the this. So I can
+work uh those two arrays uh
+individually.
+So the inner loop right here is where I
+work those sub arrays.
+So I had to stop also and make sure I
+stop at this point as well. So that's
+why I have this piece of the condition.
+And the condition I'm looking to compare
+is this one. So I'm comparing each
+balloon color with the next one to see
+if they are of the same color. And I'm
+advancing
+a color. So I end up with color in the
+last position of of like for instance
+each sub array of consecutive balloons.
+So I end up in the final position here
+or here or here. So I will have first
+pointing to the first part and color
+pointing to the last part.
+So [snorts] this is a condition for
+initially uh they will be the same. So I
+put a condition there that they cannot
+be the same index.
+But then after that I go ahead and
+calculate the sum of the whole I'm sorry
+I calc I extract the whole sub in sub
+array that I need to work with. So I use
+from first to color plus one
+because in array slicing
+it's exclusive for the last index. So if
+I only put color, I'll still be missing
+one. So it has to be color plus one.
+And then I um
+I get my minimum sum which is uh the sum
+of the group of the whole thing of the
+whole sub array. Like for instance, this
+four right here is the sum of these
+four. But since I always have to leave
+just one balloon when they are
+reparative colors, I just need to leave
+one, right?
+Because that's that's what the problem
+called for. So if I sum all of them and
+then I take out the maximum
+uh the maximum value, I will get the sum
+of the rest. So for instance here I'll
+get this zoom of one four and five which
+are the ones I'm going to take off
+because ultimately I'm gonna I'm gonna
+just leave one always of consecutives
+and this is this color is to to you know
+advance this looping through the whole
+>> array and then I return my minimum cost.
+So the the enhancement the enhancement I
+did later on [snorts]
+is I I tried to change the logic I'm
+thinking about to compare
+uh each one with the one before instead
+of with the one forward.
+So I start with one so I can compare one
+to to the zero position.
+And when I compare,
+I take the minimum of those two for my
+sum
+of the one I'm I'm at and the previous
+one. And I also uh kind of keep a
+rolling uh
+a rolling maximum forward. So I get to
+the need time where I'm at right now and
+then I take the max between that and the
+previous one. So what this does
+basically is
+keeping as I go through the array I'm
+keeping uh one position before like I
+minus one it's always going to have the
+max the current maximum.
+>> So when I go to mean between where I'm
+at and the previous one this previous
+one will have the current maximum. So,
+so I always going to get the mean
+against the maximum
+because ultimately I'm going to leave uh
+the maximum there. I'm not going to, you
+know, pluck the maximum from there. So,
+I need to always get them in. And this
+one uh this this line right here ensures
+that I always have for the next
+iteration in this position that I always
+have the maximum uh up to that point to
+to get my minimum to compare with.
+>> Mhm. So that's how it uh it's kind of
+encapsulated that that part of this in
+relationship to this. But that's pretty
+much the logic there.
+>> I like that. Thank you for sharing.
+>> Okay. Thank you.
+>> Um so I did something similar but a
+little bit different and I candidly I
+actually like your approach better. Um
+it's more
+memory efficient. Um,
+but I just kind of started where you
+have left off really is doing the same
+thing as your second approach, doing an
+iterative check of, okay, we're checking
+this one. Um, is or we're here, so we're
+at the red balloon. Is this the same as
+the balloon before? No.
+>> Can you share this screen?
+>> Yeah. Are you not seeing the balloons on
+the balloon?
+>> No, I'm seeing I'm seeing you.
+Uh or maybe let me Yeah, I see it now.
+Sorry. Probably I have split screen or
+something.
+>> Okay.
+>> Okay, I see it.
+>> Everyone can see it. Okay, good. All
+right. Um and then so we get here and we
+are just making that same comparison. Is
+this balloon the same color as this one?
+Yes or no? Is this balloon the same
+color as this one? Yes or no.
+um and then deciding which one to
+eliminate. So we can make sure we have
+our alternating colors only. So the in
+solution is our alternated colors only.
+No repeating. Um and then you like
+Mauricio said, we have the time that it
+takes to remove any given balloon based
+on its index. So, we're removing the
+ones that take the shortest amount of
+time to remove to make sure we have our
+alternating balloons
+um in the shortest amount of time.
+What I did that's a little bit different
+from your streamlined approach there is
+that I just kept the last color and the
+last color index. So, the reason I would
+need to do that is in that case where we
+had three in a row. Um, if we have
+pretend for a moment that this red
+balloon is actually blue and and this
+one's red. If we swap these two
+positions. So, if it was blue, blue,
+blue, and the one that we eliminated
+first was,
+let's see, how do I want to think about
+it? This middle one. So, we got here and
+we said, "All right, we've we've have we
+have two balloons beside each other.
+Which one is going to take the shortest
+amount of time to remove?" The middle
+one is. So, we're going to remove that
+one. Um, and then we're going to move
+on. And now we're at this last balloon.
+But this last balloon would actually
+still be two blue balloons right beside
+each other. So, we need to remove one of
+them. So, how am I accessing the one
+that's prior
+to basically how do I access the one
+that is remaining left on the string
+that hasn't been removed? So, this one's
+been removed, but if I look at the
+index, this is the one that's most
+recently done.
+So I kept track of the ones that we kept
+in these variables versus
+Mauricio who just updated. So instead of
+it would be similar to Okay, so three
+and four um but except maybe the better
+example would be this one. Nope,
+that's not a good one. What are some
+good numbers? uh
+these numbers aren't going to work out
+with my my explanation. But if we have
+three and four here, but we removed the
+four um instead of the three, we would
+need to in my scenario, I am saving the
+three off to a separate variable so that
+I can compare it once we get to the last
+balloon that takes 1 second to remove.
+Whereas Mauricio is just updating
+this number here with the number prior
+so that we only still have to look back
+at one prior index. Um, and just because
+I'm a visual person, let's go ahead and
+let's do a little whiteboard of this
+problem real quick
+because I I want to talk about these
+approaches. I think that they're good
+and I think each approach has some good
+stuff to it that that's good to like
+visualize so that you can keep it in
+mind um when you're thinking about new
+problems versus just looking at the
+code. So
+let me think about let's do
+there's a balloon.
+There's a balloon. These are my really
+perfectly evensized balloons. Do that.
+And we'll get a green one in there.
+And a green one in there. Okay.
+Um,
+and then just for the sake of
+this, we'll say that
+this one takes 1 second to remove. This
+one takes two seconds to remove. And
+this one takes 3 seconds to remove.
+And this one takes
+3 seconds to remove as well. That's a
+three. [gasps]
+Um,
+oh no.
+How do I undo? Just control. Oh, there
+it is. Undo.
+It takes two and one. All right.
+Get out of here.
+So in Mauricio's first example, what he
+was doing is that he was saying if we
+notice that there is a pattern of
+balloon, so we're finding a group of
+consecutive balloons, then what we're
+going to do is that if we notice that
+the balloon that's coming up is the same
+color, we're going to keep going until
+we get to the end. And then we see that
+this one is not the same color. So we're
+going to stop there. Um, and then we're
+going to sum up all the times that it
+would take to remove them. So that would
+be 1 3 is six. So sum
+is six. And our goal here is that when
+we have multiple balloons, oh my,
+[gasps] I'm doing my best. When we have
+multiple balloons, we obviously want to
+remove the ones that take the
+quickest or the fewest amount of the
+fewest time. How do I say that? This one
+would take 1 second to remove, 2 seconds
+to remove, and 3 seconds to remove. So,
+we want to take the ones that are easier
+to remove or quicker to remove because
+we're trying to remove
+the least amount of balloons in the
+least amount of time possible so that we
+can have alternating balloons. So, we
+only want one blue balloon, then a new
+color balloon, and then one balloon
+again for the the next set of colored
+balloons.
+So he said the sum of all of these
+balloons in this little grouping is six.
+And we're going to find the max one
+because the max one is the one we're
+going to keep. If we
+are considering which ones to remove, we
+want the ones that take the least amount
+of time. So the one we would leave
+behind would be the three
+cuz it would take the most amount of
+time. And then he's saying, "All right,
+so we'll remove this one. And then we'll
+remove this one. And then we're left
+with the three." And then we go on to
+the next part. Okay, cool. So that's the
+different color. So we're not worried
+about it. And we start a new color. So
+great. We're not worried about it. And
+then, okay, look, we have a new
+grouping. That sum is three.
+And then the max is two.
+So, we are going to remove the two and
+then we have the one. So, then the
+balloons we're left with is one blue
+balloon, one red balloon, and one green
+balloon. And our total time that we've
+kept or that we've
+uh what's the word? The total amount of
+time that we've taken would be basically
+the if you wanted to do it like this, it
+would just be the 6 - 3 plus the the 3
+minus the two. Um, but I think he was
+tracking that live as he was doing this
+this the coding loop there. But you
+could still do it like that with the
+with this idea. So it took 3 seconds to
+remove those. So we've remove we've
+worked on 3 seconds. It's taken 2
+seconds to remove this one. So that's a
+total of 5 seconds. And then we return.
+Maybe just use a text box for that one.
+return
+5 seconds
+as an integer
+because that's how long it took to
+remove all all the balloons or the least
+amount of balloons needed to make
+what's the word the colors
+how do they how do they [snorts] say it
+>> isn't it four
+>> 6 - 3 + 3 - The one is for, isn't it?
+>> They're just calling it colorful rope.
+Interchanging colors. Yes, Rebecca.
+>> Um, um, there's nothing to do with
+really coding, but the logic of it, I
+don't understand the green ones. Is it
+supposed to be take away the ones that
+take the the quickest amount of time to
+remove?
+>> Oh, yeah. I did that wrong. [laughter]
+>> Oh, okay. Because I got confused. I got
+confused. So, it would remove the one,
+not the two. Yes, exactly.
+>> Okay, cool.
+>> Thank you for for catching that
+>> because I was like maybe I'm not getting
+this logic right then.
+>> Okay, cool.
+>> Yeah. Okay, so the max here was three.
+So that's the one we kept and we removed
+Yes, thank you very much. So we removed
+>> everything that wasn't equal to the
+three there.
+>> Um and then for this one, the max was
+two. So we eliminate the one. Um, but I
+think we still return five because No,
+we don't. We We return four.
+>> Yeah.
+>> Uh, is that what you were saying? I
+>> Yeah, I was saying
+>> return four seconds.
+>> Three and one. Yeah.
+>> Perfect. Okay. Yes. Thank you for
+catching that. [laughter]
+Perfect. Okay. Now,
+I don't I don't think I we saw what
+would happen in your code if there were
+two threes
+in here. Um, but I'm assuming we just
+leave one of them. Doesn't really
+matter. I don't think I don't think
+you're actually removing any of them. In
+your logic, you were just saying, okay,
+take the max out, subtract it out. So,
+even if there were multiple threes, it
+wouldn't matter because the sum would be
+like another three would be 9. So then
+we just say 9 minus 3. So we're adding 6
+seconds to our time taken. Um and so
+we're assuming that we've just left one
+of the three balloons.
+And so then the approach for this like
+we saw with Mauricio's code is that we
+generate the group. So we have a one
+while loop at the top that is
+presumably going through each of the
+balloons. And then we have an inner
+while loop that is checking for these
+consecutive groupings
+um there and there. So there were two
+nested while loops to find these groups
+and then we were doing this time
+calculation
+along the way when we found groups. We
+didn't need to do any calculations for
+single balloons because we didn't need
+to remove anything. So only when we
+found those groups and then we returned
+that final time at the end.
+So
+then the streamlined approach there we
+undo all of this
+was instead of having multiple loops it
+was iterative
+and
+we were saying okay first balloon that's
+fine moving on hit our second balloon
+okay so There are duplicates here. We
+need to do the calculation. Which one is
+going to take the least amount of time
+to remove? This one is. Great. We'll
+move it. And
+since this balloon is the one that takes
+the most amount of time, we're going to
+keep its index or we're going to keep
+its time to remove at the two because it
+was higher. Um [snorts]
+yeah, we'll see the other example when
+we
+>> Yeah. In that case, we keep it in the
+same position because it's I we are in
+I. So, keep it in I. Yeah.
+>> Yeah. I'm going to um
+add another balloon for this example.
+All right. And so then we're saying
+great. So then we're updating we're or
+we're tracking our time outside
+still. So, we're saying that takes one
+now. Um, and then we're going to our
+next balloon. Okay, great. We're still
+seeing another. We're still in the same
+color here. So, we are going to compare
+these two. Um, this one takes the fewest
+amount of seconds to remove. So, we're
+going to remove that one. Update this.
+This goes to three now.
+And we're going to keep going. We don't
+have to
+>> keep that max. Yeah, we keep the three.
+>> [snorts]
+>> we get here, new color. So, we don't
+have to do anything there.
+So, this is all still just one loop, one
+iterative loop. And then we get here and
+we're saying, okay, now we have to
+compare these two, but the one we want
+to remove is actually this one.
+Um, however, what we're going to do
+instead
+is that we're going to
+in the code logic, we're going to switch
+the times on these. So, it's going to be
+as if we removed this one, but instead
+we're going to update its time to two
+and cross that one out. So, it's still
+going to be as if this one had been
+equal to one.
+And then we're going to update our time
+tracking to be four.
+And so now the most recent balloon that
+we're in is at 2 seconds to remove. Does
+that make sense? So, this one was a two
+and this one was a one. We wanted to
+remove the one, but we also don't want
+to keep we don't want to have to get to
+this balloon and have to go back down
+the list to see which balloon to compare
+it against. So, we're making sure that
+the most that the the current balloon
+that we're actively on is the one that
+is most up to date with the number
+removals. So, if I had to kind of redraw
+that a little bit,
+I would say,
+give me one second, Rebecca. So, we're
+going to say remove this one.
+And then we're adding that one second
+there again. So, four
+um
+excuse me, and then we're going to say
+that
+this index doesn't exist anymore. Now,
+we're kind of like back on this index,
+but not really. We're not changing or
+updating the indexes. We're just kind of
+removing that balloon from the equation
+by updating its
+balloon value here to two [snorts]
+and then it's kind of like both of these
+are gone. Okay. Yes, Rebecca.
+>> What I was thinking about similar to
+what you just did just now with the
+boxed up balloon, I was like I didn't
+think it was necessary to say that one
+is two and two is one because if you
+take if you're taking away one, then
+you're left with two next to three. Not
+necessarily that three is moving into
+the one spot, but um if you could follow
+what I'm saying.
+>> Yes. So the reason we have to do it this
+way is that we have two arrays.
+>> Mhm.
+>> That we're given,
+>> right?
+>> And so you know this is a color.
+Oh my.
+>> The colors and then we've got this time
+>> blue.
+>> Yeah.
+>> Red. Green. Green.
+And then one, two, three, three,
+two, one, three. So in the in the code
+at least, we eliminated this one. It was
+in order. That was fine. So we added
+that time, the the one here. Then we got
+to the next one and removed that one
+because it was the minimum one. So we
+added that time. And then we did nothing
+with this one. did nothing with this
+one. We did nothing with this one yet.
+Let me add that third G for green. Then
+we get here. So then we have to say
+which one are which one of these are we
+going to eliminate?
+Um the two or the one. And we're not
+actually manipulating
+like we're not actually pulling this one
+index out.
+We're choosing
+like we would be removing this one but
+we're not removing it from the in like
+the
+how do I say this? This is the times
+array
+and this is the like colors array.
+We can't actually remove this value.
+We're adding it to our time tracking,
+but we can't actually remove it from the
+the array because we need the arrays to
+be the same length. So, I guess we could
+technically just like
+like pop that out. Um, but then that
+would change the structure of our coding
+approach because we would need a while
+loop that doesn't worry about indexes.
+And generally, I like to avoid
+manipulating
+arrays by removing or updating values
+unless the problem specifically requires
+that. In this one, it didn't
+specifically require that. So, I would
+stick with a simple for loop because I
+only need to go through everything a
+single time. And then what what Mauricio
+had done is that instead of trying to
+remove
+or update
+or well instead of trying to remove a
+value from it,
+we said, okay, we're going to remove the
+one. Um, so we're going to add that to
+our timer, but we're going to
+update this value. Instead of being a
+one, it's going to be a two. So that
+when we get to our next balloon, this
+last balloon,
+we have that two to compare it against.
+>> So then we have the three and the two
+down here, and we're saying, okay, so
+compared to our new updated balloon with
+a timer of two versus a timer of three,
+we're going to remove that, update our
+timer here to say six
+or our time tracker, I mean. Um, and now
+we're left with just that that one green
+balloon there. So, in the code, we're
+updating it here because it's easier
+than than just like removing both of
+these values from their respective index
+or from their respective arrays. But we
+can still like kind of mock having that
+data be in the last position because in
+the code we're saying, okay, check the
+balloon that came behind us. Is it the
+same color? and what is the the time
+comparison so we can evaluate which one
+to remove. Same thing here. We're saying
+let's look at the balloon behind us.
+What's it color? The color is green. So
+we're going to do a comparison. What's
+the time? Two and three. So we're going
+to remove this one. Um, so if we keep it
+simple with a single one at a time loop,
+then we just do the check one behind us
+approach, then we need the one that's
+one behind us to have an updated account
+of our our timing there. But yes,
+visually and logically it's easier to
+just say, okay, I'm going to remove the
+one, and then now when I get to the
+three, I need to compare against this
+balloon that's over here. Um,
+but it's kind of hard to keep track of
+it unless you add more variables or more
+information,
+which is actually what I did, which is
+why I like his approach a little bit
+better. It's it's a little bit a
+different way of thinking, but I think
+it's kind of nice because
+how far back do I want to go? Maybe I'll
+maybe I'll keep these. So instead of
+let's see
+Oh, that's kind of nice.
+Oh, heck yeah.
+Oops.
+Let me draw my balloon back.
+So, that was more easier's approach,
+which I do like. Um, versus mine. What I
+was doing is that we would get
+to here and we're saying, okay, which
+one are we going to remove? We're going
+to remove this one. So, I am actually
+going to keep track of that. We're going
+to update our our timer. We'd already
+updated. This was the updated time to
+four. And then I have another variable
+out here. Oops. Let me let me use a
+different symbol for that that tracks
+both the color and
+the index position. So this is one 0 1 2
+3 4.
+So I'm tracking those in an outside
+variable. So that way when we get to
+three when we're comparing, okay, is
+this still the are we still looking at
+the same color? Let me look back one.
+Instead of looking back in the array,
+I'm looking back at these values. Oof, I
+don't like that. So, in one approach, it
+we're saying like we're moving from here
+to here to here to here to here. But if
+I need to check if a balloon is the
+same, we'll just use the same array and
+check the one that came before it and
+check the time that came before it.
+Versus I updated that approach in my
+code to say um instead of referencing
+the array index that came before, we're
+going to save those as variables. So
+that way when I look back one, I'm
+looking at this one instead of the one
+that I've removed. Um so three looks at
+two to make that comparison. And then we
+would add our min there to be two to get
+the final time of
+six. Does that make sense?
+>> Uh if you have like five in a row or
+four or six, uh how do you keep up? I
+mean, you use the max function to keep
+up with with which one is the max the
+current maximum or I mean what you put
+in that variable there.
+Let's let's sketch it out. I feel like I
+could maybe explain that better, so
+why not?
+O,
+I have to get better at drawing. Balloon
+one, balloon two, balloon three, balloon
+four, balloon five. Say one, three,
+two,
+five,
+three. Okay.
+So
+outside of my loop, so I have a little
+for loop that's going through each one
+of these,
+right? Going from
+one to one, here to here, here to here.
+And outside of my loop, so this is I'm
+tracking inside a loop. Outside of that
+loop, I have a variable for
+color
+and I'm initializing it with this first
+one here. So the color is green and the
+index
+is zero.
+And then I move on to the next one and I
+say, okay, we're comparing three and
+one. These are the same color. So let me
+check my variables. What is my last
+color? My last color is green.
+And what is Okay, so that's okay. So
+that's my first comparison is my last
+color is green. That's the same as this
+one. So I need to make an evaluation
+about which one would be quicker to
+remove. All right, so where do I check
+for the timing of that? I don't check
+the array right away for the one that
+came prior. I say what was the last
+color index that I evaluated? Zero.
+Okay, now I will check this other array
+of times, you know, down here. Um, but
+in reality, it's it's right there. And
+and say, okay, so that's one. So, I'm
+going to remove that one. And now,
+[snorts] at this point, I've removed
+one. So, I'm going to update these
+values. My my last color is my current
+color, green, and my last index is my
+current index, which is one. We do the
+same thing here. Now, we're on this one.
+Where do I check? I check my variable.
+Same color. So I'm going to have to do a
+comparison. Where do I check my index
+variable? So I check that index. It's
+three. So we are going to remove this
+one.
+And now I've made that evaluation. I've
+updated my time tracking. So my time
+tracking was one and then we removed the
+two. So that's a total of three.
+>> [snorts]
+>> Um,
+and so now I'm going to update my
+current variables. My current color is
+is still green.
+And my current index position is I just
+I didn't do a max. I just did an if
+statement. I said
+if
+this one is bigger than this one, then
+we'll use our current index. If it's
+not, then we'll use the prior index
+still. So, we won't update it. Um, so we
+actually don't update it and we just
+keep it at one. So, we are looking at
+that three still
+for the the timing, but we're we're
+tracking the index of it with with the
+number one. We move on to the next one.
+Five. Okay. So instead of looking at
+this balloon here that we've crossed out
+or any of the array values really, we're
+saying what was my last color variable
+green and what was its time? So we're
+looking at that index which is the
+three. So now we're going to remove that
+one. Update that to six.
+And we're going to update our numbers
+again. So we're still green. And now our
+index is updated because we removed all
+of those three. And we are now index
+zero, one, two, three. So that's what it
+that's what my approach was doing.
+>> Okay.
+>> Um because that's just what kind of felt
+easiest for me to do on my my like brute
+force approach was just use an outside
+variable to track it.
+Um, but I think from an efficiency
+standpoint, I like yours more because
+obviously I have to do what? I have to
+have a variable to track the last color,
+a variable to track the last index that
+I evaluated, and then my overall time
+tracking variable. So that's three
+variables, and I have to add in an extra
+condition to say
+um
+I have an else statement. So like at the
+end of all of my logic for each balloon.
+So once I've gone from
+this balloon to this balloon, I make the
+evaluations. I make the comparisons. And
+then the last little thing that I do,
+right, is I update those variables. What
+is my current color? It's green. What is
+my current index? So I do the evaluation
+if the colors were the same. But if the
+colors weren't the same, I still need to
+update that that index for the color.
+Um, so I have to have an else statement
+to track that. if in the case that the
+colors aren't the same.
+So, it's more lines of code and it's
+more variables um versus your approach
+which had just updating the arrays in
+place. Um so, I that's why I liked that.
+>> I think mine is easier to implement on
+the first try just like kind of thinking
+about it, but yours is makes more sense
+from like an efficiency standpoint.
+Overall though, it's not like a huge
+boon, but I think for simplicity sake, I
+like yours more.
+>> Yeah, I kept dragging the max. So, I
+have it always handy just one position
+and that aligns with the loop and the
+conditional because I in every place I'm
+just using I and I minus one. So, it
+aligns. So, that's why. Yeah.
+>> Right. And I'm doing the same thing.
+Instead of saying I and I minus one, I'm
+using I and last index or I and last
+color.
+>> Yeah, you're using those variables.
+Yeah, but I mean it's the same
+ultimately, but
+>> yeah,
+>> I'm just dragging it and kind of
+compressing everything.
+>> Yeah, it's the same. It's just that
+we're referencing objects in different
+places. I'm referencing variables.
+You're referencing an array that you've
+then manipulated. And then at each step
+I'm updating my variables and you're
+updating the array. So we're just kind
+of referencing two different locations.
+Um and that in turn change like affects
+the amount of space complexity
+uh and even a couple of line code
+changes.
+>> Yeah. Conditional
+>> because your object existed and was
+passed it in passed in versus the
+objects I had to create to track them.
+>> Yeah.
+Okay. So, I think we've
+we stepped through that one quite
+thoroughly, I think.
+>> Yeah.
+>> Now, how do I [clears throat] get out of
+here? Okay, there we go. Perfect. All
+right. [snorts] Any questions about the
+the balloon problem?
+>> Okay. So, if you haven't tried this
+problem yet, we've walked through the
+visuals of it. you've kind of seen some
+code snippets. Um, so I would still
+encourage you to try it on your own and
+see see what you can do. Um, it can be
+solved in o of end time with one loop,
+but we also saw that Mauricio's first
+attempt had the nested while loops. Um,
+so do approach it in whichever way makes
+sense to you at first for brute force.
+Yes.
+>> Yeah. And then the I think the best way
+to understand somebody else's algorithm
+is to do a trace manually with pen and
+paper and updating the variables and the
+graphic graph and the arrays and
+everything and then you realize how it
+works.
+>> Yep. I agree. Which is why I wanted to
+kind of do the whiteboard because with
+the whiteboard I you're kind of
+visualizing what that code is doing at
+each step. I think it's easier with like
+you said using the actual array like on
+pen and paper with okay I'm updating
+this part of the array and doing this um
+>> just go step by step by step right
+>> I've done this now with all of you for
+so long now that I don't need to do that
+step when I'm reading someone else's
+code but when I was first getting
+started absolutely I was doing that
+trick all the time and now I can just
+kind of like supplement that in my own
+head of like okay I'm placing the one in
+here I'm placing the two but even the
+other day when we were looking at this
+problem for the first time I kind of had
+to go back and say I think I'm going to
+have to look at this on a on like pen
+and paper to see what's going on with
+that code there. So, okay, Rebecca, you
+had a question.
+Oh, you're muted.
+>> I I answered my own question. Am I
+unmuted? Okay. Yes.
+>> Um I I was going to ask you um if it
+says easy or [clears throat] medium, but
+it says medium right there. So, cool.
+>> It does.
+>> Yeah. And I actually
+I actually wouldn't
+um how do I say this?
+>> I would say this is on the lower end of
+the medium problems. Like I think it's
+easy for a medium problem in the same
+way that some of the easy problems are
+like closer to the medium level. I would
+say this medium problem is closer to the
+easy level like overall
+and complexity and approach.
+In fact, I can confidently say I've seen
+easy problems or problems that were
+ranked easy that were harder to
+conceptualize than this problem. Um, so
+for that fact alone,
+this one is kind of easier in my mind.
+Um, because they do have a really clear
+diagram and the approach is kind of
+straightforward. Like maybe not like
+necessarily what you're going to code
+for it, but like what you have to do,
+the steps you have to do are kind of
+clear, I think. um versus some other
+problems where they're like really
+trying to give you a word vomit of
+confusing variables and names and and
+and tasks to do that like can really
+throw you off.
+>> Yeah, I came I came across one that was
+like super confusing a few days ago uh
+and was allegedly easy.
+>> Yes. I mean the the the statement of the
+problem takes so long to actually
+understand what they want.
+>> That's that's what I meant. Yeah.
+>> Well, keep at it. Keep practicing.
+Um, so we only have about 10 minutes
+left. I was going to look at the
+the string method stuff that we had done
+before.
+Um,
+we'll just take a quick look and see how
+far we get. So, let me share my screen.
+So, a few weeks ago, we were looking at
+[snorts] um we had tackled a le code
+problem that was basically just using
+the find method. And so, you could use
+text.find to do it. Let me see if I have
+the problem handy.
+I think I do.
+Yes,
+it's loading.
+Mhm. So it was find the index of the
+first occurrence of a string where
+you're given haststack which is a string
+of characters and needle which is
+another string and you have to find if
+needle exists within haystack and return
+the first occurrence of it.
+>> [snorts]
+>> Um, so we discovered in the process of
+doing that, that you could just use a
+string method that already exists, find,
+and that one line right there would
+solve it because the find method does
+exactly that. Finds the first occurrence
+of a specified value, returns negative
+one if the value is not found, which is
+also what we are instructed to do,
+negative one if needle is not a part of
+haststack.
+Um, and there's a note that it's similar
+to the index, but the index method row
+throws an error if it's not found. Um,
+it has a few parameters. So, the value
+to search for and then it's called on a
+string because it's a string method. So,
+it's a method that can only be called
+from a string.
+So, you could also just do
+we don't even need to say that to a
+variable. We could also just do this
+right here and it would work the same
+except for not printing.
+So let me do this.
+Cool. So 01 it found E
+and its first occurrence of E was at
+index one. Um so find can only be called
+on strings and then they kind of
+just save that to a variable for
+simplicity sake sake. So this one method
+was basically the entirety of this
+problem. But if you didn't know that
+that method existed or if you just want
+to wanted to try following these steps
+of how to identify if a string of
+characters exists inside of another
+string of characters and return the
+index that it starts at. What would that
+look like? So we discussed that for a
+long time. This was a few Sundays ago
+and this is the code that we came up
+with. We had a for loop
+and we checked if the starting point of
+needle so if s and needle was equal to
+our current position in in haystack.
+So if haystack I
+which if we started at zero would be
+here was equal to s here then we would
+evaluate if in fact that string existed
+by looking at the length of this and
+comparing those two lengths. So they do
+exist that's a confirmation they're the
+same and if they are the same then we
+return our current index position.
+Um, and that's kind of the basic
+approach there at a high level because
+we talked about this a few weeks ago.
+But I challenged everyone to
+try out the count method as well as the
+replace method which have a similar
+basic structure but do different things.
+So for the count one, instead of finding
+the string and returning its first index
+position, we count the number of times
+that that string occurs inside of the
+other string. And replace
+was to
+return a string where the specified
+value is replaced. So this one we want
+to
+instead of just passing one value, we're
+passing two values. We're saying okay if
+sad exists in here we're going to have a
+third thing that says not sad but happy
+and we have to replace all occurrences
+of sad with happy.
+So before we discuss that further, did
+anyone
+here that was there? I believe there
+almost all of you were here then. Um who
+tried who tried these? I know Mauricio
+did.
+[snorts]
+>> I tried it, but I didn't really get very
+far with it. Um, I tried some pseudo
+code but didn't get very far.
+>> Can we see? Can we take a peek?
+>> Uh, [laughter]
+um, I I think I'd like to pass on that.
+I'm I'm not quite ready to share that
+yet. Um,
+but I I um I think I'm going to pass for
+now. I will I will do it next time. It's
+just that I have a little stage fright
+that I have to get over.
+>> Well, there's no better time than the
+present, but I won't I won't bully you
+into it this time.
+>> Okay. But next time I I will I will talk
+about it.
+>> Okay. And then Rebecca, you said shook
+your head. You didn't have a chance to
+try this one out. Okay. Well, then I
+will leave that as something to continue
+working on. Um, I know Mauricio did and
+he even took it to the next level
+by recreating the string method itself.
+Um, but my idea was just you could just,
+you know, write right in here maybe a
+for loop for something and something and
+try try it out directly in in W3
+schools. Yes, Rebecca.
+So we're try kind of creating our own
+variation of problem. It's not the
+actual problem.
+>> Sorry, what do you mean?
+>> When you're using the replace method and
+using the count method, it's not because
+the problem's looking for the index,
+right?
+So we're making our own variation of the
+problem by using these other methods. Is
+that what we're doing? So for this
+problem,
+the purpose of the homework that we had
+talked about was that if you know how to
+do if you know that these methods exist,
+that's great. But it's also a great
+skill set to know how to implement them
+from scratch. So we discussed doing that
+and so that's what we came up with this
+case. If we had to implement the fine
+method,
+>> how would we do it? And we approached
+that from a pseudo code and then a
+coding perspective. And so for a similar
+challenge, how would you approach the
+count method and the replace method? So
+knowing
+>> oh by using a a um more of a a long code
+rather than the method.
+>> Yes, exactly.
+>> Okay, now I'm understanding more I
+think.
+>> Yep. So basically the same as we did
+here. We wrote, you know, a loop and we
+wrote some logic and all of that good
+stuff. Same thing here.
+instead of using this method, we would
+just comment that out and we know that
+it returns two in this case.
+Um, so how what code are we going to
+write here using loops or logic or data
+structures of any kind? How are we going
+to
+get that same output consistently
+regardless of what what we're counting
+whether it's apple or love or a or m or
+it
+or just it i it how many instances of
+each of those things? Um and can our
+code reliably produce that same effect
+as the count method with any input that
+we give it?
+I have a question.
+>> Sure. [clears throat]
+>> Are we allowed to use these methods
+during the interview, the coding
+interview?
+>> You are. And it's very rare though that
+the method will solve the problem
+outright. Um, it was just kind of a
+funny thing that we ran into a leak code
+problem that the problem was exactly
+what the method is. Um, I would not
+choose a problem for the technical
+interview that does that. So you are are
+you are allowed to use like the find
+method or the count method. Um but it
+will be a part of solving a larger
+problem overall.
+>> Okay. I was just wondering cuz I was
+actually tackling this problem myself as
+well and
+I just found out from you that this fine
+method was something that it was out. I
+didn't know that this existed.
+Well, then that's still a great
+challenge because you want to make sure
+that you can implement the find method.
+Um because that showcases that you are
+able to put these
+our pseudo code here that we have of
+breaking the problem down. What is its
+ask? What is it asking us to do? How can
+we break that down into steps? And how
+can we translate those steps into
+logical code? Um which is the goal of
+the technical interview.
+>> So it's a great thing to practice.
+Okay, thanks.
+>> I I did have an idea though for this is
+really rudimentary but for count uh I
+did yeah I started out with the for loop
+too. Uh and the first thing I asked was
+uh does anything in the text you know I
+mean in the argument that we're going to
+put up there does it occur more than
+once?
+Um, and then I realized if I said
+something like that, if it occurred
+once, the counter wouldn't pick it up.
+Um,
+so where I am right now is more or less
+thinking out loud and saying something
+like, look at the string. Look at every
+every element of the string. Like if you
+have a ple e, look at every one of them.
+So, you start out with the for loop for
+I N Apple. Okay. Um
+you you're looking, let's say you're
+looking for P. Um,
+I feel like it's a better way of doing
+this, but what I would start out with
+is,
+um, if any
+eye within Apple, uh, appears more than
+once, count it.
+Um, but again, you know, I'm falling
+into
+um a mistake in not picking it up. We'll
+see. I guess that's that's my initial
+question. Do you c account stuff that
+happens more than once or are you trying
+to
+does it not count if it only happens
+once?
+>> I'm so confused. [laughter]
+>> Oh god. All right, I'm going to go off
+and work on this then. No, no, but
+seriously,
+>> because we're looking for apple, right?
+So,
+>> apple and you want to count the peas.
+Okay. Um, and so you have to iterate
+through apple to basically see what's in
+it.
+>> Uhhuh.
+>> Um, if you encounter
+Okay. If you encounter a P, you just
+count that.
+So you've initialized the counter to
+zero. Uh you iterate through apple. Um
+if you find P in there, you you tick the
+counter. You you make it go off for one.
+You increase it one.
+>> Well, we don't want to increase it for
+for each P. We want to increase it for
+each occurrence of apple.
+>> Oh, I'm sorry. I thought we were looking
+within the string and counting the
+letters.
+>> No. So for their example here,
+>> oh, you want the whole word. Okay. So
+it's just the chunk is just bigger then.
+Um,
+>> yes, it could be a single character like
+just P.
+>> I was thinking single. Yeah,
+>> I was thinking I'm looking at apple and
+I'm looking at the letters in apple and
+I'm counting the P's.
+>> Okay, we're counting the apples. Um but
+it's the same principle. You iterate
+through that string.
+Um and you look for apple. You basically
+do a little search for apple. Uh while
+you're iterating through I love apples
+and you have a little counter that
+you've initialized to zero.
+>> Um and then every time you hit apple,
+you you add one to that counter.
+>> Yes. Um, so that would be my my pseudo
+code. But you know, look, I got to write
+it down and I, you know, got to massage
+it. But that's what I do. I would just
+uh be as basic as I could. I'd look at
+that whole string of I love apples.
+Apples are my favorite fruit.
+I would actually the chunk I would be
+looking at uh the loop variable I would
+be looking at would be basically apples,
+you know, like the little string, the
+little substring of apples.
+>> Um and every time, as I said, you hit
+apples within this I love apples. Apples
+are my favorite fruit. You tick the
+counter one. So the counter would equal
+[clears throat] plus equals one.
+>> Yeah. And every time you would just hit
+apples, you just hit the little counter
+again and then you just print the
+counter.
+>> Yeah,
+>> that's it.
+>> Okay.
+>> But but you're saying you got stuck.
+>> Well,
+uh
+actually I didn't get as far as coding
+it. Uh I just talked it through in my
+head and did like pseudo code.
+But
+yeah, I think that I think that would
+work too. We could also do as I said
+within the word apples itself.
+Um, we would be we would be looking
+let's say for the P's and but we'd have
+to be specific. You couldn't I wouldn't
+be at the point where I could generalize
+it and say um look for like any letter
+yet. I'd have to identify it as a
+string. So let's say we're looking at
+apples. Um I would go through the same
+thinking of you know apple would be the
+string that we're iterating through.
+Apples would be the string that we're
+iterating through but we would be
+looking for uh the substring p
+>> or p if we're just counting the p's. we
+we would look for uh a P, you know, in
+as a string and we would hook it up to
+the counter too, you know, we'd uh start
+out with uh initializing the counter to
+zero. Every time we hit the P, um it
+would count. And so,
+>> but it wouldn't be just every time you
+hit a P.
+>> Well, because we're looking we're
+looking for the P's and apples.
+>> Yeah. So, um, every time and what I
+would be looking for is, um, if, um,
+if quote P and if quote unquote P and
+quote apples unquote, that
+>> colon, I'd be looking for something like
+that.
+>> Yeah. And I would hook the counter up in
+there where you know uh if that you know
+uh count plus equals 1. I would do it
+like that. I'll write it up. I I didn't
+write it up, but I'll write it up.
+>> Yes, definitely write it up.
+>> All right. Well, we'll we'll we'll table
+that one until next time. Um yes,
+Rebecca.
+Will you be discussing this Sunday or
+next Wednesday?
+>> This would be a Wednesday thing.
+>> Okay. Thanks.
+>> Yeah. What is your your thing again? Um,
+uh, Coach Ruby, you you introduced the
+problem on Wednesday. And what happens
+on Sunday again? No, you introduce it on
+Sunday.
+>> New problems are on Sunday and a mock
+interview if someone is available and
+interested. Um, or if I can bully
+someone into it for practice. And then
+on Wednesdays, we review
+either the mock interview or one of the
+new problems that was introduced or
+both. Um, when we first started out, I
+would demonstrate on an uh on a simple
+problem my approach and then we would
+hand over to a mock interview and then
+we would review both of those problems
+on Wednesdays. Um,
+but it was hard to get the timing right
+to do all of those things consistently
+every week. So now it's kind of a toss
+up on just
+generally introducing a new problem of
+some kind on Sunday and generally
+covering what that problem uh solution
+or solutions are on Wednesdays.
+>> Well, I will volunteer to uh share my
+code for the uh counting thing next what
+is it Wednesday, next Monday, next
+Sunday.
+>> Next Wednesday.
+>> Now, there are two so don't forget
+there's the count method and also the
+replace method.
+>> Okay. Well, I'll share one of them then
+uh you know next time which would be I
+guess if you have time on Sunday I can
+share it on Sunday if not next week.
+>> Okay.
+>> Because
+>> I'll remember that.
+>> Yeah. No, no, seriously. Um one of the
+things that I need to get a handle on is
+to get over stage fright kind of in
+walking through Yeah, Rebecca's smiling.
+um I have to get over self-consciousness
+when I go through these things. So
+rather than to put my solution in
+hacker, you know, in your your string um
+on discord, I feel the need to just walk
+through it. This will also give me um a
+chance to basically do a a rehearsal for
+the tech interview.
+um the idea that someone watches you
+while you do this whether you look
+stupid or not. Um and thank you for not
+laughing you know uh at people and stuff
+cuz um that's a big thing. So for me it
+will be important to walk through this
+>> and
+>> yeah I make mistakes all the time. You
+guys see me I make lots of mistakes.
+>> Yeah but you're so
+>> so this is a great it's a great way to
+practice. But okay, the other thing is
+this. When I walk through it, will I be
+sharing my screen and doing it through
+W3 schools or how will I
+>> for this specifically? Yes.
+>> Yeah. Okay. Okay.
+>> Because there's no like le code problem
+that I can give you that says, all
+right, now implement the count method.
+Um, so yeah, just for simplicity using
+W3 schools. I mean, even so, if we look
+at the here, I'll share my screen.
+I will say that W3 schools um their
+indentation
+>> checking for Python is like really
+strict and also very annoying.
+>> Um so you do have to be careful if
+you're getting a lot of errors,
+>> uh I found that even if I
+just like backspace and do the exact
+same thing I did again to get it to the
+right indentation level, sometimes it
+would work and then sometimes
+[clears throat] it just won't. So there
+is a little caveat there that if you're
+here like facing a lot of errors with W3
+schools, their indentation checking is
+kind of a nightmare. Um so just like
+tab everything back over to the the side
+of the screen and then just correctly
+space or tab everything back into the
+right order. Um but yeah so if we look
+at the find method and we try do the try
+it yourself and we literally just take
+our code here.
+Now I am going to
+oops I do have an additional caveat
+here. So we have different purposes for
+this problem. It's a function and we are
+using a return because we have either
+found the answer or we haven't. So we're
+returning yes, we found the index or no,
+we found negative one. Their method is
+doing the same thing, but since we're
+kind of in this little testing window
+and we want to see the values, they're
+using print to do that. So it's a slight
+different approach. And see, I suspect
+already that this is not going to,
+>> you know, I didn't even know you could
+do this with W3 schools. I thought you'd
+break it if you put your own stuff in
+here. [laughter]
+>> Oh, no. I use W3 Schools text editor
+windows all the time. I'm a nightmare.
+Sometimes I'll just open them up
+completely, erase what's in here, and
+just use it to work on my own stuff
+>> just to like test ideas. Okay, so we
+have our find here. So we had the for
+loop to go through haystack. So I need
+to rename that to haystack
+and then maybe actually name it
+correctly. And then I'm going to add
+needle here as well.
+needle equals
+welcome in this case.
+Make sure I'm using the right quotes

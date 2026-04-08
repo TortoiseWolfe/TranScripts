@@ -1,0 +1,1147 @@
+All right, welcome. Today is Sunday, so
+we are going to be doing mock interview
+and a little bit of problem solving
+practice. Um, before we get started with
+the today's activities, does anyone have
+any questions they'd like to ask about
+the technical interview, practicing,
+preparing, anything?
+Mauricio and I Mauricio and I were just
+talking and something that I wanted to
+mention based on that is that it's okay
+if you're not hitting the time the
+suggested time ranges every single time.
+As long as like on average or in general
+you're able to consistently hit them
+most of the time, that's probably a good
+indication. Um, there are always
+problems. There are always going to be
+problems that are going to to stump you.
+Even if it doesn't even if it's not like
+a complex or hard problem. Sometimes you
+just read a problem the first time and
+you're like, "What?" Um, and then you
+realize later that it was much different
+than what you thought it was. So, we all
+do it. We all feel it.
+And sometimes you take the
+the pattern I've seen is taking the
+wrong path to the solution that gets you
+tangle in a mess that end up consuming
+lots of time.
+>> Yeah, it's always okay to say I know
+I've gotten like to this point I've
+gotten maybe gotten pretty far, but it's
+always okay to just be like I'm going to
+scratch this. I've learned what I've
+learned. I'm gonna start from scratch
+and I'm gonna do something better and
+it's going to be fine. And you can
+always still hit the timelines even
+starting from scratch. Sometimes it's
+even better if you start from scratch
+because you'll move quicker.
+All right.
+So,
+Mauricio has already prev volunteered to
+be our mock interview candidate for
+today. Um, but before we do that, I
+wanted to go through
+an overview of a problem really quickly.
+Going to share my screen.
+It's always just good to get a little
+bit of warm up before jumping into
+coding. Just getting our our brains into
+problem solving mode. So, this is array
+partition. We're going to read through
+it together, pull out some
+obvious phrases, some key elements from
+it to put into our comments, and then
+we'll discuss a few potential solutions
+together.
+So given an integer array nums of two n
+integers,
+group these integers into n pairs a1,
+b1, a2, b2, so on and so forth
+such that the sum of men a1 and b1 or a
+i and b i for all i is maximized. Return
+the maximized sum. Um, I feel like every
+time I read these, I have to read them
+like a few times or go into the examples
+first to kind of make it make sense. So
+that's another thing with problems is
+that it's good to read it, but it's also
+good to like read the full problem and
+then come back and read it again.
+So if we're looking at nums, our input
+here, it's an integer array. We're
+getting a int output here.
+Yes, I can give you the link there.
+We get an output with an integer and the
+explanation is that all possible
+pairings. So that's a key phrase there
+that stands out to me. Ignoring the
+ordering of elements are 1 and four, two
+and three. So we're looking for the min
+of two plus the min of a separate two.
+So the men of one and four is one. Men
+of two and three is two. and that equals
+three.
+And then they're just trying all
+possible pairings of these four numbers.
+So one and four, one and three, and one
+and two. You can see those there. 1 4 1
+3 1 2. And it looks like the other pairs
+that we have are 2 3 2 4 and then 3 4.
+So that makes sense. And then if you do
+all of these pairings and add them up,
+you get a minimum or maximum minimum a
+maximum sum of the minimum of pairs
+equals 4.
+So there's a lot of math going on in
+here, but I think I'm following what's
+going on. We get a second explanation
+with these numbers. 626 512 output
+expected is 9. The optimal pairing is
+2125 66.
+And so with those pairings we get the
+addition of nine. So the min of one and
+two is one. Men of two and five is two.
+Men of six and six is six. And those add
+up to nine.
+So if I had to pull some elements out
+here,
+we are
+potentially finding all
+two value pairs
+or two value
+segments
+of an of the nums array
+and comparing them for men values.
+Then summing those men values
+and the goal is to find
+yeah
+find and return the
+well how do I say this? Find and return
+the maximum
+output
+Actually,
+I'm going to say find
+the best combination
+of pairs
+so that
+the sum of all two value pairs
+provides the highest
+put
+as best as I can. And I'm just writing
+this in my own words and I think that's
+pretty clear to me. And then we're
+returning
+turn integer
+which is the highest sum we can get from
+all two value
+pairs.
+Okay.
+And I'm just going to read this again
+because I said to given the integer
+array of nums which can be this or
+anything really of two n integers. So
+we're seeing two n because they're doing
+groups of two. Group these integers into
+n pairs. However many pairs of two
+integers we can put together. So this
+one has two sets of two pairs. This one
+has three sets of two pairs. So those
+are our n pairs. A1 and two or A1 and
+B1, A2 and B2, so on and so forth such
+that the sum of these pairs when
+checking for min we find
+the maximized I sum then return the
+maximized I sum. So that kind of makes
+sense to me. Our constraints we're
+looking at the length of these arrays
+can be 1 to 10,000 I believe is 10 4th
+nums.length length equals 2 * n.
+So 2 * n.
+I think this is just their way of saying
+that it's always going to be an even
+number,
+right? Because n is going to be the
+length.
+Oh, no. I see. So n in this case is not
+the length of the array. It's the length
+of pairs because we're doing 2 n. So in
+this case, n would be two because it's
+two pairs and here would be three pairs.
+And then we're saying there will always
+be 2 * n, which means that we're
+assuming and I think this is a safe
+assumption based on the
+uh constraints here.
+There will always be even pairs.
+Yeah. And then nums I is going to be -
+10 4th to positive 10 4th. So we can
+have negative values in here as well
+which will affect our men summing goals.
+Okay.
+So what do we think what are some
+potential ways that we could
+get to a solution here?
+So you have to try all pairings of those
+numbers or there's a there is a
+constraint to filter the pairings.
+>> Filter what do you mean?
+>> I mean like not finding all possible
+combinations of two numbers.
+So it sounds like you have an idea all
+of them all of all of possible
+combinations and check them in and then
+add add it all.
+>> I mean I'm confused there.
+Sorry.
+>> No, it sounds like what you're asking is
+that you are thinking there's a brute
+force possibility, but then you're also
+wondering if there is a more optimized
+possibility here,
+right?
+>> I guess. Yeah,
+>> because the brute force would be finding
+all possible pairings,
+right?
+>> And then doing the sums that way.
+>> Yeah, but it's like two level of brute
+force because it would be all possible
+pairings and then all possible
+pairings of pairings or because it says
+in number one one four comma 2 three. So
+that's like two pairs pair between
+themselves.
+Yeah, you would have to basically
+you could start here as a pair, but then
+you have to figure out how to divide
+these to find a pair. But if you start
+with
+this one and say which one,
+which min combo provides the highest
+output, right? So that's where you get
+the six and two have the greatest output
+that gets eight. Does six and six get
+the highest output? That's 12. So that's
+higher. Does six and five? Six and one.
+Six and two. Okay. So six and six have
+the best output of these combinations.
+And then two, which has the best output
+there? Two and
+five would be the next greatest one
+because we could take out these. So
+you'd have to you kind of have to create
+the best pairs along the way. Maybe
+maybe.
+And then keep going that way or Yeah.
+Otherwise, you could get into some
+really tricky stuff of saying
+if I create all possible pairs, it would
+be create this pair and then find all
+possible pairs with this
+set and then find all possible pairs
+with this set, which would become
+really, really, really, really big. Oh,
+I have a few people in the wait room. My
+bad.
+Um,
+yeah. So, there's some.
+So, what do you think? Is that the only
+thing we can think of there?
+>> Yeah, I'm feel kind of
+messed up by that.
+>> Welcome to the people who just joined
+us. We are going through this problem
+here array partition. We've already
+pulled out and summarized the problem a
+little bit. So we are looking for
+um
+all possible pairings of a array and
+then we are calculating the men of those
+pairings. So one and four the men would
+be one. Two and three the men would be
+two and then we are summing those values
+to get a sum. And then what we're
+looking for
+>> how how it makes you choose mean of two
+of three to be added to mean of one or
+four. What how what is the what is the
+rule that make you take that pair and
+add it to pair one four and and could
+and you don't choose any other pair but
+two three and one four.
+>> Well, you don't. There's are there's
+three pairings that they've put together
+possible pairings. So, if you did one
+and four, then the only thing you'd have
+left to pair together would be three and
+two. If you did one and three, then the
+only pairing you'd have left to do is
+four and two. If you did one and two,
+then the only pairing you'd have is four
+and three. It gets trickier here where
+if you did six and two, you could do 6
+five and one two or
+you could do 61 and five and two.
+and then similar six and six and then
+you could do two and five or two and one
+or two and two.
+So you have to find the best pairing so
+that the men of each of them results in
+the highest
+sum against all pairs.
+Okay,
+>> so we have the keyword of all possible
+pairings, which tells us that we could
+try and find all possible pairings, but
+that's where we were talking about that
+that could kind of get away from you
+there. Um, unless you tried to optimize
+it a little bit by saying if I find the
+best pair for six of six, then we can
+take those two out of the equation and
+then we have two five and one two left.
+So then we can do with two of these
+three which are the best pairings then
+take those two out and of the remaining.
+So that's a possible way. So I'm going
+to write that there.
+Find
+in a way since it's telling you to find
+the highest sum of the minimum of two
+numbers you kind of have to come at it
+from the reverse direction right? Find
+the best
+two value
+or maybe even the best
+find two value
+pairs that result in the highest sum
+starting from zero index
+and then
+remove them,
+you know, rinse and repeat is what I'll
+I'll say there until you
+uh get all
+all best pairs, all highest
+min output outputting
+pairs. That would keep your
+that would keep you from going of like O
+factorial to O of N squ
+because you would be removing things
+along the way.
+But can anyone think of any other ways
+you might approach this?
+for my
+for a key and I okay there it is open
+maybe
+okay well I will leave this here then um
+the link is in the chat so this is array
+partition
+We will talk about this one on Wednesday
+more in depth. See what other solutions
+people have found by that point. Give it
+a try. Let us know. Um you can start
+with this if you feel you can't come up
+with something else or if you just want
+to test it out or if you're feeling
+brave, you can come up with something
+new, your own idea. And uh good luck.
+>> That's a medium problem, too. Yeah.
+>> No, this is an easy problem. That's
+amazing.
+>> But again, the easy problems, you know,
+they vary. So this one
+could be a little bit harder, could be
+not as hard. Depends on
+what you were practicing before you ran
+into it.
+All right.
+I don't think it's going to let me copy
+my comments in there very well,
+but those are my comments there in the
+chat. Yes, I will repost the link.
+Can you repost the comments, too?
+>> Um, I just threw them in there. You
+should be able to see them.
+>> No, in in Discord. Oh, in Discord. Yeah,
+I'll put those in Discord
+>> because when you close this room, it
+goes away.
+>> Yeah,
+have it open somewhere.
+So, let's see.
+First pass at pseudo code
+for array partition
+from weekly
+session.
+Didn't copy it. Hold on.
+[Music]
+There we go.
+This
+I think that's right. Hold on. Wait. Oh.
+It's in uh it's in hacker rank, but I
+didn't get the back tick right.
+The hacker rank discord channel. I mean,
+sorry. Oh, that looks really bad.
+You can't see what I'm saying, but
+you'll see it if you look in the hacker
+discord channel.
+Oh, weird. I've never seen it live
+format my stuff there. Okay, so that is
+in the hacker Discord channel. I'll post
+that link right there, too. Um, so those
+are the notes that we left off and the
+link to the problem.
+All right,
+so
+I was thinking of something special for
+the mock interview. Um, Mauricio, are
+you still feeling up to doing the mock
+interview today?
+>> Yeah, I can try. I mean, I I need all
+the practice I can get. So,
+>> yeah.
+>> So, what I'm thinking here is that me
+and Riso will stay in the main channel
+and do the mock interview together and I
+will also provide this problem. And if
+people want to get into pairs for the
+breakout room, then we can spend that
+time in pairs discussing on in groups,
+right? Um how you might approach the
+problem. Maybe getting some pseudo code
+written out as a group. What do you
+think about that?
+Or we can do it as individuals or we can
+all stay here. I'll let the group
+decide. But there's three options. So we
+could stay all together and let Mauricio
+do the mock interview. or if you would
+like to work on the problem uh in pairs
+or if you would like to attempt the
+problem on your own in a breakout room
+um and then come back and we all share
+our solutions and our approaches
+together then that's also an option.
+>> I like the pair idea.
+>> Okay.
+Lisa votes for the pairs. Anyone else?
+Yeah, I vote for the pairs or the ones.
+I think pairs sounds sounds good. We did
+singles last two week, didn't we?
+>> Yeah, we did we did singles last time or
+last two seconds.
+>> Okay, so I'm saying pairs for this one
+because it is a medium problem. So, it
+might be good just to have someone to
+bounce ideas off of. But when you get
+into those pairings, um it might be good
+to assign one person as the like the
+coder, I guess. So since this is a
+medium problem, I don't expect anyone to
+actually write any code. I think it's
+just going to be good to start reading
+through the problem together, pulling
+out the key statements like we did at
+the beginning of the session. Um just
+kind of breaking down the problem into
+what is it asking me, what is it telling
+me to return, what are my inputs, what
+do they mean, so on and so forth. Maybe
+get some pseudo code written down about
+how you might approach it, come up with
+one or two potential solutions written
+in the pseudo code and comments. Um, and
+if you're feeling particularly inspired
+in the 20 minutes that we will have to
+work on this, you could start getting
+some code written out and that applies
+to you as well, Mauricio. So that that
+those instructions go to everyone.
+Um, but for the pairs, it might be good
+just to have someone else to be in
+charge of I have the h the leak code
+screen open and I'll do the typing and
+then just kind of have the discussion
+between the two of you. Does that make
+sense?
+Figure out how to
+Okay, so there's how many of us are
+there? One, two, three, four,
+five.
+I might do a group of three.
+Okay, Kai.
+Sounds good.
+So, Kai is just playing idea bouncer
+offer.
+So, we'll do
+Okay, I'm going to create two groups
+then. One, two, one, two. Wait. One,
+two, three. Yeah. One, two, three. Got
+it. Got it.
+Sign manually.
+Give me just a second while I
+create these rooms.
+Okay. So, we got our rooms here.
+So, Kai, if you can't speak at all,
+that's if you can't speak at all, maybe
+you can hang out in the main session.
+What do you What do you think?
+Waiting for the comments.
+Okay.
+I'll put you in a room then just to see.
+All right. So, I'm going to open up
+these rooms and I will go ahead and put
+the link in the chat. So, everyone who
+can make sure you have that open. Um,
+yes. So, make sure you have that link
+open and then I will open up the rooms
+and you can all jump into the rooms and
+then me and Mauricio will stay here.
+will set a 20-minut timer once everyone
+has gotten into their rooms and we're
+all set up on the main channel. And then
+it'll call everyone back. It'll give you
+like it's not going to give you a lot of
+time. It's going to set a 10-minute
+countdown, but expect about 20ish
+minutes from now.
+Okay, perfect. All right, Mauricio, so
+do you want to share your screen?
+>> Hold on.
+>> But
+uh let me open the
+the problem.
+>> Mhm.
+>> Sure.
+Okay.
+>> Great. So, you've done this a few times
+now, so I'll let you just go ahead and
+jump in. I'll set the clock for 20
+minutes and good luck.
+>> Okay. So, there are some
+I'm going to read uh silent and then I
+explain
+I'm going to set a timer. You should be
+able to see it.
+Um, just so that we don't lose track of
+time, but don't let that distract you.
+>> Yeah.
+Okay. So,
+so there is a wall a wall a 2D wall
+uh and there is balloons
+in that wall.
+to the wall is the xy plane and the the
+balloons have an a diameter that that is
+represented by the purse xar and xn on
+that array. So each balloon has its own
+diameter and you need to find the
+minimum number. I mean, you can shut
+arrows uh from the xaxxis that go up
+vertically
+and never stop popping up uh balloons in
+its path.
+So you need to find uh the minimum
+number of arrows that will burst all the
+balloons
+and you are given uh the balloons
+with the it diameters from start to
+finish point
+and yeah that's it and the constraints
+uh
+the amount of points
+I guess on The x-axis where you can
+shoot goes from one to up to 10 to the
+5.
+I know sorry the amount of balloons I
+guess the pairs gone to one from 10 to
+the five. the values
+at any given point xar is finish uh can
+be two
+I don't understand that
+[Music]
+I know it can be
+the length of that array can It it needs
+to be two but I see on the examples more
+than two. So
+it's length
+and the
+the diameter the x start can start
+between 2 - 2 to the 31 up to xn and all
+the way to
+2 to the 31 minus one. Obviously
+xar is less than extend.
+I don't understand the
+the first constraint though points
+length
+the length of the array I guess the
+number of balloons can be 1 to the 10^
+the 5
+and the length of the diameter that's
+the second one can be two it's always
+two I guess But
+uh the example they are not always two.
+So yeah I don't get the second
+constraint
+two one
+length.
+Ah, it means it has two elements. Okay,
+because it's a two dimensional array.
+I'm kind of slow today, but whatever.
+Uh
+so as far as pseudo code
+will be
+you need to find the minimum number of
+array. So,
+so basically you need to find
+the points of intersection
+all the intersections
+between the points.
+I need to find all
+all the
+x coordinates
+of intersections.
+So if you find that
+you find uh
+you find the arrow that can pop two or
+three or whatever
+because you're looking for a minimum. So
+finding the intersection and then you
+count for every intersection.
+You can one arrow
+but you need to check intersections
+along the whole array because it could
+be more than two
+or more than two or more than three.
+So for that obviously you need to
+keep
+up
+with the
+X start
+minimum
+and maximum
+because that will give you a range.
+orange
+[Music]
+to shoot the arrows.
+I mean, I'm all over the place. I'm just
+coming up with ideas, I guess.
+[Music]
+And as far as implementation for
+intersections,
+[Music]
+I guess you keep up
+with an
+a point.
+I mean compare between points.
+How many minutes I have?
+Where between points?
+But if I go and compare each volume with
+all the others,
+it will be like too much work. I guess
+too much of of of
+N.
+But I figure you have to compare anyways
+each with all the others because how you
+going to know?
+They don't seem to be in a particular
+order or anything.
+They seem to be like random.
+So you'll have to take one and and see
+if all any of the others fall between
+that range
+or vice versa to find the
+to find the groups I guess. So
+I cannot think of anything else. Maybe
+there is a sleek sophisticated way to
+reduce that to
+you know just what you need.
+But I cannot see it. So
+especially when you're preaching for
+time. I hate that
+point in
+and then you had to have a nested array,
+which is even worse.
+And then you'll have to
+take the first element.
+And
+I need some other thing here.
+lost Mauricio somehow.
+We'll see. Ah, okay.
+Raio, are you there?
+>> Can you hear me?
+>> Yes.
+>> I got disconnected.
+>> Yeah, I don't have much here. So,
+>> it's okay.
+>> Just a bunch of ideas, but
+>> No, that's good.
+Um, I'll go ahead and stop the timer.
+Yeah.
+>> And
+yeah, you had like
+>> I was thinking comparing each one with
+the others to see which one intersect
+and then go from there, whatever.
+>> Yeah, I think that makes sense. And you
+were looking for a more ideal solution.
+There may be one, there may not be one.
+Um, but I think it's always good to
+start. you thought you thought it
+through pretty clearly and you decided
+that this was going to be your best
+starting point for at least getting some
+test cases, you know, running and I
+think that's a great place to start and
+I think you can definitely get to a
+potential solution using this approach.
+Um, so yeah, overall I think this was
+really great. So I'm going to call the
+group back together and then I'll get
+some I'll see where where everyone else
+ended up and then we'll come back and
+you can showcase where you landed off.
+But again, I think this was great. And
+again, this is a medium problem, so I
+wasn't expecting you to complete it.
+>> Okay,
+>> so we should start seeing people
+flood back in here.
+All right, welcome back everyone.
+Okay,
+so I want to hear from my two groups
+first. Um, where did you all end up?
+Does anyone Why don't we take turns?
+Doesn't someone want to present what
+they found?
+>> I'm just wondering if I may have been
+muted the whole time. Sorry, what was
+that?
+>> Sorry, I couldn't hear you. What was
+that?
+>> I'm starting to wonder if I was muted
+the whole time. I don't know if Chris
+ever heard me. I just realized my mic
+was muted when we got back in the group.
+Come back or if that was I that way the
+whole time.
+>> Oh, no. I was having some technical
+issues. Sorry.
+>> I feel like I almost got there, but I
+think my syntax is off on one. You want
+to come back to it?
+>> Okay. Do you want to show us?
+>> Uh, sure.
+screen.
+It show my screen.
+>> Yeah.
+>> So, I talked to Claude a little bit and
+it seemed to think that I was uh hitting
+integers. I was trying to do
+saying I got a syntax error on line
+eight.
+So if I understand it right,
+uh let's see.
+So the points would also be equal to the
+number of balloons we've got taped to
+the wall.
+>> And the arrows are going to be infinite.
+So we're going to start out not shoot
+balloon.
+So put in range in the number of
+balloons.
+So I was trying to get where I think my
+syntax is off. I'm trying to
+I'm saying it as an array of an arrays
+or an array of coordinates. So I'm
+trying to get the first and second
+coordinate.
+So if
+uh say the coordinates of the first
+balloon
+>> sure
+>> got to split them. So it's like
+the the beginning of x and the end of x
+and then if the arrow hits between that.
+So the the other one I think what
+confused me a little bit is it's
+treating all of them as x but your
+second x is you're going across the y
+axis on the bottom. So it's like you're
+shooting a narrow up from wide, but it
+might miss. That might be a thought
+there, too. If it misses, I guess you're
+still shooting it. So you're still going
+to increment when you shoot even if you
+miss all of them.
+>> Okay, I think I'm following. Can you do
+me a favor and open up the description
+real quick?
+>> Yeah.
+>> And then scroll down to the constraints.
+So what do you see about the X start and
+X end constraint there?
+>> I should be using points for my
+Is that where I'm running off on my
+syntax? It's I Z. It should be point Z
+points I
+>> that's one thing. Yep. What about the
+third bullet point there?
+I don't get that one.
+Could be negative.
+>> Yes. So, if I understand your idea here
+correctly, which I don't think is a bad
+idea by any means. It might actually be
+a pretty good one. Um, I think
+your idea is almost there. It's just
+that the points.length length aka your
+four i in range according to that first
+bullet point is going to be between one
+and 10 to the 5th right so zero 1 2 3 4
+blah blah blah 10 to the 5th the third
+bullet point is telling you that those
+balloon starting points that you're
+comparing against the index and range is
+going to be between a -2 to the 31 and a
+2 to the 31us is one. So you might not
+account for all of the balloons
+with your current implementation.
+>> Yeah. So I come from a Reddit where
+you're doing like CAD blueprints. A lot
+of times your coordinate system is going
+to start at zero. We don't ever think
+about going in the negative range.
+>> Yeah. But I think this is an interesting
+solution. So I'll be excited to see
+where you get to by Wednesday.
+>> Thank you for sharing. Um, all right.
+Lisa, Rebecca, what about you guys?
+>> Uh, we just did pseudo code.
+>> Okay. Yeah, that's great.
+>> So, um, it's similar to his. Um, let me
+Can I share?
+>> Yeah.
+>> Um, and then Rebecca, did you have a
+question?
+>> No. Um,
+oh, I am unmuted. Um, what confuses me
+with this thing, I think I kind of
+figured it out, but the like these
+nested values, we have uh like an array
+is an item or element.
+So how do we like I want to fix I want
+to have the computer pick the minimum
+value from the first array and compare
+it with the maximum value of the value
+next the next value the next
+>> so how do I tell it to do that
+>> that
+>> well that's there is a way
+>> yes
+>> so that's what I want to do to and then
+count them and when I I count them all
+we'll get the arrow
+Mhm. Yeah.
+>> I don't know how to to to like explain
+that in computer language.
+>> Yeah, I I'm following. Um do you guys
+want to walk us through your pseudo code
+here?
+>> So um we had to understand the problem
+is it it um throws a lot at you, a lot
+of math at you.
+>> It does. Yes.
+>> Graphics. So um so
+um to get the visual picture we um if we
+were on a graph look at the horizontal
+line the x is where the balloons are
+placed um between negative numbers to
+positive. And what we need to do is
+determine if we shoot an arrow
+vertically up, which would be the y-
+axis. Um, we would want to
+um have some kind of trigger um that
+says a balloon is popped. But if we if
+we we've got four balloons, which is the
+length of the um array,
+and I take one arrow and I pop two
+balloons,
+um then I need to mark off the two
+balloons off the length. So, what we're
+using here is we're doing a pair and
+what we did is we broke down the overlap
+here. So we needed to determine the
+overlap and the overlap is between these
+points and are they overlapped.
+>> So in this case multiple arrows multiple
+one arrow can take down multiple
+balloons.
+Um so uh we wanted to do the comparison.
+This is the definition of the
+comparison. If one point of a minimum
+value overlaps the max point,
+then that means um there's a pop balloon
+more than one.
+>> So we would have a counter.
+>> Yeah.
+>> Um we thought about sorting the points
+to make it easier to do. Well, and um I
+started doing the code to show her the
+for loop because this would be a for
+loop going through the each value. Mhm.
+>> And um I this would be the if
+statements.
+Um and then we would set a counter of
+some sort.
+>> Am I making sense?
+>> Yes, you are. Uh
+um
+it's the So this is the actual um
+I actually did a cut and paste on this
+because this is like a very good um
+algorithm that we could use at the
+statements.
+>> Yeah.
+So
+>> yeah,
+>> we we needed to and I didn't get
+finished, but we wanted to do
+um the reverse of this is to is true,
+too. So
+um
+anyway, that's that's
+we just didn't get to the coding yet.
+>> No. And that's great because here's the
+thing with a medium problem, the
+suggested time range is 40 minutes to an
+hour, right? So if you spend 20 25
+minutes just doing a pseudo code game
+plan just to figure out what is this
+problem asking me and how might I
+approach it that still gives you 20 30
+minutes to code an actual solution test
+it out maybe come back to the drawing
+board once test it out again debug
+through it so that actually leaves you
+quite a bit of time um so that's why I
+definitely encourage that this is a a
+good space to be in where you've really
+thought about how does this problem work
+on a on this explanation level how might
+I approach it looking at these overlaps
+and using at these you know coordinates
+axis axes that they give me using the
+constraints they give me and really
+putting it into human readable language
+at least for you in the moment and then
+building a plan from there I think
+that's really good um yeah this is good
+I think everyone did a good job and then
+Mauricio do you want to show us
+where we left off
+>> just to share with the group.
+>> Thank you.
+>> And Rebecca, um,
+I would recommend going back to mod 2
+and looking at the section on
+two-dimensional arrays. There might be
+some good tips in there about how to
+mentally build a framework around
+accessing
+the inner nested arrays across
+an array of arrays. Right? There might
+be some good tips in there about how to
+mentally frame that kind of thought
+workflow there. Um because it sounds
+like you both understood the problem.
+You were just kind of maybe thinking
+about how would I implement this in a
+coding like a programming language.
+>> Yeah.
+And that's great. I mean the first part
+there is getting the mental framework
+around it and then the second part is
+getting the coding framework around it.
+Yeah, I just got uh some ideas that's
+all and then I started to play with
+those but didn't get too far.
+But basically I want to find
+intersections between the points.
+So
+whenever I find intersections,
+I'm using a very costly construct here
+which is N2, but couldn't come out with
+anything theoricker or cheaper
+>> because I just wanted to just put my
+idea as soon as possible. So
+>> yes, Mauricio came up with a very
+similar game plan to um everyone and
+then in the last couple of minutes
+there, he started getting some code to
+test out the idea. um just because you
+know he's on the clock so might as well
+right and yeah so this might be an
+approach for accessing those nested and
+making those comparisons we're seeing
+the start one equals10 end one equals
+0.1
+or 0.11 I don't know we'll see um and
+then you have the start two there and
+end two for comparing
+maybe across
+>> yeah just trying to find if it's in the
+in the range if the others are in the
+range of that
+>> um to see if there is an intersections
+but I'm seeing that maybe they could be
+more than two so it gets hairy from
+there because
+I'm just checking by by pairs right so
+>> yep
+>> I don't know it's complicated
+>> yes it is
+all right thanks I just wanted um
+everyone to see that recap from Mauricio
+as well to see his notes. Yes, Rebecca,
+>> could you
+possibly let me know what I should study
+to try to figure out even a start for
+the problem you shared earlier? Like
+what part of mod 2 I should study
+>> for array partition? The first problem
+we looked at.
+>> Yeah, cuz that one I looked at and
+didn't even have a visualization for it.
+I was just so confused.
+H let me think.
+>> But this one I was excited about because
+at least I could visualize it. I just
+didn't know
+>> um
+>> Yeah.
+>> how to speak computer to it. Yeah.
+>> Yeah. Yeah. And that's why I like Hacker
+Inc. And I actually kind of like the
+more wordy problems because they tell
+you a lot of information. You just kind
+of have to parse it all out. Right.
+>> But that first one is just like all
+math. It makes my eyes glaze over.
+There's no no balloons, no flat books,
+nothing interesting.
+[Laughter]
+Yeah, definitely. Um well, I don't want
+to I don't want to give too much away.
+>> That's okay. If
+>> um you know, just study in general then
+>> I'll I'll think about it. Uh I'll think
+about it for a few minutes um before we
+>> Oh, let us know on Wednesday if you
+think about it.
+>> Yeah.
+Uh okay.
+>> But that was helpful to to know what I
+could study to get better or whatever
+study.
+>> Yeah.
+>> Instead of thinking, oh, I need to study
+all of it.
+Yeah.
+>> Or maybe I should just do mod two all
+over again. And maybe I don't
+>> Well, I mean, honestly, that's not a
+horrible idea. I don't think that you
+need to do that. But I started watching
+some of the modu videos um again uh the
+other day and I was like, "Oh, wow.
+There's some like really good stuff in
+here. Dr. Emily really knows what she's
+talking about. Who would have thought?"
+>> Um so,
+>> I had done that um leading to getting to
+mod two. I did mod one over again and I
+was able to do it quicker the second
+time like in the time that she said that
+it would take you like a month and it
+took me a month whereas
+>> the first time it took me a very long
+time.
+>> Yeah.
+>> So, so there's something to be said
+about that. I think maybe
+>> the first time you're going through
+maybe you're just learning and you're
+absorbing information and you're not
+always picking up every single nugget of
+information. The second time you go
+through and you've really kind of
+digested it a little bit. So now you're
+able to say, "Oh, that I understand that
+and this helps something else click
+now." Something else that I've done
+since then has really helped to cement
+that information. So yeah, it's always
+good to go back and refresh, especially
+if you see a new problem and you're
+like,
+>> I think this has to do with XYZ concept.
+Let me go back to mod 2 and see if
+there's anything from that that might be
+a good pointer or from a project that
+you did in mod 2. The projects have a
+lot of good information in there as
+well. Yeah.
+>> So, is there anything in mod 2 projects
+that might be applicable to this current
+problem I'm working on?
+>> But if you find anything that might
+touch upon without giving it away on on
+the first problem, you know, it's kind
+similar to what you had done
+>> um with the second problem.
+>> But if not, that's okay. I think I've
+got a an idea of what how I can approach
+things in general now. Thanks.
+>> Okay. Does anyone else have any
+questions before we close out today?
+All right. Well, I think you all did a
+great job today. So, I hope you got some
+good info about out of this today. And
+then on Wednesday, we will take a look
+at solutions for both of these. I
+couldn't get that sentence out. Um, we
+will take a further look into both of
+these and get some solutions coded out
+and maybe look at a couple of
+alternative approaches if there's more
+optimized or not. Um,
+yeah, and we'll go from there. So
+hopefully see you all on Wednesday.
+>> Um, quick question for you. Um,
+>> we're still looking between 15 and 20
+minutes just to complete the code
+solution, right?
+>> Easy problems. Yeah.
+>> Okay. All right. because the second one
+was a medium. Oh,
+>> okay. Because that was like the code.
+>> Yeah, it was coming.
+>> Yes, the minimum number of arrows to
+burst balloons that problem is a medium
+problem. So, that is in the 40 minute to
+an hour range um is the recommended time
+range for practicing. The first problem
+array partition is a part of the 15 to
+20 minutes. Um, but if it stumped you,
+again, that's okay. As long as you're in
+general hitting 15 to 20 minutes on easy
+problems, I think that's a good place to
+be in.
+>> Okay. All right. Thanks.
+>> Okay.
+Thanks all.

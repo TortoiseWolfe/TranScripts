@@ -1,0 +1,819 @@
+Welcome everyone to this week's nailing
+the tech interview. Today's Wednesday,
+so our plan is to look into the problems
+that we looked at on Sunday. Um before
+we get started, does anyone have any
+questions about the technical interview,
+practicing,
+preparing? Any questions?
+>> To get better, the only way is doing
+more and more problems, right?
+>> Um,
+yes. Yes.
+I feel like I've answered this question
+in a few different ways. Um, I mean,
+like this the simple answer is yes.
+if you're taking the right practice
+steps. Are you practicing the
+breaking the problem down into steps?
+Are you doing the problem solving steps?
+Are you, you know, making sure you're
+testing along the way to print out what
+your test what your assumptions are
+versus what you're getting? Um,
+how are you handling the errors,
+debugging errors if you're seeing those?
+Like, is there any part of it that
+you're getting stuck on? Are you
+reviewing what you're getting stuck on
+and applying that to new problems? So
+like the simple answer is yes. The more
+complicated is sort of.
+>> Okay.
+>> But if you're doing everything right,
+it's just that you're not hitting the
+time limit, then yeah, the only way to
+improve is to practice. That's the same
+with with anything, right? Any sport or
+any task that you do often, if you're
+doing it well, doing it more is the only
+way to improve
+and resting, taking breaks.
+Any other questions?
+Okay. So, on Sunday we looked at two
+problems, both related to anagrams. Um,
+so Mindy, you already said that you
+hadn't had time to look at anything.
+Totally fine.
+Chris and Mauricio, how how did that go
+for you? Did you get through both of
+those problems?
+>> Yeah, I post my solution in the chat on
+Sunday.
+Um, did you work on did you make any
+changes after that? Did you look for
+alternative solutions?
+>> No, I'm talking about group anagrams.
+>> Yeah, me too.
+>> Uh,
+yeah, make it work. I mean, then it was
+like just a little code and I didn't
+know if even worked or not. So,
+I went through it, correct what it
+wasn't working and end up with a
+solution.
+So the solution you posted in in the
+Discord channel, that's where you
+stopped.
+>> I mean, it works. It passes everything.
+It's it's
+>> Yeah.
+>> So I don't understand the question.
+>> Sure. So my question was, did you think
+about improving it at all? Looking for
+more?
+>> I mean, it's is as improved as I could
+make it. Yeah, it beats 82%. So, I
+didn't think about making 90 or
+something like that.
+>> Okay. What about you, Chris?
+>> Oh, I'm not mute. Um, yeah, cuz I
+started off with the doing the short
+um and that was really slow. So, I went
+back to the the first anagram problem
+and went back through and I got it a
+little faster on that one, but I didn't
+attempt the group one yet.
+>> You didn't try the group one yet. Is
+that what you said?
+>> Yep.
+>> Okay.
+All right. So,
+I will go ahead and showcase what I've
+got or we'll look through. So Chris, you
+said you did the sorting, right, for a
+group anagram
+and you had that working
+>> for for the first the valid
+>> I mean yeah sorry the valid anagram yes
+>> where you compared the two sorted
+strings
+>> do you want to show us um that code real
+quick?
+I have a million times.
+>> I'll go ahead and post it into the
+channel as well. The problem validated.
+>> You want to see the short
+>> or yeah, whatever you've got. We'll just
+take a peek at it.
+So that was the first one I got.
+>> Copy that in.
+>> And then I came back with a dictionary.
+>> So you did try the dictionaries.
+All right. And so then what do you have
+for the dictionaries?
+I have it written down. I can
+give you two minutes. I can retire it
+back up real quick.
+>> Yeah, no worries.
+I'm just checking the run time
+on
+>> Yeah, the short one would only be 15%.
+seconds.
+Honestly, not that much.
+Not that different.
+Yeah. Okay.
+Let's see.
+All right, I'll just share my screen.
+Screen
+one.
+All right. So here's valid anagram
+and when we talked we had a O of N
+solution which I've got here
+and log of N solution using the sort
+which I uh which Chris just posted in
+and I checked and then we had an O
+squared solution that Mauricio had
+originally submitted. He had his code in
+uh the Discord channel. I did see it. I
+just didn't copy it in here for the sake
+of the meeting the other day. But we
+know that that one works.
+Um, maybe I could just type it out real
+quick. What was it? Or
+letter N.
+If
+letter is in S
+and
+S. count
+letter
+equal to t.c count.
+>> Oops.
+>> I was saying I I posted the other one
+too.
+>> No, I know this is just from the first
+one.
+>> Let me just clarify.
+>> If S isn't Wait, if letter isn't S and
+S.ount got equals.
+I think that's I think that's right.
+If turn true false turn true.
+Guess I should say if letter
+is not ins and out.
+It's not equal to letter. That might
+make more sense with the conditions I've
+got here.
+All right. And I'm just going to
+count all this out.
+Two. Three. Okay. Let's see. Big O.
+Open squared solution. Oh, nope. Didn't
+like that indentation. Indentation
+cuz my comments maybe. Okay.
+What have I done?
+That should be right.
+If letter is not an S
+or
+count letter is not equal to let's try
+that
+doesn't like not
+does it want no
+I don't know how else to write that.
+There's not an S or S count letter not
+equal to T
+letter or letter in if letter
+I can put them on
+separate lines and see there.
+That's not.
+Maybe it's the is not on this.
+That might make sense.
+Okay. Yeah, the is.
+All right. I think that should do it.
+Okay, 2.8 seconds
+beats 5%
+memory
+somewhere in the middle there.
+Performance towards the tail end. That's
+expected for an Oven squared solution,
+but it does pass all 53 test cases. So
+there you go. Um, so that's our big our
+oven squared solution. Still passes the
+test cases and it's only a few lines,
+which is nice.
+Um, sometimes I find that the better the
+efficiency, the more lines you have to
+actually write, but that's not always
+true. Sometimes it's the opposite, but
+in general. All right. And then let's
+try.
+Oh, I could have kept that on. 1 2 3
+1 2 3.
+So now we'll do our big O in log of
+event where we do the sorting. So
+for this one, we're going for each
+letter in one of the strings and seeing
+is it in the other string. So if we were
+saying is a
+n in nanog nagaram
+is n in in this string is a in this
+string so on and so forth and then at
+the same time
+or actually we're saying is it not in
+there because if we found a letter in
+here like if there was a t in here is t
+not in this string then that would be
+false. they wouldn't be anagrams because
+a letter is in one that's not in the
+other. Vice versa, if the counts are not
+the same of each of the letters, that
+would also be an indicator that they are
+not anagrams. So we say count letter. So
+if we pass it a, it's going to count
+that and say 1 2 3 and then it's going
+to count this one. 1 2 3 and it's going
+to do that for each letter.
+So we're basically comparing a double
+check of first does this letter exist in
+the other string? Yes or no. Then let's
+count that letter if it exists and make
+sure that the count is equal in both of
+the strings. And then once you've done
+that for each letter,
+if you don't hit any obstacles along the
+way, then they are anagrams. They have
+all the same letters and all the same
+counts of those letters.
+For this one, it's a little bit more
+simplified.
+we are sorting it. So they would have
+the same sort order which would just be
+a a a and then
+n and then m and then r. So they would
+just both be all of the letters in the
+string sorted in alphabetical order
+and we could just compare are the sorted
+strings the same string yes or no. So
+let's look at the runtime on that.
+So that runs in 15 milliseconds, which
+is quite a bit better than our 2.8
+seconds. Um, which is actually kind of
+surprising because O of N^ 2 and O of N
+log of N on the big O graph are not very
+far. So like the O of N squ is this
+sharp curve here. And the O N log of N,
+it's kind of also up there, but it's not
+quite as sharp, but they're pretty
+close. It's definitely closer than it is
+to O of N or any of the other smaller
+ones. So this is a quite a big
+improvement and also similarly only a
+few lines of code. So that's kind of
+nice.
+Now for our Oven solution, there are
+actually a couple of ways you could
+approach an O of N approach for this.
+What we discussed was using a dictionary
+and the idea being there that if you add
+similar to um the o squared approach
+actually but kind of removing the nested
+loop part of it. If we're taking each
+letter and we're going one by one and
+we're adding it to a dictionary and
+we're saying okay dictionary holding at
+the key value of a count of one and then
+we add n count of one. We look at a oops
+we look at this next a here. It's
+already in the dictionary. So we update
+the count in our dictionary to be two.
+So on and so forth. So then we're
+basically creating a frictionary
+frictionary the frequency dictionary
+where it has all of the letters in the
+string and the count of their letters
+but it's an O of N operation as we're
+only looking at the letters once and
+then adding it to a dictionary and then
+we're adding and in this version here I
+have two dictionaries for our two inputs
+and because we've already checked for a
+length check there
+I can use the same loop to just add both
+of them to the dictionary. Right. And
+then in the next step here,
+I could actually do another length check
+to make sure they're the same. Um, right
+here.
+I didn't. Um, but then we're going
+through the key value pairs of one
+dictionary and checking for those key
+value pairs in the other dictionary. So,
+it looks similar to
+this if statement here. However, the
+difference is is that we're checking if
+a key is in a dictionary. So that is
+actually an O of one, a constant check
+because either the key exists or it
+doesn't versus this approach which is
+saying I don't like the the string isn't
+indexed.
+Um so I have to like key indexed. So I
+have to say is the letter equal to this
+first part of the string, second part of
+the string, third part of the string, so
+on and so forth. So that's an oath in
+operation because we're comparing one
+letter against all of the characters in
+this string.
+Up here though, we're just doing does
+this key exist? Yes or no. And then
+we're checking the key value and saying,
+okay, for the key value in the other
+dictionary,
+does the count of this letter equal the
+count of my current key of the first
+dictionary? If they both equal or
+actually in this case, if the key
+doesn't exist or if the count is not the
+same, then we're cutting out
+and saying that no, these are not
+anagrams. Um, so that is an O of N
+approach. It's a little bit more verbose
+here. Could definitely clean it up. Kai
+gave us an an example of just using one
+dictionary, creating that dictionary
+here like this, and then going through
+with a second loop and saying
+um kind of taking down decrementing the
+frequency count for each one we run into
+or removing the key if the count is
+equal to one. And then if we end up with
+an empty dictionary, then they would be
+the same word or if we get into a key
+error. So, I didn't want to try that one
+because if you tried to remove a key
+that wasn't there or if you tried to
+Yeah, I think that would be the only
+problem. If you were checking for a key
+that like wasn't there, you'd have to do
+some additional checks in there. So,
+this one would still work, I think, but
+I didn't have time to to check it. So,
+it's it's quite a few lines,
+but it does have that O of N
+factor there.
+Um, but what what is weird here is that
+it's giving me the same
+or similar runtime. And I think that's
+just maybe the number of test cases here
+and the size of those test cases.
+But with big O and with everything, it's
+all about the scale. So the higher the
+inputs, the the greater the amount of
+inputs and the higher the quantity of
+those inputs. So we're book checking
+from the strings can be 5 * 10 4. It's
+actually pretty big to be honest. I
+think that's like 50,000. But if it went
+up to 5 million or 50 million, then we
+definitely start to see those run times
+deviate a little bit because the O of N
+is going to scale a lot better than the
+O log of N. So even though they can
+perform pretty well at this level where
+we have the 53 test cases at scale they
+would perform a little bit differently
+and that's why we talk about bigo.
+So those are some three different
+approaches that we talked about for
+um valid anagram and I just wanted to
+show everyone those kind of coded out
+and you definitely need to have some
+confidence with dictionaries to work
+work through this one because you have
+to say does the letter exist in the
+dictionary? If it does we can increment
+it. If it doesn't
+set it to its initial value, but that
+kind of manipulating the dictionary is
+something you have to be confident with.
+Then going through the key value pairs,
+that's something else you have to be
+kind of confident with. So reviewing
+dictionaries can help get you to ON
+solutions in some cases. Um, but there
+is a trade-off when you're thinking
+about space complexity. This one has I
+mean we're creating two dictionaries.
+Those are two objects that take up space
+in memory versus
+these are taking up less less space in
+memory. They would take up space I think
+um but quite a bit less. So we're
+trading off space for time complexity.
+Um and those kind of go hand in hand.
+Okay. Chris said his friend helped him
+with this one.
+So
+length. Yep. 4 i n s
+count i equals count. Wait, what are we
+looking at? Okay, count is a dictionary
+here. I'll just copy this in.
+We'll take a peek.
+Okay, so count is your dictionary here.
+Four, i, and s. So basically for each
+character in the S string count I equals
+count I.get
+I
+zero + one. So that get is check is a is
+a key check. So it's checking
+um
+basically it's saying if the character
+exists in the dictionary get the key
+value pair
+or if it doesn't exist return zero. So
+that's a nice way of taking
+this if else condition and trimming it
+into one line because we're using a
+method to do so. So the get is kind of
+like a a method a method for accessing
+the dictionary items. So if we were
+looking at a dictionary
+oops
+that had a with three for anagram n of
+one and we'll just leave it at that. But
+the second string we were checking.
+Oh well actually no we can keep going
+there. So if we had a and n
+we would say we've added actually at
+this point let's say we are
+adding the string to the dictionary
+and okay so a we'll start with a count
+get a or zero since the dictionary would
+currently be empty it's going to return
+an a zero because the get can't find
+that key.
+And then it's going to add the plus one
+because we are setting that default
+value of one. And then we do the same
+thing for in. And then we get to that
+next a there. And it's going to say
+count.get a. It will find it this time.
+Return the one and then add another one
+and set that to two. So that's a nice
+way of
+doing this step all in all in one.
+But it's you have to you have to know
+the documentation behind it, right? Like
+you have to know that the get method
+exists, how it works, making sure you're
+checking for that default uh zero value
+to make sure you're not going to get a
+key error, all of that good stuff. So
+this is nice.
+And then you're doing the same thing for
+int.
+But we're just saying
+>> it's comparing to the count. It's just
+checking to see if the count of
+S is the same as C.
+>> Yeah, it's nice because you're you're
+doing it at the same time. We're saying
+I could see an issue.
+I could see an issue in here,
+but we'll see. So
+I'm assuming it works, right, that
+you've run it.
+>> So it's only the one dictionary and not
+it's just comparing.
+>> Yeah. Yeah. Yeah. Oh, okay. I see. So
+these are actually two loops. So this is
+actually what we um this was this is
+similar to Kai's
+option here. So we start just by adding
+the one to the dictionary, which is
+good. So we only ever have one
+dictionary instead of the two. So we're
+adding all the keys to the dictionary
+until we get those final counts. And
+then the next one we're just comparing
+if it's not in there or if the count
+is equal to zero, which
+shouldn't ever be equal to zero, but
+that's fine. Return false. Um, count I
+minus one. Yep. Oh, okay. No, that makes
+sense. So, this is this is pretty much
+this version here, except we're not
+removing the dictionary keys, we're just
+leaving it at zero. And then once it
+gets to zero, if we're trying to instead
+of getting to this point where we're
+decrementing it because we found an
+extra character, we're saying nope,
+that's already we've already found all
+of the counts of those. So, we're going
+to return false instead of decrementing
+it to negative one. Um, and then return
+All count equals zero for count and
+count values.
+I'm not sure you would need need that.
+Let me just
+we'll just start here for now. Okay. So,
+we've got two loops. We've got our
+return false if they don't work out or
+return true.
+Yeah. So, I'm not I'd have to peek at
+this to see what that's doing, but we
+didn't need it. Um, 15 second. Ah, what
+did I do? Okay. 15 second millisecond
+runtime. So, it basically runs the same
+as this one, but again, as I said
+before, this one takes up a little bit
+more memory and space. Uh, yeah, memory.
+Yes, memory and space. Yes, that's
+correct. So, this one is a little bit
+more optimized actually. Even though
+they're doing the same thing, it's a
+little bit more optimized. So, even this
+would scale a little bit better than the
+approach that I have written out here.
+Um, so that's nice. But same runtime
+currently at this scale and a little bit
+better memory.
+So that's nice. Tell your friend they
+did a great job.
+I'm assuming it's someone with some some
+experience here.
+>> Yeah, I'm trying to help make them help
+him get a job.
+>> Yeah, that's awesome.
+And now my only recommendation is that
+you are going back through like we just
+did here and breaking down those
+elements to make sure that you
+understand them and then practicing
+again in a new problem and making sure
+you're trying to implement those on your
+own or come back in like a week from now
+and delete it all and try to implement
+it from scratch. So that way that
+knowledge really cementss there for you.
+Wonderful.
+>> So what is this doing? All
+zero for
+>> oh
+return all
+>> yeah count equals zero for count in
+count values okay so this is making sure
+the dictionary is equal
+I mean that um
+yeah yeah yeah yeah yeah so this is
+making sure that there are
+>> no straight values
+>> yeah so if we had for example anagram
+and
+>> okay Yeah,
+>> this one just with a one less a. So like
+we've checked everything, we've
+decremented everything and we didn't hit
+any issues with not having the letter
+exist in there and not hitting that i
+equals z. But there is still an empty um
+basically at this point if if we were
+using these two strings, the dictionary
+at the end would just look like
+this. It would be
+a equals 1. There'd still be one left.
+N would be set to zero because we've
+gotten rid of all of those correctly. R
+would be zero because we've gotten rid
+of all of those as expected. And then M
+would be zero because we've gotten rid
+of all of those. So there would still be
+one left over value. So this is saying
+make sure that the count equals zero for
+all of the values in the dictionary.
+Um so that is a very good check. So I
+would actually say we should keep that
+in there. However, I was actually I was
+thinking about this like just a few
+minutes before the session and I I
+didn't have time to test it out.
+Um,
+I was thinking about the like
+probability and it's really Brian's
+fault because Brian used to talk about
+statistics all the time. So, I was
+thinking about the probability that two
+I don't even know I don't even know what
+I would
+how I would describe this. the
+probability that two
+words have all of the same letters and
+no differing letters. So like car and
+rat um is not a good example. So anagram
+but like actually two actual words like
+what is it? Uh
+okay race and care. So all the same
+letters
+and the same length.
+What would be the probability that you
+would have two words with all the same
+letters and all the same length?
+Um
+but that the count of those letters
+wouldn't equal each other. So I can't
+this isn't a great example because
+there's only one of each letter. But if
+it was like race car and
+I don't know what how what is another
+how can I extend to this
+I guess we'll just say that
+so if this was a a real word carrera um
+so if race car and carrera so they have
+the same length and they have all the
+same letters there's an r an a c and an
+e but
+the count is that there are two Rs in
+this one and two A's in or three A's in
+this one. And
+wait, no, hold on. What's the difference
+here? So, there's two R two Rs, two A's,
+two C's, and one E versus this one has
+one C and three A's. So, all the same
+letters, but the counts of like one or
+two of the letters is a little bit off.
+Like, what would be the like probability
+of that? And I think that it's so
+intensely low that you can't even like
+come up with really any good test cases
+to add for it. Now, they're just putting
+in random assortment of letters. So,
+it's totally possible that we could have
+hit this error, this issue here. Um, but
+they didn't do it. So, but if these had
+been real words,
+that's where I was thinking I wouldn't
+even maybe you wouldn't even need to
+check for this because the probability
+of that being a real thing would be so
+low that it's not even worth checking
+for. Um, but this code checks for it.
+So, that's good.
+And if you didn't understand that,
+that's okay. I probably didn't explain
+it very well. Um, but it's just like
+nerdy
+nerdy probability stuff. This is good
+though. I like this. So, this is just a
+kind of more a slightly more optimized
+version. This would be
+option one and same thing
+but option two.
+Now, why does this matter that you think
+about the scalability of these? And
+that's where it comes into the group
+anagrams because this one, which is a
+little bit harder, right? You have to
+determine a if there are anagrams in
+here and then you have to group them
+into these groups. So being able to do
+this efficiently,
+like if this was production code, you
+want to make sure that this is efficient
+as possible because if I'm loading a web
+page, right, and I'm waiting for the
+data to come in and it's doing some
+weird I don't know why we would do this,
+but if it's taking all these words and
+finding the groups of their anagrams, if
+that runs for too long, I'm going to be
+sitting here idle waiting for my web
+page to load and wondering just like in
+my head like this kind of taking a long
+time. maybe this website's not very good
+versus if it was more efficient and used
+all of the efficiency techniques, right?
+Then it's going to load a lot faster.
+I'm not going to be sitting here on the
+other side as a user waiting for that
+page to load. It's going to do
+everything quicker and I can access that
+data.
+Um and you have to think about that at
+scale as well because even a really
+efficient and optimized website can
+struggle with loading a web page if
+there are you know millions and millions
+of users and millions and millions of
+data set. So there are other ways to
+improve and optimize loadability of a
+web page but how you work how your code
+runs and how efficiently it runs is one
+of the main ways that you deal with
+that. So that's why it's important to
+think about that. We don't have time the
+10 minutes to uh break down this problem
+to figure out the most efficient way to
+approach it. So I will save that for
+next time and we will kind of dig into
+that one a little bit more. Um but I'm
+glad we got to walk through each of
+these and talk about them.
+And I still think everyone should give
+this one a try and see if they can get
+an an efficient version for it for group
+anagrams.
+So yeah, that is where we will leave off
+for that. Does anyone have any
+questions?
+>> Would you suggest two dictionaries for
+the group?
+>> Sorry, can you say that again?
+>> Would you suggest two dictionaries for
+the group anagram?
+>> Hold on, let me think about it for a
+second. Um,
+I think you could follow a very similar
+technique to the uh the code that you
+just showed us with the create one
+dictionary and then for each new string
+instead of creating a second dictionary
+doing the the checks here. The count um
+is is the letter a key in that
+dictionary and what is its count value?
+I think you could do a very similar
+approach and get get the same result.
+Like you'd have to do a little bit more,
+right? Because we're comparing
+>> across multiple strings, but I think you
+could do it.
+>> Understood.
+>> I'll try it. I'll try it and we'll we'll
+come back and talk about it.
+>> Any other questions?
+It was a good session. I just wanted to
+tell you I enjoyed it.
+>> I feel like I just talked a lot.
+>> But no, I mean it was really good
+because you presented three solutions
+that you guys had gone through. So found
+that very helpful. I'll try I try not to
+harp on big O too much, but every once
+in a while we get a good problem where
+there are a lot of approaches that you
+could take and even deviations in the
+same like bracket of efficiency that you
+can change things around. So, it's
+really good to think about those as as a
+thought experiment.
+I was thinking about whether or not this
+could be compared to our um fine we have
+a I want to say the arrays and maps
+um section is it is that in mod 2.
+>> Yeah.
+>> I was thinking about whether or not that
+could be compared but it really can't.
+It's not comparable to the anagram
+thing. I don't think.
+>> How do you mean
+>> it's not the same type of a problem
+except that there is a word frequency.
+So you could kind of model it after what
+happens in that particular issue if you
+were thinking about it that way.
+>> Yeah. I mean that's a dictionary that's
+a dictionary problem there. Um so you
+were taught dictionaries in Matu and
+then that problem specifically is a
+dictionary problem. So yeah, I think
+this would pair well with that. Um, I we
+are actually kind of revamping the mod 2
+materials right now and adding in more
+hacker rank stuff in there and so I have
+already picked out a dictionary specific
+problem and walk through. So that will
+be there
+>> soon.
+>> Well, I like that idea. I'm going back
+through them, but today is about getting
+the house sold. I appreciate you. Thank
+you very much. And there was a del there
+was an actual reason for the camera
+because I got medicine delivered. So,
+yay.
+>> Yeah. No, no worries. I didn't even I
+saw you post it and then I didn't even
+notice that you were gone. Next time I
+looked at the camera, you were the best.
+I was like, "Oh, okay. That was quick."
+>> Well, thanks a lot. I would I wouldn't
+notice. No, I'm kidding.
+>> I got your message, but
+>> yeah. Okay. Well, anyway, I appreciate
+you. Um, I will leave now. You guys have
+a great rest of your day. Bye.
+>> Yeah. And if no one has any questions,
+we can close out today as well.
+>> You.
+>> All right. Well, have a great rest of
+your day, everyone.
+>> You, too. Thanks.

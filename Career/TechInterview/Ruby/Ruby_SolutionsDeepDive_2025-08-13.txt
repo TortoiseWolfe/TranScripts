@@ -1,0 +1,1475 @@
+All right, welcome everyone to this
+week's nailing the tech interview. Today
+is Wednesday, so we would typically work
+on deep diving into some of the problems
+that we covered on Sunday. Um, Sunday
+kind of got away from us. We talked
+about hacker rank skills competency
+certificates for a while and then we did
+an mock interview with an easy problem.
+Um, so I have a few things that I wanted
+to talk about today, but before we do
+that, does anyone have any questions
+they'd like to ask about the techn
+technical interview, preparing for it,
+practicing it? Any questions in general?
+What questions people have?
+>> Yeah, I just started preparing for it.
+So I would like to know which categories
+and I have to focus on hacker rank to
+start practicing.
+>> Sure. So
+the easiest way to get started is let me
+share my screen.
+So on hackerank there is a problem
+solving track. It's usually one of the
+first things that shows up when you make
+an account. And the problem solving
+track has a mixture of questions
+including both data structure focused
+problems as well as algorithm focused
+problems. Um so it's usually it's the
+kind of a combination of both of those
+if you start there and start with easy
+filter some down and just kind of go in
+order and start practicing them. Um
+and for each one you know make sure
+you're reviewing topics for mod one and
+mod 2 that you've learned. thinking
+about how they could apply and
+practicing your problem solving skills.
+So with the problem solving,
+the main thing there is reading through
+the problem, figuring out what elements
+you can pull out of it um that will
+become action steps here or that become
+pseudo code, you know, steps that
+you need to do. Typically, you get clues
+or instructions from within the problem
+statement. So being able to pull those
+pieces out, making sense of their
+examples and being able to summarize
+that and explain that is also part of
+the tech interview. Um, always
+important. Knowing what data type to
+return and what that is supposed to look
+like. Being able to read through the
+inputs is also helpful. Um, especially
+if you're getting stuck somewhere and
+you need to debug through your code to
+figure out where something is going
+right or going wrong. Knowing how to
+understand the data that's coming in and
+into your parameters here.
+Reading through the constraints is
+really helpful as well. It gives you
+hints about the kinds of data that
+you'll be working with, things that you
+would need to think about, if there are
+any edge cases you need to consider. Um,
+just general kind of gotchas can be
+hidden into the constraints as well as
+helpful hints can be hidden in the
+constraints or even stated very
+explicitly in the constraints.
+Um, and then one thing that I also see
+is people not reading through the full
+problem. 20 minutes goes by fast, but
+always read through the whole problem to
+get as much information as you can,
+especially from the more spelled out
+examples at the bottom. Pulling those
+into some pseudo code, explaining what
+you're thinking, like resummarizing the
+problem statement,
+pulling out the action steps that you
+want to take, turning that into pseudo
+code, explaining what you're doing as
+you're working through it, and then
+running code as often as possible to
+make sure you're testing your output.
+That is the best way to practice and
+after each time you get something
+passing right as soon as you get some
+test cases passing.
+My general recommendation is that if you
+are struggling to get all the test cases
+passing on any given problem, if you can
+get around half to 2/3 of the test cases
+passing, I think that's a good step to
+say, I've gotten as well as I can do at
+this moment. Maybe take a step back,
+review mod 1 and mod 2 again. Look for
+some examples or look for
+the discussion tab to see what people
+are saying about this problem to see
+what they're doing. And then don't copy
+and paste code in. Use that as
+inspiration to finish the problem
+yourself and type it in your own, you
+know, your own hands.
+um until you can get about my next
+recommendation is to have about a
+consistency of at least three problems
+in a row that you're able to solve in
+under 20 minutes. We also recommend
+being able to solve medium problems in
+as a part of your practice. That's
+because those are harder of course and
+it typically involves doing multiple
+steps. So easy problems will have a
+couple of steps that you have to do to
+get a certain outcome. medium problems
+will have multiple steps that you need
+to do. So, it's kind of the same level
+of difficulty, but it's just kind of
+like compacted into one problem. Um, so
+being able to break things down into
+steps is where the problem solving comes
+in to really help you and fine-tune that
+so that you are set up for success in
+the internship.
+Um, so that is kind of the long and
+short of it as as just making sure
+you're getting a lot of practice and
+reviewing all of the concepts that are
+covered in mod 2. So that's, you know,
+lists, variables, functions, arrays,
+some of the algorithms like sorting,
+searching, um, data structures with
+linked lists, stacks, cues,
+dictionaries,
+lists, of course, all of that stuff you
+need to be pretty well verssed in. And
+this is the best way to put that stuff
+into practice.
+>> And the medium difficulty uh how how
+much time you should be able to solve
+those.
+>> The general recommendation that we give
+is about 45 minutes to an hour. And
+that's after you've been practicing for
+a while, right? Like the first medium
+problem you take on or even the first
+couple of medium problems you're taking
+on, I would expect them to take a fairly
+long time. um especially if it's an area
+you're not used to. Some of them can be
+you can surprise yourself with how easy
+they are once you know the structures
+underneath them if you're really good at
+the data structure that it requires to
+solve the problem. They can go by a lot
+faster, but for some of them they are
+kind of tricky and so they take longer.
+That's why we like to recommend to
+practice a lot of them. Um we're not as
+like
+how do I say we're not as like picky
+about sticking to that timeline. As long
+as you are practicing medium problems in
+addition to your easy problems, I think
+that's a good spot to be in. Um, but the
+general recommendation is 45 minutes to
+an hour. I think once you get like one
+or two of those total that you've been
+able to do and you've been able to solve
+easy problems about three times in a row
+consecutively under 20 minutes, I think
+that's a really good spot to be in
+before taking your first and maybe final
+attempt at the tech interview.
+>> Okay. Thank you.
+>> Thank you. Good question. Any other
+questions?
+>> I don't know if I need to share my
+screen, but I was curious. Mine still
+says I need nine points to unlock the uh
+problem. See,
+what is it? Nine points to unlock the
+challenge problem. Nine more points to
+unlock your first star than unlocking
+the first star to get started on hacker
+rank. So
+does that mean any of them just filter
+down to easy and solve any of them get
+first next 10 points?
+>> Yeah, I mean um the stars are are
+what am I doing here? The stars are just
+good indicators of your progress. But
+yeah, you can just see any of them. They
+tell you max score 10 points. I think
+you get some amount of points for
+getting some of the test cases to pass
+when you submit. And then the max score
+once you get all of them, but they all
+have different point values. 10, 15, 10,
+10 10. Some of them will be 20. Those
+are typically harder. This is a medium
+problem, but there are some easy ones
+that are have 20 points, too. The score
+points are also a good indicator of how
+hard that problem is going to be. So,
+even though we're in the easy category
+here,
+there's going to be probably quite a bit
+difference in difficulty between the 10,
+the 15,
+and a 20 pointer.
+>> We can't see your screen, Ruby.
+>> Oh, I'm not showing my screen. Thank
+you, Key.
+>> You're good. You had it shared, and then
+you stopped sharing.
+>> Yeah. So, this one I just filtered on
+easy. This one has 20 points. This one
+has 15 points.
+15 points, 10 points. So, a 10.1 is
+going to be a little bit easier than a
+15.1 on on average. And then both of
+those are going to be easier than a 20.1
+on average.
+And then,
+yeah, but I I wouldn't use really the
+stars as a gauge. Um, that's just kind
+of more to gamify your progress, not
+really to gamify like your success. I I
+would say I think I think we're more
+focused on the the time and problem
+solving aspect than we are on the stars.
+>> Why is staircase pulled out on mine?
+It's compare triplets. It's has the
+green button at the top. Is that just
+random or
+>> Yeah, I think it's just sometimes it's
+just the very next one or sometimes
+Yeah, they do just throw out a random
+one. You can do whatever you want
+though. I mean I you don't have to do
+them in any specific order. I often just
+kind of scroll down and choose one based
+on the name. Like I've been avoiding
+this one forever because I don't like
+the name of it. It scares me.
+>> Personally got my attention.
+>> All right,
+that's the whole statement for now. I've
+been looking at Lake most of the
+weekend. So I got 21 points on a rank,
+but I haven't been on here in a little
+bit.
+>> Nice.
+I guess I'll start with compare the trip
+outputs, but so as soon as I pick on
+that green button, it'll start the
+20-minut timer.
+>> There's not a timer built in. Um, but it
+is good practice if you want to create
+like a timer on your phone or on your
+laptop just to help help you when you're
+getting started. It's easier to not set
+a timer, but like set a lap. Um, the
+difference being
+when you're first getting started, like
+with a stopwatch where it counts up
+instead of down. That's probably
+reversed for you guys, but seeing how
+long it takes you first. So, I'm just
+going to do the problem without thinking
+about the clock, without thinking about
+the time, then go to my phone, see how
+long it took, if it took me, you know,
+20, 30, 40 minutes, that kind of thing.
+Keep track of it that way. And then once
+you feel like you're on a roll, then you
+can kind of set the timer counting down
+from 20 to zero.
+Um, but don't feel like you need to use
+timers either if that's too much
+pressure for you. Work up to it. Start
+off easy casual and then work your way
+up to it. Um, introducing pressure at
+some point is good though because I
+think people very much underestimate how
+much that weighs on you during the
+technical interview. Um, I don't do
+anything. I just sit here on
+you know, kind of look at you. But some
+people, um, everyone actually, myself
+included, gets very much thrown by that
+for the first time. I often recommend
+the peer mentor office hours. Um, Key is
+a peer mentor. So, thank you, Key. If
+you get any of the people that I send
+your way, uh, just to say like, "Hi, I
+just want to practice a packer problem
+in front of someone. Um, maybe give me
+some feedback at the end. Maybe not up
+to you. No, no pressure, low stakes.
+Just getting that opportunity to voice
+out your thinking and perform in front
+of someone um without the pressure
+before getting the actual pressure of
+the tech interview.
+>> Good questions. Thank you.
+Any other questions?
+Is there like any type of flow diagram
+of steps general steps you should take
+to solve any kind of hacker rank problem
+in general like the the thought process
+you should go through anywhere or
+>> yes I I mean it's not spelled out
+anywhere I
+I might be working on something like a
+document to do that um that I could
+share
+But pretty much every single session we
+kind of demonstrate the process a little
+bit, especially on Sunday sessions. On
+Sunday sessions, we talk about I always
+demo how I would approach a problem from
+the get-go, how to pull things out, how
+to read through the constraints, moving
+things into pseudo code, everything up
+until the actual code, and then I hand
+it over to someone to do a mock
+interview to practice doing the same
+thing, and then optionally doing some
+coding there as well. Um, we can go over
+a problem and I can demonstrate again
+with actual code today how you might
+what that might look like and kind of
+spell out specifically everything I do.
+Um,
+during the session sometimes, you know,
+I say more than what I would expect you
+to say during an interview because I'm
+explaining to everyone. However,
+generally everything that I'm doing is
+something that you could mimic or do as
+a part of your practice.
+Okay, thanks.
+>> Yes, Key says,
+"Little stuffed animal on my desk to
+help talk through problems and practice
+talking verbally." Yeah, that's great.
+The rubber duck theory. And I've also
+got a little cat.
+So, I talked to my little cat.
+Oh, Siri was trying to talk to me as
+well.
+Um, the idea being that Stop it. Siri
+was trying to get in on the
+conversation. Um, having some kind of
+thing with a face that you can talk to
+and stop trying to talk to me, Siri.
+>> I I
+>> Having something with a face that you
+can talk to so that you can like sound
+out your thinking and just the process
+of sounding it out and talking a cute
+kitty um can help you work through
+problems.
+>> He likes to help out every once in a
+while.
+Yes, my cat's very helpful as well when
+she's on the keyboard and staring up at
+me, meowing.
+>> All right, get out.
+>> All right, any other questions? Thank
+you for all the questions today, you
+guys.
+Uh, I'm sorry if you already answered
+this, but um, so
+do do we need to have like a stopwatch
+or timer? Are you keeping track of that
+or
+>> during the actual technical interview?
+I recommend not to worry about it.
+>> I will let you know when the 20 minutes
+is up. If you ask, I can answer. I will
+tell you. In general, I don't ask answer
+any questions. So, if you're talking,
+you're just talking out loud. And if you
+ask a question, I just assume you're
+asking a question to yourself. Um,
+>> I'm just to sit there to observe. But if
+you ask about how much time you have, I
+will tell you. But generally, it's
+better just to not think about it.
+During practice, if you want to use a
+timer, you can just to help you make
+sure that you're getting it under that
+20 minutes. Um, but in general,
+>> it's a hard 20.
+>> It is a hard 20. Yes.
+>> Okay.
+>> Ideally, you're in the 15 minute 20
+minute range. So, as you're practicing,
+shoot for 15.
+get to 20 if you need to. Um, it does go
+by fast, but it also isn't as bad as you
+think it is.
+>> And that's for the easy problem.
+>> That's right.
+>> And then the hard the the hard problem
+the uh the medium problem is what?
+>> 45 minutes to an hour. And that's just
+for practicing.
+>> Okay. And that's the same session.
+>> No. So during the technical interview,
+you only do one problem. It's an easy
+problem. We spend 20 minutes total on
+that. 10 minutes with some follow-up
+questions, maybe behavioral interview
+questions. And then the medium problems
+are specifically just for when you're
+practicing to prepare.
+>> Oh, okay. So, there's no medium problem
+on the technical interview.
+>> No medium problem on the technical
+interview, but when you're in the job
+job hunt portion, you are going to see
+medium to hard difficulty level
+problems. So, it's always good to get a
+jump start there.
+>> Okay.
+All right. That's all I got.
+>> But Brian, you're solving medium
+problems left and right. So,
+>> yeah. I mean, not not in not in 45
+minutes. I'm not.
+>> Yeah. But if you pushed yourself to, I'm
+sure you could, but you think about it
+more deliberately because you want to
+get to a good answer.
+>> Yeah.
+Yeah. That's true. Okay.
+If you're lucky enough to get a half
+hour interview, the extra 10 minutes
+will let you your charm shine through as
+you have extra time to talk and explain
+what you did in 20. Well, you have to be
+careful about that because sometimes
+they will just tell you the time limit
+and they won't tell you how many
+problems you have unless you ask. And
+so, you know, you have an hour to solve
+a problem, but it's actually three
+problems. And how many did you get
+through? Did you get through one, two,
+or three? But here, it's easy. It's just
+the one problem. It's just within the 20
+minutes.
+All right. Any other questions?
+Okay, I will be right back. I have to go
+blow my nose real fast and then we will
+move on to a little surprise that I have
+that I wanted to showcase for everyone.
+Okay, so
+I have a little pet project that I've
+been working on
+and I'm planning on building onto it
+more in the future.
+But one of the things that we talk about
+pretty often
+during our weekly sessions is big O, big
+O efficiency. It's technically
+introduced in mods one and two. Dr.
+Emily talks about it. Um, she talks
+about the theory behind it a little bit
+and references it throughout some of her
+videos, but especially even for me when
+I was doing mods one and two, it kind of
+goes one in ear out the other.
+But it's one of those things where the
+more you know about it and the better
+you can explain it, that will show
+through in your interviews and the job
+hunt. Um, there's kind of an expectation
+to know it to some level and to be able
+to explain it to some level. And the
+more familiar you are with it, the
+better you will look. So I like to talk
+about it often during our meetings. And
+I have a little
+thing that I wanted to share.
+when we're thinking about bigo
+efficiency and even in algorithms like
+binary search versus linear linear
+search I think one of the things that we
+want to know is like how does this
+showcase in like a real world dynamic
+like when are you going to use these
+kinds of algorithms or these kinds of
+tools in the real world um and this
+isn't exactly a real world example but
+it could be depending so the idea here
+is that if you had a
+library catalog or a database kind of
+thing set up with all of your favorite
+books or you were using a search at a
+library through their database of books
+and you wanted to search for Pride and
+Prejudice and the total amount of books
+in the library was 128 kind of low but
+maybe it's a small library what the
+difference in performance would be
+through a simple O of N linear search
+and an O log of N binary search would
+So this little tool which I had AI help
+me build kind of walks through what that
+looks like. Um so if we took it at one
+step at a time,
+O of N or also generally the linear
+search approach is where you take things
+one step at a time. So, we're going to
+look at the first index, the second
+index, third, fourth, so on and so
+forth, until we either find the book
+we're looking for, Pride and Prejudice,
+or we get to the end of the list. Binary
+search is a little bit different. It is
+where we are splitting things in half
+until we find the
+item that we're looking for. It does
+require that everything be to be sorted.
+So, with the library, of course, their
+database is probably going to be sorted
+based on the probably a few different
+things. actually they probably have
+multiple indexed things but that's
+another story altogether. Um so they
+would start actually in the middle the
+midpoint with binary searching and so if
+we have 22 books that would be index 10
+I think 10 10 or 11 and you're just
+cutting it in half based on that. So is
+based on the name of it is the name
+we're looking for in the first half or
+the second half past this it's in the
+second half. So, we're going to
+eliminate all those options, split in
+half again, find the midpoint, see where
+it is in comparison to that, cut out
+everything else, and keep going until we
+find it. So, on a small scale, it
+doesn't there's not a huge difference.
+And we can kind of see that.
+So, yeah, it found it in just a few
+steps there. And then the linear search
+is still going. And boom, it found it.
+So, obviously, it goes a lot faster when
+you don't have all these little
+animations in tow. And the runtime would
+seem pretty much identical for a sample
+of 22.
+But as you scale up, and actually I'll
+play that again because
+pay attention to our binary search here
+to kind of see how that how that's kind
+of sorting there. It goes pretty fast,
+but you see it's cutting in half,
+cutting in half, and jumping and jumping
+versus that one that's just moving
+forward. If we scale it up a little bit
+more to about a 100 books.
+Same thing. We're going one at a time
+with our linear. And then, oh, that
+one's already found it.
+And this one's going to keep going
+until one by one we find it. So, it's
+down here a little bit.
+Um,
+so when you're thinking about big O
+efficiency, which is why I kind of like
+this thing that I put together, not to
+brag, uh, you're thinking about how
+things scale. So the efficiency of O is
+really not just about like on the small
+scale or even on a large scale, but how
+it goes from one to the other. So when
+you're considering how something
+performs at both 22 books, 100 books,
+1,000 books, a million books, what does
+the performance look like? So this time
+it took a lot longer, but the amount
+that it took longer increased by the
+amount of inputs. So it's moving in that
+diagonal line. The more inputs you have,
+the more time it takes to find the input
+you're looking for. but it goes
+consistently diagonally up linear to the
+amount of data that you have. Binary
+search is different because that log n
+there where we're having constantly
+having that still took about the same
+amount of steps even though we more than
+tripled or quadrupled our sample size.
+So that's why it looks more kind of like
+that where it's kind of like a little
+bit of a a jump up but it kind of
+stabilizes out and isn't completely
+diagonal. Um because it has a much
+better performance because at any given
+data point check we've eliminated about
+half of our remaining inputs that we had
+to consider.
+And as we go up even further maybe to
+500 books. You can see what that looks
+like still. It's probably going to find
+it before I can. Yep. Eight steps.
+Very, very short amount of time. And
+this one is going to take a considerable
+amount longer.
+So, it's at index 29 30 31 and it still
+has 400 and something left to check.
+And then even at this level,
+if we go up to like the maximum there,
+1,000,
+even checking at 1,000 sample input
+books, it already finds it still quickly
+in about nine steps. Now, this one um is
+a little bit skewed because this book is
+always somewhere in the middle of the
+list just based on how I put together
+this sample here. So, it's always in the
+range that's somewhere about the half,
+but at any given point, you're still
+cutting in half. If it was somewhere up
+in like the upper third, it would still
+only take a few more steps because we're
+still cutting everything in half, even
+if it's skewed one direction or the
+other.
+So that's where efficiency comes in
+because if you're making uh if you're
+coding out an algorithm or a solution to
+a problem that's running on O of N
+efficiency, it's going to pass probably
+all the test cases and it's going to
+look fine. But when you can see and
+explain how much better a log in
+solution to a problem would be like if
+you were implementing a binary search
+and you're able to understand that why
+it works that way and how that is
+affecting not only the co code runtime
+but the ability of your code to perform
+at much higher inputs. So that's where
+big O efficiency comes in and why it's
+so important in the coding world and in
+the real world. Even if you're not
+talking about specific, you know,
+implementing a binary search algorithm,
+any piece of code that you're writing,
+if you're doing something that takes a
+lot of extra steps and has a really poor
+runtime or memory efficiency, that's
+going to affect the quality of that
+production running code.
+Each new code that comes in, it's going
+to make it that much worse for all the
+inputs that are coming in. So, I wanted
+to showcase this because it's just a fun
+little demonstration and I kind of want
+to keep adding to it to show the
+different O efficiencies and O levels um
+that you might want to consider.
+But yeah, that's just my little pet
+project that I wanted to show everyone.
+Does anyone have any questions about
+that? And hopefully that clarifies a
+little bit about VGO efficiency there.
+>> Yeah, the animation slowing it down
+helps visualize it. Uh, you said that on
+lock 22 they'd probably run the same
+speed, but to actually see it makes the
+difference.
+>> Yeah. And I I was trying to keep up with
+it, but it's still hard to get all those
+inputs
+a little bit better when you're at the
+smaller size there.
+You could probably add the time module
+from Python to tell you the computation
+time, which each of those with with each
+of those two.
+>> Yeah. as like a demonstration that this
+one takes like you know 2 seconds versus
+like 5 seconds in reality um you know
+those are happening on the like
+fractions of millisecond levels there
+but yes definitely
+>> you probably like from a UI perspective
+you could scale down the extra space
+around your books so it would look more
+like a deep frag like you would see you
+know 100 books at a time instead of 11
+or 22 you'd see the the screen would
+fill up with a lot of smaller squares
+first basically.
+>> Yeah. Yeah, definitely. So, if it looked
+more like a bookcase instead of like
+tablets here. Yeah,
+>> sure.
+>> Scaling how much how many books you put
+on the screen basically.
+>> Right.
+Cool.
+All right.
+So, yeah, that's my game plan is to keep
+kind of building out some showcases
+there.
+key. I'd love to have something like
+that added to the course around project
+4 when we're first introduced to big O
+and searches. Good visual. Thank you.
+Very super cool. Um, I actually I also
+want to build out like an actual running
+app like not a library catalog, but
+maybe something modern like I don't know
+um almost like a a spoof of an Amazon
+site or some kind of e-commerce site
+where it has like filters and searching
+and page navigation and then use that to
+showcase some of the big O both code
+implementing like real world code in
+those situations and then also showcase
+ing how like your oe efficiency affects
+the workflows and a more realistic
+situation there. But that takes a lot
+more thought because you don't always
+program to be algorithmically correct.
+You program to meet user needs. Um, but
+I have found that through the process of
+really diving into all of these
+algorithms and making digging in more
+and more into improving my own
+efficiency that it has affected my
+personal projects to run better,
+smoother, and scale better. So, I
+definitely think there's a lot of
+crossover between practicing for hacker
+rank and technical interviews versus
+what you're getting out of your actual
+end goal of working in, you know, the
+real world industry.
+Okay. So
+that is that
+and then
+so the last thing I have is that um I
+believe Mauricio asked about this is
+walking through what an actual kind of
+tech interview process might look like.
+What are the steps? Kind of calling out
+those. So let's go ahead and just dive
+right into that.
+Okay, so this is the problem that we
+looked at on Sunday. I'm just going to
+stick with it because we already kind of
+looked at it. Um, it is jumping on the
+clouds. So, we had Lisa walk through the
+problem a little bit and walk through
+some pseudo code and we'll just take it
+from the top. So,
+I'm going to read out loud because I'm
+used to it by now, but if you are in the
+technical interview, you don't have to.
+I know it's a lot easier to read to
+yourself first to get an idea, but just
+make sure that once you do have an
+understanding of what the problem is
+asking you to verbally summarize it for
+me on the other end or for your
+interviewer
+so that I can see like what you're
+thinking about, if you're on the right
+path or even just to see how you're
+thinking about the problem.
+So there's a new mobile game that starts
+with consecutively numbered clouds. Some
+of the clouds are thunderheads and
+others are cumulus. The player can jump
+on any cumulus cloud having a number
+that is equal to the number of current
+cloud plus one or two. The player must
+avoid thunderheads.
+Determine the number of jumps it will
+take to jump from the starting position
+to the last cloud.
+It is always possible to win the game.
+Um, sometimes I have to read that
+statement a few times before I can
+really pull anything out.
+And the same will be true here. So, I
+usually just keep reading until I get to
+the example, which usually makes a
+little bit more sense. For each game,
+you'll get an array of clouds numbered
+zero if they are safe or one if they
+must be avoided. So, that already gives
+me a better idea, and that's something I
+can pull out
+given an array. And in this case
+that would be known as C our parameter
+there.
+Zero
+array C is a list of integers
+containing
+one or zero.
+Zero is safe, one is not. And what I
+like to do is write everything in my own
+words so that I can kind of translate
+for myself what am I reading from the
+problem, how am I understanding it, and
+how would I restate it. It also gives
+your brain a little bit to buffer to
+think about what you might do with the
+problem.
+So index of the array from 0 to six
+because there are 1 2 3 four five six.
+Index the array from 0 to six. All
+right. The number on each cloud is its
+index in the list. So the player must
+avoid the clouds at indices one and
+five. So index one contains a one, so
+it's not safe. Index five contains a
+one, so it is not safe.
+They could follow these two paths. You
+could jump from zero and jump plus one
+or two. So they're jumping two to two
+and then jumping two again to four and
+finally to four to six. The other option
+would be jumping from 0 to two. So two
+and then jumping plus one to three + one
+to four five isn't safe. So jumping two
+to six.
+The first path, the first path takes
+three jumps while the second takes four.
+So we return the shortest path there of
+three. And I'm seeing that kind of
+return.
+So I'm going to spell that as well.
+return the shortest
+path from
+the first
+index to the last.
+And then I'm also adding that extra
+information
+can advance the index
+by either one or two positions.
+Function description complete the
+jumping on the clouds function in the
+editor below. Jumping on the clouds has
+the following parameters
+integer C bracket in bracket. So that is
+telling me that this is an integer array
+or integer list. They also spell it out
+right there. An array of binary
+integers. And what I also like to do as
+one of my first steps is to print out
+whatever parameters they give me. They
+only give me one here, but if they gave
+me multiple, I would just put all of
+those
+on two separate spaces and print them
+all out. But we only get the one.
+So print C.
+So we get two lines here which we will
+look at. Seven. This looks to be the
+length of the array. And then these are
+all of the zeros and ones that we're
+expected to see. And that matches my
+print statement. So the C parameter that
+I printed out is a list of integers and
+it matches that input that we see there.
+And for this one, we're expected the
+path to take four. So that would be we
+can't jump two here because there's a
+one there. So jump one. That's one jump.
+Then I could jump two. One, two to get
+there. I could jump one there because if
+I jump two, it would take me to the
+other one. And then I can jump from here
+to the end, which is another two jumps.
+So that is four. So that gets us to the
+end of the array. So already I'm kind of
+piecing an idea of what I can do here. I
+might check since we're looking for the
+shortest path and we only have two
+options. Either jumping two or jumping
+one. I'm thinking I will check the space
+plus two to see if that is safe. If not,
+I'll jump one. Same thing. Jump two, can
+do it. Jump two, can't do it. So I jump
+one, jump two, we reach the end. And
+then same as I was just doing with my
+fingers, maybe I'll keep track with a
+count. So already just even before I've
+have any code written, all I've done is
+kind of resummarized the problem and
+print out my parameters and I've kind of
+got an idea formulating about how I
+might approach the problem.
+default to jump
+two spaces
+if capitalize that because that's going
+to be a condition if I can otherwise
+jump one space
+if I can or if
+it is safe. No one in the index.
+No one at maybe at the index.
+I'll put that on the other line.
+Otherwise, jump one space.
+Keep track of steps
+steps it takes.
+So I might initialize
+a variable to track that called count.
+All right. All right. And then I'm going
+to keep looking because even though I
+kind of have an idea, I want to make
+sure that I'm reading through the full
+problem. The input input format, the
+first line contains an integer n, the
+total number of clouds, aka the total
+amount of integers in the array. The
+second line contains the n
+spaceepparated integers describing the
+clouds. And then they have this bit here
+CI where I the actual integer values can
+be between zero and oh index sorry C of
+I is representing the zeros and the
+ones. I is representing the index
+position. So 0 1 2 3 4 5 6. So I will be
+anywhere between zero and N.
+So n can be we will have the n
+represents the length of the array. So
+that can be anywhere from two to 100.
+That two is helpful because it lets us
+know that there will always be like it
+says up here.
+It is always possible to win the game.
+So I would make an assumption from that
+you can always
+take a step
+because they are expecting you to make a
+step and so they're giving you at least
+two positions. Now that's an assumption.
+So that's going to be something that I
+want to test out, right? Can I always
+take a step and you will always
+reach the last index. So, those are two
+assumptions that I've made.
+And I I might not write out everything
+like I might read through the problem
+once first on my own and then read
+through it a second time and start
+pulling things out. We're already
+familiar with the problem. So, because
+we talked about it on Sunday, so I'm
+just pulling everything out as I'm
+reading through it for the first time
+here. But you can read through it once,
+twice, three times, and then start
+pulling information out.
+Okay.
+So, the next piece here is that the
+integers inside of it are going to be
+either a zero or one. That matches what
+we know based on the example above and
+the information that we've been given.
+And then there is this little bit here.
+So see the array at index zero is going
+to be equal to zero. We see that in that
+example here.
+And there's another example here. So
+that first index position is equal to
+zero. And then they're saying C and N.
+So N in this case as we already know it
+represent the length of the list. So if
+our length is seven, we're saying 7
+minus one. So C at the six position,
+which since it's a zero base, that is
+telling us that the last position in the
+array is also going to be zero. So I
+think we can check off this assumption
+as probably likely.
+Woo! because first and last will always
+be zero
+and you will also always reach the last
+index and that is verified verified by
+constraints.
+So that is why constraints are great
+because they help to make sure that if
+you have an assumption about how the
+problem works you can kind of get that
+answered.
+So then I might look through the rest of
+these examples to further make sure that
+I understand what's happening. Player
+must avoid index at two for that one and
+index at five to avoid that one. Four
+jumps.
+This one says three jumps. So if I jump
+to two, can't jump to there. So one and
+then two again, that's three.
+So now I've read through the full
+problem. I've kind of got an idea of
+what I'm going to do here. And at this
+point, I would summarize.
+I would summarize for my interviewer.
+All right. So, the problem is giving me
+a list of integers numbered 0 or one. It
+is safe to jump on the one, but not I
+mean, it's safe to take up any of the
+zero integer spaces, but not the one
+space. If I advance through the list of
+integers at either one or two spaces,
+how many spaces does it takes or how
+many leaps does it take to get to the
+end? So, I'm thinking I will make a loop
+to test jumping two spaces at a time.
+Otherwise, I will jump one space and I
+will track how many steps it takes to
+get to the last index. Thanks to the
+constraints, I know that the first index
+is always going to be zero. So, I can
+start safely and that the last index is
+always going to be zero. So, I can
+always reach the destination. So, I
+don't have to build any edge cases out
+around testing. Is the first integer
+safe? Is the last index safe?
+I know that I can always make some kind
+of step there
+and then I might just dive right into
+it.
+So that is how I would get started. And
+then the very last thing that I would do
+as well is that it's very easy to run
+into errors based on not having a return
+statement. So since I know I'm returning
+an integer, there's no brackets, so I
+know it's not an integer array. I'm just
+returning a single integer. the minimum
+number of jumps required. I'll just
+default default to zero. Sometimes if
+you leave out a return statement, it
+will throw errors based on it trying to
+read what you're returning. And so if
+it's expecting you to return a certain
+data type and you don't, it'll throw an
+error and it might kind of throw you off
+track or it might kind of like make you
+misunderstand what you're seeing. So
+always having I shouldn't have hit
+submit.
+But always having just the default
+return statement spelled out is always
+really helpful.
+So that is how I would get started and
+then I would just dive right into
+getting out my actual pseudo code going.
+I mean my actual code going and working
+towards a solution.
+Does that help? Uh Mauricio and anyone
+else who was curious about what the
+process might look like? I would apply
+this process to every single problem.
+>> Yeah, it gives more structure on the
+flow. Thank you.
+>> And you can also skip steps like you
+don't have to spell out every single
+thing. If you just want to pull out a
+few elements just to verify like I don't
+always do it this verbose. I might also
+just do something like
+um array c
+ins of zero and one. And then I might
+also just jump right to my pseudo code
+to say jump two spaces
+check for one unsafe
+or jump one.
+And then always have my return there of
+what I'm going to return. return zero.
+So if I'm really comfortable, I might
+not write out literally every single
+thing that's going through my mind, but
+I am going to pull some stuff out and
+I'm definitely going to make my
+assumptions about how it works. And I'm
+always going to explain. I'm going to
+pause and say, "At this point, I'm ready
+to work on my code. Here's how I'm going
+to approach it for you, the
+interviewer."
+Brian said, "What about using enumerate
+and appending indices of zero values to
+a list?" What do you mean by that,
+Brian?
+Well, I was thinking
+you could enumerate through the through
+the list
+and
+append the um the zero indices.
+Well, the observations with the zero
+indices to a list and then you can
+determine how how you move forward by
+the length of the distance between the
+the values. Because when we're
+enumerating, we're giving it an index.
+We're given an index to the value,
+which in this case are all zeros and
+ones.
+So actually no, you want to compare the
+um
+the index.
+>> Yeah, you're mainly focused on the index
+and then secondarily the well, you're
+focused on the value, the zero or the
+one. But I think the big obstacle here
+is how are you advancing the index? If
+you feel like enumerate is easier for
+you to manipulate the index, totally go
+for it. For me, I always default for
+iron range. But I do like enumerate
+because it does separate out the values,
+right? So for everyone,
+>> my my rule of thumb on enumerate is
+anytime you need both the indices and
+the values,
+then enumerate is a good way to go. If
+you only need one or the other, then you
+don't really need enumerate. It becomes
+like an extra step.
+>> I think that um I think that's good.
+That makes sense.
+Let's see.
+So generally the construction there is
+for i in range and then I need to get
+the length of this because you want to
+for a range you're specifying a starting
+point and a stopping point. So I want to
+go from zero to up to five not including
+five. So it would go 0 1 2 3 4 and then
+stop.
+Um but C is a list so we have to get the
+length of that to get the number. So
+length of C would be you know seven or
+six or whatever and it infers a starting
+point of zero.
+And so what is sometimes annoying about
+that is that index is easy to get
+I
+oops
+>> and then that's when your condition
+comes into play within the enumerate
+loop
+if the if uh the distance between
+I and
+>> well I don't know how to phrase it
+exactly but if your distance is two take
+the two because your output's going to
+be the count. Yeah.
+>> Keep track of like um you'd have to have
+a uh oh, what do you call it?
+>> An incrementor or something. Uh what do
+you call it with the plus the plus
+equals or minus equals?
+>> Yeah, the the assignment.
+>> Yeah, something that keeps track of
+>> operator.
+>> And then you would return
+your account.
+I guess that's how I would tackle this.
+>> Sure.
+So each of these are doing the same
+thing, right? Range index
+value in the index 0 and 0. So our array
+is 0 0 1 0 0 1 0. So you see that here 0
+0 1 0 0 1 0. Index counts up 0 1 2 3 4
+5. And then we're doing the same thing
+with the numerate. So they are
+identical.
+It's just that this way is a little bit
+nicer in that regard and that you have
+your index and you have the value as a
+part of the whole statement. So I could
+just print that out index and value.
+Whereas for the in range you kind of
+have to say all right here's my index
+and if I want the value from C then I
+have to specify what is that value at
+this index. So, I do like your your
+explanation there that if I need to
+manipulate or if I need to use both the
+index and the value, maybe default to
+enumerate. That seems nice. Um,
+but either way, you can't go wrong. It's
+just a different approach.
+And this is exactly what I would do as
+my next step, right? So, I've I know
+that I want to do a for loop to get
+through all of the values,
+and I'm going to place that in my
+Oops. I think the next step that uh
+trips people up is that they want to
+write all their code in one go and never
+test it out. And even though it seems
+like, oh, I've got only 20 minutes, I
+need to just get all my code written
+out.
+This is where that assumption comes in.
+If you're making assumptions implicitly
+or otherwise and you're not testing
+them, you're going to potentially make
+mistakes or you're going to have an
+assumption about something the way that
+it works and it actually doesn't work
+that way. And if you have to backtrack
+through your code to figure out, all
+right, what was the assumption that I
+made and where did I make it? Versus if
+I write my for loop and then test out,
+all right, what is this for loop doing?
+I know exactly what that for loop is
+doing. And then I can take my next step.
+So I've printed out the values
+and now I can confidently move forward
+knowing that index is index and value is
+value. Even though it seems simple to
+have to do that, I like to do that every
+time just to gut check myself. Let's
+count. Going to initialize that to zero
+because we haven't taken any steps
+there.
+And then we can start working on that
+next piece. So I'm going to try and
+default to two spaces
+otherwise. So we start at index zero. I
+know that's safe. So I'm going to say
+jump index
+equals
+index
+plus.
+So, and this is where I think the four
+iron range might actually be better
+because I'm I'm not so worried about the
+index of where I am now.
+I mean, the value of where I am now. I'm
+more worried about the value I am in one
+jump from now or two jumps from now. So,
+I went with enumerate just to kind of
+see how your idea might work. But I
+think in this case for range would be
+just as useful because I'm saying jump
+index is index plus two to default. And
+then I want to say if
+C
+at jump index
+is not equal
+to one
+then I'm going to do that index equals
+jump index else
+and then I actually don't even need to
+do anything because
+index will automatically increment by
+one if it can't increment by two. So the
+natural state of the for loop iteration
+is to jump
+once.
+Um,
+and we're trying to shortcut that and
+make it jump twice. And then finally,
+the last thing, like you said, plus
+equals
+one step. So regardless of whether we do
+two jumps or one jump,
+I'm going to increment that count.
+And then I want to make sure that I'm
+returning that count. So let's see what
+happens there.
+Lots of errors.
+And then that's why we want to run our
+code often. If I wrote all of this out
+and hadn't printed this out or if I had
+maybe added a print here for jump index
+or added a print here to test this if
+statement, then I might have seen which
+line is actually leading to that error.
+But I know that it's not an issue with
+my like for loop code because I already
+wrote and printed that out. So it has to
+be something that I've added since then.
+And if this was a problem with a lot
+more steps and a lot more code, I'd have
+to work backwards at the very end when I
+feel like I've already solved the
+problem to figure out, all right, I'm
+hitting an error. Where did that error
+come from? Right? So in this case, it's
+pretty clear. It's telling us that the
+list index is out of range because I'm
+trying to jump ahead and I might be
+trying to jump towards past the value
+that exists. So I might add a condition
+here and
+jump index is not
+what greater than or equal to
+len of C. So we know that our length is
+going to be seven in this case, but any
+given length that we're expecting, if it
+is equal to or beyond that length, we
+know that we've gone too far and that
+that will be out of range. So actually,
+I'm going to say and
+not
+>> jump. So if it's not equal to one and
+it's not greater than or equal to,
+let's see if that works. No.
+>> So, we would keep on this path and keep
+debugging. I've got some print
+statements in there.
+No, I don't. I don't have any print
+statements.
+>> Maybe it's in the for loop or maybe it's
+in the for statement.
+>> Yeah. So that's where we can
+do some fun here
+and I can debug the actual stuff that's
+going into it. So what is jump index?
+Actually I'm going to add a lot of stuff
+here. What is index? What is jump index?
+And then I can test these conditions
+here. So what is
+this? And
+What is this?
+Because maybe there's something wrong
+with how I'm building out that
+condition.
+So, it looks like that is all fine. 0 1
+2 3 4. So, we're getting up to the
+fourth index and we're saying jump index
+six
+and both of those are true. And then
+we're incrementing
+Oh, so if we change it and we try to
+increment.
+So there might be something.
+So at this point, I kind of have an idea
+of what I'm seeing. And I do think that
+I just don't like
+this enough. It's also fine to
+completely start from scratch if you
+don't like what you're doing,
+but I'm going to do this because I can't
+see like a clear reason. So, we're
+getting up to that fourth index. We have
+a jump index of six, which should still
+be in range. That would be the very last
+index that we want to check. And we're
+saying that both
+um it is not one and it is not greater
+than or equal to seven. So we are
+setting that jump index to or setting
+our index to six. And then I think what
+we're doing is hitting that increment
+for the enumerate and getting out of
+range. So, what I'm going to do there is
+say
+um for i in range
+jump index equals i + 2.
+Just going to switch all of these over
+to
+i.
+See if that changes anything. Probably
+not. Right.
+if
+index list out of range. So it doesn't
+like this.
+So maybe I would just move
+that condition right here. So if
+jump index
+greater than or equal to
+what am I doing?
+If it's greater than or equal to, then
+I'm just going to go ahead and break out
+of that function there. I mean our loop
+there.
+and then move forward.
+There we go. Okay, so that gives us out
+of the error, but our count is not
+correct here. And we would keep kind of
+going down on that pathway until we got
+to an answer.
+>> Try length of C minus one.
+>> Yeah, that was actually going to be my
+next step is that since I know I'm
+jumping potentially two ahead, what I
+actually want to set it to is minus two.
+Oh,
+>> and then I could actually get rid of
+that.
+But we're still getting wrong value
+there.
+I'm not sure why.
+It does always seem off by one.
+So, what I would not recommend doing is
+doing what I'm about to do here.
+Return count plus equal to one because
+I'm always short of one.
+Oops, not plus equal, but count plus
+one.
+>> Count minus one.
+>> Oh, yeah, you're right. Count minus one.
+I would not recommend doing this, but
+since we're about seven minutes over,
+I'm going to
+Yeah. So, that wouldn't have helped.
+Anyways, that's another thing that comes
+up a lot is that when we start seeing
+things and we're worried about like
+what's going wrong with our code, you
+kind of get to that panic mindset. And
+when you're in that panic mindset, I'm
+going to like I'm just going to start
+switching switching assignment operators
+or I'm going to start subtracting random
+stuff from here and maybe changing this
+to that. And once you kind of get into
+that mindset of what if I just make a
+few shifts, then you've stopped problem
+solving and you've started panicking.
+So at this point,
+we know that it has something to do with
+this code here.
+So I would keep debugging that there.
+So, I'm going to move this here
+and I'm going to move my print down
+because we're counting one more than
+we're supposed to be counting in some
+cases.
+So,
+I jump index C index not equal to one.
+And I'm going to filter down to just
+those two there.
+So, I'm still not getting errors. That's
+good because I did that. I did do the
+minus two up there. But, um,
+so 0 3 4 3 6.
+Those are our jumps there. We're jumping
+from 0 to three, which is one step.
+Three to four. 1 4 to 3.
+And then 3 to six.
+Now that's weird.
+So that's my index there. Print I and
+print
+uh jump index. So at some point my index
+actually went backwards and then
+forwards
+and then jump index is 2 3 four five
+six.
+So that is really wacky.
+So if I'm looking through my code,
+length of C minus 2

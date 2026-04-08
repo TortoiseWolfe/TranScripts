@@ -1,0 +1,1528 @@
+Hello.
+>> No.
+>> Mauricio did um the explore finish the
+explorer boards.
+Or am I wrong?
+>> Did you finish the explorer boards?
+>> Uh,
+I mean, I'm I'm going through them, but
+I'm doing everything in a different
+order.
+>> Oh, cuz I don't think I even have access
+to explorer boards. I don't think I can
+until I pass the mock interview. I mean,
+I kept calling it mock the interview.
+The
+>> real interview. Yeah.
+>> Yeah.
+>> Okay.
+All right, so let's go ahead and get
+started then. Um, so welcome to this
+week's nailing tech interview. It's been
+a few weeks because of the holidays.
+Hope everyone is rested and enjoying
+their new year. Happy New Year. Um, so
+I'm back this week, but then I will be
+out again next week because I am
+traveling. Um, and just the date
+happened to work up on uh as an overlap.
+Um, so then I'm here this week, gone
+next week, and I'm back on schedule the
+following week. Um, so just there's that
+slight hiccup and I'll post that into
+the Discord channel as well. Before we
+get started, does anyone have any
+questions they'd like to ask about the
+tech interview, prepping, practicing,
+anything?
+Um well, you know, I'm I'm never one
+that is at a loss for questions, but um
+you know, with regard to the interview
+itself,
+>> uh I've been I've been trying to like
+group different kinds of uh questions,
+you know, by category and to do the same
+kind of thing over and over again. And I
+hope that that's the right approach to
+take for the technical interview. Um the
+other thing is the technical interview
+itself. Um,
+I'm still caught up on this idea that we
+should still we should start talking
+right away. And a lot of times I it
+takes me a few minutes to get my
+thoughts together um and to actually,
+you know, it to be honest, it takes me a
+minute to shut down the panic so that I
+go back to the question to see what it's
+truly asking for.
+And I'm all I always feel like I'm under
+a little pressure to start talking right
+away before I get myself together. Um
+I don't know. I think I may have asked
+this question before, but you know what
+is the normal time that we can not talk
+like pause uh before we start talking at
+at the beginning of the interview? How
+many minutes do you think we can take to
+just sort of like survey the problem,
+get it in our minds what it's truly
+asking for, and then start talking?
+It's hard to answer that question
+because there's no guidelines and kind
+of what you're talking about, trying to
+understand the problem before you start
+talking about the problem. That is
+actually one of the things that I want
+to hear. I want to hear how you're
+thinking about the problem. So, it's
+kind of it's unfortunately the answer to
+your question is that like there's never
+too soon, but there is a little bit of a
+a too late. I mean, it's not going to
+like impact everything, but if you start
+talking, you're like, "All right, I've
+already figured out this problem and
+here's what I'm going to do and this
+we're just going to implement it and
+that's going to work." like, yeah,
+you'll you'll probably pass all the test
+cases and you might move forward to the
+next interview round, but I don't as an
+interviewer, I don't really have a good
+understanding of your process, how
+you're thinking through problems, how
+you're breaking them down, how you're
+asking questions and answering those
+questions, what you're getting stuck on,
+how you're moving past what you're
+getting stuck on. Like, those are the
+things that we need to hear in a in a a
+tech interview to to understand what
+your thinking is. So, I I understand the
+hesitation and the panic and I don't
+have good advice for you because my
+advice is just to do it anyways. Like be
+afraid, be scared and then
+>> talk yourself out of it more or less.
+But like talking in circles, do whatever
+you need to do.
+>> I think if the writing on paper is what
+works best for you, that's fine. Do
+that.
+>> I don't mind doing that. That's how I
+started working on problems and then um
+honestly just got trained out of it by
+doing these weekly sessions. So by
+having to do these weekly sessions, I
+stopped needing to use pen and paper
+because I was typing the comments
+directly into the code editor. So my
+preferred process kind of changed. But
+when I was first getting into it, like
+you, I was very tactile. I needed to do
+it on pen and paper first, kind of draw
+things out. It felt quicker. Um, and
+then I transitioned to the code editor.
+So, I still think it's fine to use pen
+and paper, but why do you have to be
+silent through that process? If you do a
+little scribble and you write down,
+okay, I think this is this, this is
+this. Maybe you're just mumbling to
+yourself and then you just take a pause
+and you write, "Okay, so here's what I'm
+thinking about this problem so far. I
+think this might be happening. I think
+this might be happening. I'm not sure. I
+don't know yet. I don't have a good
+understanding of the problem yet, but
+here are the questions that I'm asking."
+Write down those questions. Try and
+figure out those questions. Okay, here
+is my understanding of these questions.
+As I was thinking about it, this is what
+I did. Like, it can be an iterative
+process still with a little bit of
+writing and kind of answering. And I
+might even be able to then ask you
+questions. Okay, what was your process
+like during this writing? What did you
+do? And how did that help you? It would
+be nice to have some of that upfront
+like you kind of giving it on your own
+the the things that you were thinking
+about but
+there can be a little bit of back and
+forth there. I think what you're saying
+is that you're afraid to like say
+anything before you understand the
+problem but the whole process is like a
+third of the process is trying to
+understand the problem. And so
+>> Oh, you want to hear that?
+>> I want to hear that.
+>> Yeah. I would I would think you'd want
+to write re say out loud what you are
+writing on paper.
+>> Exactly.
+>> Well, that's that's what I'm trying to
+do right now
+>> because I am so tactile. I'm trying to
+like say it while I'm writing it. Um and
+you know, yeah, I think this kind of
+kind of crystallizes
+uh what I should do. So, you know, Ruby,
+from what you're saying, it's like you
+want to hear the thought process. you
+know, even before I figure out what the
+problem's saying. You want to hear that,
+too. You want to hear me figuring out
+what the problem is saying.
+Okay, that that that helps. That
+actually helps a lot.
+>> And what's most important with that is
+that if we get to the end of the 20
+minutes and you haven't said anything
+that I can use to like latch on to, I
+can't really coach you in how to
+improve, right? But if you're talking
+through it, I can hear what you're
+thinking about, how you're processing
+the problem, and I can kind of then use
+that as like, okay, well, here's how you
+were thinking about the problem. This
+was good, but here's what I might
+adjust. Or, it seems like you kind of
+got stuck on this part of the question.
+How can we work around that when we see
+like that as an obstacle in future
+questions? Like, those are the kinds of
+things that I can use to work with you
+on.
+>> Okay. Well, that's that's very valuable
+stuff. Thank you for that.
+Yeah, thank you for the question. Any
+other questions about the interview,
+practicing, preparing that people would
+like to ask
+>> after a long pause? What will be the
+best way to get back into it?
+>> Um, honestly, I would review problems
+you've worked on before and like not
+even look at the solution. Just kind of
+clear out your code right away. You'll
+be familiar enough with it to be like,
+"Oh, I've seen this before. Maybe I
+don't remember exactly what I did, but
+I've seen it before and I kind of have a
+vague recol recollection. And then you
+can kind of focus more on rebuilding
+your routine about what do I do when I
+face a problem? Do I how do I um break
+the problem out into steps? How do I get
+my pseudo code down? How do I like
+approach the problem before writing any
+code? How do I start the code writing
+process? then you can focus on the
+process piece of it and not the actual
+solving part because you've kind of
+already experimented with this problem
+before and then once you feel
+comfortable you can move on to new
+problems again. That would be my advice.
+>> So
+>> any other questions?
+>> I I don't know if this is valid or not
+but my biggest problem I think is I
+panic at the very beginning. I can't
+even get started.
+Once I get started, I'm pretty good. But
+my big I'm brand new here today, too.
+So, hi everybody.
+>> Hi.
+>> And maybe nice to meet you finally.
+>> Welcome. Welcome.
+>> Yeah. So, if you watch older sessions,
+we kind of cover
+a lot. There are a lot of different
+videos where we cover this. the kind of
+best way to get started, especially when
+you don't there there are things that
+you can do for every single problem just
+to kind of get you into it that don't
+require you to like actually think super
+hard. So what I mean by that is
+obviously you have to read through the
+problem um just to like read it and then
+you can print out the parameters of of
+the function that you're using. You can
+say like okay well what am I expected to
+return? That's a one simple question
+that has one simple answer. Write that
+into the comments. what am I returning?
+And then you kind of slowly, all right,
+I've gotten some stuff written. I've
+gotten some stuff printed out to the
+debug console. Now I can start going
+through the problem and just pulling out
+statements of what is this problem
+asking me to do? What is all the one by
+one? What are all the information that
+it's giving me? And there's um there's
+just kind of a little bit of a process
+to it that kind of helps you ease into
+problems.
+>> Okay. Okay. All right. Thank you.
+All right.
+So, now into the
+meat and potatoes of today. So, is
+anyone interested in volunteering to be
+our mock interviewer today or mock
+interviewe today?
+>> Yeah, I can, but I'm really rusty, so I
+don't know what's going to come out or
+if anything's going to come out at all.
+Yeah, it has been a few weeks. So, why
+don't we actually do one together and
+then if we have time I can kind of pass
+the baton to see what people are
+interested in doing.
+>> Okay.
+>> Okay. So, I have plus one open over here
+in le code. So I'm just going to read
+the question out loud for us all and
+then we'll kind of get into it as a
+group. So you are given a large integer
+represented as an integer array digits.
+You can see digits is one of the things
+that I'm passed here in my my parameter
+list where digits I is the i digit of an
+integer.
+That's a confusing sentence. I'm not
+going to worry about it just yet. The
+digits are ordered from most significant
+to least significant in left to right
+order. So left to right would just be
+like the way that we read
+the large integer does not contain any
+leading zeros. Okay. So increment the
+large integer by one and return the
+resulting array of digits. Um so off the
+bat I'm not quite sure what it's saying
+to me just yet. So I'm going to look at
+the examples. Digits. This is again
+something that we're passed in and that
+is a number 1 2 3. And then the output
+is 1 2 4. So the explanation is that the
+array represents the integer 1 2 3.
+Okay. We are then incrementing that
+number by one giving us 1 2 4. Okay. And
+then the result should be 1 2 4 the list
+of integers in an array. So that kind of
+makes sense. See digits 4 321. We're
+just adding plus one to get 4 322.
+Yep, that looks good. Okay. Okay. And so
+here might be an edge case digits nine.
+So we're given nine
+and the output is 10.
+So increment by one given 10. Thus the
+result should be 10. So it doesn't seem
+like in in other problems I might expect
+to get like an array of digits and then
+also a custom increment value. But it
+seems to be that it's always plus one.
+So I'm just going to start writing
+things out. Now
+I can switch my keyboard over.
+Okay. So given digits
+which represents
+an array of integers
+integers. integers.
+Um that list
+maybe I should say given digits which is
+an array of integers
+and the list represents
+a number k a
+and I'm just going to copy and paste
+this in here just for my notes. So, I
+like to get everything that I'm going to
+use out of the problem statement and
+into my own word. So, that way I don't
+have to look at the problem and kind of
+scroll through it over and over. Just
+pulling things out one by one.
+Equals 1, two, three.
+We
+>> can I
+No. Can I can I can I just sort of say
+something?
+>> Um, you know, when I looked at the
+examples, uh, I did notice this pattern
+right off. I I think everybody did, too.
+Um, with Okay, the only difference
+between any of these examples is that
+you're adding one to the last element of
+the array.
+>> It could be. And I think that's where
+the third one tells me something
+different
+>> because the input size we're given is a
+length of one. So like this would have a
+length of four. There are four integers
+in here. This one has a length of three.
+And this one has a length of one. So if
+we just selectively if if I'm picking up
+what you're putting down, if we just
+selectively chose the last index,
+>> yeah, the last one
+>> in the array and then added plus one,
+then we could just simply return that.
+But in this case, the output array is
+actually different size, right? Because
+we're saying nine goes to 10. So then we
+have to actually update this. So if
+this, for example, was 43 2 9, then we
+wouldn't just update this value. We'd
+have to update both of these values.
+>> So we could pull the last two digits and
+then if it's a nine, we could do that
+condition. That is possible. Um, but I'm
+not thinking about approaches just yet.
+I'm just still pulling out the
+information that I need to understand
+the problem.
+>> Okay. Well, then I stand silent.
+>> No, that's okay. We then need to plus
+one
+the number and return as an integer
+array. And then like I said, I just want
+to return
+what am I expected to return? I'm
+expected to return the incremented
+number.
+incremented number
+represented
+again as integer array
+gay 1 2 3 4.
+>> So I haven't actually done any like real
+thinking yet. I'm kind of just
+summarizing what it's telling me here.
+That's how I like to think about it
+anyways. Print. So, I just want to print
+digits to make sure that I'm
+understanding what digits is. And I also
+like to add just an empty return.
+Actually, I'm going to change that to an
+array. Um, and my return, I like to keep
+it matching the expected output type.
+So, it's expecting an array. So, I'm
+going to return an empty array. If it
+was expecting just a single integer, I
+just return like a zero. Or if it was a
+string, I just return an empty string.
+I'm just going to run that.
+Okay.
+So my output is 1 2 3. Yep. So that that
+matches what I'm seeing over here. I'm
+just going to reread this again once
+more to make sure I understand the
+problem. Again, I don't think this is a
+very hard problem, but I'm taking all
+the steps that I would take even if it
+was as if it were a harder problem as
+well. Um so you are given a large
+integer represented as digits. Cool.
+Understand that. where each digits I
+meaning 1 2 and three is the e digit of
+an integer which is just a really weird
+way of saying that this will turn into
+this. So I'm kind of getting that now
+the digits are ordered from most
+significant to least significant and
+left to right order. Meaning this is
+always going to be like the highest
+value. This one's always going to be the
+highest value. This would be like 4,320
+and then 1 if I had to add them all
+together.
+And then the large integer does not
+contain any leading zero. So I'll never
+have to figure out if there's a zero up
+front. It will always be a number that I
+can directly use.
+So yeah, instead of 0 9 that becomes 10,
+it's just going to be nine.
+And then the simple expectation is to
+increment the integer by one and return
+the resulting rate. So I would even say
+that's just like the goal of my problem.
+goal is to
+we need to
+increment
+given digit
+by one
+and
+and return it
+>> as an integer array. Okay. So now is
+where we would talk about how would you
+approach this. So,
+Linda, you were thinking for your
+approach.
+>> Mhm.
+>> What you are seeing is that it seems
+like the last number, the 10's digit
+number
+is always going to be just kind of like
+plus one. So,
+>> yeah,
+>> exactly.
+>> Even nine, even example three.
+>> Uh, if you add one to nine, it's 10. And
+the only thing I don't get is the output
+for example three where it's coming back
+as a 1 comma zero. I would have just
+thought it would have come back as 10.
+Yeah. So that's one of the
+constraints here. I did forget to look
+at the constraints which I do not
+recommend skipping. So our constraints
+digits.length. So the length of this
+digits array that we're going to get is
+going to be between 1 and 100. That's
+good. We're never going to have an empty
+number.
+>> So I'm going to add that as well.
+We will always get a valid number.
+And digits I has to be a character
+between zero and nine. So they are only
+representing 0 and 9, not two-digit
+numbers. And that makes sense because 10
+should be that is in the 10's place and
+or yeah that's in the 10's place and
+then this is in the I guess what do you
+call that? This was like thousands,
+hundreds, tens, ones, ones place.
+>> Yeah.
+>> I don't I don't remember math. I don't
+That's not my That's not my gig. Um,
+yeah. So, in the ones place, you
+wouldn't have a 10 in the onees place.
+You'd have a 10 in the 10's place. So,
+>> okay. Okay.
+>> And then zero. So, that's where that's
+coming from is that digits I has to be 0
+through 9 and then digits doesn't
+contain any leading zeros. Okay. So I
+also understand all the constraints what
+they're telling me.
+That doesn't change my approach here I
+don't think. So we grab the last index
+and
+add one to it.
+This should work in all cases
+>> except for when it is equal to 9. Right?
+And so then in the case that it's equal
+to nine what should we do?
+Well, let's see. The output says you've
+got you're going to get back one, zero.
+You're going to get a list that has one
+and zero in it. Um,
+you know, I just think you just go with
+what you have. Um, and I think that
+automatically you're just going to get
+that back if you don't do anything else.
+What I would do is I would just set up
+some code that said you've got to add
+one to the last um element of every
+um of every list of every array.
+>> Um and then you return the array with
+that one added to it. I mean that's the
+way I saw that.
+>> Okay. So then in this case we'll we
+could do that for everything where
+except for where it equals 9. And then
+in the case where it equals nine, we do
+something else.
+>> Well, you know, I don't need what we do
+in the case of nine because with those
+constraints down there, it actually I
+think would come back as one zero which
+is their expected output. Uh so I don't
+know if we would have to do anything
+code. Um you know
+>> if we return 10 and it's expecting
+so no so that failed because it wants it
+as a separated integer list.
+>> So it won't it won't okay it it just
+comes back as 10 and it won't come back
+as one comma zero. Okay.
+>> No if we added if we took an integer
+from the last digit and turned it from
+nine into a 10. Like if it was a list of
+integers 1 2 3 9
+>> like this is just a list of integers. It
+doesn't care that these represent
+something else from this fake problem,
+right? So if I just add take the last
+element and add one to it, it's just
+going to change that to 10 and it's
+still going to be, you know, 1,230
+and then 10 for some reason
+>> instead of what should be 39 goes to
+40.
+So we would um
+if it if it's if the num last number is
+nine, we would add one to the -2 index.
+Um and and um change the
+-1 index to zero. Um, and if the one if
+the -2 index is a nine, we do it again
+to the -3 index and so on.
+>> Oh, so then it becomes a kind of
+recursive issue there. So, I think
+that's pointing out a really useful edge
+case is what if we have a sequence of
+nines here. I really like that and I
+hadn't even thought about that yet. So
+I'm going to go ahead and add that as a
+test case here is what do we do if there
+are a series
+of nines
+in our problem.
+So if we run that
+because in that case it's want to it's
+going to want to update several indexes.
+So instead of hold on let me fix that
+because that that spacing is a little
+funky.
+Okay,
+so in this case, if we have the integer,
+which would be like what? 12,999,
+the expected output would then be to Oh,
+that's interesting. Oh, okay. No, sorry.
+I was like, this is what I'm returning.
+It's expecting to switch all of these to
+zeros, which makes sense. And then that
+last one is three because this nine
+would become a 10. So that becomes a 10
+and then that becomes a 10. So we have
+to roll everything over.
+So I'm not sure. We can keep this as an
+option. Maybe I would I like this part
+of just grabbing the last index, but in
+the case where it's nine, I think that's
+going to make it more complicated. So I
+think we
+we um can keep
+brainstorming.
+At this point, that's what I'd be doing.
+Maybe keep brainstorming. It's something
+that we can do or try, but maybe there's
+another idea.
+>> Well, it looks like Mauricio solved it,
+but he doesn't want to talk about it.
+>> I mean, I don't want to get in the way
+of the process that she's explaining
+there. So,
+>> okay.
+>> I just post the solution there in the
+Discord.
+>> Oh, you didn't solve it. You found a
+solution.
+Yeah.
+>> Oh,
+>> that's okay. We can keep working on it
+together.
+>> Okay.
+>> All right. So, what other ideas do
+people have for approaching this
+problem?
+>> I can't say what I did, but
+I guess that would solve it, right?
+>> Say what you did.
+>> Well, no. I want to hear some ideas from
+people who haven't tested and tried
+their solution yet.
+>> Yeah. I mean, I think the intent she's
+doing is like going through the process.
+So, I don't want to spoil it. That's
+that's what I meant.
+>> Mhm.
+>> So, I mean, if I talk it out, I will say
+the solution,
+>> right?
+>> So, for the rest of the group, what
+other approaches do they think we do we
+think we can try?
+statement.
+>> We're looking at uh the situation of
+nine then, right? That's the thing
+that's sticking us right now.
+>> Mhm.
+>> Okay. Um well, you know, it seems to me
+that because we're supposed to get a
+return of one and zero uh in the list
+down there um for 10. Um, we we got to
+do something with nine that actually
+puts it we we got to trip the 10's
+place, you know. Uh, we've got to put
+something up there that gives us a 10
+place. And I don't exactly know how to
+do that. Um,
+>> so I'm not going to think about it as an
+integer array anymore. I think in in the
+the solution you change you you propose
+here, we're keeping it in its original
+form as just an array.
+I think that's going to be difficult to
+do if we have to flip a bunch of
+sequences here
+because we'd have to work backwards from
+it. I mean, we could do that instead of
+just saying grab the last one,
+I guess. So, it doesn't work to say if
+it's a nine, go to the index before like
+um I minus one and add one or or if it's
+a nine there, do the one before.
+>> So, instead of grabbing the last index,
+how would you move through the list?
+Would you maybe like how are you going
+to traverse the list to check all the
+possible nines that could happen?
+Usually we look through a list left to
+right. We want to look through the list
+right to left.
+>> Okay. So you're saying maybe a for loop,
+right? So for loop but in reverse
+>> in reverse.
+>> Okay. So that is a great example of a
+different approach that we could do. So
+in that case we're checking
+>> the last number
+>> and adding one. But if it's a nine, we
+go to the the next
+>> number is not nine. Simply add one
+and then that special case is
+>> if it's a nine, we go to the index
+before the index that we're in minus one
+and check that.
+>> Or you don't even have to do anything
+because if your solution, if your loop
+is moving in reverse, you just let it
+keep going, right? It's just going to
+naturally
+>> I'm not exactly sure how you make a loop
+in reverse. I need to learn that.
+>> Okay. So, if current number is not nine,
+we add one. If it is nine,
+>> oh, I know you do it.
+>> You you assign it to go from the back to
+the front. That's how you do a a reverse
+loop. I assume I assume
+>> Okay. I think this is a good approach.
+Um the approach that I was thinking off
+the top of my head. So I'll just share
+that with everyone
+is I think one of the more obvious
+things with numbers is that like I don't
+have to figure out all these toggles if
+I just convert this to a number and just
+add one to it. If I added one to 12,900
+>> Oh yeah.
+>> Turn it into an actual number and put it
+back.
+>> Yeah.
+>> So I would call this
+Um third option maybe. So third option
+would be convert
+>> concatenate. Is that
+>> the array into an integer?
+>> Integer. Yeah.
+>> Oops.
+Add one
+and then convert back to
+all right over list.
+Um, so you'd have to be comfortable with
+with doing this process and what that
+would look like. But I think that that
+makes the adding part easier, but then
+you still have to know how to traverse.
+So let's use this one.
+Um, or actually I think now I would like
+to see if someone any of you would be
+willing to try one of these options on
+your own and kind of test it out for us.
+Work through the code, see what you can
+get going.
+Yeah, it's what I did that converted
+back and forth between number and
+strings and so you did
+>> yeah concatenate it and then
+>> add it
+>> and then put in a list as in as digits
+again.
+>> Mhm.
+So we know that that potentially works
+if you get the implementation details
+right. Does anyone want to try one of
+the other options
+crickets? Okay, so just a reminder, this
+space is for everyone to practice mock
+interviews. So, I know we've been on a
+little bit of a holiday and we're kind
+of getting back into the groove into it,
+but in two weeks when we return to our
+schedules, I will be expecting someone
+to kind of step forward and do the mock
+interviews. But for today, it's fine. We
+can keep moving forward um and just try
+one of these.
+>> Well, I think I'm actually
+>> Oh, go ahead.
+>> I I I I kind of looked it up.
+I didn't look up the answer, but I
+looked up how to um just now to how to
+concatenate a a string of integers into
+uh one number.
+So, are you ready to try coding or
+>> Yeah, I think maybe I'm not going to try
+that one because Mauricio already did it
+and posted it into Discord.
+>> I didn't look at it.
+>> That's okay. I think it would be good if
+you want to try this problem on your own
+as well after the session. Okay,
+>> I would advise everyone to do that too,
+to put it into practice. I put that into
+the chat. I think for today I think I'm
+going to try
+I like this idea. So, I'm going to try
+it. So, if we consider
+>> doing a for loop. So, four. Actually,
+I'm kind of
+>> Oh, you're not going to use your your
+idea of turning it into a number?
+>> No, I'm going to use your idea.
+>> I'm going to use your idea.
+>> Wow. Okay.
+>> So,
+>> that's kind of harder though. I don't
+think so.
+>> No,
+>> no, I don't think so.
+>> I would It sounds like the one the idea
+you had is maybe drier or cleaner in
+theory, but I haven't actually practiced
+it.
+>> Right. Exactly. We could explore that
+later. What is the big O of the two
+approaches.
+>> I see. Yeah.
+>> Okay. So,
+for reverse looping, let's see. For in
+range, that's going to give me my
+starting point. Now, typically I would
+just do length of the array, right?
+Digits
+>> and then I'm expecting
+if I wanted to print that out to see
+what it does, that would be the normal
+order digits.
+>> Can I ask a question?
+>> Yeah.
+>> Um, can just simply say for I in digits
+or is the range of length of digits
+important?
+>> Mhm. Okay. So, this did get me the the
+this order. So, let's see. If I didn't
+do
+>> range of length, just said digits for I
+and digits, does that give you the same
+results or what's the difference?
+>> What do you think it's going to give me?
+>> Nothing.
+>> If you had to guess
+>> the same array,
+>> it's going to give you each digit.
+>> Yeah. But what are they? Are they uh
+strings or integers?
+>> They're integers.
+>> Okay.
+>> So, it's just going to give me four in
+digits. It's just going to be that value
+itself.
+>> Uh-huh.
+>> So, with this approach, I couldn't
+reverse it.
+>> I see. Okay. So, that's why you need the
+uh range of length.
+>> Yeah. And so, if we look up range,
+Python range,
+what does range do?
+We use it often in our weekly sessions.
+So, you know, knowing what it is and how
+it works,
+>> yeah,
+>> is good, right? So, this returns a
+sequence of numbers starting from zero
+by default, increment by one by default,
+and stops before a specific number. So,
+it's basically just a function that
+returns a sequence of numbers. So, if we
+did range six, it would give us a
+sequence of numbers from 0 to 5.
+And then we can change the starting
+point. So we can say start at three.
+Stopping point we can say
+>> yeah. Okay.
+>> And then the step or the incrementer
+which by default is one. But we could
+also change that to increment by like
+two.
+>> So we want to do range of negative
+one to
+zero.
+Right.
+>> Yeah. So there is a caveat here. Oh my
+my browser's kind of freezing up. One
+second. There we go.
+So there is a caveat here
+print
+which is that so this would be the
+length and in this case that's going to
+be three right so three four
+>> count how many how many uh items or
+>> yep it's the word
+>> the what each thing is called element
+>> element
+>> yeah okay
+>> sure I mean there's there's probably a
+couple different words you could say.
+How many items, how many elements, how
+many
+>> thingies,
+>> how many strings, how many components
+are in what? Yeah. What are the total
+number of
+>> the linear items in the object?
+But that length is going to be our
+stopping point, right? We want to go up
+to that number. And so when you reverse
+something, you have to actually give it
+both you have to pass all of the the
+points. So in a normal range, the
+starting point is implied as a default
+of zero. So you start at zero and go to
+the stopping point and then it has an
+implied increment value of one. So they
+allow you to shortcut that by just
+giving the stopping point and using the
+defaults.
+But when you're reversing, you actually
+have to include all three of them. So
+our starting point would be the last
+index
+minus one
+>> to the stopping point would be zero.
+>> Mhm.
+>> And then we would increment by negative
+one.
+>> Mhm.
+Cool.
+>> Digits.
+Oops.
+Digits. And then I'm going to see that
+to make sure that I did that right.
+Okay. So, 32.
+>> You're going to get rid of a length of
+digits. You You're going to get rid of
+that, right?
+>> Sorry. What?
+>> Uh, you're going to get rid because
+you've got in what was it? Line whatever
+it was 17. I think you're going to get
+rid of that, right? The
+>> No, because of digits thing.
+>> Digits is an object. So, it's not a
+number for this range. Okay. But, you
+know, I I get a little confused because
+I know where it starts. It's going to
+start at the end.
+>> Uh, it's going to stop at the beginning
+and it's going to advance backward by
+one. Do you still need length of digits
+up there in addition to that?
+>> Yes. Because this is returning a number.
+>> So, to get that starting point, I need
+to know what the length of this is so I
+can get a number.
+>> Okay. If I'm starting at this index,
+I can't say what what you're saying is
+that if I didn't have the length in
+there, it would look like this for I
+>> in range.
+>> Well, I guess my thing is this. I
+thought that it automatically when you
+said you want to begin at negative one.
+I thought it automatically defaulted to
+the end of the uh end of the list and
+that you didn't really have to put
+length of digits up there to tell it
+that. But
+>> no, not quite.
+>> All right.
+>> If I didn't include len the length here,
+I'm just putting that full array in
+there.
+>> All right.
+>> And I need it can only accept numbers.
+What I was saying is that length of
+digit represents a number, right? And so
+if I just use that,
+it's assumed to be the stopping point,
+the stopping parameter. That's
+essentially me just saying if I just do
+range of three, it's going to assume the
+starting of zero
+to the stop that I specified of three
+and then default increment of one.
+So that's what that means when I'm when
+I'm saying length of digits there. It
+was because it represents the stopping
+point and then I changed it to say start
+at zero if I specified all of the
+parameters increment by one. So that's
+what it would fully look like with
+everything typed out.
+But it it allows you to shorthand the
+start and the stop. I mean, not the
+stop, the start and the increment value.
+So, I still need the length of digits
+because I have to tell it where to
+start.
+>> Okay.
+>> And I'm It's not working the way I want
+it to. So, I'm going to see if we can
+fix that.
+>> Well, why are you putting the negative
+one in back of the length of digits if
+it's the start?
+>> Can't you just take that out? Can't you
+take the first negative one out?
+Because you know, I mean, if I were
+looking at this, I would say, well,
+okay, my start is the end. Um, okay.
+>> If you want to say zero
+>> of digits, that might work.
+That might work as well.
+Go from zero to end the length, but in
+reverse.
+>> Mhm.
+>> Oh, nope.
+>> Nope.
+>> I don't think so. Huh?
+>> So I guess you have to do it
+specifically this way.
+>> So So you're saying that basically the
+beginning is the length of the digits,
+which is the end.
+>> Yeah, because you're counting down.
+>> Okay. So the length of the digits. I get
+that part. But why do you have to say is
+this a negative I or a negative one?
+>> This is a negative one because we're
+talking about indexes here, right?
+Because I'm accessing the index of digit
+when I do this print.
+>> Yeah. So, so you're saying the beginning
+is the end of the list minus one.
+>> No. How do you access
+the length of digits is a number.
+>> So, I'm returning a number.
+>> Mhm.
+>> And then I'm subtracting one.
+>> Okay. But but you know, I thought that
+um I thought that wait a minute. I
+thought that the next negative one would
+have done that. I still don't understand
+why you have to have a negative one
+after the length of of digits. Um, you
+know, because it tells me that you're
+doing everything.
+>> Here's the here's the reason.
+>> Because you don't in you don't include
+when it finishes. It's exclusive. Uh,
+>> the second item on the range.
+>> Hold on, hold on, hold on, hold on, hold
+on. I can answer your question.
+>> So, the length of the digits is what?
+It's going to be in this case. What is
+it going to be, Linda? What is the
+length of this?
+>> Well, that's 01 2 0 one. It's It's
+three, but it's 0 one two,
+>> right? Okay. So, hold on. So, the length
+is three.
+>> Yes.
+>> But as you just said that the indexes
+are 0, one, and two.
+>> So, if I give a stopping point at the
+end of the list,
+>> I can't give it three
+>> because if I give it a starting point of
+index of three, it's going to be out
+range.
+>> You'll get an error. Yes.
+>> So that's why I'm doing the minus one
+right here.
+>> All right. All right.
+>> So that the starting range is actually
+that last index.
+>> Got it. So you're basically in your head
+going 0 1 2.
+>> Yeah. And I don't actually like this. I
+think there's probably a better way of
+doing it, but just using what I know
+about the range function, this does
+appear to be working. So I'm going to
+I'm going to move forward with it.
+>> Stay with me. So we're going from the
+last index
+>> to1 because the stopping point is not
+inclusive. So we go up to that but not
+including the stopping number,
+>> right?
+>> So So we're saying go all the way up to
+negative 1 but not negative 1. So down
+down to zero and stop at zero. And then
+that increment is actually negative 1.
+And then if I'm just going to check all
+of these cases, 1 2 3 4 that looks
+right.
+Nine, that looks right. And then 99921.
+So that looks right. Okay.
+Are we all up to speed on this? Do we
+have any more questions?
+>> No. Really? That's kind of cool. No,
+really it is.
+>> I think some of the other programming
+languages because you're kind of saying
+that this is kind of a weird way of
+doing it. Some of the other programming
+languages I think have better
+implementations of reversing through a
+loop or through a list.
+But Python for some reason in my mind
+makes it difficult. But I may not know
+the best way to do it in fact because I
+don't like to do it that often. Okay. So
+we've got our list in reverse order. So
+in this case what I'm saying if we
+follow this original plan of
+we go to the first one and if it's not
+nine we can add one
+and and then just be done. We can return
+that that array. Right? So if we do I
+want to see if we can actually do that.
+So
+>> or I in range we printed it out.
+We can say if digits I
+is not equal to 9
+>> then we will
+increment it by one. Right? So digits I
+and we're going to use an assignment
+variable because we're changing that
+actual the array itself. So digit at
+this index we're going to plus equals
+by one
+and then I'm going to return right here
+digits
+and let's see what happens there.
+Okay. So, I mean that seems to work for
+these
+>> for one and two. Yeah,
+>> one and two. That does work for one and
+two. And then in the last case, it
+didn't work which we expected. And in
+the last case, it didn't work which we
+expected because I'm I'm basically
+stopping.
+>> We haven't coded that yet.
+>> Yeah, we haven't coded that yet.
+Exactly. So, this does look like it's
+going to work in the case that the last
+digit is is nine or not nine.
+Okay. So then
+we can keep doing this. We can reuse
+this for each iteration. It'll do the
+same thing. If digit at this point is
+not equal to nine, great. Then we've hit
+the end of our series of nines. Um, so
+like we would say this is a nine, so
+we're not going to run this code.
+>> This is a nine, so we're not going to
+run that code. This is a nine, so we're
+not going to run that code. But then
+we'll get to this two,
+and it's going to be not equal to nine.
+So we will add the plus one.
+>> Okay, so we got that
+>> and return the digits.
+>> So all we have to do now is to add the
+handling for the nine
+>> if we can we turn it to zero.
+>> I might I mean I might not even say I
+might even just just use a simple else,
+right? So else we're expecting it to be
+a nine and in that case
+>> assign it a zero.
+>> Exactly. There you go. So I'll just
+reuse that right there. Digits. Wait a
+minute. Put what you're saying is if
+it's nine, you make it zero.
+>> Is that what you're saying?
+>> Yeah, because look at our output here.
+So, we're given 1 2 9
+and in the case that we add one to that
+nine. It becomes a zero and then we add
+one to the next index.
+Okay. So, that nine now becomes a 10.
+So, we put zero and that one goes to the
+next index.
+still have a nine. So we're going to do
+plus one. That becomes a zero. And we go
+to the next index. Great. Add one here.
+>> It's not a nine. So it becomes a three.
+And we return that.
+And we can see that in action.
+>> So you mean you just you've just
+substituted zero for nine for the nine
+case for for the case of handling nine?
+>> Yep. Because nine just means that we're
+we're incrementing this, but we also
+have to incre increment the none right
+after it.
+>> But now we need another case. If the
+number is nine or ends in nine,
+we need a third case.
+>> I need to not return there. Let's see.
+>> If the number ends in nine.
+>> Ah, yeah. That's another edge case we
+need to handle.
+>> Yeah.
+>> Okay. Yeah. So that works for all of
+these. So then what happens if
+>> if the number ends in nine?
+>> If the number ends
+>> the index I mean the the list list
+basically begins with nine.
+>> So off the top of my head without really
+thinking through it much more I would
+say if
+digit zero is zero, right? So if we made
+it all the way to the end and that one
+was also a nine, then we know through
+our code that it's probably a zero.
+So in that case
+>> no the number would be nine and then
+we need to change if the last one is
+nine we need to change the nine to zero
+like we have coded there but we need to
+add to our list we have to add one um
+>> well yeah in this case
+>> if I'm walking through this we start at
+this last index which would be zero
+and
+It doesn't look like it's actually
+implementing that here.
+>> Yeah, it broke it because it doesn't
+have any more digits to move to.
+>> So, we have to assign it to add another
+element to the list.
+>> That looks good. So if we do that,
+I might say
+Python, how do
+I add an index to
+front of list? And this would be a
+perfectly fine thing to Google because
+it's like one step of our problem
+instead of
+the full solution to the problem itself.
+So I'm going to see what they tell me.
+Oh, they're importing something which I
+don't really want to do. Okay, here we
+go. So, insert 1 2 3 4 5 6 7. Insert. It
+looks like insert takes two parameters,
+zero and six. So, they're inserting zero
+at the front.
+So, that looks good. So, we're giving
+them an index to insert at and
+>> and the value
+>> and the value. Oh, so so it would say
+digits insert zero.
+>> Yeah.
+>> No 0 0, right? No, 01.
+>> Well, hold on. Let me let me think about
+it. So if digits Oh, I don't need
+parenthesis. Sorry, I'm used to another
+language at the moment. Okay. So if
+digit zero first digit is still equal to
+nine not nine
+then we need to insert
+>> digits insert
+>> insert
+>> 0 0
+>> no 0 one
+>> we might first want to change this
+right. So digit zero becomes
+zero
+and then digit insert at zero
+>> one
+>> one.
+Let's try that. And then I'm going to
+return digits here. Oh, you know what?
+I'm thinking
+I actually think I wonder here. Let me
+test this because I wasn't returning
+digits at the bottom there. So I'm
+wondering if maybe it actually was a
+zero.
+Yeah. Okay. So it did actually convert
+here. It did run this and converted that
+nine into a zero.
+>> But we need a one. So we still need that
+code that you put in.
+>> Yeah.
+>> I just don't need to do this part first.
+>> Yeah. We need to add index. Insert the
+index.
+>> And I need to do
+>> assign it as one.
+>> Yeah. So if the last one is zero, then
+we need to insert at the front a one.
+>> A one. Yeah.
+I think that looks good. Let's see.
+Okay.
+>> Yeah,
+>> but this is probably a big big O.
+>> Well, we can look into that. Okay, so
+that passes all the test cases. All 112.
+>> Wow.
+>> Pretty good performance, too, actually.
+Zero milliseconds. Looks like we did
+pretty good.
+>> Okay, so
+memory is kind of high, though.
+>> That's saying, yeah, because do so many
+things.
+>> Yes. What would be the O complexity here
+do you think?
+>> What is this for loop? We can break it
+down into parts.
+>> A for loop that goes through each of the
+elements in the array. What big O might
+that be?
+>> O N.
+>> That's right.
+So, this is going to be Oh, I've done
+something. Okay, here we go.
+>> Well, O is good, right?
+>> Well, that's just for this first part.
+Sorry, I'm not hitting the right
+hitting the right key here.
+There we go. Um, so the for loop itself
+is O then, but we need to still consider
+the other elements. So, what are we
+doing here? This would be um an if
+condition. So
+what do we think this is? It's just kind
+of checking two values.
+That's going to be an O of one, a
+constant, right? And this assignment
+here, assigning one value to another
+value, that's also going to be a
+constant. If these were full arrays that
+we were messing with, that might be
+different.
+>> So what are we going to end up with?
+Like a O of three or something.
+>> Yeah. So that would exactly right. This
+would be O of 1 plus O of 1 plus or
+maybe because it's an if else it would
+probably be O of two. So O of two. And
+then because this is big O, it just all
+flattens down back to one. Excuse me.
+And then in this next piece here, what
+do we think these are?
+That one's just going to be an O of one,
+right? What about this one?
+>> Yeah,
+>> that one we might have to look up,
+right? What is big O of Python
+insert method
+O of one. I actually already did know
+that, but I just wanted to show you that
+we can Google things.
+>> So big O. Yep. Yep. Yep. Insert. Um,
+that doesn't seem right.
+I want to look at that. Insert. So
+average case of I don't know. That seems
+wrong to me.
+in a list internally
+average case. So pop append is O of one
+pop last is O of one get O of one
+iteration. All right. Well, Python
+itself is telling us that insert is O of
+N.
+But I I think maybe not because well
+maybe it is maybe because of how it
+rebuilds the array. I'm not sure. So
+this is telling us though that this is O
+of N. Oh my goodness. Okay, sorry my
+browser froze again. O of N. So now we
+have O of 2 N
+which also again flattens back down to O
+of N. So the overall solution here would
+be
+for all big O equals
+O of N. So I mean that's pretty good.
+>> Now our space complexity is a little
+different. Um,
+but we're not really adding any
+complexity. We're just using the
+existing memory here. So, I'm not sure
+why it read that is so big.
+But yeah, I mean, that seems to work. We
+kind of had to troubleshoot on the spot
+to figure out that nine case here at the
+end, but I think Rebecca, you did a
+really good job of just on the spot
+thing thinking about how we needed to
+approach that and then how we might
+implement that.
+You know, I followed you guys all the
+way up to inserting um
+insert what what Rebecca, what did you
+do? You inserted a zero and a one or
+what did you do?
+>> We added another index to the beginning
+of our list cuz we're going backwards.
+Um so we made we we made added a new a
+new element to to represent zero.
+assigned that element as a value of one.
+>> Well, you did that because you get an
+error otherwise
+>> because it's a nine. It was only if it
+if the number ended in a nine, you would
+need to
+um
+>> Okay.
+>> Add another digit in the beginning of
+the list.
+>> I'm going to put it out right here. Um,
+so I know math changes a lot and we all
+learn it differently, but this is how I
+learned how to do addition. So one, two,
+9999. If we're doing an addition and I
+wanted to add plus one to this,
+how I learned is that you would say,
+okay, 9 + 1, that equals 10. So I'm
+going to put my zero here
+>> and carry the one, right?
+>> And then we do 9 + 1, that's a zero, and
+we carry the one. We're kind of doing
+that in our formula in our
+>> Yep. And so then we carry that one one
+final time and then it becomes three. We
+don't have to carry anything over. So
+that just drops down and then we get
+that final number. So that's what the
+formula we were doing does is that if
+it's not a nine, we just add one and
+we're done. But if it is a nine, then we
+set the digit to zero instead and we
+move on to the next index so that we can
+keep adding our one and doing that
+evaluation process. Does that make
+sense, Linda?
+>> Uh, yeah. Yeah, it does. It does. It's
+It's just that you guys also added a
+zero. That was the index that you added.
+You added a zero.
+>> Yes. So at the end,
+>> have this number be 9299
+and well not two 999
+>> and show her how you have to add
+another.
+>> Sure.
+>> Oh, I get it because a 10,000 space is
+going to overflow if you don't have a
+place there to accept the extra digit.
+>> We added one more index.
+>> We have static.
+>> We added a new zero index.
+>> Got it. and we assigned it the number
+one
+>> zero zero and then we needed that one to
+go somewhere and we didn't have it
+anywhere to go.
+>> So we had to insert it.
+>> Okay, got it.
+>> Insert
+insert that one.
+>> So yeah, that's that's exactly it.
+>> Oh, that's so cool.
+>> So again, that goes back to your um
+needing to see it on paper is what do
+you do when you handle that case? So
+maybe you would have gotten to the end
+there, saw that it worked up until the
+last piece where it showed you the the
+nine. The nine turned into a zero, but
+we didn't expand the array. So then you
+have to go back to your pen and paper.
+Okay, in this test case, what do I do
+when I end in a nine?
+>> Oh, okay. I see my length didn't change,
+so I need to add in an expanded length.
+I think you can return to pen and paper
+at any point as well.
+>> Okay, that's good to know, too. Like
+during the interview. Yeah. Okay. That's
+very good.
+>> Okay. So, I think we're all a little bit
+rusty, myself included. So, this was
+good. This was fun. Uh, thanks for
+walking through that with me and thank
+you for being my uh my angel on my left
+hand side, Rebecca, and the devil on my
+other hand side, Linda. Just kidding.
+Um, do we have any questions
+about this problem before we close out
+for the evening?
+>> Thank you. Well, I look forward I hope
+to see you in two weeks. I'm
+transitioning jobs, so I hope I can make
+this happen. Yeah,
+>> cool. Me, too. I hope so as well.
+>> So, can you post that uh on the Discord?
+>> Yes, I will. I'm going to take out this
+extra stuff, though.
+And we'll we'll just keep this.
+>> We can't see your
+>> Yeah, you can't see what I'm doing. I'm
+going to remove all the other options
+and I'm only going to post um the
+solution that we actually tried. All
+right. Do you have any other questions
+before we close out for the evening?
+All right. Thank you all so much for
+showing up. And again, I'm not going to
+be hosting next week's meeting. Um it's
+already been removed from the calendar,
+but I hope to see you all again in two
+weeks.
+>> Okay, great.
+>> All right. Thank you.
+>> Have a good week.
+>> You too. Enter.

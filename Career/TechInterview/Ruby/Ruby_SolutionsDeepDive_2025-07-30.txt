@@ -1,0 +1,1291 @@
+All right, welcome to this week's
+Nailing the Tech interview. Um, today is
+Wednesday, so we'll be exploring some
+code, some solutions to some problems.
+So, on Sunday we covered
+uh a few problems around duplicates. So,
+I think we've got a few new people
+today, but anyone from Sunday, did you
+try out the contains duplicate problem
+or the top K frequent elements problem?
+>> Uh, I didn't.
+Okay,
+no worries.
+All right, that's okay.
+Lucky for us, we did the pseudo code for
+it. So, I think it'll still be fun to
+just kind of go through and break that
+down.
+Uh, before we get started, does anyone
+have any questions about the technical
+interview, practicing, preparing,
+what to do, how to prepare, anything
+like that? What questions do people
+have?
+No questions. Okay, cool.
+[Music]
+Okay, so on Sunday
+as a group, we explored this problem and
+came up with a couple of different
+solutions. So, it might just be fun to
+test all of these out and see how they
+work. Um, just to recap the problem that
+we covered, it is contains duplicate on
+the code. So you are given an integer
+array called nums
+and we must return true if any value
+appears at least twice in the array and
+return false if every element is
+distinct or another way of saying that
+is unique. So in their example they gave
+us nums array with 1 2 3 1. We are
+expected to return true because one is
+in there twice. So the element occurs at
+both indices 0 and three.
+Nums 1 2 3 4 we return false because
+everything is distinct. So on and so
+forth. This one is pretty
+straightforward.
+Um it is marked as an easy problem.
+That doesn't mean that our solutions
+necessarily have to be easy. But the
+problem itself from a problem statement
+is easy to resummarize.
+So let's see what we wrote. Given an
+integer array, we need to find frequency
+of any given number.
+Um, and then return true if any number
+repeats,
+false otherwise
+with the explanation that all numbers
+are unique.
+I don't know how this one got out here.
+Okay, so we had a few ideas. the brute
+force approach which I am always
+down for. Like actually I start every
+problem with a brute force even if I
+feel like I know a more optimized
+solution. I'm like well how would I just
+do this like
+in the most spelled out way possible
+where I follow all the steps. So big o O
+of N squ which is not great but if it's
+in a great it's a if it's a good way to
+approach the problem then it's a good
+way to approach the problem. So we
+initialize a count variable. Use I in
+range to track the count of numbers
+at index nums I compare value against.
+So we might need to create a nested loop
+to compare I and J. If we find a match
+return true.
+So actually we don't need to initialize
+a count variable. This one changed.
+So this the idea here is that we would
+create
+um a nested loop so that for each
+I in the outer loop we're saying all
+right we'll start here and then we'll
+create another loop to check if that
+value at the beginning one is equal to
+two yes or no three yes or no one yes or
+no it's equal to one so we would return
+false I believe no we would return true
+turn true so on and so forth for each
+number. So two we compare against three
+and one three and one until we either
+find a duplicate or we run out the loop.
+So that's pretty straightforward there
+if that is so actually let's just yeah
+let's go ahead and start there and see
+how that works. uh I I think there will
+be an issue in submission even if the
+solution is uh is good and uh give uh
+correct answers. Uh we have an issue in
+lit code. It says that uh it's it takes
+too much time. I don't remember the the
+correct uh term they say.
+>> Sure. uh uh this means that all in
+square I think it's not it's not
+recommended to do in lit codes because
+I'm I'm working now on one one uh issue
+one problem I have uh double double
+loops
+loops I mean I mean um it's almost same
+like that but it doesn't accept it
+doesn't accept this solution
+>> yeah you can definitely get into that
+problem. I still think it's a good idea
+to start with brute force even if you
+know that it might not sub like if I
+submit it and it's not going to pass all
+of the cases because it runs out of time
+like an execution error or runtime error
+that kind of thing. No, I think it's a
+specific Yeah, I think it's like a
+>> I think it tells you specifically what
+there's like a specific error for we
+tried running against all the test cases
+but you ran out of time like our time
+limit was exceeded. Um since this is an
+easy problem, I don't think we'll hit
+that time limit that you're mentioning.
+For medium problems, absolutely you'll
+probably if there is a more direct or
+more like streamlined approach, more
+efficient approach,
+>> you will definitely hit runtime errors
+with the like O of N squared um on some
+of those, especially if they have a lot
+of test cases. I think in this case,
+we'll be okay. We're still going to
+explore some better approaches. So
+>> yeah. Yeah. My my issue is that uh I
+think one of the their cases is like one
+array with 10,000 elements.
+So it couldn't finish that that one to
+test it. So it throw this error.
+Yeah.
+>> Yeah, that makes sense.
+My my advice there though, if you don't
+know how to go for a better solution,
+like a more efficient solution, if
+you're hitting submit and you're getting
+like at least twothirds of the cases
+passing, I think that's a good time to
+go to the solutions tab and say, "All
+right, I've got most of the test cases
+passing with my solution.
+Excuse me. Um,
+but what can I do? like what are the
+other people doing to get a more
+efficient approach so that I can pass
+all the test cases. So if you've got at
+least like a majority of the test cases
+passing, then I think that's fine at
+that point. I just don't recommend
+jumping to solutions or looking up
+videos or tutorials until after you've
+given it that that good brute force
+approach effort.
+All right, so let's
+dive in. Even though we know this one's
+going to be not the most efficient,
+that's still okay. Oops.
+I and range.
+What do we want? Len of nums.
+Nums.
+I'm just going to make sure
+that that looks good. You know,
+actually, maybe we've been using
+enumerate lately, and I kind of like
+that. So, I think I'm going to
+do that one again today. index value
+in enumerate.
+No. Yeah. Enumerate nums. I think that's
+right.
+Print index value.
+Oops.
+Hey, Brian. Did you get a chance, excuse
+me, to uh practice any of the problems
+from Sunday?
+Maybe, maybe not.
+All right. So, index value and
+enumerate. That looks like it's working.
+One, two, three, one.
+So, I'm going to keep moving with that
+approach.
+Oh, I wish there was a good way to do a
+nested enumerate. I don't feel like
+there is.
+>> Sorry, Ruby. My u app has been turning
+for the past five minutes like this.
+>> Oh,
+>> so
+>> are you connected now?
+>> Yeah, I'm on. Okay. Did you get a chance
+to practice any of the uh Sunday
+problems? The contains duplicate or top
+K frequent elements.
+>> Yeah, I didn't solve any of them though.
+>> You couldn't?
+>> No.
+>> I'm surprised.
+>> Okay. We're just going over the contains
+duplicate right now though.
+>> Exploring the couple of um pseudo code
+approaches that we came up with. We're
+starting with the Oven squared approach.
+What was I saying? Yeah, I don't think
+I'm going to look that up. Actually,
+I don't think there is a good way to do
+it with enumerate. Like I don't think
+you can. Yeah, I don't think you can set
+a starting point.
+I mean, the start here means the index
+starting point, not like
+like it sets this to be that. I'm not
+explaining that well.
+The start is kind of misleading. It's
+what it's saying that you would label
+the first index with that one. So,
+three, four, five. So, it doesn't have
+any like I can't tell it to start from
+the second index,
+which is kind of annoying, but for J in
+range,
+I'll just mix and match. It's fine. Lynn
+nums.
+Let me make sure that that makes sense.
+Print.
+What do I want to do here?
+Nums.
+Nums.
+I
+nums.
+Nope.
+I don't want that. Oops. J. And
+value. So value would be our I
+up here. Yeah. Okay.
+Okay. So for the one 2 3 one that one
+there we're doing one with itself
+because I didn't set a starting index.
+I'm actually just going to update that
+right now. We'll start with index
++ one.
+No, I put that on the side. O forgetting
+all these
+parameter things here.
+Okay, that looks better. So, one and
+two. That looks good. And then one and
+three.
+One and one. And then two and three. Two
+and one.
+And then three and one. Yeah. So that
+looks good. So we're
+for each I element, we're looking at the
+rest of the elements in the nums array
+or nums list. And then we're moving on
+to the next element, comparing it
+against the rest, incrementing I again,
+comparing against J until we get to the
+end. So now we just want to add our
+conditions here.
+So
+if
+value
+is equal to
+dang keyboard equal to nums j then
+return true
+right yeah if we find a duplicate we
+want to return true. So if we find a
+duplicate, we'll return true. Otherwise,
+just keep going. And then at the end,
+we'll add a default case of return
+false, meaning we haven't found
+any duplicates.
+Oh, yeah.
+Didn't capitalize my T.
+Yeah, didn't capitalize my false.
+Okay, that looks good. So now the moment
+of truth. Will we get that execution
+error?
+>> Oh, I think we might.
+>> Yeah, this is what I'm talking about.
+>> Sometimes you don't though. I feel like
+I rarely do get Oh,
+>> yeah. This is this is exactly what I am.
+Yeah,
+>> that makes sense. But see, still we got
+65 out of 77. That's pretty good. I
+think we can assume that this solution
+would work.
+>> Okay.
+>> So, we've got some more efficient ideas
+in the works. But if you were working on
+this and you were trying a few different
+things and you like couldn't get it to
+be more efficient than this, then I
+would recommend jumping to the
+solutions. I think that's totally fine
+because you do have a working approach.
+You're just not hitting their they want
+a certain level of efficiency that
+you're not able to get at your level.
+>> What if this happens in the technical
+interview?
+Is this is it pass or not?
+>> It won't pass. No,
+>> I don't think that's going to be a
+problem though. Even though this one is
+listed as easy, I have not had any
+problems on hacker rank because I do use
+hacker rank for the joy of coding
+technical interview.
+>> So I haven't had an execution error on
+easy very often with hacker rank. That's
+not to say it's impossible. Now that I'm
+thinking about it, I've actually seen
+some people post in the Discord channel
+>> saying like, "I have this approach and
+it's like timing out and they're just
+like running the same loop like 500
+times."
+>> Um,
+>> yeah.
+>> So, no, you wouldn't unfortunately you
+wouldn't pass if all the test cases are
+passing or not passing. I mean, um,
+>> yeah. So maybe maybe this uh this one is
+to avoid like oh in square is not like
+but sometimes we don't have any other
+options to to solve the sol the the
+problem
+>> just
+>> exactly so
+>> as of just getting started if the only
+approach you know is O squ then that's
+where you start
+>> and then you start looking at these
+problems and you see all right how do
+other like how what other approaches can
+I take to this that make it more
+efficient. Can I think of my own? Can I
+look to the resources that exist? The
+solutions tab or looking up videos.
+>> Then you learn that more efficient
+technique. You add it to your toolkit.
+And then the next time you see this
+execution error, you're like, look, I
+know I've got the solution right.
+>> I just need to explore that new
+efficient go back to my toolkit of
+things that I've learned and pull out
+that more efficient solution.
+>> Okay.
+>> So, let's take a peek. What might those
+look like?
+I'm actually surprised because usually
+on the easy problems
+I don't see that too often.
+All right, so we ex we thought about a
+I'm actually going to do this one next.
+I'm going to do it in order of
+efficiency.
+So a little bit better than O of N squ
+but not by much is N log of N. So the
+idea here was that we would sort the
+list first and then for each index we'll
+just check if the next index
+exists or if we we could also just start
+at like index two or index one and look
+backwards instead so we don't get any
+like out of bound errors and then check
+if
+there are any duplicates that way and
+then same idea return true or false. So
+this will be n log of n because we're
+going to use the sort method. So nums do
+sort and that's automatically going to
+give us
+a n log of n because the sorting
+algorithm that python uses in the
+background is n log of n.
+>> Uh I a little bit worse than
+>> I thought we can't use uh uh libraries
+in this kind of tests. can't use what
+>> uh because sort is is the kind of u
+function
+I think we should I thought we should uh
+we should uh
+uh implement it okay
+>> if it's built into Python I think that's
+totally fine I think if you are getting
+in the point where you have to import a
+library
+>> okay
+>> to to use something that might be
+pushing it like not not that it's not
+allowed I just that if you don't like if
+you are using something that you have to
+import, it's maybe doing a lot more of
+the work. Um, but if you
+like if you're using just like a
+built-in Python library method like sort
+or min or max
+>> or average or whatever, I think that's
+totally fine. Like I have no issues with
+that.
+>> Okay?
+>> And I don't think I don't think
+the job hunt will have issues with that
+either. In fact, I don't think they'd
+mind if you imported libraries either.
+It's just for the time consideration if
+you're like have to import it a certain
+way or look up the documentation on the
+right way to use it after you've
+imported it if you're not familiar with
+it, etc., etc. But for the built-in
+stuff, I mean, it's pretty pretty
+straightforward.
+>> Okay. Okay. Thank you.
+>> Okay. So, we've sorted that one out.
+1121. And again, I'll add to that. This
+isn't the most efficient way, but we use
+sort a lot. So, don't be afraid to use
+the built-in methods. Um, but we'll
+explore something better than that as
+well. So, it did sort this one for us. 1
+2 3
+1 2 3 4
+and 11 1 22 3 4. So, we could do
+we could do it one of two ways. I think
+I'll start with how we wrote it. So, 4 I
+in range. I'm going to use range this
+time.
+range lin
+nums, but I'm actually going to do minus
+one. So, I'm going to take us all the
+way to
+um
+how does it usually work? So, we usually
+go if you just do the default
+whatever that would be the length. So,
+this length would be I might go to a
+shorter one. I don't feel like counting.
+So, the length of this would be four.
+And then when you enter four, it goes up
+to four. So it would be 0 1 2 3.
+Instead, I'm going to go to len minus
+one, which would be three. So it'll go 0
+1 2. And then we're going to be checking
+the index + one. So we're going to check
+against this value. So I'm going to stop
+here one shy of the end of the array or
+list.
+So what do we do here? So or numbum
+print. Well, let me just check if I can
+do that without getting any errors. So
+nums I
+I and then
+nums I + one
++ one. I'll just throw I in there for
+fun.
+Okay, zero. No errors. That's good.
+Zero.
+So index zero, we have one. And the next
+one is one because we're doing this one
+and this one.
+And then we're moving up an index. So
+we're here and we're checking the value
+of I
+and I + 1, which is two.
+And then at index two 012 we're at two
+two we're checking I + one at three
+three. So even in just printing it out
+like this we're like okay that's a we
+can compare that and see that it's a
+duplicate. So we'll get that
+check there. The truthy check. And then
+this one 1 2 2 3 3 4. So we won't hit
+that error or I mean truth check. So on
+and so forth. So that's good. Same thing
+as
+last time. If I'll just go ahead and
+steal this
+up there.
+If value and instead I'll use nums
+nums I
+equals
+nums I + 1
+return true. So in this case, if
+this equals this, we'll we found a
+duplicate. Return true. Otherwise, it'll
+just keep going until we get to the end
+of the loop. And
+we'll just copy that false as well.
+All right.
+Okay.
+Truth or dare. Not truth or dare. Fin.
+Oh, yay. Okay, cool. Wow. All right. So,
+>> that's great.
+>> It's on the edge there of a runtime.
+>> What What about this uh graph like
+>> what is it? How does it work? Yeah.
+>> Yeah. Yeah.
+>> So, what this is telling us is we have
+this bar up here which tells us our
+runtime, how long it took for our code
+to execute. 71 milliseconds, less than a
+second, not bad. And we did better than
+5% of our peers. So what this graph
+shows is the of all the um people who
+have submitted
+>> and pass all of the test cases. So
+everyone who submitted and passed every
+test case, this was the runtime of their
+code.
+Um, so all of our peers so to speak
+>> and they were able to get solutions that
+ran at, you know, 25 milliseconds, 20
+milliseconds, 10 milliseconds, like 3
+milliseconds.
+So compared to everyone else who have
+submitted,
+we still passed, but our runtime isn't
+as good.
+>> Yes.
+>> Our memory usage, however, is a lot
+better. everyone seems to be doing
+around this area. And when we get to our
+next solution, you'll see why. Because
+we're going to be using a hashmap
+dictionary, which takes up more space
+because we're really not taking up any
+space here at all.
+Um,
+except for um
+>> just like
+>> the memory to run this script.
+>> So, I did something really similar to
+this. And I think where I got tripped up
+was I didn't what what's confusing me is
+so nums.
+automatically changes nums.
+>> Yes.
+>> So what I did was I I created this um
+dummy variable name called numei.
+>> Yep.
+>> And so I I I did nume equals nums.sort
+sort because I didn't realize that
+you could just leave it like that and so
+that's why I solve it.
+>> In fact, you have the
+>> exact same thing just I just assigned it
+to a variable which apparently
+uh it
+>> you can't do that. So when you read the
+definition for it, Python lists have a
+built-in sort list.sort method which is
+what you were using that modifies the
+list in place. And so what that means
+also is that they usually say it
+somewhere.
+>> Let me see.
+>> Well, that's nice.
+>> Does this have help text?
+No, it doesn't.
+I think this one might tell you.
+sort.
+>> So by assigning it to a variable, you're
+basically creating
+some type of data structure that's not
+iterable. So why why is that? Like
+>> well I was trying to find I know there's
+a definition for it somewhere. Um it
+tells you here that it sorts it in place
+and so the return type on doing this is
+none. So when you call like a list.sort,
+it's going to take the list that you
+gave it by reference and sort it. And
+then because you're calling a method,
+it's going to return something, right?
+And that's what you're saving to the
+variable. So you're expecting in that
+case to take a copy of the list nums
+that's been sorted and returned by the
+method and saved to the variable you
+created. But instead since it's
+modifying it the original array in or
+list in place it instead returns none.
+So it just doesn't return anything.
+>> So you were storing none to the var.
+>> Yeah. They do however have another
+function that's built in called sorted
+and so it looks pretty similar. So
+instead of doing you know the sort
+method on a list you call the function
+and it does return. So it would take
+whatever object that you give it and it
+it actually is more powerful than the
+the dots sort method because this is
+only a list. This one you can sort you
+know strings, you can sort dictionaries,
+you can sort anything
+and this will have a return type of that
+object sorted. So you would use this one
+to save to a variable.
+>> Well, let's see if we get better
+performance.
+>> It would have the same performance
+because they're using the same
+algorithms in the background.
+But that's why you are getting that.
+Does that make sense? Oh, yeah. It makes
+sense now.
+>> Yeah. Right. Of course.
+>> All right. So,
+>> yeah. I'm just going to stick with your
+solution then.
+>> I mean, no, you should try it out. It
+would all it would be
+>> I did I tried it and it's it didn't it
+still didn't work.
+>> We would just do
+>> list has no attribute sorted.
+>> Sorted nums equal.
+>> Well, you call it like a function. So,
+it's sorted.
+>> Oh, yeah. Okay.
+Yeah,
+>> sorted nums. And then
+I'll leave nums in that print statement
+there. And then I'll add that there.
+There. There.
+Let's see.
+Oh, I meant to run it, not do it. So,
+yeah, exactly. Actually, it says it has
+a worse runtime, but it should be more
+or less the same.
+Um
+but yeah, so this one is the one that
+has a return type. And so you see this
+is our well that one was already sorted.
+This is our original list in nums. And
+then this is our new
+returned one that was stored to sorted
+nums. So since it didn't modify it in
+place, it returned an actual a new
+object that we stored.
+So either way would work. It's just a
+different way of writing it.
+>> Mhm.
+>> Okay. So again, so it it does pass all
+the test cases this time, but because O
+of N log of N is only slightly better
+than O of N squ, I'm not going to pull
+out the graph this time, I swear. Um
+it it's still it's still pretty bad. So
+let's look at the
+O of N solution that we came up with as
+a group which was
+all right more efficient big O O then
+approach using hashmap create a new list
+to create a frequency array aka hashmap
+so we'll actually say a new dictionary
+to create a frequency array hashmap or
+dictionary add to the array for each new
+value and if value to add already exists
+return true or false.
+So, this is where I'm actually going to
+change up the approach because we could
+use a hashmap.
+Um, or we could actually keep it a
+little bit more simple and create a set.
+So, I'm going to do
+that
+uh set equals new
+set. Actually, I'm not sure how to do
+that.
+So, let's look it up. Python set.
+I
+>> think it's just set. Yeah.
+>> Yeah. But I want to see how they
+just tell me how to
+construct it.
+Okay. I think I'm just going to try it
+here.
+It will give me an error if I just do it
+like that.
+Do I need the new keyword?
+I don't think I do.
+And then I just want to What are the
+adset items?
+Yeah, add Yeah, that'll be good.
+Or do I want to do
+let's see add an element to the set.
+Can I see some info about that? If
+element already exists, the add method
+did not add the element. Does it have a
+return type?
+Or I guess I could check first. So
+access set items
+banana not inset.
+So I guess you just do in. We would use
+the in keyword there. Banana not inset.
+So what it's actually saying is that
+banana
+is inset. Banana in the set true. Okay,
+I think I've got an idea of what we're
+doing here. So I'm going to
+I think new is
+for JavaScript.
+All right. So we're going to keep this
+general structure.
+So if you notice this is an O of N like
+it's just a normal loop you go through
+each of the items in the array well up
+to a point which is O of N but the
+overall approach is O of N log of N
+because of that sort method but this
+itself is just O of N.
+Um, so we're going to keep that same
+idea except I'm going to go all the way
+to the end this time.
+And
+actually, I'm going to take out those.
+So,
+what I want to check this time,
+and I'm not going to do sorted nums.
+So, let me comment this out.
+Oops.
+So we could use a dictionary. Um
+but with a dictionary you have to do
+like the whole key add like you have to
+say does something exist at this key
+already and then add it yada yada. Um
+and I feel like maybe a set is a little
+bit easier to do that kind of stuff
+with. So if we did
+if nums
+I
+in set.
+So what we're saying here is that if we
+read this first one one
+and if it is in the set already meaning
+that we have a set with the value of one
+then that means that we've already found
+that object. So we would you would
+return true. So, kind of the same idea.
+Instead of using
+a comparison operator where we're
+comparing a value against a value,
+we're saying a set which has an O of one
+check. Okay, how do I say this?
+If I have a
+a list, right?
+And I want to check for a value inside
+of that rest that list. And I don't know
+the index. I just want to know like
+um
+like is three
+in
+the list and we'll call that you know
+nums nums equals
+in nums. You could use the keyword
+if
+like well you would say three in nums.
+So, we would print
+three and nums.
+I'm just going to comment this out for a
+second.
+Come up with
+a default return there. Okay,
+let's see this.
+So yes, three is in nums. We know that.
+And
+three is in that one as well. So it's
+true.
+Three is in that one. So that one's also
+true. But if we said like five is five
+in nums
+false. So yeah, five is not in there.
+When we use this n operator with a list,
+that is also going to be an O of N check
+because what it's really saying is all
+right, we're looking for five in this
+list of
+things. So, it's actually the same as
+saying this. So, like is five in this
+list of iterable like objects here. And
+so, it's going to say is five equal to
+1? Yes or no? Is 5 equal to 1? Is 5
+equal to two? is 5 equal to 3. If it had
+found it before then it would you know
+return that and say yes it is otherwise
+it goes to the end. So that's an O of N
+operation.
+Sets however don't allow duplicates. So
+when you add something to a set it was I
+I was implying in here in the background
+that it will just silently fail if you
+try to add something again. So it only
+allows
+one value of each kind. And so in the
+background it's actually
+a form of a hashmap
+where it is indexing these values at
+their positions. So this will be indexed
+at a certain position. This would be
+indexed at a certain position. So when
+you check for five, it's not checking
+against each value in a set because five
+would be indexed inside of here. So it
+can do a O of one constant check and say
+is five at inside the set. It would be
+is five
+at index
+of five.
+And so it's only going to do that one
+check. Does an index of five exist? Yes
+or no. And then it'll return true or
+false based on that. So the N keyword is
+pretty useful, but you have to keep in
+mind that with just a generic list, it's
+going to be O of N. But when you use
+something like a set or a dictionary,
+it's going to reduce that to a basically
+a key check, which is just an O of one
+constant check.
+>> I have a question on this one.
+would when if you if you moved it into a
+set and then did a comparison of the
+original to the set, if it's not equal,
+then that would be meaning the duplicate
+moved. If the C if the length of each
+set is not the same, that would indicate
+that the duplicate was removed.
+So, am I making sense? So, if I do a
+set,
+>> yes. And if the the length of the set
+it does not equal the length of nums,
+then that means there was a duplicate in
+nums and you could say true.
+>> Yeah,
+>> that's even quicker, isn't it?
+>> That does actually sound pretty good.
+So, let's try that. It is
+still o because to create a set from a
+list, it's going to manually do like the
+add. So it's going to say for each value
+in nums, you know, set dot add one, set
+dot add two, set do add3, set do add
+one, and then it silently fails and
+doesn't add that one, but it's still
+going to try. So this is still O of N,
+but that should definitely streamline it
+like you said. And then we'll just do
+return
+true
+if length of
+set
+is equal to length
+>> not equal to oh yeah
+>> no yeah we no wait you're right not
+equal to oh my gosh not equal to because
+if we find a duplicate we would return
+true. So return true if length of set is
+not equal to length of nums.
+Else return
+false.
+Yeah, I think that should totally work.
+>> It doesn't what I've done here. Sorry,
+what?
+>> Yes, the syntax.
+>> I didn't need the return in there. Ah,
+>> can I access
+maybe I do have to use that new keyword.
+Not sure.
+Let's see. New set. Okay. No, it doesn't
+like that.
+Num.
+>> Oh, maybe it's a keyword.
+>> Yeah.
+>> Yeah, it might be.
+Type has no lint. Sure it does.
+>> You changed it. Wait, you changed the
+link to you changed the name but not the
+one in the link.
+>> Oh, I see.
+Yes. Thank you.
+Yeah. Okay.
+Sure. See you later. Say
+uh so that does pass these test cases.
+Submit.
+Wow. Yeah. Cool. Good call, Lisa. I like
+that.
+>> All right.
+>> So, yeah, 11 seconds. So, some people
+still did a little bit better. I don't
+know how that's possible. Well,
+actually, I maybe this would we'll we'll
+try the more um spelled out approach as
+well and see if that changes anything.
+But that's pretty good. I mean,
+yeah, that's pretty good. And then
+yeah, we're still we're still among
+this with space because we have to
+create a set and store it in memory. So
+that takes up memory there.
+Otherwise,
+this looks really good. So I like that.
+So what we're doing here and what Lisa
+said is that because
+a set does not allow duplicates because
+it's going to index everything so that
+there are only unique values. Once we
+get to that one and we add it to the
+set, the set is going to look like this.
+Take a peek.
+Set.
+Oh, that's the unique one. So, it
+creates you can see a um an object. The
+the brackets indicate like a dictionary
+or hashmap. That's an object
+wrapper there. So the length of our
+array because it has a duplicate is four
+and then the length of our set which
+doesn't allow duplicates would be three.
+So if the lengths do not match then that
+must mean that something was tried to
+add to the set but already existed and
+so it has a shorter length. So that is
+an absolute
+amazing way to shorten that approach
+into a simple little oneliner there. So
+that's great.
+But if we wanted to do it more spelled
+out,
+what we could do because at this point
+we've added everything inside of nums to
+the set. And actually I'm going to
+comment that out as well and just
+do a duplicate down here where I remove
+nums. So we do an O of N to store all
+the values of nums to the set versus
+here we're creating an empty set and
+then our approach there I'm just going
+to move this up as well
+is to one by one check. So in this case
+we have an empty set and we're saying is
+one inside an empty set? So that would
+be no. So this would be false. So it's
+going to return nothing. And so we'll
+just add
+nums num set dot add
+we'll add that one value there.
+So it's still an O of N kind of approach
+here because we're still checking each
+value. But because we're adding the
+values one at a time, which again, this
+adding is going to be an O of one
+constant addition there as well. So
+we're not adding to the overall
+complexity in any way. As soon as we get
+to the duplicate, we will then be able
+to return true. So one is not in an
+empty set, so we'll add one to the set.
+Two is not in the set containing one, so
+we'll add two. Three is not in the set
+containing one and two. Add three. So
+now our set looks like this. And then we
+get to that one and we say
+is one in set? Yes, it is. So then we
+would return true because we found a
+duplicate. So in in this case, it's not
+going to save much time. And in the
+grand scheme, it's not going to take
+take much time. But in this
+um example, this test case here, once we
+we add this one first to the set and
+then once we get to that second index,
+we only have a set with a value of one.
+So just one value and we're immediately
+going to say, all right, so one already
+exists. We can return true and not
+evaluate the rest of this list.
+versus in this case, we add all of these
+to the set first to get 1 2 3 4 and then
+compare the lengths.
+So, it's not going to make a huge
+difference, but this one might save like
+a millisecond. Um, so let's try it out
+first. I want to make sure I didn't
+mess anything up. Yeah, because I need
+to change that over.
+Cool. So that looks good.
+So it actually took longer. That's
+hilarious.
+Yeah, code is so finicky sometimes. So
+still pretty good though. I mean 19
+milliseconds compared to 11 that we had
+before, which was still way better than
+the 70 that we had with the O of N. same
+memory usage. I actually want to try
+running it again and see if that changes
+anything because sometimes it does
+change.
+Yeah. So, that one dropped it down by
+like 1 millisecond. So, it looks like
+this one is still actually faster which
+is cool,
+but it's always good to check and like
+run these little exercises. This is what
+the extreme nerdy people do when they're
+Dr. Emily um doing their like PhD stuff.
+they like check
+you know the efficiency and compare run
+times of all the different like
+algorithmic approaches and stuff like
+that. Um there are like tests that you
+can run where it runs a bunch of bunch
+of times to get like an average of its
+runtime. Um so this was the original
+approach that I was going to take where
+we're one by one adding things to the
+set and then checking if it exists in it
+or not. And we can do that because since
+it's a set, it'll be an O of one
+constant check there.
+Um, but this approach
+is totally the winner here,
+which I didn't even like think of. So
+that's really awesome. Thank you, Lisa,
+for
+giving us that inspiration. That's
+really fun.
+Yes, Adam.
+>> All right. Um, so I also had another
+thought. Um, instead of even just making
+a set, why not just like iterating
+through?
+Sorry, one second.
+I want to run this again and see what it
+how how it returns there.
+If it still does 11 seconds. Okay, see,
+I knew it was weird. So, it's saying 18
+seconds now when we run this one. So, I
+think these are pretty much equal in
+runtime. It just depends on like how
+many people are on the server.
+But these are pretty much equal. This
+one it's clear what I'm doing, I guess,
+from from like a if I was reading this.
+The thing about oneliners is that they
+look nice, but sometimes it takes a
+little cognitive effort to figure out
+what you're actually doing. But I do
+like this because it's so streamlined
+and it does the same thing as this.
+And it's very I feel like sometimes it's
+really rare that the most efficient
+solution is actually shorter lines than
+some of the other approaches
+which is kind of like oxymoronic.
+Um yeah, this this rules. I love that.
+So you were saying why can't we just go
+through the loop and check if there's a
+duplicate?
+Is that what you're asking, Adam?
+>> Yeah. So, how would you do that?
+>> Well, I'd make an instance that I would
+have um an iteration is like a 4 I in
+range.
+>> Uhhuh.
+And then
+I guess I'd have a secondary one that
+would check if I is is um equal to um
+starting at like in range I + one. So
+it's the next one kind of thing.
+>> That's the very first thing we did right
+here.
+>> Yeah.
+>> Oh, it didn't seem like it for some
+reason. Okay. Yeah,
+I I'll uh
+I'll show it again. That's no problem.
+>> Or maybe when I was reading it, it
+didn't
+>> click. Yeah, totally.
+>> That's why I always encourage everyone
+to try these problems on your own. So,
+even though we've gone over these four
+different approaches or three different
+approaches, I still think it'll be a
+good effort for you all to try them on
+your own so that you get that kind of
+muscle memory of saying, "All right, I
+know that we tried something in the
+session. I'm going to try it on my own
+for memory. See what I can do. Can I get
+the most efficient version or not?" So,
+I always encourage that even though we
+are kind of going over the code here.
+So, let me undo these prints here.
+Yeah. So in this first one we are
+printing
+actually maybe I'll
+consolidate these
+print value nums I
+index value nums I
+>> oh I guess what throws me off is you're
+using enumerate and stuff
+>> yeah Like I don't
+>> Yeah. Why Why are we doing that? Because
+I'm just saying I'm saying you you
+already have an array. So just
+>> Yeah, it's the same thing. So it does
+the same thing. I just kind of liked it
+because it's it separates out the index
+from the value, but we It's the exact
+same level of efficiency as for i. It's
+doing the exact same thing
+here.
+Oh,
+>> and then I just need to change value to
+nums
+I I
+index + one. And I need to change that
+to I + 1
+index
+I nums I nums Jums
+I Oops.
+I'm dying J. Okay,
+that should still run everything.
+>> I
+>> So it's the exact same thing. So I and
+then J. So for each
+I, so this is at the zero index, which
+is one, we have one. And then we're
+doing
+one with two, that's the J. And then one
+with three, that's the J. And then I one
+again with J one. We're finding that
+duplicate. So we're doing if I equals J,
+then we return true. So it's a nested
+loop for I in range for J in range. And
+that's going to be O of N squ, which has
+one of the worst run times. So this
+would be considered brute force. And
+when we ran it, it didn't pass because
+it ran like the
+>> because it's such a bad efficiency. It
+failed the time execution limit.
+>> Right. Right. Yeah.
+>> Oh, well that's because I have a print
+in here.
+So, let me fix that.
+Come on.
+I did remove all the prints, right?
+Yeah. So, yeah. So, we only got through
+about 65 of them because you only have
+so much time that it allows for you to
+pass all the test cases. So, we got
+through about 65 of them and then
+because it takes so long to do an O of N
+squ approach, we actually hit that
+timeout.
+So, that was the first one that we
+walked through there.
+Yeah, enumerate does the same thing
+except instead of having to do I and
+then nums I to access the value inside
+of the nums array,
+it's kind of nice to just say, you know,
+index and value where it spits them out
+as two separate values in enumerate
+of nums.
+>> Oh, okay. So, I just did it like that
+because I kind of liked it and then I
+realized immediately that it's kind of
+annoying like you said because then I
+have to switch the J and range because
+you can't
+nest and enumerate there.
+But yeah, I mean it's it's pretty much
+the same.
+Does that make sense?
+>> Yeah. Okay, thanks.
+But yeah, I like the the the set
+comparison solution. That's nice.
+>> I mean, yeah, that's
+>> nice and quick. There's no beating that.
+I mean, I guess you could beat that, but
+I don't think so. So, it takes Oven to
+build this set. And then this length is
+O of one. O of one. These are constant
+checks. Now, it's telling me 7
+milliseconds, so it can't make up its
+mind. Um, but yeah, that's pretty great.
+And we are a few minutes over time, too,
+actually. So, this was fun. I'm glad we
+did this. Again, this was an easy
+problem, but we came up with so many
+ideas for how to approach this problem
+on Sunday that I thought it would be fun
+to just try them all out. And again, I
+encourage everyone to try them out on
+your own just from memory and see what
+you come up with. Um,
+but yeah, this was good. Does anyone
+have any questions about this problem or
+about the tech interview or anything
+before we close out today?
+>> What was the other problem we worked on
+on Sunday?
+>> Yes. So this one is contains duplicate
+on leak code and then the other one we
+worked on was top k frequent elements
+also on code.
+>> Okay
+>> with the general approach here being
+that
+there is
+some number of repeating elements in a
+list
+and you are given k2
+um a k value. So the K is the amount of
+the most frequent elements. Oh, I'm not
+going to be able to explain this very
+well.
+So one, we have three ones, we have two
+twos, and we have one three. So out of
+the ones that are repeating, we want the
+two with the highest amount of repeats.
+So one has the highest amount with three
+repeats or two repeats, I guess. And
+then two has the second highest amount.
+If I had changed K to one, then we'd
+only return one because it's the highest
+repeating.
+And then same thing here. And then I
+think we created a test case as well
+where I was like 111 222 44 44 44 44 44
+44 44 44 44 44 44 44 444 and we did the
+same thing and checked what it would ask
+for. Um and if I had another number in
+this list with more repeating values
+than the one and the two, then it would
+only return four and the next highest
+repeating number. Um, so it's kind of a
+it seems kind of straightforward, but
+it's also kind of a doozy at the same
+time. Um, but yeah, try that one out as
+well, and we'll we'll look at it.
+And they want you to make it even better
+because they want you to do better than
+n log of n.
+So
+>> So it can't be o n login.
+>> Yeah. See, that's where it's kind of
+confusing cuz they're saying it has to
+be better than that, but they don't care
+how much better. Like it could be O of
+N, could be O of N log. Like it kind of
+implies that there are many solutions
+that of varying O complexities that are
+better than N log of N. Um, but yeah,
+this one kind of cuts out any sorting
+approaches there.
+Yeah,
+I'd like to see what everyone comes up
+with for that one and then we'll explore
+it. We'll explore it in the future.
+All right.
+Any other questions before we close up
+today?
+Cool. All right. Thanks everyone. I will
+see you on Sunday and we'll do some more
+pseudo code and mock interviews. Thank
+you.

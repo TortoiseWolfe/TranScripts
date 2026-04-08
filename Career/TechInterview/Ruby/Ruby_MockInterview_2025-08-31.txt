@@ -1,0 +1,1115 @@
+All right, welcome to this week's
+Nailing the Tech interview. Today is
+Sunday, right? It is Sunday. Yes, it is
+Sunday, last day of August. Um, today
+Sunday, so we are doing mock interviews
+and practicing problem solving today.
+I actually have an idea for a little
+experiment today, so we'll see how that
+goes. Um but before we dive into today's
+session, does anyone have any questions
+that they'd like to ask about the
+technical interview practicing
+preparing? What questions do people
+have?
+>> So once you are resolving three in a
+row, easy three in a row, you can
+request for the interview, right?
+>> Yes. That's my general recommendation is
+that if you are able to solve three in a
+row within 15 to 20 minutes, closer to
+15 would be better. Um, but also make
+sure you are getting practice in with
+medium problems as well.
+>> But once you get the three in a row and
+you know practice, you're ready, right?
+>> Well, I wouldn't say you're ready. I
+would say it's a good indicator that you
+might be ready. It's hard to say whether
+someone's ready or not until they
+actually take it. though if you really
+I mean I would certainly I would
+certainly allow you to sign up and take
+it but if you want to get that
+additional practice today's sessions or
+also the peer mentor office hours are a
+good way to get an additional
+practice attempt in before taking the
+actual technical interview which you can
+do at any time. So you could sign up
+today and then before your actual
+scheduled session occurs, you could try
+out the peer mentor office hours and say
+I want to do a timed version to see how
+to prep for the technical interview, get
+some feedback, so on and so forth and
+then do that.
+>> And when you choose the peer mentor, you
+choose the problem or the peer mentor
+coach choose the problem.
+>> So the peer mentor office hours are just
+kind of open for any like questions,
+issues. So if you're coming with the
+intent of saying I'm practicing for my
+technical interview, I would probably
+say you would go and choose the problem.
+Though you kind of want to keep it
+a secret from yourself almost and be
+like, "Hey, I'm practicing for the
+technical interview. Will you help me?
+I'm going to choose a problem at
+random." That kind of thing.
+>> Aloh. So you are the one there as well.
+you are the person leading that uh
+office hours.
+>> No, the peer mentor office hours are
+based on whoever is scheduled for that
+time of day.
+>> Okay. So, I bring the problem. Okay.
+>> Yes.
+>> Yes, Rebecca.
+A couple of things. I am a peer mentor
+at 9:00 a.m. on Mondays. Um, and I I
+don't I I I mean it doesn't matter to me
+whether someone comes with a problem or
+they say, "Hey, you want to find one
+together and say, "This looks good.
+Let's try it together." I would love to
+do that. You know, so that's every
+Monday from 9 to 10. And then my other
+question when I initially held my hand
+up um was um like you said three in a
+row, that's 15 minutes each.
+So like 45 minutes one boom boom boom.
+Okay.
+>> Well, however you're practicing. I mean
+not you don't have to do them like
+I've selected three problems randomly
+that I'm going to do consecutively. I
+mean you can certainly do that but I
+mean if you're like pra however you're
+practicing. So if you do one a day and
+each day that you've tried it you
+tackled one and you got got it within 15
+to 20 minutes.
+>> Oh, okay. Cuz I I didn't never heard the
+three in a row thing. I I heard, you
+know, get it down to 15 minutes. Yeah.
+Okay, cool. Thanks.
+>> So, however you're practicing, whether
+you're doing them all one after another
+during your practice or if you're just
+saying, I'm going to do one or two a day
+or one or two a week, if you're getting
+to the point where you're consistently
+one after the other about three times,
+solving them within 15 to 20 minutes,
+that's a good indicator that you might
+be ready for the tech interview.
+But you can spend uh 20 minutes and pass
+it, right?
+>> You can, but you want to aim closer to
+15 because the pressure and the nerves
+of just being in the technical interview
+kind of slows people down a little bit.
+Or like I said, get that practice with
+the peer mentors.
+And can you request if you are at the
+verge of that standard can you request
+uh
+an interview like weekly or you will be
+denied because it's too often.
+>> So what happens is that
+>> if you if you are doing that meeting the
+standard on your own and then you can
+say okay I'm ready. So you request it
+and then you are denied because you
+haven't met some many some number of
+mock interviews or something like that.
+>> Not quite. So if you take the technical
+interview and you don't pass, that
+sounds like what your question is. Um I
+will make recommendations based on
+seeing how you performed, right? So
+after that attempt, we will then discuss
+your performance and I will ask some
+follow-up questions. I will make some
+recommendations and then based on those
+recommendations which could be about
+reviewing mod 1 and two concepts steps
+to take while you're practicing
+problem solving tips any number of
+things that I could recommend once you
+are practicing those recommendations and
+feel like you have those recommendations
+met
+and you're still doing the 15 to 20
+minutes problem solving because at that
+point you should be able to solve
+problems within 15 to 20 minutes on your
+own. So once you get to the technical
+interview that's already you've checked
+that you've checked that box right
+from then on if you have failed then
+we're adding recommendations to say all
+right now anytime you see any problem
+we're expecting you to meet that 15 to
+20 minute goal. So, here are the
+recommendations that you must also meet
+based on my observation of your
+performance that I think will help you
+continue to meet that 15 to 20 minute
+goal within the time range and under the
+the pressure of a time limit.
+>> Okay? Because I'm meeting that, but
+every now and then I get a harder
+problem or a problem where I don't start
+in the right path. So, I blow that up.
+But other than that, I'm meeting in
+three, three, three, and then one curve
+ball appears and then I don't and then
+but then in my mind I'm I'm okay, I'm
+going to take mocks from now on and in
+between I'm going to practice because
+that's the level I'm at. So,
+>> and that's fine. It's fine to hit a
+curveball every once in a while and
+still sign up.
+>> No, but what I'm saying is I mean I feel
+like I'm at the point of taking mocks
+consistently. Yes, that's what I'm
+saying is that if you feel like you're
+getting consistently even, you know,
+curve balls aside, that's totally fine.
+Now, what you're doing with the curve
+balls, I'd be curious about like are you
+taking the time to figure out what the
+solution is working backwards? How can
+you?
+>> Yeah, I'm working up to a certain limit
+of time because I'm I just don't want to
+stay with a problem an entire week or
+something like that. And then I'm doing
+research and finding a solution. And
+then I'm going to analyzing line by line
+that solution and understand the the
+reasoning behind it and
+kind of why it went that path because
+usually when I get a curveball is
+because I started in a different path
+and that path got too hairy and then I
+get stuck. So, I'm I'm always curious
+about going through the right path from
+the get-go because that's where it right
+away.
+>> That is okay. But in that case, if you
+have gotten to the point where it's past
+the 20 minutes and you realize that
+you've gone down a path that isn't
+leading to a solution, I wouldn't say
+that that's necessarily time to say,
+"Okay, let me jump and look for how
+people have solved this." I would say
+that's a good time to come back, start
+from scratch on a different day and try
+it again knowing that your previous
+attempt didn't work. Like you still want
+to be taking the steps to grow and
+evolve and try different methods even if
+you didn't get it within the 15 to 20
+minutes the first time.
+>> Yeah. When when I went over the 20
+minutes, I I stick with it for hours,
+but then I reach a point where I drop
+it.
+>> Okay. Yeah. hours would be too long. But
+yes, that makes sense.
+Okay. And then also once you have
+determined the way to the solution, I
+would also say give it a few days, come
+back, try and do it from memory, type it
+all out, make sure you can apply what
+you've investigated and researched.
+>> Yeah, I've done that, too. Sorry, I
+didn't say that. Yeah, I've done that,
+too.
+>> Just covering all the bases.
+>> Yeah. Yeah.
+>> Okay.
+Any other questions?
+Yes, Rebecca.
+>> Um, this was a question actually for
+Mauricio. I was curious if the ones that
+stumped him were medium problems or easy
+problems or mix. I'm just curious if
+that's okay.
+>> Yeah, it mix.
+>> Okay. Yeah, sometimes a medium,
+sometimes
+an easy that become harder because I
+took a completely different path and
+probably there's not a possible way that
+way. So I got stuck.
+So I keep insisting on following the way
+that won't lead me anywhere. So yeah,
+that's why it becomes not easy.
+Mhm.
+Yeah. Sometimes I will stick to a
+an approach even if I know that it's not
+the right approach if I'm seeing like
+good progress. So like let's say I
+submit something it solved about like
+onethird of the test cases and
+what it revealed was just some edge
+cases that I missed. Like okay I'm
+close. Let me add it. Let me do some
+research. Let me like think back. Look
+at the problem.
+think about how I would approach it
+again.
+Maybe add some new conditions. Maybe
+like twist it up a little bit. Try
+again. All right, maybe I've solved
+another third of the cases. So now I'm
+at like 2/3. All right, now my my
+solution is looking a little
+clunky, you know, like this can't be the
+most efficient solution because I've got
+like four nested if conditions. So, I
+know that that's not right, but I want
+to see how far I can take it and maybe
+I'll still get to a solution even if
+it's not like
+good, right? Even if my code doesn't
+really like look great, if I'm still
+making progress, I might still follow
+that train of thought for a while. And
+then once I'm like, okay, I've kind of
+hit the limit. Maybe I've hit the test
+cases. Maybe I haven't passed all the
+test cases, but I've thought about the
+problem and I've gotten to a certain
+point and I'm like, "Okay, I can think
+about this problem, but the way that I'm
+the the lens that I'm viewing this
+problem through has some kind of flaw in
+it." Like, I'm I'm making progress, but
+I'm not actually seeing the real
+the real sequence of operations that's
+that's going to be the best way to solve
+this problem. And that's when I might
+like take a day or two, step away, come
+back, think about the problem again, or
+think about ways that I've solved other
+problems that maybe were similar, and
+then think how can I apply those those
+concepts here to get to get to a better
+solution. Because usually once you have
+like a bunch of if conditions in there,
+you're kind of going down this path of,
+oh,
+>> yeah, that's what I was going to say.
+When I find myself coding just to pass
+the next test and not generalizing the
+problem, I feel like I'm going down the
+wrong rabbit hole. I say, "Okay, this is
+all wrong. I'm not generalizing enough,
+but I cannot see how to. So, I'm stuck."
+>> Exactly. Like one or two, maybe three if
+conditions at most. You know, even the
+best algorithms can have like a couple
+of like binary search has like three if
+conditions. So, like once you're there,
+like that's okay. you're pushing it, but
+that's okay. If you're if you're doing
+more than that, if you're just adding if
+conditions to catch certain edge cases,
+maybe it's time to think about it. I
+like that word, generalize it. Go back.
+I'm I'm overanalyzing. I'm like over
+conditionalizing this problem. I need to
+think of a more general approach that
+hits all of the test cases.
+>> And that doesn't come easy sometimes.
+>> No, it doesn't. No, it doesn't. All
+right, good questions. Any other
+questions or thoughts before we move on?
+Okay. So, we're going to do a little
+experiment today. I'm going to try using
+breakout rooms. Um,
+but before we do that, I'm going to
+pause the recording and we'll test it
+out real quick to see if I can actually
+do it and then I'll come back and do it
+for the record.
+Okay. So, the test went great. Figured
+out the figured out the uh how to do the
+breakout rooms. So, what we're going to
+do is that I'm going to give everyone a
+le code problem. I'm going to go ahead
+and throw that into the chat right now.
+So, if everyone wants to open this
+problem
+um just to have it available. If you're
+on your phone, open it on your phone.
+Doesn't matter. Um we're not going to be
+doing any coding. I just want everyone
+to have this problem open and looking at
+it on their own devices.
+So I will share my screen real quick.
+So the problem we'll be looking at is
+can place flowers. It's an easy problem
+and what we're going to do is that each
+of you are going to read through this
+problem and then I want you to follow
+the typical steps that I recommend or
+whichever steps that you are doing in
+your practice which is to read through
+the problem, pull out any assumptions
+you have about the problem, any
+behaviors of your understanding about
+the problem.
+You can start doing some pseudo code
+where you're thinking about how you
+might approach the problem. You can come
+up with multiple approaches if you want
+to do like a brute force versus like a
+an inspiration or an idea for a more
+efficient approach. Any amount of pseudo
+coding that you want to do, test out the
+parameters, maybe test out a few test
+cases just to see what they say. Um,
+I'm going to give us all about 10
+minutes to do this and I will be doing
+it in the main session while everyone is
+in their room, their breakout rooms. Um,
+I I would not like for people to start
+any code. If you have
+done masterful pseudo code, you've
+explored every assumption you can make
+about this problem, read through all the
+constraints, interpreted every single
+kind of approach you can, you've come up
+with like three different approaches at
+different v variables of oe efficiency,
+then maybe then could you start doing
+some coding. But I'm only giving us 10
+minutes, so I don't think that's enough
+time for any of that. Does that make
+sense? Does anyone have any questions
+about that?
+>> I mean, just pseudo code, right? Jess
+Sudoko,
+>> I have a question. Um, what is N?
+>> What is what is what?
+>> Then the letter N.
+>> N uh, yes,
+you're saying that in the constraints.
+Yeah. So N typically refers to the
+length of a a list. So I'm not showing
+my screen, but there's a list in this
+problem. The first example, it's 1 0 0 0
+1. It has a length of five because there
+are five integers within it if I'm
+counting that right. 1 2 3 4 5. Yeah.
+Um, so typically n refers to the length
+of an array. Here in this problem
+though, they're giving you an n, which
+I'm assuming they explain as a part of
+the problem statement.
+It looks like yes, they do. So in this
+case, they are kind of twisting that up.
+So everything I said, if you see n in
+the constraints and you don't see n
+anywhere else in the problem, it's
+usually referring to the length of an
+array. In this case, they are giving you
+an integer n, but they're also
+explaining where this in this not
+integer, they're giving you a variable
+n, and they're explaining as a part of
+the problem where this variable is
+coming from and what it represents. Um,
+so I'm not going to give anything away,
+but we'll talk about it once we come
+back from breakout rooms.
+Okay, any other questions?
+>> So, it's like a we have to resolve it in
+a group thing.
+>> Nope. So, this is just a practice um
+pseudo code problem solving, breaking
+things down. I just want to see what
+everyone comes up with and then we'll
+come back as a group, walk through walk
+through it together as a group. I'll
+pulling out what I've I'll point out
+we'll talk about what I've pulled out
+and then I'll see what other things
+people might have discussed or thought
+about on their own. Um
+would people like to be in groups
+though? I mean I could put everyone into
+groups of two or so.
+>> No, I'm okay. I'm just asking.
+>> Okay.
+>> I think first time it's good to have put
+everybody in 10 minutes on their own.
+>> Yeah, I agree.
+very whatever.
+>> Yeah, this is just an experiment. I just
+want to see what happens. See what
+people come up with and then we'll come
+back.
+I agree. We might do groups in the
+future if if everyone likes this and we
+decide to do again. We'll we'll
+experiment with other ways. Um yeah, I
+got some feedback that maybe we should
+try breakout room. So, I'm going to try
+it.
+All right, everyone. So, I'm going to
+send you all into breakout rooms. you
+have the problem and then again just
+read through the problem start to finish
+one maybe a few times. Pull out any uh
+things you need to understand the
+problem. Make some assumptions. Write
+those assumptions down. Try and
+interpret the constraints, the examples.
+Maybe come up with a pseudo code game
+plan of how you would approach the
+problem. Maybe come up with a few. And
+then we'll reconvene in about 10
+minutes.
+Okay, so
+everyone is assigned a room again. So
+I'm going to open all the rooms and just
+join.
+Perfect. Just me. Love it.
+So 10 minutes.
+We all remember that's fine.
+All right, everyone watching the replay,
+we're going to do some pseudo code
+together.
+All right. So, you have a long flower
+bed in which some of the plot pots plots
+plots are planted and some are not.
+However, flowers cannot be planted in
+adjacent plots. Okay, so given an
+integer array flower bed containing
+zeros and ones where zero means empty
+and one means not empty and an integer n
+return true if n new flowers can be
+planted in the flower bed without
+violating the no adjacent flower rule
+and false otherwise. So there's a lot of
+information there, but we're going to
+keep moving.
+Also going to open up my participants
+window to see if anyone comes back
+early.
+So example one flower bed array equals 1
+0 0 1 with an n of 1. So the output is
+true there. And then we have 1 0 0 1 1
+n= 2 false. So even though we have three
+zero open potentially open spaces, we
+cannot plant there. So now I'm going to
+read this again just to see what I can
+pull out and make sense of. So you have
+a flower bed in which some of the plots
+are planted and some are not. I'm
+assuming we read down here but one means
+that it is planted. Zero means it's not.
+Flowers cannot be planted in adjacent
+plots. Okay. So what I'm understanding
+here is that maybe I cannot plant here
+or here because it's next to a plotted
+space.
+Given an integer array flower bed
+containing zeros and ones where zero
+means empty. Yes. and one means not
+empty and an integer n return true if
+new flowers can be planted in the flower
+bed without violating the no adjacent
+rule and false otherwise.
+Okay, so I didn't understand it the
+first time I read it, but now the second
+time I've gone through it, tried to make
+some assumptions and then confirm the
+assumptions as I read it again. I have a
+better understanding of how this problem
+might work. And so
+what I am given is given list of
+I want to put these in quotes plots
+um which are
+potential spaces to plant
+and then just reummizing
+again
+int one represents
+a spot
+I have someone returning.
+>> Hey, Jean. Did you get disconnected
+somehow?
+>> Yeah, I think I left the room by
+accident. Were we supposed to be in our
+own separate rooms or were we supposed
+to be grouped in two or something?
+>> No, everyone's in their own separate
+room.
+>> Oh, okay. Okay.
+>> So, let me try and reassign you.
+Oh,
+somehow I've
+don't have any spaces for you. I don't
+know how that happened.
+>> Oh. Oh, wow. Okay.
+>> I thought I created enough rooms, but
+maybe I didn't.
+>> It was like six cuz I was in room six. I
+think I was.
+>> Someone else seems to be in room Oh, no.
+It says that you're in there still.
+Okay. I'm gonna move you to it.
+>> Okay,
+>> that's so weird.
+Sign to room six.
+Okay, you should be getting the invite
+to join that.
+Perfect.
+Okay, so where was I? Ant one represents
+a spot
+that has been planted.
+zero is empty.
+Okay, that makes sense.
+Okay. And then we are given n
+which represents
+the amount of spots
+we have been instructed by the
+overlords. I guess instruction to plot.
+If a space has been plotted aka
+equals 1,
+we cannot plant in the spot or index
+on either side.
+Okay, that makes sense.
+And then what we want to return
+return true
+if we can fill all empty
+nonadjacent
+plots
+up to n false
+Otherwise,
+okay, I think we have a solid
+resumization. So, I'm just going to look
+at my constraints here. Flower
+bed.length equals
+can be equal to 1, greater than or equal
+to 1, less than or equal to 2 * 10 4th.
+So, 10 4th is 10 * 10 is 100,000,
+10,000. So, 10,000 I believe. So, 20,000
+forcing us to do some math there. So the
+length of the array flower bed
+is going to be between 1 and 20,000.
+So we can get a lot of flower bed uh
+plots there. So flower bed I is zero or
+one meaning planted or unplanted. There
+are no adjacent flowers in flower bed.
+So they won't give you an array where
+let's say one and one would both be
+right beside each other. So all of the
+test cases that we're going to be given
+and I'm actually going to write this
+constraints
+all test cases
+will follow
+the non
+adjacent rule.
+So they're not going to violate the non
+uh non-adjacent flower rule in the test
+cases at all. So we will never see two
+spots filled beside each other. There
+will always be if there's a one, there's
+always going to be a zero on either
+side. In both of these examples, the
+ones are at the ends. But we can assume
+that you could put one right here,
+right? Because that's a zero, that's a
+zero. So if our test case looked like
+this, that would be fine. And actually,
+we might get one like that where all of
+the potential spots have already been
+filled without breaking the rule. So it
+would be filled, unfilled, filled,
+unfilled, filled. So that wouldn't break
+the rules, but then we'd be given an n
+that is one or greater. And so we'd have
+to return false in that case because
+they would already be filled. But they
+won't break that rule within building
+the test cases, if that makes any sense
+for anyone watching.
+Okay. And then n, the amount of plots
+that were meant to fill can be greater
+than or equal to zero. and less than or
+equal to flower bed.length.
+So assuming that all of these were zero,
+we could get exactly enough to fill all
+the non-adjacent spots or we could be
+given too many. I guess it really
+doesn't matter. Um, but we're not going
+to get an end that's greater than our
+length.
+I don't think that's really useful for
+us in any way, but it is good to know.
+Yeah, I don't think there's anything
+that we need to pull from that.
+Okay, let's see. How would I approach
+this? So, really what we're saying is
+that
+we're looking to fill all non-MPY spaces
+and we have a kind of counter. So, I
+might use n
+use n as a
+countdown kind of where
+every time I plant
+a spot
+subtract.
+And then just as like a loose pseudo
+code plan,
+iterate through
+the flower bed
+array one at a time
+and check
+either side for flowers.
+then
+use if statement to
+determine
+if I can plant or not.
+So that's where we are after 10 minutes
+with the brief little interruption
+there. I think I've got a good idea for
+how I want to approach this. That should
+be O of N. It's pretty straightforward.
+There might be a more efficient way to
+do it. I don't really think so, but I'm
+not thinking about it too hard because
+well, we're out of time. Um, but this
+seems pretty good. If I'm just going
+through the loop once and determining
+it, then at the end I can return
+if n still or if n
+is greater than zero after
+one iteration
+then return false
+because it's not possible, right? Not
+possible.
+So, pretty simple. That would be an O of
+an approach because we're just looping
+through
+the array once. Um, that's pretty good.
+So, I'm not really going to think about
+it too much too much more than that
+while we're just kind of sitting here
+waiting for everyone to return. So, big
+O
+big
+O then.
+All right. And with that, I'm going to
+bring everyone back from their rooms.
+Okay, I think we've got everyone. Let's
+see.
+Yeah, all participants are It's actually
+kind of hard to tell.
+If based on this little
+I'll just delete the rooms. That'll be
+fine. Delete.
+I just delete all the rooms.
+Delete. Sorry.
+I'll have to investigate how to do this
+cleaner later.
+Okay. So, no.
+Oh, is Mauricio still in there? No. No.
+Mauricio's here. won't let me close that
+room, but that's fine because you're
+here. Okay, welcome back everyone. What
+did everyone think? How did they feel
+about this problem?
+I got a thumbs up from Rebecca.
+Jenny says it wasn't too bad. Turtle
+Wolf gave us thumbs up. John,
+>> and I don't know how it feel until it it
+runs the test. more.
+>> Okay.
+Does anyone want to um Yes, Ahmad said I
+understand N. Yes.
+So, does anyone want to walk us through
+their pseudo code or what uh their give
+us an explanation of the problem? Run
+through what they've got written out for
+us.
+>> Yeah, I can. I want to do that.
+>> Sure. Perfect. If you want to share your
+screen with the green share arrow and
+we'll we'll take a peek. Okay. So, can
+you see it?
+>> Yes.
+>> K didn't get much done, but this is what
+I got
+as far as you code. I mean, as far as
+the problem, sorry.
+So, you're giving this flower bed uh
+with ones and zeros. Uh ones means there
+is a flower there and zeros there is
+not. And you are given the N which is
+the new flower beds that you need to
+figure out if you can plant or not.
+And the restriction for being able to is
+that they are not adjacent. So basically
+you got to figure out to plant it in
+places where there is not a flower bed
+in either side. I mean a a flower in
+either side. So for instance you're
+giving one here. So it returns true
+because you can plant it right here and
+there is no flowers neither to the right
+or to the left. So it satisfies the
+constraint
+>> and here you don't you can plant one but
+that's it. You cannot plant the two that
+is being proposed because there is no
+more you will be violating the adj
+adjacent flower constraint. So it
+returns false.
+So here are the constraints. uh the
+length of the I mean how big the flower
+bed can be is from one to two to the 10
+to the four two times to 10 to the four
+and the flower bed contains one or zero
+depending on if it's there's a flower
+there or not a flower there or not and
+uh no adjacent flowers in the flower bed
+which will mean one
+by another one and uh the number of new
+flowers could be between zero and the
+length of the flower bed.
+So as far as the pseudo code figure you
+have to traverse that indic uh that
+array somehow. Sorry I put index there.
+Uh identified where are the zeros in
+between zeros which means an available
+spot uh that where the constraint will
+be okay.
+So you will have to check i minus one
+and i minus z. But you also have to take
+into account the first and the last one
+because if it's first you only need to
+check position i + one and if it's the
+last you only check to need to check
+position i minus one
+count those occurrences and if the
+numbers of occurrences is equal to n
+return true otherwise return false and I
+start coding there but I ran out of time
+so that's what I got. Okay, now I did
+not require anyone to code. In fact, I
+said not to unless you really needed
+unless you really had time. But that's
+okay. Um, I think this is a good
+explanation of the problem. Wait, can
+you share your screen again?
+>> Um, I think this is a good explanation
+of the problem and your pseudo code is
+good. It's pretty much the same as mine.
+Um, and you're counting those
+occurrences.
+So I just want to take a peek at your
+code since you did write it for I in
+range then flower bed.
+>> I write a little bit.
+>> Yeah. If flower bed I equals z
+and flower bed i + 1 equals z count +
+one. Uhhuh. If flower bed l Oh, you've
+got a misspelling there. I'm surprised
+it's not telling you.
+>> I'm not seeing any errors. That's a
+that's random. Um, if length flower bed
+minus one equals zero and flower bed. So
+you
+>> have to write something here, but I got
+kicked out of the break code. So
+>> yeah, but we got kicked out. Yeah,
+perfect. So it looks like your approach
+is pretty good and you were getting some
+code written down to test those
+conditions that you wrote out. Um, and
+maybe you were just a couple of steps
+away from completing your first
+iteration to test against your test
+cases. I think that's great and that was
+a a good explanation. Thank you.
+Okay, thank you.
+>> Okay,
+so I'm going to share what I wrote. It's
+more or less the same,
+but I just want to point a few things
+out.
+And I like seeing the difference, too,
+because you wrote all of your
+pseudo code above the function. Um,
+which is nice because it kind of keeps
+your function itself clean. And in the
+real world, people usually write their
+kind of function description summaries
+above their
+actual functions. Um, however, in this
+case, you wouldn't be writing a bunch of
+pseudo code above a function that you're
+putting into a production use case. So,
+it's a little different. The use cases
+are a little different. However, um, I
+it's just fun to see those kind of
+little differences there. So what I have
+that is slightly different is that
+um I have a return condition written out
+here as well. Um I don't think I saw
+that in yours which is again very fine
+because you knew what you wanted to do
+but in your pseudo code I didn't see the
+condition of how do we determine once we
+got
+>> sorry I put the return in front of the
+ifs in my pseudo code. Sure.
+Yes. I was just looking for the
+condition statement that in your pseudo
+code that says that if we're because you
+I think you wrote we'll count the spots
+that we can fill. But then I would want
+to see that return statement of if the
+spots that we have filled is less than
+in then we're going to return false
+because we
+>> I put that in the two last two lines.
+>> Okay. So you did have it. Perfect. Yeah.
+Great. Good to know.
+So see you got everything then that was
+flawless. So what I wrote here in is
+that we are given a list of plots which
+are spe potential spaces to plant.
+Right? Pretty much the same thing that
+Mauricio just summarized for us.
+Integer one represents a spot that has
+been planted. Zero is empty and
+available to be planted. We are given uh
+I that's a misspelling. We are given
+zero which rep Nope that was right n.
+We are given n which represents the
+amount of spots we have been instructed
+to plot.
+If a space has been plotted aka equals
+1, we cannot plant in the spot or index
+which again came up in Mauricio's
+example the index minus one or plus one.
+So he used like actual index notation in
+his pseudo code which is I liked. We
+cannot plant in the spot or index on
+either side.
+And then one thing from the constraints
+and this is an assumption that I made
+that I would have to kind of test out
+and see. So this constraint here was
+interesting to me because it says there
+are no adjacent flowers in flower bed.
+So you could interpret that to mean that
+like we're instructed you can't fill in
+any adjacent spaces. But how I
+interpreted that is that we also will
+not receive a flower bed array. like we
+won't receive an initial list where
+adjacent spots have been planted
+violating the instructions that were
+given.
+There's no real like
+I guess there's no like real
+um
+how do I want to say that? I don't think
+that really affects us in any way. But
+it's good to it would be good to know
+that if I was given a test case that it
+doesn't violate the rules that I can
+build my pseudo code my solution in good
+faith that if I check for a zero and
+check on either side of it that I will
+be
+following the instructions as well the
+test case will follow those same
+instructions and I don't have to account
+for any kind of weird edge case based on
+that.
+So that was an assumption
+which I think is right. I don't know.
+And then very similar to you, I just
+said we'll use n as a countdown where
+every time I find a place to plant, I
+will subtract it from n. I will iterate
+through the flower bed one at a time.
+Check if either side for flowers, aka
+like you said, ius 1, i + 1 equals 1.
+Use an if statement to to determine if I
+can plant or not. And then at the end if
+n is greater than zero after one
+iteration return false because it would
+not be possible to fill all empty
+available non-adjacent violating plots.
+And then I just for fun have my big O
+efficiency determination of ON.
+So that's what I have. You've seen two
+examples now of Mauricio's example and
+mine example. Mine example. my example.
+Um,
+completely lost my train of thought
+there. You've seen two examples. I hope
+this was a good exercise for everyone.
+Uh, Rebecca said, "I think it's
+interesting how you asking greater than
+zero instead of just being equal to
+one." So, you mean
+what do you mean by that?
+You're you're muted.
+Um I I was going to correct myself
+because it occurred to me that that's
+the count if the count is greater than
+one, not that the uh value is one. I
+tend to get tripped up with values and
+counts and um indexes. Yeah,
+>> no worries. If I wrote it in my
+language, so if you wrote it in your own
+way, you would better understand what
+you wrote, right? And not
+>> I understand that. Yes. So disregard my
+comment. Okay.
+>> All right.
+So, what are people's thoughts? Does
+that make sense? Did anyone not get
+pseudo code written out? Did anyone kind
+of struggle to get some instructions
+written out?
+Okay. So, everyone had a flawless pseudo
+code attempt. Got all their ideas
+written out, all their assumptions
+written out.
+Did anyone have an approach that was
+different than what Mauricio and I came
+up with?
+Okay, so we all collectively came up
+with the same idea. Good. This one is
+pretty straightforward. I don't really
+think there's too many ways you could I
+mean certainly you could approach it any
+number of ways but I don't think there's
+too many ways that you would come up
+with on the spot beyond this like you
+might come up with one or two other
+ideas but I think this is a pretty safe
+approach to this problem.
+So I wanted to do this because I wanted
+to make sure that everyone is thinking
+about problems in these terms of how can
+I read through the problem? How can I
+pull out statements that make sense to
+me that don't make sense to me? Make
+sure I'm reading through both examples
+to understand them. Making through
+making sure I'm reading through
+constraints to see what I can pull from
+them. And then also, as I always
+recommend, resummarizing the problem in
+your own words.
+That's for your own benefit. But then
+also for an interviewer, they want to
+hear you resummize the problem once you
+understand it. and they want to hear you
+kind of think out loud about your code
+as you're going through it. So that
+could be while you're typing or you
+could write a line or two of code and
+say, "Here's what I've just done to
+resummarize for the interviewee." Those
+two things of thinking through a
+problem, writing it out in your own
+words, summarizing it, explaining it are
+all things that are valuable to the
+interview process outside of just
+strictly coding a solution. It's kind of
+like a
+split into thirds. There's reading and
+understanding the problem, resummarizing
+and pseudo coding a problem, and then
+coding a problem, coding a solution that
+passes all the test cases.
+Some of them have different levels of
+like importantness. So, coming up with
+the solution that passes all the test
+cases, that's obviously going to account
+for like 60% of the requirement. But if
+you're not hitting those first two as
+well, then that's going to it's going to
+make you not look as great. Like you can
+come up with a solution that passes all
+the test cases, but if you can't explain
+what you did, why resummarize the
+problem clearly, then that's not going
+to show that you work well with a team
+because how are you going to explain
+your thoughts to your team members? How
+are you going to able to brainstorm or
+pair code with your team members? how
+you're going to be able to like have
+those cohesive conversations if you're
+struggling to explain your thinking
+around coding. So that's why we look for
+that. That's why it's important. Um so I
+just wanted to do this little exercise
+to see what people were able to come up
+with. Um this one was pretty basic. So
+maybe in the future we'll try one that's
+a little bit harder to where I kind of
+force everyone to come up with different
+approaches. um really push that problem
+solving skill set that we all are
+growing and cultivating. Um but yeah,
+does anyone have any questions about
+what we've done today or about this
+problem at all?
+Perfect.
+Okay. So, we will likely code up this
+actual solution, see how it looks on
+Wednesday. Then we're also going to try
+out um coding up a solution for a
+problem that we worked on last
+Wednesday. So, that should take up all
+of our Wednesday session. So, it's this
+problem
+can place flowers. And on last
+Wednesday, we looked at the problem.
+I'll just post it here for everyone.
+It's a medium problem.
+>> Jump game.
+>> Jump game. So, if you have a chance and
+you want to try a harder problem, we're
+going to go over jump game. I just put
+it in the chat in on Wednesday. We're
+going to look at some potential
+solutions, potential approaches, that
+kind of thing on Wednesday. And I'll
+post this into the
+weekly schedule channel as well with an
+actual direct link if you want to check
+that link at a later date, like if you
+want to try it tomorrow or the day
+after. Um, but yeah, we will look at
+that on Wednesday.
+So, thank you everyone for joining and
+if no one has any questions, we will
+conclude perfectly on time today.
+All right, have a great rest of your day
+everyone and see you next time.
+>> Thank you.

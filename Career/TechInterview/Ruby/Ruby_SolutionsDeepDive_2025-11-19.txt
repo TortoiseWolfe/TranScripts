@@ -1,0 +1,1200 @@
+All right, so welcome to this week's
+technical interview. Today is Wednesday.
+Um, a couple of changes though to our
+structure upcoming. Um, so I did miss
+last Sunday, so we didn't have any new
+problems to go over from then for today
+to kind of break down into pieces. Um,
+but after Thanksgiving, so next week is
+thanks Thanksgiving and then that
+following Sunday, there will be no more
+Sunday sessions. We're going to be
+switching to only doing Wednesday
+sessions.
+And moving forward, I'm going to reserve
+the weekly meetings um exclusively to
+give people an opportunity to do mock
+interviews or work on mock interviews.
+We can certainly explore topics beyond
+that, like kind of revisiting the
+highlights of how to break problems down
+or look at problems that you might be
+struggling with, but the the kind of
+primary focus will be on giving people
+an opportunity to do mock interviews. Um
+there's a couple of reasons for this
+moving forward and that is I'm kind of
+[laughter]
+overwhelmed over here on my own. I've
+I've had to skip a couple of the Sunday
+meetings which everyone may have noticed
+um just to do to like kind of burn out
+and overload from all of us having our
+own lives, right? So I have my own life
+as well and I'm kind of overwhelmed with
+all of my little projects. So it's been
+hard to keep up with everything on my
+end and it also aligns with the
+direction um that Dr. Dr. Emily wants us
+moving forward, which is just kind of
+focusing on the core things week to week
+um and helping you guys advance through
+to the next phase. And so the best way
+to advance forward to the next phase is
+to practice those mock interviews and
+getting through the tech interview. So
+that's a little bit about what's coming
+up. So we will do probably next Sunday,
+this coming Sunday's
+um session, still using the mock
+interview system that we had been using
+before. And then next Wednesday, I think
+we still do it unless people are just
+going to be out of town or not
+available. Um, and then from that point
+on, it'll only be the Wednesday
+sessions.
+Does anyone have any questions that
+they'd like to ask about that structure
+change?
+>> So, the Wednesday afternoon marks at
+two.
+>> That's right.
+>> Okay.
+So we just deal with whatever problems
+we had with problems on our own.
+>> Yeah, I mean um we can still
+I mean there's plenty of like problems.
+So we can still like discuss problems
+that you might want to work on, but
+again I think if you wanted to focus on
+a specific category or specific type,
+there are easy ways to find like
+playlists of those problems. Um, so in
+general it's just going to be mock
+interviews that I select at random to
+provide or that you have at random on
+your end that you'd like to look at. Um,
+and just really getting that that
+practice of sounding your thinking out
+loud, practicing your pseudo code,
+practicing your problem solving, that
+kind of stuff. So yeah, none of the no
+more of the like homework, breaking down
+those homework problems, um, that kind
+of approach anymore. It was fun while it
+lasted and you have a whole library of
+videos where we were doing that. Um, but
+yeah, moving forward, we're kind of
+cutting back on that.
+>> Is it going to be the same um amount of
+time, an hour, an hour long?
+>> Mhm. Yes.
+>> Yeah. So, there'll still be time for
+coaching after the problem and
+discussing like alternative uh pathways
+you might could take or diagramming out
+the problems. It's going to be the exact
+same that we used to do on Sundays. Um,
+just on Wednesdays and exclusively
+that.
+>> Okay. Uh, I got a question about the
+structure. Um, so how does this go down
+then? We just show up on Wednesday and
+someone signs up for a mock interview.
+Is that it? Well, we got to You don't
+pick us at random. We have to sign up,
+right?
+>> Um, no. We can I mean I'm not going to
+like call you out and say today's your
+day, but um kind of just volunteer basis
+unless someone tells me ahead of time
+that they'd like to take that slot. Um
+but I'm not going to require people to
+sign up ahead of time.
+>> Okay. Okay. But it's voluntary though.
+>> It is voluntary
+>> cuz you know from my point of view I'm
+still fairly new to this. Um and I want
+to observe a few more of these. I think
+I've maybe looked at Lisa do hers and I
+haven't really looked at anybody else do
+theirs and I I just want to see how
+those things go before I jump in and
+want to volunteer.
+>> There are a couple in the library. So if
+you want to look back for old mock
+interviews, there are quite a few there.
+Um but moving forward, the best way to
+get through that is to kind of jump in.
+Even if you aren't ready to implement um
+code from scratch, practice your pseudo
+code. Can you do a mock interview using
+just pseudo code for 20 minutes? That's
+totally fine. You're practicing at
+whatever state you are. So if you're
+still early mod 2, focus on pseudo code.
+If you're late mod 2, but you're feeling
+like you want more practice, do pseudo
+code and then test basic implementation
+of data structures. Like wherever you
+are, it's good to get that practice
+sounding out loud, performing in front
+of an audience and showcasing the steps
+and then I can also kind of course
+correct you if you need it.
+>> Okay. In the course of these interviews
+though, um I feel like I can get through
+the pseudo code. I don't know about like
+the final code. Uh would that be
+permissible for a mock interview for me
+to just walk through the pseudo code and
+what I think the problem says?
+>> Yes.
+>> Okay. All right.
+>> And then we can follow up and discuss
+what those coding steps might look like
+and you can just kind of discuss what
+you think you would do because if you're
+doing the pseudo code, you should have
+an idea of what code you would write.
+even if you're not exactly sure on the
+syntax or like order of operations, that
+kind of thing.
+>> Okay, thanks.
+>> Yeah, I'll start volunteering just to
+I'm I'm over there to get them done out
+of the way anyways.
+>> Yeah, and John has done a few inter tech
+interviews before, Linda. Um if you want
+to look back through them. I know it's
+kind of tricky because they're not cons
+like we haven't consistently done mock
+interviews based on availability or if I
+wanted to kind of like derail the
+conversation for that day, but a lot of
+the Sunday sessions do have mock
+interviews. So, if you're looking
+through the tech playlist,
+>> looking specifically for the ones that
+have the title mock interview and then
+just kind of like
+jump to minute like 20 if you want to be
+sure that someone's doing one.
+>> Okay, sounds good. Thanks.
+>> Any other questions? Thank you for the
+questions.
+>> Cool. So, before we move on to said mock
+interviews, I do have something I want
+to share. Um, I only just briefly typed
+this up right before the meeting, so
+it's still in
+um a draft state.
+Let's see. Okay.
+But [snorts]
+I think I'm sharing that. Yes.
+So, I did some actually I just kind of
+stumbled onto it by accident. I looked
+at my kind of track record of technical
+interviews that people have signed up
+for. Um, and it turns out I have
+conducted at this point over 115
+technical interviews. um
+over the course of my time here, which
+is quite a lot actually. That's quite a
+lot. Uh and so I realized it would maybe
+finally be time to kind of compile all
+of that information, all of my
+observations, all of my recommendations
+that I've given over the time. Um
+experience just from doing these
+coaching, these group coaching calls and
+kind of breaking problems down. What
+does success look like for the technical
+interview? And so this is just kind of a
+basic rubric that I drafted up. Um,
+again, just drafted it up literally
+minutes, finished minutes before we
+started today. So, I'm just going to
+quickly walk through and if anyone has
+any insight or um ideas or anything
+feedback they'd like to give, I'm
+totally open to that.
+So the idea here is I wouldn't
+necessarily be using this to like like
+evaluate or judge you based on your
+performance. It's more so from your end
+so that you know as someone who's taking
+the technical interview what should I be
+looking for and what should I be like
+what should my goalpost be for
+performance in a technical interview so
+that I'm prepared when I show up. So
+we'll start with the meeting
+expectations because that's the most
+applicable. [snorts] Um and so I have
+four kind of groups here which is
+communication. How are you verbalizing
+and communicating with me both during
+and after the technical interview?
+What is your technical uh knowledge
+skill set? So that's seven basics mod 2
+data structures algorithms all of that
+good stuff. Problem solving. What does
+your problem solving process look like
+as you're moving through breaking down
+the problem reading the problem?
+starting your pseudo code, writing your
+code, and the last one is just
+behavioral. What kind of like mindset or
+behaviors are the best thing to emulate
+as I'm moving through both practicing
+and performing in the technical
+interview?
+And then just this last column here is
+just like why like what the result of
+these behaviors would lead to. So like
+if you were in the below expectations in
+your knowledge and behaviors then you
+would be taking longer than 20 minutes
+to complete a problem. If you were doing
+everything in the meeting expectations
+column you would probably be in the
+bucket of more or less hitting that
+20-minut timeline. And then these are
+just kind of like add-ons if you were in
+the exceeding expectations. It's
+basically everything from meeting plus a
+few extra. um then you are probably on
+the way to completing it in under 15 or
+10 minutes. And these aren't like hard
+and fast rules. These are just kind of
+like
+if you're following these steps, these
+are kind of the outcomes that you might
+expect.
+So this is kind of just a distillation
+of things that we talk about every week.
+Um but I wanted to write it out for
+everyone. So, for meeting expectations
+in communication, I'm expecting you to
+be able to restate the problem. As you
+read through it or after you read
+through it, explain to me, okay, this is
+what I think about the problem, what
+it's asking me, what I expect to um do
+for this problem, and what it's
+expecting me to like return. And then
+I'm going to start my pseudo code and my
+my coding, everything resol revolving
+around that. As you are working through
+your code, you're sounding out your
+thoughts. You're explaining maybe not
+like at every single like thought that
+comes through your head, but you're
+thinking, "All right, I'm writing this
+pseudo code because I expect to do this.
+Write out your pseudo code. This is how
+I expect to go for my pseudo code. I'm
+going to start writing out my function
+to do XYZ. Do some of that. I'm going to
+make an assumption and test it." So, you
+know, it kind of sounds like a little
+bit of back and forth with yourself or
+with me as you're writing through the
+problem. And then [snorts] after the
+technical interview, if I'm asking you
+follow-up questions about the problem or
+about how your code works, you're able
+to confidently understand my question
+and give me an answer that makes sense
+and shows that you have that knowledge
+set.
+Um, I don't want to go through literally
+every bullet by bullet here for you, but
+if you want to take like a screenshot of
+this, I'll post it in Discord as well.
+Um, but just kind of like the high
+level,
+do you know all of the the seven basics,
+the data structures, everything that you
+learned in mod 2. Um, and can you like
+confidently apply those to problems that
+you're working on in le code and hacker?
+Do you understand the inputs and outputs
+that they give you either in the
+function parameters or in the test cases
+that they provide? Um, if you're using
+libraries or methods, can you read
+through that documentation and correctly
+implement it and understand it? Um, so
+we talked about the find, replace, and
+count methods recently, those string
+methods. If you were to look those up,
+could you like really quickly and
+confidently figure out like, oh, this is
+the right thing that I need for my
+problem, and I know how to use it, and I
+know what it expects to be given and
+returned back to me.
+your problem solving steps. Are you
+understanding the problem? Can you break
+it down into smaller steps for pseudo
+code? Are you testing incrementally
+along the way by adding print
+statements?
+Um, when you face errors, are you able
+to troubleshoot them and understand
+where they're coming from? For
+behaviors, do you read through the full
+problem, including examples and
+constraints? Do you revisit the problem
+to update your pseudo code to make sure
+you haven't missed anything? Um, when
+you face an error, do you bounce from it
+really quickly and you're not getting
+like, "Oh god, I'm overwhelmed by the
+error that I'm seeing." Do you know what
+steps to take? If you get stuck, you can
+reread the problem or diagram out the
+problem with pen and paper, make new
+assumptions to test, so on and so forth.
+And whether you pass or fail, can you
+take feedback um and use it to advance
+yourself? So, that's kind of the general
+idea here. And then we have some below
+expectation stuff too. Um, basically
+just all of these bullet points, but in
+a sad way. And then the exceeding
+expectations are not things that I
+expect you to show up having or knowing
+or being like a master of. Um, but
+they're just kind of like nice to haves
+that you should be aiming for once you
+reach the junior developer level and
+start doing your job hunt. these would
+be things that would be that would stand
+out to an interviewer um in the job hunt
+when you get to that level.
+Okay, so there's kind of a lot here and
+um I'm going to keep working on it, but
+does anyone have any thoughts or
+feedback or anything they'd like to say
+about this?
+Okay, no ghost town. Cool. Um, well, I
+hope this will be helpful and my goal is
+to put it in mod 2 as well in the
+technical interview um like prep
+area of like what does a successful
+interview look like? Um, and kind of
+just have that as a resource. So, that's
+the long-term plan is for it to exist
+there. Um, in the meantime, I'll
+probably post it into Discord as well to
+get more feedback on. And yeah, that's
+kind of it.
+Rebecca, I do see you have some
+questions in here. Yes, I will post a
+link to this in Hacker Rank, not Hacker
+Rank, sorry, in Discord. Um, I'll have
+to figure out the formatting of it, so
+it might not be today. And I also want
+to read through it again before I put it
+out there. Um, out of the 100, 115, not
+150, but how many pass? Um, it's hard to
+say.
+I mean, like over time,
+everyone who's come through has
+eventually passed, right? Um, there are
+a couple people who are currently in the
+like I've taken it a few one or twice
+and I'm coming back for another time. um
+just a handful of people there
+and I expect all of them to eventually
+move on as well. So, no one's ever not
+made it. Well, that's not true. Um some
+people have not made it through because
+they either wanted to leave the program
+altogether um or decided that coding
+wasn't for them, but even that has been
+less than a handful of of people. So,
+most people get through. If you're like
+kind of asking how long does it
+typically take for someone to advance,
+um I would say the average is that it
+takes everyone about two to three
+attempts.
+Um
+very rarely do people pass on the first
+try and I think that's from nerves and
+just kind of not being like, you know,
+you're put on the spot for the first
+time. So that's why we have these
+sessions to get all of that practice.
+Um, and I kind of expect people not to
+pass the first time. So, I'll put that
+out there. So, yeah, two to three
+attempts. And if it takes longer, it's
+because
+who knows? There's lots of reasons why.
+Maybe maybe it's my fault. No, it's not.
+But, um, there's no wrong or right
+amount of attempts for it to take.
+That's that's the real takeaway.
+But every time you fail it, you make it
+harder to come back to take
+>> I do do that.
+>> So it is my fault attempt.
+>> Yeah, you're right.
+>> I mean is that going to be still that
+way?
+>> Yes, it is still I mean there is an
+upper limit to how hard I can make them
+before we cross over into the medium
+territory. Um, but yeah, after each time
+they do get incrementally harder um
+because I'm expecting you to
+be practicing and and working on
+mastery, right?
+So, I think that's fair.
+>> I mean, you you're going to give like
+then you're going to just leave give
+medium problems and eventually you're
+just going to give hard problems.
+>> No, I would never give we would never
+leave the realm of easy.
+Okay. Uh, I heard you said you're gonna
+move into medium territory.
+>> Yeah, I would say we don't want to move
+into medium.
+>> Okay.
+>> I I would never do that, but
+probably as close as we can get from the
+easy level.
+So, yeah, I guess it is my fault because
+I make it harder for you every time. Um,
+but no, not really. I mean,
+there can be all sorts of reasons to not
+pass. And
+I mean, it can even come down to just
+like the weather that day can be a
+reason why you didn't pass. Like, it's
+really there's no rhyme or reason, but
+as long as you're keeping up with the
+practice and following the
+recommendation steps that are provided,
+um,
+it's only a matter of time. There's an
+inverse irony to how the sec most people
+fail the second the first most people
+fail the first test the second test gets
+harder and that's the one they pass.
+>> Yes. And that happens a lot actually.
+Quite a lot.
+I've also had really pe I've had people
+who are really skilled and confident and
+have everything they need but just
+because of nerves or of pressure um they
+don't pass but they're just like right
+there on the cusp and it happens like
+two or three times in a row. Um I've had
+to literally just say like all right so
+you just failed um are you busy for the
+next hour because we're going to get
+this out of the way and then they solve
+the next one within like 15 10 minutes.
+though. Um, like
+really for most people the biggest
+element is practicing under pressure in
+front of an audience. Um, because I
+think people underestimate how that
+impacts them. And practicing everything
+that you do, like all the steps that you
+take in your practice, you want to do
+those exact same things. You don't want
+to skip steps. You don't want to try and
+save time. Do everything that you
+usually do in your practice because
+those are your routines and your habits.
+Um, and if you don't follow those, then
+you're going to like psych yourself out
+and you're going to actually waste more
+time. Um, because you kind of get lost
+in your process.
+Yeah. Another thing that gets in the way
+in my opinion is going the wrong path in
+the solution.
+So like a very spaghetti path or
+something like that.
+It can. And that's why we talk about
+like mindset and behavior as one of the
+as one of the um the areas to focus on
+because if you start to realize that
+you're going down the wrong path, you
+got to quickly bounce back and say, "All
+right, I'm starting from scratch. I have
+a better understanding of the problem
+now. And how quickly can I iterate
+through that to get the solution out?"
+Um even if I'm maybe not going to meet
+the minute the the timeline, I'm not
+going to give up. I'm going to keep
+moving forward because I do have that
+understanding now and I can make that
+recovery.
+I'm going to add that actually. That's a
+good one.
+And that has happened a few times.
+People have had to start over
+in their interview and still passed.
+So, I' I've we've really seen every
+everything on the spectrum of people
+um trying their best and sometimes it
+works out, sometimes it doesn't. But in
+the end, it always works out and
+everyone always moves forward um because
+that's what that's what we want for
+everyone is to move forward. So,
+>> and also get lost in an error. That's
+another one
+>> that one is in here. How do you handle
+errors and how like both from a problem
+solving mindset and from a behavioral
+mindset? What do you do when you
+experience errors? Um I've been in an
+interview and someone literally said to
+me, "Yeah, I had an idea for how I
+wanted to do it, but every time I've
+tried that in the past, I hit errors and
+so I just didn't even try it." And it's
+like, okay, but that was the solution.
+So like, how do you how do you overcome
+those errors is kind of the big part of
+it is what do you do when you see an
+error? What steps do you take? um and
+how to kind of work backwards. Everyone,
+you have all seen me hit errors live in
+front of you all several times. I'm not
+afraid of errors. Errors don't scare me
+because they're just telling me that
+something's wrong in my assumptions. And
+so, I just need to figure out what
+assumption I made and how I can correct
+it. And the best way to handle that is
+incremental testing and um coding. So,
+when I'm coding something,
+am I understanding the assumption that I
+made about that line of code? And am I
+testing it to make sure that it is
+working the way that I expect it to
+work? Yes or no? And can I move forward
+in that incremental process?
+>> Yeah, it's probably a step uh easily
+missed because you're pressured by time.
+So, you don't feel like writing extra
+lines of code for testing each line that
+you already wrote. So, but then you you
+hit the error and there's only 3 minutes
+left and then everything
+>> or you hit the error and you have a
+whole code block that you've written and
+now you have to take more time to figure
+out which line of code produced that
+error versus if you tested it right when
+you hit it. You know where it came from.
+You just wrote it out. So, in between
+the last time I tested it and then now
+one of those two or three lines of code
+or even just one line of code, there was
+an assumption that I made. And so yeah,
+it takes like
+10 20 seconds each time you add those
+print statements. In the end, that's
+going to add up to like what a total of
+2 minutes. If you are moving through the
+problem at a good pace, that means
+nothing. You can still solve the problem
+in under 10 minutes.
+>> I guess got to cultivate those habits.
+>> All right. So, with all that in mind,
+and now that I've shown you all the
+rubric for how to have the best
+outcomes,
+does anyone feel like volunteering for
+That's a joke, by the way. Um, does
+anyone feel like volunteering for the
+mock interview today?
+>> Oh, well, I got to break those
+eventually. I haven't done it in a
+while.
+>> Cool.
+>> So, I share my screen.
+>> Sure.
+>> Still got this on board from last
+meeting.
+Yeah. And and maybe if you can uh pause
+the link so we can do it in parallel as
+well. Silent parallel. Yeah.
+>> Yeah. [snorts]
+Um
+let me just
+Okay, I've got a problem for you here.
+I'm going to put it in the chat so that
+everyone can follow along as well.
+You want to open that up?
+>> Watch out window disappeared.
+>> Yeah, you should see a bar at the top of
+your screen for the little zoom
+pieces.
+There we go. Sorry, I'm pickies.
+>> And then you just want to log in first.
+>> Oh, that's cute. Little turkey.
+Yeah, they don't celebrate Thanksgiving
+over here in Spain. So, I completely
+forgot that it [laughter] was like
+almost Thanksgiving until someone
+mentioned it in a tech interview
+recently.
+though, funny enough, there is like a
+full American like food store
+um in my neighborhood that like has a
+full Thanksgiving display out of like
+here's all the food and stuff you'll
+want. So, I [snorts] could theoretically
+cook like a normal Thanksgiving meal um
+here in Spain.
+>> Sure. It's not letting me log in. Well,
+I mean, there's my password, but my
+password usually saves
+here. I'm just going to
+stop sharing briefly so you don't
+reveal any secret passwords.
+[snorts]
+I'm signing into my browser. Not sure
+why it's not pick up the password
+looking.
+So, this one is marked as easy. I'm
+seeing it has a 54% acceptance rate.
+Um, not to skew anything here, but I
+would say that means to uh pay extra
+extra attention to
+little tricks that they like to hide in
+problems sometimes.
+>> All right, that's what it is.
+>> Okay. And then you'll just need to
+reshare your screen once you get
+everything up and running.
+All right, that's what it was. Let's do
+it now.
+>> Yep. So, I'll just give you let's say 20
+minutes for this. Um, everyone, let's
+hop on mute and yeah, good luck.
+some green eyes.
+understanding the problem correctly.
+This is the size of the cookies we have
+in the array. This is how greedy the
+children are.
+So I give the first cookie to the first
+child. That's the only one that's
+content.
+Second child's not content cuz their
+cookies too small. Third child's not
+content cuz they got no cookies.
+Explanation confirms what I inferred. So
+see this one matches.
+So, yeah, I would assume two are fed.
+First one's happy cuz it's a one. The
+second one's happy cuz it's a two. Third
+one's not happy cuz they didn't get any
+Same two examples they had over there.
+Case one and two.
+turn into rise.
+that be a diagonal difference
+necessarily.
+Then maximum
+weird loops.
+First instinct was compare to arrays. So
+we're going through a loop of children
+comparing their greed and cookie at each
+step.
+definition. Let's see. We got
+green.
+We got J.
+J is going to be increment which is the
+child.
+Serve for child.
+or pseudo code. I'm thinking something
+like that.
+So that's not very technical, is it?
+For a child
+and
+child
+and int if not equal
+to greed or so if
+>> just FYI your code editor is set to
+Python
+>> but not what we want
+>> it is but that code comment is for
+JavaScript
+>> I'll probably default to thinking in
+JavaScript one
+Okay, never mind. Just want to change
+the uh
+>> it was Python 3. There's two different
+Python ones.
+>> Okay.
+>> One above it.
+>> Okay.
+>> The numbers. Yeah. Yep. Perfect.
+World
+It's not equal.
+Oops.
+Does
+this be
+greater than or equal to
+the green?
+Has to be less than green.
+Still records. The size has to be
+greater than the green.
+If
+child size is greater than or equal to
+child's greed
+then we return
+Children equals zero
+or child infant.
+I'm going to put these parentheses
+around. It doesn't look what it does.
+Thought my s code's on the right track,
+but my actual codes off in the lead
+somewhere.
+Back to basics. Maybe
+return zero. So at least compiles
+this.
+So, I already kind of pick them out by
+their index and they're already to find
+Okay, let's go ahead and pause there.
+>> All right, so can you quickly um
+resummarize what the problem is for us
+all?
+>> So, yeah.
+All right. So you got a list.
+You're going to have a list of ch No,
+you're going to have a number of
+children. The integer is going to be a
+number of children.
+So say you've got three kids.
+So the the self
+when you're printing that class of the
+integer the self number of the children.
+So you're printing a yeah the problem
+itself. All right.
+You're given a a number of children.
+Those children are going to have a each
+child's going to have a certain level of
+greed.
+And they're going to have to have a
+certain size of cookie to feed that
+greed.
+So you want to go through each child
+and the
+back to the actual problem here. I was
+trying to do it just from the code
+to match it up.
+So that might be my first bit of
+feedback there is what can we pull from
+the problem statement into our code
+comment so that we can quickly at any
+point know what the goal of the problem
+is and what the inputs are and what our
+expected output is.
+So restructure this over there as
+comments.
+>> But once you explain the parameters,
+that did sound right. So you have a list
+of integers for the children and their
+greed factor
+um or represented by their greed factor
+and then the list of cookie sizes
+on me sometimes.
+>> [clears throat]
+>> Mhm.
+>> Yeah, that would have helped cuz
+[laughter] I was trying to pull the
+input out and it was already there.
+>> Yeah,
+>> spent a lot of time on. So my next
+question would be what is int
+because you use int in your for loop and
+in your print statement. So what is int
+[clears throat] here?
+assumption is it's the number of
+children
+each child I
+>> like that you use that word because
+it's exactly that right it's an
+assumption we make lots of assumptions
+through our code I like to write my
+assumptions out but the first thing I
+would do is test an assumption and
+eventually you did with the print
+statement but not until a little bit
+later.
+So that was a great step. I would have
+moved that up in the the timeline.
+[snorts]
+Um so I know that you're a JavaScript
+TypeScript mostly focused person for
+your projects.
+So I can understand why the the the
+function parameter might have thrown you
+a little bit here. Um so self like you
+mentioned refers to the class G is the
+parameter and S is the parameter and
+then it's giving you the data type of G
+and S. So it's a list of integers and
+then you see it again. S is a list of
+integers and then the arrow pointing to
+the int is the expected return type. So
+the expected return type is also an
+integer. So it's not a variable that you
+can use or reference. It's it's
+specifically just a data type reference.
+Similar to TypeScript, you have to be
+very explicit in your type references.
+Um, so the only actionable variables
+here are G and S.
+>> So what does that change for you here?
+It's not for child and in
+anything. That's probably what I'd want
+to return,
+but it's not find either. So
+then my next question would be um
+you want to iterate through something
+and I think that makes sense right for
+your code you're iterating through
+something making a comparison bas based
+on your code year and then updating the
+children based on that comparison. So
+does it make sense for you to go through
+the children list to make that
+comparison or the cookie list to make
+that comparison? What's your kind of
+approach philosophy there
+on the example? Okay. over here on
+my first instinct was to get the one
+that was longer, but that's not always
+going to be the same one.
+>> So,
+>> Mhm. [clears throat]
+>> I would probably want to first make a
+comparison for which which array was
+longer and then iterate through the
+longest array.
+So one's agreed
+two children.
+Okay, never mind. The grade the grade
+would show the number of children.
+Yeah, cuz here you have three children,
+that's the length of greed. Here you
+have two children, that's still the
+length of greed. So never mind. So yeah,
+>> and then those integers represent
+>> um
+well that's how much. So your one So
+your one-year-old's going to want one
+serving, your 2-year-old's going to want
+two servings, your three-year-old's
+going to want three servings.
+That's it's basically how much it's
+going to take to feed each child. So as
+it go as the children go up the list,
+they're going to each child's going to
+need
+be hungrier and hungrier. And how does
+that correlate to the integers within S?
+>> So, you got enough to feed the baby, you
+got enough to feed the 2-year-old, and
+you don't have a three-year-old. So, you
+actually got leftovers that aren't
+accounted for.
+>> Yes.
+>> All right. So to put that into code,
+we'll do n
+equal
+to
+like
+well so we are hitting our time here. Um
+but if you just want to quickly
+summarize what you think you might do
+next and then we'll um we'll we'll start
+closing out.
+>> All right, I think this is a good start.
+I got
+>> n is the is equal to the length of the
+greed.
+So n is actually going to be our number
+of children now. So
+>> okay [clears throat]
+>> print n
+enter
+just return in actually.
+>> I think that makes sense.
+[snorts]
+So, you're going to focus from the the
+amount of children first and then make
+that comparison to cookie sizes.
+>> Yeah.
+>> Okay.
+>> Guess I'm still throwing myself off the
+syntax here.
+>> Yeah, the int there.
+Now, for everyone watching, notice that
+once we entered into the follow-up
+steps, I had a lot of questions, right?
+And John was able to answer pretty much
+all of the questions pretty great. Um,
+confidently understands the concept
+behind them, summarized everything. So
+that's why when you look at the rubric
+that I posted in the in the chat um you
+will see that there are lots of things
+about communication and answering
+questions and understanding like the
+meaning behind the question or behind an
+input and an output. That's why those
+elements are there um because those are
+good indicators of your your knowledge
+set.
+Yeah. So, it looks like you're on the
+right path now though that we've kind of
+focused on the Python specific language
+cases there.
+Get the three back which is the length
+of the children but not all the
+children.
+you're going to be fed. So, that's what
+I need to work on now is getting that
+three down to a two, I believe.
+>> All right. So, not quite a pass, but I
+feel considering how cold I am. Like,
+I've barely been on a computer in the
+last month, really. So, [clears throat]
+>> yeah. I mean,
+>> that was a good refresher. Get jump back
+in.
+>> Yeah. And I think that's a great way to
+approach it. Great mindset again from
+the behavior column. Um, I'm gonna be
+annoying about this since I just showed
+it to you all, but I think it's a great
+mindset to have like you've been out of
+practice for a little bit, but you came
+back and you showcased that you can
+break the problem down. Um there are
+also parts you can work on like pulling
+out statements into your pseudo code and
+making sure you understand the data
+types. But once you have that those
+pieces kind of for uh figured out,
+you're kind of quickly redeveloping your
+game plan, updating everything, moving
+past the errors um and working on an
+approach that's going to get you closer
+to a solution. So I agree this was a
+great great turnaround here for you. All
+right. Thank you.
+I don't I don't know if anybody
+remembers the index cards I made. Those
+really helped.
+>> Oh, nice.
+>> Uh let's see which one I was using. It
+was still on top cuz I looked at
+diagonal different. I guess it is
+diagonal difference.
+Really? I just looked for one that had
+the the for loop and it has in length on
+there.
+>> Trying to
+>> Okay.
+So whenever I was going through leak
+code, I just tried to like there's a
+study section on leak code. I was trying
+to get like kind of like a cheat sheet.
+I was trying to get the basic data
+structures down so I can kind of look
+because I like you say I'm used to doing
+JavaScript so to translate that into
+Python was throwing me off.
+>> Absolutely. And just for everyone
+watching those would be a good use like
+example of like templates or resources
+you can bring to the interview. Um so he
+has like little code samples there but
+not like full like for loops written
+out. It's more just like the
+understanding of using n to represent a
+length. Um like a basic for loop syntax,
+but not like solving a problem or
+anything. Just kind of like pseudo code,
+low code outlines of concepts and like
+variables and things like that from the
+look of it and data structures. Um so
+that looks great and that's a great way
+to kind of solidify your knowledge and
+just kind of have something to quickly
+glance at to make sure you're on the
+right track.
+>> Think of them as like flash cards. the
+the challenge was what what what would I
+want to put on the flash cards? Like you
+don't want to overwhelm yourself so much
+that you don't even know where to look
+at it because I've had that before. I've
+had a a huge cheat sheet that covered my
+whole desk. I was like, I don't even
+know which column I want to look at for
+this. So, just having some some brief
+outline kind of did help.
+>> Yeah, that's perfect.
+All right. Well, thank you for that. And
+before we close out, does anyone have
+any questions they'd like to ask um or
+any thoughts they'd like to share?
+Yeah, I I do. Just a really quick one.
+Um, you know, just the whole dynamics of
+the experience itself. Okay.
+>> Um, you give the person some quiet time
+to like read the problem, right? I mean,
+is that do you give them like five
+minutes to read the problem before they
+start trying to explain it?
+>> There's no limit. I mean, the the the
+important part isn't how long each step
+takes you. Um, because each person is
+going to take a different amount of
+time. And I've had people spend like 8
+to 10 minutes on reading the problem and
+putting it into pseudo code and then 2
+minutes solving the problem or even 15
+minutes on reading the problem and
+putting it into pseudo code and 2
+minutes into writing the code versus
+like reading through the problem doing a
+few bullet points for pseudo code in
+like less than 5 minutes and then like
+writing their code for 15 minutes like
+every from both extremes and everything
+in between. It's not about like how long
+you're spending on each thing. That
+process is going to vary from person to
+person. But once you reach a point where
+you understand the problem enough to
+explain it, can you then explain it out
+loud to me as an observer
+um so that I know what you're thinking
+about before you start writing pseudo
+code or before you start writing code
+for the problem. Once you start working
+on pseudo code or for the problem, can
+you at regular intervals, whether that's
+within like after each line or after a
+couple of lines or after you've run a
+print statement to test your assumptions
+about your code, can you explain? All
+right, so here's what I'm thinking or
+like here's what I've just done just to
+recap. I'm testing out this for loop to
+make sure that I'm on the right path and
+then next I'm thinking I will work on a
+few variables to push me closer to the
+solution. Take some time to work on your
+next few steps. All right, so it looks
+like my approach is working. I'm going
+to continue moving forward with this
+approach to get me to the next step,
+etc., etc. Um, so like it's going to
+look different per person as long as
+you're not sitting in silence for the
+entirety up until the end and then
+you're just like, all right, all my test
+cases pass or conversely, oh, I'm
+hitting an error, none of my test cases
+pass, and I've I've run out of time.
+Like as long as we're not hitting those
+two extremes, it's okay because yes, you
+can not speak the entire time and get
+all your test cases passing and still
+pass a technical interview, but it's not
+great, right? Like you don't want to do
+that on the job hunt. Um because the
+interviewer wants to know what you're
+thinking about, like what is your
+problem solving process? And if you're
+just completely in your head and silent
+the whole time, that's not going to be a
+good indicator of how you approach
+problems, how you think about problems,
+how you work through errors. Those are
+like really good key indicators that
+interviewers look for to make sure
+you're a good fit for the role. Not just
+can you solve a problem, but how do you
+solve a problem?
+>> Okay, thanks. You know, uh my approach
+is to do a lot of writing. um you know
+do uh what I think write down what I
+think the problem's asking for and make
+sure I can understand what it's really
+asking for then narrowing it down to
+maybe two or three lines then doing the
+pseudo code um I can see that maybe I
+could start talking after I have written
+down what I think it means uh
+>> yeah even just to yourself alone in your
+room totally
+>> okay
+Okay.
+>> And then if that's your process, that's
+great. You just want to be mindful about
+how long you're taking for the overall
+thing. So if you're spending 15 out of
+20 minutes breaking down the problem,
+have no pseudo code, and have no like
+actual code, that might be an indicator
+that you need to uh to shorten that
+amount of time. not shorten it by like
+skipping steps that you usually take,
+but by really honing in on what you're
+doing at that that step, what it's
+giving you and how can you get through
+that step faster? Um, so if there is a
+process that works for you, how can you
+even if that means coming to me and
+showing me this is my process, right?
+How can I shorten this? And then we can
+talk about like what are ways to improve
+on breaking down a problem, pulling out
+statements, making assumptions, asking
+questions like what are the things you
+can do to shorten your understanding of
+the problem, to shorten your pseudo
+code, writing writing writing, and to
+shorten the amount of time that it takes
+you to write the code. Those are all
+things that can be coached on, but you
+have to kind of be mindful of what
+you're doing.
+>> Okay, great. Great.
+Any
+other questions?
+Okay. Well, thank you all for coming and
+spending this time with me. So, I will
+see everyone again on Sunday for another
+mock interview session. And then, just a
+reminder, after Thanksgiving, we'll only
+be doing the Wednesday sessions. and
+it'll be um mock interview focused mock
+interview and some coaching and
+questions and follow-ups afterwards.
+All right, have a great rest of your
+day.

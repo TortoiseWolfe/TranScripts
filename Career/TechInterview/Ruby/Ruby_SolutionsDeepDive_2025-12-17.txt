@@ -1,0 +1,961 @@
+All right, welcome back to this week's
+nailing the tech interview session. So
+today we're going to give people the
+opportunity to do some mock interviews.
+But before we get started, are there any
+questions that people have about the
+technical interview process, practice,
+preparation? Any questions at all people
+would like to ask?
+>> This is more of like a recap question.
+So just to get straight. So it's mostly
+the easy problems if if I'm if I
+remember correct correctly. It's
+>> for the tech interview. Yes. It's only
+easy problems.
+>> Okay. Okay.
+Like what coach Ru you said um like last
+question? Yeah. No question. So you'll
+just pick anything at random and if and
+if but if I do the question you'll just
+pick another one that's like unsolved.
+>> Okay.
+Sounds good.
+>> I had a question.
+>> Sure. Yeah.
+>> Um, so based on the rubric, it looks
+like it's mostly just um a mock
+interview problem. Are we going to be
+asked other questions as well besides um
+a mock interview or a programming
+problem?
+So typically I do ask some like
+behavioral interview question stuff at
+the end, but it's purely just for
+practice to help you get that um first
+initial safe chance to practice sounding
+out how you can apply your experience to
+a dev space.
+>> Okay,
+>> career. So there's a little bit of
+followup, but other than that, yeah,
+it's mainly the problem.
+>> Okay,
+>> any other questions?
+And what is the minimum
+time to dedicate each day to don't lose
+the skill?
+Um
+I don't know. I I don't really have a
+good answer for that.
+So I feel like everything that we cover
+in these sessions are skills that you
+use in every coding scenario. It's not
+just for the coding challenge, like
+being able to break problems down into
+steps, being able to pseudo code,
+knowing how to confidently debug and
+step through your code, explain your
+code. Um, all of those things that we
+mainly focus on are things that are like
+applicable across the board, right? So,
+in the context of the coding challenge
+specifically, it's like solving the
+problem and passing out the test cases
+within a set amount of time. Um, I don't
+think that there's anything that you
+like a minimum requirement each day you
+need to apply to do these. As long as
+you I would think it would be more
+important to say what area am I wanting
+to um improve on. So, if I'm wanting to
+improve on my breaking the problems down
+into steps and pulling out key
+information from the problem, maybe I
+just practice that for about 30 minutes
+uh until I feel like I I made some
+progress there. Or for the next week,
+that's what I want to focus on. or I
+want to focus on the pseudo code or I
+want to focus on the actual code from a
+pseudo code standpoint. So maybe I won't
+start timing myself until I get to a
+certain step and then that's when I say
+all right within a time scenario how
+much time am I spending on this step
+specifically? That's if I were to
+approach it. But I have never really
+approached it from like a really
+strategic
+process like that. I guess because I'm
+forced to for these meetings, but other
+than that, I think just taking that time
+to regularly practice and practicing
+with intention about what you want to
+work on is really all you need.
+>> Trying to find some good problems for
+us, but do we have any other questions
+before we open up the floor?
+Okay, cool. So, who would like to be our
+volunteer today? If we have time, we
+might do two interviews, but
+>> uh Okay, it's been a long time. So, I'll
+try to I think I got one ready in the
+morning this morning at the from the
+hacker ring. So, I'll just I'll try
+>> Yeah, pull it up.
+>> Try just try and put that up. Let's see.
+Give me a second. Let's see if I can try
+and put it up. Sorry. Okay.
+All right.
+You can see that. Okay. There we go. So,
+okay. So, here's how I did it for the
+This is more like the beautiful days of
+the moose. So, okay. First, I'll read
+the question. So, Lily likes to play
+games with integers. She has created a
+new integer. She has created a new game
+where she determines the difference
+between a number and its reverse. For
+instance, given the number 12, its
+reverse is 21. The difference is nine.
+The number 120 reversed is 21 and their
+difference is 90. She decides to apply
+her game decision-making. She will look
+at a numbered range of days will only go
+to a movie on a beautiful day. Given a
+range of numbered days I to J and the
+number K. Determine the number of days
+and the range that are beautiful. So
+beautiful numbers are defined as numbers
+where I is reverse is evenly divided by
+K. If a day's value is a beautiful
+number, it is beautiful day and then
+return the number of beautiful days in
+the range. So
+as so as I go through this um I would
+just I would just do a code I just
+pseudo code it first. So so first here's
+how I type. So so given
+given a range of days. Oh, yeah. Range
+stuff
+I to J to J
+and the number
+the number
+K. So give me a range in the in the
+number K.
+Okay. So after that, so it says deter
+determine the number determine the
+number of beautiful days.
+That's that's one area. Then says
+beautiful numbers
+now. Yeah, beautiful numbers are
+or this or the reverse
+of I it's divisible
+divisible
+by K. Okay, that's what I'm going to
+then says.
+Now, here's my if
+if I in
+return the number of the beautiful base.
+Yeah. So I first off start off just pull
+out the key information like figure out
+where I need to do. So yeah goal is to
+just count the number of beautiful days
+and um so and how do I I first look at
+my function and see where are the where
+the variables are. So I just go in
+function description. It says so I is
+the starting day and then J is the
+ending day. So, so I have to do so I
+believe like need to do this within a
+range of I and J and then K is divided
+that's going to divide that's going to
+divide I. So how would I approach this
+would be um
+definitely I would need a counter
+variable to keep track of the beautiful
+days. So I'll just do a counter. So I
+need a counter barrier.
+Definitely we need a four. Definitely
+need a for loop just to iterate through
+the range of days.
+It's another cell. But then keep in mind
+though is that I have to make sure that
+I is the is the reverse of of the
+number. So, so I have to make sure that
+so in sample input I have to make sure
+20 is like 02 and then then 23 like it's
+30 it's like three 32. So for example so
+how would I would reverse how would I
+reverse that? I would I would definitely
+use make make it into a string and then
+and do string slicing. So,
+so
+this is so that's where
+that's where I'm so so this is just a
+list of
+so so I would do this in pseudo code
+first is So, so like I said, I would
+need a counter first. So, so I'll just
+do um so so I'll say so I'll say just
+say let's say yeah be day um beautiful
+day uh counter
+we have to make sure that's that's it
+that equals to zero equals to zero and
+then also so I have to figure out how to
+do a reverse how to reverse it so I
+would make so I came up with the idea to
+make a variable where I do a reverse
+version of of the variable. So first how
+we would do this first is I would make a
+variable let's say reversed
+reversed num
+standpoint and so I would just work so I
+have to figure out how do I want to
+reverse that so I would just do
+int
+just to make sure it's an integer and
+then I would do I would do a string and
+then put
+I in there and then next to the I
+would do the string slicing.
+Now, I'm just going to do a print first
+just to make sure if if if
+that is working how I intended for it to
+be. So, so reverse num equals int. So,
+print inverse.
+Okay, it's it doesn't seem working, but
+I know that. Okay, I got to make sure
+this is aligned with the function. So,
+we'll just figure out and see what's
+going on.
+Okay, so yeah, we did got a reverse. So,
+it looks like So, it looks like it does
+does output it does debug to two. So, I
+think it looks like it's number 20 here.
+So, this is what's referred. So, as I
+did that, it does reverse. So that's
+where that's where I want it. Now I did
+come up with like a thing was like well
+well
+what about like 210 or something like
+will it like go like 120? So what I do
+is like okay I'll just test it out. So
+what I did is on the eyes like I go for
+120 120 and see how that see how that
+works.
+It's like oh okay. So, so, so I did 120.
+It's like it's the reverse. So, but if I
+want to try something, let's say like
+210, I would try to run the code just to
+make sure that it's that it's working.
+Okay, it's 12. All right, good. Because
+that at least kind of shows that um you
+know, even if it's like a big number
+like it will not count the zero row. So,
+that's good.
+just reverse that. So, okay. So, this is
+where I So, that's what I want. That's
+that's my So, that variable does work.
+So, so that definitely works. So, now we
+go on to the So, we have my counter. We
+have here. So, now just have to do like
+a for loop here. So I would say for for
+each day
+for each day
+in range
+in the range of
+of
+I and J
+if
+so let's say
+so for each day in the range I inj. So
+this is where I for so I need to figure
+out okay where do I need to put my put
+the reverse. So I would so here I would
+um right here on date I would do the
+reverse um there's um so the so my if
+statement would be if
+if the reversed
+if reversed
+number
+is a beautiful dayful
+day. So in other words, if it's
+if it's divisible, in other words, if
+it's divisible by
+divisible by K, then then it will then I
+would increase the increase my um
+beautiful day counter.
+Then return
+return the the bday count the beautiful
+day counter
+count counter. So that's where it goes.
+So
+>> now I have to like I have to figure out
+now again I'm going to turn this now
+into a four turn this into a for loop
+now. So let's see. So I'm going to try
+to say
+well first I would test it out first
+reversed.
+So
+J.
+Now
+keep in mind I do know that in range
+like it's not going to include the the
+last number of the iteration. So how do
+I fix that? Just to count everything I
+do plus plus one. So how I do that is
+I'll first do this and then then just to
+just to test it out
+just make sure I test that out.
+Okay, that's what I want now. So now the
+question is how do I now how do I get
+this from here to reversed.
+So I would just first test out to see.
+Oh,
+so
+h I thought it would reverse it, but
+guess did it did not. So,
+so
+we'll try and test this out to see.
+So, reverse now.
+Okay, reversed.
+So, apparently does not seem to reverse
+that. But I do have what I'm looking I
+do have definitely have what I'm looking
+for though sprints. So,
+and how to reverse
+Oh boy. So I have to figure out Okay. So
+I and J.
+So I'm trying to figure out how here's
+the idea. So
+So
+okay.
+So I start reverse. Start reversed.
+Okay. Apparently that's not what I want.
+So I definitely want to just stay
+within.
+So INJ. So why was not that working? So
+I'll just go back see where.
+Okay.
+if I have what I want. But I don't see
+in the debug output like I don't see the
+numbers reversed reversed yet.
+So So I wonder what is that
+maybe I'll just do reversed number. So I
+think what I can do is I'm going to try
+this. I'm going to try a reversed
+um for J for the J part. See if because
+I think it may not be work.
+So let's see what happens.
+Okay. So, so we got these two variables.
+So, I think what I need to do is do this
+guy and then so I reversed for first num
+I rate of
+to do.
+So, we'll see how that works.
+So,
+Okay, we better watch out because And we
+have to because it's not aligned with
+what I have
+for print for num i.js.
+Oh, I found my error. Just got to keep
+keep in mind to keep track of make sure
+the parenthesis for the for loop is
+there otherwise it won't work. So
+reverse now. Okay, there we go.
+Let's try and force this.
+Okay, apparently it's doing the same
+doing the same thing, but
+it's not work working. So,
+but
+but I would want wouldn't keep trying to
+work on okay work this. This is this
+something I have to look into. But but
+definitely um I would need to but I do
+know for sure that I want an if state
+and if reverse numbers beautiful day and
+then increase beautiful day counter turn
+the beautiful day counter. But I do know
+for sure that okay my assumption
+that's where I'm but I'm like okay I
+wonder why it's not work working but
+yeah this is where at least I'm at a
+pseudo code I got the idea but I just
+want to make sure that um but then this
+part I would definitely wouldn't need to
+play play around a little more here just
+to prove um like Okay, how do I get this
+for loop to like go through the reverse?
+Like I got these bunching them, but all
+I want is that it's just the reverse,
+but then it keeps like rever doesn't
+have the reverse. It's just that. So I
+wonder why it's not working. But yeah,
+but that's one improvement I have to
+make is um I have to figure out what's
+going going on.
+But yeah, this is where I'm currently
+at. That's the only proven that I need
+to make.
+>> Yeah. So, let's pause there. I think
+this was a great start. So, thank you
+for volunteering. Um, honestly, yeah, I
+I thought your steps all the way up
+until getting stuck here obviously was
+really great. Um, typing out how you
+were interpreting the problem, writing
+out your pseudo code, and then kind of
+diving in, testing along the way. I
+think you show showcase some great
+skills there. The only thing I'm
+thinking is that I think you might be
+going a little too quickly. Um,
+>> so what I would like for you to do is to
+reread the problem summary and and just
+read it at a normal normal simple pace.
+>> Okay. All right. Yeah. But but I'm glad
+I did it because like you know I just
+need to figure because only here is
+maybe I find some issue that I just need
+to address and I'm glad you um you're
+able to help me figure that out.
+>> I had a question.
+>> Sure. Um, so he used a reverse um,
+syntax. Would I be able to Google that
+in an interview if I didn't know it? If
+you It depends on what level you're
+googling. Like if you were saying how do
+I reverse an integer or how do I reverse
+a string? Um,
+it I mean I guess it would depend in
+this case since it's like a main part of
+the problem. I think it would be okay if
+you got to the point where I know I
+can't just like reverse an integer. I
+need to convert it to a string. So, how
+do I reverse a string? That would be
+fine to Google. But if you're like, how
+do I take an integer and return its like
+reverse form? That might mean that there
+is I guess that's not really fair
+either. Um, that's kind of like a tricky
+little math thing that maybe you didn't
+know. I feel like that it's hard to
+Google that and not just get like a
+bunch of solutions to a problem that
+you're not like asking clearly. Um, in
+general, yes, you're fine to Google how
+to do like small things unless it's like
+a big part of the problem. So, like
+>> I don't think I'm answering this
+question very well.
+>> It's all right. Yeah,
+>> I think in this case you would be fine.
+Let's say that.
+>> Okay.
+>> Actually, true. figured it a possibility
+could be because um I put the variables
+on top of the it was in like the global
+scope. So I think maybe I have to put it
+within the for possibly put it in the
+for loop. That way the for loop could
+like figure out what's what's going on.
+So I think my issue was like putting my
+variables in the wrong uh scope area.
+>> Yeah. Do you want to show us that
+>> possibly? Yeah, we we could try. Yeah,
+I'll try to show that again.
+So let's see let's see all right so okay
+with my current with how it with just
+how it is we'll try to let's see what
+make if I put it instead of in the
+global scope put it in the local scope
+local scope
+>> um so I did want you to reread the
+problem though so um
+>> okay
+>> can you explain what this problem is
+asking of you
+>> and explain it for
+Mhm. Yes. So what this problem is asking
+me to do is is the is to figure out the
+number of days on the number of
+beautiful days that um it iterates of
+yeah the beautiful the beautiful days
+that um Lily would go would like would
+go see a movie. So I we need to make we
+have to figure out the days the
+beautiful days that she could go how
+many and how many days uh she can go to
+those beautiful Yeah. go to the movies.
+>> Okay. And so then remind me what does a
+beautiful day look like?
+>> A be Yes. So a beautiful day is is it's
+a number. So a beautiful day is Yeah.
+Yeah, the day has to be uh divis evenly
+divisible by whatever. So for example,
+you know, we have to make sure that
+let's say um that the reverse of 20 is
+divisible by K which is which in the
+sample is 23. So we have to make sure
+the reverse of 20 is divisible by is
+divisible 23. So how would it do that is
+use a module.
+>> Can you keep reading and look at the
+explanation just to clarify just to make
+sure?
+>> Yeah. Yes. So Lily may go to the movies
+on days 20, 21, 22 and 20.
+So we perform the following calculation.
+So day 20 is beautiful because well the
+following evaluates to so here's the so
+here's the reverse O2 is the reverse of
+20. So if you divide by if you divide by
+that by six
+divide by minus two. So what's going on
+here is like the explanation says okay
+here's your reverse
+20. So it looks like here that 20 20 is
+minus minus the number two like okay so
+it's the the day that it is um it's the
+regular day and then it's minus it's
+reverse so so it will equal down to 18
+and then you divide it by six by three.
+So we have to make sure that 20 is
+divisible
+now in this case because because there's
+no like there's no remainder
+because there's no remainder left um
+because it's
+well hold on I'll reiterate so because
+it's divisible in a whole number like
+this is a beautiful day but day 21
+unfortunately that's not be it's not
+beautiful because you know we get we
+minus this day minus If it's reverse and
+we have we still have like we have we
+have a float here. We still have a
+remain we still have a there's still a
+remainder here. So this is not a
+beautiful day. And then day 22 it is a
+beautiful day because because like even
+though we do reverse it it doesn't
+matter. Day 22 is is just like reverse
+it same thing. So and there's we don't
+have a remainder equals zero. So this is
+beautiful conserve a beautiful day and
+then day 23 it yeah we have a float so
+it's not a beautiful day. So we find out
+through this explanation that she like
+on days 20 22 she can go movies because
+they're beautiful. So therefore we would
+have to we would have to return uh two
+as our answer. So the one
+>> okay so now I'm going to ask you again
+what is the formula for the beautiful
+day
+>> for me. Okay, formula for beautiful day
+is is the day minus its minus its
+reversed version divided divided by
+uh divided by the k number which is so
+it so it would be um so so it' be i
+minus it's minus its reversed version
+divided by k and then that's that's the
+form That is the former.
+>> Yep. Exactly. Um, so that's why I was
+saying maybe you're moving just a little
+bit too fast. I like all of the steps
+you're taking and I think you're making
+great steps, but because you were moving
+so fast, we didn't get the chance to
+read through the full problem, see the
+explanation, confirm that our assumption
+about the formula was correct. See a
+walk through, a step-by-step walkthrough
+that then we could use to adapt our
+pseudo code to make sure it works right.
+Um,
+but other than that, I think you've got
+some really good stuff going on here.
+Now, for the reverse num, I think you
+are on the right track by moving it into
+the for loop, but why do you think that
+the reverse numb was not reversing each
+step along the way? What were you
+expecting it to do and why were you
+expecting it to do that?
+So I was expecting the reversed.
+So I was expecting
+numb and the and I didn't make another
+variable because
+because uh I thought that um it would it
+would um I thought if if I didn't
+reverse if I didn't do like both of them
+reverse like it would the for loop would
+make it like would just like do it in a
+much very different way. And then I feel
+like there was going to be like um could
+make a
+>> like make it could error out in the in
+the sample test cases. So like not
+functioning. So that was kind of that
+was kind of like my my concern. That's
+why that's why I did that. So just keep
+>> So I like your idea. But what kind of
+data structure would you use to reverse
+any number of numbers?
+>> Reverse any numbers.
+>> So given a number or a set of numbers,
+how would you use the same code to
+consistently reverse each and every one
+of them?
+>> Data structure.
+I see.
+So a possible data data structure that I
+would that I would do is um
+try to think
+let me see what how it looks like.
+So, so def
+definitely that
+I would say I would definitely say a
+list on the top of my head so that
+because that way that that way um make
+sure to put it yeah put it put the
+reverse version in a list so that way
+you know whatever the reverse numbers
+are. Yeah. And then instead um um modify
+my for loop to go to go off the list. So
+I need to make a a list. So I have to
+make a variable with the list with the
+reversed uh num with the reversed um
+versions of of the num of the following
+days.
+>> Well, you could do it any number of
+ways. There are multiple approaches for
+this for this aspect. But the reason I
+asked that was because it almost seemed
+like you wanted reverse num to be a
+function, right? Where you go through
+each of the numbers from i to j
+>> and you call a function that reverses
+them. So the way that you had it
+written, it was almost like you were
+hoping that it would
+>> interpret your I to J, call it as if it
+were a function and then reverse the
+numbers. So instead, you would need to
+write the function reverse num and then
+call reverse num with your i to j
+numbers.
+>> Otherwise, you could just move the code
+exactly as as you had it into the for
+loop and just reverse them along the way
+as a part of your formula. um which is
+the next step you were about to take
+here. There are plenty of ways that you
+could approach it. So, I didn't want to
+steer you into a different direction. Um
+>> I don't know if the list is going to set
+you on the right path. So, maybe don't
+chase that unless unless you feel like
+really motivated to, but that's all I
+wanted to comment on.
+>> Okay, got it. So, so Okay. So, okay. So
+just go through the problem a little
+slowly and then then so just to get the
+full picture and then then just as I was
+doing just figure out the just keep
+problem solving I guess.
+>> Yeah. All right. Thank you so much for
+volunteering.
+>> Yep. Yeah. I
+>> All right. So we've got about 20
+minutes. Would anyone else like to
+quickly volunteer for a quick roundhouse
+run around?
+>> I could try.
+>> Great. I've got a problem.
+>> I don't know if I'll do it very well,
+but
+>> no problem. It's just for practice and
+just to show us what you got.
+>> So, I'm going to put a problem in the
+chat if you want to open that up and
+share your screen.
+And thanks again, Danny. That was great.
+Um, yeah, I I feel like you're on the
+right path and I would expect to see you
+very soon in the tech interview. Yeah,
+>> sounds good.
+All right. Can you see that?
+>> Yes. All right. So, we're only going to
+give you about 15 minutes for this one
+just to keep the meeting tight and then
+we'll talk about potential next steps
+from there that you might take just high
+level just kind of sounding it out. Um,
+unless you get through all of it in that
+time, which is great, too. Otherwise,
+good luck.
+All right. So
+I am um supposed to
+move um all the zeros
+um in an array to the end
+um of the array and I have to do it in
+place without making a copy.
+Um,
+now that's leak codes rule. I since I
+haven't seen you before in some of my
+sessions, I don't know. But usually I
+always start with the brute force
+approach. So I'm just going to interject
+here to say that they want you to do it
+in place without making copy of the
+array. But if you want to try doing a
+brute force approach by making a copy
+and learning how to approach it first, I
+would always recommend that.
+Okay.
+Um.
+So, first I'll make a new array. If I
+was making a new array, um, I could do
+that. Um
+for
+ins
+if
+not equal zero. So
+turn.
+I think that is a start. But I need to I
+still need to append the um the zeros.
+Yeah. So, I still need to figure out how
+to know the number of zeros to append.
+Um,
+I don't know if this is the best method,
+but um
+Yeah. Okay.
+Um, what am I doing wrong?
+Okay, so now that you have your approach
+working, um, they do require it to be in
+place to like actually pass the test
+case. So they're not expecting you to
+return anything. They're going to
+reference the the array passed in by
+reference,
+>> right? And this isn't not actually
+working right now. I'm not sure why.
+I might need need to stop there. I'm not
+sure why my solution isn't working.
+Sorry.
+>> So, just go back and add that print
+statement again instead of the return. I
+think it was working before.
+Yeah. So your standard out right there
+1312 0 0. So your approach is right, but
+you just have to figure out how to
+modify the original array
+instead of returning anything.
+Oh, don't return anything. Okay.
+Um
+I think I need to um delete the element
+in place. So I need to change this to um
+a range. Um and also I I would need to
+know how to delete an element in a list
+which I don't remember.
+So, I would have to look that up, I
+think.
+>> Feel free.
+>> Or I could use delete.
+Um,
+delete an element and I'll list
+Python.
+Okay.
+So, first I need to change this to
+a range so that it um I I've used
+enumerate sometimes but I'm not as
+familiar with that. So, I'll just do use
+range um range length
+um
+Um,
+Zero
+to leave.
+Oh yeah,
+I'm done.
+usually I'm doing print statements if
+I'm not understanding the problem to
+debug but um
+So if you want to print that, you can
+just separate it by commas instead of
+the plus signs and that'll work.
+>> Okay.
+I guess I'm Oh, no. I'm confused why
+nums one is zero.
+>> So when you remove an element from an
+array, what happens to the remaining
+elements?
+Oh, it it got deleted. You're right.
+>> So, it shifts, right? So, when you
+deleted the first zero, the rest of the
+array shifts over and now all of the
+index positions have changed.
+>> Okay,
+>> so we can stop here. I think this is a
+great start. I mean, you got an initial
+brute force approach working, but then
+they added that additional stipulation
+of how do I do it in place, and that's
+where things get a little bit tricky.
+Um,
+>> and I think your debugging skills and
+error skills here were great. You were
+working through that problem, and you
+were putting all the right steps in
+place. Um, I think you might have wanted
+to give up just a little bit too
+quickly, but that's okay cuz we're in a
+safe space, so that's fine.
+But just I mean when I was saying that I
+was referring to um moving from the
+original approach where you were
+printing it to getting the in place
+approach. Once you started working on
+the in place approach you were doing
+great. So in this case it's hard to know
+unless you faced a problem like this. Um
+which is why practice is great for
+anything that revolves like manipulating
+indexes in an array or in a string. For
+loops are kind of tough because those
+indexes aren't flexible. Um, so in cases
+like this, it's better to use a while
+loop where you can kind of make index
+based decisions while also manipulating
+the index that you're using. So I'm not
+using the four i in range. If I hit a
+zero, maybe I don't increment my my
+index counter, my i counter, and I just
+remove that element and move on to the
+next one and then use my i for that one.
+Does that make sense?
+>> Yeah.
+>> So that would be something to keep
+practicing right after this is to finish
+this problem. Maybe try a while loop.
+See if you can get that working.
+Otherwise, I think you're on a great
+path. And um I do want to clarify for
+this. I think your use case of le here
+was fine because it's basically how like
+exact thing that you would Google and it
+didn't give you a lot of code or
+anything like that. It just gave you the
+exact um definition or some some samples
+that you would see from googling. So
+that is a perfect thing. If you would
+Google it, then it's probably something
+that you can use lead for, just in case
+for everyone watching as well.
+>> Yeah, unfortunately Hacker Rank doesn't
+have that, but
+>> All right, does anyone have any
+questions? And thanks again, Ben. That
+was a great showcase. Um, thank you for
+volunteering. But does anyone have any
+questions before we close out for today?
+I know it was kind of quick session
+today.
+I feel like um practice is I I feel like
+practice is the only way to like get
+better at it because like you know I
+think I could say from experience like
+although I do know my toolbox and
+everything is to just like I mean all
+that tools is in my head but it's just
+like but if I don't use it and just if I
+don't practice problems then I'm I'm
+going to delay myself further and not
+able to like give myself the chance to
+like really work out problems. And so
+that way for the next time when I come
+to another problem then you know yeah
+just like but it would help if I keep
+practicing problem because it's more
+like kind of like I think that's what it
+is from for most of us we have to kind
+of like go through through and keep
+building upon and then that's the only
+way to get better. I don't think there's
+any other way to do that.
+>> Yep. Great summary. And I think an
+additional detail I'd add in there is
+how are you reviewing and improv
+improving after each attempt? So what
+did I learn from this attempt? Did I get
+it passing? Did I look up a solution
+eventually? Um, how did I get there? How
+many attempts, how many false starts did
+I take? And how can I take those steps
+and apply them when I try my next
+problem?
+>> Y,
+>> that reflection step is pretty
+important, though. All right, any other
+questions, thoughts?
+Um, I find that if I do a certain kind
+of problem over and over, I start to
+recognize the structure and
+it's easier to build a template from
+that. It's like a pattern that you begin
+to see. And then what I'm doing is I'm
+putting that pattern like on 3x5 cards.
+>> U,
+it's just a it's just an observation. Uh
+cuz this the problem that Ben was
+working on reminded me of some of the
+string manipula manipulation problems I
+was working on except to use list rather
+than strings.
+>> Yeah.
+>> But but you know it's like if you do
+enough of these I agree with Daniel too.
+It's like if you do enough of these you
+start seeing a structure.
+Um
+>> and I'm glad you're saying structure
+because you know how I feel about the
+word patterns. Um, everyone talks about
+just keep practicing until you see the
+patterns, but like the patterns are
+exactly what you said. They're the
+underlying structures that you learn in
+the seven basics and mod 2. So, when I
+when I think of patterns, I'm really
+thinking, oh, no, you're just mastering
+the fundamentals and seeing how those
+data structures apply in new and
+interesting ways. Um, but I'm really
+glad that you're seeing that and
+applying those to note cards. I think
+that's absolutely great.
+>> Okay.
+Yeah, but structure is a thing though. I
+mean to see it and if you do enough of
+these you do start seeing it and the
+thing is to put it down someplace so
+when you see it again you got something
+to refresh your memory.
+>> Yep.
+Okay. Any other thoughts or questions?
+Great stuff.
+All right. Thanks everyone. I will see
+you all not next week because it is
+Christmas Eve and then the following one
+is New Year's Eve. So, we will be back
+in two weeks on January 7th. Um, and
+that should already be updated in the
+calendar for everyone.
+>> Um, but yeah, until next time.
+>> Yes.
+>> Happy holidays.

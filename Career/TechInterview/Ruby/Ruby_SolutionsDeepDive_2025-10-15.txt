@@ -1,0 +1,1493 @@
+That's very helpful. Thank you. Mindset
+is everything.
+>> Yes, mindset is definitely everything.
+Um, so yeah, thank you for sharing that.
+I think pseudo code is definitely a
+great
+>> a great spot to get comfortable with
+first and then what you can do to that.
+I don't know, you only mentioned that
+you write like to write out the stories.
+>> Oh yeah.
+>> Make sure that you're including each
+part of the problem in there as well.
+You're going through the constraints.
+How does the constraints fit into the
+story? How do the examples fit into the
+story? Like, how do each of the pieces
+add to it, change it,
+>> if at all? Um, because sometimes they do
+and sometimes they don't.
+>> It does. Yeah. Thank you for that. It's
+sort of like a little narrative.
+>> Yeah, definitely.
+>> Going on narrative. Okay, great. Thanks.
+That that's very helpful.
+>> Everyone else, what a compliment.
+Couldn't get that word out. What
+accomplishments again? What
+accomplishments has everyone been having
+this week?
+>> Just trying the
+the tech interview, but
+have my own set of issues to work on.
+>> I see that as an accomplishment as well.
+So taking the technical interview for
+the first time, getting the feel of the
+pressure of being on for the first time,
+being in front of the person, having an
+official recommendation or evaluation at
+the end. Even just getting to that step
+is such a victory. So I think that's a
+great spot.
+What about you, Rebecca? Yeah,
+>> you've seen me on the channel. I'm
+working on the beta uh mod 2. I had done
+mod 2 when before this revision. I did
+the whole thing and it was suggested to
+me that I try the beta and and I'm
+excited about doing that because I had
+actually even done a similar thing even
+with mod one. I had done mod one and
+struggled with it for the first go
+around. took a long time, a lot of long
+breaks in between. And then um once I
+started mod 2, the first thing was like
+do a hacker rank and I opened up hacker
+rank and I'm like I ran.
+I was like I got to go through mod one
+again. So I did and I did it a whole lot
+faster. So this whole idea of doing mod
+2 again appeals to me because of that
+like because of how I um you know seemed
+to do better when I reviewed
+uh mod one a second time. So doing this
+and it's a little different and it's a
+little more in depth with hacker ranks
+and preparing for the tech interview.
+Um, I mean, I'm only I'm not even
+completed a section yet, but I've done
+many lessons and um I'm almost
+approaching project one again.
+>> So, yeah, that's what I've been
+>> Yeah. And that's a good spot to be, too.
+I like that because
+>> when I was working on helping out with
+the mod 2 revamp stuff,
+>> I was watching those videos again, too.
+And so, it's always fun to go back and
+look at that, look at all of that
+information, and I was picking up new
+stuff. So, I'm like
+>> having coming back as a season pro,
+right?
+>> Season pro. Um,
+>> well,
+>> seeing everything that Dr. talks about,
+>> you know, it's always it's you learn
+something new. You see it from a
+different perspective, gives you new
+tools to think about and work with. So,
+>> yeah, always go back. It's it's great.
+>> That's where I am.
+>> Awesome. Thanks for sharing. What about
+you, Aman?
+Yeah. Hi, I'm on mod 2
+um project 2. Well, I'm in the beta
+version now. Um so I've been suggested
+by Katrina to go back and do the um mod
+mod 2 again from the beginning so that I
+can um use the beta version and it's a
+little bit more um revamped.
+>> Mhm. But I think listening to Rebecca, I
+want to do mod mod one again because
+I think it it will be a good refresher
+because I really am lost. Like I don't
+know any of the code.
+Um like it didn't stick with me when I
+did it the first time.
+>> Yeah. So
+yeah, I mean I feel like when you are
+going through the videos the first time
+is just like I don't even know. It's not
+you're not absorbing it. you're kind of
+just like exposing yourself to it, like
+the thought of it, the concept of it,
+and then you kind of have to sit with it
+and digest it for a little bit, and then
+you have to go back and do it again to
+like actually absorb it. Um, so you
+could do that. I think what mod 2 does
+differently is that it puts you in the
+project, so then you're kind of forced
+to take steps to absorb it. Um or
+yeah, I think I think a good approach
+there is actually continuing on and then
+once you get to those parts where you're
+confused, reference the thing that
+you're confused about in mod one. So
+you're getting to your first like list
+related issue. Oh, I can't remember the
+syntax for this or I'm I'm not
+understanding how these parts are
+moving. go back to mod one, watch the
+whole mod one section on lists and
+accessing them and iterating through
+them and then do it that way because
+then you're able to absorb it this time
+and then immediately apply it to a
+situation and that's where the learning
+really goes.
+>> Okay. Okay. I was thinking of that too.
+That's uh really helpful actually.
+So
+um I did use chat GBT for project one
+but I don't want to do that this time.
+Um
+if if anything I'll reference the mod
+one module on it and if I and I could um
+use other websites like I think that's
+what Dr. Emily wants us to do like um
+leak no uh like uh geeks for geeks for
+instance.
+>> Yeah. to try to
+>> get the syntax
+>> it's not all explained that's one of the
+things I was frustrated about was it's
+not all explained like word for word in
+the in the module like we're expected to
+look things up
+>> yeah because you can't you can't teach
+you would be here forever it would be it
+would be a year or more of studying
+because you learn the basics of it and
+then like for a list alone in Python
+There are tons of library methods
+related to lists. You have the methods
+that work on it. You have the things
+that it's used with. You have method
+functions that can be used with it
+across different data structures outside
+of lists. And it's the same thing for
+each concept with dictionaries, with
+linked lists, with all of it. So, it
+would take literally forever to try and
+explain every be like detail. And
+there's no point because you only really
+need to learn it when you need to use
+it. And so you do learn how to use it in
+in a variety of different ways as you go
+through the projects.
+So So yes, but I I understand the
+frustration because
+it's annoying. It's like I don't know
+how to do this and how am I supposed to
+know where to go and what to do? But
+it's actually funny because that's never
+going to go away. Like even when you
+move on to the internship and even after
+the internship, I feel like 20% of what
+the day job is is now what did this
+person on Stack Overflow say about
+writing this function because I have no
+idea what to do here and then kind of
+building and adapting from there.
+Yeah, we're doing the internship now.
+Um, the low code one
+>> and there are some things that
+other people have used JavaScript to
+integrate it into the PHP file
+to do to to like to make the button
+work. I'm like, oh, so you do need code.
+It's not a low code really.
+>> Low code, not no code. Yeah.
+>> Yeah.
+>> And even that, it's up to you like how
+comfortable you are. But JavaScript's
+cool and that's another thing. You can
+learn the you can apply all the same
+basic syntax and everything that you
+learn in mod 2 directly applies to
+JavaScript. You just have to change the
+wording the syntax of it. But JavaScript
+has a bunch of more stuff built on top
+of it because it works in a browser and
+Python doesn't work in a browser. So you
+have all these browser methods and
+browser APIs that everyone talks about
+with JavaScript and that's like a whole
+other beast entirety. And that is where
+you get you start to get really panicky
+and confused, but it does get easier.
+>> Yes, Rebecca.
+>> Yeah, I remember using a JavaScript
+source website. Um, it you can borrow
+snippets of code to do different things.
+Um, like if you wanted to make a clock,
+you could borrow code for the clock.
+So I wonder if there are websites like
+that that where you can like you can
+look up how to
+>> yeah not even just websites but people
+will post full functions methods games
+even fully written out in like different
+forums or different websites and there's
+meant or even GitHub like here go to my
+GitHub repo here's this full game
+download it use it learn how to like
+like learn how it works and people will
+use those and reference those to learn
+new concepts or learn how to do
+something similar And I feel like that's
+a lot of the learning journey as well is
+you take you kind of hack away at
+something that someone else showed and
+then you have to figure out how to kind
+of shove it into your little new use
+case and work it and tweak it and make
+it fit into this new thing and then the
+few things that you have to learn to
+kind of squeeze it in to get it into the
+right spot.
+So that's why that circling back to what
+you said earlier, I don't like JB chat
+GBT for the early stuff
+>> because then it's kind of like replacing
+you doing the thinking. I feel like chat
+GBT is great for when you know what you
+want to do or know how you like
+you don't need chatgbt, but it's helping
+you, it's assisting you, and then you
+can take it from there. You can do the
+rest. But if you're using type CPT
+because you're not sure how to make the
+next step, that's when you want to pause
+and say, is this actually helping me
+learn or is it doing the learning and
+I'm just kind of like floating through
+it. But that also comes back to your
+overall goals. If your overall goal is
+to stay in low code, then that's totally
+fine. Learn how to become an expert chat
+GPTER and chat GPT through your
+projects. But if you want to go to the
+full full stack dev internship or the
+full stack or even front end, then you
+might want to put the pause on the chat
+GBT until later.
+>> Rebecca, you had mentioned um you had
+raised your hand there for a second.
+I was just like thinking, you know, like
+WordPress is something that was coded
+and made more gooey like graphic
+interface, but it's it's got, you know,
+issues. And if there's something you as
+the user want to do that they didn't
+package for you, that's when you need to
+kind of open it up and change it for
+yourself. Which is why it's useful to
+know coding then when you want what for
+those situations like with the low code
+internship that Ahmad and I are in.
+There's this one issue that can't be
+settled through through this package you
+know program of WordPress. We have to
+open it up and and change it and change
+the environment, change the theme to,
+you know, behave the way we want it to
+and hopefully won't not break anything
+in the process.
+So that's coding for you, right?
+>> Yep, definitely. And WordPress is kind
+of its own beast as well, even probably
+even worse than the JavaScript browser.
+>> Yeah.
+All right. Well, thank you all for
+sharing all these experiences. I feel
+like we spent a little bit maybe too
+much time on that. But that was good.
+That was fun. I enjoy
+I enjoy just kind of blabbing about web
+stuff, so that's good. Um,
+all right. So, let's see. How do we want
+to
+jump into this today?
+Okay.
+So on Sunday we covered Wait, what did
+we cover?
+Oh, that's right. So on Sunday, this
+might be helpful for you um for you all
+as well. If you want to catch the
+replay, we talked about what to do if
+you kind of get stuck in your problem
+and you're you're getting to the point
+where you've tried it a few different
+times. Maybe you've given it a day and
+you've come back. Um, you've written
+your pseudo code, you've written out
+some code even, you maybe you've got
+some of the test cases passing, maybe
+you've got a lot of the test cases
+passing, but not all of them, but you
+just can't get through that final
+hurdle. So, you have to kind of look up
+a solution to figure out what what is
+the answer here because I've I've thrown
+everything that I know at it and I've
+really done my due diligence
+to break this problem down and solve it.
+And that happens. we all have to like at
+some point you kind of have to surrender
+to the problem. Um, so how do you use a
+solution effectively? And so we talked
+about, sure, look up the solution, but
+understand how it works. Go through it
+line by line. Make sure you're seeing
+how the parts are moving, adding in
+print statements, asking questions,
+answering those questions, using the
+debugging until you can understand how
+it is working and what it's doing with
+the code. And then go back and write the
+pseudo code for it as if you had written
+it yourself. and you're kind of reverse
+engineering your own code. Write the
+pseudo code of what you think it's doing
+in your own words in the own language of
+your your mind and figure out what how
+to say what it's doing and then delete
+that solution and never reference it
+again. So that's kind of what we covered
+on Sunday and then coming back a few
+days later and using your pseudo code
+that you wrote to then write the code
+solution again from your memory and from
+the pseudo code. So that way you're
+working from kind of a blank template,
+but also you've written down how the
+solution should work. So theoretically,
+you should be able to do it. And if you
+get stuck at any part, then you can
+Google that. And that's more typical to
+the the developer process. I'm going
+through my solution, but I can't
+remember how to manipulate this part of
+the array, or there's some specific
+thing I need to do with a dictionary.
+How do I insert into a dictionary? or
+how do I do such and such with the list
+index that single thing perfectly fine
+to Google even in the technical
+interview. So then you solve that one
+thing instead of trying to figure out
+the whole problem and then you can come
+back and keep moving through your code
+until you write out the solution from
+the pseudo code. Um, and that's a really
+great way to kind of reverse engineer
+your solution so that you're still
+learning and you're still applying what
+you're learning and then you get the the
+dual benefit of practicing your pseudo
+code too because you kind of get to see
+did I actually write good pseudo code to
+help me because I understood the
+solution. I worked through it line by
+line. I understood it enough to write
+the pseudo code. But is my pseudo code
+of such quality that I can follow it a
+few days later and still get to a
+working solution where all the test
+cases pass? So that's the real the
+there's a couple of different wins that
+you're learning there. You're learning
+the solution. You're learning how to
+reverse engineer it. You're learning
+what makes good pseudo code and you're
+learning not to rely on
+just pasting in a solution but actually
+learning how to apply
+the knowledge that you just gained.
+So, so Ruby, what you're saying then is
+number one, if you get stuck, go look at
+the solution, which is the code that the
+the code. Okay? Then you look at that
+code and you take it line by line and
+write it out into English or whatever
+your own pseudo code is.
+And then you get rid of you you get rid
+of the code that was the solution. And
+then you sit down and then you look at
+what you wrote down in English or your
+pseudo code and then you try to code
+from that.
+>> That's right.
+>> That that
+>> but you do you want to add a break in
+between that as soon as you write the
+pseudo code. Come back a day maybe a few
+days later before you go back and try to
+write the code.
+>> Yeah. You know, that that's kind of cool
+though because you're also getting
+practice reading somebody else's code.
+>> Exactly.
+>> Uh which is I'm finding I thought when I
+first started out that I could do that
+fairly easily, but I realize I can't.
+And that's something I have to work on
+is being able to read code that's there.
+you know, especially when we may be
+thrown, we will be thrown into
+situations where we're having to fix
+code, we need to know what it says. Um,
+so that's really kind of a cool way of
+practicing reading what code is and
+understanding it as well as getting over
+your own hump of, you know, when you get
+stuck trying to do a solution to a
+problem. But yeah, reading somebody
+else's code is huge.
+>> Exactly. Now, how long it takes you
+before you get to that that looking up
+the solution, that's where the kind of
+the fine figuring out where that line is
+because you don't want to just jump to
+the solution on the first sign of
+struggle, right? like you do want to go
+through a series of making sure you're
+debugging, making sure you're breaking
+the problem down, understanding the code
+that you wrote that's getting stuck or
+failing test cases, and then once you've
+given that a good amount of effort, and
+we talk more about what those
+requirements look like at the Sunday
+session, that's when you can soundly
+jump to the the solution bit.
+So look, when we're ramping up for our
+technical interview and we're working on
+a problem, how long should we stick with
+that before we run to the solution?
+Yeah. So, we talked about that a little
+bit on Sunday and we actually talked
+about it a lot. Um, so I would go back
+and look at the Sunday replay because
+it's all it's all kind of spelled out
+there. Um, and I'm afraid that if I talk
+about it again, I'm going to say
+something different.
+Okay, I'll check it out then. Thanks.
+>> Okay,
+so here's what we'll do.
+Going to pull up a problem here for us.
+Okay.
+Share my screen.
+So, switching gears a little bit, let's
+take a look at what the approach on the
+the first side of it is, right? Like
+getting started with a new problem. So,
+let's read through this problem. Find
+the index of the first occurrence in a
+string.
+going to say that again because that's a
+lot of words. Find the index of the
+first occurrence in a string. Okay.
+Given two strings needle and haystack
+checking there. So haststack needle in
+my parameters list. Return the index of
+the first occurrence of needle in
+haystack or negative one if needle is
+not part of a haystack. Okay. Um I have
+a tangent about this negative one thing.
+So we'll come back to that in a little
+bit. So looking at the example, we're
+given haystack which is a string sad but
+sad and needle sad. So the output is
+zero. And so the explanation is that sad
+occurs at index zero and index six. So
+if we look at at zero 1 2 3 4 5 and six.
+So it is it is saying that you can find
+sad starting at zero and starting again
+at six.
+The first occurrence is oh yeah the
+first occurrence is at index zero. So we
+return zero. Okay.
+So I'm I'm reading this and I'm already
+making some thoughts in my mind about
+what what we could do here, but I'm just
+going to keep reading.
+Another plug. I think two or three
+Sundays ago, we walked through a problem
+and I explained
+everything that goes through my mind
+during starting a problem. Like every
+single thought that came through my
+mind, we typed out, we spelled it out,
+we looked at it. So, if you're curious
+about like the full process that's going
+on behind the scenes, there's a video
+not too long ago that has that. Um, but
+I always we always come back and you're
+just kind of keeping things in mind and
+then once you get the pseudo code that's
+where you go back and pull out the
+specific lines that matter. Okay, so
+keeping forward moving haystack in the
+second example is le code and needle is
+leto. Okay, so here we're returning
+negative one because leto the string did
+not occur in le code. So we return
+negative one.
+Okay, so this this is making sense to
+me. We're looking for basically a string
+match inside of a larger string
+potentially. We can check that in the
+constraints later. And it has to be a
+full string match. Um, and then we're
+returning we're looking at two things.
+That string can occur multiple times in
+this other string. And we're looking at
+the first occurrence. And the first
+occurrence is
+the first index where that string begins
+in the larger string. And that's a lot
+of just saying the word string. So we're
+going to we're going to type that out.
+Okay. Me check my keyboard. Okay.
+So, just to check, we're gonna look at
+haystack
+and needle
+>> just to make sure.
+>> Can you put the link on the chat?
+>> I sure can.
+>> Thanks.
+>> Okay, so it tells us here input sad but
+sad, sad, and then I just printed that
+out to make sure that it matches sad but
+sad and sad. So haststack
+is the string that we're searching
+within and needle is the thing we're
+searching for.
+Makes sense.
+So if I had to write that in my own
+words and so just like Linda was saying,
+wait, yes, Linda was saying earlier, um
+it's very important to write it in your
+own words. Make the translation of what
+they're telling you into how you are
+understanding it.
+And that looks like how would I
+understand this? So
+given string needle
+oops needle
+find
+exact string match as a substring within
+hstack.
+Okay. And then I'm going to say if this
+kind of looks more like the actual
+workflow you would be doing. If we find
+a string match because that's our first
+consideration. If we find a string match
+aka sad
+in
+sad but sad.
+Oops.
+return the index position
+of the first character
+also
+of the first occurrence.
+Turn the index position of the first
+character and al and also of the first
+occurrence. I guess not. And also
+that is the first occurrence
+is the first occurrence
+of the match.
+Okay.
+So then making sure that what we're
+returning is
+what we're actually returning is a zero
+or negative one
+or not not a zero but our actual return
+statement which is also good to type out
+return index position. So I'm expecting
+integer
+representing
+a valid index position.
+If no match, return negative one.
+So returning a negative 1 is very common
+and you'll see it a lot in library
+methods too. Um, for example, in a
+binary search, if that was a method that
+was built into a library, the common
+procedure for a binary search is that
+you are doing the halfing thing, kind of
+like a phone book or whatever, and
+you're you're splitting things in half
+until you find the match, and you return
+the index position. But if there isn't a
+match, then you return a negative one
+because the there was no match in the
+the standard index ranges of 0 to n. Um,
+and it's not just for index positions,
+but it can be used for anything that
+would return an integer. And sometimes
+even things that would return like a
+string if you can't find a string or um
+if like an API, well, not an API because
+an API would return like a specific
+error, but there are a lot of library
+methods that will return a negative one
+if something isn't found or if the
+results don't match,
+um,
+etc., etc. So that's a very common thing
+to see. Um so this is a good practice
+for that.
+All right.
+Now I want to look at the constraints
+because I want to I had an idea and the
+first thing that comes to my mind is can
+we assume that hay stack will always be
+bigger than the needle like we're
+looking for quote unquote needle the
+string but to do that we need to have a
+string that contains it and so for it to
+contain it must also be the length of
+that larger string must also be greater
+than or equal right so if I'm looking
+for the word sad add
+and hstack is just s. That's not going
+to work, right? So, we need it to be at
+least the same length.
+And so, what this is telling us,
+what do we think this is telling us? Can
+anyone tell me what this constraint here
+is telling us?
+[Music]
+Um okay. Um we're looking at the length
+of um haystack
+and let's see
+the
+one has to be less than the length of
+haystack.
+Um,
+>> yes.
+>> And I I you kind of lose me with the
+needle length has to be less than 10 to
+the what?
+>> 10 to the What is that? 10 to the
+>> fourth.
+>> Fourth.
+So
+>> So 10 * 10 is 100 time 10 is a th00and
+time 10 is 4,000. I mean 10,000.
+>> Okay. So um let's see
+one has to be less than the length of
+hay stack and the length of needle has
+to be less than 10,000.
+So let's remove
+this. So assume comma needle.length
+isn't there. Uhhuh.
+>> Assume that it's just haystack length in
+here and then you still have
+this part and this part.
+Yes, Rebecca.
+So, you'd have to put a condition in
+your code that says that I would think
+that if the array of needle is um larger
+than the array of haystack, you would it
+would automatically by default throw a
+negative one.
+Is that what you're trying to ask?
+>> Um maybe. Okay, because I would think
+logically
+>> it'd have to be
+>> um at least one character bigger than
+>> the entire string of needle haste would
+need to be.
+>> Yes, that is true. We would need them
+like you said we would need them to be
+at least equal if not greater than.
+>> Right. Right.
+>> Here
+that's what So what I'm asking is do we
+do we actually need to make that
+assumption or that check? So that's why
+I'm looking at the constraints because
+it does tell me about their links. And
+so if I understand the constraints, I
+can then make the decision a safe
+confident decision decision about
+whether I need to actually do that or
+not. So if I was to write this out, I
+would say
+um assumption is
+that
+oh that's that's not right. Assumption
+is that maybe
+Hay stack can be less than
+needle,
+right? So, question mark.
+So, need an if condition to compare
+links.
+And what I'm doing here is that I'm I've
+made an assumption that we can test.
+But if I look at the constraints, the
+constraints might tell me whether I need
+to even make that test or not. So if the
+constraints told me that haystack is
+always going to be at least the same
+size as needle, if not greater,
+then great, I can just mark this off.
+That's less code that I have to write.
+It's one less edge case that I have to
+worry about. I don't even need to think
+about it anymore because the constraints
+of the problem have already given me
+that information. So that's why it's
+good to be able to read the constraints
+and understand them so that you can
+write less code and understand how the
+problem works. Yes, Rebecca.
+>> But has the um constraint said that that
+that
+>> So that's what I'm asking.
+>> Okay.
+>> I don't see that present there.
+>> So what do you see here?
+>> That it could be anywhere between. It's
+not going to be less than one. It's not
+going to be a decimal.
+Um, or I guess it won't be a decimal, of
+course, because we're talking about
+indexes, right? So,
+>> well, this is saying the length here.
+>> The length. Yeah. So, it's not going to
+be zero because then you wouldn't even
+have an array. So, or not true. Zero is
+part of an array, right? It's the first
+character of one. So,
+um, the length. Okay. So, it's going to
+be you, you know,
+it doesn't that that line doesn't really
+say a whole lot, I think.
+>> Well, it's got to be more than one and
+less than 10,000. Uh, right. Characters,
+basically.
+>> Uh, Haystack does.
+>> Hastack has to be between one and
+10,000.
+>> Yeah.
+>> Yes.
+>> But both does needle does too. So,
+>> needle does too. But it doesn't even say
+that needle has to be smaller or bigger
+than hasta. It doesn't.
+>> It doesn't say that. Doesn't say that.
+>> Exactly.
+>> It doesn't say that
+>> they can be the same size.
+>> Exactly. Not only could they be the same
+size,
+>> needle could be bigger than haststack.
+>> Yes.
+>> Yeah. So that's why I'm thinking we need
+to have that condition in there.
+>> Yes. But what I'm um That's great and
+thank you for reading this out. But what
+I'm trying to demonstrate is that we can
+confirm that using the constraint. So I
+would then say this is not really an
+assumption anymore,
+>> right?
+>> Constraint
+>> has confirmed
+that haystack can be smaller
+than needle.
+So we need to account for it. But what's
+important
+>> simply because it doesn't say that it
+can't.
+>> Right.
+>> Sorry, what?
+>> Simply because it doesn't say that it
+can't be. Yeah.
+>> Exactly. Exactly. So that's why it's
+important to be able to read this,
+understand it, and then also explain
+your understanding of it to the person
+who's interviewing you and say, "It's
+telling me that both of these can be
+between 1 and 10 to the 4th, but it's
+not telling me that needle is going to
+be greater or smaller. And it's not
+telling me that hstack is going to be
+greater and smaller. So I can assume
+that they can be
+either of those combinations of anything
+because it's not specifically telling me
+those uh implementation details and that
+is what you're getting for the
+constraint.
+So yes, thank you for the dialogue. This
+is great.
+What does this next piece say? Hey stack
+and needle consist of only lowercase
+English letters characters. So that's
+good because we're not going to get any
+like strings or any weird characters
+that we kind of have to parse out. We
+can safely assume that we can do exact
+string matches and not have to worry
+about anything else sneaking in. So
+that's not going to change our code, but
+it's just kind of a nice reassurance.
+And then I'll just say verified.
+So then when I'm saying in my code here
+I'll update my pseudo code. So we are
+um actually I would maybe write that up
+here.
+Check that haystack is greater
+than or equal to
+needle
+otherwise
+otherwise what do we return
+>> negative one
+>> exactly thank you perfect otherwise
+return negative one and then we're going
+to search for needle confidently because
+we've already handled the edge case so
+at this point this point in our soon to
+code, we know that needle is going to be
+smaller than or at least equal to
+haystack. So, we can search for needle
+inside of string haystack
+if we find a string match.
+>> Can I ask a really quick question again?
+I'm so sorry to interrupt. Um, how do we
+know that needles got to be small in
+haststack again? Because you know the
+constraint said didn't say anything
+about size.
+>> Yes. So we would be adding that
+condition. So once we get to this part,
+we can safely say it because we're going
+to add the condition to our code here.
+>> Okay.
+>> So we're checking that haystack is
+greater than or equal to needle.
+Otherwise, we'll return one. That
+function will end. The return will exit
+the function and we will run that
+negative one against the test case and
+it will tell us, yep, you're right.
+>> It's less than, so it can't ever work
+out.
+>> Okay. But if we make it past that if
+condition, right,
+>> then we know that we can confidently
+search because they're going to be the
+same or same or better.
+>> Okay, so we're making that assumption
+that needle is smaller than hay stack.
+>> We're not making the assumption that it
+is. We're making the assumption that
+it's possible that it is.
+>> Oh, okay.
+>> Yes.
+And they they're very could there um
+like very well we could not have any
+test cases where it is smaller. But
+since they explicitly don't tell us that
+it's going to be smaller every single
+time I we're almost guaranteed to see a
+test case where where it's it would not
+be that case where needle would be
+greater than haststack.
+Okay. So search for needle inside of
+string haystack. If we find a string
+match aka sad inside of sad but sad then
+dot dot dot
+return the index position of the first
+character
+s in this example
+um I'm going to say for the first
+occurrence
+for the first occurrence of the match
+and then
+we will return finally we will return
+our int representing the valid index
+position. If no match, return negative
+one. So, what else might we need then?
+If we're looking for a specific index
+position,
+we might need
+a variable
+to track index position.
+>> Oh, you mean like a loop variable?
+>> Like a loop variable like I or
+something. So that is going to be my
+next question is we haven't tackled the
+biggest hurdle of this problem which is
+how are we
+searching for the string? How are we
+doing the string comparisons? So what do
+people think would be the best way to
+look for sad in sad but sad?
+>> I put the solution in already.
+Okay. You did it on Hacker Rank. I mean,
+uh, Discord.
+>> Yeah, I put it I got it working.
+>> Okay, cool. Well, there you go. That
+That was your success. We talked about
+this the other day. That was definitely
+within 20 minutes, right?
+>> Yeah. But
+you know what happens when I'm under
+pressure?
+>> Yes, I know. But you'll get that
+experience. Um,
+>> like I need I need therapy or something.
+No, you just need some more practice,
+that's all. All right. So, for anyone
+who hasn't already masterfully solved
+the problem, what do we think is the
+best way to or any way really to search
+for the strings inside of the other
+strings?
+>> Well, I love my four loops. Uh I love
+searching through four loops.
+Um, so you'd want to take uh something
+like, well, you're looking for needle
+and hay stack, right?
+>> So I would get whatever haystack was and
+I'd loop through it. Um, and I'd say if
+and I I just spell it out if
+sad is in haststack.
+um you know basically um
+print the index that where s is I mean
+do something
+>> so what does that look like that's a
+great um overall approach I think that
+sounds right but how do we break that
+down into smaller steps
+>> well you start out with I think a for
+loop uh and you want to traverse the hay
+stack as you said so uh you want to say
+for
+for lack of a better loop variable I and
+but
+um wait a minute it it's got to be you
+know because what I want to do is I want
+to have something like sad in quotes so
+that when I loop through haststack and I
+see sad I can stop the loop and then
+identify the index that S was in and I
+don't know how to do it.
+Mhm.
+>> Um
+let's uh for but to start out just to
+start out somewhere um for
+um string in loop or cuz I'm looking at
+three letters not just oh wait a minute
+can we wait um I want to say in quotes
+for s in
+haystack.
+Um or for s a d in haystack.
+Um,
+if
+let's see
+if
+S a D in haystack
+or Yeah. If if S a haystack
+return
+Okay, I I give up. I I I need to go off
+and think.
+>> I need to think.
+>> This is a great spot to be in because
+we're kind of torn on the position to
+take. Maybe we use
+maybe we use a for loop. But it sounds
+like
+could we possibly It sounds like what
+you want to say is could we possibly
+just check if
+for lack of sad
+is in haststack.
+>> Yeah, that's what I really want to say
+is because you're looking for three
+letters. You're looking for sad.
+>> So you could use a for loop to do that.
+But is in is actually actually Python
+syntax, isn't it?
+>> I think it is.
+>> So we could at this moment that sounds
+like a potential solution. So what I
+would do just to collect my thoughts is
+I'm just going to try this really quick,
+but if it doesn't work, then I need to
+go back to the drawing board, right? So
+I have I have option one which is just
+going to be my little experiment to say
+could we just check and if that doesn't
+work then I'm going to come back and
+finish typing out my other approach
+which might be to use a for loop.
+So then here I would just try print
+um
+sad
+sad in
+a stack.
+Look at there. It tells me true. So it
+looks like we could do that. So then the
+next bit is
+switching that from a hard-coded tob
+needle because I know that that works in
+this one specific use case where we're
+looking for sad and maybe I just need to
+use the quote sad just to keep it in my
+mind that I am looking for a string
+inside of a string. So now I can switch
+back over to the variables.
+I mean there's no like so what an if
+statement is doing right is that we're
+saying if and then check condition and
+then that condition is going to return a
+true or a false right and so if it's a
+if it returns
+a true if our statement that we write
+needle and haststack returns true then
+it will continue with the rest of the if
+condition and then if it returns false
+for that condition then we will skip the
+if condition but you don't need the if
+to test the condition right you can just
+write the condition out needle and
+hstack
+>> I didn't know you could do that okay
+>> fun stuff right
+check condition return true or false so
+me
+Oops oops
+so this is just printing out
+just to keep keep track of everything.
+Check condition statement
+and
+it was true. Yay.
+>> Okay. So, you didn't really have to use
+the an if statement to get to that
+point,
+>> right? But now, would we need an if
+statement to move forward? We found out
+that yes, we can determine if we can
+determine a true or false based on if
+needle is in haststack. So then what
+would you do from that point on? We're
+going to keep moving forward with this
+approach. We'll keep our option two
+there just in the background in case we
+move further and we get stuck somewhere.
+But we've done a quick test there and it
+worked out. So how would you continue?
+So
+I would rewrite this and we're going to
+say
+check using in statement
+for needle in haystack.
+Um and then that's just kind of like a
+little sub comment about our approach.
+So what comes after that check using end
+statement
+with
+with if condition. So what do we do now
+that we are potentially in our if
+condition?
+>> You want to get the index that um the
+sad first appears. You want to get the
+index that the um s first appears in.
+Um
+you want to get the first index of sad.
+Yep. Okay.
+So,
+so how would we do that?
+they
+um
+well you okay again you know it's like
+my my default thing is I totally want to
+do a for loop for pretty much everything
+um and you know for me I think the only
+way that you can find out where within
+haystack sad exists is to loop through
+haststack you know it's in there and
+that was like our first statement we got
+to that point that yeah it is in there.
+So the next thing we have to do is we've
+got to go through each letter in
+haystack to find where
+uh the first where s appears where the
+first letter of sad appears. I I can't
+think of any way you can do that other
+than to loop through haststack for I and
+haystack. Um
+if
+um
+I
+>> So let me let me stop you there just for
+a moment.
+>> Yeah,
+>> we could have done this at this point
+here too, but if you have an idea for
+what you want to do, but you're not sure
+about the exact implementation details,
+that is a perfectly reasonable point to
+stop and say you have an idea though,
+right? How do I check for a string
+inside of a string? And then that's
+where you might find, can I use the in
+statement to check for a string inside
+of a string? Right? That's something I
+can Google. Can I use in statement to
+check for a string inside of a string?
+Now, we've gotten to the point where we
+know that the string is inside of the
+string. And you've asked a new question.
+Get index of s aka the the index of the
+first character where sad appears. So
+what is the question that I might use
+then? Can I like how do I look for the
+index of a string
+or how do I look for the index of a
+letter inside of a string?
+>> That might be something that I would
+look up Python.
+>> How do I
+get index of a
+character and a string? if you're if
+you're not sure. So, right away we're
+seeing that there's something called an
+index method, string index method.
+And then there's also the stack overflow
+which has find and index. So maybe I'll
+look here
+and they've given us a very detailed
+answer actually. So that's pretty cool.
+There are two string methods for this.
+Find and index. The difference between
+the two is what happens when the string
+isn't found. Very good information,
+right? find returns negative one. That
+sounds familiar. And index raises a
+value error. Okay, so that may be more
+than we want at this moment. So find
+position of a character. That's a string
+that they're testing. My string.find s
+and it returns a two. And then they're
+doing my string.find x. X is not in
+here. So it is returning a negative one.
+Now, that kind of sounds really similar
+to our problem, doesn't it?
+>> So, I wouldn't necessarily call this
+cheating,
+but it is kind of a shortcut. I guess
+you could. So, we might just try.
+>> Hey, I also wonder if I would have the
+presence of mind to do that when I'm
+under pressure. I guess you learn,
+right?
+So the point of this this piece that
+we're doing today is that you're
+learning what steps to take in general.
+By the time you get to the technical
+interview, you should have been exposed
+to a lot of these common things, these
+common methods that you might see for a
+problem. And even though there is a
+method that we're going to try out, the
+find or the index, you could still do it
+manually using a for loop. And I think
+that's something that you will also get
+a lot more practice with the more
+problems you take on. So whether you're
+being exposed to new methods that you
+can use or whether you're doing it from
+scratch, manually hand by hand, you're
+going to be exposed to enough problems
+that you should be able to tackle both
+of those things in the variety of
+different data structures that are a
+part of mod 2 so that when you get to
+the tech interview, you don't really
+have to Google as much. That's not
+saying that you can't or that people
+don't. It absolutely does happen. Um
+sometimes even just a gut check like I'm
+like 95% confident I can do something.
+Let me just make sure.
+Great. Totally fine.
+Um, but it's kind of a you're you're
+doing the hacker ranks to practice
+learning and adding to your knowledge
+set
+>> to expand from what you have covered in
+mu.
+So now I'm going to print this out
+and see
+what that gets us.
+So it returns a zero. And what do we
+know about this find function? That
+means that if it didn't return a
+negative one that it found it. And so it
+is saying that needle not only does it
+exist in haststack, but it is also
+following the exact parameters that we
+need and returning the first index.
+And because of that stack overflow post
+overflow post, we know that when it
+doesn't find it, it returns a negative
+one, which is also exactly what we need.
+So in this case,
+I don't even need to do anything else,
+right? I can just
+return that simple oneliner. Whoa.
+>> Let's check that out.
+Boom.
+Look at that.
+>> Wow.
+>> And we are crushing it. We're in the top
+percentile here.
+>> Now, wait a minute. That was just one
+line.
+>> Just one.
+>> Just wait. We went through all that
+pseudo code. It was just one line.
+>> Yeah.
+>> All the code is in that function fine.
+But I did it with using a for loop and
+it beats 100% too.
+>> Nice. Very nice. Now at this point, this
+is great. Add find to your dictionary
+and also add index to your your toolkit.
+Right? These are two methods that apply
+to a specific data type. Right? These
+are string methods. You want to remember
+that these are string methods. Find and
+index. And what does find do? It returns
+not only you can look for both a
+character a single character or you can
+look for a whole string inside of
+another string and it will return the
+index that it first occurs at or
+negative 1 and then we're looking at
+index which does the same thing but
+instead of returning a negative 1 it
+throws an error. Now, the reason you
+might want to do that is in of
+production code is that if you're maybe
+you're checking um
+you're checking for an API incoming
+response or you're checking for a data
+exchange between the front end to the
+back end and you're looking for
+something specific and if it doesn't if
+it's not the thing you're looking for
+doesn't exist, maybe you need to throw
+an error and return that back and show
+an error on the front end. Right? So
+instead of just looking for a negative
+one and then writing out the error text
+to throw that back to the front end,
+it'll just do it for you. So you don't
+need to necessarily know the full
+reasoning behind that implementation.
+You just need to know that find does one
+thing and index does another. And what
+is the the difference there? The next
+step I would take from here because this
+is excellent. We've now learned a method
+that we can use in the future.
+Now you want to know how does find work?
+What is going on behind the scenes?
+Maybe it is using a for loop. Maybe it
+is doing what we were going to do in the
+future step. You've solved the problem.
+So the pressure is off. You've added to
+your knowledge. You've added to your
+toolkit. But if you really want to
+cement that knowledge, just like what I
+talked about at the beginning of the
+session when we were saying reverse
+engineering solutions, this is a
+solution. This is something that we can
+take and reverse engineer.
+And now you just have to figure out what
+that might look like. And maybe you even
+start with just saying
+Python, how does the find
+because we don't have code to kind of
+walk through, right? How does the find
+method work for strings?
+Oops.
+And then you've got this. You've got W3
+schools. There's that geeks for geeks
+link that someone brought up earlier.
+These will help you kind of figure out
+what the line by line logic is that's
+going on. Take that, use it as your
+pseudo pseudo code. Um, if they give you
+code, write the pseudo code just like we
+talked about before, use that code
+sample and then write pseudo code from
+that. Delete the code and kind of
+reverse engineer it. If they just
+explain the logic, excellent. copy and
+paste in their logic, rewrite it in your
+own words, and again work from step step
+one line by line. How would I code this
+out step by step? That will give you not
+only the method approach, but you're
+also really honing in your problem
+solving skills, your pseudo code skills,
+and the ability to write and navigate
+all of these little sub subp parts.
+Because all these little subp parts that
+we're doing here, the if condition
+potentially the for loop, the checking
+for a specific index, the returning the
+index, those little sub problems or
+those sub things that you're that that
+that this method is doing is going to
+show up in almost every problem. You're
+going to see those little parts as
+components in a lot of different
+problems where you can't use the find
+method. So, if you can really master
+doing that part of figuring out how to
+do it if you didn't have the method,
+then you're expanding your ability to
+solve a wider variety of problems and
+you don't have to know the method
+because this is kind of the crux of Mont
+2, right? Mu teaches you how to
+the bare bones, the foundation of
+everything so that you could solve any
+problem without needing to know a
+library method. The library methods are
+great. They're shortcuts. They help you.
+you should learn them to help simplify
+and and get to solutions quicker,
+especially where it makes sense to. But
+theoretically, you could do it all from
+scratch. And learning and practicing
+that is going to make you a much
+stronger developer.
+But yeah, so that's that's your
+challenge here. I think we'll leave it
+at that. This will be I think you should
+all take this as a challenge is to
+complete this problem without using any
+library methods and figure out how this
+find is working and write out the the
+kind of the hard-coded solution there or
+not the hardcoded solution but the the
+full from scratch code solution um and
+see if you can work that out reverse
+engineer it.
+Okay. Do we have any questions about
+anything that we covered today? I am
+actually a little bummed that we didn't
+get to use more of our pseudo code
+because I think that is a very good
+muscle to build, but I think you can
+still apply that pseudo code lesson in
+this because not every problem you see
+will you be able to rely on using a
+library method. Yeah. Any questions
+about this problem or anything that we
+talked about today?
+I like the fact that uh you talked about
+reverse engineering because I have found
+during this course that the way I learn
+is to do it like that. Um unfortunately
+though sometimes I don't want to always
+have I won't always have the solution in
+front of me and be able to work
+backwards. But I do know that reverse
+engineering for some reason that really
+sort of clicks with me. So I was really
+happy to hear you talk about reverse
+engineering uh from the solution.
+>> Awesome. Yeah. Great. Thank you for
+sharing.
+Anyone else have any comments before we
+close out?
+>> Uh in cases like this, what's preferred
+in an interview?
+>> Um it wouldn't matter to me honestly if
+you use this,
+>> right? No, I mean like
+>> you knew the method, you learned the
+method, you applied it, we solved all
+the test cases. Awesome. I'm not I'm not
+The purpose of the technical interview
+isn't to confirm that you can code from
+scratch. That's just good practice.
+That's just a muscle that you want to
+build over the course of your tenure.
+But I'm not holding you to that such a
+strict requirement to pass the tech
+interview to move on to the internship
+because in the explore phase and the
+internship, you can continue to hone
+that skill as long as it's important to
+you to become a strong developer. Um,
+you kind of want to do a mixture of
+both. How far you take that because
+again, you're not going to be writing
+every single single thing from scratch
+in the internship or in real life
+either. But having that backbone, having
+that knowledge is what's going to keep
+you your skills sharp. But you're always
+going to be using library methods. So
+yeah, that's absolutely a valid solution
+both in the joy of coding technical
+interview and in real world technical
+interviews. Use all the methods you
+want. But there is a reason and there's
+a a why behind wanting to take that
+extra step to to learn the how it works.
+No, but I mean when the whole problem
+can be solved with just one liner
+from a library like this. What's
+>> I mean that's awesome. That's
+>> till the one liner is preferred or
+>> I wouldn't say that it's preferred.
+I think
+>> because it seems like it's just I mean
+there is no intellectual work other than
+knowing that that function exists and
+does the work. That's all.
+>> That's intellectual work, right? So
+that's what that's exactly right. Like
+but to know that it exists and to know
+how it works like you know that find the
+find method you know what it does right
+you know that it takes a string and
+looks for it inside of another string
+and you know that it returns either an
+index or negative one that is knowledge
+and you're learning how to implement it
+correctly to solve a problem. That is
+knowledge. There's no there's no like
+there's no lack of knowledge there. It's
+just do you know how to do it from
+scratch? That isn't like a problem in
+this case. It's not like it's not like
+you're a bad programmer for using
+library methods that can do all these
+things really quickly all at once and
+return it in one line. Um
+yeah, that's not a problem. It's just
+that you want to be able to do that,
+right? You want to learn that.

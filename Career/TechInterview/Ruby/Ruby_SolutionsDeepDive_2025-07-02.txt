@@ -1,0 +1,1220 @@
+All right. Welcome everyone to this
+week's nailing the tech interview. Um
+we're going to dive into some solutions
+today. So before we get kicked off, what
+questions do people have about the
+technical interview preparation?
+um any of that good stuff before we move
+on. What questions do we have?
+Actually, I have a it's kind of a
+a process. So, uh, I was restudying Q's
+and stacks today and, um, I noticed that
+you can, can you use Q's and stacks for
+list when you manipulate the data?
+So, when we're doing two steps and three
+sets,
+can we use um, stacks and cues? If you
+feel like it makes sense to, I mean,
+totally.
+Well, so the stacks and cues that are
+from mod 2 are um
+made up, I guess, quote unquote. Like
+you create the I think as the last
+project, you create the stack library
+and the Q library, but the
+methods that you use to create them,
+you can use them anytime. So you can
+treat a list as a stack in how you
+operate around it or as a que using like
+the pop append
+whatever all the different methods that
+you might use. Does that make sense
+if it helps you to think of it like
+that? Yeah, definitely. I was just
+curious because some of it, you know, we
+we do the sum of a list. Um
+would it be possible to do something
+like uh when we're summing um we're
+squaring
+um squaring the numbers of the list and
+then adding them up?
+What I was doing? Yeah, squaring and
+adding them up. um is to
+um turn it into a queue and pop
+pop one after you square it and then put
+it into account a count.
+Um that's what I was thinking. I was
+just throwing different ideas out to see
+if maybe that's possible when we're
+actually doing all these calculations
+and looking at a queue of numbers or
+list of numbers and changing them
+changing or summing up or doing some
+kind of math if it would have been
+easier to do the Q thing. I mean it's
+just just a thought process. It might
+not be right but
+just thinking about it.
+Yeah, totally. I mean, I think it
+depends on the problem that you're
+talking about because I don't know what
+problem you're talking about, but I I
+think in general, yes, that would be
+totally fine.
+All right. Any other questions before we
+dive in?
+Oh, one more person joining.
+Okay, so
+last week we left off with missing
+numbers.
+Um, we kind of went over some pseudo
+code for it. Did anyone get a chance to
+try this problem out?
+That's what it was called. I was trying
+to remember. All right. I didn't get to
+it.
+I post every I post problems we work on
+in the hacker I mean the weekly schedule
+channel. So if you ever forget, it's
+always right there. Okay. I'll I'll work
+on that later.
+Anyone else?
+Okay, dude. I wrote it down. Yeah.
+So, we could continue working on it, but
+I kind of want people to work on the
+problem on their own first before we
+like talk about solutions and get
+everything broken down. So, we could al
+like alternatively treat today as a
+second mock interview today or second
+mock interview opportunity if someone is
+interested in doing that. Do we have any
+volunteers who would like to do a mock
+interview today?
+I'm tempted to try.
+Depends upon what the problem is. Maybe.
+Well, it would be a medium problem. I
+actually don't know. I didn't have
+anything prepared.
+Yeah, I've wrestled with those and got
+nowhere.
+Yeah, I think I could pull up some.
+Um,
+I mean, it's up to you guys because I
+don't want to go over a problem if
+nobody's worked on it. And that's
+totally fine if you didn't have time or
+anything cuz it was only a few days ago.
+Um, but I don't want to get into the
+habit of working through problems before
+people have had the opportunity to do
+so. Um, so moving forward, that's how
+I've kind of set up the Sunday Wednesday
+session. So, if you have time between
+Sunday and Wednesday, if you weren't
+able to attend on Sunday, um if you have
+time to watch the replay and get
+familiar with the problem and then dive
+into it, or even don't even watch the
+replay, I post the problem that we
+worked on to the pseudo code level into
+the weekly schedule channel. So, you can
+just pull it right out of there and say,
+"Okay, they worked on this one. I'm
+going to try it." And then expect for us
+to go over that on on Wednesdays moving
+forward.
+um just so that everyone gets that
+opportunity and we're not kind of diving
+in before you get like because you
+getting the experience to do that is
+kind of the whole point and then we talk
+about the different ways you can
+approach it based on what you have and
+haven't tried. Um so if I didn't make
+that clear in the past we can reset
+today and we'll just call that that's
+the the game plan moving forward. Um
+but other than that I that was my plan
+for today. So, I kind of don't want to
+do that, though. So, if someone wants to
+do a mock interview or if someone has a
+problem that they've been working on, we
+can look at that as well.
+I'm I'm open to whatever people want to
+do.
+You know, I'll be your guinea pig if you
+want a guinea pig.
+Um,
+um, let me find something real quick.
+I've been studying
+your rank easy problems. I haven't been
+doing
+the last medium I did. I think I did 50
+some minutes.
+Still got time. I I just I can't get the
+below that
+threshold you have. Yeah. Sometimes with
+the medium problems, like you're not
+going to get it under that time if
+you've never seen something like it
+before.
+So, it's really it's kind of like you
+have to get into a stride of trying
+a bunch of different ones.
+Oh, this sounds something like what you
+were talking about actually. Let me look
+at this one. Oh, no. Stacks and cues and
+math.
+Your best friend, right?
+math.
+Okay. Yeah, totally. This is this is a
+great one.
+All right, Lisa, thank you for being a
+trooper. I'm going to post this into the
+chat if you want to share your screen
+with the green share arrow and open that
+up for us.
+Excuse
+me. Excuse me. Excuse me. Excuse me. If
+Kitty will let you.
+Okay.
+Can you see the screen? It's sharing.
+Okay. Yes. Now I can see it. Is it big
+enough? Um, yeah, totally. Well, maybe
+you could zoom in a little bit.
+What? That help? Um, actually, would you
+mind if you hit the three dots at the
+upper right hand corner on your browser
+next to the little user icon? Yeah. And
+then just hit the zoom there like a few
+times. It's like the fourth one down.
+One more. Yeah, that's perfect. All
+right. So, same thing as usual. Walk
+through the problem. Um, everyone else
+will jump on mute. Um, sound out what
+you're thinking. um maybe get some
+pseudo code going and then walk start
+walking us through the code. We'll
+actually give you maybe we'll start with
+20 minutes and then if I feel like maybe
+it would be worthwhile to keep going to
+30 minutes, we'll do that. So we'll do
+between 20 and 30. Um and I'll just let
+you know at that 20 minute mark what
+we're going to do. Sound good?
+Yeah. All right. Good luck.
+Uh okay. So, um I'm going to bring up a
+paint because I have to draw sometimes.
+So, I'm going to see if this helps. So,
+um
+so given a I'm given an integer array
+nums find the sub array that is the
+largest product
+um and return the product.
+So
+um the test cases are generated 32bit
+integer. I hope I don't have to do that.
+So um
+so we're looking
+for the largest
+All
+right. So if I know my math that is the
+product is the um
+multiplication numbers
+going down to the simplest. Okay. Okay.
+So the input numbers are 2 3 -2
+4 and the output would be six.
+Explanation 2 and three
+as the largest product. So the
+multiplications of those two numbers
+um would be six.
+Um if we go through
+Wonder why that's not eight.
+Um,
+so
+this is guaranteed to fit a 32.
+The subarray
+has the largest.
+Is it okay if I ask a question?
+What exactly questions until the end?
+Oh, okay.
+So when we do self um self is the
+example of a so we're looking at self
+right here and that is actually a sample
+of a uh Q I believe no self is a
+um
+stack
+I'm just going to cut in um just because
+this is leak code specific
+uh you can ignore self in any of the
+leak code questions. It's just because
+it's a part this is a a function that's
+created inside of a class class called
+solution. And so it requires the self um
+to be passed there. So you can ignore
+that. Okay. So what I want to do is go
+ahead and print what we got here to see
+what it looks like. Um
+so I'm going to use the print
+statements.
+um what I learned from so what we're
+returning output is a numeric value. So
+what I usually do is just put a a
+generic number that I know is wrong but
+it's going to compile. So that just
+basically covers my uh function closes
+my function out.
+Got a loop here.
+this running
+says I need to log in.
+Yeah, go ahead and do that.
+One second. If you logged in with like
+the Google or something might that might
+be it.
+I'll just we'll just let you sort that
+out real quick.
+Okay.
+All right, Walter, you said you had a
+question. What was your question?
+I'm not exactly sure what a subarray is.
+Okay, in that first example in le code,
+uh it was two, oh, it's not on the
+screen now, but it was two, three,
+and then a negative number and then
+four. So, I would think three and four
+would be a subarray, and that would be
+12. But no, that wasn't the right answer
+uh when I saw it on the screen. So, um
+I think question, huh, that's a good
+question. I think we'll just leave it at
+that for the moment. Okay.
+Well, while we're waiting on Lisa, I
+might as well tell you about my Spanish
+classes, right?
+We It's like I a very basic basic basic
+level. I didn't I took high school
+Spanish one, which was
+15 years ago.
+So, I don't really remember any of that.
+Um,
+so yeah, we're starting at the very
+basics. In my class, we went over the
+letters of the alphabet and like
+numbers 1 through 10,
+how to ask a question. That's what we've
+been doing this week. So, uh, it's been
+it's been fun. But it's like 3 hours a
+day, so I do three like 9:30 a.m. to
+like 100 p.m. basically,
+and it's all in Spanish. There's no
+English at all. Um, but it's fun. It's
+good. For anyone who didn't know, I'm in
+Spain.
+That sounds like fun. Ruby,
+um, where in Spain are you? I'm in
+Barcelona. Oh,
+that's amazing. And you're just there to
+like um tour or do you go there for like
+work or? Yeah, so I'm doing a study
+visa. Um, so I'm going to be here for a
+year doing Spanish classes. Yeah. And
+yeah, that's kind of all I've got right
+now. I don't I don't know what I'm going
+to do afterwards. Oh, okay. That's super
+exciting.
+I'm also having to practice my Spanish
+because I'm going to Colombia at the end
+of the year. Oh,
+but my Spanish is very much like um I've
+just learned it from like speaking to
+friends and like watching tel nollas and
+listening to Amazing. That's good.
+That's fun. There are like little
+websites that do like
+basically like talking immersion for
+people. So that could be Yeah, I think
+I'm gonna have to do that.
+All right, Lisa. What's Where are we at?
+See, this should work. Changed it. It
+worked.
+I am seeing that this problem has a 35%
+acceptance rate,
+meaning that only 35% of people were
+able to complete all test cases passing.
+So that should give you an idea of the
+complexity here. Are you logged in,
+Lisa?
+It It's uh It's not allowing me to log
+in. See,
+Zoom.
+[Music]
+I made it simple.
+says I'm signed in. Okay, cool. So,
+let's get that back up here. And then if
+you want to share your screen again
+once you got it set
+So subarray would be um
+listening I was listening in would be
+the
+smaller portion of the array that's
+given. So sub meaning lower or part of a
+array. Um can you share your screen?
+Yeah.
+Perfect. Okay. Yeah. Unfortunately, it
+looks like we lo Oh, it's so it's on
+C++. If you want to change it back to
+Python,
+we might be able to get your Nope. Can't
+get your comments back. Sorry about
+that.
+Okay.
+All right. So, we'll throw the clock
+back on there. Go ahead and restart.
+All right. So, we want to print what
+it's going to give me.
+What I noticed on my teacher, she always
+does the return, closes it out. I'm
+going to give a bizarre number so that
+at least it will compile. So,
+okay. So now I know that it's running
+and I've got these four numbers and it's
+expecting the number six.
+So
+um
+product is the
+let's see the largest the largest
+product turn the product. So if it's to
+go 2 + 2 * 3 is 6. Um
+and then -2 and 8 would be I mean four
+would be -48
+sorry. Um so what we want to do is
+um
+multiply the first two and then second
+two and get the output. That's what I'm
+assuming. Um,
+no. So, um, that doesn't look like
+that's what it is. The result, um,
+example two shows us an output of zero.
+Cannot be two. It's negative one. Two is
+not separated. So,
+we'll have to do each number at least
+once.
+So, we want to go through
+um those numbers.
+Um
+say products.
+We want to initialize the product.
+We want to traverse each number and try
+to multiply each number together to see
+what we get.
+So,
+I still don't understand why three and
+four
+is not the larger number. 3 * 4 unless
+um Oh, what was that little popup there
+when you hovered over subarray?
+So
+sequence of elements
+contiguous meaning
+um
+one two three four five six seven eight
+I think one after the other so there
+can't be any gaps
+Um,
+so does that go through two through
+three? Two to negative? No.
+The largest product
+um
+would be six
+continuous. So sub
+non empty subsequential of elements
+I don't understand the question. This is
+where I'm lost. So now I'm lost on the
+subarray.
+So um
+elements within an array would it be 0 1
+2 3 4 or would it be um
+I thought we were using these elements
+because three is not
+Okay, I'm lost.
+So it cannot be two because -2 is not a
+sub.
+My example two is just blown my theory
+out. So my theory was
+um how do we get the product? The
+product for me was two integers
+multiplied together gets the product.
+So um if I have these numbers
+find a subarray that is the largest
+product
+terminal product.
+So I was thinking 2 * 3 is 6,
+2 * -2
+is -4
+and 2 * 4 is is a is eight which I
+thought eight would be the product
+but you do not that's so that mean my
+logic is incorrect.
+So
+um
+product
+32 bit energy.
+See,
+I don't I don't quite understand it. So,
+I'm not sure what to do at this point.
+Um
+some array of nums is a subset of
+that array
+of that numbers that are given.
+So if I was to five
+was to add them that would be seven. So
+that's wrong. So um just total
+so Lisa you are totally free to Google
+this if you're like if you need
+clarification at any point but in this
+case contiguous means that each of the
+numbers have to be touching in the
+subarray.
+So in the explanation two -2 and
+negative 1 they're not touching because
+the subarray in that case would be the
+full array -2 0 and1
+which would end up in a result of zero
+right two and four are not touching
+three and four are not touching.
+So you have to consider what numbers are
+touching. And I would also um I would I
+would also say to take all of your
+assumptions, write them out. Make sure
+that you have everything written out so
+that you can test and verify.
+Okay. So they're not touching
+will be continuous.
+No, contiguous would be that they are
+touching.
+Oh, I'm sorry. I know.
+to test that. That would be n + one
+or
+n - one
+would equal
+That's so
+um
+you want to
+get away.
+[Music]
+This
+is
+Max.
+So we're it's not so okay Okay. Okay.
+Okay.
+There
+are
+So it's not going through this one. So
+two and three. If two
+So, the double ones being that I am
+actually
+All right, Lisa, let's take a step back
+here. Okay. Um,
+all right. So, I definitely like that
+you got some comments written out and
+you were thinking about what the product
+is and wanting to test out in the
+loop here,
+but I think you're kind of jumping a
+little bit ahead of
+ahead of yourself. Um, do these numbers
+make sense
+that So, so we know that we're going
+through the loops.
+um
+is not in a subarray. So
+the first two do like 2.2 and three.
+By the way, that's we want to multiply
+it.
+And then we're seeing numbers like 1,
+four, and five.
+Where would those be coming from?
+Where is four and five coming from
+nums? So we need to change that to
+range. Sometimes I use range
+um because we're getting a list of
+integers.
+So then um why don't you take out some
+of this math here and just keep it
+simple first with a print print I
+with a print I okay
+would you mind taking out that if
+statement there
+and everything in it.
+JF. Yeah.
+Yeah. Yep.
+Okay.
+So, that looks right, right? Yeah. I
+always recommend getting just a gut
+check first of everything that you're of
+of just like what the default is that
+you're doing. So, for I and nums, check
+the default. What is I? So we're saying
+that it is the value
+of each of the numbers in the nums list
+or list array. Um I typically represents
+index. So just for like clarity sake I
+would probably have named that something
+like value but that's not a big deal. So
+then if you do print I + one what
+happens here? Let's see that.
+Um can I do it side by side?
+Yeah, I was.
+So now what are you seeing here? Well,
+I'm seeing an addition. So what I need
+to do
+is
+That would be a nested loop though.
+Um,
+so we want to check the second number.
+So we want to probably identify the
+second number. So it's again a a nested
+loop. We would go and traverse this
+twice. So we get the first number, check
+the second part and see. So what is i +
+1 in this case though? Look look at
+these numbers. I + 1 is an addition of
+two + 1 is 3. So is that what you want
+though?
+Um I want the second number to to equal
+i + 1 to make it to verify that it's
+continuous.
+So look at the last one. What is the
+last one?
+Um this one
+four and five or even -2 and negative 1
+is negative one in the
+numbers array. No. So it was actually
+adding this value. So what would be the
+best bet would be
+um
+so we won't get confused
+a
+And um
+let's check this one.
+Yep. And that's where you were talking
+about maybe switching over to range
+because that would probably give you
+some better control there, right?
+Yeah.
+print
+it and give me control so that I can um
+not add two into the first number. Or
+what we could do is um
+range
+start at one
+point.
+All right, I'm going to take the screen
+back for you. Thank you very much, Lisa.
+Sorry.
+No worries. I tried. You did great.
+I share my screen. You had a good try,
+Lisa. I just want to tell you that I
+It's nerve-wracking being in front of
+everybody, but yeah, I think you really
+made a good effort.
+Well, thank you, Bendy. Ditto.
+Yeah, like I said, I think you did. um
+you had a great start trying to figure
+out what the problem was asking you,
+getting some comments down, and then
+wanting to test your idea of how to get
+the product or how they were generating
+the product. Um but but there are some
+things that I might advise you to
+um
+completely lost my train of thought.
+Sorry. There are a couple things that I
+would suggest to improve the like
+starting point of what you were doing.
+Um, I feel like everyone, especially
+when they get up onto the mock
+interview, they're like, I don't want to
+do pseudo code. I'm going to skip pseudo
+code altogether. I would actually prefer
+you spend the entire technical interview
+doing pseudo pseudo code and then
+getting some code written in the last
+two minutes if that means that your like
+code is going to be rock solid, right?
+Like that would be my absolute
+preference. So,
+what do I mean by that?
+for this problem there are
+I understand getting confused by it
+because it's a confusing problem. Um
+so when we walk through it it says given
+an integer array nums find a subarray
+that has the largest product and return
+the product. The test cases are
+generated so that the answer will fit in
+a 32-bit integer. This is fine. Um we
+can kind of just ignore that. They're
+just kind of saying don't worry about
+the size of the product in your variable
+because some languages if the product is
+going to be like 100 billion or
+something like that. It's uh the memory
+might be an issue for storing into a
+variable. So they're just saying like
+don't worry about the
+these numbers because it says 2 * 10 4th
+for the nums length and nums i.
+Actually, it says -10 nums i is going to
+be less than or equal to 10. But if you
+had
+a nums length of 10 to the 4 and they
+were all tens, that would be a pretty
+big product, right? So, they're just
+saying like don't worry about the size
+of the product. It's always going to be
+a safe number. Um,
+but you could ignore that or you could
+Google it to see what they mean by that.
+And then in here, if you're saying a
+subarray is a contiguous non- empty
+sequence of elements within an array,
+I might not know what that means the
+first time I read it or the first three
+times I read it. So then we jump to the
+example. They say 2, 3, -2, and four for
+our nums array. And they're telling us
+that we're expecting a six. My immediate
+thought reading this, just like Lisa,
+was why wouldn't it be
+um 3 * 4 12? that would be the highest
+multiplication of numbers within this
+group or even 2 * 3 * 4. Um, and then we
+get down to this bottom one where it
+says the result cannot be two which you
+would get by multiplying -2 *1
+because -2 and1 is not a subarray. So
+when you pair this explanation here with
+this explanation here
+that is telling us a couple of things
+and again feel free to Google any
+terminology you see if you don't
+understand it
+I might Google like
+what is contiguous contig
+contigu I don't know how to spell that
+we'll just see
+so then we sharing a common border
+touching next or together in sequence.
+So that maybe gives us a little bit of
+an idea.
+But then we can confirm here by just
+saying that rings a bell.
+Yes. So then when we're looking at an
+array here, uh
+just going to pop these in here. Two,
+three, -2,
+and four.
+Two and three are touching. That's how
+we get the six.
+3 and -2 are touching but that would
+give us -6.
+-2 and four are touching that gives us8.
+Other things that are touching 2 3 and
+-2
+that would give us -12
+3 -2 and 4 which would give us what -4
+or something like that. So what I would
+say is that your first assumption
+was that when we're looking at a
+product, looking for a product,
+you correctly said that that would mean
+multiplying them together. And we can
+infer that by saying 2 and 3= 6 and also
+that -2
+*1
+would equal 2 versus -2 +1 which would
+be -3. So you could also kind of get
+that from context clues if you weren't
+sure. But your assumption was that
+product would mean
+multiplication to the sum. Yeah. Right.
+But what we're actually saying is that
+product of a sub array.
+Right? So find a subarray that has the
+largest product. So a subarray can be
+anything up to and including the full
+length of the array but they have to be
+contiguous
+meaning they have to be touching.
+So this whole thing is a contiguous
+array. So we could multiply all of them
+together or we could do just two and
+three 2 3 and -2 3 and -2 3 -2 and 4 all
+of those things
+and even even in this one you're still
+going to get the same answer but all of
+them multiplied together would be zero.
+So that would be my first assumption
+that I would have spelled out looking
+for a product and then you might have
+said product meaning the sum of two
+numbers in the array. That would have
+been a great assumption to test out and
+follow your theory. Okay, how do I get
+all of the pairs of two numbers in this
+array, which we kind of know because
+we've seen it before in previous
+problems that we've covered. If you want
+any combination of two numbers in a list
+or an array, we use that kind of O of N
+squared template coding big O as a
+template I guess where you would do the
+kind of like what you were thinking the
+nested loop for I in range of these
+numbers and then for J and range of
+these numbers and do 2 * 3 2 * -2 2 * 4
+3 * -2 3 * 4 except you might would
+change it up a little bit because we're
+expecting them to to be touching. So
+then that's where I think you were
+trying to say, okay, well 2 * 3 and then
+we'll do 3 * -2 and then -2 * 4
+and maybe we'll use nested loop for
+that. Maybe we won't. But that that's
+where I would have made that assumption
+clear and written out and then I would
+have immediately tested that. Well, not
+immediately. I would have tested that
+assumption at some point like you were
+going to, but I wouldn't have done that
+right away. I would have kept going
+until I have walked through the entirety
+of the problem to pull out whatever
+other nuggets that I might need.
+So,
+we're looking for the largest product.
+Looking for a product of the subarray
+that produces
+the largest number. Again, I'm just
+putting that into my own words. That
+might look different for each of you.
+Um,
+and
+I'm just going to spell that out even
+more. Can be
+multiple
+numbers.
+And that might give me an indication of
+other things that I might want to do
+like such as how am I going to store
+this variable? How am I going to track
+this variable or variables
+um or these products? So I might create
+a series of product outcomes, right?
+Maybe I'll store that in array, maybe I
+won't. But that's kind of an
+implementation detail. Right now I'm
+focusing on just what do I know about
+this problem. So we know that we're
+looking for a product of the subarray
+that produces the largest number and it
+can be multiple numbers. We know that
+oops still getting used to my Spanish
+keyboard
+and we know that sub like the subarray
+we're going to create an array from this
+list of numbers. So, is the test that
+was one that I guess I didn't I was it
+just kept I got stuck on. Do we continue
+to do we build the subarray first? Say
+that again. Do we build the subarray?
+Do we build the subarray first and then
+hit do like a max subarray?
+I'm not following uh for logic. So, so
+we're looking for the product of a
+subarray. So, do the math. Build an
+array with the math already done. And
+then just hit maximum of the array.
+Okay. And then that are you pairing that
+with what Brian said? Can we use the max
+function? Um, yeah. So, that might be
+something. But if you multiplied all of
+these together,
+right, that's not going to give you the
+highest number. And then what would you
+do? Kind of work backwards and say if I
+divide out
+one of these numbers.
+But then you can't really do that either
+because there could be multiple
+sequences of subarrays that you'd want
+to test out
+within it. So like if this was actually
+a much larger
+series of numbers,
+the highest sequence might be in the
+middle
+somewhere like so this would be the
+highest
+in this case these this subarray of four
+57 and 8 and this made up list would
+produce the highest product. So 4 * 5 *
+7 * 8.
+Does that make sense?
+If it had a six in the middle. Yeah.
+And that's something else that you can
+do like so we they give us these
+examples, but I can also make my
+assumptions and then test them out using
+either my own test cases or just like
+walking through them as numbers.
+So, if I wanted to see
+how they got to the product of six,
+that's where I would take a look at this
+and say,
+how are they getting six? So, they're
+doing 2 * 3 is six. What else can we do
+to other numbers? I don't like these
+test cases. That's probably part of the
+reason why it's a medium problem. Also,
+because of the whole subarray thing,
+they don't really give you great
+test cases here. Um,
+but if we had something else
+like this, then I could walk through an
+example of my own test case of saying,
+"All right,
+the highest product would be in here
+somewhere just kind of at a cursory
+view. It would probably be seven and
+eight
+to produce, you know, output. What is
+that? 56,
+I'm guessing. I I don't know. I haven't
+done math in a long time.
+So, basically create my own little
+sample test case and say, "All right,
+how would I get that? Would I do 2 * 3
+and then 2 * 3 * -2? What does that look
+like in code?" Eventually, I know I'd
+have to get somewhere where it's just
+seven and eight. So, how do I get to a
+code a point in my code where I'm
+creating a sequence that's somewhere in
+the middle? I might not know how to do
+that right off the bat, but I know that
+that is probably one of the test cases.
+Um, but that would be kind of jumping
+ahead a little bit. So, I would continue
+just reading through these to see what
+else I could pull out of this. Oh,
+and I know you used 56 as an example,
+but I think it's going to be larger
+because you've got two negatives and
+they're going to cancel each other out,
+right? Yeah, but they're not touching.
+Okay. Oh, yeah. You're right. So, that's
+going to include that's going to go from
+two to eight. Yeah. That is perfect.
+Yeah. Like that. So, then what I could
+do in this case is um
+That that kind of also makes it a little
+a little wonkier.
+I want it to let me create my own.
+Oh, I can. Can I? Hell yeah.
+So, there you go. Fun fact. Create your
+own.
+And then
+let's see what that says.
+Oh, sorry.
+I didn't follow my own advice from
+return.
+Yeah, you're right. So, it's expecting
+67,000.
+There you go. So, how would we get that?
+Um,
+so then for this case,
+let me
+I want to keep How do I do that?
+Negative
+one. Or no, I could throw in a zero
+maybe. Yeah, I'll throw in a zero.
+So, Le code's cool because I can add
+that as a test case
+and
+it let it tell me what the actual output
+would be in this case.
+Um, I had just never done that before.
+Can I add another one?
+Now it's not letting me do it. Test
+case. Ah, here we go.
+Yeah, I think that might that might do
+something.
+1400
+still. Oh, because of that.
+No,
+five negative 1. Oh my god. Okay,
+bear with me. Not that I need this
+example to be the perfect example or
+anything.
+I just want to build my test case. Yeah.
+Okay. I built my test case the way I
+want it to keep it simple. Yeah. And
+because I want
+that as a theory to test out about how
+to get the subarray in the middle. Thank
+you, Adam, for pointing that out. Oh, no
+worries. Yeah, I just uh I I wasn't sure
+actually. Like you said, it's been a
+while since I've done math and I was
+like, wait a second. I think those
+cancel out.
+That's cool. I couldn't. So yeah, pro
+tip everyone. If you want to create your
+own test case and leak code at least
+nice from the test case here, you can
+just directly edit them. So that's
+pretty nice. For hacker rank, you can
+you can run your own um test case as
+well. I don't think it'll generate the
+expected output for you. So that's kind
+of a bummer for hacker rank, but at
+least for leak code, that's pretty
+interesting. Okay, so back to this. Um,
+what else can we pull from here?
+pretty interesting that we are only
+going from values -10 to 10, but I don't
+think there's anything I'm really
+expecting to do with that information
+other than it will make it helpful to
+create little test cases like this,
+right? And then the length can be quite
+large
+of the original array. It's good to read
+through the constraints and to know what
+they mean.
+Um, but in this case, and sometimes they
+will have something that I need to pull
+out as something that's important in
+here, something that's a clue about the
+problem or something that I need to keep
+in mind when I'm creating a game plan.
+But in this case, I'm not seeing
+anything obvious that's staring out at
+me.
+So again, in this this case, and I'll
+actually throw in a zero here and some
+more numbers because I actually want
+I do want
+um it to be in the middle. I think that
+I think that works.
+Yeah, I think that works. That would
+still be 56.
+Okay, so these are kind of the only two
+things they give you. pretty much
+everything that you can do with this
+problem. Um, and their examples are kind
+of lackluster,
+but that's kind of probably part of the
+reason why it is a medium problem. But
+again, that's what we're talking about
+is that based on those two things, I can
+expect that one of the answers might be
+a subarray that is in the middle. So if
+you are thinking like I am, I don't know
+how I'm going to generate this subarray
+that is in the middle right away. That
+is when you can think about when when we
+talk about like template code for for
+at least in the con uh context of hacker
+rank or elite code problems. I'm
+thinking about other problems that I've
+worked on that might that might have
+been similar to this. So if I've done
+worked on a problem that had me build
+out
+subarrays inside of an original array to
+do something, then I might think go and
+find that problem and see what I did for
+that one. And I know that I have. I just
+don't know where it is. Um but that
+would be something that I would do.
+Similar for like the two sum and
+threesome problem that we talked about a
+few weeks ago. Two sum you find the
+product of two numbers, right? And then
+the threesome problem is the something
+to do with three numbers instead of the
+two. But on the threesome problem, I
+have at that point the twosome problem
+as something that I can use as reference
+for how did I approach that problem?
+What did I learn from it? How can I use
+that to approach the threesome problem?
+For this one, nothing comes to mind off
+the top of my head. So we might have to
+experiment and play around which again I
+might want to do on pen and paper or
+just right here in these comments to
+figure out how am I going to build that
+out.
+Okay, so someone asked the definition
+said the list can be up to a size or
+length of 20,000 I believe might be able
+to solve it with a nested loop then
+math.pro prod on that subarray generated
+with a list slicing then just track the
+values for the largest value. Yeah. So
+using a combination of multiplication
+some nested loops and list slicing to
+generate the subarrays. And so what that
+pro process looks like could vary. Um,
+but just for the like how I would start,
+I would kind of choose purposely. You
+have this easy example where they tell
+you cuz it's right here that those are
+kind of like the bare minimum test
+cases. I think in that case, it's good
+to create a larger, more complex test
+case. And in my case, I wanted one
+specifically where the answer was a
+product that was in the middle. because
+if I can figure out how to do this one,
+I can probably figure out how to pass
+all of the other test cases. And so once
+I know that, then it kind of becomes a
+game of solving this test case only just
+to get started. That's not always going
+to be true because some if you focus too
+much on just solving one specific test
+case, you're excluding your solution
+from working against all the other test
+cases. But in this case based on the
+strategy that we are thinking or even
+like what you said using the list slices
+and the product I think that that will
+probably work on all of the test cases.
+Then I can just kind of focus my
+attention on okay given this set of
+numbers that I created where I know the
+output expected
+I can probably figure out and test some
+stuff here to figure out what that would
+look like. So that is where I would
+start. Um, this one is a challenging
+problem and again it has that acceptance
+rate of 35%. So
+a lot of people have struggled with this
+and most people walked away from it and
+never came back. So if you do work on
+this and you are coming up with a
+solution, definitely post that in
+hackerank on the the Discord hacker
+channel. Um, because I would love to see
+what people are thinking about and what
+they're trying if they try this problem.
+Um, it's a good problem and I think I'll
+probably come back to it maybe in a few
+weeks and see
+if we can come together as a group and
+work on it some more. Um, but we're a
+few minutes over so I'm going to stop.
+But I hope that all makes sense cuz like
+yeah, this isn't a lot to go on for this
+problem and I think a lot of people do
+get stuck at this point of all well what
+next? And that this is something that
+you could do is kind of create your own
+test case and try and gear yourself
+toward that towards that test case which
+then allows you to make new assumptions
+about what this problem is asking you
+that you can then test out and build
+more assumptions and test cases and kind
+of continue from there making an
+iterative attempt instead of just trying
+to do one and done. Get some code that
+solves everything from the start because
+that's probably not going to happen.
+All right.
+Do we have any questions for today
+before we close out? We are a little bit
+over. Um, but if anyone has any
+questions they'd like to ask about
+anything we talked about today,
+technical interview prep, practice,
+these problems, anything. What questions
+do we have? Uh, for the next meeting,
+we're going to try to work on missing
+numbers and and continue with maximum
+product summary. Is that the uh intent
+for the next meeting?
+So, I think I'll stay with the the
+schedule on Sunday of doing um doing
+pseudo code for an easy problem and
+giving someone the opportunity to do a
+mock interview on Sunday as we typically
+scheduled it. And then that following
+Wednesday,
+it could be
+I don't know yet. We could work on this
+one. Missing numbers. We could work on
+this one.
+We'll have a plethora of options to work
+on, but I'll probably spell it out after
+Sunday's session what I'm expecting to
+do on that Wednesday.
+Okay. Yes, Adam. Um uh so uh is this
+going to be the the new time um for for
+Wednesdays? Yes, both Sunday and
+Wednesday have been moved up an hour. Um
+because it's currently 900 p.m. for me.
+No, I I understand. Yeah, your time. I'm
+I'm I'm I'm totally fine with it. I I
+just uh for some reason I didn't check
+the schedule and I thought it was at
+three. Um yes.
+Yeah. So for any it's always good to
+check the um announcements channel where
+we'll announce any changes to the
+schedule. Um so that is announced and I
+probably should have announced it
+somewhere in the weekly schedule as
+well. Sorry about that. But yeah, this
+will be the new schedule moving forward.
+It's on the calendar but the calendar
+doesn't give you alerts which is kind of
+annoying. Yeah. And and and I noticed by
+by chance I don't think you're in uh for
+some reason you got skipped out of the
+the weekly newsletter, the the one that
+Dr. Emily puts out that says here the
+these are the you know the upcomings. I
+I didn't see yours listed.
+Not sure. Let me see the time change.
+Yeah, it was it was mentioned in uh the
+Python class Tuesday night. Oh god.
+30th. That's after my
+Yeah. Two days ago, the email that went
+out mentioned the time change, but
+there's a lot of information. So, I
+don't blame you guys for if you missed
+that. I I must have missed that email
+because I I get inundated. It goes to a
+box that I've got that's inundated. So,
+um, yeah, I I I keep posted on the, uh,
+on the on the Sunday one, the one that
+that goes out like Sunday, I think,
+where they say, "Here's what's happening
+for the week,
+but yeah, it's a lot. That's why they
+post it in the email and Discord
+everywhere to try and spam you with it
+in case so that you can see it, but I
+know that it's kind of hard to catch
+it." No worries. Awesome. Yeah. Thanks.
+All right. So thank you all every for
+well thank you everyone for being here
+today and I will catch you next time.

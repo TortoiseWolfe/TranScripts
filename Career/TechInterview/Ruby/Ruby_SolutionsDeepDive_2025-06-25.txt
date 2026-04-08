@@ -1,0 +1,1219 @@
+All right, welcome everyone to this
+week's technical interview prep or I
+guess nailing the technical interview.
+Still getting used to the name switch.
+Um,
+Tora Espanola. Oh, I like that. Uh, so
+let's Where did we leave off? Two weeks
+ago, because it's been two weeks. Um, we
+were working on the twosome problem with
+pseudo code and we talked about a lot of
+different things, a lot of big O
+complexity and how to compare the
+different approaches and how you might
+break those approaches down and like
+what steps you might need and kind of
+con considering your alternatives to
+say, all right, before we even get into
+any code, which of these pseudo code
+plans might be the best like game of a
+game game plan,
+So I want to know who here continued to
+work on the two problem or to some
+problem to try any of those optimized
+solutions. So we had the brute force
+solution that we talked about the very
+beginning that Daniel showed us that he
+had worked on. Did anyone try a more
+optimized solution for this problem?
+just crickets.
+Let me pull up negative.
+I think I did, but I'm trying to find
+the answer because it's been a little
+while. So, I don't know. Oh, because I
+didn't sign in. I think I did. Oh, I had
+to sign in, too.
+I forgot.
+So, let me just go ahead and do that.
+I'm logging in as well.
+The code has forgotten me.
+Oh, yes. I do want it in English. Thank
+you.
+I am. I'm taking I'm going to take
+Spanish classes starting next week, but
+not there yet.
+Oh, okay. So,
+like I said, I'll find I'll find out if
+I did because I thought I did, but it
+might take me a minute. So, I'll go off.
+I'll mute and then find it.
+Okay,
+I got some stuff here. I'm going to
+delete.
+Oh, I deleted our other approaches.
+Darn. Okay.
+I thought I had those saved into
+code comments.
+Oh, yeah, I did. Oh, okay. Cool. I do
+have the original.
+Sorry. Let me fix my notes here real
+quick.
+Oh, okay. So, when used two pointers and
+set, is that right? Did you succeed in
+both of those attempts?
+Um, I didn't try the two pointers one,
+but I know that's an approach. Um, I use
+a set.
+Okay. You did or didn't use the set? I
+did. Okay. And how did that go? It
+worked. Okay. Do you want to show us
+your code? Um, let me look. I had to
+look for it. I'm not logged into um the
+code. Um, yeah.
+Rebecca, um, I just added the to someone
+to the chat,
+the link to code.
+Yeah, let me pull up Let's all pull up
+our notes.
+Still signing in here.
+[Music]
+Hello. Hello. Sorry, we're just all
+looking at our notes to see
+what everyone did for the twosome
+problem. Did you get a chance to work on
+the twosome problem um for a more
+optimized approach, Brian?
+Uh, I'm I think so. Let Um,
+let me
+It's It's been a minute. Yeah. Yeah.
+Hold on.
+It's been a while for me, too. Um, is
+this a problem that you worked on it
+previously, like in a previous session,
+and then we're supposed to continue?
+Yeah. Yes. Okay. I This is the first
+time looking at it, so
+that's okay. We are last time we talked
+about um we just went through pseudo
+code of a couple different approaches.
+So today we were just going to look at
+like actual code for them. Okay.
+And I did want to go over the code
+because
+we talked about two pointers. We talked
+about using a set. I think Brian, you
+mentioned using a dictionary. We talked
+about using binary search. Um, we talked
+about a lot of different stuff actually.
+Um, so everyone should check that replay
+if you missed it. And I wanted to talk
+about those again because
+the binary search and two pointers, I
+guess, algorithms have been kind of like
+the next iteration of things I'm
+focusing on. So, we did sets for a
+while. I mean, not sets. We did link
+list for a while and we did just like
+general array manipulation for a while.
+Um, but I have a few more problems lined
+up after this week that will focus more
+on like
+those kind of named algorithmic
+approaches and kind of using them as
+jumping off points for a non-standard
+approach. So, some fun stuff ahead.
+Well, let's go ahead and just kind of
+jump into it, I guess.
+and we'll all refresh our memories
+together.
+I can just show one.
+Okay.
+All right. So, everyone should be seeing
+my screen with Tusome
+showing.
+Oh, no.
+All right. I have only one monitor now,
+so all of my floating windows are kind
+of a mess.
+Um,
+I'm always curious. Can you see my
+floating windows? I have the like chat
+open. Can you guys see that? That I have
+the chat open like on my screen.
+I don't see anything. Okay,
+cool. I guess I'll just leave it then.
+Cover up some some faces over here.
+So, I might not catch your chats if you
+add them, but all right. So, the two sum
+given in an array of integers, nums, and
+integer target return the indices of two
+numbers such that they add up to the
+target. You may assume that each input
+would have exactly one solution and you
+may not use the same element twice. So
+that was the general description that
+they gave us, but we kind of talked
+about it a little bit more. So we get
+nums which is a list of integers. Oh, I
+messed it up.
+A list of integers and then we get
+target which is an integer.
+And so we are given those integers and
+we are
+looking for the sum of two values in the
+list that add up to the target. So in
+the first example, they're giving us
+this list of 2, 7, 11, and 15. And we
+want to find the two numbers that add up
+to 9
+in this case. And we're returning an
+output of the index values. So 0 and 1
+because index of 0 is 2, index of 1 is 7
+and the 2 + 7 equ= 9. So that was the
+general gist of the problem that we
+covered two weeks ago.
+We also discussed a few more I got to
+move my bits and bobs around here.
+Okay. We also discussed a few other
+elements here. So,
+yep, that's that was just me putting it
+into my own words, which is what I
+recommend you do when you first get a
+problem. So, find two separate indices
+in the nums array that add up to the
+target. Only two numbers will be
+summable to reach the target. So, that
+was that line that like there will only
+be one. Where's it at? Yeah, there would
+have to be exactly one solution. So,
+that means that there is only going to
+be two numbers that add up to the target
+in the array or in the list, excuse me.
+They're the same thing. So you only ever
+have one solution. You're always going
+to find one solution. So there is going
+to be two things that add together. And
+there's only going to be two numbers
+that add to reach the target. So integer
+values can be negative, meaning the
+target could be 15. And we could have -5
+and 20 be our two numbers that add up to
+15. Um,
+Discord's going off.
+assumption we will always okay yeah so I
+said it as an assumption but when we
+looked at the test cases we knew that it
+was true we will always have the two
+values and they will always equal a
+target so we will never have to return
+an empty array
+um I can go ahead and tell you that that
+is true but that was an assumption when
+we first started nums array will not be
+sorted that is also important and we
+know that because of the example
+doesn't tell us explicitly but in the
+second example you see 32 24. So we can
+safely assume
+still assuming but we can safely assume
+that the uh values won't be sorted which
+does affect
+our code solution right which is why we
+talked about the different alternative
+approaches.
+Um and so then we talked about the brute
+force which is just kind of using the
+standard bigo O O N squ approach um
+which you could even say it differently.
+So this is
+general for range like a general O of N
+loop and then we could take this
+complement idea that we had down here.
+So the idea being that
+in our our general
+nested loop here we're getting all of
+the combinations the possible
+combinations of all of these numbers. So
+2 and 7 2 and 11 2 and 15 7 and 11 7 and
+15 so on and so forth. Um, but one of
+the other approaches that we looked at
+revolved around using a complement.
+Meaning that if we have one number and
+we have the target, we could potentially
+find the missing number um inside of
+that list if they equaled up together.
+So for example, complement
+equals target minus
+nums I.
+So for that first case where we had
+Yeah, I'll use this one.
+This was from example two, the 324. Oh
+no, it's right here. I'll use this.
+Yeah.
+two.
+So if we started with I excuse me I
+being two then the complement would be
+target minus nums I which would mean
+complement would be equal to seven and
+then we're using that J range and
+honestly you could even do this
+here to make it more clear.
+Um
+so for that first two complement would
+be seven and then we're kind of doing a
+linear search there to find the
+complement. Um and so I say linear
+search because we're just doing a second
+loop between i + 1 so 0 + 1 searching
+through these values to find that
+complement and we know that we're going
+to find it. Um and then in the same
+thing with 324, we would be taking that
+three, finding the complement, see if it
+exists, it hit yes or no, move on to the
+two, so on and so forth. Um and with
+that, that kind of opens the door for
+the other solutions that we talked
+about. So if we have an O of N squared
+solution where we're doing a linear
+search, what other searches do we know?
+Right? And so that's where we talked
+about binary search as a potential
+swap there because it has a lower big O
+factor. Yes, Rebecca,
+I have a dumb question. So you have that
+hashtag there, right? Or not pound sign.
+How come it's not um same doing the same
+as your pound signs when you comment
+things? Yeah, I had a block cool uh
+comment. So Oh, should look good now,
+right?
+I'm sorry. No, it's cool. Um so in
+Python, the block comment you do just
+like the three apostrophes.
+Oh, and that wow. Yeah, you learn
+something new every day. Thank you. Tip.
+All right. So then I wouldn't have to do
+like a pound sign for each of these.
+Ah, that's what you did. Okay, cool.
+Thank you.
+But for clarity, I can leave it out
+there if the colors help because the
+colors are fun. You know, why might as
+well use them. Oh, actually, we're going
+to move on. So, I'm not going to
+So, then we talked about using binary
+search. Um, and I think we decided not
+to go with binary search, but let's go
+ahead and see what that solution would
+look like.
+Actually, I I have decided I am going to
+use this. So, we're not going to hit
+this. Um, I did have the return. So,
+when we were writing out all of our
+pseudo code, I'm just going to
+delete that because we're not using it.
+When I like to start with pseudo code, I
+take the inputs and I'll print them out.
+So, I would print,
+you know, numbs and
+target just to see what those are.
+Okay, I can't make up my mind. I am
+going to
+block comment that again temporarily.
+And then I like to have a return at the
+bottom just because sometimes you'll get
+an error if you don't return something.
+Um, and so just whatever that output
+they're expecting. So, they're expecting
+an array of integers or a list of
+integers. So, I return an empty one.
+That's typically how I start before I
+even jump into the pseudo code.
+Then we'll run that.
+I have so many windows I can't move them
+all.
+All right. So,
+yep. So, there's our list of numbers.
+That's our target.
+And then we're returning that empty. And
+we're expecting the index position of
+zero and one. So that matches all of our
+assumptions that we made up here. And
+then if we go ahead and uncomment that.
+Well, I changed it actually. So let's
+work with the changed.
+I could say if nums I
+plus
+actually what I could say is if
+nums j equals
+complement.
+So what I had before was that we were
+testing every single
+comparison there. So we were adding up
+each of these. So I was adding up 2 and
+7. Does it equal the target? adding up 2
++ 11 does it equal the target? But since
+I kind of switched over to this
+complement idea, I'm changing it to a
+linear search then for that complement.
+So if nums j equals the complement, then
+we'll return and we'll keep that same
+return of those index positions.
+And I'm going warp speed on that one
+because that is o of n squ which is the
+worst approach that we had. So, that
+runs for all those test cases. And then
+let's see how it does. Oh my gosh. You
+guys can't see it. We've confirmed this,
+but I have like 15 windows open right
+now and I having to drag them around.
+All right. So, not the best run time.
+Not the worst. Some some folks over
+here. I don't even know how that's
+possible cuz this is like the worst
+the worst run time, I guess. Um, some of
+the other coding languages might take
+longer for certain things. So, even if
+we have the same general approach, they
+could take Oops.
+Well, let's look at it since I clicked
+it.
+Space complexity is O of one. Wow. So,
+who can tell me why that is?
+This is our code here. Why do we have an
+O of one space complexity?
+because there's a there's a lot of stuff
+we're doing, right?
+We have not used any extra space.
+Yeah. What does that mean?
+Uh if we had used some array or some
+some other uh space or some other object
+to uh get to the return then uh that
+space would have been added only we are
+doing the coding we are not using any
+other things outside the outside the
+code structure.
+Yeah, generally yes, we do have one
+thing here. We have a variable
+complement
+that is storing target minus nums I but
+that is also O of one. So space
+complexity refers to how much memory
+you're taking up. So for things like
+running a for loop, saving a variable,
+doing a comparison, those are all going
+to be O of one. They're going to be
+constants. If we had created an array
+and like modified that array or did
+something to the array, then that would
+automatically change it to O of N and so
+on and so forth. So the
+memory or the space complexity is pretty
+low. And then no, I'm not going to I'm
+not going to show it. I'll save that one
+for one of the more optimized
+solutions. Um
+yeah, our memory is not bad either.
+So that's good. So I mean we could stop
+here, but we're not going to because we
+are in the pursuit of the best.
+We want to impress our interviewers, not
+just give them the bare bones. Well,
+what's better than that?
+O of N squ. Yeah. No, I mean better than
+O of one. Like Well, that's just our
+memory. That's not our run.
+Yeah. Well, yeah, it actually turns out
+I solved this one with the dictionary.
+You did use a dictionary. Yeah. And did
+you run the uh analyze complexity on
+that? Yeah, if I remember right, I think
+it was O of N.
+Yeah, that makes sense.
+Yes. When So, you can use two pointers,
+but you have to sort the array first.
+And that is what we talked about last
+time when we were comparing the
+we spent a lot of time comparing two
+different approaches which was the let's
+go over it because I seem to have lost
+my notes but we know that the o squared
+solution works. We knew that the first
+time but just to see it in action since
+it has been a while.
+And then we talked about two different
+options. Since we talked about swapping
+the
+linear search for binary search,
+but if your solution is O of N for
+runtime and you have an O of one for
+memory, wouldn't that be the best? This
+was an O of N squ.
+Oh, it wasn't an O of N. Nope. Oh,
+because we have
+a loop inside of a loop. So, we have O
+of N. And then for each O of N, we're
+doing another set of O of N. So, you
+multiply them, right? Because for each
+one of two, 71.
+We're then doing another loop to compare
+against the remaining oops I messed up
+that the remaining uh value position. So
+that is Oven squared
+Oven times Oven. That's why I'm bad at
+poker.
+So the big O of that one. And then we
+talked about
+could we use two pointers is what we
+asked and then big O of that. So if we
+did swapping the linear search we still
+have or sorry yeah swapping the linear
+search for binary search. Um so we know
+that this is a linear search for that
+complement value and we could switch to
+using a binary which is basically where
+you're taking
+I know this is so dated. I'm working I
+am actually so this is a fun side
+tangent thing. I am working on some code
+examples of like modern
+code examples or like maybe real world
+code examples of each of the um big O
+notations I guess. So like for O of
+um for using the binary search, binary
+search has a big O of
+log of N.
+Yeah, let me pull up the graph. Got to
+pull up the graph every time.
+And so what would that look like in like
+a real world solution? When when would
+you use binary search in like a real
+project, right?
+um
+h they always show up so blurry.
+So I am working on a little project like
+that that I will share with you all. I
+think that'll be fun. Um so we have the
+O of one constant logarithmic log of N.
+That would be binary search. The like
+just a general for loop through all the
+values of the array would be O of N
+and log of N. That's where we're going
+to find those sorting algorithms
+typically and log of N. Um,
+and then yeah, they get worse from
+there. So our first solution O of N squ
+in the the danger zone of bad timing and
+then it only gets worse.
+So
+binary search isn't
+that when the array is sorted though.
+Isn't that when you want to use a binary
+search? Yes.
+And so that's where we came with this
+question first because I think how I
+posed it was like this actually um was
+could we use two pointers because the
+session before that we had been working
+on a two-pointer solution and we
+realized that we needed
+it to be sorted
+and that same thing applies for binary
+search and so any sorting
+any sorting um algorithm especially in
+Python if you use the the built-in sort
+method is going to be
+n log of n which if we go back to our
+little graph is worse than o of n but a
+little bit better than o of n^ squ. So
+there's still some value there. Maybe I
+think actually ultimately what we
+discussed at the very end is for all the
+coding effort that we would put in
+moving from an O of N squared solution
+to a
+solution that required sorting where you
+had to do a sort that would
+automatically bump you up here that
+neither of these two options would be
+great. Like now I'm remembering I'm
+remembering everything we talked about.
+Um, so we would need to sort these which
+would be in log of n. Oh, that's right.
+We tried we tried to sort it, didn't we?
+Yes, we did. Okay. Yeah. And that would
+be the same here. And then that's when
+we discussed what would be other ways
+that you could
+optimize the solution to get something
+that is maybe at least o of n. And so
+that's where you found that you could
+use a dictionary.
+Um, also maybe referred to as a hashmap
+or hash set depending on the coding
+language you're using. So if you see
+hashmap,
+you can basically kind of like sub in
+the word dictionary. It's not always a
+one for one. It's so like a dictionary
+is a version of a hashmap but a hashmap
+can be implemented in different ways. So
+a dictionary is one implementation of a
+hashmap. Um, but if you see hashmap, you
+can say, "All right, I know I can use
+probably a dictionary for that." And
+Brian has spoiled it for us a little
+bit, but we know that that is
+potentially an O of N solution, which
+would make all of our coding efforts
+worth it to get it down from there to
+there, but maybe not from there to
+there. But let's compare. So we had a
+almost 1 second runtime and then that's
+our general memory. Um and that's how we
+compare to our peers.
+But yeah, for both of these we do
+require that sorting which does
+automatically put us in the n log of n.
+So if I wanted to do that
+sort
+of that just to see make sure that
+everything is sorted.
+Think I'm going to get a new monitor. I
+mean I'm going to be here years. I might
+as well. I did completely break my last
+one. Where is this? Okay. Yeah. Oh,
+well, that one was already sorted. This
+one 3, two, four. Yep. So, sorted.
+Case three. B. So, there's only only one
+really that we even need to look at
+there.
+All right.
+So, we've got that sorted and then we
+can look at the two pointers. We did
+talk about two pointers a little while
+ago. Um, and I think from like a coding
+complexity,
+this if we didn't have to sort it,
+right, two pointers is a
+O of
+oops
+is an O of N approach. So if we didn't
+have to sort it, that would be great
+because then we would be getting that O
+of N
+runtime.
+But because we needed to sort it, we
+take the greater of the two evils and we
+get that. Um
+but because of that, because it is a
+simple O of solution for two pointers,
+it would be easier to implement a
+two-pointer solution versus a binary
+search solution. It's what we ultimately
+discussed last time. But I think if you
+were just getting started with this
+problem and you were kind of going along
+this thinking of all right, I know I
+have an O of N squared solution. If I'm
+thinking about it in terms of linear
+search, maybe I can swap out a linear
+search for binary search. Type out the
+binary search function. That would be a
+simple swap. If you don't know two two
+pointers, and then you could use this as
+an opportunity to learn the two pointers
+approach or even the dictionary
+approach. Um, and those would be two
+good learning points there.
+Um, and then Brian, do you have your
+code? I kind of want to see it. Oh,
+yeah.
+Um,
+let's see here. Should I just uh Yeah,
+I'll stop sharing.
+Bear with me. My computer is
+slow.
+And we're having severe weather.
+So
+I'm hitting the share button.
+Do you see it? Yes.
+So basically I just define a dictionary
+and then so I use the enumerate
+function.
+Um I I like to use the enumerate a lot
+because Python is zero indexed.
+And so what this does is it actually
+adds like a well in our list what was it
+2 3 71 something like that. Mhm. it
+would add a one, a two, and a three, and
+a four in front of those values.
+And so I did something similar to the
+complement in the if.
+And if it's in the dictionary, then I
+return
+the actual index and the count, which is
+the enumerated value, and then flip
+them.
+Can you zoom in a little bit with your
+browser? Uh
+in the top um right corner there's like
+the three dot menu.
+Three dot menu.
+Oh yeah, it's covered up by everybody.
+Yeah.
+Zoom. Zoom. Yep.
+It's giving me the It's This computer is
+slow. I only use it because it's got a
+built-in webcam.
+Okay. Okay. Great. That's great.
+Okay. So, you're defining the dictionary
+with just the what do you call those?
+Brackets. Yeah, brackets. And then
+you're using enumerate count and num.
+So, count would basically be the index,
+but you're saying that it is one based
+and not zero based. Num would be the
+value. Would it be the index or no? It
+would be the value, right, of the nums
+array. Yeah. So what enumerate does for
+people that don't know is it like goes
+through a list
+uh or whatever the data structure is and
+it assigns a
+uh one indexed number to the values. Do
+you want to add a print so we can just
+kind of see what count and num are for
+the test cases for the the sample test
+cases?
+Yeah, like right here. Yeah.
+None
+like that.
+And then run it. Yeah. Not submit, but
+run the play button. Oh, yeah. Where is
+run? I'm not Yeah, it's the play button
+right beside submit.
+Oh,
+not really familiar with V code too
+much.
+So if you scroll down
+0217
+and then it's finding
+it's saying and seven equal the value.
+So yeah. So this is kind of a bad
+example. Let's see.
+This is a little bit better
+because what's the target? Uh the target
+six. So this is going to go through and
+it set it finds zero and three.
+Well, it finds three, which is actually
+this is assigning a a zerobased index.
+Yeah. So, with enumerate, you can set a
+onebased index, but I think by default,
+it doesn't do that. Um,
+which I I was curious about because your
+code didn't have any accounting for the
+index offset there. So, I guess I wanted
+to see it.
+Yeah.
+Oh,
+so in this case at least it is basically
+the same as doing a for range but it's
+just like a different way of writing it.
+You're saying I have the nums array. It
+is an object that can have indexes but
+the for loop is the thing that creates
+the index. So in this case we're saying
+you're doing like the for i in range and
+so the range part of it creates an
+index. And then in this case we're
+saying we can split out the index and
+the array value kind of um dstructure it
+if you have been on the explore board
+and you're learning that where you're
+saying in a for i and range loop we can
+have the index value and then to get the
+value of the actual inside the actual
+array at the index we have to say nums
+at i right with using the bracket
+notation. But with the numerate we can
+pull out both of those items. So we can
+pull out the index which Brian named
+count and then we can pull out the
+actual value at that index which he
+called numbum. Um so in your code can we
+see the rest of that?
+Yeah.
+Um so that's kind of that is a nice way
+to do it because then it gives you a
+little bit more flexibility
+um by having both access to the index
+and the value from the array. I would
+probably if I wanted to name them, I'd
+probably name them index and value um
+just because that would be more clear
+for me personally, but I think this
+totally makes sense. And then you have
+that condition like you said where
+you're checking if the complement quote
+unquote is inside of your dictionary. If
+it is, great. We already know
+you're creating a key value pair there.
+Um, so if the first one wasn't in there,
+if we didn't hit that target is inside
+of the dictionary, the very next step is
+you're creating that key value pair
+where you're saying
+um we're adding the B the num value to
+the dictionary and we're setting that as
+the key and then the value for that
+dictionary key at this key value. Oh
+god, that's heck of an explanation. Um,
+is the index. So dictionary at the
+number value is equal to the index
+position. Um and then if you had found
+it aka if target minus num is in the
+dictionary. So if we found that number
+the complement inside of the dictionary
+in a future part of the loop
+then we can just call that dictionary at
+that number that key get its index
+position that we stored and then return
+it along with the current index to get
+those two index values.
+So that is a nice elegant solution
+there.
+And then if I make this one index, I
+would just do this, right?
+Um I'm not sure. I haven't used
+enumerate. I think there might be I
+think it might be something you do in
+the enumerate um parameter list. Oh
+yeah,
+that would be my guess. Um can can we
+see briefly a print of
+um
+right above the where you're setting the
+number and the index into the
+dictionary. Can we add a print there to
+see the dictionary value or actually
+after it
+right here? Yes. and just print the
+dictionary. Print def
+so I can explain what everyone or show
+what everyone what I was talking about.
+Mhm.
+Okay. So, we look at that here. Hold on
+a second. Yeah, we don't need that part.
+Okay, so we're hitting that first one,
+the zero index with the value of three.
+We don't have any compliments in the
+dictionary yet cuz the dictionary is
+empty. So we go ahead and add the number
+three at the zero index to the
+dictionary. And then we move on. We
+increment to the one index with the
+value of two in our little sample array.
+Um this is for 324. Yeah. So three and
+then two. Um and so then now we have the
+dictionary that has the value two at the
+one index position and the value three
+at the zero index position. And then we
+get to the final value in the nums array
+which is that four value the target of
+six. So we're saying target of six minus
+num 4 which would be two. Does two exist
+in the dictionary? It does. So then we
+can return the dictionary at the two key
+which gives us the index of one and then
+our current index which is two and then
+that gives us the output one two. So
+does that make sense for everyone?
+Thank you Brian.
+Now, did you come up with this on your
+own or how did you get to this because
+you had mentioned that in the last
+meeting actually that you wanted to try
+a dictionary?
+Yeah. Yeah. Because I I work with
+enumerate a lot when I'm I do a lot of
+data science projects like one I'm I'm
+working on a
+um a one for um Kaggle right now. Um,
+and it's just a
+some sometimes
+sometimes you want to add add an index
+to keep track of things. And when you
+have a dictionary, you can use it as as
+like a key value pair to like
+split things up and then you deconstruct
+either a tupil or a dictionary.
+Yeah, your data science background
+really coming in clutch for all of these
+these problems we've been looking at
+lately.
+So that's awesome. Thank you, Brian.
+Yep.
+Now, if you didn't have Brian's
+background, right, and you didn't come
+up with that solution right away, that's
+totally fine, right? Because now you
+have been exposed to that potential
+solution. And I would encourage all of
+you to take the opportunity to code out
+these solutions on your own from scratch
+um to see that you can get the same run
+times. And if you'll notice, his runtime
+was zero milliseconds. We didn't get to
+look at your memory, but I assume it was
+probably maybe even about the same.
+Actually, maybe a little bit worse, but
+the zero run time there was pretty good.
+Yeah, the the memory is 13.
+So, it is better. Well, okay. But it's I
+don't think it's
+um Well, I'll just click on it.
+Yeah, sure. Yeah, it's not zero to the
+one.
+It's still zero to They're both zero to
+N. Yeah. O of N. Yeah. So,
+very nice. Very nice. So, that confirmed
+it then. O of N the best solution there,
+which on our graph is pretty good.
+And that is the best solution for this
+problem is an O of O of N. If it was
+sorted,
+we could
+still get O of N just using more more
+potential options.
+Um
+I did have a question for everyone. This
+is somewhat unrelated, but if we took
+this approach
+and we did a binary search here, which
+if you recall is like kind of like the
+dated approach of a phone book where you
+if I'm looking for like the J's in the
+phone book, split the phone book in
+half, is the J names in the first like
+before where I'm at or after where I'm
+at? If it's before, okay, great. will
+split in half again. Keep doing that. So
+you're constantly splitting in half or
+like having it. Um so you're not going
+through every single value. You're
+having the values which has that
+logarithmic
+calculation.
+Um which gives us the log of n approach.
+So
+when we talked about this before we have
+the O of outer loop and then we have the
+linear search o of n inner loop. So this
+was
+just to spell that out a little bit
+more. O of N for the outer
+outer outer
+O of N
+for the inner and then we're getting the
+O of N squared because we're kind of
+multiplying those a little bit. So if we
+had swift swapped swipped if we had
+swapped this approach for a binary
+search which has that O log of N
+assuming we didn't have to sort it
+already like all the values were already
+sorted so that wasn't affecting us at
+all. What would that solution be? So if
+this was a binary search inside of a
+loop an O of N loop what would that big
+O be? Does anyone know?
+If the second loop remain nested it will
+be n²
+log n and if it's not nested then it
+will be n login.
+Oh no why do you say that? I say that
+that if want to replace for j in range
+then it is a nested loop. Mhm. So you
+can use nested there is no problem but
+it will be square. Why will it be n squ?
+Because you are running uh one i and on
+this i the next uh loop will be a nested
+loop for the first loop. That's why
+but what is the nested loop's o value
+for binary search?
+uh for nested loop is n login
+for binary search it would be login
+it's only for the binary search is login
+yeah so if the login was nested in the o
+of n you're saying it would be n squ
+login
+oh no no it would be n login yeah there
+we go sorry no I was thinking binary
+search is n login binary search is only
+login yes exactly thank you Abu
+So in that case because the same thing
+that we talked about last time where we
+were kind of multiplying the O of N of
+the outer times the inner because for
+each of these run values we're doing a
+second O of N run value. So then for
+each of these O of N values we'd be
+doing a binary search which would be the
+login. So if you multiply those you
+would get O of N log of N. Um which is
+the same as the nums do.sort sort
+actually the sorting sorting value. So
+if we had done the binary search, oh
+sorry,
+if we done a binary search approach,
+even if it was sorted to begin with, we
+would still end up with an n log of n
+approach there because
+the solution would require you having an
+n log of n
+runtime for a binary search inside of a
+loop. So that's just kind of a fun
+little tidbit there of how we are
+getting to those numbers. So even if
+this had not needed to be sorted, we
+would still get that O and log of N
+versus the two pointers if it wasn't
+sorted.
+That would just still be O of N, right?
+Because the two pointers takes the need
+for nested loop out.
+So when you compare the power of having
+to have sorted this first,
+you would actually get an O of N
+solution with two pointers if this was
+sorted. And that is important to keep in
+mind because there may be other problems
+in the future where you're considering
+using a two-pointers. Um, and if the
+values are sorted, then you know that
+you're going to have a pretty good
+runtime versus if it's not sorted, how
+are you evaluating the efficiency of
+that there?
+And
+the reason I I keep kind of talking
+about um Big O is that it's kind of
+become a new fascination for me. I guess
+it's not going to be I'm not going to
+quiz you on it um for a grade or
+anything during the technical interview
+if you're at that phase, but it is
+really good information to know. And if
+you were able to talk about it
+confidently, that's going to be a big
+plus. And when you get to the job hunt
+where you're looking for job positions
+in the coding world, if you're doing
+technical challenges, they may ask you
+big O stuff. So I want to make sure that
+we cover it in each meeting just so that
+you're getting familiar with the
+language and getting familiar with how
+you can determine what the O complexity
+is. Um because then you will really
+stand out in the job hunt when you're
+are working on technical challenges. So
+I hope that makes sense for everyone how
+we got all of these uh computations
+there I guess is the word.
+Now, I said we were going to write code
+this time, but we didn't.
+But we still looked at we still looked
+at code. So, thank you, Brian, for
+sharing the dictionary approach. Um,
+so
+there is still the threesome approach.
+And now that we've kind of talked about
+in depth all of these different like
+highle approaches of using the
+two-pointer, using linear search, using
+a dictionary or keeping it brute force,
+I would like everyone to try the
+threesome problem. Let me
+I'll put it in the chat. I mean,
+everyone can Google, but
+it it should be I think it's listed down
+under more challenges.
+Oh, really? On that same page? Yeah, if
+Well,
+yeah, I think if you go to the accepted
+tab
+and go down, I think it I think it says,
+is it problem 15? That's the three sum
+challenge. It might be um
+Oh, well, I don't think I
+No, I don't. Oops.
+Well, I I pulled it up anyways.
+Oops, accidentally paused. Um, so this
+one is very similar. You are given the
+integer array and you must find three
+values that add up to
+the target. Um, oh actually no, it's a
+little bit different. How do they
+describe it? Given an integer nums,
+return all triplets I, J, K such that I
+is not equal to J or K and J is not
+equal to K and that they all equal zero.
+So you're finding the perfect sum of
+three
+values that they go back down to zero.
+So
+um -1 and negative 1 which are both in
+here + two those sum to zero and then
+negative 1 0 and one also sum to zero.
+So this time we're not looking at
+indices we're looking at the actual oh
+and we wrote out some code comments for
+it as well. Um we're looking at the
+actual num values in those arrays. So,
+it's a little bit different than the
+twosome approach because we're returning
+you can have an empty return there and
+you're looking for um the actual num
+values non-duplicated that equal a sum
+of zero, but it requires you finding
+three pairs instead of two. Um, so it's
+a little bit more complicated, but
+you've got quite a few new techniques
+under your sleeve if you implement all
+of the things that you learned for TUSM.
+Um, so I would highly recommend working
+on these implementations to make sure
+that you understand them and then trying
+out the threesome. And again, I
+recommended these two specifically is
+that both of them twosome and threesome
+are still quite used in uh tech
+interviews like actively and have been
+for several years. So if you have these
+down then it's it is there is a high
+possibility that you could see these in
+a technical technical interview in the
+job hunt. And if you have working
+solutions for them and you understand
+the principles and concepts behind them,
+that's going to be really good for you.
+So Steven asked for threesome, does it
+have to be solved in Python? No. I mean
+for anything you can generally solve it
+in whatever language you're most
+comfortable with. If that's JavaScript,
+TypeScript or whatever language you knew
+before coming to joy coding, all that's
+totally fine.
+Um, so
+I have to decide. We can we can look at
+the output for threesome next time, but
+I kind of have some other things that I
+want to jump into. But we'll see. We'll
+see how far we get. It would make sense
+since I just said all that stuff about
+how good it would be to know all of
+those things. But I also don't want to
+spoil it. I want everyone to take on
+those challenges for themselves and kind
+of work through those things on their
+own. Um, but we'll we'll see. Does
+anyone have any questions as we're
+wrapping up? because we are getting to
+that time limit now and we've spent a
+few sessions working on these the same
+problem. Um what questions do people
+have about the technical interview about
+anything that we've covered today? Um
+anything that they want to ask any
+questions? What questions do we have? So
+I got a question for you. Um I have done
+a kind of a cheat sheet um with all of
+my notes and that type of stuff. What
+types of things would you allow me to
+have on my cheat sheet because I've got
+binary search and how to implement it
+and that type of stuff? Is that
+something you don't want on there or is
+that No, I would probably not want that
+because that would be like a full or
+partial coding solution to a potential
+problem, right? So if you have like if
+you have like a basic for loop or like
+an example of using mod like the modulus
+symbol um those are fine like you can
+have little code snippets but if you're
+have like a full thing that's like how
+to reverse an integer or how to reverse
+like no it's not quite like that but
+it's it it's things like um I I'm not
+even sure all the different things that
+I've got on there but I like having Um,
+I I like having the notes, but I'll
+review them before I come see you
+tomorrow. So, we'll go that way. Yeah,
+it it would have to I mean, it would
+depend. We could look at it before
+beforehand and see what's on there. It's
+It's nothing It's not like the
+dictionary of the whole world. It's just
+more along the lines of things to
+remember. But I like to have It's a
+security blanket. Okay. I'll go along.
+You got to kind of ditch those.
+I like security blankets. Okay. I'm You
+may not be able to use them in the in
+the job hunt and all that kind of stuff.
+No, I get that. I'm just saying. So, I
+like I said, I wanted to make some notes
+before we um met and so I'll I'll put
+those away before I come see you. So,
+there you go. And also, any time that
+you spend reviewing the cheat sheet,
+like during the actual interview
+portion, is time that you're taking away
+from working on a solution. So when that
+20 minutes it feels like it's kind of a
+long time but when you're like sitting
+in the hot seat it goes by so quick. I
+did one last night with Katrina and
+seven minutes for an easy problem. So
+not saying it will be not saying it's
+always going to go that well. Just
+saying. Very nice. Yeah.
+Congratulations. Hopefully it'll go that
+well tomorrow. That's what I'm hoping.
+All right. Any other questions?
+So, the one that I have on tape from
+last night that you recorded, will that
+work for you? Can I just, you know, show
+you that one? And
+no, unfortunately. Oh, well, it was a
+nice thought. I will look at it, though.
+I will see how it went. I'm curious.
+All right. Well, with that, um, so we
+are back on schedule now. I know I had I
+was out on Sunday because I lost power.
+Um but we'll continue with the Sunday
+Wednesday combination. So Sundays again
+are um opportunities for people to take
+the mock interview to get practice like
+performing in front of a group and
+having that time pressure on you um and
+working on kind of harder problems. We
+usually give out medium problems for
+that and then give you some coaching at
+the end to talk about what went well,
+what I might like to see differently in
+the future or if you completely mastered
+it then no notes, right? Um and then on
+Wednesdays we kind of dive into some of
+these topics a little bit deeper. Big O
+complexity, named algorithms, different
+approaches, pseudo code, all of that
+good stuff. We save for Wednesdays.
+All right, so I will see everyone on
+Sunday. Thank you. Thank you. Goodbye.

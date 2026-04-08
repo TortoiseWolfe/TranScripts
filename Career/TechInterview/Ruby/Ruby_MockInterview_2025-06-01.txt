@@ -1,0 +1,1419 @@
+All right. So, welcome to this week's
+technical interview prep. Uh, we've
+changed the name, so I'm still getting
+used to announcing the new name. It's
+the nailing the tech interview. Um, so
+we're splitting the once weekly session
+into two. So today and future Sundays
+will be a Q&A session to for anyone to
+ask questions about practicing
+preparation, anything related to
+technical interviews. Um, we'll go over
+a problem, usually an easy problem at a
+high level, just kind of talk about
+approaches, maybe get some pseudo code
+written, and then we'll open up the
+stage for a mock interview to help all
+of you get the chance to practice
+speaking in front of others, um,
+explaining your thoughts and kind of
+just being in the hot seat a little bit.
+There's no expectation to come to a
+solution or to get test cases passing.
+It's really just to get that experience
+so that you're prepared in the real
+scenario. Wednesdays we'll continue.
+We'll keep the Q&A same on both days.
+Um, but we'll take problems maybe the
+problem that we started today's session
+with the pseudo code problem. Take it to
+fruition. You know, see all the test
+cases passing, explore alternative
+solutions, maybe a brute force solution,
+maybe an optimized solution, talk about
+big O a little bit. Um, we can look at
+other problems people are working on. if
+you've started something and you're
+getting stuck, we can take a look at
+that and then just kind of generally
+deep dive into
+um subject areas. So, we had been
+focusing on linked list for a little
+while. We're done with linked lists. So,
+if you want help with those, go back and
+look at previous sessions. Um but this
+is kind of the new strategy going
+forward.
+and I'm in the middle of moving, so the
+problems are going to be kind of all
+over the place for a little while um as
+I'm adjusting to the new schedule and my
+new place of residence. Uh does anyone
+have any questions about the schedule or
+anything that they'd like to
+ask generally before we move on from
+this?
+No
+questions.
+Okay. Oh, I didn't save it. Dang it. Oh,
+well. All right. So, I'm just going to
+go ahead and open up for any questions
+about technical interviews, practicing
+preparation. What question do people
+have about anything about that? I have a
+question. Yeah. So,
+um, in the technical interviews, um,
+some I've heard, well, I have a few
+questions, but the first question is,
+I've heard some companies are okay with
+allowing, you know, Google searches and
+things like that. Um, or like your own
+little notes. Um would are you guys open
+to that as well or Yeah. So our general
+rule is that if you're googling how like
+a syntax question like I know that
+there's a count method but I can't
+remember how to like set it up that's
+totally fine but if you're looking up
+something like if it asks you to reverse
+an integer and you're googling how to
+reverse an integer we're probably not
+going to like that right. Um, so so that
+kind of syntax things are like small
+code things but not full or partial
+solutions and no chat GBT or any AI
+assisted stuff as well, right? But if
+you do have notes like um handwritten
+notes about like stacks and cues or
+linked list or something like that,
+generally that's okay. Just again no
+like coding solutions, no like written
+out code. Okay, I got it. Um, and then
+this is more of a actual coding
+technical question. Um, what I'm the
+biggest thing that I'm having trouble
+with is I'm I'm good with understanding
+the question for the most part unless
+it's a little, you know, confusing. Um
+and then the pseudo code is not bad but
+like transferring pseudo code into
+actual code um
+sometimes is the issue the biggest issue
+where it's like okay I know to use an if
+statement or I know to use a what
+whatever you
+know you know it doesn't matter if it's
+like syntax or whatever I just don't
+know what sometimes physically goes into
+um into the getting it started. Yeah.
+Exactly. Exactly. Um, so I would I would
+like to put it out there that I would
+like to try today. Um, okay. My first
+first one on here. Um, but I do want to
+do want to get it to it as soon as
+possible. But yeah. Yeah, absolutely.
+So, for that, there could be a variety
+of different reasons, which is why it's
+good to see your process and what you're
+doing because then we can kind of have
+coaching right there on the spot. For
+some people, I think it's really just
+um going back and reviewing Dr. Emily's
+the four problem solving pillars of
+okay, you kind of just need code out
+there to get started, right? So, if you
+need a template code, you need to write
+your if statement, write a for loop just
+to get something out. It doesn't need to
+be perfect, but just writing something.
+And then what are you doing to test your
+assumption? So, you know, you need an if
+statement to do something or you need
+maybe a for loop. So, write it out. Add
+some print statements. Make an
+assumption. I'm expecting it to do this
+thing. How can I see that in the code?
+How can I make that observable? And then
+how can I make incremental steps from
+that point? I think we get in our heads
+and try to jump to like a final solution
+from the go. Like I know that I want to
+do all these things. How can I just
+write it all out one smooth motion? But
+it's more of an iterative process and we
+kind of have to take it step by step.
+Sounds good. Adding a person.
+All right. But it could be another
+reason too. Like it could be lots of
+things that maybe we just need to add
+some logical leaps in there and make
+some connections to click. Um so yeah, I
+will be excited to see you perform today
+then because I've got a problem for you.
+Oh, thank you. I'm actually kind of
+nervous but you know challenge, right?
+All right. Any other questions or what
+questions do we have?
+Let's jump on in
+then. Oh, I got logged out. One
+second. I guess I don't need to be
+logged in. That's fine.
+All
+right. Okay. Everyone should be seeing
+this problem here. Birthday cake candles
+on my screen.
+Um, someone
+had posted some a question about they
+had posted their code actually in one of
+the discord channels and was asking for
+feedback. So, I thought this would be a
+good one to
+use to go over kind of breaking down the
+problem a little bit. So, we're just
+going to read through this one. Birthday
+cake
+candles. You are in charge of a child's
+birthday party. They will have one
+candle for each year of their total age.
+They will only be able to blow out the
+tallest candles. Your task is to count
+how many candles are the
+tallest. All right, so
+there's like weird random information in
+there, but I can at least pull out your
+task is to count how many candles are
+the tallest. So that sounds like an
+actionable thing. So I'm just going to
+go ahead and pull that one out into the
+code
+comments. Um I don't you don't
+necessarily have to understand it on the
+first read. maybe two or three reads in
+down the line. Um, but I'm just going to
+keep moving forward. So, we're given
+candles and I can see candles here in my
+parameter. In their example 4413, the
+tallest candles are four units high.
+There are two candles with this height.
+So, the function should return two. All
+right. So, I'm getting an idea of what
+this might be asking me. Complete the
+function birthday cake candles with the
+following parameters. Int
+candles in. So that is an array, an
+integer array of candle heights. We want
+to return an int the number of candles
+that are the tallest. Um, and I'm just
+going to go ahead and write those out.
+So pass an integer array of candle
+heights. And we want to
+return
+int of
+the count of the
+tallest
+candles. All right. So our input format
+the first line and this is for our test
+cases mainly. So if I just run, we'll
+see what test cases are. Oh, nope.
+Didn't like that.
+Sometimes it's good just to get a a
+return statement with their so they want
+us to return an int. So just returning
+zero or if it's a boolean returning true
+or false an empty array just getting a
+return statement because sometimes the
+first errors you see are actually based
+on their like submission code and
+they're not real
+errors. So if we just add a blank
+return then we can actually get to see
+the test cases. All right. So they only
+give us one and they are saying the
+first line contains a single integer the
+size of the candles array. So this one
+length of four 1 2 3 4 that makes sense.
+The second line contains in space
+separated integers where each integer I
+describes the height of the candles. So
+one candle of three units height, two
+units height, one unit height, three
+units
+height. And then we're going to look at
+the constraints here.
+add one more
+person. Brian's already jumping ahead
+there with a solution potential
+there.
+Um constraint.
+So in the length of the array or the
+potential amount of candles that we will
+have in the candles array will be
+between 1 and 10 to the 5th. Now, I
+don't always know. I can't do exponent
+math in my head all the time. This would
+be something I might Google into the
+five
+[Music]
+exponent just for
+fun. Can you just like tell me? Okay.
+Yeah.
+100,000. So, 100,000. We could possibly
+have 100,000 candles on a birthday cake,
+which is kind of extreme. Yeah. Pretty
+big cake, right? Uh, and then candles I
+each integer or each I value. So each
+candle value can have a height between
+one and 10 to the 7th. I'm not going to
+do that again. 100,000 * 10 is what? A
+million. So 10 million
+maybe. Uh, so again pretty pretty tall
+candles of 10 million unit height,
+whatever that means. And then they have
+a sample here which matches what we were
+already seeing right here. And they are
+expecting an output of two because we
+have one candle that's three units high,
+a second candle that's three units
+height. Each of those are the tallest
+candle and there are two of
+them. So candles are 3 2 1 3. Tallest
+candles are three units and there are
+two of them. So by the time you get to
+the end, usually you can kind of get a
+clear picture of what it's telling you.
+Um but if not, read it a few times, pull
+out these problem statements that
+they're telling you.
+um kind of like we already did. So,
+we're counting how many candles are the
+tallest and return an integer of that
+count of the tallest
+candles.
+So, this one is pretty straightforward,
+but if there were more steps in there or
+if they were a little bit more obscure
+about what you might do, then this is
+where the pseudo code is really going to
+come in handy. But even for this one, we
+know that we need two things. We need
+the max height of a single
+candle in the candles
+array. Right? We need to find which one
+or multiple are the
+tallest. And then we need to separately
+get a
+count
+of I guess the
+quantity of
+candles at that height. Sometimes it's
+annoying to use their like metaphors of
+birthday cake candles, but sometimes
+it's helpful. I feel like getting a
+count of the the candles at the height
+is easier than just saying like but
+maybe not. Find the maximum value in the
+array and then like provide a count of
+how many integers match that value.
+Maybe that's more clear. I don't know. I
+like the candles in this case. But if
+I'm getting confused by the terminology
+in the problem, I will remove the
+terminology that they're using and boil
+it down to its simplest like
+explanation. So we're given an array. We
+will be provided the length of the array
+and we are looking for the maximum value
+inside the array and then we're going to
+find a count of that maximum value. We
+are expecting duplicates but it's not
+necessarily we could only have one three
+in this case we have two there could be
+four five etc etc. We know that the
+length of the array can be pretty large
+and we know that the values inside of it
+can be pretty large. So, we want to
+focus on making sure we're pretty
+efficient
+there. Um, now Brian put in a
+pretty quick
+uh solution
+there. So, we'll go ahead and throw that
+one out
+there.
+But actually, that one wouldn't work for
+Python.
+So, if I was at pseudo code, this is
+where I would stop for today. Um, so if
+you guys want to try this one out, it's
+an easy problem, which is nice. Um, and
+we only have two steps that we have to
+do. Find the max height and then get a
+count. So, that's a good one to practice
+on if you're just getting started with
+practice.
+Otherwise, like Jenny was saying, how do
+you get started here? Right? So, wanting
+to figure out the max height, we know
+that there's potentially a method for
+that. So, we could Google max Python
+method. Um, or you could do it the
+oldfashioned way. Loop through each
+value in the Oh, that was pseudo code.
+Okay,
+Brian. Um, loop through the candles
+array one at a time, checking the index
+and then checking for the values to find
+the max that way. Both of those would
+work. And then getting the count. Maybe
+you need a second loop. Um, maybe you
+don't. Maybe that's a challenge of
+efficiency there. if you can do it in
+one loop or not. Um, but when you're
+just getting started, go for the most
+verbose method. Don't worry about being
+dry. Don't be worry about being
+efficient. You kind of just want to get
+the test cases
+passing. All right. Does anyone have any
+questions about this problem or what we
+did to break it
+down? Oh, Glenn has
+a long message
+here. Just listen to me.
+Okay. So Glenn said we use pseudo code
+to first develop a strategy to solve the
+problem once it reflects a algorithmic
+refinement meaning the series of steps
+that we want to f follow in in a single
+step at a time kind of manner. Um then
+we apply the knowledge of our known
+program. So if that's Python or
+JavaScript or whatever language you're
+comfortable with and data structures to
+fill in the framework within that pseudo
+code. So strategy first helps ensure
+that we understand the problem to be
+solved. Yeah. I mean that's the general
+idea,
+right? This is a simple problem and I
+did not want to throw actual Python
+syntax in chat. Yes.
+Okay. All right. I'll let you guys duke
+it out in the in the chat there. Um, any
+other any questions? Any other thoughts
+about this problem before we jump into a
+mock interview? I get I got a question.
+Sure.
+Uh, when looking at methods sort of like
+using max,
+where do you go
+to understand what the sort of cost is
+for that? You know what I do?
+I Google
+it. Usually someone has an answer in
+there. What is the big O of min and max
+used in Python? They are O of N. Are
+they O of N or do they have something
+else? It's O of N general algorithm.
+Okay. Sometimes like geeks are geeks or
+even like
+Python itself in their documents will
+have yeah this is a Python wiki. They'll
+have their
+own like explicitly stated stuff and
+then sometimes people will theorize or
+speculate in in like uh the forums.
+[Music]
+Um, oh, can you link that or drop that
+link in the chat? Yeah, let me just find
+if it's actually Yeah. Okay, so it does
+have it in
+here. List
+operations. So most of them are all O of
+N. Get item set item are O of one. That
+makes
+sense. Extend multiply
+minax. Get length is also O of one.
+That's fun. So when you do the
+lin method, the lin function, that's an
+O of one. So that's pretty
+nice. Pop that in the
+chat. And then you can do the same thing
+for any language, you know, big O of XYZ
+thing and XYZ language. Um, that's
+usually what I do. Um, or I'll use that
+link that you gave us. What was it? Big
+O Calc.
+big O count. That one's really
+cool. So, you could literally just do
+max of one, two, three,
+four, and it'll figure it
+out. Yep. Time complexity of n where n
+is the list is the number of elements in
+the list. This is because the function
+needs to iterate through each element in
+the list to determine the maximum value.
+Space complexity. Space complexity is O
+of one. Since the function does not
+require any space that scales with input
+size, you only need the constant amount
+of space to store the maximum value
+found during the iteration. Right? So
+you'd either be saving this or just in
+the program's memory, it is saving
+caching the value that is output by
+this. So that would take up O of one
+space. Um, yeah, this is again I'm glad
+that you shared this with us, Kai,
+because this is so cool. But that's what
+I usually do is just Google it.
+And for everyone who's concerned about
+like knowing Bigabo on the tech
+interview, don't don't worry about it
+too much. We just kind of get nerdy here
+in the the weekly
+sessions. Yeah. Okay. You said the big O
+notation is hard for me to get for some
+reason. I get the general gist, but
+actually calculating it.
+Okay. Um, we've talked about this in
+previous sessions. There are
+like I bring it up all the time, the
+like big
+O
+graph. And I've Googled it before or I I
+brought it up before where we found a
+pretty good article. I don't think this
+is the
+one. Maybe it
+is where they'll give you like maybe
+this is it. They'll give you code
+examples representing each of the big
+O's. I don't
+know. Maybe this is helpful. I'll pop it
+in I'll pop it in the chat. I'm not
+going to read it right now.
+There it is. Um, but it's really helpful
+to find like code examples of each of
+the big O like formulas or whatever. Um,
+so like an O of one, a constant is just
+like declaring a variable or
+um if you have a dictionary and you're
+calling a dictionary value by its key,
+that's also a an O of one because you're
+doing one method that's retrieving one
+value. And then based on the size of the
+inputs, that's what it's really talking
+about is that if you have so in our our
+previous example, we have the candles
+array.
+Um, if I wrote a function that said
+candles, like get first value of candles
+and just returned candles at index of
+zero, no matter how many values are in
+the candles array, whether it's five or
+5,000, if I'm always just returning the
+zero index value in my my function,
+that's always going to be an O of one, a
+constant. Um, and then doing the same
+thing for each of these, finding
+code code examples where someone can
+walk you through and explain like a good
+use case for these. I know O of N is
+just like a simple for loop going
+through each value of an array or an
+object. Um,
+O log of N, log of N or N log of N, I
+think it's log of N. O, log of N is just
+where you're like constantly cutting
+something in half. So, if you're wanting
+to find a name in a phone book, you just
+cut it right in middle. Open it up. All
+right. It's going to be either after
+this page or before this page that I'm
+looking for. So, if I'm looking for a
+name that's in the C's and I open up to
+the J's, I'm going to I've cut it in
+half effectively and now I can cut it in
+half again and again and again until I
+get to the C's and then until I
+eventually get to the page with the C
+name on it. So, then you're not going
+through each and every page in the phone
+book. you're constantly just cutting it
+in half. So that's why log of N is more
+efficient than O of N. So no matter how
+big your phone book is, if you have like
+an infinitely large phone book, if
+you're constantly cutting it in half,
+you're going to move through it a lot
+quicker than going through each page one
+at a time. And then yeah, these are kind
+of grizzly, but they get they get pretty
+big up there. But that's my best advice
+for you is look for code examples or
+walkthroughs of each of
+these specific ones and then just kind
+of practice calling them out when you're
+writing your code. So if you're like
+writing a piece of code or a snippet of
+code for example in our birthday cake if
+I was going to write a loop for this or
+if I wanted to Google what is if I'm
+using the max method I know that the max
+method now
+is
+oven and I could look up an explanation
+for why that is but it's essentially
+just because it's going through each and
+every single one of the values in the
+candles array and then I could figure
+out the O of N of this one and then it's
+just kind of a cumulative thing. If
+you're using a big O value that's
+larger, so if I had an O of one up here
+and then we do this O of N, the final
+output is going to be at least O of N
+because there's a at least one O of N
+operation in there. If we did something
+even worse like O of N squared, then
+it's going to be at at best O of N
+squared. Um kind of that same rule. So
+just calling out each of your little
+code sections of saying, "All right,
+I've written this loop or I've written
+this code section. This is what I'm
+theorizing it is for big O. Can you look
+that up? Can you figure it out? Verify
+it." And then kind of get an overall
+view or use the big OAL
+website. Put that back in here as
+well. And just paste your entire code in
+here and it will tell you. And then you
+have to do the work of working backwards
+to figure out all right well why is it
+that like can I understand why it's
+telling me that that is the case. Um and
+kind of break it down each step of the
+way in your own words. Always go back
+and try and do it in your own words in
+your own code so that you can kind of
+get the best understanding of it. Um but
+again explaining being able to explain
+the big O of your code will not be
+required for joy of coding. Um, I might
+ask you just to like not to torture you,
+but uh just to like get your thoughts on
+it, get to know what you think. Um, but
+it won't be like a make or break thing,
+but it is good to know for the job hunt.
+You might be asked about it. So, it's
+definitely something to get comfortable
+with. And we talk about it a lot in
+these sessions. So, you can look back
+through our old sessions and we talk
+about it and hopefully put the pieces
+together a little bit more. All right.
+kind of went off on a tangent there. Can
+I ask one more quick question just about
+these hacker questions? Do is there a
+difference from the easy, medium to hard
+in regards to how much they require you
+to handle edge case situations? Yeah.
+Okay. I would say yes. I say the higher
+you get up there, the more edge cases.
+Probably even the more test cases. I
+think some of the easy problems they
+only give you like 15 or 20 and then
+medium problems they'll give you
+like I don't know I feel like they give
+you more and then they definitely have
+more of those like gotcha cases. That's
+where coming in with the constraints is
+really valuable because if you can kind
+of predict based on the constraints all
+the edge cases that they'll give you,
+you can just kind of account for them
+right at the start. But there's nothing
+wrong with getting like draft code
+written out, running it, and catching
+the edge cases one at a time. I mean,
+that's part of the process. And I don't
+think you'd be penalized in a job search
+technical interview for doing that
+either, as long as you can explain why
+it came up, what it is, and how you're
+going to get around it.
+Thank you.
+All
+right, ma'am. Can I share my
+understanding? Okay, sure. Yeah. about
+the big
+O you have uh what you are calling you
+are calling an array and the correct
+string of the array is 10 ^ 7 so 10
+million now the max function is going
+each and every element so 10 ^ 7 means
+it's a n so from that understanding I
+can deduce that okay my big will
+O to the power n. Now if it is runs
+twice it will be n² or n cub three
+times. This is how this is my
+understanding always I see the what
+function is doing the max function is
+going each and every element it started
+from first element the index is zero up
+to the 10 ^ 7 if the that long the array
+is that's why it comes O thank you ma'am
+just to clarify one thing you said
+though if I have two separate loops that
+are both going through O that's going to
+be O2N
+not O N squared. O N squared is if
+you're going
+through the array every single like
+like kind of like inner loops if I'm
+going through each value in the array
+again at each index. So at the first
+index going through 0 to 7 or 0 to
+whatever the max is at the two value I'm
+going from zero to whatever. Um yeah.
+All right, let us jump into the mock
+interview. Are you ready, Jenny? Um,
+well, ready is all over me, I guess.
+It's not It's not that scary, I don't
+think. Um, I'm going to switch this over
+to le code because I found one on Le
+Code that I liked. Oh, okay. If you
+haven't if you haven't practiced with
+it, it's pretty much the same. Okay. I
+don't I played a few I played around
+with a few leak code stuff but um but
+that was a a long time ago. Um I am
+mainly JavaScript. Um I I Python I
+started with Python I know for drive
+coding. Uh but I don't the syntax
+doesn't click with me as much as
+JavaScript. So that's why I've been
+doing JavaScript a lot more. Yeah, I'm
+right there with you. A lot of my
+sessions I use JavaScript. I switch back
+to Python for the linked list lessons
+but a lot of the older stuff is in
+JavaScript. Yeah.
+Yeah, whatever you're comfortable with
+is good. So, I'm going to pop this in
+the chat for you if you want to open
+that and click your the green share
+arrow in the the Zoom meeting. Yep.
+And then you'll just want to sign in.
+So,
+allow.
+Okay. Are you able to see it? Yes.
+Okay. Uh yeah, you can just click out of
+that. Oh, okay. Doesn't matter. Okay.
+[Music]
+And you just want to sign in. Oh, I do
+want to sign in. Okay.
+Yeah. I won't let you run anything if
+you're not signed in. Excuse
+me. Oh, gotcha.
+All right. So, we'll put 20 minutes on
+the clock and we'll just kind of let you
+read through the problem, sound out what
+you're thinking, and get some code
+written. Oh god, this is a medium. All
+right. Um, cool. So, container with most
+water. You are given an integer array
+height of length n.
+There are n vertical lines drawn such
+that the two end points of the um i line
+are i and zero and i height of one or of
+of i. Find two lines that get uh find
+two lines that together with the xaxis
+form a container such that the container
+contains the most water. Return the
+minimum amount of water a container can
+store. Notice that you may not slant the
+container.
+Okay.
+Um
+constraints. So I'm assuming this means
+I can't do any equal equal
+height.length. Um
+okay. All right.
+So I like to write things down first.
+So uh we have an integer array of height
+um of length a n
+um two end points
+um I of zero or I I zero
+and I height
+I find two lines
+uh that
+together the xaxis form a
+container.
+Um oh so
+find such that the container contains
+um
+contains most
+water return
+max
+store. Okay.
+Um
+18 represented by array. In this case
+the max content is 49.
+Um, wouldn't the max amount of water be
+the tallest two and not these
+two? Oh, the the whole container, I'm
+assuming. Well, wouldn't it start from
+here then? Oh, but it's not that tall.
+You're looking for the
+volop. Okay.
+Um, wow. All right. I have no idea where
+to start with this, but I guess we
+should I should first um initialize the
+[Music]
+um the amount of
+water. Uh let water volume equal zero.
+um says find two lines together with the
+x to form a container that contains
+uh the most water.
+Um, I'm guessing I should probably start
+with
+[Music]
+a for
+loop.
+Um,
+to
+check find two lines that can together
+the excess for containers. has to find
+the
+container.
+Um, I =
+1. I is less than
+[Music]
+the I guess the length of the array.
+Um,
+N. And then we keep
+going and search for
+And then this is where I always get
+caught. I'm like, okay, I get like the
+basic stuff and then I'm like, what do I
+put in
+it? Uh, let's see.
+n vertical lines drawn such that the two
+end points of the I line are I zero and
+I height of
+I. Um
+Well, we need to
+find everyone stay on mute, please.
+Um, well, actually, we need to
+search. Well, I don't know.
+Um let's
+draw output is
+49. Oh, so does that mean we're
+adding?
+Okay. Oops.
+Um,
+add starting.
+So
+Uh, not to the height of I. We need to
+add it to each other or add the next one
+to the next one.
+Um not certain what the end is this the
+is this what they're talking about for
+the like this
+I zero and this
+is this is the height of
+I want
+two
+Eight. So, I need to loop through each
+each of these and then add them
+together to get
+49. Uh, how do I add it to each other?
+Volume. Um,
+okay. And then what else do I need to
+do? Whoops.
+Um, well, I know I need to
+return the water
+volume,
+but or not
+Yeah.
+Um, am I allowed to run it to see what I
+have so far or no?
+Yeah, run as much as you need. Okay, I
+know this is not going to do anything
+cuz I know I'm missing things. I just
+don't know what I'm
+missing.
+44. I think the I think the main thing
+for me is I'm a little
+confused what these are.
+Uh cuz I
+know this is the
+height. This is
+the I'm assuming the x
+axis and this is the
+height.
+So the first
+So, I'm assuming this is just a count of
+it and then this is the height of
+it. Um,
+So I need to
+add or I need to find out how
+many I have the length which I'm
+calculating. So, I'm looping through the
+entire thing, finding each one. Then I'm
+I have to figure
+out how many vertical lines there are. I
+think
+so.
+[Music]
+Um there are n vertical
+lines.
+Okay. Yeah, I don't know what to do with
+this part. N vertical lines, two end
+points.
+Um, I would Google something, but I have
+no idea what to Google at this point.
+Can I give up the rest of my time and uh
+see if I can get help? Yes, you can.
+Thanks. Um, this is good though. I think
+you did a good job. I know it's there's
+a lot of pressure being hot.
+We've all felt it. Um, and that's why we
+want you to get practice. So, that's
+good. All right. So, what I did like is
+that you do have you do have some you
+could call this template code written
+out. like you kind of made some
+assumptions about the code and you wrote
+some or about the problem, you wrote
+some code, you ran it, you tested it
+out, and then you're kind of stuck at
+like all right, where do I go from here?
+Yeah. I don't know. I did notice you
+were using a lot of the I think that
+this is this and I think that that means
+that um etc etc. Those are great
+assumptions, right? And so we can test
+assumptions. If the problem is telling
+you to do one thing and you're thinking
+that that's how you interpret it, write
+the code, print it out, run it, see what
+it's what it's returning, what it's
+expecting you to return, and trying to
+make the incremental progress there.
+Okay. Um, so anytime you hear yourself
+thinking like, I'm I think it means
+this, but I'm not sure, that's a great
+line of thinking to say, all right, let
+me go in and see what I can test out.
+Um, now I would say that you jumped into
+the code maybe a little too quick
+because we didn't fully understand the
+problem. You don't always need to fully
+understand the problem to get some code
+written just to get something started,
+right? I think having a little bit more
+of an understanding would have helped
+you here because then you started
+focusing more on the code and less on
+the problem explanation, right? So, if
+we read through the problem explanation
+one more time, if you just want to read
+that out loud for all of us. Sure. Um,
+you are given an integer array height of
+length n. There are n vertical lines
+drawn such that the two end points of
+the e line are i and o and zero and i
+and the height of i. Find two lines that
+together with the x-axis form a
+container such that the container
+contains the most water. Return the
+maximum amount of water a container can
+store. Notice that you can you may not
+slant the container.
+All right. So, you pulled out some stuff
+from there, which was really good. I
+like that you pulled out. We didn't
+quite understand what the I Zero and I
+height meant, but you kind of wrote it
+out. That's totally fine. Um I They kind
+of threw in some garbage there to trick
+you. Um but there are some other things
+that you can pull in there that you also
+did pull out. So, return the max amount
+of water a container can store. So, what
+do you what does that mean for us?
+So, however big the container is, it
+wants us to see like the I guess the
+tallest I guess starting from the
+tallest um whatever the first the first
+tallest vertical line and then
+the I guess the last one depending on
+how high it is.
+Um, I don't know how to like explain it,
+but would that that would be the
+container would be like if there was
+another one here that was small and then
+there was another one that was another
+eight maybe like that would be the whole
+container instead of it stopping here.
+Yeah. And you asked a really good
+question at the beginning because you
+said why wouldn't they use this other
+taller line? Yeah. And so if you look
+down at their example and their
+explanation, what is the explanation
+telling you that might give you some
+hints on to why they chose a different
+line? Uh the above vertical lines are
+represented by an array. In this case,
+the max area of water the container
+contains is 49. Yeah. So it gives that
+gives us the largest amount of area
+instead of it just being from here to
+here. This has more water. You can fill
+more water from here to here, right?
+Okay. And so how do you think they're
+getting that that area of 49?
+So they're adding um starting from
+integer one all the way to
+integer 1 2 3 4 5 6 7 8
+now. So you tried that in your code and
+you got 44 right? Yeah. So that was a
+good assumption that you made and then
+you tested but we proved it was false.
+Right. Right. So think about it again.
+And what else can we test from this um
+this explanation that they've given us
+for that 49? Um what else can we
+test? Maybe the
+um
+be the height of it because it was
+calculating in between.
+So, how would you do that?
+Oh, boy. That is a good question. Um,
+code you can just like kind of sound it
+out how you might do that.
+[Music]
+Um, how to calculate the height of it.
+Uh,
+Okay, that's okay. Um, I'll I'll
+rephrase my question here. So, ignore
+everything you think about this problem.
+Giving you um a phrase here. The max
+area of water aka the blue section,
+right, of the container contain 49. When
+you think area, what do you think?
+Um like the entire the entire space like
+both the x and y axis. Uhhuh.
+Yeah. That's something. Is is is area
+something that you can calculate with
+addition or do you usually calculate it
+with something else? Oh, it is with um
+multiplication.
+All right. So now using that as your
+foundation, what might you do to test
+here? What might you test here?
+Would I console log this? But instead of
+m addition, I would do multiplication.
+Well, what would you be multiplying? Oh.
+Oh, well, I would be multiplying
+the
+the I guess the height and then the
+width of it. All right. So, in their
+example, can you tell us what values
+you'd be multiplying based on just the
+graph they have here? It would be the
+um I guess oops
+the
+i of the
+length or the length of the whole thing
+plus the or multiply by the height of
+it. So count those out. What would those
+values be? Oh. Um,
+so well I start from one. So one, two,
+three, four, five, six, 7, 8 times
+uh,
+seven. All right, we'll do some quick
+calculator math here. 8* 7 is 56. Yeah,
+it's not 49, huh? Um 2 3 four five six
+Oh. Oh, it's seven. I'm sorry. It's
+seven of seven * 7 because it's only
+seven spaces in
+between, which is 49. Yeah. All right.
+And so then if you look at your original
+one, your your first idea was to do the
+two tallest ones, right? Yeah. So what
+would that have been?
+Um it would have been eight time Well,
+it would have been one, two, three,
+four, five.
+time
+8, which is 40.
+Huh? So, does that make sense? No.
+What doesn't make sense about that?
+Well, I got 44, not 40. Well, that was
+because you were doing the addition
+here. You weren't doing Oh, okay. Okay.
+Okay. So, then Yeah. Okay, that makes
+sense. Um,
+so because your original question that
+you had asked at the beginning was why
+wouldn't I use the two eight right two
+eight columns and so by the logic you
+were just using the 8 * the five would
+be 40 versus the seven times the seven
+which would be 49 right right so now you
+kind of have an idea of what their graph
+is doing that you can actually move into
+code that you might be doing
+multiplication by that x-axis the i
+values and the height
+of is and it might be either the max or
+the min height of the two end points
+that you chose, right? Does that make
+more sense? It does make more sense.
+Now, I can't always I mean, it's hard to
+like I I kind of guided you to that
+answer, right? But yeah, I understand
+it's hard to kind of always jump to
+those conclusions. And that's why you
+might test out a bunch of different
+things before you get there. You might
+test adding all of them up. You might
+test adding between the two that you
+thought should be the answer and then
+you might try XYZ thing and you try
+another thing and another thing until
+you kind of formulate this idea of how
+you are getting that. They give you some
+clues. They use the word area. They show
+you the container.
+Um but sometimes it just takes a few
+iterations and then you look at you look
+at the problem again and you're like,
+"Oh, was I just being like silly for a
+moment?" um because that makes maybe it
+made more sense after a while and that's
+part of learning and then your challenge
+after this would be to now that you know
+that it's about doing the the length
+times the i is how you could get that
+value in code and what you would do
+across all the test cases
+right so I will leave that challenge for
+you for after this session and for
+everyone else if you want to participate
+in this problem definitely do and post
+to the hacker rank discord channel if
+you have a solution that you're proud
+of. All right, thanks Jenny. That was
+really good. I again I think you did a
+lot of really good steps and you
+summarized um some really good values
+and you really got some code out there
+and that is kind of the first step. Some
+people kind of get stuck at not even
+getting to the writing the code portion
+just because
+you know we get stuck in our heads a
+little bit. So I think that was a really
+great start and again like you said this
+is a medium problem so it's not a
+problem that you would get for the
+technical interview but it's something
+that you can continue to work on and
+gain more gain more uh confidence in.
+Yeah, thank you so much. All right, we
+have
+some questions in the chat here I just
+want to read before we wrap
+up. Glenn said this is
+challenging tough problem. Yep. Reading
+the example gives some insight into the
+problem solution. Yeah. Longer. Glenn.
+Another aspect of this
+problem. Yeah. So Glenn said that
+another aspect of this problem is that
+it's strange that they refer to water in
+a container which would be measured in
+volume whereas the problem is two
+dimensional twodimensional as an area
+length by width. I agree. And they kind
+of use that language sometimes to
+confuse you because you were using
+volume in your code, which makes sense
+cuz you would
+calculate value of water as a a volume.
+But in the way that they laid it out, I
+think you could get
+to to the area. I mean, they use the
+word area specifically. So they kind of
+give you a little hint
+there. Yes, it is not worded very well.
+So they will kind of word these problems
+kind of to confuse you a little bit. And
+then just to go back what they mean when
+they said here, let me share my
+screen. I don't think you needed to
+understand what this line meant to get
+to the solution.
+Um I'm sharing the right screen, right?
+Let's
+see. Yes. Okay. So
+the i line such a weird way to phrase
+that are i zero and i height i. I don't
+think you need to know what that means
+to get to the air the answer here. But
+what they are saying is that you are
+given the height of the in with a length
+of n. There are n vertical
+lines um there are invertical lines
+drawn such that the two end points. So
+if you're looking at that kind of very
+syntactically there are invertical
+lines. So we know that these are our
+vertical lines, the blacks and the reds.
+Such that two end points of the E line
+could be I Z and I high I. So that could
+mean one of two things, right? That
+could mean this one is the starting
+point and this one is the end point. Or
+we could be looking
+at this is the starting point and this
+is the end point. And so that's what it
+actually is. What they're saying is that
+at each I position, so 0 1 2 3 all the
+way to the end. And then they're giving
+you a second coordinate which is
+zero. So I and zero and then I and
+height of I. So the first endpoint is
+zero for all of them. And then the
+second endpoint is that height at the
+top. So does that make more sense? So
+for example, this one here, the last
+value in the array 0 1 2 3 4 5 6 7 8 I
+think
+eight. This one would be starting at
+zero and then goes to its height which
+is seven. This one would be 0 to 8. This
+one would be 0 to two. Those are the two
+end points that they're talking about so
+that you can use that for your
+calculation. I don't think this is a
+helpful
+sentence, but that that's kind of what
+it
+means, but you can pull out these two
+sentences that will kind of help you
+give get a better idea. But I think this
+explanation right here is the closest
+you get to kind of really understanding
+the problem is that they give you the
+vertical lines of the array and max area
+of the water and then obviously the
+49. But yeah, any questions about this
+problem or about the tech interview
+before we wrap up
+today? Oh, I see we do have a few
+questions.
+Okay, so Brandon asks, "If we are doing
+easy hacker questions for the technical
+interview for Joy of Coding, why not
+throw easy problem to solve?" Um, well,
+there's a couple of reasons. So, I don't
+want to run through all of our our easy
+problems so that I can kind of selfishly
+hoard them all for the technical
+interview, but also we want you to
+practice harder than you play, right?
+Because if you're practicing at the
+medium problem level, um, not always,
+like we want you to be confident at the
+easy level first and then start
+practicing at the medium level because
+it's all of the same fundamentals, but
+they just kind of stack them. So an easy
+problem might ask you to just find the
+area
+between two arrays in an in in a two
+area gosh, two lines in an array or
+something like that. Or they might just
+find ask you to find the length between
+two I values. So instead of calculating
+the area, you would just calculate the
+length between the two tallest values.
+Um that could be an easy problem. So
+like if you have find the maximum value
+in an array like we did with the candles
+and then find the length between its
+two two values. That could be an easy
+problem technically or maybe. And then
+this is kind of the like progression of
+that where you're taking something that
+you might do an easy problem or two or
+three different easy problems and you're
+kind of stacking them together. So
+you're still using the same problem
+solving skills of how do you pull out
+information from a problem? How do you
+read through the examples? How do you
+read through the constraints? How can
+you put make assumptions and then test
+those assumptions in the code itself
+using print? Um all that kind of good
+stuff. It's just at
+like more more points more more points
+of uh interest there that you'd be
+testing those assumptions if that makes
+sense. And also because Dr. Emily told
+me to that's kind of the the real reason
+there. Um all right. So Glenn said the
+blue fill represents water level shows
+height and water and
+yeah. All right. So, I know this one was
+a little tricky and we will go over it
+on Wednesday for the final solution. So,
+I would like everyone to try this one
+out and see how far you get. Um, see
+what solutions you get and then we'll
+kind of take a deep dive into
+both one or both of the uh problems that
+we looked at today on Wednesday. Um, and
+that's kind of going to be the routine
+going forward is that we test out these
+problems in pseudo code and in a mock
+interview and then we kind of explore
+them deeper, look for alternative
+solutions and all that good stuff. Yeah.
+Any other questions before we wrap up?
+Yeah, I have a quick question on this.
+Sure. Um, so this would be probably
+ideally solved by using like a link list
+where we're coming from one end of it to
+the other. coming from two different
+opposite ends and moving inward because
+otherwise if you're gonna do
+this, you know, by each line that that
+would be probably ridiculous a big O
+notation, right? Yeah. I'm just thinking
+about like all the things we talked
+about like Q's, stacks, link list,
+recursion, blah blah blah. This would
+probably be best handled with link
+lists. Is that is my thinking on point
+on that or no? With link lists, no. But
+from the method you described, coming at
+it from both ends, yeah, I do think that
+that is a smart way to approach it.
+Obviously, I recommend brute force
+first. So, whatever comes naturally to
+you. Um, we saw Jenny go start with just
+a single loop to kind of test out the
+assumptions of adding them and then her
+next step might have been to do the
+calculations and then there might be a
+few more steps after that. That's
+totally fine if you want to start with
+just kind of like brute forcing it. And
+then if you do have an idea like that of
+I think that there's a more efficient
+way to come at this then you can take
+something that's already working and
+kind of reverse engineer it um and try
+that that twoprong approach. Um so yes
+in general on the whole that would be a
+better approach coming at it from both
+sides but we worked on a problem like
+that that where you had one end and then
+the other end and I just can't put it
+together on what what it was offhand
+because I'm not looking at I think we've
+done I think we've done it like a few
+times actually but that was again they
+could throw you off. They could have
+something in the middle where like this
+one and this one could be like 10
+million length high, right? And then
+everyone around them is like only three
+to five. So then the actual highest
+volume container would be in the middle
+or in the
+beginning. So you you do have to test
+all the different
+like there's no way to really
+efficiently do it because you have to
+test everything. But algorithmically
+there are named algorithmic approaches
+to help find that efficiency and that's
+what you're referring to. Okay. Because
+there is a named algorithm for that
+approach that you're talking about. I
+can't remember it off the top of my head
+either. Oh, you can't remember. Okay.
+There is, but you're gonna have to
+figure it out. Yeah, exactly. All right,
+good enough. Okay. Glenn asked, "Be the
+coach on the right. There are offering
+this as a suggestion or requirement to
+use it." Coach on the right.
+What? What are we looking at? What's
+going
+on? Code shown on the right. What
+code? Am I crazy? I'm not sharing my
+screen. The code
+section. Uh this is just the starter the
+starter code where they're giving you
+max area and then height is the list of
+all of this right
+here. Oh, I closed my chat window. One
+second.
+Link. I gave a
+link. What link did I
+give to the description?
+I'm sorry, Glenn. I'm so
+confused. There's some hints in
+here. Yes. What I have on my
+screen?
+Oh, do you have to use this? Um, I think
+you have to use the max area
+function. Yeah, because for the test
+cases, they're going to call the
+function max area. Like you can add I
+mean you could add other functions under
+here and do other stuff inside of this
+class but yeah you have to keep the
+class solution and you have to keep the
+starter function max area and for
+hackerink and leak code everything can
+be solved within the contines the the
+confines of the function they give you.
+If you want to add more functions or
+more things in there, you can. That's
+totally fine. But usually the the
+solutions will be available right within
+there. And I think I there's probably a
+comment in here. No. So I'm not even
+signed in.
+So yeah. Okay. So there's no comments or
+anything. But yeah, this is just a
+starter function. And then they'll call
+this
+function for all of these test cases. So
+they want that max area. though. I don't
+know. Maybe I could rename
+it. I don't know. Something
+weird. I could be I could be
+wrong. Oh, I have to be signed in. Okay,
+I'm not going to test that out. I have
+I've been known to rename parameters, so
+that's fine. But I think for the
+function itself, you might not be able
+to change that.
+All right. Okay. Well, we've gone a
+little bit over. So, thank you everyone
+for coming to today's session and I will
+see you on Wednesday or next week.

@@ -1,0 +1,780 @@
+Hello everyone and welcome to Nailing
+the Tech interview. Um, it's just me
+today, so I figured why not have myself
+do the mock interview today. Oh, I just
+shook my entire screen. Sorry about
+that. Um, so I pulled up a problem that
+I have not seen before. Um, and I'm
+giving it to myself fresh and random
+just like I do for everyone every week
+during these sessions. And I'm going to
+go through it and I'm going to follow
+all of the general guidelines and best
+practices that we preach here every week
+and we'll we'll do the mock interview.
+So without further ado, I'm going to set
+a timer for myself as well.
+me. Let me get the timer stuff figured
+out first.
+Okay, I've got a timer going for myself.
+So, I'm going to share my screen and get
+to work on this
+problem.
+Okay, let's see. All right, so number of
+changing keys. Um, let's see. Let's dive
+right in. So you are given a zero index
+string S typed by a user.
+Changing a key is defined by using a key
+different from the last key used key.
+Okay. Uh oh, I've got someone joining
+me.
+Last key used.
+Hi Lisa. I'm just going through a
+problem right now.
+Uh okay. So changing a key is defined as
+using a key different from the last used
+key. For example, S= AB has a change of
+key while S equals
+BB
+B uppercase B does not have any. Return
+the number of times the user had changed
+the key.
+Okay.
+Uh don't know what that means. No
+modifiers like shift caps lock won't be
+counted in changing the key. That is if
+a user typed the letter A and then the
+letter uppercase A will not be
+considered a changing key.
+I'm going to read that one more time.
+You are given a zero index string S type
+by a user.
+Okay.
+given string s
+which is a parameter
+changing typed by a user changing a key
+is defined as using a key different from
+the last key used for example s equals a
+b so given string s I think that's all I
+can say right now has a change of key
+a has a change of key while
+lowerase B uppercase B uppercase B does
+not have any oh okay I see so I'm going
+to look at the example S equals A B C
+output is two from
+S of zero so A to S of 1 uppercase A
+there is no change of key as caps lock
+or shift is not counted okay
+as from A to lowerase B. There is a
+change of key because we're going from A
+to B. B to B, no change. B to C change.
+C
+uppercase C no change. Okay.
+So then a mixture of A a a a a and
+different casing output is zero.
+Okay. There's no change of key since
+only the letters A and A are pressed
+which does not require a change of key.
+Okay. And then we look at our
+constraints here.
+The length of our string can be between
+one and 100. So we're not given a null
+string. That's good to know. There will
+always be a string given string s will
+always have
+letters. I guess this
+>> so so with the shift we could probably
+change it to upper or lower when we do
+the test of the the change of key. That
+is what I'm thinking as well. There's no
+chain of keys. Yeah. Okay. So, Lisa,
+what I'm doing is that I decided to do
+the mock interview today
+>> because it was just me here for about 15
+minutes.
+Um, but you're here now. So, afterwards,
+I think what we can do is that I'll
+>> What?
+>> Nothing. I'm just I'm I'm listening. You
+might have heard some background.
+>> Oh, okay. Um, so I'll finish this and
+then if we have I mean we will have
+time. Um, if you are open and
+interested, we can do another mock
+interview as well. Otherwise, we can
+just talk about other approaches to this
+problem. Um, but I've got a timer
+running, so I don't want to max out the
+timer. If you if you want to let me
+continue working through this.
+Thank you, Lisa.
+>> I'm going to mute.
+>> Perfect.
+All right. Okay. So, given a string S,
+we will always have letters. That's what
+I'm getting from the constraints. And
+like Lisa said, and I was also thinking
+this
+for a strategy like this is more of like
+a pseudo code step, but we can
+shift the string
+to all upper or lower. So that way we
+can just compare string to string
+because I don't know actually. Let's
+find out.
+I I think the equality is that
+a wouldn't equal oops a wouldn't equal a
+but let's find out.
+Okay. Yeah, that's what I thought. So
+false. So a lowercase a does not equal
+uppercase a but uppercase a should equal
+uppercase a.
+True. Okay. So yeah. So we do need
+we do need to test that. We do need to
+shift them all to upper or lower. I'm
+pretty sure there's a function for that.
+We'll look it up because I don't know it
+off the top of my head. I think it's
+literally just like string.
+I mean let's find out.
+So I don't what I don't know is that
+if it modifies the original thing or if
+it wants me to save that to a variable.
+So find out there.
+Okay. So true. It doesn't. So it
+probably
+this is just like
+not even theory. This is like
+functionality of the fun the function.
+Okay. So that works. So what I am seeing
+here is that I would need a variable
+called oh well
+s lowered.
+So this function lower does exist in
+Python. I just guessed. Um I could look
+that up. But what it is doing is that
+it's not modifying the original string.
+it is taking a copy of that string and
+then returning it as a result of calling
+this function. So I do need to save that
+to a variable to get the modified
+lowered output
+which if we look this up it should tell
+us the same thing is what I'm assuming.
+Yeah. Aa bc. So if we do python
+lower I probably wouldn't talk this much
+in an actual interview as myself. like
+testing and theorizing, but I'm not too
+worried about it cuz I feel like I
+understand the problem,
+which again is not best practice. So,
+I'm not doing a great job at my own mock
+interview. So, method returns a string
+where all characters are lowercase.
+Perfect.
+Yeah, that's all I needed to see.
+Hi, Stephen. Welcome. I'm currently
+doing the mock interview now and then in
+a few minutes we will open back up to
+the rest of our participants. Thanks for
+joining. Okay. So here I just want to
+spell out what I do know about the
+problem is that we are given a string S.
+It will always have letters.
+Letters will be or characters.
+Characters may have the same letter but
+mixed casing.
+So
+little A versus big A uppercase.
+Um,
+yes. And our goal goal.
+So our goal, so it kind of Okay. Return
+the number of times the key user. I'm
+just going to use that.
+Turn the number of times the user had
+had to change the key. So what that
+means is that
+in a string
+a to
+oops a
+to b represents
+a
+key change
+lower to upper does not represent
+represent
+key change. So, I'm really just looking,
+if I wanted to restate this in my own
+words, what I'm actually looking for is
+the count of characters used, but only,
+it's actually not the count of
+characters used because if we look down
+here, having only a represents zero. So,
+if I wanted to be really precise, it's
+kind of like the count of characters use
+minus one, but that's not really that's
+not really what it is. It's the number
+of times users had to change the key.
+Um, but if I wanted to say it in a
+different way,
+kind of count of unique
+characters,
+but minus one.
+Okay. So then for the strategy,
+again, I did like that idea s. That
+makes it a lot easier, but they also do
+want the count.
+So, I'm going to return count
+of keys changed.
+Kind of a long thing, but
+count of keys changed. Starts at zero
+and it's only going to represent I
+guess. Let's see.
+I could start
+at
+one.
+Okay, I'm going to keep I'm going to
+remove this. Oops.
+Keep that. So for my actual strategy,
+I actually haven't done a a problem in a
+while now by myself. So this is kind of
+fun approach. So we can shift all the
+strings upper to lower, then count
+change
+from one index to the next.
+I'm going to start
+start at one index and then compare to
+index of zero because we're only
+counting the change. So that first one
+isn't going to count. So if I start my
+my loop, I'm going to use a for
+character in
+and I want s do.
+this down here too.
+I think that should be fine. So going
+start from zero or I mean I'm going to
+start from one and compare against the
+one prior and then by the time we get to
+the end it will be comparing to the one
+prior still. So we'll say is a equal to
+a? Yep. A equal a? Yep. Yep. Yep. Yep.
+Yep. Yep. A equal to a. Yep. And then
+the function will be over. I'll have my
+count of keys changed. So in this case,
+we'll start at here. So A is equal to A.
+Then B. B is not equal to A. So that
+would be an increase in count changed.
+And because they are all lowercase and
+we already did that equality test for
+lowercase characters having a a true
+equal value.
+I know that that will work. And then A
+equal not equaling B should also work.
+So for character N s lowered.
+Oh, but if I do it like that, then I'm
+not starting at the window index. So say
+for
+range
+length
+s lord.
+So
+core character and range lord. And I'm
+just going to make sure that that still
+gets everything that I want.
+Oh,
+I'm using my work setup here is not
+great. I have my mouse on a pillow,
+so it's not like not getting those
+accurate clicks there. Oh no.
+String object is not callable. Oh yeah.
+Hello. I can tell it's been a while
+because my syntax is all messed up.
+Print. Okay, cool. So, a a bb c and then
+I've also printed here at the bottom
+still that full s lord. So, a b. Okay.
+So, yeah, I am hitting everything. Going
+to remove that.
+So, that is perfect. And then I'm just
+going to set the starting point. I'm
+going to keep that.
+So going to set the starting point at
+one.
+So I want to start at the one index.
+I'm just going to check that one more
+time. Yeah. Okay. Cool.
+Cool. Cool. Cool. Okay. So,
+so
+char here isn't actually right because
+it's not the character, it's the index,
+it's a numbered value. So, if s.ed i
+is not equal to
+s. lowered
+i minus one. So in that first iteration
+it's going to be one comparing to zero.
+Then we will
+count of keys changed.
+Oops.
+That's equals one. And then return count
+of keys changed. I think that should
+pretty much cover it. Yeah.
+That right.
+Cool.
+No super weird edge cases or anything.
+So, this one was pretty straightforward,
+I think.
+And I still have four minutes on the
+clock. Not my personal best. 16 minutes
+on an easy problem, but I did do a lot
+of chattering at the beginning. Uh 0
+milliseconds. Some people's strategies
+took longer. That's interesting.
+I have a lot of memory usage probably
+because of
+the storing a second string that has to
+be lowered and then the count here.
+And curious what other people did. Maybe
+they did.
+I'm not sure. I'd be curious about that.
+I'm sure there's other ways to like
+ignore the key change
+or doing it one at a time instead of
+all at once. Not sure. But yeah, there
+didn't seem to be any edge cases in
+here, which was nice. But from the
+constraints, I think we would have
+caught something or from their example,
+we might have caught something. So yeah,
+pretty straightforward.
+I feel good. I feel great.
+All right, so
+just close out my timer there. So that
+was that. Um, I know both of you weren't
+here from the beginning when I started,
+but I just wanted to get myself going
+through a mock interview because it had
+been like 11 minutes past and I was
+like, maybe no one's going to show up,
+so I'm just going to do my own little
+mock interview and test it out. So,
+that's what we did. Um,
+now that you two are here, I would like
+to open up to either of you. Would you
+also be interested in doing the mock
+interview today?
+>> We have time. Yes. Oh, yes.
+I can't do it. I can't volunteer. I'm
+I'm actually connected on my laptop on
+my car.
+>> I'm in a car lane. Usually, this time is
+like never a good time for me. I
+>> connect while I'm the
+>> doing the car line to pick up my
+daughter from school. So, I'm just a
+silent watcher.
+>> No worries. Sounds good. But Lisa, you
+are interested.
+>> Yes.
+>> Cool. Let me pull up a problem.
+Gotta find a good one.
+All right. So, I'm going to share this
+into the chat. If you want to open up
+your open it up and share your screen,
+let me make sure I'm signed in first.
+Okay. So,
+Okay. Can you see my screen?
+>> Yes. Great. Some multiples. Okay.
+>> And if you want to full screen that or
+>> Yeah. Perfect. Looks like your timer is
+running by the way.
+>> Yeah. The top of I forgot League Code
+has its own timer up there. It's at like
+two hours.
+>> Yeah. Do you see that?
+next to your login.
+>> Yeah.
+>> You can refresh it. Yeah.
+It looks like it wants you to click
+reset, but I'm not sure.
+You don't have to use it. I just saw
+that it was running. Just wanted to let
+you know.
+>> Appreciate you.
+>> Okay. So, if you want to hop in, we'll
+give you about 15 to 20 minutes and then
+we'll go from there.
+>> Okay.
+>> Um, just I'm gonna talk out loud. So,
+Stephen, um, I don't know if you can see
+the screen, so I'm going to go ahead and
+read.
+So given a positive integer n, find the
+sum of all integers in the range of 1 to
+n
+inclusively that are divisible by 3,
+five or seven.
+Return an integer denoting the sum of
+all numbers in a given range satisfying
+the constraint
+numbers. Um so the example well let's
+stop here. So
+we know that we have positive integers
+for n. So there's going to be no
+negativity.
+Find sum of all numbers in the range. So
+orange
+divisible
+three. All right.
+So n is seven. So the range is one
+through seven.
+return an integer denoting the sum of
+all numbers.
+Okay. visible
+by 3, five, and seven.
+So, we're going to do 1 through 7.
+So,
+this is the test here.
+So this is the loop for
+Which one?
+So, we're going to need a a counter some
+sort. So, I'm going to put total plus
+equals and we're going to start with
+zero.
+Um then I'm going to start um the count
+which would be
+uh four and I'm going to say IND
+um
+in range and then I'm going to start
+with one as in the parameter
+and then I'm going to say n which is
+what is going to come to me in a
+variable
+minus one I mean plus one
+because we don't we want to make sure we
+get the last number
+so just for testing sake I'm going to
+make sure that it's counting the way I
+want it to count. So, whatever the end
+range is,
+um, certainly need to press
+at the end
+just to make sure.
+So, it's counting correctly.
+So,
+Um, we want to test to see if the value
+of
+um,
+as we count up is either divisible by
+three, divisible by five or divisible by
+7.
+So,
+um that test would be um
+looking at ID. Want to see
+divisible by
+3
+=
+0
+just to do a little test.
+um
+something I learned in my studies. If I
+say true and then say what I wanted it
+to do, which was to add this um
+the number two to total.
+Okay. So um
+in order to set the condition for the if
+statement
+um what we want to do is in D um if it's
+equal to zero which would indicate that
+it is divisible by um three.
+So instead of saying the truth let's do
+this
+or
+So each time it counters through, it's
+going to test to see if it's divisible
+by three, five, or seven on this
+statement.
+If that statement is true, then it's
+going to add to the total and then we
+will return the total.
+But before I return it, I want to make
+sure that I'm actually printing
+correctly. So print here. See the print
+is going okay.
+So if I walk through this um
+first one before seven then it would be
+3 5 6 and 7.
+So 3 +
+5 is 8 6 is 14 7 is 21. So we should
+give a value of 21.
+of
+see what we have.
+people's immunity.
+Wonder what I did wrong. Let's see. ING.
+Um,
+because I indeed Keep going.
+So
+one it doesn't total. It still should be
+zero.
+Stop.
+That's
+Okay. Okay.
+So,
+what's going on with this?
+Um,
+total equals one. Why is total equal one
+on the first one? should be
+should be zero
+for im
+we started one
+which is true seven so we know that to
+be true
+so what we don't know is
+Oops.
+because it equals zero.
+That's what
+So it said that these two were true.
+So,
+um, we want to start at
+one, but we also want to say
+something in there. If
+and D
+is greater than
+two.
+Okay, Lisa,
+>> do you want to walk us through what this
+problem is asking you and then
+afterwards step us through some of your
+code?
+Right. So,
+um
+what it's asking for is the sum. Um it's
+going to give you a um
+number a positive integer. And with
+that, we want to find the uh sum of all
+the integers. We're going to um return
+the sum of all the integers that are
+divisible by 3, five, or seven.
+um
+n cannot be greater. And by the way, the
+constraint down here says n um can equal
+um the power of 10 by three.
+I said that right. Um with that, uh we
+needed a counter. Um so I called the
+counter total.
+Um,
+we know that there's not going to be any
+negative numbers.
+Um, and we also know that we're going to
+start by the number one.
+Um,
+we also know one of the assumptions is
+on three, if it's divisible by three,
+then it has to be or equal to three
+first. So, that's the first number that
+you probably want to start with. Um so
+with that indication
+I established a for loop
+um that went through 1 through n + one
+because we want to make sure the last
+number is concluded which was positive
+number. The condition I added was that
+the the counter for inders
+at
+three. Why wouldn't you just change the
+range?
+>> Um, we could do that. We could do that
+as Yeah, we could do that.
+Um
+start with the
+um with that um my condition on my
+truthy
+was um and the way I found out with the
+three was I did I did a print on the see
+if um
+>> Mhm. index was greater than if it
+returned the value of zero which is to
+test to see if it's divisible by three
+and it was coming up truthy because it
+was giving a zero answer. That's why.
+>> So what do you
+what output are you looking for to
+determine if something is divisible by
+3, five or seven?
+>> Um we're looking for the output of zero.
+Um divisible by zero. we want to use the
+um the double slash because it only
+gives a single integer. If we were to do
+the divisible
+division um we would get a whole number.
+So we want to use the one
+um
+>> if something
+>> if something returns a nonhole number is
+that appropriately divisible then
+>> if it returns a zero yes of course that
+would make it
+>> okay that's true statement.
+>> So three divided by or divided by to a
+whole number three would equal what?
+It would be three plus point whatever
+the the remainder is.
+>> No, hold on. So three slash3. What would
+that equal?
+>> Oh, I should do the remainder.
+>> Yeah,
+>> stupid. I know.
+Uh, that's where it's the problem is.
+That works. Probably will.
+Oh, let's see the final output.
+So, total 14 because you started at
+let's see can we walk through the Can
+you scroll back and walk through the
+each of the pieces here? So 37
+that makes sense. Three 3 mod 3 equals
+zero. Yeah.
+>> Three.
+>> Four would be false. Five is false.
+>> Five is false. That's
+I was wondering if I needed to step
+these through. Right.
+Um,
+so let's take I want to take this out.
+>> Yes.
+>> Okay.
+is still false.
+>> So, we know this.
+>> Yeah. So, I update that print statement
+real quick. Yeah.
+>> Fine.
+>> Yep.
+Let's see why.
+Same truth.
+There is something weird going on.
+>> I'm confused by all the print statements
+to be honest. There's there's so many.
+>> Oh, sorry.
+We'll just um
+>> so 370
+false total but then total three I don't
+get
+>> so the boolean if we have one true one
+true on a on a boolean it should fall
+through
+>> okay so then it is saying 573 is true
+there but then it didn't update the
+total no it did total eight
++ 5 is 8. The next one would be six
+because it's divisible by three,
+which is 14.
+Well, after six, it says false. Or is it
+supposed to be above? Oh, no, no, that's
+fine. It's because we're only
+>> Okay, so it looks it looks right. Let's
+look at your if statement. Does your if
+statement look right? There we go.
+less mistakes.
+Looking pretty good there.
+So, we just return the total.
+Make sure you're properly indented.
+Yeah.
+Let's um
+build
+There we go. Okay. So, your
+understanding of the problem was great.
+You understood the full work through of
+the problem, what was required of you,
+what the expected output was, and your
+general approach was on the right path,
+but your basic assumption about the math
+piece
+needed needed some more testing. So in
+this case, what I think I would have
+liked to have seen is that if you scroll
+up in your code here a bit,
+>> yeah,
+>> you wrote your approach here. If you
+scroll up a little more,
+>> um, positive integers, yep, sum of all
+three, five, and seven. And then you
+wrote the little math here of index
+slash3 equals zero.
+>> But I'm I don't recall actually I I
+don't remember you testing that to make
+sure that it was sound to make sure that
+that piece made sense.
+>> And then I'll apply it to a few examples
+like six and 15. just trying like
+quickly a few integers to make sure that
+it applied across the board.
+>> Yeah, I'm I'm doing a um certification
+through a free free camp code that does
+the step by step. So, I'm um breaking
+these down a little bit better. So,
+that's where I think my m my main main
+issue is
+and that's what I'm starting to do. So I
+think I think what I'm done is
+identified I'm good in certain areas.
+It's just this is the area where I need
+to focus on. So that's what I'm doing
+the certification. So I was actually
+I've already done like four or five
+projects already. So
+>> okay just recoding and trying to get
+this done. So I'm going to be testing
+probably next week if that's okay. Um
+sure. I'm just calling out what I'm
+seeing. You did a great job of breaking
+down the problem. I just would have
+liked to have seen that testing of your
+your logic here since that math piece is
+such a core element to successfully
+getting the right totals. That would
+have been something that I maybe would
+have tested a little bit more upfront to
+make sure is this the math that I want
+to use instead of just kind of assuming,
+right? Because then we did so much logic
+to try and get around it. We did the n
+greater than two. There was a lot of
+there was a lot of little pieces there
+that maybe we could have skipped. Okay,
+that would probably Yeah. Yes, I'm um
+I'm working on that part. So, I'm
+looking at um looking at those pieces
+right now. What because it actually free
+code actually steps you through each
+each line by line by line. So, if if you
+have a little hiccup area where I was
+trying to resolve this where I'm finding
+my flaw,
+um that's where I'm trying to address.
+So, yeah, I I see what you're talking
+about. But
+um we solved it just not in enough time.
+So it looks like I just need to work on
+that piece. But thank you for the
+>> feedback.
+>> Yeah, I mean everything else once we
+switched over to
+>> the modulus instead of the double
+slashes division. Um everything pretty
+much worked out from there. We just had
+to switch that five to a seven. Um which
+we would have caught a lot sooner for
+sure if we had started with the logic
+using the modulus from the beginning.
+Um,
+>> yeah. I mean, otherwise, yeah, so
+otherwise, great. It's just that one
+piece that kind of blocked you from the
+for the entire way from making sense of
+your print statements because the math
+wasn't mathing.
+>> Yeah, I'm um Yeah, I'm getting there.
+It's um just not Yeah, got it.
+>> Cool. All right. Well, that is our time.
+So, thank you. Great job, Lisa. I'm
+excited to see you again soon.
+And thanks for joining us even if you're
+even if you're just you know being a a a
+watcher an observer and I will see you
+all next time. Great. Thank you.

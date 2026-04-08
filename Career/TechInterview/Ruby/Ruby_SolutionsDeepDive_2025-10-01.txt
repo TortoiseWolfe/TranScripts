@@ -1,0 +1,1088 @@
+All right, welcome to when um nailing
+the technical interview. Today is
+Wednesday, so we will look at some of
+the problems that we worked on on
+Sunday. Um I believe all three of you
+are here, so did you get a chance to
+work on
+Lisa's workbook? The problem Lisa's
+workbook.
+>> Yeah, I post it on Sunday.
+Mhm.
+>> Next Sunday I had to go to the family
+birthday party.
+I had to, but I did.
+>> What about you, Natalia?
+>> I worked on it, but I didn't get very
+far.
+>> Okay,
+cool.
+Um, did Sunday's steps that we talked
+about help think about the problem at
+all for either of you who were able to
+work on it?
+>> Yeah, I sorry.
+>> Go ahead.
+>> Um, yeah, I I applied them. Um, I just
+kind of got like confused along the way
+with I was like, uh, I I kind of wanted
+to change methods along the way, which
+probably wasn't the right I should have
+just stuck with what I was going with.
+>> That's the way it goes sometimes.
+What were you saying, Mara?
+Yeah, I mean generally, yeah, but
+I mean I didn't want uh exactly as they
+were stated,
+>> but generally yes.
+>> Do you want to show us what you got? Um
+your code and everything.
+>> That was for you, Mauricio.
+Yeah.
+Yeah. So, this one was really long and
+confusing.
+I will grant all of you that and for
+anyone who tries it in the future. Um,
+sorry in advance. I also looked at this
+one on Sunday and got through the early
+stages and then was like, I'm going to
+save this for another day. This is a lot
+for me at right after doing the session.
+Um, so I I'm sure everyone else had fun
+with this too.
+Do you see my screen?
+>> Yes.
+>> Wow.
+>> Okay. So,
+basically
+uh what I try to do was uh modeling
+going through the chapters. I'm getting
+the the pages.
+>> Mhm.
+>> Uh like when a when a chapter has uh
+you know a rounded number of pages, an
+exact number of pages and a reminder
+number.
+>> Wait, hold on. Start start from the
+beginning. Can you explain the problem
+to us?
+>> Okay. Oh,
+so basically
+what is given is an array with the
+number of problems
+per chapter
+on a book or problems
+and uh
+the number of
+Okay, let me see. Okay, what it is
+a number of maximum problems per page
+and this is the number of chapters
+I think.
+Yeah, the number of chapters, the
+maximum number of problems per page
+and the problems per chapter.
+>> Okay. Um just to resummize um because
+>> so what you need what you need to find
+is what when how many special problems
+there are a special problem is defined
+uh and if the number of the problem ma
+matches the page where is in that's
+basically this the statement of the
+whole thing. So Lisa has a workbook of
+problems and whenever a problem matches
+the the same page where the problem is
+at it's categorized as a special. So you
+need to return the number of special
+problems.
+That's that's a statement of the
+problem.
+>> Okay.
+>> So do you want me to go through the
+explanation of the algorithm?
+>> Yes. Do you have co are those comments
+up there? What's what's at the top?
+>> Uh yeah, I redo it again because I want
+to practice that. So I'm just going to I
+didn't wrote uh
+any of that. This is the same algorithm
+and this is other algorithm I worked on.
+>> Okay. Wait, wait. Can you go back to the
+top there?
+>> Yeah, keep going.
+Wait. Yep. All the way. Okay. So,
+okay. So, you tried a few a different
+different attempts, right? Is that what
+I'm
+>> Yeah. Yeah.
+>> Okay.
+So basically what I was trying to do and
+I did and I completed was uh
+modeling the the main the main uh parts
+of the workbook which was the chapters
+the pages the problems
+and the problems inside each chapter. So
+I go through two main uh loops here. one
+that goes through the chapters and
+figure out the pages per chapter and the
+remainance pages per chapter and the
+number of problems. And an inside loop
+that loops inside the pages of a chapter
+and inside that it gives me the offset
+inside that that group of pages in a
+chapter to locate the first problem, the
+number of it and the last problem. And
+then I found out if the page is between
+those numbers, the first and the last.
+And I then keep a counter for a special.
+>> Mhm.
+>> Basically that's it. So in this part uh
+in this part the the part of the pages
+of per chapter
+I I get the number of uh full pages. I
+mean the without reminder, right? So I
+take the number of problems that I get
+here and I divide it by K uh the number
+of problems per chapter. So it gives me
+the total number of pages uh with a
+reminder per chapter. So that that's
+what I call page chapter full and then I
+calculate the remainder if there is
+some. So I I usually I give that a one
+like here and here.
+Uh if the problems doesn't have a
+reminder, I give it a one.
+Sorry. If it's not equal zero, if it's
+not equal to zero, it means it doesn't
+uh it doesn't if it's equal to zero, it
+has a remainder. So if it's not equal to
+zero, it doesn't have a remainder. So I
+give it one
+and then L0
+and then I calculate the pages total
+which is the the full pages plus the
+remainder.
+So that's like the total pages per
+chapter on each iteration of the outer
+loops.
+So here I go through the pages
+themselves for each each chapter. So I
+start on pages which I have initialized
+to one
+and I go up to
+two pages
+plus the full pages plus the reminder up
+to that
+and then I try to look for the offset in
+that particular uh chapter. So the upset
+is going to be the pages
+minus the page I'm on. So that gives me
+upset uh of that chapter. For instance,
+if I'm on chapter
+uh I'm I'm working on chapter three
+and I want the offset.
+I'm going to do the page I'm on.
+Let's say let's see. Let's say I'm on
+page five and pages is uh
+four. So the offset will be one. So like
+the first problem will be that set times
+K because K is the number of problems
+per chapter.
+So plus one. So I'm going to get uh
+either four if I'm here or or one if I'm
+here or whatever.
+So then I calculate the the last problem
+of each uh of each page which is going
+to be the minimum between the the first
+problem
+the first problem plus k minus one
+because like for instance if I'm here
+the first problem let's say it's four
+for three problems per page that will be
+7 - 1 will be six. So that will be the
+first problem here
+and and problems
+which is the number of problems per
+chapter.
+So sometimes uh sometimes when is less
+than three let's say in this example
+it's two the minimum is going to be two
+for that particular chapter. So the last
+problem is going to be two not three. So
+that's why I take the minimum between
+these two
+and then I finally look and compare that
+page with in if it's in between first or
+last and then I keep the counter of a
+special
+going on and and then for the next
+iteration I move to the ne the next uh
+the next chapter first page which is
+pages I call pages is probably I should
+have choose some more descriptive
+variable there. Uh but that's like when
+I jump into the next chapter. Let's see.
+I'm here. So in here I would jump one.
+So I'll get into page three here and
+then I keep going and then calculate for
+the next next chapter. I process that
+and inside that chapter I process the
+offset and the first and last problem
+whatever. So, and I keep going like that
+and keep this counter updating with the
+special ones.
+That's mainly it.
+Yeah.
+Okay, great. Thank you. So,
+okay, I'm going to steal the the share
+back from you.
+Okay, great. Thank you for sharing that,
+Mauricio. So, I do like to give everyone
+the opportunity if they've worked on the
+code to share and walk through their
+code. Um, so thank you for sharing and
+walking through your code there,
+Mauricio. The reason that I think this
+is good exercise is that this is a skill
+that you have to cultivate for the
+technical interview is being able to
+explain your thoughts and your ideas and
+how your code works and how it moves
+through the problem, why it solves the
+problem, so on and so forth. And that
+skill set carries on into the internship
+and beyond. Um, so thank you for
+exercising that skill set that you're
+developing. Um, and in the future I
+encourage everyone to continue working
+on that and bringing your code to the
+session. I just realized that I never
+clarified
+why I like to get besides like the
+obvious of people getting to share their
+work. Um, why I think that's a valuable
+asset for this meeting.
+I am going to walk through this a little
+bit again because I did see that you had
+some code before that. Um,
+in your code before that, did you try
+building out like a data structure and
+like trying to build out the pages that
+way and then you refined it into your
+current approach,
+Mauricio?
+>> Uh, yeah, but I I deleted I mean I have
+worked on it before, so I have deleted
+some parts of it.
+>> Sure. I was just asking um cuz that's I
+think that's a logical place to start
+especially when you're thinking about
+how do I get started there and then you
+worked on it and refined on it. Um and
+that's great. I definitely like that as
+well because I think the best thing to
+do is to get out the most obvious thing
+that comes to mind and then once you've
+gotten all the test cases passing, go
+back and refine. Think about how you can
+make it more efficient, more logical or
+trim it down. whatever you can do um to
+practice your your skills and
+improvement there.
+So, excellent job. So, let's step
+through this problem
+one more time
+because I have a few ideas. I have a few
+thoughts especially for since there's a
+couple of you that haven't um started it
+or finished it yet. So, while you saw
+Mauric's attempt, there are some other
+options to get started and maybe some
+inspiration that we can talk about. Let
+me hide that a little bit. So, just to
+recap again, um we're working on Lisa's
+new math workbook. She gets a workbook
+assigned with problems. You get your
+array with how many problems are in each
+chapter. So, there's a couple of key
+terms that that you have to kind of pull
+out from here. So that's where I like to
+start is that we receive n the amount of
+chapters in the workbook and
+that each chapter contains a set amount
+of problems. Array equals the one base
+index of chapters. Um and the workbook
+has a page that starts from index of one
+as well because you don't start a book
+with zero. Actually, I guess you kind of
+do. you have the like little Roman
+numeral precursor pages sometimes, but
+then the first page isn't page zero,
+it's page one. Um, which is uh an
+annoying little
+piece to this problem. I mean, I feel
+like one base indexing in problems isn't
+usually a big deal, but in this one,
+when you have so many variables to
+consider, it's kind of just like a it's
+a pile on there that I don't really care
+for. Um, but moving on. So array I in
+this case represents the number of
+problems in that chapter. So if we
+consider array to be the chapters so one
+and two because it's one based so this
+workbook would contain two chapters and
+chapter 1 would be four problems and
+chapter 2 would contain two problems.
+All right and so then I added this
+detail. This is all just resummarized
+from this long problem. And that's why I
+talked about um in on Sunday's session
+about when we walked through all of the
+like the thoughts that went into my like
+go through my head when I read a problem
+and how they translated to a page. I
+thought this was a good one to work on
+because it has so so so much
+information. Um but I distilled it down
+as best I could to just five lines for
+me. That was all that's what I needed to
+move forward.
+um
+with confidence.
+I didn't say that very confidently, but
+anyways. So any given page can only hold
+up to K amount of problems. So that's
+our second variable there. So those are
+all three of our parameters. we get n
+representing the amount of chapters in
+the workbook. Array which represents the
+problems per chapter in the workbook. Um
+and k which represents the amount of
+problems any given page in the workbook
+can hold. So there's quite a few
+variables to keep in your head for this
+problem which I think also uh
+contributes to some
+frustration here. Um, this was an
+assumption that I that you kind of Well,
+not an assumption. It explains this in a
+bullet point, I believe. Yeah, right
+there. So, I'll read that. Each new
+chapter starts on a new page. So, a page
+will never contain problems from more
+than one chapter.
+So, that is better explained by the
+diagram here in this example of 1 2 3.
+This Oh, n equals 5. So this workbook
+has five chapters.
+These are the amount of problems per
+chapter and this is the amount of
+problems that each page will hold. So if
+you see here, chapter 1 has four
+problems in total. But since each page
+in the workbook can only hold three
+problems problems, you have to separate
+it out into pages. So you see 1 2 3.
+That's the max that K can be or that K
+allows it to be. But we still have an
+additional problem. So we add four on
+the next page. So the reason they needed
+to add that clarification is that only
+the last page can conf uh can contain
+fewer than K problems is because
+technically the beginning of chapter
+actually the entirety of chapter 2 could
+also fit inside of this second page and
+hit the K maximum limit or like fit
+within the K limit. So we could have
+chapter one, problem four, chapter two,
+problem one and two. And that would be
+three problems. So that could
+technically fit in the page, but they
+want to keep the chapter problems
+isolated. So that's a key detail in
+understanding how to define what
+problems end on each page.
+And then and that's important for our
+goal because we're looking for the
+amount of special problems where the
+problem number 1 2 3 or four. Chapter 2
+one or two. Chapter 3 has three
+problems. Problem 1 2 3
+matches the page number. So if we
+divvied out the problems based on their
+chapters and based on the page limits,
+this is what a full workbook would look
+like. they would be divided up with k
+problems per page and chapters only have
+problems related to that chapter on any
+given page. Right? So that's why the
+four is here by itself and then we jump
+to the two.
+Um and so then chapters can take up
+multiple pages because again that k
+limit and so in the end you end up with
+10 pages even though you only have five
+chapters.
+So, five chapters, multiple problems
+equals
+multi-paged workbook. And in this case,
+they've highlighted the problem uh yeah,
+the problems that match the page
+numbers. So, for chapter 1, problem one
+ends up on page one. So, that's a good
+check. Chapter 3 has a total of six
+problems. And the fifth problem there
+ends up on page five. Whereas four and
+two don't link up. 1 2 versus three
+don't link up. And 1 2 and three for
+four don't link up. So on and so forth.
+And then you have the final two there.
+So the total count is the 1 2 3 4.
+So I just wanted to explain that again
+for everyone cuz I don't think we
+covered that on Sunday. Um, so this is a
+a hefty problem just like mentally even
+to like
+hold all these variables and all these
+concepts in your head and then keeping
+in mind that goal of you're just
+returning an integer that represents the
+count of Lisa's crazy idea of a special
+problem.
+So
+based on their diagram here, the first
+thing that came to mind for me, which is
+what I asked Mauricio about, is that I
+thought a dictionary would be a great
+representation
+of this diagram where each page number
+represents a unique key in the workbook.
+So if we consider our workbook as a
+dictionary, a data structure, then a
+dictionary needs unique keys. A workbook
+has unique page numbers. Um so we use
+that and then each page will have
+problem numbers. And so how we define
+what key value pairs go together is
+building out a dictionary and assigning
+the potential problem numbers that would
+be on any given page.
+So if you were to build a dictionary,
+you could basically build out this
+diagram but into a data structure. And
+then it's just the process of looping
+through and saying, okay, do any of the
+problems in this key match the key? Do
+any problems in this at this key match
+the key? Again and again and again. And
+so then you have a few problems that or
+a few a few things that you're
+accomplishing there. So you have to a
+build the dictionary. Um B, figure out
+how to assign the problems to each page
+based on the chapter
+and using utilizing the K limit. And
+then C going through which could
+actually be a couple of little subtopics
+there, but overall goals of this method.
+And then C, which would be going through
+the dictionary, looking through the
+dictionary and determining the count of
+special pages where the key has a match
+with any of the values inside the key or
+at the key in the dictionary,
+which I said big O uh of N at the top.
+That was before I had um
+that was before I actually did it. So
+that's not that's not the case. Um,
+and we can maybe we'll come back to
+that.
+So, if you take that idea, I don't want
+to spoil everything, but you'll notice
+that the code that I drafted up here
+looks very similar to Mauricio's refined
+idea of going through each chapter in
+the
+array, the chapter breakdown array. um
+using the division to determine how many
+problems will be on each page. And as he
+already explained, if we know that
+chapter 1, right, is going to have four
+problems. How many pages is that going
+to take up? So if we divide by K, our
+limit 4 / 3 is going to be one and some
+change. It's like 1 point, you know, one
+or 1.02 or something like that. And then
+this rounds it down. So that would equal
+a total of one. And so where he was
+checking for a remainder, I was just
+checking if there is a remainder left
+over there for the the 01, then we're
+just going to add a whole another page
+number because we haven't captured all
+the problems. So I just updated that
+same variable with a plus equals 1.
+So again, this would be 4 / 3. You get
+the one and some change. So that ends up
+with pages equaling two for a total of
+two page coverage. So then you have to
+figure out how to assign the problems to
+your for each page to your workbook
+dictionary.
+And then the next step that Mauricio
+showed us is that okay this dictionary
+idea takes up a lot of space and it also
+requires multiple loops. um maybe some
+extra logic to figure out how to assign
+the pages to the workbook or the
+problems to the workbook pages so on and
+so forth. So is there a way to
+streamline that a little bit more into
+just checking the the variables of first
+page and last page and
+um
+not storing anything to a dictionary or
+an outside data structure and just using
+those constants. So that's what Mauricio
+showed us. And then while he was
+explaining that, I was also thinking in
+the back of my head, I bet there is an
+even more improved way to do this.
+So I haven't tested this out, but I I'm
+curious to see if anyone would like to
+try this. I'll probably try it after the
+session. But if you notice something
+here,
+um
+here, how do I I want to how do I
+explain this? Let's see.
+for
+for a problem in a chapter to end up
+matching the page index,
+a few things have to be true, right? So
+if the page is
+less than K, right, less than our our
+page limit or problem per page limit,
+then
+it should be pretty easy to determine
+if it's going to line up or not. Because
+on page one, we need there to be at
+least one problem. So, if chapter 1 has
+at least one problem, then that's an
+automatic woohoo.
+For page two, if
+chapter 1
+has
+greater than K
+problems,
+then it's an automatic disqualification,
+right? because
+the page one would have up to K values
+and if K is greater than page two or the
+number of the page then that one is
+automatically discounted and then if you
+go even further
+so if we expand to page numbers beyond
+the K limit so if we're on page five
+what would need to be true in chapter
+whatever chapter we're on
+for us to hit that limit
+the amount of problems in that chapter
+would be need would need to be greater
+than our k value. Right? So if we're on
+page five, which is greater than k. So
+if k is three and we're on page five,
+meaning the amount of problems that we
+need for the chapter that occurs on page
+five has to be greater than our k
+amount.
+So when we see something like chapter 1
+or sorry chapter 1 2 3 4 if we see
+chapter 4 and our page that we're
+keeping track of in a variable is
+already greater than our k value then
+there's no way that this chapter is ever
+going to give us enough problems to get
+higher high enough to page five.
+Is that making sense? Does that make
+sense to anyone to everyone what I'm
+saying there?
+>> No, I'm not following.
+>> Okay.
+Um, let me think about this in another
+way. Maybe I can do a better visual. So,
+actually, I'll copy all of these. Oh,
+no. I don't
+I'm going to rename this for the sake
+chapters
+chapters
+and
+page limit
+three.
+Okay. So, page oops,
+page five.
+If we're on page five,
+so we have a variable that's tracking
+that.
+I'll even write that in here. Tracked by
+variable.
+And then we have the chapter we're on.
+Chapter
+three.
+which is maybe from the for loop that
+we're in.
+I'll I'll end amperand. So page five and
+on chapter
+three.
+How do we know?
+How do we
+check
+for a special problem?
+That would be the question that I'm that
+I'm proposing and asking. How do we
+check for a special problem? We would
+need
+we need a problem number
+equal to five
+available from our chapter set.
+So if we are
+on chapter 3, right, we know that we're
+tracking that.
+And chapter 3 has
+three problems. No, I'll I'll do I'll do
+it even simpler. Two problems. No, I'll
+keep it I'll keep it with this one. Six
+problems. Sorry. I'll match the example.
+Chapter 3. We're tracking that um
+contains
+or amount of problems
+amount of problems equals six and our
+page limit is three. So
+we know that chapter 3 has six problems
+which
+are page number. Oh yeah. So we would
+need a number a problem number equal to
+five. So based on that we know that this
+is true right that we would have a
+problem number five within chapter 3.
+How do we check for a special problem?
+Main
+need I'll say in big in big bold we need
+the problem number equal to five
+page number.
+So for any given page and chapter we
+need them to match up. So the main thing
+that we need to look for with those
+variables is that the problem number
+available equals the pa it would contain
+the page number. So because chapter 3
+the current chapter we're on has six
+problems and six is greater than the
+problem number we need for this page.
+Then this one is good to move forward
+and check for if there's a matchup.
+Great. See if page and
+problem number
+match using maybe a similar code to
+Mauricio's
+um or something different.
+So then in chapter
+four here
+which starts No, is that right? One,
+two, three, four. Yeah, chapter 4, which
+starts on page six. So, now we're on
+page six
+and
+chapter
+4.
+Again, the same the same thing we're
+checking for is that chapter 4 would
+need
+greater than
+six problems.
+to meet our threshold.
+Okay, so now that I' I've kind of
+explained it in in more detail up here,
+but now for this one, we can distill it
+a little bit more simply. Chapter 4
+would need greater than six page number
+page problems to meet our threshold for
+special.
+Now, that sounds like a pretty good if
+condition. Wink wink, right? And
+I I used some special keys there on
+accident.
+And so we can pretty easily determine is
+one greater than six? No. We get to the
+next page, which is page seven. That's
+where chapter 5 starts. Is 10 greater
+than seven? Yes. This would be a good
+candidate to check for a page number
+match. Now, that doesn't guarantee that
+we're going to have page number matches
+in there,
+but it's better than
+checking
+for something that we know isn't going
+to exist. So, for this one, we know it's
+not going to work, so we can skip this
+whole page. For this one, we know it's
+not going to work, so we can skip this
+whole page. Chapter 2. On page three, we
+need three problems.
+Our current chapter only has a max of
+two problems. We don't meet that
+threshold. We can skip it. Page four.
+We're in chapter 3. How many problems
+does chapter 3 have? Six. Six is greater
+than four. We might meet that threshold.
+We should check. We might meet that
+threshold. We should check. We're not
+going to meet that threshold. Skip. We
+might meet that threshold. Check. Check.
+Check. Found. Found.
+um that may not improve our like our our
+code too much,
+but it does eliminate a lot of logic
+checks that we have to check for in I
+think in in this part of the code, I
+would say. Oops. I think it I think it
+would allow us to do
+one less loop. Let me say I think that
+would be true. I think we wouldn't have
+to do as many loops in there.
+That may not be true, though. I'm just
+I'm just thinking out loud here. Um
+I think that would help me frame this
+problem for myself about declaring from
+the start what do we need to be true on
+any given loop or any given moment in
+our code for us to move forward and if
+we can't move forward then we should
+move on to the next information. Um,
+so that's what I was trying to explain.
+All right, I think we'll be Does anyone
+have um I Well, I think Mauricio is the
+only one that's worked on on this
+problem. Um, but does anyone have any
+questions about this problem? I know
+it's kind of like a It's technically
+listed as easy, but I I think this one's
+kind of
+Well, I think it would take I think it
+makes sense that it t it would take more
+than 20 minutes to solve this one.
+But does anyone have any questions?
+>> Uh, isn't this a medium problem?
+>> No, this one's an easy.
+>> Let's see.
+>> Yeah, easy. But you see its max score is
+25, which is pretty unusual. So I think
+they know that it's a complicated
+problem which is why they give so many
+points for it.
+But the issue there is that
+technically I think the problem is
+straightforward enough that you should
+be able to get to an answer right like
+they explain they explain it fully but
+they also give you this diagram that
+shows you know more or less how you can
+do it if you know the data structures to
+think about. Um,
+so I think the reason that it's listed
+as easy is because you don't have to do
+there's not really much like
+advanced logic you need to do to think
+about it. It's just kind of I don't know
+if that's true either.
+I I feel like I understand why it's
+marked as easy, but I also understand I
+also think that it's harder than the
+majority of easy problems.
+>> It looks like it will be subjective
+there.
+>> Yeah. Yeah. A little bit subjective
+because when you think about a medium
+problem, it's it's asking you to do like
+some pretty advanced logical steps. I
+don't think any any given step that
+they're asking you to do is too crazy.
+like
+know what page you're on,
+evaluate if the page matches the problem
+number, and loop through loop through
+it. like any any of the breakdowns that
+we had earlier isn't like too
+complicated in theory, but the actual
+application of it kind of takes a while
+versus a medium problem where they're
+kind of giving you like a a complic
+they're giving you complicated steps to
+do and you have to do it in like a
+certain amount of efficiency. But I feel
+like this one could qualify as medium
+just based on like the requirement to
+even type it up.
+Yeah, I agree.
+>> But it's a good one to think about to to
+really break down logical thinking and
+how to pull out the required information
+that you need to solve a problem and the
+required information that you need to
+make sound coding decisions.
+So, it's a good one to practice, but I
+would not worry about the time limit on
+this one. If you are, if it's taking you
+longer than 20 minutes or even a lot
+longer than 20 minutes, I think that's
+totally fine. It's still a good problem
+to work on, though.
+>> Oh, sorry. I was just listening to you
+guys and um I tell you listening to you
+this sound like um spaghetti and
+meatballs to me.
+>> But but it helped a little as you step
+through it cuz it is very important to
+understand what that project what that
+problem is so you can start mapping the
+blueprint of how to solve it. But if you
+don't have a clear picture, at least for
+me
+>> to understand what's going on, I'll be
+stuck in with that bowl of spaghetti.
+Stephan helped it a little some, you
+know. So, you know, for me to get
+something rolling in my head because
+when I first read that, I was like, what
+the heck?
+I did something in my mindset and let me
+let me guess they're going to say this
+easy
+but it is good for for practice for
+logical thinking and practice it it it's
+good brain exercise
+>> and and it also applies really well to I
+think complicated like coding projects
+in the internship or even in beyond like
+you're going to get something that has a
+lot of requirements or requires a lot of
+steps and that that to make it
+successful ful and so being able to
+break down the requirements of like a
+big feature change or something that
+revol like requires a lot of um like API
+integration with a lot of different
+steps that you need to consider being
+able to logically break down what all
+the requirements that you need need to
+do to
+put forward safe code into production um
+that's a that's a skill set you have to
+develop so I think this one helps you
+kind of develop frameworks for how do I
+break these problems down?
+>> I do hate this problem though. I will
+say that
+>> I also thought of using a dictionary but
+then I got confused with the page
+numbers. I was like, how am I going to
+determine the page numbers here? Um,
+yeah, it's it's a complicated one.
+Yeah, actually that's it's funny you say
+that because right after Sunday's
+session, I started working on this one
+and I got to that step of like I think a
+dictionary works here pretty well. Um,
+as like the brute force approach and so
+I started working on building the
+dictionary and then I was like uh it's
+9:30 here and I don't I don't have the
+energy to figure out how to develop the
+page to to problem ratio here. So we're
+going to we're going to save this one
+for for tomorrow. So, I'm definitely on
+you with you on that one.
+Okay.
+Whale. Does anyone have any questions? I
+forgot we completely skipped this step.
+Um, does anyone have any questions about
+the tech interview, practicing,
+preparing?
+Anything they'd like to ask?
+Well would be a right uh combination of
+medium and easy to to be solving like
+three medium one one three easy one
+medium like when you are just practicing
+or one easy one medium or
+how should it
+>> honestly I I don't think I could say um
+>> like in a session like You're gonna
+study today. So for today I'm gonna do
+what I mean let's say I have five hours
+available.
+What would that be to be like a good you
+know flow there? Frequency whatever.
+>> I would not recommend practicing for
+five hours. That would be my start.
+>> Okay. For whatever hours. What?
+>> Yeah. Yeah. Yeah. Yeah. Um I
+I don't know. I feel like you shouldn't
+do them on the same day, but I guess if
+I had to,
+if I had to say I would start with easy
+problems and I'd do two or three and if
+I'm knocking those out of the park, then
+I would try one medium problem. Um,
+and I think that would be my limit for
+any given day.
+>> But yeah. Okay. So every day like that
+it will be fine.
+>> Yeah. But I would you don't I don't
+think you need to
+I think once you've solved one to three
+medium problems total in under an hour
+regardless of consistency on that
+I think you're good with medium problems
+at this stage. You you want to move
+forward. So the the practicing of the
+medium problems is more of an
+application of
+utilizing everything you've learned from
+mod 2 and being able to apply it in
+these more complicated scenarios in a
+good amount of time. Um, so once you've
+done it a few times, I think that's a
+good place to say, "All right, I've
+learned what I've learned, need to learn
+for where I am now." And then move
+forward with the curriculum,
+move on into the internship, and then
+once you get to the internship,
+keep practicing
+medium problems then because then you're
+preparing for the job hunt. Um, but I
+wouldn't say that you need to focus a
+lot on medium problems at this stage.
+>> Oh, so how typical week of of practicing
+will look like? Like you said, three
+easy one medium per day, Monday to
+Friday or Monday to Sunday or or or
+how that will look.
+>> Yeah, I don't I I think it's completely
+up to to you.
+But if you were doing if you were doing
+that multiple times in a week and you're
+finding success, then it's time to sign
+up for the interview.
+>> I think Mauricio is ready for the
+interview.
+>> And sometimes I find success, sometimes
+I get stuck. So that throws me out of
+balance there about the decision. So
+>> well, if you're unsure, I think based on
+what we've seen for the submissions, I
+think your code is there. It's if it the
+time limit is really the driving factor,
+then I would say go ahead and sign up
+and we can talk about it one-on-one.
+>> Okay.
+>> I mean, because you're saying you're
+hitting it with some frequency, just not
+every single time.
+>> Yeah. But lately, I've been dedicated
+exclusively to mediums like for the last
+two weeks. This will be the third week
+or something.
+>> Yeah. I think I think you should sign
+up.
+So that's why I'm kind of sometimes
+solving it, sometimes getting stuck,
+sometimes all kinds of results. So yeah.
+>> Yeah, me too. Even now if I try a medium
+problem, I mean it's not guaranteed I'm
+going to get it within the time limit
+because some of them are meant to break
+your spirit, so to speak.
+>> Yeah.
+And uh another thing I noticed is at
+some point
+like if you just got through a hard
+problem for you or it took a lot of
+effort to solve it within or above the
+time limit doesn't matter.
+Facing another one is like you are
+drained uh emotionally and mentally in a
+way. So it's kind of you're not uh
+in shape for another one until the next
+day or something like that.
+>> Yeah, I think that's absolutely fair. If
+you've hit a problem like that, I don't
+think it's a good idea to start another
+problem um that day or even the next
+day. I think take a break, give it a
+day, maybe two days to let it just
+linger in your mind. If you if you start
+on a new problem, a like you said,
+you're in a kind of defeist attitude
+already. So that's not a good start. Um,
+and also your brain is still working on
+that problem in the background. It's
+like I'm really frustrated that I have
+not solved that problem. So pretend to
+do whatever you want to do on the
+surface level of our brain, but in the
+back of your brain, you're thinking
+about that problem still. So take a day,
+come back to it, and usually
+when you do that, if you give yourself
+the next day or even two days and your
+brain's working on it in the background,
+you come back to it and you you can
+knock it out of the park, no problem.
+And then you get two things. you've
+solved that problem and you're able to
+start on a new problem feeling
+full of energy and full of success.
+>> Okay?
+>> And that goes for medium problems, too.
+If you hit like
+one or two good ones and then one that
+just kind of like knocks you off your
+feet, take a break, come back to another
+day. Or if you've tried two and two in a
+row it was like, "Wow, today sucked. I
+could not get through either of those
+easy problems. That's unusual for me.
+Today was not a coding day. Don't push
+it.
+>> Okay,
+good advice.
+>> Thank you.
+>> Good questions. Any other questions?
+So the main thing here is again just
+building good habits both with your
+practicing and the skills you're
+developing explaining your thought
+process breaking down the problems. All
+of these are habits to develop. So you
+want to have good habits now because if
+you make bad habits now that's going to
+follow you through your career and it's
+not going to be good. Like if you think
+you're burned out and stressed out now,
+it's going to be a lot worse when you're
+on the the nineto-ive clock for a coding
+job and they're expecting certain
+results. Like you want to be able to
+know how to have good habits um
+that lead to good outcomes.
+>> Yes, definitely.
+>> All right. Well, we've somehow managed
+to make it to 9:00. So, let's go ahead
+and call it for the day. And I will see
+you all fresh for fresh some fresh
+problems on Sunday.
+>> Thank you.
+>> Thank you.

@@ -1,0 +1,1594 @@
+All right, welcome to today's session of
+nailing the tech interview. Um, it is
+Wednesday, so we will be diving into
+some solutions.
+Before we get started with that though,
+does anyone have any questions they'd
+like to ask about the technical
+interview preparation, the process,
+anything at all that you'd like to ask?
+What questions do we have?
+Yes, Adam.
+>> Oh, um what? Well, I was um
+trying to investigate or research the
+problem that we had um I realized uh
+when I was looking at people's solutions
+online,
+they were using like object-oriented
+Python, which I haven't had experience
+with yet,
+>> but it seemed like that that's what
+their their solutions were using, at
+least the the few that I looked at. I I
+hadn't gone past that, but
+um
+>> Can you give me an example?
+>> Well, I mean they they started with the
+class. Um so they were looking at uh
+uh
+now I'm trying to remember how they how
+they did that. Um
+there were uh
+how did they phrase it? It was the uh
+the interval uh
+yeah I guess they they used a made an
+interval class or something um and then
+>> and because then then they they went
+through it like that. Uh so I guess
+>> seems a little heavy-handed.
+Well, well, yeah. So, my I guess my
+question was is um it it just got me
+thinking like, oh, okay, are are some of
+these sometimes sprinkled more with like
+objectoriented type solution or should
+it just be more vanilla Python or h how
+how does that work?
+>> Yeah, it's definitely more vanilla I'd
+say for challenges like this. Um,
+that's weird. I didn't see anything like
+that. Uh, let's see. So,
+they made a class for interval. I guess
+it kind of makes sense like if you think
+back to mod 2 when when all of you were
+working on like stacks and cues,
+you know, at one of the projects was to
+make the stack class and the Q class and
+then you created the class functions,
+the methods for adding to the stack,
+adding to the Q, peaking at the top of
+the stack or the Q, so on and so forth.
+So like it's definitely a way of coding
+a solution to get to
+solving the test cases, but um
+>> I don't think it's standard.
+>> May maybe I just had dumb luck because
+it was I I think I looked at about two
+or three solutions and they were all
+like that. Um okay,
+>> like neat neatcode IO. I don't know if
+you ever look at neat code.
+>> No.
+>> Oh. Oh yeah. Um
+>> I probably should, but
+>> yeah, I would say that would be more
+based for like longevity. You you would
+create class-based solutions. Well, I
+mean some languages are written
+inherently class-based like Java, but
+not Python. Um but that would be more
+for longevity. Like if you were working
+on code that you expected to last for a
+long time and that would need
+maintenance and tests and updates, not
+for a coding challenge,
+>> right? Okay. All right. That's
+interesting though.
+>> It Yeah, it just it just came across my
+mind. I'm like, okay, this solution is
+like a bit of I I mean I I kind of
+understood, you know, looking at it, but
+it's not something I could reproduce. So
+>> sure.
+>> But okay. All right. Thanks.
+>> No, that's fun. Thanks. Any other
+questions?
+>> Uh so for some of these uh coding
+problems,
+uh what if you know they usually might
+require some knowledge of like math or
+or something like that that you may not
+even possess at the time you know that
+you're given the question. So what type
+of learning or whatever can we do to
+prepare for like I don't know if in just
+a joy of coding but in general also for
+is asked on these interviews because you
+know once you know the background it's
+like something's very easy to understand
+but you might not even think of it at
+the moment. Does that make any sense?
+>> Yes. I'll say that for every problem
+there should be a brute force solution
+that doesn't require you to know some
+special math trick.
+>> Right?
+>> Then once you learn the special math
+trick, you can start applying it in
+other test like in other cases like in
+other problems.
+>> Um like I mean even I would even
+consider mod like using the modulus is
+kind of like a special math trick for
+even division, right? you learned it,
+now you know it, now you can apply it in
+unique situations.
+>> It's kind of something similar to that.
+Like sometimes they will require
+>> for the most efficient solution, knowing
+some random math thing that you would
+never use ever again. Sometimes it's
+knowing a little math trick that you
+might use every once in a while across
+different problems or across your code
+>> in general that you just didn't know
+before the first problem that you saw
+it. So that I don't I guess I don't
+really have any good advice for you
+other than like see what you can do
+first like what is the the kind of brute
+force of way that you approached it and
+then once you get to the point where
+you're like I'm going to look up how my
+peers have solved this or like what the
+most efficient solution is you see that
+they use a math trick try and understand
+what the math trick is and then see like
+is this something that will come up
+often like will you see XYZ math trick
+across multiple problems or is It's like
+this one random spin-off thing,
+>> right?
+>> If it's something that you're going to
+see often, kind of dig into it, see what
+what is the theory behind this? Why does
+it exist? Why is it used?
+>> And then get comfortable with it so that
+whenever you see a problem that can use
+it, it'll help you speed up your own
+thinking.
+>> Okay? Just kind of keep notes and keep
+those in your lexicon. And then
+>> maybe like in an interview you'd
+encounter it or you wouldn't but
+eventually you'd get through interviews
+eventually once you build up that base
+right. Yeah.
+>> Yeah. I think there's even something
+that we saw recently where like we
+didn't need to do this. There were other
+ways to do to solve this uh problem but
+like to get to like the hundredth space
+or the 10th space of a longer number
+like 336. If I want to isolate the three
+in the 336,
+I need I can do some special thing to
+divide by the length of it or something
+whatever divide by 10. It was some
+random trick that we that we learned in
+the process of working on the solution
+and it was something that will could be
+used in other problems.
+>> You don't need to know it, but it might
+help you get to certain solutions
+faster.
+>> Okay.
+Okay. I guess that helps some. So
+>> yeah, but yes, I like to think that they
+require high school level math to solve
+some of these problems and then some of
+the problems is like advanced calculus
+and it's it's like why I will never use
+this or need this. Why why are you doing
+this to me?
+>> Yeah.
+Okay.
+>> Thank you for the question. Any other
+questions? I like these questions today.
+Okay, cool. All right, so Adam was
+already kind of talking about it, but we
+worked on insert interval on Sunday. Did
+anyone get a chance to work on that?
+Like Adam, did you get a chance to work
+on that problem
+>> even despite the the class-based stuff?
+And Brian, I think maybe you said you
+were gonna try something, but did anyone
+get a chance to work on it?
+>> I I I I only looked at it from the
+because I'm still new to a lot of this.
+Like I haven't covered some of the
+chapters like you were talking about
+stacks and cues. I'm not there yet. But
+um
+>> yeah, I I I was just trying to figure
+out the logic behind, you know, what was
+h what what
+thing what different logics or
+situations you would have. Um, which was
+interesting because like one of the one
+of the videos I did look at, they the
+guy presented it also like that
+visually. Um, you know, he's showing you
+what
+what different various overlap scenarios
+there were. So there there wound up
+being something like five or six
+different situations.
+But
+um because you could insert completely
+at the beginning before the all the the
+I I'll call it the prime um the prime
+array. Um so yeah, if you use uh if you
+insert in the prime array or between
+or um I think like you were suggesting
+as an easiest case scenario right
+between the uh two two prime two two of
+the prime uh intervals. Um
+>> and then you had you know overlap if it
+starts before an interval but ends after
+>> or you know ends in it it in in those
+are different cases because you're going
+to have a different number that that
+winds up ending. So you you had those
+different cases which uh was you know
+lended to the complexity.
+>> Right. So the logic behind inserting and
+then merging across the different
+intervals if they overlap. Yeah,
+>> right.
+>> Which isn't class-based. So that is
+something that
+>> Yeah.
+>> you could kind of see the loose general
+idea of it and then try to code
+something from there.
+>> Right. I I initially because I I'm like
+I said, I'm I'm I'm new to this and I I
+haven't even had like linked lists, but
+I was thinking from what little I saw, I
+was thinking at first like, okay, maybe
+like a linked list because I was
+thinking of nodes. I was thinking of
+them in terms of nodes like because
+you'd want the begin node with the end
+node but that doesn't like really work
+like that.
+>> Oh yeah.
+>> This would be a nightmare with link
+list. I was like, but I was think
+because it's it's all we're doing is one
+insertion
+which is you know in a in a in the
+scheme of a link list is is is
+lightweight but yeah but but because of
+the way you have to try to figure out
+the beginning and the end that that
+that's yeah makes it a nightmare.
+>> Yep.
+>> Um
+>> cool. Thanks for sharing. All right.
+Anyone else did anyone else take a stab
+at this?
+Yeah, I I actually solved it.
+>> Oh, good. You mind showing us what you
+got?
+>> Sure.
+>> Hold on a second.
+The My computer is slow as you guys
+probably know already.
+We'll just pop this into uh the chat as
+well since we're all going to look at
+it.
+So yeah, to um
+Adam's point, the the reason this was
+kind of simple for me was because it
+doesn't have anything to do with stacks
+or cues or um link lists or um or
+anything like that. This is basically
+just Python indexing.
+uh which is something I know how to do
+really well. Um
+>> humble brick.
+>> Yeah. I I mean it's just I' I've been
+working with Python indexes for years
+and years. So um it's the all of the new
+uh programming
+um I guess we can call them data
+structures that uh
+>> um I don't I'm not really that good with
+yet. But
+um yeah, I mean I I saw this one really
+clearly because
+um this bottom line here was actually
+the first code that I wrote for it. The
+where the else is because this is what I
+call the solution case.
+>> Okay.
+>> What' you say?
+>> Would you mind zooming in a little bit?
+>> Oh yeah. Hold on.
+Um
+how do I do that? the three dots at the
+upper right hand side. Yep,
+[Music]
+>> it's thinking.
+>> There we go. Cool. Perfect.
+>> So,
+>> so the bottom if you said it's your
+solution statement, meaning like
+>> Yeah, I guess. Well, it doesn't really
+matter where we start, but
+>> Sure. This bottom part is basically what
+I call the solution case. In other
+words, it creates a new interval which
+is basically the it's going to take the
+minimum of the new interval and the
+interval at position I that I zero is
+basically
+the first position of the list in the
+list of lists
+which is what I wrote up here. list i
+zero is the first value in a list of
+lists. Um
+so then it takes the minimum of that of
+between those two and then the max is
+going to be so the reason I use minus
+one is because whenever I see minus one
+uh that tells me that
+the end of this particular data
+structure is important
+something I run across a lot when I'm
+working on data science projects. Um,
+and in this case, I mean, we only have
+two, but I like to use minus one cuz
+that, you know, it's like programming
+can be communication sometimes. So, um,
+but this basically takes the maximum of
+the last
+new interval or the, uh, current
+interval.
+>> So, this is basically your merge your
+merge code like determining.
+>> Yeah. So that's like, you know, in a in
+in a case where you've got a new
+interval that is actually going to fit
+into
+one of the
+>> for example
+>> in the example, we start with one and
+three and then you have your new
+interval two and five.
+>> So we get past your if and else if we
+get to the else and we say, all right,
+we know that there's an overlap here.
+What's the min of one and two?
+>> One. What's the max of three and five?
+Five. So that
+>> and then I just simply append that to
+what I'm calling ans which is our
+answer.
+>> Cool.
+>> So and then returning to that. But then
+>> the reason I use that as the else is
+because all of the um
+special circumstances that arise. The
+first one's pretty simple. It's
+basically the starting point of the new
+interval is going to be greater than the
+end point of the current interval. And
+then in which case we're just adding
+the interval there to the list
+which is really all we have to do in
+that case.
+So the intervals I is wherever the the
+current interval is at point I because
+we're iterating through our list of
+lists.
+So it just adds that to it. This is
+special case here. I think this is where
+I think
+people probably struggle with this
+problem
+is when
+the new inter the new interval is going
+to be
+actually less than the first value in
+the list of lists. And this is why
+Python is so awesome right here is
+because you can take B basically this
+takes the the rest of that interval and
+adds it to the current
+answer.
+So it just tacks on the rest of it
+to what's being added.
+>> Wait, sorry. So what's happening here?
+So,
+>> so this intervals I colon is basically
+the rest of the inter it's the rest of
+the interval the current interval
+from point I
+>> right so new interval minus one would be
+the very last interval group
+or what what is new no no no that's not
+right
+new interval neg what is new interval
+negative
+That's the last that's the last position
+in in the new interval the interval
+that's given.
+>> Yeah. So in new in the current example
+one that would be five. So if
+>> so if it's actually less than whatever
+the current uh
+>> interval is in that list of lists then
+it's going to add that
+>> right
+>> it's going to add the remainder to the
+to the
+to whatever the new interval is.
+>> Right? So that's the insert. There's no
+overlap case.
+>> Yeah.
+>> Okay.
+Okay,
+cool. Um, can we see this in action? Do
+you mind um
+adding some print statements in here for
+us?
+>> Oh, yeah.
+Um, where? So for in for I in range
+right under that do you just want to
+print
+what are you using here? Uh new interval
+zero
+>> 31.
+>> Yeah.
+>> And then
+>> comma
+intervals I negative 1.
+Does you want intervals I or you want?
+>> Yeah, I want the two conditions that you
+have in your first if statement.
+>> Oh, so you actually want this here.
+>> Yeah.
+>> Yep.
+>> Okay.
+>> And then same thing above the else if or
+maybe.
+I don't think that'll work because it's
+an if l if
+new interval negative one.
+>> Well, we can just start there.
+Uh yeah.
+>> Where's the Isn't there just a run?
+>> Yeah, it's the play button right I right
+beside submit.
+>> Oh.
+So, if you scroll down,
+okay, two, three.
+What are we looking at here?
+>> So, two, three. Yeah.
+>> Nine. Yeah.
+So we get the two and the three. So then
+it says if two
+is greater than three which it's not.
+Else if
+one
+five is less than
+no five is less than three. So no.
+So then it merges that in.
+Yeah. And then the next line.
+So do you change new interval at some
+point? So in your can you scroll into
+your else if answer
+modify. He sets it right there.
+new interval. Yeah, I see. Yes, you do
+change the new interval right there.
+Yep. So, you merged it down and then you
+changed it and then in the next line,
+new interval is now one and five,
+right? So, then on the next line and the
+next iteration,
+it's one and five and six and nine.
+And that's where we just return the rest
+of the
+the array. Okay, cool.
+That's pretty solid. How quickly did
+this or how long did this take you?
+>> Um, well, I worked on it Sunday night
+after
+after the last um
+session.
+>> Mhm.
+>> You want to call it? Um,
+so yeah, it it took me a few hours cuz
+>> Oh, okay. A a few hours. All right.
+>> Yeah. I mean, I I mean, I took my time
+with it.
+>> Yeah.
+>> No, I mean this is definitely a pretty
+>> You know, I just wanted to think through
+it. This this part here was pretty easy.
+>> Yeah.
+>> Because I knew, you know, what I was
+looking for.
+Um but then you know
+um then this first one made pretty good
+sense. It's this one that
+I think takes
+>> Yeah.
+>> the majority of of thinking through it.
+>> Yeah.
+>> I'm trying to think.
+>> That's interesting that you say that
+because Okay. Well, so first of all,
+this is a really really really clean
+solution. So, I'm I'm laughing that you
+said it took you a few hours cuz I know
+that you were really meticulous about
+it. Um, and and got to that point. You
+could have brute forced it and got it
+done a lot quicker, I'm sure. Um, but
+it's funny that the part you struggled
+with the most is what we talked about
+first in the last in the last session,
+which we called the easy example of
+like, all right, let's just insert this
+in here and then we'll figure out how to
+merge down later. and you were like,
+"No, I want to merge right away
+or insert it if if needed."
+>> Yeah,
+>> you kind of did like the backwards
+version of what we talked about. So,
+that's just that's kind of funny to me.
+Cool.
+All right.
+Let me think.
+Um,
+I mean, I think we could talk about this
+one a little bit more. Thank you for
+sharing that, Brian.
+>> Yep.
+>> That was awesome.
+Oops.
+>> And Oh, and it's O of N, too, by the
+way.
+>> Yeah.
+>> Humble brag.
+Well, I started thinking about it and
+it's like um
+I don't I don't know if you could um
+>> do any better than that. No, you can't.
+>> Yeah. Yeah. So, I think
+>> So, wait, how do you know it's how do
+you know it's O? Do you want to explain
+it to us?
+>> Oh, uh I just
+um No, I just hit the button.
+>> Oh, okay.
+Like
+>> isn't isn't it just it's just a single
+loop, isn't it? Kind of.
+>> Yeah, that's Well, that's that would be
+why. Yeah, because there's only one loop
+and it's basically a bunch of if
+statements, which is kind of what I
+figured it would be from the beginning.
+So,
+>> exactly. Yeah. Um, so we wrote out this
+whole long thing last time. Uh, well,
+let's just recap this problem just for
+for everyone's sake. So you're given an
+array of non-over overlapping intervals.
+So 1 and 3 or 1 2 3 1
+space to o space 3 1 2 3 and 6 2 9.
+Um those do not overlap. So the numbers
+1 2 3 do not overlap with 6 7 8 9. And
+then you are given a new interval.
+These do not overlap. Yep. And so this
+one could overlap
+and we have to merge it or insert it
+into the list of intervals. That's kind
+of the high level there.
+>> Okay.
+>> So given non-over overlapping intervals
+start and end to represent the start of
+the e interval and the intervals are
+sorted in ascending order. So they are
+sorted. So this one is less than the
+first of each of these.
+>> They sorted by the first element. Yeah.
+>> Yep. Sorted by the first. It's a nested
+It's a list of lists, but each nested
+list only has two values, start and end,
+quote unquote, and they are sorted by
+the first, the start,
+but they're non-over overlapping in that
+case.
+You are also given an interval, new
+interval, start end that represents the
+start and end of another interval, which
+may or may not overlap with one of
+these. So our goal is to insert the new
+interval into intervals such that
+intervals is still sorted
+and does not have any overlapping
+intervals meaning merge overlapping if
+necessary. And then we want to return
+intervals intervals the list of all the
+intervals um after we have made our
+insertion/merge.
+You do not need to modify the intervals
+in place. You can make a new array and
+then return that.
+So they give us our example of 1 and 3,
+6 and 9 with intervals new interval of
+two and five. And so we have to insert
+that into here. If we were to sort it, I
+mean if we were to insert it based on
+sort order, we would put it right here
+in the middle. But since two is in
+between one and three, we have to
+actually merge that into one and three.
+And because five is less than 6 to 9, we
+don't have to merge it into that one. So
+that one becomes
+1 2 5. So that's where we kind of wrote
+this out is that these
+well this is this is for this example
+here but these actually represent you
+know like a string of numbers 1 and two
+space 3 to 5 space 6 to 7
+8 to 10 12 to 12 to 16.
+And so when we're given four to eight,
+we have to actually say all right, so
+four, five, six, seven, and eight.
+That's actually a part of one, two,
+three distinct intervals that were given
+to us. So we have to change these three
+distinct intervals into one unique
+interval
+so that we can merge in this new one. So
+that's where that one merges down to 3
+to 10.
+Um because four 4 through 8 overlaps
+with the 3 to 5, 6 to 7, 8 to 10. We did
+talk about this one a little bit longer
+last session. So this is just kind of
+the recap of that. Intervals.length
+is going to be between 0 and 10 4th,
+which is what is that?
+100,000 10,000. Yeah, I think I think
+10,000. So we can have 10,000 little
+interval pairs.
+Intervals i.length is always two. So
+we're only going to have two numbers in
+each interval.
+Start and end those i numbers are going
+to be between zero and 100,000.
+Then intervals is sorted by start i.
+So these again in ascending order
+new interval.length
+is equal to two. So that one is saying
+that this is also going to match the
+length of each of these.
+And
+start is always going to be less than
+end. And both of those are going to be
+between 0 and 10 to the 5th, which I
+they've already stated that up here, but
+maybe they mean for for new interval,
+which also would make sense.
+Yeah. So, I think they're just saying
+here that start and end for new interval
+is also going to be 0 to 100,000.
+Okay.
+So that I mean it's always good to check
+your constraints but it didn't really
+give us anything that we didn't know. It
+did confirm some of our assumptions that
+the new interval will always be just a
+single interval with two values.
+Um
+we knew about the ascending already.
+Yeah. All we all it does is give us some
+more context about what these limits
+will be. So sometimes they give you like
+little hints or contain extra
+information that you can use. This time
+it's it's pretty
+clear-cut summary of what what we've
+been told.
+So we discussed
+last time we spent a a good chunk of
+time talking about potential pseudo
+code. So given intervals we re
+summarized in our own words.
+Each of those will not overlap.
+Given assumption new singular interval
+place it within. Yeah. So our assumption
+turned out to be true based on the
+constraints.
+So we are given
+a singular new interval
+to place going to rewrite this a little
+bit. I do this every time. Every time I
+read over my old notes I'm like I could
+write that better to place it
+to place within the sorted non-over
+overlapping list of pairs. This might
+mean merging into an existing interval.
+The merge is inclusive of I and J. I use
+I and J instead of start and end because
+it's just more clear to me.
+Um so inclusive of I and J. That's where
+we were talking about this example down
+here where 8 is from the new interval
+and it is inclusive of this upper limit.
+So even though the end of the interval
+goes higher than the max of this
+interval because the eight is inside of
+this one, we have to also include that
+in our merged merged list. So that's why
+the merged one goes from three all the
+way up to 10 because it was a part of
+that larger interval.
+And same thing on this side, the four
+was a part of the interval 345. So we
+take the min there of three which then
+ends up with 3 to 10. So that was that
+final else statement in Brian's code of
+the min of this interval and this
+interval value and the max of
+well one at a time. the max of this one
+and this one and then this one and this
+one and then finally that one and this
+one. So that would have been three
+separate
+um iterations in the loop because you
+would have done them one at a time but
+that's just the general idea there.
+So we discussed
+okay yeah so here we have so we
+discussed creating our own little
+separate easy test case first
+which was if I change this 48 to four
+and five
+then the
+maybe not that one actually Sorry,
+I meant to copy that one.
+Right. 136945.
+So I called it our easy example. If we
+were given 1 and 3 and 6 and 9 and our
+new interval had no overlap.
+So four is not between one and three or
+six and nine
+and five is not in between one and three
+or six and nine. Then the output would
+just be all three of the given intervals
+sorted and uh spaced
+and this was our potential solution. So
+this is this is what I was thinking was
+funny, Brian, because
+it would have been a higher um
+big O complexity, but you could have
+done something like
+let me
+call it answer. I think that's what you
+used, right? Answer.
+Yeah,
+>> actually I don't even need to do that.
+Um,
+this keyboard drives me crazy. So you
+could have done intervals.append
+new interval
+>> and then interval.
+>> That's what after the last session I
+started thinking it's like okay well I
+know I want to put new interval inside
+of the current interval but how do I
+write that in code?
+>> Yeah. And so that's why I kind of just
+threw that on the back burner because
+that was the the part of the problem I
+didn't really know what I was going to
+do with at that time.
+>> Yeah, totally.
+>> Started working on the other stuff
+first,
+>> right? I wouldn't really even call this
+straightforward because it's a, you
+know, nested list. Um but so you're
+given 1 369
+and then the new interval also a
+parameter is four and five. Now because
+if this was just for example a single
+value you know one
+four and six if you wanted to append the
+new value like five you would just do
+this right you would append that new
+value and then you can sort it. It's
+kind of a mixed bag in how the sort
+would work in this case because they're
+numbers. It works just fine. It sorts by
+again that first value there
+um and puts them perfectly into the
+order that we want.
+So if this was only about inserting and
+not having to merge down, then
+then this would have worked
+perfectly.
+as a brute force. I guess that's what
+I'm saying. See,
+yeah,
+kind of a cheat honestly in my opinion.
+>> So, does that sort method know how to
+compare the first index value for the
+intervals or is there something that's
+going on?
+>> Um, I'm assuming it does since that's
+what it it does, but
+>> yeah. Okay.
+>> So,
+that's a really fun question. So, Python
+sort method.
+>> Nope, that's not what it mean.
+>> I think Aren't they ordered? They're
+ordered and mutable, right?
+>> Ordered and mutable. What do you mean?
+What are you referring to? Well, it's
+like, you know, list, dictionaries, um,
+uh, sets.
+It's like some of them are ordered, some
+of them are unordered, some of them are
+mutable, some of them aren't. Mutable
+basically means changeable,
+>> right? I think
+>> I think a list is sorted and mutable,
+right?
+>> Yes. And I think that's what I'm
+actually looking for here is that
+it actually talks about that if you are
+given a dictionary, it uses the keys to
+sort them.
+Um, except that's weird that if you give
+it a dictionary, it
+I'm not exactly sure why it returns like
+that, but sorted student tupils sort by
+age.
+Oh, you can even choose. So, this is for
+the sorted function, not the dots sort,
+but they work the same way. It's just um
+the dots sort is specifically for lists.
+The sorted can sort any data structure.
+So integers, strings, tupils,
+dictionaries.
+Um
+but it it it uses the same logic in the
+back and and you know in the library
+class there. So this one it they chose
+to sort by
+>> it chose the index.
+>> Yeah, the index here which was this one.
+So I'm assuming that if you don't select
+like the general idea is that if you
+have an object with multiple
+um values, right, it would default to
+sorting by the first one
+and then that's why they allow you to
+override that to choose how to sort. And
+so then they're choosing to sort by
+this value instead, which then returns
+10, 12, 15, and the the other object
+elements.
+>> They're using a function inside a
+function
+lamb, which is a lambda function,
+>> right?
+But this is this is just um
+this is just a reference for the the
+tupil.
+>> Yeah, they're they're setting the key of
+the dictionary to
+uh
+>> to using a lambda function.
+>> Yes.
+>> Cool.
+So I think that kind of answers the
+question. You could dig into it more to
+like you could use the sorted function
+to sort by the
+end
+of the interval
+potentially
+um if you wanted to know how to do that.
+But in this case we wanted it to sort by
+the first one. So we don't really need
+to do anything special there. It kind of
+just works out of the box. So what we
+had actually talked about in the last
+session is actually creating a loop
+right I called it king array because I I
+don't know I was being weird and I
+couldn't think of another
+name in the moment. Uh
+I don't think I refer to it ever again.
+Okay. So instead of doing this way of
+just adding the new interval to the
+original intervals list and then sorting
+it, um we could write a for loop and
+check the start position in any
+interval. Check if the new interval is
+included in that interval. So if two is
+within 1 and three, six and nine or in
+our case if four and five, four is
+included in one and three and six and
+nine.
+Um
+it's not. So then we would go to the
+second step. Determine the sort order.
+Check if four is greater than let's say
+any J. If no overlap, then the new
+interval is less and we can just insert
+it in. So you're just building a new
+list basically,
+>> right?
+>> Yeah.
+>> So basically with that we would just do
+I mean we could write it out but it
+would just be like
+or I in range len interval
+right something like that but spelled
+correctly.
+Uh
+if you didn't know how to do this part
+is what we're talking about and we just
+wanted to follow the kind of loose
+guidelines of we just want to insert it
+in in the right spot
+then we could check
+using the same indexing
+that
+Brian was using of
+intervals I and then zero for the woof.
+interal zero for getting the first value
+of each of these intervals.
+And then we'd want to compare that
+against
+new interval
+start
+at four.
+So is four
+greater than this? Yes. Is it less than
+is it greater than this as well? Maybe.
+Yes. Less than this? Yes. Um or you
+could just do it the same as this one
+does where you're just basically going
+by this. So is four greater than one?
+Yes. So add
+add
+>> just slice it and add it.
+>> You don't even have to slice it. You
+could just add interval.
+Oops.
+I mean, but yes,
+add interval I
+to answer with append.
+>> Oh yeah, just sorting. Okay.
+>> And then go to the next iteration where
+you would get that six
+>> is for you know greater than six. No. So
+then we add new interval instead.
+at new
+interval
+at no index.
+Um, and then finally, this is where
+Brian had the other statement of instead
+of
+adding everything one at a time, if it
+didn't need to be merged in in any way,
+then you would just return the entire
+rest of intervals.
+Um, but we're not doing that in this
+case because this was kind of a
+different approach. So then you would
+finally just remain add the
+remainder of the intervals.
+>> Yeah.
+>> Two ants.
+>> That's what he liked. He thought it was
+pretty handy. Yeah.
+>> Yes, that was very handy. And then in
+the second part, that's when we would go
+back and do the merging. So once we've
+inserted it in at this point we would
+have
+um this perfectly sorted.
+So we would have 1 3 4 5 6 9 and that
+would be the answer. So we could just
+return that. In this case what we would
+have would be
+this
+1 325 69. So it would still be either
+using the for loop or using this append
+and sort method
+methods, excuse me. We would have it
+appropriately sorted, but we wouldn't
+have we would have overlapping
+intervals. So then the next step would
+be to
+then merge in. And so how would you do
+that merging in piece? And that's again
+where Brian's code was really awesome
+where we just start with
+I guess in this case you could start
+with the second one but you would start
+here and you would jump to
+>> merge those two. Yeah. Merge those two.
+>> Yeah. So we would say is
+I I guess I would probably start at the
+second. So like for i in range uh but
+start from
+the one index to the end of length. So
+we would start here and say is start of
+the current index
+I guess let's write it out.
+>> Yeah. So the the min of one and two is
+one and the maximum of three and five is
+five. And so then you
+>> intervals are
+>> with new.
+>> Exactly. That's where we had your really
+nice
+your really nice um oneliner there of
+minimum.
+>> Yeah. And I put it in list format
+so that it was already
+returned as a list.
+>> Yeah.
+>> So I didn't get that. That's one thing
+that the two errors that I were was at
+first I was getting.
+Oh, what was it?
+I think I was getting an out of range
+error index out of range for some reason
+or another.
+>> Yeah.
+>> And then the other error I was getting
+was a um
+Oh, I'm trying to think now.
+But it's funny how sometimes errors can
+give you ideas for how to actually solve
+these things.
+>> Absolutely. So So you got an out of
+range error and what did that lead you
+to?
+>> I don't remember.
+I just know that uh
+um
+yeah I don't I have to think more about
+it. But then I was getting
+>> Yeah, I feel like in general we've uh
+like when you're first starting out
+error that's what it was.
+>> There was
+>> I got some kind of a data structure
+error and and that's what that's why I
+went ahead and wrote rewrote that last
+line and put it in brackets because that
+way I just kicked it out as a list.
+>> Yeah, because you were trying to add
+like an int to a list of lists.
+>> Yeah. And then I was done.
+>> Yeah. Nice. I was like, but
+>> I feel like when we're first getting
+started, you're like terrified of
+errors, but I feel like errors are kind
+of like your best friend almost where if
+everything's going smoothly, I almost
+don't trust it. I'm like, everything's
+too easy. Something something's wrong.
+Um, but yeah, so in this case, maybe we
+would do like is intervals I Z
+in between like
+greater than
+o
+greater than less than
+greater less than intervals
+i minus one. So we would grab that one
+and then do zero and one.
+I'm sure there is a better way we could
+approach that to do to do that kind of
+logic there. But um so is this one in
+between here at all? If it's not, great,
+move on. If it is, then choose the
+minimum.
+Well, you wouldn't even need to do that
+in that case,
+but you could just kind of using that
+same idea of the minimum of these two
+and then the maximum of these two.
+It it becomes a case of how do you merge
+within your existing list there, which
+isn't too crazy because you just do it
+one at a time.
+>> Yeah. Just one at a time. One to five,
+right? The min on the one and then the
+max on that one. Yeah, if you had
+several
+>> if you had several, you'd go over
+several that it's spanned across, you
+know, but
+>> right, I think I would actually instead
+of doing it starting from the middle, I
+think I really would start from the
+front and say,
+>> right,
+>> is this one greater than this one?
+Because then you're only doing that one
+comparison. So is I of
+1 greater than
+I + 1
+I +
+I + 1 0
+and then if it is then we can choose the
+min of these two and the max of these
+two iterate to the next one. That's
+where we were talking about using he
+Brian mod modified new intervals to do
+this. Um, but you could also do it in
+place there if you wanted to.
+So yeah, there's two kind of different
+approaches. This one kind of spells out
+each step a little bit more and you kind
+of have to think about how you would do
+each of these as two separate tasks.
+Brian kind of started from the opposite
+direction of how do I just kind of get
+everything all jumbled in there together
+and you focused on the merging part
+first and then the inserting
+um logic later. This idea approach
+starts on the inserting first and then
+the merging in.
+Um but I kind of want to leave this one
+to you all. I I didn't want to jump into
+the code too much because we've kind of
+sounded out the logic in a lot of
+different ways. Brian showcased his code
+which is really great. So you have some
+idea of what you can do and I I'd like
+everyone to keep to keep thinking about
+this problem and working on this
+problem. Um and that is actually almost
+time for today
+but this is
+insert interval. It is medium level.
+We've gone over lots of different I mean
+basically we've gone on two different
+ways to approach it but spelled out in
+different ways. I think this is a nice
+way to kind of shortcut this first step
+that we talked about last time and then
+you just kind of have to f focus on the
+merging part which might make it a
+little bit easier or it might make it a
+little bit harder. Maybe the merging it
+in first is actually a better approach.
+I'm not sure.
+All right.
+Okay. Okay. Does anyone have any
+questions
+about that problem or about any
+hackerink related or le code related
+stuff?
+I know we didn't really cover a lot.
+Just
+>> what's just a quick question for me.
+>> Go ahead.
+>> Sorry, Brian. Go ahead.
+>> Um the location of where you actually
+like this this one. I was trying to look
+for the location of what problem we were
+going to go over before today and I
+didn't review I'm sorry I didn't review
+Sundays I was kind of working but um
+um is there can you can you tell us
+where the location again is where the
+problems are listed so that I can review
+them
+um
+>> yes so each Sunday after the session I
+post the problems that we talked about
+um in that session in the weekly
+schedule channel where we do like I'll
+do a recap of what we covered during the
+Sunday session and I'll do a recap today
+as well, what we covered in today's
+session and then I'll post a link to the
+problems that we worked on or talked
+about and then in between sessions you
+can use that link in the weekly schedule
+channel. I don't know why I quoted that.
+The weekly schedule channel on Discord
+to see what we worked on.
+>> Okay, thanks.
+>> And the replays go up like pretty quick
+now, like within an hour or so. So, if
+you miss something on any day for any
+any session throughout the week, it
+should be up like within an hour or two
+and available in the replay list.
+>> Thanks.
+>> Sorry, Brian, you're next.
+>> No, I just had a general question. I um
+I I when I I just remember the name of
+this problem because it's pretty easy.
+Insert interval.
+And so I searched for it and like need
+code popped up. So what?
+>> Yeah, that's what Adam was talking
+about.
+>> What? Oh, I didn't I missed that alto
+together. Then what what's the diff?
+What what is need code? Looks like it's
+similar to lead code. Is it same company
+or is it something totally different?
+>> It's something totally different. Um
+I've actually never looked at neat code.
+It's the it's the same principle as both
+hackerink and
+um leak code like they
+>> similar to le code
+>> he he he design he he he made a course
+to um try to explain leak code is what
+it is the guy
+>> okay
+>> um so he he has a bunch of videos on it
+and naturally has a course and and or a
+couple courses and also on systems stuff
+but um so yeah he he he thinks he's got
+a you know a better edge on it of
+explaining it and uh you know trying to
+skin that cat so to speak. So that
+that's all it is is um it is some some
+good stuff to look at uh especially his
+uh you know also he he has his little uh
+um rundown of um
+because it's almost like like a little
+mind map the the flow for for studying
+um
+>> the data structures uh stuff like that.
+>> Um
+>> yeah that's cool. You can also find a
+lot of this stuff on YouTube for free of
+people working through and explaining
+certain problems.
+>> Yeah.
+>> Um but it's nice to have like a road map
+to follow.
+>> Yeah. The uh by the way that that
+interval problem is one of the the that
+list of like 75 or whatever it is.
+>> The blind 75.
+>> Yeah, the blind 75. So it's it's on that
+list because one one of the people
+mentioned it. Um but uh yeah, he he's
+part of that that crowd where uh they
+also, you know, they they look at
+attacking the the the leak code problems
+and also in a a um uh you know, kind of
+like a 8020 rule or Pareto or whatever.
+Um
+you know, you look at the common ones
+and and and and uh and try and attack
+those. And uh I guess also you know one
+of the other things is uh
+get the sense form with the eas
+um and you don't necessarily have to go
+to the hards
+um because almost actually I guess
+apparent supposedly
+fewer no companies ask the hards but you
+know
+>> yeah there those problems are I've only
+solved one
+>> took
+a day.
+>> Yeah. Cut cut your teeth on the um on
+the easys uh so that you can answer, you
+know, the the mediums. Um
+>> Yeah.
+>> Yeah.
+>> Yeah. But yeah, that that's a yeah, he
+he's just a guy that uh tried to because
+he he worked for Fang, a Fang company,
+Amazon actually, I think it was. And
+then um so he just decided uh he had a
+better way or or at least a different
+way of teaching teaching it
+>> that he felt he could teach. That's
+interesting then that he chose a
+class-based solution of solving it.
+>> I I and I could be mistaken. Um,
+but it looked I I thought it looked like
+it was a class base. I I might be
+mistaken cuz it looked actually still it
+looked more like Brian's. So,
+>> okay.
+Yeah, that makes sense.
+>> Yeah.
+>> Yeah, that's cool. That's a nice
+resource.
+I mean, we I we've kind of been going
+over the blind 75 problems, but I'm not
+like going ind depth on how to do each
+and every like algorithm and everything.
+It's kind of like we're showing problem
+solving, brute force, learning how to
+then take it to the next step of how to
+learn what the optimizations are, how to
+implement those into your next kind of
+picking up things one at a time. I think
+with stuff like the tutorials you see on
+YouTube and I can't speak for Neat Code
+because I haven't looked at them. They
+kind of start off with like this is the
+approach. This is the best way to do it.
+I'm going to teach you how to think
+about doing it this way. And I kind of
+find that unrelatable because if I knew
+how to do it the best way from the
+start, then I wouldn't have learned
+anything from from doing the problem.
+>> Yeah. Yeah. Exactly. Yeah. And that and
+that's that was um
+I'll just sh I mean from from a couple
+of the other people that I looked at you
+know that are kind of like here you okay
+you know do these learn these in in
+eight weeks kind of thing. They're
+they're talking about um you you only
+spend 10 or 15 minutes on a problem and
+if you can't sol you know find the
+solution that you look at the answer cuz
+um there's so many um that you have to
+go through and you have to kind of build
+that like that idea like you you like we
+were saying we don't know math you know
+some of us aren't heavy in math or in
+this it's
+if you haven't seen it you just don't
+know, if you're not already, you know,
+intuitively into the solution, then
+you're just going to be hitting your
+head against the wall and and so you
+have to see examples of it.
+>> Um, and then you can go on a after you
+see a few examples of it, then you can,
+you know, go on and tackle,
+you know, more natively.
+Yeah. Something like that.
+>> Definitely. Yeah. It's funny that you
+mentioned that it's in the blind 75. I
+probably pulled it from here, honestly.
+>> Yeah. I I'd heard you mention it before,
+so I just thought I' I'd throw that out
+that because one one of the videos
+actually did mention it. It wasn't
+looking at it because of that, but um
+they they did mention, oh yeah, this is
+part of the Blind 75. And
+>> yeah, the blind 75 is actually pretty
+pretty old now. I think people even
+consider it like almost outdated. But I
+mean, it's not cuz it's still a good
+represent representation of everything.
+Um, but I realized last week that I
+actually showed these in the wrong order
+because I I had wanted to cover both of
+them. There's insert interval and then
+there's also merge intervals.
+>> Yeah.
+>> And merge intervals is exactly how it
+sounds.
+It is
+>> I looked at that one but I didn't solve
+it.
+>> Well, you have solved it already just in
+like essence of doings.
+>> Oh, really? It's simpler than insert.
+>> It is. So,
+>> I didn't look at it very closely. I just
+knew that it was
+>> Yeah, I messed that up because I
+>> That's what I was gonna do after insert
+because
+uh we were assigned insert.
+>> Yes. I mean, well, you still could, but
+you've you kind of already have done it.
+I meant to show this one first and then
+show the other one, but I
+>> Oh, okay.
+>> I didn't I did it backwards. So it's
+you're given the u an array of intervals
+where they have the start and end same
+thing um but instead of them being
+non-over overlapping some of them may be
+overlapping and so you are meant to
+merge them down and then return the
+final non-over overlapping interval. So
+basically what we had what I had just
+discussed was like all right if we just
+take the new interval pop it into there
+sort it then you'll have the full list
+of intervals but there will be overlaps
+in there. So then your goal is to merge
+them down. And that is essentially what
+this problem is. So you're given in this
+case 1 and 3, 2 and 6, 8 and 10, 15 and
+18. So in this case 2 and six and one
+and three are actually overlapping. So
+they're all still sorted. 1 2 8 and 15,
+but 1 and 3 and 2 and six are
+overlapping. So then you merge them down
+to 1 and six. Leave the remainders of
+eight and 10 and 15 and 18 and then
+that's what you get for the final
+answer. Similarly for this one
+you have two in this one. They overlap
+by the start and ends of each of them.
+So you merge that one down into one and
+five. So basically it's this. We broke
+down the other problem into both an
+insert and a merge kind of task or like
+challenges like many challenges inside
+of the overall problem. This one
+specifically focuses on just the merging
+of the intervals.
+>> So just my my last line.
+>> Yeah, pretty much your your last line I
+think would
+should in essence solve this one. So
+yeah, that might be a oneliner for you
+or a threeliner pretty much.
+The for loop and then the condition
+>> and then return.
+>> Um, so if you want to work on that one,
+that's fine. You already know how to do
+it.
+But they're kind of a pair. So in the
+blind 75, they introduced this one and
+then they introduced the insert one,
+which adds that
+>> that added challenge on top of it. It
+it's funny that this is a medium. Like I
+could see where insert would be a
+medium, but I don't think this one
+should be a medium.
+>> I could definitely see this one being a
+medium. I mean, you said you were like
+very familiar with index manipulation
+and workflows. I don't think coming
+right out of mod 2 that everyone has
+that same level of confidence.
+Yeah,
+>> because I I think there's quite a bit of
+like consideration for how to
+compare the intervals at each
+um compare the indexes of each of these
+intervals
+within an O of N solution like what you
+would have O of N squared probably
+definitely but not O of N.
+But yeah, I think still both good
+problems to work on. And if you wanted
+to start with this one as someone
+viewing, if you wanted to work on this
+one first and then try the insert one, I
+think that that's the proper
+progression. We kind of did it
+backwards.
+So that's fun. So those are two more
+problems from the blind 75, which means
+we will have worked on
+13 out of 75 at this point. So we're
+slowly getting through it, everyone.
+All right.
+So,
+I still need to record
+the video I promised from last week of
+kind of talking about the sliding window
+implementation on the problem that we
+had covered from the previous Sunday as
+well as just kind of like a general
+overview of using two-pointer and binary
+search in the confines of that specific
+problem we had talked about. um just so
+that you can see take it out of mod 2
+from where you had to work on how to do
+a binary search to the challenging part
+of how do you implement the binary
+search to solve a problem. Um and then
+there is a problem that we can look at
+later that takes the concept of binary
+search where you have to use the idea of
+binary search but you can't use the
+binary search specifically
+um but you can use the idea of how it
+works of doing the splitting and like
+checking in in the halves of your phone
+book to solve a specific problem with a
+unique edge case right so those kind of
+series three series of steps um
+so I will record that sometime this week
+probably and post that so that we can
+start again on Sunday with some new
+problems and knock all that stuff out of
+the way. So, I just have to find the
+time to do that. Um, yeah, we'll start
+with something new on Sunday and that'll
+be it. Thank you everyone for joining.
+Any questions before we close out?
+Cool.
+Brian, where where are you in are you
+still in Montu?
+>> Uh,
+well, I got all the way down to
+passing the technical interview.
+>> Yeah.
+>> So, that's basically what I've been
+working on is this.
+>> So, I mean, I've got Yeah. All of the um
+I think the last one was what? list uh
+linked lists. Isn't that the last part
+of mod 2?
+>> I think
+>> basically
+>> and then stacks and cues.
+>> Oh, really?
+>> Implementing the class of stacks and
+cues.
+>> Okay. Well, yeah. Um
+yeah, I'm pretty much
+all the way through it with the
+exception of the Java stuff
+>> which is optional.
+>> That's like extra. Uh, I think that's I
+don't think that's required.
+>> No.
+>> But yeah, I mean this is basically
+I think this is what's keeping me from
+the the internship phase or whatever. Is
+that is that right?
+>> Well, the next step would be explorer
+phase.
+>> Oh, okay.
+>> Which is where you start working on like
+building apps full
+>> tickets and stuff. Is that what like
+tickets?
+>> Yes.
+>> Okay. So yeah, I don't think I can do
+that until I pass a tech interview.
+Right.
+>> Right.
+>> Okay. Well, that's where I'm at.
+>> Okay.
+>> Yeah, because I mean I think you're
+you're probably ready if if you wanted
+some kind of guide on that.
+>> We'll see.
+>> All right. Thank you everyone. We will
+see you on Sunday.

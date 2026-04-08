@@ -1,0 +1,1328 @@
+All right. So, thank you all for joining
+me today on this Wednesday day.
+Wednesday evening, no afternoon. I'm all
+tongue tied because we were talking
+about time differences. Um,
+so today is Wednesday and we are
+planning on doing a couple at least one
+mock interview. Um, I think Linda has
+already said that she's open to
+volunteering, but I will open up the
+stage for everyone. Before we get
+started though, does anyone have any
+questions they'd like to ask about the
+tech interview process or just any
+questions at all?
+Okay,
+everyone's rock solid, ready to go.
+Um, so I have one problem in mind
+and if we have time we can do two, but
+who is interested and open to being our
+guinea pig today?
+>> I can do it, but I defer to anybody who
+wants to go first.
+>> Okay.
+All right. Well, it looks like it's just
+you, Lind.
+>> Let's do it.
+>> Okay.
+I'm going to put a problem in the chat
+if you want to open that and share your
+screen.
+>> You You didn't put it in yet, did you?
+>> No, I haven't put it in yet. Oh, okay.
+>> Okay, there we go.
+>> There it is.
+Okay, let me share my screen.
+And let me see. Let me try to find the
+problem.
+Do you see it?
+>> Mhm. Okay. So, like we discussed um
+before, we'll give you a few minutes to
+read through. No more than like five or
+six minutes
+>> or five to 10 minutes. I'll give you 5
+to 10 minutes.
+>> Um read through it. Feel like until you
+feel like you get an understanding of
+it. explain it back to us and then we'll
+go from there.
+>> Okay, sounds reasonable. Okay.
+Okay. Um, first of all, can you guys
+hear me?
+>> Yes.
+>> Okay, good. Um, okay. My interpretation
+of the problem is that, um, we're given
+three arrays.
+consisting of three numbers which are
+the sides of a triangle.
+Um
+the first instance is equilater
+equilateral triangle. If all three sides
+are the same uh you return equilateral.
+So what I would be looking at is I would
+be reading the list um and
+if each element of the list is equal if
+it is the same I would return
+equilateral
+um scaling that well there they didn't
+put an example in here for isosles
+but if it were put in there uh I would
+be looking for something like um 3 44
+where two sides are equal
+um and one side is not. Uh the third
+one, the third example of scaling which
+is a little bit more involved.
+Um and I really don't uh follow their
+explanation too well. Um except the part
+that I do understand is that the sides
+are not equal. So I would again be
+looking at each element um in the array
+and determining whether or not uh all
+three were equal, whether or not two
+were equal or whether none of them were
+equal. So uh for example in the first
+instance the equal I would ask basically
+for um each for I in
+that list for I in let's say call it
+numbum for I and numbum um if all I's
+you know if and see this is the part
+that gets interesting because I don't
+quite know how to put that in code but I
+would be asking asking. I'll just start
+doing my pseudo code right now.
+Um, if
+all sides
+equal
+return
+equilateral
+If
+two sides
+equal
+return
+isles
+How do you spell that?
+If no sides equal
+return
+scaling.
+Okay, now this is where it gets
+interesting how I iterate through them.
+Um if all sides um and our input is nums
+uh or
+I ends
+if
+I
+equals
+I equals I.
+Okay, I'm
+okay.
+It's permissible for us to do a Google
+search and that's what I'm going to do.
+Hopefully I can ask it something this
+nature. Um,
+>> I would say probably not for this one.
+>> They won't let you. Oh, I I can't do
+this.
+>> Okay, let me wait. Let me get out of it.
+Hold on.
+>> Okay. Um, okay. So, let's see.
+Well, I know how to iterate. So, for I
+in nums,
+if I =
+I
++ 1, I don't know if this is right. Um
+actually wait a minute
+if all elements what I really want to
+say is if all elements um in nums are
+the same for the first one I want to be
+able to say that it's equilateral but I
+don't know quite how to say that. So, um
+let's see if I
+So, instead of trying to brute force
+through it, let's take a step back and
+think about what do you need? What piece
+of information do you need to do that
+step?
+Um, when you say that stuff, uh, you
+mean to look at the look inside of the
+array and determine whether or not the
+elements are equal.
+>> Yes. So, what pieces of information do
+you need to determine that?
+>> Um,
+I need to uh be able to look at
+they're integers. I have to be able to
+look at each integer in the array and
+determine whether or not they're the
+same.
+>> Okay. So, what piece of information do
+you need to do that?
+>> Um, I need to feed something into it. I
+I need I need to um basically feed this
+in.
+Um,
+see for eye and nums.
+If I
+equals
+I don't know if that's right either. Um,
+let's see.
+>> Right. So, what pieces of information do
+you need to do that? I don't know what
+you're thinking right now. So
+>> I I I need I'm trying to figure out what
+a piece of information I need to
+actually do this comparison. I mean I
+could say something like um if I and
+nums equals three if because I know what
+the input is. I mean if I equals three.
+>> So then it sounds like you need to know
+what what the what the integer value is
+across the array, right?
+>> Yes, I do.
+>> So that's a piece of information that
+you need.
+>> Okay. So, how would you
+collect, store, treat that piece of
+information?
+Um,
+okay. Um,
+yeah.
+for I am
+if um
+if actually maybe I don't need that for
+loop. Um
+let's see for I am
+um if
+oh
+if
+I want to say something to the effect of
+uh
+for I in
+length
+no
+because we do we are dealing with the
+ray
+nums because we are dealing with arrays.
+Uh I need to be able to look at nums
+one.
+I mean in just rooting it out I would
+say if nums one equals
+nums 2
+not nums two but nums
+one
+equals
+nums
+two
+because all of these are It's oh yeah
+cuz all of them are uh the length all of
+them have length of three. So I would
+just in longhand I would be saying if
+nums 0 equals nums 1 equals nums 2 um
+then
+the term
+equilateral
+and
+let's See if
+>> Well, so let's pause there.
+>> Yes.
+>> How are you going to test that?
+>> And do you need it in a for loop?
+>> Um, let me see. Or I No, actually I
+don't think I need the for loop to tell
+you the truth. I'm going to get rid of
+it.
+Actually, I'm going to really get rid of
+it.
+Okay. Um,
+so this is our first condition up here.
+See if I have it right.
+That right. Okay. Uh, if nums one equals
+nums zero. Okay. You see it? If it
+equals that and return equal zero. Um,
+okay. Uh, would I test it just by
+running it?
+>> Mhm.
+>> One of them is right. Okay, look, I
+don't know about you guys, but that's a
+huge first for me to do something like
+this to get a case that actually win.
+So, I'm going to sort of bask for one
+second and continue.
+>> So, let's scroll down and look at that,
+though.
+>> Okay.
+>> Um, so it's going to be on the You have
+to click on the green one.
+>> Oh, sorry.
+Click on case.
+>> Yep.
+equilateral and I got equilateral. Okay.
+So, so far so good and I that was what I
+was trying to get. So, okay. The next
+one is um Els
+you know there's so many permutations of
+this. Oh, maybe not so much numbs.
+Okay.
+Let's see if does he have to
+or Oh, I think I should or
+turn this off.
+No, that didn't do it.
+What were the two case? Wait, what was
+case two? Hold on. See what case two
+was.
+Okay, they expected it. Okay, so I get
+it. So, we're only really testing for
+two of them. Is that it? And not three.
+Okay, because the samples that we're
+being given are only for equilateral and
+um isos uh equilateral and scaling. So
+that actually simplifies it a little
+bit. Uh
+actually else if or even just else. I
+mean yeah. Okay, I'm going to go for it.
+Else
+return scaling
+dance. Happy dance.
+Well, that's just the test cases, not
+the that's just the samples.
+So, run submit. Oh, okay.
+Where? Oh, it's up here. Okay. Submit.
+Okay. I knew it was gonna I knew I
+couldn't ignore Isoselles. I knew it.
+But, you know, I didn't exactly
+uh Let's see what it's saying, though.
+It expected Isoselles.
+Um
+I feel like uh perhaps maybe I should
+put Okay, I'm going to go back over
+here. Um Elsa,
+>> just hit control- Z a few times.
+Okay. Control or command Z.
+>> Sure. If you're using a Mac, then yeah,
+I'm using a Mac.
+>> I don't use Mac.
+>> So, do it again.
+>> Yeah.
+>> Okay.
+>> Keep going until you get back to your
+former statement.
+>> There it is. Okay. So, my LSIF was um
+I need two sides that are even.
+Um, so I think what I'm going to do is
+instead of put um cuz see this one, it
+didn't come back right when I had this.
+Um,
+but I'm going to continue because the
+clock is running. else.
+>> Okay. Now submit it again.
+>> Mhm.
+Oh. Oh, it's up.
+>> All right. Scaling and it expected none.
+Um, okay. The numbers.
+>> So, go back through the problem and see
+where it might be expecting none.
+>> None. Well, the problem is I recall it.
+See, let's go over here.
+>> It's on description at the top.
+>> Okay. Um, as I recall it, none comes
+back um if it cannot form a triangle.
+Uh, return a string representing the
+type. Yeah. Okay. Or none if it cannot
+form a triangle.
+Okay. And I think the clue to this is
+when they were talking about scaline
+over here. This is I I kind of got lost
+a little bit from in their definition
+when they said nums plus well actually I
+kind of did that a little bit but I
+called it isosles instead of scaling
+where nums um plus nums zero plus nums
+one
+which is greater than two. See, now this
+lost me. Um, nums 1 + nums 0 plus nums 1
+3 + 4 = 7, which is greater than uh nums
+2 = 5.
+Okay, so they're saying that because
+the input numbers were three, four, and
+five.
+Since the sum of the two sides is
+greater than the third side, the sums of
+the two sides, not the sides themselves
+are greater.
+Okay, so I need to address that. Um so
+since the sum of two sides is greater
+than the third
+is greater.
+The sum of the two sides is greater than
+the third side.
+for all three cases. Therefore, it can
+form a triangle. So, okay, got it. All
+right.
+So, let's see. Else if the sum of the
+first is greater the sum of the uh first
+and second numbers, nums zero and nums
+one is greater than
+nums
+two. and say
+return isosles.
+Uh but that's not the only
+that's not the only combo or
+some
+nums.
+Um let's see
+one and two.
+is greater and
+return my sauces. Okay, I'm going to try
+that.
+Okay, what did I do?
+Okay. Else if and it's my else if line.
+Um.
+Okay. Unmatched.
+Okay.
+That one was un something was unmatched.
+Okay. Let's try that.
+All right. Um, let's see. Still
+unmatched.
+Okay,
+the sums. Oh, it must be one of these.
+Hold on. Nums one, nums two
+greater the sums of that and that.
+Okay. Well, first of all, let's go back
+here. Sums of that and that is greater
+than that. or some that
+that
+I got to have one there is greater than
+that.
+Okay, I'm going to take that out and see
+what happens.
+Uh, ant object is not iterable.
+And let's see. And it's that same line.
+Um, okay. Let's see.
+>> Scroll down a little bit so we can see
+the full error.
+>> Oh, okay. The full error thing. Wait,
+you mean right here?
+>> Mhm.
+>> Okay. Hold on. I'm going to move it up
+so you can see it better.
+Okay. Um, ant object is not iterable.
+It's talking about
+line 39
+um in the driver solution. py
+don't really have control over that. Um
+ant object is not iterable. Okay.
+Okay. Um
+so what do you think that means?
+Well,
+I know that uh strings have more
+flexibility than integers and
+I am trying to iterate. Um
+but but you know the the thing about it
+is it worked up here if but I'm not
+iterating. I'm comparing. Okay. Um maybe
+it's the ore in here that's giving me
+problems. I'm going to take it out and
+I'm going to separate the lines.
+Okay. Um I'm going to see if this works.
+Uh if the sum of nums uh zero and nums
+one
+and that is in the parenthesis greater
+than nums two.
+still not iterable.
+Um, what is
+>> So what might that tell you?
+>> Int
+I have evidently mixed up strings and
+integers somewhere. Um,
+oh wait a minute. Um,
+okay. That was just an equality
+statement up here. I'm getting into
+trouble with using I think but I need it
+though. Uh, else if the sums of uh num
+zero and nums one is greater than nums
+two.
+Um, I don't quite know what they're get
+cuz I thought that integers you could do
+mathematical operations on integers and
+you know what I'm saying and it fits
+with this. I mean I'm doing the sum of
+two numbers and I'm saying if the sum of
+those two numbers meaning those two
+sides is greater than the third side.
+Um and I don't know why it says um the
+int object is not iterable. I'm not I am
+ah okay let me pause for a second. Um
+if some numbs
+So before you do that, let's maybe look
+up Python sum.
+Okay,
+I better undo this then. Hold on. Let me
+go back to where I was.
+sum of a list. Okay, that's what I want.
+Okay, sum of a list.
+>> So, go to go to the geeks for geeks or
+actually go to W3 school's Python sum
+function.
+>> Oh. Oh. Oh. Oh my. Okay.
+Oh,
+>> scroll down a little bit more.
+>> Yeah. Oh. Oh, I I I think I'm I'm sort
+of seeing something. Okay. Parameter
+values iterable required the sequence to
+sum start. Um it's optional. Let's see
+the examples. Um, okay. But
+that is that is not a list. It's just a
+Well, yeah, it is a list. But hold on.
+Start with the number seven.
+Oh,
+so
+some
+So what does this tell you?
+The sequence to sum is iterable. I need
+a sequence.
+>> Um, and you know from looking at the
+example, the sequence is put in, you
+know, first number, second number, third
+number separated by commas, not
+brackets. Uh, I'm over here using
+>> Yes,
+>> it's just using a tupil. You could use a
+list.
+>> Okay. All right. because that was that
+was the first thing that that that got
+my attention. Um
+>> it just has to be something that is
+iterable.
+>> So you were passing a a list of strings
+comma separated but it only takes in one
+parameter or two total parameter values
+>> and
+list. Okay.
+Now when I was over Okay. Where am I
+now? Okay. Um
+>> okay. Okay. So, I want to pause real
+quick and take a look at this together
+if that's okay.
+>> All right. Of course.
+>> So, I think you got through a good bit
+of the logic and you were working on
+that that last piece of figuring out the
+none case, but I kind of want to step
+back and look at it from
+>> you. Did you cut me off?
+>> Yes.
+>> Okay. Thought something failed here. All
+right.
+>> I want to take a look at the problem
+from start to finish here.
+Well, not start to finish, but from
+the beginning.
+Give me one second.
+Add in it somewhere. I mean add in
+somewhere. Okay.
+Oh, I didn't even think of adding just
+plus.
+Okay.
+Do you want me to share again or do you
+want me to not share?
+>> No, I'm gonna I'm gonna start us over
+from the beginning here.
+>> Oh, okay.
+Okay. Here we go.
+All right, Linda. So, I want to kind of
+touch base again on those pieces that
+you walked through.
+>> Um,
+here. Let me I got to move some window
+pieces around. Okay, so just reading
+through this problem again because
+there's a lot of information here. You
+are given a zero index integer array num
+size three which can form the sides of a
+triangle.
+>> So kind of already you walked through
+this but a triangle can be equilateral
+if it's all all sides are equal isles if
+two of the sides are equal and scaling
+if all of its sides are different
+lengths.
+Um, however, they're giving this other
+case of none if it cannot form a
+triangle.
+So, if I was going to spell that out, I
+might put into my own words. You did it
+in your own words. I'm going to put it
+into my own words as well. Is that we
+have three, well, we have four cases.
+>> We have four return cases, right? Which
+is the
+equilateral
+isos. I'm not going to spell these,
+right? But you get you get the drift
+scaline
+or none.
+We know the conditions for these.
+Um,
+all three
+sides equal
+isles.
+Two sides equal
+and
+scaling
+>> none equal.
+>> All sides differ maybe. about no sides
+equal. So then what is none here?
+>> You know the only way I could figure out
+what none was is if they gave you four
+sides or two sides. Anything less than
+anything less or more than three sides.
+>> So if we look at our constraints,
+they're going to give us nums length
+equals three. So we can confirm
+right here at the top that nums
+which represents
+oops represents
+the
+I guess it's the best way to say that
+the sides of the triangle which
+represents
+sides of the triangle
+always going to have three
+values. So we're so that's telling us
+here in the constraints that we're never
+going to have four values, two values,
+etc. So we're always going to get three
+numbers in an array and we have to
+determine if they are one of these
+triangle types or none not a triangle.
+And then this tells us the potential
+values that we can see as the sides 1 to
+100.
+So that has not told us anything
+or this piece hasn't told us anything.
+But this tells us that we are expecting
+to get three sides every time and yet
+somehow it can not be a triangle. So
+then if we're looking at our example
+here, nums equals 3 three
+>> that's telling us the equilateral
+because it's all sides are equal. Great.
+That's easy to do. This one is telling
+us scaline.
+And I think the key phrase in here is
+that since the sum of the two sides is
+greater than the third side for all
+three cases, it can form a triangle.
+So that key phrase there, it can form a
+triangle tells me that the triangle none
+option comes from this this piece here.
+As all the sides are of different
+lengths, it will form a scaling
+triangle. So that's the second piece of
+information.
+It's confirming what we know. All three
+sides are different lengths. So it will
+form a scaline. That confirms that. But
+this is telling us that to be a
+triangle, what needs to happen?
+>> Um the two sides have to be greater than
+the third. The sum of the two sides have
+to be greater than the third side.
+>> In all cases, right?
+>> In all cases,
+>> all combinations might be another word.
+All combinations
+of
+>> two signs need to be
+>> greater than the third side.
+>> So for example, if this was 3, 4, and
+15,
+3 + 4 would be seven, but this one would
+be 15. And that sum would not be seven
+would not be greater than 15. So they're
+saying that wouldn't be a triangle. And
+I think that makes sense, right? Like if
+we
+sketch this out really quickly. Let me
+pull up a whiteboard.
+So, real quick, um Ruby, if you if we
+were in the middle of a an actual um
+tech interview, would you be okay with
+us looking up how do three segments not
+form a triangle?
+>> What do you mean? So I'm going to Google
+and saying how do three line segments it
+how do you know if three line segments
+can form a triangle and I did that and
+it said the triangle inequality theorem
+states that the sum of two sides two
+side lengths of a triangle is always
+greater than the third side.
+>> Yeah. Would you be okay with Would you
+be okay with that googling that?
+>> Yes, I think it does tell you in some
+obscure language, but if you weren't
+confident about that and you wanted to
+confirm what makes a triangle, yeah,
+totally do that.
+>> Okay.
+>> So, in this case, they're saying three,
+three, those are going to be the same
+length. So, we can easily form a
+triangle, right? But in this case, if
+one was three, one was four, and one was
+like 15,
+that's never going to make
+a triangle, right? Like that's going to
+be
+that's going to be something crazy. It's
+not going to make a triangle. So that
+theorem that we're that we're getting
+there,
+it's not telling us in clear language
+that's what it means.
+I mean, it kind of isn't. It kind of
+isn't. It isn't telling you this is what
+makes a triangle, but it is kind of
+telling you that at the same time. So,
+it's saying that if you do this
+calculation where you add each of the
+two sides together and they are always
+greater than the third, it can form a
+triangle.
+So, if we put that in our own words, to
+be a triangle, all combination of two
+sums need to be greater than the third
+side. Or you could also write that as
+um to not be a triangle.
+Sum sum of two sides
+will be less than the third side.
+So either of those kind of the flip flip
+of the same coin,
+but that would be our none case.
+So in writing out the actual code for
+something like that, would you have to
+go um something like sum of num zero
+plus uh sum sum of num zero comma sum
+one
+greater? I mean would you have to write
+out all all of the possible combinations
+of that?
+You know, like num one, num zero and num
+one is greater than num two. Uh num one
+and uh let's see, num two is greater
+than num zero, you know. Um
+would would you have to spell all that
+out in your code or is there like a
+shorter way of saying that? Because my
+default would have been and you saw what
+I was trying to do
+>> was was to actually spell that out. You
+know, we're looking at the sum of two
+sides and is it greater than the third
+side and you have to name the three
+sides. So you go num zero, num one
+greater than num two, num one, num two
+greater than num zero, and I guess num
+uh what is it? Yeah, that would pos that
+would probably be it. You just have
+maybe two of them.
+>> Yes, I think you would have gotten there
+eventually. Um, you were on the track of
+getting the sums right. We just need to
+figure out the right way to sum them and
+I think you would have gotten to that
+point
+>> and then figure out how to add in the
+other logic. So, what I wanted to do is
+take a step back because we were taking
+the problem in parts, hitting obstacles
+and then going back and figuring out
+well what's going wrong. I think in this
+case we want to understand all of the
+conditions up front so that we can code
+with those in mind instead of kind of
+hitting obstacle going forward hitting
+obstacle going backwards. I mean you're
+always going to hit an obstacle or not
+always but most of the time you are
+going to hit an obstacle even if you
+like have a great plan up front but
+going in with no plan you're confirming
+like you're like confidently saying I'm
+expecting to hit some obstacles that I
+have to figure out. So, I kind of want
+to spin that approach and say, what were
+the things that we were expecting? We
+were expecting
+one of these four and then how do we
+know we're going to get them? We know
+we're going to get them if this is true.
+If this is true, if this is true or if
+this is true, right?
+>> Yeah. I have a couple things I wanted to
+add. So
+on the list, if we sort the list, we
+sort it from, you know, either the
+greatest number first or the lowest
+number.
+>> Oh, hold on. I'll pause you right there.
+I I like what you're saying. I just want
+to I want to talk about something first
+before we do that.
+>> Yeah.
+>> So in this case, it's telling us that it
+is both a triangle and because all the
+sides are different lengths that it will
+form a scaline. What else might these
+two independent statements tell us? That
+it can form a triangle and all the sides
+are different. What does that tell us
+about some of the other cases?
+>> That it cannot
+um even though they're different, if it
+doesn't equal
+um if it's not greater than the larger
+size, then it cannot form it.
+>> Right? So that statement it can form a
+triangle or it can't form a triangle
+might apply to these other cases. Right?
+So we saw that a scaline can be a
+triangle but it can also not be a
+triangle. What about isocesles?
+If we have two sides that are equal. So
+if it was 3 three and some other third
+option, could we expect to always have a
+triangle or is it possible that we might
+not have a triangle with that third
+number?
+you well first of all you can narrow it
+down using the set function because if
+you have two that are equal the set
+function will eliminate the duplicate so
+that means you would have two numbers
+>> right but I'm not talking about from
+like a coding perspective operations to
+perform I'm saying from a high level
+from a from a a logic level can we say
+that an isosesles is always going to be
+a triangle or is it possible that it
+won't be a triangle based on the numbers
+they get
+You know, I think that discussion um
+about the the sums being greater than
+the third side only pertained to
+scaling. I don't think it pertained to
+isosles.
+>> So, how can we be sure of that?
+>> Uh well, the discussion was under
+example two which dealt with scaling.
+>> Uhhuh. So if we had something else like
+let's adapt that to be
+isosles. So if we have two sides that
+are equal
+>> and one
+call it x for the moment that is
+different that would make it isoclesles.
+Right? We all the only condition we need
+for isosles is that two sides are equal
+and the third side is different.
+>> Right?
+So then if we're thinking about what
+makes a triangle,
+we need the third one to be what?
+Well, I mean, you know, the thirds
+are are we talking still about
+>> is six.
+>> Yes, exactly, Russell. So if we're
+saying that to form a triangle all
+combinations of the sum have to be
+greater than the third option
+>> third. Okay.
+>> So three and three six and so it would
+have to be greater than six.
+>> Exactly. So if we broke these down into
+nums 0 1 and three or sorry 0 1 and two
+1 + 2 would have to be less than x. So 3
++ 3 6 would have to be less than x or
+3 + x would have to be less than or yeah
+less than three so on and so forth.
+So the order of the conditions need to
+be.
+>> So for example, if this was 15, that
+would not be a triangle because 3 + 3 =
+6 would not be greater than 15.
+Not a triangle.
+Triangle
+versus we know that it has to be less
+than six here because of that two sides
+thing that they've spelled out for us,
+the theorem. So if it was five, would
+that still work? 3 + 3 = 6. That's
+greater than 5. 3 + 5 is 8.
+That is greater than 3. So that's going
+to work. And again 3 + 5 is 8 greater
+than 3. So that's going to work. This
+would be
+would be a triangle.
+So in that case we can have
+isoclesles
+be true, but it being a triangle not
+being true.
+Does that make sense?
+>> Yeah.
+>> Okay.
+>> So, what about equilateral? Is it
+possible that an equilateral will ever
+not be a triangle?
+>> Well, I mean, all sides are the same
+length. And so,
+okay, let's go. 3 + 3 is six.
+>> The two sides together. And so, that's
+greater than the third side. You'd
+always have that. It would just repeat
+the second, you know, like. So yeah,
+you're gonna always have a a triangle
+with um an equilateral.
+>> Exactly. So I want to break these down
+into two into kind of one format.
+>> Um so
+>> if it's equilateral and all three sides
+are equal, this will
+>> always be a triangle.
+>> So you're saying we had we I should have
+put that test in there, too. Uh not
+just, you know, for example, like with
+the equilateral, are all sides equal?
+Well, yes,
+>> but not only it's but it still would
+have passed, but that test should have
+been in there, too. U especially, you
+know, when you get to the second
+instance where you saying, are the two
+sides equal? You know, okay, well, is it
+a triangle? And in the scaling, well, if
+none of them are equal, can it still be
+a tri? But it's two tests. It's not just
+the length of the sides.
+>> That's right.
+>> Okay.
+because we're trying to account for that
+none piece. So we need to check if it is
+a triangle in which case not if it's
+equilateral but if it's isoclesles we do
+still need to make that triangle check.
+And if it's scaling we also need to do
+that triangle check. They kind of told
+us that in the example.
+>> So these are all the factors that I'm
+pulling out of this question or this
+problem
+as something that we would need to
+evaluate. Now, when we get into thinking
+about the actual code, that's where
+those impacts happen. That's where
+you're building out your logic of, okay,
+what's the first then easiest thing we
+can do?
+Check if it's equilateral, right? That
+was a great place to start.
+That makes sense. Now, how you do that
+is up to you. Collateral lateral
+first, easy to do, right? and would
+always be a triangle.
+>> And then for the next piece, you could
+right, what's the next easiest thing to
+do? Check for isosles.
+>> Yeah. Are two sides equal.
+>> Isos is something like that. I know it's
+spelled out right there, but I can't be
+bothered. Check for isosles. But then we
+also need
+need the triangle check. So then that's
+where you get to what does the triangle
+check look like?
+That's where you need to figure out how
+to do the summing
+element summing summing
+how I guess how do I want to write this
+um
+determine approach to sum sides to check
+for
+triangle or not.
+And then that might be something that we
+can reuse for the last piece is if it's
+a triangle, right? If if we know it's a
+triangle, we know it's a triangle,
+then we can check
+for scaline
+or isosles.
+So that might actually change our
+approach then is that if we need to go
+so we check for isosesles but we need to
+do the triangle check okay determine the
+approach for the sides of the triangle
+then the next check would be to see if
+it's not isoclesles
+and also need to check for a triangle.
+So we need to see if all the sides are
+different and if it's a triangle. So at
+that point maybe we would restructure
+our approach to say check if it's
+equilateral
+then check if it's a triangle and then
+if it's a if it's a triangle but it's
+not equilateral then we can determine if
+it's scaling or isoclesles.
+So that might be my my full refactored
+approach there is check equilateral
+first and then I would take that out
+determine if the determined approach for
+summing sides to check if it's a
+triangle or not. So if we know it's a
+triangle then we can check for did I
+delete that isoselines
+or scaling.
+So that might be my my pseudo code there
+>> or my first layer of pseudo code like
+logical approach to coding.
+And then if we wanted to break those
+down into pieces of how do we check if
+it's equilateral, how do we check if
+it's a triangle, and then how do we
+check if it's isoclesles or scaline.
+Those are three concrete things that we
+can focus on. And that's where you get
+into your code that you had going for
+us, Linda, which was starting to do it
+was starting to look like this towards
+the end. But can we do that faster by
+preloading some of this logic check to
+the front?
+>> So you did check if it was equilateral.
+Great. We know how to do that. We just
+took since we always know it's going to
+be three sides, we're just checking the
+does num one equal num num zero equal
+num one equal num two. Super easy thing
+to do. Might as well keep it. Then the
+next piece we would do is check for the
+triangle. And so it's giving us a
+guideline here of adding those sides.
+Now, this is where I want to go back to
+Lisa because Lisa had a great idea here
+of what might that look like if we
+sorted
+sorted the list
+sides.
+Then in the case of well, it would look
+exactly like this. and the 3315 or 335,
+then we're going to know right away
+if something if the first two are going
+to be equal because we've sorted it. So
+the ones that are the first two are
+going to be the closest to each other.
+So if those are not the same, then it's
+going to be scaling, right? Because at
+this point, we've already determined
+that it's not equilateral.
+So if the first two were equal, it's
+isoclesles. If they're not, it's
+scaling. That would be a very simple way
+to determine this piece.
+So maybe I would actually put that down
+here.
+Um, but we might do the sorting up
+front. Who knows? Sorted this list of
+guides if first to
+equal
+iso otherwise
+scaling. That's a simple check.
+And then we just need to do that
+determining if it's a triangle. So it
+does give us a guideline here. We could
+do this piece exactly of just adding all
+of them together. Or we could try to
+find an efficient way to do that. And
+this in this case, I think it's fine to
+just kind of do the brute force. Just do
+exactly what it tells you and do all the
+sums and then put that in a a little a
+little block and say determine if this
+is a triangle. Um, but there might be
+other ways to do that as well. Does that
+make sense?
+>> Yeah. I I think you only needed to do
+one test.
+um one piece of code instead of all
+three of those because since you sorted
+it your lowest numbers
+um
+have to be greater because if none if
+they're less than that means it's none.
+>> That's a great point. So then what
+you're saying here is that
+we can kind of merge those things
+together. I don't know where I want this
+to be. sort this decides if the first
+two scaling. Yep. Yep. Yep. Um but we
+can also use this
+for the triangles. So if we just say
+sort the list
+um
+let me
+break this down. Okay. So in this
+example sort the list of sides.
+we would easily be able to tell because
+we would only need to sum
+>> the first two
+>> the first two numbers. So in this case 3
+plus 3 is six. It's going to be greater
+than that third one which is five. So we
+can pretty much assume from then on,
+right, that like if I did 3 + 5, it's
+going to be greater than the the first
+one because that's the smallest number.
+Um and then same case in this one. 3 + 3
+is six. it's not going to be greater
+than the 15. So we already know. So
+that's again that's a great that would
+be the the non brute force approach.
+That would maybe be a optimized approach
+optimized check
+for triangle.
+But you wouldn't have to know that right
+away. Like you could just still do the
+sorted list piece for checking if it's
+isocles isoclesles scaline and then
+still do this brute force summing. But
+since you had that insight, that's
+perfect. That's a great way to shortcut
+that piece. Um,
+but just for the purpose of where we are
+in the problem where I'm like, I haven't
+even jumped into code yet. I haven't
+even jumped into thinking about how I'm
+going to explicitly do each of these
+pieces,
+I think it's fine not to know that right
+off the top. But this is coming together
+now. Even with just those few little
+edits there, I think this would be a lot
+easier to code knowing that information
+that we kind of talked about, right?
+Okay. So, I just wanted to take it from
+the top just to make sure that we all
+kind of understood what the the final
+return would need that we would need all
+of those checks for these four cases of
+the conditions and then how we're kind
+of spelling out what those conditions
+are and how we can determine when it's
+going to apply, when it's not going to
+apply. And then finally getting into the
+logic of how do we do those checks and
+kind of breaking it down from well this
+is a big problem where I have to
+determine if it's these things and I
+have to do some math at some point what
+are the things we actually need to check
+we check if it's equilateral if it's a
+triangle
+and then if it's one of the two types of
+triangles that are not equilateral right
+those are just three simple things
+versus the whole list of things that we
+were kind of thinking about at the top
+of the
+Yes, Mindy.
+>> Oh, okay. Didn't mean to raise your
+hand. Got it.
+That was elegant.
+>> Um, Mindy, you are on mute if you don't
+mean to be.
+>> Never mind. How's that?
+>> Sure.
+>> Great. Great, great, great.
+>> All right. Do we have any questions
+about this?
+>> Okay.
+>> I know I I don't think I would come up
+with that formula unless I would had to
+work through the
+explanation of scaling.
+So that that's the the whole key
+to determining
+with the exception of equilateral
+key and if you
+sort it correctly
+on the if if then statement
+>> you could short code a little bit.
+>> Yeah. I think the one thing that I want
+to point out because it it came up a few
+times is and I I like this. I'm glad
+that everyone's willing to just jump
+into solutions of like, well, what if we
+sort it or what if we do this? But do
+you see how like jumping to that code
+piece right away or even often enough in
+your early stages can sometimes shortcut
+your progress of the whole problem if we
+haven't really thought about the full
+approach to the problem yet? jumping
+ahead to say, "Oh, well, I know how I
+would solve part one of three, but I
+don't know what the full three-part
+process is yet." Then you're kind of
+like you're jumping ahead of where you
+need to be.
+Does that make sense?
+>> Yeah, it does to me because uh I said
+from the get-go, I wasn't quite sure
+what they were talking about in the
+portion where it said since the sum of
+the two sides is greater than the third
+side for all three cases, therefore it
+can form a triangle. I I kind of got
+messed up in that. Um,
+>> and
+>> yeah, and I think it's fine to read that
+for the first time and be like, I don't
+know what that means. But then once you
+kind of got to the point where you
+understood the rest of the problem, I
+think that's the point instead of
+jumping into code, going back and
+saying, all right, now let's try to make
+sense of this piece that I didn't
+understand before. Why are they telling
+me this? Why does it matter? And that's
+when we're looking back and we're
+seeing, okay, well, there's a none
+option. So, is that going to help me
+determine the none option?
+>> Can we thing too that none option I just
+thought I I just thought I had three
+options you know equilateral isosles and
+scaling
+>> but yeah
+>> and that's why
+>> again you asked at the beginning sorry I
+don't I I know you asked me at this at
+the beginning like do I have to write
+everything out no you don't have to
+write everything out and you and you you
+did write some things but you didn't
+write out the full thing um so no you
+don't have to do that but in this case
+they were telling us right here at the
+top and so I was seeing that when I was
+reading this of like, oh, we've got a
+lot of potential conditions that we're
+going to have to return. Maybe I would
+write those down.
+>> That's what I was going to say is I feel
+like your first thing was like, okay, we
+can return one of these four returns
+when you read none as and then you
+started going into well, under what
+conditions will it can return each one
+of those things. And that was for me the
+the approach that I mean I muddled my
+way through it but I think that
+clarified it is like okay there are four
+possible returns.
+What test do we need to do to return
+each one and then potentially which
+order do we need to test them in so that
+we can eliminate?
+>> Awesome. I'm glad that that was a
+takeaway for you.
+>> It's good. Um I we haven't I mean since
+we switched to doing the mocks only we
+haven't done this in a bit. Um but like
+usually the first thing that I recommend
+is printing out the nums making sure
+that like your parameters that come
+through match what you're seeing in the
+test cases. And then the very next thing
+I do is say well what do they expect for
+the return? In this case, they're
+expecting a string, specifically a
+string, not an integer, not an array.
+And what are the optional like what are
+the potential strings that we need to
+return? This, this, or this. And so
+that's where you need to be vigilant
+about not just saying, well, what is the
+return type, but what are the return
+conditions?
+And then you can break out, well, what
+are you going to do to approach the
+problem?
+So again, Linda, I think you did a great
+job and you are on your way to getting
+to the full solution. Um, I just wanted
+to make sure that we paused, took a step
+back and thought about how would we
+approach this from the beginning to
+maybe get potentially a cleaner, faster
+approach. You were getting there. You
+would have gotten the approach. I think
+with just a few tweaks, we can maybe
+shortcut some of the trial and error
+piece. I think you're always going to
+run into trial and error like no matter
+what, but if we can kind of do some
+upfront work to cut back on the trial
+and error, you're going to save yourself
+some time in the long run.
+>> Well, thank you.
+>> I think you did a great job.
+>> I do too.
+>> Okay, so we've gone a little bit over,
+but I did want to hit on all of those
+pieces.
+Um, yeah, great job, Linda. And
+hopefully everyone else kind of got some
+takeaways from both her approach and
+both the step back and kind of looking
+at the full the full problem. Does
+anyone have any questions before we
+close out today?
+I was I was just I had a comment that
+for me at least I don't know if it if
+it's the same for you Linda or anyone
+else that trying to work directly with
+the indices like num zero compared to
+nums one or whatever is just hard for my
+brain to kind of visualize as soon as I
+like write six of them out on a line I
+lose it. So I even though it might be an
+extra step, I have found myself just
+assigning them to their own named
+variables so that I can compare A and B
+and C rather than nums 0, one, and two,
+>> if that's helpful for you. It's it just
+kind of simplifies it visually for me at
+least.
+>> I like that. Yeah, that's a good idea.
+Yeah, great tip. Variable names are very
+important. Definitely when and in this
+case, it's because we know that there
+are only going to be three every time
+that we can confidently say, okay, side
+one, side two, side three, or a, b, and
+c. If we didn't know that, we may have
+to like kind of come up with a different
+thing. I think it's still a good idea to
+not just say like num zero, nums one.
+Um, if you can avoid it, sometimes maybe
+you can't avoid it.
+Yeah, great insight. Thanks, Russell.
+Any other thoughts or questions before
+we close out?
+>> Okay, cool. Thank you everyone and I
+hope to see you next week for more
+practice.
+>> Bye-bye.

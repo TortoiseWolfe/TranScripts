@@ -1,0 +1,1309 @@
+All right, welcome to this week's
+technical nailing the techn Oh gosh, I
+keep forgetting the the change. Nailing
+the tech interview. Today is Wednesday,
+so it is typically our solutions deep
+dive. Um,
+we covered Oh, Sunday's session was a
+little strange cuz we
+reviewed problems that we've kind of
+already seen before and looked at some
+solutions. I think Brian showed us
+through what his attempts at both of
+those. Uh, did anyone else get a chance
+to work on
+those problems? Top K frequent elements
+or the maximum average subarray? either
+of those.
+I got to work on the top K.
+>> How'd it go?
+>> Uh, finally found a solution right
+before class today.
+>> Oh, good. Can we see it?
+>> Okay.
+Not pretty.
+Sure.
+[Music]
+See
+Okay. Nice.
+22 desk cases. All right. So, what do we
+have here?
+>> So, um what I was I um started getting
+into the u dictionary stuff. M
+>> uh I moved it into a dictionary and then
+I did the counts frequency. You see my
+prints and I wasn't getting I got the
+you know the dictionary set right but I
+wasn't and obviously this was the first
+solution but that wasn't right. So
+I started I walked away from it. I came
+back this afternoon and I saw I'm like
+why am I redoing the values when I could
+look at the dictionary
+and
+this thing I reviewed the I was
+reviewing last Sundays what's the date
+>> and I noticed um uh how he was doing the
+steps so I said let me try that with a
+database
+so uh with the the hashtags. So um I did
+the step and then I started getting the
+right that used to come out. So
+if uh I did run the solution you run it.
+So
+>> so you have the counter which gives you
+the frequency and then what is most
+common doing here? most common is
+actually taking each value and doing um
+um making an index of each value as an
+index and then the count is the counter
+is actually doing um it's actually
+giving it a value of count. I sorted it
+in I sorted it the database and then I
+actually then I put the value of how
+many values we want to do since we don't
+know the value is going to be based on
+K. So I use that as the the how many to
+print out here.
+>> Can you um actually print out most
+common real quick?
+>> Sure. Um
+um it's actually printed
+Yeah, I want to see most common by
+itself though, not the sorted to the K.
+>> But you can leave that. Leave that. And
+then just add a new print.
+Yeah. This is one of the ones I had to
+walk away and come back. Yeah.
+Okay, that's what I was thinking. So,
+yeah, your return statement actually
+isn't like the sorted to the K actually
+isn't needed because you you kind of
+have it already in there. So you create
+a new list from the counter frequency
+item for item
+frequent in counts frequenc.
+So counts frequent is the counterf
+frequency and then you're you calling
+the most common method which is another
+part of the counter library that returns
+them
+returns all of the the dictionary items
+sorted already
+from the ones that are most frequent to
+the least frequent and then you added K
+in there which I'm assuming actually
+filters that to only the first K data
+sets.
+>> Right. Well, see, I was thinking like um
+I'm like I know I can do this in SQL,
+right? So, because it's select top and
+you put a number
+um when you want to do the the first top
+>> parameters and I say there's got to be a
+way and I see hashtag as a database
+count. So, there's got to be a way to
+figure to only display the top two or
+top five or whatever you want. So that's
+what um what K is description. I guess I
+didn't show the description, but
+>> yeah. Can you um can you change that
+print most common to a return? I want to
+see if that passes all of the test cases
+still
+>> if I'm like something. No, the the print
+up above the one you just made.
+>> Yeah. Can you turn that to a return?
+>> Yeah, sure.
+And then get yeah get rid of the print
+part too. Just return most common. I
+want to see if that
+like actually passes.
+>> Oh, and we need a lowercase return,
+I think.
+Cool.
+And then if you submit it,
+actually wait before you submit. Oh no.
+Okay, that's fine.
+>> Oh, that was just a run.
+>> Yeah. Go to your accepted tab.
+>> Okay. And then if you submit
+That's funny. It says it took longer.
+Probably because you're on Zoom.
+>> Um,
+>> yeah. So, you
+you added some steps there, but I still
+it still that's fine. Um,
+that still would have worked if you had
+extra stuff from the most common. Very
+nice. Cool. Yeah, Brian also mentioned
+that he was thinking of SQL when he was
+thinking about this problem and how he
+would do it in SQL. Um, so that's funny
+that you both kind of had that approach
+to it when you were thinking about it.
+Nice.
+>> Yeah. Um, I'm getting there. I'm not
+ready for the test yet, but I'm getting
+there.
+>> Now, do you feel confident about how you
+would implement these steps um without
+the counter library?
+>> Without the counter library? Um,
+>> yeah.
+Not yet. Okay. I mean, um I like doing
+it by the hashtag um and using the
+database. I was afraid of it for at
+first and then I I know it says afraid
+of it, but I I didn't understand it. Um,
+but I started doing some practices with
+it
+um before the challenge week and um and
+I actually started this before the
+challenge week and I I started looking
+at it again saying there's the answer is
+here and I know maybe I'm doing
+something wrong. So that's that's why I
+started looking at the values of the
+hashtag. So,
+um, but to answer your question, I
+really like the database, uh, um,
+mapping it into a database because it is
+much quicker for me for me to to
+understand that that makes sense.
+>> Yeah.
+>> Yeah. So, you're lucky that Python has
+that kind of shortcut there where it has
+some methods that you can use that are
+very similar to like SQL language. I
+don't know if every I don't think
+JavaScript is is as SQL friendly. I'll
+say that.
+>> No,
+>> no, no. SQL SQL's well
+um some I don't know. Some people can
+use SQL, some people can't. They don't
+understand it. But I don't know. Um,
+I I was
+like I said, I was watching that the the
+Sunday and I said, "I bet you
+that's got something to do with what I
+was I know we were doing you were doing
+a slider example, but u it's something
+Brian was doing and I don't know it just
+triggered that that moment." So,
+>> tell Brian thank you.
+>> That's good. love to hear it.
+>> All right, so let's actually take a step
+into this problem because I kind of want
+to talk about if you didn't
+have that SQL background, right? Or if
+you weren't sure how to approach it
+um in that same method or if you weren't
+aware of the counter library,
+what might you do? Right?
+So, we'll just review this problem again
+from the top. I know we've we've talked
+about this a few times now, but we'll
+we'll dive into it from
+beginning to end. So given an integer
+array nums and add integer k return the
+k most frequent elements, you may return
+the answer in any order.
+So what they're saying here is that
+they're giving us nums which is an array
+of integers that have certain numbers
+repeating and then we're given k which
+is another integer and of these numbers
+one repeats three times or two times
+there are three occurrences of one two
+occurrences of two and one occurrence of
+three. So in order one occurs the most,
+two occurs the second most and three
+occurs the least amount of times. So we
+want the two top most occurring integers
+from our nums array
+which is one and two. In nums one there
+is only one number and it occurs one
+time. So the one most highest occurring
+number would be one in that case. If we
+look at our constraints,
+nums.length, meaning the amount of the
+length of the nums array can be up to 10
+5th. Nums i. So the integers that are
+within the nums array can be anywhere
+between -10 4th to 10 4th. And k is in
+the range
+of 1 to the number of unique elements in
+the array. So we have three unique
+elements in here. So we know that K will
+either be 1, two or three. Um not
+because those are the numbers that are
+in here, but because it is between 1. I
+guess that's another way of saying is
+that K will be greater than or equal to
+1 and less than or equal to the number
+of unique elements in the array. So
+that's helpful to know because that
+means we're always going to get a K and
+we're always going to return something
+based on that K. like there's always
+going to be a value to return. It is
+guaranteed that the answer is unique.
+Okay.
+And then there is a second bit in here.
+Your algorithm's time complexity must be
+better than O N log of N where N is the
+arrays size. So that's just a little
+additional challenge
+which Brian did do. So that was
+impressive. Um, Lisa, do you have any
+guesses for what the big O complexity is
+for your approach?
+Oh, you're muted.
+God, how'd you know that?
+>> Um, it was um that it will not pass if
+it's not OG.
+>> No, that's not true. It will still pass.
+>> Really?
+Yes, this is just an additional
+challenge.
+So, it could even be worse than O and
+log of N and still still pass
+>> the uh when I'm putting into a hashtag
+that's a for loop. So, um that would be
+um I believe log no.
+>> Mhm.
+>> And then um the sorted which is what I
+thought would be O of login. So, I
+sorted it. But you didn't need to.
+You're saying I don't need to sort it.
+So then that most common what do you
+think most common is?
+Most common
+the method that you called
+most common would be um
+>> most common would be
+oh
+>> yeah so most common pretty much operates
+the same way as the sorted
+um I mean I don't think it's going to be
+it's not doing the exact same thing
+obviously but I it's going to have the
+same general idea where it's taking the
+frequency those different elements that
+are in the dictionary and then it is
+sorting them into
+most frequent to least frequent. So it
+is a form of sorting. I think it's
+probably on average going to perform
+better than sorted because it's working
+with unique elements in a dictionary. Um
+but yeah that that looks right to me.
+So,
+>> okay.
+>> What if there's any other information in
+here?
+Yeah, n log of k, but
+they boil that back down to n log of n.
+>> That makes that makes some sense there.
+So, in your case, it would be o n log of
+n. So, it's still a working solution and
+it meets the test cases, which is great.
+Um the next challenge then would be to
+get that better than in log event. Um
+there is kind of I looked around at it.
+There is kind of really only one way
+which is what Brian showed us last week.
+But there are different ways to approach
+what he did. I guess I should say. So if
+we follow your example again
+dictionary of nums by their frequency
+that is going to be the first step. I
+think there's really no way around that.
+We want to get what are the most the
+occurrences of each number in the array
+and we need to do that to return the
+output against that k parameter.
+And then we're saying if I'm going to
+put this into pseudo code,
+create frequency dictionary slash
+hashmap
+of the
+values
+in the nums array.
+And then we want some way to
+I'll even write it like that. some way
+to sort or grab
+the most
+most frequently
+occurring
+integers
+up to the
+k
+value
+and then we're returning
+an array. So I'll start with that being
+empty.
+Turn array of the
+k most frequent
+ins.
+Um it doesn't say anything if they have
+to be I don't know if they have to be in
+sort order. Like would it be wrong if I
+returned
+um
+21? I'm curious. Let's try that
+actually.
+No, it doesn't. It's so it doesn't care
+about the sort order on that, which is
+funny. As long as I get the right
+integers that are most occurring. So in
+this case,
+one occurs the most. So that's why they
+have it here. And then two would be the
+one that occurs the second most and then
+end of list because we have we only want
+the two k values. But they don't seem to
+care about what order we return them.
+That's not a huge deal, but I was just
+kind of curious.
+So we'll start with just an empty array.
+And then if we were going to look at
+that counter is a nice easy way to do it
+because
+it creates the stuff for you. And I
+guess actually what I'm thinking is that
+you could kind of consider that as like
+akin to
+um
+a template kind of. If I'm saying
+frequency is equal to
+counter
+nums.
+Oops.
+I could create a frequency dictionary
+myself
+or I could use a known
+method or library like counter to create
+that for me.
+which it does. So one with an occurrence
+of three, two with an occurrence of two,
+three with an occurrence of one, and in
+this one just that one one.
+Um, so in that way it is kind of like a
+template. It's it's like having
+something that does the work for you,
+right? But I think it's also good to
+know how to do it on your own as well.
+So like with any template, it's better
+to know how the underlying structure
+works in case you have to apply it in a
+new and a unique situation. So if we
+wanted the idea of a hashmap or wanted
+to use a dictionary for a specific
+purpose and not using a frequency, then
+we need to know how to build the
+dictionary in that kind of way. um so
+that when we do use the counter method
+we know that we are doing it safely and
+for because it's to save time and not
+because we don't know how to do it. Uh,
+so what would that look like?
+[Music]
+Nums. I want
+actually I guess I don't need to do I
+could just say for
+for num in nums,
+right?
+print. None. Just to make sure I'm on
+the right track there.
+One, two, two, two, three. Yeah. One.
+And then if I have my
+frequency,
+I'll just create that outside of it.
+And then how do we add things to a
+dictionary? Who knows
+equal?
+Okay. Um,
+>> so
+what what do I do here? Frequency
+>> plus equals
+>> frequency plus equals.
+>> Yeah. Or well
+>> or one.
+I mean, if you're going to use it as a
+counter.
+equals dictionary notes.
+All right. So, it seems like maybe we're
+close to something, but it seems
+unsupported. So, what other ideas do we
+have here?
+Maybe I
+add our key there, right? Because what
+does every dictionary need? A key, which
+we are saying would be the number from
+our nums array
+and an item or value. Another way to say
+that which in this case we want to be
+the frequency aka the number of times
+that
+number
+occurs in a dictionary in an array or
+list. So dictionaries would have the
+structure
+of
+Oops.
+Wondering why I was being weird.
+E actually it's usually key
+value like that
+and then
+you'd have a couple different ones.
+So following that kind of format, key
+value, key value,
+we can create it like that. Let's see if
+that changes anything for us.
+One.
+So it doesn't like that because
+we're doing a plus equal here.
+And if something doesn't exist, then we
+can't plus equal it, right?
+So we might say if num in frequency
+or frequency
+then we can plus equal it.
+Else
+we want to create that key value pair
+for the first time.
+Oops, forgot my cical one.
+Boom. There you go. All right. So, 1 3
+22 2 3 1. That looks good. So this is
+definitely a lot easier, right? Using
+the counter, but it's good to know how
+to check a key exists in a frequency.
+It's good to know how to modify existing
+entries in a dictionary or create new
+entries in a dictionary. And if we're
+using the counter to kind of speedun
+through creating a dictionary, which is
+fine, we still need to know these things
+so that when we manipulate this, if we
+need to manipulate the frequency
+dictionary that is created, we know all
+the proper keywords or the proper
+approaches to do that. Does that make
+sense
+for everyone?
+Going to assume yes.
+All right. So,
+>> quiet group.
+>> What was that?
+>> There's a quiet group.
+>> Yeah. Yeah. Today
+we're not we're not um seeing our usual
+rockus characters.
+Brian, Abu, our loud friends,
+Kai.
+So, these do the same thing.
+And I think it's good to be able to
+short shortcut these things, but also
+make sure that you are comfortable with
+the syntax and the creation of doing
+something if you're going to use a
+shortcut for it. Same thing with like
+the min and max methods.
+Like those are great shortcuts to get um
+you know the min and max in in an array
+in a string of integers and and whatever
+you're doing there, but you also want to
+make sure that you can get them the
+oldfashioned way. So knowing how to do
+things from scratch isn't required,
+especially for the technical interview.
+You can use these methods like minmax
+and counter.
+However, making sure you understand the
+basics of it is going to be a lot better
+for you in the long run as well.
+So that would be my my caution there is
+to make sure you understand the
+underlying principles. So now we've got
+our frequency dictionary.
+I'm going to
+keep the one we made.
+And then
+what do I say? Next thing we need to do
+is that
+And then
+next way some way to sort or grab the
+most frequently frequently
+occurring integers up to the K value. So
+if you use the counter library then you
+have to also be familiar with that most
+common. So then you could say frequency
+dotmost
+I believe it's underscore common
+and if we print that
+oops let me undo that there.
+It's also good to use these shortcuts to
+figure out what you want to do in the
+code.
+So print frequency most common.
+Oh, come on.
+So that's nice. So what it does here is
+that it takes and kind of gives you
+so the structure we had before was key
+value where it was one
+colon 3
+and 2 col 2 3 col 1. What this does is
+that it changes it into
+I think like a list of like tupils here
+or something. So we have the value one
+and it's three and then the two and the
+two. This one doesn't show it as well,
+but if we create our own little test
+case here
+or we add some other
+numbers
+that might better showcase that.
+So in this case, we'd want to return
+four and one because I added four as
+having more occurrences than 1, two, or
+three. And so then it also sorts it. You
+can see there. So four occurs, you know,
+towards the end of the original
+list. But then once we get the
+frequency,
+it kind of changes it so that most
+common is sorted in descending order, I
+want to say. So four being the most
+common with five occurrences, then one
+with three occurrences, two, so on and
+so forth. So that kind of does two
+things. It gives us a new format for
+this data and also sorts it in that
+order that we want. So we don't have to
+necessarily match this data, but having
+them sorted like that is kind of what
+we're looking for there. So you could do
+it like that
+or if we were looking at how to do that
+in a more manual sense
+there is a couple of ways to do it. So
+if we are ignoring this
+better than better than I came out my
+southern came out there better than O N
+log of N then we would not use the
+sorting method. But if we're considering
+just to get some test cases passing, see
+what we can do there, then totally let's
+start with the the brute force approach,
+if you will, and think about how we
+would sort that.
+So where do you see its processing time?
+That's only after you've submit. Oh, you
+mean like the big O or just like how
+long it takes to run it?
+Yeah. As far as the O N log of N, how do
+you know if you're could you say it'll
+pass either way if it doesn't meet that
+followup? So I'm wondering where you
+would the metric number.
+>> Well, you could know the
+uh breakdown of big O for your code. So
+in this case we know that creating this
+would run about O of N like Lisa said
+because we're doing for each of the
+value we're given nums as an input and K
+as an input. So for each of the values
+in the input that we're given we're
+running through those and checking the
+data points at each of them and then
+we're adding them to a dictionary. So
+that runs on O of N time. It also runs
+on O in space to create this frequency
+dictionary. But if you're still kind of
+getting started with big O and you're
+not sure how things break down, big O
+calc is really helpful.
+So in this case,
+I threw that in there.
+I didn't give it everything. I didn't
+give it the like what Nums is or where
+it's coming from, but I think it will
+infer
+though. It is struggling a little bit
+there.
+Yeah, I should grab that.
+Going to take out all that stuff though.
+Yeah, there we go.
+So time complexity O of N frequency
+stores each worst case dictionary we
+have size O of N as well. Yeah. So the
+loop iterates over all elements of nums
+which takes O of N time where N is the
+length of nums. Each dictionary
+operation checking if a key exists is on
+average O of one. So a key check is a
+constant check with dictionaries.
+So that's O of one. Overall counting
+process remains O of N. Additional
+operations not shown in snippet. Yeah,
+would affect the total complexity, but
+based slowly on this snippet. Yeah. So,
+it's even telling us based on the
+comment that I left in there that if we
+added sorting to the top K elements, it
+would affect that complexity. So, that's
+fun that it knows that. So, this is a
+good um website to use if you're not
+sure how to build out that O complexity,
+but definitely practice
+reviewing how to determine big O. Um,
+we've talked about it a bunch over some
+of my previous sessions. We b I always
+pull up the big O graph of like what are
+the most and least performing of them.
+Um, it just takes practice to kind of
+get familiar with what what things do
+what and what what operations or
+algorithms that you write lead to what
+level of efficiency or inefficiency.
+So in this case, sorting is by
+definition pretty much an n log of n
+Um
+how do you say that? I don't
+the complexity of a sorting algorithm is
+typically O N log of N. So in that case
+that would automatically put us in this
+bucket because N log of N would be a
+higher big O complexity than O of N and
+O of one. I'm going to do it. I'm going
+to pull up the graph.
+Big O graph,
+not big graph, big O
+complexity graph.
+Okay, cool. So O of one constant. It's
+basically just saying if I give you an
+input, you're returning that single
+input back to me. In log of N, we're
+evaluating either the full subset of
+what's given to actually no O of N.
+We're either evaluating the full subset
+of whatever input is given or a specific
+and constant subset of whatever input is
+given. O log is kind of like a
+dictionary or not a dictionary, a um a
+phone book where if I'm looking for a
+specific name and I break the phone book
+in half and I say, is it going to be in
+this half of it or this half of it and
+then break that in half? Is it going to
+be in this half? And you keep doing that
+until you get down to your name that
+you're looking for. That's log of n
+because for all of the inputs we're
+given, we're constantly like cutting in
+half.
+N log of n is basically the
+multiplication of an n runtime log of n.
+So if you were doing
+a log of n which binary search is an
+example of a log of n procedure where if
+you are given a
+actually binary search is in log event
+as well.
+There are how do I say this?
+Oh, I'm completely blanking. But if you
+were going through like a list of values
+and you were looking to see if No,
+binary search is log of I'm crazy.
+Binary search
+complexity.
+Logan. Yeah.
+So if you were given a list of numbers
+and you wanted to see
+where like the number four was in that
+list of numbers or if it existed in that
+list of numbers, you could do binary
+search which does the cutting in half
+based on a sorted list and once it gets
+to that value by cutting everything in
+half, then it returns its index
+position. So that would be an log of end
+function. So if you had a
+two list and you were saying for every
+integer in list one, can I binary search
+to see if it exists in list two? You're
+doing an O of N through the first list
+and then a log of N for using the binary
+search to compare against the other
+list. So that would be an N log of N. I
+know that that may not make a lot of
+sense. I'm not explaining it super well.
+Um, we've talked about it a lot in
+previous sessions though, so I do have
+days where I have better clarity on this
+than than some other days. And then we
+talk about O of N squared quite a lot.
+Basically, the the most basic example of
+this is a nested loop for I and range
+with an sub for J and range nested
+inside of that where you're going
+through every input that's given to you
+not only once but again for every time.
+So going through a list of items and
+then for every list of items going
+through that same list once more to find
+its other like to find a pair um that
+would be n squ.
+So they're saying in this problem that
+it's possible to find a solution at n
+log of n or worse. sorting would be an n
+log of n complexity
+on on average sorting takes n log of n
+time
+and then they're saying if you can do
+better than that so we would either need
+a solution that runs in o of n time o
+log of n time or a constant constant
+would be out of the question here
+because that's crazy um
+I mean that would just be like
+accurately guessing for each test case
+I don't think I answered your question
+very Well, but I hope that helps.
+>> Cal really helped. I was looking for
+somewhere in late code that give me a
+pass fail on it, but that looking at the
+video count tells me if I'm hitting in
+the range or not. Anyways,
+>> yeah, there's also when you press
+submit, they have a nice little feature
+that will take your code and tell you um
+using AI kind of like big O Calc.
+There's also a lot of articles online
+that you can search and it will give you
+like code examples of each of the big O
+complexities there. So that those are
+also nice resources.
+So back to this problem um if we were
+going to sort this
+and then a reminder of what our
+frequency looks like at this point.
+Nope. No.
+So 1 3 2 1 and then in this one. Yeah.
+So 1 3 2 and then that four is actually
+back here and 31.
+So we do know about the sorted method
+and there is a way to do that using the
+sorted method and if you weren't sure we
+could Google
+Python sorted
+oops
+I'm pretty sure they have a dictionary
+example here. Yeah. So, actually this
+one's for tupils,
+but I think it works the same.
+I didn't get her.
+Oh,
+so this one was able to do it. Okay,
+cool. So, let's let's see. We might be
+able to do it just by calling the sorted
+function directly. Sorted
+frequency.
+No errors. That's good.
+I'll put 1 2 3 4. So, that's sorting it
+in
+ascending. We want it in descending. So
+I think there is a
+parameter there
+reverse. Yeah,
+I think.
+Oh,
+let me look that up.
+Sorted. I think W3 schools has probably
+better
+examples there.
+Reverse
+True or false? Okay.
+Reverse.
+I just did.
+True.
+Cool. There we go. So that returns all
+of the So what it did actually, which is
+interesting, is that it only returned
+the
+keys sorted. So if we wanted to get both
+the keys and their frequencies, we
+probably have to change how we pass it
+to the sorted function. But honestly,
+this works. Oh, actually, no.
+It's sorting based on the value. So we
+want it to sort based on
+not the key, but on something else. So
+key here.
+So key equals
+you could say
+frequency
+dot items
+one maybe.
+Did I forget a comma? Yes, I did forget
+a comma. Thank you.
+All right,
+reverse true key lin
+key my function. I'm going to go back to
+the other Python.
+So, I like this one because it actually
+allows you to choose. So, I'm going to
+choose that.
+I think there's a way to do it with how
+I was thinking about it, but
+Nope. Okay.
+Cuz I
+have that there.
+Nope. Doesn't like that.
+I'm going to
+Drop that for a second. I want to see
+rent frequency
+items.
+Let me see what that puts out.
+Dictionary items 1 3 22. So that looks
+very similar to the
+output that we had for most common but
+unsorted.
+So that's helpful there.
+And then
+yeah, we should be able to sort off of
+one thing.
+I don't
+care.
+Oh, those are imports though.
+I feel like this is the right way to do
+it. Key equals lambda.
+Frequency items. If I did frequency
+items
+one, does that do anything? Maybe I
+should look at frequency. Items.
+Yeah.
+Dictionary items.
+key as a tupole list of tupils.
+Huh? What am I doing here then?
+>> Sorry, I forgot how to read, I guess.
+>> So, I've got a question. So instead of I
+one items pars one parenthesy at the end
+of that can we do um
+bracket colon one
+after the yeah
+I mean we could um
+but what I'm trying to get I wanted it
+to use the
+second
+so it was getting a list tupils of key
+and a value. So I wanted to use the
+value as the the sort.
+>> Oh,
+let's see. I've got some notes, too.
+Actually, you know what? I'm just going
+to Google it. Python
+sort dictionary by value.
+This is good because I was talking so
+much smack about knowing how to use
+things before. So, it does it does say
+random item too. They're just saying
+item
+sort x items. Ah, okay. I see.
+There too.
+Well, I guess in this case
+So frequency dot items and then key
+being
+they still use a lambda. Yeah, lambda
+item
+item one. So item in this case would be
+one of these.
+So this is items and then item would be
+one and three or two and two and three
+and one and so these would be indexes
+zero and one and we want to sort by item
+index one. I think that gives us what we
+want.
+Man, these comments we don't get along.
+There we go.
+So that gives us what we want. But as
+you saw, I struggled because I don't I
+don't typically use sorting that way.
+Um, and it also would give us an O N log
+of N. And then the thing we would do
+with that once we have it sorted is then
+that's what
+and actually we do we want to return
+that. So sorted frequency
+that's what Lisa was suggesting is that
+we use
+this. So now we should have
+the list of tpples but we want to return
+yeah
+tuples. Excuse me.
+So we could use k there but I think we'd
+have to get
+I don't know if we can nest it like
+that. K. Let's find out.
+and then only do
+the zero index.
+We're experimenting.
+Yeah. No, it doesn't like that. Oh,
+wait. No, it doesn't like
+this sorted frequency items.
+Yeah. No, it didn't like that. So, one
+and two, one and three,
+four and five.
+What does that do?
+Right.
+One, three, two,
+four, five. So then we'd need to make a
+we probably need to do a um
+loop through the sorted tupils and and
+pull out the first one by its by its
+first item. So there's a lot of steps
+there and I think it might actually have
+been easier to just instead
+try a different approach but maybe I
+don't know if you want to struggle
+through it. So if we got we've got
+sorted frequency and then that gives us
+the list of
+tupils.
+So again this is still
+n log of n for that sorting function now
+that we finally got it working.
+But we get this format and so we want to
+just return the one and the two. It's
+sorted by the most frequently occurring.
+So the four, one, two, and then three
+last. But we only want that first one.
+So I might would
+create like answers equals
+oops answers equals
+empty array. And then for
+what pair in
+sorted frequency
+actually I think I would do for
+I in range
+range
+A
+answers dotappend and
+sorted frequency
+frequency. Before I do all that, maybe I
+just
+make sure that I can access those tupil
+values like I want
+sorted frequency.
+Oops.
+Okay. So, it is a
+It is a list. So we will get four, five,
+and then one and three. And then I want
+to get that second value. Why does it
+keep doing that
+at the one index position? Let's see.
+Oh, I didn't print.
+32.
+That's not what we want. We want
+53. Oh, no. We want the first value
+there. So, that was right.
+1 2
+4 1. Yeah. So, sorted frequency I would
+be the tupole
+and then we're getting that first value
+out of it.
+because that would be the actual number
+that we want to return.
+So in this case, one having the most
+high highest occurrences at three
+returning the one, two at the most
+second most occurrences with two and
+then this one four having an occurrence
+of five and one having an occurrence at
+three. And then we're just isolating
+those out up to the k amount of times.
+So we are appending
+this to
+our answers
+array and then returning answers.
+We are hitting time. I do want to show
+the quicker way.
+So that runs through everything. I ate
+up a good amount of time with that
+sorted frequency junk. So 7 milliseconds
+pretty much the exact same as Lisa's
+except that I used I created the
+dictionary from scratch and then I used
+a sort function because most common is
+only available for counters and then we
+had to go through and pick out
+because it was a list of tupils but
+yours was a list of tupils too wasn't
+it? So how did you do that most common
+most common. Oh, because you made Yeah,
+you did a list comprehension item for
+item
+frequency
+in something. What was your code, Lisa?
+Can you tell me what the that line was?
+The most common line.
+You made a variable called most common.
+Yeah, I want to see.
+Let me pull it back up. See,
+most common equals item for item comma
+frequency
+and the counts frequency most common K.
+>> Oh, wait. Hold on.
+>> Whatever the K was.
+>> Sorry. Give me give me a second. So item
+for item,
+what was it again? frequency in counts
+frequency which is the the counter or
+the
+>> should be your database or dictionary
+>> frequency and then what was the rest
+sort frequency and frequency
+>> dot
+most parentheses k
+>> sorry oh most common parentheses k got
+it some sort of frequency
+Okay.
+Oh, no. Because you filtered it.
+>> I meant dot. So, sorted frequency.
+>> Got it.
+>> Most common.
+>> I think that might work.
+>> Yeah, that works. So, that list
+comprehension there is kind of like the
+shorthand version of this.
+>> Yeah. So for
+item for item
+so for each item in
+sort of frequency up to K
+item and then you're choosing frequency
+in fre. So another way of saying that
+might be like frequency.
+It actually be like number
+frequency. But
+yeah, so that's just a nice list
+comprehension that would shorten what we
+did here for in range. And then we're
+creating a list. Made that list up
+there. And then we're appending that
+value,
+the U first value, and adding it to the
+list there. So that's a nice shortened
+way of doing this,
+>> correct?
+>> Yes.
+>> Very cool.
+Actually, I want to keep that
+think about that later.
+So again, a different way of doing it.
+if you're more comfortable with this
+comprehensions. I don't think I would
+have come up with that off the top of my
+head. I also struggled with the sorted
+there. Um, just for time sake,
+I explored another way of trying to sort
+them, but I think it still took o n log
+of n time.
+Um,
+but I'll just show you what I did cuz I
+So, instead of doing all of the sorting
+here,
+three,
+one, two, three.
+I made K frequency, which is basically
+answers.
+if I wanted to rename that. And then I
+made a while loop for the length of K
+frequency. And K frequency in this case
+is
+oh yeah this empty array that we made.
+So while the length of it is less than K
+kind of similar for the for in range to
+K
+um max frequency max num. So kind of
+pulling out the values in the
+dictionary. And then for num frequency n
+c items again that gives us that list of
+tupil. This was from a counter. So that
+would be saying
+frequency here for our dictionary.
+So for key value pair is a better way of
+writing that key value
+in in the dictionary.
+If the
+value is greater than our current
+frequency, I'll reset it. And then the
+max number would be our key. So
+basically what I did is that I found the
+max in our dictionary values. Um so in
+this first one would have been four. And
+then I added it to our answers array up
+here. And then I deleted the value from
+the
+dictionary. So I deleted the four
+and four colon 5 from the dictionary. So
+that the new maximum would now be one
+and then while it's less than k.
+Basically I was saying what is the max
+the most frequent frequently occurring
+item in this dictionary? Find it add it
+to our answers dictionary or answers
+array then delete it. And now find the
+newest most frequent one, add it, delete
+it any number of times until we get to
+K.
+And I think that actually ended up
+because we're doing
+the for loop inside of the while loop, I
+think it still ended up being
+in log of n. But that was the way that I
+came up with how I trying to get around
+the sorting of it. It was just an
+attempt to see if I could get O of N a
+different way than Brian got O of N,
+but it wasn't
+or it wasn't like N log of N on the best
+case, but in the worst case it was n log
+of N or something similar.
+Yeah. So time complexity n + k * n or k
+* n to the worst case. So actually even
+worse than I was thinking kind of like
+somewhere between
+less than n squared but probably worse
+than n log of n. Um but it was an idea
+that was my brute force approach to get
+it without using the sorted function.
+And then it turned out to be worse than
+the sorted function. And then there was
+Brian's approach which created the
+buckets and he talked about that more on
+Sunday. Um I would show you but we're
+kind of gone quite over time. So
+what that looked like was
+this.
+So we had
+up at the top C equal
+counter. Oops.
+Counter
+of nums. So this created that
+dictionary,
+the frequency dictionary referred to as
+C and then using a sort comprehension.
+So created a list of empty lists up to
+the length of the dictionary
+and then
+went back and added based on the
+frequency. it put the
+use the frequency as an index to add it
+to this list of lists.
+So you had something like
+you started out with just a list of
+empty lists
+and then using the frequency. So in this
+case four occurred at a frequency of
+five. So it would say one, two, three,
+four, five. And we would add four there
+because it occurred five times. And then
+one occurred three times. So at
+frequency 1, two, three, we'd add the
+one. And then the two occurred two
+times. And then the three occurred one
+time. So that was a different way of
+sorting it using this like list
+comprehension here.
+And then he looped through that in
+reverse order and said, "Okay, grab this
+value and then grab this value up to K
+amount of times
+and then return that once you've added
+them all to your answers dictionary." So
+that ended up being O of N runtime which
+is pretty cool
+because the way he sorted it was based
+on that frequency just adding it to so
+it took up a lot of space but it had a
+good runtime complexity and we talked
+about that one a lot more on Sunday when
+he was showcasing his code so that was
+pretty cool. Um I don't think I would
+have thought of that off the top of my
+head. We could have definitely brute
+forced my way to the running all the
+test cases, but I would have to think on
+the lesson and log event approach for a
+while. Um, but I just wanted to talk
+about some of these things like creating
+the frequency dictionary from scratch,
+thinking about the sorted or how you
+would approach it if you weren't sorting
+it or didn't
+want to struggle through reading through
+the docs to understand how the sorted
+function works, how else you might
+approach getting the answer there. So
+that was one approach and then Brian who
+had the most efficient big O approach of
+using this kind of they called it
+buckets this kind of buckets approach.
+All right so I've run us over quite a
+bit there. Does anyone have any
+questions about this problem? It's kind
+of a weird problem.
+Um,
+I mean it's not a weird problem, but it
+it's it's trickier than you might assume
+on like the surface level. Does anyone
+have any questions about this or about
+what we did here today?
+No. Okay. Well, I encourage you all to
+try out this problem for yourselves. See
+what you can do. See what you get. If
+you use the counter approach, if you try
+to brute force it yourself, or if you
+want to try getting an O of solution on
+your own, um, this buckets approach is
+nice if you want to try different ways,
+see what else you can come up with, and
+yeah, definitely
+add this to your toolkit of both
+creating that frequency dictionary,
+getting comfortable with the sorting. I
+am now I'm going to commit this to
+memory now that I know how to do it. If
+I'm using a if I want to sort a
+dictionary, I can use the items and then
+the key with a lambda.
+Commit that to the noggin. Um, yeah, and
+there's lots of ways to approach it.
+Just making sure you're comfortable with
+all of the different moving parts there.
+All right.
+Does anyone have any questions outside
+of this problem? Just in general about
+the tech interview, about prepping,
+about pro practicing problems like this,
+takeaways you can get from problems like
+this? Anything like that?
+No. Cool. Okay. Well, it is like 900
+p.m. for me. I don't know if you noticed
+by my really thrilled attitude today.
+Sorry about that. Um,
+so I'm gonna let you all go. I hope you
+got some valuable takeaways from this.
+We'll be back on Sunday. We'll get some
+new problems up. We'll do a mock
+interview and we'll keep digging through
+new problems and adding more stuff to
+your toolkit and talking about things
+that will help you in the tech interview
+and also skills that you're developing
+that will serve you through the
+internship and in your job hunt. All
+right, everyone. Have a great rest of
+your day.

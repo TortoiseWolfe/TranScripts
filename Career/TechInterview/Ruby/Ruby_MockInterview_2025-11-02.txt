@@ -1,0 +1,1488 @@
+All right. So, welcome to this week's
+nailing the tech interview. Today is
+Sunday. Um,
+so on Sundays, we typically do mock
+interviews or introduce new problems to
+work through depending on who is
+available to do what and who wants to do
+what. So before we dive in, does anyone
+have any questions that they would like
+to ask about the technical interview,
+practicing, preparing, anything like
+that?
+>> Um, yeah, I I would um
+I'm relatively new to preparing for the
+tech interview and I do see that there
+are various aids out there in which to
+do it. Um, I also see that as part of uh
+Dr. Emily's uh embedded lesson following
+mod two uh she indicates you know coming
+to your sessions
+uh being able to do I believe a medium
+problem under within an hour a easy one
+within 15 minutes and then schedule the
+interview. That's basically what we're
+supposed to do. M
+>> um I am still kind of in the woods as to
+what to do other than to just do
+problems after pro as many problems as I
+can. Um
+so that's I guess that is my general
+question. I'm approaching it as doing as
+much repetition as I can. doing as many
+problems, grouping the problems as the
+same type, doing those over and over
+again, then moving on to a different
+type of problem, doing that over and
+over again, and then so forth. Uh, I
+don't know if that's the right way to
+go, but just intuitively that tells me
+that's probably what's going to work
+perhaps for me.
+Um, but other than that, I guess what I
+really want to know is there any quick
+and and effective way of doing this?
+>> Um, is there any quick way? Probably
+not. Is there an effective way? Sure.
+The good news is that you've been coming
+to the meetings, right?
+>> And you've been learning some good
+stuff. Um, it's not just repetition and
+practice. It's how you learn after each
+problem, right? How you absorb
+information from each problem. I believe
+you were here a few weeks ago and we
+talked about solutions. Like if you get
+to the point where you have to look up a
+solution, how do you break that down?
+How do you reverse engineer it? How do
+you make sure you can get every ounce of
+knowledge out of it so that when you go
+into a new problem,
+>> you're not stuck at, you know, a blank
+blank screen, not sure what steps to
+take
+>> and vice versa. You have a new
+new data structure that you're familiar
+with or a new approach that you're
+familiar with that you've added to your
+toolkit to take with you onto future
+problems.
+>> You know, I'm glad you said reverse
+engineering because [clears throat] I am
+doing a lot of that.
+So that's that's a big thing. Um the
+other good news is that you have a whole
+playlist that we've orchestrated here
+for basically this entire year of
+of meetings where we're either
+showcasing or someone's doing a mock
+interview or we're practicing going over
+code. Um I think at least since June
+we've been doing the Sunday Wednesday
+combo. So if you look at a Sunday
+session, you get introduced to the new
+problems that we are working on and then
+we go over the code for it on a
+Wednesday. Um obviously there are some
+weeks where there are kind of gaps or
+holes to that plan where there's been
+like outages or um we just got carried
+away with a problem that we were working
+on. But in general that was the
+structure. And then before June there
+are still lots of examples of working
+through problems and how to think about
+problems.
+So I think the
+coming to these sessions is only like
+not even half the battle. That's like
+that's just community and getting
+questions answered and kind of getting
+homework. The real challenge is what do
+you do after the meeting? Do you try the
+problems on your own? Do you take the
+steps that were showcased? Um do you
+apply it to new problems? Like what are
+you doing in your practice time? So, not
+just like opening up a random problem
+and saying, "Well, here we go. Good
+luck."
+>> But like what steps are you taking and
+how are you channeling what we discuss
+on a week- toeek basis into your
+practice? Does that make sense?
+>> Yes, it does. Yes, it does. I find that
+I spend a lot of time trying to figure
+out what the problem's saying and then
+uh I spend more time doing
+[clears throat] the pseudo code.
+Um, which I guess I'm on the right track
+if that's you know what you're supposed
+to do, but
+>> yeah.
+>> Okay.
+Okay then. Well, thank you. [laughter]
+>> Any other questions?
+[snorts]
+Okay. Now, is anyone interested in doing
+a mock interview before we move forward?
+>> Well, I don't know if mine is a mock
+interview, but I did have an alternate
+solution. I don't know if you'd consider
+it, but but um when Mauricio did his um
+code for count without relying on the
+Python library. Um he did it with
+substrings. you know, he was basically
+looking for a little target substring
+within a larger string,
+>> right?
+>> And he was counting it that way. And I
+for the longest time I had problem with
+this idea of the sliding window, you
+know, where you've got something in
+brackets that's like I colon I plus the
+length of the string that you that that
+you're looking for. because for some
+reason that totally
+>> uh I'm understanding it better now but I
+really didn't for the longest time. So I
+came up with um an alternate method of
+looking counting by word um whole word
+whole word rather than um doing this as
+a substring. I don't know if that falls
+within what we were asked to do. Um Oh
+>> yes, please show us.
+>> All right. Okay. So here we go.
+I'm gonna share I'm going to share my
+Let's see.
+Okay. Um, give me a second here. Okay.
+I'm trying to share my entire screen.
+Okay, that should Yeah, there's the
+entire screen. I am going to go now.
+Hello. I'm going to go now. Can you guys
+see that?
+>> Okay. Now, this is what I did. And I
+tried to make notes cuz this
+um I certainly did not do this within 30
+minutes or even an hour. It took a
+while. So what I did basically is I said
+to myself, you know, I want to find a
+word. I want to find a whole word within
+a string. Um so what I did was uh in my
+parameters I said, okay, I definitely
+need a word. Definitely need a string. I
+want to match the whole word. Um, but I
+realized that that doesn't work with
+everything because when you do have, for
+example, one of the things we were
+talking about last time was finding
+letters within one word like finding the
+P with an apple or um
+>> you know it the whole word thing
+wouldn't work there. Uh, so what I did
+was this. I said, um,
+I'm going to split the string. Okay, I'm
+going to split whatever string I have
+along the spaces and I'm going to store
+it in a variable.
+And then I'm going to say um
+for every character, for every element
+in words,
+I'm going to strip out all the
+punctuation. I'm just going to strip it
+down. And I'm going to put it into
+another variable
+called uh w clean.
+And I'm going to then ask all right if
+word if the word that I'm looking for
+like apple shows up um you know within
+clean which is the stripped string. It's
+the entire string but stripped of
+publication of punctuation. Okay. If it
+shows up I'm going to say count it once.
+>> Uh and then I'm going to say return. And
+that was what I was talking about last
+week when I was trying to do this off
+the top of my head and saying, you know,
+okay, that I didn't think that, oh, you
+have to if you have a string and you
+want to do whole words, you got to split
+the string up. So, this is that's the
+first part. Now, there going to be other
+instances uh where for example,
+you are not looking for a whole word. um
+you're let's say maybe looking and I hit
+it with one of my my first call um for
+example you are looking for one of these
+an apple
+um so you you have to go through a whole
+different
+mind train a different pseudo code to
+get there so what I would do with that
+is now I'm looking at the length of the
+word which is apple M
+>> okay or P or it would be P if we're
+looking like within a word.
+>> Okay. Look at that length. And the next
+thing that we're doing, and this took me
+the longest time to sort of puzzle out,
+um, is okay, you've got you're looking
+at a range of what you're going to look
+at. And the length of the string, the
+main string, less the length of the word
+that you're looking for. Great. The
+thing that tripped me up for the longest
+time was the plus one. Why do you put
+the plus one there? And I did some
+googling and I found out that the reason
+you do that is it's going to cut off um
+before you can go through every
+single possibility of encompassing the
+length of the word that you're looking
+for. So you have to add a space. Um but
+so anyway, I did that. So the next thing
+I did and this is the sliding window
+and this is the thing that tripped me up
+uh on Mauricio's
+uh original solution. This whole idea
+that you start at an index and the index
+is moving. So for example, if you start
+at the index and the index is zero uh
+and the range you're looking for is the
+index plus the length of the word that
+you're searching for. So if you said
+that index was zero and let's say the
+length of the word was three, you would
+be looking at 0 colon 3.
+And the other interesting thing was the
+double equal sign.
+You're looking at a space and you're
+also looking at the word that you're
+calling up that you are passing through.
+And so you're saying that if at any time
+that you are iterating through each
+index, now mind you, the index now is
+not going to just be a single character.
+It's going to be a chunk. It's going to
+be a chunk the size of the word that
+you're looking for. Okay? when you come
+across uh a a chunk that is the size of
+the word that you're looking for that is
+when uh I colon I + word underscore
+length equals word you're looking at the
+content okay the content matches the
+space okay if that happens and this is
+that sliding window thing
+you count you tick the counter once
+and then you return it And so what I did
+next was uh I needed to be able to
+switch between the two kinds of thinking
+um because they one won't work on both
+of them. So if you're looking for
+something within the word within like
+apple, you're going to have to turn off
+uh the whole word up here. You're going
+to have to uh turn off that whole word
+thing. So you're going to have to call
+it false when you
+this is not a function. So I guess when
+you pass the values that you want in you
+got to tell it that the match whole word
+is not on you have to turn it off. So
+you call it false because you're working
+with that. Um, if you are looking for a
+whole word like in this second one,
+uh, you want to turn the function on
+again so that you're dealing with this
+first one up here. Um, and so that's why
+the true is here. Um, the last one,
+which was, you know, where the rubber
+really meets the road is I did something
+that was I didn't say apples, I said
+apple. and apple is not the same thing
+as apples. Um, so I got a zero over
+here, which was what I was expecting.
+So that was what I did um to try to
+reverse engineer the count um function
+that's in the Python library. Um, again,
+I did this method here cuz I thought it
+was simpler. this one uh the basic one
+that really hits it I h I had problems
+with. So that's the reason I did that
+one. So that's my demo. Uh I also did
+replace if you guys are interested in
+seeing.
+>> Well, hold on one second.
+>> Okay.
+>> Um this is good. Thank you for the
+explanation. And I'm glad you went
+through the exercise of trying the first
+one. I think that's really really fun.
+But I'm also glad that you went back and
+you looked at the way that we had
+approached it from
+the find function using the substrings
+and you kind of stuck with it until you
+learned it.
+>> However, in your third call there, the
+count word with apple and the string
+there. Yes,
+>> that would actually be incorrect because
+if you called the count function for
+apple on that string,
+>> it would consider those three apples as
+valid because the word apple itself
+>> as a string. It's not looking for a
+word. It's looking for a string. So the
+string a ple e does exist in that string
+three times. So it would actually return
+a three there.
+>> Okay. Well, I was actually
+I was alarmed because when I did it did
+do that and I had to go back and
+now I thought I took care of that and I
+purposely wanted to get zero back
+because Apple is not the same as apples.
+Uh I split it. Um
+I split Word. Well, actually this is
+what this is the thing. I thought I was
+splitting word by saying string split.
+Um,
+should I have done words equals word
+split?
+I don't know.
+But okay,
+if I
+>> um Okay, I thought I'm going to unplug
+my earphones cuz I don't think they're
+they're operating right. Um okay, I
+originally
+did get um three back and I was
+concerned because Apple is not the same
+thing as apples. And so
+>> there's a really easy way to check that
+and that would to be to use the the
+count method. But no, I think there's
+totally a valid version where you are
+only looking for an exact match of
+apples versus apple.
+>> Um,
+>> I think there is a version of that where
+you're looking at word
+>> separated by spaces exact matches.
+>> Um, that's not what this function uh the
+method, sorry, the count method from the
+Python string library is doing. It's not
+doing that. But there is probably or
+actually almost definitely something
+like that. So I think it's still good
+like it's still a good lesson and still
+good practice. Um just for what this one
+specifically is doing, it's not that.
+>> Okay. So you would be looking for three
+to come back rather than zero.
+>> And if you did the matchal word to
+false, I assume that it would return
+three.
+>> Okay. Um do
+>> you want to try that real quick
+actually?
+>> Okay. Hold on a second. So you
+>> third one.
+>> So you're saying change that to false.
+>> Mhm.
+>> Okay. To turn on the substring.
+>> Yes.
+>> Okay. And run.
+>> There it is. [laughter]
+>> There it is.
+>> And you understand why that works,
+right?
+>> Well, yeah. uh we're we're looking at
+the substrings. We're not looking at the
+whole word. Uh if we were looking at the
+whole word, we would have two different
+whole words.
+>> And since apple would not have matched
+any of the whole worlds whole words
+because you've got three apples in the
+string, you know, you've got um apple,
+apple, and apple houses. And okay, if
+you're looking at just matching the
+words, uh, apple wouldn't be the same as
+them. So you get a zero.
+>> And so, but that's you're looking at the
+specific words. But if you are, now this
+was interesting. What I found about
+using the substring method is when you
+walk through this,
+it is taking um
+a okay it I believe it goes a ple e cuz
+that's the word that's the word that
+you're looking for. And so it's going to
+go a ple e and it ignores the s and then
+it sees a ppl again and it ignores that
+s and then it does it with the final one
+and that's how you get the three. So
+it's it's sort of um it's not an exact
+match but it's looking at each
+well since you're looking at a chunk
+that is apple. It's looking for Apple
+and it's ignoring everything else. It's
+looking for Apple.
+>> Yeah.
+>> Okay.
+>> Because the string that you're calling
+this on could also have no spaces at all
+and just be one long garbled mess.
+>> Yes. And it would still work,
+>> right?
+>> Yes. Because it's looking for Apple.
+>> Okay.
+>> Right. So anyway, uh I hope you guys at
+some point to be able to sit down cold
+and do what I just did.
+>> That's why I give the homework.
+[laughter]
+>> Yeah. But no, that is it's like if I had
+been able to walk through an interview
+like that, I might have passed it. But
+>> it's the idea I would have to generate
+all of this stuff and talk at the same
+time.
+>> Yes.
+>> And
+>> now that does come with practice.
+>> Okay. And I am so not there yet.
+>> Yeah. Good [clears throat] job. We'll
+look at the replace one on Wednesday. Um
+>> so we can just kind of keep today
+moving. But this was great. Thank you
+for sharing.
+>> Thank you.
+And you feel proud, right? You feel good
+about that.
+>> Well, yeah, I do. Uh I I think that it
+was kind of ingenious that you're asking
+us to go back and basically pick up
+these things are methods, right? They're
+the whole Python is all an object code.
+And so these guys that we're playing
+with are methods. So you have us like
+reverse engineering methods.
+Okay. All right. Well, you know, it's
+like this is I have to say this out loud
+so I understand it myself. Um but but
+yeah, okay. It's it's making sense. But
+you know, I think that's good because um
+I need to know how it works because I
+can't remember everything.
+So I need to know how it works under the
+hood.
+>> Yeah. Perfect.
+All right. So, I have something that I
+want to share as well.
+Um, probably
+probably really late to be saying this,
+but I did my first hard problem on Le
+Code the other day and I got it in under
+30 minutes. Woohoo.
+Um, I actually don't think it was that
+hard. I kind of feel like it's
+mislabeled, but and I'll show you the
+problem that I did at the very end. Um
+but I kind of wanted to walk through a
+couple of problems that we have talked
+about before in the weekly sessions and
+um kind of break down how they built up
+to it.
+So the first thing and I'm not going to
+show you this problem but it's on hacker
+rank.
+The first problem is that you are given
+an array and you have to find the medium
+element in the array. So my first
+question to you all would be what
+information would you need? I'm going to
+pose it as a question instead of showing
+you the problem and and and
+we're going to do it that way for for
+this just because we we kind of don't
+have a lot of time. But what questions
+would you ask or what information would
+you need to know to perform that task
+successfully? So you are given an array
+integers only. That's I probably
+shouldn't have given you that because
+that would have been a good question.
+You're given an array integers only and
+you are expected to find the median
+element
+of that array. What information do you
+need to know?
+>> Well, first of all, the median is the
+middle, right? The middle of the array,
+the physical middle of the array.
+>> Yep.
+>> Okay. So you need to know the number of
+elements in the array and you need to
+know if that's an odd or an even number
+because
+>> now why do you need to know that?
+>> Because the formula for the median will
+change because if it's an even number
+you take the two middle elements and you
+get the average I think and if it's an
+odd number then it's just the the middle
+value.
+>> Mhm. Exactly.
+Um, yep. What else might what might need
+what else might you need to know or want
+to ask about the problem?
+>> Well, you want to know where it starts
+and where it ends. You want to know the
+front and the back,
+>> the first element and the last element.
+>> Why would you need to know that?
+>> Well, you need to know the length.
+>> You need to know the length of it so you
+can basically spot out the middle. And
+then I guess you would depending on how
+long it is like Mindy was saying,
+>> you know, if it's like a even number of
+elements, you do one thing. If it's odd
+number of elements, you do something
+else. But you need to know how long it
+is.
+>> So we need to know the length. What else
+do we need to know?
+>> Well, you said it was inches, so we know
+that already. Mhm.
+>> Technically, you wouldn't have to know
+this, but usually they give you a range
+for the elements, although you wouldn't
+have to know that. So, they usually tell
+you the elements are within a certain
+number of values. You probably would
+also want to know that the um array is
+not empty.
+>> So, there would be a special case for
+that, too.
+>> That's good. I like that. What else?
+integers non- empty length the value set
+>> sorted or unsorted.
+>> Yes, that's a good one.
+>> If it's sorted or unsorted or if they
+care if it's unsorted or sorted. Both.
+Great.
+Anything else?
+No, I think that's pretty good, too. All
+right, so that's the first thing. So,
+given all of that,
+you are given a sorted array and the
+length is always going to be odd,
+meaning that you won't have to do any
+averaging.
+How are you going to do that? Just quick
+pseudo code. What does that look like?
+Okay, this is going to be wrong, but I'm
+going to throw it out there anyway. Um,
+get the length of the get the length of
+the array and divide it by two.
+[laughter]
+>> Uhhuh. And then what?
+>> Plus one.
+Well, I mean, you you want the med you
+want the one in the middle, right? You
+want the you want the element in the
+middle. So
+this is
+>> and how are you going to return that
+once you have that number?
+>> Well, you have to save it to a variable.
+[clears throat]
+>> Uh,
+and
+that's it. I mean, I I would just say,
+okay, divide your array in half. Maybe
+add a plus one to it. And to determine
+if you need to add a plus one or not.
+>> Um,
+I this is memory, but I kind of think
+because if if it's odd or even, but you
+just told us it was odd. Maybe we won't
+need to add the one to it because it's
+odd.
+Or maybe we will because if you look, if
+it's odd, it won't divide exactly in
+half.
+You're going to have one You're going to
+have one side that's longer than the
+other side.
+>> If you add a one to it, they're both
+equal in length.
+Okay, keep the one in there.
+>> But what what could you do to confirm
+that?
+>> Uh, I could say something uh just have
+an odd number of elements within an
+array.
+uh and get your
+>> So let's say your array has a length of
+seven.
+>> A length of seven. Yes. And then divide
+that seven by two.
+>> Oh, I see. I think I see what you do a
+modulus. Do a modulus instead.
+>> No.
+>> Okay. But all right. Divide divide that
+seven by two. You're going to have three
+and one over. Uh,
+which means you're going to have three
+on one side and four on the other side.
+>> Well, you're going to get what exactly?
+7 divided by two is what?
+>> Uh, three and a half. Well, no, no. Uh,
+seven divide. Yeah. Uh,
+>> so you're going to have to do
+>> three and one. Three and one over. Okay.
+Um,
+I don't know. I'm going to have to think
+about it some more.
+>> Yeah. And instead of plus one, you could
+round up or round down, right?
+>> You could round down to the last. I see
+what you Yeah, you could round down to
+three or round up to four.
+>> So, which one would you do for a length
+of seven?
+>> Um, I would be cautious and maybe round.
+I would be four. I would the middle the
+middle number would be four because
+you'd have three in front of it and
+three in back of it. So you'd have 1 2 3
+four and then five six seven. Four is
+the middle.
+>> And arrays are
+and arrays are uh you they're immutable,
+aren't they?
+>> They're indexed at what?
+>> Zero.
+>> So do we want four?
+>> No, we want three.
+>> Yeah.
+>> Okay.
+>> Now, what I was asking you about how
+could we test that? I print it out, test
+it out, just like literally seven
+divided by two is what? And then
+>> yeah,
+>> look at my actual example, my array and
+say, what number do I want? What index
+position is that? Is there like is that
+going to apply across every array that I
+do no matter what the length is? If it's
+always odd, yeah, probably will. I can
+always do what thing I could probably
+round down or round up. Okay,
+that was the first one. The second thing
+is
+this one's not easy to do quickly. Um,
+all right. So, you're given two
+sorted arrays. So, you have two inputs,
+array number one and array number two.
+They're both sorted and your task is to
+merge them together.
+What information do you need to know?
+Are we merging them together just one
+element from each one or are we doing it
+in an ordered fashion? In other words,
+if we've got a two and a five and the
+other one has a three and a four, do we
+want the 2, three, four, and then the
+five, or do we just want a two, a three,
+a four, or two, a three, a five, and a
+four? What's the order that needs to go
+in?
+>> The final array should also be sorted.
+Okay.
+>> So that's yeah that's that's your first
+thing. Your final array should also be
+sorted. Anything else?
+>> So are they the same length or not?
+>> They are not the same length.
+>> Would it matter?
+>> Yes. Why? Why might it matter?
+Uh because you can't add or subtract
+from an array. I mean they're immutable
+kind of. Um gosh, what is it? There's
+something going on there that um
+you don't want it to get full. You you
+you they only have a certain number of
+spaces and you don't want the array to
+overflow.
+>> Which array?
+Well, okay. The combined array would be
+the length of both of them together.
+>> Uhhuh.
+>> Um,
+>> so you're saying if you were if you
+assumed that they were the same length,
+then it might overflow.
+>> Sure.
+>> Oh, wait a minute. Uh, in order to join
+them, you have to make a separate array.
+You have to make a new array if you're
+going to join them. So you do need to
+know how long how long each of them are
+so you can make the new array that joins
+them into one array big enough.
+>> Mhm. Yeah. Okay. So I think that's
+pretty much all the those are that
+pretty much everything we need to know.
+So how might you do this?
+>> So what we're going to do is we'll take
+a look at the array element by element.
+So first of all, we need to check that
+both of them have numbers. So that's the
+first thing. Make sure that neither is
+empty. If it is, then you just return
+the other array. If you have um elements
+in both of them, then you're going to
+compare the first element in array A
+with first element in array B. And you
+continue like that until you find well
+taking the lower of the two and adding
+that to the new array. And your decision
+point is going to be are they is array B
+less than array A? And of course then
+you're going to add it in there and
+continue down that loop. The other thing
+that we can do is if we use slices,
+we can go once we get to the the array A
+or array B being empty, you can use
+slices to add the rest of the other
+array so that you can shortcut.
+Didn't we have that as one of our
+problems?
+>> Yes, it was for
+nodes.
+Okay.
+>> So that's another good question is what
+is the data structure?
+>> Can we just append one to the other and
+then sort of sort of
+>> Yeah, I was going to ask that too.
+[laughter]
+>> You can do that. Now what do you do
+though if if the output requires it to
+be O of N or technically O of N plus M
+and that in that case that's what we'd
+want to do what Mindy said. Um, so with
+that in mind, the data structure of this
+is two arrays. So it's not two linked
+list nodes. So Mindy, in your case, you
+were discussing
+um
+checking the values and then adding them
+to the array. How are you keeping track
+of the length of those arrays and like
+incrementing through their values? So
+you're keeping a separate index on array
+A and a separate index on array B. And
+you've got to make sure that the array A
+stays within its bounds. So you're
+you're going to be checking the amount
+um the value of the index
+as you go through and make sure that you
+haven't gone past the end of the other
+array. So each one of them will have
+their own index.
+Okay.
+All right. Yeah, that sounds good. So,
+this was the hard problem I pulled up.
+I'll put that in the chat as well. So,
+the problem is median of two sorted
+arrays. It is listed as hard, but for
+all of the reasons that we just
+discussed, I don't I don't necessarily
+agree that it is a hard level. But, I'm
+going to take the win either way. So you
+are given sorted arrays nums one and
+nums two of size m and n respectively.
+Return the median of the two sorted
+arrays the overall runtime complexity
+should be o of log n + n. And so what
+that means there though is that if we
+add both of these together so length of
+like three plus length of four that's a
+length of seven. So if we consider that
+length an n, then this really boils down
+to log of n. So we want a linear
+efficiency. Um, but it's just more
+correct to say m plus n because you have
+two inputs.
+In their example here, they give us nums
+one is 1 and three. So that was a good
+question by you mind um because they
+will have as you can see different
+pieces here. Nums two is two. They have
+different lengths and they have
+different values and the merged array
+should be in order as well. One, two,
+three. The median there is two.
+For the second one, you have array 1 and
+two and then array three and four. Now,
+this one, as you can see, is an even
+length. And that's when we want to do
+the averaging of two and three to get
+2.5.
+Um, so I think you all perfectly hit the
+nail to the hammer with all of your
+questions. And I think that's a great
+exercise to practice because when you're
+looking at problems like these, those
+are the kinds of assumptions that you
+want to ask when you're getting started
+with a problem, right? What do I need to
+know about the examples? What do I need
+to know about the data set? What do I
+need to know about the data structure?
+What do I need to know about the inputs,
+the outputs, um, the constraints? so on
+and so forth.
+So if we had to combine those two
+approaches and return the median of two
+sorted arrays,
+what would you do?
+crickets.
+Would you sort them first or put them
+into the sorted order first or would you
+do something different?
+>> Uh, I would want to put I would want to
+merge them first then sort them.
+Well, merging them together
+in O time would require them to be
+sorted by the end of that operation.
+>> Okay.
+>> So I guess then you sort them first,
+right?
+>> They're already sorted.
+>> Oh, okay. They're already sorted. Um
+>> yeah, there's no sorting method that
+works in O of end time for the purposes
+of
+>> hackerank code. So, you're saying that
+you can't just go on and combine them?
+>> No. Now, why can't I do that?
+>> Uh, again, I think it's because um if
+you're going to combine them,
+you're going to essentially be making a
+new array, right?
+Um, and one is they're different
+lengths. one's uh odd, the other one's
+even.
+Um,
+>> so I mean, yes, I can just like
+literally say
+new array,
+not like that. New array equals
+nums one.
+>> Yeah,
+>> two. Can I do that? Let's find out.
+[clears throat]
+>> You get an error. I might have to format
+them a special way, but maybe not. I can
+never remember between JavaScript and
+Python if there's
+a bad way to do it.
+>> You got an error.
+>> One, three, and two
+uh nums one, nums two, new array equals.
+I mean, I could do concat, but I can
+also probably just do.
+>> I mean, do they have to be the same
+length in order to be joined?
+>> No.
+>> Okay.
+>> I can't remember how to do it the top of
+my head.
+>> I do know I can do this. Can you just
+>> concat
+too? Pretty sure. [snorts]
+>> Uh, I was thinking of append. Can you do
+something like with a pend? Can you make
+like a new array and just append um the
+first and the second array?
+>> Um, no. You Well, maybe you can.
+This isn't even really like a big deal.
+Um, I just
+I want to know what the the proper way
+to do it is.
+So, it's telling me that I can do it
+that way. I don't know why that didn't
+work then cuz that's what I would have
+thought.
+All right. Numbs one.
+Let's numb two.
+Am I crazy?
+>> Hello.
+Oh, my browser.
+She's crashing.
+>> One second. [snorts]
+>> Make sure that that is right. Nums one
+plus nums two. Or was it just giving me
+an error because I wasn't returning
+anything? I think that's why.
+Yeah. Hello.
+Okay. Okay.
+>> So, yes, you can literally just add them
+together, right? And then you'd want to
+sort that. But I can't do this
+for the purposes of this problem because
+the overall run complexity needs to be O
+of N.
+And that's returning none because that
+modifies [clears throat] the original
+one. [snorts] If I wanted to print that
+out.
+Oopsies.
+because we need an O of O of N runtime
+complexity.
+The sorting method here is
+in log of N. So it's much worse than O
+of N.
+>> So we can't do this for that reason. So
+if we're going to put the two arrays
+together, we have to do it in an O of N
+operation.
+Does that make sense?
+>> So when you're saying O of N, uh it's
+like what you get in what is not what
+you get in is what you get out. But it
+does it it it's
+you don't do a lot of stuff in the
+middle before you get an output. It it's
+um
+it's almost like you you what you you
+put something in, you get something out
+for everything that you put in
+>> pretty much.
+>> Okay.
+>> Yes.
+>> Um
+before I forget to ask, I went to leap
+code and logged in again. I hadn't seen
+this, but they have a study plan for the
+lead code 75.
+Did you mention that to anybody?
+Did you see that?
+>> Study plan. How do you mean?
+>> Well, I put it in the chat. So, go ahead
+and um open it up if you'd like. Oh, I
+haven't put it in the chat. I thought I
+hit enter, but hold on.
+Um there is a front page kind of thing.
+Um and it gives you
+okay study plan. I'm not seeing
+anything. Okay, there you go. And it
+shows the different approaches to this.
+And I've kind of been meandering my way
+through and I just thought I'd mention
+it because it kind of directs you to
+some of the things that you may not have
+seen and it doesn't cost anything.
+That's my favorite part. Free um but
+that gives you a way to um check your
+logic on these different um data
+structures. I thought that was
+interesting.
+>> This is fine. Um, the reason I don't
+like to do it like this
+>> is because they're telling you how to
+approach it, right?
+>> Yes.
+>> Like if I didn't have this and I just
+opened up this problem, finding the
+difference of two arrays.
+>> Sure.
+>> I would have to figure out
+the data structure approach, the
+algorithmic approach.
+I'd have to figure that out.
+>> Okay. I I've I was just mentioning it
+because we did that leak code. You
+mentioned some of the problems might
+have been like in leak code 75
+>> months ago, right? And you said those
+would be a good set of um problems to
+figure out. I just thought that it was
+interesting that they put it all
+together. So, just thought
+>> No, it's not surprising that they that
+they've done this and I'm glad that you
+found it. Um, this is just the original
+problem list itself,
+>> right?
+>> And if that's how you want to go through
+it, where's it at? If that's how you
+want to go through it, that's fine. But
+the reason that I haven't been doing it
+this way and that I wouldn't necessarily
+recommend doing it this way is that it's
+a good exercise to have to figure out
+what the approach is, what the data
+structure is that you should be using.
+sure
+>> like what data structure it's presented
+because if you're in the technical
+interview and they give you a problem
+are you going to know that it's a hashet
+problem if it's a linked list problem if
+it's a sliding window problem
+>> Ruby I I've got no problem with say with
+saying you don't want to do it this way
+I got no problem with that I just didn't
+know if people were aware of that blind
+75 thing that you had mentioned you know
+what I'm saying that
+>> yeah no I that's totally fine and thank
+Thank you for sharing. I'm just adding
+also my two cents in at the same time.
+>> Sure.
+>> But yeah, this also exists. Study plan
+leak code 75
+or you can just Google leak code study
+plan leak le code 75 or
+>> le code blind 75 study list or just
+list.
+>> Yeah.
+So, I've been playing with that all week
+as much as I can because there's been a
+few other issues that have come up. But,
+I thought I'd give you that and see if
+anybody else had seen it. So, there.
+>> Well, you know, for a person who learns
+by repetition, I think this might help
+me spot patterns
+so that I could recognize, let's say, a
+sliding window or something like that in
+the future.
+Um,
+so thanks Mindy.
+>> Maybe does it help you to spot a pattern
+if you're being told what the pattern is
+before you open the problem?
+>> Well, actually I'm like one of those
+reverse engineering type of people where
+um if I see it once or twice,
+I'll be sensitive to it the next time.
+Um, and I guess for people who learn
+that way, that would be helpful.
+As far as that goes, I'm just going to
+say it this way. I'm an old old person,
+and I really don't mean that in a bad
+way. I'm just going to say that I was
+experienced, okay? Um, back in the day
+when I was in school, the teacher would
+give you
+a 100 million addition problems. And
+what was your job? Go through and find
+the answers to the 100 million addition
+problems. And then it was subtraction.
+And then it was multiplication. and you
+went through it so many times that you
+were like, "Really, do we have to do
+that?" But when it came to the test
+time, it became a lot easier. So, I I
+get it both ways. I really do. And I
+like the idea of thinking a little bit,
+but I just wanted to present that
+because it's a list of problems for
+people to see. So, that was that was my
+whole thing.
+It was a fun find this week.
+Sure.
+you know, which brings me to another
+question. Um, with chat GPT, when you're
+using it as a study tool and you ask it
+to generate questions like the one that
+you just had, for some reason, that kind
+of helps me a little bit. If I see a
+bunch of problems that are asking for
+the same thing, I would be able to go
+out there and know what to do when I saw
+that pattern emerge when it's, you know,
+in with a bunch of other kinds of
+problems that are different. Um, but
+everybody has a different learning
+style. And I guess what I'm after is
+something that's going to help me
+recognize what algorithm to use when I
+see these things for the first time. And
+admittedly, that is a whole different
+thing than knowing in advance. Here's a
+bunch of problems that are this way. But
+for me though, it's like where is it the
+chicken or egg thing? It's like I need
+to know what I'm looking for before I
+can spot it. And it has to be normal for
+me to know that's what that looks like.
+So, I'm going to use this algorithm, you
+know. Um, but anyway,
+>> no, I that's totally that's totally
+great. And if you're doing that,
+this is specifically for the blind 75
+that I'm saying this.
+>> If you want to practice sliding window,
+>> Google leak code sliding window and you
+have a whole problem set of sliding
+window problems.
+>> Yes,
+>> infinitely long. If you want to learn a
+greedy approach, Google le code greedy
+twoo pointers
+hashmaps stacks cues.
+>> That is the perfect way to do it with
+the blind 75 specifically which is
+supposed to be encompassing like
+the most common and popularly used
+interview questions that test like your
+skill set that you'll see in the job
+hunt. You kind of want that experience
+going in blind. Also why it's called the
+blind 75 because that's where you're
+getting to practice that pattern
+recognition that skill set matching
+>> identifying what is the correct thing to
+use here and how do I get to the
+optimized solution in this case
+>> for practicing absolutely if you want to
+practice a concept to learn when the
+pattern shows up.
+>> Yeah,
+>> I have no problem with that. It's
+specifically about the blind 75 or if
+you're practicing for like a technical
+interview, you don't want to practice
+going in knowing what what's going on.
+>> Oh, so so you're saying that the blind
+75 is like looking at the answer sheet
+ahead of the test,
+>> right?
+>> I need to drop. I'm sorry. I'm going to
+let you go. I'll talk to you all later.
+>> No worries. We went over.
+>> Thanks, Mindy.
+>> All right. So, with that in mind, we
+didn't really Oh, I didn't want to close
+that. We didn't really cover anything
+[laughter]
+today. Sorry about that. Um, but I do
+have this problem for you. [laughter]
+>> I thought we covered a lot.
+>> We did. Yes, we did go over, but I
+didn't present anyone with a new like
+necessarily problem to work on from
+scratch. Um, which we usually like to
+do. But here is this problem, median two
+sorted arrays, and I'll put it in
+discord as well. Um, so this would be a
+great practice problem. We've discussed
+in in speaking in pseudo code how you
+might approach this problem in the O of
+N time with merging two sorted arrays
+and finding the median of an array. So
+we already do have the kind of
+conversation for the pseudo code for how
+you would approach that. Um, so I would
+advise everyone to practice this problem
+and then you can say that you've tackled
+your first hard problem. And that's
+that's something for the record books.
+All right. Do we have any questions
+before we conclude for today?
+>> Um, I guess I have two. um this whole
+thing I haven't signed up for the
+technical interview yet and I guess that
+is just a matter of when I feel
+confident enough to do it. Um
+but do you give us an inkling of when
+you think we might be ready to do it or
+is this something that's entirely left
+up to us? Yes, if you volunteer to do
+the mock interview, I can give you an
+idea of what you need to work on based
+on what I see and that might give me a
+better idea of how prepared you are.
+>> Okay. And the other thing is just a
+general question and I think I have an
+idea of what's going on. I noticed that
+Discord is really quiet lately and the
+calendar is sort of like winnowing down
+to not as many activities. And at one
+point I did even ask Dr. E was she
+getting ready to close the school down.
+Uh but you know she was indicating that
+the emphasis be is being shifted over to
+like the inter the different
+opportunities for the internships which
+shows up I guess in that other board joy
+of coding not necessarily tech joy which
+is concerned with the basic instruction
+of how to code. Um, but you know, I do
+indeed feel like I'm kind of in limbo
+here. Um, with, you know, the door being
+the technical interview to get out of
+limbo and maybe go to heaven or wherever
+else coders go after they get out of mod
+2. Um, but you know, I just want kind of
+an assurance that you will always be
+here, right? I mean, um, Tech Joy isn't
+going to like shrivel up and not be here
+after a certain time,
+is it? Um
+[laughter]
+I don't know. I mean uh the tech
+interview is not going anywhere
+according to Dr. Emily. Even if we
+switch to the new module or mod model of
+um only bringing in people to put them
+into the internships to give them that
+job experience aka she's kind of looking
+for more code ready people instead of
+training up new developers
+um from scratch I should say. She has
+mentioned that she wants to keep the
+technical interview as like the litmus
+test for people getting to that phase.
+If you can get through the technical
+interview, then we would be happy to
+bring you on to the internships to get
+that real job experience so that we can
+then move you on to future endeavors or
+help you with your job application, job
+hunting kind of thing. So, the technical
+interview itself is not going anywhere.
+I can't say if I'm not going anywhere um
+just because I don't like I'm not
+psychic and I don't know the full plans.
+But the the technical interview itself
+as a process is still there. And so for
+what you're saying about being in limbo,
+um I think that's a good thing, the tech
+the technical interview piece because
+you're right where you're supposed to
+be. Everything that is changing is in
+regards to what comes before the
+technical interview. you've reached the
+technical interview phase, you're
+probably always going to have access to
+the module one and two if you want it.
+Um, so that's not going to go anywhere
+for you. And then you can apply what
+you're learning and take the technical
+interview and that moves you on and up
+to where you want to go. So I I mean
+you're exactly where you need to be if
+if that makes you feel any better. Well,
+it kind of does uh because you know I do
+see the environment kind of shifting
+there and you know it's the logical
+question is to ask okay where where is
+my place in it?
+Uh and well you know and it's reassuring
+to know that yep I'm where I'm supposed
+to be.
+>> Yes. And again this is what we talked
+about at the beginning of the meeting.
+There is still quite a lot of um videos
+on the playlist and we are working on
+putting more hacker rank problems in mod
+2. Um
+so in a while, I don't know how long
+we're going to be running that, but mod
+2 that you have access to would be
+updated with more hacker specific
+training um based on my videos in the
+past. So you'll kind of get a mixture of
+both of those there. But yeah, I mean
+everything that's changing in the future
+is more about getting people to the
+internship faster or getting people
+out like externally and putting them
+into the internship. So for someone like
+you or anyone in mod 2, um
+there's nothing to worry about because
+like you have access to everything you
+need and you just have to get through
+the technical interview and everyone
+who's coming after you will also have to
+go through the technical interview. I am
+the end and the beginning. though.
+>> Okay. [laughter]
+>> All right. Any other questions?
+>> Yeah, I was concerned about like
+scheduling again uh technical
+and then if I done too many problems
+then I'm I'm going to be left with the
+one that are harder to go through the
+technical interview because I've done
+all of them. So, I feel that's kind of
+unfair. I don't know. Like,
+I put so much work and then I'm left
+with the hardest because I put so much
+work.
+Yeah. So, even if you've done all the
+hacker rank ones, we can jump into leak
+code and I'll have a backup list of leak
+code problems. I just prefer hacker ink,
+but there are pretty there are pretty
+like um
+like in general my philosophy is that
+hacker rank is better for these
+technical interviews because they give
+you all the information up front whereas
+sometimes in leak code problems you have
+to like get a few test cases failing
+before you can actually determine all of
+the information that you need. like I
+can make some assumptions about what the
+data is going to look like, but until I
+get a few more test case examples,
+um I'm not going to be 100% sure versus
+Hacker Inc. will tell you one way or the
+other. Um but there are leak code
+problems that match hacker in that
+format where you are given everything
+that you need to know upfront. And so
+those would be the ones that I would be
+looking for. Um but as far as practicing
+again for you, let's see. I think it's
+less about just practicing, practicing,
+practicing. It's more about getting the
+pressure of being in front of a person,
+which is why the peer mentor office
+hours are a good bet. And even then,
+like
+pick up a problem that you worked on
+last month or
+um yeah, like last month or like just
+clear out all of your problems with a
+new account. do that kind of thing and
+practice those in the peer mentor office
+hours because even if you kind of have
+an idea about what the solution is going
+to look like having to do it in front of
+another person go through all the steps
+the pseudo code the talking it out it's
+going to be really good practice still
+>> but what I'm saying is when I actually
+do a schedule a second attempt to the
+interview
+uh it will happen like it happened on
+the first one when you came with some
+problems And you and you can't you said
+this one and I already did one and then
+you say no that then no this one this
+one and I did I already did like three
+of them that you proposed. So then is
+left the only ones left are the hardest
+of easy I guess and then I end up having
+to do
+those harder because there's no one
+nothing else left. So I feel like I'm
+getting penalized for having done so
+many or something like that because I
+will have it harder at the
+[clears throat] time of the technical
+interview.
+>> Yeah. I mean for the easy ones I am not
+going to like give you one that's like a
+30 pointer or a 25 pointer or what have
+you. I think 20 is still within the
+realm of like fairness. Um but that
+being said like they're all technically
+easy problems. So that's kind of that's
+just kind of
+>> but what if I already did them?
+>> Le code and I'll have I'll start working
+on a different set of I I'm already
+working on it. So that's why I'm saying
+that is that I am already working on new
+problems. So even if you've gone through
+all my hackering problems, I'm kind of
+confident that you haven't gone through
+all of my leak code problems.
+>> I don't know if your problems I mean I
+didn't went through the videos to do
+those. I just went through what hacker
+was throwing to me. But when I list
+them, it's just a few left. Like I only
+have like two left.
+>> Then yeah, then we'll have to switch to
+le code and that's just going to that'll
+>> And what if the same happens? I mean,
+I'm going to be in an infinite loop
+here.
+>> Well, there are I'm pretty sure there's
+like several
+hundreds to thousands more on lead code.
+>> But you already said lit code is harder
+because it doesn't give enough
+information. So, I'm already in a new
+level of hardness because just because I
+did so many. So, it doesn't
+>> in general they do, but I'm saying that
+I'm I'm looking for ones that don't do
+that.
+>> Okay. Yeah. Because it's like getting
+punished for doing so much so bad. So,
+so Mauricio, are you saying that if you
+have done let's say a hacker rank
+problem and you're on the leaderboard,
+you know, you've indicated to hacker
+rank, I did it, it passed, you know, you
+you can't be tested on that same problem
+in your technical interview.
+>> No.
+>> Oh, so you guys go and look and see what
+people have passed in hacker rank.
+>> Yes.
+>> Oh, I didn't know that. Okay. Okay.
+Well, I haven't done that many. So,
+[laughter]
+so okay. All right. All right.
+>> I know. Sometimes it feels is like when
+the stars align, you pass, right? You
+got the right problem that you kind of
+remember and that day you kind of were
+more relaxed and more focused and
+everything align and boom, you passed it
+after trying so many so many times or
+whatever. So,
+I don't know. It's just like a real
+technical interview. You either are
+>> It's crazy. Yeah.
+>> Perfectly prepared for it or you're
+perfectly unprepared for it or somewhere
+in between.
+>> No, I mean you are as much as possible
+prepared for it, but it's going to be
+variation of circumstances or anything
+else.
+>> Well, you know what I'm saying?
+But Mauricio, have you under have you
+discovered like patterns in the problems
+that you've done like a repeating
+pattern of you know that you can pick up
+on when you see like a totally different
+problem?
+>> Well, that kind of start a little bit
+coming up after you done many of
+different types of problems.
+cuz you know I envy you in having done
+all those problems because you probably
+able to recognize patterns that I can't
+see.

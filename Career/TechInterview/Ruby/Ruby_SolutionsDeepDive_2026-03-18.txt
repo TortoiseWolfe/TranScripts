@@ -1,0 +1,1134 @@
+my code.
+>> I can see lots of things.
+>> I don't know if I'm seeing code.
+>> Okay. Now, did you see a change on the
+screen?
+>> No,
+>> I'm seeing a bunch of text editors, I
+think.
+>> All right. Um All right. I don't know
+which screen I'm sharing. Oh, just a
+moment. I think I
+>> VA veterans jobs of the week.
+>> Hang on.
+I picked the wrong screen.
+>> Uhhuh. We just go to the bottom and hit
+share and it'll show it'll show
+everything.
+>> Yeah. All right. Well, I don't want to
+do that. Um
+>> Well, then you can close and talk to the
+one you want.
+>> All right.
+Hang on.
+>> Okay. That's not the one.
+Okay, I think this is the one I want to
+share.
+Okay. Um, now can everybody see code?
+>> I'm sharing a list with various data
+types for loop.
+>> Really?
+>> Yep.
+>> I I' I've full screened it. I don't know
+how much Oh, I can make it bigger. Uh,
+and and since I can't select this code,
+all right, and drop it into um
+>> there's a magnifying glass at the top
+there.
+>> Uh, uh, okay.
+>> Top left under language.
+>> Top left under language.
+>> We're actually under settings in
+language.
+Yeah, a little over to the right. So, it
+goes file, edit, search, view, encoding,
+language settings. So, language settings
+and then right under that is a
+magnifying glass.
+>> Oh. Oh, okay. Oh, yeah. Okay.
+>> Is that better?
+>> Yes.
+>> Yes.
+>> Okay. All right. Yeah. I'm in Notepad++.
+Okay. So, I'm doing the list with
+various data types. For loop. Okay. So,
+I start out um with this to demonstrate
+the type function. All right. Built in.
+All right. And then I'm taking in a list
+I'm taking a bunch of different data
+types and throwing them into an
+individual list. All right. And then I
+demonstrated what we can do with
+individual list items. All right. Here.
+All right. And then here. All right. Uh
+I'm selecting the l I'm setting up the
+length. All right. Of the list. And then
+we're going to we're going to wrap
+around through each of the items in the
+list. All right. We're going to print
+the item. All right. And then we're
+going to do something unrelated to the
+item uh which is specific to the you
+know to to specific items uh where I is
+equal to different values. We're going
+to print the J K and H. All right. And
+so that was what I was demonstrating.
+All right. And then the these are the
+results you get when you run it.
+>> Nice. So basically you're experimenting
+with
+different data structures and
+>> yeah different data structures in a
+list. All right. And how we can use
+those and showing people you know things
+like that. All right. We also did the
+negative uh index number thing. All
+right. And showed people how that
+worked. All right. And we also showed
+them all right. How to go ahead and
+escape a single character uh within a
+string.
+>> Mhm.
+>> All right. So, those are, you know,
+those are some of the things that I
+showed showed people how to do. All
+right. And I told them that they should
+take this home and play with it and try
+to break it and fix it and use examples
+and ideas that they get off of, you
+know, uh, C-Pilot and other places.
+Nice. I like that. So, here's a quick
+plug for Dan. If you want to experiment
+and dive deeper into some of the Python
+data structures language and your
+knowledge level, join his peer pure
+programming session.
+He'll give you homework.
+>> Right. That's right. I'm definitely
+going to give you homework. Okay. Nobody
+gets off scot-free.
+>> Awesome.
+>> Okay. So, now that we have um a bit more
+people here, sorry everyone for the late
+start. I was in the middle of a tech
+elevate project. Um lost track of time
+and then my Zoom decided to restart
+itself, so I had to wait for that to
+figure itself out. But now that everyone
+is here,
+welcome to the session. Um,
+what we've been focusing on since I'm
+seeing some new faces lately, what we've
+been focusing on week to week is just
+giving people the opportunity to dive
+right into a problem as a mock
+interview. There's no pressure, there's
+no expected outcome to have all the test
+cases passing. It's really just to get
+that one-on-one well oneonone group
+feedback of
+where are your what skill what skills
+are you showcasing well and what are
+some things that you could improve on or
+try out to maybe whittle down your time
+or work on your problem solving etc etc
+um so this is a great opportunity to
+practice practice for the tech interview
+and also get some feedback so what we're
+looking for
+>> today is volunteers who are open to
+doing a mock interview. Um, is anyone
+interested in that?
+>> Sure, I can do that.
+>> Now, Dan, you went last week, so I am
+happy.
+>> I knew you were going to do that to me.
+I knew it. I knew it.
+>> I am happy to have you volunteer, but I
+just want to open up the stage for
+anyone else who wants to volunteer.
+This is like my second time here, so I I
+don't feel like I'm ready.
+>> Well, you'll never feel like you're
+ready, so maybe you get over that
+mindset. But I am fine with letting you
+skip today.
+>> I'll go for it.
+>> Yay, Stephen.
+>> Okay, Stephen. I will have you go today
+because Dan went last week. Um though
+Dan I am interested to see how you've
+taken the feedback but I can save that
+for another time as well.
+>> Okay.
+>> Or we might have time. We can keep these
+short.
+>> Yeah. I haven't done practicing because
+I've had all manner of other things
+going on since but um you know I have
+been you know I've been you know I've
+been doing some coding and things like
+that. And prior to this, I was, you
+know, setting up to actually uh do
+something with type with the type
+function.
+>> Didn't didn't finish it, but I started
+>> too many pots in the kitchen.
+>> Well, just not enough time. And I'm I'm
+what I'm trying to do is is I'm trying
+to write a little miniature function
+that I'll actually be able to detect and
+and use within a larger piece of code.
+All right. And detect the type. Okay.
+>> Of a particular value. Yeah. So,
+>> um Okay. So, we have a question in the
+chat. Stephen, if you want to open that
+up and share your screen with the green
+share arrow.
+>> Okay. Um
+>> All right.
+>> I think I'm sharing with everyone. Are
+you able to see my screen? Yes. I'm just
+going to pop everyone else on mute real
+quick.
+>> Okay.
+>> And okay, looks like we're good. All
+right. So, um, just a general guideline,
+read through the problem. You don't have
+to read it out loud for us, but if
+you're going to read it to yourself, try
+and summarize it to the group before you
+get started, just so everyone is kind of
+on the same page. Um, and then make sure
+to sound out your thinking as you're
+working through the problem.
+And, yeah, practice all the stuff you've
+been you've been holding. Um, we'll give
+you 15 minutes for this and then we'll
+stop and debrief and see where we are.
+>> Okay. So, let's see. You are given a
+sort of unique integer array.
+A range AB is set of all integers from A
+to B inclusive. return the smallest
+sorted list of all of ranges that cover
+all the numbers in array exactly
+that is element of nums is covered by
+exactly one of the ranges and there is
+no integer x such that x is one of the
+ranges but not in nums each range a b in
+the list should be output as
+h
+So
+let me look at the examples here cuz I
+still somewhat confuses what they want.
+So they're giving me
+an array of nums. So we got 0 1 2 4 5
+and 7. And it needs to be output 0
+2 four to five and then seven.
+explanation. The ranges are 0
+to 0 to 4 54 577.
+And then example two is another array of
+nums. This is a
+0 2 3 4 5 6 4 6 8 9.
+Okay. They arranges bar zero
+2 to four
+six
+constraints
+zero less than equal nums.length
+less than equal 20.
+All values are unique.
+We're giving sorted unique integer range
+a range a comma b set of all integers
+from a to b inclusive
+smallest sorted list of ranges that
+cover all numbers in the array exactly.
+That is each element of nums is covered
+by exactly one of the ranges
+and there is no integer
+x such that x
+should be put us all
+five and seven.
+Wait, what does this mean right here?
+there.
+>> I'm not sure what this is. Is that
+saying A to B?
+I don't know if you could respond to
+that, but I'm kind of stuck on here cuz
+I don't understand.
+>> That's okay. So, if you're stuck, um,
+make some assumptions and then see if
+you can test them out.
+>> Okay.
+Just going to read this to myself one
+more time to make sense of it.
+It turns more
+Yeah, I don't. So, if I understand
+correctly, we have let's see, let's
+print what
+if I do
+nums here, we have
+the same numbers as here. And the output
+should be
+known by that right there. There's no
+antics.
+Nothing.
+Wow.
+Two.
+I just I I honestly can't make sense out
+of this. Like I don't know what happened
+to the one here. They're going from 0 to
+two.
+Then they're going from four to five
+and then they're adding the seven
+and then they have it in strings.
+So are you converting and
+array of integers
+into strings
+each
+integer
+x such that x is one
+range a and b in the list should be
+alpha as
+A
+B F
+is not equal to B
+then if A equals B.
+2.
+Okay. So, I don't want you to sit stuck,
+but it sounds like you have a theory,
+right? You mentioned
+>> it sounds like they're converting arrays
+into strings. So, I might write that as
+an assumption of this is what I believe
+they're doing. And then what would you
+do to replicate that to test it? Print
+it to see if it matches their expected
+output.
+Okay. Well, if it's just something as
+turning an array of integers into
+uh strings, um I could do that, but I
+don't know why they are missing the one
+and this one and they're also missing
+the three in this one right here.
+So, I I don't understand why
+how they get that. But if if that's the
+case, then what I would do,
+I will probably use the str
+um the string
+I think it's called method, the string
+method from
+uh Python
+and loop through the list. So probably
+loop
+through the nums
+first
+and then
+I will take and see that's what I if if
+I'm doing this right then first they
+went through
+the single one
+whereas this one They went
+and they got zero to
+arrow two, whatever that sign means.
+So then that's kind of like the
+condition that you have to write on how
+to go from how to loop through the array
+of integers and then eventually
+go from index zero to index two
+and
+convert that into an integer I mean to a
+a string.
+But again I don't know how I'm not
+understanding this correctly. I'm sorry.
+I thought I was going to
+I thought I was going to be Sometimes
+these easy promise to me, they're
+they're hard because I'm just It's hard
+for me to understand what they want
+unless I look at the examples. But even
+these examples are confusing because I
+don't I don't know if I'm focusing too
+much on this, but I don't know what that
+means right there.
+>> That's okay. They do it intentionally.
+So now that you've read through the
+examples,
+maybe reread through the problem slowly
+and see what information you can pull
+out.
+Okay, so they want me to return the
+smallest. Okay, return the smallest sort
+of list of ranges.
+That's why they have the ranges r
+that cover all the numbers in the array
+exactly.
+So
+if it's covering all the numbers in the
+array exactly
+then they should be this should include
+the one
+but then that's the c I don't that is
+each element of nums. So each element of
+nums is covered exactly by one of the
+ranges
+and there is no integer x
+such that x is one of the ranges but not
+in nums.
+Each range a b in the list should be
+output as
+and this is where I get confused.
+Then you have a string here a
+arrow pointing towards a b if a is not
+equals to b. And then here we have a
+string of a if a equals to b.
+Can I can I give it a shot? I know what
+they're asking. I don't know how to
+write it, but I know what they're
+asking.
+>> Well, hold on. Let's let him work on
+this by himself, and then we'll all come
+together as a group at the end.
+Okay, Stephen. So, you've got the nums
+printed out and you see the expected
+output.
+Does the expected output look similar at
+all to
+the the arrow pieces that you're
+struggling with that each range A B in
+the list should be output as blank
+blank.
+It looks similar but it's
+similar. It's missing one number. Like
+this one's missing the one,
+right? And this one is missing the
+three. Mhm. So then in the in the
+problem description it says each range A
+B should be output as and then it has to
+do two bullet points.
+Does the expected output
+relate to that in any way?
+Does the expected output relate to this?
+Okay, I'll ask a little bit more
+directly. So if you look at the output
+that they have in example one,
+the array with the strings inside of it
+02,
+4 arrow 5, 7.
+>> Then you look at the first bullet point.
+Does the first bullet point match all of
+them or are some of them different? Then
+look at the second bullet point. Does
+the second bullet point match all of
+them or is it different?
+Uh it matches more like the the first
+bullet point.
+Each one of them do.
+I just don't understand how they are
+returning them as ranges
+>> in the example.
+>> Mhm.
+>> I mean, they all have a start and they
+all end. They're all in order.
+Mhm.
+So if it's just one number that's
+missing from here, for example, this one
+right here,
+which is the three,
+they're going zero, comma, then two to
+four, range two to four, comma, then
+six, comma, then range 8 to 9.
+And that's how they got the ranges are
+zero to zero, two to four, six to six, 8
+to nine.
+>> I still don't get why did the omit the
+three.
+>> So what is a range of numbers?
+>> Um,
+a start to finish of numbers. Uh-huh.
+So, if you think about the Python range
+function,
+>> you can do what with it? You can set a
+start and a stop, right?
+>> And a stop. Yeah.
+>> Yep. A start and a stop and a step. So,
+when you have a start and a stop, do you
+need to include all the numbers in
+between them?
+>> No.
+>> Does that sound familiar to this
+problem?
+>> Kind of.
+>> So, if you have a theory about how that
+would work, then what can you do to test
+it out?
+If I have a theory on how this will
+work, what can I do to test this out?
+Well, I don't know if this all
+if I um
+I think I could do like um
+I think I could use a while loop instead
+of for loop
+and say how
+I is less than
+nums. So we want the entire thing. So
+the length
+of nums
+then I will say
+the start will be
+each index of nums.
+Yeah. Let's see if this works.
+But then we have to say that
+I equals start counter and say I equals
+Z.
+And then I have to
+create a condition that says that I want
+the numbers
+So while the numbers are
+consecutive,
+how do I write that? Um,
+so
+>> you don't have to start with code. You
+can just write it out in comments as
+well.
+Okay.
+Um,
+I think I could do Hang on one second. I
+think I do I + 1.
+If I + 1 equ=
+n
+I
+um
+wait um
+but then I have to say
+well i + 1 is less than
+yeah like above here. So while I is
+less than
+the length of
+wait no
+length of nums
+and
+nums
+will be the index + uh one equals nums
+plus I
+then to the counter
+you add one.
+So that'll be plus =
+1
+and then
+then I need to work on the range. Um,
+so
+if the start of the range
+equals
+>> Okay, I'll pause you here. I won't hold
+you captive any longer.
+>> I'm sorry. I I honestly this is it's
+like hard for me to understand at first,
+but it was it's more like as I'm reading
+and reading it is getting better, but
+I'm still like in my mind I can't put it
+together.
+>> Are we ready for input now?
+>> Almost. Um
+Stephen, so I want I want to say that
+you did a great job. So I I did let you
+struggle for a lot longer than I I said
+we would. Um, but I want to call out a
+few things just because I feel like
+maybe mindset is one of the things that
+you're struggling with here. Not
+necessarily
+like understanding the problem because
+while you were saying that you were
+struggling and that you were stuck and
+you didn't understand it, you did
+explain the problem really well. You
+called out exactly what it was doing. It
+is converting ranges
+to string, right? Like it is doing that.
+It's showing that you acknowledge that
+it's skipping some right some numbers in
+the range and then you highlighted how
+is it doing that it's going zero
+to two and then even later you mentioned
+consecutive
+and then it's doing
+four to five and then seven by itself.
+So you're highlighting how the example
+works, showing that you understand that
+while you don't understand why it's
+skipping the one, you understand that it
+is showing 0 to two, four to five, and
+seven, that it is representing all of
+those numbers in the array.
+You read through this and
+you resummarized it in your own words.
+Also great skill. Um, we didn't get to
+this the constraints and that's okay.
+So, I think you were missing you're
+really only missing one piece to unlock
+like how this problem works. But the
+reason that I wanted you to like sit
+here and put the pressure on you to sit
+with it is that no amount of tips or
+guidance or someone else chiming in is
+going to help you make that breakthrough
+on your own. Um, so the only way to get
+to those breakthroughs of like how do I
+understand this problem is one your
+mindset. Are you kind of defeist and
+giving up as you go through the problem
+or are you saying what do I know about
+this problem? What can I do next to
+understand this problem?
+You understood almost everything about
+this problem. So that's what I want to
+say is that I think with just a little
+bit of a mindset shift, you could have
+hit that breakthrough of unlocking
+exactly how this problem worked. Um and
+and I want to I want to call that out
+because we don't often talk about the
+mindset in these meetings. It's more
+just like do you understand how to break
+things down into steps and steps and
+steps?
+>> I understood it more when you gave me
+that hint of ranges like
+>> the uh the range function in Python, you
+know, where star stops.
+>> It is almost like I was reading by
+myself and it wasn't making any sense.
+But uh yeah, it's I I guess I need a
+little hint there, but I'll need more
+time to work on this one and get it
+resolved.
+That's okay because we'll look at it
+right now. So, if I had to read this for
+myself, what I would be doing is saying
+you are given a sorted unique array of
+nums. I see that you printed it out.
+Great. We understand that. A range of A
+to B is a set of all the integers from A
+to B inclusive.
+That's a weird way of phrasing that, but
+okay, sure. Um, A to B inclusive. Return
+the smallest sorted list of ranges that
+cover all the numbers in the array.
+Exactly. So, that's where you started to
+get confused. But if we break this down
+into pieces, return the smallest sorted
+list of ranges. We do see they have
+multiple ranges and they are sorted
+that cover all the numbers in the array.
+Exactly. And that's where you called out
+that they're skipping one. So I might
+have pulled that out. We are
+returning
+list of ranges. And then I might
+question okay
+What is a range?
+>> Because what I'm seeing in the problem
+isn't matching what I'm understanding
+about or if I'm speaking for you, what
+I'm seeing showcasing the problem isn't
+matching my understanding of what it
+should be doing because it's missing
+that one. So, what am I missing here?
+What is my understanding of what a range
+is? Because I'm expecting to see the one
+and I'm not seeing it. So, they're
+saying it covers all the numbers in the
+range, like all the numbers in the
+array. Exactly. So I'm thinking should
+be seeing one
+but it says it's covered. I may be
+thinking this and not writing it but I
+am writing out this part returning a
+list of range
+that is each element of nums is covered
+by exactly one of the ranges.
+Okay. So I'm I'm going to try and maybe
+understand that piece a little bit more.
+Each element of nums. So 0 1 2 3 4 5 or
+0 1 2 4 5 7 is covered by exactly one of
+the ranges.
+So 0 to 2
+captures 0 1 and 2. 4 to 5 captures
+exactly four and five. 7 captures 7. If
+I look here at this explanation though,
+they're saying a range starts at 0 and
+stops at two. And then they're
+representing that by 02.
+This range starts at four and stops at
+five. And then our last range starts at
+seven, stops at seven. That's where this
+little piece of information comes in
+handy because they're saying each range
+a to b in the list should be output as a
+to b if a is not equal to b. So if we
+look at our ranges here, 0 and two
+z a b two. So does 0 equal two? No,
+we'll use the arrow format. Does four
+equal five? No, we'll use the arrow
+format. Does seven equal 7? Yes. So, we
+will use the A only format.
+>> Now, it if I'm still focusing on just
+this piece, each element is covered by
+one of the ranges. Exactly.
+Again, we're seeing that okay, one isn't
+showcased in here, but it's saying that
+it's covered by the range 0 to two.
+So,
+what makes the range 0 to two special?
+That's something I'd be asking myself.
+And there's no integer x such that x is
+one of the ranges, but not in nums. No
+clue what that means. Even understanding
+this problem, I still don't know what
+that means. And I'm I'm not worried
+about it um at this point because
+well, I guess I should maybe want to
+figure that out.
+we're still kind of answering these
+earlier questions. So once we answer
+these earlier questions, then maybe I
+would revisit that to see if it is going
+to impact my code. And then we've kind
+of broken down this a little bit more.
+We have our understanding of the
+examples. I would read through the
+constraints to make sure that I
+understand them. All the values of nums
+are unique. Okay? So we're not going to
+see any duplicates of any two like 0 222
+four or six.
+>> But what about on this example number
+two? Is zero always going to be zero
+like start and stop because there's a
+zero?
+>> Well, let's see. Nums.length is going to
+be 0 to 20. So that tells us the length.
+Nums i. Those individual values are
+actually going to be what? -2 to the 31
+to 2 31us 1. So
+what do you think? Does that mean that's
+always going to start at zero?
+>> Yes.
+Well, that's what actually confused me
+because I thought it was going to be
+from it was the the start will be zero
+and then it will end at two.
+>> So, if I'm looking at this constraint
+here for nums I if I don't know what
+this means
+I'm going to say well I can't paste it
+exactly -2 to the 31st hour I guess.
+>> Okay. So, they're telling me that this
+number is the starting.
+>> I don't know if you saw that. I think
+I'm only sharing one screen, but I
+Googled
+>> no I googled this -2 to the 31 and that
+equals this number.
+So they're saying that nums I
+so any of these values can be from
+negative
+to bajillion
+>> to that same number positive minus one.
+So I'm just going to make an assumption
+that looks something like that. So it
+doesn't always start at zero, right?
+Like that's what we can gather from
+this. is actually going to include
+negative numbers well below zero and
+potentially go to really high positive
+values. But the thing about this here
+is that these could all be negative.
+They could all be positive like we're
+seeing here. Like there's no that's not
+really a part of the pattern. Maybe that
+helps you, maybe it doesn't. Um so what
+I would say here from that is that
+starting index
+zero does
+not matter. And why would it not matter?
+Because all the values will be sorted.
+So then I'm still going back and I'm
+asking
+how are they defining range? That's
+still the root question that I'm trying
+to figure out in this in this example.
+Does that make sense?
+>> Yeah.
+>> They're going for the smallest ranges.
+>> Mhm. I don't know why 0 to two, which
+would be 012, is smaller than 2 3 4.
+It's the same amount of numbers. I mean,
+it is smaller, but it's it's it is weird
+the way they laid it out. Like they
+picked zero and then they picked two to
+four in the second one. But they are
+going for the smallest ranges, working
+their way up.
+>> Is this the part where we can like all
+jump in now? Yes, it is.
+>> Okay. Um I looked at the pattern. All
+right. Uh I looked at consecutive
+numbers. No skips. That is range 0 to
+two. Okay. You go and this is the
+example one. All right. Um you go to the
+next one. Um it's four. It's four five.
+So that range is four five.
+to do a range, but you can't skip any
+numbers. So,
+>> you know, but see, that's the thing
+there. But we're looking at the numbers
+in the array. Okay? We're not going 1 2
+3 4 5 6 7 8 just randomly. We're looking
+at we're confined to what we're given in
+the array. So, what we're given is 012.
+No skips. Okay. Range 0 2. All right.
+There is no three. We don't deal with
+it. We do have four, five. All right,
+range four, five. Put it down. All
+right, we've got a skip. We have our
+first skip between five and seven. We
+are not missing six. All right, so seven
+is the individual thing that we should
+put down.
+>> Does that make sense, Stephen?
+>> Yeah.
+So when I was saying how can you test it
+out? Um there are a bunch of different
+ways that you can do that. So they're
+kind of explaining to you that it's
+talking about the consecutive numbers
+with lead code. It's nice because you
+can create your own test cases. So I
+could add a bunch of random numbers and
+see what ranges it gives me. From here
+we're seeing it says -2 to 5 as the
+expected output
+and then seven. So then that changes the
+range, right? because we're seeing -2 1
+0 1 2 3 4 5. So now we're not just
+skipping one, we're skipping
+a bunch of numbers. So then that's where
+I'm going back to well what is the
+range? It's giving you a stopping point
+with consecutive increases of plus one
+until there's a gap.
+Um
+I use the test case here, but there are
+other ways that you could test that
+theory, right, of of what is the range?
+Well, we know that 0 1 and 2 4 5 7 um
+maybe
+you could actually I don't know because
+we already know the answer. Um I would
+continue breaking down these into
+smaller points. But what I was kind of
+pushing you to do is how can you test
+this theory of breaking down well what
+is the 0 to2 in this range? What is the
+four to five? Like what do each of these
+elements mean? Are you printing it out?
+Are you comparing the what you're given
+to what you're supposed to be getting?
+What changes can you see? All of those
+things, all those little problems
+solving tool pieces,
+questions, assumptions, printing,
+testing, debugging, all of those things
+that you can do to try and break down
+the problem more into smaller steps.
+So I I mean I was looking at this as one
+we're creating a a list of all the
+ranges. So if we treat this as all the
+numbers we're going to determine the
+ranges because six to six is a range.
+It may only contain one number. So from
+this point I would say
+if you're creating um in a loop you
+would do like an if statement that is
+keeping track of two numbers the start
+of the loop the start of the range and
+the and you're trying to determine the
+end of the range so that when you reach
+that range you can write it to a list
+file
+according according to uh how it's
+printed. So if the start of the loop
+equals the end of the loop, then you
+would write it this way uh the second
+bullet.
+If it was a range of numbers, obviously
+you would do it the first loop, but you
+would do that through like a a
+conditional if statement probably
+if that makes sense. Am I making sense?
+Yeah, I think that's a good strategy for
+approaching it, defining the start and
+stops and creating those ranges. We
+hadn't even gotten to that step yet
+because we were just kind of talking
+about how do I make sure I understand
+the problem. And I think that's
+important piece to do is to make sure
+you understand the problem entirely
+before diving into code. I mean, you can
+certainly test things out like I can
+make sure that I can iterate through
+this loop or that I can print out the
+string values and that's fine to do, but
+before I start writing any real code
+solutions, I want to make sure I
+understand the full problem and then I
+can go into what's my strategy, right?
+like
+>> yeah I I guess I'm from old school so we
+used to do um I was talking to Shelley
+the other day and we we uh I'm we used
+to write flowcharts and in those
+flowcharts we would create the if
+statements and those uh conditional
+statements. So um I was just kind of not
+exactly writing code but going to where
+the intersection point is or the
+decision point is what do you do from
+that decision point? What's up?
+>> Yeah, that's great. I think that makes
+total sense. And so putting it into the
+form of a data structure helps you to
+figure out the flowchart piece. Great.
+That's awesome. Okay, so we spent all of
+our time on that and we didn't discuss
+solutions. Um, I would definitely
+encourage all of you to try this problem
+out your own. Get the test cases passing
+and post those into the Hacker Rank
+channel and Discord. Um, compare your
+solutions with each other. Add the
+spoiler tags so that it kind of hides
+them. Um there is a penned message in
+the hacker channel for how to do that if
+you're not sure or you can Google it. Um
+but yeah, I wanted to make sure that we
+kind of covered some steps for breaking
+the problem down a little bit. But there
+is there is still that hard part of how
+do you make those logical jumps and
+those logical connections? And there's
+no there's no real way to teach that.
+You kind of just have to practice
+breaking problems down in your own way
+and and figure out how to create those
+assumptions that you can ask and answer.
+Um, okay. So, do we have any questions
+before we close out? Any questions about
+this problem? Anything that people would
+like to discuss?
+>> Yeah. Um,
+I was looking at this problem in
+particular and one of the things that
+actually put me, I think, onto the right
+path was being able to recognize a
+pattern.
+>> Mhm.
+>> Um, that pattern I got from the
+examples, what worked or what didn't
+work.
+So, in approaching one of these things
+from Cole and you know, I have to say,
+Stephen, you were just so cool. I got to
+say it. Um to approach something like
+this cold because it still gives me the
+shivers. Um it's the idea. No, it does.
+Um what when you see something that
+you've never seen before, you want to
+try to recognize a pattern.
+my p the thing I recognized was um when
+we were looking at ranges
+uh when we would do something like 0 to
+two
+um it was actually in that array is 012
+um but three we we didn't bother with so
+much um it wasn't within a range um if
+and I forget exactly what the problem's
+looking like now but we I don't think
+three was even in I don't think three
+was even in the array.
+>> I think the next uh integer was four or
+five something. Uh but you know there
+was no skip. They were consecutive. So
+that would be a range. Um and at the
+very end there was just a seven. Uh and
+it was a six that didn't appear in the
+array. It was like the five was the last
+one in the array before the seven, but
+there was no six and that was a skip. So
+you look at the seven and you say, "Hey,
+that's there by themselves." So that's a
+range, too. But, you know, I think uh
+something really hit solidly with me. It
+was the idea that you look because I was
+wondering what's the role of the
+examples? What's the role of the text?
+You know, how do we approach these
+suckers? All right. Well, I think the
+way we do it is that we look at the
+examples and we see what works or
+doesn't work. and we try to recognize a
+pattern in the examples.
+Um, and I guess then we go back and
+well, we should really read the problem
+first, but you know, the rubber meets
+the road when we're looking at the
+examples, what works, what doesn't work,
+and you try to recognize a pattern. And
+for me, this only made sense because I
+thought I saw a pattern there about the
+ranges. And I thought I saw that, you
+know, whenever you had consecutives, you
+had the like little dash zero thing
+going, but if you had a skip, like you
+didn't have like you skipped three and
+you started at four, five, okay, well
+four five is a range and that's a
+pattern and you put that down. But it
+was only in looking at the examples that
+I really saw that, you know, to actually
+see the pattern to to see it. Um, but
+anyway, that was my takeaway.
+>> Yeah, that's great. Thank you, Linda.
+And I think the problem here is that
+there's no easy way for everyone to see
+the same pattern in the same way. So,
+not everyone can just immediately say,
+"Oh, well, these are consecutive numbers
+and then there's gaps." So the only way
+that I'm thinking that we can kind of
+get around that is by asking a bunch of
+questions, right? What is the range? How
+are they defining these ranges? What
+does it mean in the context of this
+problem? That's what works for me. What
+works for you is that you saw that there
+were these gaps and that's great.
+>> But you know, my question is this
+though, um, with regard to the purpose
+of the examples, are they there so we
+can spot a a pattern?
+Yeah, they are there to give you an
+outline and some edge cases. Hackerink
+is a lot better. They will give you more
+diverse problems that help to point out
+all the edge cases. Le code will not. So
+in this case, it gave you two examples
+and the ranges always only skipped one
+number. I think a better example would
+have been if it had skipped a bunch of
+numbers like 0 to five.
+>> Um, but they do that intentionally
+because they hate us and they're out to
+get us. Uh, but that's where you kind of
+have to build out your own test cases of
+how would I how would I approach this
+problem if I was like adding more
+information or what can I do to test it
+out and maybe that's like I think
+they're skipping numbers that are
+consecutive. So I'm going to write my
+code for that unlock some more test
+cases and then by submitting and then
+that will show me all the other ones
+that I have wrong and then I can use
+those test cases as like more examples.
+So le code you kind of have to submit
+something if you're if you're unsure
+about what other like edge cases and
+test cases you should use. Sometimes you
+just have to submit code that doesn't
+work necessarily. Um but that answers at
+least the like if you can pass the first
+two and then submit it so that you can
+unlock more it'll give you more stuff to
+work with so that you can like have more
+test cases to use.
+But you do have to have something that
+kind of works, right? So there there is
+still the bridge gap of understanding
+the problem enough to get some test
+cases working and then submitting to
+unlock more test cases so you can make
+sure you capture all the edge cases.
+Yeah.
+Michelle, I saw you had your hand
+raised. Did you have a question?
+>> Yeah. My question was is uh does a range
+always not skip numbers
+or is that just I I don't understand why
+they didn't why they wrote it so you
+didn't want to skip any numbers
+>> right so I think a range is dependent
+right the context that they were giving
+us is that for this problem how they
+were defining range is that it's a
+series of consecutive numbers and they
+want it represented as a start and a
+stop. So 0 1 2 3 4 those are all
+consecutive numbers and we need a start
+and a stop of zero and five. So they're
+saying for the context of this problem
+specifically we are defining a range of
+numbers as a start and a stop of
+consecutive numbers.
+>> Okay. All right. Gotcha.
+And and that's how some problems are is
+you have to kind of question well what
+does this data structure mean or what
+does this term mean in the context of
+the problem the example and what they're
+expecting.
+>> Okay.
+>> All right.
+>> Any other questions or thoughts before
+we close out?
+Okay. Cool. Thank you, Stephen, for
+being our volunteer.
+Um, I really want to say that you did
+not do badly at all, I think, in regards
+to calling out the pieces of the
+problem. You were kind of saying that
+you were struggling with it, but you
+were making all these observations
+perfectly about the problem. Um, so I
+feel like it's just with the certain
+problems that you're struggling with,
+you're only just like one like little
+insight away from understanding them and
+being able to write out the code that
+you need. Um, so I think I think maybe
+that's just mindset there. Otherwise,
+I've seen you do the mock interviews
+before and you've done great. So, I'm
+not worried about you is what I'm
+saying.
+>> Uh, I put a text explanation in the in
+in the chat.
+>> All right. Which at least gives out an
+explanation of how this works in
+concisely.
+>> If somebody wants to grab that and
+review it, it will it may make more
+sense.
+taken offline.
+>> Yeah, I already copied it and pasted on
+my notes. I'm going to definitely tackle
+this problem as soon as we get off here
+and I'm looking forward to get an
+answer.
+>> Great. All right. Thanks everyone and
+thanks for staying with me after the
+hour.
+Thank you.

@@ -1,0 +1,921 @@
+All right, welcome back to this week's
+nailing technical interview. Today is
+Wednesday, so we are going to dive into
+some of the problems that we did on
+Sunday, look at some solutions, see see
+what people got for those. Um before we
+get started, does anyone have any
+questions about the tech interview
+practice preparation, coding challenges,
+anything like that?
+>> And what happens when your times are
+irregular? You just need to keep doing
+it until they are regular.
+>> Yes. So again, that's where we come back
+to the consistency thing. Like if you
+are getting to the point where it's like
+three problems in a row under 20
+minutes, that's a good sign. If it's
+like
+you can do that, but then the next one
+you fail, then the next one you fail,
+but then you can do a few in a row
+again, but then you fail one, like you
+could probably still pass, but then
+again, you might fail at the same time.
+But if you're going from three to like I
+can do six in a row without failing,
+there's no like real exact science to
+it, right? That's just they're just
+recommended time ranges. What's really
+the strength there is the knowledge of
+everything from mod one and mod 2. So
+the linked list, recursion, binary
+search, arrays, nested arrays,
+dictionaries,
+functions, like all of that stuff. But
+if you feel if you feel confident in
+each of those sections and you are
+really working on the problem solving of
+breaking the problems down, debugging
+through it, thinking things out
+logically,
+it takes both both sides of the hammer,
+so to speak. I don't know if that makes
+sense. That's maybe not a good metaphor,
+but the time ranges is again, it's just
+to get an idea. It's just to help you
+get an idea, but really it comes down to
+how confident you feel across those
+general knowledge areas. But to actually
+pass the interview, you have to do it
+under 20 minutes, right?
+>> Yes.
+>> And can you give a personal assessment
+on how to improve the time based on
+whatever you observe? I mean, can you
+just get to diagnose do a diagnosis of
+what may be causing that case by case
+and then do recommendations
+tailored to to me to improve the time?
+>> Yes, that definitely happens at the end
+of the technical interview if you do not
+pass.
+>> With a mock interview, it's a little
+different. Like I do give some advice
+but like I'm not watching you go start
+to finish for a full problem that I
+would expect you to solve within 20
+minutes. Um not always sometime I think
+we did one
+>> and I gave you feedback there but yeah
+it will be very specific in the tech.
+>> So actually to get that level of
+personal I mean personalized feedback I
+need to go to the interview.
+>> Yeah.
+>> And what is the process to book that?
+So in mod 2 there is a section for the
+tech interview and there is a booking
+link there.
+>> Okay. I have to look for it. Thank you.
+>> Yeah it's in mod 2 though towards the
+end.
+Any other questions?
+Okay.
+So
+on Sunday we walked through well we
+didn't walk through
+we did what did we do Jesus we did
+uh that's right
+so we talked through the array partition
+problem and then we left it open-ended
+for people to work on. Um, and then we
+did breakout rooms with the medium
+problem, number of arrows, diverse
+balloons.
+So, I'm curious how many people were
+able to solve the first problem, array
+partition.
+>> Chris got it. Mauricio got it.
+Lisa got it. I guess it's maybe it's
+better to ask who didn't finish that
+problem.
+Okay. So then next we did the
+minimum number of arrows to burst
+balloons. Who did not solve that
+problem? Because I know Mauricio did it.
+He posted it to Hackerink. But did
+anyone else
+solve it?
+So Lisa did some of it.
+>> Sorry. not solved it.
+>> You have not solved it.
+>> I I have I didn't take time to go back
+to it. Yep.
+>> Okay.
+Okay, cool. So, I think what we'll do
+then is
+And John, you said you didn't work on
+the first one either, array partition,
+or you didn't finish it.
+>> Turtle.
+>> Uh, no. I've not I've been working on a
+I guess a side project. I've been
+working on a template and of Claude.
+I've been been looking some other stuff,
+but no, I've not worked on it.
+>> Okay. Well, I think I'll spoil this one
+for you and then we'll do
+the next one.
+Um,
+okay.
+Before we do that, I just want to
+take a quick peek
+at
+Re. Where did you post that? Was that in
+Hacker?
+>> No, that's me.
+>> Yeah, it was.
+>> But they keep posting stuff, so I don't
+know where is it. Yeah.
+I posted the same day. So,
+>> I see.
+Okay.
+>> Yeah. The seventh.
+>> Mhm.
+>> At 4:30.
+>> Okay. Yeah, that looks good. All right.
+So, let's look at the first one. array
+partition.
+I just want to
+cover this one first. So, oops.
+Or actually, um,
+Lisa, did you finish
+array partition? You did, right?
+Lisa,
+>> yes.
+>> Do you want to showcase that for us?
+>> Sure.
+>> Because I remember you saying at the end
+of the last session that you had an idea
+and I think you were on the right the
+right trail there.
+Partition. Okay. Share screen.
+I'm having I can't find the buttons
+today. Hold on.
+Ship screen.
+Okay. Okay. So uh what I did um what um
+the way I went about it is
+think about this
+first I had to understand the problem.
+Yeah.
+So it was counting um the first the
+number um so given the two different
+points
+um so
+um the way of numbers is taking two
+integers and it's taking the first
+part of the first pair and you're
+summing up the minimum values. So
+>> in order to find out what the minimum
+values is, we had to transverse
+the array. So
+uh what I did was I actually sorted it
+and when I sorted it um and then by size
+I did a step two. So I stepped it. So uh
+when I went through the range after I
+sorted it,
+I basically took the first value of the
+set
+and added it to some and then I got my
+values and it worked for all of it.
+>> Awesome.
+>> So the pattern was let's take the first
+integer of each set and it should
+um after we sort it. If you do it, if
+you don't sort it, it won't work. So the
+key point was sorting it.
+>> So that was that was that was my idea.
+>> Yeah. Awesome job. Exact same solution.
+So just to recap a few things about that
+for why that works, right? Is that we
+talked about the constraints last time
+and the constraints indicate that
+the
+length of the array is always going to
+be even or divisible by two. So there's
+always going to be a set of two for each
+of them. Um so that you can do that
+jumping of two. The other thing is from
+the problem when you're doing the sets,
+you're comparing two numbers and you're
+taking the minimum or the lower of those
+two numbers. So when you sort them and
+you're jumping by two, that first one
+that you jump to is always going to be
+the lower value of the two numbers in a
+set. So if you start with zero and one,
+you choose zero, it's going to be the
+minimum. Then you jump to two and three,
+two is going to be the minimum. So on
+and so forth. So that is great. Um,
+yeah, excellent job.
+>> Thanks.
+>> Trying to see if there's anything else
+in here that might have tripped you up.
+Um,
+so I kind of
+as soon as I looked at this I I was
+like, "Oh, you just sort this. That's
+that's what you do." But I tried to go
+back and think about if I could do it a
+more complicated way. And I actually did
+not do very well. Um, so I'm sure
+there's a more
+I'm sure there's a a more difficult way
+to do it without sorting.
+It would be horrendous. It would be like
+you'd have to do like I don't know
+several several nested loops to try and
+figure that out. But I think it's
+possible. Um but I couldn't get it
+within an O of N squ time range to work.
+So I figured if it if I wasn't going to
+do that then it probably wasn't worth
+pursuing more than that for to show off
+as an example. Um, so yeah, it kind of
+does really rely on you piecing together
+that knowledge of that if I'm looking
+for
+the minimum of two numbers. I need those
+numbers to be close together
+so that each time there's a minimum, I'm
+not losing a large number. Like I'm not
+putting one and six together and losing
+a really large number potentially by
+pairing it with that one. So all of the
+numbers do need to be close together and
+the best way to do that is to sort them.
+So, it kind of really does rely on you
+seeing that otherwise you kind of go
+down a
+a nasty path.
+All right. So before we jump into
+minimum number of ray uh arrows to burst
+balloon since a few people are still
+working on it. Um I want to go over it
+again and just to
+give a visual
+and then would people like well let me
+ask this. Would people like time to work
+on that problem for a little bit longer?
+Yay or nay?
+I don't want to hold anybody up. I can
+circle. I just won't put it in my le
+code and I'll circle back after I've had
+time to forget it.
+>> Well, I'm asking because we can go over
+it now or I can give everyone the
+opportunity to work on it.
+>> Oh, yeah. Well, I'm finding the way.
+>> Okay. What about you, Lisa?
+I'm I'm kind of I'm kind of stuck.
+Um,
+so
+um
+I'm not sure that I'll solve it within
+that amount of time.
+>> Right.
+>> So um
+if I can find out where I'm stuck,
+that'd be great.
+>> So why don't we take a peek at yours
+real quick and then we'll go from there.
+Am I still sharing screen?
+>> No, I stop sharing it.
+>> Thank you.
+I can see you, but my Zoom isn't
+working.
+Share screen.
+Show
+Okay,
+12 out of 50. That's a good start.
+So then just to walk through this
+problem really briefly again, you're
+given a
+2D array of
+balloon coordinates. You don't know
+where they are on the y- axis, but you
+do know where they are on the x- axis.
+So, you get the start and end of a
+balloon and some other balloons, and
+you're trying to determine how many if
+you like, it says throw up, but I think
+it's easier to think about if you
+dropped an arrow straight down, how many
+balloons would you hit within the same
+XY range in the fewest amount of arrows?
+Um, so with that, why don't you show us
+what you've got here?
+>> So, um, what I've got here, um, is I
+again sorted. I was just to see if sort
+would make it easier and I I, uh,
+did a count of the number of arrows that
+would be the max. So um if I threw one
+arrow for each balloon that's what that
+the count would be
+be the value. So, um, with this, what I
+did was, um, with the range,
+um, I took the
+after the sort, that's why I'm printing
+these out, the last value of the second
+of the point of 0.1 Z, and compared it
+to
+um the first value of the second point.
+So, plus one. So, that's what that is.
+And if it is greater than
+um
+or equal to the first value or less than
+the second value then count uh add add
+to arrow.
+>> Mhm.
+um
+what I'm getting um if the arrow is
+equal zero so if it doesn't fall through
+assuming that my test cases are 2 3 2 3
+fall two balloons on the same point
+um then return count which would be the
+the maximum number of balloons uh one
+arrow per balloon
+okay so Um I started doing this and
+I can get this with this code. But if I
+if I do this minus one here,
+I get these three and not this one. So
+back to um this was uh this case four
+was um when I hit submit. So, um,
+instead of play.
+>> So, I
+um, so that's where I'm at. So, I'm
+trying to figure out where my hole is
+and where my logic is. I think my logic
+is missing something. And I think it's a
+counter of some sort. Or maybe I should
+>> Sure.
+>> So, I remember you you and Rebecca, I
+believe, um, work together, right?
+>> Um, yeah. Yeah. And I remember you came
+up with a pretty good understanding of
+the problem. Um, and this looks like a
+really good start, but can you add a
+print statement right under the points
+to see the sorted version first?
+>> Sure.
+>> I just want to see what that looks like
+so I can kind of make sense of what's
+going on here.
+Okay. So,
+>> should I get points
+so we know which one is what?
+>> So, you're printing the points there.
+Um,
+that's fine. Go ahead. Keep going. What
+are you doing?
+Okay.
+All right. So in this one points are 2
+32 23. We're saying for I in range count
+minus one. So we're doing
+>> it's the inval.
+>> Yeah. You're going up to
+but not including
+the last one because you're checking for
+one in advance, right?
+So you're going
+>> from zero to the second to the last
+option because then you're going to take
+that second to the last option and
+compare it to the next eight or the last
+position.
+>> So you say one and six and then you say
+two and eight. So it's sorting by
+it looks like it's sorting maybe by the
+starting the
+I well you can't really tell which one
+it's doing.
+>> Yeah, it looks like it's sort by the
+first point. Yeah, I think so.
+>> Um Z or the beginning.
+>> Yeah.
+>> All right. So I
+one greater than. So I1 is six greater
+than or equal to
+two.
+It is and
+is points I1. So six less than or equal
+to
+8. So is six basically you're saying is
+six between 2 and 8 is 8 between 7 and
+12 and is 12 in between 10 and 16.
+>> Right?
+>> So if the case is that six is between 2
+and 8, we're adding an arrow.
+And that's interesting because
+in reality you you're saying it takes
+another arrow, right?
+>> Yeah.
+>> So I'm wondering
+I mean I it could still work but I think
+logically I'm having a hard time
+picturing that because really you'd want
+to say
+if I'm thinking about it with the way
+that you're approaching it, right?
+the array. I would start with how many
+arrows would it take to pop every single
+balloon if there was no overlap. It'd be
+one, two, three, four. And then any that
+has an overlap, I could probably
+subtract an arrow, right?
+>> Well, that was that was the question
+was, okay, so if if I knock these two
+out,
+um, then that rem that leaves these two
+So that's where I'm getting the overlap.
+So I should be maybe popping.
+Should I be pushing and popping on this
+one maybe?
+>> Or
+in other words,
+>> what's happening is that you're saying
+one six is between two and eight. So I'm
+going to add an arrow.
+>> But then you're saying
+so that so have we popped the first
+balloon or the second balloon at that
+point? because then we're we're
+evaluating I would assume that we've
+considered both of those popped
+>> but then you're going to 28 and then
+you're saying is eight between seven and
+12.
+>> So using a popped balloon to determine
+if you've popped the next balloon
+and then we're saying yes. So in the
+best case there we've popped the first
+one, the second one. Can we assume that
+we've popped the third one at that point
+or not? And then you're jumping ahead
+and you're saying, "Okay, I'm unsure if
+we've popped." We're saying that we've
+popped two balloons at least. We've used
+two arrows. I don't know if we've popped
+two balloons or three balloons.
+And then we're saying is seven between
+or is 12 between 10 and 16? It is. So,
+it takes three arrows
+because you're not really taking to an
+account
+like your approach seems good until you
+think about you're not really taking
+into account the balloons that you've
+popped. You're evaluating every single
+one if it overlaps with just the one
+beside it. And then you're not saying,
+did I pop that one? Am I popping this
+one? Can a one two down the line also be
+within range? Would that be popped? Does
+that make sense?
+Yeah. I'm just trying to figure out how
+how
+>> what you would do.
+>> Yeah. So,
+um do I mean if I put an increment if I
+increment the I
+would that if I can increment it here
+during the if statement would that be
+valid?
+>> Um I think what it requires is kind of a
+retooling of your approach.
+>> Okay. because you don't want to just
+start changing
+things randomly. Just say like if I add
+another increment or if I switch a
+greater than or equal than or if I
+switch the starting and end point of the
+for loop because then you're not really
+sure what you're doing. You're not sure
+what your code is doing. But now that
+we've kind of taken that step back and
+saying all right, I'm not evaluating
+what balloons have been popped as a part
+of what operation. We're just kind of
+looking for an overlap between two
+balloons and increasing the arrows if
+they overlap. So, we're not actually
+saying how many balloons we can pop with
+the minimum amount of arrows. We're just
+saying how many balloons have overlap.
+That's what you're really counting is
+how many balloons that are beside each
+other, specifically only beside each
+other, have overlap.
+Okay,
+>> so I need to retool this to think.
+Okay. Well,
+crash.
+>> So, let's see how we do that. Oops. I'm
+not sure what I just did. Ah, okay.
+I'm going to try the whiteboard because
+for this one, I had to use pen and
+paper. It really took me
+it took me a second to kind of formulate
+a good game plan here that made sense.
+So, I'm going to open up a whiteboard
+and show kind of the thought process.
+Now, for Mauricio, you have a working
+solution. Um,
+but
+you can actually make it a little bit
+better. Um, so I'm just saying that
+because what you have is great and you
+got a working solution. That's awesome.
+But at the same time,
+there is something you could do to
+improve. So maybe this illustration will
+give you some ideas.
+So
+oops, let's think about it like this.
+This is a complete guess. Can everyone
+see my whiteboard? Am I sharing it?
+>> Yeah.
+>> Yes. Yeah. Yeah.
+>> I'm not sure how this works.
+All right. So, let's say we've got a
+balloon there.
+>> And
+we've got a balloon here.
+We've got a balloon
+here.
+And let's see,
+maybe here.
+and
+here. Yeah, we'll start there.
+Okay. So, it kind of helps to think
+about it like
+like this because so we know that the X
+they're sharing like certain XY axes.
+Like these two have some overlap. These
+two have some overlap but the Y scale is
+unknown. So this one could be above this
+one, below this one. This one could be
+above this one or below it. We don't
+know. But you generally can just
+who cares? You can make a guess based on
+just using the x- axis.
+So
+when we're thinking about this, there's
+kind of I think there's two ways you can
+think about it. This is why I mentioned
+starting out with just like how many
+balloons you have. So, we have
+not the greatest
+penmanship here. We have five balloons.
+So, you could think about it from the
+start of saying
+I start with
+O, that's bad. I'm going to erase that.
+Hold on. How do I erase?
+Can I just control Z? Oh, I can. I would
+just say we start with five, right? Five
+arrows.
+And then maybe I would eliminate them
+along the way. Um,
+so the first thing you could consider is
+that I know that these are overlapping
+because they overlap here. But then you
+get to the second balloon and while it
+does overlap with this one,
+it doesn't overlap with this one.
+So you could say, "All right, one and
+two have an overlap. So I'm going to
+eliminate the amount of arrows I need by
+one because I can use four arrows to
+take these two at once and then the
+remaining three.
+Now this balloon is gone and this
+balloon is gone. But I can use this
+overlap
+to determine
+for future balloons
+if they would also fit. So if three,
+all of three here
+was within this overlap, then I could
+also decrement again and get three.
+but it's not. So, I can't.
+So, then we say, "All right, I'm going
+to keep my singular arrow for this one
+because it's not within this little
+overlap section." So, now my new overlap
+section to consider isn't between these
+two, but it's just all of three. So, all
+of three is my new overlap. And then we
+check does with four. Does four fit
+anywhere within the three overlap?
+Nope. So, we're not going to decrement.
+But now four becomes our overlap zone.
+And then we move on to five. Does five
+fit somewhere in this overlap zone?
+Yeah, it fits right there.
+So then we can
+decrement that down to three.
+So it would take three arrows to pop
+these this set of balloons. one there,
+two and three.
+Conversely, that that's that was the
+first way I thought about it. Does that
+make sense?
+I'm going to undo that again.
+>> All right. Another way
+>> the arrows are at. I was thinking of
+them going straight up in the Y ais, but
+when you drew them there, they're kind
+of at an angle. Is that relevant or is
+that just
+>> It is because this would be
+let me
+This is your start and this is your end.
+So if this is one and six
+then this is four
+and
+seven
+and this is what five maybe. No, it
+needs to be Oh, let me change that to an
+eight. Then this could be seven and
+nine.
+So these are the x coordinates they gave
+us 1 and six or not that they gave us
+but that they could have given us four
+and 8, 7 and 9.
+So the y- axis doesn't matter but the x
+axis does. So it's offc center because
+this is taking up the spaces between 1
+and six. This is taking up the space
+between four and 8. And this could be
+taking up the space between 7 and 9.
+So if you consider that on the same
+plane,
+it would look like this. And so you
+could drop an arrow here or drop an
+arrow here.
+But either way, it's going to take two
+arrows. I drew them like this because
+they say that the y isn't defined and
+you wouldn't actually have balloons.
+you know, operating in the same space
+like this. So, it might make more sense
+like that. Does that make sense?
+>> Yeah. Yeah, that helps. They've got to
+have some kind of overlap. It just it
+doesn't really matter where it's at.
+>> Yeah.
+>> Doesn't matter what. Okay. Yeah, that
+helps me a lot. And then the other thing
+I was getting stuck on is I was assuming
+they were all in the positive axis.
+>> Yeah. And they're not. So, you kind of
+have to think about how that would work
+as well. Okay. So, here is
+That's just the first way of thinking
+about it because that's kind of similar
+to what your approach was Lisa was
+considering the overlap. So how would
+you define the overlaps and so the
+overlap actually is would be its own
+dynamic shifting thing in that case
+where you'd have to say all right the
+first overlap is between these two
+balloons. It's not between one and
+eight. It's not if six is between four
+and eight. It's actually the parameters
+of 426.
+The starting of this one to the end of
+this one. And now we have four to six as
+our overlap. Does 7 to 9 fit within 4 to
+6? Yes or no? It doesn't. So now we need
+to increase our arrows because
+we can pop these two but we can't pop
+that one. And now our new dynamic
+changing overlap region becomes 7 to 9.
+And we have to compare that with our
+fourth four over here, which could be
+11 and 13
+and 12 and
+15 or something
+for example.
+So the second way to think about that is
+let's say we're going to use at least
+one arrow, right? So if we use one arrow
+and we take this one out,
+then you know our our designated range
+there overlap range is 1 and six. But
+really what we're looking at here is
+that you could consider this
+if I take out this first balloon, how
+much x space did it take up? How far did
+it go? So we know that it goes to six.
+So I'm going to call that my my reach
+there.
+Let me
+can I use a text? I can use text. Okay.
+Reach. So my first balloon's reach
+would be six.
+So then when I'm considering the second
+balloon,
+I just need to know if the starting
+point of that balloon for is within
+reach. So, if we start outside of
+the balloon consideration and just say,
+"All right, by default, we're going to
+use at least one arrow because there's
+going to be, let's look at the
+constraints. There's going to be at
+least one balloon." The constraints tell
+us we're safe. We can assume that we're
+going to use at least one arrow and
+we're going to be able to at least take
+off one balloon. So, we'll start with
+one arrow and that the reach of that
+first arrow goes up to the space of six.
+So when we consider our next balloon
+is the starting point for within reach.
+It is. So we don't need to we don't need
+to um
+reach the count.
+>> Yes. Thank you. We don't need to
+increase our arrows. So we cross that
+balloon off. We're good. Now we check
+for seven. Is seven within reach of six?
+No. Right. So
+now we need two arrows and our new reach
+is
+nine.
+So we've used one arrow. Well, we've
+used two arrows, I guess you could say.
+We used the first arrow to take out
+these two, and then we realized that the
+third one couldn't fit in there. So
+these balloons over here no longer
+exist. Our new reach is now nine because
+we can we've eliminated everything up to
+nine.
+And now we've popped that one with our
+second arrow. We have a new reach of
+nine. And we're going to check is the
+starting of this next balloon 11 within
+reach.
+Nope. So
+we're going to tick that up. Pop that
+balloon.
+New reach is now
+13.
+We're going to check the starting of
+that next balloon. 12. Is 12 within
+reach of 13? Yes.
+And so with that, we end up with three
+arrows.
+But
+all we did was update one thing, right?
+Reach. So, it started with six and then
+we cross that one out. So, we updated it
+to nine. Cross that one out. Updated it
+to 13. Cross that one out. Technically,
+we updated that one to 15, too. Maybe
+probably. Um, but then we ran out of
+balloons to consider. So, we were really
+only tracking two things, but only one
+thing really, which is reach. So, we
+weren't considering what the overlap was
+and having to update our like dynamic
+overlapping situation. We weren't
+comparing
+this number between these two numbers
+and these two numbers and these two
+numbers and these two numbers. We
+weren't saying is
+is this balloon between 1 and six? Is
+this balloon balloon between 1 and six?
+Is this balloon between 1 and six? um
+because that would give you a bunch of
+nested for loops, right, of comparing
+how many balloons fit within one to six.
+Instead, we just went slow along the way
+and determined how far
+our arrow could reach. Does that make
+sense for everyone?
+>> Yeah.
+>> Any questions? It's another way I did it
+and then I moved the reach again
+whenever I exhausted my previous reach.
+Yes. In your case though, unless you
+changed it from what what I saw you
+posted, you had a nested for loop to
+compare.
+So if you said our our reach was six and
+this one wasn't within reach, you were
+also still comparing if this was in
+within reach. if this was within reach
+and if this one was within reach based
+on what I saw from what I remember.
+Whereas you don't need to do that with
+this way because you're evaluating and
+updating reach along the way and you're
+only considering is our current balloon
+within our previous reach? Yes or no.
+Move on. Is our current balloon within
+reach? Yes or no. Move on. We don't have
+to do a nested consideration there
+because we are only considering one
+balloon at a time.
+>> Yeah, but I updated the reach
+accordingly. Anyways,
+>> all right. So, those are two mental
+models. You can choose whichever one
+works for you, right? You can start with
+overlap if that makes sense to you or
+you can start with this kind of reach
+idea if that makes sense to you. they
+will both lead to different
+you you kind of will get two different
+solutions but they should both be
+working solutions. I've evaluated that
+to be true at least. Um
+but I don't want to spoil the fun of
+writing the code for you.
+All right.
+All right. And
+yeah, just for for fun, here's my little
+my balloon popping picture
+cuz that one was a thinker. You really I
+I did have to try I think I tried two or
+three different solutions and I was like
+something's not clicking. Let me let me
+get out of the trusty pen here and draw
+some circles or ovals really because
+they're not circles. They were kind of
+all over the place. I
+>> think I over analyzed it instead of I
+was like, "What if there's three
+balloons in the same position or four
+balloons?" So, I I I put that fail safe
+on the back end. Um well, I'll try the
+reach um
+method and see if
+>> And it's good that you did that because
+that's how you find edge cases, right?
+Like that's how you determine coming up
+with those cases of like, all right,
+well, what if there are three stacked
+and what if they are slightly off from
+each other? How do I account for all of
+those? The problem with that is then
+when you're coding around edge cases.
+Um, so there's a very thin line between
+being smart and thinking of edge cases
+and then kind of torturing yourself and
+only thinking of edge cases. That's
+where I personally find that visualizing
+it or finding a way to visualize it
+usually helps to get out of that because
+I'm just thinking how can I traverse
+this space in the 3D world instead of
+just thinking on the screen or in my
+head about it.
+>> Okay.
+>> But that's me. Some people might you
+might have a better solution that works
+for you whether it's writing it out,
+talking it out, however however works
+for you.
+>> Okay. I I'll um I'll rework it. see what
+see how to
+yeah I want to solve it actually
+>> but if you want a working solution
+Morauricio does have one in in hackerink
+I will also post
+um
+yeah I'll also post my solution but I'm
+going to put it behind some spoiler tag
+I'm going to wait actually I'm going to
+wait until Sunday to post it and then
+I'll put it behind some spoiler tags
+All right.
+All right. So, those were our two
+problems from from last time. Um, that's
+kind of it. Does anyone else have any
+questions that they'd like to ask?
+Cool. All right. Well, I will let you
+all go early today and we'll pick back
+up on Sunday. we'll take on some new
+problems.
+Uh yeah, that's kind of it. All right,
+thanks everyone.

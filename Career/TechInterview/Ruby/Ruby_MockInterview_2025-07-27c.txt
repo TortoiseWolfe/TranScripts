@@ -1,0 +1,1009 @@
+All right. So, we're back on
+and
+I don't know where you guys were at with
+this. Uh, waiting to
+>> I was just playing with it. So, maybe I
+should turn take away what I was playing
+with.
+>> Oh, no. Um, you guys were working on
+this particular
+session. Who knows where you guys left
+off?
+>> We were talking about pseudo code.
+>> Okay.
+>> Um, we were walking through the pseuda
+code on the screen. Does she Oh, yours
+is on in black. Okay. So, we were
+putting um
+>> we were getting to how how many loops
+are or whe what if we had the loop or
+not.
+>> Gotcha.
+>> I had a question. If I wanted to try to
+run on leak code, what do you do? Is
+there a button?
+>> There's a button that says see the
+button up at the top towards you by the
+submit.
+>> Submit or no run?
+>> Yeah. Yep.
+>> I see it. Okay.
+I guess since I'm sharing my screen, I
+shouldn't play with it anymore. We're
+doing it together
+>> now. Lisa, you were talking about
+>> Huh?
+>> Okay. So, what what I was talking about
+was Okay. So for num so in this case for
+nums and num what you want to do is you
+want to traverse use num as the index
+but you want to go nums
+um bracket num because you're looking at
+the value.
+>> Do we want to print nums or did we do
+that already?
+Well, if you want to see if you're
+looking at the actual numbers, then you
+can do a print
+uh print nums. No,
+>> and you only have to
+>> Yeah,
+you only have to go 10 numbers,
+>> right?
+>> And then I can go up.
+>> Null.
+>> Yeah, because your output is your your
+your output actually is your debug
+output. So if you put a print statement
+in there, it'll show you the print.
+It'll show you what's printing. So we're
+not
+>> or have to go outside of the uh outside
+of the thing we're building the the
+method that we're building like
+>> no. Uh so if you take a look at this,
+what does the output being null mean?
+What does that usually mean?
+>> There's nothing.
+Yeah. So, how do you get information out
+of a function?
+>> Return statement.
+>> Oh,
+>> yeah. Do you have a return statement?
+>> Return contain duplicate. Right. I need
+to do that.
+>> No, no, you're jumping.
+>> Create a main.
+>> You're jumping ahead.
+>> Don't need a main. You can just work
+within this function.
+But how do you get information out of
+the function?
+>> We don't print or return.
+>> I don't know.
+>> You can print and return. They don't
+have to be exclusive. You you can have
+both. But you in order to return in
+order to get things out, you do have to
+have a return.
+It has to exist.
+>> Return numbum. It should be it should be
+inside your defined function though to
+get it out,
+>> right? Does that make sense?
+>> Yeah.
+>> Okay.
+>> I don't know if that's it.
+>> No, if you look Well, go ahead.
+>> It's not the full-on solution, but that
+is a way for you to see it in your outs,
+right? Nums is our array, right?
+>> Correct.
+I don't know.
+>> Go ahead. Go ahead and run this code and
+see what happens.
+>> Okay.
+>> Did you mean dumps?
+I think that's funny.
+Well, usually when I work on a hacker
+rank, I usually print what's
+in here as variables and it'll print it
+for me. But leak code's different and
+I'm not used to it.
+>> It's not different. It's just indented
+wrong.
+>> What? Indented wrong.
+>> Yeah.
+>> Oh,
+>> it it was outside of your definition.
+And so you were printing it before you
+had it printing.
+>> I did. It wasn't. You did
+>> null.
+>> It said both the debug output and null
+as far as the response back.
+>> You didn't read it right.
+>> Hi everyone. I'm
+>> turning it back over to you.
+>> Oh, I'm sorry.
+>> No worries.
+>> Oh, it did. It did. No, that's the
+input. The output's null. But I don't
+have the array printed
+>> standard out.
+Is that what this is?
+>> Yes.
+>> Okay.
+>> Okay. Sorry.
+>> You're fine.
+You learned something, didn't you?
+>> I did.
+>> That's That's important.
+>> Mhm.
+>> All right. I'm going to take the share
+back.
+>> Okay, cool. I'll stop sharing.
+>> Thank you.
+Okay. Oh, sorry about that. That was
+weird. My computer was just like I think
+we want to restart. So,
+let me see.
+I think I'm sharing.
+Okay. So, it looks like I lost some
+stuff, Lisa. Um,
+>> okay.
+>> I think you mentioned
+Okay, so the output is supposed to be
+return true if the numbers repeated.
+um return false if if it's unique.
+So we only need to get one value that's
+repeated.
+>> Yeah.
+So when I when I look at the for loop
+um so I'll just say for i in range
+and then the length of the array in
+parenthesis.
+>> Okay.
+>> And then I'll step through each each
+value. So that value would would be
+um
+I um so it would be array bracket I
+and you check to see if it's in the
+array and how many so you do a count of
+how many times it's in the array
+and if the v so once we do the count if
+the count is greater than one,
+then we stop, we do a return of true,
+otherwise return false.
+So, um, so I guess I'm just curious how
+you're keeping track of
+this number versus this number versus
+this number and then also the like the
+frequency of that number. So, I'm
+keeping track. So, once we do the for
+loop and so we go through the so each
+index, right? So we keep track through
+the the index.
+Using the index
+I pull the value.
+>> All right. So at index like you said um
+>> oh wait
+>> num's eye
+and then how are you making that
+comparison?
+So the comparison would be uh nums I
+let's see how we can do that.
+So so the count would would be one at
+this point because you're pulling up the
+value. So the count's going to start at
+one, right?
+So you're initializing count to one
+and then we're in the loop. So at index
+zero
+or we could start at index one
+and then you're saying at index nums I
+we'll compare that value.
+>> We go through the array again.
+>> Okay. So you have a nested loop.
+Yeah. Do a count. So there's actually
+two. You're right. There's two loops.
+Probably not O of N. I think it's O of N
+log log of N. Log of N.
+>> And you only have to stop at the F if it
+counts one more.
+>> Right.
+>> Right.
+>> So if the So then if the count is
+greater the count is greater than one,
+we can do return. True.
+Yep.
+>> Does that make sense?
+>> Yes, it does.
+>> Right.
+>> So, there was a couple things in there.
+I think this is a good brute force
+approach. That's great.
+Brute force. Like you said, O of Well,
+so you said it was a bigger big O. Big O
+is actually
+>> login.
+Where's my carrot?
+>> I'm still getting used to this. Okay,
+there we go. O of N
+O of N squ
+because you have one loop
+to check for the first value and then a
+sub loop to check against all the other
+values and then we increment check
+against those values. Increment check
+against those values. So you have one
+outer O of N loop, one nested O of N
+loop that gets run for each iteration.
+So you multiply those together and you
+get n * n which is n^2.
+>> Yes.
+>> Does that make sense?
+>> Yes.
+>> So I think I could even I would even say
+that I would break this down into two
+kind of
+how do I want to say this? Two
+two different pseudo code
+methodologies. Um
+cuz the first what I what I was kind of
+doing was like all right use for loop
+you know track index
+use a variable just kind of keeping it
+high level just to kind of keep track of
+the structure and then
+you were mentioning like I would use the
+index at this point and I would write it
+out using for and range that's totally
+fine however that's where we started to
+notice that Maybe we might need a second
+loop, but I wasn't sure if that was
+clear based on just this like kind of
+higher level pseudo code. So I think
+it's fine to kind of get a high like a
+more code adjacent level version of
+pseudo codes of saying like for i in
+in range loop
+and then doing doing it like that to say
+I'm going to check at nums i to compare
+against because then that's when you can
+make that observation of oh well what am
+I going to compare it against? That's
+when I need to create the nested loop to
+get the the J. And then if they match,
+if we find a matchy, I didn't mean to do
+that. I like that. I'll keep it there.
+We find a matchy, return true. Um, I
+would start at the more kind of like
+highle approach. And if that makes sense
+to you, then you could jump in the code.
+But if you're
+I think this is also a good step of kind
+of saying more close to code code jargon
+just so that you know what individual
+steps to break down so that you can have
+a clear vision of what steps you will
+take once you actually start writing
+code. This might work better for you. I
+think either way you'd be fine. So if
+you like to do it closer to the code and
+that works for you do that. If you kind
+of like to keep it loosey goosey because
+you are comfortable with the syntax and
+what your approach is going to look like
+code-wise and you just want to get like
+the the gist of it down, then maybe keep
+it briefer. Um I know I usually do it
+like this, but I can start also doing it
+like this if if that works better for
+some people. It's interesting on line 11
+you can start you start I started
+started thinking about comprehension but
+is it comprehension is that the right
+list comprehension
+>> okay
+>> where they write it out the single line
+you can almost get it there
+I'm almost see a comprehensive line to
+make it n
+>> so what does a list comprehension do
+>> um it's a oneliner uh where it's a loop
+within a loop and
+>> and what does it
+It does the same thing that we just
+um it's it reduces the sorting.
+>> So typically a list comprehension is
+going to generate a list, right? Like
+it's not usually necessarily for the
+logic of like you wouldn't implement a
+return statement inside of a list
+comprehension. It's usually you want to
+generate a list following some certain
+condition and then at the end you're
+going to use that list to do something
+else.
+>> Okay,
+>> Mindy, I did see you had your hand up.
+Is there something you wanted to add? I
+wanted to add that we could have a a
+list where we count the frequency of
+each of the numbers called a frequency
+array where we have as the we use the
+array that we already are given um nums
+as our basically
+to iterate through the loop but we
+create a frequency array Okay, where
+when we come across that number for that
+index, then we add we add the number to
+the frequency and we say it's there for
+frequency for that item, we add it. But
+if we've already got the number in there
+with the frequency for that, I'm not
+explaining it well. Maybe I need more
+coffee, but I'm trying.
+Um, if you have more, if that number has
+already been added to the array, you
+could just go ahead and return false
+right there. Or well, true that you have
+that number already there that it's got
+duplicates, whichever way it's supposed
+to go. Okay,
+>> I like that. If value add already
+exists,
+turn
+true false. So it's the same kind of
+idea, but you might be able to do it in
+one loop versus two, right? A nested
+loop.
+>> Yeah.
+>> Where you're tracking the values inside
+of an array outside of the current one.
+And then for each new value that you
+encounter, you add it to it and then you
+check does this exist in that new array,
+yes or no.
+And if it does, you can return true or
+false based on that. and then at the end
+of the loop return true or false based
+on if you made it to that point right
+now you could use an array in this case
+there might be a data data structure
+that would be better does anyone know
+what data structure might be better for
+that
+>> oh sorry a lot of people who who said
+what
+>> I was saying dictionary
+>> yeah map dictionary I think it's the
+same isn't it Yes, hashmap.
+>> Yes,
+>> hashmap or there you go.
+because you could add it to an array and
+then check if it was in the array, but
+that would actually also be an O of N
+squared, which may be counterintuitive
+because um you'd have to check at each
+new value if it is one of multiple
+values already in the array versus if
+you create a hashmap/dictionary,
+you can do a key check and a key check
+is O of one. So that keeps your overall
+big O down to that first um O of N loop.
+So yeah, this is actually
+the streamlined approach
+O of N
+approach using hashmap. Both are great.
+And if you start here and then you get
+all the test cases passing and then you
+think about well how can I make this
+better and you come up with this and you
+test it out and that works even better.
+And then as long as you can expl not
+even if you can also explain the big O
+improvements to O of N then that is all
+the better. Um but this looks really
+good. So congratulations group you
+nailed it.
+All right.
+So, I will
+copy this.
+>> I've got a way to solve it.
+>> Okay.
+>> You could sort the list and then with a
+for loop, you could index it and compare
+index i to index i + one. And if they're
+the same,
+just return true. uh return whatever
+return indicates that there was a
+duplicate.
+If it gets to the end without a
+duplicate, then it would return the
+opposite.
+>> That's that's good.
+That is good. So, can you tell me what
+the uh I do think that that would work.
+Um, can you tell me what the big O of
+that would be?
+>> It'd work. It just wouldn't be as good
+as the others. I don't think the uh I
+don't know what the O of N of the sort
+would be, but it'd be at least O of N
+for the for loop.
+Does anyone know what um any gener
+general generic sort operation is in in
+O big O terminology?
+>> Initially it's O of N. That's
+just a little bit worse.
+>> O N is two O log of N.
+>> There you go. N log of N. So it's kind
+of a mixture of two algorithms. Um so it
+does an O of N traversal and then inside
+of that it uses a more efficient
+um like binary search is log of N
+something like that um to search for or
+sort other values and so that inner
+algorithm that's used has a log of N
+value. So log of N * O of N gives you N
+log of N. So it's a little bit worse
+than big O, but it's also a little bit
+better than O of N squ. Sorry, it's a
+little bit worse than O of N, but a
+little bit better than O of N squ. So
+based on just the sort, you'd have N log
+of N. And then this would be an O of N.
+Oops. The actual loop itself would be
+just one O of N of checking the one the
+index plus one values and then the true
+or false at the end. So really it's the
+sort that messes you up there
+>> and that would be the worst case, right?
+Because if there's a duplicate found
+early in the for loop, then
+>> the expense would be less.
+>> Worst case, it's still O log of N
+because you have to sort before you do
+any checks.
+>> Okay.
+>> But the worst case, you're right. For O
+of N, it's O of N in the worst case,
+maybe like
+I don't know some smaller fraction of O
+of N in the best case. Usually when you
+think about big O, it's in the worst
+case. So it would still be considered O
+of N. Um
+but yes, it could be more or less
+efficient depending on which inputs came
+in. Yeah,
+these are great. Thanks. Thank you. I
+think everyone had great ideas. Good
+job. So you three different approach you
+can try. So everyone try this out. Maybe
+we'll come back to it on Wednesday.
+Uh all right.
+>> Yeah. Uh I was just one I guess a
+variation maybe of the first one. Um
+>> okay.
+>> I mean just talking about brute force.
+Um because you only have to go through
+10 digits.
+>> Well 10 to the 5th. So it'll be
+>> I mean I when I mean you have to ma
+match 10 10 digits. There's only 10
+digits to to match to
+>> cuz you either match a zero is there
+another zero eventually. Um so in in
+your for loop
+um
+you could just go through you know a
+range of 10
+and just check as soon as you find a
+match
+then it's out
+and it's done
+zero you know zero it if like
+>> yeah so in this case we are checking as
+soon as we find a match we do return
+true or
+Even in the worst case version of it
+like we start with one and two and then
+one and three and then one and one and
+then we find a match so we exit out.
+>> Yeah.
+>> In in the case though um this is where
+the constraints are important because
+the length of the array can be up to
+100,000. So it could be 100,000 and the
+first 90,000 could all be distinct
+different numbers and only the last
+10,000
+are repeating.
+>> Right?
+>> So that's why we use, you know,
+strategies that are kind of agnostic of
+like trying to shortcut the length of
+anything. Does that make sense?
+>> Yeah. No, I I guess I'm I'm just trying
+to say I mean you could just
+you for you because there's only 10
+digits. I mean you just use that as your
+your numbers to to just
+base the matches off of,
+>> right? But it's it's more than 10 digits
+though.
+>> No, I guess I'm still not explaining it.
+There you you e you can only match a
+zero, a one, a two, or a three, or a
+four. And there's there's only 0 through
+nine are the only digits you can you can
+match. There's no you can't match like
+99 because a nine would match with a
+nine.
+>> No, you could. So the numbers inside
+>> or or or is that Oh, are you saying Oh,
+okay. The numbers can go.
+>> Yeah, they can be negative 10 to the
+9th, which is something crazy like 10
+million
+up to positive 10 million. So you could
+have any
+>> Oh, okay.
+>> Yeah, any number of numbers.
+>> Oh, okay.
+>> Pretty much. Yeah, the examples only
+keep it between one and nine, but that's
+also why we we check the constraints to
+see like what we're expecting there.
+>> Oh, gotcha. Okay. Yep. Okay. Never mind.
+>> But yeah, I mean if we didn't have that
+limitation, yeah, there might be some
+efficiency efficiencies we could make
+based on only checking for the zero 1 2
+3 yada yada yada.
+All right. Um, so I want to jump to the
+mock interview while we still have some
+time left. And again, I'm not expecting
+any code. We're going to do exactly what
+what we just did here. kind of talk
+through the problem, pull out some
+assumptions, pull out write things in
+your own word, maybe get a plan started,
+and then close out. So, who would like
+to be our volunteer for today?
+could be a guinea pig. I don't know if I
+know what I'm doing, but I need to start
+trying.
+>> That's the right attitude. As long as
+you are open to trying, that's perfect.
+All right, Rebecca. So, I'm going to pop
+this question into the chat.
+Oh, I'm gonna edit that URL because it's
+a little weird.
+So, if you want to click the green share
+arrow button and open this problem up,
+we'll take a peek at it.
+>> This frequent top frequent elements.
+>> Yep.
+>> So, I pulled that up on my website or my
+browser and I share screen.
+>> Uhhuh. The green share arrow.
+>> Okay.
+Um,
+I'll go get the green share arrow and
+share my screen.
+Perfect.
+>> So,
+so we'll spend maybe 10 to 15 minutes on
+it. We'll just I'll plan just to go over
+a little over time if that's okay with
+everyone.
+>> All right. So, just read through the
+problem for us. see what you can pull
+out, make some assumptions, make some
+pseudo code, and we'll check back in in
+a few minutes.
+>> Do I talk about out loud and um type my
+pseudo code in?
+>> Yeah. So, the goal is to help you think
+about how you would prepare for the
+technical interview, how you would
+practice freaking out once you work
+through the problem. Read through the
+problem. You can read it silently first
+if you want to. Once you feel like you
+kind of have an idea of what it's
+asking, explain the problem and then
+yeah, start pulling stuff out into
+pseudo code and explaining what you're
+thinking.
+>> What I like to do from what I've learned
+attending these is I I comment out and
+and just rewrite it here like um on the
+right side from what I read on the left
+side. So um
+so we we you know we are given
+an array
+of integers
+and um
+and then equals num num equals array of
+integers. Num num or nums? Nums. Nums
+equals array of integers.
+Um
+K
+most frequent.
+Um
+K K is the most frequent number.
+Oh, I didn't comment that.
+K
+space K is the most
+frequent
+number in array.
+Um
+so nums and a k and what do they want us
+to output given an integer
+return?
+Oh so the k equals 2 is the answer. No
+outputs one, two. Hm. But there's more
+ones than twos in the example.
+Okay. Um,
+so okay. So it's not a value, it's how
+many elements.
+So return
+how many
+um
+how many integers
+are repeated?
+I guess
+they're using the word frequent.
+Maybe I should continue using that that
+that term
+most frequent.
+Um
+and in okay the the array the the the
+list is nums
+integer k
+and return oh we are returning the
+values. So there's two there's two
+values that repeat and we're returning
+the output is returning the values
+output
+output
+equals the values
+of the
+most
+most
+frequent
+elements.
+I need to change that top line. So,
+so K is is that
+K K equals
+how many integers are most frequent?
+That's given to us. Wait, that's the top
+line there. You can just take this out.
+So we're outputting what the values are
+and so there's two of them. So output
+would be two numbers.
+Um
+and then
+example two
+it's only one number output. So one um
+I'm um I'm not sure where else to go
+from here. So if anyone wants else wants
+to join in or maybe that's not allowed
+or
+um
+so what would you do next? What what
+might you think I guess how would you
+what assumptions can you make and how
+might you test them?
+Okay. Um,
+some somewhat similar to what we were
+doing with
+uh the duplicates. I guess I would uh
+um
+it uh
+I'm I'm freezing because I'm on the
+spot, I guess. Um the I would
+What's the word? What? Loop through.
+Loop through. That's the word I was
+thinking of. So I would like create a
+loop.
+Okay.
+>> Loop to um find
+duplicate numbers.
+>> Mhm.
+>> Numbers and then and then
+actually that dictionary thing seems
+sounds sounds good. Um, I mean create a
+dictionary
+to find and
+uh
+uh
+I'm going to use a coding word append to
+uh the dictionary
+when we uh find a duplicate it
+and then we could count.
+We don't need to count the count's not
+the output. Now we need to just
+basically return
+the dictionary. I would think actually
+this is this is almost easier I think
+than the count duplicates cuz then that
+one I needed to do true and false and I
+was stumped about that.
+So,
+um,
+>> okay. Thank you, Rebecca. This was
+great. And I'm glad that you said that
+you were kind of freezing because you
+were on the spot. That's exactly why I
+want people to
+>> I couldn't even think of the word loop
+for a minute. Yeah.
+>> And that's exactly what this is for. So,
+it's just to help you build some of that
+confidence of being in front of other
+people and having to think out loud and
+talk about what you're doing. So that
+way when you come to the actual
+technical interview, you're a pro,
+you're ready, you've got it, you know
+how to do it, and you can just focus on
+solving the problem.
+>> All right. So, I like what you've got so
+far. I think this is a good approach.
+However,
+and I do think this is the fault of the
+examples for not being
+better, but this is a medium problem.
+So, I know why they did this.
+>> I am going to give you a clue here. So K
+is referring to
+like
+>> how many numbers are being duplicated in
+the um array, right?
+>> Yes. But it means like based on the
+highest quantity. So
+if you had
+>> Oh, so there's two there's three ones.
+There's two twos.
+Okay. Highest quantity that would be
+three then not two.
+>> Highest quantity of repeating characters
+or repeating integers
+>> or the highest value or highest
+quantity?
+>> No, just the highest frequency of them.
+So the frequency of one, there are three
+of them.
+>> Uhhuh.
+>> The frequency of two is two.
+>> Uhhuh.
+>> And the frequency of three is one
+because there's only one three. So
+they're asking you to find which are the
+two most repeated numbers,
+>> right? Okay.
+>> Which would be one and two. Now if we
+had five fours, so if it went one, one,
+one, two, two, three,
+>> and then five,
+>> four, four, four, four, then the output
+would actually be one and four,
+not two because four would have the most
+and then one would have the second most.
+Does that make sense?
+>> That's interesting. Okay. I didn't
+>> So, how would you change your strategy
+now that you have that little bit of
+information?
+>> Oh, okay.
+Um,
+we need to know how many times they are
+repeated then, not just that they do
+repeat. So, that's going to make it a
+lot more complicated.
+So we need to put a count in there.
+>> Okay. So um
+then
+um
+not just return but count
+but somehow we need to count well I
+don't I don't know
+if we find that number
+find and append we find the duplicate
+would it it would just be it would just
+put it in a dictionary once or put it
+each time it finds it. So, would we
+actually take the the three ones or just
+one one? We might take I don't know. I'd
+have to try it and see what the computer
+would do. But, um um
+cuz if it did take take it each time
+they found a repeat. I mean, I can do it
+in in in in fantasy world, you know,
+like I'm not that doesn't make any
+sense. See the dictionary, so I'm going
+to take that out. But um um like I'm
+just going to even throw it out there.
+If the dictionary
+can can collect
+all the numbers
+that repeat,
+if that's clear,
+um
+all the numbers
+All the times, all the times the numbers
+repeat or every every time
+the number repeats,
+then we can go
+um
+through the dictionary
+to count how many
+numbers
+of the same of
+how many how many the same number
+how many times how many times the same
+number is in there if that makes sense.
+Um
+and then
+uh return
+the value.
+We'd have to figure that too of uh of of
+the highest but last the is it the not
+necessarily
+the
+the the
+K number
+of
+most frequent and
+numbers.
+>> Yeah, perfect.
+>> Okay,
+>> so this is great. I you actually that is
+a perfect outline for
+um pseudo code there.
+>> That's great.
+So at this point, you see how kind of
+sticking with just like theorizing what
+you might do, kind of thinking through
+some options, even if you don't know
+exactly how you would implement it yet,
+you're kind of thinking, well, maybe I
+could use a dictionary, track the count
+that way, when you're not thinking about
+the code directly, you can kind of
+experiment a little bit more in your
+head and figure out what you might do
+>> and keep momentum on the problem um
+before you start working on your code.
+Does that make sense?
+And at this point, I would say, all
+right, you've got an idea. You think you
+want to use a dictionary. That is a
+great plan. At that point, I would say,
+all right, let me make sure I understand
+how to use a dictionary. Python
+dictionary, Google it, see like use some
+of the use case examples,
+etc., etc. And then once you feel
+confident you understand the dictionary
+or review mod one and mod 2 for the
+dictionary and the projects you use that
+in, I think you're actively working on
+those. So, you might have be using it
+soon or have used it recently.
+>> Um, brush up on it, then come back and
+see how you would implement it based on
+what you've written.
+And that looks like a really promising
+solution. So, good job.
+>> Thanks.
+>> I want Yay. You did a really good job.
+And I know it's hard. It's really hard
+to stand up in front of everybody. So, I
+just want to give you kudos. Okay.
+Thank you, Mindy.
+>> Yes, and thank you to Mindy because she
+gave me the idea that we should only
+focus on code. Um, because I do know
+that it there's a lot of stakes when
+you're kind of presenting to people and
+it's kind of easy to freeze up on the
+spot. I do it too when I run into errors
+I wasn't expecting. I'm like, hold on a
+second. Um, so I think it is good that
+we kind of focus on just doing the
+pseudo code bit. build up your problem
+solving muscle and then once people are
+kind of more confident and you can say I
+think I want to try doing the coding
+portion of this mock interview as well
+in preparation for the technical
+interview then we can do that too.
+>> I appreciate that Ruby. I really do.
+>> All right. Does anyone have We've gone
+over a little bit. Does anyone have any
+questions about this problem or about
+anything we covered today or about the
+technical interview before we close out
+today?
+>> The technical interview is still 15
+minutes.
+>> 15 to 20 minutes. So within that time
+range.
+>> Oh,
+and uh we still have to we have to show
+you the plan and then complete the the
+um the code. Sorry, what was that?
+>> You have to uh print out the the plan
+first and then complete the code. Is
+that correct?
+>> Um I mean you're not required to do
+that. I do think that will set you up
+for success the most. But yes.
+>> Okay. Well, I was just making sure we
+still need to do the print statements
+and things like that. Um
+>> I think that you should. That would be
+my recommendation.
+>> Okay. because it'll save you more time
+than it'll expend. If that makes sense.
+If you're testing and verifying your
+assumptions as you go along the way,
+following the steps that you take while
+you're practicing,
+>> you're building that muscle, you keep
+using that muscle, the time will shorten
+to that 15 to 20 minute parameter just
+through practice.
+>> Yes, Rebecca.
+Like I was saying before though, um it
+took me 15 minutes just to read and
+understand a problem and it was
+considered an easy problem. Maybe I'll
+get faster at reading and interpreting
+them with practice.
+>> Yeah, I mean this one you got through in
+like 10 minutes. You had an assumption,
+right? And I had to kind of correct that
+assumption, but this was a medium
+problem and it wasn't clear. Oh,
+>> and I think if you had started getting
+into it, you would have eventually
+realized like, oh, it's actually asking
+for this.
+>> Yeah. Like if you tested what you did
+and it came out, it probably would have
+the light bulb would have started, you
+know, the gears would start moving and
+you wait a minute.
+>> So, I wouldn't get too worried or worked
+up about how long it takes you to read
+through and process it. it's gonna take
+how long it takes and then you just get
+better at pulling out how to pull out
+like what what action steps you need to
+actually take and what you need to do to
+solve the problem. Um from that point I
+mean honestly there is no amount of
+practice you can do to make the problem
+easier to digest. If they want to make
+it tricky and confusing it's going to be
+tricky and confusing.
+Yeah, good question.
+All right, any other questions?
+>> I just want to tell you I think this was
+a really effective session. So, thank
+you very much, Ruby.
+>> I agree. Thank you for the suggestion,
+Mindy.
+>> You're welcome.
+>> All right, great. Have a great rest of
+your day, everyone, and I will see you
+on Wednesday. We will take a look at
+solving these

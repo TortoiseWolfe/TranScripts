@@ -1,0 +1,792 @@
+All right. So, welcome to this week's
+nailing technical interview session. Um,
+before we get started, does anyone have
+any questions they'd like to ask about
+the process? Um, any questions about
+practice, preparation, anything like
+that before we dive in?
+No. Okay, cool. All right, so
+Dan has graciously volunteered to be our
+guinea pig today.
+So, I'm going to have you open up
+this problem here. I'm going to put it
+in the chat if you want to share your
+screen.
+Okay.
+Okay.
+Do you have it in the chat?
+>> Uh, yes. I I've got it in the chat.
+Okay. Um,
+all right. According to this, uh, you
+should be able to see my screen.
+>> Yes, I'm looking at myself and
+>> All right. Well, let's, uh, I'm going to
+transition now. You should see something
+different.
+>> Yeah. Do you want to expand that so it's
+the only thing in view?
+>> Sure.
+>> Perfect. And then if you want to zoom in
+just a little bit for us.
+>> Uh, okay.
+>> That's at the very top. The three
+vertical bars.
+>> Oh, all right.
+>> Yeah, there. Mhm.
+Maybe one more. Yeah, that's good.
+Perfect. All right. So, we will treat
+this as a mock interview just as good
+practice for tomorrow. So, I'll give you
+about 15 minutes. Um, oh, you'll want to
+log in first or you won't be able to run
+run the code. But, we'll give you about
+15 minutes and it'll just be all of us
+here on mute. Make sure to read through
+the full problem, sound out your
+thinking, and then we'll circle back and
+see how it goes. All right. Okay. I have
+to log in yet. That's a non-starter as a
+solution.
+Um,
+okay. So, what I can do instead is I can
+sort the array of numbers.
+Okay.
+Or the list of numbers.
+Okay.
+And then
+okay,
+largest to smallest.
+Okay.
+Okay. I can't make a copy of V-Ray.
+Okay. So, what I can do is order the
+list.
+All right. That will get all of the
+zeros in the front, but I won't do
+anything about getting them to the end.
+All right.
+Okay.
+Max position.
+Okay.
+and don't forget to talk us through your
+thinking here as you're moving along.
+Okay. Well, I'm setting up some initial
+variables. All right. So, that's what
+I'm doing right now. Okay. Okay. So,
+okay.
+All right. Uh curve. So cur position is
+going to be
+uh the you know the position that I'm
+focusing on. And I'm then what I'm going
+to do is I'm going to swap pairs.
+All right. Um and
+okay so that's what I'm going to do
+initially. All right. But I'm going to
+run into a problem if I've got two
+zeros.
+All right.
+And I'm also going to run into a problem
+if I try to swap the end position with
+the current position because that's
+going to place everything out of order.
+So I'm thinking what I need to do
+instead is I need to go from the end to
+the beginning.
+All right. Uh and by doing that
+uh basically uh
+all right.
+All right. So if I start from the end.
+All right.
+Uh basically All
+right.
+Okay. So if I'm going to go
+curve position is equal to zero.
+Okay.
+If
+Okay.
+All right. So, okay. So,
+if I start to the end, it's zero, then
+I'm going to move to the next one. If it
+isn't zero,
+um, I'm, you know, if neither one of
+them is zero, then I'm going to move to
+the next position and the next position.
+All right,
+I'll admit I'm pretty lost here.
+Okay.
+All right.
+Okay.
+Okay.
+Okay. So, this one is going to be
+all right.
+So, that's going to be our current
+placeholder as we swap through.
+All right.
+All right. If gnome scripts
+Okay.
+All right.
+And then what I'm going to do is I'm
+going to
+Okay. So curve position one moves are
+uh
+okay.
+Okay. So basically what I'm thinking
+along the lines of is doing a bubble
+sort here. All right, which is not going
+to be the greatest as far as
+functionality goes, but that will
+eventually bubble things up in a
+in some kind of manner. All right. Um,
+now the problem states
+relative order. So the input also shows
+us
+doesn't say anything about the order of
+the nonzero items. All right. Uh
+so potentially if this is
+okay constraint numbers length. Okay.
+All right.
+potentially the non the nonzero items
+could be out of order based on the
+statement that we have here.
+All right.
+So,
+okay. So, well then
+all rights.
+Okay.
+Okay.
+Okay.
+All right. So basically
+is all right. So using this swap process
+and going from the end. All right, we
+should unless we have like contiguous
+like 10 zeros or something
+or three or four zeros or something like
+that in a row. All right, we're
+okay.
+So, if you've got two zeros in the
+front.
+All right.
+All right. So, okay. So, swap swap and
+eventually. Okay. So, the first round is
+going to take us is going to take us and
+it's going to move a non a nonzero
+number to the the zeroth uh index.
+All right. So, we do that. All right.
+So, all right. So at that point in time
+uh
+all right
+I'm going to have to do another while
+here
+Well,
+uh,
+Sonicious.
+Okay.
+All right. Okay. So, that's going to
+take us
+that's going to take us and it's going
+to flip
+everything to that.
+All right.
+Okay.
+Okay, let me think about that.
+>> All right, so we've reached time here.
+>> Yeah, well, I figured that would happen.
+>> Do you think that your code is in a
+state to run it?
+>> No, I don't.
+>> Okay, so
+>> but I can run it. I can try to run it
+anyway.
+>> Sure. But why don't you walk us through
+the problem and then kind of walk us
+through your approach here.
+>> Okay. So my approach basically was to
+set up some variables. All right. Um and
+>> first talk about the problem. What is
+the problem asking of you?
+>> The problem is asking me to to move all
+the zeros to the end of the array
+without making a copy of it.
+>> Okay.
+in your code.
+>> Okay. Well, okay. So, first of all, I
+set up some positions or some some
+variables. All right. with the idea of
+and what I envisioned was to go through
+the uh list starting from the end to the
+beginning and and taking one pair at a
+time and seeing if uh you know basically
+if if the current number is a zero. If
+the current if the current
+item in the array all right starting
+from the end all right is a zero. All
+right. Uh then the idea would be is is
+that I don't swap it. But if it's not
+all right and the the the previous item
+is a zero, then I do a swap.
+All right. And basically it's sort of
+like a bubble uh a bubble. All right.
+And so then I would move to the you know
+the the uh the new position and see if
+the new position is a zero. All right.
+And the next position is that a zero.
+All right. If they are then I would not
+move that. All right. And then I would
+take that new you know the next position
+going to the left. All right. And I'm
+compare compare with that. All right.
+And if you know if if both are zero. All
+right. Then do nothing. If the one on
+the left is a zero, then I flip those.
+All right? And I continue to do that
+until the end. And if there are any
+using that process, if there are any
+nonzero values in the list, all right,
+that end value should now be a non
+should should now be a nonzero item.
+So then I need to loop around again to
+the end of the list. All right? and use
+that whole process and essentially sort
+out the zeros. All right? And by doing
+that incrementally, I would have all of
+the zeros at the end of of the array.
+All right? Without without changing any
+of the without changing the order of any
+of the numbers because all I'm doing is
+comparing is it a zero or not a zero. If
+you know if the one to the right is a
+zero and then I swap. If the one to the
+left is a zero then I don't need to do
+anything. If both of them are zeros all
+right then I just go to the next
+position to the left.
+So those are the conditions and that's
+what I'm attempting that's what I'm
+attempting to do. All right. And I
+believe that that algorithm is correct.
+Coding it is another thing. All right.
+I'll admit I'm struggling with the
+coding part of it, but uh the the
+algorithm understanding the algorithm to
+make this work is is different.
+>> Okay.
+>> You know, I think that the algorithm
+that I have in mind, all right, is is
+going to be successful and will meet the
+objective.
+>> Okay. Thank you for sharing. So, a
+couple of things. Um you've identified a
+potential solution. You feel pretty
+confident that it would meet the need.
+you weren't quite sure how to implement
+it off the top of your head. So, you
+were kind of going through that
+exploring exploration phase of can I
+break this down based on what I know
+about it. I think that's fine. Um, what
+I would have liked to have seen more if
+you were going to follow this approach
+to the end is some more iterative
+testing. I mean, we have quite an
+intense set of logic here and we haven't
+hit run or printed anything at all. Um,
+I think that's a that's a a scary place
+to be. So when you hit run for the first
+time and you have all this logic here,
+if something goes wrong, where do you
+start?
+Is is it at the top? Is it in this first
+Y loop, the second Y loop? Is it in the
+if? Is it in the swapping position? Is
+it in the approach overall? Is it with
+how I'm defining any of the three
+position variables? Like there are so
+many things that could go wrong that you
+want to make sure that you're testing
+iteratively as you're developing your
+approach, right? Does that make sense?
+>> Yes.
+>> So, that would be the main thing. Um,
+time aside, I think if you followed this
+through to fruition and got the bubble
+sort from memory or from practice and
+rebuilding or even just a custom sorting
+piece, that would be fine. But I think
+it it's you're going to really struggle
+with that if you're not doing the
+iterative testing piece.
+That being said,
+that is not the only solution to this
+approach. are
+if the if the condition that you have to
+modify it without making a copy was not
+in place would that change how you
+approach the problem?
+Um, well, sure. Because basically what
+would happen, all right, is I would
+create two arrays. All right. And so
+what I would do is I would pick off all
+of the nonzero items as I see them in
+the original array, put them in in one
+list. Okay?
+>> Knowing that Python Python only works
+with lists. Array is just a convenience
+label here. All right? And then the
+other thing I would do is is then for
+each one of the zeros, I would put that
+into a second array. All right? And then
+I would go through at the end and I
+would append, you know, all of the zeros
+from the second array to the end of the
+first array. That would be easy.
+This is much more difficult. And so do
+you need to do that without making a
+copy of the array or without having the
+result be that numbums is a new array?
+>> Well, if I'm creating an okay, so
+if I'm creating a new array, all right,
+that violates the constraints of the
+problem.
+>> Yes.
+So the answer is that
+>> you can't create a new array to
+represent nums, but there's no rule that
+you can't create another array at all.
+>> Okay, that's what I interpreted this to
+be.
+>> I mean the rule
+>> that I is that I had I had to sort them
+in place because I couldn't use a second
+array because if I was able to use a
+second array temporarily, I could use
+the process that I just explained here.
+All right. And and pick out all the
+nonzero items, put them in a temporary
+array, you know, pick out, you know, all
+the zero items, put them in a in a in a
+second array. All right. And then copy
+all of those items back into nums. All
+right. In in in the appropriate order,
+and that would be a much simpler
+solution to this problem.
+>> It would. So, here's what I'm gonna say
+to that is that
+with a problem like this or any
+complicated problem, instead of
+deferring to the most difficult idea or
+the most complicated approach or even
+approach you're unsure of, I think it's
+always better to default to a brute
+force approach even if it violates the
+constraints just so that you have some
+code that's running and you can get some
+test cases passing which builds your
+confidence, right? and then you have a
+better understanding of what the
+mechanics of the problem is asking you.
+Then you can either just wipe that and
+start from scratch knowing how it works
+with a newer solution or you can modify
+and refactor that approach to meet the
+conditions here with the idea that you
+had of
+tracking the zeros in a separate array
+and then readding them at the end.
+That's not a bad approach. And I think
+you could even fine-tune that even more
+to not need a second array at all. I
+think this problem can be done without
+making a new array. I'll say that um
+using your still this the simplified
+theory, right? I think you can still do
+that without using a separate array, but
+you have to at least test that first
+idea out, that first brute force idea
+out first to then say, "Okay, now what
+can I do to make this actually work?"
+like how can I improve this? What what
+can I do other than create the second
+array so that I can still meet the
+condition of this problem? And that's
+not going to work for every problem, but
+especially in the beginning phases when
+you're still learning all the different
+things that you can and can't do for any
+given problem. This is a great stepping
+stone to learn to learn those things,
+right? And then once you get into more
+complicated problems, maybe you have to
+rely on brute force a lot less often so
+you don't go down the wrong path.
+and you're evaluating all your options
+up front instead.
+Does that make sense?
+>> I guess so. Yeah.
+>> Okay.
+Otherwise, I mean, I think you
+understood the problem, right? That's
+the main goal. That's the first battle,
+the first obstacle, the main obstacle.
+And that's great. And I also liked your
+observation that you can't make an
+assumption that all of these lists are
+sorted because there's nowhere in here
+that it says that the original values
+will be sorted. The example has them in
+an order, but like you said, can we
+assume that for all the test cases?
+Probably not. So,
+>> okay, I can also see another alternative
+here.
+>> Well,
+I'll let you get to that in a second. I
+would have taken that assumption and put
+it out there just so you didn't forget
+it. um like put it in a comment and I
+would have pulled out everything else. I
+also maybe would have outlined some of
+your thoughts just so as an interviewer
+I can see what you're thinking about,
+right? Like if I saw that you were
+thinking about this simpler version of
+saying, "Well, maybe I could do this and
+this and this, but it's going to violate
+that condition of the second copy
+array." I can at least see that you
+thought about it and that you understood
+that approach before then going to all
+right, I think I'm going to try a bubble
+approach. um you didn't mention anything
+about what your approach would look like
+or what it would sound like until after
+you had all of this code written. So, as
+from the interview side of things, I
+need to know how you've gotten to this
+point of why you're building out not
+just like I'm building out these
+position variables and I'm going to try
+swapping, but like what is the mindset
+going into that? What is your overall
+goal with that and what does that look
+like compared to alternatives? So that
+is the the second piece of feedback
+there is is make sure you're outlining
+the things that you're observing about
+the problem and any alternatives that
+you might or just like your thought
+process in general even if it doesn't
+turn into code.
+Okay. So you said you mentioned you had
+another another idea.
+>> Yeah. And I think this one works a lot
+better. Okay. Rather than to try to use
+a bubble sort. Okay. Go through this. Go
+through this list. Whenever I encounter
+from left to right, whenever I encounter
+a zero, all right, add it to a counter.
+All right, delete that entry out of the
+list. Go to the next one. Is it a zero?
+Add to the counter. If it's not, go to
+the next in the list. A zero. Add to the
+counter. Not zero. Next to list all the
+way to the end. Then I have the count of
+the number of zeros. All right. Now I
+can go to the end of my list. All right.
+And I can add that number of zeros at
+the end. And that would be a very simple
+code to write.
+>> Yes, it would. And do you see how first
+you had to kind of give up the idea that
+these constraints are holding you back,
+follow your original gut assumption,
+brute force option, and then revisit to
+say how can I improve it? So that's
+that's the first piece of the feedback.
+But still the second piece of the
+feedback is also to remember to do what
+you just did right there perfectly
+explaining your problem your thought
+process even writing out your thought
+process and then diving into the code so
+that we can see what you're thinking
+about ahead of time.
+>> Yeah. If I'd approached this with this
+second process we would have had a
+success
+>> I believe so. Yes.
+>> Well I I think it's pretty clear. I can
+explain it in, you know, in in these
+terms. And, you know, as long as I'm
+dealing with a mutable uh a mutable
+object, all right, what I'm talking
+about could easily be done.
+>> Yes. And you also want to make sure that
+you're able to explain it while it's
+happening and under the pressure.
+>> Okay. Yes. M.
+>> Well, I'll admit. Go ahead.
+So I was wondering can you can count the
+zeros and remove them because you'd have
+to remove them to have them at the end.
+>> Well, can I explain this?
+>> Sure.
+>> Okay. So basically what you're going to
+do is you're going to iterate through
+all of the indexes starting with index
+zero. So in this particular case in the
+example it's given all right nums of
+index zero is a zero. So my next code
+would be to check to see if that's the
+case using an if. All right. And then if
+the if condition is true, then I my
+counter would be incremented by one. All
+right. With it being initialized to zero
+before I go through some kind of a
+while. All right. Uh so then I'd go to
+the one. All right. Item. All right.
+Now, that's not a zero. So I wouldn't do
+any counter incrementing. So then I'd go
+to the second zero. That's a zero. So, I
+didn't increment my counter for a count
+of two. All right. And then I'd go
+through the rest of the items and go to
+the end. All right. Now, what I'm going
+to have to do is I'm going to have to
+get my my length of nums. All right. And
+then I'm going to have to subtract one
+from that. All right. And then I'm going
+to have to add a uh I'm going to have to
+add a zero value for that new item that
+that new item in the list. And I'm going
+to have to do that,
+you know, for every count number that I
+have, which in this case would be two.
+All right. And then that would allow me
+to do meet the constraints of this
+problem.
+I I didn't hear how you're removing the
+zeros and moving them to the end.
+>> I didn't really discuss that, but
+basically what it boils down to is uh
+you know, basically what I'd have to do
+is I'd have to do a delete of that
+particular item, you know, that
+particular that particular item in the
+list. And I believe there is a delete
+built-in uh function that would allow me
+to do that.
+Okay. However,
+>> now go ahead, please.
+>> Yeah, there is a good point that is
+being raised there is that loops and
+indexes are tricky. So, the removal
+process may not go the way that you're
+hoping on the first draft, which is why
+printing and iterating and testing
+again is a really important piece here
+as you're moving through your solution,
+even if it seems straightforward and
+simple.
+Okay. Well, all right. So, maybe I can't
+do a delete.
+>> I mean, no one's saying you can't do a
+delete. It's just how is it going to fit
+a part of your solution? Um, all right.
+So, I
+>> Well, I mean, that should at that point
+in time, that should decrease the length
+of if I can do a delete, that should
+decrease the, you know, the length of
+nums. All right. And then index zero of
+nums would become one on the first pass,
+>> right? So let me put it to you this way.
+If you are going just for the sake of
+the example, don't worry about any other
+kind of loops. If you are going through
+the the loop by index 0 1 2 3 4 and you
+remove the value at index one,
+what is the new length of that array?
+What is the new value position of one at
+index one? And then what is the new
+value position of index two? If your
+loop is iterating consistently index by
+index and you're pulling or adding
+values to it, your index are not going
+to be
+consistent.
+>> Well, okay. So, if I'm starting with
+index zero, I delete the zero. All
+right. Yeah. Then I have to I have to
+look at I I I have to reset uh my
+indexing to zero again because now I
+have a potential uh nonzero value. So I
+can't just you know I can't iteratively
+go through at that point. So I I get
+that. But the the general in the general
+case the the overall the overall
+algorithm I think is is sound but
+incomplete.
+Mhm. Yes.
+>> So that that I I would make that case
+that it's sound but incomplete.
+>> Okay, great. So I would encourage
+everyone
+>> needs additional it needs additional
+work.
+>> I would encourage everyone to try this
+problem on their own now that you've
+seen Dan work through it. You've heard
+his own thought process about how to do
+it. Maybe try your own process, your own
+approach,
+>> or even recreate and try his approach
+that he's outlined for us. any of the
+above, but definitely give it a try. So
+then you can take everything that you
+may have absorbed today and put it into
+your own words, into your own hands, and
+get that muscle memory going. Um, it's
+not just listening and observing, it's
+also applying. That's the way that you
+build your knowledge. All right. Does
+anyone have any other questions before
+we close out for today?
+>> Uh, I had a quick question on the
+problem.
+>> Sure.
+>> Um, I would have approached it a little
+bit differently. I would have actually
+used a for loop. I would have said
+something to the effect of if it isn't
+zero um basically uh put it in another
+list, make another list for it and put
+it in the list. So you'd get 1 32.
+Um but I get stuck in putting the zeros
+in the back. That's that's the part I
+don't quite understand. And I'm gonna go
+and think out, but I did want to bring
+that up. You know, if you just told it
+to remove, well, don't tell it to
+remove. Just say um if it's not zero,
+put it in a new array.
+>> Yeah. So, that is what Dan was talking
+about. That's why he didn't originally
+approach that idea is that there's the
+condition here, note that you must not
+do this in place without making a copy
+of the array. So
+>> that approach would solve the problem
+and the test cases, but technically it
+is not a valid solution because you're
+making a new array to represent nums.
+>> Okay. But I thought a new array wasn't a
+copy of the old array.
+>> Yeah, but nums
+>> not identifing or printing anything.
+Yeah,
+>> the the array itself, the variable nums
+that's passed in
+>> has to also contain
+the it has to be modified and and then
+it's like there like I don't know how to
+say that you don't return a copy. You
+don't create a new array and then like
+return it.
+>> The nums that you are given has to be
+the final value.
+>> Okay. So what you're saying though, and
+I don't want to hold this up, it would
+be better to say something like remove
+the zeros. Just take them out, remove
+them.
+>> Yeah. And that that is Dan's approach.
+>> Okay.
+>> To try and fit that condition.
+>> Okay.
+>> So again, so what I was kind of
+commenting earlier on when um Dan was
+talking about, well, this is what I
+would do if that condition didn't exist.
+>> You are you're actually restating that.
+You were just saying that you didn't
+know how to do the adding the zeros to
+the end. That's something that we can
+look up. You can Google, right? Like how
+do I append uh a value to the end of an
+array? That's easy. So you can solve
+that problem.
+>> Say like um whatever the name of the
+array is append and put a zero.
+>> Yeah, exactly. So that would be
+exploring the brute force that doesn't
+technically meet the conditions of the
+problem. And then you can go from there
+and say well okay well how can I do this
+without creating the copy or creating a
+separate array or anything of that sort.
+>> Yeah. So in the general case another
+possibility as you were going through
+this would be you know to read the
+current value. All right if it's zero do
+an append at the end of the array and
+delete the current uh the current value
+and then go through that. And of course,
+you'd have to, you know, recalculate
+your length and, you know, all of that
+uh and your indexes as you go through
+this process.
+>> Yep.
+>> So, that would be that that would be,
+you know, that would be another way to
+do it as opposed to using a counter. So,
+that would probably be bit a bit more
+dry.
+>> All right. Thank you everyone for
+sharing your perspectives. Do we have
+any other questions before we close out?
+Um, okay. I was just going to say one
+final thing. Um, that was one of my
+questions, too. I got in late, so
+forgive me for that. But, you know, my
+question was, what do you mean by
+copying the array? I I did not know that
+making a new array was copying the old
+array if it wasn't identical to what was
+originally in the old array. I
+>> Well, how I how I read that was making a
+copy of the array includes making a copy
+of any part of the array. We'll see.
+That's unclear.
+>> Yes.
+>> Yes,
+>> that is. But all that matters is what
+Ruby's definition of that is.
+>> Well, no, not necessarily. I mean, the
+problem
+it it seems unclear, but it it is
+actually clear.
+Like from a data structure perspective,
+it's clear.
+>> Yeah. Because if you make a copy of the
+array, you're using additional memory.
+All right? And you're using and you're
+using, you know, you're using the
+existing values.
+Now, admittedly, within Python, when you
+do that, you may or may not be using
+additional memory. I'm I'm not sure
+about that point but nonetheless you are
+still creating you know some kind of a
+some kind of a copy of the array uh
+information someplace which seems to be
+a violation of the constraint.
+>> Yes. All right. Um so there's another
+meeting after this. So that's why I'm I
+want us to wrap up. But thank you again
+for sharing all your thoughts and those
+questions. And feel free to try this
+problem and ask more questions in the
+Discord um packer channel if you want to
+explore that more. And thank you all for
+joining me today. See you see you when I
+see you.
+Okay.

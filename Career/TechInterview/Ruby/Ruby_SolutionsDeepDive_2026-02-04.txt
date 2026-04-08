@@ -1,0 +1,447 @@
+Okay, so welcome to this week's nailing
+the technical interview. Um, before we
+dive into today's session, does anyone
+have any questions that they would like
+to ask about preparing for practicing
+anything tech interview related? What
+questions do people have?
+No questions. Okay. Um, so for today I
+have a sample problem for us to work on
+and now I just need a lovely volunteer
+to act as our guinea pig for taking
+another mock interview. So is anyone
+interested in doing that?
+[snorts]
+I always have Jeopardy music playing in
+my head during this part.
+[snorts]
+I don't want to waste a good problem. If
+>> well,
+>> if I can save it for next week,
+>> we could review old problems if
+let's see
+>> what's the difference. I mean, um,
+when you do a new problem, is does that
+make it stale from then on? I mean, what
+what's the difference between doing a
+new problem and doing an old problem?
+>> Yeah. I'm just saying if we've done a
+problem that people have already seen.
+>> Yeah.
+>> And you know, you kind of already have
+the answer for it in mind potentially
+versus if we look at new problems and
+you kind of have to really reset from
+scratch. That's all I'm thinking.
+>> Oh, okay.
+So, if we don't have any volunteers
+today, then we might end a little early.
+>> Sorry, I missed a little bit there. I
+got a kind of urgent call. Um, what's
+the thing that we're doing now that
+you're looking for volunteers for?
+>> Yes. So, I'm just looking for volunteers
+for the mock interview.
+>> What does that involve for someone who's
+only kind of attended the later half of
+one of these? Yeah.
+>> What what what what does it involve?
+What do we do?
+>> Yeah, it's pretty low pressure. It's
+just to practice for the actual
+technical interview. We give you a
+problem and we set the timer and kind of
+just let you go for it. And then
+afterwards, we talk about how it went,
+um, potential next steps, things you
+could improve or things that you went
+well, that kind of thing.
+>> Sweet. I'll I'll give it a crack.
+>> Great.
+>> No one else feels like it.
+All right. Thanks, Russell. I'm going to
+pop this question into the chat. So, if
+you want to open that link and click the
+green share arrow to share your screen.
+>> Where are we here?
+So, you'll need an account if you don't
+already have one to log in, excuse
+[clears throat] me, to log in. Um,
+otherwise there's no rules on like what
+languages you use. You can use Python,
+you can use JavaScript, whatever,
+whatever language is most comfortable
+for you. Um, usually we do Python in
+these sessions because that's what
+everyone's done in module 2. But since
+you shared earlier that you've already
+done the explore phase, you might be it
+might have been a while since you looked
+at Python.
+>> Yeah, I think I think Python would be
+the go. I've been doing a little bit of
+practice back in Python to refresh
+myself and some of those more um
+advanced problem solving things.
+Uh okay, which screen am I sharing here?
+I've got two. Yes, I do see the problem
+on your screen.
+>> Is it the correct one?
+>> Yes.
+>> Sweet.
+All right. So, what how do I approach
+it? Just
+>> Yeah. So,
+>> tackle it.
+>> Just Yeah, exactly. Just go for it.
+We'll all hop on mute and then we'll
+just kind of let you work through it for
+about 15 to 20 minutes.
+>> Okay.
+>> And if you get stuck, we can take a
+break from there. Otherwise, just keep
+hacking at it until the timer's done.
+Okay.
+All right. So, I guess first out I need
+to figure out what the problem is. You
+are given a an M by N integer grid
+accounts
+or accounts I J is the amount of money
+the E customer has in the J bank.
+return the wealth that the richest
+customer has. So it looks like the first
+level
+is that okay a customer's wealth is the
+amount of money they have in all their
+bank accounts. The richest customer is
+the customer that has the maximum wealth
+and I'm returning the wealth. So I'm
+returning a number.
+Example one. I've got
+these two accounts.
+Output six. Customer one has accounts.
+A customer has the first customer has
+the wealth 1 + 2 + 3
+and
+second customer has 3+ 2+ 1. Okay.
+So it looks like each one of the nested
+arrays is a customer.
+So I need to total up each one of those
+and find the max. Okay. Input accounts
+1.
+The first customer has wealth six. Okay.
+Second customer has wealth 10
+eight. So I need to total
+each one of those subarrays.
+Okay.
+Both of those lengths are going to be
+less than 50 greater than one. Number of
+accounts greater than one. Okay.
+All right. So, I'm guessing so I'm going
+to have to return the greatest
+sum at the end of it.
+So, I'm going to have to go through each
+one.
+So, for each
+account
+or each customer,
+I have to sum the total
+of their accounts.
+which I should probably do in a new
+I guess I don't have to track
+each total in a
+in an array because all I need is the
+highest one. So I can just compare the
+So I can say
+the greatest wealth is equal to zero and
+then I'll just keep replacing the
+greatest
+wealth if it's bigger than the one that
+I'm looking at. All right.
+So I think for
+I in range
+length of the
+counts.
+I'm trying to remember if I can just sum
+an array in Python.
+Going to do that real quick.
+I have to.
+Okay.
+So, that'll be some
+counts.
+I
+just out of curiosity, I'm going to see
+if I can return
+the sum.
+Going to comment that out. Pull this
+over. Double check that that's a valid
+item thing.
+Um, now I've got to
+say greatest
+equals
+returnest.
+I commented my thing out. Yeah.
+>> [clears throat]
+>> Let me just say return
+give my thing a valid index.
+So it does output the sum of the zeroth
+array.
+Sweet.
+Okay. So I'm going to
+now that that's verified. Let's do this.
+put that as I again so that we're
+actually
+calculating each one. I'm going to
+move this down underneath here just for
+clarity purposes
+and remove that accidental F. So for I
+in range
+greatest okay I'll just say that the
+current
+value is the sum of the accounts and
+greatest
+is equal to current
+if
+current
+is greater
+than the current greatest.
+Else
+um it stays the same stays like itself.
+Okay. So the greatest
+account amount
+starts at zero and then for each
+customer I check
+the total of that
+this the sum of all of the integers
+within each one
+and then put
+replace greatest with the biggest one if
+it if it is indeed bigger.
+Let's try it.
+That seems to work.
+Maybe I'll try submitting it.
+It works.
+>> Awesome. Nice job.
+>> Thank you. Um, so real briefly, will you
+walk us through the problem description
+again and what the problem's asking you
+just to quickly highlight the problem?
+>> Yeah.
+So it looks like for every so I receive
+a an integer grid
+where each subarray
+contains the wealth essentially of each
+um of each customer.
+And so I've got to figure out which
+subarray is going to have the biggest
+total so I can figure out which customer
+has the highest wealth.
+So
+yeah, if for for any array I have to
+loop through and calculate the totals of
+each subarray, find which one is biggest
+and return it. And so I've just created
+a placeholder variable greatest
+so that I can store the value starting
+at zero. And then if I find anything
+bigger than zero, I replace greatest
+with that value. And then if I find
+another one that's even bigger than
+that, I replace it with the new value
+until I end up with the greatest value
+and then I return it at the end.
+>> Perfect. Great summary. Um, so I saw
+that you looked at constraints
+originally. Did you see anything in
+constraints that shaped your approach
+here?
+>> Not really. But like I I saw that you
+know the
+basically m is going to be the number
+like how many arrays there are in the
+array of customers. pretty much m is the
+number of customers and then n is the
+number of accounts each customer has and
+each one of those is going to be between
+1 and 50 or from 1 to 50.
+Um and then the values within those are
+going to be between one and 100. So it
+doesn't really I don't think my approach
+is affected by that. It could be outside
+of those constraints and would still
+work, I believe.
+>> Unless unless there were zero, like if
+there was an array that had zero values
+in it, then I'd have to have an error
+check to just make sure that it actually
+had something in there so that I could
+do the loop.
+>> Exactly. Yep. That's what I was kind of
+asking. [laughter]
+So, that's perfect. All right. I think
+this was a great showcase. I mean, you
+followed pretty much everything that we
+usually recommend. Reading through the
+problem, kind of getting baseline
+assumption, typing out some quick
+comments of your understanding of the
+problem and what you need to do, quickly
+prototyping some of the steps, actually
+taking a step out of your code to test
+the greatest the sum piece to make sure
+that the sum piece is going to work
+individually, and then putting it back
+into the problem. Um, yeah. So, that was
+all great. Thank you for this
+for this uh mock. I think you're
+probably definitely not no not probably
+I think you're definitely ready. So
+whenever you're ready to sign up go
+ahead and use that link.
+>> All right excited. Thank you. Thanks for
+the opportunity. I'll stop sharing now.
+>> Yes.
+>> Y
+>> All right. Thanks Russell. Does anyone
+else have any questions about that
+problem or about the approach?
+No. Okay, cool. Well, since we
+>> I was just gonna say I feel like
+compared to some of the problems I've
+seen, that was potentially the easiest
+one I've I've looked at recently.
+>> Yeah. So, the the leak code playlist
+that I'm using right now is like called
+super easy.
+>> Oh, yeah.
+>> So, I I was just using that because it's
+just kind of nice for quick little mock
+things. Um, since we switched to just
+trying to get everyone the opportunity
+to do mock runs here,
+>> getting I think Linda, was it you last
+week who was working through the
+baseball one?
+>> Yes, that was me.
+>> Okay. Yeah, I feel like when I looked at
+that problem because I came in a little
+bit later and I looked at it and I was
+like, "Yeah, that's a little bit more
+convoluted and you got to track more
+things and step through it and
+>> a little bit. I think they're probably
+about on the same level, just kind of
+different
+>> different approach.
+>> Yeah, I'll have to go back and look at
+that one.
+>> Yeah. Um, all right. Well, thanks
+Russell. You completely knocked that out
+of the park, so we have lots of time
+left. So, if someone else would like to
+take a mock interview, I pulled up
+another problem for us about that same
+level of difficulty. Um, yeah. So, do we
+have any other volunteers?
+Okay, great. Then we will end early
+today unless anyone has any questions
+that they would like to ask and I will
+just save that problem for next time.
+>> Sweet. Sounds good.
+>> Does anyone have any questions before we
+close out today? We'll close out a
+little early. Um, yeah, just again the
+the focus of this session has changed a
+lot over time, but currently we're just
+kind of focusing on the mock interviews
+to get you through to the next phase. So
+that's really what the the game plan
+moving forward is is just mock
+interviews.
+>> Sweet. Yeah. Uh I was just curious like
+having kind of just come into this um
+part [clears throat] of of the the
+course I suppose. Um would it be
+worthwhile cuz cuz I haven't done one of
+these and I haven't really seen any
+other than the one last week. Um
+I was just curious like if there are any
+particular resources other than where
+you pointed to me in the course um
+website
+to just kind of get a general vibe of of
+the approach that we should be taking.
+Like this is kind of a one-off for me,
+but
+um yeah, I'd be curious to to see more
+of that. like should I go back and look
+at replays of of previous ones and how
+it's approached?
+>> You could. Um the replays are kind of
+all over the place to be honest.
+[laughter]
+>> That sounds about right.
+>> Um you but I think if you're looking for
+more info, yes, there is info shared
+there. Um in the Discord channel and
+hacker, I've shared a rubric previously.
+Um, so in discord in yeah in the
+hackering channel it might even be
+pinned.
+Okay, there is something pinned. So one
+of the pinned messages is which I
+believe is in the mod 2 tech interview
+prep session. It's just a list of all of
+the potential
+um concepts that you could get as a tech
+interview question.
+>> Okay.
+>> And it's just all again from mods one
+and mod two. And then somewhere in there
+if you type, let me type it actually
+live and see if I can find it. Rubric in
+channel
+hackerink channel.
+Rubric.
+Yeah. So if you type in the hacker
+channel, search for rubric,
+you will see
+uh
+maybe you'll see it. Let me see.
+There's like a thread here. Let me see
+if I can.
+It's not loading.
+Oh, there it is. Okay, great. I'll just
+go ahead and share this.
+Are we screening?
+So, in Discord, all I did was
+typed in hacker inc rubric and then you
+can find this which should also be in
+mod 2 but it might not have made it to
+the your upload yet. Um and it just has
+like a big breakdown of all of the
+concepts. Oo crazy zoom. Um all of the
+kind of concepts. It's a very exhaustive
+list. You don't need to know everything
+that's on here. It's just kind of like a
+guide of mainly this column right here
+of like what the process looks like end
+to end if you want to have a successful
+attempt. Um like these are the good
+behaviors you want to have. This is the
+kind of approach that you might want to
+consider. Your technical knowledge from
+mods one and mod 2 should be pretty
+solid. And then how you communicate. I
+think you showcased all of these things
+today. So I'm not really worried about
+your approach at all. Um but that is a
+resource that's there for you as well.
+Awesome. Yeah, I'll I'll go check that
+out and see if I can um yeah, look
+through it, find any pointers.
+Perfect. All right, any other questions
+before we close out today?
+>> All right, thanks everyone. See you next
+time.
+>> Yeah, thank you.

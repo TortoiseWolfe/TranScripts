@@ -1,0 +1,1326 @@
+Hello and welcome to this week's nailing
+the tech interview. It is Sunday, so
+today we will be doing mock interview
+potentially. I don't know. We've got a
+small group today, so we'll see how it
+goes. Um, before we get started, does
+anyone have any questions about the
+technical interview process, practice,
+preparation? What questions do we have?
+Cool.
+I feel like we haven't had any questions
+in a really long time. It's usually just
+at the end about the problem or about
+what we're doing.
+Vector database questions. Okay. Well, I
+have to Google what that even means.
+Vector database.
+Jesus.
+I'm going to go ahead and say no.
+I mean, for joy of coding, definitely
+not. I'm not even really sure
+at a glance what you would do with this
+database management.
+So like systems interviews maybe.
+I'm not specifically sure. I just talked
+to somebody that was quite senior and I
+granted their focus was on big data
+stuff but they were like yeah you got to
+be really comfortable with vector
+databases and I was like oh great
+>> I don't think so
+>> okay
+>> no I would not say that
+>> so it's slices of a database for like
+most
+used kind of or I don't Oh, maybe it's
+mathematically distributed
+based on some metric.
+I would not say this is common. Maybe
+for a senior level interview
+and a systems design interview with a
+focus on back-end development.
+But in general, no, I don't think so.
+I don't know what any of that means.
+Okay. Well,
+any other questions? Um, not about
+vector databases.
+Is this what you get when you like
+Google vector
+>> vector database leak code? It says it's
+not specifically vector database, but it
+uses the same sort of
+>> methodology.
+>> Yeah,
+>> that's nasty.
+Let's look at the discussion.
+So it looks like Facebook asked this
+question. So that makes sense.
+two line element set.
+So it looks like this question was
+included on a like
+challenge of like a leak code problem
+every day that Le code did.
+Yuck. I don't know.
+I haven't seen that before.
+I think it would be specific to kind of
+the role that you're doing. Maybe there
+is some kind of algorithm that's
+related to it.
+>> Okay. Thanks.
+>> Adam would probably know. Um,
+senior Adam. Adam.
+What is it?
+Okay. I know his last name. Can't
+remember. Adam Fonath. I don't know how
+to say it.
+You know who. Production lab Adam.
+>> Yeah.
+>> Um.
+All right. Well, let's dive into
+today.
+So,
+I'm thinking
+so, we covered a problem a while ago
+um where we talked about sliding window,
+but I didn't actually we didn't actually
+get have time to go over I think the
+approach for it. Um does anyone remember
+doing like a sliding window problem or
+like using the idea of a sliding window
+to solve a problem in recent history and
+your own efforts?
+crickets. Okay,
+so this is
+let's see
+this is the problem that we covered.
+Maximum average subarray. So it was an
+easy problem that we looked at and we
+just kind of talked about it high level.
+Um you are given an integer array nums
+consisting of n elements and an integer
+k. Find a contiguous there's a fun word
+again subarray whose length is equal to
+k that has a maximum average value and
+then return this value. Any answer with
+a calculation error less than 10 to5th
+will be accepted.
+Okay.
+So when you are given a nums array with
+these integers and a k of four
+the output is 12.75. The maximum average
+that you can get of any four continuous
+numbers. They say continuous but
+continuous sounds better to me. 125
+-6 and 50. So
+these four numbers create the highest
+average
+>> and then this one only has one and the K
+is one. So five by one is five. Um but
+if you did 1125 and -6 that would
+obviously be less than this. and then56
+5 and 3 would be less than the
+so the idea here is that any four
+numbers that are in a continuous
+straight line added up and divided by
+their k value
+and then comparing those maximum
+averages against each other
+we have n= numlength
+so the k value is going to be greater
+than or equal to 1 and less than 10 5th
+The amount of values in the array is
+going to be greater than or equal to k
+and less than 10 to the 5th. That's
+good. That means we're always going to
+have at least
+one answer whether it's
+basically all the values in the array
+equal to k or more values.
+And then nums i will can go from -10 4th
+to positive 10 4th.
+So pretty straightforward and when we
+talked about it putting things into my
+own words first given K equals the size
+of the subarray to calculate an average
+for a nums. Nums is given the array
+given to find the average in nums.length
+will always be larger than
+or equal to k
+aka always find a max average. That's
+that's funny. I put that in there and I
+just said that.
+What else? So we talked about two
+potential approaches. A big O approach,
+I mean a big O N squared brute force
+approach using nested arrays where
+we know that we have to have four
+values. So we would do
+I guess we would do something like one
+and then add the next three values.
+Average it up
+12. out of the next three values. Same
+thing
+five until we get to
+the end of the array.
+That would also work here. And then we
+talked about the O of N approach, which
+is sliding window,
+which is where you set a window size. In
+this case, it would be equal to four.
+And then you track that window by adding
+1 + 1 through the index and track the
+averages across that way.
+So, I figured we would revisit this
+problem briefly and then I know that
+this is how I typically write out my
+like pseudo code, but last time we
+talked um Lisa had wanted to kind of
+dive further in and like actually kind
+of use
+code adjacent syntax when writing out
+her pseudo code. So I figured it might
+be good to turn one of these,
+not this one, and how we might actually
+approach it, still not necessarily
+writing the code, but something code
+adjacent. So
+if I know I want to do this kind of
+sliding window approach, I oops, just
+set a debug point. Set a k amount of
+subarray. Yep. Slide it. Yep. And then
+compare against max average. So I would
+want to initialize a value for
+max
+average initialize probably to zero.
+No, cuz you could have higher than that.
+So
+I don't know. Maybe I would just slice
+the first
+four values here
+and do that.
+average
+or you could do
+negative infinity. So you could
+add a sub sub comment here
+negative infinity which you can look up
+in Python. It's pretty easy. infinity
+infinity
+or slice
+the first
+k values
+in nums.
+So, I'd initialize that, but then taking
+care to initialize it with something
+that won't mess everything up, keeping
+in mind that um since it goes to the
+negative 10 to the 4th, it could be
+I don't know the max average could be
+something that's like really really
+really negative. So, you have to choose
+something that's either ultimate
+negative beyond that. Like I guess I
+could do -10 4* 4 if I wanted to, but
+these negative infinity is probably the
+the safer bet.
+Keep constraints
+in mind
+and then
+oops.
+Yeah, that would be good too.
+So,
+Abu has
+using the sum method
+of the slice sums.
+What is that? Colon
+K
+Um, for this one, I don't think it
+requires that, Brian, that we use this
+specific format.
+It could be, but I don't think it is.
+>> That's the only way I got it to work,
+Ruby.
+>> Oh, really?
+>> Yeah. I kept getting
+>> I kept getting 12. I don't know. Maybe
+it's just my approach.
+But I kept getting 12 for the first uh
+uh
+>> yeah the first example first test case.
+>> So if I when I set
+because basically all I did was create a
+sum which was basically what Abu just
+said. Uh
+see if it's the same. Yeah, sum nums.
+>> And I set I I set that I called it sub
+one and set to a float
+and that and then I ran it and it solved
+it. So,
+and then I just iterated through it from
+range k to length of nums and
+and then I used the max function because
+the first error I had was um
+I kept getting negative8.
+Yeah, for uh either the first or second
+case.
+Oh, definitely the first case. Yeah, I
+kept getting negative or wait not
+negative8 negative yeah well anyway I
+was getting a negative number and so I
+had to use the max function
+and then so that that took care of that
+but then I kept getting 12 and when I
+set that first sum nums up to k uh I
+just set that to a float that was the
+first value I defined and then that
+because basically in Python when you set
+anything to a float, it's going to
+default to a float. So if you don't tell
+it
+that you want it some kind of form, I
+mean, you could use negative infinity.
+It would still it's that's a float,
+though.
+So if you don't set it as a float, then
+it's just going to calculate everything
+as an integer because everything in in
+that list Python's going to assume is an
+integer,
+>> right?
+I'm just want to
+see.
+So this one gives me a decimal at least.
+But yeah, it does look like I don't
+know. So if I did
+what? 125. So if I did one two
+one two k + one
+k + 2
+no k + one
+would that be
+12.75 okay
+turn
+[Music]
+Oh,
+wait a second.
+Oh,
+I see.
+It doesn't look like it cares too much.
+I mean,
+oh well, we did it twice.
+For me anyways. What language were you
+using? Were you using Python 3?
+>> Yeah.
+I mean, I can show you mine.
+Let me go back and
+>> Yeah, because I'm just doing 12.75 and
+it's it's returning that as correct.
+>> You can show yours.
+>> Hold on a second. I'm going to run it.
+>> Yep. I get the wrong answer. I get 12.
+So,
+>> yeah. Let's take a look at that. I'm
+curious now.
+We'll come back. We'll come back to what
+I was doing.
+Do you want to share your code?
+>> Yeah, I'm working on it.
+Share
+This window always covers up the zoom.
+Whoa.
+All right. So,
+can everybody see that?
+>> Yeah.
+>> So, yeah. So, here I have up at the top
+I have my sum one equal to sum of the
+nums through k. Mhm.
+>> That's printing out 12. So when I when I
+do this,
+I'm go float
+and run it.
+>> So wait, um,
+>> can you control Z that? Go back to just
+sum some nums.
+>> Controll Z.
+>> Yeah, undo it.
+Oh,
+you mean like this?
+>> Yeah. I mean, if you press control- Z in
+there, it would it would undo it.
+>> Okay.
+So,
+this gives me 12.
+>> So, if you scroll down.
+>> Huh.
+>> And then when I do this
+>> Yeah. Yeah. Yeah. I saw that. Hold on.
+Um,
+>> I just hit the first one,
+>> right? And hold on. Don't do that just
+yet. Go back. Go back.
+So, get rid of the float.
+I'm curious cuz you're on Python. So, if
+you click the drive dropdown,
+the language dropdown.
+>> Uh where's that?
+>> Right. Yep. You were right there. Right
+under code. Yeah.
+>> Python 3.
+>> Well, how about that?
+>> Oh,
+okay. So, change it back.
+Copy it.
+>> Well, maybe that's why.
+>> I think that might be why. I don't
+That's really strange,
+but I think that might be why.
+Still, I think you learned something
+valuable here.
+Okay, try that one now.
+Oh
+>> wow.
+So it looks like Python 3 has a built-in
+like conversion since if you look at the
+class definition
+the find max average def find max
+average self nums blah blah blah and
+then it has that dash um greater than
+bracket to float.
+>> Mhm. So the
+the construction of the definition has
+like type built into it. So it says it's
+expecting a float return type and so I
+think it automatically cast it into a
+float whereas you see in this one you
+just have a generic function definition.
+>> Wasn't that nice?
+>> So I think Python 3 maybe just has some
+more like
+I I feel I feel like you could do it in
+both of them. Like if you copied the the
+top line two,
+if you just copied that whole line and
+then went back to the Python language,
+the I mean the other Python drop down.
+Do you want to try that?
+>> What? This?
+>> Yeah. So just copy the whole thing that
+whole line.
+Copy.
+We'll see. Yeah. And then
+>> it should be identical parameter names
+and stuff. So that's good.
+>> Yep. And then run that.
+>> Oh,
+>> interesting. So the base Python that
+they were using must not allow for like
+uh explicit type casting.
+>> Yeah. or type enforcement in the
+function definition I guess you would
+call that. Um
+whereas 3 does because I don't think
+Python 3 definitely doesn't require it.
+So I think it just like allows for it.
+>> So that's really interesting.
+That is very interesting actually.
+But yeah, you see that it expects a
+return type of float. And so you're
+casting it as a float up at the top
+so that
+it knows moving forward that it'll
+it'll automatically cast all of the the
+sum calculations you're doing using that
+variable to remain as floats.
+Whereas in the Python 3 version, it's
+expecting a float return type. So, it
+automatically kind of
+cast that as a
+>> I have to pay attention to that cuz that
+was driving me nuts because everything I
+tried was pulling up 12.
+>> That's kind of um similar to JavaScript
+versus TypeScript. I feel um Typescript
+is essentially JavaScript but with like
+type enforcement
+and so it requires you to do I don't
+think Python 3 requires this. It doesn't
+require you to specify all the types
+that you're using but TypeScript does.
+TypeScript would require you to do
+exactly what the function definition
+does where it says nums type list of
+what? Integers K. What is K? An integer
+what is the return value? A float. Um, I
+don't think it requires you to set a
+return type
+in TypeScript. Maybe it does depending
+on what you're doing. Um, but in
+Typescript it's required and it's
+required in all of the inner
+variable and function definitions as
+well. So you'd have to say like integer
+someone or float someone equals sum of
+nums to the k float maxum equals some
+one etc etc. um which I think is good.
+Enforcing type safety is a great way to
+make sure that you're not doing the
+wrong thing or not missing certain
+things or getting exactly what you are
+expecting to do kind of thing. Uh
+JavaScript has a lot of critiques of its
+earlier versions that don't require it
+because it's kind of hard to follow at
+any given point what the actual value
+type of that data is. Whereas in
+Typescript, you're never confused
+because it will tell you. It's you're
+forced to explain it for random.
+>> Yeah. There's been many times I've
+worked on projects
+and one time I run it and it looks good
+and then
+the next the next day or two I come back
+to it and run it. It's in like
+scientific notation or something or like
+>> uh
+>> you know then I have to figure out like
+well why you know is it doing that? But
+um yeah.
+>> Well, that's cool though. I'm glad that
+I'm kind of glad you experienced that so
+you could
+learn about type safety, type
+enforcement there.
+>> Now I'm wondering how many of these
+problems I've done in Python.
+>> Yeah. And how many you've kind of had
+missed.
+>> I'm almost positive I false negatives on
+>> three at some point.
+>> Yeah, definitely. I mean, I've done so
+many of these now, probably like 30 or
+40 that I don't know.
+>> Right.
+Well, the good news is that you did
+figure it out and also it does work in
+Python 3 without needing to do the float
+enforcement there. Float casting I
+should say. And your code looks like it
+is implementing the sliding window. So,
+that's fun. Now, did you know about
+sliding window or did you just kind of
+come up with this after we talked about
+it?
+>> I mean,
+this is kind of a
+a really simple um
+>> Yeah, because you come from the data
+science background.
+>> Well, I mean, this is one of those where
+I think if you if you actually think
+about the problem because
+>> yeah,
+>> looking at each
+set of two. So
+when you think about actually solving
+it, you're you're doing the sliding
+window, but you're not really you might
+not even be aware it's a sliding window,
+>> right?
+>> So if the range was bigger, then yeah,
+cuz this would change probably like
+uh I minus K plus one or something like
+that.
+>> Mhm.
+>> You know, depending on what the problem
+was,
+>> right? to me looks pretty
+straightforward. You're just going to
+iterate through each of your the I think
+the toughest part with this is just
+trying to figure out
+how to include the end without going out
+of bounds.
+>> Yeah.
+>> And then you know you just calculate
+your sum and then compare the max inside
+the loop. So each time you calculate max
+sum, it stays with the maximum and then
+you just pop it out and divide it by k.
+So
+>> yep, cool. Thanks for sharing.
+>> Yep.
+>> And wait, can you submit that? I want to
+see the runtime. the runtime that has
+73. Not bad. I wonder why it's slower
+than it must be just like language
+or like server processing times because
+we're on Zoom right now
+cuz there shouldn't be a faster way to
+do it technically. I guess maybe the sum
+of Yeah, if you
+>> I want to see what this is.
+>> Yeah,
+>> slower.
+>> I bet what's actually holding you back
+is the sum one equals float of basically
+defining the the first sum as a um
+as a slice of the array. Like if instead
+you just initialized it as negative
+infinity,
+I bet it would run faster.
+>> What's
+Python negative?
+>> You mean initialize it as negative
+infinity?
+>> Yep.
+>> So take the float out.
+Well, if you go back to Python 3, then
+definitely um
+though you could cast it at the bottom
+too at the return statement. You could
+do float maximum divided by K. So
+negative infinity actually you can cast
+it as a float with the negative infinity
+too. So yeah, it's um what is it? NPF,
+right?
+>> I'll just post it into the chat for you.
+>> I thought that's numpy, isn't it?
+Yeah, that's a library. You'd have to
+import that, but you you actually don't
+need it.
+>> Is that right? The
+>> chat. Check the chat.
+>> I I don't think I can't. I'm sharing my
+screen.
+>> Yeah, you can. You just have to click
+the chat at the top. The little bar that
+shows up at the top of your screen when
+you kind of hover over it.
+>> Oh,
+well, yeah. I guess you're still
+right.
+>> So 78 73.
+>> Oh no.
+Wrong answer. There's that zero. There's
+that 12 again.
+>> Uh yeah, it doesn't like that. So if you
+um put the float around the return
+value, I'm pointing again like you can
+see it. Yeah, down there.
+>> Oh no,
+>> that's so weird. I don't know why.
+Switch over back to Python 3. Let's see
+it there.
+>> But copy the uh negative infinity there.
+Want to make sure this is right first.
+Oh, no. It's not going to be
+It's weird.
+>> And now it's telling you 80
+milliseconds. That's fun.
+>> Could also be my computer is quite a
+little slow.
+>> So that is that what you're looking for?
+>> Yeah. And then delete the line under it
+or comment it out. Whatever. Um line
+four.
+Oh, that wouldn't work because I'm still
+I have to sum this. I have to sum the
+nums.
+>> Yeah, but you the way you define the for
+loop, it it it should be fine.
+>> Oh, no, you're right. Yeah, you are
+right.
+You'd have to do the sum.
+You'd have to do the sum in the for loop
+there.
+>> Yeah.
+Oh, yeah. Maybe that's not
+I see now what you're saying.
+Okay, never mind. Yeah, I think that's
+I'm curious then how the other people
+are doing it faster. H
+>> maybe a while loop.
+>> A while loop
+for using what conditions?
+I mean, just instead of a a for loop,
+you still have you have a start, a stop,
+you're still incrementing with the
+sliding window.
+Um,
+maybe you're just allocating less space.
+>> I don't think so. And a while loop
+wouldn't give you the index, which we
+need for this.
+>> Do you though?
+For
+>> an index for this? Yeah.
+>> What? You have you have a start and a
+stop, right?
+>> Yeah. But if you look at the what he's
+actually doing inside of the for loop,
+we use an index
+for the calculation at each step.
+>> Mhm.
+>> So I guess you'd have to initialize an
+an index and keep track of it. So it
+wouldn't actually really save you
+anything. What method is faster?
+>> Um,
+no. Yeah, don't worry about it. Um,
+maybe the max method. Maybe I don't
+know.
+I maybe you could like
+pick at it and change a few things, but
+they shouldn't change the runtime that
+much.
+I'm not sure.
+I kind of want to know. Maybe I think
+maybe it's just because we're on Zoom or
+something.
+>> All right, I'm going to steal the screen
+back from you. Thanks, Brian.
+>> Yep.
+Okay. So, this is good too. So we we
+could use negative infinity like I was
+thinking but then we'd have to do the
+sum inside the for loop which would kind
+of
+it wouldn't be bad it just probably be
+worse runtime.
+So, I do like this approach of
+that. And see, even this I just copied
+what Abu posted in the chat,
+but that gave us an error because we
+needed to use brackets. So, that's
+totally fine because we were just doing
+like pseudo code and I didn't need it to
+be syntactically perfect.
+Um, I'm going to keep the return there.
+And then if we were to continue this
+line of thinking basically what we just
+saw
+for iron range
+and then keep keep in mind
+for range of window size
+aka
+K
+oops K to the length
+of the nums array because you can't
+start from zero because we're trying to
+do
+k windows. So we want to keep that
+window size whether it's in line with
+what we initialized our max average to
+if we were initializing those first four
+values or if we want to do it inside of
+the loop we want to keep that window. So
+we would start at K and then have that
+sum value of
+start with sum
+of index
+0 to index
+K
+minus one maybe I think
+then
+at each
+index iteration
+increment
+increment in the O in the loop
+get some of the window size
+and that's where you were doing Brian
+Um
+sum plus
+value at current index
+and then
+subtract
+value at
+I guess I should say current sum
+plus
+the value at the current index
+and then
+subtract value at
+old index
+index minus k.
+And then what do we do? We
+compare
+Max.
+Oops.
+New max.
+Define a local sum value. customer
+compare
+local max with global max
+and see which one is larger. And that is
+where Brian used max sum and did
+max average, our global max and then our
+local
+local
+>> max sum I think will actually be
+the sum.
+>> Yes, I actually want Yeah, you're right.
+Max sum,
+>> not max average. Max sum. So I guess you
+could you could set it to max sum
+initially and then you could set sum to
+an integer.
+I think that might work.
+So we could use a max method or we could
+use an if statement there. And then at
+the end
+return our
+max
+sum
+divided
+by K.
+Now obviously we would spend more time
+like thinking about all right what would
+I do at this stage? I like to use pen
+and paper but this is also I think
+decent. And then that allows you just to
+get a kind of bullet point idea of what
+you're going to do. I think I wouldn't
+have necessarily thought initially to
+keep track of the like K window size to
+start when just writing out the pseudo
+code. Maybe I would, I don't know. Um,
+but then once you have that, then you
+can say, all right, at each step I'm
+going to start with my for loop. Then
+I'm going to do the sum. Okay, I've
+gotten to that sum line. Now I'm
+noticing that my for loop is a little
+weird. Maybe I have to go back and
+account for the the window size
+there.
+Window size.
+If you're going to get like a more
+bullet point version of
+your code instead of just doing like a
+general description, it could look
+something like this. Maybe you don't do
+the full thing out. you just kind of get
+a general idea, start coding,
+write a little bit more, start coding,
+and then, you know, do the last part. I
+think either I think any way would be
+fine, but I think it's good to get a
+game plan of just like what are you
+generally going to do? Whether it's a a
+very vague write out or like a little
+bit more in depth with a couple of like
+I think I'm going to do a for loop. I'm
+going to do a sum. I'm going to check
+this at each index.
+I'm going to do the max comparison
+and and group those right.
+And then always always always I like to
+include what you're going to return. So
+turn rx divided by sum.
+This should be a float.
+Though this is technically an int. I
+guess guess I could do that if I really
+cared about having a default but I don't
+really.
+But yeah I want to do that for Lisa who
+I think joined
+because that looked like your kind of
+approach when we were talking about last
+week's problem. So, if I wanted to take
+a sliding window approach, how would I
+kind of spell that out in pseudo code?
+And I know we kind of breeze through
+that because it's already 850.
+Um, Brian, I'd actually like to
+challenge you a little bit. Do you mind
+being our guinea pig today?
+>> Uh,
+or what? for our mock interview.
+>> Um, you know, I got to go at three, so
+>> Oh, okay. No worries.
+>> However, um, I did solve
+um, top K.
+>> Did you?
+>> Yeah.
+>> Okay, let's see that.
+>> And I have a question for you actually
+because
+I don't understand. I got it right, but
+I don't understand the output.
+>> Sure.
+>> So,
+>> I'll save I'll save my mock interview
+question for next time. So, that's fine.
+>> A fair warning.
+Um,
+are you seeing it? Are you seeing my
+screen?
+>> Yes.
+All
+>> right. Is that good?
+>> You could go one more, I think.
+>> All right.
+Okay. So,
+let me just
+talk through this a minute. So, I
+basically set it to a counter like we
+talked about a couple weeks ago where
+the counter essentially uses the number
+as a key in a dictionary. The actual
+number in the list or whatever it gives
+us. It's a list, right? Yeah.
+>> And then
+the value is
+um
+the count or
+frequency, whatever you want to call it.
+So number of times that that number
+appears
+in a list and I did a
+if we look at the bottom, here's what I
+I created my own test case.
+>> Okay.
+>> Yeah. So in your test case, we're
+expecting
+So four and eight seem to have the
+highest amount of repeat. So we would
+expect four and eight.
+>> Yeah. So and that's where I'm printing.
+Now I can't actually submit this because
+I have to well I have to go down here
+and do this
+because um it'll the runtime it'll it
+won't
+>> Yes. for having so many print statements
+for the the data size. Yeah.
+>> Yeah. So, but um
+and there here I'm printing the counter
+obviously and then here down here is my
+LOL.
+I love this.
+So, basically I'm in all I'm doing is
+just instantiating a list of lists with
+a list comprehension.
+Um, so it just creates something that
+looks like this, which is our output,
+which is our list of lists. And our list
+of lists is called an LOL.
+And so then I'm going to use the items
+function here to or method I I should
+say um to go through the counter and
+then define our num and count. And all
+I'm doing here basically is just
+appending the num which is the key but
+it's also the actual number in the list
+of lists. Um and then what I'm doing is
+to the list of lists I'm taking the
+actual count.
+And so what happen and then this this
+loop we can just go through real quick.
+All all this is is like going through
+the list of lists and then basically I'm
+using K as a condition. So K is the
+second input to the function up there.
+>> So I'm just using it as a condition to
+check against it. If the length of ANS,
+which is my result, is equal to K, then
+return it.
+>> So this part shouldn't be too complex.
+And then um well the range length this
+is basically I'm go you have to go down
+you have to go down the list in a
+negative direction.
+>> So but I want to what I want to get to
+real quick before time expires is this
+output down here. So I'm printing out
+our list of lists and again the uh
+the um actual number is being put into
+the u list of lists at the index of
+uh where it actually
+occurs or in other words. So this it's
+putting eight at three
+because that's where it finds it.
+Um,
+right. Well, where did it go?
+That That's where it finds it.
+If that makes any sense.
+And then, but the thing I don't
+understand though is
+>> Oh, I see. I see. Yeah. Okay.
+>> So, then once it finds
+So, it's putting one in the in the one
+spot. It's putting the one, two in the
+one spot. It's putting one, two, three
+in the one spot.
+>> Mhm.
+you know, but it's putting eight in the
+three spot because that's going to put
+four in the three spot. But my question
+is is Oh, wait. I think I just answered
+my own question.
+I was wondering why the eight was before
+the four. But I think I just figured it
+out now because eight is before four.
+But but I guess I'm confused as to why
+eight's before four than in the counter.
+Did eight come before?
+Yeah. See, I I that's
+>> because the counter will automatically
+>> if you scroll down.
+>> Yeah.
+>> No. Uh sorry. Go back up a little bit.
+>> There.
+>> Yes.
+Oh, maybe it doesn't. One, two, three.
+Um, I was going to say if counter might
+like add a sort to it, but I think it's
+just that when you create dictionaries
+and you add items to it, the index can
+just be like
+weird. I think there's a specific reason
+for it, but it's just like how
+dictionary indexing works behind the
+scenes.
+>> Well, but anyway, the result is kind of
+what you want because
+it's putting these
+>> because our indexes are basically the
+values. That's what I set it to up here.
+>> Yeah.
+>> Um, it does seem like you're doing a lot
+of extra steps here. I'll be honest.
+>> This is interesting though. I Where did
+you come up with this idea?
+>> I like to mess with indexing.
+>> Okay.
+You know,
+>> so you
+>> the thing that the thing that was
+difficult though is
+thi this is the this is what tripped me
+up because this has to be set to up
+here. This has to be length of nums plus
+one
+because if not then this will actually
+give you an out of range and it took me
+a while to figure that out. So what
+you're basically doing is you're
+creating a list of lists that's actually
+one bigger than the counter if you
+actually go through and count. So we got
+1 2 3 4 5 6 7 8 9 10 or wait is that
+right? Oh no, I should be looking at the
+bottom one. No, because there's more
+numbers. But anyway, you're there's an
+list there. And so really what is
+>> it uses K as a condition to go through
+and it sees this and prints it out as
+the answer because it's the higher it's
+the higher one in this list of lists.
+>> It definitely shouldn't give you an out
+of range error.
+>> It it will like for instance if I do if
+I do this
+>> what if you do definitely gives you an
+error but I thought
+>> why don't you do len of counter?
+Yeah, a runtime error. Index out of
+range. Yeah, that's what I was getting.
+So,
+>> just went up here and did one of these.
+>> Huh.
+And it and it worked.
+But, you know, I was basically printing
+this out every step of the way. Did it
+erase my test case again? Okay. It
+drives me nuts when it does that.
+But um yeah, anyway, that's what I came
+up with.
+>> Well, even that could potentially fail
+if the counter was like,
+>> well, the thing that the thing to me
+this is kind of a good problem. It's
+kind of a bad problem because really
+with K, like if I do this, like if I
+change K to three, watch what happens.
+>> Yeah. Yeah. Yeah.
+So that's kind of a bad thing because
+like
+so that's why I said here there should
+be more additional constraints like this
+should be there should be like a try
+catch block in here or something that
+says if k is larger than the number of
+unique yeah because it says the answer
+is not unique
+>> scroll down so I can't scroll down
+>> oh
+oh because
+Uh
+undo what you you did the test case
+change thing.
+>> Yeah. And then
+>> yes
+or num and then
+append.
+>> This is a bad example too like
+>> because if you
+>> this example like you got three ones and
+two twos and one three. So if you if you
+actually do this, I mean this this isn't
+a good way to learn about it.
+>> Well, so scroll down a little bit
+and the other one I think what you would
+be returning Oh, that's weird. Wait, is
+this a different test case? Scroll back
+up. Scroll back up. Yeah. Go to the the
+test case you created.
+Yes. Okay. So in that one,
+wait, hold on. Can you run that again?
+He has got two for loop ma'am.
+>> No, no, no. I
+>> Yeah, the four.
+>> Can you run it again?
+>> I'm confused. Why that? All right. So,
+now switch over to the the test case the
+other test case two in here. No, not in
+there.
+Down there. Yep.
+All right. So, when you were returning,
+let me see. for JN range len
+nums
+01 for num oh and then for num in lolj j
+and append num
+so when you're
+when you're appending
+to answer
+you're appending
+eight and four
+So when you changed it to three,
+you're not actually adding the right
+values. Does that make sense? If you
+look like if you add a print statement
+to your bottom loop at ans.append, can
+you add a print uh right at line
+underline 23 to print whatever ants is?
+>> Well, it's probably going to be all of
+the all of the nums and l J.
+four.
+What's happening here? No, lolj
+length,
+but it adds eight first.
+Yeah, I don't know why it does with
+eight first. It doesn't make any sense.
+>> That's what I'm trying to figure out.
+So, okay. Can you add a print above line
+23 for numbum?
+>> Yeah, I think that's where you probably
+wanted it initially.
+What did I just do?
+Wait, you want this to be indented,
+right?
+>> Yeah.
+No print num there.
+>> Oh
+the same thing just not
+this is not in a list yet because the
+pen is adding the ans is already defined
+as a list. lens numb num
+length of
+the length of nums in this case. Can you
+scroll up a little bit?
+>> What's uh what is your original Can you
+scroll up in the the debug section
+in the debug section? In the test
+results section.
+>> The debug section.
+>> Yes. Down there. Scroll up.
+Oh, I wanted to see. Yeah. One, two,
+three, four, five, six, seven, eight,
+nine.
+For numbum and lolj
+for numbum and lolj. Okay, sorry. Scroll
+back down to your print your prints
+there. Oh my god, you got so many
+variables. I'm I'm like kind of lost.
+Okay, for
+for numbum and
+>> well, this is l this is lol right here.
+This list is lol. The counter is c.
+>> Yeah. Yeah. Yeah. For j and range length
+of nums. So you're taking the length of
+nums 9
+to 0
+9 to 0 which is the length of your
+>> Oh why it's
+>> because I'm I'm iterating backwards
+through it.
+>> Yeah. Yeah. I'm just trying to visualize
+what's happening. um
+num and then you're doing
+nine for num and l
+>> cuz it says in the description it says
+it can be in any order. You may return
+the answer in any order. And I think
+that's why it says that
+because I bet well you'd have to sort
+and then you'd get your it wouldn't be N
+to the login or K to the log of the end.
+Oh, I see. So when you change the K to
+three, the value could be 8 and 4 + 1 or
+two or three. So the output isn't unique
+there because 1, two, and three all have
+the same frequency of one.
+>> Yeah.
+>> And so you were saying the answer is not
+unique because if you said three, it's
+not unique because it could also be one
+or two. Now I see what's happening. Oh
+my gosh. Okay, I understand what your
+code is doing. It's kind of like all
+over the place, though. It's cool that
+you got to a solution. Um, I mean, it
+definitely works, right? Like that's
+what you were seeing. I think you could
+refactor this now. Now that you've got
+it working, you could refactor this to
+make it like a lot more streamlined. But
+this is really um this is interesting.
+You're using a lot of things that I
+would not have thought to use. So, that
+is cool. I like
+I feel like I'm not very confident in
+dictionary items
+like using dictionary items versus dot
+what do value key dot yeah dot key maybe
+>> well anytime
+>> anytime I see
+hey frequent anytime you want to check
+how many items are in a list I I just
+immediately go to the counter because
+it's so nice and easy. Yeah, the counter
+is good. That creates your d frequency
+dictionary right away. It's when you get
+into creating this list comprehension of
+lists and then adding the values at the
+frequency cuz you know what you could
+do? You could just sort the counter
+the dictionary objects by their item
+and then
+reverse through it that way until you
+get length of k and then you wouldn't
+have a nested loop for j and range for
+nums and lol to get the answers there.
+Does that make sense?
+>> Yeah. But
+wait a minute. Why didn't it?
+That's what I'm looking for.
+It's still pretty fast. I will give you
+that.
+The complexities.
+>> Boom.
+>> That is weird.
+See, this is what I was talking about
+when I was saying that sometimes like O
+complexity doesn't necessarily equal
+um like more
+streamlined code because you could write
+this to be a lot like
+more clear.
+>> Yeah,
+>> but it could be a higher big of O,
+>> right?
+>> Can you copy this into the chat? I kind
+of want to play with it a little bit.
+Your um your code here.
+>> Yeah, hold on. I'm trying to clean this
+up so I can read it.
+>> Yeah, your your variable definitions are
+tripping me up a lot.
+>> Okay. Well, that's about as good as it's
+going to get, I guess.
+Um
+Okay. Well, now that you've um showcased
+this for us, we're definitely going to
+take a deeper dive into this on
+Wednesday. I think this will be fun.
+Yeah, because I think
+like down here there should really be
+like
+and
+K is greater than one and
+uh
+it should be
+>> well it was because you created test
+case
+>> and your test case didn't have a unique
+answer when you changed the key to
+three. something about you length less
+than the unique uh numbers in the list
+because
+yeah it's just I don't know like the the
+built-in constraints on this would just
+ridiculous
+>> I know imagine writing all the test
+cases for this
+>> I feel bad for whoever did that
+>> it should be it I mean you should be
+able to put any K in here as long as
+it's less than the length of the list
+and it should kick know
+it should kick out your answers.
+>> Yeah, but they have the unique
+constraint in there. So since it wasn't
+like they'd have to build constraints,
+the uniqueness is is hard to like
+addability
+around.
+>> Well, I mean, you know, cuz if you can't
+really use a test case that's 1, two,
+three, four, five, because it just it
+would just kick it out.
+>> Yeah. Yeah. Yeah. Will you copy this and
+p paste it into the chat?
+>> Of That's really impressive. I got to
+say,
+>> thank you.
+>> I do think I still think that you could
+clean up your code a little bit. Just a
+little bit and it and it still be
+>> It was definitely longer than an hour.
+I'll say that.
+Um,
+what am I doing?
+chat window up at the top of your share
+screen. Or you can stop sharing since
+you've copied it.
+>> Yeah.
+>> Pardon my punch. Where's the chat at?
+>> There we go.
+>> Okay,
+>> there.
+>> Cool. Thank you.
+>> Y
+>> All right. Well, we are a little over
+time, so we can go ahead and and call it
+there. Does anyone have any questions
+that they'd like to ask or talk about as
+we close up? Any questions about the
+tech interview, about anything that we
+looked at today? Today was a weird day.
+Sorry, today was a weird day. I don't
+know if everyone got what they were
+expecting, but does anyone have any
+questions?
+I'm copying your code now. All right.
+Well, thank you very much everyone. Um,
+I think we're going to take a peek
+further into
+this problem that we were just looking
+at with Brian's code. Thank you for
+sharing that, Brian. I'm glad you got to
+a solution. K frequent elements. So,
+we'll probably take a peek at that one
+further on Wednesday. explore other
+solutions. So try it out if you're
+interested. Otherwise, I'll see you
+Wednesday. Thanks everyone.
+>> Thank you.

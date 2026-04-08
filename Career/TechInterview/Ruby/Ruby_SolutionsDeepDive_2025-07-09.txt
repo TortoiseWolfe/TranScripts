@@ -1,0 +1,1624 @@
+All right, welcome to this week's
+nailing the technical interview. Um, so
+today is Wednesday, so we will be
+looking at some solutions and diving
+into code and algorithms and alternative
+solutions and bigo and all of that good
+stuff.
+So last week I posted in the channel to
+look over well I gave everyone a couple
+of problems but I think the main one we
+talked about on Sunday was the ice cream
+parlor problem. Did anyone get a chance
+to work on that?
+Yes,
+you did. How did it go?
+I but I just did it very quickly last
+night cuz it's like 6:00 a.m. right now.
+But I did it very quickly last night.
+Um, I couldn't get it to work. Um, but I
+think it's something to do with a part
+where I was trying to sort it. Um, but I
+I tried to like apply a dictionary. I'm
+just struggling to open my echarank at
+the moment. I don't know why.
+Well, applying a dictionary sounds like
+a good approach just
+off the top of my head. That is
+one of the recommended approaches there.
+Oh, okay. Yeah, because I wasn't in the
+call on Sunday, so I just tried it last
+night. Um,
+some of the other problems we had was
+missing numbers from a few weeks ago and
+then the max subarray problem. Did
+anyone work on either of those as well?
+You can post in the chat if you'd like.
+I worked on the Mac. summary.
+Yeah. You said
+y
+how you said it took you a few hours,
+right?
+Yeah. It was do it was doing a method I
+wasn't familiar with which I did some
+studying on which is sliding. It's
+called sliding
+sliding window. Yeah.
+Um so I was learning how to do that
+basically.
+Cool.
+Very cool.
+So, do you feel like you learned
+something with the sliding window?
+Um, yes.
+Do you know under which situations like
+it's best to use that if you had to like
+educate us?
+Um, let's see. Um it's it's got to do
+with obviously two arrays
+um
+dealing with the maximum value.
+So um
+kind of
+Yeah. So you can
+go ahead. What were you saying?
+A geek geek to geek.
+Yeah. I was actually about to mention
+that. Um,
+I feel like the the solution on geeks to
+geeks is actually not like the best
+implementation.
+Um, but other than that, I was going to
+say that you can totally I'm fairly
+certain you could brute force this
+problem as well. I had written some
+notes after we met because I I kind of
+felt bad. I left us all with like
+here I'll show
+Natalia. Is it Natalia? Is that your
+is that your name?
+Yes. Okay.
+I want to come back to your um what
+you've gotten a little bit. But before
+we dive into that, I want to
+sure
+talk about this
+because I felt bad because we looked at
+the problem, right? Given an integer of
+array, find the subarray meaning
+contiguous non- empty sequence of
+elements. So anything that you add up
+has to be touching. You can't do 3 * 4.
+You have to do 2 * 3 or 2 * 3 * -2 or 3
+* -2 and 4 yada yada yada.
+And he gave us these two like really
+simple examples and then some
+constraints and like not a lot much to
+go off of. So, when I did my usual what
+I recommend, right, which is just to do
+um I'm making sure you guys can see this
+before I Okay. Yes.
+What I usually recommend is just pulling
+out, all right, what can we pull out
+from this? What assumptions can we make?
+And there really wasn't that much,
+right? Like we're looking for the
+product or sum if I was going to write
+that. Not even sum um multi sum of
+multiplication
+multiplications
+I guess uh of a subarray that produces
+the largest number and can be multiple
+numbers
+and then just to like caveat that or I
+guess like further explain that I E or
+is it EG EG
+can be
+every number in the array.
+Um, subarray must be contiguous meaning
+all
+number indexes
+must
+be touching.
+Touching, I feel like, is a weird way to
+say it. or like
+next to each other. I don't know how
+else to say it. Indexes must be
+sequential.
+Sequential
+contiguous.
+Yeah.
+Yeah. Well, that's the the
+that's what they told us, right? like
+they told us it's contiguous, but if you
+don't know what contiguous means right
+away, like how would I write that in my
+own words? So I have obviously subarray
+must be contiguous. But if I wanted to
+say that again in like my own language,
+I might say something like the numbers
+of numbers must be touching or the
+indexes must be sequential or something
+like that. And then we made this little
+which was actually fun because I learned
+that we could do this. We made our own
+test case
+to run against and it actually even gave
+us the output.
+So like they took my input, calculated
+what should be the correct answer and
+then gave it back to us which is really
+cool because Hackerank does not do that.
+Um,
+I don't know why it's telling me that
+these are correct because I'm I'm not
+returning anything. Oh, yes, I am
+actually. Yes, I am. Oops, I forgot
+about that. Um, but I left but this is
+all that we had, right? Like this is all
+that we talked about and then we were
+kind of running out of time. Um,
+so if you had not and this is a medium
+problem, so I'm expecting everyone to
+have worked on lots of problems, right?
+and we've worked on lots of problems in
+previous sessions. If this is all you
+had to go off of, like I'm sure you
+could eventually swing into something
+maybe if you brute forced it long
+enough. But ideally, when you're at this
+level of practicing medium problems
+regularly and you're working on a
+problem that has a 35%
+like pass rate, you've worked on some
+problems that might be similar to this.
+So I thought about what are some other
+problems that I have worked on after the
+meeting and that's where I can I wrote
+out some like extra notes that I might
+have written given that I've tackled
+something like this before
+and so what I was thinking and I'll just
+read this out initialize product
+variable so aka like a variable to store
+the highest product sum
+um with sum of all values in the array
+as a starting point for comparison.
+Meaning I might
+I might this was just you know pseudo
+code. I hadn't really considered it even
+beyond that. I might start off with just
+multiplying everything together and
+seeing what that is. multiplying all of
+the things together and see and using
+that as like the base point because if I
+multiply everything together as the base
+point
+if nothing else is higher than that when
+I create my code loop or my my code to
+find the highest sum product then the
+highest one was going to be multiplying
+them all together that's a win for me if
+something is bigger then we'll replace
+it so that's no issue
+um and then I wrote since we need to
+slice or like you know get slices of
+smaller parts of the array,
+sum all values between two indices. That
+might lead me to think about the two
+pointer, right? Because you could as a
+concept not using the actual two
+pointers approach of like, okay, move
+this one down, move that one up, maybe
+move that one up again because how would
+I choose my conditions? It's kind of
+random here. So it's not like this isn't
+a problem that would actually use the
+two pointers, but I could use the
+concept of starting from both ends to
+whittle my way into potential
+subarrays.
+Uh and I wrote I yeah so I expanded that
+here meaning two pointer approach with
+the idea of starting from two ends and
+working inwards.
+So for our example at the top here, 2 *
+everything in between of -2 and then
+going backwards from one until I reach
+the left side.
+And I said you can't quit early because
+negative numbers exist. So you do have
+to
+I would have to check every single
+subarray, right? I would have to check
+this length and I'd have to check this.
+Not highlighting that well. this and
+these like I'd have to go all the way
+down and then I would increment. So
+three to the end, three to here,
+three to here, so on and so forth. And
+just kind of whittle it all down until
+they meet in the middle. Um, and we've
+seen that kind of approach before in
+previous problems. And then increment
+the right side and do the same thing
+until they reach Yeah. until they reach
+each other. So obviously this would be
+an O N of squared approach because you
+are
+doing a nested
+like I'm using both ends of the of the
+array and then like slicing in between
+but I am still having to get everything
+in between them. So it it's kind of O of
+N squared. So that would be my brute
+force approach. Now there are like what
+Lisa found you could use the sliding
+window algorithm and that might lead you
+to more efficient processes or an
+efficient more efficient approach.
+Yeah, it's not the best but it is
+right.
+Yeah, the geeks for geeks one is also O
+of N squared and there is a better
+solution than that that is still under
+the algorithm of sliding windows. So,
+I'm not sure what geese or geeks like I
+don't know who wrote that article or
+like why it isn't as good as it should
+be, but I did notice that I was like
+this is helpful in explaining the
+concept of a sliding window, but not
+like the right implementation.
+So, they said the sliding window is
+based on minimum if you're trying to get
+minimum max values in case of an array.
+um at this time in this case we're
+trying to get the ma the maximum
+of a product. So that's why the sliding
+window was recommended.
+Yes. And the key to that is that again
+contiguous. So the sliding window comes
+into play because you're looking at a
+cont contin contiguous set of numbers
+and you're trying to move that subarray.
+There's actually a few key words that
+make you think of sliding window. All
+the indexes are touching. it's a
+subarray and I mean it doesn't have to
+include this but this is also another
+like ding ding ding that's probably
+sliding window is that you're looking
+for a sum or a product. Um so when you
+see those kind of keys together you can
+think all right maybe I should try a
+sliding window or maybe I should look up
+the sliding window. Um but I just wanted
+to quickly go over this from the pseudo
+code level. I don't know if we'll get
+into this today because I want to do
+some other stuff. Um, but I felt bad
+because last time I left I left everyone
+with just these lines here, which is
+really just three lines, which are
+basically just restating what was in the
+problem. But what I what I would hope is
+that you wouldn't get here and be stuck.
+You could actually think about like, all
+right, well, what would I do and what
+other problems have I seen? And then you
+might just doesn't have to be right.
+like this could totally not work. Um,
+but I've seen something like this, so
+maybe I would try something and this
+would be the thing that I would try. So,
+that's all I wanted to illustrate in the
+moment and then we'll we will revisit
+this problem at some point.
+All right,
+Natalia. So, you can we see your code
+for the ice cream parlor?
+Um, yeah. It doesn't work yet, but you
+can see it.
+Um,
+this one.
+[Music]
+Can you see my screen?
+Yes.
+Okay. Um, but this one I was when I read
+the problem, I kind of just I in some
+way applied the four-pillar approach and
+I went like, okay, where have I seen
+something like this before?
+and
+um can I apply that code to this problem
+as well? And like the first thing was
+like I thought about using a compliment.
+I've kind of been using that quite a bit
+is the the idea of a compliment cuz I
+find it works if you
+if you have a target value or you have
+one value and you need to find two other
+values. Yeah.
+Um and then um then I was like oh um I
+remember that for that that problem
+where um I saw we used the compliment I
+can't remember the name of the problem
+now. Um but yeah in that in that
+specific exercise Brian like used a
+dictionary and his dictionary was like
+like the result was O of one. So I was
+like okay then a dictionary would be the
+most efficient approach here. Um so it
+was quite a similar problem because you
+also needed to find two numbers that
+added up to a target. The only
+difference here and and return the
+indexes of those um of those numbers.
+The only difference with this problem
+was that it needed to be in ascending
+order. Um and then the other thing was
+that like it's a onebased index. So I
+knew that my range needed needed to
+start at one for me to get the right
+values. But I I can see from my print
+out that I I don't have my indexing
+starting at one. And the other thing is
+like I don't know how to apply the sort
+function properly in this case.
+Well, the good thing about the
+dictionary is that you shouldn't need to
+do a sort.
+Okay.
+But for the one based index, we can fix
+that really quick. So in the enumerate
+right there.
+Yes.
+If you add a comma after array or a r.
+Yes.
+And just add one there. One.
+Mhm.
+That will give you a starting and you
+can even see it in the help text right
+there. So it says iterable pass the
+iterable object aka the arraylist and
+then it says start.
+So the star indicates
+you can see it down a little bit in the
+help text. The numerate object yields a
+pair containing a count from start which
+defaults to zero. So if we set start to
+one, then the index starts at one.
+Okay. Okay.
+So do you want to run that real quick
+and see what happens?
+Sure.
+Cuz the rest of it looks pretty good.
+Yeah. Okay.
+I've got an object is not iterable.
+Yeah. So that means um
+if you want to scroll up usually when
+you see again I mentioned this last time
+um well you said you hadn't you weren't
+there last time if you see that line
+there the FTPR.ight
+that usually means that we need an empty
+return at the end. So if you
+outside of the final loop, Yep. If you
+just want to return an empty
+integer array or even just an empty
+array actually.
+Oh, okay.
+Because they want you to return an an
+array of two indexes, right?
+Mhm.
+Yes. Yes, they do.
+So I think an empty array should be
+fine. So if you want to run that real
+quick.
+Okay,
+that should get rid of Yep. So that got
+rid of the error.
+Mhm.
+And then
+ah
+your output was nothing. Okay,
+cool. So if you scroll down, let's can
+we look at your debug output there as
+well?
+Oh, my debug out
+um
+where you were printing out
+here.
+Debug output one one two.
+Okay. I don't know what that means.
+It looks like maybe that those where the
+values came from. Not sure. All right.
+So, let's look. Let's go back through
+everything here. So,
+you create the dictionary. You do index
+value. Print index value.
+It should be printing a lot more values
+than that, shouldn't it?
+At first, it printed. Could you um do me
+a favor and just add a print at the very
+top to see uh to print array
+to
+Yeah, right there's fine.
+Yeah. Okay.
+Just because these I hate these uh test
+cases where they like give you your
+sample input has multiple test cases.
+Like it's just so annoying to try and
+parse out all that information. So let's
+just start with what arrays they give
+you.
+Okay,
+so if you go back to debug. Okay, so
+they give you 1 14 53 2 and then the
+second test case 22 43 but your print
+statement only does 1 one which means we
+get the index of one value of one and
+then your code likely exits
+right we're not seeing an error
+does that make sense and then in the
+second one it's doing the same thing
+we're getting because you're starting
+you set the enumerate to start at a
+index value of one
+so when We're printing index and value.
+We're getting the index one and then
+value the first value in the uh list
+two. So that's what those numbers are.
+So if you want to scroll back up to your
+code.
+Sure.
+Does that make sense so far?
+Yes, it does. It's kind of like just
+printing the first value then it's
+exiting the whole
+Yep. Exactly.
+So
+if m minus value m would be the value
+that we're
+look
+the money they pulled um yeah so the the
+value that we're
+the one this is basically the the
+complement calculation. Yeah.
+Yes. Yes.
+M minus value aka if complement is in d
+the dictionary.
+Okay. So for the first one, the
+dictionary is going to be empty.
+Yeah, you need a square bracket for the
+D.
+This one.
+No,
+you're returning you're returning the
+index. So the D,
+but it's not going to it's not going to
+do anything there. So it's that's not a
+problem. That would be if the answer was
+found.
+Oh,
+no. The returning what you are returning
+index or the value
+if the dictionary index then dictionary
+index comes within the square bracket.
+Oh, so you're saying this needs to be
+swapped. The value needs to be over here
+and the index needs to be over here.
+No, I think what you have is right.
+Oh.
+Um, so let's see.
+So then you don't do Oh.
+Oh, I see. So your your empty return is
+still in the loop. So let's move that
+one out a little bit.
+Oh, okay. See,
+okay, let's run that. Okay,
+see what happens. I can see an error. I
+mean, I can see the potential problem.
+Oh,
+all right, that looks better. So, one
+and one, two and four, three and five,
+four and three, five and two. Okay, so
+what does this look like?
+It looks now like but it's not in a
+dictionary.
+So you're currently just printing the
+index and the value. Does that look
+right?
+No.
+Why not?
+Cuz I'm supposed to be It's supposed to
+be in a dictionary. That's the one
+thing. And then
+Yeah, but look what where where print
+what are you printing? Look at all your
+different prints.
+Yeah. So here I'm printing the full
+array.
+Then here I'm printing index and value.
+And then here I'm just printing the
+keys.
+Yeah.
+All the indexes.
+So from what you are printing though,
+does that look does it look like what is
+printing
+is correct? Because it looks like we're
+only printing the array and then the
+index value.
+Yeah, we're not printing this part.
+We're not printing line 32.
+So
+maybe I should.
+What might be the reason for that? It
+could possibly be an indentation
+problem.
+I think so. Yes.
+So your if statement there is trying to
+say if we find the complement in the
+dictionary, we're done, right? Like we
+have both the value of
+uh we have the current value that we're
+using and we've already previously found
+its complement that will equal the two
+values that we're looking for in the
+dictionary. So you've done that
+perfectly and we would just exit out of
+the loop.
+But the part that you need to do is then
+if the complement isn't in the
+dictionary, we have to add the values to
+the dictionary which is in your current
+line.
+Yeah.
+But m minus value is never going to be
+in an empty dictionary.
+So what else might you need to push out
+of there?
+[Music]
+Um,
+how are you setting your your
+dictionary?
+That is so
+I don't know. I'm not sure.
+I've moved my but I'm not sure.
+So that's where you're setting the
+dictionary values, right?
+Yeah.
+So is that line ever going to be
+reached?
+Um
+I thought so. But
+how when would it when would you set the
+index value? Like where when would that
+happen?
+at that current line.
+When would you reach that current line?
+When would I reach line 31?
+Mhm.
+Um,
+this is if if this one doesn't work out,
+then I would jump to this one.
+But
+is that how it would work?
+I want to say yes.
+Your current if statement
+Mhm.
+you have the return in the right spot,
+but everything at that same indentation
+level is going to be treated as if it's
+inside of that if block.
+Oh, okay.
+And then one Yeah. And immediately when
+that if thing is made, it's just going
+to exit. Okay.
+So then what what can you do then?
+So I can put it under the four.
+Well, you still want to keep it in
+inside of the for loop. Is that inside
+or outside of the for loop?
+Oh, no, that's outside. Sorry. So in
+line with the if.
+Yes. Yes. In line with the if statement.
+In line with the if statement. But
+now some languages you can do that where
+if you write an if statement only the
+next line will be like the if statement.
+But Python is very very
+specific,
+very heavy on the like be at the proper
+indentation level. So if you set an
+indentation level for an if block,
+everything at that line, that
+indentation level is going to be inside
+of that code block.
+Yes.
+All right. So if you run this,
+let's see.
+See what happens.
+Yeah. So, you had everything there. It
+just kind of needed to be moved around a
+little bit.
+Moved around a little bit. Yeah. Okay.
+And if you submit, let's see what that
+looks like.
+Okay.
+Oh my gosh. Oh no. Okay. Just one.
+Got one
+runtime error. Huh?
+Runtime error. That's weird. Do you want
+to hit submit again?
+Yes.
+Just to double check.
+Runtime error.
+Runtime error.
+Huh. It didn't say time exceeded. It
+said runtime error.
+Yeah, that's weird.
+It's always expecting something.
+Does it?
+We need to investigate that one a little
+bit more. But otherwise, I mean, this
+looks good. Like,
+okay. Everything looks good here.
+Yeah.
+All right. Thank you for sharing. Glad
+we kind of got that working out.
+Thank you for your help as well.
+So that was perfect. So again, we have
+covered
+that was the funny part about this is
+that this is a problem that we've
+already worked on before, but just kind
+of dressed up in new lingo, the ice
+cream parlor and the money and the ice
+cream. Um
+and I think Daniel had submitted the
+brute force approach that we talked
+about the O of N squared solution of
+just finding every single pair of two
+numbers using a nested loop and then we
+had discussed a few other potential
+solutions like adnauseium using binary
+search using the two pointers approach
+and then we kind of settled that the
+best approach would be using a hashmap
+aka a dictionary. Um, so I'm glad you
+got that experience to put a dictionary
+into action and get some of that those
+test cases succeeding.
+Um,
+and the next thing I wanted to do is the
+so I wanted to ask does everyone feel
+comfortable with the two-pointers
+approach and also like binary search?
+How's everyone feeling on those?
+No.
+No. Okay.
+How about everyone else? Mindy was
+shaking hers. Yes,
+I know Brian is probably good with them.
+I'm not really
+Okay.
+Um I'm not really good with them,
+so I could be refreshed.
+All right.
+Um and then Brian, you said you had
+worked on
+maximum product subarray as well, right?
+Did you get a solution running for that
+one?
+What was it again?
+Maximum product subarray.
+Maximum product.
+That was the one with the contiguous
+numbers
+and you have to find the largest
+product.
+Oh, no. I'm still working on that one.
+Um,
+okay. I got um the missing numbers one.
+Oh, okay. Cool. Can we see your code for
+that?
+Yeah. Hold on. Hold on a second
+here. I'll just throw that into the
+for everyone. That's the link.
+So, this one I think was last week, a
+week ago. I'm not sure.
+We work on a lot of problems.
+Oh, while while I'm looking that up, um,
+how do you find the recordings for for
+these meetings? I'm usually here, so I
+never really thought about it, but
+yeah, so in the hacker rank channel on
+all the servers, it is one of the pinned
+messages.
+Oh.
+Okay.
+Does that make sense? Do you do you know
+how to look at the pin messages?
+Yeah. Yeah.
+Oh yeah. So I don't know if my solution
+is So I I use the counter.
+Is that
+Are we allowed to do that?
+Yeah. Let me see what you got.
+All right.
+Oh,
+wait. Did I hit the right one?
+Can you see my screen or no?
+Yes. Yes. Sorry. So, if you want to put
+that into full screen with the like four
+little arrows at the top of the editor.
+Uh,
+right above the imports in the gray bar
+next to language Python.
+Wait, hold on. I think I did something.
+Is that better?
+Yes. But I want you to expand your code
+editor there.
+So, right where you have language
+Python.
+Language Python.
+There's the circle
+and then the one right beside it. Full
+screen. Yep.
+Oh,
+yes.
+Okay. And then actually, can you zoom in
+a little bit? Um, it's the browser menu
+at the top right, the three dots,
+and then there's a zoom
+up like five. Yeah,
+that's good. Perfect.
+All right, so this problem, missing
+numbers. Just to recap, you're given two
+arrays, the A RR and BRR, or array and
+B, I guess. So, BRR is the list of the
+original list of numbers.
+Um, meaning it's the full list of
+numbers that you're expecting to have.
+And then the ARR array list is
+potentially the same, but it might be
+missing a few of the numbers from the
+original quote unquote array. So our
+goal is to find all of the missing
+numbers and return them inside of an
+integer array. Um so you're basically
+returning all the numbers that are
+missing from the quote unquote original
+array. And then there was additionally
+the caveat that if something if there's
+a repeating number like you have five
+threes,
+if you're missing
+two out of the five threes, you only
+count the three once. So it's we want to
+return unique missing numbers.
+Um okay. Yeah. So walk us through your
+code here.
+So the counter basically goes through
+each array and counts the values.
+So it assigns a count to them and then I
+basically just uh initialize an empty
+list and then oran instantiate I guess
+is the proper term. Um and then so the
+count the the the items
+function
+basically
+goes through the items in the list and
+assigns an index to it. So and then if I
+and then I look at the second
+um variable that I created which is well
+actually it would be the first. So I'm
+comparing the second to the first and if
+it's not equal to the actual value
+that's in that list then I append the
+append function will actually assign
+um a value to the stack. Well I call it
+the stack in this case but it's
+basically list. So I assign the index of
+that to the stack and then I return. So
+I'm using a lot of in uh in-house
+functions in this because I know what
+they do.
+Um but then finally I return the sorted
+uh the list that's actually sorted.
+Yes.
+So
+okay, I think you've definitely got some
+good stuff in here. I also think you've
+got some things that could maybe be
+improved here. So let's talk about it.
+So the counter for everyone who isn't
+familiar, if you are unsure, you could
+just Google counter Python. And what
+that basically does is that it creates a
+dictionary or a hashmap
+um of anything that you pass to it. But
+it also specifically
+tracks frequency.
+So in this case the example array has 1
+7
+1 2 fives
+1 4 1 6 and two threes. So it would go
+through and create a dictionary that
+says value of seven one value of two one
+value of five two like there are two of
+them so it adds a frequency of two 5 2 4
+1 6 1 3 2
+um and you're doing it for both the
+original array and the missing array or
+the the array with missing numbers.
+Okay. And then you're creating
+another list that you're calling stack
+and you're going through
+the original array and you're checking
+the values. Yep, that makes sense.
+Against both of them at the index
+and if it's not equal to the value, then
+you add it to the stack to say this is a
+missing number.
+And this also eliminates duplicate. So
+you're only reaching each number once.
+So that's good.
+And then you return the stack sorted
+because it asks for the missing numbers
+to be sorted in the return. So when you
+submit,
+can we see that?
+Yeah.
+Y
+cool. So this is good.
+Um so do you what do you think about the
+big O here? What is the big O for each
+of these?
+Uh
+uh I mean I was just happy to get it to
+work. Um
+yeah.
+Uh well I am using a loop. Um, so,
+uh,
+uh, I don't know. Um, because
+I guess I'd have to say, well, I'm not
+really
+So, we can break it down by each of the
+things you're doing, right? So for your
+for loop,
+what do we think that is?
+Well, I'm good with big O when there's
+actually math involved because that's
+how I kind of look at it. But this is
+just basically all I'm doing is
+comparing two lists here. Um,
+so
+uh I don't know anytime there's a for
+loop, is it always n squared when
+there's a for?
+No, definitely not.
+Um, as far as memory goes, I am creating
+I'm I'm adding I'm basically creating an
+array, right? When I'm appending to the
+stack.
+Mhm.
+So
+um
+so let's start with the for loop. So
+with big O, it's about the inputs coming
+in
+um scaled from zero to infinity. So for
+every one, two, 10, 100, a thousand, a
+million, infinity inputs that you have
+coming in, how does your code scale?
+So the most obvious one is O of one,
+right? So that's where if regardless of
+if you pass one input in the array or a
+million inputs in the array and brr
+array,
+you're only returning one thing. So it'
+be like, okay, even if I'm if I'm
+passing two values or a thousand values,
+I'm only returning the value at index of
+zero. So that's going to be an O of one.
+O of N more or less is that
+for each of the inputs that you pass in,
+we're reviewing the same amount of them.
+So the kind of shortand for that is that
+if you pass in an array and you look at
+each of the values of that array, that's
+going to be O of N. Mhm.
+So whether it's 1,000 values or 1
+million values that are coming in, if
+you're looking at each of those values
+consistently across
+the the scale of 0 1,000 to a million,
+that's going to be O of N. Does that
+make sense?
+So yeah, that makes sense. So I know I
+know an array is O of N, but would this
+be N squared because I'm comparing two
+arrays?
+So the comparison here is that you are
+pulling what? What are you doing for
+this comparison?
+Well, I'm basically comparing
+count A R and count B bras
+and what is that value?
+What what is that value?
+Yeah, count array at index. What is
+that?
+Is that an array or is that a single
+value?
+Uh well yeah but the value is in the for
+loop in an array.
+So if count array index is not equal to
+value is an array comparison
+or is it a value comparison?
+Well in initial in in one comparison
+it's only one.
+It's only one right. So when you access
+the value of an array at its index that
+is an O of one because you're grabbing a
+specific value from the array and then
+you're comparing it to its current
+value as you labeled it. So you're
+comparing the A R to the B RR but you're
+comparing O of one values.
+So that if statement is just an O of one
+check.
+Okay.
+Stack.append.append Append is also an O
+of one because you're adding one value
+at a specific index, a known index. So
+that is an O of one computation.
+Mhm.
+So everything inside of your for loop is
+O of one.
+Okay.
+The for loop itself since like you said
+is going through all of the values of
+the array is O of N.
+Yeah,
+that makes sense.
+Yeah, that makes sense.
+Now where we get into O of N squ is when
+we're actually looking at the array or
+another array fully within that same
+like every single value inside of the
+index at each value. So for each index
+value, combo, whatever, you look through
+a whole array, increment the outer one,
+look through a whole array because that
+subvalue there would be an O of N
+factor inside of an O of N factor. What
+you have here is an O of one factor
+inside of an O of N factor. You multiply
+them
+O of N O of N.
+So you're saying this is O of N. I'm
+not.
+That's just the for loop counter. I
+googled this because I wasn't sure, but
+dictionary creation
+Abu is saying
+in plus log sorting. Yeah, that's that
+is yes, that's correct. AU um counter. I
+looked this up because it it is bas
+basically a dictionary frequency
+hashmap. That's O of N as well because
+you're literally just going through each
+value once putting it or updating the
+dictionary. Um you're doing it twice. So
+it's technically O of 2 N but with big O
+we remove the constants. So that's just
+N.
+But each of them are also taking up O of
+N space, right? Because you're creating
+those dictionaries.
+Yeah.
+And here's the thing with memory. So we
+talk about big O space complexity but
+the actual memory it uses is different.
+So the space complexity would be O of N
+for each of those two counters and for
+the stack that you created. But memory
+wise a dictionary is a a bigger beast,
+right? So it's going to take up more
+quote unquote memory. So when we look at
+leak code and it tells you like how your
+memory usage was compared to your peers,
+even if you have like a really really
+sleek
+um like code solution, your memory can
+be really high if you're using really
+large complex objects and a hashmap is
+one of the most large complex objects we
+have, right?
+Yeah.
+Does that make sense?
+Yeah. But big O space complexity wise
+those are both O of N.
+Now here's where we get into the actual
+O of N of the problem because currently
+everything is stacking up to be O of N
+space O of N runtime
+sorted. Sort
+what does the sorted do there?
+It's sorting the the the list. And what
+is the big O of the sort?
+Uh,
+well, it's it's it's going to have to
+check it's going to have to go through
+and check every single value.
+Um,
+so uh I don't know, but I think it's
+big.
+It is big. It is n log of n. Generally
+the best sorting solutions are in log of
+n which if everyone remembers the kind
+of the big graph there you have O of N
+squared which is like the really nasty
+curve and then right under that is O of
+N log of N and then underneath of that
+is O of N and then O of one
+and oh actually O of N O log of N
+yeah log would be less but N log of N
+would be
+And log of N would be more. Exactly.
+Because it's an O of N times an A log of
+N,
+right?
+Um, so the sorted kind of messes up your
+big O there, but otherwise it's pretty
+good.
+What I'm thinking though, let me think
+about this. I had some feedback, but now
+that we've kind of talked through it,
+I'm wondering if it's actually any good
+feedback. So the counter is cool.
+I'm also confident you could probably
+create a frequency dictionary on your
+own.
+But for everyone else, if you're not
+sure how to create a frequency
+dictionary, I think you should learn
+that before implementing a counter
+because it would be better for your own
+learning to know what goes into doing
+it. Um, so that's creating a dictionary
+and then tracking the frequency of those
+values
+for each of those values. So the value
+is the dictionary key and the dictionary
+keys value would be the count of that
+number.
+Um, so you're creating it for both of
+them.
+Would you
+So basically to find a to make this O of
+N, I would just have to find a sorting
+method that's O of N and it would be O
+of N,
+right?
+Sorry, say that again.
+So if to make this O of N, I would just
+have to find a sorting method that's O
+of N or less.
+Yes.
+Um, but there isn't really an O of N
+sorting method.
+Oh, really?
+So, binary search is an O of N.
+Binary is a search, though. Is it a
+search or a sort?
+Oh, never mind. Yep.
+And binary search is log of because it's
+like the phone book, right? We're
+splitting everything in half.
+Yeah.
+Um, but funny enough, binary search
+is of sorting is a part of sorting
+algorithms. So when you're wondering how
+that sorting algorithm comes into play,
+it's actually funny because we can we
+can break that down too. You go through
+each value in the array. Hence the O of
+N and then for each one that comparison
+you're doing to see okay where does this
+fit inside the array is it going to be
+bigger or less than its like it's its
+other components
+you can do binary search as a part of a
+sorting or whatever kind of computation
+you're doing there to compare against
+its counterparts is going to be a log of
+n comparison.
+So for 7253
+53 that first array if you were to sort
+that and you're saying okay seven is
+there any value higher than this you
+would do a log of n comparison against
+all of the rest of the values to find if
+there's anything bigger than that
+or move it to the end that kind of thing
+and each of those comparisons for each
+of those numbers you're going against
+each of those numbers in an O of
+approach and then how you compare it to
+the other numbers around it to see where
+it fits is going to be a log of N
+comparison.
+And so then you multiply them together
+and you get the O of N log of N.
+That's not like the best explanation,
+but that's just kind of like the short
+of it.
+Um, so I'm so I'm just looking at your
+code here because I'm trying to think if
+there is a better if there is a better
+way to do it.
+More streamlined, I mean. So,
+I mean, I think there is. This is
+definitely good. This is a great This is
+a great solution, and a working solution
+is always a great solution. I'm just
+thinking if there's any quick fixes we
+could do to make it run even a little
+bit better.
+Count array index.
+counter index.
+So I'm a little confused how that is
+working actually. Count array at index
+it's not equal to value stack.append
+index
+because how would it work for free? It's
+like you're not doing a frequency check
+there.
+No, he's comparing the values. Uh if the
+value is not same, then it is just uh
+bringing the index.
+Value can be bigger or smaller that can
+be the also if it is value is bigger
+than the uh a r then also will return
+the same result.
+Bigger than count. Oh, I see what you're
+saying. So
+they would both be the same length
+because they would have or they wouldn't
+be the same length.
+Key and pair. Think about key and pair.
+So key is the number and the pair is
+coming how many times it came up.
+Yeah, you're right. Yeah, you're right.
+So they they would either be the same
+length or one would be shorter, but
+you're counting the that makes sense.
+That does make sense.
+So then why are you using index and not?
+You don't need it. You just write down
+the value in count be error could be all
+the same.
+It will take more time.
+Yeah, I know what you're saying. I'm
+just looking at it like this just makes
+me like
+confused
+um
+to see which is missing. I think this is
+good. I'm just going to say that I think
+there's probably a way to do the same or
+similar thing but take up less memory,
+but I think the overall approach would
+be the same. Um like maybe you would use
+a set and then compare the set values
+and remove something
+And then your original set that you made
+is the one that you return. So you don't
+have
+three O of N memory objects. You just
+have like one or two. But I think
+overall this is this is good. What did I
+do? I'm sitting here looking at it
+actually. Oh, mine's really bad.
+Um, awesome, Brian. Thank you so much
+for sharing. And everyone again I
+encourage you to try out this problem
+for yourself and specifically try out a
+solution like this where you're creating
+those frequency maps and then comparing
+the
+index keys key value pairs together to
+determine what's missing. I think that's
+really really good. what I did.
+Um,
+and this is based off specifically what
+we covered.
+Also, please remind me to zoom in
+because I I never zoom in and then I
+watch the replays myself and I'm like,
+girl, I can't see that. Um,
+actually, that might be a little too
+much.
+You sorted the arrays initially.
+Yes. So, the reason I did that is that
+this is what we came up together with as
+a group. And let me actually pull up
+that code real quick
+numbers.
+[Music]
+So,
+oops. Oops.
+Let's reset. Yes.
+So this is what we came up with as a
+group. We had done the pseudo code of
+like saying
+number occurs. Wow, that was fun. Um,
+basically pulling up the problem
+statement, we made an assumption that
+if n and m are the same length, there's
+nothing missing. Assuming the order will
+be the same.
+Assuming the order will be the same.
+Okay. So then
+this is where we had compared some stuff
+there and then we came up with the idea
+I think Walter maybe or Tim was here and
+we thought of going okay we'll make a
+tracking array kind of exactly like what
+Brian did the stack to track the missing
+items. We'll loop through the original
+A, aka the longer one, to see all of the
+values we're supposed to be finding. And
+then if item at the index is not in the
+shorter array, the missing numbers
+array, then we'll append it to the
+tracking list. So far sounding almost
+identical to Brian's minus a dictionary.
+Instead of a dictionary, we thought
+maybe we'll have an index offset where
+we're tracking to account for those
+repeating numbers. So the dictionary
+gets rid of the repeating numbers
+because we're tracking frequency. So
+there's only ever going to be one of
+each of the numbers and then it's value
+pair is going to be the amount of them
+that there are. Whereas in this
+approach, we're not removing those
+um
+repeating numbers. So we kind of have to
+check for each of them and we have to
+check for like if an the array goes out
+of bounds because there's not go they're
+not going to be the same length.
+So we created this offset idea to track
+the difference between the two of them
+and
+we would use that to figure out what was
+missing and where we are in the
+comparison to each other. So in that
+example we're saying okay seven is in
+both of them. Cool. No offset. Offset
+stays at zero. Two is in both of them.
+I'm going to change this really quick.
+Actually,
+two is in both of them. Cool. No offset
+change. Five is in both of them. Cool.
+No offset change. We're expecting a four
+here. We don't see it. We see a six. So,
+we set the offset to one. Add four to
+our missing numbers. So, now when we
+check the six,
+we're going to use that offset because
+we know that we were missing one. So
+we're going to offset this check to be
+instead of checking at this index, we're
+going to check at this index minus one.
+Then we do see the six there. So that's
+cool.
+Um and then we check for this three
+there again using that offset index. But
+then in this case we would be out of
+bounds. So we need to account for that
+as well. So that was the general idea of
+this one. And then at the end you're
+seeing return a sorted array of missing
+numbers. And I capsed that so that I
+would remember and spoiler alert I did
+not remember.
+Did not remember. Um
+so when I was kind of just working on
+what we
+sorting three times
+what what was it?
+Sorting three times. Sorting a error.
+Sorting B error. Again the answer is
+also sorting.
+Yes. But I I don't think I need to do
+that part there. Let me see.
+Oh, maybe I did.
+I think I did.
+So, this one, mine's even worse,
+actually, funny enough.
+I mean, in the grand scheme of things,
+it's fine.
+But you had like three O of N
+computations, and I have three O of N
+log of N computations.
+So, I think mine's probably worse. Um,
+Andrews is probably easier to follow.
+So we had made an assumption at the
+beginning that
+the order would be the same and I
+basically found that to be false.
+So in our example that they gave us
+these are all in the same order. The um
+I don't know why it's not scrolling up
+higher. Okay. So the seven, the two, the
+five, the three, the six, everything was
+in the same order and it was just like
+everything was offset from each other
+when the numbers were missing. Um, and
+the same in their example down here as
+well. Everything was in the same order.
+Everything was just kind of offset for
+the missing numbers. However, the hidden
+test cases are not. They are in they are
+not in order.
+So, if we wanted to use this approach,
+you had to sort both of the arrays so
+that they would both be in the same sort
+orders. And then when we're checking for
+those missing numbers, we're actually
+checking against the same potential
+numbers. We eliminate that need when we
+create the the frequency dictionary
+because we're calling
+the dictionary key. So, we're using the
+dictionary key as the pointer. So you
+don't need to sort them because we're
+we're using a specific key to say this
+is going to be identical because we're
+checking for the key. And if the key
+doesn't align, then that is a missing
+number.
+And then this is pretty much the same
+except there's some added if statements
+here. We're adding the missing number to
+the the tracker and then we just have
+this if statement to check for the
+offset to make sure that we haven't gone
+out of bounds. So in here, it's almost
+the identical to Brian's. If value is
+not equal to the array plus the offset,
+we'll add it to our tracker, and then
+we'll increase the offset.
+And then I just have this additional if
+check that Brian didn't have because I
+need to
+um check that we haven't gone out of
+bounds for that offset.
+And then just like Brian, I sorted at
+the end as well because those values,
+even though I've sorted
+the array up here.
+You know, that doesn't make sense. Why
+would I need to do that? I know that I
+did because I've tried this already,
+but if I've sorted them, they should
+already be sorted.
+Yeah, I was going to say that, but
+but it fails.
+Oh, man. And when I checked it out,
+because I did investigate this because I
+wanted I wanted to go off of what the
+group suggested to figure out like what
+was going on. So these
+are sorted, but when I ran it against
+this test case, they weren't sorted for
+some reason. So there's definitely some
+mishagos going on there. So when we
+sorted these here, we're going through
+this.
+So, I mean it should be
+um
+maybe it's the way they get added to the
+set
+cuz I created the set because I that was
+a way to help eliminate checking for
+frequency of numbers.
+But maybe I don't need to do that.
+Sorry, you guys are live debugging this
+code with me
+because I shouldn't need to sort that
+many times.
+Yeah, you'd have to look at the test
+cases that failed.
+So, I think what the ad is doing is
+adding them
+in reverse order.
+Oh, really?
+That would be my assumption that I could
+verify.
+Okay. See, because that passed
+everything except for one.
+So, I could dig into that some more.
+I'm assuming that probably has something
+to do with the frequency, which is why I
+used
+a set.
+Wait, what do I think I've ever used
+add? Is that one of the Q stack
+functions?
+So, it's for the set. And a set is
+basically a list that doesn't allow
+duplicates. So if you try to add
+something that's already in it, it won't
+do it.
+Oh,
+so it's just a way to remove duplicates
+because when I was using the tracker,
+you eliminated that need because you did
+a frequency. So there's only ever going
+to be one of num every number. But
+because I wasn't eliminating repeating
+numbers, I used a set so that if
+something was in there multiple times
+when you return the missing numbers, I
+don't want to return, you know, seven
+three times if it's missing all three
+times. I just need to return it once,
+right? Because a pen will it'll add
+everything.
+So, I want to see how this works because
+that might be what was going on there.
+This
+Yeah, you see this? Okay. Okay. So, we
+had apple, banana, cherry,
+and when you add orange,
+it added it here.
+That is so weird. Why would it add it in
+the
+Why would it Why would it It rearranged
+it.
+It rearranged it. You're right. It
+completely rearranged it. So, that's why
+I had to sort the set at the end. That
+is super weird. There's got to be a way
+to
+There's got to be a way to do that so
+that it doesn't
+do that.
+I don't know. Returns a copy returns a
+secondary difference item
+returns the set removes
+[Music]
+an element from the set removes
+specified element.
+That's bizarre.
+It it it must find the index that it
+adds it to and then puts the index first
+with the added item and then adds the
+rest of it.
+I think you're right.
+So, there's something weird there. So, I
+could definitely work on this and still
+use this kind of idea and maybe improve
+it so that I'm not doing
+this.
+But again, that would only remove one of
+the sorts. I'd still have two sorts. So,
+it's just another idea. I just wanted to
+show that the idea that we came up
+together with as a group did work. Um,
+it just took a little bit more debugging
+than I would have liked. Whereas Brian's
+was more straightforward,
+more like future proof like offset in
+general using an offset is kind of like
+a dangerous game to play versus a
+hashmap or a frequency map which kind of
+eliminated that need for it. So that was
+a lot safer even though it added more
+complexity.
+So I hope everyone
+is following that.
+Yeah.
+Um but yeah, what we came up with as a
+group and brute forced did work. Brian
+came up with a better solution and I do
+think that there's probably an even more
+refined solution. Um,
+so I would encourage you all to try this
+for yourselves and then explore to see
+if you can find out a more refined
+solution as well.
+But you think the best would be O of N
+in that case.
+I do think the best would be O of N.
+But I'm not saying that there is an O of
+N solution because the sorting there.
+Yeah.
+Um,
+but maybe I am saying that.
+No, I don't think you can. I think I
+think the sorting is kind of the
+the beall end all but there might be a
+way to take up less space complexity and
+in which case that might be the better
+solution if it has the same overall
+complexity of runtime. Does that make
+sense? So if the same if it's all O and
+log of n runtime we can't improve that
+any more than that because we have to
+sort it. So what can we improve the
+space complexity? we can reduce the
+space complexity and the memory and that
+would be the way that we try to optimize
+it even though the solution is generally
+a good working solution.
+All right, I think I don't not meant to
+be sharing that. Uh we didn't get into
+any code today. I always come in wanting
+to be like I'm going to show you all
+these things that we can do in code and
+then we just end up not doing that.
+I think what I would like to do next
+week is focus on a problem that is maybe
+using a binary search, maybe using two
+pointers. Um
+just so that and we want to go over the
+max of array problem with a sliding
+window approach. So that will be three
+algorithms that everyone can add to
+their
+their library of things that you know.
+Um and that would be very helpful when
+you come across these new problems when
+you can say this is going to be a
+problem I can apply two pointer or this
+is going to be a problem I can apply the
+sliding window approach. So having all
+three of those in your your toolkit
+there is going to be really helpful. And
+then just kind of like what we were
+talking about in when I came up with the
+brute force solution of the subarray
+problem where I was like I know that two
+pointers isn't going to apply to this
+problem but I can use the idea of two
+pointers to help me brute force a
+solution. So even just knowing how these
+algorithms work can help you create and
+craft solutions to other problems in
+unique ways so that you can actually get
+your test cases passing. So, I think
+that's something I'd like to explore
+next week to make sure everyone feels
+really good about those.
+And that would basically mean going over
+the missing or the subarray problem more
+in depth as well.
+Do you mean the one that Natalyia was
+working on?
+Oh, whoa. Okay. We had a few questions.
+Brian, you said the one that Natalyia
+was working on. No, that one was ice
+cream parlor.
+Oh, yeah. Okay.
+Missing sub maximum subarray. Let me
+pull it up.
+My voice is like going horsearo because
+I've talked so much talked for like
+three hours today in Spanish class. Had
+a tech interview today. And then also
+this. So like my voice is going out.
+So there's that one. Maximum product sub
+maximum product subarray. It's a lead
+code problem.
+We'll we'll probably look into that one.

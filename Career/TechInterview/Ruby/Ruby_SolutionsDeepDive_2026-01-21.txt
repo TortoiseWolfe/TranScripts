@@ -1,0 +1,591 @@
+All right. So, welcome to the weekly
+tech interview
+session. Oh my gosh, it's been so long.
+I I forgot our name. Nailing tech
+interview weekly session. Um, so before
+we get started, does anyone have any
+questions they'd like to ask about the
+technical interview, practicing,
+preparing, anything like that?
+No questions. Everyone's ready to jump
+in and ace this thing right now.
+>> Oh, that's funny.
+Um, okay. So, let's see. I've got a
+problem.
+I kind of want to experiment a little
+bit. Um, so I'm still kind of looking at
+a few different options for problems
+today.
+So, let's see.
+Oh, okay.
+Okay. Yeah, I'm going to start with this
+other one first. So, um what I would
+like to do is that I'm still looking for
+volunteers for the tech or for the mock
+interview today. Maybe two if we have
+time. I think we might have time. Um,
+but how I want to pitch it today as to
+focus on like the learning aspect of it
+is that I think what I would like is for
+someone to be the volunteer
+and then what we'll do is as a group you
+can use us as a sounding board to get
+your pseudo code down. So reading
+through the problem, trying to
+understand it, ask us questions, see
+what we think. But you're like the main
+stakeholder, right? You're leading your
+own mock interview. And then once we get
+into the coding portion, you're you're
+like, "Okay, I'm ready to code." That's
+when we all go silent and let you do
+your thing. So, I think that's what I
+would like to experiment today to see
+if the pre- stuff is a blocker for you
+getting to the point where you're you
+want to code, then that would be great
+for you. If you're good at that stuff
+and you just want to get into the code,
+that's fine, too. We can skip that
+option. But, I just wanted to op offer
+kind of both resources for people if
+they wanted to practice one thing versus
+the other.
+How does that sound?
+>> Sure, I'll volunteer.
+>> Okay.
+All right, Lisa.
+[snorts]
+All right. So, let me pull this one open
+for us
+and see. I'm just double checking real
+quick.
+Ah, okay. Perfect.
+All right, Lisa. So, I'm going to pop
+this into the chat if you want to open
+this up and lead us through this
+problem. Read it out loud for us. Um,
+and then we'll give the floor over to
+you to be our mock interviewer,
+interviewe, but also kind of leader
+here. And then once you feel like you're
+ready to start actually coding, you can
+use code comments, use some pseudo code,
+however you want to get get there. But
+then once you're ready to actually start
+coding, then we'll jump on mute.
+You want me to share my screen? Yes.
+Okay.
+I'm going to continue to volunteer until
+I get this right. [snorts]
+was like, "Oh, no."
+>> Okay. Um, so the Can everybody see the
+screen?
+>> Yeah.
+>> Is it large enough?
+>> Yes. Yeah. If you want to go full
+screen, I think that should be fine, but
+up to you.
+>> Let's go full screen.
+Okay.
+um
+for this um particular is a find the
+digit game. Find if the digit game can
+be won.
+So you're given an array of positive
+integers. Alice and Bob are playing the
+game. In the game, Alice can choose
+either all singledigit numbers are all
+doubledigit numbers from nums. and the
+rest of the numbers are given
+to Bob.
+Alice wins if the sum of her numbers is
+strictly greater than the sum of Bob's
+numbers.
+And we're going to return true um if
+Alice wins the game and false if Bob
+wins the game.
+So the input numbers in this case is 1 2
+3 4 10. Uh the output is false. The
+explanation is Alice cannot win by
+choosing
+either a single digit
+or double digit.
+In example two, we have one uh the input
+numbers are 1 2 3 4 5 14.
+um
+the output would be true or Alice can
+win by choosing single-digit numbers
+which have the sum of 15.
+In the uh example one it is because that
+the digits are equal. So the single
+digits would sum up to equal the double
+digit.
+So that would be a tie. Um in example
+three the number which is 555 and then
+25 and the output is true if Alice
+chooses the double digit numbers which
+can sum or equal to 25.
+In the constraints we have uh uh nothing
+that's in the negative. So one um the
+length is greater or equal to
+uh one. It's in between one and 100.
+And then the uh the nums value is 1
+through 99. So there's no triple digits
+only. So it cannot be greater than 100.
+I mean it cannot equal greater than 100
+and it cannot be in the negative.
+Okay.
+You guys want to start? You want me to
+start on what we assume?
+>> Let's do it. So what do you know about
+the problem?
+>> Okay. So there's a couple things. So um
+we the first thing is we want to return
+a true or false.
+Um so
+I like to start with my return first so
+that I know there's some kind of output.
+Um we're going by a list of numbers. Um,
+so it's a list of integers
+that are coming in.
+People can stop me if they want.
+Okay. So, we're going to sum up um
+there's two people. Um, so um
+so there's two different values. So,
+we're going to have uh the sum of
+single digit numbers and the sum of
+uh double digit.
+Mhm.
+Um the comparison
+uh determines
+the win.
+or not. So before I get into my if
+statements um
+we've got to um look at the list,
+retrieve this the single digits and then
+sum them up.
+And the same is true for double digits
+and do a comparison.
+>> Um what would you say is the main goal
+of the problem?
+The main goal of the problem is to
+determine if Alice is going to win um
+win the uh
+win the game.
+>> And so how do you determine if she can
+win the game?
+>> We determine it by if statements. So
+it's conditional. So we want to compare
+if um in the case of if it's equal, she
+can't win the game at all.
+If it's the sum of the single numbers is
+greater than the double- digit numbers,
+uh the output would be true. And the
+same is true if the out if the if she
+can choose the double-digit numbers
+is greater than the
+the single digit numbers, the sum of
+them. Um then she can win it that way.
+So depending on which way she chooses
+>> that sounds good to me. And that that
+those phrases right there, the like,
+okay, how what is the goal of the
+problem? We need to see if she can win.
+How does she win? We know she wins by
+comparing the sum of this to the sum of
+that, true or false, if they equal yada
+yada yada. That kind of confirmation of
+what the problem is is exactly what I
+like to hear during a tech interview. So
+that's why I asked those two questions.
+Okay.
+Anybody want to help?
+[laughter]
+>> My first question was about a tie, but I
+guess it says strictly greater. So, her
+sum has to be greater than his sum
+>> or equal.
+>> I don't think equal allows her to win.
+It says strictly greater. That was
+>> I'm sorry. I'm sorry. You're right. The
+um equal is actually a tie on the first
+example and she cannot win either. So,
+um,
+we
+we we'd only test it, you know, the only
+really thing that we need to test for is
+if it's equal to, otherwise then it's um
+she can win.
+>> That's a good assumption. I might write
+that as an assumption.
+Uh I have a question about the double
+digits. Uh we only see one doubledigit
+uh number in each of these examples. Um
+are we supposed to be dealing with the
+sum of double digits or can we just
+leave that static? Do we have to address
+that as being the sum of double digits?
+>> What do you think?
+>> Well, the examples don't give more than
+one double-digit number.
+>> Mhm.
+Uh if the example gave more than one
+double-digit number, I'd say that
+compare the sum of the double-digit
+numbers to the sum of the singledigit
+numbers and you know determine which is
+greater and the greater would be the
+winner. Um
+do do the examples they provide you
+represent all the test cases?
+>> I can't tell.
+What might you use to figure that out?
+>> Um, well, without changing the examples
+as given, um, I don't really know. I
+mean, I would only deal with what I'm
+given. Uh, if I saw two double-digit
+numbers in there, I would definitely
+consider adding those together to come
+to the conclusion of whether I won or
+not. If I only have one and I always
+only have one double-digit number, is it
+really necessary to say that you're
+comparing the sum of the double-digit
+numbers against the sum of the
+singledigit numbers? I mean, I don't
+want to split hairs, but it just struck
+me.
+>> No, that's good. So, that's an
+assumption, right? Is that will I ever
+get more than one double digit? Can I
+just choose to treat it as static as I
+will always only get one or do I have to
+assume that I will have multiple double
+digits to
+um to sum? Yeah. So that I would write
+as an assumption. I think
+the way that you're asking the question
+makes me think that you might get hung
+up on this during your like planning and
+pseudo coding. I think we can ask the
+question
+and build like some pseudo code where it
+almost doesn't matter in this case.
+>> Okay, hence going with the sum of the
+double digits as well as the sum of the
+single digits,
+>> right? Like can you sum a single digit?
+Right? Like if I say what are the sum of
+all the if I get an array of numbers but
+there's only one number in it.
+>> Yeah. But that's not to guarantee that
+when they run all the tests in lead code
+that they don't sneak another double
+digit number in there.
+>> Yes.
+>> Okay. Got it.
+I mean I would add to that on the last
+sentence says Alice wins if sum of her
+numbers is greater than the sum of Bob's
+numbers. So it looks to me as if it
+doesn't matter which value
+that you you're going to have to assume
+it's multiple numbers. That's what I
+took out of it.
+>> Yeah. When it comes to these kinds of
+assumptions, I think it's great to ask
+and write down these assumptions. And
+then the places I would look is at the
+phrasing of the problem statement. And
+if that's not clear, I'd look at the
+constraints. And if that's also not
+clear, then I might run some tests or or
+I might take some second steps and just
+kind of build it into my pseudo code
+that like this is something I need to
+check.
+Thank you for the question. Um all
+right, Lisa, where do you want to take
+us next?
+>> Um I would like to um start building
+pseudo code, but um that's
+[clears throat] you think
+the the what I was going to do was I was
+going to um
+build two two list values.
+Uh one with the double digits, one with
+the single digits.
+Um
+and just do a comparison of those two.
+Mhm.
+>> Um and to return what value um and then
+go through the if statements
+um on the sum.
+>> Okay. What do people think about that?
+>> Can you say that again, Lisa? [laughter]
+>> Um um okay. Uh what I would do is I'm
+going to say um
+I'm just going to call it by name.
+Whether they win or not doesn't I don't
+think it matters. So l equals um just
+say the sum
+of
+well
+of
+single numbers
+and Bob will be
+the
+sum of
+the double
+numbers
+and then it's if say LS equals
+Um,
+and true.
+All right. I have a question for you.
+>> Sure.
+>> How are you going to determine what is a
+single number and what is a double digit
+number?
+>> Um,
+good question.
+Um, what I had in my head and I hadn't
+said it was, um,
+if
+If the uh digits in
+is um less than 10
+digits and num is less than 10 and zero.
+Okay. So, you're going to add like
+you're just going to add a check is like
+is this number between
+zero and 10?
+Yes. Yes or no? Okay. So, if it's in if
+it's if it's uh so if we're going to add
+it, you know, um if it's less than 10,
+we want to add
+to say Alice
+Um,
+if not add it to
+>> cool.
+All right. Are you feeling comfortable
+with this approach?
+>> Um, kind of.
+>> Are you ready to code it out?
+>> Uh, I'd like to try it. See if I'm
+missing something or um
+Yeah.
+>> All right. Yeah. I don't feel like this
+one was as confusing, but I wanted to
+start us off with kind of an easier one,
+maybe. Um,
+so we [laughter]
+there wasn't a lot of discussion here,
+but I think this was still good as a
+process. So, we will start the timer.
+I'm going to give you just um 10 minutes
+to see how how far you get, and then
+we'll we'll circle. We'll circle we will
+circle back. So, everyone else, let's
+hop on mute and then
+go for it, Lisa.
+Okay.
+Um,
+my microphone off to the side.
+So, I need to do I'm going to say Alice.
+So, we're going to say um
+call Alice.
+Oops.
+Okay. I can't talk today.
+So, I want to test to see if um I've got
+the right Um,
+>> are you there?
+>> Yeah. Um,
+maybe stop your timer up there. Maybe
+that's kind of causing some funky stuff
+to go on.
+>> What's that? What timer?
+>> At the top of the page next to where
+your little account stuff was
+on the right. Yeah, that timer there.
+You see the pause button and the large
+blue number?
+>> Oh my gosh.
+>> Yeah, maybe refresh that.
+Yep.
+reset it. And then maybe refresh your
+page.
+Yeah, good call.
+Okay. Yeah. So, now it wants you to log
+in.
+Yeah. Yeah, I think because you had your
+timer running, it was trying to keep
+your information, but it had already
+like timed you out of the login, so it
+was showing like a weird fake user.
+>> Okay,
+>> browsers are fun, everyone. [laughter]
+I just pulled it up, too.
+Okay,
+still there.
+There you go. All right. Simple run.
+Okay. What's digit range length of silly
+silly silly
+Okay.
+So, we want to produce partition.
+No, that's not it.
+Okay. So those are the values.
+The first thing I want to do is
+create the digits in Alice. So if
+Okay.
+So, we got destroy
+One string here.
+So we need to make this
+typos today. Typos.
+Okay. So now I see that it's actually
+adding the values. So that means I'm
+doing it right, I think.
+Oops.
+Okay, since we
+we got that,
+we get out of loop and go.
+Yeah.
+Oops.
+That's good.
+So if
+So,
+so
+what ask
+We want to
+Oh
+Ruby.
+>> All right. Pretty good. You want to hit
+submit?
+>> Awesome.
+All right. So we got all test cases
+passing and it looks like your solution
+is a success. I am seeing there that you
+are kind of at the upper end of the
+runtime compared to our peers who tried
+this. Anyone have any ideas as to what
+might be affecting that runtime there?
+Okay. So, Lisa, [clears throat] um,
+question for you. And I actually, you
+know what? I had thought about asking
+this before and I I didn't. So, this is
+this is good. You are separating the
+single digits for Alice and the double
+digits for Bob into lists and then
+you're summing the list.
+Is that a needed step?
+It probably isn't. I I uh at the at this
+point um I'm sure my coat could be
+drier. Um you don't have to. You can
+speculate um
+um
+using
+I think it's called uh there's another
+way to do it and I can't think of it
+right now. um
+where you can just do the sum of the
+single digits and put the if statement
+in one line.
+>> I I um at at this point I don't I'd have
+to look it up, but I believe it's called
+um um
+I did it to make it look a little
+cleaner. And then what I would do is
+probably try to make it better or drier
+in this case. So
+>> sure, it's not so much about being more
+dry. I think your process is fine. It's
+that you're using a data structure, a
+pretty intense data structure, a list
+>> to store and then sum values. But if you
+already know the contents of the list
+are being properly separated, do you
+need to store them in a list or can you
+just sum them?
+>> You can sum them.
+>> So how would you do that?
+um you would sum the digits based on a
+less than value. And I I just I don't
+know how to write it basically. Um
+>> why can't why doesn't it work with your
+code right now?
+>> Um
+it wouldn't work with this code because
+of the if statement and I don't know how
+to add the if statement to the it's you
+can do it with the if statement.
+I don't
+I know it's available. I just I I would
+have to do some research on it at this
+point. Okay. So, nope. You don't need to
+do anything different. If you aren't
+storing them as a list, how else might
+you store them?
+>> You store them in a database.
+I think you're you're missing [laughter]
+I think you're missing the obvious
+answer here which is that you could just
+sum them in place right Alice would be
+start as a zero Bob would start as a
+zero and if it's a single digit you can
+sum it if it's a double digit you can
+sum it and keep track of their sum
+separately right
+>> so how would you do that
+>> um what you would do is you would uh go
+Alice equals plus Um if the digit was um
+so you keep the if statement you would
+instead of putting in a list you would
+go Alice equals equals plus equals um
+this n digit else right here.
+Yeah. Do you want to go ahead and try
+that for us?
+And that's the change you would make.
+>> And then yeah, how would you change the
+Alice and Bob
+at the top?
+Okay. So then at the end of this for
+loop, what do you have?
+You have the total. So you would need
+the total. You would need the sum.
+Oops.
+And if we do submit,
+>> yeah,
+>> I got I got a I got a repair guy, so I'm
+gonna mute you for a minute.
+Okay, that's okay. We'll we can close
+out of this.
+All right, so thank you, Lisa, for that.
+Um, we kind of only have a few minutes
+left, so I don't think we're going to
+get into another one, but does anyone
+have any questions about this problem
+and and this process? Anyone interested
+in volunteering next time for a similar
+kind of thing?
+Yes. Linda,
+>> so I'm muted. Uh, yeah, I will volunteer
+next time.
+>> Cool. Perfect.
+Do you think that would be helpful for
+you to do the pseudo coding together as
+a group and then kind of do your own
+code by yourself?
+>> I actually like this.
+>> I actually liked uh today's approach.
+>> Yeah. So, next time you might get a
+harder problem where you we'll have the
+group interaction.
+So, be open to that.
+>> [laughter]
+>> Okay, sounds good.
+>> All right, any other questions at all?
+Otherwise, we can kind of close out
+early today.
+All right, everyone. Thanks for joining
+and I will see you next time and we'll
+get some more mock interviews underway.
+Bye-bye.

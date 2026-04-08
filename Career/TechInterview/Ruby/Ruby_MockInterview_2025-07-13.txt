@@ -1,0 +1,1276 @@
+All right, welcome everyone to this
+week's nailing the tech interview mock
+coding day. Still I can never remember
+nailing the tech interview mock
+interview. Yes, that's the name of
+today's session. So again, this is
+Sunday and on Sundays we work on going
+over a little bit of problem solving
+with easy problems of just pulling out
+information, turning it into pseudo code
+and then getting giving someone the
+opportunity to practice sounding out
+their thinking, working on problem
+solving,
+speaking in front of a group, all of
+that good stuff. Um,
+so before we dive into that, does anyone
+have any questions they'd like to ask
+about the technical interview practice
+preparation or just how your experience
+with hacker rank and leak code has been
+going lately? What questions do people
+have?
+Okay, everyone is perfectly ready for
+the technical interview. Ready to wow
+their interviewer.
+Five stars.
+I'm not logged into le code. No longer
+delete code.
+So I found a problem.
+Let me share my screen.
+Okay.
+So, everyone should be seeing maximum
+average subarray
+one. Um, and this one I chose because it
+actually is kind of similar to a problem
+we saw recently. Maximum product
+subarray, but there's a couple of things
+in here that makes it
+well, so first of all, it's an easy
+level, not a medium level, but there's a
+couple things in here that kind of stand
+out for a technique that we talked about
+recently. So I'm going to read through
+this problem and then once we get to
+potential solutions, I'll be curious
+what ideas people have.
+Okay. So you are given an integer array
+nums consisting of n elements and an
+integer k.
+Find a contiguous subarray whose length
+is equal to k that has the maximum
+average value and return this value. Any
+answer with a calculation error less
+than 10^ the 5th will be accepted. Okay,
+not 100% sure what they're saying just
+yet, but I'm going to keep reading.
+Example one. So there's our nums array
+and then there is our K4
+output is 12.75.
+They're rounding. Okay. Any answer
+any answer with a calculation error less
+than 105th.
+They have a specific rounding here, but
+I don't know if that's going to matter
+at some point. All right, maximum
+average is
+12 - 5. Oh, 5 125 -6 + 50 / 4 = 51 / 4 /
+4
+maximum value return
+average value.
+Okay. Not quite sure why we're dividing.
+Oh, I see. So, they're saying they chose
+12.
+>> We need to find the average. That's why.
+>> 4. And then they're just saying that
+equals 51 / 4. 1275. Okay, that makes
+sense. 5 and 1. So, they get five. All
+right.
+So, looking at our constraints,
+nums.length is equal to n. That's pretty
+standard. K will be between 1 and 10^
+the 5th. So K is the
+divisor that we would be
+using or actually the group of numbers
+that were the subarray length. So we're
+looking for a contiguous subarray whose
+length is equal to one or K. So in this
+case, we're looking for four numbers
+that are right beside each other that
+have the greatest
+average. And so that would be 12 556 and
+50.
+Interesting.
+Yeah, that makes sense. And in this one
+it would just be five. So 5 / 1 is 5. So
+k will be greater than or equal to 1.
+The length of the array will be greater
+than or equal to k. So that is good to
+know. Up to 10^ the 5th and the values
+inside of the array. So 125 so on and so
+forth will be between -10 4th and 10
+4th. All right. So what can we pull out
+of that?
+All right. So
+nums array
+I mean that's pretty standard. back
+given
+a which equals oops
+equals
+the
+number
+of or actually it'll say
+size of the sub array to calculate
+calculate
+an average
+in nums. Okay. Yeah, I think that makes
+sense. So, we're given K, which is the
+should be which is equal to the size of
+the subarray to calculate an average for
+in nums.
+And then
+I mean I'll just say it nums is the
+array
+given to find subarray
+average
+in
+and then we can also pull out this is
+from the constraints
+that
+nums
+length will always be larger than K.
+So that kind of means we can
+always find
+a a max average.
+We're not going to be expecting like an
+empty nums array or
+a k of zero. So you can't actually do
+anything but get a zero. We don't have
+to do any of those edge case checks. So
+that's helpful. We're always expecting
+it to be
+there there to be some kind of
+calculation that we can do there.
+Okay. Find a contiguous summary. Okay,
+that makes sense. So,
+what do people think about this? How
+might we approach a problem like this?
+Any ideas?
+>> Yeah, we can do uh traverse the array in
+nested loop. In first loop we find out
+the current sum to zero and the nested
+loop we find the current sum
+uh divided by k. It will give me the
+average.
+Then uh we need to we need to find a
+condition that should equal
+in a brute force way.
+Find the current average current sum
+divided by K and then find out the
+maximum average that is max max average
+and the current average comparing. Then
+you return the max average.
+Okay. brutu. I like that. So, I called
+it potential brute force because we're
+already getting into O of negative
+squared, right? Or O of negative
+squared. O of N squared where we're
+talking about like nested loops and all
+that good stuff. um just kind of like
+all right if I had to look at every
+combination of K numbers to get
+potential averages
+then I could use a nested
+nested for loops find those averages and
+then keep a track of like max outside of
+the loop and then like current average
+inside of the loop and then compare them
+to find which one's bigger so that we
+can keep track of what the max average
+would be across all of those
+combinations.
+Um, so I think that seems like a
+reasonable a really a pretty reasonable
+brute force approach. What other ideas
+do people have for this?
+>> Isn't this sort of like a sliding window
+problem?
+>> Ding ding ding. Yes, it is
+>> because you're not trying to find like
+individual numbers within. You're just
+basically looking at K amount of numbers
+and you just step over and over and you
+just set the K, you know, sum
+equal to the max. Then you step it
+forward
+and get that new current sum. If it's
+more, that becomes a new max until you
+reach the end. And that should be what?
+O of one ton.
+- one
+and then same thing as up here
+compare it against max average.
+Yes. So this would be an optimized way
+of kind of doing the same or similar
+thing as the brute force there. Also
+welcome back Kai. Um we've been talking
+about algorithms a lot lately. Sliding
+window two pointer binary search. We
+talked a little bit about sliding
+pointer last week as a potential
+solution to
+a medium problem that we covered similar
+to this one called maximum product
+subarray. Um
+but I thought it might be interesting to
+start with an easier problem to say okay
+how can you tip like how can you get
+adjusted to sliding window and then take
+that as a use case for yourself to say
+all right I've worked on a problem that
+has sliding window on an easy problem
+now I can look at a medium problem
+challenge myself and see how I can apply
+it to a harder more nebulous
+slashcomplex
+take on a sliding window solution
+Um,
+so that was last week, but this one is
+this one is nice because
+when you're thinking about the sliding
+window, some of the key things that help
+you determine or some of the key things
+that help
+implement the sliding window is having
+a given K or variable to determine the
+amount of like aka the size of your
+window. So in this case the size of our
+window would be four. We would do
+something like one. We would start with
+the sum of the first four values 1125 -6
+and then you store that
+and then we slide it aka
+moving
+n minus one and n plus one. So n + one
+goes to 50. N minus one to take off the
+one at the end. So then you have 125
+50 and you're just doing a little
+calculation inside of your your loop
+there to say all right we've calculated
+the first average now we're going to add
+n plus one and we're going to subtract
+n minus one from that average to get the
+new average and then you slide it again
+doing the same thing to get the last
+one. We've hit the edge of the array.
+So, we only need
+those three
+sets of numbers there because our window
+was kind of large. And in this one,
+really easy, right? Your window is one,
+your value is one. Um, so that's kind of
+like a really high like just basic intro
+to sliding window. Uh there are some
+more complicated
+implementations of it as well when you
+have an undefined
+window size, but this one is nice
+because it tells you like it does change
+between the test cases, but they give
+you the window to use. So that makes it
+a really nice way to learn how to
+implement that approach. So that is
+great. Thank you. Any other ideas
+though? cuz I think there might be I
+mean there's always more than one way to
+approach
+a problem. So any other ideas people
+have for
+for this problem?
+I'm thinking myself too. How else might
+I think about this if I didn't know
+about the sliding window? What else
+might I try? Because I definitely would
+have started with something like this.
+>> You can find the prefix sum.
+>> Prefix. Okay.
+and then comparing that prefix sum with
+a k
+binary search.
+>> How do you mean by that?
+>> Uh if you uh find out the prefix sum of
+the array then the prefix sum will give
+you uh say first four number, first five
+number, first six number. So it will be
+a different array. And then uh if I
+traverse on the uh main array and find
+out that which prefix sum is equal to uh
+the average of uh k numbers
+then we can find uh
+maximum prefix sum from there.
+I need to write down the code, you know.
+>> Oh, yeah. I'm not sure I'm quite
+following that one. It sounds similar to
+sliding window, but maybe a little bit
+different as well.
+>> You're just finding out the prefix sum
+array of this main array. Then comparing
+that prefix
+>> the whole thing though, right? You're
+saying the whole thing.
+>> Yes.
+>> Uh-huh. Okay. and then comparing that
+prefix some any of the value with the uh
+next logic it will be a big one that's a
+different way
+>> okay
+I would be curious to see you implement
+that and see how it works
+>> just an idea
+>> yeah so there is I mean so I think
+that's kind of I think that's probably
+kind
+I I mean, if I really thought about it,
+I'm sure we could come up with some
+other solutions, but I think just
+starting with the brute force of doing
+that could get you pretty close, if not
+all the way. And then if you know about
+the sliding window, if you Google it and
+you're like, what is the best way to
+I think if you even looked up best way
+to solve contiguous subarray problem,
+you'd probably see something about
+sliding window. And you can say, all
+right, how do I implement a sliding
+window? And then you could try it out.
+Um
+but so the difference here would be
+oops
+again both solutions
+both solutions should work but big O
+here would be
+as we said O
+N
+squared
+and the slide ing window because you are
+tracking
+like you're tracking all of these and
+then just moving it with the loop
+like a while loop or even an iron range
+loop could probably do it and then
+you're just adding and subtracting
+numbers as you move through to the end.
+That one we can take down probably to O
+of N at best. I think you could do an
+implementation that's also O of N squ
+just to get started if you weren't sure
+what how to like exactly do it and then
+work on on improving it to get an O of N
+version.
+Um but having the window size defined
+really helps you get that O of N
+done pretty quickly.
+So this one would be leagues more
+efficient. Um, but both should work.
+All right.
+Okay. So, I kind of leaked this problem
+before because we were going to give it
+to Mendy last week. Um, but then we kind
+of ran out of time. So, you may have
+already seen this problem, but we didn't
+work on it. And I don't know if any one
+took it on as a challenge for
+themselves.
+But search in a rotated array is
+a one of the problems we were going to
+use for a mock interview last week. Um,
+not important. So, who would like to be
+our volunteer today to do a mock
+interview and practice sounding out your
+thinking and problem solving, debugging,
+all of that good stuff?
+We've got a ton of people in here who
+have not done it before. So, I'm eagerly
+looking upon you.
+I am not quite ready today as I had a
+tree fall on my garage uh totaling it on
+Friday morning. So,
+>> I'm
+not quite ready to dive into this.
+>> That's rough.
+I would highly suggest anybody that
+hasn't uh had a chance to sit in the hot
+seat, it's good. Get get the first one
+out of the way and everyone after that
+is going to feel just a little bit
+better.
+>> Yeah, there's no need to be prepared or
+to have practiced before anything like
+that. It's just to get practice. That's
+the whole point.
+But thank you for chiming in, Kai.
+[Music]
+Daniel, could I
+put you in the hot seat today?
+Um,
+I know you said to practice a bit, but
+yeah. Yeah. I'm just currently working
+on the easy problem. So, I don't I don't
+I don't know.
+>> That's okay. You don't know have to you
+don't have to know how to solve it. We
+just want to get you some practice
+performing in front of a group,
+practicing those problem solving skills
+you've been honing as you practice the
+easier problems,
+all of that good stuff.
+Yeah, I see.
+>> Got it.
+>> Okay.
+Try.
+>> Yeah, we could try. I guess we could
+try. Yeah.
+>> Yeah, there's no harm in trying.
+>> Could try. Let's see. Yeah, let's see.
+Yeah, because I'm curling.
+Yeah, I do have I do have do have some I
+do have something in mind. Yeah, you
+could try it.
+>> All right.
+>> I have something in mind. I do have
+something in mind.
+Let's try a simple problem because I'm
+just going back just so says to provide
+the code stubs two in from the
+>> Oh, well I have a problem for you that I
+can get that I will give you.
+>> Yeah,
+we can try
+because it's I'm downful.
+So like
+>> I got something in the chat for you.
+>> Okay. Here.
+Not this one.
+Okay.
+Give me a search.
+This one.
+I don't know.
+What was that?
+You control
+my head
+triple.
+Okay, maybe this one. I don't know.
+I don't
+>> I put a problem for you in the in the
+chat actually.
+>> Oh, you put in the chat. Let's see.
+Let me go there. Oh. Oh, this one. Oh,
+this one. Okay. Could try this one.
+I clicked on it. Oh, I clicked on it.
+Oh, it's not putting up yet. Hang on.
+Can I try to reshare my
+Can you see it? Or do I have to reshare
+my screen?
+>> Yeah, if you're sharing it.
+>> Okay. Okay. All right.
+>> And then you just have to log in first
+before you can do anything.
+>> Gotcha.
+>> Have you been on LE before?
+>> Yeah.
+>> Okay.
+>> Yeah, I've been on le code before. Let's
+see what I can do.
+Hold on. Should I stop sharing before?
+Let me stop sharing like get my login
+first. Yeah.
+Yeah. Let me and then I'll put it back
+up.
+Oh my.
+Okay. Okay. Now we can do it.
+Okay. Now we can do it.
+All right. There we go.
+All right. So, we're going to give you
+about 20 minutes to work on this one and
+then everyone else will just stay on
+mute for that duration
+and then we'll circle back once you've
+uh had a chance to get get into it.
+>> Sure. All right.
+>> All right. Good luck.
+>> All right.
+Okay. There. So, see there's an
+interrator norm sorted in ascending
+order with distinct values.
+Prior to being pro passed to your
+function pro to an unknown pivotal index
+k one less than equals k
+nums length such that the resulting
+array is nums k
+zero indexed for example.
+Okay,
+I see what's going on.
+Why this problem is marked as medium?
+It's a very easy problem as a brute
+force.
+We can talk about that after
+prior to being passed. Okay. See, so
+let's see. So
+given
+be so
+Let's see.
+All right, that helps. Yeah, this helps
+a lot. It's okay.
+Okay, this is good.
+This is good.
+So
+okay.
+So let's see.
+So let's see.
+return one
+I am
+sorry.
+Okay, that's option. But then you went
+to write model and complexity.
+Sorry, Daniel. I accidentally muted you.
+>> Okay.
+Whoops.
+So,
+Am
+I
+that's the
+>> Just a reminder, I'm I'm glad you're
+using the code comments here, but It's
+also good to sound out your thinking so
+that the interviewer can kind of hear
+what you're thinking about.
+>> Ah, okay. Okay, I see.
+So, yeah, use the comments to uh outline
+what needs. So, definitely I see if
+statements here. So, given this array.
+So if so I have to make those if state
+like search where the where those in it
+is and then return the index which is
+which is like so 0 1 2 3 that's the
+first here but then if this doesn't find
+then I'll put negative 1. Well, I did
+use think of using a for loop to iterate
+through the length of the array, but but
+I feel that that's like brute force
+approach. It will take a long time and
+you have to as it says in here in the
+problem I have to make to write a
+logarithm that does use zero log event
+compared to the brute force approach
+which I feel is like on the it's like on
+the bad scale.
+sort array. This would this will like
+help pinpoint
+where
+the pivot in the where the array is and
+then and then goes down to find the out
+to find the output and then output it's
+uh yeah its index number. So sort of
+this is the definite faster approach.
+I'm thinking
+sort
+another thing to do. Okay.
+[Music]
+You do that.
+comes.
+Okay.
+Get right down.
+Oh my gosh.
+Oh, in range of like
+Okay. See?
+these returns. Maybe that's
+that's why.
+[Music]
+All right, Daniel.
+>> Yeah. Okay, I almost got it. All right.
+>> Um, so why don't you first walk us
+through what this problem is asking you?
+>> All right.
+Okay. So,
+possible. So, it said it says to look
+for
+an unknown pivot index. So,
+So it's so it's letting us know it's
+after going through an array where if
+there's an unknown pivot index it has to
+we have to like find that and then and
+then once that is found we have to if if
+it's found we have to return the index
+target but if the number is not in then
+we have to return negative one. So the
+for loop
+can can look for but then
+but then it'll take a long long time to
+like um go through go through go through
+that which it's not log of and now I
+really feel like the sort array would
+help find with within the array because
+then when it sorts it it it will it will
+immediately pinpoint the number that's
+within the that the target's looking
+for. And then then once it's found, then
+it's supposed to return return the
+number.
+So that's that that's the best thing I I
+could I could do on that.
+>> So can you so you can remind me again
+what number are you looking for
+in any given array?
+given array.
+[Music]
+So, so whatever the whatever the target
+whatever the target is whatever the
+value is in that target uh we need to
+search we need to go through the array
+where where that is. So,
+so for the example
+like we need to
+find zero. So, we have to go literate
+and find and find zero.
+And then when
+>> when that and once we find it, we will
+it will output its index number which is
+which is four. And that's because well
+the index usually the the index numbers
+goes like from from zero all the way to
+10 for example and then but then if we
+don't not find then but it's if it
+wasn't there then it would output
+negative one.
+>> Mhm.
+>> So if it zero
+>> perfect. Yeah. You mentioned the pivot
+the pivot number pivot index. So it
+sounded like maybe you were thinking
+that should be the one you should return
+but no you're right. It is target. So
+then in your code,
+can you walk us through what this is
+doing?
+So
+definitely on nine. So I did intend for
+the for loop to to litter to literate
+for the integer
+number within length none. So now
+now many times I tried to uh put in nums
+directly but then I was thinking but if
+I do that then like you know it would
+just look for the value rather than the
+its index number. So I put length in
+there so that way it could uh it could
+put it could like find the
+indexes.
+Now.
+>> Mhm.
+>> Now this now this is the now this is the
+confusing
+part like like if if like if it's it's
+either like length nums is it finding
+the value or or is it or is it finding
+or is it or do I need to do length to
+like really find the index? That's where
+it's it's where it's fuzzy there for me.
+But I I was think because I was somebody
+thinking like what length then I can
+access the index and then if I go
+through the if the if statement like if
+it doesn't find the number then return
+negative one but but else if it does
+find that
+then uh it should return return the
+target. Now this keeps happen but then
+when I try to run it it's air says like
+oh yeah like I know that if I just do
+return this doesn't work because if you
+put a return there then the loop's going
+to like stop at some at some point. So,
+so I have to figure out where to fix I
+need to fix somewhere where it can um
+how have that loop going without
+stopping because usually like you should
+only have like only the return at the at
+the end of the loop.
+>> Mhm. So in this case, I like to start
+with just defining the loop and then
+printing out the values in the loop just
+to make sure everything is working how I
+expect it to.
+So if you had removed your if statements
+there and just started with the print
+statement
+[Music]
+>> and then what would you want to print
+here?
+>> I would definitely would want to print
+um I was thinking of printing nums but
+if I we can try to see what that prints
+out
+print out. Okay, it's not work. Okay,
+it's not work. Okay, so print out. Now,
+this is where I trouble like using
+print. Do could I try and put print
+under or should I do it outside?
+>> So, it seems like there might be
+something going on with your indentation
+there. So, in that case, I would just
+backspace to the end for both of the
+four the nine lines nine and 10.
+>> Mhm.
+Okay.
+Okay. So,
+>> and then just tab it in.
+>> Okay.
+Okay.
+>> And then for line nine as well.
+>> Okay.
+Okay. Something like that.
+>> Well, so back it to the beginning.
+>> Oh, got it.
+>> To the to the to the very edge just to
+make sure we didn't add any unneeded
+spaces or anything.
+>> I see. Something like something like
+that.
+>> And then you want to tab them.
+>> Tab that.
+>> You don't want to use Yeah, you don't
+want to use spaces. You just want to use
+tabs.
+>> Okay. Okay.
+>> So, in this case,
+>> take your four line all the way to the
+edge and then tab it in once.
+>> Okay. Something like that. Okay. And
+then tab.
+>> Tab. Yeah. Tab it.
+>> Oh. Oops. Something. Let me undo that.
+Let me undo that. Okay. Something.
+>> Yep. And then Yeah. tab in that next one
+as well.
+>> Okay. Something like that. All right.
+>> Now, the error message is giving us line
+60. So, I don't actually think it's an
+issue with your indentation. So, this
+error is actually not very helpful
+error. Um,
+>> so when you are building out your for
+loop for variable in range, why did you
+choose the name target here?
+>> Are you here? because that's the well
+that's that is supposed to be the well
+that's the variable we need to look look
+for for zero
+>> that's
+>> okay and so then when you set a variable
+inside the four i in range or for
+whatever in range
+>> wouldn't you be changing the value of
+target there
+>> yes because we need to integer usually
+usually I would be then literating ing
+within literate through the the array.
+And if I do length, then we should be
+able to
+loop. Yeah, let's say live through.
+Okay, that's not working.
+>> Okay, it's still an error. That's weird.
+>> Still getting error still for some
+reason.
+>> Any ideas? Let's see. Let me look in the
+chat.
+If you scroll up a little bit
+>> in your in your code there.
+>> Sure. Yeah. Yes.
+>> Ah, okay. So,
+Huh.
+>> Nums or
+>> Oh, no.
+>> Yeah. I'm not doing it. No.
+Selfns target.
+That's weird. I don't know why it's
+giving you that
+an unindented block after function
+definition on
+for loop codes inside.
+Yeah. So it looks like I think you
+should indent your code lines one more
+because it's at the same level as the
+function.
+>> Gotcha. Oh, I see what's going. Okay. So
+it's
+>> Oh, I see.
+So, let's let's try to Yeah, let's do
+that.
+Let's see. It's within the phone. Let's
+see.
+Then you would want to tab it that way.
+Oh, I see what you're saying. Oh, that's
+why. So, always look for where it is.
+>> I don't know why I mentioned sign 60
+there. That's so random.
+>> Okay, there we go. Okay, there. So it's
+inputting nums
+the stand out. Okay, we're literally
+okay.
+>> So then what might be useful to print
+here instead of the array?
+>> Instead of the array,
+it's a good question.
+So we want to get to the
+array. So length of nums.
+So just giving me
+this array. So we need to figure out
+what
+range of
+target.
+So we're just literating it.
+Let's see. Try.
+So here's this is list. Now we need tart
+for my
+target.
+>> Yeah.
+>> So, if you're looking for a specific
+target number, right?
+>> Yeah.
+>> Are you going to access the values
+inside of the nums list
+>> to see
+>> what those values are to compare against
+target?
+>> Yes.
+So, I guess instead of the length
+control, see what happens when
+When we do nums
+print
+nums, let me first see what we see what
+that does. Can always test.
+Okay, it's Oh, it's giving error.
+So, de Huh. It says
+it's not.
+We just compare.
+Can anyone help me?
+Okay.
+>> How do you access inside the array?
+>> Access the array.
+Access the array.
+[Music]
+Oh, okay. Let's see what happens.
+>> Mhm.
+>> Oh. Oh, I see. I see.
+Oh, I see.
+>> Okay, we're still
+>> So then what is I in this case?
+>> So
+it says I in the range of
+Oh, there we go. It's the indexes.
+Uhhuh.
+>> Okay.
+>> Yeah. Okay. So, we're we're getting some
+Oh,
+okay. So, we're printing. So, we're
+definitely printing five. So, Oh, yeah.
+That's where
+I want to go there. So,
+it definitely definitely that's that's
+what I want. So, now I have to have to
+work on the if state.
+>> Well, how are you going to use that
+index then?
+>> Yeah.
+this time. So
+if
+so if
+if
+so I is into get my comments see get my
+comments.
+So, so if
+if if there's the if the I which is if
+there's an if there's an
+if the index that the target that's
+compared target is equal then it will
+definitely return the index will
+definitely return its index
+but then yeah so we're trying to look so
+in this case we're trying to look for
+the trying to look for the value of
+target. So yeah, if okay, so if if I
+would just like if if that if whatever
+is in its array, whatever if we see a
+number that's equal to the target
+number, then it should output
+output the index, which then for
+otherwise if it's not then then it
+should return negative. If it's not in
+there, then it will it will return
+negative one. So we have to put So we
+definitely have to put in the if
+statement. But how to type that? See
+something. So we have our I so if I
+equals
+So if I equals
+something like if I does
+does
+does equal zero. So if I does equal no
+if it equals
+if it equals the target.
+>> So is the target going to be an index
+value or is it going to be a value
+inside the array?
+>> It's so the target
+>> it's going to be the value it's going to
+be the value within the ring not the not
+the index. So I intend. So it looks like
+the target the target is like zero. It's
+zero within this depth.
+So target it's an target's an integer.
+So
+I equals
+the target.
+All right. But if we know that I is
+index, it's not a value inside the
+array, right?
+>> No.
+>> No.
+>> So, how are you going to get the values
+inside of the array?
+>> Oh, you have to go to you have to go to
+length. You'll have to go to the Oh, so
+you need you to access you have to use
+something like the index. You have to
+write out its index
+like next to next to um list. Let's see.
+>> And again, I would keep using print
+statements until I know what what I'm
+looking for.
+>> See, this is where we need to go.
+[Music]
+See?
+list
+nums. So
+to use list so
+we have to figure
+so so how do we access it? So
+so we access
+Then we need to access
+[Music]
+something.
+So we have to and then we have to target
+use the so to like use index
+index
+of
+whatever. So definitely made to go cuz
+nums that holds the list is for I in
+range.
+I do know for sure I definitely know for
+sure something has to happen within
+within that loop. we have to to have
+that part somewhere
+access
+it first. So something like
+calculate
+there's a calculation involved.
+[Music]
+>> Oh boy. But you can start with just
+making sure you're accessing the values
+in the array, right?
+>> Yes. Yes.
+>> How would you do that?
+>> Access the values in the array.
+You have to do something about you have
+to do something like you have to do
+something like nums you know you have to
+access the list. So you're so if nums
+equal
+I want to access the values here. So,
+>> so whatever I typed up, so whatever I
+typed up here, typically you would use
+you would you would use something like
+array and then add its add its index.
+So I guess whatever
+it's index in here. So something
+>> So do you want to print that out and
+make sure we're accessing everything?
+>> Sure. Yes. So if we let's make sure it's
+so let's see we're printing.
+So definitely we need to print out
+All right, that looks a lot better.
+>> Okay. Okay. Okay. Yeah. So now it's So
+now There we go. So So we're now Okay.
+Yeah, definitely numb. So we need to
+definitely need to access access.
+>> So this is a good stopping point. I
+didn't realize how much overtime we
+were. Um All right. Thanks, Daniel. This
+was a great attempt at
+um Well, okay. Okay, so let's say you
+read through everything in the problem.
+You started getting some of the comments
+out. I think your comments were spot on
+where you resummarized. All right, it's
+asking me to find the target within the
+array. The array might have like a pivot
+in it. I need to find the value in at a
+certain index and then return that index
+or return negative one. And then you
+went over some of the potential some
+potential ways of approaching it. So you
+were thinking I can use a loop to
+iterate through the length of the array.
+you had another comment about
+potentially sorting it and that might
+help. Um, and then we dived right into
+the code. So, I think where you can
+still work on kind of breaking things
+down a little bit more is that you
+looked like you were starting with your
+brute force approach, right, of just
+looping iterating through everything.
+And I think you can take that approach,
+break it down in a few more steps like
+you were starting to at the top. You
+went back up and you're like, "All
+right, I need to access it using nums at
+certain index." So I think you can keep
+on working on breaking it down in the
+pseudo code of I need to access the nums
+at the index, then I need to do the next
+step and then the next step and then
+return here. And you can build out your
+conditions that way. And then again,
+just kind of what I was prompting you to
+do here at the end is before we write
+down a full several lines of code, like
+let's make sure we're taking those
+iterative steps and all right, what am I
+getting in my for loop? Is it actually
+printing out an index value? Is it
+printing out a different value? How can
+I make sure that we're hitting all those
+steps that I need to take to get to the
+final solution? Does that make sense?
+>> Yes. I see.
+So I think overall that was a great
+showcasing of breaking down some of the
+code into pseudo code and then getting
+oh wow that's like well you saying all
+that that's like oh wow I I didn't think
+I was going through like didn't think it
+was a good approach for some reason but
+at least coming through here I did broke
+down whatever several sessions you know
+and seen doing all the problems so I
+just did that. So yeah,
+>> and that's great.
+>> A little just just a little just a
+little more tweaking though in the back
+of my head. So
+>> yeah, I think you just need to keep
+working on those more iterative steps
+because then you start getting into
+those errors, right? And then you start
+getting hung up on, well, do I need to
+tweak this or tweak that? And you just
+end up modifying your code for an hour
+instead of just going by line by line
+and saying, what do I need at this point
+in my code? What am I getting?
+>> You know, making some assumptions and
+testing them out. Um, so overall this
+problem is a medium problem because of a
+specific line and I'll
+>> just take the screen here.
+All right. So the algorithm must be
+written in O log of N runtime
+complexity. So Daniel, the solution you
+were working on which would definitely
+get the test cases passing right. Brute
+force of
+loop through the array or nums loop
+through nums.
+See if
+if target exists.
+And that would be
+big O of what do you know? Big O would
+be the big O. It would
+was it the
+Was it Was it the
+>> Oh, what? Sorry.
+>> Let me look. See, let me look on the big
+old chart. Big old chart. Oh my gosh.
+I'm like this.
+Oh my gosh.
+I think
+>> that's okay. I can just tell you
+>> it would been I could try and guess it
+would be O N or something.
+>> Yes, exactly. It would be O of N. So
+when you're again you were mentioning
+the chart there. So log of N is pretty
+pretty low. Like that's why it's a
+medium problem because when you look at
+those big O graph
+my favorite Google search it already
+knows.
+Oh, that's not the one I want. So, every
+time I try to pull that one up, it's
+always blurry.
+Still kind of blurry, but it's right
+here. Log of N. So, O of one constant
+is, you know, a flat line there. Log of
+N is going to be one of the it's pretty
+much the next highest up. It's one of
+the quickest
+algorithmic run times, big O run times.
+O of N is a little bit higher than that.
+and then we get to n log of n n n n n n
+n n n n n n n n n n n n n n n n n n n n
+n n n n n n n n n n n n n n n squ so on
+and so forth. So the reason it's medium
+it's because it's looking for like one
+of the most optimized run times that we
+can do outside of O of one constant. Um
+so for brute force of just getting how
+can I approach this problem? How can I
+get some test cases passing? Make sure
+that I understand everything. I think
+starting out with Oven totally great
+just to make sure that you understand
+the problem and that you can actually
+get everything
+running correctly like am I accessing
+the array values correctly am I making
+that target comparison well can I like
+solve all of the past like test cases
+even if it's not at the expected
+like runtime complexity
+>> and then we can make that next step of
+saying all right what do I know about
+about potential approaches to get this
+to that desired runtime. So in this
+case, it's going to require you to know
+specific algorithms again, which is
+probably why it's one of the medium
+levels because this is
+um a higher one there. But I think for
+just getting some test cases passing and
+making sure that you're understanding
+the problem, this is a great place to
+start.
+>> So that was a great job. Thanks, Daniel.
+>> Nice.
+>> All right. And then does anyone know
+how we might work on a log of end
+solution? Actually, we'll save that for
+later because we're already 20 minutes
+over. That'll be a fun discussion for
+Wednesday.
+>> Okay, sounds good.
+>> All right. So, does anyone have any
+questions before we sign off today
+about the technical interview? Any of
+the problems that we looked at today?
+Anything about hacker ranker code? What
+questions do people have? Is it um
+because it's rotated does it then become
+an unordered array like
+in a in a way when it's rotated?
+>> Yes.
+>> Okay. So, it was ordered but we're
+working on the unordered version of it.
+>> Exactly.
+>> Okay. Could you still could you still
+like kind of riff though on doing a
+binary search? Because knowing the logic
+of if you cut it in half,
+if a certain number is higher or lower
+than the initial, then you would know
+which half you have to sort into.
+>> I certainly think you could.
+>> So, if you want to tackle this problem,
+I'd like to see it on Wednesday.
+Yeah. So, what Adam Yes. What Adam
+mentioned is that with binary search,
+you're cutting things in half, which is
+how you get a log of n. Yes. Log of n
+runtime because you're not checking
+every single input that's given to you
+in the nums list. You're not checking
+through every single value. You're
+starting splitting it like a phone book.
+I need to come up with a more modern
+example.
+And you just keep checking halfway. Like
+if I start with in the middle and maybe
+I'm starting with J's and then I'll cut
+in half again getting like L's or
+something like that. Not L's. What would
+be halfway? H maybe. So on and so forth
+until you get to the name that you're
+looking for in a phone book. Same thing
+applies here. We would
+I might as well share again. Jeez.
+In a sorted array, if it was it's in its
+original form before they rotated it,
+we would start with the midpoint four.
+And in this case, we're looking for
+zero.
+And then we say, all right, is zero
+going to be bigger or smaller than four?
+Smaller, obviously. So, we're going to
+cut in half again. And then it rounds
+down. So, 0 1 2 3 3 / 2 would be 1.5.
+So, we round down to 1. Now we're at
+one. Is zero bigger than
+one? No, it's less than. So then we kind
+of cut down again and then that's where
+we get to that final one. But that's not
+the perfect example because it's at the
+edge. This one would be kind of a better
+one if we were looking for three because
+you would cut in half again.
+You see that four is bigger than three.
+Cut in half again. One. And then it's
+bigger. So we go this way. Two. Um, but
+at this point
+we would hit our condition of our left
+and right evaluations cuz when we're
+using the binary search, you have a left
+and a right and then a midpoint. So once
+the left and the right kind of meet or
+overtake each other, that's when we exit
+out and we can determine that three is
+not in there. Hence why we get that
+negative one. that becomes a little bit
+more complicated because it's been
+rotated some unknown amount of times.
+But you could still potentially use that
+idea and say, "All right, here's our
+midpoint.
+Is this side
+a continuation of that sort order? Is
+this side a continuation of that sort
+order? Does it start somewhere in the
+middle? How should we jump this way or
+should we jump this way?"
+And you kind of have to come up with
+some logic to figure out how to account
+for this rotation. But since it's still
+generally sorted, just it's almost like
+you have two sorted lists within a
+single list and you have to figure out
+which sorted list you want to start
+binary searching through as you move
+through.
+So, it's an interesting problem, which
+is why I pulled it up for us.
+All right. Any other questions about
+today or in general before we close out
+today?
+Cool. All right. Thank you everyone for
+joining today and thank you Daniel for
+being our guinea pig today and
+practicing sounding out your thinking
+and sounding out your logic. I think you
+did a great job in getting this problem
+started for us. Okay. Even with just the
+brute force.
+>> All right. Sounds good.
+All right. Goodbye everyone.

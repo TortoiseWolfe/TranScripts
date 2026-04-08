@@ -1,0 +1,1314 @@
+Welcome everyone to this week's Nailing
+the Tech interview mock interview
+edition. Um, last Wednesday I was a
+little under the weather weather.
+Um, I went to the beach
+and I got burned really badly. So, I was
+like I don't have any burns on my arms
+on my legs, but there were like it was
+so hot that I'm just like
+um but I am going to have a makeup
+session for that cuz we I did talk about
+covering in
+covering binary search and
+what what it was like three things
+sliding windows primarily I think binary
+search and two pointers. ers um
+implemented in specific leak code or
+hackerank problems so we can bridge the
+gap from learning about a concept to
+implementing the concept in the confines
+of a problem to solve the problem. Um so
+I'm still going to do that. It's just
+going to be delayed a little bit because
+I was suffering from severe sunburn
+fatigue and yeah that was completely my
+fault. Uh but before we dive into
+today's information and session, do we
+have any questions about the technical
+interview? Preparing for the technical
+interview, practicing, studying,
+challenging questions. Um what questions
+do we have?
+No questions. Okay, cool.
+Not a problem.
+So then let us jump in.
+So we've been kind of on a streak of
+doing like algorithm heavy problems
+because I was introducing us to those
+topics so that we could learn them all
+and practice them all. Um, but since we
+haven't done the video like I just
+mentioned where we were going to kind of
+dive into those, I found a couple of
+problems that are
+interesting. I'll say um they are
+related to each other. So once we go
+over one, I think everyone will be kind
+of more prepared for the second one. Um,
+so let's just dive in.
+Good.
+Yes, Rebecca, I will post the link into
+the chat.
+So I'm looking at insert interval here
+on my screen.
+So we'll just read through it and just
+like usual we'll kind of we'll read
+through the problem. We'll break it
+down. We'll see what we can do with it
+and then we'll talk about potential
+approaches.
+So you are given an array of non-over
+overlapping intervals intervals.
+So there's our parameter intervals where
+intervals I equals a list start I end I
+represent the start and the end of the E
+interval. Gosh, I already hate the
+wording of this problem. And intervals
+is sorted in ascending order by start I.
+Okay, so just again that was a complete
+nonsense sentence that we all just read.
+Um, but we'll kind of come back to that
+and see what we can pull out of that in
+a bit. You are also given an interval
+new interval start end that represents
+the start and end of another interval.
+insert new interval into intervals such
+that intervals
+go is still sorted in ascending order by
+start I and intervals still does not
+have any overlapping intervals.
+I'm starting to like I can't even
+process what I'm reading because the
+word intervals is there so many times.
+Merge overlapping intervals if
+necessary. Okay. Return intervals after
+the insertion.
+Swipe up. Right.
+Yeah. Yeah, this is one of those
+problems you read and you're like, maybe
+maybe I don't want to code today.
+All right, so let's see what the example
+can tell us. So we're given intervals
+here, which is as promised
+a list of lists lists
+and we see 1 three in one list and 69 in
+another one and we are given new
+interval which is a single singular
+list. Does it tell us that they're
+always going to be
+let's get an an
+interval that represents the start and
+end of another? So it does seem like
+we're always going to get one just based
+on the way that that sentence reads. All
+right. So new interval for or sorry 2
+and 5.
+And so our output here for 1 3 69 plus
+the new interval of 2 and 5 is 1 5 69.
+So if I had to guess about what they're
+doing here is that
+nonover overlapping. That seems to be a
+key word here. Non-over overlapping. So
+one and three and six and nine like 1 2
+3 6 7 8 9. None of those numbers
+overlap. And we're given a new interval
+which has some overlap. So 2 3 4 5 would
+overlap with one and three. So they're
+saying merge
+merge in
+this one that's overlapping or I guess
+if it wasn't overlapping figure out
+where it is in between them. I think
+that seems to be anyways. So let's see
+where does it say that
+you don't need to modify it. That's also
+important.
+Okay.
+Insert the new interval into intervals
+such that intervals is still sorted in a
+sorting ascending order by start.
+So this is sorted by start. I can see
+that. And then 1 3 6 8 12. Okay. And
+interval still does not have any
+overlapping intervals. Merge overlapping
+intervals if needed. So what I'm
+assuming they're saying here, I'm just
+going to go ahead and jump into the
+comments.
+Oops.
+Before we even move forward, because
+this one is such kind of like a it's
+like a tongue twister, but a mindbending
+like I don't know how to say that. It's
+not like a It's like a tongue twister in
+the way that when you read it, your your
+brain gets twisted.
+Say we are given
+given intervals.
+And again, I'm going to put this into my
+own words because I feel like that will
+help me better understand it.
+And I'm actually maybe going to call it
+something else like
+no actually I'll I'll leave it.
+So given intervals which is a list of
+I will actually maybe keep h how would I
+like to say that start and end
+I'm actually going to call it like J
+pairs maybe.
+I don't know. There's no right way to do
+it. There's no wrong way either.
+Oh god. Still figuring out my keyboard.
+Yep, that works. I J
+I J pairs,
+which is a list of lists.
+I pairs. Okay.
+Um and then
+each of those
+I
+I 2J pairs
+will not overlap.
+So if I was given
+one and two,
+three,
+six,
+and like 9,
+10, right?
+I This makes zero sense to me. I feel
+like I need 20 more examples to
+see a pattern.
+That's why we practice, right?
+Oops.
+Oops.
+Not going to lie, sometimes this
+keyboard frustrates me. I think overall
+my new Spanish keyboard is mostly the
+same, but some of the
+symbols are just in the most
+inaccessible combination of keys.
+Okay.
+So 1 2 3 6 9 10. Actually, I'll change
+that one to 11. So they're not
+overlapping at all. And then if we were
+potentially given Okay, so given
+given
+and this is an assumption. So assumption
+singular new interval
+place it within the sorted non
+maybe I'm going to write that up here.
+These are sorted and
+sorted by
+the I
+mean there's really no way to like say
+it better than how they've said it. I
+mean they say it really annoying but
+like there's no better way to like
+simplify
+explaining that part that like it's
+sorted by this first part here.
+Okay. Yeah.
+All right. All right. So given
+assumption singular new interval place
+it within the sorted
+non
+overlapping pairs.
+And then as they've already told us
+this might
+mean
+merging
+into an existing
+interval. Okay.
+I just feel like even typing it out is
+kind of helping me center around what
+they're asking me because there's a lot
+of stuff in here and now I don't feel
+like I'm missing any of what they told
+me. So, I'm just going to read through
+it one more time. You are given an array
+of non-over overlapping intervals. Got
+it. Where intervals equals start end.
+Okay. Feel like I've got that. represent
+the start and the end of the e interval
+which is that makes no sense but I think
+that's okay and intervals is sorted in
+ascending order by start so yeah they're
+sorted by the first part of the pair
+oh
+oh my gosh okay
+I will take a break to I'm going to come
+back to that guy um you are also given
+an interval new interval
+start end that represents the start and
+end of another interval. So I'm assuming
+this is just going to be one because you
+are given an interval, not like many
+interval. Like I feel like the way
+they're phrasing that is that we can
+kind of always assume that's just going
+to be the one here
+that represents the start and end of
+another interval. Okay. So insert new
+interval into intervals
+such that intervals. So insert this new
+one that we're given into the list of
+ones that we are given.
+Okay. So given assumption singular new
+interval place within the sort of
+non-over overlapping pairs. List of
+pairs non-over overlapping
+list of pairs. Yeah. Okay.
+such that intervals is still in
+ascending order
+by start and so then I think I would
+just add a return here return
+intervals
+which they do say right here you don't
+need to modify the original one in place
+you can make a new array and return it
+so I'm taking that as a hint that this
+will be easier to do if I don't try and
+modify the original intervals one return
+intervals
+like aka whatever I name it, right?
+whatever I name a new one
+um
+with the new interval
+inserted
+or merged in
+and I'll keep their note keep
+the ascending sort order
+based on I.
+So again, just keeping that 1 3 6
+basically that all of these will be
+sorted by the first number in the pair.
+I feel like that's more clear than start
+and end, but that's just my personal
+preference. I do the same thing when we
+were doing the two pointers and binary
+search and everything. I think like the
+the um like textbook approach uses like
+left and right, start and end, but I'm
+just like so locked in with I and J
+being the two like reference pointers
+for handling lists that that just like
+clicks for me a little bit better. But
+if start and end clicks with you better,
+then use that. I'm not like there's no
+prescriptive way to do it. just for my
+own personal because I'm writing this in
+my own words so that I can understand
+it. I want you to do the same however
+you understand it better or best use
+that. So I'm going to keep keep using
+this J pairs even though it's not like
+it's not exactly what it means because
+when you think of an J pair it's like
+usually nested loops or but in general
+it's just referencing two points.
+There's two reference points right? So
+that helps me is that I'm considering J
+pairs and that we're sorting the I
+pair part of these.
+Yes, Katrina.
+So um I was wondering to see if I could
+take a quick stab at understanding the
+logic and kind of breaking it down to my
+own words if that would be okay.
+>> Yeah, totally. Um,
+and so basically what I see is that
+we've got we've got different groups and
+they've got sets of numbers and I'm uh
+they're saying that they're intervals
+and so I'm assuming that it's got every
+single number along that way even though
+we're only seeing the the front and the
+end. It it it counts everything in
+between. Um, and so we've got 1 2 3 and
+6 7 8 9 as our starting ones in that
+first example. We're given two through
+five and since
+one two three since two exists in the
+first one that's an overlap since we
+have two four five and so those have to
+merge. So since there's a matching
+number then they become one and we just
+return back that the start of that merge
+and the end of that merge would be one
+and five and since six is not the same
+as five it's it becomes its new a new
+one and we have uh six and nine as our
+as our second uh output interval. Um and
+so when you look at the third you know
+it takes over three of them because the
+numbers 4 5 6 7 8 exists in 3 4 5 6 7
+and 8 9 10. So since there is a matching
+number inside that from that interval
+then all those three get get
+consolidated into one with the the
+smallest being three the largest being
+10 in that middle section because all
+those three become one grouping um
+because it's basically one full run of
+cards say that you have of that uh
+duplicated.
+That's just my my thoughts of
+understanding it.
+>> Yeah, I think that's good. That's a good
+breakdown.
+And I think that helps with the second
+one too because you we are seeing like
+you said when you
+I don't think I said this out loud but
+when I was writing them down I was
+saying like 1 2 3 4 5 6 because that's
+what my assumption was as well when you
+see something like the merge of 25 into
+1 3 equaling
+15. Um and I think your way of
+explaining it there also helps us better
+understand the second part of why does
+48
+take the place of three different ones
+to then become 3 and 10 cuz if we do
+think of this as
+3 4 5 6 7 8 9 10 which actually I'll
+come back to that um
+I'll come back to that but I think it
+does help us to figure about like how
+that becomes this when you think about
+them being all the numbers in between.
+All right.
+>> I I think I think the note says a lot
+here. Um so for instance, if the start
+of the new interval
+is in
+the interval,
+then you can just tack on the end of the
+new interval as a new array.
+Yeah.
+>> Yeah.
+>> And return that array. Basically,
+>> Kai said encoding an interval represents
+a range of values between a starting
+point and ending point. Yep. These
+values can be numbers, dates, yada yada
+yada. Intervals are used in various
+programming contexts. I'm assuming it's
+just like a definition or chat GBT
+output of what an interval is. defining
+intervals. An intervals typically
+defined by starting value, ending value,
+start and start and yeah, for example,
+two, three, four, five, six, two, five,
+one, two, three, and four, but not two
+or five.
+Oh, that second part's weird, but yeah,
+I think the rest of that is fine. Um, so
+yeah, if you aren't sure what they mean
+by interval, that's also something you
+can Google. I think for this one it's
+somewhat clear enough by their examples
+what they're saying by intervals, but I
+could be completely wrong by that if I I
+think what Kai is saying is that he read
+it and wasn't clear on that and so he
+looked up what intervals are in this
+context and got that explanation to
+where it says start and end and
+everything in between. So I think that
+is an important like clue there. So I
+will even add that to mine.
+>> And yeah, just noting also with the the
+brackets whether it's inclusive or
+exclusive.
+>> Yeah, in this case it seems inclusive.
+>> Exact right. Exactly. Yeah.
+>> Which is important to if it was par more
+like par you know the curve parentheses
+then it's exclusive. So it exclude those
+bounds.
+So I'm going to write that
+interval
+intervals
+these J pairs as intervals
+include all the numbers
+in between which is how they're not
+which is why they use the word overlap
+specifically
+because two and five and one and three I
+mean I I guess you could read that as
+overlap. overlappinging. But if you're
+actually saying 1 2 3 2 4 5, then
+there's a clear overlap of 2 and three
+in that first part. And then the same
+thing in this part.
+So they've given us a simpler one and
+then they've given us a kind of harder
+one where we've had to merge where this
+new interval makes us merge three
+intervals into a new one which becomes 3
+and 10.
+But I kind of want to see if there's
+like a simpler softball version of this
+problem, right? Where I don't have to
+merge anything at all.
+Now, since we learned something
+interesting last time about test cases,
+I want to try it out real quick and see.
+So, 13 and 69 that matches that. So, I'm
+going to add a test case and I'm going
+to modify this right here. And I want to
+see if our new interval is
+four or five. Will it spit out what I
+think it's going to spit out? And I'm
+just going to run that expecting it not
+to work or anything. So, what is cool
+about this?
+Oh, okay. Yeah, sure.
+It's expecting what? An empty array. Oh,
+not an empty array. An array of values.
+So, I'm just going to submit an empty
+array.
+Yeah, there we go. Okay, so it is
+expecting So this is cool. What we
+learned a few weeks ago is that with
+leak code at least, not in hacker rank.
+In hackerink, you can create your own
+test case, but it won't calculate what
+the expected answer should be based off
+of that test case that when you run it,
+kind of ad hoc. But for le code which is
+really super cool when you you can
+create your own test case here as well
+in place with all the other test cases
+and it will generate the correct
+expected outcome from the test case that
+you generate.
+I think that is such a cool feature. So
+leak code is kind of like superior in my
+brain a little bit just from that alone.
+Um,
+but again, there are there are lots of
+pros and cons when it comes to these
+two, and you never know what you're
+going to see in the job hunt. So, it's
+definitely good to be accustomed with
+both of them. But, so in this case, I
+modified our insert interval to not
+overlap as well. So, we have 1 through
+3. Our new interval would be 4 through
+5. And then the last part would be 6
+through 9. So, this would be non-over
+overlapping.
+And in that case, we see that it's not
+overlapping and we just plop it in
+there.
+And that makes sense. So, I'm going to
+actually separate these out cuz I think
+it's telling us right that we're
+probably going to have to merge some
+stuff in there. But just for approaching
+this problem, I think generating a test
+case that is
+I think there's two ways that you can
+approach problems that are kind of hard
+to wrap your head around or that require
+a lot of steps to be taken because what
+I'm the the image that I'm getting from
+this problem is that there are going to
+be a lot of steps required and we
+haven't quite gotten into what those
+steps will be yet. But
+what I'm thinking here is that with
+anytime I'm thinking about how to
+approach a problem, I want to think
+about the easiest test case that I can
+run and then I want to think about like
+the harder test case or like an edge
+case. So when we found out this little
+trick a few weeks ago, it was because
+it required doing something like finding
+the longest string substring of
+numbers inside of a larger array of oh
+sorry not substring a subarray of
+numbers that was like find you know the
+longest repeating consecutive numbers
+inside a larger array of numbers. And so
+I'm thinking like, well, the hardest
+place to find that would be like right
+in the middle or like right to the left
+of middle, right? So I wanted to create
+a test case that did that so that I had
+the kind of harder test case in mind.
+And in this one, we we're kind of
+getting one of the harder test cases
+right up front, which is nice of like
+saying you're going to have to merge
+three potential lists here into one one
+new one. So, I kind of want to go the
+opposite direction and think about like
+a softball version of this answer. And
+by softball, I mean like you're just
+going to toss it to me and I'm gonna hit
+it like and that would be this one of
+just like literally you're given an
+array, series of arrays and you just
+plop it right in there.
+So in that case, if I was given,
+>> you might be able to solve this with
+just some with a couple loops and some
+if then statements, but then it would
+probably be O to the N squared.
+>> Yeah, I could see something like that
+interval. So, if you're looking for O to
+the N, you'd probably have to
+get rid of the second loop and do like a
+a search
+uh method or something.
+I'm just going to copy exactly what they
+have here.
+Okay.
+Um, so while I'm thinking about how I
+want to approach this problem, I think I
+would start with this easier one of
+saying how would I take this
+and insert into here cleanly? Like
+cleanly just all right, I know that
+there's not going to be any merging that
+I need to do. How would I do that?
+because that would be the simplest thing
+I'd have to do for a problem like this.
+That would be the simplest thing
+is if one of the test cases were like
+this. Now obviously there is a harder
+thing we have to do of figuring out how
+to merge these three down into one
+because of this new interval.
+But if we start from a smaller easier
+test case, right, then we can work on
+that and then we could say all right now
+we've got this example covered. Let's
+figure out how to do this part. So
+that's what I'm thinking here is that it
+is with these two different test cases
+there.
+So back to what Katrina was saying is
+that when you have
+in this case here
+it's actually read as if it was one 2 3
+five oh four five 6 7 8 9
+10
+and then we're missing 11 and then 12 13
+14 15 16.
+So these all represent intervals. But if
+we spelled out the actual numbers that
+they all represent, we are getting all
+of these numbers. We're getting 1 2 3 5.
+So 3 4 5 6 7 8 2 10. So 8 9 10. We skip
+11 and then 12 to 16. So 12 13 14 15 16.
+And then we're given four and 8. and we
+have to figure out how to merge it in
+there. So four and eight would actually
+be
+four, five, six, seven, eight. So when
+we think about it like that, we actually
+realize that
+this whole set of numbers which is
+represented by multiple
+J pairs or starting ending start end
+interval pairs um
+we can kind of figure out where that's
+going to take place. So if we isolated
+those then we know that we are going to
+have to touch three and five, six and
+seven and 8 to 10. And then that's where
+we also came into that other point that
+I think Adam brought up is that when
+you're merging,
+the merge is inclusive
+of IN.
+Now that makes sense to me, but if that
+doesn't make sense to you, I what I'm
+saying here is that we are given 4 28.
+And because 8 is inside of this
+interval, even though it goes beyond 8
+up to 10, we still have to merge that
+those values 8 to 10 into the new one,
+which is why we see 3 to 10. So even
+though we're given 4 to 8 because four
+exists inside of this interval we flag
+that interval and then 6 and 7 exists
+inside of this string of numbers. So we
+have to merge that one and then 8 the
+very end of this one exists inside of
+this interval which again is represented
+by 8 through 10. So that's why we have
+to merge all of these down into a single
+one of 3 to 10.
+Now, I don't know if thinking about it
+like this will get us closer to a
+solution, like if I have to use that
+somehow to figure out where to place the
+interval or how to merge it in. But at
+least like spelling out like this can
+help kind of visualize some potential
+approaches that we might want to think
+about. Um, or even just to kind of help
+clarify how this problem works.
+All right. So, at least for the easy
+part, the easy or easy example,
+what do we think about this? How would
+we go about just not even worrying about
+if they overlap or if we have to merge
+something down? How might we approach
+inserting
+four and five into the I3 and 69 groups
+so that it's just all three of them
+together?
+What do we think?
+I'm not sure either. I'm going to think
+I'm going to think about it for a
+second.
+Okay, I have some ideas. What What does
+everyone else think? How might we
+approach something like this?
+>> What if we were to look at a dictionary
+with those arrays?
+>> Okay. So, what do you how what do you
+mean? You want to can you explain that a
+little bit?
+>> Well, my thought would be to build a
+dictionary. say, um, these are the
+intervals, right?
+And put those in a dictionary.
+>> Wait, what do you mean by put them in a
+dictionary?
+>> Um, the reason I'm saying is put them in
+a dictionary is because we're going to
+have a list of arrays inside that
+dictionary and those are the lists. So
+we can look at those lists
+and know technically we could enumerate
+them inside the dictionary if we wanted
+to. Right.
+>> Sorry. Can you explain what that looks
+like? Like what kind of data structure
+are you looking at with this dictionary?
+>> I'm looking at um in terms of what we
+did. I'm looking at it in terms of kind
+of like the trivia question, the trivia
+problem that we did in the explorer,
+right?
+So, you would have um
+it just in terms of the intervals, we
+would say intervals equals and the open
+the the curly braces, right?
+And we would put in um
+the we would put in
+the interval that we have but we could
+enumerate it inside there.
+>> So basically like this.
+>> Yeah.
+>> So my key what would my key value pairs
+be? My thought would be your key would
+be your in I well we might end up with
+too many keys but a key would be the
+beginning of the array. That would be my
+first thought.
+>> Uhhuh.
+>> And um the values would be the rest of
+the numbers.
+>> Okay.
+>> In that in that array.
+>> So it it would still be like a list.
+>> Yeah.
+>> Inside of it. Okay.
+And then
+>> so then like in this example it would be
+like one two three
+>> with yeah like that
+>> sorry I just want to make sure I
+understand
+>> that's
+this is just my thought my initial
+thought because
+>> yeah totally
+>> this way we would have um something that
+we could look at to see if it's in
+between that
+if it's
+>> So here's my thought. When we look at
+the dictionary,
+>> we can say that um
+the one that we're looking to insert is
+four and five, right?
+>> Yes. So
+we could skip over the first element in
+the dictionary because one isn't
+included
+in the one in the first entry.
+>> Uhhuh.
+>> And the second we have four and five and
+it's less than the first entry
+in that dictionary.
+the the second the the second interval
+is greater than the one that we have. So
+my thought would be that we would be
+able to stick it in there directly and
+just say okay now we have this new
+interval four and five that goes in
+there.
+>> Mhm.
+>> Okay.
+>> Just a thought.
+I like thinking about it in a different
+data structure. I think that helps kind
+of separate out I'm I'm totally a fan of
+thinking how to use other data
+structures. I don't know if that would
+really how we would do that when we have
+to merge down other
+uh other intervals, but I like the idea
+of thinking about it. How can we like
+isolate
+isolate the interval like merge the
+intervals into a data structure that we
+can reference with an easy like key
+check retrieval kind of method and then
+still have access to everything as we're
+traversing the other intervals. I I kind
+of like that idea. I don't know if
+dictionary is
+>> may not be the way to go.
+>> I like the idea.
+>> It's just a start. Yeah, totally. And
+that I think that's that's great. What
+other ideas do we have? I
+>> I think we're making it a little harder
+than than it has to be. Basically, the
+way I see it is is if
+new interval is not in any of the
+intervals, then you're just returning
+all of the intervals with the new
+interval. And
+>> so how would you do that
+>> in
+and making sure that it's in the uh the
+range that it's supposed to be? Then if
+it's if if it is in the interval in one
+of the intervals and you're looping
+through all this. If it is
+in the interval, then you're going to
+return a new interval. So you're you
+don't have to merge anything. you just
+have to return the new interval that
+exists if it's inside one of the
+intervals,
+>> right? So, how would you do that though?
+>> Um,
+with an if with if with a loop and an if
+statement.
+>> So, you're saying loop through
+intervals. But like I said before,
+that's going to create an O an O to the
+N squ solution though probably because
+we'll probably need unless you want to
+break up the two loops and
+>> walk me through it.
+>> So the first the first loop will be to
+um because these are b these integrals
+are basically going to be treated as
+a list of lists. So you're going to loop
+through your list of lists
+and you're going to and when you come to
+each list you're going to look for
+whether or not that new the the start of
+the new interval is included
+in one of the list of lists.
+>> Okay.
+Check if
+start
+of new
+interval
+is
+included in
+intervals. So
+in that case that would look something
+like
+loop i equals z. Oops.
+I equals Z.
+Um, which means that
+I would also be or intervals
+I would be
+uh these dang shift keys would be
+one and three.
+So then check
+Check if or
+is
+in
+or you could even say is between
+1 and three.
+It's not. So we move on to the next one.
+6 and 9. Is four included between 6 and
+9? No, it's not.
+And then this is where you saying we'd
+maybe need a second check.
+So maybe you're thinking like
+check if or is
+greater or less than
+ig,
+right?
+>> Yeah. Because if there's more than two
+lists in the list of lists, then you
+can't just you're going to have to find
+where the new interval fits in the list
+of lists and then return that list of
+lists.
+>> Yeah. So there's kind of two actions
+that we're seeing. The first action is
+seeing
+is four. And I like that you're kind of
+isolating the four here. is for the the
+start
+contained within any of these interval
+groups. So is for in 1 to 3 or 6 to 9
+and then or in this case is two included
+between 1 and three in which case it
+would be so we would flag that somehow.
+So that's the second action is that how
+do we flag when something is to merge or
+how do we flag where to insert into that
+list of lists. So there's kind of a few
+actions there. So I might even separate
+that out into its own
+kind of like
+approach which we kind of started here.
+So maybe I'll
+>> you know there's you know there's only
+two numbers in the in in each list. So
+you can use Python indexing to
+say well the f if the first
+number in the list is greater than the
+last number in a certain other list then
+you can then return this list of lists.
+>> Well, you can't return the list of
+lists. You'd have to insert it somehow
+because we're putting that new interval
+inside of there. So, we're given 1369.
+>> Oh, no. Not note how the note says that
+you don't need to modify intervals in
+place. You can make a new array and
+return it. That's
+>> Yeah, but we'd have to make that new
+array. That's what I'm saying,
+>> right? Which is basically a list of
+lists. So, you're going to be checking
+each value in the list. But, you know,
+the list is only two numbers. So, you
+can use Python notation for the
+beginning of that list and the end of
+that list,
+>> right? You don't have have to use zeros
+and ones and twos is what I'm saying.
+>> Yeah. Okay. So, first So, I'm just going
+to say first step
+check if
+start or if you prefer I is included
+included
+in any given
+interval. So that would be a step and we
+would do that by doing loop through
+intervals check if start of new
+intervals included in intervals aka
+in a loop I equals zero intervals I
+would be 1 and 3 from this example here
+check if between 1 and 3 so on and so
+forth
+and then we have a second step
+here which is
+determine
+determine sort order of new intervals.
+Um
+I guess you could maybe even put that
+into two steps like
+no I'll keep it simple. So for just the
+simple the simple the easy example where
+we know we don't have to merge I'm going
+to ignore the merging step just for
+building out this initial game plan. I
+think that would maybe be easier. So
+check if for and then determines our
+order of new order. So check if is
+greater or less than
+any i j right.
+So we might need to track that.
+No, because that's what you're saying is
+that we would have the index position.
+We can use index of
+the loop
+to determine
+I - one or I
+[Music]
++ one plus
+one place it. So what I mean by that is
+that if we know that four is greater
+than this 1 three pair. So we'll move on
+to see if there is another pair that it
+is also like either contained within or
+is greater than because it could be like
+four and five. Here instead we see six
+and 9. So we know that four
+and five is going to be less than six
+and 9. So at this point the loop that we
+are in would be
+I. So this would be I of zero and this
+would be I of one.
+So in our new
+interval list.
+So then there's another idea there.
+Step zero,
+initialize
+new array to add intervals to.
+So we would go through and check 1 and
+three. And since four and five is not
+inside of 1 and three and it is also
+greater than 1 and three, we can just
+safely add that to our new array,
+right? called
+I don't know
+return. No, that's not a good name. What
+do we call that? It's a good name.
+>> Well, you have to you have to check the
+second list.
+>> Yeah. Yeah. Yeah. We'll we'll get to
+that. Return to the interview. What
+would you call this? Uh I'm not great at
+names. I just
+I just call them like the longest thing
+I can think of. Just kind of
+inconvenient sometimes. New interval.
+Um,
+I'm completely blinking.
+I'm just going to call it king array.
+King array
+just because. Why not? Okay. So, we'll
+go through. We see that 1 three
+does not have any overlap with four and
+five and four and five is greater than 1
+and three. So we can safely add 1 three
+to our new list king array here. And
+then we iterate to the second one which
+is 6 and 9.
+So then we do our first step again to
+check if four is included in six and 9.
+It's not. So then we would do the second
+step to check if four is greater than or
+less like if this pair is greater than
+or less than this pair. It is less than
+it and does not overlap still. So then
+we can just add this one in place or not
+in place but we can safely add the new
+interval to the array at this point
+and then we can subsequently add
+this one right after we do that. So
+that's kind of an easy step there
+actually because then you have all three
+of them added and then we get to the end
+of the loop and we don't do any more
+steps after that.
+Now exactly how you would do that you
+might want to keep breaking that down
+to and so I said we can use the index of
+loop to determine I minus 1 or i + 1
+placement. Um what I meant by that is
+that if we are at current I position of
+1 and we know that four and five needs
+to go before this
+then we can say all right the current
+index position would be one. We know it
+needs to go into the position before
+that. So we would just add this one
+first. But we actually don't need to use
+the index of the loop to do that.
+We can just add it.
+I'm actually going to erase that part
+because it's not right.
+If no overlap,
+your new interval is less
+than add new interval.
+Then continue and add
+current index
+and then I'll add that step here as
+well. Add
+index interval to our new
+new list. So I think that would be a
+good set of steps for approaching this
+easier example.
+Right?
+This one I am going to delete this one
+because I think that one will be tricky
+to kind of figure out trying to use a
+dictionary. But I think that's a good
+idea if you weren't sure where to start
+and you had the idea like Mindy to use a
+dictionary. Test it out. See what
+happens. But continue to break down into
+steps. Well, how exactly would you do
+that? What would the data structure look
+like of adding those intervals to the
+dictionary? Spell it out in a code
+comment on a on pen and paper in
+Microsoft Paint if you want, whatever
+works for you. But like kind of spell it
+out. what would that look like before
+getting into some code? And then break
+down in again comments, pen and paper,
+whiteboard, whatever, how you would kind
+of break those steps down into
+working through this problem
+because then at this point I think we
+could start diving into some code to say
+how would I implement this easier
+example and then come back and see what
+we would need to change to figure out
+how to do the merging
+the merging bit. But I think this is
+like a good foundation, a good set of
+bones
+so to speak for tackling this part too.
+But if we're not thinking about the hard
+example from the start of the problem,
+we can get some running code, working
+code that passes a test case so that we
+can have somewhere to start when we
+think about what to modify for the
+harder example.
+All right. New interval 0 and new
+interval negative 1 would be at the
+start and end of the new interval. I
+don't know what that means, Brian. New
+interval zero and new interval negative
+1 would be at the start and end of new
+interval.
+>> So that's the beginning. That's the
+beginning and end of the new interval.
+And you could also use that notation for
+uh intervals and intervals I.
+So if you're comparing, that's how you
+would go about potentially comparing the
+values in those intervals.
+>> Uh yes, I see. So you're saying that
+because
+>> that's what I was trying to say before.
+Like that's
+>> yes
+>> a simple check to see okay
+>> this is in it or wait no it's not in it
+and then
+go from there.
+>> You don't even need to do 0 negative 1
+since you know we're going to have only
+two a start and end. You could just do
+zero and one.
+So check interval zero
+>> and intervals one
+>> to see
+what that is.
+>> Then but if you wanted to extend your
+interval then
+you know
+>> you wouldn't extend your interval. You
+would just create a new interval.
+>> If you had a new interval that became
+like three or something then you could
+>> Yeah.
+>> Okay. Yeah. I see what you're saying.
+All right. So we did spend the whole
+time doing that which is fine. Um,
+what I wanted to get at with this
+problem is that
+this is a tricky problem, but before we
+even get any code going, I think it's
+good to have like a solid game plan of
+how you want to approach it. Cuz once
+you start writing code, you kind of get
+stuck in this like, all right, well, I
+started writing code. I can't not be
+writing code in an attempt to solve this
+problem versus I haven't started writing
+code and you've noticed that I've gone
+through and rewritten this portion
+several times. I've re rewrote I added a
+new step at the beginning. I rewrote
+this part like two or three times. I
+rewrote this part twice.
+And now I have kind of a game plan that
+I've been able to modify very quickly
+and very easily. Whereas, if this was
+code,
+I mean, you're worried about syntax,
+you're worried about implementation,
+you're worried about the correct order
+of operations, I can be a lot messier
+with my pseudo code to make sure that my
+game plan at least sounds good before I
+dive into code. And then I feel like
+once you get into generating your code,
+if you get stuck or if you get to a
+point where like, oh, this game plan
+isn't working like I thought it would,
+instead of just trying to tweak the code
+that you have written, wipe that bad boy
+out. Start from scratch. Go back to pen
+and paper. Go back to your whiteboard.
+Figure out, all right, I tried that.
+That was a good approach. It didn't get
+me where I thought it was going. Um, now
+exactly where that line is can depend
+cuz you could be on the right approach
+with with your current like a you could
+try this and be on the right path, but a
+few things need tweaking and you're not
+sure if you need to start over or not. I
+think it's fine to test the waters for a
+few minutes to see like debug along the
+way and figure out all right well what
+part of this plan isn't working and what
+would I need to tweak from the original
+plan. But if you get to a certain I
+think it's easier once you get to a
+certain point and you're like this was a
+good idea but it's not going to meet the
+needs of this problem. I'd have to find
+a different way and you can think of the
+different way that would be better. I
+think that's a good place to start over
+from.
+All right.
+And my main takeaway here is that I
+think especially during the mock
+interviews in the past I've seen people
+jump into the code. We're just eager to
+just get something coded out. But you
+can waste a lot of time doing that. And
+especially in the technical interview
+where time is limited, being able to
+jump into the code, knowing what you're
+going to do, confident in what's going
+to happen once you do it, is a lot
+better of a place to be mentally,
+even if you have to be kind of messier
+trying to figure out how you're going to
+type it out. I've had people spend
+10 minutes working on just a pseudo code
+game of game of attack. even 15 minutes
+actually working on just like drawing it
+out in Microsoft Paint. Two minutes to
+code, pass all the test cases. I've had
+people spend five minutes in pseudo
+code, five minutes writing out the code,
+testing all past cases. There's no like
+I've also had people spend no time
+thinking about the pseudo code and
+getting the stuff to run on the first
+time, but that's a different story.
+There's no like right or wrong answer of
+thinking about it, but I think you're in
+a much better state if you spend more
+time on it. I don't mind if you spend
+80% of your time in the technical
+interview just in comments as long as
+you know that at the end of those
+that 80% of the time that you spent
+doing that that you are in a good place
+to write some code and that it's
+probably going to get you pretty far.
+All right, so we we took the whole time
+doing that. What questions do we have
+about the technical interview, about
+this problem, what we might do next,
+what anything you want to ask? What
+questions do we have?
+This problem has a 43% acceptance rate,
+which is better than we've seen in
+previous problems. I will call out but
+it's still kind of low right that means
+that 43% of the people who started
+working on this problem got a working
+solution that passed all the test cases
+um
+or like 43% of submissions from a user
+or from users across the board ended up
+passing all the test cases. Um
+so out of 3.4 4 million users who
+submitted solutions to this. Actually, I
+don't know if they break it down by user
+or just submission. I would assume by
+user.
+Yeah, I would assume by user. So about
+43% of those got all the test cases
+passing. So that's still pretty low, I
+think, compared to the easier problems,
+which are like 88 and 95% passing rate.
+But I hope that makes sense what we're
+doing here and why we're spending so
+much time thinking about how you would
+tackle this. Because if you are just
+thinking about it from a coding point,
+like there are a lot of steps here, even
+if we continue to break this down, there
+are a lot of little steps inside of this
+that you have to put into code. And
+that's just for the easy example. If we
+start thinking about how you're going to
+work on the merging, you know, we're
+adding a little bit more work once you
+do that. So if you just jump right into
+the code thinking about how you're going
+to solve this test case,
+I think you're going to get overwhelmed
+overwhelmed really quickly because there
+are just so many things, so many steps
+that you have to do. So taking the the
+time to break them down into individual
+steps is really where where the money's
+at, right?
+That's what that's what developers get
+paid to do.
+>> For some reason, I'm seeing this one
+really clearly. So I guess my question
+would be are you going to be okay with a
+O squared solution here?
+>> Yeah, I think if you I'm never worried
+about big O at the start.
+If you the brute force solution for you
+that gets all the test cases passing is
+the worst performance both time and
+space complexity like through the charts
+awful. I could care less as long as it
+passes all the test cases. The next step
+after that is then coming back to it and
+saying, "All right, I've got something
+working.
+Is there a way to make it better? How
+can I make that better?"
+So, I'm glad you're seeing it clearly.
+We'll circle back to that
+maybe on Wednesday. Uh, yeah, I think
+maybe Wednesday. And then we'll see what
+you what you came up with there, Brian.
+>> Okay.
+>> Put you on the spot.
+>> I'll get to it.
+All right. So, one more time. Do we have
+any questions before we close out today?
+Cool.
+And this is a medium problem, just in
+case you were wondering.
+We didn't get to this one. I'll save
+this one for next time.
+Um, all right. Thank you everyone. Hope
+you have
+>> Thank you.
+>> a great rest of your Sunday.

@@ -1,0 +1,1004 @@
+All right, welcome to this week's
+nailing the technical interview. Today
+is Wednesday, so typically we look at
+problems that we discussed on Sunday.
+Um, before we dive into that, does
+anyone have any questions about the
+technical interview, practicing,
+preparing, anything they'd like to
+discuss? What questions do we have?
+[clears throat]
+Okay, no questions.
+>> Uh yeah, I have one question.
+>> Okay. [laughter] Okay.
+>> Like between hacker rank and lit code uh
+we usually from hacker rank we do the
+from the algorithms
+implementation subcategory
+most of the time.
+>> Mhm. [clears throat]
+And uh there that category doesn't exist
+I mean algorithms exist in lead code but
+not the subcategory implementation. So h
+how to find equivalent uh problems in
+lead code of that subcategory.
+>> I think you can still just do problem
+solving
+problem solving lead code. Yeah, but I
+mean you can find algorithms but there's
+one subcategory that is algorithms
+implementation which is like the general
+algorithms problems
+and that's not only good that little
+implementation subcategory. So you
+cannot filter through that. So
+I don't know it's kind of
+>> yeah I think for that you just have to
+Google the specific algorithm you you'd
+want to practice or just do like a
+generic list.
+Yeah, I've been trying to ask check chat
+GPT for that.
+>> That's a good way to throw
+>> what are problems related to this. You
+could even give it a problem and ask if
+it knows leak code problems that are
+similar. Yeah.
+>> Okay.
+>> Um I'm not sure honestly because I'll
+either just Google it and then get a
+full playlist that someone's made about
+a certain topic or I'll just use the
+blind 75. I haven't really deviated
+outside of like
+five playlists. So,
+>> okay.
+>> Um, yeah, Le codes kind of it's kind of
+weird in that way. It's like easy to
+find problems, but it's hard to find
+problems on the site.
+>> Yeah.
+Okay.
+All right. So, I know that you got a
+chance to um work on this code,
+Mauricio, for find a median and sorted
+arrays. Um, how did that go? How long
+did it take you?
+>> Well, I was at the beginning I was kind
+of stuck in my head with the idea not
+being able to use sort and not being
+able to use uh what was the other thing
+>> and adding adding the you know adding
+the two arrays.
+>> Yeah. So
+I don't know I kept trying I can I was
+like how come I can't by not doing that
+how can I do it
+and then I uh start thinking about
+sorting algorithms algorithms because
+you know they relate
+and then I remember the merge sort and I
+kind of review the algorithm and I say
+glad that's it that's that's the
+algorithm because merge sort has a merge
+part to it.
+>> Mhm.
+>> Uh and it always works with left and
+right. So it's like perfect for this. So
+yeah, that was the breakthrough and I
+say, "Yeah, by using that I can solve
+it."
+>> Yep.
+>> I already had the conditional part at
+the end already from
+>> that figured out. So it was just adding
+the merging part,
+>> the merge sort.
+>> Cool. Well, now you've got a hard
+problem officially under your tool belt.
+So that's always fun. But I have to
+confess that I have to, you know, go
+review this already. I didn't had it on
+top of my mind, memorized or anything.
+>> Yeah, that's why I linked the other two
+uh precursor problems. I think, weirdly
+enough, the one with the two linked
+lists where you have to merge the link
+list is actually it's the same thing.
+It's the the kind of the merge sort
+principle, but I feel like the approach
+to it using linked list made a lot of
+sense and is how you would apply it to
+this problem as well versus like not
+using linked list. Like thinking about
+it in link list for me made it easier.
+Um, but I also had the other problem
+that was with an array as well. Um, so
+if you had gone like step by step, you
+maybe would have learned the merge sort
+part and an earlier problem and then
+just like applied it all together right
+away for the hard problem.
+>> Yeah, the intuitive part that I kind of
+was able to intuitively see was, you
+know, the two pointers and then
+comparing element by element and putting
+the less, you know, the the the less
+than the other and keep going like that
+and updating the pointers. But the part
+that wasn't so intuitive that you have
+to check was the leftovers. What do you
+do? I mean, first be aware that it's
+actually leftovers. You usually don't
+think about that.
+>> You tend to think that you went through
+everything,
+>> but one may be shorter than the other
+and and and finished and there's
+leftovers on the other. So that piece of
+the algorithm that takes care of the
+leftovers that that's pretty much the
+part that you have to check somewhere
+else.
+>> Yep.
+All right. What about you, Mindy? Did
+you get a chance to work on these
+problems?
+>> I did. Kelly and I walked through and we
+did some pseudo code on that. And we did
+the we did it like I had done my um
+was it the explorer level? we went
+through and kind of walked. We did it
+that way. Um,
+so yeah, I did that. It was it it wasn't
+complex when doing it that way
+>> because I had already done it. So,
+>> we walked through. Kelly ended up um she
+had one and I forgotten which one it
+was, but she did one in 20 minutes with
+a little bit left to spare. But there
+was one test case that didn't pass. So,
+I was really happy for her. We walked
+through it and did it pretty
+>> awesome.
+>> Pretty easily.
+>> Yeah.
+>> Yeah.
+>> I'm planning [snorts] on doing something
+similar for this coming Sunday. Um I
+found another hard problem that I I
+haven't tried it yet actually, but I
+know that how I want to approach it. Um
+and it's the same thing where like if
+you've seen the easy version and the
+medium version, they stack really
+easily. And I I thought it would be
+easier to show from easy to medium, but
+it seems to be easier to showcase from
+medium to hard for some reason is what
+I'm finding where like everything that
+you learn in easy can be stacked
+together
+to complete a medium problem or a hard
+problem. Um, in my experience, so that's
+what I was trying to showcase with this
+last one is that like, oh, if you've
+done these problems, you can actually do
+hard problems, too. Um, and so I have
+another one in mind for that upcoming,
+but keep it a secret until then.
+Um, let's see.
+Since we're here,
+do you want to show your code, Mauricio,
+since you submitted it on the hacker
+rank? Just so we can have it on
+our replay here and I can show mine as
+well.
+I mean, they're basically the same.
+Oh,
+you are muted by the way.
+>> Sorry. Can you see my screen here?
+>> Yes.
+>> Okay. So
+this is pretty much not not the entire
+algorithm but the merge part of the
+merge sort algorithm because
+that's what this is.
+>> Mhm.
+>> Uh so I create a a final uh list array
+to put my elements there and I start to
+pointers at zero. So the idea
+is you move the pointers and you compare
+from the two arrays. I mean you do it in
+a loop that
+uh go till the end of each array, right?
+So as long as
+uh you are not done with both arrays, it
+will keep going. I mean if you finish
+one it will break obviously because it's
+an end.
+>> Yep.
+>> And it will leave some leftovers there.
+So I compare one by one element as I go
+and then I I append the
+the last one the littlest one and then I
+move the pointer.
+Uh if if the littlest one is the one
+from this array I do it here and I use
+this pointer. And if it's from this
+array, I do it here and I move this
+pointer. So by the time I done
+it could be that they were different
+length. So there are one finish. One
+went till the end and the other one has
+steel elements on it. So that's why this
+part come into place which tries to just
+just put in the in the merge list the
+whatever leftovers there are. So
+wherever the pointer
+uh left
+uh from there to the end. So sometimes
+it finish one most likely. So it will be
+nothing but it does it anyway. And and
+the other one same thing. So it will put
+there and they will be already sorted.
+So you don't have to do anything because
+by doing this work whatever is left over
+it will be it will be already sorted
+and one thing is uh you don't do append
+but you do extend
+because you are doing uh
+this array with whatever leftovers and
+that's the even when I use a pen it
+wouldn't work. So,
+and finally you do the conditionals uh
+to calculate the
+the median uh based on the median
+definition for uh even and odd numbers.
+[snorts]
+So you get your length here. So if the
+length there is a reminder one is odd.
+So for odds you just take the middle
+element. So you calculate that index by
+dividing length by two and round it
+rounded it with the two slashes. And if
+it's even
+you you take uh
+the one in the middle, the one in the
+middle here and
+the one before it
+>> and then [clears throat] add it and
+divide it by two. And that's your median
+when it's a even number uh even length
+>> and then you return it and and that's
+it.
+>> Yeah, that's good. And so, so again,
+just to recap, you're using the I and J
+to represent the two different indexes
+and then saying while
+both arrays still have indexes that I
+can traverse,
+we're going to
+merge sort until we get to the end of
+one or both arrays. And then you're just
+kind of tacking on the rest of whatever
+is left over from one of the arrays to
+the end and then grabbing the median.
+Yeah, that's really good. Um, yours is
+better than mine
+because I'm mine made mine ugly just
+because I was like so excited that it
+made sense to me that I just wanted to
+immediately try my idea and then I
+didn't go back and clean it up. Um, so
+you've got a nice cleaned up version
+which I like. Um, so let me show you.
+>> Yeah, probably it helped. Probably it
+helped because of the merge sort
+algorithm.
+>> Yeah, because you did the full merge
+sort. Yeah. And then did the
+calculations.
+>> That's why it's so clean.
+>> Um what I did though is that I didn't
+I didn't do the merge sort all the way.
+Um here's what I wrote. Requires an O
+solution where both um where n equals
+both num one and num two. They are each
+sorted need to be merged. And if the
+length is even, we return the average.
+So basically just recapping there,
+nothing nothing new. And then I grabbed
+what the total length of both of them
+would be.
+And I found the median to begin with. So
+not in the case like you said where it's
+even and you need to grab two numbers,
+but I just grabbed like what would the
+index that I need to be to start with.
+Um and basically that was my approach is
+that I went until I hit that index and
+then I stopped. So yours like did the
+merge sort so it was clean because you
+just merge sorted them all together. Um
+whereas I implemented mine to stop as
+soon as we got to the index where I
+would need to do the calculation but
+that made it actually harder a little
+bit messier because
+um where yours was good because you
+stopped once there was nothing left in
+the array. I kind of had to calculate
+all right well what happens if this
+array still or like if this array has
+ended but I still want to keep going to
+get to that median index. That's where I
+have to choose [laughter] and this is
+why it's kind of not good. I looked at
+the constraints and
+looked at what the max value would be
+for um those values. So like 10 to the
+5th.
+So nums nums one I or nums 2 I is going
+to be between -10 to 10 to the 5th or
+six. Um and then I just put that number
+[laughter]
+as the number to evaluate when doing the
+min or max comparison. So, if the array
+had run out of values, I'm just going to
+keep bumping up that index counter and
+I'm going to use a number that wouldn't
+exist inside of the array so that it's
+always max. It's always going to be the
+one that's higher. Um, and so that
+regard, it's not very good. This is not
+a good solution because I'm I'm kind of
+hard coding against some of the
+constraints there. Um,
+>> yeah. It seemed that you wouldn't give
+up your idea for anything
+and you went you run with it.
+>> Yeah, exactly. I latched on to my idea
+and I was like, I'm going to do this.
+Um, so that's what I did. And then same
+thing as you at the end, I just because
+I was already at the end,
+I sorry, since I was already at the
+index that I needed, I just grabbed the
+last number that was in the array
+because that would have been the number
+that was median because I already
+calculated it. And then this is where we
+say if it's even then I'll just grab the
+next number as well and do that
+calculation. So I would go back and
+clean this up to be more like yours
+where I'm just doing the merge sort all
+the way from the beginning.
+um
+or a kind of a mixture of both where
+maybe I'll still utilize this median
+index condition on top of your
+conditions where you're saying if array
+one still has values then array two
+still has values for my index checks um
+and it's less each of them are less than
+the the median index that I'm looking
+for then we'll do the merge sort until
+one runs out or we hit the median index
+and then kind of figure out where to go
+from there. I don't know,
+[clears throat] maybe. Um,
+but yeah, that's that was kind of my
+initial brute force approach to it. And
+then but it's still the same logic. It's
+the exact same logic, you know, if
+>> and you just have one loop, right? So
+the time the complexity should be okay,
+right? It's yeah it's exactly the same
+but you're still doing like you know is
+is the value in one array smaller than
+the other increment that index tracking
+the indexes. It's the same exact
+approach. It's just I did it a little
+bit differently because I like you said
+I had an idea and I just wanted to chase
+it. Um but I just wanted to show the
+differences there. So I'm glad that you
+did yours. Um, if you hadn't posted
+yours, I probably would have gone back
+and cleaned it up as well, but I thought
+it would just be fun to show like,
+you know, my original idea that I just
+kind of put out and and pass all the
+test cases with. Um, and that's kind of
+like real life coding as well. Like
+you're you're going to come up with
+something sloppy and not perfect and
+then refine it and come back to it to
+make it professional before pushing it
+to production.
+>> Yeah, for sure. Yeah. And um and it it
+lets you see other ways of thinking. I
+mean it stretch when you read some other
+solution that also works kind of
+stretches your your view.
+>> Mhm. Exactly.
+All right. Well,
+>> so if you come if you can post it also
+so so I can
+>> um I kind of don't want to just because
+>> you know
+>> it's using the constraints which is like
+kind of a faux paw. Um, but I I I can't.
+>> Oh, can you put it in the chat and I
+just
+>> Yeah, I'll put it in the chat. I'll put
+it in the chat
+>> just to do the exercise of going through
+it so I can, you know,
+stretch my brain different ways.
+It's probably not going to look. Oh, I
+can't put
+>> It doesn't let you.
+>> Yeah, I hit the max character link. I'll
+put it in Discord later and I'll just
+add the caveat to not
+not use
+>> this. This is not the best way to do
+this,
+>> right? Yeah.
+>> I won't do that for this next one. This
+next one, it's
+>> Oh, you can send me at the end with it.
+That's also okay. It's fine.
+>> Okay.
+>> All right. So, that's all I had today
+was just going over those. We were going
+to maybe look at the count and replace
+stuff a little bit more, but um Linda's
+not here, so I wanted to make sure she
+was here for that.
+>> Um, so we have a few options. We can end
+early or we can do a mock interview. I
+will leave that up to either of you. Um,
+yeah. So, what would you
+>> mock interview with? What? Easier or
+medium?
+>> Medium. Uh why
+>> we could do easy if you want to do easy.
+>> Yeah, I want to I mean I always
+appreciate practice time whatever the
+outcome is. Yeah. So I would like to
+Yep.
+>> Here let me
+see.
+We might have done this one. Hold on. I
+pulled one up, but
+let's see. Let's see.
+Okay,
+this one says it's easy. So,
+>> okay.
+Let's see.
+>> Let's see.
+>> See how easy. All
+right, I'm going to pop that into the
+chat. You want to open that up?
+>> Okay, that's lit code. Okay,
+>> I read somewhere that hacker rank it's
+better for beginners than lit code. That
+lit code is like is harder than hacker
+rank or something.
+>> That's my opinion too, which is why I
+stick to hacker rank for the technical
+interview. Um, and we sometimes review
+those as well. But for these meetings,
+since I don't want to eat up all those
+problems, that's why we use leak code.
+And I always add the disclaimer of like
+hacker rank gives you more info. Leak
+code like makes you forces you to find
+the edge cases kind of thing.
+>> Um, yeah, I I fully agree with that. The
+hack rank is definitely better for for
+beginners.
+>> Okay, so uh
+that's so I going to read it and then
+explain it. Y
+>> it's 2:35.
+So at 55 it ends.
+>> All right. I'll let you get to it and
+then we will hang out and give you about
+20ish minutes.
+>> Okay.
+So uh they want to they defined what a
+harmonious array is which is where the
+maximum value the difference between the
+maximum and minimum is one. So they're
+going to give you a an array and you
+have to find
+the length
+of its longest harmonious uh
+subsequence.
+Uh so it means uh uh
+several elements of the array in a
+sequence
+where the maximum and the minimum
+is uh maximum minus minimum or vice
+versa is equal to one.
+So here is 3 22 22 23
+because
+uh we're looking for the longest right.
+So this meets the the condition of
+maximum minus minimum but we can add
+still more elements to make it the
+longest and it will still maximum will
+be three and minimum will be two. So it
+will be this three plus this two. So
+that will be the longest subsequence. So
+it seems that you can skip elements and
+as long as they are in a sequence
+overall
+here it's goes by two groups of two
+and
+that's the length of each one. Each one
+difference is one and here no zero
+because 1 minus one is zero. There's no
+no other. So,
+so I guess if
+okay the the pseudo code will be
+the first edge case will be if all
+elements are the same
+return zero
+um
+to do that.
+I don't know if there's a function to do
+that
+and
+otherwise you'll have to traverse I
+guess.
+And for the rest
+you just have to figure out a way to get
+the elements in a sequence. So, I wonder
+if it's a sorted array. It doesn't say
+in the restrictions.
+It just says the length and
+looks like it's in a sequence.
+This denotes a sequence, I guess.
+So, I'm assuming that it's
+in a sequence. So, it's sorted already.
+So I will have to
+just take elements that has one of
+difference.
+If I find one that doesn't have that
+doesn't have
+No, that doesn't work.
+I got to keep track uh the max and the
+minimum.
+And I keep traversing travers and keep
+track
+track
+of max and min.
+So I keep dragging
+and then I I'll have to
+after I I get each each max and mean
+every time I check a new value,
+I'll have to also check the
+Check the difference.
+And if I get if I get
+not equal to one
+difference
+difference not equal to one
+uh and I skip that
+skip that element
+just keep going till the end
+and then I have uh
+uh get the length
+I will have to
+otherwise if if it's equal to one then I
+put it in another array
+append to result
+and then at the and uh
+len result and
+return len
+return
+that l result I guess.
+Um, but I have [snorts]
+if I have little subsequences,
+the kind of sucks there for
+and then I have to have a 2D array or
+this cases
+a result.
+Skip that element and
+start new new.
+Keep that element.
+Start
+new.
+new list there because
+there so keep track of max and
+so for range
+and
+move.
+So I compare
+max
+max single
+Maximum
+Now
+Yeah.
+-
+infinite.
+I think that's the way you
+you do that.
+Excuse
+me.
+You're going there and getting maximum
+min.
+Now check the difference.
+If
+absolute value of
+maxus
+You see one.
+I need to append
+append that element.
+continue.
+continue and install a new current
+there.
+Current append
+current
+thing in I As you wipe that you restart
+uh current
+then at the And the
+L
+return result
+now because I have to
+two dimensional there. So
+I need to find out which one is the
+the maximum.
+So how do I find if it's too 2D?
+If results
+zero
+zero
+uh
+is not
+salt.
+What is
+otherwise it means
+it's a two dimensional
+no this is a two dimensional
+so this is a two dimensional so I have
+two
+Yeah, I guess I have to do a loop again.
+I don't know if there is a function to
+get that in one hit
+for
+result. All right. So, we're a little
+bit shy of 20 minutes, but I'm going to
+stop early so we can talk about it.
+>> Okay. All right.
+>> So, I know you walked us through the
+problem, but can you w re guide us
+through that briefly and then talk us
+through your code here?
+Yeah, what I what I could figure is that
+I needed to traverse it and and keep out
+with the maximum and minimum.
+So I did that here
+for the first value. Um
+the maximum is going to be uh negative
+infinity. So I get the first number as
+maximum. Same thing of the first number
+as minimum.
+So I go if maximum minus minimum
+if the difference is equal to one mean
+if it's harmonious between those two.
+>> So
+>> then
+>> I I was following along but I'm kind of
+having a hard time visualizing that. Can
+you use the input from example one and
+kind of
+um just kind of talk through how you're
+expecting those values to move through
+your code here. Does that make sense?
+Okay. So, I start traversing, right?
+>> So, I get one.
+>> Yep.
+>> I get one and it's going to pass through
+here because these ones are infinity.
+So,
+>> so it's going to set max and min to one.
+>> Yeah. So, max min to one.
+So, I'm doing it again against itself.
+So if max [clears throat] min for this
+fair pass is not going to check because
+it's going to be equal to zero. So it's
+not going to be equal to one.
+>> Mhm.
+>> Uh so I just continue to the next value
+and uh wiped out current in case I had
+appended here which I didn't but just in
+case. So I move to value three
+and then uh same thing max min is one
+right. So one and three max is going to
+be now three and min is still going to
+be one.
+>> Mhm.
+>> Uh so three and one
+three and one is not equal to one. So 3
+3 - 1 is equal to two.
+So
+I continue and wiped.
+So I It's wrong then because I didn't
+>> add three. But you might in the next
+one. So Oh, I see. Yeah. Okay. So then
+goes in.
+>> It's not going to work.
+>> Yeah. [clears throat]
+>> I'm going to move to here and Yeah, it's
+going to be maximum still going to be.
+But I lost I didn't kept uh
+my previous one.
+Yeah, I'm actually comparing with the
+previous one that was stored in max
+minimum.
+>> Yeah.
+>> So when I move to this one, I lost this
+one.
+>> Yep. Cuz so then the new max is still
+three. The new min is still one.
+And then we're not
+>> Yeah. But I didn't put this anywhere. So
+>> yeah, I think you've got the right idea
+kind of almost. Um because I don't think
+we'd add the two either. I I think
+you're on the right track here. Um it
+kind of seems like maybe you might need
+another loop
+so that you're comparing each number
+against the rest of them. Or if you were
+going to do this approach, could you
+sort it matter? But I think it's sorted
+right because here in the restriction
+says
+I know this this means that every
+element could be any value within those
+not necessary.
+>> Yeah. But if you look at the first
+example is that sorted.
+>> No it's not has a five here.
+>> Yeah.
+So I mean that that's there. So, I have
+a couple of quick thoughts on this and
+I've been because I I went through a
+couple of thought processes myself and
+the first one that I was thinking about
+was you want to return a number, not
+necessarily an array.
+>> And maybe you want to keep count
+of what would go in the array without
+actually creating the array.
+um might be a a different thing to
+process. I'm just saying that because
+>> a different mindset. Yeah, it's it's I
+was looking at like the um
+I've looked at a couple of the problems
+and basically they say that optimizing
+it if you create an another array that
+you're going to take more time and the
+complexity increases.
+So if we simply kept track of a count
+as opposed to creating another array
+that we might have a different level of
+complexity so that you
+>> does that make sense Mauricio?
+>> Yeah I know about when it's 2D like this
+one.
+>> No because if you look at the output
+it is a number like she's saying. So
+she's she's kind of saying that if you
+were tracking just the longest
+subsequent sequence via account then
+then you could always overwrite it
+later. And in the way that you're going
+though I don't think that's an issue
+especially when you're still kind of in
+the phase of figuring out the right
+approach. It might actually help to have
+the array up front to say all right well
+what did my longest subsequence look
+like? How was I adding those numbers?
+And then you could go back and fine-tune
+it to use a count instead of adding to
+the array. Um, but yeah, I mean that's
+another point as well is understanding
+how they're getting those counts and
+then what they're returning. Do you need
+to store them in array? Do do you need
+to sort it up front? I think there are
+you asked some questions up top in the
+comments. And I think those were good
+comments um good questions, but then I
+it didn't seem like you were confident
+about the answers like for the sorting
+array for um I mean you have function
+question mark traverse question mark.
+Um,
+>> no. I mean, I thought I could use a
+built-in function instead of traverse to
+get something faster and easier, but I
+don't I don't have all the functions
+memorized, so I don't know.
+>> Yeah.
+Um, I think I think maybe you could have
+uh just kind of worked through the
+numbers a little bit further this one
+just because it is kind of tricky to
+like wrap your head around it at first.
+Like I maybe would have started with pen
+and paper. I know that's tricky when
+you're on Zoom. Um,
+>> but I think you're on the right path
+here.
+It's just like as you saw, you kind of
+got all of this code written and then we
+went through just the first part of your
+logic and saw that [clears throat] it
+broke down after a few a few iterations
+there. So, I think just testing along
+the way maybe would have caught that a
+little earlier on
+um so that you could course correct
+before before moving too much further.
+I'm still not there. I don't know. It's
+going to take me.
+>> Well, so I kind of um
+I will say that I would not have This is
+not an easy problem to me. Um
+it's easy when you know how to do it.
+It's one of those kinds of problems. If
+you know how to do it, it's easy. And so
+>> if you know the pattern and you can
+correlate that
+>> I wouldn't even say if you know the
+pattern. We talked about that last time.
+I'm still not a whole patterns person. I
+think you can do anything with with mods
+one and two. It's not knowing the right
+pattern, but maybe if you supplement the
+word pattern with the right data
+structure, the right um the right like
+loop problem [clears throat] solving
+approach kind of thing. But yes, and for
+lack of better description, if you know
+the pattern to it, then then it's a lot
+easier. That being said, I do think
+you're on the right path here to getting
+to that solution. But I wouldn't beat
+yourself up about the the 20-minut timer
+for this one if this is the first time
+you're seeing a problem like this.
+>> Uh let me check the topics.
+Hasht lighting window sorting and
+counting.
+>> Yep. See, that's where it tells you
+hasht is a big clue. Sliding window can
+be a clue, but then it also tells you
+sorting is a clue there. Um,
+>> counting the counter should count.
+>> Yeah. And you you knew you were going to
+count it anyways at some point. Like you
+have to count it at some point. Um, but
+the sorting was in there. Sliding window
+I I think could apply, but I feel like I
+don't know. I came up with something
+using a hash table that that worked a
+lot lot better for me. Anyways, so I
+worked on this while you were working on
+it as well. So
+>> when you for everyone watching the
+replay as well, when you get to a point
+where you have some code running and
+working that you'd like to share, share
+it on the Hacker Rank Discord channel
+and I will also post my code once
+everyone starts submitting theirs. Um,
+but yeah, this one's a tricky one. So
+you can even see for an easy problem
+having an acceptance rate of 64 is like
+that's that's a good indication that it
+shouldn't necessarily be an easy
+problem.
+>> Yeah.
+Oh well I try I guess. Yeah.
+>> So for this one I would just go back to
+reading through the problem reviewing
+those assumptions you made again like
+the sorting. Um review the process you
+want to take before going into the code.
+I know when you're on the the Zoom, you
+definitely want to jump into the code
+soon, but I think you should take a few
+more steps and kind of draw it out on
+pen and paper first for this one.
+>> Okay.
+>> All right. But don't stress out too
+much.
+>> Yeah, I've been since August 14 trying
+to break through that door and two
+months later.
+>> I wouldn't give you a Well, see, that's
+the thing is I wouldn't give you a
+problem like this for the technical
+interview. Um, it's a good problem to
+add to your tool belt, especially for
+the real world. Um, you will see one
+like these, but again, it's one of those
+ones where once you understand the data
+structures to use behind it, it'll click
+and you'll never have an issue with it
+again.
+>> Yeah.
+>> Mindy, did you have a question?
+>> No, I I think this is an interesting
+problem. I'm really excited to do a
+little bit more practicing in depth with
+it because like I said, I I had an idea
+but I didn't go through and do it
+because I wanted to see how Mauricio was
+doing. So I will see if I can post
+something later.
+>> I I don't see how this lighting window
+works there if the if the sequence is
+not necessarily next to I mean adjacent
+to each other. I think the sliding
+window can apply if you sort it.
+>> Ah, to make it adjust. Yeah. Yeah. Yeah.
+That's
+>> so if you sorted it, but then that's a
+thing. You're
+>> you're um giving up some time efficiency
+for some algorithmic effectiveness, I
+guess you could say. So using the
+sliding window approach,
+um would make it easier to logically
+code through, I think, is what they're
+saying. But then you have to give up
+some of that time for sorting. Um,
+but there are ways that don't require
+sorting.
+>> Okay? Because you sorted from the
+beginning, then you go sliding window
+and you should keep up with the sum.
+I mean the
+not the sum, but the length that you
+need.
+>> The length. Yeah. You want to keep track
+of that side of it. Yep.
+>> And uh is there something hidden in the
+sum? I don't think.
+>> Sorry. Six and six
+- one. No, it's not six and six. No,
+>> I thought there was some sort of matric
+when you do since the sliding window
+sums the elements
+if I don't remember.
+>> I mean, [clears throat] there's so
+there's actually a few different
+versions of the sliding window. This is
+the most basic version of the sliding
+window. Um,
+>> okay.
+>> Or one of the basic versions of it, but
+there are a few different versions. So
+you do different things based on which
+which version it is. So it's actually
+kind of a misnomer. It's more like
+sliding windows.
+>> Yeah. Okay. All right.
+>> All right. So any questions before we
+hop off today? Um thanks again for doing
+that. I think you did a great job. Any
+questions?
+>> I roll with a punch.
+>> Thank you very much. Talk to you later.
+Bye. All right. Thanks. Bye everyone.

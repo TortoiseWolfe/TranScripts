@@ -1,0 +1,1644 @@
+I'm going to go ahead and get started.
+So, welcome everyone to this week's
+nailing tech interview. Um,
+today Sunday, so we usually might do a
+mock interview, but I have a little fun
+thing planned for us today. So, we're
+going to sidestep that. Um, on
+Wednesday, we covered a problem. Find
+the first or find the index of the first
+occurrence in a string. And we kind of
+had the realization
+that there is a string method
+that follows the parameters exactly.
+So given needle and haystack basically
+find if the string contained in needle
+exists within the potentially larger
+string haystack
+and am I sharing the right screen? Yes,
+I am. Okay.
+or return negative one if needle is in
+not part of this return negative one if
+needle is not part of the hstack. So if
+we are looking for the string sad in sad
+but sad we can obviously visually see
+that sad does exist in there but we have
+to return the first index of the first
+character at which it returns. So that
+would be zero. And so there's kind of a
+few substeps in there.
+And same thing with this one, Lee to O.
+And so we get close with lead code, but
+since there's a C there and not here,
+that's a a false. And so we return a
+negative one.
+And then if we look at those handy dandy
+string
+methods,
+that's where we saw the find method,
+which does pretty much exactly what we
+want. Find the first occurrence of the
+specified value or return negative one
+if it's not found.
+And you can actually have a few
+additional parameters, too. You can give
+it a a starting point and an end point
+for a string. So that's kind of
+interesting. So it would find e in this
+string or
+welcome in hello welcome to my world. So
+it kind of fit exactly and we tested it
+out. Return find
+actually sorry it's a stack
+if I can spell stack dot
+find. Oh, I gotta switch over my
+keyboard. That's why I was like, why are
+my keys not right?
+Okay. Find needle in haystack.
+So that's where we realized that it
+turned out that we could solve it with
+just a oneline implementation.
+Um, if you happen to know the find
+method or if you were in the process of
+solving the problem and stumbled onto
+the find method, then you get this nice
+oneliner.
+But what about the actual implementation
+behind find? Because this solution would
+be fine for the technical interview,
+but it's not so much it's not great for
+learning, right? If you are just kind of
+using the method and not implementing
+the actual logic breakdown of how it
+works.
+So for learning purposes, I recommend
+everyone to learn the logic behind the
+methods that they're trying out.
+And so to do this, I came up with a few
+little mini challenges basically of what
+does the find method do.
+So at a high level if we came up with
+the pseudo code of what we expect to do
+for this problem and how the find method
+works is that we are iterating
+through
+haststack right the larger string
+potentially larger string and we are
+comparing strings
+for equality
+and one side. That would mean
+oops the entirety of
+I can spell entirety
+that's not right.
+I'm just going to say needle needle
+versus or equal to um probably a slice
+of the haystack. Right? We want
+if hastack is going to be this larger
+string then we want a slice of that to
+compare
+against our needle.
+John asks so the idea is to reverse
+engineer the methods with test driven
+development. Um maybe
+maybe yes.
+Uh,
+I I know I know Katrina talked a lot
+about test-driven development recently
+and Dr. Emily had a guest on test-driven
+development recently. Um, I have not
+watched either of those. I hate I hate
+to say that. I haven't watched those.
+So, I don't know what specific um like
+approaches that they take because test
+driven development has like different
+approaches based on the context of what
+you're doing. Um, but in this case,
+we're kind of reverse engineering the
+solution based on determining what steps
+need to be taken, which is more of like
+a problem solving approach, but I guess
+that applies to test proven development
+as well. Um,
+okay. So needle equals slice. And then
+if it does,
+we kind of have to find index of the
+first
+first char
+to return
+otherwise
+negative one.
+So, I was kind of thinking,
+yeah, I guess you could actually call
+this test-driven development if if if I
+was building test methods for this. Um,
+yeah. Okay. Well, we'll see. I'll show
+you. So, this is the general pseudo
+code, but if you weren't exactly sure
+off the top of your head how you would
+do each of these things, it might be
+I don't know if you could do this
+without knowing the solution. So, this
+was just kind of like a little fun thing
+that I was thinking of. Um,
+oh, I just lost Lisa was trying to join.
+Not Lisa, Linda was trying to join and I
+lost her. A question for you.
+>> Sure. So um the assumption is um that
+the the uh needle uh is that only first
+part of the haystack um and is does
+haystack um is haystack a bunch of words
+or is it just a string of words?
+String of letters,
+>> right? So they could be it could be
+different like it could be like an
+actual string of
+um
+you know like hello world like it could
+be
+or if it was an actual string it could
+be like actual string with spaces and
+other sentences. What was the first
+thing you were asking?
+Um um there's there's a couple of other
+um methods like begins with and ends
+with uh that um Python has as well. So
+um are we trying to do the uh basic
+basic method where we do um
+character by character? Is that what
+we're trying to do?
+>> Yeah.
+And is the um
+the initial word is it to begin with?
+Because the two examples they begin with
+um
+those values.
+Um
+>> no, because it could be somewhere in the
+middle of the string, too.
+>> So, we want to get the length of the
+needle.
+And
+so if we wanted to do a comparison and
+we ran into
+breaking each word down into the letter
+each character we and go one for one for
+each character when we got a hit. So
+needle, you know, we'd look at S, A, and
+then D. And each time we'd look is S
+equal S and A stack. And if we got a
+hit,
+um,
+we'd pull the index and then and then
+we'd test the value of the second letter
+and then third. But we would do it with
+the length. would have to have the
+length I would think of the needle
+and grab those letters for that. In
+other words, if my hit was at 42, say
+index, and my needle was sad, say, I
+would need to progress three steps and
+grab that three piece chunk that makes
+sense and test it to see if it was the
+same
+potentially. Yeah. Okay,
+>> so how I kind of thought about this is
+that
+um this is kind of the general pseudo
+code, but you could also turn this into
+like individual problems where you could
+break down this method into smaller
+substeps, right? And so if I were to
+break those down into
+like micro challenges, maybe
+if I can spell challenges,
+then
+just going to copy these in here
+and uh
+do some copy paste stuff here.
+Okay,
+so the first one I would say is do you
+know how to check if two strings are
+equal and then test that out by printing
+true or false. Do you know how to
+iterate iterate through a string and
+print out print out each character and
+then do that check if a character exists
+within a string? So just looking for a
+single character like does s exist in
+sad but sad return true or false.
+Oops. And find index of a first matching
+matching character in a string. So kind
+of very similar to the overall problem
+but on a much smaller scale of if I just
+needed to find the first time that the
+letter S appears, we could say S appears
+there. If I need to say the first time
+that T app appears, then we would say
+is that T? Is that T? Is that T? Yes or
+no. Okay, we found T and then return
+that index.
+And then lastly,
+return the slice of a string between two
+indexes and print the slice. So if you
+were given this string here and we're
+told to return the slice of the string
+between the index of two and three, can
+you pull out that that string? Right? So
+if you were able to do each of these
+little challenges,
+then you would be able to string them
+together to accomplish the actual goal
+of the find method. Right? So we would
+be able to determine if a slice exists
+within the string, compare the string
+and the string slice to return if it's
+true or false. iterating through the
+string to make sure that we can find
+those slices um and returning that
+index.
+So, I thought this was a fun exercise
+because there are I don't know like five
+little mini challenges that are inside
+this pretty straightforward seeming
+problem and we can use a single line
+find method
+but it's also good to know how to do
+that.
+So if we walked through these little
+challenges one by one
+and just made sure that we knew how to
+have those basic foundational skills,
+then you could kind of reverse engineer
+any of the other library methods as
+well. So there are a couple of string
+string methods.
+Let's see where are we? Python
+strings.
+And there's actually quite a few,
+like a ton of string methods.
+So, you could try and memorize all of
+them.
+Or if we started by practicing the ones
+that we use the most and kind of reverse
+engineer them, then we might be able to
+have to rely on those less and less. Um,
+and if we know them, great. Use it as a
+shortcut. But if you're in a crunch and
+you need to just kind of solve the
+problem ahead of you because you have 20
+minutes to solve a problem, then knowing
+how to do the individual parts here is
+probably the way to go, right?
+So,
+I kind of want to just go through each
+of these challenges really quick and
+have you guys help me fill in the gaps.
+Um, and then we'll just use that to
+iterate and show the fine method. Does
+that sound good?
+maybe.
+Okay. All right. So, for our first
+little challenge here, how do we
+determine if two strings are equal?
+We'll give us
+our inputs here. String one
+and
+string two. So, we're starting off easy.
+This is an easy one.
+How would we make that that check?
+You can always use if statement if
+string one is equal to string two
+>> length.
+>> So that's an if statement but we want to
+return true or false.
+>> You say it as a statement. Uh you state
+length of string one equals equals
+length of string two.
+>> So that's actually a separate thing. Um,
+I should clarify in value.
+That's another one. I like that too.
+>> So you print So if string one equals
+string two, then you would print true.
+Otherwise, else false.
+>> Okay. So you're just saying
+>> equals.
+Do you have to say length of string one
+and length of string two
+or can you just say string one equals
+string two?
+>> So they have different use cases, right?
+This one, what are we doing with these
+two? What is this comparison doing?
+>> Are they the same?
+>> Same. How
+>> are they the same? Each character is the
+are the strings the same.
+>> Yes. So, do all the characters match?
+>> No.
+>> No.
+>> No, they don't.
+>> Right. But that's what this this
+equality check says, right? Is it's
+asking do they do they match in in
+character value?
+>> Right. So afterwards you'd say print
+true um if it's equal
+and then false it would be false you
+print false.
+Yep.
+You can do that too.
+Oops. What did I do here?
+Sorry. Jeez. Uh yeah. No, that's that
+makes sense.
+So, false.
+And and then if we wanted to make sure
+quickly,
+they do actually return a true. Yeah,
+true. So, what you're asking for the
+next part is
+len of string one.
+>> There it is. F
+equals
+1
+of string 2.
+So what is that checking for?
+>> Well, are they the same length?
+>> Right. But do they have to match in
+actual?
+>> No, they don't have to match. They just
+have to be the same length,
+>> right?
+So, my first question was, do they do
+they match? Um, but I kind of had an
+implicit implicit uh description of in
+value, not in length. So, this would
+test if they matched in length. So, they
+do not match in value, but they do match
+in length.
+Great.
+All right. So for our next challenge is
+to iterate through pay stack
+and print each character. So how would
+we do this one
+or I in haststack print I.
+Oh yeah, sorry. I
+I deleted
+their little precursor variables there.
+Okay,
+so that looks right. Awesome.
+Sad but sad. Nice.
+I'm just going to comment these out as
+well.
+All right. And what about this next one?
+Check if a character exists within a
+string. Print true or false.
+>> Okay. Are we still looking at two
+strings here?
+>> Yes, we are, aren't we? Okay. So, we're
+still looking at hay stack and we're
+still looking at needle.
+>> Yes, we can use a needle for the next
+one.
+>> Oh, okay. Because I I
+>> um Yeah, it helps when you know what
+you're looking at. Um, so you know what
+I would do is I would say something like
+um does uh haystack I you know and
+either I don't know if it's I should put
+it in brackets or parenthesis
+equals needle
+uh parenthesis I or bracket I something
+like that.
+Um,
+>> sorry. Um, so sorry. What were you
+saying?
+>> Uh, I I was just going to say
+you're you're looking Wait a minute.
+You're seeing if each if the character
+exists within the spring within the
+string
+print true or false.
+Oh, I see. Um,
+couldn't you just say if a character in
+haststack
+or something to the effect of
+No, wait a minute. You'd have to do
+that. You'd say if character
+in haststack
+uh print true
+or
+h
+you'd grab the index.
+So if you compare haystack um
+if you look at the
+uh value of the of the character
+and you look at needle
+and you say if the first character of
+needle is the same as the character
+then you would save the index and
+hastep.
+so that you can traverse the haststack
+with that amount of characters
+and start uh evaluating that way.
+>> Um so this one's asking for the index
+but the one we're on now is just saying
+does the character exist within the
+string.
+>> So if character in the hstack
+then you wanted to test if
+character equals
+a needle. So you want to do the first
+value of needle.
+So needle
+>> ju we can just use these two right here.
+Character S and pay stack. Hello worlds.
+So this does work. Um but we might want
+to simplify that because we don't
+actually need
+that statement there, right?
+If
+character in a sec.
+That works.
+True.
+If I delete that.
+>> So, uh, question is, is that a
+compression? What you just did?
+>> A compression?
+>> Uh, uh, I mean, you took a if statement
+and you like compressed it into one line
+like that. Is there a name for that?
+>> Um, no. So I think we talked about this
+on on Wednesday.
+>> Oh,
+>> but an if statement is doing what,
+right? Like it's saying
+if and then you give it a statement and
+then that statement is going to evaluate
+to true or false.
+>> So if true, run this next bit of code.
+>> If false
+move on to the next block of code.
+>> Okay. But the if is determining
+scope flow like it's determining if you
+go to the next line under it or if you
+go to the next block after it. The
+statement
+>> is what returns true or false.
+>> So if we want just want to know if
+something evaluates to true or false or
+if something how something evaluates in
+a condition we only need to print the
+statement.
+>> Got it. Thanks.
+So if character, you could say it as if
+character is in haststack. That is our
+statement. Character in haststack
+returns true or false. We only need the
+if block if we're going to use that to
+do something. But since we're not doing
+anything with that, it's just kind of a
+check here. We don't we don't
+necessarily need it.
+All right. So this is what I think this
+is what you were talking about, Lisa.
+if we were considering needle and hay
+stack for this one.
+Um, but actually I'm going to keep I'm
+going to keep these.
+So if we're using character equals the
+letter s and haststack equals hello
+world, we want to
+we'll assume that it does have it. Um so
+find index of first matching character
+in string and print index.
+>> Right. So for
+um I inherent
+if
+I
+equals
+char
+Mhm.
+Um, you would want to print print
+stack
+um bracket I
+okay.
+Okay. So string indices must be
+integers, not string.
+What do we think that means?
+Okay, you're looking for an indicy and
+that index and that is an integer. Um,
+>> well, wait a minute. We put that in a
+list.
+So
+if I equals
+you you're looking to get back something
+that's either 0 1 2 3 4 whatever
+>> right
+>> um and I don't know how to say that I
+don't know how to convert the string to
+an integer and I know that's basic stuff
+too but I think that's what we need to
+do somehow
+we could do key comma instead of I do
+key comma values is
+>> key comma values
+>> and enumerate you want to enumerate it
+well I don't know that would be an index
+I don't know I don't know anymore
+okay
+um
+if we transverse the
+stat
+So for I and hastag hastag.
+>> Wait a minute. Do you have to put uh
+quotes around h No, no, you don't have
+to put I'm sorry. I was thinking out
+loud there. Um for some reason quotes
+came up, but that is associated with
+making something a string, not an
+integer. Um
+>> okay, so forget that. Um,
+see,
+>> so how do we usually ensure that we have
+an index in a loop?
+>> You could do it a few different ways.
+>> I in range.
+>> Yeah.
+>> Yeah,
+>> that is certainly one way to do it
+because this way was doing what it was
+printing. I would be the actual
+characters, right?
+>> Yeah. And those are all strings.
+>> Yes. But if we want the
+index,
+>> we want the range. Yeah. So if we want
+the index, we got to say the range. And
+that way we're looking for places like
+0, 1, 2, 3, 4. So we're looking for
+integers at that point.
+>> Yeah, we could also track the index
+outside of the loop. Start with zero and
+increment it inside.
+>> Ah,
+>> and track it manually, right?
+>> But that's a little bit extra work. Now
+is this going to work exactly like this
+or do we need to do something else here?
+>> See for I range
+do you have to have like a beginning and
+length of uh h put the length of the h
+stack up.
+>> Yeah.
+>> All right. So how does that change our
+our statement here? Let's let's just go
+ahead and wipe that. So we're looking
+for the index of the first matching
+character in the string. So, we're
+looking for the first matching S inside
+of our string here.
+So, I might just start by printing I
+just to see
+>> we're doing that. Right. Right.
+Okay. Cool. So, that seems
+>> that's printing the index.
+>> That seems right.
+>> Yeah. You're getting Are you getting
+integers?
+Okay, so we know that I equals the
+integer. So how how are we going to use
+that then?
+So if um hey stack
+bracket I equals
+>> Oh, sorry my I you think I'd be used to
+my keyword by now, but
+>> equals
+>> char
+>> char. So if hack I equals char
+>> print
+hack I
+>> no we want to return the index. Is hack
+I going to return the index?
+>> Oh print I
+>> sorry.
+>> Yeah. See I tricked you.
+>> Yeah I got you. You did.
+>> Cool. 11. Now we saw that our string was
+11 characters long. So that seems right.
+0 1 2 3 4 five 6 7 8 9 10 11
+All right, so I'm going to trip you up a
+little bit here.
+First string has multiple S's at. So we
+want to find the index of the first
+matching character in the string and
+then print that index. So what might we
+do here? because we are getting two
+indexes.
+First occurrence would be
+um
+we could do on the
+length
+up there you could do a colon one
+I believe.
+Wait, what? Why would we do that?
+Um, get one occurrence.
+So on the range when you do enumeration,
+you can do it how many times it it hits.
+If you want to do the first time, you
+can do it one time.
+Is this some place where we would put a
+counter in if we're going to be hitting
+it multiple times?
+That's something you could do. But if
+you had a counter, what would you do to
+stop it once you've hit the counter?
+>> Um,
+you return it.
+>> Yeah. Okay.
+>> Great.
+>> So, yes, we just want to return here.
+Now, since if it was a function, we
+would return. Um, since this is just a
+loop inside of a little test, I'm just
+going to use the keyword break, right?
+So, inside of a for loop, you can use
+one of probably a few, but two main
+keywords, continue or break. Um, I find
+you very rarely have a need to use them.
+But in this scenario, it's helpful to
+know that if I just want to break out of
+the process once I find my first
+iteration of something,
+but continue with code after the loop.
+Right? So if I wanted to do find the
+first occurrence in here, but then after
+that loop, I want to keep doing certain
+code, a return is going to like
+completely leave the function. So we'd
+be done. But I could use break.
+We get that first occurrence and then I
+could still
+hit this next line afterwards.
+Yeah. So, we still we still keep going.
+We don't stop running code versus
+return.
+That's just going to
+return that print statement.
+And we see the two because we printed
+the two, but we don't get that next line
+because we've left the function.
+and we're returning an output of null
+because this isn't actually a variable
+or anything. It's just printing to the
+console. Um, so some fun stuff there.
+All right, that's good.
+That one was a little bit harder.
+Could have maybe broken that one down a
+little bit more, but I'm not worried
+about it. All right. So, our first one,
+our next one is
+I'm going to give you hstack
+and then I'm going to say
+index one equals
+3
+and index 2
+equals
+I don't know seven. All right. So now we
+um the challenge is to return the slice
+of haystack between these two indexes
+and then print that slice
+or I guess I should say
+copy
+copy grab maybe.
+>> Is that including
+the three and the seven?
+Is it inclusive? So we will say
+um
+inclusive start
+exclusive
+end.
+>> Okay,
+>> great question.
+>> Exclusive.
+>> So how do we do this?
+First of all, is that hello? I I'm
+having problems seeing the type. Hey, is
+hast stack saying hello?
+>> Yeah, I messed it up. I added some stuff
+in there. It says hello worlds.
+>> All right. Worlds. Okay.
+>> With an s plural.
+>> Yeah, because that's going to determine
+where three and seven are.
+>> Yeah,
+>> in this case, we're not super worried
+about what is between three and seven. I
+just want to see how we would approach
+this. Also, we count in spaces as a
+character.
+>> Yeah, why not?
+>> Why?
+>> That would be a good followup, but for
+this, let's include it.
+>> And and I'm sorry, um Ahmad's question
+was uh is three R3 and seven included or
+are they excluded?
+>> Yeah. And I'll go ahead and rename these
+since I used a different
+>> Oh, okay. So, they're they're excluded
+then, right?
+>> Start we want to include
+>> include
+>> end. We want to exclude.
+>> Got it. Okay.
+>> So, you do like hashtag SL dots slice
+slice
+>> parentheses 3a 7.
+Does that
+>> Oh, just 3 comma 7 or is it 3:
+>> So into an issue because slice is not a
+string method.
+>> We've got split split lines, but I I
+would like us to avoid methods anyways,
+but we could we couldn't use that one,
+unfortunately.
+So, what might we do?
+I mean, you could do a
+um
+initialize a string and then do
+a four loop in range.
+Okay.
+>> And with the length, you would start at
+three
+and or
+yeah, three
+and end at seven.
+And you do an impend.
+And what are we going to do?
+So, um, we would have, um,
+um, we'll just say I'm going to say word
+would equal, um,
+append.
+>> How would you do that without append?
+>> I think it's append.
+um
+parentheses
+and then you say haystack
+or um what's the word? Where's the word?
+>> Yeah, it's Yeah. Um but how would you do
+it without using a pend?
+>> Without using a pend.
+>> Yeah.
+Let's equal pay stack.
+What? I
+>> I Okay.
+>> And then just print word at the end.
+>> I think that's right.
+>> Okay. I have to see if that's 0. One,
+two, three.
+So, yep. Three, four,
+five, six.
+>> Yeah,
+>> that and then we exclude seven. So we
+wouldn't have that does work.
+>> Yeah.
+>> Cool. Nice. Now, is there a way we can
+do that
+simpler without a for loop?
+That is correct. This is great. But I
+just I'm just curious if we can think of
+a way to do it without without that.
+>> Uh just say for um do it wait a minute
+do it with the length type statement. Um
+let's see uh print
+hack
+length
+uh parenthesis
+3
+comma 7 close parenthesis.
+You're very close.
+>> Um,
+split.
+>> Okay,
+>> we can just use a colon here.
+>> Oh,
+>> okay.
+>> So, start will be three, end will be
+seven. This slice notation, um, this is
+specific to Python. Not every coding
+language is going to have this, but you
+can do this in Python. And give it a
+starting and an ending.
+Or if we just wanted to go from a start
+to the end.
+>> So you don't need you don't use length
+at all for this.
+>> No, you would you would not have to use
+length at all.
+>> If I Yeah. If I did use length though,
+I'd be getting integers again, wouldn't
+I?
+>> Yes.
+>> All right. I don't want
+>> Actually, I'm not sure I'm not sure
+exactly what you'd be getting.
+>> An error.
+So that gives us the same thing there.
+All right. So now we've got all of
+these. And just to recap a little bit
+about what we did, I'm going to rewrite
+I'm going to rewrite this so because um
+I liked having it all together. String
+one equals
+hello
+string 2
+equals carpet I think is what we did.
+And then we had just a print if they are
+equal. One, two, three.
+So a simple equal check to make sure
+that we can see if our two strings are
+equal. Um and then same thing but equal
+in length.
+So we've got that one. Iterate through a
+string and print each character. So we
+just did for i and hstack. Check if a
+character exists within a string. Print
+true or false. So we just did char in
+hstack
+find index of first matching character
+in string print index. So we have our
+character and our index and we did
+for i in range.
+Um then we also used that that break
+keyword there. But so we did for i in
+range because range will give us the
+index. And then we did if haststack at
+that index equals character
+print the i the index. And then last but
+not least, we did the slicing. How can
+we grab a slice from within a string?
+And we looked at two different ways to
+do that.
+So now we're going to test my little
+experiment. we should be able to put all
+of those challenges together to
+to successfully do this problem without
+using the fine method. So
+the fine method did all of this for us
+pretty much wrapped up in one nice neat
+little
+little package here. But what we want to
+do is we want to iterate through
+haststack
+compare strings for equality. If needle
+equals a slice from haststack, then we
+want to
+return the index of the first character
+in the first occurrence
+uh
+or
+negative one
+if we don't find it. Right?
+So
+how would we do this?
+So we're keeping in mind we have a
+couple of different considerations here.
+We want to iterate through hstack. We're
+going to do some string checking. We
+might be using a slice and we want to
+return an index. So we want to have
+access to an index within our iteration.
+So what would we start with here?
+What do you want to test? Um, I would
+say the first thing you want to do is
+check to see if they equal. So, let's
+get that out of the way first.
+>> I love it.
+>> And now here we want to use the if
+statement, right? Because needle equals
+hack is going to return true or solve,
+true or false. So if it returns
+true
+then we don't need to move any further.
+>> We just return zero.
+>> But is that what we would do? Yes, it
+is. It is what we would do
+because they would be immediately
+identical. So yes, excellent catch. And
+then just because we talked about this
+last uh on on Wednesday as well, hay
+stack is not guaranteed to be longer
+than needle. So, I'm just going to add
+that just as a
+a free a free one for this one because
+that wasn't the point of this challenge.
+So if haystack is
+actually we want to say if
+>> less than
+>> length of haystack
+>> it's less than
+>> yeah it's less than length of needle
+then we want to return
+>> oneative
+one oops negative one yeah
+okay
+so we've confirmed now that hstack will
+be
+greater than or equal to needle and that
+they are not already identical in length
+and value
+because that's kind of implicit. If
+they're equal in value, they would also
+be in in equal in length.
+So, what would we do next?
+>> Now, we get to the good stuff.
+>> Yeah, now we're getting to the good
+stuff. Exactly. Let's put that up here.
+Next thing you want to do is you want to
+search
+transverse the
+step.
+>> Mhm. How so?
+>> You want to search for
+what? I wonder do you
+Okay, so you want to search through the
+hay stack for NE.
+Um,
+so we want to get the index.
+See, I'm going go back to my for so
+So we do four in range
+length of
+um
+Okay.
+>> We want to just check that real quick.
+>> Yeah.
+>> That should be 0. 1 2 3 4 5.
+>> Yeah. Six. Seven.
+>> So now we have the index. So now we need
+to
+splice.
+No.
+Now I need to check for
+NATO. So if
+Oh wait. So
+if
+this is the way I'm going to do it. So
+if the if the
+needle index of zero
+equals
+a stack index of i
+brackets
+which is a true statement that means
+that we found the first character.
+So let's
+>> let's check that
+looks right because we have sad but sad
+in our our example here. So we found
+needle zero is going to be s because of
+that. So we're saying
+hstack i
+equals s. hack I equals S. And then we
+can also just print out I here just to
+confirm what indexes we're expecting
+there
+as well as something else. So zero and
+six. So that looks right.
+>> Okay, perfect. That works.
+>> So that means we found the first
+occurrence.
+>> We found the first occurrence. But is it
+going to be the word?
+>> So we need to test needle
+to equal
+A sec I plus
+a stack
+I
+>> I
+plus
+plus No, no. Close it out. Wait a
+minute. Not in the brackets.
+>> Not in the brackets. Hit plus. No, no.
+bracket I
+>> Okay, sorry. It's like I plus
+>> plus
+um
+I'm trying to do a slice or split or so
+I was going to say
+um the length of hay stack the length of
+needle.
+>> Yeah, the length of needle.
+>> Length of needle. Okay.
+needle.
+>> I'm not sure I had to add one yet. So,
+so plus L.
+>> Okay.
+Um, let's check that.
+Uh, let's just check that statement. So,
+We didn't like that.
+>> So I need I need to add that many
+characters. So I would do hastack. I
+would be the beginning
+and then the end. Okay. In brackets.
+Okay. Start hastack.
+There it is. Astack
+colon. Okay. I colon
+Okay.
+Close column.
+What does that print out?
+Good.
+So we would test that needle within uh
+if it equals that that hstack state.
+>> Now it's kind of tricky here because if
+you can see
+there's another line here. You remember
+when we tested this logic here
+and we got two S's, right?
+>> Yeah.
+>> So why are we only getting one SAD when
+we know that two SADs exist? It's only
+looking at one occurrence.
+>> Now, why h how do we how would we know
+that's true if if we haven't changed our
+code except to add these two lines?
+So, everything from here
+gave us two S's
+for both of the S's. When we added this,
+we're only seeing one sad and then maybe
+a blank line.
+>> Yeah. Um Lisa, you put two co Did you
+put two colons in there? Uh where it
+said, uh h stack um let's see
+parenthesis I colon.
+Did you put two colons there or one
+colon?
+I put one
+>> just one. Okay.
+>> So, let's figure out what
+I is. And then let's also figure out
+what
+uh what N is.
+That might give us some more information
+about what's happening
+in there. All right. So, we are hitting
+it twice. So zero is i and m is three.
+That makes sense because
+sad has a length of three.
+So then we get from zero
+to three
+sad.
+And we keep iterating. We find that
+second s i equ= 6 and m is still three.
+Right? So we're saying hey stack
+from 6 to three.
+So if
+if haststack didn't have sad right there
+at the beginning, if instead hastack was
+um
+something something
+sad.
+Would this code work?
+>> Yeah.
+>> Okay, let's find out.
+So, we've got some
+because the S and the S both matched.
+So, we printed out what hay stack is
+between 0 and three sum. We found
+another S at 10. So we printed 10 to
+three and then we found another s at 20
+and we tried to print 20 to three and
+returned nothing.
+So hst
+let me look at the mess.
+So for this example here, we want the
+range, our starting range to be 20,
+which is where it starts. And then where
+do we want it to end?
+Do we want it to end at three?
+>> 20 + 3.
+>> Yeah. So we want 20,
+22,
+but not 23. But um yes it would be
+exclusive there. So what do we want to
+do here for this line?
+>> So the length um would be I + 3
+I I plus M.
+>> Yeah.
+>> So you got to be careful. This is why
+it's always good to print and then when
+you're not sure why you're getting
+nothing, you know, add more context to
+your prints. Huh?
+>> So we see some s some and sad. So we're
+now getting all occurrences where
+uh index of haststack matches the first
+character of needle s and then we're
+printing out the next
+so and so characters
+to get that slice and we find that there
+is a sad in there. So this is good. Now
+we can use this. We can move forward in
+confidence that
+haystack
+i colon i + m will return the correct
+slice. But what do we need to do next?
+Now that we can pull out these slices.
+>> Now we need to test the actual word.
+>> Can I can I just ask a really quick
+question on this one? Um why did you do
+the i plus u m? Wait, you're you're
+adding um you're adding the uh element
+in that list plus the length of needle
+for i + m is is why did you do that
+again? I know we it didn't do anything
+when we didn't have it in there. Yeah,
+but what did it do?
+>> We're doing this. So when you're using
+the slicing method that's implicit to
+Python, you have to give it a starting
+index and an ending index.
+>> So we gave it three to seven.
+>> Oh, but it went beyond that.
+>> In this first case, what we were saying
+is we were telling it to go from 10 to
+three,
+>> but it doesn't understand what to do
+with that. So it doesn't give us
+anything.
+So instead of doing 10 to three, we
+needed to do 10 to 13.
+>> 20 to 23.
+>> Okay. We're lengthening the list. We're
+lengthening the length of the string or
+the list that we had.
+>> Yeah. We're kind of we're providing a
+valid endpoint.
+>> Okay.
+Okay. So, we're taking our current
+position, which could be 0, 10, or 20
+because that's where we find that first
+S or each of these S's. And then we're
+saying, okay, we want
+from that index, we want that index plus
+three more spaces to get the next couple
+of letters. So we're saying so from 20
+plus the length of needle
+>> to make sure that we're getting the
+right amount of word or letters to
+compare.
+>> Okay, great. Thanks. Thanks for that.
+>> So now that we have that, what are we
+going to do with it?
+We're going to compare the value of
+needle to haystack. that whole line
+above there. Hey, static bracket I
+Okay.
+Um so if that equals then what we want
+to do is print
+the um
+haststack I
+or return it. I guess
+>> we want hack eye.
+>> And then you want to break out
+because that'll be your first occurrence
+or a return. Could be a return.
+>> It could be a return.
+>> So we're getting s.
+Is that what we want?
+>> No. Um the whole a um um
+I want to do return I
+>> yeah that's right because we're looking
+for integer aren't we? Yes.
+>> Oh yeah but I uh manipulated that test
+case there. Now don't forget this last
+part. we need to return that first
+character if in the first occurren
+occurrence or negative one.
+So right now we are looking for a valid
+needle in haystack and if we find it
+cool that passes we return that index
+and now we need to return a negative one
+if we don't find it.
+So, where are we going to do that?
+>> Else.
+Um, yeah, this is where I get stuck.
+>> Actually, I don't think you need else.
+All you need to do is watch your
+indentations
+and then put your return. Um, let's see.
+I guess flush with the first if.
+>> If or.
+>> Uh, if put it flush with the if the
+first if.
+>> Are we sure about that?
+Um, I think I I I think so. Um,
+>> negative one.
+>> All right. Let's see what you get.
+Okay.
+So
+for hello and ll
+we returned a negative one but it
+expected two. So let's walk through this
+test case here.
+>> Okay, maybe you should scoot it in
+again.
+>> So
+we're starting with haststack. Hstack is
+hello. needle is
+>> L
+>> L.
+So if needle zero equals haystack I the
+first place that's going to be L, right?
+So the first place that L appears is
+right there.
+>> Two position two.
+>> Yep. 0 one two. M equals needle. If
+needle equals haststack
+yada yada yada return I
+so we don't
+we don't get there because what happens
+here so we walk through it for the first
+one for i in range haystack if needle
+zero
+l
+equals hstack I
+H
+do this.
+>> Yeah.
+>> And then we're coming down to this line
+here and returning negative one.
+>> Does that make sense?
+>> Let's see. Length would be two.
+Length would be two.
+So 2 plus 2 is four.
+So we do one iteration zero
+H.
+If needle 0 L equals hastack 0 H, we
+would run this code. But since it does
+not,
+we return negative one.
+And we don't iterate anymore after that.
+>> So should the return negative one be tab
+over to the next to match up?
+>> That's what I was going to say too. Kick
+it over a notch.
+>> Yeah. Kick it over there.
+>> Technical language.
+>> There we go.
+>> That looks right.
+We're right there.
+Yay. Okay, Linda and I passed the test.
+Oh my god.
+Okay.
+So, does that make sense? So,
+when you're looking at all of these
+steps, it's kind of tricky, right?
+Because we have to take it thought by
+thought. First, we have to do the for
+loop. We have to make sure that looks
+right. Then, we have to do that first
+character check. Make sure that that
+looks right. Then we have to do the
+slicing check, make sure that that looks
+right. And then even a few more
+debugging steps after that to make sure
+we get the negative one returning
+correctly. So when you look at it in
+just these four steps, it's kind of hard
+to
+rattle it off off the top of your head,
+right?
+But if we took it and we broke it down
+in just to a couple of challenges of can
+you can you iterate through a string and
+print the character?
+>> Yes, we can.
+>> We do that. We did that.
+>> Can Can you do me a favor and copy that
+and put it in the uh what do you call
+it? The hacker rank board thing in
+Discord.
+Um
+cuz this is a really good outline and I
+want to go back and see if I can
+>> reverse engineer what we just did today.
+Just coal just you know and it would
+that would be like a little solution
+sheet.
+>> So if you could like paste that in the
+hacker rank thing.
+>> Yeah. I'm just make sure I copied all
+the right stuff.
+I think turtle turtle. Yeah, turtle
+work. I agree with you.
+>> Um
+so, so yeah, so we can iterate through
+and we can check if uh print out each
+character. Um we know how to do the
+first character check as well as a
+string check. Um we know how to grab the
+first character,
+find the index of the first matching
+character in a string and print its
+index. We did that correctly. And then
+we figured out the return negative 1 bit
+as well. So individually we were able to
+do all of the substeps that were
+required to hit this problem if they
+were broken out into individual pieces.
+But then the trick is to look at a
+problem, see these four lines like this
+and determine what those little mini
+micro challenges are, right? Like what
+are those substeps to say
+go through the haystack, compare the
+string for equality,
+pull the slice out correctly and compare
+it to needle, return that index or
+negative one. like there are a bunch of
+little micro challenges that we pulled
+out and to be able to just look at this
+problem and say okay what is our highle
+pseudo code and then what are the little
+bits of information that I need to check
+and do along the way because I wouldn't
+say that for every problem you should be
+thinking about it as in like what are
+these little simplified little quick
+things that I can do that's more of just
+a process of I'm going I'm creating a
+for loop. I need access to the index. Do
+that. Print I. Print haststack. Okay,
+great. I can do that. How am I going to
+check for if needle in haystack? If
+needle is in haystack. Well, we can do
+that first character check. Great. We
+did that. And then kind of just like
+what we did, we did it step by step. We
+printed out things. We we printed out
+the statements to make sure that they
+were working as we expected. Um we added
+extra print statements to help us debug
+when we were seeing something we weren't
+expecting to see.
+Um,
+so this process of just doing it like
+step by step, adding debugging steps,
+making assumptions, questioning those
+assumptions, testing those assumptions,
+that process kind of looks like this if
+you put
+if you put it into this language, right?
+If we put it into language of what are
+these little mini challenges, but it's a
+lot more
+it flows a lot differently. like it's a
+little bit more of a step-by-step
+problem solving question and answer
+instead of here are the five things that
+I specifically need to do at each any
+given step and I'm going to merge them
+all into one little for loop block
+there. It's kind of a different approach
+but in reality that's all that they are
+right is it is the little micro
+challenges. Um so does that make sense?
+>> Why do we look at it like that?
+Yeah, kind of.
+>> Yes, kind of. Okay,
+so these steps right here are going to
+be really, especially with anything
+revolving around strings, right?
+Strings, string comparison or even
+strings within lists.
+These steps that we did here are going
+to be things that can be shared among a
+lot of problems. So that's why it's good
+to know how to do them. And then the
+next challenge is being able to string
+them together in the right way, in the
+right order to solve a problem or to
+even in some cases
+create methods, right?
+>> I I I agree. I mean, the first first
+example that comes to mind is email
+address. You break that down and once
+you hit the first at statement and then
+you got to pull the company out and then
+the com or.org or whatever. So, you got
+to test for those values to make sure
+it's legit. So, um there that's this is
+a perfect example of what how you would
+use this type of process or is testing
+it to see if a email address is valid.
+>> Exactly. So, validation code. Exactly.
+Um so, we are quite a bit over time. I
+didn't mean to do that.
+But before we jump out of here, I wanted
+to point out a few things. So that code
+that we did is basically exactly how the
+find method works for for our strings.
+Where is
+>> find?
+Yep. Um except find is a little bit more
+complex actually because you can provide
+it the
+the start and end indexes. But we we did
+that too. We did can you slice a string
+between two indexes? So that's kind of
+the same thing.
+>> Slice. What is that? C or
+>> sorry, what
+>> slices? Is it C or Java?
+>> I think it's JavaScript.
+>> Yeah.
+>> Um, but there are two other similar
+>> begins with
+>> methods for for find. Um, that's not the
+one I was thinking about for this
+example. One is count. So returns the
+number of time a specified value occurs.
+So that's something that we kind of even
+tested out as we were testing out our
+own code. How many times does apple
+appear in a string? So visually we can
+see that it appears potentially twice.
+Apple and apple. We did the same thing
+with sad. We found that sad equal uh was
+occurred two times in in our string.
+Um so can you do that? And then
+similarly is
+what's the other one I had in mind? Uh
+stream replace.
+>> So replace takes our example that we did
+but kind of advances it. Find the
+specified phrase.
+So find bananas in a string and then
+replace it with apples. So like kind of
+finding the needle in the hay stack and
+then putting a pencil where the the
+needle was.
+>> Does that does that return a index? I
+mean what does
+>> in this case it would return the string?
+Actually it doesn't return anything. It
+modifies
+actually it does look like it returns
+print x I like apples. Yeah. Okay. Yeah.
+>> So, it does tell you here this method
+replaces a specified string. And then
+there's that note here. All occurrences
+of the specified phrase will be replaced
+if nothing else is specified.
+Um,
+it doesn't say anything about the return
+though. I would expect it to tell us
+that it returns, not just replaces. So,
+that's that's a good qu that's a good
+thing to point out there. Um there is
+another bit here where you can add in a
+count. So actually Linda asked about
+this about could we add a count tracker.
+Um so if you add a count for this
+parameter it will specify how many
+replaces you want to occur.
+So in this case in the original string
+we want to replace one with three. So
+there's one here, one here and one here.
+So it replaces that with three, three
+and three. But if I add the count
+parameter and change and make sure I
+only want to do two replaces instead of
+three replaces,
+we replace the first one, the second
+one, but then we leave that third one
+unswitched.
+>> Does that make sense?
+>> Yep. Mhm.
+>> So these two I think would be are
+they're very similar to what we just did
+but they have different returns, right?
+They do different output. They do
+different manipulation and they return
+different outputs. Um so on Wednesday we
+are going to look at both of those. And
+my challenge to you in between now and
+then is to see if you can replicate
+this behavior without using the method
+both for replace and for count.
+And I'm going to go back to
+I'll paste that into the chat here. Here
+is our W3 schools
+Python string methods.
+And
+you can even do this in their little
+try-yourself editor.
+Just comment that out,
+right? And then just write your own
+write my own code.
+um and see if you can uh work that out
+how the the count function works.
+And the same thing with replace. So
+that's my little challenge and I'll add
+that to the Discord channel instructions
+as well.
+Does that make sense? Anyone have any
+questions?
+>> So this is homework.
+>> Yes, this is homework.
+I like to give problems as homework on
+Sundays, but since we didn't cover any
+problems today, this is our our
+homework.
+Any thoughts or any questions before we
+close out today?
+>> Yeah, I just have a quick question. Um,
+can you explain what's in the
+parenthesis? Like when you put return
+or you like does the parenthesis with a
+length always return the index?
+>> Wait, sorry. Um,
+>> when you said we have something in
+parenthesis
+>> something in parenthesis. Can you give
+me an example?
+>> I think you had it up, but I don't know
+if you still have it up or you closed it
+all.
+>> I can pull it back up. Okay.
+>> Do you even need parenthesis when you
+have return? I don't think you do. Do
+you?
+>> Not for return. Not for return.
+>> Not for return. No, you need it for
+print but not for return.
+>> Yeah.
+>> Yeah.
+>> Like if needle in brackets zero is that
+means needle zero index zero.
+>> You cut out there a little bit for me.
+If needle bracket zero, what what did
+you say?
+>> What does that mean? Like uh index zero.
+>> Yes.
+>> And how did we know that was an index?
+Like how did we tell the system that
+that was the index?
+Is it always like an index
+>> when you put in brackets like that?
+>> Yes. So for Python specifically
+with both strings and lists you can
+access
+um those are both uh enumeratable
+objects. So you can enumerate a string
+you can enumerate or iterate through a
+list um and each of those values that
+are contained within are indexed.
+So if I wanted to find
+You would yes you would use bracket
+notation to find oops um to access the
+index and if I wanted to find the index
+uh uh the the character at the index of
+two within needle
+for example
+what have I done
+index out of range. Oh because of one of
+the test cases here. Well, get me out of
+that test case then.
+There we go. So, for
+sad,
+that's going to be D 0 1 2.
+And for test case 2,
+well, it's returning a lot there. Um,
+needle is zero.
+one, two. So that's going to be this e
+specifically. Um, but yeah, you can
+access any character within a string
+based on its index position. And the
+same thing if this was a list, you could
+do the same thing. Um,
+and you would use that bracket notation.
+Yep.
+>> Okay,
+thank you.
+That makes sense.
+>> And that's only for Python. um
+but in a lot of other languages as well
+but if you're still in the early phases
+of modu you you'll learn that part.
+>> Okay.
+>> Uh any other questions?
+>> Okay, great. I'm going to post that
+homework into the weekly Discord
+channel. Um, and I'll see everyone on
+Wednesday.
+>> And also what we went over, you know,
+what we worked through.
+>> Yep. I'm about to I'm gonna print I'll
+post that right now. So
+>> that would really be helpful.
+>> Yeah. Um, so try it. If you can try at
+least one of them, count or replace, and
+then on Wednesday, we'll kind of take
+those step by step.
+All right. Have a great rest of your
+day, everyone. You

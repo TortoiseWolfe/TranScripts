@@ -1,0 +1,1274 @@
+Hello. So, this is a makeup session that
+I've been long overdue. Um, I promised
+everyone that we would go over
+implementing two pointers and binary
+search in a specific problem, the ice
+cream parlor problem. Um, similar to a
+problem we had done before, which we
+will go over shortly. So, we never got
+to the coding portion of it cuz I wanted
+to give everyone the opportunity to try
+it out for themselves, try out a variety
+of different solutions. And it's been a
+few weeks. So, I think everyone's had
+enough time. If you haven't, you can
+pause the video, go to try this problem.
+It is hacker rank ice cream parlor. Um,
+or you can search for leak code to some
+problem. They're different. They're the
+same problem, but just different syntax
+lingo around it, but they do the same
+thing. Um, so without further ado, let's
+jump right on in.
+Okay,
+so I'm going to use the ice cream parlor
+one because that's the one we talked
+about
+most recently.
+And just to recap, we'll go over it from
+the top. So,
+two friends like to pull money and go to
+the ice cream parlor. They always choose
+two distinct flavors and they spend all
+of their money.
+Um, let me open up my windows here real
+quick.
+They choose always choose two distinct
+flavors and they always spend their
+money. So, that's that first thing we
+can look at. Two distinct flavors and
+they spend all their money. Um, so if I
+was looking for keywords, that would be
+one of the keywords I'd be looking for.
+Then we have given a list of prices or
+the flavors of ice cream, select the two
+that will cost all of the money they
+have. All right, so they provide us an
+example. M= 6, cost equals 1 3 4 5 6. So
+the two flavors that cost 1 and five
+meet the criteria using one base
+indexing. So this one is is where it
+might be a little bit different from the
+other problem because it's using one
+base indexing. So that throws things off
+a smidge but not too much. They are at
+indices one and four. So one is one and
+then 2 3 4 is five. So you add those
+together to get six which is all their
+money. So that's where we kind of see
+again that two sum iteration coming back
+together in a a list of numbers
+basically a list of integers what two
+numbers distinct will add up to the
+provided sum that they want you to find.
+So given six what two numbers in the
+array or in the list will add up to that
+sum.
+So complete the ice cream parlor
+function in the editor below.
+We are given m the amount of money they
+have to spend and cost of n which is the
+cost of each flavor of ice cream. So
+that follows the example they have
+provided up here. And then we have input
+format.
+input format. So the first line contains
+an integer t and actually I'm going to
+scroll down and
+I'm going to run code so I can see see
+what our inputs are. Okay, so here are
+two test cases. Here's our input.
+First line in a given oops first line
+contains integer t the number of trips
+to the ice cream parlor and the next t
+set of lines describes each visit. So
+this is something that they do sometimes
+which I don't love but once you see it
+once you kind of get your head wrapped
+around it. Basically this is like we're
+given these test cases right and then
+they kind of wrap up multiple test cases
+inside of it. So you can kind of treat
+this as so we're given two that's going
+to tell us the amount of test cases that
+were given and then each trip we're
+given m the amount of money they had
+pulled. So, we're looking for the sum of
+four, the integer in, the number of
+flavors offered at the at the time. Um,
+which they do basically anytime they're
+going to give you a list, the line above
+the list is going to tell you the length
+of that list. So, we're given m, the
+number we're looking for, five, the
+length of the list that we're given, and
+then here's our list that we're given, 1
+14532. So, we'll be looking for two
+numbers in here that add up to four. And
+then you see a similar set of numbers
+just below it. So this is test case one
+lines 2 3 4. And then we have test case
+2 lines 5 through 7.
+So same thing we're looking for the
+amount of four. We're given a list with
+a length of four and then we have 2 2 4
+and three.
+So, even just from this example, uh kind
+of backing to the original premise here,
+they say two distinct flavors, but they
+don't say two unique flavors. Um, and so
+I think we're kind of seeing that first
+little bit come out here. So, the answer
+for this one, we're looking for four,
+right? They want two values. So, we
+can't use just four and call it good,
+right? But you do see that we have two
+twos. And I think the same thing would
+apply in this first case right here. Um,
+regardless of what these other numbers
+are, if you had two in here and you
+said, "All right, at index, what is
+this? 1 2 3 4 5." At index 5, I'm going
+to say two, and I'm just going to return
+that same index twice because I can add
+two and two to equal four. That's not
+going to work. They want two separate
+distinct indexes.
+So those numbers that add up can be the
+same but they have to be at different
+indexes. Now that's something I remember
+talking about from the two sum problem
+that it will also apply here. Um but the
+way that they describe that is always
+I don't they use they use specific words
+and sometimes you kind of have to make
+assumptions about how the problem is
+going to play out. distinct is a clue,
+but I wouldn't say that you would gather
+all of those things that we just
+discussed based on just that. You could
+make some assumptions and write them in
+the code, but we'll get to that.
+All right, so
+again, they're giving us two test cases.
+It doesn't change how we're going to
+approach the problem. We don't have to
+do anything special to handle these two
+test cases. We basically can just treat
+it as if we're given one single test
+case. It's going to call our function.
+It's going to provide us m. It's going
+to provide us the cost array. And then
+it's going to do it again. It's just
+that we're seeing it bundled up into
+one. I don't know why they do this, but
+they do it.
+So, yep. So, inspace integers donating
+the cost of flavors cost 1 2 3 4. So,
+that is just, you know, just like this
+example.
+And then we have
+note the index within the cost array
+represents oh I've done something. Okay.
+The index within the cost array
+represents the flavor of the ice cream
+purchase. Okay. So this is completely
+useless nonsense. We don't need that
+information at all.
+And then just to check check our
+constraints for any extra information
+that we might need or use. So the number
+of test cases we might be receiving,
+which again don't really worry about
+this, but you might be receiving one to
+50 test cases. So they might have like a
+bunch of different versions in here.
+That's really if you get a test case
+that you're failing and you want to try
+and break it down, that will help you if
+you understand that these are all test
+cases wrapped up into this one test
+case. That'll help you kind of figure
+out, all right, well, which one of those
+is failing?
+M which is the sum that we'll be looking
+for can be between two and 10 to the 4th
+which I believe is a th00and 10 * 10 is
+100
+wait 10 * 10 is 100 * 10 is 1,00 10,000
+10 4 10,000 so m the sum that we're
+looking for can be can be between 2 and
+10,000
+n which is the length of the array that
+we're given can also will be between 2
+and 10,000. But it's good here that
+we're not getting an empty array. So we
+can always assume that at least two
+values will be given
+that can sum that can sum up. Um and
+then the values of each of these. So
+cost I would be you know 1 3 4 5 6. The
+values inside the cost array each of
+those values can be
+1 to 10,000.
+And we've talked about this in a
+previous m I can't remember exactly what
+these symbols mean, but what we
+ultimately decided is that any number
+between 1 and n, which in this case is 2
+to 10 to the
+2 to 10,000. Jesus um 2 to 2,00 uh cos i
+can also be any of those numbers. So if
+our length is 9,000, then the values
+inside the array will be between
+anywhere between 1 and 9,000. I don't
+know why they add this extra
+information. They don't need to. I think
+they're just kind of telling us that
+whatever the max value of the array that
+we're given is will be the max value
+that we will see inside the array. And
+so an example of that is that the length
+of this array is five. So they're saying
+that we will only receive numbers
+between 1 and five. So 1 4 3 2 and five.
+Like you won't get anything larger than
+five. That's just an assumption
+and I'm already wrong. So
+1 2 3 4 5 6. So we're getting nine
+there. So then I don't know why they
+tell us this because it's completely
+useless information then. So we can just
+assume that cosai will also be any
+number between 1 and 10,000.
+But we made an assumption and we tested
+it out and we were able to verify that
+it was false. So no harm there.
+I don't know why they have this. That's
+going to drive me crazy. So here's where
+we get to the actual useful information
+that is hidden within constraints, which
+is there will always be a unique
+solution. Meaning that we will always
+have two values that meet the sum value.
+So if we're given six,
+we're always going to find two values in
+this array that sum up to six. And that
+also is kind of further proven, I think,
+by having um
+having the minimum amount of values,
+like the minimum length of our array
+also being two, meaning we'll always
+have at least two values to sum. So if
+we have only two values, those two
+values are going to be the numbers that
+sum up to m and they're not going to not
+sum up to m. Basically, we're always
+going to get something that sums up.
+And again, if you weren't sure about
+that, we'll call that an assumption.
+We'll test it out, right?
+So this is all stuff that we've gone
+over like three or four times now in
+previous lessons. I just want everyone
+to be on the same page when we start
+diving into the code implementation.
+Um, so let's go ahead and jump to that.
+So this was from our most recent
+attempt. What I always do when I get a
+problem is just print everything out
+from the parameters just to make sure
+that it matches what I believe
+I understand about the in the test
+cases.
+So, in this case, oh, I actually have
+I have some code in here. So, we're just
+going to comment that out because it
+might throw us off. One, two, three.
+One, two, three.
+Come on.
+Oh, I'm using the I'm using back text.
+I'm supposed to be using
+There we go. Block comment
+using the single quote.
+I do have a empty return in here based
+off of the return returns an integer
+array containing two values. That's what
+the little two inside the bracket means.
+So we see the int with the brackets
+which means we're expecting an integer
+array and then they give us the two
+meaning they expect only they expect an
+an integer array but they only expect
+two values. And those two values
+represent the indices of the
+items in the cost array that sum up to
+our m value. So I'm just returning an
+empty array because that will help me
+avoid some errors that they always have
+when you don't return anything.
+Okay, so this makes sense then. So we
+have our two test cases that they give
+us. M of 4 and an array containing 1
+14532
+M of 4 1 4532 and then our second test
+case which is M of 4 and array of 2243
+m of four array of 2243 and you see that
+they're printed on separate lines
+because our function
+was called twice. So it was called once
+with the first test case. We printed out
+those values, returned nothing. And then
+it called it again with the new test
+case. We printed out those values and
+then returned nothing.
+Output nothing. Two lines, two empty
+lines. And here's what they expected.
+And just kind of gut checking that one.
+Expected I'll put one and four.
+Oh, indexes. I was like, wait a second.
+Indexes of one and four. So, one base
+indexing here for the problem. So, one
+and then 1 2 3 4 3. So, that makes
+sense. 1 and 3 equal 4. And then indexes
+one
+there. Two and two. So, 1 and two. 2 + 2
+equals 4. So, that matches everything
+that we kind of talked about so far.
+All right.
+So then the next thing that we like to
+do or that I recommend everyone do is
+just take this problem and put it into
+your own words just to make sure that
+you have a grasp of what is expected of
+you.
+So we are given m which represents the
+money to spend
+or the value sum
+the sum value we
+are looking for.
+I do this every time. I'll write it in
+my own words during the meeting and then
+I'll read it again and be like I don't
+like that. I'm going to rewrite that.
+Which is good.
+So m will be at least a value of two.
+Probably always going to spend money. So
+that was me making that assumption that
+we're always going to have a sum that
+we're going to have to find and two
+values that will add up to that sum. So
+given cost array which represents
+potential ice cream flavors to buy.
+Cost will always have at least two ice
+cream flavors. Again the two values that
+will add up to the sum assumption. We're
+expecting to always return two values.
+aka we will always find a sum of two
+numbers that add up to n and I stand by
+that assumption having worked on this
+problem three times. So we can have
+repeating numbers and we saw that in the
+test cases. Uh so two and two
+that was something that we noticed in
+the examples I think. Yeah the examples
+in the problem are also spelled out
+right here. I did skip this at the
+bottom where it explained it gave us
+more examples and it explained those
+examples. When you are working on a
+problem, don't skip this. Read the
+entire problem. Um I only skipped it
+because we've worked on this problem
+several times now in previous sessions.
+But when you are working on a problem,
+especially for the first time, read the
+whole problem. Probably read it two or
+three times. Make sure you understand
+it. Then start pulling items out that
+you are writing in your own words. Just
+wanted to add that caveat.
+All right. So, two numbers and then we
+can have repeating numbers. That doesn't
+really affect anything for us. Um, just
+knowing that we can do that. And then
+this is from the last time where I
+printed off those things.
+Okay.
+So, this is where we got into our action
+plan.
+Action plan.
+pseudo code
+H. So this was a approach that was
+discussed in a previous meeting. So
+we're given M. Find two values um by the
+group. The group came up with this plan.
+Find two values in the cost array that's
+up to M. We can always expect to find
+those two values knowing that when
+recommended we use enumerate which will
+allow us to use the one base indexing
+which is a great idea and then we
+printed those values out. So let's do
+that.
+So, enumerate, if you weren't sure, you
+could just Google that.
+Enumerate Python.
+W3 Schools has a page on it, which is
+promising.
+So, you
+have the enumerate function and you pass
+it an iterable object and a start. an
+iterable object like a list um and a
+number defining the start number to
+enumerate default zero. So this is
+basically saying what index do you want
+to label like at the start when you
+start enumerating when you start
+sequencing through this object what
+number do you want to use as your
+starting point? Default is zero which
+matches the default index position of
+any list or object. Um,
+but you can change that starting index.
+And that's kind of that's kind of it.
+You could see how it works if you wanted
+to.
+And here they're just saying, "All
+right, give us this." It provides
+this here, which gives you an index
+assigned to a string. So 012. And then
+if we set this to start at three, for
+example,
+3, four, five. So we could set it to
+whatever we want,
+but for this problem, we're going to set
+it to
+one because that's what we want. We want
+one base indexing.
+And having run that,
+our first test case is 14532.
+So we are expecting okay index of one
+value of one index 2 3 4 5 with values
+from the array 4 5 3 2 that matches what
+I'm expecting and then we have the
+second test case I took out the print so
+you can't really see where they deviate
+but I remember that the first one was
+five and the second one was four in
+length so 1 2 3 4 length values 2 2 4 3
+that matches is what I'm expecting for
+both of those. So that is a great way to
+get that
+zerobased indexing and we
+tested that out. You always want to test
+those things out. Now
+again, we've talked about this several
+times. Today's focus is going to be on
+utilizing binary search as well as
+two pointers as an approach to solving
+this problem. The brute force way which
+we've covered before is just a simple
+nested loop. And if I just blazed
+through that example here. So 4J and
+range.
+I'm switching it up for the second one
+and using range because it's simpler for
+J and range.
+um
+index
+plus button plus one to
+length of cost.
+Oops, forgot
+this there. Okay,
+so in this outer loop, we're just doing
+that one.
+We're printing out those values
+standardly for each index. What is the
+value in the list? And then in this
+second one, what we're doing is that
+we're starting from the second value. So
+in our example here,
+I'm going to take this example here.
+I just said I wasn't going to go over
+this, but we'll go over it. Okay. So
+what we did first is we just printed out
+all of these at the index that we signed
+1 2 3 4 5.
+By adding the second loop here, what we
+can do is compare each index to each
+other index and test combinations of
+pairs. So this nested loop of squared
+solution allows you to find every
+distinct combination of two values to
+test for the sum. um pretty standard.
+We've used it in a lot of different
+applications for a lot of different use
+cases across many problems. Get familiar
+with it. It's one of the best ways to
+brute force problems of this nature. Uh
+so what we would do is that this outer
+loop starts here and then the inner loop
+will go and start from that index + 1 to
+the end of the array or list. And we'll
+do 1 + 4, 1 + 5, 1 + 3, 1 + 2, and then
+so on and so forth. We'll iterate the i,
+iterate the i or index here, do the same
+thing. So when we're at this in the
+outer loop, in the inner loop, we're
+doing five and three, five and two until
+we find what we're looking for or until
+we've run through all the options.
+So in this case what we're looking for
+if
+value
+because what enumerate allows us to do
+is separate the index out.
+So that's what we saw we were printing
+out index and value. So we were able to
+say okay the index will be one and two
+and three and four and five and the
+value will be 1 four 5 3 and two. So
+that was handy. So if value plus and
+then I switched to range just because
+because I wanted to but when we use a
+range we're only using J which is the
+index. So the index would be two to the
+end in that first iteration. So we need
+to do cost at
+the
+J index.
+And
+just to make sure that's what I'm
+expecting.
+And I'll do index here as well.
+So at index one we have one and
+five.
+Ah because
+so range is going to use
+cost. Okay. Okay. I understand what's
+happening here. When we're accessing
+cost, you're going to access based on a
+zerobased index.
+So
+I'm actually not going to do this for
+the sake of clarity. Um because we've
+changed from one uh zero index to
+ah
+actually no I do want to keep that there
+I think this will be fine. So we've
+changed the in here we changed it to one
+index for these values. Uh so the index
+is plus one from what we want it but
+that should still work for us because
+that's just defining our starting point.
+We don't use it any other place.
+But that means that when we start this
+one, this index is one and then we're
+saying index of two
+is where we start. But when we put cost
+uh at index of two, cost is using zero
+base indexing. So it's saying 0 1 2.
+This is why we print. This is why we
+test our assumptions.
+So we should still be able to use range
+just fine there. So one is the index.
+We're comparing values one and four, one
+and five, one and three, one and two.
+And then we increment the outer one to
+two index. And we're doing four and
+five. Yep, that works. And we don't get
+any out of range errors. So that looks
+good. I just want to go to the end
+there. So our last index here before it
+jumps to the next test case is three and
+two.
+Three and two. So that looks good. That
+will work.
+So those are the values that we're
+expecting. So if these two
+Oh, let me
+Would that work? Oh, it did work. Cool.
+All right. So if these two added up
+equal
+equal m
+then we want to return
+index which is already appropriately
+onebased and they want that in an array.
+So
+index and then they also want J
+which would be our second index position
+but we want it one based. It's currently
+zero base as we just learned with that
+whole piece there. So we will add plus
+one
+and return. Cool. That passes.
+Awesome. So that passes all of our test
+cases. They only gave us four.
+So that must be why this one is
+considered easy and the two sum one is
+considered medium maybe I think or at
+least it should be but they only gave us
+a few test cases which isn't bad at all.
+Um, so this would be the brute force.
+And the reason it's brute force, it has
+the worst
+ complexity. We have a loop nested
+inside of a loop. So big O on that
+is going to be
+um and we can actually do the
+calculation here. So for each we're
+given m and cost. So our inputs are a
+list and m a single value. and we go
+through each value in cost. So that's
+going to be an O of N calculation where
+a value we're kind of going through
+every value in the input that we're
+given. Um or at least we're going in a
+set number of
+I don't
+that's kind of the the high high level
+of it. And then that's O of N. And then
+inside of that O of N we have the same
+thing. We're going through every value
+of cost again or even if it's i plus one
+it's still it's still an o calculation
+because it for as the size of cost grows
+from you know length of five to length
+of 10,000 we're still doing this will
+grow in a linear fashion which is O of N
+it's linear um so we have a linear O of
+N loop inside of a linear O of N loop So
+for each O of N calculation, we're doing
+a sub O of N calculation. You multiply
+those, you get
+O of N.
+Where's it at?
+I need my There it is. O of N squ.
+I'm fighting the urge to bring up the
+graph because I've already spent 30
+minutes here, but
+it's pretty bad. That's pretty bad
+performance-wise, but it passed all the
+test cases, so that's great.
+So, then we talk about the more
+efficient approaches,
+which
+would be the two pointer and binary
+search. Now, the reason that we didn't
+um I am going to do it. I'm going to
+pull up the graph, you guys.
+Big O graph.
+So O squ right there.
+O of N is there.
+So it's kind of it's as far as like this
+is considered the worst runtime. Oven
+squared is, you know, it's kind of up
+there. Um,
+so when we're thinking about the two
+other approaches using binary search and
+two pointers, one of the considerations
+that we talked about last time, again,
+this is just refresher if you want to
+know more about
+the logic that we talked about last
+time, we talked about the big O
+complexity ad nauseium in the previous
+sessions.
+For this to work, we have to use sorted
+values. Binary search needs the inputs
+to be sorted for it to work. Because
+what you're doing is that you're taking
+a sorted list of values like a phone
+book. You're cutting it in half and
+you're saying, "All right, is the value
+I'm looking for greater than or less
+than the value at this page." So, you
+need all the values to be sorted to do
+that comparison. If I'm looking for a J
+name and it's unsorted, how am I going
+to know if the X name comes before or
+after J? So that's just kind of one of
+the prerequisites for binary search is
+that it is sorted.
+And then for two pointers,
+for two pointers, the data set does not
+have to be sorted. And we looked at a
+problem not too long ago that did where
+we used two pointers and the data set
+was not sorted. And I think I have that
+somewhere. Let me see.
+I want to say it was like greatest
+surface area or
+missing. No, it's not
+container with most water. So, this was
+a lead code problem. Container with most
+water. And to find the container with
+most water, there were a few approaches
+that you could take, but the one that
+was most optimized was two pointers
+where you're coming at it from both
+sides using two different indexes and
+you're looking for the two values that
+match what you want. Um, and we didn't
+need to sort it at that data set because
+it made sense. We had conditions that we
+could use to increment this side or
+decrement this side to find the values
+that we want. In this case, we can't do
+that because if the numbers aren't
+sorted, we need kind of the high level
+of this is that if we're looking for a
+specific number and you have a data set
+of numbers, the best way to determine if
+you are coming at it from two index
+points, two index directions,
+if I add an item from this end and an
+item from this end, and it is greater
+than the sum we're looking for,
+What condition do I use to determine if
+I increment this side or decrement this
+side? If the values aren't sorted, it's
+chaos. You kind of just choose at
+random. And maybe the solution works,
+maybe it doesn't. But if they are
+sorted, we can say, all right, if I plus
+J is greater than the sum we're looking
+for,
+then the items at this end, the greater
+end, are going to be higher numbers. So
+we can decrement that to smaller numbers
+and see if that gives us a sol smaller
+sum value to find the number that we're
+looking for. So in this specific case we
+have to sort to use the twopointer
+approach. I still think that would be
+worthwhile to do if you're learning
+because twop pointer is pretty efficient
+here. It's more efficient than O of N
+squ. Two pointers on its own is an O of
+N solution. Pretty streamlined. pretty
+good
+O of N. The problem though is that we
+have to sort and all of the sorting um
+methods that we would use for Python are
+going to be right here. So these
+solutions when we're using binary search
+and when we're using two pointer are
+only going to be marginally better than
+O of N squared. But as we've talked
+about in the last sessions, I think it's
+still good to get that practice of using
+these methods, using these approaches so
+that you can grow your knowledge set and
+grow the different kinds of problems
+that you can solve. So even though it
+didn't work out to be the best solution
+for this problem, um, and you can look
+at the previous sessions to see what is
+the best solution for this problem, it's
+still good to learn them and know how to
+implement them. And it is marginally
+better. So it's not a waste of time by
+any means.
+So, let's I spent a long time going over
+that again, but we'll just kind of dive
+in right now and
+jump into it. Discord's blowing up for
+me.
+So, we'll separate this with binary
+search
+search
+and
+to pointer.
+Now, as we just discussed, the
+prerequisite to both of these
+for this specific problem is having a
+sorted data set. So, I'm just going to
+keep it simple and I'm just going to do
+cost dots sort.
+And I'm going to print cost
+to make sure that it is sorted. And then
+also when you're working with a
+um
+a method and you're not sure if you
+can't quite remember if you need to save
+it to a new variable or if you can just
+run it on the data set itself, always
+check the help text, this one is not
+super helpful.
+But it does tell you right here that it
+has a return type of none, which means
+that if you tried to save it to a
+variable, it would save none to it,
+which means which kind of indicates,
+it's kind of a hint there, that it's
+it's manipulating the original data
+structure. But you could also just
+Google Python sort method. I feel like
+leak code has pretty good
+help text. No, actually no, it doesn't.
+I don't think lead code gives you any
+help text. I feel like hacker rank
+usually has good help text but for some
+reason it didn't here. So the sort
+method sorts the list by default. You
+can also make a function. Um where does
+it say it?
+It doesn't tell you here but you can see
+by their examples that they are running
+it on
+the list item itself. They're not saving
+it to a new thing.
+But if we read into the actual sorting
+stuff in here,
+it does tell you, yeah, modifies the
+list in place.
+So if you look at the actual Python
+information, the list.sort method, it
+tells you that it will modify in place
+and return none. So if you wanted to
+know how the sort worked, you could use
+that there. But we'll print that. So,
+we'll just run it.
+1 2 3 4 5. Yep, that looks sorted to me.
+And these were not sorted before. Double
+check.
+3 4 5 6 7 9 1 3 4 6 8 and 1 2.
+So, that all looks good.
+So, those are all sorted
+and we'll dive in. Also, hello Eric.
+Eric just joined me. I've been talking
+to myself this whole time, Eric. So,
+it's been kind of a new experience.
+>> That's awful. Why was someone missed out
+on this amazing problem?
+>> Well, let's record it so it'll show up
+eventually.
+>> Oh, gotcha. Gotcha. All right.
+>> All right. So, we'll start with I
+actually feel like two pointer is easier
+to start with because it is just an O of
+N solution.
+So, Eric, we're just going through the
+ice cream parlor problem. I spent the
+last like 45 minutes talking about it.
+Um, we did a brute force solution using
+two nested loops.
+The idea being just again that we're
+given a value that we're looking for
+that can be summed
+Um, so we're looking for the two values
+in a a list that sum up to m, a
+parameter that we're given.
+>> Gotcha.
+Looks good.
+>> Oh, I lost my place.
+>> Okay. So, yeah, I think you should start
+with
+two pointers. So,
+some people use left and right. For me,
+it's just easier to do
+I
+and J.
+But you know what? Actually, I think I
+will I'll stretch myself. So left equals
+0,
+right equals
+len of cost
+and
+pretty standard for two pointer while I
+is less than
+less than less than J.
+perform some execution.
+So we know what we're already looking
+for. Similar to
+binary search, we have a truth case. So
+the value if true is what we want. And
+then we'll have two of our condition
+cases of what changes the indexes of the
+loop. So our truth case is
+or truthy case I think Dr. Emily says is
+cost of
+I
+plus
+J.
+If that's what I need there. If cos of i
+plus cos of j equals me and this eagle
+thing have an issue equals m then
+return. So, similar to our brute force
+approach, if we find the two values that
+add up to m, we just want to return them
+at those indexes in a in a list.
+And
+really, I Yes, it is my Spanish
+keyboard.
+I don't remember. Yeah, on on an English
+keyboard, you can just press the equal
+sign and it just goes through. On mine,
+I have to press shift to get to the
+equal sign and I'm just like I'm too
+used to it.
+All right. What is it like here?
+What's going on?
+Oh,
+I'm so again I'm so used to using I and
+J cost of
+left and right.
+All right. So again, with the two
+pointers, we're deciding which one to
+increment. Um,
+and
+in this case, if both of the end points
+equal m, great, we found them already.
+We found their two inputs. It's the
+sorted lowest number and the sorted
+highest number. So we'll return an array
+with those two index points left and
+right keeping in mind that they want
+this one indexed. So in the brute force
+case we just used enumerate and then for
+that J and range we just did the J +
+one. So we'll do the same thing here.
+We'll do left
++ one
+and right + one.
+So this is if everything went perfectly,
+we had no problems in the first
+iteration.
+If our two values equal the value that
+we're looking for,
+then we'll return them at that index at
+its one base.
+So if
+that isn't the case and it doesn't
+because we've now sorted, we can
+determine what condition to increment
+the i/left
+or decrement the right side. And because
+it's sorted, so what we'll do, as I kind
+of explained a little bit before, is
+that if left plus right is greater than
+the sum we're looking for, then that
+means that our numbers are too big. So
+we need to move down the right side so
+that we have smaller numbers to get us
+closer to that potential sum value. If
+we did left plus right and it was less
+than m, then that means that we need to
+increment the right side
+or potentially increment the left side
+um
+to get us closer to that m value. So
+if left
+just going to reuse this
+Oh, I don't know why it's highlighting
+that. That's odd.
+So, if the values are greater than m,
+then we want to
+increment the nope, we want to
+decrement. So, we'll
+wait. Does that make sense?
+I I know it does, but do we want to
+decrement the right side or increment?
+I think that makes sense.
+Sorry. Yes, Eric. I am doing the tech
+interview session
+at
+uh a few hours from now
+as well. I'm just doing this in addition
+to
+so if left plus right I think what I
+want to do actually is that I'll assume
+that maybe
+uh actually no I'm going to keep it this
+way. So if they are greater than m then
+I'm going to decrement
+the right side
+equals
+right minus one
+else
+left equals
+oh my gosh left
+on
+and we'll run that.
+Yep. See you later, Eric.
+Runtime error. Cool.
+Errors are our friend,
+not our enemies. Even though right now
+it's feeling like an enemy.
+Index out of range. Oh, okay. Yeah. So I
+did
+in this case
+the length of cost would be five but if
+we're using a zerobase index it would be
+0 1 2 3 4 not five. So I think that
+should fix that again. I don't know why
+that's highlighted but
+okay so we passed one and we failed the
+other. Let's see
+our output was one and three and one and
+two and the expected output was one and
+four.
+So why is that
+one and three? One,
+two, three.
+Oh, we returned something. So that's
+odd.
+Left + one, right?
+left plus one.
+This is driving me crazy that it's like
+highlighted.
+Okay.
+Do I have like control find on or
+something?
+I do. I must have control find on, but I
+don't know where it's at.
+Turn that wall off.
+Is it at the top? Ah, yeah. There we go.
+Cool. O, that was driving me crazy. All
+right. So, if
+left plus right equals m, return left
+plus one, right + one.
+If greater than m,
+right = right minus one. Left equals
+left + one.
+If left is greater than right.
+Oh, if left is less than right. No, we
+want if left is greater than right.
+Oh, it did not like that.
+Oh, nope.
+We did want that. If while left is less
+than right and if it's overtaking it,
+then we want to change it up. So, what
+is going wrong here? Why was I getting
+values one and three?
+One would be
+one, two,
+three. So saying
+0
+0 and two. 0 one two.
+I guess I can print it out and see.
+What these are
+debug one three. So it just run ran
+once.
+1 and 3 equals 4
+and
+I and
+J.
+Oh, no. I want left and right. Left.
+I'm so used to left and right.
+Okay. Zero
+and two. Zero and one. Zero and one. Two
+and three.
+That's certainly not right. So
+I'm confusing myself. All right. So
+I'll do it like this. So we'll do show
+indexes left and right first and then
+the values of cost at left and right.
+So that will show us indexes zero and
+two.
+So zero
+and two which is
+Not right.
+Zero into
+one and three.
+No, it's telling me the values are one
+and three, which is right. But index
+zero and two isn't right. Oh, because
+I've sorted it. Oh, that's why.
+Ah, yes.
+Now we're all on the same page. So, I've
+sorted my array,
+which means
+that the indexes are not going to match
+up because I've changed where the index
+positions are. So what I'm going to do
+is there is another function called
+sorted
+which will return it won't manipulate
+the original one
+and what you can do there is that it
+will sort the value that we're given
+sorted cost
+it will sort whatever input it's given
+and then return that for a variable and
+then it will not manipulate the original
+one. So it's different from the dotsort
+method in that way.
+So I just want to check that there.
+Okay. So in here we're getting
+sorted and then this is the original one
+unsorted. So that makes sense. So sorted
+and then the original one that we wanted
+unsorted.
+So, we can still use the sorted ones to
+use our twopointed technique.
+That makes sense. I was so confused. I
+was like, "No, these values make sense,
+but they don't make sense at the same
+time." All right. So, now that we know
+that, um,
+again, just to reiterate, I was sorting
+the cost array, but they want us to
+return the indexes of the two values
+that add up to the sum we're looking
+for. But since I've sorted them, I've
+changed all the indexes of everything,
+which means that the sorted indexes are
+not aligning with what they're
+expecting, even though I found the right
+values. So, I found the two values that
+add up to the sum we're looking for, but
+they were in new indexes.
+So what I'm going to do is that I'm
+going to use sorted cost
+as our
+index finding.
+And then we'll say
+return
+I'm just going to make two new values.
+value one
+equals
+this doesn't really matter because we're
+we're going to change them in the course
+of our problem solving
+and value two. So we're looking for two
+values
+and we will instead of returning once we
+have found the two values
+we will set
+just going to boop that. So that would
+be kind of like the normal
+implementation of two pointers to
+actually return the indexes that we're
+looking for. But we're going to modify
+that and instead we're going to say
+value one equals
+sorted cost
+left.
+And then we'll do the same thing
+value two
+equals sorted cost.
+Right?
+So once we have used our two-pointer
+approach to find the two values that
+we're looking for, then what we can do
+is do a simple for loop for
+value
+in cost. And that is our original
+unmodified one.
+So you can already see this one is a lot
+more steps.
+So it's actually even worse than I
+thought. So even though it will still be
+a
+big O of
+where is that starting out? Two pointer
+big O
+of N log of N.
+Even though it'll ste still be
+technically a more efficient solution,
+it has so many more steps than our brute
+force that it doesn't actually make it
+worth it. But there will be problems
+when knowing how to properly evaluate
+your truth statement, determine the
+conditions to decrement or increment
+and use the two-pointer will be
+worthwhile. where using the two-pointer
+will be as simple as writing your truth
+statement in your conditions and then
+doing what we had before returning the
+values that we're looking for. And you
+won't have to do all this extra stuff
+that we're going to do here. Um, but
+it's also good that we have to do all
+these extra steps because now you're
+learning that we can modify an algorithm
+to meet our use cases if it's something
+that we know would work or meet the the
+goal. So we're going to go for each
+value in cost and I'm just going to
+print those out. Actually I am going to
+need the index value. So I am going to
+do for I in range
+cost
+in which case the I will be zero
+indexed. Actually
+I'm going to use this
+our onebased enumerate.
+So for index value and enumerate add a
+one base index and then we'll create our
+return array. So I'll call it answer
+array.
+So we're going to use this to find the
+indexes of our two values
+and we will look for it if
+if value
+equals
+value one.
+Then we want to add that to our answer
+array. Answer
+array.append
+index.
+And then we'll just do the same thing
+with value two.
+Actually,
+I don't want to do it
+on a separate line. I I want it to be
+dependent because if we got two
+like in the se second example here where
+the answer the number is two for both of
+them, if I wrote them as two separate if
+statements not dependent on each other,
+then we would return just a single
+index. So, I don't want to do that. So,
+if value equals value one, add it. L if
+value equals value two
+value two
+answer.append index
+and then lastly
+return
+answer array.
+I think this should work. Cool.
+Perfect.
+All right.
+So kind of a convoluted um Yeah, got it.
+kind of a convoluted way of using
+twoointer
+but it does still get us the solution.
+So we have a lot of extra variables
+here. We have some if statements. We
+have to do another loop in here but it
+is technically more efficient.
+All right. So even though this was a
+makeup session, I've already run out the
+hour. Um so I will have to do another
+one to do the binary search problem.
+Luckily, next time it won't I won't have
+to do all of this buildup to explain
+this problem. I'll just dump jump right
+into it. Explain binary search. We'll
+get to the binary search solution. But
+we talked about the two pointers, how it
+works, having our truthy statement,
+how we decided to increment or decrement
+each side, and then how we can use those
+values that we found to get the indexes
+that we were looking for to f to solve
+the two sums.
+So when we originally to discuss this
+problem, we discussed that if you got
+the brute force solution and you knew
+about two pointers in linear and binary
+search, then you could evaluate that
+this might be the best approach because
+it's only a few lines. Um and again
+today's point is just seeing that
+implementation of two pointer in the
+context of this problem so that you can
+learn how to use it in unique and
+variety of ways. So until next time,
+we'll do the binary search next time.
+See you all later. Thanks.

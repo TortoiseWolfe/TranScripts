@@ -1,0 +1,1215 @@
+All
+right, welcome everyone to this week's
+nailing the technical interview. Um,
+today is Sunday, so we're doing the mock
+interview day. So, we'll go over an easy
+problem, just kind of talk about how to
+pull statements out, read through the
+problem statement, u maybe get some
+pseudo code written down, and then we'll
+turn it over to one of you lovely
+volunteers today to do a mock interview.
+Um, before we dive into that, does
+anyone have any questions they'd like to
+ask about the technical interview
+process, preparation,
+um, anything with hacker rank or leak
+code? What questions do we have?
+No questions.
+Nothing specific.
+[Music]
+No questions. Okay.
+All right. Let me um I'm still looking
+for a medium problem for today. I had a
+list,
+but I lost my list.
+I know. I'll know it when I see it. The
+question I'm looking for, I'm just going
+to
+find it.
+Oh, I just thought of a question. When
+you look for a problem to work on, is it
+always in hacker rank or leak code
+for the tech interview?
+For the technical interview, it's always
+hackerink so far, unless you've done the
+impossible, which only one person has,
+and gone through literally every single
+hacker problem on easy. Are we going
+through threesome today?
+Not today. Um, we might go through it on
+Wednesday. Okay. If we have time.
+Okay.
+Thumb is a medium problem.
+Yes, it is. But we did that one already
+for the mock interview.
+All right. So we'll go ahead and jump
+into the easy problem first. So let me
+share my screen.
+Okay. So everyone should be seeing
+missing numbers over here my window.
+I'm just pulling up the chat and
+everything again.
+I think my cat is trying to claw her way
+into my room.
+So if you hear that in the background.
+All right. So we're going to go ahead
+and read through this one and then see
+what we can pull out from it. So given
+two arrays of integers, find which
+elements in the second array are missing
+from the first array. All right. So
+array 1 is 725353.
+Array 2 is 72546
+353. Okay. The BRR array in the original
+list is the original list. Got it. The
+numbers missing are four and six. So
+this longer array has additional numbers
+in it. Four and six right there. But all
+the other ones should be the same. So 7
+7 22 22 55 four is missing six is
+missing and it does three three five
+three.
+So I'm kind of picking up what they're
+putting down. If a number occur occurs
+occurs if a number occurs multiple I
+feel like I'm saying that word weird
+occurs. If a number occurs multiple
+times in the list you must ensure that
+the frequency of that number in both
+lists is the same. If not the case, then
+it is also a missing number. Okay, I'm
+actually going to go ahead and pull that
+out then.
+So
+given to a list
+slash Oh, see now I'm finding my new key
+key positions. Given arrays,
+yeah, it is in a different position.
+Yeah, on my English keyboard the forward
+slash is like at the bottom. On my new
+Spanish keyboard, it's on the number
+seven. So, all right. So, given two list
+arrays,
+where's the dash? Okay. Find missing
+numbers from I'm just going to make an
+assumption here from the smaller
+array.
+So if one is missing numbers, then I'm
+assuming one is going to be smaller than
+the other, right?
+And we can verify that later potentially
+either by the test cases or in the
+constraints. Now I'm looking for the
+comment. Where is the hashtag?
+Oh man.
+No way. I don't think there's a hashtag
+on this keyboard.
+Try shift three anyway. See what
+happens. Shift three, you said.
+Yeah. Nope.
+No. No. It's Yeah, it's a different
+keys. Mhm.
+Great.
+Okay. Well, didn't you enter it a minute
+ago for in front of given? No, I just
+copied it. I mean, I just started
+somewhere else. Does anyone know the
+shortand for the comments? I can never
+remember
+when you're in hacker rank or league.
+Yeah, I remember control forward shift,
+right? Control forward. What is forward?
+The the slash going forward like a like
+a Yeah.
+Nope. I think I'm just messing up. All
+right. the the list that with the the
+symbol between list and arrays command
+that symbol.
+Yeah, didn't work. It didn't work. Oh,
+excuse me, Ruby. Yeah,
+try control plus. I don't know what plus
+the plus sign. Control plus. Does that
+do anything?
+So, I was just on a hacker rank problem
+and I just hit control and the forward
+slash and that put a hashtag in for me.
+Yeah, but I'm using a different
+keyboard. That's the Oh, the new thing.
+I don't even see a plus sign on here.
+What?
+I see an equals and a minus.
+Oh my god.
+Is there not a plus sign? Oh, there's a
+plus sign. Okay.
+I don't
+like control plus and then wherever the
+the forward slash, you know, where the
+um
+question mark is. Yeah, I'm just going
+to try it since
+since that would be fun. Okay. Control.
+Nope. That seems to do zoom.
+Controll plus forward slash. Yes,
+they're kind of all over the place.
+Okay. No, that's not working. No, I'm
+just going to copy and paste it for now
+until I figure that out. I'll Google
+this later and figure figure it out.
+This is my first time using the new
+keyboard. All right. So, given two
+arrays and then what we said here, if
+mult if the number occurs multiple time.
+Okay.
+Um,
+frequency of numbers
+numbers matters
+could count as missing. I'll just say it
+like that, right? Frequency of numbers
+matters
+of a number. Frequency of a number
+matters.
+So if we have two threes in the original
+array and we only have one in the new
+the shortened array, then we'll want to
+list that as missing number. Only
+include a missing number once even if
+it's missing multiple times. Okay, now
+that's kind of condescending, right?
+Only include a missing number once even
+if it is missing multiple times.
+I don't know what that means because
+here it's telling us
+that if we see a number appears multiple
+times like a three and three. If we only
+saw one three here, then we'd want to
+include that second three as a
+missing Oh, okay. I think I think I'm
+getting what it's saying. So if we have
+a number repeated multiple times in the
+original array and we see a lower
+frequency of that number in the
+shortened array, we will want to include
+it for the one one at least once for
+that frequency
+difference, but we don't want to include
+it for every single occurrence that it
+is missing. That's what I think it's
+saying here. So frequency of a number
+matters could count as missing.
+And then I'm just gonna say but only
+count a actually I think I want to try
+and rephrase this. So
+if
+I keep doing up upside down exclamation
+points. Do you see that? That's fun. All
+right. If a number occurs
+multiple times I know I like frequency.
+If the frequency
+of a number
+is lower in the
+shortened
+array list
+um
+only count as missing once.
+Okay.
+So what we're saying here is that if
+there's a number that occurs multiple
+times, then we only want to count it
+missing once, not for every key.
+Actually, what I'm saying sounds better
+than what I wrote. If a number
+number occurs multiple times,
+only include it as missing once.
+I like that.
+The difference between the maximum and
+minimum numbers is the original in the
+original is less than or equal to 100.
+The difference between the maximum and
+minimum numbers in the original list is
+less than or equal to 100.
+Okay,
+that is a weird thing to say,
+but doesn't that have to do with the
+frequency array that we're going to end
+up using?
+Well, we might not use a frequency. Oh,
+okay.
+The frequ the difference between the
+minimum maximum and minimum numbers in
+the original list
+minimum and maximum numbers is less than
+or equal to 100. Look at the sample down
+further below. There's like numbers in
+the hundreds.
+Yeah, I'm just trying to figure out why
+that would be relevant to include. So
+I'm going to ignore that for now and if
+it seems to impact us later then I'll
+come back to it. So complete the missing
+numbers function in the editor. Yep. It
+should return a sorted array sorted
+array of missing numbers. Okay. That is
+important to include, right? Mhm. Return
+a
+sorted
+array of missing numbers.
+Cool.
+And
+we have the following parameters. int
+array in original array with missing
+numbers. Int B rr B array the original
+array of numbers. And then I'm just
+going to see that that makes sense from
+what we are given. Print array B r. Just
+going to run that
+just to see how it aligns. Yeah, it
+wants me to include an empty return
+there, which I always recommend. Oh god,
+where are my brackets?
+Nope.
+Oh no,
+it's one of those. It's We may have to
+be your hands. Yeah, I It's one of the
+Some of the keys have three symbols on
+them and I I don't know how to access
+the third
+the third symbol set here.
+Do you have a function key or a Windows
+key? I do have a function key. I do have
+a Windows key.
+Okay.
+Okay. Would you like someone else to
+share screen and type for you?
+No, that's okay. I think we're just
+going to see if I can find it in here
+somewhere.
+Oh,
+well, you know what? I'm not going to
+worry about it because Oh, here we go.
+I'll just take it from here. I promise
+you guys I'll figure this out before
+Wednesday.
+New keyboard problems. There we go.
+That's just so I can get rid of the
+error. Glenn said, "On a Spanish
+keyboard, the hashtag symbol is typed by
+pressing alt gr plus three keys
+simultaneously. Alternatively, you can
+use alt + 35." All right. I'll look into
+that later.
+Um, okay. So, expected out. Okay. Yes, I
+see input there.
+Second one. Yes. And then we're getting
+that array. Yep. Yep. So, that matches
+our input, right? So there's first array
+from the input, first array from the
+input, second array from the input,
+second array from the input.
+Just make sure that what I'm getting in
+my parameters matches what I'm expecting
+from their sample output. Oops.
+Okay.
+And then cutting ahead here,
+that's where that return is. So we want
+to make sure integer array return an
+array of integers. So we've got an empty
+one now just for the moment. And then
+they had that keyword there that they
+want that to be sorted. So
+that's explaining the inputs which we
+kind of just walked through a little bit
+there. But this is important. So in the
+size of the first list uh array the next
+line contains um inspace separated
+integers. Yeah. So they're just saying
+that we're going to get n is going to be
+the length of the first array. 13 is
+going to be the length of the next one.
+So the shortened array is represented by
+n.
+And then the original quote unquote
+array, the longer one is represented by
+m.
+And so here we're seeing that's what I
+wanted to see. So n is always less than
+oh but it does say equal to less than or
+equal to m. So we could they could be
+the same length. Um but if they're going
+to be the same length we can probably
+assume right I'm going to write that
+assume if
+n and m are the same length that they oh
+that
+no numbers are missing. Now, maybe
+that's a bad assumption.
+Maybe it would be
+that the cuz from what we're seeing
+here, this one includes like there's no
+there's nothing in this one that isn't
+in this one. And from what I can see
+here, 203, 204, 204, 205, 205, 206, 207,
+25, and then 208, three, four. There's a
+four there. Five. Six. Yeah. So, there's
+nothing included in this one that isn't
+at least included in this one. So,
+but could it all could it also be the
+same number repeated on from the 10
+elements? Could it be all 203s? Right.
+That's what I was going to say is that
+I'm making the assumption that if they
+are the same length that nothing is
+going to be missing. They're going to be
+identical arrays. They could have
+something where instead of like they're
+both the same length, but this first
+array like you said is just the same
+number repeating and then this one is
+all different numbers. Based on their
+examples, I'm not expecting that. But
+I'm just going to write that as a thing.
+Test this assumption because it would
+save us it would save us some work. Like
+we could just do a a length check there.
+test this assumption.
+Um,
+also it's just kind of fun to make
+assumptions. So,
+but in general it looks like it will be
+less than like it's never going to be
+greater than. So, that's what matters.
+And then they're just giving us the
+lower and upper bounds of those and then
+the lower and upper bounds of the values
+inside of it. So these numbers here like
+200, it's going to be between 1 and 10
+4th. And then the maximum, again,
+they're saying this, the maximum number
+inside of the array minus the minimum
+number inside of the array is going to
+be less than or equal to 100. I don't
+know why that matters. That's that's
+strange to me. Okay, so they're just
+explaining that one again.
+So what do we think? What are some ways
+that we could approach this problem?
+And then just to recount, we're given
+two arrays, right? And we're know we
+know that there are potentially
+numbers missing from the first array
+that we're given
+from the potentially longer second
+array. And we're looking for those
+differences of numbers. So what
+approaches might we take?
+Off the top of my head, I was Mindy. No,
+go ahead.
+Sorry.
+Uh, off the top of my head, I was
+thinking of a couple of if statements.
+If, um, if item
+in array, not in
+uh, BRR,
+then return.
+So, what would that look like?
+Uh if it would be an if statement
+rather than
+it would be if
+item
+in a R r not in B rr
+return item.
+So how would we get to those though?
+Like how would we start the the approach
+to that?
+Well, we have to say,
+are we going to use a loop? Are we going
+through which array are we going
+through? What are we checking there?
+Well, the the loop we're going to we're
+going to assume that the B the B array
+is always longer. Right. Right. So we
+could always say for
+um I in
+in length of B r
+and then the next line if item in a R r
+not in B r
+item.
+Now, when you say return item,
+item meaning of an entry in the list of
+array,
+I'm still not 100% sure the differences
+between a list and array, but that
+aside, there's nothing. They're the same
+thing. There's really nothing. Yeah,
+they're the same. We can use those words
+interchangeably then, huh? Yeah. All
+right, good to know.
+So, it says define list
+first and then append to the list. Yeah.
+So taking that same idea. So loop
+through BRR. If the item at index is not
+in
+array, we could append to a tracking
+list. That could work. Yeah,
+instantiate. That's right, Brian.
+Initiate, initialize, instantiate. I
+mean honestly, okay, that could be some
+what I would call pseudo code, but how
+would you convert that to syntax? This
+is where I get lost all the time.
+What do you mean?
+I always have an idea on how to solve a
+problem, but I can't convert it into
+Python syntax.
+We'll come back to that. What other
+ideas might we have about an approach? I
+think this could be something, right?
+Like that sounds like a generally
+straightforward approach. So loop
+through this one and say like, okay,
+seven seven is in this one. Check if
+seven is in array. And that's another
+thing is that it doesn't tell us if
+they're going to be in the same order.
+So, so far we're seeing thing in the
+same order, but this the constraints
+here and none of the inputs tell us that
+they are going to be in the same order.
+I'm also going to add that as an
+assumption.
+Um, does it matter? Does it have to be
+in the same order? The order will be
+the same. Yeah, it would affect things
+because right now what we're doing is
+Oh, no. Now I need these braces again.
+Jesus.
+Okay, give me a second because I got a
+lot of keys here. So, we'll just do a
+shorthand version of this example. So,
+72 5
+three, right?
+And then we're thinking that's the
+shorthand one. And then if I just copy
+that and add
+um some extra characters. So, we have
+724. So if we added just like four and
+six there, that would be fine. So what
+we're saying is is that as we go through
+this array, so we're saying, okay, seven
+is here, check seven in the original
+one. Two is here, check two in the
+original one. Five is here, check five
+in the original one. Four is here. Okay,
+we're not seeing four in the original
+one. We'll add that to a tracking list,
+right? And then, okay, six is here. It's
+not in the original one. Add that to the
+tracking list. And then three is here.
+Okay, three is here. So, we'll keep
+moving. If this we could potentially do
+a straight like a single loop through
+that, right? Like where we're checking
+at each index. Okay, check index
+position here. Check index position
+here. And then once we get to this
+point, we see that something is missing.
+So, we could do something like I don't
+know maybe set an offset to account for
+a missing number and say all right we're
+not going to check since we are not
+finding
+like we could say okay so we're
+expecting a four at this index we didn't
+get it so we're going to add four to our
+tracking
+and then we're going to add like an
+offset for the index tracking so that
+when we check for this one
+we know that a number is missing so we
+could just check at the same index again
+until we get the number that we're
+expecting there. So that would that is
+something we could potentially do,
+right? And that would allow us to only
+loop through once like an O of N loop.
+We're doing literally index per index to
+the end of the long the longer list, the
+original list and checking for each
+missing number. If these were out of
+order,
+so we had something like
+um four, seven,
+five, right? Then then we'd have to say,
+okay, seven is in this first list. We
+have to search through the entire array
+there to find if seven exists or not.
+Two is here. We have to search through
+the entire array to see if that second
+one exists or not, which then
+immediately bumps us up to a higher
+big O,
+right? Because that gives us O of N
+squared where for each item in one list,
+we're checking the item in a second
+list. Technically, it's not I don't
+know. You could it might actually still
+be considered O of N squared because
+they're different lists, but they're I
+won't get into the the deeper semantics
+of that. We could consider that ON
+squared if they were not in order. So
+for the sake of Ruby. Yes. Ruby. Mhm. Um
+see me one time you said we you always
+look at the return like what are we
+supposed to get back? So to me since if
+I started the return and the return is
+another array we have to establish
+another
+parameter or another um uh not not a
+parameter uh another array. So like new
+array
+and and make that an empty array, right?
+And then then uh
+I mean source trying to do a count and
+then do I if you know once you do
+through the loop once you get establish
+that number then that number is then
+added to the this new array then and
+then then keep going through it until
+you get a number and then added to the
+the array. Is
+yeah. Isn't that what isn't that what
+it's actually asking us to do is to look
+through compare the two loops
+and then whatever is different add it to
+the new array cuz what we have at the
+end is just a a a new array. Yes, that's
+what we're talking about though. So if
+our approach though if we are assuming
+that they will the order will generally
+be the same minus the missing numbers
+then our approach would change cuz if
+this was unsorted then we might have to
+the way we would approach it would be
+different because we wouldn't we could
+maybe shortcut it from going so if it
+was sorted we could shortcut it and just
+say checking at at its index equivalent
+for each item but if it's unsorted then
+we would have to check the entire array
+um to find that number or if it's in
+missing. So I'm talking about right all
+I am talking about at this moment is
+that if we don't assume that the that
+it's or if we assume that it is unsorted
+potentially then we would have to change
+our approach
+and potentially use a much more
+complicated searching algorithm to find
+those numbers.
+is if we make an assumption that they
+are going to be in the general same sort
+order then I won't have to think about a
+more complicated approach at the start I
+can start with the more simple approach
+like just checking at the the index and
+see if that works and so once we do that
+and if it looks like it might work
+then we can keep moving and keep testing
+that approach or if it looks like it's
+not going to work then we'd have to go
+back to the drawing board and say all
+right I made an assumption that it was
+going to be like the same sort order
+kind of thing. Um, and that was false.
+And so now we have to change our
+approach to have a more complicated
+search of that that array. That's all
+I'm doing by testing that is that I'm
+I'm challenging what is given to us and
+making sure that no assumptions are left
+off the table at the start so I can make
+a solid game plan up front before any
+code is written. Does that make sense?
+Yes. But in general, yes. that that is
+what we would be saying. So if I wanted
+to break this out a little bit more, I
+might say
+initialize
+a
+tracking
+array for
+missing nums.
+Copy
+and then loop through
+the larger one. If an item at index is
+not an array, then we'll append it to
+the tracking list. And then, like I kind
+of said before, maybe have an index
+offset
+for tracking
+um to account
+or missing numbers. So, I have these two
+assumptions here that are kind of big
+assumptions because they would change
+our approach pretty significantly if
+either of them are false.
+But if both of them are true and they
+turn out to be correct assumptions, then
+we can have a much more streamlined and
+much simpler approach. Now, I don't want
+to move forward with my approach
+like ignorant of those assumptions and
+just saying like these things might be
+here, but I don't know. So, I'm just
+going to keep moving forward and not
+expect them. I'm going to move forward
+with a streamlined approach expecting
+those things to be true and testing for
+if they are true or false. so that I can
+so I'm having them listed out here so I
+know that if I see something that
+doesn't match these assumptions, I've
+listed them out and I can say, "Okay, I
+have to come back to the drawing board
+because I know that this wasn't true."
+All right,
+so that is one idea. And then I think
+someone mentioned a dictionary. We could
+do a dictionary potentially of just
+saying like, okay, seven
+is here. Well, how might we do that?
+Actually, we're kind of uh we're we're
+running on time here. So, I'm going to
+move on to the mock interview now. But I
+like this. I like this as a starting
+point. We could consider more um we
+could consider more approaches here, but
+I think it's just like a starting point.
+This doesn't seem too bad. I think
+I think this could potentially work. And
+then we just want to make sure we
+account for that sorted at the end.
+That could mean just simply
+adding like oh gosh
+like maybe run
+sort method on tracking array
+and I have a lot of may in there um just
+to account for that sorted there.
+Yeah, I think I think that's a pretty
+good a first draft, right? And so then
+we can test this out, see how it works,
+see how it doesn't work, and then
+kind of come back to the drawing board
+if not.
+All right, any questions about this
+before we move on?
+Oh, wait. I see something from Brian.
+Append to stack. Stack is my empty list.
+Sort the stack and make it a set. Return
+the set. Okay. Yeah, I mean that sounds
+that sounds the same.
+Yeah. So, any questions before we move
+on?
+No. Okay, cool. So, Walter, I'm going to
+come back to your your point there of
+how do we turn this into code, right?
+So, we've kind of set out like almost a
+discrete list of tasks here. Um, I mean,
+some of them might have a few steps
+inside of them, but like as far as
+initializing an array, that seems
+generally simple, I think. Right. So,
+tracking,
+oops, tracking equals Oh, god, you guys.
+Equals. And then I'll just set an empty
+[Music]
+And you just want to make sure almost
+kind of like literally doing exactly
+what you told yourself.
+And then we say loop through BR r. Okay.
+So I would write out like a maybe a for
+loop, right? So for
+i in range
+and this is where you would be careful.
+So this is where you're kind of saying
+how do I know the syntax of a for loop.
+All right. If I'm unsure about any part
+of this, I know the general
+infrastructure is for I in range, but if
+I'm sure about what the range components
+look like, maybe I just do a quick
+Google of Python range, right? If I want
+to know for certain how I might use
+that, and this is totally imbalanced
+because I'm not looking up a solution or
+a partial solution. I'm looking up a
+specific functional workflow like a
+specific functional a function or a part
+of a loop a part of a thing and not a
+whole thing. And so that's totally
+within totally fair game for the
+technical interview. So they're even
+doing some interesting stuff in here.
+They're saying
+range they're calling it and setting it
+to a variable and then saying for nx for
+that variable. So that's interesting.
+So then we're saying okay so range is
+basically a method then it can be called
+like a function and it's just kind of
+customary to use that inside of a for
+loop. So this kind of expands our
+understanding of what the range keyword
+actually is. So similar to sort where
+you would call it on
+um where you would pass in in an array
+or a list and it returns a sorted value.
+Similar thing here. You call the range
+method. It performs a certain function.
+In this case, it's creating a sequence
+of numbers from zero to whatever number
+you give it minus one. And then it gives
+you that iterable list of numbers if I
+had to shorthand that explanation there.
+So yeah, it even tells you returns a
+sequence of numbers starting from zero
+by default and increments by one and
+stops before a specified number. So it's
+literally just a method. That's really
+helpful to know, right? Because we know,
+we've seen how other methods work and
+we're used to those. And we see there
+are three parameters. Start. So optional
+and integer number specifying which
+range to start. Default is zero. But we
+could specify something else. We've seen
+that in action in our our big O uh O of
+N squared loop. So where we do range and
+uh index I + 1 to J. We're setting a
+we're setting the start variable there.
+And then we're setting the stop variable
+parameter, excuse me, in both of those
+situations.
+Um, the stop is always required. So if
+we don't include the optional one of
+start, then it's just going to assume
+that.
+So that's going to behind the scenes
+there's probably some actually complex
+logic there. They probably have like a
+few different versions of the range
+function, each with different links of I
+I don't want to actually I don't want to
+confuse you guys. Um, but there's some
+cool stuff going on in the background
+there for how they figure out which
+parameter you're passing it. Um, but we
+kind of already know this that if I just
+passed in the six, that's going to equal
+the stop where it's going to tell me 0
+to six non-inclusive. And then we have
+this third one that I haven't used too
+much, but you might be familiar with it,
+which just in um indicates how we want
+to increment. So, it's incrementing by
+one by default, but we could change it
+to in their case, we're creating a
+sequence of numbers starting from three
+up to 19 because it's not inclusive of
+that last number. And then we increment
+by two instead of one. And then we can
+see what that looks like.
+So yeah, three start at three increments
+by two 22 two up until 19. Um,
+and then if we said 21,
+it would probably still be 19, right?
+We're not It could go all the way. Yeah.
+So since we're incrementing by
+two, what it would actually be saying is
+give us a sequence of numbers between
+three and 20, but increment by two. And
+so since 19 + 2 would be 21 and that's
+not in our sequence of numbers, it's not
+including that one. So that makes sense.
+But yeah, that's just kind of the
+general now I have a general idea of
+what range is and what it does. And now
+I can come back to my problem with
+confidence and say I'm looping through I
+know how to use range, right? But then
+we want to supplement and add BRR. And
+so how am I going to get the length of
+these elements?
+we we kind of already know another
+shorthand for that one. But if you
+didn't, you could also look that up. And
+now we're we've got we've got the first
+part of our little
+our little thing here. And then I would
+just keep I would literally just keep
+these comments in here and keep going
+until I had some good stuff there. So
+that's where you're getting into your if
+condition. Um actually, I'd maybe pull
+this down, right?
+So we're looping through BRR and then if
+item at index is not an ar r append it
+to a tracking list. So we would just
+want to do what we usually do. Check at
+the index. Maybe print this out to say
+print
+like index and brr r.
+I can't do the braces but assume that
+I'm typing braces here
+braces for i. So just like checking what
+i is and then checking what number is at
+brr. We want to make sure that we've set
+this up correctly and then kind of keep
+moving from there. And you just kind of
+test at each step of the way to make
+sure, oh, I missed someone wanting to
+join the group. So just kind of testing
+each at each step saying, "All right,
+I've set up this for loop. Is this for
+loop doing what I want it to do? Yes or
+no? Okay, great. We can comment that out
+and then we'll move on to this next step
+of trying to figure out how to implement
+that. If I get confused about something,
+I can Google it like I did here or I can
+add some debug statements to see what's
+going on and keep testing that run code
+until I work through any errors that I
+might see. Testing along the way." Yeah,
+we kind of know that that's going to get
+syntax because I can't figure out my my
+braces there. Um, but that's kind of
+just the general idea. Does that help,
+Walter?
+Sort of. Sort of. Yeah.
+I I can't articulate it any better than
+that.
+Okay.
+All right. So, we are we only have 10
+minutes left. So now I'm kind of
+feel like I feel like I still want to
+give someone the opportunity to do a
+mock. But
+let me let me say it this way. Is anyone
+interested in um
+being a participant today? Does anyone
+want to try the mock interview today?
+I'm still in module one. I'm sorry. If I
+were ready, I would.
+know where he's going.
+Anyone else?
+Walter's done one. Mendy's done one. You
+want to volunteer?
+You want I'm just curious. I'm just
+curious for the moment because we only
+have about 10 minutes left. So,
+we just did mine the other day. So, I I
+want to I don't want to try quite yet,
+but if you want somebody to volunteer, I
+could be the hands. You know what I
+would like? I would like for someone to
+actually pick up this problem that we
+have right here and just implement some
+of the next steps right from our our
+pseudo code. Does that make sense? Would
+someone like to try that?
+We we've kind of done already what I was
+thinking about, so I I don't know where
+to go from here.
+There's plenty left to implement there.
+Okay, that's all right. Um, well then we
+can kind of call it early for the for
+the evening. I don't want to jump into a
+mock interview for a complicated problem
+since we only have a little bit of time
+left. But if no one's filling up to the
+mock interview today, that's totally
+fine. But just in the future, keep in
+mind that I do, if you have not done one
+yet, I do want to make sure that you are
+getting that opportunity to practice
+presentation, speaking out loud, being
+in an audience in front of other people.
+You don't have to know what you're doing
+necessarily, right? Like it's okay if
+you're still in mod 2 early phasages or
+end phases. It's not about getting the
+code right or getting functioning test
+cases passing. It's just about getting
+that practice right. So, in the future,
+if you're showing up, I'm going to call
+on you.
+Sounds good. So, do we have any
+questions about the technical interview
+process, preparation, anything that we
+covered today? Um, before we close out,
+I have I have a question about your
+suggestion for something. Sure. So, one
+of the things that I have an issue with
+is realizing what where I am within the
+time. And so,
+how would you suggest
+that we keep an eye on time while we're
+practicing?
+Yeah. I mean, you could set a timer,
+right? Like there's you could do it on
+your phone, but the problem is I'm not
+looking at my phone. And well, here's
+the thing. I don't think you should be
+tracking the time while you're doing it,
+right? Like the the goal is to work on
+getting within that 15 to 20 minute time
+range, but you don't you're not like
+racing the clock. I want you to take it
+like you normally would. Like however
+you're practicing, however you're
+working on it, you're not trying to race
+against the clock or race against time.
+I want you to perform at the way that
+you typically perform. And what I mean
+by that is that I want you to take your
+time. I want you to read through the
+problem once, twice, maybe three times
+if you need it. I want you to take the
+time to pull things out into pseudo code
+into comments. I want you to take the
+time to understand the problem. Get a
+game plan before code is written. And I
+want you to take the time to test along
+the way to make sure that you're
+printing things out, making sure that
+you're taking any assumptions that
+you've made and testing them at each
+stage. And I don't want you to worry
+about how long it takes you to do that.
+It's not like
+I think setting a timer is a good way to
+see how long it takes you or even like
+before you even set a timer of setting
+20 minutes. Just set a timer in general
+and see like a a countdown almost of
+like um or laps. Like my phone has like
+a lap feature where it just counts up,
+right? Where it counts elapse time. So
+go through follow the steps that you
+take, follow all the problem solving
+steps. How long does it take you to
+solve the problem? When you've got all
+the test cases passing, then you end the
+timer. All right, how long did that take
+me? Did it take me 20 minutes, 30
+minutes, 40 minutes, an hour more? How
+long did it take me?
+What you're still doing there is that
+you're practicing doing all the steps,
+the right steps that you need to do, and
+you're taking the time to do them
+correctly. Over time, you'll get better
+at it. That time will naturally
+decrease. So, I don't want you to race
+and be like, "Okay, I have to do this as
+quickly as possible, and I have to
+figure out how to do all these steps
+that I know how to do as quick as
+possible." You will get quicker by just
+practicing doing it and practicing doing
+it correctly. Does that make sense?
+Yeah. I I'm just saying I I don't always
+keep an eye on the time. So, it's it's a
+thing, right? I mean, and you get
+distracted, which you wouldn't get
+distracted if you're doing the
+interview. And so I'm thinking if I saw
+a timer on the screen, it might be
+easier to stay focused for that period
+of time. So I don't So that that would
+be the next stage, right? If you feel
+like you are confident in your approach,
+you know how to solve most problems and
+you feel like you're doing it in a
+reasonable amount of time, then I would
+say that is a good next step of setting
+up a timer.
+And I think you can do that on your
+computer where it will show up on your
+screen. Let me see if mine has it.
+Timer countdown. If you um
+you may not want to look it on your
+Spanish keyboard because it might be
+harder to find. Right. Um I'll do a
+quick search.
+I have a clock app. I don't know if that
+will do it for me. I think it's on the
+stopwatch, not timer.
+Oh, on your phone. Yeah.
+Yeah. So, I have Yeah. Yeah, I use a
+stopwatch, too. But as far as like on
+your computer, I have an app on mine.
+Mine's a Windows computer.
+So, I have this, which is the stopwatch.
+Oh, okay. So, you could use that to
+count up the app on a cell phone.
+Yeah, but she was saying that she wants
+to see it on her computer. Like, she
+wants to see it happening. So, this one
+counts down. So you have the countdown
+or I would just set it to 20 minutes or
+whatever. Just have this on in the side
+if it's not too distracting for you.
+Work on your problem and then you can
+just kind of glance over at it when you
+need to to say, "All right, I have 15
+minutes left. Keep working. Keep
+moving." Don't ask time. It's just to
+help you keep track of making sure
+you're reaching certain goal goal posts
+within a certain amount of time. And I
+don't want to be too strict about like
+how long each step should take because
+I've had people take different amount
+different amounts of time. Like I've had
+people spend 3 minutes on pseudo code,
+type everything up into the code in 10
+minutes, and then pass within 15
+minutes. I've also had someone take 10
+minutes on pseudo code, write their
+actual code in 2 minutes, and then get
+everything done in 15 minutes. I've also
+had someone take the entire 20 minutes
+and spent equal portions on both the
+pseudo code and the typing out. Like
+there's no hard and fast rules about how
+much time you should spend in each
+category. It's all about what works for
+you and then just kind of
+getting getting confident, getting good
+at it.
+Yep. I I get it.
+I'm just I I was just thinking out loud
+because I know that that's something
+that I'm trying to figure out how to
+work through. So So then was does that
+help you? That'll work. I I think that I
+think I'll work it out. I just hadn't
+figured out what to do. And
+so you think 20 minutes to to set up for
+a practice interview should be about
+right?
+Yeah. I mean, we're aiming for 15 to 20
+minutes, but I think if you're just
+getting started, start with 20, right? I
+think I think sticking with 20 is
+totally fine if you are consistently
+solving them within that 20 minute time
+limit. Even if sometimes it takes more
+than 15, whatever, that's totally fine.
+If you're consistently getting under 20,
+that's good.
+I felt pretty good before I came into
+the interview. But yeah,
+yeah, most people do.
+Tell me about it.
+Anyway, all right. Any other questions?
+Um, that was a good question, too, I
+think. So, thank you, Mindy. I I
+actually have a question about the
+calendar.
+Okay.
+Um cuz I don't know if I'm reading this
+right or if there's a setting that I
+need to make, but it looks like
+everything is like early in the morning.
+And I don't know whether that's your
+time or our time
+cuz I'm seeing like 5:00 a.m. to 6:30
+a.m. For for what? For which calendar?
+For scheduling the technical interview.
+It should tell you the time.
+on oath.
+Well, it does. Like I said, when I click
+on July 2nd, I mean, Grant,
+I I click on July 2nd. I get a time of
+5:00 a.m., 5:30, 6:00 a.m., and 6:30
+a.m. And I don't know whether that's
+Eastern time or your time. So, it
+doesn't tell you the
+the time zone. Well, there's a time zone
+down at the bottom, but that's showing
+my current clock. That's why I'm like
+confused is like are these the current
+are these the actual times
+because the only one that I could do
+then if those are the actual times would
+be only on Sunday. No, that's a mistake.
+Um I probably did that on accident
+recently.
+Yeah, I just looked I just looked at the
+se 10th of July and it's got it at 12
+a.m. 12:30 and 1 2:30 a.m.
+Really? Cuz mine is 3:00 a.m. to 5:30
+a.m. Well, you're on a different time
+zone than I am, Tim.
+Yeah, but why would it be 3 hours off?
+Is it 3 hours off with you? Are you East
+Coast? Yeah. Yeah. I'm west coast. Oh,
+okay. That that would make sense then.
+Yeah.
+Yeah. So, so this must be showing the
+time for me here then, which
+Yeah.
+If that's the case, like I said, the
+only time that I can actually make is
+literally on Sunday. No, those aren't
+real times.
+Um, I I'll fix it. Okay.
+Kim, I'm not sure what you're looking
+at. My calendar is showing 3 to 4 PM on
+both Sunday and Wednesday. No, Glenn,
+they're uh not Glenn. Sorry, Walter.
+They're talking about the the scheduling
+the technical interview. The calendar
+calendar. Oh, that calendar. Oh, sorry.
+Yeah, that's that's the only one I'm
+interested right at the moment because I
+gota I got to get mine scheduled at some
+point. It's like, dang, I ain't up at no
+five o'clock in the morning. And I might
+say mean things if I talk to somebody at
+12:00 a.m. So, I'm just gonna say
+she doesn't want to talk to me about
+coding at that point in time.
+Yeah, I'll have to I don't know how I
+did that. Yeah, I'm sure. Well, that's
+why I was asking cuz it's like uh I
+can't do none of those. Yeah,
+I'll fix that. Katrina's on so maybe
+she'll fix it.
+No, it's it's a me thing specifically.
+Oh, okay. But yeah, I'll do that off
+after after the call. All right. Okay.
+Any other questions before we wrap up?
+Just just give us a list of your
+questions so that we can just go through
+them and make sure that we know, right?
+Well, I kind of did. I gave everyone a
+list of the subject areas, so that's
+pretty I know. I'm I'm teasing you just
+a little bit.
+Wait, we got a list of subject areas.
+It's posted in the hackering channel on
+both on all Discords that you have
+access to. Yeah, I shall have to go and
+dig that up. I guess it's penned, so you
+should be able to see it if you looked
+at the penned topics.
+Yeah. Well, I appreciate you. I'm gonna
+drop. Thank you. Yeah. All right. Thanks
+everyone for joining and I will see you
+all on Wednesday.
+will be there.

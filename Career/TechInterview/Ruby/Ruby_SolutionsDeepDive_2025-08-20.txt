@@ -1,0 +1,991 @@
+All right, welcome to this week's
+Nailing the Technical Interview. Um,
+it's Wednesday, which we usually do
+kind of digging into problems, but we
+skipped last Wednesday cuz I had a full
+workload of stuff I was working through
+um, and planning for the mod 2 course
+updates that are kind of underway right
+now. Um, and also thinking about the
+future of what we want to do in these
+weekly sessions. So, took a break on
+Sunday, so we didn't have a problem to
+work on, but we did I did put one in the
+the chat, which was jumping on the
+clouds revisited. Did anyone get a
+chance to look at that problem? Try it
+out.
+>> No, I was working other problems.
+>> Okay. Anyone else?
+Okay, cool. Well, that's good actually
+because
+Mauricio, if you're still on board,
+volunteered to do a mock interview today
+to help prepare for the technical
+interview which is he is hoping to
+schedule soon.
+So if you haven't worked on that one,
+then we can use it today for the mock
+interview.
+>> Okay. Uh yeah, whatever comes up comes
+up.
+>> All right. So before we move forward,
+does anyone have any questions they'd
+like to ask about the technical
+interview, practicing, prepping, any
+questions?
+>> So you can take as many mocks as as you
+want to, right?
+>> Yes. So, however long it takes you to
+kind of meet our recommendations of
+feeling passing being able to pass the
+um easy problems within 15 to 20
+minutes. I like to recommend that if you
+can do about three in a row where you're
+easily under the 20-minut mark, then
+that's a good sign to to test out the
+tech interview. And then we also have
+the medium problems in between 45
+minutes to an hour. Um, and so then
+again, for that one, it's going to take
+you a little bit more practice, but it's
+good to get the practice at that higher
+difficulty because it takes a lot more
+steps that you have to break down. And
+those problems solving steps that you
+have to utilize in the medium problems
+will better serve you in solving the
+easier easier problems more quickly.
+>> That's kind of the general
+recommendation that we have.
+>> Um, but it depends person to person,
+>> but medium is not part of the technical,
+right?
+>> No. So, Medium isn't a part of the Joy
+of Coding technical interview, but it is
+more
+likely what you would see in like the
+job hunt.
+>> Okay,
+>> good question.
+>> What were some of the the updates that
+that you did, Ruby?
+>> Yeah, so we I haven't done much yet.
+We're kind of still working on it and
+thinking about what we might do.
+Um,
+but I can go ahead and share something
+that I have been working on.
+So, this is another little project
+similar to what I showed off last week
+or the week before where we did the
+comparing the linear search to a binary
+search. Um, this is just another little
+mockup site that I have where basically
+the idea would that these would be the
+replay playlist. Woof, stumbled through
+that entire sentence. So the sessions
+like what we do today go to a YouTube
+playlist, the
+technical interview joy of coding
+playlist. Um, and so in addition to
+being there, we could upload them
+directly to this site, have some labels.
+You open them up and it has
+instructions, you know, a Rick roll
+YouTube video because this is a mockup.
+um have some instructions about like
+before watching you know practice XYZ
+maybe you watch a different video and
+then an after watching set of steps for
+like what problems to work on um writing
+pseudo code what are kind of the
+follow-up steps that you might take
+after watching this video. Additionally,
+linking the leak code problems that we
+worked on directly into the video. So
+that way I don't have to post them
+directly into the hacker rank channel.
+They would just be associated with our
+video here. And as well having just like
+a list of all of the
+um leak code or hacker rank problems
+that we've covered in any given session
+available. So if you were trying a
+problem and you kind of got stuck and
+you wanted to know if we covered it, you
+could come to our little site here,
+search for the problem. Maybe it was to
+some. Okay, we definitely covered that
+one, right? And so that is the link to
+the
+actual problem itself and leak code.
+And then this would be the link to the
+video where it was covered in some
+capacity. And in some cases it might be
+covered. Oops.
+I uh accidentally closed it. In some
+cases, it might have multiple videos
+that it's associated with.
+Um especially for some of the problems
+that we cover like over a few different
+weeks. So, this is just a little
+something that I'm working on to help
+make the weekly playlist more
+actionable, especially if you want to
+like search through the archive of stuff
+that we've done. And I'm hoping to tie
+this into some of the mod stuff, mod 2
+stuff that we're thinking of doing, kind
+of adding Hacker Rank earlier on and
+what kind of Hacker Rank videos we want
+to add to the courses. So that's just a
+little snippet of something that's going
+on behind the scenes.
+>> Uh that's not online yet. No,
+>> no, not quite. Um that one's just a
+mockup. Um,
+and then I have to go through and
+backlog all of the videos that that
+we've done. Um, but it should be easy to
+implement.
+I just have to get an AI API running so
+that it will automatically upload like
+once this gets recorded, it would
+automatically get uploaded and then just
+edit the info of what we did and what
+problems we worked on and that kind of
+stuff.
+>> So, it should be soon. I don't know how
+soon, but soon.
+Yeah, it's nice.
+>> So, that's what I was doing on Sunday.
+It was just kind of brainstorming
+um
+what I want to do to help pair with our
+weekly sessions and the course content.
+And again, another pitch here. I posted
+it in the Discord channel, but if you
+all have things that you would like to
+see or feedback about your experience so
+far, definitely add that to your weekly
+feedback. Um, all of the coaches read
+for their each of their sections of the
+phases. Um, so like the mod one and two
+stuff is Katrina, I'm in the tech
+interview, Suzanne does the explorer. So
+all of that stuff uh all of those
+coaches will read all of your feedback
+in those given phases.
+>> Thanks Ruby.
+>> Yeah.
+All right. Any other questions?
+>> And also you can have like
+like let's say you're ready to mock
+interviews and you feel like you can do
+it. So you just schedule a an actual
+tech interview and how many of those you
+can do if you fail those or you just
+>> Yeah. So there is no limit to those.
+What happens is that I'll ask you a few
+follow-up questions. Um kind of just
+gauge what your It depends on how far
+into the problem you got. If you were
+close or if you still had like a lot of
+blocks in between. Um I might ask a few
+follow-up questions just to see like
+what your line of thinking is. And then
+based on your overall performance, I'll
+give you recommendations on what to work
+on before you come back. Um, some people
+it's simple just like work on the four
+pillars, problem solving. Some people
+it's more in depth like make sure you're
+going back to mod one and two and
+reviewing data structures, reviewing the
+projects that you worked on and how you
+like built those solutions. Um, and some
+people have no feedback at all. They
+just kind of have to trim down the time
+from like 23 minutes to 20 minutes.
+um and which problem solving and all
+that good stuff does help, but just
+having that extra little bit of
+practice. And so each time we do that, I
+usually try to make the problems just a
+little bit harder, but there's no limit.
+So far, um I mean certainly at a certain
+point, we might I might get curious as
+to what would be holding you back, but
+so far it's never gone past like three
+or four attempts.
+Thanks.
+>> It's good questions. Any other questions
+about the technical interview practice
+preparation or anything at all?
+>> Just one more question. If we don't
+pass, how long do we have before we can
+take it again?
+>> Yeah. So, that usually depends on what
+my recommendations are and how much time
+you have to kind of work through
+problems on on that level. If it's just
+like going back and reviewing the four
+pillars of problem solving and
+implementing like pseudo code and using
+your testing your assumptions and
+printing things out then but you were
+like really close to passing then it can
+be anywhere from like as soon as a week
+right like come back next week. If you
+need a lot more review of the mod one
+and two principles of like data
+structures or even like the logic and
+how to trace through logic then I might
+say it would I don't like to give
+definite timelines in that case. It's
+like once you feel like you've been able
+to meet XYZ recommendation and those
+recommendations might be getting through
+problems consistently within 20 minutes
+using these steps. Practice using these
+steps across all of your future problems
+in this manner that we discussed after
+the interview.
+>> Okay.
+>> So, you always give like a milestone to
+reach before uh coming back, right?
+>> Yeah. And in those cases, I usually do
+give pretty like explicit steps that you
+could or should be following. Um, and
+then once you feel like you've got those
+confidently down, you should be seeing
+that reflected in your in your your
+coding attempts and it should be helping
+you. Um, and so then once you feel that
+confidence building up, then you might
+say, "All right, I feel like I'm ready
+to come back and then schedule it
+again."
+>> Okay,
+>> any other questions?
+Even with the mock there is feedback,
+right?
+>> Yeah. Uh well, it depends because we've
+been doing something a little different
+lately where we've been doing
+um not requiring you to actually code.
+So, what I want to see specifically
+during the mock interview is getting
+that pre the practice performing under
+pressure right with all of these Zoom
+eyes watching you. Um, sounding out your
+the problem statement, sounding out your
+thoughts as you're moving along, pulling
+things into pseudo code, how are you
+breaking the problem down into steps?
+Um, kind of that precursor to actually
+writing code, all of that good stuff.
+And then there's the option of actually
+attempting the code solution as well,
+but I don't see that as a requirement
+for the mock interview because the other
+stuff that comes before it is just as
+important. So I would leave that up to
+you. But yes, there can be feedback of
+some kind afterwards.
+>> Okay.
+>> So it sounds like you're ready to jump
+in, right?
+>> Yeah, I'm going to try I'm going to give
+it a try.
+>> All right. So, we'll just use the one
+that I linked into the chat from last
+week. So, I'm going to pop it into the
+chat again here.
+If you want to open that up and click
+the green share arrow on Zoom
+to share your screen.
+>> Uh, in what channel? Sorry.
+>> So, in the I just put put it in the Zoom
+chat.
+>> Yeah, but what channel hacker rank?
+No, on Zoom.
+>> Ah, this one.
+So, open that and then click the green
+share arrow to share your screen.
+Okay, cool.
+So,
+what we usually like to say is that I'll
+give you 20 minutes to work through this
+problem. Read through the problem um
+once you feel like you understand it,
+practice sounding it out, resummarizing
+it for us and then make sure to explain
+your thought process as you move through
+pseudo code and then if you want to you
+can attempt a code solution as well and
+then everyone let's hop on mute and good
+luck.
+Okay,
+>> so I read it uh without sounding it
+first, right?
+>> You can read it to yourself or read it
+out loud up to you.
+Okay. So
+I mean can I summarize or I just read it
+all all out loud?
+>> You can summarize.
+>> Okay. So it's similar to the other
+problem. There's an array of of clouds.
+The ones marked with zero are uh uh
+cumulus clouds which uh don't don't
+are not bad. Uh and when you jump on
+them, it just takes uh one point of
+energy.
+And uh number one are the uh
+thunderstorm clouds that takes one point
+of energy and also two points of
+penalization
+like for jumping in there. So you are
+supposed to jump depending on the size
+of the jump that is given.
+H.
+So here it shows
+since the array is circular, you use uh
+I + K uh for each uh to know exactly
+where you're going to land. So I + K uh
+modulus of N the number of of clouds and
+that will give you the the circular
+you know the circular result when you
+are in the last one.
+So basically what the problem is asking
+uh taking into account all of that uh it
+gives you the the type of clouds the
+array with the clouds and the length of
+the jump and you have to return the
+amount of energy remained and also you
+have to end
+you have to do the whole trip back to
+index zero or the first cloud.
+So
+as far as pseudo code,
+so you need to traverse the array.
+Well, with a
+with a while loop uh
+I mean using what we learned on the
+previous problem while y loop was better
+because you don't know how many jumps
+it's going to take. So traverse with a
+while loop
+and
+The condition for the Y loop will be
+probably when you hit when the index is
+zero.
+So
+condition to stop will be
+when I
+uh is equal zero again.
+Also you have the other element is uh
+[Music]
+depending on the jump depending on the
+land and wherever you land of if it's
+one or zero cloud.
+uh need a conditional
+uh deduction of points
+-1 or minus3.
+If it's a thunderstorm is minus3
+and if it's normal is minus one
+and uh
+you need the circular
+stay the circular
+thing
+to see when will you arrive. So
+in the loop you will need to have
+somehow this
+to tell you where you end up.
+uh plus kum
+of n. And uh
+what else?
+That's pretty much what I can see from
+the surface.
+So, I guess I can start
+trying to code, I guess.
+So,
+[Music]
+zero.
+Well, there's like a exception here
+because you start at zero. So to kick
+out the loop,
+uh it wouldn't work there with equal not
+equal to zero.
+Because you have to start at position
+zero, right? So
+it goes right there. Right? Right there.
+Yeah, I guess I had to fix that later.
+So here we will have this uh
+this will give us the value
+one or zero.
+It will give us the index where we will
+land.
+Uh sorry I have to do this like this.
+If the value island
+is equal to
+because I have to
+to jump first here
+by K.
+So if the value I land two is equal to
+zero
+it's uh
+energy points
+energy is always a number right so
+energy cand
+So energy
+comes down one only. Energy equal
+uh norms equal one.
+And
+Since the value can only be zero or one,
+it doesn't matter. I can use else here.
+So here it will
+add three sorry it will the dog tree
+one because of the jump and two
+additional because if it's a
+it's equal to one.
+So,
+[Music]
+I guess here it could return
+uh E.
+Uh I can run the code. See how how many
+errors
+[Music]
+A2.
+So it's not doing anything with my
+Oh,
+it did
+he's not doing anything about my energy.
+So he's not meeting any of the
+conditions.
+I'm not even going here.
+uh because it's not even starting I
+guess
+because what I said about
+zero Here
+we go. Started one.
+Yeah, this is confusing me. So, I have
+to be at zero, but I cannot beat the
+condition here.
+running for too long there.
+Okay, Morauricio.
+>> Yeah, I got it stuck there.
+>> That's okay. Um, so let's talk about
+this problem. You summarized it pretty
+well, so thank you for doing that. Um,
+we get the array of the thunder versus
+cumulus clouds. Um, and we have to jump
+by K amount of indexes and subtract
+either one if we land on a zero or the
+three like you have there if we land on
+a one meaning thundercloud. Um, we're
+also tracking the energy as we go along
+that we use up for landing taking the
+jump and landing on cloud whatever cloud
+and then lastly returning it. Um, I will
+say you didn't add the tracking the
+energy to your pseudo code. That's
+totally fine. And then one thing that I
+also like to do is always have my return
+statement at the beginning. Um, but you
+had a return statement before you ran
+code. So that's all good, well and good.
+So I think as far as reading through the
+problem, summarizing the problem, kind
+of explaining it, and then getting like
+a first round of pseudo code down, I
+think that was great. Um, your approach
+is is pretty good here. uh we have some
+problems obviously like you mentioned
+and
+>> yeah I have a problem right here.
+>> Yeah with the the condition for the
+while loop but otherwise you kind of
+have an approach that you want to take
+to get to the answer and it is logical.
+So when you're getting stuck what are
+some things that you could do here?
+>> Calm down.
+>> Yeah for sure. Did you feel the pressure
+of all of us watching you while you were
+working?
+>> Yeah, when when I didn't have ideas
+about this, I started thinking about the
+time and the fact that I'm stuck and
+kind of run in a loop in my mind about
+those two things. So, it's hard to step
+away from that and keep focusing on the
+actual problem. Yeah, I think people
+find it very surprising how difficult it
+can be just to have even one person,
+just not even saying anything, just kind
+of sitting here watching you while you
+work through a problem. Um, the good
+news is that everyone feels that way and
+you just practice and you kind of bounce
+back from it. Something that helps with
+that is what are the steps you can take
+to implement when you're feeling stuck.
+One thing is to add some obser
+observability to your code. So, we know
+that we're hitting the time limit
+exceed. How can we figure out why
+our like how can we figure out what's
+going on inside of our while loop that
+it just keeps running on and on and on.
+I mean here because I change it but I
+originally had thought about this but it
+never hits it because
+uh since it's going to start with zero
+then it never it meets the condition
+from the get-go.
+>> Mhm.
+>> But in my mind I didn't
+I couldn't figure away with the time
+given and the and the pressure factor.
+Uh I couldn't figure a way to start at
+index zero but get this issue out of the
+way that is blocking me right there.
+>> Yeah, for the moment though it's totally
+fine if you want to have I equal to one.
+We just want to figure out why your code
+runs on and on and on to where it
+exceeds the time limit. Right? So if we
+add, for example, a print statement in
+there, we could track what variables
+are affecting the while loop. So we have
+the I in the condition statement there.
+So that might be something that we want
+to observe while we run the while loop
+and see what happens to its value and
+maybe diagnose what's going on inside of
+our code. Right?
+>> I mean I can see it right away because
+it says skipping uh index zero. It jumps
+over it. So it's always going to end up
+in index one when it jumps from the last
+index. If I start at one, so it's going
+to jump from here. It's going to jump to
+here, and then from here, it's going to
+jump back to here. So, it's going to
+always skip this one. So, it's never
+going to
+>> even if you follow that logic you have
+right there. So, if it jumps from zero
+plus two to the zero at the end of the
+array and then you do the two again, so
+zero zero. So, yeah, that does end you
+in a nice loop there.
+Um, but that actually isn't the problem
+that we have here, funny enough.
+What are you? So, your your index is
+going up.
+Um actually no maybe that condition
+would work
+because you're
+>> because this is every time I I do a job
+I move to
+>> whatever positions it tells me whatever
+>> my current index plus
+a probably because this is being c
+commumulative and and I'm not
+and I'm not resetting it.
+>> Yes, exactly. That's what I was going to
+get out there.
+So you could have added a print
+statement right in there to say okay
+after my else statement after all of my
+code is run what is my index let's just
+see what's happening there and then you
+would see observe in your debug your
+output there that okay oh my index is
+only going up I'm never using the
+modulus to reset it to something to
+track if it could be circling back to
+the zero index
+broken pipe. Maybe I wrong there.
+>> That's odd.
+>> But it's still
+>> Yeah. It goes and on and on and on and
+on and on. Yeah.
+>> Yeah. And so we're seeing it climb and
+climb and climb. So that could have
+given you your first indicator of
+saying, "Okay, I maybe need to do
+something with my code in that regard."
+The other thing, like you said, you
+could end up in just an endless loop by
+starting at that index position.
+Um, and I I kind of don't want to spoil
+this for you, so I want you to keep
+working on this on your own, but think
+about the the formula that they give you
+there as well. You're using it as an if
+if condition inside your while loop.
+Totally cool. But could you use that
+formula there somewhere else? Could you
+use it as the the while condition or
+could you even maybe set it as your
+initial I variable? There's a lot of
+different things that you could do there
+to get around starting from zero even if
+it's just taking your first step because
+you set I to one but what if you had set
+I to K instead or 0 + K um which would
+be K. So then you could you could have
+then potentially treated it as I'm
+already taking my first step, subtract
+that energy from E right at the top and
+then do my while loop of what if I
+equals not zero so on and so forth. So
+there's a couple ways you could get
+around that. Um I think you probably
+would have figured something out if all
+of us weren't watching you. Um but those
+are some some tips for you there is just
+adding that observability to say okay
+well what is actually happening in my
+code once I got the while loop running
+and then how do you brainstorm what you
+can do to
+manipulate your I index and your your
+conditions there if it's something with
+your condition what can you do with your
+condition what does the problem give you
+um is there anything in the problem
+statement that you can use to maybe help
+you with your deciding what your
+conditions are, so on and so forth.
+>> But overall, I think you did pretty
+good. Like not a bad attempt at all. You
+got a good base going. You've got your
+pseudo code going. You have you're on
+the way to a working solution. Um, so
+here it's just kind of practicing
+getting that problem solving implemented
+and kind of whittling down your time
+from maybe 30 minutes, 40 minutes down
+to 20 minutes. um where you can
+confidently go through all of those
+steps and not feel stuck or how can you
+counteract your stuckness by adding
+observability or making an assumption
+and then testing that assumption which
+you did do. You said well what if I set
+I to one first and then try to move on
+from there. Those are those are good
+things that you can do.
+>> Yeah. So I spend 40 minutes on it. You
+say
+>> 20 minutes.
+>> Okay.
+No, I mean when you said stop, that's
+was the 20 minute mark, right?
+>> Yes. When I said stop, that was the
+20-minute mark. Yeah.
+>> Okay.
+>> So, you you made it pretty far, I would
+say.
+>> You just keep keep practicing.
+>> It's always been confusing the circular
+logic.
+>> Yeah. And for that, I think it's also
+good to print that out. If they're
+giving me some formula and I think this
+is useful to use, maybe I'll just print
+that right at the top and say, what is
+this actually doing? I know it's doing
+index plus k mod n. What does that
+actually mean though? What is the
+implication of that for each step that
+I'm taking with k?
+>> Yeah.
+>> So sometimes I mean my first
+recommendation is that I print out the
+parameters and then I print out anything
+useful from the problem statement. We've
+got this cool formula. I'm going to
+print that out. I'm going to investigate
+it and then I'm going to build my my
+pseudo code and my actual code based off
+of those
+those inputs that I've received. Yeah, I
+need to get deeper understanding of this
+and then I can use that to fix my while
+loop and then this condition. So it's
+not cumulative but probably this
+condition also needs to be uh related to
+the formula. I don't know.
+>> Yeah, maybe. All right. Thanks,
+Mauricio.
+>> Okay.
+>> Okay.
+So, we have about 10 minutes left. Um,
+does anyone have any questions about
+this problem or any insight that you
+would like to add there as well?
+Cool.
+All right. Well, we don't have time to
+do any other mock interviews or
+anything. Um,
+but I can close out with another set of
+questions. So, if anyone has any
+questions about the tech interview prep
+or any anything they'd like to ask, we
+can do that. So, what questions do we
+have?
+I do want to do one thing though
+actually. Um I want it to be in the
+recording. So
+last week we were working on
+the precursor to this problem which was
+jumping the clouds. And we had gotten to
+the point where the we had realized the
+for loop was not going to work because
+when we tried to update the index by our
+value there, it wasn't actually
+updating. It was getting reset and going
+back to only incrementing by one as the
+four in range stipulated. Um I think in
+JavaScript, I think I got confused
+because I think in JavaScript it will
+actually allow you to update it, but I
+could be making that up as well. So, we
+went back to the while index or while
+loop for tracking it and everything
+worked perfectly from there on out. Um,
+so I just wanted to have that in the
+recording because I know we posted that
+in Discord and and a couple of people
+had chimed in about switching over to
+the Y loop. So, this was that.
+And I do remember saying that my
+intuition was like, we should use a
+while loop because indexes are yucky.
+And then Brian got in my head about No,
+I'm just kidding, Brian. Um, yeah. So, I
+wanted to have that that we got that
+worked out and it ran everything. I do
+wish hacker rank had what le code does
+where it tells you the like runtime in
+milliseconds, but I think otherwise
+um hackerink is pretty good. And so then
+that's what Mauricio was talking about
+at the beginning. we you we needed a Y
+loop here because we were manipulating
+those indexes. So when you're thinking
+about this one where you're still also
+manipulating the index by that K
+implementation,
+you're going to want to use the while
+loop. And actually there are two reasons
+why we might want to use the while loop
+in this one.
+The first being that index, the second
+being that it will be circular, right?
+Because if you just did a for loop um
+you know that runs on a series of events
+where it goes from x to z or a to z
+where whether you're doing the for i in
+range or the for whatever in a numerate
+or for whatever for object in nums or
+whatever I'm saying whatever a lot
+whatever kind of for loop you use it has
+a set end and a set beginning.
+So if we want it to run in circles
+that's not going to work for us. So
+there are actually two reasons that this
+one kind of hit that red flag of okay
+while loop here. Um I think this one
+it's still pretty obvious to use the
+while loop. But if you
+started using a for loop kind of got
+stuck that's where we added those print
+statements and found out that oh there
+was an issue with the index. This one I
+think you have a little bit more
+more flags raised about why you would
+want to use a while loop.
+I think the confusing part about because
+we're talking about two different
+problems, right? Mauricio did
+>> Yeah.
+>> jumping over clouds too, right?
+>> Yep.
+>> Okay. So, the first one like the the
+confusing part for me was
+you're you have a count and then you
+have
+like
+I so you're there's two iterators.
+So if you you have to count both the the
+two-step jump and the one step jump.
+So
+>> no you don't.
+>> Oh well yes yes you do. Yes. Sorry. Yes
+you do.
+>> So the the while loop kind of kind of
+helps
+because you can you basically you can
+just use an if else statement. So if
+you know cuz you have to
+basically check to see if i + 2 is
+possible
+and then you also have to check if i + 2
+is zero.
+So if you use those two conditions and
+then I plus two because I've never
+actually the funny part about this
+problem is whenever I use an iterator
+like plus equals or minus equals
+basically it's just i equals i + one
+>> right
+>> I never did anything else but plus or
+minus one.
+>> Exactly.
+>> So when I started thinking about it it's
+like well if I can do I equals i + 2.
+So, I kind of had to break it out like
+into traditional, you know, without
+using the abbreviation, whatever you
+want to call that. Um, well, and you
+still could use a for loop in that case
+if the the increment the increment
+variable was consistent.
+>> The problem with the the first problem
+is that it would change based on
+what would it say? It was either
+you either jump by one or you can jump
+by a different value. Let's see.
+>> Well, it's either jump by one or two,
+but you count count one
+>> regardless. You count one either way.
+>> Count outside of the if else the if else
+condition,
+>> right? I was just saying that you could
+have technically if you didn't have that
+condition of saying it's either going to
+be either one or two. But if it was
+always going to be one or always going
+to be two, then the for loop would have
+worked fine because we could just set
+the incrementer to be increment by two.
+But it was because we had the it's not
+always going to be consistent,
+>> right?
+>> Same for this the second problem. It is
+always going to be consistent for the
+jumping, but we're going to go outside
+of the bounds that we set. And so it's
+actually there are two different reasons
+there why but both lead to the Y loop.
+In this case the first problem the count
+isn't an iterator. We are tracking steps
+taken but it's not an iterator through
+our array. That's what the index or the
+I value was. But it is another variable
+that we're tracking. You're right.
+>> I I put the count inside of a while.
+Inside of the while right after the I.
+>> Yeah. But it it doesn't impact the
+iteration through the array. Like it
+doesn't impact in any way how we move
+through the list through the array.
+>> Oh, so you're saying it's a tracker.
+>> It's just something that we're tracking.
+It's information that we're tracking and
+manipulating. Same thing with the second
+problem with the energy. The e starting
+at 100 and then counting down. That's
+not an iterator. We're just tracking the
+value
+>> in coordination with moving through the
+array.
+I think I um took a little different
+thought process in this was when to use
+a while loop and when to use a for loop
+in these cases and I kind of went with
+uh what I found out a little bit on the
+research and you can correct me
+uh but I used chat GPT and they were
+saying that the while loop if the uh if
+there was no since you didn't know what
+the if the the end result was
+inconsistent like Ruby says if it's
+different or if you didn't know that the
+steps if the steps are consistent you
+would use more of a for loop.
+>> So that's what um I was like what what
+determines why I use a while loop and
+why do I use a for loop which would be
+more efficient. So that's
+>> well if you don't if you don't know the
+range you you almost have to use a while
+loop
+>> right that as well.
+>> Yeah. So I was looking at it from that
+thought process too. So I was backing up
+from the very basics. So thank you for
+explaining that though. Appreciate it.
+>> Oh good. Yeah. No problem. Yeah. Um TBT
+is also good for explaining things
+sometimes. I don't like it to solve
+things for me especially because
+sometimes it hallucinates an answer and
+it won't actually be correct. Um but the
+origins of like chatbt and language
+learning models was actually for
+research purposes. So using it to ask
+questions, get certain outputs,
+understand concepts better is actually a
+really good use case for it. So thank
+you for sharing that.
+Whereas now we're kind of using it for
+code. Even with the challenge week,
+we're kind of using it to help build
+with the code. That stuff is good, too.
+But I think even more important in those
+cases is are you using are you using the
+um AI to help you like brainstorm and
+generate ideas and find out what are my
+use cases for this app? Who would be my
+ideal users? How can I formulate to
+understand their challenges? Those kinds
+of things. So if you're participating in
+the challenge week, think about the
+other ways to use AI. Um or don't use AI
+at all because it's contributing to
+global warming. But I won't I won't go
+into my diet tribe about that.
+All right, so we are hitting the clock
+here. Um,
+any other questions before we hop off
+for today? Thank you all for
+contributing. This was a great session.
+>> Thank you, Ruby. I appreciate it.
+Thanks. Thanks for doing this stuff.
+>> Yeah, no problem. And again, I want to
+get this website up. Um, the only thing
+I have left to do is well go through the
+backlog of replay sessions and like
+actually put instructions on them. But I
+there's an element to it that I kind of
+want to create uh authentication for so
+that you can log in as an individual and
+track your progress so you can know
+which videos you've watched, which
+assignments you've taken on, which
+problems you've looked at, that kind of
+stuff. So that's the next big hurdle for
+me. Well, the next hurdle, not big
+hurdle, but so yeah, look forward to
+that. All right, thank you everyone and
+have a great rest of your day.
+>> Thank you. Thank you, brother.
