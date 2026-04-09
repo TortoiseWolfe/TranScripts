@@ -3,11 +3,11 @@ Source: https://youtu.be/iks_9_BzQQg
 
 *Nailing the Tech Interview — Sunday session*
 
-## HackerRank Certifications: Worth It?
+## [18:23](https://youtu.be/iks_9_BzQQg?t=1103) HackerRank Certifications: Worth It?
 
 Extended discussion on whether HackerRank certifications are worth pursuing.
 
-### TLDR
+### [5:08](https://youtu.be/iks_9_BzQQg?t=308) TLDR
 
 - **Most interviewers and companies don't pay much attention to them.**
 - They're **fun** and don't hurt to have on a resume or LinkedIn, but they rarely move the needle.
@@ -15,7 +15,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 > "I don't think companies really care about them too much. Not having them won't hurt you."
 
-### Available HackerRank certification tracks
+### [2:22](https://youtu.be/iks_9_BzQQg?t=142) Available HackerRank certification tracks
 
 - **Software Engineer Intern** — Problem Solving + SQL.
 - **Software Engineer** — Problem Solving + SQL + REST API.
@@ -26,13 +26,13 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 - **Problem Solving** — Basic, Intermediate, Advanced.
 - **PowerShell**, **Selenium**, **Tech Communication**, etc.
 
-### What the Problem Solving levels correspond to
+### [29:09](https://youtu.be/iks_9_BzQQg?t=1749) What the Problem Solving levels correspond to
 
 - **Basic** — roughly easy-level HackerRank problems.
 - **Intermediate** — hashmaps, stacks, queues, Dijkstra, optimal solutions (medium level).
 - **Advanced** — trees, graph traversal, shortest path, dynamic programming (hard level).
 
-### Python intermediate cert topic list
+### [12:36](https://youtu.be/iks_9_BzQQg?t=756) [approx] Python intermediate cert topic list
 
 - Closures, decorators
 - Advanced object-oriented programming
@@ -43,7 +43,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 > "That would basically be like a really good summary of everything you learn in mod 2, scaled into one certification. I imagine it might be kind of tricky to do within an hour."
 
-### When certifications *might* help
+### [8:31](https://youtu.be/iks_9_BzQQg?t=511) When certifications *might* help
 
 - If you've worked in a niche area (e.g., **Selenium** for QA automation) and are applying for a role that specifically asks for that skill, the cert might give a slight edge.
 - If everything else is equal between two candidates, certs could tip the scales.
@@ -52,7 +52,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 ---
 
-## Q&A: Practicing for Certification Exams
+## [13:46](https://youtu.be/iks_9_BzQQg?t=826) Q&A: Practicing for Certification Exams
 
 **Mina asked** about sites where you can pay a membership and take mock certification exams repeatedly until the real exam.
 
@@ -61,14 +61,14 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 ---
 
-## Tech Interview Structure (Joy of Coding)
+## [15:53](https://youtu.be/iks_9_BzQQg?t=953) Tech Interview Structure (Joy of Coding)
 
 - Joy of Coding's technical interview uses **HackerRank only**, not LeetCode.
 - HackerRank problems at **easy level** give you all the info you need. LeetCode intentionally leaves info out, forcing more assumption-checking — good practice, but harder.
 - **Readiness signal:** You can solve roughly **3 easy problems in a row under a 20-minute time limit**.
 - The **Problem Solving track** on HackerRank covers everything from Joy of Coding mods 1 and 2.
 
-### Topics that may appear on the tech interview
+### [18:17](https://youtu.be/iks_9_BzQQg?t=1097) Topics that may appear on the tech interview
 
 - Arrays and lists
 - Dictionaries
@@ -79,17 +79,17 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 - Sliding window / basic algorithms
 - (File I/O is listed in mod 2 but will **not** be tested.)
 
-### Recommended readiness benchmark
+### [22:32](https://youtu.be/iks_9_BzQQg?t=1352) Recommended readiness benchmark
 
 Complete mod 2 through **projects 2 or 3**, then you're ready to try a mock interview.
 
 ---
 
-## Mock Interview: Jumping on the Clouds (Lisa)
+## [20:15](https://youtu.be/iks_9_BzQQg?t=1215) Mock Interview: Jumping on the Clouds (Lisa)
 
 Lisa volunteered for a pseudo-code mock interview on the HackerRank **Jumping on the Clouds** problem.
 
-### Problem summary
+### [50:23](https://youtu.be/iks_9_BzQQg?t=3023) Problem summary
 
 You're given an array of 0s and 1s representing clouds:
 
@@ -98,26 +98,26 @@ You're given an array of 0s and 1s representing clouds:
 
 Starting at index 0, you can jump **+1 or +2** each move. Find the **minimum number of jumps** to reach the last index.
 
-### Constraints
+### [27:38](https://youtu.be/iks_9_BzQQg?t=1658) Constraints
 
 - `2 <= n <= 100` where `n` is the array length
 - `c[i]` is `0` or `1`
 - `c[0] == 0` and `c[n-1] == 0` — **first and last are always safe**
 - It is always possible to win the game
 
-### Key insight from the constraints
+### [56:25](https://youtu.be/iks_9_BzQQg?t=3385) Key insight from the constraints
 
 > "It is always possible to win the game."
 
 Because the starting and ending positions are always `0`, and you can always jump `+1` or `+2` from any safe cell, **you never need to track history or backtrack**. No edge case where "I jumped two before, now I'm stuck."
 
-### Assumptions you can safely make
+### [44:08](https://youtu.be/iks_9_BzQQg?t=2648) [approx] Assumptions you can safely make
 
 - First index is always `0` (safe).
 - Last index is always `0` (safe) — you'll always land on it.
 - Minimum array length is 2, so at least one jump is possible.
 
-### Game plan (pseudo code)
+### [47:17](https://youtu.be/iks_9_BzQQg?t=2837) [approx] Game plan (pseudo code)
 
 ```
 # Given: c = array of 0s and 1s, starting at index 0
@@ -135,7 +135,7 @@ while i < len(c) - 1:
 return steps
 ```
 
-### Coaching feedback for Lisa
+### [52:13](https://youtu.be/iks_9_BzQQg?t=3133) Coaching feedback for Lisa
 
 - **"Least number of jumps" implies a preference** for the `+2` jump whenever it's safe and in range. Always check the `+2` option first, then fall back to `+1`.
 - When your index progression is **not fixed** (jumping 1 or 2), a **`while` loop** is usually cleaner than `for i in range(...)`. You can technically manipulate `i` inside a for loop, but it hurts readability.
@@ -144,7 +144,7 @@ return steps
 
 > "I like that re-summarization of the problem — it makes it easier to say 'all right, you're given an array of 0 or 1, you can land on a zero, one is not safe, and we want the least amount of jumps.'"
 
-### How to classify this problem
+### [59:44](https://youtu.be/iks_9_BzQQg?t=3584) How to classify this problem
 
 - **Not** a specific algorithmic pattern — no sliding window, no DP trick, no formula.
 - Just **linear iteration with index manipulation**. Straightforward loop + conditionals.
@@ -152,7 +152,7 @@ return steps
 
 ---
 
-## Closing Notes
+## [19:20](https://youtu.be/iks_9_BzQQg?t=1160) Closing Notes
 
 - Ruby is **running thin on new problems** to pose, since the group has covered arrays, dictionaries, searching/sorting, linked lists, stacks, queues, hashmaps, and sliding window extensively.
 - Going forward, Sundays will focus more on **mock interviews** rather than lengthy explanation segments, to conserve problems.
@@ -161,7 +161,7 @@ return steps
 
 ---
 
-## Key Takeaways
+## [0:08](https://youtu.be/iks_9_BzQQg?t=8) Key Takeaways
 
 - **HackerRank certifications are mostly for fun** — they rarely affect hiring decisions for dev roles.
 - **HackerRank > LeetCode at easy level** for tech interview prep because HackerRank includes all necessary context.

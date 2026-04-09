@@ -3,7 +3,7 @@ Source: https://youtu.be/fvtYZ_QBQK0
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Not Every Practice Session Has to Hit the Time Target
+## [0:37](https://youtu.be/fvtYZ_QBQK0?t=37) Q&A: Not Every Practice Session Has to Hit the Time Target
 
 - It's okay if you don't hit the 15–20 minute target every single time.
 - What matters is that **on average** you consistently hit it.
@@ -11,7 +11,7 @@ Source: https://youtu.be/fvtYZ_QBQK0
 
 > "Sometimes you take the wrong path to the solution that gets you tangled in a mess that ends up consuming lots of time." — Mauricio
 
-### When to scrap and restart
+### [1:34](https://youtu.be/fvtYZ_QBQK0?t=94) When to scrap and restart
 
 - If you've gone down a bad path, **it's always okay to scratch it and start from scratch**.
 - Often starting over is *faster* than trying to rescue a tangled approach.
@@ -19,13 +19,13 @@ Source: https://youtu.be/fvtYZ_QBQK0
 
 ---
 
-## Warm-Up Problem: Array Partition I (LeetCode easy)
+## [2:49](https://youtu.be/fvtYZ_QBQK0?t=169) Warm-Up Problem: Array Partition I (LeetCode easy)
 
-### Problem statement
+### [2:49](https://youtu.be/fvtYZ_QBQK0?t=169) Problem statement
 
 Given an integer array `nums` of `2n` integers, group them into `n` pairs `(a1, b1), (a2, b2), ...` such that the sum of `min(ai, bi)` for all `i` is **maximized**. Return the maximized sum.
 
-### Examples
+### [10:45](https://youtu.be/fvtYZ_QBQK0?t=645) [approx] Examples
 
 ```
 nums = [1, 4, 3, 2]     -> 4
@@ -35,17 +35,17 @@ nums = [6, 2, 6, 5, 1, 2] -> 9
   Pair: (1, 2), (2, 5), (6, 6) -> 1 + 2 + 6 = 9
 ```
 
-### Constraints
+### [13:27](https://youtu.be/fvtYZ_QBQK0?t=807) [approx] Constraints
 
 - `1 <= n <= 10^4`
 - `nums.length == 2 * n` — **always even length**
 - `-10^4 <= nums[i] <= 10^4` — **can be negative**
 
-### Problem restated
+### [6:20](https://youtu.be/fvtYZ_QBQK0?t=380) Problem restated
 
 > "Find the best combination of pairs so that the sum of the min of each two-value pair provides the highest output."
 
-### Key phrase: "all possible pairings"
+### [3:41](https://youtu.be/fvtYZ_QBQK0?t=221) Key phrase: "all possible pairings"
 
 This phrase in the explanation suggests brute force is possible, but it's actually **two levels of brute force**:
 
@@ -54,27 +54,27 @@ This phrase in the explanation suggests brute force is possible, but it's actual
 
 This explodes to factorial complexity very quickly.
 
-### A partial optimization idea
+### [14:49](https://youtu.be/fvtYZ_QBQK0?t=889) A partial optimization idea
 
 - Greedily find the best pair first (highest possible min), remove those two elements, then repeat on the remaining set.
 - Gets you closer to O(n²) rather than O(n!).
 - **Not discussed yet:** the actually-optimal solution, which is to **sort and take every other element**. This is covered in the Wednesday deep-dive.
 
-### Coaching note
+### [17:23](https://youtu.be/fvtYZ_QBQK0?t=1043) Coaching note
 
 This is marked "easy" on LeetCode, but easy problems vary in difficulty. If a particular easy stumps you, don't panic — it happens.
 
 ---
 
-## Mock Interview: Mauricio on "Minimum Number of Arrows to Burst Balloons"
+## [30:02](https://youtu.be/fvtYZ_QBQK0?t=1802) Mock Interview: Mauricio on "Minimum Number of Arrows to Burst Balloons"
 
-### Problem statement
+### [30:02](https://youtu.be/fvtYZ_QBQK0?t=1802) Problem statement
 
 You're given a 2D wall with balloons. Each balloon is represented as `[xstart, xend]` (its horizontal diameter). You can shoot arrows vertically from the x-axis that travel infinitely upward, popping all balloons they pass through.
 
 **Return the minimum number of arrows needed to burst all balloons.**
 
-### Constraint quirk
+### [49:27](https://youtu.be/fvtYZ_QBQK0?t=2967) Constraint quirk
 
 One constraint Mauricio found confusing: `points[i].length == 2`. This just means each balloon is a 2-element sub-array (2D array with inner length 2), not a constraint on the outer array length.
 
@@ -85,14 +85,14 @@ The other constraints:
 - `1 <= points.length <= 10^5`
 - `-2^31 <= xstart < xend <= 2^31 - 1` — values can be **negative**
 
-### Mauricio's game plan
+### [34:14](https://youtu.be/fvtYZ_QBQK0?t=2054) Mauricio's game plan
 
 - **Find intersections** between balloon diameters.
 - One arrow can pop multiple balloons if their x-ranges overlap.
 - Compare each balloon against the others to find overlapping groups, then count how many distinct groups you need.
 - Acknowledged this is **O(n²)** nested-loop brute force — he wanted to get an idea down fast rather than find an optimal approach.
 
-### Partial pseudo code
+### [37:40](https://youtu.be/fvtYZ_QBQK0?t=2260) [approx] Partial pseudo code
 
 ```
 # For each balloon, compare its [xstart, xend] against every other balloon
@@ -107,13 +107,13 @@ end2 = points[j][1]
 # check intersection
 ```
 
-### Coaching feedback
+### [45:39](https://youtu.be/fvtYZ_QBQK0?t=2739) Coaching feedback
 
 - Good job thinking it through clearly and picking a starting approach even knowing it wasn't optimal.
 - Medium problems have a **40-minute to 1-hour** time budget. Spending 20–25 minutes on pseudo code still leaves ample time to code and debug.
 - **Two-level brute force tends to balloon into complexity traps** — if you catch yourself saying "compare each with all others" without a tracking mechanism, pause and think about sorting first.
 
-### The actually good approach (hinted)
+### [34:14](https://youtu.be/fvtYZ_QBQK0?t=2054) The actually good approach (hinted)
 
 - **Sort balloons by their end coordinate.**
 - Walk through and greedily count: if the current balloon starts *after* the last arrow's position, shoot a new arrow at its end.
@@ -121,11 +121,11 @@ end2 = points[j][1]
 
 ---
 
-## Group Breakout Session
+## [15:11](https://youtu.be/fvtYZ_QBQK0?t=911) Group Breakout Session
 
 Ruby split the group into pairs for 20 minutes on the Burst Balloons problem while Mauricio stayed in the main room for his mock interview.
 
-### Group 1 — Chris (solo, possibly muted the whole time)
+### [56:05](https://youtu.be/fvtYZ_QBQK0?t=3365) Group 1 — Chris (solo, possibly muted the whole time)
 
 Chris attempted to code a solution iterating `for i in range(len(points))`, treating each `points[i]` as `[start, end]`, and tracking arrows.
 
@@ -138,7 +138,7 @@ Chris attempted to code a solution iterating `for i in range(len(points))`, trea
 
 Not a bad starting approach — just needs constraint awareness.
 
-### Group 2 — Lisa and Rebecca
+### [51:08](https://youtu.be/fvtYZ_QBQK0?t=3068) [approx] Group 2 — Lisa and Rebecca
 
 Worked on pseudo code only.
 
@@ -150,7 +150,7 @@ Worked on pseudo code only.
 - Considered **sorting the points** to make the comparison easier.
 - Planned a `for` loop through each balloon with `if` statements checking overlap, then a counter for arrows needed.
 
-### Rebecca's confusion with nested arrays
+### [25:58](https://youtu.be/fvtYZ_QBQK0?t=1558) Rebecca's confusion with nested arrays
 
 Rebecca understood the problem visually but wasn't sure **how to "tell the computer"** to compare the minimum of one inner array against the maximum of the next.
 
@@ -163,7 +163,7 @@ Rebecca understood the problem visually but wasn't sure **how to "tell the compu
 
 ---
 
-## On Going Back Through Old Material
+## [56:31](https://youtu.be/fvtYZ_QBQK0?t=3391) [approx] On Going Back Through Old Material
 
 Rebecca asked whether she should redo all of mod 2.
 
@@ -175,7 +175,7 @@ Rebecca asked whether she should redo all of mod 2.
 
 ---
 
-## Time Targets Recap
+## [36:01](https://youtu.be/fvtYZ_QBQK0?t=2161) Time Targets Recap
 
 | Difficulty | Target time |
 |------------|-------------|
@@ -189,7 +189,7 @@ Consistently hitting easy targets is the main readiness signal. Medium problems 
 
 ---
 
-## Key Takeaways
+## [15:03](https://youtu.be/fvtYZ_QBQK0?t=903) Key Takeaways
 
 - **Consistency matters more than every-time perfection.** Hit the time target on average, not always.
 - **Start over when stuck.** A fresh attempt is often faster than debugging a tangled approach.

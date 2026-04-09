@@ -5,18 +5,18 @@ Wednesday session covering two problems: a walk-through of **Best Time to Buy an
 
 ---
 
-## Problem: Best Time to Buy and Sell Stock
+## [52:29](https://youtu.be/jJSryNGi6Io?t=3149) Problem: Best Time to Buy and Sell Stock
 
 > You are given an array `prices` where `prices[i]` is the price of a stock on day `i`. Choose a single day to buy and a different day in the future to sell. Return the maximum profit. If no profit is possible, return 0.
 
-### Examples
+### [2:20](https://youtu.be/jJSryNGi6Io?t=140) [approx] Examples
 
 - `prices = [7, 1, 5, 3, 6, 4]` → `5` (buy at 1, sell at 6).
 - `prices = [7, 6, 4, 3, 1]` → `0` (monotonically decreasing — no profit possible).
 
 ---
 
-## Brute Force: Nested Loop — O(n²)
+## [5:57](https://youtu.be/jJSryNGi6Io?t=357) Brute Force: Nested Loop — O(n²)
 
 Compare every buy day to every possible sell day and track the max profit.
 
@@ -32,17 +32,17 @@ def maxProfit(prices):
     return profit
 ```
 
-### Result on LeetCode
+### [6:55](https://youtu.be/jJSryNGi6Io?t=415) Result on LeetCode
 
 - **198 / 212 test cases pass**, then **Time Limit Exceeded**.
 - Logic is correct; efficiency is the bottleneck.
 
-### Complexity
+### [13:05](https://youtu.be/jJSryNGi6Io?t=785) Complexity
 
 - **Time:** O(n²) — nested loop over the same array.
 - **Space:** O(1).
 
-### When brute force is OK to start with
+### [3:35](https://youtu.be/jJSryNGi6Io?t=215) When brute force is OK to start with
 
 > Start with brute force to validate your logic. If it passes, great. If it times out but passes most cases, that tells you the approach is logically sound — you just need a better algorithm, not a different understanding of the problem.
 
@@ -51,7 +51,7 @@ def maxProfit(prices):
 
 ---
 
-## Don't Micro-Optimize — Drop a Rung
+## [0:50](https://youtu.be/jJSryNGi6Io?t=50) Don't Micro-Optimize — Drop a Rung
 
 When your brute force times out, resist the urge to tweak the existing nested loop with small tricks (reversing iteration, swapping `+`/`-`, starting from the end). Those optimizations stay **within** O(n²) and won't get you under the time limit.
 
@@ -65,7 +65,7 @@ If you're at O(n²), aim for **O(n log n)** or **O(n)**. You need to remove the 
 
 ---
 
-## Optimization Attempt 1: Replace Inner Loop With `max()`
+## [16:25](https://youtu.be/jJSryNGi6Io?t=985) [approx] Optimization Attempt 1: Replace Inner Loop With `max()`
 
 ```python
 def maxProfit(prices):
@@ -79,7 +79,7 @@ def maxProfit(prices):
     return profit
 ```
 
-### Why this doesn't help
+### [13:51](https://youtu.be/jJSryNGi6Io?t=831) Why this doesn't help
 
 - `max(prices[i+1:])` is itself an **O(n)** operation.
 - The outer O(n) loop times O(n) max calls = still **O(n²)**.
@@ -87,7 +87,7 @@ def maxProfit(prices):
 
 ---
 
-## Optimal Solution: Single Pass — O(n) (Mindy's Solution)
+## [12:44](https://youtu.be/jJSryNGi6Io?t=764) Optimal Solution: Single Pass — O(n) (Mindy's Solution)
 
 Flip the thinking. Instead of asking "what's the max price after this day?", track the **minimum price seen so far** and calculate profit from it as you walk the array.
 
@@ -103,29 +103,29 @@ def maxProfit(prices):
     return profit
 ```
 
-### How it works
+### [1:00:56](https://youtu.be/jJSryNGi6Io?t=3656) How it works
 
 - Walk the array once.
 - **Update `min_price`** whenever you see a lower value — this is "the best day to have bought so far".
 - Otherwise, **calculate the profit** from selling today relative to `min_price` and update `profit` if it beats the current best.
 - You never need to look backward because `min_price` already holds the best buy point from everything to the left.
 
-### The mental flip
+### [0:31](https://youtu.be/jJSryNGi6Io?t=31) The mental flip
 
 > The brute force asks "for each buy, what's the best sell?" — that's O(n²) because every buy needs its own search. The optimal asks "for each sell, what's the best buy so far?" — and the answer to that is just a running minimum, which is O(1) to maintain.
 
-### Complexity
+### [28:08](https://youtu.be/jJSryNGi6Io?t=1688) [approx] Complexity
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1) — just two scalars.
 
-### Coach's two-pointer attempt (failed)
+### [8:05](https://youtu.be/jJSryNGi6Io?t=485) Coach's two-pointer attempt (failed)
 
 The coach tried converging two pointers from opposite ends, but the array isn't sorted — there's no structural guarantee that shrinking from the outside preserves the optimal pair. **Two pointers only work when the array has monotonic or sorted properties to exploit.**
 
 ---
 
-## Problem-Solving Process Reminder
+## [17:02](https://youtu.be/jJSryNGi6Io?t=1022) Problem-Solving Process Reminder
 
 > When you've done your due diligence — tried brute force, tried an alternate technique, and still can't find a better approach — that's when you can look at the solutions tab. Don't copy; read, close the tab, and re-implement from memory. Add the pattern to your mental toolkit.
 
@@ -133,31 +133,31 @@ Mindy likely didn't find the running-minimum solution on her first try either. T
 
 ---
 
-## Mock Interview: Jump Game (Medium)
+## [52:29](https://youtu.be/jJSryNGi6Io?t=3149) Mock Interview: Jump Game (Medium)
 
 > You are given an integer array `nums`. You are initially positioned at the array's first index. Each element in the array represents your **maximum** jump length at that position. Return `true` if you can reach the last index, or `false` otherwise.
 
-### Examples
+### [37:31](https://youtu.be/jJSryNGi6Io?t=2251) [approx] Examples
 
 - `nums = [2, 3, 1, 1, 4]` → `true` (jump 1 → then 3 → reach the end).
 - `nums = [3, 2, 1, 0, 4]` → `false` (stuck on the 0 at index 3).
 
-### John's key insight during the read-through
+### [51:25](https://youtu.be/jJSryNGi6Io?t=3085) John's key insight during the read-through
 
 > Each element represents your **maximum** jump length — not a required jump length. You can jump *up to* that many steps, including fewer. That's half the problem right there.
 
 - If `nums[i] == 0` you're stuck at position `i` unless you can skip over it from an earlier jump.
 - The "maximum" wording is critical — John initially misread it as a required jump before catching the assumption on a second read.
 
-### John's attempt
+### [47:11](https://youtu.be/jJSryNGi6Io?t=2831) John's attempt
 
 John got initial test cases passing in under 15 minutes on his first medium problem ever. The code hit an edge case when `nums` had a single zero-only scenario, which led to an `IndexError`.
 
-### Coach feedback
+### [53:05](https://youtu.be/jJSryNGi6Io?t=3185) Coach feedback
 
 > You jumped straight into code, which works for the small cases, but for a medium problem you want to slow down. Pull out your assumptions, comment them in, test them. You'll iterate on code endlessly — distilling the problem first is where the real wins happen.
 
-### Approach outline (for future iteration)
+### [46:54](https://youtu.be/jJSryNGi6Io?t=2814) [approx] Approach outline (for future iteration)
 
 ```
 # greedy approach: track the furthest index reachable so far
@@ -167,25 +167,25 @@ John got initial test cases passing in under 15 minutes on his first medium prob
 #   if furthest reachable >= last index, return true
 ```
 
-### Complexity target
+### [49:15](https://youtu.be/jJSryNGi6Io?t=2955) [approx] Complexity target
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1).
 
 ---
 
-## Why Mock Interviews Use Medium Problems
+## [55:03](https://youtu.be/jJSryNGi6Io?t=3303) Why Mock Interviews Use Medium Problems
 
 Mauricio asked: the tech interview academy uses easy problems, so why does the mock use medium?
 
-### Reasons
+### [55:15](https://youtu.be/jJSryNGi6Io?t=3315) Reasons
 
 1. **Real-world interviews** on the job market are **medium to hard** — getting early exposure builds tolerance.
 2. **Medium problems are not just "hard math"** — they're usually easy problems composed together. They stress-test decomposition skills.
 3. **Hoarding easy problems** for actual practice — the coach reserves easy problems for practice runs and reserves mediums for mock stress.
 4. **The mock isn't about writing working code** — it's about the problem-solving dialogue: pulling assumptions from the prompt, breaking steps down, verbalizing thinking.
 
-### Expectation on a mock medium
+### [58:03](https://youtu.be/jJSryNGi6Io?t=3483) Expectation on a mock medium
 
 - Read the full problem, including constraints.
 - Pull out assumptions (what it tells you, what it doesn't).
@@ -195,7 +195,7 @@ Mauricio asked: the tech interview academy uses easy problems, so why does the m
 
 ---
 
-## Session Takeaways
+## [37:27](https://youtu.be/jJSryNGi6Io?t=2247) Session Takeaways
 
 - **Brute force first when you're stuck** — validate logic, then optimize.
 - **Passing most but not all test cases** with TLE means efficiency, not correctness. Drop a full Big-O rung, don't micro-optimize.

@@ -5,11 +5,11 @@ Deep dive on **Minimum Time to Make Rope Colorful** (the "balloons" problem) wit
 
 ---
 
-## Problem: Minimum Time to Make Rope Colorful
+## [1:20](https://youtu.be/EAs0tnJhPVA?t=80) Problem: Minimum Time to Make Rope Colorful
 
 You are given an array `colors` where each element is a letter representing a balloon's color, and a parallel array `neededTime` where each element is the seconds required to remove the balloon at that index. Remove the **minimum total time** worth of balloons such that no two adjacent balloons share a color.
 
-### Constraints
+### [2:22](https://youtu.be/EAs0tnJhPVA?t=142) Constraints
 
 - `len(colors) == len(neededTime)` (one-to-one correspondence)
 - `1 <= len(colors) <= 10^5`
@@ -18,7 +18,7 @@ You are given an array `colors` where each element is a letter representing a ba
 
 ---
 
-## Mauricio's First Approach — Nested Loops (Brute Force)
+## [4:21](https://youtu.be/EAs0tnJhPVA?t=261) Mauricio's First Approach — Nested Loops (Brute Force)
 
 Identify each **sub-array of consecutive same-colored balloons**, sum the time for that group, subtract the maximum (the balloon we keep), and accumulate the cost.
 
@@ -46,7 +46,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Mauricio's Refined Approach — Single Loop, O(n)
+## [20:02](https://youtu.be/EAs0tnJhPVA?t=1202) Mauricio's Refined Approach — Single Loop, O(n)
 
 Rather than identifying groups, iterate once and on every match with the previous balloon, add the **minimum** of the two times to the total, then store the **running maximum** back into `neededTime[i]` so the next iteration compares against the right value.
 
@@ -60,7 +60,7 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### Why Update `neededTime[i]` In Place?
+### [7:26](https://youtu.be/EAs0tnJhPVA?t=446) Why Update `neededTime[i]` In Place?
 
 > "As I go through the array, I'm keeping one position before — `i - 1` — always holding the current maximum. So I always get the min against the maximum, because ultimately I'm going to leave the maximum there. This line ensures the next iteration has the correct running maximum at `i - 1`."
 
@@ -69,7 +69,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Coach's Parallel Approach — External Tracking Variables
+## [47:47](https://youtu.be/EAs0tnJhPVA?t=2867) Coach's Parallel Approach — External Tracking Variables
 
 The coach wrote a similar one-pass solution but used **external variables** instead of mutating `neededTime`:
 
@@ -95,7 +95,7 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### Trade-off Comparison
+### [26:57](https://youtu.be/EAs0tnJhPVA?t=1617) [approx] Trade-off Comparison
 
 | | Mauricio's refined | Coach's variables |
 |---|---|---|
@@ -108,7 +108,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Whiteboarding Worked Example
+## [25:24](https://youtu.be/EAs0tnJhPVA?t=1524) Whiteboarding Worked Example
 
 Colors: `blue, blue, blue, red, green, green`
 Times:  `1, 3, 2, 1, 2, 1`
@@ -121,13 +121,13 @@ Times:  `1, 3, 2, 1, 2, 1`
 
 ---
 
-## Is This Really "Medium"?
+## [42:03](https://youtu.be/EAs0tnJhPVA?t=2523) Is This Really "Medium"?
 
 > "I'd say this is on the lower end of the medium problems. I've seen easy-ranked problems harder to conceptualize than this one. The diagram is clear and the steps are straightforward."
 
 ---
 
-## Follow-up Challenge: Reverse-Engineer `count` and `replace`
+## [44:20](https://youtu.be/EAs0tnJhPVA?t=2660) Follow-up Challenge: Reverse-Engineer `count` and `replace`
 
 Revisiting the earlier **Find the Index of the First Occurrence** session where the solution collapsed to a one-liner `haystack.find(needle)`. The challenge was to implement `find` from scratch with a for loop:
 
@@ -140,18 +140,18 @@ def find(haystack, needle):
     return -1
 ```
 
-### New Challenges
+### [47:58](https://youtu.be/EAs0tnJhPVA?t=2878) New Challenges
 
 1. **`str.count(substring)`** — return the number of non-overlapping occurrences of `substring` in the string.
 2. **`str.replace(old, new)`** — return a new string where all occurrences of `old` are replaced with `new`.
 
 Both should be implemented **without calling the library method**, to exercise the same from-scratch muscle.
 
-### Use in a Real Interview?
+### [52:54](https://youtu.be/EAs0tnJhPVA?t=3174) Use in a Real Interview?
 
 > "You are allowed to use `find` or `count` in the tech interview. It's just rare that a single method solves the whole problem outright. Usually it's part of a larger solution."
 
-### Pseudo Code Sketch for `count`
+### [1:33](https://youtu.be/EAs0tnJhPVA?t=93) Pseudo Code Sketch for `count`
 
 Iterate through the larger string; at each position, check whether the substring starting there matches the target. Increment a counter on match.
 
@@ -165,19 +165,19 @@ return counter
 
 ---
 
-## Session Meta: Sunday vs Wednesday Format
+## [1:01:13](https://youtu.be/EAs0tnJhPVA?t=3673) Session Meta: Sunday vs Wednesday Format
 
 - **Sundays:** new problem introduced, optional mock interview.
 - **Wednesdays:** review of the mock interview and/or Sunday's problem.
 
 ---
 
-## Stage Fright & Presenting
+## [52:29](https://youtu.be/EAs0tnJhPVA?t=3149) Stage Fright & Presenting
 
 A participant (Rebecca) committed to presenting her `count`/`replace` code next session despite stage fright.
 
 > "That's a great way to practice. The idea that someone watches you while you do this — whether you look stupid or not — it's a rehearsal for the tech interview."
 
-### W3 Schools Gotcha
+### [1:04:14](https://youtu.be/EAs0tnJhPVA?t=3854) W3 Schools Gotcha
 
 > "W3 Schools' indentation checking for Python is really strict and annoying. If you're getting a lot of errors, tab everything back to the left and re-indent. Sometimes the exact same code will work on a second attempt."

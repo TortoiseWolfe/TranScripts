@@ -7,7 +7,7 @@ Date: February 18, 2026
 
 ---
 
-## Core Principle: Momentum Over Perfection
+## [5:50](https://youtu.be/E_dMvNVcI88?t=350) Core Principle: Momentum Over Perfection
 
 A great resume without consistent action produces nothing. You have spent weeks building assets — resume, LinkedIn, projects, cover letters. Now you build the system that puts those assets to work.
 
@@ -15,7 +15,7 @@ A great resume without consistent action produces nothing. You have spent weeks 
 
 ---
 
-## Warning: AI Application Platforms
+## [11:52](https://youtu.be/E_dMvNVcI88?t=712) Warning: AI Application Platforms
 
 **Do not use AI platforms that apply to jobs on your behalf.** Recruiters can tell when these platforms are used, and the consequences are serious:
 
@@ -28,7 +28,7 @@ A great resume without consistent action produces nothing. You have spent weeks 
 
 ---
 
-## Hiring Timelines: Why Speed Matters
+## [12:49](https://youtu.be/E_dMvNVcI88?t=769) Hiring Timelines: Why Speed Matters
 
 Most candidates misunderstand hiring timelines. Recruiters often review applications within the **first 24 to 72 hours** before hundreds of applicants accumulate.
 
@@ -43,15 +43,15 @@ Popular roles can receive **100 to 500 applicants** very quickly. **Speed plus a
 
 ---
 
-## Four Pillars of Job Application
+## [13:59](https://youtu.be/E_dMvNVcI88?t=839) Four Pillars of Job Application
 
-### 1. Application Speed
+### [13:59](https://youtu.be/E_dMvNVcI88?t=839) 1. Application Speed
 
 Apply within **24 to 48 hours** of a posting going live.
 
 **LinkedIn tip:** Set job alerts filtered to show postings from **1 hour to 24 hours old**. Use both **LinkedIn and Indeed** to search — not every organization posts on both platforms. Some companies skip LinkedIn because a recruiter seat costs several thousand dollars per year.
 
-### 2. Application Tracking
+### [19:00](https://youtu.be/E_dMvNVcI88?t=1140) 2. Application Tracking
 
 **Your memory is unreliable. Systems are not.**
 
@@ -72,7 +72,7 @@ Use a spreadsheet (Google Sheets, Excel, or a project management tool like Asana
 
 **What gets tracked gets executed. Simplicity over complexity.**
 
-### 3. Follow-up Strategy
+### [21:05](https://youtu.be/E_dMvNVcI88?t=1265) 3. Follow-up Strategy
 
 **The #1 thing to do after applying:** Find a connection at the company.
 
@@ -86,7 +86,7 @@ Once you identify someone, **send a connection request with a note** or a Linked
 
 **Alumni connections** can help but should not be your first priority — focus on people who are actually doing the hiring.
 
-### 4. Weekly Activity Targets
+### [46:03](https://youtu.be/E_dMvNVcI88?t=2763) 4. Weekly Activity Targets
 
 **Consistency beats intensity.** Set weekly targets:
 
@@ -99,7 +99,7 @@ Small weekly actions compound into opportunity.
 
 ---
 
-## Follow-up Template
+## [42:24](https://youtu.be/E_dMvNVcI88?t=2544) Follow-up Template
 
 Send a follow-up **within 3 to 7 days** after applying. Following up is not annoying to a recruiter if done correctly — it signals interest, initiative, and professionalism.
 
@@ -113,7 +113,7 @@ Send a follow-up **within 3 to 7 days** after applying. Following up is not anno
 
 ---
 
-## Series Wrap-Up: What You Should Have
+## [50:56](https://youtu.be/E_dMvNVcI88?t=3056) [approx] Series Wrap-Up: What You Should Have
 
 By the end of this 14-week clinic, you should have:
 
@@ -128,7 +128,7 @@ Systems turn effort into momentum. Momentum turns conversations into offers.
 
 ---
 
-## Chelsea's Departure
+## [54:28](https://youtu.be/E_dMvNVcI88?t=3268) Chelsea's Departure
 
 This is Chelsea's final session with TechJoy. She expressed gratitude for the experience and encouraged participants to review all recorded sessions from Weeks 1–14. Chelsea indicated interest in continuing career coaching independently.
 

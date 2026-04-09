@@ -3,11 +3,11 @@ Source: https://youtu.be/Uy1SVqF-508
 
 *Nailing the Tech Interview — Sunday session*
 
-## Extended Q&A: How Long to Stay Stuck Before Looking Up a Solution?
+## [3:16](https://youtu.be/Uy1SVqF-508?t=196) Extended Q&A: How Long to Stay Stuck Before Looking Up a Solution?
 
 **Mauricio asked:** when you're stuck on a problem and can't pass test cases, how long should you stay with it before looking up a solution?
 
-### Ruby's framework: identify which phase you're stuck in
+### [4:05](https://youtu.be/Uy1SVqF-508?t=245) Ruby's framework: identify which phase you're stuck in
 
 There are multiple phases of working through a LeetCode/HackerRank problem, and **what you should do depends on which phase you're stuck in**:
 
@@ -20,13 +20,13 @@ There are multiple phases of working through a LeetCode/HackerRank problem, and 
 
 These phases aren't strictly linear — you often bounce between them. And you can collapse several into one for simple problems you've seen before.
 
-### General time guidelines
+### [2:39](https://youtu.be/Uy1SVqF-508?t=159) General time guidelines
 
 - **Easy problems:** if you've spent **over an hour** and haven't gotten two-thirds of test cases passing, look up resources.
 - **Medium problems:** maybe **an hour or so**, then **walk away** and come back a day or two later and start fresh rather than looking it up immediately.
 - Goal: **get at least two-thirds of test cases passing** before looking up the full solution.
 
-### What to do based on where you're stuck
+### [26:53](https://youtu.be/Uy1SVqF-508?t=1613) What to do based on where you're stuck
 
 **Stuck understanding the problem:**
 
@@ -53,14 +53,14 @@ These phases aren't strictly linear — you often bounce between them. And you c
 - Print everything along the way. Compare expected output vs. actual output.
 - If the expected is 5 and you're returning 7, **trace back why** you're returning 7. Maybe an assumption was wrong.
 
-### The "stuck in a loop" problem
+### [8:48](https://youtu.be/Uy1SVqF-508?t=528) The "stuck in a loop" problem
 
 Mauricio: "I get stuck in a loop where I keep coding to pass the next test case and not generalizing. I realize the path is wrong but can't see another path to take."
 
 - At that point, **revisit the earlier phases**. Did you fully understand the problem? Did you test your original assumptions?
 - Take it to a **peer mentor office hours** or a **Q&A session** and say, "Here's where I'm at. Can you give me pointers?" A good mentor will **ask you questions** rather than hand you the answer, so you still make the connections yourself.
 
-### After looking up a solution
+### [16:04](https://youtu.be/Uy1SVqF-508?t=964) [approx] After looking up a solution
 
 Even after researching, there's still valuable work to do:
 
@@ -71,7 +71,7 @@ Even after researching, there's still valuable work to do:
 
 > "Instead of having one solution that I had to look up, I have three solutions that I know and I could potentially extrapolate to new problems."
 
-### 80/20 on algorithmic prerequisites
+### [14:56](https://youtu.be/Uy1SVqF-508?t=896) 80/20 on algorithmic prerequisites
 
 - About **80% of problems** can be solved with just mod 2 fundamentals.
 - About **20% of problems** require specialized knowledge (named algorithms, advanced applications of data structures) that you may legitimately need to research.
@@ -81,7 +81,7 @@ Even after researching, there's still valuable work to do:
 
 ---
 
-## The 6 Phases Framework (Reference)
+## [1:20:21](https://youtu.be/Uy1SVqF-508?t=4821) The 6 Phases Framework (Reference)
 
 | Phase | What you do |
 |-------|-------------|
@@ -96,15 +96,15 @@ Phase 6 is a **meta-phase** — what it looks like depends on which of phases 1�
 
 ---
 
-## Worked Example: Repeated String (HackerRank)
+## [1:14:53](https://youtu.be/Uy1SVqF-508?t=4493) Worked Example: Repeated String (HackerRank)
 
 Ruby walked through this problem using the 6-phase framework explicitly.
 
-### Problem statement
+### [30:33](https://youtu.be/Uy1SVqF-508?t=1833) Problem statement
 
 There is a string `s` of lowercase English letters that is repeated infinitely many times. Given an integer `n`, find and return the number of letter `'a'`'s in the **first `n` letters** of the infinite string.
 
-### Examples
+### [32:09](https://youtu.be/Uy1SVqF-508?t=1929) [approx] Examples
 
 ```
 s = "abcac", n = 10   -> 4
@@ -117,17 +117,17 @@ s = "a", n = 1000000000000 -> 1000000000000
   A string of all 'a's, so the count is just n.
 ```
 
-### Constraints
+### [31:40](https://youtu.be/Uy1SVqF-508?t=1900) Constraints
 
 - `1 <= |s| <= 100` (where `|s|` is the length of s in mathematical notation)
 - `1 <= n <= 10^12`
 - For 25% of test cases, `n <= 10^6`
 
-### Note on the `|s|` notation
+### [1:16:28](https://youtu.be/Uy1SVqF-508?t=4588) Note on the `|s|` notation
 
 The vertical bars `|s|` in constraints are **absolute value notation** in math, which for a string represents its **length** (number of characters). If you don't know a symbol in constraints, Google it or check Stack Overflow.
 
-### Phase 1: Reading and Understanding
+### [26:53](https://youtu.be/Uy1SVqF-508?t=1613) Phase 1: Reading and Understanding
 
 First read of the problem is often confusing. Take a deep breath, read again. Pull out:
 
@@ -136,13 +136,13 @@ First read of the problem is often confusing. Take a deep breath, read again. Pu
 - We care about the first `n` characters.
 - Count the `'a'`s in that range.
 
-### Phase 3: Explain in your own words and write assumptions
+### [34:55](https://youtu.be/Uy1SVqF-508?t=2095) Phase 3: Explain in your own words and write assumptions
 
 > "Given `s`, which is the smallest range of characters in an infinitely repeating sequence, and `n`, an integer representing the length I need to construct — return the number of `'a'`s in the constructed string up to length `n`."
 
 **Initial assumption:** `s` will be shorter than `n`.
 
-### Phase 2: Check constraints to test the assumption
+### [48:14](https://youtu.be/Uy1SVqF-508?t=2894) [approx] Phase 2: Check constraints to test the assumption
 
 - `|s|` can be `1 <= |s| <= 100`
 - `n` can be `1 <= n <= 10^12`
@@ -151,17 +151,17 @@ These are **independent ranges**. `s` could theoretically be length 100 while `n
 
 **Updated pseudo code note:** add a conditional check for whether `s` is shorter or longer than `n` before building.
 
-### Another assumption to check: Is `'a'` always included in `s`?
+### [53:42](https://youtu.be/Uy1SVqF-508?t=3222) Another assumption to check: Is `'a'` always included in `s`?
 
 The problem says `s` is "a string to repeat" — it **doesn't** say `s` must contain the character `'a'`. Nothing in the constraints says so either. So **`'a'` may or may not be in `s`** — handle that case (count could be 0).
 
-### Efficiency warning from constraints
+### [1:11:21](https://youtu.be/Uy1SVqF-508?t=4281) Efficiency warning from constraints
 
 `n` can be as large as `10^12`. Building an actual string of length `10^12` would **blow up memory** (and take forever). This is a **space complexity** concern that will cause a **time-out** failure in practice.
 
 > "Do I need to build that string? It takes up a lot of memory."
 
-### Phase 4: Pseudo code (first draft — naive approach)
+### [57:53](https://youtu.be/Uy1SVqF-508?t=3473) [approx] Phase 4: Pseudo code (first draft — naive approach)
 
 ```
 # Build infinite_string out of s up to length n
@@ -180,7 +180,7 @@ return count
 
 **Problem:** builds a massive string for large `n`. Will time out on tests where `n >= 10^9` or so.
 
-### Phase 6: Efficiency improvement — skip building the string
+### [1:04:59](https://youtu.be/Uy1SVqF-508?t=3899) Phase 6: Efficiency improvement — skip building the string
 
 Key insight: you **don't need to materialize the string**. You just need arithmetic:
 
@@ -189,7 +189,7 @@ Key insight: you **don't need to materialize the string**. You just need arithme
 - The "full copies" contribute `full_copies * a_in_s` a's.
 - Then handle the **remainder** — the leftover partial string: `remainder_len = n % len(s)`. Count `'a'`s in `s[:remainder_len]` and add.
 
-### Optimized solution
+### [1:04:19](https://youtu.be/Uy1SVqF-508?t=3859) [approx] Optimized solution
 
 ```python
 def repeatedString(s, n):
@@ -205,19 +205,19 @@ def repeatedString(s, n):
 - **Space:** O(1) — no massive string built.
 - Handles `n = 10^12` instantly.
 
-### Lisa's question and the key insight
+### [42:30](https://youtu.be/Uy1SVqF-508?t=2550) Lisa's question and the key insight
 
 Lisa asked early: "Is there a formula to build out the string — like `string * number`?"
 
 Ruby initially said "hold that thought" because she wasn't done reading the problem. But Lisa's instinct was on the right track: **use math, not construction**. The `full_copies * a_in_s + remainder_count` formula is exactly what you get when you stop thinking about the string and start thinking about the arithmetic.
 
-### Why return an `int`, not a string or list
+### [40:38](https://youtu.be/Uy1SVqF-508?t=2438) Why return an `int`, not a string or list
 
 Always set up your return statement **to match the expected return type** early. The function signature says it returns an integer. If you return the wrong type, you'll get parsing errors. Ruby recommends starting with `return 0` or `return count` as a placeholder so the type is correct from the start.
 
 ---
 
-## Status Check: Where Is Everyone?
+## [1:12:23](https://youtu.be/Uy1SVqF-508?t=4343) Status Check: Where Is Everyone?
 
 - **End of mod 2 (through project 5):** reviewing concepts and working on HackerRank practice.
 - **Finished mod 2 a month ago**, had some life interruptions, now restarting tech interview prep and revising mod 1/2 material alongside HackerRank.
@@ -226,7 +226,7 @@ Ruby: everyone's in a good spot for the practice we're doing.
 
 ---
 
-## Key Takeaways
+## [1:04:38](https://youtu.be/Uy1SVqF-508?t=3878) Key Takeaways
 
 - **Identify which phase you're stuck in** — then take phase-appropriate action. Don't do coding debugging when the real problem is that you don't understand the problem.
 - **Goal before looking up:** get 2/3 of test cases passing first. If you can't hit that after an hour on an easy problem, start looking at resources.

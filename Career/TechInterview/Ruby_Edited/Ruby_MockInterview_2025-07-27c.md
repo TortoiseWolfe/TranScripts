@@ -5,11 +5,11 @@ Continuation of the Sunday session. After Contains Duplicate, the group does a p
 
 ---
 
-## Contains Duplicate — Final Approaches Discussed
+## [21:53](https://youtu.be/UR7nTnf7ENo?t=1313) Contains Duplicate — Final Approaches Discussed
 
 Three different approaches surfaced for the warm-up problem:
 
-### Approach 1: Nested Loop with Count
+### [1:50](https://youtu.be/UR7nTnf7ENo?t=110) [approx] Approach 1: Nested Loop with Count
 
 ```python
 for i in range(len(nums)):
@@ -21,7 +21,7 @@ return False
 - **Time:** O(n²)
 - Brute force, simple to write.
 
-### Approach 2: Hashmap / Set (Mindy's suggestion)
+### [3:41](https://youtu.be/UR7nTnf7ENo?t=221) [approx] Approach 2: Hashmap / Set (Mindy's suggestion)
 
 ```python
 seen = set()
@@ -36,7 +36,7 @@ return False
 - **Space:** O(n)
 - **Optimal.** Single loop, set lookup is O(1).
 
-### Approach 3: Sort + Adjacent Comparison
+### [5:32](https://youtu.be/UR7nTnf7ENo?t=332) [approx] Approach 3: Sort + Adjacent Comparison
 
 ```python
 nums.sort()
@@ -50,30 +50,30 @@ return False
 - **Space:** O(1) (or O(n) depending on the sort's implementation).
 - Worse than the hashmap, but better than brute force.
 
-### Big-O comparison
+### [7:22](https://youtu.be/UR7nTnf7ENo?t=442) [approx] Big-O comparison
 
 - Brute force: O(n²) ❌
 - Sort + check: O(n log n) ⚠️
 - Hashmap: O(n) ✅
 
-### A note on "shortcutting" by digit range
+### [9:13](https://youtu.be/UR7nTnf7ENo?t=553) [approx] A note on "shortcutting" by digit range
 
 One participant suggested: "Since digits 0-9 are limited, can we exploit that?" The coach pointed out: **values can be -10⁹ to 10⁹**, so this isn't a finite digit set. The example uses small numbers, but the constraints allow much larger values. Always check the constraints before assuming a shortcut.
 
 ---
 
-## Problem 2: Top K Frequent Elements (Medium)
+## [30:05](https://youtu.be/UR7nTnf7ENo?t=1805) Problem 2: Top K Frequent Elements (Medium)
 
-### Problem statement
+### [30:05](https://youtu.be/UR7nTnf7ENo?t=1805) Problem statement
 
 Given an integer array `nums` and an integer `k`, return the **k most frequent elements**. You may return the answer in any order.
 
-### Examples
+### [14:45](https://youtu.be/UR7nTnf7ENo?t=885) [approx] Examples
 
 - `nums = [1, 1, 1, 2, 2, 3]`, `k = 2` → `[1, 2]`
 - `nums = [1]`, `k = 1` → `[1]`
 
-### Critical clarification (Rebecca initially missed)
+### [35:23](https://youtu.be/UR7nTnf7ENo?t=2123) Critical clarification (Rebecca initially missed)
 
 `k` is **not** how many numbers are duplicated. `k` is the **count of the most frequent values you should return**.
 
@@ -81,7 +81,7 @@ Given an integer array `nums` and an integer `k`, return the **k most frequent e
 - For `[1, 1, 1, 2, 2, 3]`: 1 appears 3 times, 2 appears 2 times, 3 appears once. The top 2 most frequent are 1 and 2.
 - Rebecca initially thought `k = 2` meant "two values appeared more than once," which would be a totally different problem.
 
-### Walking through a harder example
+### [18:27](https://youtu.be/UR7nTnf7ENo?t=1107) [approx] Walking through a harder example
 
 If the input were `[1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 4]` with `k = 2`:
 
@@ -93,9 +93,9 @@ If the input were `[1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 4]` with `k = 2`:
 
 ---
 
-## Rebecca's Pseudo Code Approach
+## [28:26](https://youtu.be/UR7nTnf7ENo?t=1706) Rebecca's Pseudo Code Approach
 
-### Step 1: Restate the problem in your own words
+### [28:26](https://youtu.be/UR7nTnf7ENo?t=1706) Step 1: Restate the problem in your own words
 
 ```
 nums = array of integers
@@ -103,17 +103,17 @@ k = how many of the most frequent numbers to return
 output = the k values that occur most often
 ```
 
-### Step 2: Identify the data structure
+### [39:10](https://youtu.be/UR7nTnf7ENo?t=2350) Step 2: Identify the data structure
 
 - Build a **dictionary (hashmap)** mapping each unique value to its frequency count.
 - Iterate through `nums`, increment the count for each value in the dictionary.
 
-### Step 3: Find the top k
+### [36:08](https://youtu.be/UR7nTnf7ENo?t=2168) Step 3: Find the top k
 
 - After building the frequency dictionary, find the k entries with the highest counts.
 - Return those k keys.
 
-### Step 4: Pseudo code
+### [33:08](https://youtu.be/UR7nTnf7ENo?t=1988) Step 4: Pseudo code
 
 ```
 loop through nums to find duplicate numbers
@@ -127,16 +127,16 @@ This is exactly the right shape for the optimal solution. The remaining work is 
 
 ---
 
-## Implementing Top K Frequent (next steps for Rebecca)
+## [29:31](https://youtu.be/UR7nTnf7ENo?t=1771) [approx] Implementing Top K Frequent (next steps for Rebecca)
 
-### Step 1: Build the frequency dictionary
+### [31:22](https://youtu.be/UR7nTnf7ENo?t=1882) [approx] Step 1: Build the frequency dictionary
 
 ```python
 from collections import Counter
 freq = Counter(nums)  # or build manually with a dict
 ```
 
-### Step 2: Sort or select the top k
+### [33:13](https://youtu.be/UR7nTnf7ENo?t=1993) [approx] Step 2: Sort or select the top k
 
 Several Python options:
 
@@ -144,7 +144,7 @@ Several Python options:
 - `freq.most_common(k)` — returns list of `(value, count)` tuples
 - Heap-based approach for O(n log k) instead of O(n log n)
 
-### Big-O for the optimal hashmap + sort approach
+### [30:46](https://youtu.be/UR7nTnf7ENo?t=1846) Big-O for the optimal hashmap + sort approach
 
 - **Time:** O(n log n) (the sort dominates)
 - **Space:** O(n) (the dictionary)
@@ -153,20 +153,20 @@ A heap-based approach can get this down to O(n log k), which matters when k is m
 
 ---
 
-## The New Mock Interview Format Worked
+## [45:42](https://youtu.be/UR7nTnf7ENo?t=2742) The New Mock Interview Format Worked
 
 > Mindy: "I think this was a really effective session."
 >
 > Coach: "I agree. Thank you for the suggestion, Mindy."
 
-### Why pseudo-code-only is better (for now)
+### [38:45](https://youtu.be/UR7nTnf7ENo?t=2325) [approx] Why pseudo-code-only is better (for now)
 
 - **Removes the freeze-up trap.** Rebecca admitted she "couldn't even think of the word 'loop' for a minute" when put on the spot. Without the pressure of code, she could keep thinking.
 - **Builds the planning muscle** that students under-practice.
 - **Builds presentation confidence** without the secondary pressure of syntax errors.
 - Once participants are confident at this level, they can graduate to coding mock interviews.
 
-### Rebecca's success
+### [30:46](https://youtu.be/UR7nTnf7ENo?t=1846) Rebecca's success
 
 Even though she froze briefly, she:
 
@@ -180,7 +180,7 @@ That's exactly what a good interviewer wants to see — adaptability and clear t
 
 ---
 
-## Q&A: Test Plan + Print Statements in the Real Interview
+## [43:14](https://youtu.be/UR7nTnf7ENo?t=2594) Q&A: Test Plan + Print Statements in the Real Interview
 
 **Q:** "For the technical interview, do I still need to print things out and write a plan first?"
 
@@ -198,7 +198,7 @@ That's exactly what a good interviewer wants to see — adaptability and clear t
 
 ---
 
-## Recap: 15-Minute Interview Time
+## [43:09](https://youtu.be/UR7nTnf7ENo?t=2589) Recap: 15-Minute Interview Time
 
 - Joy of Coding tech interview: **15–20 minutes** for one easy HackerRank problem.
 - Practice within that window, but don't sacrifice quality steps to chase speed.

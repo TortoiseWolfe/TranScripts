@@ -5,17 +5,17 @@ Sunday session: pseudo code walkthrough of HackerRank's Ice Cream Parlor (a Two 
 
 ---
 
-## Problem: Ice Cream Parlor
+## [3:39](https://youtu.be/h5H7XIse0Bo?t=219) Problem: Ice Cream Parlor
 
 Two friends pool money to buy ice cream. They always pick **two distinct flavors** and spend **all their money**. Given the budget `m` and a list of flavor `costs`, return the **one-based indices** of the two flavors that exactly add up to `m`.
 
-### Example
+### [3:04](https://youtu.be/h5H7XIse0Bo?t=184) [approx] Example
 
 - Budget: `m = 6`
 - Costs: `[1, 3, 4, 5, 6]`
 - Output: `[1, 4]` (cost[0]=1, cost[3]=5, sum=6, but using **1-based** indexing → 1 and 4)
 
-### Constraints
+### [13:53](https://youtu.be/h5H7XIse0Bo?t=833) Constraints
 
 - Number of trips: 1 to 50 (multiple test cases per submission).
 - Money `m`: 2 to 10⁴.
@@ -25,7 +25,7 @@ Two friends pool money to buy ice cream. They always pick **two distinct flavors
 
 ---
 
-## HackerRank gotcha: multi-test-case input format
+## [9:12](https://youtu.be/h5H7XIse0Bo?t=552) [approx] HackerRank gotcha: multi-test-case input format
 
 The "Sample Input" shows a long block:
 
@@ -41,7 +41,7 @@ The "Sample Input" shows a long block:
 
 > **Don't be confused by the input format.** Behind the scenes, HackerRank calls `iceCreamParlor(m, cost)` **once per test case**. You only need to write the function for a single trip — the harness handles iterating over the test cases.
 
-### The empty-return trick
+### [12:16](https://youtu.be/h5H7XIse0Bo?t=736) [approx] The empty-return trick
 
 If you see `_FptrName_join(...)` errors before your code runs, that's HackerRank's submission wrapper failing because you're not returning the expected type. Fix: add a stub return matching the expected type:
 
@@ -53,7 +53,7 @@ This silences the wrapper error and lets you see the real test case input.
 
 ---
 
-## Pulling Statements From the Problem
+## [11:45](https://youtu.be/h5H7XIse0Bo?t=705) Pulling Statements From the Problem
 
 - Given `m` (money to spend) and `cost` (potential ice cream flavors).
 - Return the **two indices** representing the chosen flavors.
@@ -62,13 +62,13 @@ This silences the wrapper error and lets you see the real test case input.
 - Cost array will always have at least two flavors.
 - Values may repeat; values are between 1 and n.
 
-### Goal in plain words
+### [20:28](https://youtu.be/h5H7XIse0Bo?t=1228) Goal in plain words
 
 Given `m`, find two values in the `cost` array that sum to `m`, and return their **one-based** indices.
 
 ---
 
-## Python `enumerate` with custom start
+## [21:29](https://youtu.be/h5H7XIse0Bo?t=1289) [approx] Python `enumerate` with custom start
 
 ```python
 for index, value in enumerate(cost, 1):
@@ -83,9 +83,9 @@ for index, value in enumerate(cost, 1):
 
 ---
 
-## Approaches
+## [24:33](https://youtu.be/h5H7XIse0Bo?t=1473) [approx] Approaches
 
-### 1. Brute Force (nested loop)
+### [27:37](https://youtu.be/h5H7XIse0Bo?t=1657) [approx] 1. Brute Force (nested loop)
 
 ```python
 for i, val_i in enumerate(cost, 1):
@@ -97,18 +97,18 @@ for i, val_i in enumerate(cost, 1):
 - **Complexity:** O(n²)
 - Always works. May be slow on large inputs.
 
-### 2. List comprehension
+### [17:28](https://youtu.be/h5H7XIse0Bo?t=1048) 2. List comprehension
 
 Conceptually equivalent to the nested loop. Same O(n²) complexity. List comprehension is **not** automatically faster — it just looks more compact. It also creates an intermediate list, which uses more memory than a plain loop.
 
-### 3. Complement search
+### [33:19](https://youtu.be/h5H7XIse0Bo?t=1999) 3. Complement search
 
 For each value, compute `complement = m - value` and search the rest of the array for the complement.
 
 - With **linear search:** still O(n²) overall.
 - With **binary search:** O(n log n), but requires sorting first → sorting also loses original indices.
 
-### 4. Hashmap (dictionary)
+### [36:49](https://youtu.be/h5H7XIse0Bo?t=2209) [approx] 4. Hashmap (dictionary)
 
 ```python
 seen = {}
@@ -127,7 +127,7 @@ for i, val in enumerate(cost, 1):
 
 ---
 
-## Decoding Math Notation in Constraints
+## [39:53](https://youtu.be/h5H7XIse0Bo?t=2393) [approx] Decoding Math Notation in Constraints
 
 The constraint `cost[i] ∈ {1...n}` (with the "for all" upside-down A symbol) just means: every value in `cost` is an integer between 1 and n inclusive.
 
@@ -138,7 +138,7 @@ You can usually safely **ignore** these symbols if they don't directly help you 
 
 ---
 
-## Q&A: Data Annotation Company
+## [12:03](https://youtu.be/h5H7XIse0Bo?t=723) Q&A: Data Annotation Company
 
 A few participants asked about Data Annotation as a freelance opportunity.
 
@@ -153,7 +153,7 @@ A few participants asked about Data Annotation as a freelance opportunity.
 
 ---
 
-## Brian's Maximum Product Subarray result
+## [48:59](https://youtu.be/h5H7XIse0Bo?t=2939) Brian's Maximum Product Subarray result
 
 Brian solved last Wednesday's Max Product Subarray problem using **traversing left-to-right and right-to-left**. Took ~2 hours but passed all test cases. For a medium problem with 35% acceptance rate, that's a strong result.
 

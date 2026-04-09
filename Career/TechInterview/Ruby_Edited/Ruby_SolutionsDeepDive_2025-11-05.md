@@ -5,7 +5,7 @@ Review of Mauricio's solution to **Median of Two Sorted Arrays** (LeetCode Hard)
 
 ---
 
-## Preamble: Finding "Implementation Algorithm" Problems on LeetCode
+## [3:09](https://youtu.be/9SvY-5sgL1Q?t=189) Preamble: Finding "Implementation Algorithm" Problems on LeetCode
 
 A participant asked how to find the HackerRank "Algorithms → Implementation" equivalent on LeetCode, since LeetCode doesn't expose that subcategory.
 
@@ -15,7 +15,7 @@ A participant asked how to find the HackerRank "Algorithms → Implementation" e
 
 ---
 
-## Problem: Median of Two Sorted Arrays (Hard)
+## [28:55](https://youtu.be/9SvY-5sgL1Q?t=1735) Problem: Median of Two Sorted Arrays (Hard)
 
 Given two sorted integer arrays `nums1` and `nums2`, return the median of the combined sorted array.
 
@@ -24,7 +24,7 @@ Given two sorted integer arrays `nums1` and `nums2`, return the median of the co
 
 ---
 
-## Mauricio's Solution — Merge Then Compute
+## [7:08](https://youtu.be/9SvY-5sgL1Q?t=428) [approx] Mauricio's Solution — Merge Then Compute
 
 ```python
 def findMedianSortedArrays(nums1, nums2):
@@ -48,7 +48,7 @@ def findMedianSortedArrays(nums1, nums2):
         return (merged[n // 2 - 1] + merged[n // 2]) / 2
 ```
 
-### Key Points
+### [12:20](https://youtu.be/9SvY-5sgL1Q?t=740) Key Points
 
 - **Two pointers `i` and `j`** walk each array. Append the smaller of the two current values and advance its pointer.
 - **`.extend()` not `.append()`** for the leftovers — `append` would add the remaining slice as a single nested list.
@@ -59,11 +59,11 @@ def findMedianSortedArrays(nums1, nums2):
 
 ---
 
-## Coach's Alternative — Stop At The Median Index
+## [14:17](https://youtu.be/9SvY-5sgL1Q?t=857) [approx] Coach's Alternative — Stop At The Median Index
 
 The coach's approach avoided building the full merged array. Compute the target index `(len(nums1) + len(nums2)) // 2`, then advance through both arrays until reaching that index and return the value there.
 
-### Why the Coach Didn't Like Her Own Version
+### [15:54](https://youtu.be/9SvY-5sgL1Q?t=954) Why the Coach Didn't Like Her Own Version
 
 To handle the case where one array runs out before the target index is reached, she hard-coded a **sentinel value outside the constraint range** (like `10**6 + 1`) so the exhausted side would always lose the `min` comparison.
 
@@ -71,17 +71,17 @@ To handle the case where one array runs out before the target index is reached, 
 
 ---
 
-## Mock Interview: Longest Harmonious Subsequence (LeetCode Easy)
+## [15:08](https://youtu.be/9SvY-5sgL1Q?t=908) Mock Interview: Longest Harmonious Subsequence (LeetCode Easy)
 
 > A **harmonious array** has `max - min == 1`. Given an integer array, return the length of its longest harmonious **subsequence** (elements in order, but not necessarily contiguous).
 
-### Example
+### [25:00](https://youtu.be/9SvY-5sgL1Q?t=1500) [approx] Example
 
 `[1, 3, 2, 2, 5, 2, 3, 7]` → answer `5` (the subsequence `[3, 2, 2, 2, 3]`).
 
 > "Subsequence means you can skip elements. You're not restricted to contiguous runs."
 
-### Mauricio's Attempt
+### [27:06](https://youtu.be/9SvY-5sgL1Q?t=1626) Mauricio's Attempt
 
 He tried to track a running `max`/`min` while traversing and append the current element to a `current` list if the difference equaled 1. The approach broke down on the first few values because:
 
@@ -89,19 +89,19 @@ He tried to track a running `max`/`min` while traversing and append the current 
 - The array is **not sorted** (contradicting his initial assumption).
 - A harmonious subsequence is really a count of **how many times each value and its neighbor (value ± 1) appear**.
 
-### Coach Feedback
+### [44:50](https://youtu.be/9SvY-5sgL1Q?t=2690) Coach Feedback
 
 > "You want to return a number, not necessarily an array. Maybe you want to keep count of what would go in the array without actually creating the array. That's a different mindset."
 
 > "Test along the way. You got all of this code written, and when we traced the first few values, it broke down after a few iterations. Testing earlier would have caught it before you moved too far."
 
-### Topic Tags As Hints
+### [7:17](https://youtu.be/9SvY-5sgL1Q?t=437) Topic Tags As Hints
 
 LeetCode listed the problem's tags as **Hash Table, Sliding Window, Sorting, Counting**.
 
 > "Hash table is a big clue. Sliding window can be a clue. Sorting is in there. Counting — you were going to count it anyway."
 
-### The Hash Table Approach (Coach's Working Solution)
+### [39:18](https://youtu.be/9SvY-5sgL1Q?t=2358) [approx] The Hash Table Approach (Coach's Working Solution)
 
 The coach solved it using a frequency counter:
 
@@ -121,7 +121,7 @@ def findLHS(nums):
 - For each key, check whether `key + 1` exists. If so, the combined count is a candidate harmonious subsequence length.
 - **No sorting required.** O(n) time.
 
-### Sliding Window Variant
+### [49:08](https://youtu.be/9SvY-5sgL1Q?t=2948) Sliding Window Variant
 
 Sliding window **can** work, but only if you first sort the array to make the "harmonious" values adjacent — sacrificing time to sorting for logical simplicity.
 
@@ -129,13 +129,13 @@ Sliding window **can** work, but only if you first sort the array to make the "h
 
 ---
 
-## Easy vs Hard Labeling
+## [47:57](https://youtu.be/9SvY-5sgL1Q?t=2877) Easy vs Hard Labeling
 
 > "This is not an easy problem to me. It's easy when you know how to do it. An acceptance rate of 64% on an 'easy' is a good indication that it shouldn't necessarily be an easy problem. I wouldn't give you a problem like this for the technical interview — but it's a good one to add to your tool belt."
 
 ---
 
-## Takeaways
+## [50:01](https://youtu.be/9SvY-5sgL1Q?t=3001) [approx] Takeaways
 
 - **Merge sort's merge step** solves "combine two sorted arrays" problems cleanly. Don't forget the leftovers.
 - Use **`.extend()`** for remaining slices; `.append()` nests them.

@@ -7,7 +7,7 @@ Date: January 14, 2026
 
 ---
 
-## Why Customization Matters
+## [8:13](https://youtu.be/5N7qDM_K8jM?t=493) Why Customization Matters
 
 One resume does not work for every job. You can craft something that covers a range of roles, but customization is what makes you stand out in today's job market.
 
@@ -23,7 +23,7 @@ Customization drives three outcomes:
 
 ---
 
-## The Recruiter Scan
+## [13:30](https://youtu.be/5N7qDM_K8jM?t=810) The Recruiter Scan
 
 When a recruiter scans a resume for a specific job, they look for:
 
@@ -35,9 +35,9 @@ If alignment isn't visible quickly, the recruiter moves on.
 
 ---
 
-## 4 Core Customization Principles
+## [55:54](https://youtu.be/5N7qDM_K8jM?t=3354) 4 Core Customization Principles
 
-### 1. Match Keywords and Phrasing from the Job Post
+### [55:54](https://youtu.be/5N7qDM_K8jM?t=3354) 1. Match Keywords and Phrasing from the Job Post
 
 Pull keywords from these areas of the job description:
 
@@ -50,15 +50,15 @@ Pull keywords from these areas of the job description:
 
 **Use the employer's language, not your own synonyms.** If the posting says "REST APIs," don't write "web services." Mirror their exact phrasing.
 
-### 2. Highlight Projects and Bullets That Mirror the Role
+### [17:32](https://youtu.be/5N7qDM_K8jM?t=1052) 2. Highlight Projects and Bullets That Mirror the Role
 
 If the role emphasizes API integration, testing, or SQL, surface those in your bullets and projects. Bring the most relevant work to the top.
 
-### 3. Use a Core Skills Section for Flexibility
+### [18:02](https://youtu.be/5N7qDM_K8jM?t=1082) 3. Use a Core Skills Section for Flexibility
 
 Include **8 to 12 job-relevant skills** that you can swap in and out based on each posting. This section is your fastest customization lever and also supports ATS keyword searches.
 
-### 4. Create a Usable Base Resume (Template)
+### [9:15](https://youtu.be/5N7qDM_K8jM?t=555) 4. Create a Usable Base Resume (Template)
 
 Keep one master resume as your template. Make a copy for each application and only adjust:
 
@@ -71,13 +71,13 @@ This keeps customization **fast and repeatable**. Using Google Drive makes this 
 
 ---
 
-## How to Customize Using a Job Description
+## [24:05](https://youtu.be/5N7qDM_K8jM?t=1445) How to Customize Using a Job Description
 
-### Step 1: Select a Job Posting
+### [24:05](https://youtu.be/5N7qDM_K8jM?t=1445) Step 1: Select a Job Posting
 
 Choose something realistic for your target role.
 
-### Step 2: Extract Keywords
+### [26:22](https://youtu.be/5N7qDM_K8jM?t=1582) Step 2: Extract Keywords
 
 Read the posting carefully and identify:
 
@@ -86,7 +86,7 @@ Read the posting carefully and identify:
 - **Responsibilities** -- Build, test, debug
 - **Stakeholder language** -- Collaborate, communicate
 
-### Step 3: Modify Three Resume Sections
+### [25:03](https://youtu.be/5N7qDM_K8jM?t=1503) Step 3: Modify Three Resume Sections
 
 **Summary** -- Reflect the role, stack, and purpose.
 
@@ -102,7 +102,7 @@ The tailored version pulls specific language from the job posting and shows alig
 
 ---
 
-## Live Activity: Highlight Keywords from a Job Posting
+## [26:58](https://youtu.be/5N7qDM_K8jM?t=1618) Live Activity: Highlight Keywords from a Job Posting
 
 **Exercise:** Pull up a real job posting and highlight keywords in two categories:
 
@@ -115,7 +115,7 @@ Then apply those keywords to your resume:
 2. **Core skills** -- Swap 3-5 skills for alignment
 3. **Bullets or projects** -- Add or reorder to match
 
-### Participant Example: WordPress Role
+### [38:59](https://youtu.be/5N7qDM_K8jM?t=2339) Participant Example: WordPress Role
 
 One participant found a part-time role ($70-100/hour) requiring WordPress experience. Key insight: **WordPress was almost always left off his resume**, even though he had significant experience including a submitted WordPress plugin and a previous role building automated WordPress sites.
 
@@ -123,7 +123,7 @@ The job also mentioned wireframes, which he had experience generating through au
 
 **Takeaway:** If the posting asks for WordPress and your resume only shows React, the ATS scanner won't surface your resume -- even if you have extensive WordPress experience. You must customize to highlight what the employer is looking for, not just what you prefer working with.
 
-### Participant Example: Reordering Skills
+### [38:26](https://youtu.be/5N7qDM_K8jM?t=2306) Participant Example: Reordering Skills
 
 Another participant found that most of his skills matched the posting (JavaScript, PostgreSQL, SQL), but they could be **reordered by relevance** to better align with what the employer prioritized. Some skills listed in the posting (PHP, systems work) were gaps he hadn't worked on yet.
 
@@ -131,7 +131,7 @@ Another participant found that most of his skills matched the posting (JavaScrip
 
 ---
 
-## 9 Common Customization Mistakes
+## [43:13](https://youtu.be/5N7qDM_K8jM?t=2593) 9 Common Customization Mistakes
 
 1. **Applying without reading the full posting** -- This is a major mistake. Read the entire job description before applying.
 
@@ -153,7 +153,7 @@ Another participant found that most of his skills matched the posting (JavaScrip
 
 ---
 
-## Key Takeaway
+## [46:56](https://youtu.be/5N7qDM_K8jM?t=2816) Key Takeaway
 
 Customizing your resume is **not about rewriting your entire resume**. It's about **quick alignment**.
 
@@ -168,7 +168,7 @@ Every edit should increase alignment and raise your chances of being seen by the
 
 ---
 
-## Homework
+## [24:05](https://youtu.be/5N7qDM_K8jM?t=1445) Homework
 
 1. Choose **one real job posting** for your target role
 2. Highlight must-include keywords (yellow) and nice-to-have keywords (blue)

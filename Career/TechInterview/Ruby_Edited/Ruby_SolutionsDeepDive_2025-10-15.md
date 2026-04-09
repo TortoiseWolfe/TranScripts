@@ -5,11 +5,11 @@ Walkthrough of **Find the Index of the First Occurrence in a String** with an em
 
 ---
 
-## Opening: Reverse-Engineering Solutions When You're Stuck
+## [7:56](https://youtu.be/ShMeohFw0Pc?t=476) Opening: Reverse-Engineering Solutions When You're Stuck
 
 Recap of the prior Sunday's session on using other people's solutions as a learning tool when you've exhausted your own attempts.
 
-### The Process
+### [18:26](https://youtu.be/ShMeohFw0Pc?t=1106) The Process
 
 1. **Exhaust your own effort first.** Debug, break down, understand your failing test cases. Don't jump to the solution at the first sign of struggle.
 2. **Look up the solution** when you've genuinely done your due diligence.
@@ -20,13 +20,13 @@ Recap of the prior Sunday's session on using other people's solutions as a learn
 
 > "You're learning the solution, you're learning to reverse engineer it, you're learning what good pseudo code looks like, and you're learning not to rely on pasting in a solution but actually applying the knowledge you just gained."
 
-### Bonus Benefit: Reading Other People's Code
+### [7:35](https://youtu.be/ShMeohFw0Pc?t=455) Bonus Benefit: Reading Other People's Code
 
 > "That's huge. Even when you get to the internship, you'll be thrown into situations where you need to fix code, and you need to know what it says. Reverse engineering is practice reading unfamiliar code."
 
 ---
 
-## Chat GPT & Learning
+## [9:35](https://youtu.be/ShMeohFw0Pc?t=575) [approx] Chat GPT & Learning
 
 Side discussion sparked by a participant in the low-code internship. Coach's take on AI assistants during learning:
 
@@ -36,22 +36,22 @@ If your goal is to go to the full-stack or front-end internship, **put Chat GPT 
 
 ---
 
-## Problem: Find the Index of the First Occurrence in a String
+## [20:18](https://youtu.be/ShMeohFw0Pc?t=1218) Problem: Find the Index of the First Occurrence in a String
 
 > Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of `haystack`.
 
-### Example 1
+### [28:50](https://youtu.be/ShMeohFw0Pc?t=1730) Example 1
 
 - `haystack = "sadbutsad"`, `needle = "sad"` → `0`
 - `"sad"` occurs at indices `0` and `6`; first occurrence is at `0`.
 
-### Example 2
+### [28:40](https://youtu.be/ShMeohFw0Pc?t=1720) Example 2
 
 - `haystack = "leetcode"`, `needle = "leeto"` → `-1`
 
 ---
 
-## Translating the Problem Into Your Own Words
+## [23:55](https://youtu.be/ShMeohFw0Pc?t=1435) Translating the Problem Into Your Own Words
 
 > "It's very important to write it in your own words. Make the translation of what they're telling you into how you are understanding it."
 
@@ -63,31 +63,31 @@ Return an int representing a valid index position.
 If no match, return -1.
 ```
 
-### The `-1` Sentinel Convention
+### [26:12](https://youtu.be/ShMeohFw0Pc?t=1572) The `-1` Sentinel Convention
 
 > "Returning `-1` is very common — you'll see it a lot in library methods. Binary search returns `-1` if nothing matches. It's a standard way to signal 'not found' for anything that normally returns an integer."
 
 ---
 
-## Reading the Constraints
+## [28:50](https://youtu.be/ShMeohFw0Pc?t=1730) Reading the Constraints
 
 ```
 1 <= haystack.length, needle.length <= 10^4
 haystack and needle consist of only lowercase English characters.
 ```
 
-### What the Constraints Do NOT Tell Us
+### [28:46](https://youtu.be/ShMeohFw0Pc?t=1726) What the Constraints Do NOT Tell Us
 
 The constraints give bounds on **each** length independently, but they do **not** say that `needle.length <= haystack.length`. So `needle` could in theory be **larger** than `haystack`.
 
 > "It's not specifically telling me those implementation details, so I have to account for both possibilities — that's what you get from the constraint."
 
-### What the Constraints DO Tell Us
+### [28:46](https://youtu.be/ShMeohFw0Pc?t=1726) What the Constraints DO Tell Us
 
 - Both strings are **non-empty** (length >= 1).
 - Only **lowercase English characters** — no whitespace, unicode, or special characters to parse out. Exact string matches work.
 
-### Resulting Pseudo Code Addition
+### [36:12](https://youtu.be/ShMeohFw0Pc?t=2172) Resulting Pseudo Code Addition
 
 ```
 Check that haystack.length >= needle.length.
@@ -99,7 +99,7 @@ Then search for needle inside haystack...
 
 ---
 
-## First Approach Attempt: `in` Operator
+## [44:35](https://youtu.be/ShMeohFw0Pc?t=2675) First Approach Attempt: `in` Operator
 
 A participant defaulted to a `for` loop. The coach nudged toward a simpler first check:
 
@@ -113,26 +113,26 @@ The `in` operator tests substring containment and returns a bool. That's a usefu
 
 ---
 
-## Second Approach: `str.find()`
+## [50:40](https://youtu.be/ShMeohFw0Pc?t=3040) Second Approach: `str.find()`
 
 Googling "how to get the index of a character in a string" surfaces two Python string methods:
 
-### `str.find(substring)`
+### [25:02](https://youtu.be/ShMeohFw0Pc?t=1502) `str.find(substring)`
 
 - Returns the **first index** where `substring` occurs.
 - Returns **`-1`** if not found.
 - **This matches the problem signature exactly.**
 
-### `str.index(substring)`
+### [51:07](https://youtu.be/ShMeohFw0Pc?t=3067) [approx] `str.index(substring)`
 
 - Same as `find()` on success.
 - **Raises `ValueError`** if not found.
 
-### Why the Two Variants Exist
+### [55:46](https://youtu.be/ShMeohFw0Pc?t=3346) Why the Two Variants Exist
 
 > "In production, maybe you're checking an API response or a data exchange, and if the thing isn't there you need to throw an error and surface it on the front end. Instead of checking for `-1` and writing the error yourself, `index` does it for you."
 
-### Final Solution
+### [57:30](https://youtu.be/ShMeohFw0Pc?t=3450) [approx] Final Solution
 
 ```python
 class Solution:
@@ -144,7 +144,7 @@ class Solution:
 
 ---
 
-## Is the One-Liner "Preferred"?
+## [59:41](https://youtu.be/ShMeohFw0Pc?t=3581) Is the One-Liner "Preferred"?
 
 A participant asked whether using the library method counts as cheating or is preferred in an interview.
 
@@ -156,11 +156,11 @@ A participant asked whether using the library method counts as cheating or is pr
 
 ---
 
-## The Challenge: Reverse-Engineer `find`
+## [59:41](https://youtu.be/ShMeohFw0Pc?t=3581) The Challenge: Reverse-Engineer `find`
 
 The coach's homework: solve this problem **without** any library method. Research how `find` works behind the scenes, write pseudo code from that explanation, delete the reference, and implement it from scratch.
 
-### Why Bother?
+### [58:29](https://youtu.be/ShMeohFw0Pc?t=3509) Why Bother?
 
 > "All the little sub-parts — the if condition, the for loop, checking for a specific index, returning the index — show up in almost every problem. If you can master doing that part from scratch, you're expanding your ability to solve a wider variety of problems where `find` isn't available."
 
@@ -168,7 +168,7 @@ The coach's homework: solve this problem **without** any library method. Researc
 
 ---
 
-## Key Takeaways
+## [34:06](https://youtu.be/ShMeohFw0Pc?t=2046) Key Takeaways
 
 - **Read constraints, then determine which assumptions the constraints resolve for you.** Write less code by relying on what the problem guarantees.
 - **Write the problem in your own words** before coding.

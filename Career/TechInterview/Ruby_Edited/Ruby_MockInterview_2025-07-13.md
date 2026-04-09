@@ -5,17 +5,17 @@ Sunday session: pseudo code on Maximum Average Subarray (easy, sliding window in
 
 ---
 
-## Problem 1: Maximum Average Subarray I (easy)
+## [2:41](https://youtu.be/sVC-1f0WOZU?t=161) Problem 1: Maximum Average Subarray I (easy)
 
 Given an integer array `nums` of length `n` and an integer `k`, find a **contiguous subarray of length k** with the **maximum average value** and return that value.
 
-### Example
+### [3:23](https://youtu.be/sVC-1f0WOZU?t=203) [approx] Example
 
 - `nums = [1, 12, -5, -6, 50, 3]`, `k = 4`
 - Output: `12.75`
 - Reasoning: subarray `[12, -5, -6, 50]` sums to 51, divided by 4 = 12.75.
 
-### Constraints
+### [6:46](https://youtu.be/sVC-1f0WOZU?t=406) [approx] Constraints
 
 - `nums.length` (n): 1 to 10⁵
 - `k`: 1 to n (always have enough elements for at least one subarray of size k)
@@ -23,7 +23,7 @@ Given an integer array `nums` of length `n` and an integer `k`, find a **contigu
 
 ---
 
-## Pulling From the Problem
+## [6:40](https://youtu.be/sVC-1f0WOZU?t=400) Pulling From the Problem
 
 - `nums` = array given to find subarray average in.
 - `k` = size of the subarray to calculate an average for.
@@ -31,9 +31,9 @@ Given an integer array `nums` of length `n` and an integer `k`, find a **contigu
 
 ---
 
-## Approaches
+## [13:32](https://youtu.be/sVC-1f0WOZU?t=812) [approx] Approaches
 
-### 1. Brute Force (nested loop)
+### [16:55](https://youtu.be/sVC-1f0WOZU?t=1015) [approx] 1. Brute Force (nested loop)
 
 ```python
 max_avg = float('-inf')
@@ -49,7 +49,7 @@ return max_avg
 - **Complexity:** O(n × k) ≈ O(n²)
 - Works, but slow on large inputs.
 
-### 2. Sliding Window (the optimal approach)
+### [20:18](https://youtu.be/sVC-1f0WOZU?t=1218) [approx] 2. Sliding Window (the optimal approach)
 
 ```python
 window_sum = sum(nums[:k])
@@ -65,7 +65,7 @@ return max_sum / k
 - Slide: add the new right-edge value, subtract the old left-edge value. No need to recalculate the whole sum.
 - Track the running max sum, divide by k once at the end.
 
-### Sliding Window keywords (when to use it)
+### [17:42](https://youtu.be/sVC-1f0WOZU?t=1062) Sliding Window keywords (when to use it)
 
 - **Given K** or a fixed window size to track.
 - Looking for a **sum, product, or average**.
@@ -73,44 +73,44 @@ return max_sum / k
 
 > "Having the window size defined really helps you get that O(n) done pretty quickly. Maximum Average Subarray is a great intro to sliding window because the window size is given."
 
-### Bonus: prefix sum approach (mentioned but not fleshed out)
+### [3:09](https://youtu.be/sVC-1f0WOZU?t=189) Bonus: prefix sum approach (mentioned but not fleshed out)
 
 Build a prefix-sum array where `prefix[i]` = sum of `nums[0..i]`. Then any window sum = `prefix[i + k] - prefix[i]`. Same O(n) complexity, different mechanism.
 
 ---
 
-## Problem 2: Search in Rotated Sorted Array (medium) — mock interview
+## [30:27](https://youtu.be/sVC-1f0WOZU?t=1827) [approx] Problem 2: Search in Rotated Sorted Array (medium) — mock interview
 
 **Volunteer:** Daniel.
 
-### Problem statement
+### [1:44](https://youtu.be/sVC-1f0WOZU?t=104) Problem statement
 
 You're given a sorted (ascending) integer array `nums` with **distinct values** that has been rotated at some unknown pivot index `k` (so the array becomes `nums[k:] + nums[:k]`). Given a target value, return its index in the rotated array, or `-1` if not found.
 
 **Critical constraint:** "You must write an algorithm with **O(log n)** runtime complexity."
 
-### Why it's a medium problem
+### [26:50](https://youtu.be/sVC-1f0WOZU?t=1610) Why it's a medium problem
 
 The O(log n) requirement immediately rules out brute-force linear search (O(n)). You're expected to know **binary search** and adapt it to the rotated case.
 
 ---
 
-## Daniel's session
+## [6:53](https://youtu.be/sVC-1f0WOZU?t=413) Daniel's session
 
-### What Daniel did well
+### [6:53](https://youtu.be/sVC-1f0WOZU?t=413) What Daniel did well
 
 - Read the problem and pulled out the goal: find target, return its index, or return -1.
 - Identified two potential approaches: brute force loop, or sorting first.
 - Wrote out comments before code.
 - Iterated when stuck, with the coach prompting.
 
-### Where he got stuck
+### [1:03:45](https://youtu.be/sVC-1f0WOZU?t=3825) Where he got stuck
 
 - **Variable name conflict:** used `target` as the loop variable in `for target in range(...)`, which shadowed the `target` parameter passed to the function.
 - **Indexing confusion:** wasn't sure whether `i` was an index or a value. Coach prompted using `print(nums[i])` to verify.
 - **Indentation error:** the code block was at the same level as the function definition, not inside it.
 
-### The fix progression
+### [51:59](https://youtu.be/sVC-1f0WOZU?t=3119) The fix progression
 
 1. Print the loop variable: `print(i)` → confirmed `i` was the index.
 2. Print the array value at that index: `print(nums[i])` → confirmed access works.
@@ -121,7 +121,7 @@ This brute-force solution works but is **O(n)**, which fails the O(log n) requir
 
 ---
 
-## The Iterative Testing Habit
+## [1:07:59](https://youtu.be/sVC-1f0WOZU?t=4079) The Iterative Testing Habit
 
 > "Make sure you're taking iterative steps. What am I getting in my for loop? Is it printing an index? A value? How can I make sure I'm hitting all those steps before I write down a full several lines of code?"
 
@@ -136,9 +136,9 @@ This avoids the trap of writing 30 lines, hitting an error, and not knowing whic
 
 ---
 
-## Binary Search on a Rotated Array (group discussion)
+## [57:32](https://youtu.be/sVC-1f0WOZU?t=3452) [approx] Binary Search on a Rotated Array (group discussion)
 
-### Standard binary search recap
+### [1:00:55](https://youtu.be/sVC-1f0WOZU?t=3655) [approx] Standard binary search recap
 
 ```
 left = 0, right = len(nums) - 1
@@ -155,11 +155,11 @@ return -1
 
 - **O(log n)** because you cut the search space in half each iteration.
 
-### The rotation challenge
+### [1:09:47](https://youtu.be/sVC-1f0WOZU?t=4187) The rotation challenge
 
 A rotated array is **two sorted segments stitched together**. At any midpoint, **one half is still sorted** and the other half contains the rotation pivot.
 
-### Modified binary search idea
+### [1:07:41](https://youtu.be/sVC-1f0WOZU?t=4061) [approx] Modified binary search idea
 
 - Compute `mid`.
 - Determine which half (left or right of `mid`) is fully sorted.
@@ -172,7 +172,7 @@ This will be explored in depth on Wednesday.
 
 ---
 
-## Big-O Reminder
+## [1:11:04](https://youtu.be/sVC-1f0WOZU?t=4264) [approx] Big-O Reminder
 
 | Big-O | Description | Example |
 |---|---|---|
@@ -186,7 +186,7 @@ The medium problem here demands O(log n) — only a tiny step above O(1). That's
 
 ---
 
-## Recommendation: Always Get Brute Force First
+## [1:11:58](https://youtu.be/sVC-1f0WOZU?t=4318) Recommendation: Always Get Brute Force First
 
 Even when the problem demands a specific complexity (like O(log n) here):
 

@@ -7,7 +7,7 @@ Date: January 7, 2026
 
 ---
 
-## Core Principle
+## [7:35](https://youtu.be/TJZbIcN18AM?t=455) Core Principle
 
 Resume layout and design is one of the **fastest ways to improve your resume without rewriting any content**. A clean layout keeps recruiters reading. A cluttered layout makes them stop.
 
@@ -20,7 +20,7 @@ Resume layout and design is one of the **fastest ways to improve your resume wit
 
 ---
 
-## Critical Rule: No Photos on US Resumes
+## [8:56](https://youtu.be/TJZbIcN18AM?t=536) Critical Rule: No Photos on US Resumes
 
 **Do not put your photo on your resume.** This is a European practice. In the US, don't do it.
 
@@ -28,7 +28,7 @@ If you want to include a photo, place it in your **online portfolio** in the Abo
 
 ---
 
-## How Recruiters Scan Resumes
+## [11:24](https://youtu.be/TJZbIcN18AM?t=684) How Recruiters Scan Resumes
 
 Recruiters do not read resumes top to bottom—**they scan**.
 
@@ -42,7 +42,7 @@ Your layout either **supports the scan or fights it**. If a recruiter has to wor
 
 ---
 
-## ATS Reality (Applicant Tracking Systems)
+## [12:19](https://youtu.be/TJZbIcN18AM?t=739) ATS Reality (Applicant Tracking Systems)
 
 When you apply to a role (LinkedIn, Indeed, company career page), your application goes into an **Applicant Tracking System** (ATS). Common systems include:
 - Ashby
@@ -60,22 +60,22 @@ Even if a resume looks nice to you, it may be **unreadable to software**.
 
 ---
 
-## Core Design Rules
+## [13:42](https://youtu.be/TJZbIcN18AM?t=822) Core Design Rules
 
-### Font
+### [13:42](https://youtu.be/TJZbIcN18AM?t=822) Font
 - **Use one font only**
 - Stick to: Arial, Calibri, or Helvetica
 - Body text: 10.5 to 12 point
 - Section headers: slightly larger
 - These fonts are readable, professional, and ATS-safe
 
-### Color
+### [14:04](https://youtu.be/TJZbIcN18AM?t=844) [approx] Color
 - **Black or dark gray text only**
 - No colored section headers
 - No background shading
 - Color distracts from content and breaks scanning patterns
 
-### Formatting
+### [14:48](https://youtu.be/TJZbIcN18AM?t=888) Formatting
 - **Bold** for section headers and job titles
 - Avoid italics for large blocks of text
 - **No underlines** except for hyperlinks
@@ -83,7 +83,7 @@ Even if a resume looks nice to you, it may be **unreadable to software**.
 
 **Bold guides the eye. Colors confuse it.**
 
-### Layout
+### [15:34](https://youtu.be/TJZbIcN18AM?t=934) Layout
 - **Single column layout**
 - Left-aligned text
 - Consistent spacing between sections
@@ -92,7 +92,7 @@ Even if a resume looks nice to you, it may be **unreadable to software**.
 
 ---
 
-## Noisy vs Clean Layout
+## [21:07](https://youtu.be/TJZbIcN18AM?t=1267) [approx] Noisy vs Clean Layout
 
 **Noisy Resume (avoid):**
 - Two columns
@@ -115,20 +115,20 @@ The clean resume lets the content speak. The noisy resume forces the reader to d
 
 ---
 
-## File Format Rules
+## [19:06](https://youtu.be/TJZbIcN18AM?t=1146) File Format Rules
 
-### Editing
+### [19:06](https://youtu.be/TJZbIcN18AM?t=1146) Editing
 - **Use Google Docs** for editing (easier than Word)
 - Only use Microsoft Word if you're an expert
 - If you don't know how to show non-printing characters in Word, don't use Word
 
-### Submitting
+### [19:44](https://youtu.be/TJZbIcN18AM?t=1184) Submitting
 - **Always submit as PDF** unless the posting specifically requests Word
 - PDF preserves formatting
 - Word documents can be altered easily
 - **Never submit:** Screenshots, Canva links
 
-### File Naming
+### [21:33](https://youtu.be/TJZbIcN18AM?t=1293) File Naming
 Name your file clearly: `FirstName_LastName_Resume.pdf`
 
 Not: `JP_Resume.pdf` (too vague—many people share initials)
@@ -137,7 +137,7 @@ Not: `JP_Resume.pdf` (too vague—many people share initials)
 
 ---
 
-## Resume Builders: Recruiter Perspective
+## [24:00](https://youtu.be/TJZbIcN18AM?t=1440) Resume Builders: Recruiter Perspective
 
 **Avoid resume builders.** Most are trying to:
 - Pull your information to solicit you
@@ -150,7 +150,7 @@ Tell your own story in your own way. The recruiter screen is about confirming th
 
 ---
 
-## What the Recruiter Screen Is Really About
+## [35:12](https://youtu.be/TJZbIcN18AM?t=2112) [approx] What the Recruiter Screen Is Really About
 
 The recruiter screen assesses:
 1. **Presentation:** Do you seem put together?
@@ -162,9 +162,9 @@ It's about confirming that everything listed on your resume is true from a behav
 
 ---
 
-## Live Editing: Practical Tips
+## [34:47](https://youtu.be/TJZbIcN18AM?t=2087) Live Editing: Practical Tips
 
-### Show Non-Printing Characters
+### [34:47](https://youtu.be/TJZbIcN18AM?t=2087) Show Non-Printing Characters
 When editing, enable **View → Show non-printing characters** to see:
 - Extra spaces (two spaces, three spaces)
 - Paragraph marks
@@ -172,30 +172,30 @@ When editing, enable **View → Show non-printing characters** to see:
 
 This reveals formatting issues invisible in normal view.
 
-### Spacing Guidelines
+### [40:18](https://youtu.be/TJZbIcN18AM?t=2418) Spacing Guidelines
 - **Line spacing:** Set to single, then use custom spacing
 - **Before/after paragraphs:** 6 points each for consistency
 - **Between sections:** Add one blank line
 - **Increase line spacing to 1.1 or 1.2** for readability
 
-### Hyperlinks
+### [44:35](https://youtu.be/TJZbIcN18AM?t=2675) [approx] Hyperlinks
 - Display as text: "Email" or "LinkedIn" or "Portfolio"
 - The actual link is embedded—ATS picks it up from your application anyway
 - Make link text black, not blue
 
-### Bullets and Dates
+### [51:48](https://youtu.be/TJZbIcN18AM?t=3108) Bullets and Dates
 - Align all bullets consistently
 - Align all dates to the right
 - Use the ruler tool in Google Docs to adjust indentation
 
-### Remove Visual Clutter
+### [49:17](https://youtu.be/TJZbIcN18AM?t=2957) [approx] Remove Visual Clutter
 - No icons or graphics
 - No decorative lines between sections
 - No skill bars or progress indicators
 
 ---
 
-## Live Demo Feedback [USER's Resume]
+## [51:38](https://youtu.be/TJZbIcN18AM?t=3098) [approx] Live Demo Feedback [USER's Resume]
 
 **Header format approved:**
 - Name
@@ -218,7 +218,7 @@ This reveals formatting issues invisible in normal view.
 
 ---
 
-## Certifications Q&A
+## [53:58](https://youtu.be/TJZbIcN18AM?t=3238) [approx] Certifications Q&A
 
 **Include certifications if:**
 - Relevant to your target role
@@ -231,7 +231,7 @@ This reveals formatting issues invisible in normal view.
 
 ---
 
-## Key Takeaway
+## [52:09](https://youtu.be/TJZbIcN18AM?t=3129) Key Takeaway
 
 **Your resume layout should never compete with your content.** When design is clean, recruiters stay focused on what you've accomplished.
 
@@ -239,7 +239,7 @@ Clean design wins every time.
 
 ---
 
-## Homework
+## [39:05](https://youtu.be/TJZbIcN18AM?t=2345) Homework
 
 1. Check your resume for: multiple fonts, uneven spacing, crowded margins, inconsistent bullet indentation
 2. Remove any visual clutter (icons, graphics, decorative lines)

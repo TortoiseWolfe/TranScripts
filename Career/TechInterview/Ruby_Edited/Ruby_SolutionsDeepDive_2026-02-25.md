@@ -5,26 +5,26 @@ Coach Ruby does her own mock interview on **Number of Changing Keys**, then Lisa
 
 ---
 
-## Coach's Self Mock: Number of Changing Keys
+## [2:37](https://youtu.be/qzo0MHuLHlU?t=157) Coach's Self Mock: Number of Changing Keys
 
-### Problem
+### [2:37](https://youtu.be/qzo0MHuLHlU?t=157) Problem
 
 > You are given a 0-indexed string `s` typed by a user. Changing a key is defined as using a key different from the last used key. `s = "ab"` has a key change; `s = "bB"` does not (shift/caps lock are ignored). Return the number of times the user had to change the key.
 
-### Examples
+### [4:28](https://youtu.be/qzo0MHuLHlU?t=268) [approx] Examples
 
 - `"aAbBcC"` → `2` (`a→b` and `b→c`)
 - `"AaAaAaaA"` → `0`
 
-### Constraints
+### [13:50](https://youtu.be/qzo0MHuLHlU?t=830) Constraints
 
 - `1 <= s.length <= 100`
 
 ---
 
-## Coach's Approach
+## [8:56](https://youtu.be/qzo0MHuLHlU?t=536) [approx] Coach's Approach
 
-### Assumption Test First
+### [11:11](https://youtu.be/qzo0MHuLHlU?t=671) [approx] Assumption Test First
 
 Before writing any logic, she verified in the console that:
 - `'a' == 'A'` → **False**
@@ -32,7 +32,7 @@ Before writing any logic, she verified in the console that:
 
 So case matters for Python string equality. Need to normalize first.
 
-### Normalization With `str.lower()`
+### [13:25](https://youtu.be/qzo0MHuLHlU?t=805) [approx] Normalization With `str.lower()`
 
 ```python
 >>> "aAbBcC".lower()
@@ -48,7 +48,7 @@ So case matters for Python string equality. Need to normalize first.
 
 ---
 
-## The Solution
+## [15:39](https://youtu.be/qzo0MHuLHlU?t=939) [approx] The Solution
 
 ```python
 class Solution:
@@ -61,18 +61,18 @@ class Solution:
         return count
 ```
 
-### Key Details
+### [23:11](https://youtu.be/qzo0MHuLHlU?t=1391) Key Details
 
 - **Normalize first** — `s.lower()` converts the whole string once.
 - **Start the loop at index 1** — you need a previous character to compare against.
 - **Compare `s_lower[i]` to `s_lower[i - 1]`** — increment count on mismatch.
 - **No special edge-case handling** — constraints guarantee `len >= 1`, and the loop naturally handles length-1 strings (no iterations, returns 0).
 
-### Self-Reflection
+### [16:26](https://youtu.be/qzo0MHuLHlU?t=986) Self-Reflection
 
 > "16 minutes on an easy problem — not my personal best. I did a lot of chattering at the beginning. No weird edge cases. Memory usage was high probably because of storing a second lowered string and the count. I'd be curious what other approaches avoided allocating the new string."
 
-### Alternative: In-Place Comparison Without Lowering
+### [22:22](https://youtu.be/qzo0MHuLHlU?t=1342) [approx] Alternative: In-Place Comparison Without Lowering
 
 ```python
 def countKeyChanges(self, s):
@@ -87,19 +87,19 @@ This avoids allocating a full-length copy by lowering just one character at a ti
 
 ---
 
-## Mock Interview: Sum Multiples (Lisa)
+## [20:56](https://youtu.be/qzo0MHuLHlU?t=1256) Mock Interview: Sum Multiples (Lisa)
 
-### Problem
+### [20:56](https://youtu.be/qzo0MHuLHlU?t=1256) Problem
 
 > Given a positive integer `n`, find the sum of all integers in the range `[1, n]` inclusive that are divisible by `3`, `5`, or `7`. Return that sum.
 
-### Example
+### [29:05](https://youtu.be/qzo0MHuLHlU?t=1745) [approx] Example
 
 - `n = 7` → `3 + 5 + 6 + 7 = 21`
 
 ---
 
-## Lisa's Approach
+## [13:48](https://youtu.be/qzo0MHuLHlU?t=828) Lisa's Approach
 
 Standard accumulator with a for loop over `range(1, n + 1)`:
 
@@ -112,7 +112,7 @@ def sumOfMultiples(n):
     return total
 ```
 
-### The Bug: Wrong Division Operator
+### [26:43](https://youtu.be/qzo0MHuLHlU?t=1603) The Bug: Wrong Division Operator
 
 Lisa initially wrote her divisibility check as:
 
@@ -127,11 +127,11 @@ if i // 3 == 0:  # BUG: `//` is integer division, not modulo
 | `//` | integer quotient | `1` | - |
 | `%` | remainder | - | `0` |
 
-### Testing Exposed The Bug
+### [45:27](https://youtu.be/qzo0MHuLHlU?t=2727) Testing Exposed The Bug
 
 Lisa added print statements inside the loop and noticed `total` was updating on iteration `i = 1`, which shouldn't happen if the check were correct. `1 // 3 == 0` is True (integer quotient of 1/3 is 0), triggering the false positive.
 
-### The Fix
+### [38:01](https://youtu.be/qzo0MHuLHlU?t=2281) [approx] The Fix
 
 ```python
 if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
@@ -142,7 +142,7 @@ if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
 - If the remainder is 0, `i` is evenly divisible.
 - Chain with `or` for the three divisors.
 
-### Correct Final Solution
+### [40:16](https://youtu.be/qzo0MHuLHlU?t=2416) [approx] Correct Final Solution
 
 ```python
 class Solution:
@@ -156,11 +156,11 @@ class Solution:
 
 ---
 
-## Coach Feedback: Test The Math Before Building Around It
+## [49:14](https://youtu.be/qzo0MHuLHlU?t=2954) Coach Feedback: Test The Math Before Building Around It
 
 > "You did a great job breaking down the problem — understood what was required, the expected output, the general approach was right. But your basic assumption about the math piece needed more testing. I would have liked to see you test that `i // 3 == 0` logic against a few quick integers like 6 and 15 upfront to make sure it applied across the board."
 
-### Consequence Of Not Testing
+### [46:46](https://youtu.be/qzo0MHuLHlU?t=2806) Consequence Of Not Testing
 
 Lisa built lots of scaffolding around the broken divisibility check — extra `if n > 2` conditions, guards, special cases — trying to paper over the real problem.
 
@@ -168,7 +168,7 @@ Lisa built lots of scaffolding around the broken divisibility check — extra `i
 
 ---
 
-## The Lesson: Test Your Core Operator First
+## [46:58](https://youtu.be/qzo0MHuLHlU?t=2818) [approx] The Lesson: Test Your Core Operator First
 
 Whenever your solution hinges on a single arithmetic or logical operator, **verify the operator does what you expect** with a tiny test case before building the rest of the solution:
 
@@ -182,7 +182,7 @@ print(6 % 3)  # should be 0
 
 ---
 
-## Takeaways
+## [9:36](https://youtu.be/qzo0MHuLHlU?t=576) Takeaways
 
 - **`str.lower()` returns a new string** — assign to a variable; doesn't mutate.
 - **Start index-based loops at 1** when you need a "previous" reference.

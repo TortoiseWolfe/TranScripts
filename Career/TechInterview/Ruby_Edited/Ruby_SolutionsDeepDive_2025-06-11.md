@@ -5,11 +5,11 @@ Wednesday session: deep dive on Two Sum, comparing brute force, search-based, tw
 
 ---
 
-## Recap: Two Sum problem statement
+## [36:50](https://youtu.be/CMJ9rEYttdw?t=2210) Recap: Two Sum problem statement
 
 Given array `nums` and integer `target`, return the **indices** of two numbers that add up to `target`. Exactly one solution exists. Cannot use the same index twice.
 
-### Pseudo code from Sunday
+### [7:08](https://youtu.be/CMJ9rEYttdw?t=428) Pseudo code from Sunday
 
 - We are given an array `nums` and `target` (integer).
 - Find two separate indices in `nums` whose values sum to `target`.
@@ -24,7 +24,7 @@ Given array `nums` and integer `target`, return the **indices** of two numbers t
 
 ---
 
-## Approach 1: Brute Force (Daniel's submission)
+## [8:27](https://youtu.be/CMJ9rEYttdw?t=507) [approx] Approach 1: Brute Force (Daniel's submission)
 
 ```python
 for i in range(len(nums)):
@@ -39,17 +39,17 @@ for i in range(len(nums)):
 
 ---
 
-## Approach 2: Sort + Binary Search
+## [36:50](https://youtu.be/CMJ9rEYttdw?t=2210) Approach 2: Sort + Binary Search
 
 **Idea:** for each value, compute the **complement** (`target - current`) and search the array for it.
 
-### Why sort first?
+### [40:14](https://youtu.be/CMJ9rEYttdw?t=2414) Why sort first?
 
 - **Linear search** for the complement is O(n) → overall O(n²). No improvement.
 - **Binary search** is O(log n) → overall O(n log n). Better than O(n²).
 - But binary search **requires a sorted array**.
 
-### Sort vs sorted in Python
+### [46:52](https://youtu.be/CMJ9rEYttdw?t=2812) Sort vs sorted in Python
 
 - `nums.sort()` → mutates the original array, returns `None`. Can only be called on lists.
 - `sorted(nums)` → returns a new sorted list, original is unchanged. Works on any iterable (lists, tuples, strings, dicts, sets).
@@ -57,11 +57,11 @@ for i in range(len(nums)):
 
 > Use `sorted()` here so you can keep the original `nums` for index lookup.
 
-### The index problem
+### [39:04](https://youtu.be/CMJ9rEYttdw?t=2344) The index problem
 
 Sorting destroys the original index positions, but the answer requires original indices. After finding the matching values in the sorted array, you need a second linear pass through the original `nums` to recover their indices. (Or use `enumerate` to track original positions during sort.)
 
-### Verdict on this approach
+### [29:35](https://youtu.be/CMJ9rEYttdw?t=1775) [approx] Verdict on this approach
 
 - **Complexity:** O(n log n)
 - Requires knowing how to write binary search (or asking the interviewer if you can use a template).
@@ -70,7 +70,7 @@ Sorting destroys the original index positions, but the answer requires original 
 
 ---
 
-## Approach 3: Two Pointers
+## [1:05:39](https://youtu.be/CMJ9rEYttdw?t=3939) Approach 3: Two Pointers
 
 - Worked great for Container With Most Water last week, but **only because that problem doesn't care about index order**.
 - Two Sum needs a comparison against a target, which means you'd need a less-than/greater-than condition to decide which pointer to move.
@@ -80,11 +80,11 @@ Sorting destroys the original index positions, but the answer requires original 
 
 ---
 
-## Approach 4: Hashmap / Set Lookup (the optimal solution)
+## [52:12](https://youtu.be/CMJ9rEYttdw?t=3132) Approach 4: Hashmap / Set Lookup (the optimal solution)
 
 **Insight from the chat:** sets (and dicts) have **O(1) lookup**, insertion, and deletion.
 
-### The algorithm
+### [42:16](https://youtu.be/CMJ9rEYttdw?t=2536) [approx] The algorithm
 
 ```python
 seen = {}                          # value -> index
@@ -99,24 +99,24 @@ for i, num in enumerate(nums):
 - If yes → we found the pair, return both indices.
 - If no → add the current value (and its index) to the set/dict and continue.
 
-### Complexity
+### [46:30](https://youtu.be/CMJ9rEYttdw?t=2790) [approx] Complexity
 
 - **Time:** O(n) — single pass through the array.
 - **Space:** O(n) — the lookup structure can grow up to the size of the input.
 
-### Why a dict instead of a set?
+### [59:45](https://youtu.be/CMJ9rEYttdw?t=3585) Why a dict instead of a set?
 
 - A **set** can confirm whether the complement exists, but doesn't store the original index.
 - A **dict** maps `value → index`, so when you find a complement you can return both indices immediately.
 - Using `enumerate` in the loop gives you the index of the current value cleanly.
 
-### Negative numbers?
+### [28:15](https://youtu.be/CMJ9rEYttdw?t=1695) Negative numbers?
 
 Works fine. Subtraction and addition behave normally with negatives — the only operations that would get tricky are multiplication or division.
 
 ---
 
-## The Bigger Lesson: Pseudo Code Before Code
+## [59:11](https://youtu.be/CMJ9rEYttdw?t=3551) [approx] The Bigger Lesson: Pseudo Code Before Code
 
 Today's session deliberately had **zero coding** for almost the entire hour. Why?
 
@@ -132,7 +132,7 @@ Once you've evaluated the trade-offs, pick the best one and code it confidently 
 
 ---
 
-## Reddit thread observation
+## [6:50](https://youtu.be/CMJ9rEYttdw?t=410) Reddit thread observation
 
 > A CS-degree holder admitted Two Sum was hard for them and they had to Google hints and learn about hashmaps from scratch.
 
@@ -140,7 +140,7 @@ The point: even people with formal CS degrees struggle with these problems. The 
 
 ---
 
-## Joy of Coding Tech Interview vs Job Hunt Interviews
+## [11:17](https://youtu.be/CMJ9rEYttdw?t=677) Joy of Coding Tech Interview vs Job Hunt Interviews
 
 - **Joy of Coding interview:** easy-level problems. Don't need to master mediums.
 - **Job hunt interviews:** medium and hard problems are common. Working up to this level matters.

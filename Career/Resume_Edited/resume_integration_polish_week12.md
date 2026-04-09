@@ -5,7 +5,7 @@ Date: January 28, 2026
 
 ---
 
-## Core Principle
+## [7:28](https://youtu.be/UkwJI-M2WrM?t=448) Core Principle
 
 At this point your resume should not feel like a draft anymore. It should feel like a clear story about who you are, what you can do, and what kind of role you're targeting.
 
@@ -15,7 +15,7 @@ Recruiters don't read resumes line by line. They skim. The question this session
 
 ---
 
-## How Recruiters Actually Review Resumes
+## [9:42](https://youtu.be/UkwJI-M2WrM?t=582) How Recruiters Actually Review Resumes
 
 When a recruiter opens your resume, they are doing **three things at once**:
 
@@ -25,7 +25,7 @@ When a recruiter opens your resume, they are doing **three things at once**:
 
 They are not trying to be critical. They are trying to make decisions quickly.
 
-### Recruiter Scan Order
+### [11:34](https://youtu.be/UkwJI-M2WrM?t=694) Recruiter Scan Order
 
 Recruiters follow a predictable path through your resume:
 
@@ -39,7 +39,7 @@ If your resume is clear, consistent, and aligned, it feels easy to read. If some
 
 ---
 
-## Resume Review Checklist: Four Lenses
+## [10:58](https://youtu.be/UkwJI-M2WrM?t=658) Resume Review Checklist: Four Lenses
 
 Tonight's review examines your resume through four lenses:
 
@@ -50,7 +50,7 @@ Tonight's review examines your resume through four lenses:
 
 ---
 
-## Lens 1: Is It Easy to Skim?
+## [18:44](https://youtu.be/UkwJI-M2WrM?t=1124) Lens 1: Is It Easy to Skim?
 
 Ask yourself these questions while looking at your resume through a recruiter's eyes:
 
@@ -63,7 +63,7 @@ Ask yourself these questions while looking at your resume through a recruiter's 
 
 ---
 
-## Lens 2: Are Your Bullets Results-Driven?
+## [17:22](https://youtu.be/UkwJI-M2WrM?t=1042) [approx] Lens 2: Are Your Bullets Results-Driven?
 
 Strong bullets answer three questions:
 
@@ -75,7 +75,7 @@ Weak bullets describe tasks. Strong bullets show **outcomes**. You may need more
 
 ---
 
-## Lens 3: Do Titles and Summaries Match LinkedIn?
+## [14:17](https://youtu.be/UkwJI-M2WrM?t=857) Lens 3: Do Titles and Summaries Match LinkedIn?
 
 This is a big one that recruiters notice. Your resume and LinkedIn should **tell the same story**:
 
@@ -87,7 +87,7 @@ They shouldn't be identical word for word, but they should tell the same story. 
 
 ---
 
-## Lens 4: Are Keywords Aligned to the Job Market?
+## [15:28](https://youtu.be/UkwJI-M2WrM?t=928) Lens 4: Are Keywords Aligned to the Job Market?
 
 Your resume should sound like the jobs you're applying for. If job postings mention React, APIs, testing, SQL, or Agile, those words should appear naturally in your resume.
 
@@ -95,11 +95,11 @@ Your resume should sound like the jobs you're applying for. If job postings ment
 
 ---
 
-## Peer Review Activity
+## [18:05](https://youtu.be/UkwJI-M2WrM?t=1085) Peer Review Activity
 
 The peer review exercise is not about tearing resumes apart. It is about **helping each other see what recruiters see**.
 
-### How to Run a Peer Review
+### [18:22](https://youtu.be/UkwJI-M2WrM?t=1102) How to Run a Peer Review
 
 1. Partner up and share your resumes
 2. Use the four-lens checklist as your guide:
@@ -111,7 +111,7 @@ The peer review exercise is not about tearing resumes apart. It is about **helpi
 
 ---
 
-## Recap: Week 9 Layout Principles
+## [5:23](https://youtu.be/UkwJI-M2WrM?t=323) Recap: Week 9 Layout Principles
 
 This session builds on the layout and design principles from Week 9. Your resume layout should never compete with your content. When design is clean, recruiters stay focused on what you've accomplished.
 
@@ -126,7 +126,7 @@ Key reminders:
 
 ---
 
-## Key Takeaway
+## [14:34](https://youtu.be/UkwJI-M2WrM?t=874) Key Takeaway
 
 Your resume is a clear story — not a draft, not a data dump. Recruiters are scanning for fit, credibility, and reasons to keep reading. Make it easy for them.
 

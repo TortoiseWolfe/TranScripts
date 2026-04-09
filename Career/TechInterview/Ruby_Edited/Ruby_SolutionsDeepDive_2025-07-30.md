@@ -5,7 +5,7 @@ Wednesday session: explore four different approaches to LeetCode's Contains Dupl
 
 ---
 
-## Recap: Contains Duplicate problem
+## [2:07](https://youtu.be/YEI5yYOPVus?t=127) Recap: Contains Duplicate problem
 
 Given an integer array `nums`, return `True` if any value appears at least twice, `False` if all elements are distinct.
 
@@ -14,7 +14,7 @@ Given an integer array `nums`, return `True` if any value appears at least twice
 
 ---
 
-## Approach 1: Brute Force Nested Loop — O(n²)
+## [13:33](https://youtu.be/YEI5yYOPVus?t=813) Approach 1: Brute Force Nested Loop — O(n²)
 
 ```python
 for index, value in enumerate(nums):
@@ -24,32 +24,32 @@ for index, value in enumerate(nums):
 return False
 ```
 
-### How it works
+### [53:40](https://youtu.be/YEI5yYOPVus?t=3220) How it works
 
 - Outer loop: iterate through each value with its index.
 - Inner loop: compare against all subsequent values.
 - If any pair matches, return `True`.
 - Otherwise, return `False` after the loops complete.
 
-### Result
+### [24:46](https://youtu.be/YEI5yYOPVus?t=1486) Result
 
 - **Passes 65 of 77 test cases** before hitting LeetCode's time limit on the larger inputs (10,000+ elements).
 - **Time:** O(n²)
 - **Space:** O(1)
 
-### Lesson: time limit exceeded ≠ wrong solution
+### [12:32](https://youtu.be/YEI5yYOPVus?t=752) Lesson: time limit exceeded ≠ wrong solution
 
 You got the right answer for the cases that ran. The solution is correct, just inefficient. This is your cue to look for a better approach.
 
 > **In the joy of coding tech interview** (HackerRank easy problems), brute force usually passes. **In real job interviews and on LeetCode mediums/hards**, you'll often need to optimize past brute force.
 
-### Coach's recommendation
+### [7:31](https://youtu.be/YEI5yYOPVus?t=451) Coach's recommendation
 
 If your brute force passes at least **two-thirds of the test cases**, you've proven you understand the problem. Now go look at the Solutions tab or your toolkit of efficient techniques.
 
 ---
 
-## Approach 2: Sort + Adjacent Comparison — O(n log n)
+## [53:40](https://youtu.be/YEI5yYOPVus?t=3220) Approach 2: Sort + Adjacent Comparison — O(n log n)
 
 ```python
 nums.sort()
@@ -59,27 +59,27 @@ for i in range(len(nums) - 1):
 return False
 ```
 
-### How it works
+### [16:55](https://youtu.be/YEI5yYOPVus?t=1015) [approx] How it works
 
 - Sort the array (O(n log n)).
 - Walk through with index `i`, comparing each value to the next one.
 - Stop at `len(nums) - 1` to avoid index out of bounds.
 - If any adjacent pair matches, return `True`.
 
-### Result
+### [19:20](https://youtu.be/YEI5yYOPVus?t=1160) [approx] Result
 
 - **Passes all test cases.**
 - **Time:** O(n log n) — sort dominates.
 - **Space:** O(1) for the sort (in-place) or O(n) depending on the implementation.
 
-### `sort()` vs `sorted()`
+### [26:34](https://youtu.be/YEI5yYOPVus?t=1594) `sort()` vs `sorted()`
 
 - `nums.sort()` mutates the list **in place** and returns `None`.
 - `sorted(nums)` returns a **new sorted list** without mutating the original.
 
 If you write `sorted_nums = nums.sort()`, you get `None` stored in `sorted_nums` because the method has no return value. This trips people up. Use `sorted_nums = sorted(nums)` if you want a new copy.
 
-### Can you import libraries in tech interviews?
+### [29:30](https://youtu.be/YEI5yYOPVus?t=1770) Can you import libraries in tech interviews?
 
 - **Built-in functions** (`sort`, `sorted`, `min`, `max`, `len`, etc.) are always fine.
 - **Importing libraries** is usually allowed but adds overhead — you have to know how to use them and remember the import syntax.
@@ -87,7 +87,7 @@ If you write `sorted_nums = nums.sort()`, you get `None` stored in `sorted_nums`
 
 ---
 
-## Approach 3: Set With Add and Check — O(n)
+## [26:35](https://youtu.be/YEI5yYOPVus?t=1595) [approx] Approach 3: Set With Add and Check — O(n)
 
 ```python
 seen = set()
@@ -98,21 +98,21 @@ for value in nums:
 return False
 ```
 
-### How it works
+### [40:50](https://youtu.be/YEI5yYOPVus?t=2450) How it works
 
 - Build a set as you go.
 - For each value, check if it's already in the set.
 - If yes → duplicate found, return `True`.
 - If no → add it to the set and continue.
 
-### Why this is O(n)
+### [31:25](https://youtu.be/YEI5yYOPVus?t=1885) [approx] Why this is O(n)
 
 - Single loop: O(n).
 - `value in set` is **O(1)** (hash lookup, not linear scan).
 - `set.add(value)` is also O(1).
 - Inside an O(n) loop, all operations are O(1) → **O(n) overall**.
 
-### `in` is O(n) for lists, O(1) for sets
+### [33:50](https://youtu.be/YEI5yYOPVus?t=2030) [approx] `in` is O(n) for lists, O(1) for sets
 
 This is a critical distinction:
 
@@ -124,32 +124,32 @@ Sets use **hashing** under the hood. The value's hash determines its index, so c
 
 ---
 
-## Approach 4: One-Line Set Comparison (Lisa's idea) — O(n)
+## [36:15](https://youtu.be/YEI5yYOPVus?t=2175) [approx] Approach 4: One-Line Set Comparison (Lisa's idea) — O(n)
 
 ```python
 return len(set(nums)) != len(nums)
 ```
 
-### How it works
+### [40:24](https://youtu.be/YEI5yYOPVus?t=2424) How it works
 
 - `set(nums)` creates a set from the list, which automatically removes duplicates.
 - If the resulting set is **shorter** than the original list, there were duplicates.
 - Compare lengths and return the boolean.
 
-### Big-O
+### [17:48](https://youtu.be/YEI5yYOPVus?t=1068) Big-O
 
 - `set(nums)` is **O(n)** (one pass through the list to insert into the set).
 - `len()` calls are **O(1)**.
 - **Overall: O(n)**, same as Approach 3.
 
-### Why this is the elegant winner
+### [26:31](https://youtu.be/YEI5yYOPVus?t=1591) Why this is the elegant winner
 
 - One line.
 - Uses Python's built-in set semantics to do the heavy lifting.
 - No explicit loop, no early-return logic, no extra variables.
 - Reads almost like the problem statement: "if the unique values are fewer than all values, there's a duplicate."
 
-### Real-world performance comparison
+### [45:56](https://youtu.be/YEI5yYOPVus?t=2756) [approx] Real-world performance comparison
 
 | Approach | Runtime |
 |---|---|
@@ -162,7 +162,7 @@ return len(set(nums)) != len(nums)
 
 ---
 
-## Memory Trade-Off
+## [57:49](https://youtu.be/YEI5yYOPVus?t=3469) Memory Trade-Off
 
 The set-based approaches use **O(n) space** because they store every unique value. The sort and brute force approaches use **O(1)** extra space.
 
@@ -172,11 +172,11 @@ For most problems, **runtime matters more than memory**. Pick the faster solutio
 
 ---
 
-## Confused Adam: "Why use enumerate?"
+## [53:49](https://youtu.be/YEI5yYOPVus?t=3229) Confused Adam: "Why use enumerate?"
 
 A participant pointed out that `enumerate(nums)` is functionally identical to `for i in range(len(nums))` followed by `nums[i]`. Why use `enumerate`?
 
-### Answer
+### [53:34](https://youtu.be/YEI5yYOPVus?t=3214) Answer
 
 - **Same efficiency** — both are O(n) and do the same thing under the hood.
 - `enumerate` is **cleaner syntax** — gives you both the index and the value in one expression.
@@ -186,7 +186,7 @@ A participant pointed out that `enumerate(nums)` is functionally identical to `f
 
 ---
 
-## Encouragement: Try the Problems After the Session
+## [52:08](https://youtu.be/YEI5yYOPVus?t=3128) Encouragement: Try the Problems After the Session
 
 Even though all four approaches were walked through live, **try them yourself from memory**. The muscle memory of typing them out, debugging the small mistakes, and making them work is what builds your speed.
 
@@ -194,7 +194,7 @@ Even though all four approaches were walked through live, **try them yourself fr
 
 ---
 
-## Coming Up: Top K Frequent Elements
+## [10:12](https://youtu.be/YEI5yYOPVus?t=612) Coming Up: Top K Frequent Elements
 
 The other Sunday problem. The constraint says "your solution must be **better than O(n log n)**" — which rules out sort-based approaches. Try this one before the next session.
 

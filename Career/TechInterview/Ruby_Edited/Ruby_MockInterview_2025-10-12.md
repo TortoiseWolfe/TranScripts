@@ -3,23 +3,23 @@ Source: https://youtu.be/vWcH6g62B-E
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Do I Need to Learn All the "Patterns"?
+## [41:23](https://youtu.be/vWcH6g62B-E?t=2483) Q&A: Do I Need to Learn All the "Patterns"?
 
 Mauricio asked about the anxiety of feeling like there are 20–30 different problem-solving patterns to master for interviews — BFS, DFS, sliding window, two pointers, greedy, dynamic programming, etc.
 
-### For the Joy of Coding technical interview
+### [44:29](https://youtu.be/vWcH6g62B-E?t=2669) For the Joy of Coding technical interview
 
 - **You do NOT need BFS/DFS** — those are for trees and graphs, which aren't in mod 2.
 - **Recursion problems**, if given, will be problems that *could* be solved normally and you'll be asked to solve recursively — not problems that *require* recursion.
 - Ruby hasn't found an easy-level recursion-only problem in mod 2 topics, so it's unlikely to appear.
 
-### For the job hunt
+### [40:33](https://youtu.be/vWcH6g62B-E?t=2433) For the job hunt
 
 - Yes, eventually you should practice these patterns, but the actual list is **not that long** — maybe a dozen or so patterns total.
 - LeetCode has **curated lists by pattern**: sliding window list, two-pointer list, tree/graph list, etc. Work through them one category at a time.
 - You don't need to study this yet — come back to it once you've been in the internship for a while and are comfortable with general coding problems.
 
-### The 80/20 breakdown
+### [2:45](https://youtu.be/vWcH6g62B-E?t=165) The 80/20 breakdown
 
 - **~80% of problems** can be solved with just mod 2 fundamentals: lists, dictionaries, linked lists, 2D arrays, functions, recursion, stacks, queues.
 - **~20% of problems** need specialized knowledge — trees, graphs, specific algorithms.
@@ -29,11 +29,11 @@ Mauricio asked about the anxiety of feeling like there are 20–30 different pro
 
 ---
 
-## Main Topic: How to Work with a Looked-Up Solution
+## [35:52](https://youtu.be/vWcH6g62B-E?t=2152) Main Topic: How to Work with a Looked-Up Solution
 
 Ruby covered her process for when you've tried your best, gotten stuck, looked up a solution, and now need to learn from it. She'd never explicitly walked through this process before.
 
-### Problem used for the walkthrough: Group Anagrams (LeetCode medium)
+### [9:07](https://youtu.be/vWcH6g62B-E?t=547) Problem used for the walkthrough: Group Anagrams (LeetCode medium)
 
 Given an array of strings, group the anagrams together into a 2D array.
 
@@ -42,13 +42,13 @@ Input:  ["eat","tea","tan","ate","nat","bat"]
 Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
 ```
 
-### Constraints
+### [12:41](https://youtu.be/vWcH6g62B-E?t=761) [approx] Constraints
 
 - `1 <= strs.length <= 10^4`
 - `0 <= strs[i].length <= 100`
 - Lowercase English letters only.
 
-### The pseudo code outline
+### [14:48](https://youtu.be/vWcH6g62B-E?t=888) [approx] The pseudo code outline
 
 ```
 # Given: strings - list of strings that may or may not be anagrams
@@ -59,7 +59,7 @@ Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
 
 ---
 
-## The Solution (found online)
+## [16:55](https://youtu.be/vWcH6g62B-E?t=1015) [approx] The Solution (found online)
 
 ```python
 def groupAnagrams(strs):
@@ -74,13 +74,13 @@ def groupAnagrams(strs):
 
 ---
 
-## Ruby's Process for Learning from a Looked-Up Solution
+## [38:36](https://youtu.be/vWcH6g62B-E?t=2316) Ruby's Process for Learning from a Looked-Up Solution
 
-### Step 1: Paste it in and confirm it works
+### [38:36](https://youtu.be/vWcH6g62B-E?t=2316) Step 1: Paste it in and confirm it works
 
 Run the solution against the sample test cases. Confirm it passes. Don't submit yet — you want to learn, not just submit someone else's work.
 
-### Step 2: Step through each line and visualize
+### [45:32](https://youtu.be/vWcH6g62B-E?t=2732) Step 2: Step through each line and visualize
 
 Add print statements to understand what each line does:
 
@@ -93,7 +93,7 @@ print(anagram_table)  # see the dict build up
 - **`"".join(sorted("eat"))`** uses the `join` string method to concatenate the sorted list back into a string (`"aet"`).
 - **`list(anagram_table.values())`** converts the dictionary's values view into a list of lists.
 
-### Step 3: Write pseudo code for the solution *as if you had written it*
+### [28:38](https://youtu.be/vWcH6g62B-E?t=1718) Step 3: Write pseudo code for the solution *as if you had written it*
 
 Pretend you wrote this code and are now documenting it in pseudo code:
 
@@ -107,15 +107,15 @@ Pretend you wrote this code and are now documenting it in pseudo code:
 # After the loop, convert the dictionary's values into a 2D list and return
 ```
 
-### Step 4: Take a break
+### [39:43](https://youtu.be/vWcH6g62B-E?t=2383) Step 4: Take a break
 
 A day, a few days, maybe a week. No code in the editor — only the pseudo code.
 
-### Step 5: Rewrite the solution from your pseudo code
+### [22:34](https://youtu.be/vWcH6g62B-E?t=1354) Step 5: Rewrite the solution from your pseudo code
 
 Come back. Only the pseudo code is there. Try to write working code from your pseudo code alone.
 
-### Step 6: Look up **only** the specific things you get stuck on
+### [40:21](https://youtu.be/vWcH6g62B-E?t=2421) Step 6: Look up **only** the specific things you get stuck on
 
 Don't reference the original solution. Look up things like:
 
@@ -125,7 +125,7 @@ Don't reference the original solution. Look up things like:
 
 ---
 
-## Ruby's Rewrite (done during the demo)
+## [33:51](https://youtu.be/vWcH6g62B-E?t=2031) [approx] Ruby's Rewrite (done during the demo)
 
 ```python
 def groupAnagrams(strs):
@@ -147,13 +147,13 @@ Slightly different from the original, but still works. The key point: **her vers
 
 ---
 
-## How Long to Bang Your Head Before Looking Up a Solution
+## [40:33](https://youtu.be/vWcH6g62B-E?t=2433) How Long to Bang Your Head Before Looking Up a Solution
 
-### Mauricio's follow-up question
+### [40:33](https://youtu.be/vWcH6g62B-E?t=2433) Mauricio's follow-up question
 
 > "How long should you basically bang your head against the wall before going for the solution?"
 
-### Ruby's answer
+### [40:52](https://youtu.be/vWcH6g62B-E?t=2452) Ruby's answer
 
 - **Easy problem:** ~1 hour. If you can't get 2/3 of test cases passing, walk away.
 - **Medium problem:** up to ~1 hour on day 1. Let it marinate. Come back a day or two later.
@@ -161,7 +161,7 @@ Slightly different from the original, but still works. The key point: **her vers
 - After 2/3 test cases pass, spend another **10–20 minutes** trying to get the final third. If that fails, re-read the problem carefully first. **If still stuck after that**, look up the solution.
 - **Total time across multiple days:** ~1.5 hours is Ruby's rough budget.
 
-### When to stop for the day
+### [43:36](https://youtu.be/vWcH6g62B-E?t=2616) When to stop for the day
 
 - When you've thought through everything you can.
 - When you're going in circles in your own head.
@@ -171,7 +171,7 @@ Slightly different from the original, but still works. The key point: **her vers
 
 ---
 
-## Python Dictionary Method Reference
+## [49:23](https://youtu.be/vWcH6g62B-E?t=2963) Python Dictionary Method Reference
 
 Useful methods you should get acquainted with:
 
@@ -183,7 +183,7 @@ Useful methods you should get acquainted with:
 - **`setdefault(key, default)`** — returns value if key exists, else inserts default.
 - **`update(other_dict)`** — updates keys/values in place.
 
-### When iterating
+### [24:29](https://youtu.be/vWcH6g62B-E?t=1469) When iterating
 
 - `for key in dict:` — iterates keys.
 - `for value in dict.values():` — iterates values.
@@ -193,7 +193,7 @@ Useful methods you should get acquainted with:
 
 ---
 
-## Key Takeaways
+## [5:53](https://youtu.be/vWcH6g62B-E?t=353) Key Takeaways
 
 - **You don't need to master every pattern before the technical interview.** Mod 2 fundamentals are ~80% of what you need.
 - **BFS/DFS** are tree/graph topics — not in mod 2, not on the Joy of Coding technical interview.

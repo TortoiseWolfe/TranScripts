@@ -3,17 +3,17 @@ Source: https://youtu.be/P60M5VIEBQY
 
 *Nailing the Tech Interview — Sunday session*
 
-## Homework Recap: Reimplementing `count` and `replace`
+## [1:16](https://youtu.be/P60M5VIEBQY?t=76) Homework Recap: Reimplementing `count` and `replace`
 
 Mauricio completed the homework of reimplementing Python's `str.count()` and `str.replace()` without using the built-in methods and posted his solutions to the HackerRank Discord channel. He even wrapped them in a class to mimic the built-in interface.
 
-### What he ran into
+### [34:30](https://youtu.be/P60M5VIEBQY?t=2070) What he ran into
 
 - **`replace` was harder than `count`** — the sticking point was **updating the string as you find matches**. At first he was only replacing the first or the last occurrence.
 - **Strings are immutable** — each replacement creates a new string, which you then have to reassign before the next iteration.
 - **Once `replace` worked, `count` was trivial** — it's essentially a shortened version of the same traversal logic without the modification step.
 
-### Why Ruby chose these two problems
+### [3:25](https://youtu.be/P60M5VIEBQY?t=205) Why Ruby chose these two problems
 
 - `find`, `count`, and `replace` all share the same **traversal + comparison base** but have different side effects:
   - `find` returns an index.
@@ -22,13 +22,13 @@ Mauricio completed the homework of reimplementing Python's `str.count()` and `st
 
 ---
 
-## Mock Interview: Mauricio on "Minimum Time to Make Rope Colorful" (LeetCode medium)
+## [52:07](https://youtu.be/P60M5VIEBQY?t=3127) Mock Interview: Mauricio on "Minimum Time to Make Rope Colorful" (LeetCode medium)
 
-### Problem statement
+### [52:07](https://youtu.be/P60M5VIEBQY?t=3127) Problem statement
 
 You have a rope of balloons represented as a string `colors`. You also have an integer array `neededTime` where `neededTime[i]` is the time to remove balloon `i`. Bob wants the rope to be **"colorful"** — meaning **no two consecutive balloons have the same color**. Return the **minimum time** Bob needs to make the rope colorful.
 
-### Examples
+### [12:23](https://youtu.be/P60M5VIEBQY?t=743) [approx] Examples
 
 ```
 colors = "abaac",   neededTime = [1, 2, 3, 4, 5]  ->  3
@@ -42,18 +42,18 @@ colors = "aabaa",   neededTime = [1, 2, 3, 4, 1]  ->  2
   Remove first 'a' (time 1) and last 'a' (time 1) -> "aba". Total: 2.
 ```
 
-### Constraints
+### [18:25](https://youtu.be/P60M5VIEBQY?t=1105) Constraints
 
 - `colors.length == neededTime.length == n`
 - `1 <= n <= 10^5`
 - `1 <= neededTime[i] <= 10^4`
 - `colors` consists of lowercase English letters.
 
-### Mauricio's verbal problem breakdown
+### [48:16](https://youtu.be/P60M5VIEBQY?t=2896) Mauricio's verbal problem breakdown
 
 > "The goal is to remove any consecutive balloons of the same color. Among the two, I should remove the cheapest one. So I need to find consecutive duplicates, then add the minimum of the two times to a running sum."
 
-### Approach (pair-by-pair with `step=2`)
+### [15:31](https://youtu.be/P60M5VIEBQY?t=931) Approach (pair-by-pair with `step=2`)
 
 Initial plan: iterate `colors` in steps of 2, compare `colors[i]` to `colors[i+1]`, and if they match, add the minimum of the two times to a running sum.
 
@@ -66,23 +66,23 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### The bug: step=2 skips odd-indexed comparisons
+### [22:18](https://youtu.be/P60M5VIEBQY?t=1338) [approx] The bug: step=2 skips odd-indexed comparisons
 
 With step 2, you compare (0,1), (2,3), (4,5)... but you **miss** comparing (1,2), (3,4), etc. This fails cases where consecutive duplicates straddle the step boundary.
 
-### The debugging hiccup
+### [55:51](https://youtu.be/P60M5VIEBQY?t=3351) The debugging hiccup
 
 - Mauricio added print statements but **nothing printed**. He thought the `if` condition was the problem.
 - **Actual cause:** the `range(..., step=2)` was skipping past the matching pairs, so the `if` was never true.
 - **Lesson:** he should have added a print statement **right after the `for` loop** to confirm the loop was iterating over the expected indexes — **before** writing any inner logic.
 
-### Ruby's coaching point
+### [32:45](https://youtu.be/P60M5VIEBQY?t=1965) Ruby's coaching point
 
 > "As soon as you wrote your for loop, I would have tested to make sure it was doing what you expected. It seems simple — why would I need to test my for loop? I've written it a million times. This is exactly why I do it every single week."
 
 **Always print right after writing a loop.** You reduce the possible sources of error from "is it my for loop, my if, my sum, my index arithmetic, or my variable name?" down to just "the for loop." Debug the smallest surface area at a time.
 
-### Fixing step=2 → step=1
+### [11:35](https://youtu.be/P60M5VIEBQY?t=695) Fixing step=2 → step=1
 
 Removing the step argument got the code running:
 
@@ -94,11 +94,11 @@ for i in range(len(colors) - 1):
 
 Result: **33% of test cases passing** (only about 28%).
 
-### Why `len(colors) - 1` (the safety offset)
+### [17:11](https://youtu.be/P60M5VIEBQY?t=1031) Why `len(colors) - 1` (the safety offset)
 
 Because we access `colors[i + 1]` inside the loop, we must stop at the second-to-last index or we'll hit an **index out of range** error. `range(len(colors) - 1)` gives indexes `0` through `n - 2`, and `i + 1` will then be at most `n - 1`.
 
-### The remaining bug: three-or-more consecutive duplicates
+### [18:52](https://youtu.be/P60M5VIEBQY?t=1132) The remaining bug: three-or-more consecutive duplicates
 
 With `colors = "aaabbbc"` and `neededTime = [3, 5, 10, 7, 5, 3, 5]`, the pair-by-pair logic starts **double-counting**:
 
@@ -110,17 +110,17 @@ With `colors = "aaabbbc"` and `neededTime = [3, 5, 10, 7, 5, 3, 5]`, the pair-by
 
 The correct approach for a run of `k` same-colored balloons is: **remove all but the most expensive one**. That is, `sum(group) - max(group)`.
 
-### Strategy for the next attempt
+### [36:03](https://youtu.be/P60M5VIEBQY?t=2163) Strategy for the next attempt
 
 Mauricio suggested switching to a **`while` loop** to walk through runs of same-color balloons until the color changes, then sum the group and subtract the max. Ruby suggested first **walking through the failing test case by hand** before rewriting.
 
 > "Before I just start switching variables or conditions, what do I need to know about this problem? What do I need to consider?"
 
-### Ruby's hint
+### [45:17](https://youtu.be/P60M5VIEBQY?t=2717) Ruby's hint
 
 > "I think that hint might even be example three in their problem statement." — pointing to the `"aabaa"` example where removing the two cheap end-a's is the right move. Generalize: always **keep the most expensive balloon** in each consecutive-color group.
 
-### Correct canonical solution (implied, not coded in session)
+### [11:40](https://youtu.be/P60M5VIEBQY?t=700) Correct canonical solution (implied, not coded in session)
 
 ```python
 def minCost(colors, neededTime):
@@ -144,7 +144,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Linda's Clarifying Questions (Great Interview Practice)
+## [49:50](https://youtu.be/P60M5VIEBQY?t=2990) Linda's Clarifying Questions (Great Interview Practice)
 
 Linda joined late and asked Mauricio to explain his code in plain English. Ruby noted this is **exactly** the kind of conversation you'd have in an interview — being able to explain your logic while the interviewer probes your reasoning.
 
@@ -159,22 +159,22 @@ Questions Mauricio fielded well:
 
 ---
 
-## Closing Recommendations
+## [8:51](https://youtu.be/P60M5VIEBQY?t=531) Closing Recommendations
 
-### Pen and paper for tricky test cases
+### [8:51](https://youtu.be/P60M5VIEBQY?t=531) Pen and paper for tricky test cases
 
 When code passes some tests but not all and you can't see where it's breaking down mentally, **draw it out**. Especially for problems with visual setups like this one (balloons on a rope).
 
 > "I'm always a fan of pen and paper. Make it visual if you need to."
 
-### Session cadence reminder (for newcomers)
+### [55:01](https://youtu.be/P60M5VIEBQY?t=3301) Session cadence reminder (for newcomers)
 
 - **Sundays:** new problems, mock interviews, fresh content.
 - **Wednesdays:** exploring the problems from Sunday in more depth, alternative approaches, efficiency discussions.
 
 ---
 
-## Key Takeaways
+## [3:20](https://youtu.be/P60M5VIEBQY?t=200) Key Takeaways
 
 - **Homework insight:** `replace` requires reassigning the string after every match because strings are immutable. `count` is a simpler traversal with no modification.
 - **Always debug your for loop immediately after writing it.** Print indexes or values before adding any inner logic — reduces debugging surface area.

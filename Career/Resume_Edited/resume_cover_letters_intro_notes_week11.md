@@ -4,27 +4,27 @@ Date: January 21, 2026
 
 ---
 
-## Pull Request Placement on Resumes
+## [53:38](https://youtu.be/Rd3heczszU8?t=3218) Pull Request Placement on Resumes
 
 [REVIEW: This Q&A occurred before the main session. Relevant career advice but tangential to the cover letter topic.]
 
 Developers should **not** list individual pull requests as a standalone section on their resume. Pull requests should be embedded as proof of collaboration and delivery inside experience, projects, or open-source contributions.
 
-### Where to Place Pull Requests
+### [10:49](https://youtu.be/Rd3heczszU8?t=649) Where to Place Pull Requests
 
 - List pull requests **inside a project entry** -- this is the most common and effective placement for early career developers
 - If the PR happened in a job, internship, or paid contract, include it in the bullet for that role
 - Link your GitHub profile at the top of your resume; optionally link the repository
 - **Do not clutter bullets with PR links** -- keep things clean
 
-### What Pull Requests Signal to Recruiters
+### [32:39](https://youtu.be/Rd3heczszU8?t=1959) What Pull Requests Signal to Recruiters
 
 - Team-based development experience
 - Code review participation
 - Ability to accept and apply feedback
 - Professional workflow familiarity
 
-### How to Reference Pull Requests Properly
+### [12:32](https://youtu.be/Rd3heczszU8?t=752) How to Reference Pull Requests Properly
 
 Focus on what you contributed, how you collaborated, and what outcome resulted. Recruiters care about **impact and process**, not GitHub mechanics.
 
@@ -36,19 +36,19 @@ Listing pull requests arbitrarily as a standalone section will look amateur and 
 
 ---
 
-## What Cover Letters Are For
+## [15:33](https://youtu.be/Rd3heczszU8?t=933) What Cover Letters Are For
 
 Cover letters are **not about length, repeating your resume, or sounding impressive**. They are about **relevance**.
 
 In today's market, recruiters skim. Hiring managers skim. If your intro does not immediately show that you are a fit for the specific role, they will move on.
 
-### When to Write a Cover Letter
+### [56:30](https://youtu.be/Rd3heczszU8?t=3390) When to Write a Cover Letter
 
 - When the application asks for one (even if optional)
 - In a tough job market, cover every base to get noticed
 - When you want to differentiate yourself from other applicants
 
-### Three Questions a Recruiter Wants Answered
+### [17:52](https://youtu.be/Rd3heczszU8?t=1072) Three Questions a Recruiter Wants Answered
 
 1. Are you interested in the role, the company, or both?
 2. What relevant experience do you bring?
@@ -60,9 +60,9 @@ If those three things are not clear, the letter does not help you.
 
 ---
 
-## Cover Letter Structure: Three Short Paragraphs
+## [19:15](https://youtu.be/Rd3heczszU8?t=1155) Cover Letter Structure: Three Short Paragraphs
 
-### Paragraph 1: Why This Role
+### [19:15](https://youtu.be/Rd3heczszU8?t=1155) Paragraph 1: Why This Role
 
 - Mention the role by name
 - Reference something specific about the role or company
@@ -70,7 +70,7 @@ If those three things are not clear, the letter does not help you.
 
 **Example:** "I am applying for the junior front-end developer role at [Company] because of your focus on accessible, user-centered design. I have been building React-based interfaces with similar priorities in recent projects."
 
-### Paragraph 2: What You Bring
+### [20:22](https://youtu.be/Rd3heczszU8?t=1222) Paragraph 2: What You Bring
 
 - One skill area
 - One example
@@ -78,7 +78,7 @@ If those three things are not clear, the letter does not help you.
 
 **Example:** "In my recent projects, I built components using React and CSS Grid, integrating API data to support dynamic content. This experience aligns closely with the responsibilities outlined in the role."
 
-### Paragraph 3: Close with Value and Intent
+### [32:36](https://youtu.be/Rd3heczszU8?t=1956) Paragraph 3: Close with Value and Intent
 
 **Example:** "I would welcome the opportunity to contribute these skills to your team and discuss how I can support upcoming product work."
 
@@ -86,7 +86,7 @@ If those three things are not clear, the letter does not help you.
 
 ---
 
-## LinkedIn Messages Replace Cover Letters
+## [22:07](https://youtu.be/Rd3heczszU8?t=1327) LinkedIn Messages Replace Cover Letters
 
 In many cases, a strong LinkedIn message replaces a formal cover letter. Use this approach when:
 
@@ -94,7 +94,7 @@ In many cases, a strong LinkedIn message replaces a formal cover letter. Use thi
 - Messaging a hiring manager
 - Following up after applying
 
-### LinkedIn Message Structure
+### [36:02](https://youtu.be/Rd3heczszU8?t=2162) LinkedIn Message Structure
 
 1. **Intro** -- who you are and what you applied for
 2. **Context** -- relevant skills or experience
@@ -107,9 +107,9 @@ This works because it is **short, specific, and respectful of their time**.
 
 ---
 
-## Example Cover Letters
+## [28:19](https://youtu.be/Rd3heczszU8?t=1699) Example Cover Letters
 
-### Career Changer into QA
+### [28:19](https://youtu.be/Rd3heczszU8?t=1699) Career Changer into QA
 
 > Hello, hiring manager. I am applying for the QA engineer role because it combines structured testing with cross-team collaboration.
 >
@@ -122,7 +122,7 @@ This works because it is **short, specific, and respectful of their time**.
 - Connects past experience to the role
 - Focuses on outcomes, not titles
 
-### QA / SDET Role
+### [30:29](https://youtu.be/Rd3heczszU8?t=1829) QA / SDET Role
 
 > Hello, hiring team. I am reaching out regarding the QA engineer position. I have been developing experience in manual and API testing using Postman, along with writing test cases that support consistent release quality. In recent projects, I have collaborated with developers to validate fixes before deployment.
 >
@@ -133,7 +133,7 @@ This works because it is **short, specific, and respectful of their time**.
 - Focuses on team impact
 - Clear role alignment
 
-### Junior Developer
+### [32:01](https://youtu.be/Rd3heczszU8?t=1921) Junior Developer
 
 > Hello, hiring team. I am applying for the junior software developer role because it focuses on building and maintaining features using modern JavaScript frameworks. In recent projects, I built React components, integrated REST APIs, and collaborated through GitHub pull requests to deliver working functionality.
 >
@@ -147,7 +147,7 @@ This works because it is **short, specific, and respectful of their time**.
 
 [REVIEW: David raised the point that cover letters should show personality, not just facts. Chelsea responded that personality is assessed during the interview -- the cover letter's job is to clearly articulate what you can do without fluff. Both perspectives have merit for different stages of the hiring process.]
 
-### Data Analyst
+### [34:58](https://youtu.be/Rd3heczszU8?t=2098) Data Analyst
 
 > Hello, hiring manager. I am applying for the junior data analyst role because of its focus on turning data into actionable insights. I have worked with SQL, spreadsheets, and data visualization tools to clean data sets and build reports that highlight trends and performance patterns.
 >
@@ -160,7 +160,7 @@ This works because it is **short, specific, and respectful of their time**.
 
 ---
 
-## Chelsea's Rewritten Cover Letter (Full Stack Developer -- Career Changer)
+## [48:01](https://youtu.be/Rd3heczszU8?t=2881) [approx] Chelsea's Rewritten Cover Letter (Full Stack Developer -- Career Changer)
 
 This is Chelsea's version rewriting a student's draft to demonstrate proper structure:
 
@@ -170,13 +170,13 @@ This is Chelsea's version rewriting a student's draft to demonstrate proper stru
 >
 > I am excited about the opportunity to contribute as a full stack developer who understands both how software is built and how it breaks. I would welcome the chance to support your engineering team with a quality-first mindset while continuing to grow as a developer.
 
-### Converted to LinkedIn Message
+### [50:05](https://youtu.be/Rd3heczszU8?t=3005) Converted to LinkedIn Message
 
 > I recently applied for the full stack developer role and wanted to introduce myself. I am transitioning from a long QA background into full stack development and have been building end-to-end applications using React, Node.js, and SQL. My experience writing and testing software helps me approach development with a strong focus on quality and reliability. I'd love to connect and stay on your radar.
 
 ---
 
-## Key Advice: Do Not Mention Intern or Junior Status
+## [48:36](https://youtu.be/Rd3heczszU8?t=2916) Key Advice: Do Not Mention Intern or Junior Status
 
 **Never mention that you are an intern or junior in your cover letter.**
 
@@ -186,7 +186,7 @@ This is Chelsea's version rewriting a student's draft to demonstrate proper stru
 
 ---
 
-## Common Cover Letter Mistakes
+## [51:31](https://youtu.be/Rd3heczszU8?t=3091) Common Cover Letter Mistakes
 
 1. **Repeating resume bullets** -- the cover letter is not a summary of your resume
 2. **Writing too much** -- keep it to three short paragraphs
@@ -199,7 +199,7 @@ If your cover letter answers **why** (this role/company), **what** (you bring), 
 
 ---
 
-## Homework
+## [19:12](https://youtu.be/Rd3heczszU8?t=1152) Homework
 
 1. Write **one short cover letter** using the three-paragraph structure from tonight
 2. Write **one LinkedIn intro message** for a recruiter or hiring manager

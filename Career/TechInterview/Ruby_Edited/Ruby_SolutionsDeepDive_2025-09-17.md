@@ -5,7 +5,7 @@ Mock interview session on the HackerRank **Number Line Jumps** (Kangaroo) proble
 
 ---
 
-## Session Format
+## [2:59](https://youtu.be/0YgXnEU5wls?t=179) Session Format
 
 The coach opened by offering breakout rooms or a mock interview. With only four attendees, the group stayed together and **John** volunteered as the candidate. He filtered HackerRank Algorithms by **status: unsolved** and **difficulty: easy**, selecting **Number Line Jumps**.
 
@@ -13,18 +13,18 @@ The coach opened by offering breakout rooms or a mock interview. With only four 
 
 ---
 
-## Problem: Number Line Jumps (Kangaroo)
+## [51:00](https://youtu.be/0YgXnEU5wls?t=3060) Problem: Number Line Jumps (Kangaroo)
 
 Two kangaroos start at positions `x1` and `x2` on a number line and jump with velocities `v1` and `v2` respectively. Determine whether they will ever land on the same position **at the same jump**. Return the string `"YES"` or `"NO"`.
 
-### Inputs
+### [35:16](https://youtu.be/0YgXnEU5wls?t=2116) Inputs
 
 - `x1` — starting location of kangaroo 1
 - `v1` — jump velocity (meters per jump) of kangaroo 1
 - `x2` — starting location of kangaroo 2
 - `v2` — jump velocity of kangaroo 2
 
-### Key Insight the Candidate Missed Initially
+### [35:16](https://youtu.be/0YgXnEU5wls?t=2116) Key Insight the Candidate Missed Initially
 
 Both kangaroos jump **simultaneously**. After each jump, kangaroo 1 is at `x1 + v1` and kangaroo 2 is at `x2 + v2`. They either meet on a shared jump or they never do.
 
@@ -32,7 +32,7 @@ Both kangaroos jump **simultaneously**. After each jump, kangaroo 1 is at `x1 + 
 
 ---
 
-## Candidate's Initial Attempt
+## [15:42](https://youtu.be/0YgXnEU5wls?t=942) [approx] Candidate's Initial Attempt
 
 John renamed `x1, v1, x2, v2` to more readable names like `kang_one_location`, `kang_one_velocity`, etc. He then tried a `while` loop but ran into an **infinite loop / timeout** on the test run.
 
@@ -46,7 +46,7 @@ def kangaroo(x1, v1, x2, v2):
     return answer
 ```
 
-### Bugs the Coach Flagged
+### [34:39](https://youtu.be/0YgXnEU5wls?t=2079) Bugs the Coach Flagged
 
 - **Positions never updated inside the loop.** The candidate computed `kang_one + velocity` each iteration but never reassigned `kang_one += velocity`, so the comparison evaluated the same values forever.
 - **Return type mismatch.** The function signature expects a **string** (`"YES"` / `"NO"`), not a boolean. HackerRank's `if __name__ == "__main__":` block parses the return value and will error on a bool.
@@ -55,7 +55,7 @@ def kangaroo(x1, v1, x2, v2):
 
 ---
 
-## Coach Feedback: Reading the Constraints
+## [52:41](https://youtu.be/0YgXnEU5wls?t=3161) Coach Feedback: Reading the Constraints
 
 The coach pushed the candidate to re-read the **Constraints** section of the problem, where it states `1 <= x1 < x2 <= 10000`. The strict `<` between `x1` and `x2` is load-bearing:
 
@@ -65,13 +65,13 @@ The coach pushed the candidate to re-read the **Constraints** section of the pro
 
 > "Sometimes the constraints don't give you anything, but it's a good practice to always check. More often than not they help eliminate assumptions or give you hints."
 
-### Velocity Constraints
+### [27:29](https://youtu.be/0YgXnEU5wls?t=1649) [approx] Velocity Constraints
 
 `1 <= v1, v2 <= 10000`. The problem does **not** tell you whether `v1` is greater than, less than, or equal to `v2` — you must handle all three cases in your logic.
 
 ---
 
-## Coach Feedback: Assumptions in Comments
+## [32:15](https://youtu.be/0YgXnEU5wls?t=1935) Coach Feedback: Assumptions in Comments
 
 The coach pointed out that John verbalized several good observations while reading the problem ("they can jump forever", "x2 starts ahead") but never wrote them down, and then contradicted them in code.
 
@@ -79,13 +79,13 @@ The coach pointed out that John verbalized several good observations while readi
 
 ---
 
-## Coach Feedback: Pseudo Code First
+## [40:05](https://youtu.be/0YgXnEU5wls?t=2405) Coach Feedback: Pseudo Code First
 
 > "Getting some preliminary code out can help you think, but always take a step back and ask: what is the overall system this problem is asking me to implement? What requirements, outputs, and assumptions do I need to consider? Dealing with those at the front end saves time because you're not mitigating errors along the way."
 
 ---
 
-## Language Notes
+## [42:47](https://youtu.be/0YgXnEU5wls?t=2567) Language Notes
 
 The candidate's Python carried **JavaScript/TypeScript accent** — braces where colons belonged, missing indentation cues. The coach confirmed HackerRank allows any supported language; Python is used in the course because Mod 2 teaches Python, but candidates may use JavaScript, TypeScript, or others in their real interview.
 
@@ -94,7 +94,7 @@ The candidate's Python carried **JavaScript/TypeScript accent** — braces where
 
 ---
 
-## Side Discussion: Example Walkthrough
+## [43:25](https://youtu.be/0YgXnEU5wls?t=2605) Side Discussion: Example Walkthrough
 
 A participant (Mauricio) asked why the example shows `x1 + v1 = 2 + 1`. The coach clarified:
 
@@ -107,13 +107,13 @@ The velocities are applied at the same time each iteration; that simultaneity is
 
 ---
 
-## Side Discussion: React Practice on HackerRank
+## [53:37](https://youtu.be/0YgXnEU5wls?t=3217) Side Discussion: React Practice on HackerRank
 
 John noted HackerRank's **Get Certified → Front End Developer** track has **React** problems. The coach confirmed these exist and are not too difficult, and also noted that candidates will get significant React practice during the Explorer phase and internship.
 
 ---
 
-## Takeaways
+## [49:26](https://youtu.be/0YgXnEU5wls?t=2966) Takeaways
 
 - **Read constraints first** — they often eliminate entire branches of defensive code.
 - **Write your verbal assumptions into comments** before writing code.

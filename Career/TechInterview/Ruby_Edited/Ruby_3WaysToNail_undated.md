@@ -3,13 +3,13 @@ Source: https://youtu.be/0xVef_cANvw
 
 *Dr. Emily, Joy of Coding Academy*
 
-## Overview
+## [0:03](https://youtu.be/0xVef_cANvw?t=3) Overview
 
 This session covers the three things you need to nail your technical interviews for software development jobs — whether you're targeting the $40–60k, $70–90k, or $100k+ salary range. Regardless of level, you will face a technical interview.
 
 ---
 
-## What Is a Technical Interview?
+## [1:47](https://youtu.be/0xVef_cANvw?t=107) What Is a Technical Interview?
 
 A technical interview is the component specific to software development jobs where, in addition to a face-to-face conversation, companies assess your actual technical skills.
 
@@ -31,7 +31,7 @@ Dr. Emily prefers the practical style because it better reflects the actual job 
 
 ---
 
-## Thing 1: Practice Data Structures and Algorithms
+## [2:59](https://youtu.be/0xVef_cANvw?t=179) Thing 1: Practice Data Structures and Algorithms
 
 For problem-solving style interviews, practice on:
 
@@ -46,7 +46,7 @@ Tips:
 
 ---
 
-## Thing 2: Vocabulary and Terminology
+## [1:24](https://youtu.be/0xVef_cANvw?t=84) Thing 2: Vocabulary and Terminology
 
 For the practical/build style interview (and for the job itself), **vocabulary matters as much as coding skill**.
 
@@ -58,7 +58,7 @@ Why vocabulary is critical:
 - **Better Googling.** Knowing the right terms gets you to the right Stack Overflow page faster.
 - **Better AI prompting.** ChatGPT responds better when you use correct terminology.
 
-### Vocabulary baseline
+### [7:27](https://youtu.be/0xVef_cANvw?t=447) [approx] Vocabulary baseline
 
 At minimum, know **the seven basics**:
 
@@ -70,7 +70,7 @@ At minimum, know **the seven basics**:
 - Statements
 - Error messages (know what the words in them mean)
 
-### How to build vocabulary
+### [8:32](https://youtu.be/0xVef_cANvw?t=512) How to build vocabulary
 
 - Read tutorials that use proper terminology (e.g., "how to spin up a React app").
 - Don't just skim to get code running — pause and learn the words.
@@ -80,7 +80,7 @@ At minimum, know **the seven basics**:
 
 ---
 
-## Thing 3: A Resume That Gets Noticed
+## [1:18](https://youtu.be/0xVef_cANvw?t=78) Thing 3: A Resume That Gets Noticed
 
 You can't have a technical interview without first getting the interview. The resume has to get you in the door.
 
@@ -97,7 +97,7 @@ Why LinkedIn matters: software development is a human endeavor. The computer exe
 
 ---
 
-## The Bigger Picture: Prepare for the Job, Not the Interview
+## [10:56](https://youtu.be/0xVef_cANvw?t=656) The Bigger Picture: Prepare for the Job, Not the Interview
 
 > "We don't really want to prepare for the interview. The interview is a gatekeeper for the actual thing we want — the job."
 
@@ -108,9 +108,9 @@ Why LinkedIn matters: software development is a human endeavor. The computer exe
 
 ---
 
-## Q&A
+## [18:57](https://youtu.be/0xVef_cANvw?t=1137) Q&A
 
-### Are LeetCode and HackerRank the best way to further my education?
+### [18:57](https://youtu.be/0xVef_cANvw?t=1137) Are LeetCode and HackerRank the best way to further my education?
 
 They're the best way to **prep for the technical interview**, but not necessarily the best way to grow as a developer.
 
@@ -123,7 +123,7 @@ Two things team experience gives you:
 
 > "When you come through a team collaborative experience, you have all the skills they're looking for, and it shows up like that in an interview."
 
-### What's a good way to network?
+### [18:39](https://youtu.be/0xVef_cANvw?t=1119) [approx] What's a good way to network?
 
 - **Meetups** — go in person.
 - **Boot camp educators** — if you did a boot camp, leverage those connections.
@@ -131,7 +131,7 @@ Two things team experience gives you:
 - **Intelligent conversations** about the technology you work with — essential for the job, not just the interview.
 - **Podcasts** — great for staying current and building vocabulary. (Example given: a senior dev named Tyler who automated his boring day job to spend time coding and constantly listens to podcasts to stay current.)
 
-### What separates dabblers from serious players?
+### [23:56](https://youtu.be/0xVef_cANvw?t=1436) What separates dabblers from serious players?
 
 Most boot camps stop at "get a web page up on your own" with basic Git. Serious players know:
 
@@ -142,7 +142,7 @@ Most boot camps stop at "get a web page up on your own" with basic Git. Serious 
 
 ---
 
-## Salary Reference Points (mentioned in session)
+## [22:23](https://youtu.be/0xVef_cANvw?t=1343) [approx] Salary Reference Points (mentioned in session)
 
 - Entry level: high fives to $100k
 - Senior level: ~$200k to $300k
@@ -150,7 +150,7 @@ Most boot camps stop at "get a web page up on your own" with basic Git. Serious 
 
 ---
 
-## Key Takeaways
+## [4:38](https://youtu.be/0xVef_cANvw?t=278) Key Takeaways
 
 - Practice **data structures and algorithms** on HackerRank or LeetCode for problem-solving interviews.
 - Build **vocabulary and terminology** deliberately — it helps you understand instructions, communicate on teams, Google effectively, and prompt AI tools.

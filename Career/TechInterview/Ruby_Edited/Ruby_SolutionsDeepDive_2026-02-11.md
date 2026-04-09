@@ -5,7 +5,7 @@ Mock interview on **Check if a String Is an Acronym of Words** — actually **Ty
 
 ---
 
-## Problem: Type of Triangle
+## [37:14](https://youtu.be/9vFUUFe7ehg?t=2234) Problem: Type of Triangle
 
 > Given a 0-indexed integer array `nums` of size 3, representing the sides of a triangle, return a string representing the type:
 > - `"equilateral"` — all three sides equal
@@ -13,24 +13,24 @@ Mock interview on **Check if a String Is an Acronym of Words** — actually **Ty
 > - `"scalene"` — all sides different
 > - `"none"` — if the three numbers cannot form a triangle
 
-### Examples
+### [7:52](https://youtu.be/9vFUUFe7ehg?t=472) Examples
 
 - `[3, 3, 3]` → `"equilateral"`
 - `[3, 4, 5]` → `"scalene"` (the sum of any two sides exceeds the third)
 - `[3, 4, 15]` → `"none"` (`3 + 4 = 7` is not greater than `15`)
 
-### Constraints
+### [5:49](https://youtu.be/9vFUUFe7ehg?t=349) [approx] Constraints
 
 - `nums.length == 3`
 - `1 <= nums[i] <= 100`
 
 ---
 
-## The Triangle Inequality Theorem
+## [42:40](https://youtu.be/9vFUUFe7ehg?t=2560) The Triangle Inequality Theorem
 
 > "The sum of two sides of a triangle is always greater than the third side — for **all three combinations** of sides. If even one combination fails, the three lengths cannot form a triangle."
 
-### Combinations to check
+### [8:16](https://youtu.be/9vFUUFe7ehg?t=496) Combinations to check
 
 For sides `a`, `b`, `c`:
 1. `a + b > c`
@@ -41,11 +41,11 @@ If all three hold, it's a triangle. Otherwise, it's `"none"`.
 
 ---
 
-## Linda's Initial Struggle
+## [57:34](https://youtu.be/9vFUUFe7ehg?t=3454) Linda's Initial Struggle
 
 Linda missed the `"none"` case on her first read and thought there were only three return conditions. She got **equilateral** working quickly with `if nums[0] == nums[1] == nums[2]`, then hit an `int object is not iterable` error when she tried `sum(nums[0], nums[1])`.
 
-### The Bug: Misusing `sum()`
+### [15:40](https://youtu.be/9vFUUFe7ehg?t=940) The Bug: Misusing `sum()`
 
 ```python
 sum(nums[0], nums[1])  # ERROR - sum() takes an iterable
@@ -53,17 +53,17 @@ sum(nums[0], nums[1])  # ERROR - sum() takes an iterable
 
 `sum()` expects an **iterable** as its first argument, not individual numbers. The correct usage is `sum([nums[0], nums[1]])` or simply `nums[0] + nums[1]`.
 
-### Coach's Debug Process
+### [29:34](https://youtu.be/9vFUUFe7ehg?t=1774) Coach's Debug Process
 
 > "When you see `int object is not iterable`, look at the `sum()` call. Check Python docs or W3Schools — `sum()` requires a sequence, not two separate ints."
 
 ---
 
-## The Core Lesson: Enumerate All Return Conditions First
+## [37:19](https://youtu.be/9vFUUFe7ehg?t=2239) The Core Lesson: Enumerate All Return Conditions First
 
 The coach restarted the session by walking through the problem from the top:
 
-### Step 1: Identify All Possible Returns
+### [8:04](https://youtu.be/9vFUUFe7ehg?t=484) Step 1: Identify All Possible Returns
 
 ```
 - equilateral (all three sides equal)
@@ -72,14 +72,14 @@ The coach restarted the session by walking through the problem from the top:
 - none       (not a triangle)
 ```
 
-### Step 2: Under What Conditions Does Each Apply?
+### [8:06](https://youtu.be/9vFUUFe7ehg?t=486) Step 2: Under What Conditions Does Each Apply?
 
 - **Equilateral** — all three sides equal. **Always a triangle.**
 - **Isosceles** — two sides equal. **Triangle check still required.** (E.g., `[3, 3, 15]` is isosceles by side equality but not a triangle.)
 - **Scalene** — all three sides different. **Triangle check still required.**
 - **None** — triangle inequality fails.
 
-### Step 3: Order The Checks
+### [15:47](https://youtu.be/9vFUUFe7ehg?t=947) Step 3: Order The Checks
 
 ```
 1. Is it equilateral? (always a triangle if yes)
@@ -91,21 +91,21 @@ This flips the naive ordering and avoids redundant work.
 
 ---
 
-## Lisa's Insight: Sort First
+## [38:59](https://youtu.be/9vFUUFe7ehg?t=2339) Lisa's Insight: Sort First
 
 Lisa suggested sorting the array as a preprocessing step. This unlocks multiple simplifications:
 
-### Benefit 1: Simpler Isosceles vs Scalene
+### [1:08:42](https://youtu.be/9vFUUFe7ehg?t=4122) Benefit 1: Simpler Isosceles vs Scalene
 
 After sorting, the two smallest values are adjacent. If `nums[0] == nums[1]`, the result (given it's already not equilateral) is isosceles. Otherwise scalene. Only one comparison needed.
 
-### Benefit 2: Simpler Triangle Check
+### [39:39](https://youtu.be/9vFUUFe7ehg?t=2379) Benefit 2: Simpler Triangle Check
 
 With a sorted array `[a, b, c]` where `a <= b <= c`, the triangle inequality reduces to **one check**: `a + b > c`. The other two combinations (`a + c > b`, `b + c > a`) are automatically satisfied when `c` is the largest.
 
 ---
 
-## The Clean Solution
+## [43:41](https://youtu.be/9vFUUFe7ehg?t=2621) [approx] The Clean Solution
 
 ```python
 class Solution:
@@ -121,12 +121,12 @@ class Solution:
         return "scalene"
 ```
 
-### Walkthrough On `[3, 4, 15]`
+### [46:36](https://youtu.be/9vFUUFe7ehg?t=2796) [approx] Walkthrough On `[3, 4, 15]`
 
 - Sorted: `[3, 4, 15]`
 - `3 + 4 = 7`, `7 <= 15` → return `"none"` ✓
 
-### Walkthrough On `[3, 3, 5]`
+### [49:30](https://youtu.be/9vFUUFe7ehg?t=2970) [approx] Walkthrough On `[3, 3, 5]`
 
 - Sorted: `[3, 3, 5]`
 - `3 + 3 = 6 > 5` → is a triangle
@@ -135,7 +135,7 @@ class Solution:
 
 ---
 
-## Russell's Naming Tip
+## [1:08:22](https://youtu.be/9vFUUFe7ehg?t=4102) Russell's Naming Tip
 
 > "Trying to work directly with `nums[0]` vs `nums[1]` is hard for my brain to visualize. As soon as I write six of those on a line I lose it. Even though it's an extra step, I assign them to their own named variables so I can compare `a` and `b` and `c` rather than `nums[0]` and `nums[1]` and `nums[2]`."
 
@@ -149,23 +149,23 @@ The coach endorsed this strongly:
 
 ---
 
-## Coach Feedback: Don't Jump To Code Before Understanding All Conditions
+## [1:04:07](https://youtu.be/9vFUUFe7ehg?t=3847) Coach Feedback: Don't Jump To Code Before Understanding All Conditions
 
 > "Jumping ahead to say 'oh, I know how I'd solve part one of three, but I don't know the full three-part process yet' — that's shortcutting your progress. Understand all the conditions upfront so you can code with them in mind, instead of hitting obstacles and going backwards."
 
-### The Value of Re-Reading Confusing Sections
+### [14:30](https://youtu.be/9vFUUFe7ehg?t=870) The Value of Re-Reading Confusing Sections
 
 > "It's fine to read something for the first time and think 'I don't know what this means.' But once you understand the rest of the problem, go back and try to make sense of the piece you didn't understand. Why are they telling you this? Why does it matter? That's when you see 'oh, there's a none option — is that going to help me determine it?'"
 
 ---
 
-## Method: Enumerate Return Values First
+## [1:01:10](https://youtu.be/9vFUUFe7ehg?t=3670) [approx] Method: Enumerate Return Values First
 
 Russell summarized the key realization:
 
 > "There are four possible returns. What test do we need to do to return each one? And potentially, what order do we test them in so we can eliminate cases?"
 
-### Coach's Recommended Opening
+### [1:06:35](https://youtu.be/9vFUUFe7ehg?t=3995) Coach's Recommended Opening
 
 1. Print `nums` (confirm your parameters match the test cases).
 2. Identify the return type — here, a string.
@@ -176,7 +176,7 @@ Russell summarized the key realization:
 
 ---
 
-## Takeaways
+## [26:33](https://youtu.be/9vFUUFe7ehg?t=1593) Takeaways
 
 - **Enumerate all possible return values** at the top of your pseudo code before coding any logic.
 - **Triangle inequality:** `a + b > c` for **all** combinations — but sorting reduces it to **one** check.

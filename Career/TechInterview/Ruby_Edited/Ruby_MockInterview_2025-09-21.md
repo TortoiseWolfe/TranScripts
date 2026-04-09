@@ -3,9 +3,9 @@ Source: https://youtu.be/l2XMSmCPWrM
 
 *Nailing the Tech Interview — Sunday session*
 
-## Warm-Up: Valid Anagram (LeetCode easy)
+## [3:10](https://youtu.be/l2XMSmCPWrM?t=190) Warm-Up: Valid Anagram (LeetCode easy)
 
-### Problem statement
+### [3:10](https://youtu.be/l2XMSmCPWrM?t=190) Problem statement
 
 Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`, else `false`.
 
@@ -13,24 +13,24 @@ Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`, el
 
 **Key pull-out:** uses all the original letters **exactly once** — same letters, same counts.
 
-### Examples
+### [4:59](https://youtu.be/l2XMSmCPWrM?t=299) [approx] Examples
 
 ```
 s = "anagram", t = "nagaram" -> true
 s = "rat",     t = "car"     -> false
 ```
 
-### Constraints
+### [7:29](https://youtu.be/l2XMSmCPWrM?t=449) [approx] Constraints
 
 - `1 <= s.length, t.length <= 5 * 10^4`
 - `s` and `t` consist of **lowercase English letters** only.
 - **Follow-up:** what if the inputs contain Unicode characters?
 
-### Reading comma-separated constraint lists
+### [9:58](https://youtu.be/l2XMSmCPWrM?t=598) [approx] Reading comma-separated constraint lists
 
 `1 <= s.length, t.length <= 5 * 10^4` is shorthand for two independent bounds — both strings are between 1 and `5 * 10^4`. It does **not** imply `s.length < t.length`. Contrast this with problems that use `<` explicitly between variables (e.g., last week's constraint showed ordering).
 
-### Immediate easy check
+### [12:28](https://youtu.be/l2XMSmCPWrM?t=748) [approx] Immediate easy check
 
 ```python
 if len(s) != len(t):
@@ -41,9 +41,9 @@ Two anagrams must be the same length — fail fast on mismatched lengths.
 
 ---
 
-## Solution Brainstorm (Multiple Approaches)
+## [14:58](https://youtu.be/l2XMSmCPWrM?t=898) [approx] Solution Brainstorm (Multiple Approaches)
 
-### Approach 1 — Sort both strings and compare
+### [17:27](https://youtu.be/l2XMSmCPWrM?t=1047) [approx] Approach 1 — Sort both strings and compare
 
 ```python
 return sorted(s) == sorted(t)
@@ -53,7 +53,7 @@ return sorted(s) == sorted(t)
 - **Space:** O(n) for the sorted copies
 - Chris's submitted runtime: beat only ~15% — works but slow.
 
-### Approach 2 — Two dictionaries (count characters)
+### [42:23](https://youtu.be/l2XMSmCPWrM?t=2543) Approach 2 — Two dictionaries (count characters)
 
 Build a frequency dictionary for each string and compare them.
 
@@ -72,7 +72,7 @@ def isAnagram(s, t):
 - **Space:** O(n) for two dictionaries
 - Comparing two dicts isn't O(1) — it's O(n) in the number of keys.
 
-### Approach 3 — One dictionary, count up then count down (Kai's idea)
+### [20:17](https://youtu.be/l2XMSmCPWrM?t=1217) Approach 3 — One dictionary, count up then count down (Kai's idea)
 
 Loop over `s` and add counts. Loop over `t` and subtract. Remove keys when they hit zero. If the dictionary is empty at the end, they're anagrams.
 
@@ -96,7 +96,7 @@ def isAnagram(s, t):
 - **Space:** O(n) for **one** dictionary (better than Approach 2)
 - **Best memory efficiency** of the bunch.
 
-### Approach 4 — Mauricio's brute force using `count()`
+### [24:57](https://youtu.be/l2XMSmCPWrM?t=1497) [approx] Approach 4 — Mauricio's brute force using `count()`
 
 ```python
 def isAnagram(s, t):
@@ -115,7 +115,7 @@ def isAnagram(s, t):
 
 > "This is why I advocate for brute force. You came up with the solution, tried it, and it worked. That's awesome." — Ruby
 
-### Efficiency summary
+### [27:26](https://youtu.be/l2XMSmCPWrM?t=1646) [approx] Efficiency summary
 
 | Approach | Time | Space |
 |----------|------|-------|
@@ -126,13 +126,13 @@ def isAnagram(s, t):
 
 ---
 
-## Coaching Debate: Brute Force First vs. Consider Alternatives
+## [31:08](https://youtu.be/l2XMSmCPWrM?t=1868) Coaching Debate: Brute Force First vs. Consider Alternatives
 
-### Mauricio's take
+### [31:08](https://youtu.be/l2XMSmCPWrM?t=1868) Mauricio's take
 
 > "I have the experience that burning out the time sometimes thinking about a sophisticated solution. So the method in your mind should be: just hit brute force, and if it doesn't work, go back to sophistication."
 
-### Ruby's take (holding two slightly conflicting ideas)
+### [31:48](https://youtu.be/l2XMSmCPWrM?t=1908) Ruby's take (holding two slightly conflicting ideas)
 
 - **Yes, brute force first** if it's the first thing that comes to mind and you can implement it quickly.
 - **But also take 1–2 minutes** to consider an alternative before committing.
@@ -144,19 +144,19 @@ def isAnagram(s, t):
 
 ---
 
-## Mock Interview: Mauricio on "Group Anagrams" (LeetCode medium)
+## [37:56](https://youtu.be/l2XMSmCPWrM?t=2276) Mock Interview: Mauricio on "Group Anagrams" (LeetCode medium)
 
-### Problem statement
+### [37:56](https://youtu.be/l2XMSmCPWrM?t=2276) Problem statement
 
 Given an array of strings `strs`, **group the anagrams together**. Return a list of lists.
 
-### Constraints
+### [42:24](https://youtu.be/l2XMSmCPWrM?t=2544) [approx] Constraints
 
 - `1 <= strs.length <= 10^4`
 - `0 <= strs[i].length <= 100`
 - `strs[i]` consists of lowercase English letters.
 
-### Mauricio's approach (under 15-minute time pressure)
+### [40:50](https://youtu.be/l2XMSmCPWrM?t=2450) Mauricio's approach (under 15-minute time pressure)
 
 Brute force: traverse the array, compare each string to the others, and group those that are anagrams. Considered using a dictionary keyed by **something anagram-identifying** (sorted string as key), with the value being a list of anagrams.
 
@@ -173,7 +173,7 @@ def groupAnagrams(strs):
     return output
 ```
 
-### The bug in the first draft
+### [38:58](https://youtu.be/l2XMSmCPWrM?t=2338) The bug in the first draft
 
 Mauricio used the **length** of the string as the dictionary key, which would collide across non-anagram words of the same length (e.g., `"bat"` and `"nat"` would both key to `3` even though only `"nat"` and `"tan"` are anagrams).
 
@@ -190,13 +190,13 @@ def groupAnagrams(strs):
     return list(groups.values())
 ```
 
-### Second bug: iteration variable naming
+### [57:09](https://youtu.be/l2XMSmCPWrM?t=3429) Second bug: iteration variable naming
 
 Mauricio wrote `for string in range(len(strings))`, which makes `string` an **integer index**, not a string object. Then his `string.sort` call would fail because integers don't have `.sort()`.
 
 **Fix:** use subscript access: `strs[i].sort` → or better, iterate directly `for s in strs`.
 
-### Coaching feedback
+### [55:37](https://youtu.be/l2XMSmCPWrM?t=3337) Coaching feedback
 
 - **Great job breaking down the steps:** check anagram, group them, format output.
 - **Add print statements along the way** when developing — catch index-vs-value confusion early.
@@ -205,7 +205,7 @@ Mauricio wrote `for string in range(len(strings))`, which makes `string` an **in
 
 > "Being under the hammer of time really hurts me." — Mauricio
 
-### Practice recommendation
+### [54:53](https://youtu.be/l2XMSmCPWrM?t=3293) [approx] Practice recommendation
 
 Use **peer mentors** for live-coding pressure practice:
 
@@ -215,9 +215,9 @@ Ruby tells peer mentors to expect these requests.
 
 ---
 
-## Closing Thoughts
+## [31:02](https://youtu.be/l2XMSmCPWrM?t=1862) Closing Thoughts
 
-### Why spend so much time on multiple approaches to an easy problem?
+### [31:02](https://youtu.be/l2XMSmCPWrM?t=1862) Why spend so much time on multiple approaches to an easy problem?
 
 - It's a **thought experiment**. You don't have to catalog every possible solution on every real problem.
 - But once you've solved a problem, it's valuable to **revisit and ask "what else could I have done?"**
@@ -227,7 +227,7 @@ Ruby tells peer mentors to expect these requests.
 
 ---
 
-## Key Takeaways
+## [1:02:22](https://youtu.be/l2XMSmCPWrM?t=3742) [approx] Key Takeaways
 
 - **Comma-separated constraints** (`1 <= s.length, t.length <= N`) describe independent bounds, not ordering.
 - **Length mismatch is an instant false** for anagram problems — fail fast.

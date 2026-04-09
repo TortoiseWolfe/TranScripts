@@ -3,11 +3,11 @@ Source: https://youtu.be/STZUhIZW9Hw
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Is There a Quick, Effective Way to Prepare?
+## [2:07](https://youtu.be/STZUhIZW9Hw?t=127) Q&A: Is There a Quick, Effective Way to Prepare?
 
 Linda asked if there's a quick or effective way to prepare for the technical interview beyond just doing problems repetitively.
 
-### Ruby's answer
+### [2:17](https://youtu.be/STZUhIZW9Hw?t=137) [approx] Ruby's answer
 
 - **Not quick, but effective** — absolutely.
 - **Repetition alone isn't enough.** What matters is **what you learn after each problem**.
@@ -18,11 +18,11 @@ Linda asked if there's a quick or effective way to prepare for the technical int
 
 ---
 
-## Mindy's Alternative Count Implementation
+## [5:39](https://youtu.be/STZUhIZW9Hw?t=339) Mindy's Alternative Count Implementation
 
 Mindy shared an alternative implementation of `str.count()` that she developed because the **sliding window slicing approach** from Mauricio's version had been tripping her up.
 
-### The "whole-word" version
+### [5:53](https://youtu.be/STZUhIZW9Hw?t=353) The "whole-word" version
 
 Instead of matching substrings, she split the string by spaces and compared whole words after stripping punctuation:
 
@@ -47,7 +47,7 @@ def count(string, word, match_whole_word=True):
         return count
 ```
 
-### The `+ 1` in the range
+### [4:50](https://youtu.be/STZUhIZW9Hw?t=290) The `+ 1` in the range
 
 Mindy spent time puzzling out why the range is `len(string) - word_length + 1`:
 
@@ -55,7 +55,7 @@ Mindy spent time puzzling out why the range is `len(string) - word_length + 1`:
 - Example: `string = "abcde"` (length 5), `word = "cd"` (length 2). Valid start indexes are `0, 1, 2, 3` → that's `5 - 2 + 1 = 4` positions.
 - **The `+ 1` includes the final viable starting index.**
 
-### The sliding-window comparison
+### [11:26](https://youtu.be/STZUhIZW9Hw?t=686) [approx] The sliding-window comparison
 
 ```python
 if string[i:i + word_length] == word:
@@ -65,7 +65,7 @@ if string[i:i + word_length] == word:
 - `==` compares the chunk to the full word.
 - Increments `i` each iteration → the window slides forward.
 
-### Ruby's critique
+### [1:08:11](https://youtu.be/STZUhIZW9Hw?t=4091) Ruby's critique
 
 Mindy's test case used `apple` as the search term in a string containing `"apples"`:
 
@@ -78,11 +78,11 @@ Mindy's test case used `apple` as the search term in a string containing `"apple
 
 ---
 
-## Ruby's First Hard Problem: Median of Two Sorted Arrays
+## [22:38](https://youtu.be/STZUhIZW9Hw?t=1358) Ruby's First Hard Problem: Median of Two Sorted Arrays
 
 Ruby solved a LeetCode **hard** problem in under 30 minutes and thought it was mislabeled — the techniques are all things the group had covered in easier problems. She walked through how to build up to it.
 
-### Subproblem 1: Find the Median of a Sorted Array
+### [23:53](https://youtu.be/STZUhIZW9Hw?t=1433) Subproblem 1: Find the Median of a Sorted Array
 
 What information do you need to know?
 
@@ -92,7 +92,7 @@ What information do you need to know?
 - **Is the array non-empty?** Edge case to handle.
 - **Range of values** (sometimes given as a constraint, not strictly needed for logic).
 
-### For an odd-length sorted array
+### [20:35](https://youtu.be/STZUhIZW9Hw?t=1235) [approx] For an odd-length sorted array
 
 ```python
 def find_median_odd(arr):
@@ -102,7 +102,7 @@ def find_median_odd(arr):
 
 For `len(arr) == 7`, `7 // 2 == 3`, which is the correct 0-indexed middle position (values at indexes 0,1,2 | **3** | 4,5,6).
 
-### For an even-length sorted array
+### [22:52](https://youtu.be/STZUhIZW9Hw?t=1372) [approx] For an even-length sorted array
 
 ```python
 def find_median_even(arr):
@@ -112,7 +112,7 @@ def find_median_even(arr):
     return (mid1 + mid2) / 2
 ```
 
-### Subproblem 2: Merge Two Sorted Arrays in O(n + m)
+### [25:09](https://youtu.be/STZUhIZW9Hw?t=1509) [approx] Subproblem 2: Merge Two Sorted Arrays in O(n + m)
 
 Information needed:
 
@@ -121,7 +121,7 @@ Information needed:
 - A new array must be created — you can't modify in place easily.
 - The combined length is `len(a) + len(b)`.
 
-### Naive approach: concat + sort
+### [27:27](https://youtu.be/STZUhIZW9Hw?t=1647) [approx] Naive approach: concat + sort
 
 ```python
 merged = nums1 + nums2
@@ -130,7 +130,7 @@ merged.sort()
 
 This **works** but is **O((n+m) log(n+m))** due to the sort. The problem requires better.
 
-### Proper O(n + m) merge (two pointers)
+### [29:44](https://youtu.be/STZUhIZW9Hw?t=1784) [approx] Proper O(n + m) merge (two pointers)
 
 ```python
 def merge_sorted(nums1, nums2):
@@ -153,18 +153,18 @@ Each pointer only advances forward → total work is `O(n + m)`.
 
 ---
 
-## The Hard Problem: Median of Two Sorted Arrays
+## [36:53](https://youtu.be/STZUhIZW9Hw?t=2213) The Hard Problem: Median of Two Sorted Arrays
 
 > Given two sorted arrays `nums1` and `nums2` of sizes `m` and `n`, return the median of the combined sorted array. **Overall runtime complexity should be O(log(m + n))**.
 
-### Examples
+### [34:19](https://youtu.be/STZUhIZW9Hw?t=2059) [approx] Examples
 
 ```
 nums1 = [1,3],    nums2 = [2]       -> 2.0
 nums1 = [1,2],    nums2 = [3,4]     -> 2.5
 ```
 
-### Ruby's approach
+### [36:36](https://youtu.be/STZUhIZW9Hw?t=2196) [approx] Ruby's approach
 
 Combine the two subproblems:
 
@@ -175,23 +175,23 @@ Combine the two subproblems:
 
 > "I kind of feel like this problem is mislabeled. I'll take the win either way."
 
-### Problem-asking exercise
+### [10:00](https://youtu.be/STZUhIZW9Hw?t=600) Problem-asking exercise
 
 Ruby turned this into a group pseudo-code exercise **without showing the problem first**, just asking "what information would you need?" This is exactly the kind of clarifying-questions exercise you should practice for interviews.
 
 ---
 
-## The Blind 75 and Pattern Recognition Debate
+## [44:52](https://youtu.be/STZUhIZW9Hw?t=2692) The Blind 75 and Pattern Recognition Debate
 
 Mindy mentioned LeetCode now has a **"Study Plan"** feature for the Blind 75 that categorizes problems by pattern (arrays, sliding window, two pointers, etc.).
 
-### Mindy's position
+### [48:41](https://youtu.be/STZUhIZW9Hw?t=2921) Mindy's position
 
 - Helpful for people who learn by repetition.
 - Seeing a bunch of problems that use the same pattern helps build pattern recognition.
 - Similar to how math drills taught fundamentals growing up.
 
-### Ruby's position
+### [52:10](https://youtu.be/STZUhIZW9Hw?t=3130) Ruby's position
 
 - For the **Blind 75 specifically**, going in knowing the category **defeats the purpose**. The whole point is to test whether you can recognize patterns *cold* — just like in a real interview.
 - **For learning a new concept**, Googling "LeetCode sliding window problems" to get a focused problem set is absolutely valid.
@@ -199,14 +199,14 @@ Mindy mentioned LeetCode now has a **"Study Plan"** feature for the Blind 75 tha
 
 > "Are you going to know it's a hashset problem, a linked list problem, a sliding window problem if you don't practice identifying that yourself?"
 
-### Middle ground
+### [1:05:08](https://youtu.be/STZUhIZW9Hw?t=3908) Middle ground
 
 - Use categorized problem lists when you're **learning** a concept.
 - Use uncategorized practice (blind picks) when you're **interview prepping**.
 
 ---
 
-## Q&A: Am I Ready for the Technical Interview?
+## [54:39](https://youtu.be/STZUhIZW9Hw?t=3279) Q&A: Am I Ready for the Technical Interview?
 
 > "Do you give us an inkling of when we might be ready?"
 
@@ -214,11 +214,11 @@ Ruby: "If you volunteer to do a mock interview, I can give you a read on what yo
 
 ---
 
-## Q&A: Is Tech Joy Winding Down?
+## [55:08](https://youtu.be/STZUhIZW9Hw?t=3308) Q&A: Is Tech Joy Winding Down?
 
 Linda noticed Discord is quieter and the calendar is shrinking. She asked if Tech Joy is closing.
 
-### Ruby's answer
+### [57:02](https://youtu.be/STZUhIZW9Hw?t=3422) Ruby's answer
 
 - **No.** The technical interview is **not going anywhere**, per Dr. Emily.
 - The company's strategy is shifting toward bringing in **code-ready people** for internships rather than training from scratch.
@@ -230,17 +230,17 @@ Linda noticed Discord is quieter and the calendar is shrinking. She asked if Tec
 
 ---
 
-## Q&A: Running Out of Practice Problems
+## [1:03:49](https://youtu.be/STZUhIZW9Hw?t=3829) Q&A: Running Out of Practice Problems
 
 Mauricio: "If I've done all the hacker rank problems and then take the technical interview, I'll be left with only the hardest easy problems. I feel penalized for having done so many."
 
-### Ruby's answer
+### [58:23](https://youtu.be/STZUhIZW9Hw?t=3503) Ruby's answer
 
 - **Solved-on-HackerRank problems won't be reused** in your technical interview — the instructors check the leaderboard.
 - Ruby is actively working on **new problem sets** drawn from **LeetCode** for students who exhaust the HackerRank pool.
 - **General philosophy:** HackerRank is preferred because it gives all the info upfront; LeetCode sometimes leaves info out, forcing you to discover it through failing tests. Ruby will select LeetCode problems that match HackerRank's "everything upfront" style.
 
-### On interview nerves and luck
+### [1:04:20](https://youtu.be/STZUhIZW9Hw?t=3860) On interview nerves and luck
 
 > "Sometimes it feels like when the stars align, you pass. You got the right problem, you were more relaxed, more focused, and everything aligned. It's just like a real technical interview." — Mauricio
 
@@ -248,13 +248,13 @@ Mauricio: "If I've done all the hacker rank problems and then take the technical
 
 ---
 
-## Homework
+## [36:41](https://youtu.be/STZUhIZW9Hw?t=2201) Homework
 
 Solve **Median of Two Sorted Arrays** using the merge + median approach. After this, you'll have "tackled your first hard problem" for the record books.
 
 ---
 
-## Key Takeaways
+## [49:52](https://youtu.be/STZUhIZW9Hw?t=2992) Key Takeaways
 
 - **Repetition alone isn't enough** — what matters is what you learn *after* each problem.
 - **Reverse-engineering built-in methods** (like `str.count`) is a great way to learn string manipulation fundamentals.

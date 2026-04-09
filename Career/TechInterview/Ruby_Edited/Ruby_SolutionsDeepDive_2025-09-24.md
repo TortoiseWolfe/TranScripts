@@ -5,17 +5,17 @@ Walkthrough of **Valid Anagram** with three solutions at different complexities 
 
 ---
 
-## Opening Question: Is More Practice The Only Way To Improve?
+## [0:41](https://youtu.be/v8uaNuVK3CY?t=41) Opening Question: Is More Practice The Only Way To Improve?
 
 > "The simple answer is yes — if you're taking the right practice steps. Are you breaking the problem down? Testing along the way? Reviewing what you get stuck on and applying that to new problems? If you're doing everything right and just not hitting the time limit, then yes, the only way to improve is practice. That's the same with any sport or task. And resting. Taking breaks."
 
 ---
 
-## Problem: Valid Anagram
+## [14:11](https://youtu.be/v8uaNuVK3CY?t=851) Problem: Valid Anagram
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`.
 
-### Approach 1 — O(n²) Nested Membership + Count
+### [7:34](https://youtu.be/v8uaNuVK3CY?t=454) [approx] Approach 1 — O(n²) Nested Membership + Count
 
 ```python
 def isAnagram(s, t):
@@ -33,7 +33,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 2 — O(n log n) Sort and Compare
+### [11:21](https://youtu.be/v8uaNuVK3CY?t=681) [approx] Approach 2 — O(n log n) Sort and Compare
 
 ```python
 def isAnagram(s, t):
@@ -48,7 +48,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 3a — O(n) Two Dictionaries
+### [17:36](https://youtu.be/v8uaNuVK3CY?t=1056) Approach 3a — O(n) Two Dictionaries
 
 Build a frequency dictionary for each string, then compare key/value pairs.
 
@@ -72,7 +72,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 3b — O(n) One Dictionary (Decrement Pattern)
+### [18:55](https://youtu.be/v8uaNuVK3CY?t=1135) [approx] Approach 3b — O(n) One Dictionary (Decrement Pattern)
 
 Chris's contributed solution (with help from a friend):
 
@@ -98,19 +98,19 @@ def isAnagram(s, t):
 
 ---
 
-## Coach's Nerdy Probability Aside
+## [26:57](https://youtu.be/v8uaNuVK3CY?t=1617) Coach's Nerdy Probability Aside
 
 The coach wondered whether the final `all(count == 0)` check is strictly necessary for **real English words**. For two real words with the same letters and same length but differing frequencies (e.g., `racecar` vs a hypothetical `carrera` with matching letter sets but different counts), the probability is vanishingly low. For arbitrary random strings in test cases, though, it **is** reachable, so the check stays.
 
 ---
 
-## Why Scalability Matters (Lead-in to Group Anagrams)
+## [35:32](https://youtu.be/v8uaNuVK3CY?t=2132) Why Scalability Matters (Lead-in to Group Anagrams)
 
 > "If this were production code loading a web page, and the page sits while the server groups millions of anagrams, the user is staring at a blank screen. Even a really efficient website can struggle at scale with millions of users and millions of rows. How efficiently your code runs is one of the main ways you deal with that."
 
 **Group Anagrams** is the harder follow-up: determine which strings in a list are anagrams of each other and return them grouped. The efficient one-dictionary pattern above is the building block.
 
-### Question: Two Dictionaries for Group Anagrams?
+### [17:48](https://youtu.be/v8uaNuVK3CY?t=1068) Question: Two Dictionaries for Group Anagrams?
 
 A participant asked whether to use two dictionaries for the group version. Coach's answer:
 
@@ -118,7 +118,7 @@ A participant asked whether to use two dictionaries for the group version. Coach
 
 ---
 
-## Space vs. Time Trade-off Summary
+## [34:04](https://youtu.be/v8uaNuVK3CY?t=2044) [approx] Space vs. Time Trade-off Summary
 
 | Approach | Time | Space | LoC |
 |---|---|---|---|
@@ -132,6 +132,6 @@ A participant asked whether to use two dictionaries for the group version. Coach
 
 ---
 
-## Review Habit Recommendation
+## [29:35](https://youtu.be/v8uaNuVK3CY?t=1775) Review Habit Recommendation
 
 > "Go back through problems, break down the elements so you understand them, then in a week delete it all and try to implement it from scratch. That way the knowledge really cements."

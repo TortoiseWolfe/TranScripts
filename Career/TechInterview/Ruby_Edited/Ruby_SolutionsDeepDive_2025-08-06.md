@@ -5,16 +5,16 @@ Wednesday solutions deep dive session revisiting **Top K Frequent Elements**. Li
 
 ---
 
-## Problem: Top K Frequent Elements
+## [10:46](https://youtu.be/bORQAEeY2Vg?t=646) Problem: Top K Frequent Elements
 
 Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. The answer may be returned in any order.
 
-### Examples
+### [3:05](https://youtu.be/bORQAEeY2Vg?t=185) [approx] Examples
 
 - `nums = [1,1,1,2,2,3], k = 2` → `[1, 2]` (1 appears 3x, 2 appears 2x, 3 appears 1x)
 - `nums = [1], k = 1` → `[1]`
 
-### Constraints
+### [6:11](https://youtu.be/bORQAEeY2Vg?t=371) [approx] Constraints
 
 - `1 <= nums.length <= 10^5`
 - `-10^4 <= nums[i] <= 10^4`
@@ -25,7 +25,7 @@ Given an integer array `nums` and an integer `k`, return the `k` most frequent e
 
 ---
 
-## Lisa's Solution: `Counter` + `most_common`
+## [9:17](https://youtu.be/bORQAEeY2Vg?t=557) [approx] Lisa's Solution: `Counter` + `most_common`
 
 Lisa's approach used Python's `collections.Counter`, inspired by SQL's `SELECT TOP` pattern.
 
@@ -38,13 +38,13 @@ def topKFrequent(nums, k):
     return most_common
 ```
 
-### How it works
+### [18:54](https://youtu.be/bORQAEeY2Vg?t=1134) How it works
 
 - **`Counter(nums)`** builds a frequency dictionary in one call (e.g. `{1: 3, 2: 2, 3: 1}`).
 - **`.most_common(k)`** returns the top `k` key/count tuples already sorted descending by frequency.
 - The **list comprehension** extracts just the keys (the actual numbers), discarding the counts.
 
-### Coach feedback
+### [3:08](https://youtu.be/bORQAEeY2Vg?t=188) Coach feedback
 
 > You could just `return counts_frequency.most_common(k)` directly and map out the keys — you don't need a separate sort step because `most_common` is already sorted.
 
@@ -53,7 +53,7 @@ def topKFrequent(nums, k):
 
 ---
 
-## Approach 1: Build the Frequency Dictionary From Scratch
+## [27:06](https://youtu.be/bORQAEeY2Vg?t=1626) Approach 1: Build the Frequency Dictionary From Scratch
 
 The coach emphasized understanding the underlying mechanics before relying on `Counter`.
 
@@ -66,7 +66,7 @@ for num in nums:
         frequency[num] = 1
 ```
 
-### Key takeaways
+### [47:22](https://youtu.be/bORQAEeY2Vg?t=2842) Key takeaways
 
 - A dictionary literal uses **`{key: value, key: value}`** syntax.
 - You **cannot `+= 1`** on a key that doesn't exist yet — Python raises `KeyError`.
@@ -77,11 +77,11 @@ for num in nums:
 
 ---
 
-## Approach 2: Sorting the Dictionary
+## [32:23](https://youtu.be/bORQAEeY2Vg?t=1943) Approach 2: Sorting the Dictionary
 
 Once you have the frequency dictionary, you need to extract the top `k` entries. Sorting is the obvious first attempt.
 
-### Sorting a dict by value
+### [52:56](https://youtu.be/bORQAEeY2Vg?t=3176) Sorting a dict by value
 
 ```python
 sorted_frequency = sorted(frequency.items(), key=lambda item: item[1], reverse=True)
@@ -91,7 +91,7 @@ sorted_frequency = sorted(frequency.items(), key=lambda item: item[1], reverse=T
 - **`key=lambda item: item[1]`** tells `sorted` to sort by the second element of each tuple (the count).
 - **`reverse=True`** sorts descending so the most frequent comes first.
 
-### Extracting the top k
+### [30:59](https://youtu.be/bORQAEeY2Vg?t=1859) [approx] Extracting the top k
 
 ```python
 answers = []
@@ -103,7 +103,7 @@ return answers
 - `sorted_frequency[i]` is a `(num, count)` tuple.
 - `[0]` pulls out just the number.
 
-### Complexity
+### [52:49](https://youtu.be/bORQAEeY2Vg?t=3169) Complexity
 
 - **Time:** O(n log n) — dominated by `sorted`.
 - **Space:** O(n) for the frequency dict.
@@ -113,7 +113,7 @@ return answers
 
 ---
 
-## Approach 3: Repeated Max (Brute Force Without Sort)
+## [1:02:34](https://youtu.be/bORQAEeY2Vg?t=3754) Approach 3: Repeated Max (Brute Force Without Sort)
 
 An attempt to dodge the sort by repeatedly pulling the current max.
 
@@ -131,12 +131,12 @@ while len(k_frequency) < k:
 return k_frequency
 ```
 
-### How it works
+### [1:00:38](https://youtu.be/bORQAEeY2Vg?t=3638) How it works
 
 - While we haven't collected `k` answers, scan the whole dict for the current max.
 - Append it to results and **delete it** from the dict so the next scan finds the next max.
 
-### Complexity
+### [32:01](https://youtu.be/bORQAEeY2Vg?t=1921) Complexity
 
 - **Time:** O(k * n) worst case — for each of `k` passes we scan all `n` entries.
 - Ends up **worse than** sorting when `k` approaches `n`, but avoids the `O(n log n)` sort.
@@ -145,7 +145,7 @@ return k_frequency
 
 ---
 
-## Approach 4: Bucket Sort — O(n) (Brian's Solution)
+## [45:08](https://youtu.be/bORQAEeY2Vg?t=2708) Approach 4: Bucket Sort — O(n) (Brian's Solution)
 
 The only standard way to beat O(n log n) on this problem. Brian demonstrated it the prior Sunday.
 
@@ -166,13 +166,13 @@ def topKFrequent(nums, k):
                 return result
 ```
 
-### The key insight
+### [18:50](https://youtu.be/bORQAEeY2Vg?t=1130) The key insight
 
 - A number's frequency is bounded by `len(nums)` — so we can use **frequency as an index** into a list of buckets.
 - `buckets[freq]` holds every number that appears exactly `freq` times.
 - Walking the buckets **from high index to low** yields numbers in descending frequency order for free — no sorting required.
 
-### Complexity
+### [25:24](https://youtu.be/bORQAEeY2Vg?t=1524) Complexity
 
 - **Time:** O(n) — building the counter is O(n), filling buckets is O(n), walking buckets is O(n).
 - **Space:** O(n) — the bucket list is sized to `len(nums) + 1`.
@@ -181,7 +181,7 @@ def topKFrequent(nums, k):
 
 ---
 
-## Big-O Review
+## [33:59](https://youtu.be/bORQAEeY2Vg?t=2039) Big-O Review
 
 When in doubt about a complexity claim, the coach recommended **bigocalc.com** and the classic **Big-O complexity graph**.
 
@@ -193,11 +193,11 @@ When in doubt about a complexity claim, the coach recommended **bigocalc.com** a
 | **O(n log n)** linearithmic | Comparison sorts (Timsort, merge sort); binary searching each of `n` items |
 | **O(n^2)** quadratic | Nested loops over the same input (e.g. naive pair-finding) |
 
-### Why sorting is O(n log n)
+### [58:52](https://youtu.be/bORQAEeY2Vg?t=3532) [approx] Why sorting is O(n log n)
 
 Comparison-based sorts (Python's Timsort included) cannot do better than O(n log n) in the general case. Any time you see `sorted(...)` or `.sort()`, assume that's your lower bound unless you're using a non-comparison sort like bucket or radix sort.
 
-### How to know if your solution meets the follow-up
+### [19:48](https://youtu.be/bORQAEeY2Vg?t=1188) How to know if your solution meets the follow-up
 
 - Break down your code line by line and identify the dominant operation.
 - Dictionary operations (`in`, get, set, delete) are **O(1) average**.
@@ -207,7 +207,7 @@ Comparison-based sorts (Python's Timsort included) cannot do better than O(n log
 
 ---
 
-## Session Takeaways
+## [30:18](https://youtu.be/bORQAEeY2Vg?t=1818) Session Takeaways
 
 - **Counter + most_common** is the cleanest Pythonic solution — know it cold for interviews.
 - You must also be able to build the frequency dict manually with `if key in dict` branching.

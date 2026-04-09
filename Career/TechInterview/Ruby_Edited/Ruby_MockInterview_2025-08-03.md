@@ -3,9 +3,9 @@ Source: https://youtu.be/vqK-YLBcIF0
 
 *Nailing the Tech Interview — Sunday session*
 
-## Opening Questions
+## [0:00](https://youtu.be/vqK-YLBcIF0?t=0) [approx] Opening Questions
 
-### Are vector databases common in technical interviews?
+### [3:41](https://youtu.be/vqK-YLBcIF0?t=221) [approx] Are vector databases common in technical interviews?
 
 Short answer: **no**, not for entry-level or Joy of Coding-style interviews.
 
@@ -15,29 +15,29 @@ Short answer: **no**, not for entry-level or Joy of Coding-style interviews.
 
 ---
 
-## Revisit: Maximum Average Subarray (Sliding Window)
+## [27:54](https://youtu.be/vqK-YLBcIF0?t=1674) Revisit: Maximum Average Subarray (Sliding Window)
 
 Last session's problem was revisited to walk through the **sliding window** approach and to demonstrate writing more **code-adjacent pseudo code** (at Lisa's request).
 
-### Problem statement
+### [7:03](https://youtu.be/vqK-YLBcIF0?t=423) Problem statement
 
 You are given an integer array `nums` of `n` elements and an integer `k`. Find a **contiguous subarray of length `k`** with the **maximum average value**, and return that value. Any calculation error less than `10^-5` is accepted.
 
 **Example:** `nums = [1, 12, -5, -6, 50, 3]`, `k = 4` → output `12.75` (the window `[12, -5, -6, 50]` gives the highest average).
 
-### Constraints
+### [14:45](https://youtu.be/vqK-YLBcIF0?t=885) [approx] Constraints
 
 - `1 <= k <= 10^5`
 - `k <= nums.length <= 10^5`
 - `-10^4 <= nums[i] <= 10^4`
 - There is always at least one valid answer.
 
-### Two approaches discussed
+### [18:26](https://youtu.be/vqK-YLBcIF0?t=1106) [approx] Two approaches discussed
 
 - **Brute force — O(n²).** Nested loops. For each starting index, sum the next `k` values and compare averages.
 - **Sliding window — O(n).** Set a window of size `k`, slide it by one each step, maintain a running sum (add new, subtract old).
 
-### Code-adjacent pseudo code for sliding window
+### [22:08](https://youtu.be/vqK-YLBcIF0?t=1328) [approx] Code-adjacent pseudo code for sliding window
 
 ```
 # Initialize max_average carefully — keep constraints in mind.
@@ -66,18 +66,18 @@ Key reminders:
 
 ---
 
-## Python 2 vs Python 3 Gotcha: Integer Division
+## [15:46](https://youtu.be/vqK-YLBcIF0?t=946) Python 2 vs Python 3 Gotcha: Integer Division
 
 Brian showed his solution and hit a bug: he kept getting `12` instead of `12.75` for the first test case.
 
-### What happened
+### [29:30](https://youtu.be/vqK-YLBcIF0?t=1770) [approx] What happened
 
 - Brian was on **"Python"** (Python 2) on LeetCode, not **Python 3**.
 - His initial `sum_one = sum(nums[:k])` returned an **integer**, so downstream arithmetic stayed in integer math and truncated the answer.
 - Wrapping with `float(sum(nums[:k]))` fixed it in Python 2.
 - Switching to **Python 3** made it work without the explicit `float()` cast because the function signature included a return type annotation (`-> float`), and Python 3's division operator `/` already returns a float.
 
-### Takeaway
+### [19:58](https://youtu.be/vqK-YLBcIF0?t=1198) Takeaway
 
 - Python 2 uses **integer division** when both operands are ints.
 - Python 3's `/` always returns a float; integer division is `//`.
@@ -85,7 +85,7 @@ Brian showed his solution and hit a bug: he kept getting `12` instead of `12.75`
 
 > "There's been many times I've worked on a project, run it, it looks good, come back the next day and it's in scientific notation or something, and I have to figure out why."
 
-### Brian's working sliding-window code (Python)
+### [36:53](https://youtu.be/vqK-YLBcIF0?t=2213) [approx] Brian's working sliding-window code (Python)
 
 ```python
 class Solution:
@@ -98,7 +98,7 @@ class Solution:
         return max_sum / k
 ```
 
-### Runtime discussion
+### [39:06](https://youtu.be/vqK-YLBcIF0?t=2346) Runtime discussion
 
 - Submitted at ~73ms. Not the fastest on the board but acceptable.
 - Discussed whether initializing with `float('-inf')` would be faster — probably not, because you'd still need to compute the first window's sum somewhere.
@@ -107,11 +107,11 @@ class Solution:
 
 ---
 
-## Walkthrough: Top K Frequent Elements (Brian's Solution)
+## [1:06:05](https://youtu.be/vqK-YLBcIF0?t=3965) Walkthrough: Top K Frequent Elements (Brian's Solution)
 
 Brian solved **Top K Frequent Elements** and brought it in because he had a question about the output ordering.
 
-### Approach
+### [38:07](https://youtu.be/vqK-YLBcIF0?t=2287) Approach
 
 - Use `collections.Counter` on the input list to get `{num: frequency}`.
 - Build a **list of lists** (LOL) sized `len(nums) + 1`, where index `i` holds all numbers that appear `i` times (bucket sort by frequency).
@@ -133,12 +133,12 @@ class Solution:
         return ans
 ```
 
-### Bug Brian hit
+### [37:03](https://youtu.be/vqK-YLBcIF0?t=2223) Bug Brian hit
 
 - Originally sized the bucket array `len(c)` (length of the counter) and got **IndexError: list index out of range**.
 - A number with frequency `N` needs index `N` to exist in the bucket list, and frequencies can equal `len(nums)`. So the bucket array must be `len(nums) + 1`.
 
-### Confusion about output order
+### [1:03:03](https://youtu.be/vqK-YLBcIF0?t=3783) Confusion about output order
 
 Brian saw `[8, 4]` in the output rather than `[4, 8]` and wondered why.
 
@@ -148,7 +148,7 @@ Brian saw `[8, 4]` in the output rather than `[4, 8]` and wondered why.
 
 > "The uniqueness is hard to build constraints around. Imagine writing all the test cases for this — I feel bad for whoever did that."
 
-### Feedback on the approach
+### [12:26](https://youtu.be/vqK-YLBcIF0?t=746) Feedback on the approach
 
 - **It works**, and the runtime is solid.
 - But it's doing more than necessary — the LOL bucket approach is clever, but the code is hard to read with many overlapping variables (`c`, `lol`, `j`, `num`, `ans`).
@@ -160,7 +160,7 @@ Brian's solution will be explored further in Wednesday's Solutions Deep Dive.
 
 ---
 
-## Key Takeaways
+## [11:24](https://youtu.be/vqK-YLBcIF0?t=684) Key Takeaways
 
 - **Sliding window** reduces O(n²) brute-force subarray problems to O(n) by maintaining a running sum and adjusting at the edges.
 - Always initialize max/min trackers with **safe sentinels** like `float('-inf')` — not `0`, which fails on negative inputs.

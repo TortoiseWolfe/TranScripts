@@ -5,7 +5,7 @@ Date: December 17, 2025
 
 ---
 
-## Core Principle
+## [6:40](https://youtu.be/RhqsZ8rqafU?t=400) Core Principle
 
 Position education, certifications, and boot camp experience as **evidence of job-relevant skills**, not filler. Recruiters care less about where learning happened and more about **what knowledge was applied**.
 
@@ -13,7 +13,7 @@ Degrees, certifications, and boot camp experience should **support your target r
 
 ---
 
-## What Recruiters Scan For
+## [7:21](https://youtu.be/RhqsZ8rqafU?t=441) What Recruiters Scan For
 
 Recruiters scan the education section to answer one question quickly: **Does this candidate have relevant applied knowledge for the role I'm hiring for?**
 
@@ -31,7 +31,7 @@ Recruiters scan the education section to answer one question quickly: **Does thi
 
 ---
 
-## Weak vs Strong Examples
+## [7:43](https://youtu.be/RhqsZ8rqafU?t=463) [approx] Weak vs Strong Examples
 
 **Weak Example:**
 > Bachelor of Science in Biology
@@ -45,14 +45,14 @@ The strong version **reframes the same degree** to match analytical and technica
 
 ---
 
-## How to Structure Education Sections
+## [12:21](https://youtu.be/RhqsZ8rqafU?t=741) How to Structure Education Sections
 
-### Recommended Order
+### [12:21](https://youtu.be/RhqsZ8rqafU?t=741) Recommended Order
 1. **Most relevant or most recent education**
 2. **Certifications or technical credentials**
 3. **Boot camp or intensive training programs**
 
-### Placement by Career Stage
+### [13:05](https://youtu.be/RhqsZ8rqafU?t=785) Placement by Career Stage
 
 | Career Stage | Education Placement |
 |--------------|---------------------|
@@ -64,7 +64,7 @@ The strong version **reframes the same degree** to match analytical and technica
 
 ---
 
-## Section Title Options
+## [23:10](https://youtu.be/RhqsZ8rqafU?t=1390) [approx] Section Title Options
 
 Use clear, simple titles:
 - Education
@@ -75,16 +75,16 @@ Use clear, simple titles:
 
 ---
 
-## Tailoring Coursework to Target Roles
+## [26:08](https://youtu.be/RhqsZ8rqafU?t=1568) Tailoring Coursework to Target Roles
 
 Your education section should change depending on the role you're targeting. You're not rewriting history—you're **highlighting what matters**.
 
-### How to Choose Coursework to Highlight
+### [26:38](https://youtu.be/RhqsZ8rqafU?t=1598) How to Choose Coursework to Highlight
 1. Look at job descriptions for roles you're applying to
 2. Identify required and preferred skills
 3. Match coursework that supports those skills
 
-### Role-Specific Relevant Coursework
+### [34:45](https://youtu.be/RhqsZ8rqafU?t=2085) [approx] Role-Specific Relevant Coursework
 
 **For Developers:**
 - Data Structures
@@ -115,7 +115,7 @@ Your education section should change depending on the role you're targeting. You
 
 ---
 
-## Adding Achievements
+## [38:37](https://youtu.be/RhqsZ8rqafU?t=2317) [approx] Adding Achievements
 
 Add achievements when possible:
 - Capstone projects
@@ -123,14 +123,14 @@ Add achievements when possible:
 - Team-based work
 - Certifications earned
 
-### Boot Camp Example
+### [28:14](https://youtu.be/RhqsZ8rqafU?t=1694) Boot Camp Example
 
 > **Coding Boot Camp, Full Stack Development**
 > Completed a 12-week intensive program focused on JavaScript, React, Node.js, and SQL. Built multiple full-stack applications and completed a final capstone project.
 
 This shows **scope, focus, and applied learning**.
 
-### TechJoy Academy Example (Live Session)
+### [53:25](https://youtu.be/RhqsZ8rqafU?t=3205) TechJoy Academy Example (Live Session)
 
 > **TechJoy Academy, Full Stack Development Boot Camp**
 > Completed a 7-month boot camp and internship program focused on JavaScript, TypeScript, React, Node.js, and SQL. Built full-stack components for multiple client sites, working collaboratively with a team.
@@ -143,7 +143,7 @@ This shows **scope, focus, and applied learning**.
 
 ---
 
-## Certifications Guidance
+## [50:12](https://youtu.be/RhqsZ8rqafU?t=3012) [approx] Certifications Guidance
 
 **Include certifications if:**
 - They are accredited (through a recognized agency)
@@ -157,7 +157,7 @@ For systems engineering or similar degrees: **List 3 top relevant coursework ite
 
 ---
 
-## Key Principle
+## [1:01:14](https://youtu.be/RhqsZ8rqafU?t=3674) Key Principle
 
 **Education should support your resume, not compete with it.** When tailored correctly, it reinforces your skills and strengthens your story.
 
@@ -165,7 +165,7 @@ For systems engineering or similar degrees: **List 3 top relevant coursework ite
 
 ---
 
-## Homework
+## [1:01:33](https://youtu.be/RhqsZ8rqafU?t=3693) Homework
 
 1. Update one education entry to match your target role
 2. Remove any coursework that doesn't add value
@@ -173,6 +173,6 @@ For systems engineering or similar degrees: **List 3 top relevant coursework ite
 
 ---
 
-## Next Session Preview
+## [1:01:55](https://youtu.be/RhqsZ8rqafU?t=3715) Next Session Preview
 
 Week 9: Resume Layout and Design—making everything you've written easy to scan and recruiter-ready.

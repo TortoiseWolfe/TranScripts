@@ -3,9 +3,9 @@ Source: https://youtu.be/bOgVYYVJGPs
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: When Are You Ready for the Technical Interview?
+## [0:00](https://youtu.be/bOgVYYVJGPs?t=0) [approx] Q&A: When Are You Ready for the Technical Interview?
 
-### The "three in a row" guideline
+### [2:15](https://youtu.be/bOgVYYVJGPs?t=135) [approx] The "three in a row" guideline
 
 - General benchmark: solve **3 easy problems consecutively within 15–20 minutes each**, closer to **15 minutes** being the stronger signal.
 - Also make sure you're getting practice with **medium problems**.
@@ -13,18 +13,18 @@ Source: https://youtu.be/bOgVYYVJGPs
 
 > "It's a good indicator that you *might* be ready. It's hard to say whether someone's ready until they actually take it."
 
-### Extra practice before signing up
+### [1:30](https://youtu.be/bOgVYYVJGPs?t=90) Extra practice before signing up
 
 - **Peer mentor office hours** are a good place to get additional timed practice with feedback before the real interview.
 - You can sign up for the real technical interview at any time, then use peer mentor sessions as warm-ups before your scheduled slot.
 - Rebecca runs peer mentor office hours Mondays 9–10 AM and will either work through a problem the student brings or pick one together.
 
-### Why aim for 15 minutes if 20 passes?
+### [4:32](https://youtu.be/bOgVYYVJGPs?t=272) Why aim for 15 minutes if 20 passes?
 
 - Nerves and pressure during the real interview slow people down.
 - A 15-minute self-pace leaves buffer for interview pressure.
 
-### What happens if you fail the technical interview?
+### [9:02](https://youtu.be/bOgVYYVJGPs?t=542) [approx] What happens if you fail the technical interview?
 
 - You won't be permanently denied.
 - After a failed attempt, Ruby will:
@@ -33,7 +33,7 @@ Source: https://youtu.be/bOgVYYVJGPs
   3. Make **specific recommendations** (mod 1/2 concept review, problem-solving tips, etc.).
 - Once you've worked through those recommendations and are still consistently hitting the 15–20 minute benchmark, you can schedule again.
 
-### Handling "curveball" problems you get stuck on
+### [7:08](https://youtu.be/bOgVYYVJGPs?t=428) Handling "curveball" problems you get stuck on
 
 - It's okay to hit a curveball occasionally and still sign up.
 - When stuck past 20 minutes: **don't immediately look up the solution**. Instead:
@@ -44,7 +44,7 @@ Source: https://youtu.be/bOgVYYVJGPs
 
 > "When I find myself coding just to pass the next test and not generalizing the problem, I feel like I'm going down the wrong rabbit hole."
 
-### The "too many if conditions" smell
+### [12:27](https://youtu.be/bOgVYYVJGPs?t=747) The "too many if conditions" smell
 
 - One or two (maybe three) `if` conditions is normal — even binary search has about three.
 - If you're piling on `if` conditions **to catch specific edge cases one by one**, that's a signal to stop and think of a more **general** approach.
@@ -52,40 +52,40 @@ Source: https://youtu.be/bOgVYYVJGPs
 
 ---
 
-## Breakout Room Experiment: Pseudo Code for "Can Place Flowers"
+## [13:20](https://youtu.be/bOgVYYVJGPs?t=800) Breakout Room Experiment: Pseudo Code for "Can Place Flowers"
 
 Ruby ran an experiment using Zoom breakout rooms. Everyone got 10 minutes alone with the problem to produce **pseudo code only** — no real coding unless you finished pseudo code early.
 
-### Problem: Can Place Flowers (LeetCode easy)
+### [19:50](https://youtu.be/bOgVYYVJGPs?t=1190) Problem: Can Place Flowers (LeetCode easy)
 
 > Given an integer array `flowerbed` containing 0s and 1s (0 = empty, 1 = planted), and an integer `n`, return `true` if you can plant `n` new flowers **without any two adjacent flowers**.
 
-### Examples
+### [20:19](https://youtu.be/bOgVYYVJGPs?t=1219) [approx] Examples
 
 ```
 flowerbed = [1,0,0,0,1], n = 1  ->  true
 flowerbed = [1,0,0,0,1], n = 2  ->  false
 ```
 
-### Constraints
+### [22:35](https://youtu.be/bOgVYYVJGPs?t=1355) [approx] Constraints
 
 - `1 <= flowerbed.length <= 2 * 10^4`
 - `flowerbed[i]` is `0` or `1`
 - **There are no adjacent flowers in `flowerbed`** — the input will never violate the rule itself.
 - `0 <= n <= flowerbed.length`
 
-### Clarification on `n`
+### [16:01](https://youtu.be/bOgVYYVJGPs?t=961) Clarification on `n`
 
 - Normally in LeetCode constraints, `n` refers to the **length of the array**.
 - **In this problem**, `n` is a separate input variable — the number of flowers you want to plant. Always read the problem statement to confirm.
 
-### Key assumption pulled from constraints
+### [26:01](https://youtu.be/bOgVYYVJGPs?t=1561) Key assumption pulled from constraints
 
 Because the input is guaranteed to follow the no-adjacent rule, you don't need to defend against malformed input. You can trust that if you check "current spot is 0 and neighbors are 0," you'll be safe.
 
 ---
 
-## Mauricio's Pseudo Code
+## [37:02](https://youtu.be/bOgVYYVJGPs?t=2222) Mauricio's Pseudo Code
 
 Written **above** the function (clean style, like a docstring):
 
@@ -110,7 +110,7 @@ for i in range(len(flowerbed)):
 
 ---
 
-## Ruby's Pseudo Code
+## [31:37](https://youtu.be/bOgVYYVJGPs?t=1897) [approx] Ruby's Pseudo Code
 
 Written **in the function** using countdown-style logic:
 
@@ -131,7 +131,7 @@ Written **in the function** using countdown-style logic:
 # Big O: O(N)
 ```
 
-### Why iterate only once?
+### [33:52](https://youtu.be/bOgVYYVJGPs?t=2032) [approx] Why iterate only once?
 
 - The problem is **linear** — each spot only depends on its immediate neighbors.
 - No need for nested loops or backtracking.
@@ -139,19 +139,19 @@ Written **in the function** using countdown-style logic:
 
 ---
 
-## Coaching Feedback
+## [37:05](https://youtu.be/bOgVYYVJGPs?t=2225) Coaching Feedback
 
-### On writing pseudo code above vs. inside the function
+### [37:05](https://youtu.be/bOgVYYVJGPs?t=2225) On writing pseudo code above vs. inside the function
 
 - **Above the function:** cleaner, matches real-world docstring style.
 - **Inside the function:** kept closer to where the logic lives, good for interview flow.
 - In production, you'd never have pseudo code inside a function — but in an interview, either works.
 
-### Always include the return condition in pseudo code
+### [37:21](https://youtu.be/bOgVYYVJGPs?t=2241) Always include the return condition in pseudo code
 
 Ruby initially didn't see a return condition in Mauricio's pseudo code and flagged it — it turned out he'd written it, just phrased differently ("return true if count >= n"). **Always make the return statement explicit.**
 
-### The three parts of a technical interview performance
+### [44:30](https://youtu.be/bOgVYYVJGPs?t=2670) The three parts of a technical interview performance
 
 1. **Read and understand the problem** (~20% of evaluation)
 2. **Resummarize and pseudo code** (~20% of evaluation)
@@ -168,7 +168,7 @@ The first two matter for interviewer impressions because they show:
 
 ---
 
-## Key Takeaways
+## [45:10](https://youtu.be/bOgVYYVJGPs?t=2710) [approx] Key Takeaways
 
 - **Readiness benchmark:** 3 consecutive easy problems solved in ~15 minutes each, plus exposure to mediums.
 - **Don't reset to zero after a failure** — you'll get specific recommendations and can try again after addressing them.

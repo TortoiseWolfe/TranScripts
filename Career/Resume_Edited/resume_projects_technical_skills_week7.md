@@ -4,14 +4,14 @@ Source: https://youtu.be/OIRvDboMrr0
 
 ---
 
-## Why Projects Matter
+## [7:17](https://youtu.be/OIRvDboMrr0?t=437) Why Projects Matter
 
 This is one of the most powerful sections of your resume as a developer. Your **projects and technical experience** often determines whether a recruiter believes you can actually do the work.
 
 - Titles and summaries get attention
 - **Projects earn trust**
 
-### Session Goals
+### [7:59](https://youtu.be/OIRvDboMrr0?t=479) Session Goals
 
 - Know where projects belong on your resume
 - Write clean, scannable project descriptions
@@ -20,7 +20,7 @@ This is one of the most powerful sections of your resume as a developer. Your **
 
 ---
 
-## What Recruiters Look For
+## [9:50](https://youtu.be/OIRvDboMrr0?t=590) What Recruiters Look For
 
 When recruiters review projects, they are **not judging perfection**. They're looking for evidence of:
 
@@ -28,7 +28,7 @@ When recruiters review projects, they are **not judging perfection**. They're lo
 - **Execution**
 - **Ownership**
 
-### The Four Questions
+### [10:13](https://youtu.be/OIRvDboMrr0?t=613) The Four Questions
 
 Strong project sections answer these four questions quickly:
 
@@ -37,7 +37,7 @@ Strong project sections answer these four questions quickly:
 3. **What problem did you solve?**
 4. **What part did you personally own?**
 
-### Weak vs Strong Examples
+### [11:04](https://youtu.be/OIRvDboMrr0?t=664) [approx] Weak vs Strong Examples
 
 **Weak example:**
 > Built a MERN stack project using React, Node, and MongoDB.
@@ -56,18 +56,18 @@ Breaking down the strong example:
 
 ---
 
-## Where Projects Belong on Your Resume
+## [13:50](https://youtu.be/OIRvDboMrr0?t=830) [approx] Where Projects Belong on Your Resume
 
 **Placement matters.**
 
-### For Early Career Developers
+### [15:17](https://youtu.be/OIRvDboMrr0?t=917) For Early Career Developers
 
 If you are an early career developer, boot camp grad, or career changer:
 
 - Projects should appear **near the top** of your resume
 - Place them **right after your summary and/or skills**
 
-### For Experienced Developers
+### [15:37](https://youtu.be/OIRvDboMrr0?t=937) For Experienced Developers
 
 If you have professional engineering experience:
 
@@ -78,7 +78,7 @@ If you have professional engineering experience:
 
 ---
 
-## Section Naming
+## [16:20](https://youtu.be/OIRvDboMrr0?t=980) Section Naming
 
 Acceptable section titles for your projects:
 
@@ -91,7 +91,7 @@ Acceptable section titles for your projects:
 
 ---
 
-## How to Write Strong Project Entries
+## [17:23](https://youtu.be/OIRvDboMrr0?t=1043) How to Write Strong Project Entries
 
 Every project should be written in **two parts**:
 
@@ -103,24 +103,24 @@ Two lines, clean, scannable, **no paragraphs**.
 
 ---
 
-## Project Examples
+## [18:45](https://youtu.be/OIRvDboMrr0?t=1125) Project Examples
 
-### Example 1: Full Stack - Task Tracker Application
+### [18:45](https://youtu.be/OIRvDboMrr0?t=1125) Example 1: Full Stack - Task Tracker Application
 
 > **Task Tracker Application**
 > Built a full stack task management app allowing users to create, edit, and delete tasks. Implemented React components, Node.js APIs, and MongoDB data storage.
 
-### Example 2: Front End - Portfolio Site
+### [19:20](https://youtu.be/OIRvDboMrr0?t=1160) Example 2: Front End - Portfolio Site
 
 > **Portfolio Site**
 > Designed and developed a responsive personal portfolio using React and CSS Grid, showcasing projects and GitHub repositories.
 
-### Example 3: Backend - Authentication API
+### [35:59](https://youtu.be/OIRvDboMrr0?t=2159) [approx] Example 3: Backend - Authentication API
 
 > **Authentication API**
 > Created REST API endpoints for user authentication using Node.js, Express, and JWT, including error handling and validation.
 
-### Example 4: QA Testing - API Test Suite
+### [21:23](https://youtu.be/OIRvDboMrr0?t=1283) Example 4: QA Testing - API Test Suite
 
 > **API Test Suite**
 > Developed manual and automated API tests using Postman and Jest to validate request and response handling.
@@ -129,7 +129,7 @@ This format shows **scope, stack, and ownership**. It gives recruiters confidenc
 
 ---
 
-## Links Best Practices
+## [1:03:36](https://youtu.be/OIRvDboMrr0?t=3816) Links Best Practices
 
 Your resume should include:
 
@@ -137,13 +137,13 @@ Your resume should include:
 - **Portfolio link** if you have one
 - **Optional GitHub link** directly under key projects if relevant
 
-### Formatting Links
+### [23:22](https://youtu.be/OIRvDboMrr0?t=1402) Formatting Links
 
 - **Do not** paste long URLs
 - Use clean hyperlink text like "GitHub Repository" or "Live Demo"
 - Hyperlink the project name directly to the project URL
 
-### Repository Standards
+### [26:12](https://youtu.be/OIRvDboMrr0?t=1572) Repository Standards
 
 - Only link projects you're proud of
 - Repos should have **clear README files**
@@ -154,7 +154,7 @@ Your resume should include:
 
 ---
 
-## Resume and LinkedIn Alignment
+## [26:49](https://youtu.be/OIRvDboMrr0?t=1609) Resume and LinkedIn Alignment
 
 Your resume projects **must match** your LinkedIn project section.
 
@@ -166,7 +166,7 @@ When recruiters click from your resume to LinkedIn, they should see the **same s
 
 ---
 
-## The "Why" Factor
+## [45:07](https://youtu.be/OIRvDboMrr0?t=2707) The "Why" Factor
 
 When describing projects, don't just list what you built and the tools used. Include **why it matters**:
 
@@ -178,7 +178,7 @@ This transforms a technical description into a compelling story.
 
 ---
 
-## Key Takeaways
+## [49:58](https://youtu.be/OIRvDboMrr0?t=2998) Key Takeaways
 
 - Projects are not filler—**they're proof**
 - When written clearly, projects tell recruiters:
@@ -189,7 +189,7 @@ This transforms a technical description into a compelling story.
 
 ---
 
-## Homework
+## [50:50](https://youtu.be/OIRvDboMrr0?t=3050) Homework
 
 1. Add or refine at least **two projects** on your resume
 2. Update your **LinkedIn project section** to match
@@ -197,6 +197,6 @@ This transforms a technical description into a compelling story.
 
 ---
 
-## Next Week
+## [51:08](https://youtu.be/OIRvDboMrr0?t=3068) Next Week
 
 Week 8: Resume Design and Layout—making everything you've written easy to scan and recruiter-friendly.

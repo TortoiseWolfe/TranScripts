@@ -5,11 +5,11 @@ Deep dive on HackerRank's **Lisa's Workbook** problem, presented solutions, and 
 
 ---
 
-## Problem: Lisa's Workbook
+## [16:13](https://youtu.be/_KV-fzHskuk?t=973) Problem: Lisa's Workbook
 
 Lisa has a workbook with `n` chapters. Chapter `i` contains `arr[i]` problems. Each page holds at most `k` problems, and **each new chapter starts on a new page** (problems from different chapters never share a page). A **special problem** is one whose problem number equals the page number it sits on. Return the total count of special problems.
 
-### Parameters
+### [3:55](https://youtu.be/_KV-fzHskuk?t=235) [approx] Parameters
 
 - `n` — number of chapters
 - `k` — maximum problems per page
@@ -19,7 +19,7 @@ Lisa has a workbook with `n` chapters. Chapter `i` contains `arr[i]` problems. E
 
 ---
 
-## Mauricio's Solution (Refined)
+## [13:27](https://youtu.be/_KV-fzHskuk?t=807) Mauricio's Solution (Refined)
 
 Mauricio started with a data-structure approach, then refined to a direct simulation: for each chapter compute pages, for each page compute the first and last problem numbers on that page, then check if the page number falls in that range.
 
@@ -40,7 +40,7 @@ def workbook(n, k, arr):
     return special
 ```
 
-### Key Math
+### [29:26](https://youtu.be/_KV-fzHskuk?t=1766) Key Math
 
 - **`full_pages = chapter_problems // k`** — integer division gives the count of completely filled pages.
 - **Remainder page:** if `chapter_problems % k != 0`, there's a trailing partial page. Add 1.
@@ -49,7 +49,7 @@ def workbook(n, k, arr):
 
 ---
 
-## Coach's Alternative Framing: Dictionary Approach
+## [21:34](https://youtu.be/_KV-fzHskuk?t=1294) Coach's Alternative Framing: Dictionary Approach
 
 The coach's first instinct was a dictionary `{page_number: [problems on that page]}`, building out the diagram from the problem statement as a data structure, then scanning each key to see if any value matches the key.
 
@@ -70,11 +70,11 @@ for chapter_problems in arr:
 
 ---
 
-## Coach's Optimization Idea: Early Rejection
+## [8:37](https://youtu.be/_KV-fzHskuk?t=517) Coach's Optimization Idea: Early Rejection
 
 The coach proposed a filter that skips pages which **cannot possibly** contain a special problem before running the inner check.
 
-### The Insight
+### [3:18](https://youtu.be/_KV-fzHskuk?t=198) The Insight
 
 For a given page number and current chapter:
 - On page 1, we need the chapter to contain at least 1 problem.
@@ -92,7 +92,7 @@ The coach flagged that she had not tested this and invited the group to try it.
 
 ---
 
-## Why This Problem Felt Hard
+## [40:26](https://youtu.be/_KV-fzHskuk?t=2426) Why This Problem Felt Hard
 
 Reactions from the group: *"Spaghetti and meatballs"*, *"I hate this problem"*. Coach agreed:
 
@@ -102,11 +102,11 @@ The value of practicing it is **logical decomposition**, not raw algorithm skill
 
 ---
 
-## Study Cadence Discussion
+## [39:20](https://youtu.be/_KV-fzHskuk?t=2360) Study Cadence Discussion
 
 Mauricio asked about the right mix of easy and medium problems per session.
 
-### Coach's Recommendation
+### [44:11](https://youtu.be/_KV-fzHskuk?t=2651) Coach's Recommendation
 
 - **Do not practice for 5 hours at a stretch.**
 - **Start with easies.** Two or three per day. If you knock them out of the park, try **one medium**.
@@ -115,13 +115,13 @@ Mauricio asked about the right mix of easy and medium problems per session.
 
 > "Once you've solved one to three medium problems total in under an hour, regardless of consistency, you're good with mediums at this stage. Move forward with the curriculum, move into the internship, and then keep practicing mediums there because you're preparing for the job hunt."
 
-### Signal That You're Ready to Interview
+### [46:23](https://youtu.be/_KV-fzHskuk?t=2783) Signal That You're Ready to Interview
 
 > "If you're finding success multiple times in a week, it's time to sign up for the interview. If the time limit is the only thing holding you back, sign up anyway — we can talk about it one-on-one."
 
 ---
 
-## Burnout & Emotional Reset
+## [27:02](https://youtu.be/_KV-fzHskuk?t=1622) Burnout & Emotional Reset
 
 Mauricio observed that after a draining problem, the next one feels impossible regardless of difficulty.
 
@@ -131,6 +131,6 @@ Applies to easies and mediums alike. If two easies in a row crush you, **today i
 
 ---
 
-## Habit-Building Reminder
+## [50:03](https://youtu.be/_KV-fzHskuk?t=3003) Habit-Building Reminder
 
 > "Build good habits now — explaining your thought process, breaking down the problem, taking breaks. Bad habits follow you through your career. If you think you're burned out now, it's a lot worse on a 9-to-5 clock with results expected. Learn what good habits look like and what outcomes they lead to."

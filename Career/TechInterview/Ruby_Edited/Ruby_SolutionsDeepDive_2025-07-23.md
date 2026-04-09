@@ -5,9 +5,9 @@ Wednesday session: Brian shares his clean O(n) solution for Insert Interval. The
 
 ---
 
-## Q&A
+## [2:01](https://youtu.be/9ksvSJSY85k?t=121) Q&A
 
-### Should LeetCode solutions use object-oriented Python (classes)?
+### [2:01](https://youtu.be/9ksvSJSY85k?t=121) Should LeetCode solutions use object-oriented Python (classes)?
 
 Adam noticed many LeetCode solutions used class-based Python (e.g., creating an `Interval` class). Are tech interview answers supposed to be class-based?
 
@@ -16,7 +16,7 @@ Adam noticed many LeetCode solutions used class-based Python (e.g., creating an 
 - Some languages (Java) are inherently class-based; Python is not.
 - Use the simplest solution that solves the problem.
 
-### What if a problem requires math knowledge you don't have?
+### [5:03](https://youtu.be/9ksvSJSY85k?t=303) What if a problem requires math knowledge you don't have?
 
 - Every problem should have a **brute force** solution that doesn't require special math tricks.
 - Even using `mod` (modulus) is a "math trick" you learned and can now apply across many problems.
@@ -25,7 +25,7 @@ Adam noticed many LeetCode solutions used class-based Python (e.g., creating an 
 
 ---
 
-## Brian's Insert Interval Solution
+## [19:01](https://youtu.be/9ksvSJSY85k?t=1141) Brian's Insert Interval Solution
 
 A clean O(n) single-loop solution. Key insight: Brian solved the **merge case** first, then handled the special insert cases around it.
 
@@ -49,18 +49,18 @@ def insert(self, intervals, newInterval):
     return ans
 ```
 
-### Walking through `[[1, 3], [6, 9]]` + `[2, 5]`
+### [1:01:11](https://youtu.be/9ksvSJSY85k?t=3671) Walking through `[[1, 3], [6, 9]]` + `[2, 5]`
 
 | i | intervals[i] | newInterval | Branch | Action |
 |---|---|---|---|---|
 | 0 | `[1, 3]` | `[2, 5]` | `2 > 3`? No. `5 < 1`? No. **Else** | Merge: `min(2,1)=1`, `max(5,3)=5` → newInterval = `[1, 5]` |
 | 1 | `[6, 9]` | `[1, 5]` | `1 > 9`? No. `5 < 6`? **Yes** | Return `ans + [[1,5]] + [[6,9]]` = `[[1,5], [6,9]]` ✓ |
 
-### Why `[-1]` instead of `[1]`?
+### [48:30](https://youtu.be/9ksvSJSY85k?t=2910) Why `[-1]` instead of `[1]`?
 
 Brian's habit: when working with data structures where the **end** is significant, use `[-1]` to communicate intent. In this 2-element case, `[1]` would also work, but `[-1]` reads as "the last element" regardless of length.
 
-### The clever return
+### [43:25](https://youtu.be/9ksvSJSY85k?t=2605) The clever return
 
 ```python
 return ans + [newInterval] + intervals[i:]
@@ -68,7 +68,7 @@ return ans + [newInterval] + intervals[i:]
 
 When the new interval ends before the current interval starts (no more merging possible), this **slices the rest of intervals from `i` to the end** and concatenates. Saves writing a second loop just to copy the remainder.
 
-### Wrapping the merged result in `[...]`
+### [43:25](https://youtu.be/9ksvSJSY85k?t=2605) Wrapping the merged result in `[...]`
 
 ```python
 newInterval = [min(...), max(...)]
@@ -76,7 +76,7 @@ newInterval = [min(...), max(...)]
 
 Brian explicitly returns a list (not a tuple or unpacked values) so it can be appended to `ans` (a list of lists) without type errors. He had hit data-structure errors before adding the brackets.
 
-### Big-O
+### [21:59](https://youtu.be/9ksvSJSY85k?t=1319) [approx] Big-O
 
 - **Time:** O(n) — single loop, all operations inside are O(1).
 - **Space:** O(n) — `ans` can grow up to n+1 entries.
@@ -85,7 +85,7 @@ Brian confirmed via LeetCode's "Analyze Complexity" button.
 
 ---
 
-## Alternative Approach: Append + Sort + Merge
+## [24:44](https://youtu.be/9ksvSJSY85k?t=1484) [approx] Alternative Approach: Append + Sort + Merge
 
 Coach demonstrates the "lazy" brute force version:
 
@@ -95,7 +95,7 @@ intervals.sort()
 # now merge any overlaps in the sorted list
 ```
 
-### Why `sort()` works on lists of lists
+### [40:53](https://youtu.be/9ksvSJSY85k?t=2453) Why `sort()` works on lists of lists
 
 Python's `sort()` and `sorted()` default to sorting by the **first element** of each sublist. For `[[1, 3], [4, 5], [2, 5]]`, sorting yields `[[1, 3], [2, 5], [4, 5]]` automatically.
 
@@ -105,13 +105,13 @@ You can override the sort key with a `lambda`:
 sorted(items, key=lambda x: x[1])  # sort by second element
 ```
 
-### Why this is cheating (but useful)
+### [1:03:08](https://youtu.be/9ksvSJSY85k?t=3788) Why this is cheating (but useful)
 
 This collapses the **insert** problem into a **merge** problem. Then you only need to solve "merge overlapping intervals," which is the simpler companion problem (see below).
 
 ---
 
-## Two Approaches Side by Side
+## [32:59](https://youtu.be/9ksvSJSY85k?t=1979) [approx] Two Approaches Side by Side
 
 | Approach | Strategy |
 |---|---|
@@ -122,20 +122,20 @@ Both work. Brian's is more efficient (single pass). The coach's is more decompos
 
 ---
 
-## Merge Intervals (the prerequisite the coach skipped)
+## [1:01:11](https://youtu.be/9ksvSJSY85k?t=3671) Merge Intervals (the prerequisite the coach skipped)
 
 The coach realized after the fact that **Merge Intervals** is the prerequisite to **Insert Interval**. They covered them in the wrong order.
 
-### Problem statement
+### [1:01:57](https://youtu.be/9ksvSJSY85k?t=3717) Problem statement
 
 You're given an array of intervals. Some may overlap. Merge all overlapping intervals and return the result.
 
-### Example
+### [41:14](https://youtu.be/9ksvSJSY85k?t=2474) [approx] Example
 
 - Input: `[[1, 3], [2, 6], [8, 10], [15, 18]]`
 - Output: `[[1, 6], [8, 10], [15, 18]]` (the first two merge)
 
-### Solution sketch
+### [58:23](https://youtu.be/9ksvSJSY85k?t=3503) Solution sketch
 
 This is essentially **just the merge logic from Brian's solution**. After sorting, walk through the list and merge adjacent overlapping intervals.
 
@@ -150,13 +150,13 @@ for i in range(1, len(intervals)):
 return ans
 ```
 
-### Why it's also "medium" difficulty
+### [25:11](https://youtu.be/9ksvSJSY85k?t=1511) Why it's also "medium" difficulty
 
 Some students argue this should be easy because the logic is straightforward. The coach pushes back: index manipulation, comparing the right endpoints, and handling the merge in O(n) requires confidence that students fresh out of Mod 2 don't usually have.
 
 ---
 
-## Errors as Friends
+## [48:50](https://youtu.be/9ksvSJSY85k?t=2930) Errors as Friends
 
 > "When you're first starting out, you're terrified of errors. But errors are kind of like your best friend. If everything's going smoothly, I almost don't trust it — something must be wrong."
 
@@ -168,13 +168,13 @@ Each error taught him something about the data structure he was building.
 
 ---
 
-## Resources Mentioned
+## [52:14](https://youtu.be/9ksvSJSY85k?t=3134) [approx] Resources Mentioned
 
-### NeetCode
+### [54:59](https://youtu.be/9ksvSJSY85k?t=3299) [approx] NeetCode
 
 A YouTuber/educator (former Amazon engineer) who built courses around LeetCode. Provides a "study roadmap" for learning data structures and tackling LeetCode problems systematically. Some of his videos use class-based solutions.
 
-### Blind 75
+### [1:05:34](https://youtu.be/9ksvSJSY85k?t=3934) Blind 75
 
 A list of 75 LeetCode problems considered the "essential" set for tech interview prep. The coach has been pulling problems from this list. Two from this session:
 
@@ -185,7 +185,7 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 > "The Blind 75 is pretty old now — some people consider it almost outdated. But it's still a good representation of the fundamentals."
 
-### General study advice
+### [59:43](https://youtu.be/9ksvSJSY85k?t=3583) General study advice
 
 - Spend 10–15 minutes on a problem. If stuck, look at the answer.
 - Build pattern recognition by **seeing** examples.
@@ -193,7 +193,7 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 ---
 
-## Coach's Plan for the Next Session
+## [1:05:40](https://youtu.be/9ksvSJSY85k?t=3940) Coach's Plan for the Next Session
 
 - Record a video on **sliding window**, **two pointers**, and **binary search** in the context of specific problems.
 - Bridge the gap from "I learned binary search in Mod 2" to "I can implement binary search to solve a real problem."
@@ -201,6 +201,6 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 ---
 
-## Brian's Status
+## [43:05](https://youtu.be/9ksvSJSY85k?t=2585) Brian's Status
 
 Brian has finished Mod 2 except for the optional Java content. The technical interview is the gate to the **explorer phase** (working on tickets, building apps). Coach: "You're probably ready."

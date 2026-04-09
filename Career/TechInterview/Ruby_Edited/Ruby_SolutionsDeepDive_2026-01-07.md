@@ -5,13 +5,13 @@ Group walkthrough of **Plus One** (LeetCode Easy) with the coach as mock intervi
 
 ---
 
-## Q&A: When Can You Stay Silent At The Start?
+## [3:29](https://youtu.be/pitBLw8iuyo?t=209) Q&A: When Can You Stay Silent At The Start?
 
 A participant asked about the pressure to start talking immediately during an interview.
 
 > "There's never too soon, but there is a little bit of a too late. If you start talking when you've already figured out the problem and say 'here's what I'm going to do,' you might pass all the test cases, but I don't have a good understanding of your process — how you're thinking through problems, breaking them down, asking and answering questions, getting stuck, moving past obstacles."
 
-### The Advice
+### [5:18](https://youtu.be/pitBLw8iuyo?t=318) The Advice
 
 > "Be afraid, be scared, and then do it anyway. Talk yourself out of it. Mumble to yourself. Write it down and then read what you wrote aloud. A third of the process is trying to understand the problem — I want to hear that."
 
@@ -19,23 +19,23 @@ A participant asked about the pressure to start talking immediately during an in
 
 ---
 
-## Q&A: Getting Back Into It After A Long Pause
+## [8:51](https://youtu.be/pitBLw8iuyo?t=531) Q&A: Getting Back Into It After A Long Pause
 
 > "Review problems you've worked on before. Clear out your code right away — you'll be familiar enough to have a vague recollection. Focus on rebuilding your routine: how do I break the problem into steps? How do I get pseudo code down? How do I start writing code? Focus on the process piece, not the solving piece."
 
 ---
 
-## Problem: Plus One
+## [12:04](https://youtu.be/pitBLw8iuyo?t=724) Problem: Plus One
 
 > You are given a large integer represented as an integer array `digits`, where each `digits[i]` is the `i`-th digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. Increment the large integer by one and return the resulting array of digits.
 
-### Examples
+### [12:27](https://youtu.be/pitBLw8iuyo?t=747) [approx] Examples
 
 - `[1, 2, 3]` → `[1, 2, 4]`
 - `[4, 3, 2, 1]` → `[4, 3, 2, 2]`
 - `[9]` → `[1, 0]`
 
-### Constraints
+### [15:34](https://youtu.be/pitBLw8iuyo?t=934) [approx] Constraints
 
 - `1 <= digits.length <= 100`
 - `0 <= digits[i] <= 9`
@@ -43,13 +43,13 @@ A participant asked about the pressure to start talking immediately during an in
 
 ---
 
-## Approach 1: Last Index + 1 (Fails On 9)
+## [19:23](https://youtu.be/pitBLw8iuyo?t=1163) Approach 1: Last Index + 1 (Fails On 9)
 
 Linda proposed: just grab the last index, add 1, return. Works for most cases. Fails when the last digit is 9 because you'd get `[1, 2, 3, 10]`, not `[1, 2, 4, 0]`.
 
 ---
 
-## Approach 2: Convert To Int, Add, Convert Back
+## [21:48](https://youtu.be/pitBLw8iuyo?t=1308) [approx] Approach 2: Convert To Int, Add, Convert Back
 
 Coach sketched a cleaner alternative:
 
@@ -64,11 +64,11 @@ def plusOne(digits):
 
 ---
 
-## Approach 3: Reverse For Loop + Carry Propagation (Chosen)
+## [16:20](https://youtu.be/pitBLw8iuyo?t=980) Approach 3: Reverse For Loop + Carry Propagation (Chosen)
 
 The group chose to implement the carry-propagation approach because it exercises more Python concepts.
 
-### The `range` Function For Reverse Iteration
+### [19:21](https://youtu.be/pitBLw8iuyo?t=1161) The `range` Function For Reverse Iteration
 
 ```python
 for i in range(len(digits) - 1, -1, -1):
@@ -81,13 +81,13 @@ for i in range(len(digits) - 1, -1, -1):
 
 > "When reversing, you actually have to include all three parameters. The normal shorthand only works when you accept the defaults of start=0 and step=1."
 
-### Side Note: `range` Requires Integers, Not Collections
+### [52:04](https://youtu.be/pitBLw8iuyo?t=3124) Side Note: `range` Requires Integers, Not Collections
 
 - `for i in range(len(digits))` → iterates indexes (0, 1, 2…)
 - `for digit in digits` → iterates values directly
 - You need indexes here because you're modifying the array in place.
 
-### Initial Carry Logic
+### [34:16](https://youtu.be/pitBLw8iuyo?t=2056) [approx] Initial Carry Logic
 
 ```python
 def plusOne(digits):
@@ -104,7 +104,7 @@ Walks through `[1, 2, 9]`:
 - `i = 2`, value is 9 → set to 0, keep going
 - `i = 1`, value is 2 → add 1, become 3, return `[1, 3, 0]`
 
-### Edge Case: All 9s
+### [37:23](https://youtu.be/pitBLw8iuyo?t=2243) [approx] Edge Case: All 9s
 
 `[9, 9, 9]`:
 - `i = 2`, 9 → 0
@@ -112,7 +112,7 @@ Walks through `[1, 2, 9]`:
 - `i = 0`, 9 → 0
 - Loop ends with `[0, 0, 0]` — **wrong**. The expected output is `[1, 0, 0, 0]`.
 
-### The Fix: Insert A Leading 1
+### [7:08](https://youtu.be/pitBLw8iuyo?t=428) The Fix: Insert A Leading 1
 
 If we fall through the whole loop without returning, it means every digit was 9 and we need to prepend a 1:
 
@@ -128,7 +128,7 @@ def plusOne(digits):
     return digits
 ```
 
-### `list.insert(index, value)`
+### [52:10](https://youtu.be/pitBLw8iuyo?t=3130) `list.insert(index, value)`
 
 - Inserts `value` at `index`, shifting everything else right.
 - `digits.insert(0, 1)` prepends a 1 to the front.
@@ -136,20 +136,20 @@ def plusOne(digits):
 
 ---
 
-## Big O Analysis
+## [1:02:16](https://youtu.be/pitBLw8iuyo?t=3736) Big O Analysis
 
 - **For loop:** O(n)
 - **If/else inside loop:** O(1) per iteration
 - **`insert(0, 1)`** at the end: O(n)
 - **Total:** O(n) + O(n) = **O(n)**
 
-### Performance Result
+### [4:47](https://youtu.be/pitBLw8iuyo?t=287) Performance Result
 
 Passed all 112 test cases at 0ms runtime. Memory usage was higher than expected — likely due to the `insert` at the front requiring internal array reallocation.
 
 ---
 
-## The Math Parallel
+## [58:24](https://youtu.be/pitBLw8iuyo?t=3504) The Math Parallel
 
 > "This is how I learned addition. `1 2 9 9 9 + 1`: 9 + 1 = 10, put zero, carry the 1. 9 + 1 = 0, carry the 1. Etc. That's exactly what the formula does: if it's not a 9, add 1 and done. If it is a 9, set to 0 and carry to the next index."
 
@@ -157,7 +157,7 @@ The `insert(0, 1)` at the end is the "carry out of the top" case — when the ca
 
 ---
 
-## Approach Comparison
+## [56:05](https://youtu.be/pitBLw8iuyo?t=3365) [approx] Approach Comparison
 
 | Approach | Time | Space | Complexity |
 |---|---|---|---|
@@ -167,7 +167,7 @@ The `insert(0, 1)` at the end is the "carry out of the top" case — when the ca
 
 ---
 
-## Session Takeaways
+## [4:15](https://youtu.be/pitBLw8iuyo?t=255) Session Takeaways
 
 - **Verbalize even when you don't fully understand the problem yet.** That's the phase the coach wants to hear the most.
 - **`range(start, stop, step)` with negative step** for reverse iteration in Python.

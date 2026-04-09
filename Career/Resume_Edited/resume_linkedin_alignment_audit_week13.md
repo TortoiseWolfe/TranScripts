@@ -5,7 +5,7 @@ Date: February 11, 2026
 
 ---
 
-## Core Concept: Recruiters Never Evaluate Your Resume in Isolation
+## [35:09](https://youtu.be/Ppt-waVluMM?t=2109) Core Concept: Recruiters Never Evaluate Your Resume in Isolation
 
 Your LinkedIn profile is part of the decision-making process. Recruiters use your resume and LinkedIn together, and they do it fast.
 
@@ -13,7 +13,7 @@ Your LinkedIn profile is part of the decision-making process. Recruiters use you
 
 ---
 
-## The Recruiter Workflow
+## [35:12](https://youtu.be/Ppt-waVluMM?t=2112) The Recruiter Workflow
 
 When a recruiter receives your application, here is what typically happens:
 
@@ -24,13 +24,13 @@ When a recruiter receives your application, here is what typically happens:
 
 If there is consistency, confidence increases. If there are mismatches, questions appear. Recruiters do not like unanswered questions.
 
-### For Creative and Developer Roles
+### [14:05](https://youtu.be/Ppt-waVluMM?t=845) For Creative and Developer Roles
 
 Recruiters hiring for creative or developer positions often check the portfolio or project work first, then LinkedIn, then the resume. The resume may come last, but it still needs to align with everything else.
 
 ---
 
-## What Mismatches Signal to Recruiters
+## [13:49](https://youtu.be/Ppt-waVluMM?t=829) What Mismatches Signal to Recruiters
 
 When your resume and LinkedIn do not align, recruiters start asking:
 
@@ -43,13 +43,13 @@ When your resume and LinkedIn do not align, recruiters start asking:
 
 Even small inconsistencies create uncertainty, and **uncertainty slows momentum**. Slower momentum means fewer callbacks.
 
-### Leaders Are Held to a Higher Standard
+### [14:08](https://youtu.be/Ppt-waVluMM?t=848) Leaders Are Held to a Higher Standard
 
 Senior-level candidates who never update their LinkedIn profile send a signal about how they manage their own professional presence. If a leadership candidate cannot keep their own profile current, it raises concerns about attention to detail.
 
 ---
 
-## Key Insight: Alignment Is Credibility, Not Perfection
+## [15:19](https://youtu.be/Ppt-waVluMM?t=919) Key Insight: Alignment Is Credibility, Not Perfection
 
 It is not about making everything look identical. It is not about matching your LinkedIn profile and resume word for word.
 
@@ -61,17 +61,17 @@ When these two documents reinforce each other, recruiters trust the story faster
 
 ---
 
-## Managing Multiple Resume Versions
+## [24:49](https://youtu.be/Ppt-waVluMM?t=1489) Managing Multiple Resume Versions
 
 Having multiple versions of your resume is strategic. The key is knowing what stays stable and what can flex.
 
-### What Must Stay Stable Across All Versions
+### [22:04](https://youtu.be/Ppt-waVluMM?t=1324) What Must Stay Stable Across All Versions
 
 - **Target role and professional direction** — Your positioning must feel intentional. Your identity should not shift dramatically between resumes.
 - **Job titles** — Unless intentionally tailored, avoid rewriting your history.
 - **Dates** — Never vary dates between resume versions. Even minor discrepancies trigger concern.
 
-### Examples of Consistent vs. Inconsistent Titles
+### [22:04](https://youtu.be/Ppt-waVluMM?t=1324) [approx] Examples of Consistent vs. Inconsistent Titles
 
 **Consistent:**
 - Junior Front-End Developer
@@ -87,7 +87,7 @@ Having multiple versions of your resume is strategic. The key is knowing what st
 
 **Risky title variation:** QA Engineer / Software Developer / Product Manager
 
-### What Can Flex Between Versions
+### [24:26](https://youtu.be/Ppt-waVluMM?t=1466) What Can Flex Between Versions
 
 These elements are designed to be tailored per application:
 
@@ -107,13 +107,13 @@ This is **strategic alignment**, not inconsistency.
 
 ---
 
-## LinkedIn as Your Umbrella Narrative
+## [25:21](https://youtu.be/Ppt-waVluMM?t=1521) LinkedIn as Your Umbrella Narrative
 
 **Your LinkedIn should act as your umbrella narrative. It should support your overall direction, not mirror every tailored resume.**
 
 Your LinkedIn profile should be broad but aligned. It reflects your main direction while supporting all versions of your resume.
 
-### How It Works in Practice
+### [26:12](https://youtu.be/Ppt-waVluMM?t=1572) How It Works in Practice
 
 - **LinkedIn headline:** "Junior Front-End Developer | React | JavaScript"
 - **Resume Version A:** Emphasizes UI / React
@@ -121,7 +121,7 @@ Your LinkedIn profile should be broad but aligned. It reflects your main directi
 
 Both versions align under the same professional identity that LinkedIn establishes.
 
-### Where Candidates Get Into Trouble
+### [33:06](https://youtu.be/Ppt-waVluMM?t=1986) [approx] Where Candidates Get Into Trouble
 
 The problem occurs when:
 
@@ -132,7 +132,7 @@ The problem occurs when:
 
 **The golden rule:** You can tailor your resume for different roles. You should not change who you are at your core.
 
-### Practical Structure
+### [27:59](https://youtu.be/Ppt-waVluMM?t=1679) Practical Structure
 
 1. **Base resume (master version):** Complete history, all projects, all skills
 2. **Targeted versions:** Front-end version, backend version, QA/SDET version
@@ -142,7 +142,7 @@ The problem occurs when:
 
 ---
 
-## Non-Negotiables: What Must Match Between Resume and LinkedIn
+## [38:37](https://youtu.be/Ppt-waVluMM?t=2317) [approx] Non-Negotiables: What Must Match Between Resume and LinkedIn
 
 | Element | Requirement |
 |---------|-------------|
@@ -154,7 +154,7 @@ These elements do not need to be word-for-word identical, but they **must sound 
 
 ---
 
-## Side Projects: How to Frame Them
+## [38:43](https://youtu.be/Ppt-waVluMM?t=2323) Side Projects: How to Frame Them
 
 If you list a side project on LinkedIn (especially as a founder or co-founder), be mindful of how it reads to recruiters. Too much enthusiasm for a side project can raise concerns that it will take focus away from a full-time role.
 
@@ -167,11 +167,11 @@ How you talk about it and frame it determines whether it makes you look like som
 
 ---
 
-## Live Audit Exercise: Comparing Resume and LinkedIn Side by Side
+## [38:41](https://youtu.be/Ppt-waVluMM?t=2321) Live Audit Exercise: Comparing Resume and LinkedIn Side by Side
 
 Open your resume and LinkedIn profile side by side and work through each section.
 
-### What to Check
+### [24:16](https://youtu.be/Ppt-waVluMM?t=1456) What to Check
 
 1. **Headline vs. resume summary** — Are they pointing in the same direction?
 2. **Job titles** — Do they match across both platforms?
@@ -179,7 +179,7 @@ Open your resume and LinkedIn profile side by side and work through each section
 4. **Projects** — Are they consistent?
 5. **Keywords** — Do they align?
 
-### Findings from the Live Audit
+### [45:10](https://youtu.be/Ppt-waVluMM?t=2710) Findings from the Live Audit
 
 Comparing the two documents revealed common misalignment patterns:
 
@@ -189,13 +189,13 @@ Comparing the two documents revealed common misalignment patterns:
 - **Extra items on one platform** — LinkedIn showing roles (e.g., portrait photographer, founder) not on the resume
 - **Outdated skills** — Skills on LinkedIn that no longer reflect current direction (e.g., outdated technologies from 15 years ago)
 
-### Key Takeaway from the Audit
+### [52:23](https://youtu.be/Ppt-waVluMM?t=3143) Key Takeaway from the Audit
 
 **If you are not listing something on your resume, do not list it on LinkedIn.** Make sure the skills on both your resume and LinkedIn align. Anything outside of those shared skills should be removed or added to both platforms.
 
 ---
 
-## Recommendations on LinkedIn = Credibility Reinforcement
+## [45:36](https://youtu.be/Ppt-waVluMM?t=2736) Recommendations on LinkedIn = Credibility Reinforcement
 
 Recommendations on LinkedIn support your resume claims. They do not need to be perfect — they just need to be relevant.
 
@@ -204,7 +204,7 @@ Recommendations on LinkedIn support your resume claims. They do not need to be p
 
 ---
 
-## Session Takeaways
+## [35:43](https://youtu.be/Ppt-waVluMM?t=2143) Session Takeaways
 
 - **Alignment builds trust** between your resume and LinkedIn
 - **Small fixes have big impact** on how recruiters perceive your consistency

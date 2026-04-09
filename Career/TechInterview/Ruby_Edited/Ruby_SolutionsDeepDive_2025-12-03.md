@@ -5,15 +5,15 @@ Q&A on variable scope and Python basics, followed by a mock interview on **Happy
 
 ---
 
-## Q: Variable Scope For Temporary Lists
+## [1:40](https://youtu.be/QQnvnHtF1G4?t=100) Q: Variable Scope For Temporary Lists
 
 > "When you're setting up a temporary list inside a loop to collect values for later comparison, does it have to be initialized outside the loop?"
 
-### Answer: Yes — Variable Scoping
+### [2:14](https://youtu.be/QQnvnHtF1G4?t=134) Answer: Yes — Variable Scoping
 
 > "If you want the list to persist for the life of the loop, it has to exist before the loop starts. You put it outside the loop and refer to it from inside."
 
-### Scope Refresher
+### [18:27](https://youtu.be/QQnvnHtF1G4?t=1107) Scope Refresher
 
 Each kind of enclosure creates its own scope:
 
@@ -25,11 +25,11 @@ Each kind of enclosure creates its own scope:
 
 ---
 
-## Q: What Can Go On Flash Cards For The Interview?
+## [5:35](https://youtu.be/QQnvnHtF1G4?t=335) Q: What Can Go On Flash Cards For The Interview?
 
 > "You can use pseudo code or basic syntax examples — what a for loop looks like, how to convert a string to an int. Nothing where you're actually performing an algorithmic function within it. About the same level of what you would Google."
 
-### Allowed
+### [44:40](https://youtu.be/QQnvnHtF1G4?t=2680) Allowed
 
 - `int(num_str)` — convert string to int
 - `str(num)` — convert int to string
@@ -37,7 +37,7 @@ Each kind of enclosure creates its own scope:
 - Dictionary access patterns
 - List comprehensions
 
-### Not Allowed
+### [12:20](https://youtu.be/QQnvnHtF1G4?t=740) [approx] Not Allowed
 
 - Full solved problems
 - Sliding window or binary search templates
@@ -45,11 +45,11 @@ Each kind of enclosure creates its own scope:
 
 ---
 
-## Elementary Python Gotchas
+## [18:30](https://youtu.be/QQnvnHtF1G4?t=1110) Elementary Python Gotchas
 
 A participant noted that **basic things** trip her up:
 
-### String-to-Int for Addition
+### [17:17](https://youtu.be/QQnvnHtF1G4?t=1037) [approx] String-to-Int for Addition
 
 ```python
 num1 = input("Enter first number: ")
@@ -60,7 +60,7 @@ result = int(num1) + int(num2)
 
 `input()` returns a **string**. You must cast to `int` before arithmetic.
 
-### Accessing Elements vs Indexes in Loops
+### [19:45](https://youtu.be/QQnvnHtF1G4?t=1185) [approx] Accessing Elements vs Indexes in Loops
 
 ```python
 # Index-based access
@@ -78,7 +78,7 @@ for char in s:
 
 ---
 
-## Career Phase Question: What Comes After This?
+## [38:14](https://youtu.be/QQnvnHtF1G4?t=2294) Career Phase Question: What Comes After This?
 
 Clarification on the phase sequence:
 
@@ -88,7 +88,7 @@ Clarification on the phase sequence:
 
 The career strategy call does **not** change the explorer phase contents.
 
-### Program Sunset Schedule
+### [24:41](https://youtu.be/QQnvnHtF1G4?t=1481) [approx] Program Sunset Schedule
 
 - **New signups end in February.**
 - **Support continues through November** of the following year for existing members.
@@ -96,16 +96,16 @@ The career strategy call does **not** change the explorer phase contents.
 
 ---
 
-## Mock Interview: Happy Number (Lisa)
+## [16:27](https://youtu.be/QQnvnHtF1G4?t=987) Mock Interview: Happy Number (Lisa)
 
-### Problem
+### [16:27](https://youtu.be/QQnvnHtF1G4?t=987) Problem
 
 > Write an algorithm to determine if a number `n` is happy. A happy number is defined by:
 > 1. Starting with any positive integer, replace the number by the sum of the squares of its digits.
 > 2. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle that does not include 1.
 > Return `true` if `n` is a happy number, `false` otherwise.
 
-### Example
+### [32:06](https://youtu.be/QQnvnHtF1G4?t=1926) [approx] Example
 
 `n = 19`:
 - `1² + 9² = 1 + 81 = 82`
@@ -113,14 +113,14 @@ The career strategy call does **not** change the explorer phase contents.
 - `6² + 8² = 36 + 64 = 100`
 - `1² + 0² + 0² = 1` → **happy, return true**
 
-### Lisa's Approach
+### [37:23](https://youtu.be/QQnvnHtF1G4?t=2243) Lisa's Approach
 
 1. Convert `n` to a string to access individual digits.
 2. Loop over each character, convert back to int, square, accumulate a sum.
 3. Test whether the sum equals 1.
 4. If not, repeat the process on the new sum.
 
-### Implementation Sketch
+### [37:02](https://youtu.be/QQnvnHtF1G4?t=2222) [approx] Implementation Sketch
 
 ```python
 class Solution:
@@ -137,15 +137,15 @@ class Solution:
 
 Lisa identified that she needed **another loop** — an outer loop to repeat the sum-of-squares process — but ran out of time before finishing the implementation.
 
-### Coach Feedback: Break Down Before Coding
+### [45:29](https://youtu.be/QQnvnHtF1G4?t=2729) Coach Feedback: Break Down Before Coding
 
 > "It would have helped to spend more time in pseudo code to think about it. You know you need to break the number into digits, square them, sum them — you jumped right into that. That's a good place to start, but we got stuck on that step. If we'd taken a step back and asked what the overall strategy looks like, that might have saved time."
 
-### Coach Feedback: Read The Two Termination Conditions Early
+### [46:15](https://youtu.be/QQnvnHtF1G4?t=2775) Coach Feedback: Read The Two Termination Conditions Early
 
 > "The problem says it either ends at 1 or cycles endlessly. That makes me think I want to walk through a few more steps — if it can cycle endlessly, that's more than one operation, which means a `while` loop from the start. You don't know exactly how you'll use it yet, but you can pull it out as a game plan element."
 
-### The Cycle Detection Problem
+### [16:35](https://youtu.be/QQnvnHtF1G4?t=995) The Cycle Detection Problem
 
 The hardest part of Happy Number is **detecting the infinite loop**. Two common approaches:
 
@@ -154,13 +154,13 @@ The hardest part of Happy Number is **detecting the infinite loop**. Two common 
 
 ---
 
-## Asking For Help The Right Way
+## [48:20](https://youtu.be/QQnvnHtF1G4?t=2900) Asking For Help The Right Way
 
 > "When you're asking for help, don't just say 'I'm stuck, what do I do?' Say 'Here's what I've done, here's where I'm thinking, does anyone have advice for the exact next step I might consider?'"
 
 ---
 
-## Takeaways
+## [3:15](https://youtu.be/QQnvnHtF1G4?t=195) Takeaways
 
 - **Initialize collector variables outside the loop** that uses them.
 - **Flash cards should mirror what you'd Google** — no full solutions.

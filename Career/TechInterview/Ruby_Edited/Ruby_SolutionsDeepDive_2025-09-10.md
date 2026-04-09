@@ -5,21 +5,21 @@ Wednesday session covering two problems from the prior Sunday: **Array Partition
 
 ---
 
-## Problem: Array Partition I
+## [8:34](https://youtu.be/P8TqSsayQC8?t=514) Problem: Array Partition I
 
 > Given an integer array `nums` of `2n` integers, group these integers into `n` pairs `(a1, b1), (a2, b2), ..., (an, bn)` such that the sum of `min(ai, bi)` for all `i` is **maximized**. Return the maximized sum.
 
-### Example
+### [1:31](https://youtu.be/P8TqSsayQC8?t=91) [approx] Example
 
 - `nums = [1, 4, 3, 2]` → `4` (pair as `(1,2), (3,4)`, min sum = `1 + 3 = 4`)
 
-### Constraints
+### [10:02](https://youtu.be/P8TqSsayQC8?t=602) Constraints
 
 - `nums.length` is always **even** (divisible by 2, so there's always a pair for each element).
 
 ---
 
-## Array Partition: Sort-and-Step Solution (Lisa)
+## [4:33](https://youtu.be/P8TqSsayQC8?t=273) [approx] Array Partition: Sort-and-Step Solution (Lisa)
 
 ```python
 def arrayPairSum(nums):
@@ -30,13 +30,13 @@ def arrayPairSum(nums):
     return total
 ```
 
-### How it works
+### [6:04](https://youtu.be/P8TqSsayQC8?t=364) [approx] How it works
 
 - **Sort** the array ascending.
 - **Step by 2** through the sorted array, always taking the element at the even index.
 - Each "step 2" index is guaranteed to be the **smaller** of its pair when the array is sorted ascending.
 
-### Why sorting is the key insight
+### [11:51](https://youtu.be/P8TqSsayQC8?t=711) Why sorting is the key insight
 
 > If you're looking for the minimum of two numbers, you want those two numbers close together. If you pair 1 with 6 in a sorted array, you "lose" the 6 — it gets thrown away because we only take the min. By pairing adjacent values after sorting, the max possible value that gets discarded per pair is minimized.
 
@@ -44,27 +44,27 @@ def arrayPairSum(nums):
 - Pairing `(1, 4)` throws away `4`; pairing `(2, 3)` throws away `3`. Total discarded: `7`.
 - Minimum discard maximizes the sum of the mins.
 
-### Complexity
+### [9:07](https://youtu.be/P8TqSsayQC8?t=547) [approx] Complexity
 
 - **Time:** O(n log n) — dominated by the sort.
 - **Space:** O(1) — sorted in place.
 
-### Is there a non-sorting solution?
+### [31:56](https://youtu.be/P8TqSsayQC8?t=1916) Is there a non-sorting solution?
 
 The coach tried to find one and couldn't get below O(n²) without sorting. The problem fundamentally relies on the pairing structure that sorting creates — without sorted order, there's no efficient way to identify which pairs minimize discarded values.
 
 ---
 
-## Problem: Minimum Number of Arrows to Burst Balloons
+## [36:24](https://youtu.be/P8TqSsayQC8?t=2184) Problem: Minimum Number of Arrows to Burst Balloons
 
 > Balloons are given as `points[i] = [xstart, xend]`. Arrows shot straight up at x-coordinate `x` burst any balloon whose `xstart <= x <= xend`. Return the minimum number of arrows needed to burst all balloons.
 
-### Examples
+### [13:40](https://youtu.be/P8TqSsayQC8?t=820) [approx] Examples
 
 - `points = [[1,6], [2,8], [7,12], [10,16]]` → `2`
 - `points = [[1,2], [3,4], [5,6], [7,8]]` → `4` (no overlaps)
 
-### Conceptual setup
+### [31:23](https://youtu.be/P8TqSsayQC8?t=1883) Conceptual setup
 
 - The y-axis doesn't matter — only x-ranges are given, and arrows travel vertically.
 - Balloons whose x-ranges **overlap at any point** can all be burst by a single arrow shot through that overlap.
@@ -72,7 +72,7 @@ The coach tried to find one and couldn't get below O(n²) without sorting. The p
 
 ---
 
-## Lisa's First Attempt: Compare Adjacent Pairs
+## [16:43](https://youtu.be/P8TqSsayQC8?t=1003) [approx] Lisa's First Attempt: Compare Adjacent Pairs
 
 ```python
 def findMinArrowShots(points):
@@ -87,24 +87,24 @@ def findMinArrowShots(points):
     return count - arrow
 ```
 
-### What it gets right
+### [21:51](https://youtu.be/P8TqSsayQC8?t=1311) What it gets right
 
 - Sorts the points to bring overlapping balloons together.
 - Walks adjacent pairs checking for overlap.
 
-### What it gets wrong
+### [19:45](https://youtu.be/P8TqSsayQC8?t=1185) [approx] What it gets wrong
 
 - Only checks **adjacent** pairs — misses the case where balloon 1 and balloon 3 both overlap with balloon 2 but not with each other.
 - Double-counts overlaps — if A overlaps B and B overlaps C, that's two "overlap detections" but should be one arrow covering all three.
 - Doesn't track which balloons have already been "used" by a previous arrow.
 
-### The root diagnosis
+### [24:23](https://youtu.be/P8TqSsayQC8?t=1463) The root diagnosis
 
 > You're not really counting how many balloons can be burst with the minimum arrows. You're counting how many balloons that are immediately beside each other have an overlap. Those are different problems.
 
 ---
 
-## Mental Model 1: Dynamic Shifting Overlap
+## [24:38](https://youtu.be/P8TqSsayQC8?t=1478) Mental Model 1: Dynamic Shifting Overlap
 
 Track the **current overlap region** — the intersection of all balloons the current arrow could burst.
 
@@ -113,18 +113,18 @@ Track the **current overlap region** — the intersection of all balloons the cu
   - **Yes** → tighten the overlap to the intersection (the balloon is now also covered by the current arrow).
   - **No** → increment arrow count, reset the overlap to this new balloon's range.
 
-### Why this is harder to code
+### [23:58](https://youtu.be/P8TqSsayQC8?t=1438) Why this is harder to code
 
 - Requires tracking both the start and end of the shrinking overlap.
 - The intersection operation (`max(starts), min(ends)`) has to happen on every balloon.
 
 ---
 
-## Mental Model 2: Track the Reach — Greedy O(n log n)
+## [5:52](https://youtu.be/P8TqSsayQC8?t=352) Mental Model 2: Track the Reach — Greedy O(n log n)
 
 A much simpler encoding of the same idea. Track only the **end** of the current arrow's reach.
 
-### Whiteboard walkthrough
+### [27:21](https://youtu.be/P8TqSsayQC8?t=1641) [approx] Whiteboard walkthrough
 
 Sorted balloons: `[1,6], [4,8], [7,9], [11,13], [12,15]`
 
@@ -138,7 +138,7 @@ Sorted balloons: `[1,6], [4,8], [7,9], [11,13], [12,15]`
 
 **Answer: 3 arrows.**
 
-### The code
+### [28:52](https://youtu.be/P8TqSsayQC8?t=1732) [approx] The code
 
 ```python
 def findMinArrowShots(points):
@@ -156,24 +156,24 @@ def findMinArrowShots(points):
     return arrows
 ```
 
-### Why it works
+### [36:08](https://youtu.be/P8TqSsayQC8?t=2168) Why it works
 
 - After sorting by start, if the current balloon's start is **within** the previous reach, they share overlap — tighten the reach to `min(reach, end)` so future balloons must also fit the tightened intersection.
 - If the current balloon's start is **beyond** the previous reach, no single arrow can cover both — increment the arrow count and reset reach to the new balloon's end.
 - We only ever look at one balloon at a time — no nested loops, no dynamic overlap tracking beyond a single scalar.
 
-### Complexity
+### [31:55](https://youtu.be/P8TqSsayQC8?t=1915) [approx] Complexity
 
 - **Time:** O(n log n) — dominated by sort.
 - **Space:** O(1) after sort.
 
-### Key realization
+### [37:02](https://youtu.be/P8TqSsayQC8?t=2222) Key realization
 
 > We're only tracking one thing: reach. We're not comparing each balloon against a bunch of others. We walk slow along the way and just ask, "Is the next balloon's start within my current arrow's reach?" Yes → stay. No → new arrow.
 
 ---
 
-## The Visualization Technique
+## [25:05](https://youtu.be/P8TqSsayQC8?t=1505) The Visualization Technique
 
 The coach mentioned needing to pull out a whiteboard and actually draw the balloons to arrive at this solution.
 
@@ -184,9 +184,9 @@ The coach mentioned needing to pull out a whiteboard and actually draw the ballo
 
 ---
 
-## Edge Cases and Anti-Patterns
+## [36:28](https://youtu.be/P8TqSsayQC8?t=2188) [approx] Edge Cases and Anti-Patterns
 
-### Don't code for every edge case you imagine
+### [37:59](https://youtu.be/P8TqSsayQC8?t=2279) [approx] Don't code for every edge case you imagine
 
 Lisa added a `if arrow == 0: return count` fallback to handle "what if there are no overlaps at all?"
 
@@ -194,13 +194,13 @@ Lisa added a `if arrow == 0: return count` fallback to handle "what if there are
 
 The greedy-reach solution handles "no overlaps" naturally — every balloon triggers a new arrow, no special case required.
 
-### Don't randomly tweak operators when stuck
+### [23:51](https://youtu.be/P8TqSsayQC8?t=1431) Don't randomly tweak operators when stuck
 
 > Don't start changing things randomly, like "what if I add another increment" or "what if I switch greater-than to greater-than-or-equal". If you do that, you're not sure what your code is doing anymore. Take a step back, rethink the approach.
 
 ---
 
-## Session Takeaways
+## [7:29](https://youtu.be/P8TqSsayQC8?t=449) Session Takeaways
 
 - **Array Partition** — sort ascending and sum every other element starting from index 0. The sort is mandatory because the problem depends on pairing close values.
 - **Minimum Arrows** — sort by start, track a single scalar "reach" equal to the current arrow's rightmost coverage, and either tighten it (overlap) or advance it (new arrow).
