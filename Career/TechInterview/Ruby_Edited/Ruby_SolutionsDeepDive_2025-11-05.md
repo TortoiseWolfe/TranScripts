@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — November 5, 2025
+Source: https://youtu.be/9SvY-5sgL1Q
 
 Review of Mauricio's solution to **Median of Two Sorted Arrays** (LeetCode Hard) using the merge step from merge sort, followed by a mock interview on **Longest Harmonious Subsequence** (LeetCode Easy, deceptively tricky).
 

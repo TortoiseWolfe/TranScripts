@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — September 10, 2025
+Source: https://youtu.be/P8TqSsayQC8
 
 Wednesday session covering two problems from the prior Sunday: **Array Partition I** (easy) and **Minimum Number of Arrows to Burst Balloons** (medium). Lisa walks through her sort-then-pair solution, and the coach uses a whiteboard to demonstrate the greedy "reach" technique for the balloon problem.
 

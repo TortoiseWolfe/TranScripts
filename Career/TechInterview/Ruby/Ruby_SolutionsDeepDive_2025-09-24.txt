@@ -1,3 +1,6 @@
+Ruby SolutionsDeepDive 2025-09-24
+Source: https://youtu.be/v8uaNuVK3CY
+
 Welcome everyone to this week's nailing
 the tech interview. Today's Wednesday,
 so our plan is to look into the problems

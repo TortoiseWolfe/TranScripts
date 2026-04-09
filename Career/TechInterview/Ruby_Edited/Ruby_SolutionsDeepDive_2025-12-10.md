@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — December 10, 2025
+Source: https://youtu.be/VGk_bq8RY_o
 
 Mock interview on **Arranging Coins** (LeetCode Easy). Deep coaching on the shift from manual step-by-step reasoning to **programmatic algorithmic thinking**.
 

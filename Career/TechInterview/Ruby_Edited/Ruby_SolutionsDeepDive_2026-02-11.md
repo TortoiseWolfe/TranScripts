@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — February 11, 2026
+Source: https://youtu.be/9vFUUFe7ehg
 
 Mock interview on **Check if a String Is an Acronym of Words** — actually **Type of Triangle** (LeetCode Easy). Long walkthrough on the importance of enumerating all return conditions before coding, plus a sorting-based shortcut for the triangle inequality check.
 

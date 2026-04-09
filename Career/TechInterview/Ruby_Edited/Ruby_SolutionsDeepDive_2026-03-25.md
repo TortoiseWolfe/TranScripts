@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — March 25, 2026
+Source: https://youtu.be/J8mwGq1dgjc
 
 Mock interview on **Move Zeroes** (LeetCode Easy) with Dan. Central lesson: **start with a brute force that violates the constraints**, get it working, then refactor — don't try to solve the hard version first from scratch.
 

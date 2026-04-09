@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — December 17, 2025
+Source: https://youtu.be/23b9sbzY1SM
 
 Two mock interviews: **Lilah's Beautiful Days at the Movies** (HackerRank) and **Move Zeroes** (LeetCode). Core lesson: slow down to re-read the problem, and use a `while` loop when a `for` loop's index can't be mutated during iteration.
 

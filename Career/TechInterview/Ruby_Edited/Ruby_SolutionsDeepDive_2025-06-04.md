@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Birthday Cake Candles & Container With Most Water (2025-06-04)
+Source: https://youtu.be/qCssyZzmhu8
 
 Wednesday session: solutions and alternative approaches for Sunday's two problems. Schedule reminder: Sundays = Q&A + pseudo code + mock interview; Wednesdays = solution deep dives.
 

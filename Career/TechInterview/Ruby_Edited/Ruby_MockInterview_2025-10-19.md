@@ -1,4 +1,5 @@
 # Ruby Mock Interview — October 19, 2025
+Source: https://youtu.be/zNncK2JEBgU
 
 *Nailing the Tech Interview — Sunday session*
 

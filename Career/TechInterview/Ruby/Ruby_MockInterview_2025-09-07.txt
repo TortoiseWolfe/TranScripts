@@ -1,3 +1,6 @@
+Ruby MockInterview 2025-09-07
+Source: https://youtu.be/fvtYZ_QBQK0
+
 All right, welcome. Today is Sunday, so
 we are going to be doing mock interview
 and a little bit of problem solving

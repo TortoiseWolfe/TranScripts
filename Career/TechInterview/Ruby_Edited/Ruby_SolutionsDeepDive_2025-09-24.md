@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — September 24, 2025
+Source: https://youtu.be/v8uaNuVK3CY
 
 Walkthrough of **Valid Anagram** with three solutions at different complexities (O(n²), O(n log n), O(n)), plus discussion of scaling considerations leading into **Group Anagrams**.
 

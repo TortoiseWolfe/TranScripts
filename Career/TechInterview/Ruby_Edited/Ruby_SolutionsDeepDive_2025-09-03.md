@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — September 3, 2025
+Source: https://youtu.be/MG3TELB2nJM
 
 Wednesday session revisiting two problems after breakout room practice: **Can Place Flowers** (easy) and **Jump Game** (medium). Mauricio, Jenny, and the coach each walk through their own solutions to Jump Game, revealing three subtly different implementations of the same greedy insight.
 

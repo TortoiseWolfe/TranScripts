@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — December 3, 2025
+Source: https://youtu.be/QQnvnHtF1G4
 
 Q&A on variable scope and Python basics, followed by a mock interview on **Happy Number** (LeetCode Easy).
 

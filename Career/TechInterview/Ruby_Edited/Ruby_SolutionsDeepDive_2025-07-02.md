@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Maximum Product Subarray (2025-07-02)
+Source: https://youtu.be/zB8f0KW9VzU
 
 Wednesday session: mock interview on LeetCode's **Maximum Product Subarray** (medium, 35% acceptance rate). Volunteer: Lisa.
 

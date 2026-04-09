@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — August 27, 2025
+Source: https://youtu.be/jJSryNGi6Io
 
 Wednesday session covering two problems: a walk-through of **Best Time to Buy and Sell Stock** (brute force vs optimal), followed by a mock interview on LeetCode's **Jump Game** (medium) with John.
 

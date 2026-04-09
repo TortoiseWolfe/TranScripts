@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — August 20, 2025
+Source: https://youtu.be/llJ4-m1lsaE
 
 Mauricio volunteers for a mock interview on **Jumping on the Clouds Revisited** — the circular variant with an energy counter. The session covers live debugging under pressure, when to reach for `while` vs `for`, and how to leverage formulas given in the problem statement.
 

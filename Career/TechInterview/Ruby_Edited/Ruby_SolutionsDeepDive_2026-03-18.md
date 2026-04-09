@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — March 18, 2026
+Source: https://youtu.be/d75LFUvlQ48
 
 Mock interview on **Summary Ranges** (LeetCode Easy). Long lesson on mindset, self-coaching through problem understanding, and how to decode an unusual problem specification.
 

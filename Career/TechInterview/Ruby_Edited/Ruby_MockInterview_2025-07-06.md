@@ -1,4 +1,5 @@
 # Mock Interview — Ice Cream Parlor (2025-07-06)
+Source: https://youtu.be/h5H7XIse0Bo
 
 Sunday session: pseudo code walkthrough of HackerRank's Ice Cream Parlor (a Two Sum variant). No volunteer mock interview today — login issues for the volunteer.
 

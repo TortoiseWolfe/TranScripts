@@ -1,4 +1,5 @@
 # Mock Interview — Missing Numbers (2025-06-29)
+Source: https://youtu.be/g7CrcFvipMs
 
 Sunday session: pseudo code walkthrough of HackerRank's Missing Numbers problem. No volunteer mock interview today — discussion ran long.
 

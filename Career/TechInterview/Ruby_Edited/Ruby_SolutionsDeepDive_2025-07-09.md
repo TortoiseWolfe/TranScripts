@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Missing Numbers, Ice Cream Parlor, and Big-O Walkthroughs (2025-07-09)
+Source: https://youtu.be/T5oLd7kqqOo
 
 Wednesday session: solutions for Missing Numbers (Brian's hashmap approach + the group's offset approach), Natalia's Ice Cream Parlor dictionary attempt, and a thorough Big-O breakdown.
 

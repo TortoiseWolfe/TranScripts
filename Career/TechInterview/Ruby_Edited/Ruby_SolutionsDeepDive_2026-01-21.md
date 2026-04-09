@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — January 21, 2026
+Source: https://youtu.be/ayvXEbzZpNY
 
 Group mock interview on **Find if Digit Game Can Be Won** (LeetCode Easy). Experiment with collaborative pseudo code — the group acts as a sounding board during planning, then goes silent during the coding phase.
 

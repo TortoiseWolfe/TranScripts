@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — February 4, 2026
+Source: https://youtu.be/SR9qqxnrmTQ
 
 Mock interview on **Richest Customer Wealth** (LeetCode Easy). Textbook clean execution in under 15 minutes — a reference example of a well-run mock.
 

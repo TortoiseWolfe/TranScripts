@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Insert Interval & Merge Intervals (2025-07-23)
+Source: https://youtu.be/9ksvSJSY85k
 
 Wednesday session: Brian shares his clean O(n) solution for Insert Interval. The session also reveals that Merge Intervals is the natural prerequisite — they were covered in the wrong order.
 

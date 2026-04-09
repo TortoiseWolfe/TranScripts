@@ -1,4 +1,5 @@
 # Mock Interview — Top K Frequent Elements (2025-07-27c)
+Source: https://youtu.be/UR7nTnf7ENo
 
 Continuation of the Sunday session. After Contains Duplicate, the group does a pseudo-code-only mock interview on **Top K Frequent Elements** (medium). Volunteer: Rebecca.
 

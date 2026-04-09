@@ -1,3 +1,6 @@
+Ruby MockInterview 2025-10-12
+Source: https://youtu.be/vWcH6g62B-E
+
 [Music]
 All right, welcome to this week's Nailing the Tech interview. Um, wasn't planning to do this, but I took off all of last week. I had some stuff going on for my Spanish class and then yeah, Wednesday was just crazy. Um, the weather has been like up and down here lately. So, usually when the weather shifts a lot, it like sends me into a spiral and I like don't know what's going on. Um, I think I think that happens to a lot of people. But today is Sunday, so we I've got something planned for today and then we will do a mock interview. Um, but before we get started, does anyone have any questions about the technical interview, getting prepped, getting started? Any questions at all about that?
 

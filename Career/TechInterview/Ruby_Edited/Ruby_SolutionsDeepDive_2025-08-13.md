@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — August 13, 2025
+Source: https://youtu.be/itWLg5UCbsk
 
 Wednesday session covering three topics: (1) how to get started practicing on HackerRank, (2) a visual Big-O demo contrasting linear and binary search, and (3) a full walkthrough of the **Jumping on the Clouds** problem showing the coach's end-to-end interview process from reading the prompt to debugging code.
 

@@ -1,4 +1,5 @@
 # Mock Interview — Two Sum & Three Sum (2025-06-08)
+Source: https://youtu.be/dS1fvk2S_rw
 
 Sunday session: pseudo code walkthrough + mock interview. This week covers **Two Sum** (easy) and **Three Sum** (medium), both perennial tech-interview favorites.
 

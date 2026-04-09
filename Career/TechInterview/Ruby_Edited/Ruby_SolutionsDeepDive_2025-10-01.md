@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — October 1, 2025
+Source: https://youtu.be/_KV-fzHskuk
 
 Deep dive on HackerRank's **Lisa's Workbook** problem, presented solutions, and coach feedback on study cadence and burnout management.
 

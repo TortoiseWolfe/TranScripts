@@ -1,3 +1,6 @@
+Ruby SolutionsDeepDive 2026-02-04
+Source: https://youtu.be/SR9qqxnrmTQ
+
 Okay, so welcome to this week's nailing
 the technical interview. Um, before we
 dive into today's session, does anyone

@@ -1,4 +1,5 @@
 # Mock Interview — Contains Duplicate (2025-07-27b)
+Source: https://youtu.be/gyW2s5ERvM0
 
 Sunday session: pseudo code walkthrough of LeetCode's **Contains Duplicate** (easy). New rule going forward: **mock interviews will be pseudo-code only — no coding** until further notice.
 

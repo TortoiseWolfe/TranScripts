@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — October 15, 2025
+Source: https://youtu.be/ShMeohFw0Pc
 
 Walkthrough of **Find the Index of the First Occurrence in a String** with an emphasis on reading constraints, translating problems into your own words, and the role of library methods versus from-scratch implementation. Also: how to effectively reverse-engineer a lookup solution for learning.
 

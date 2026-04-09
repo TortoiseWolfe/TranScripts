@@ -1,4 +1,5 @@
 # Mock Interview — Maximum Average Subarray & Search in Rotated Sorted Array (2025-07-13)
+Source: https://youtu.be/sVC-1f0WOZU
 
 Sunday session: pseudo code on Maximum Average Subarray (easy, sliding window intro), then a mock interview on Search in Rotated Sorted Array (medium, binary search). Volunteer: Daniel.
 

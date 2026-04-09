@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — November 26, 2025
+Source: https://youtu.be/tDiuu04JnK8
 
 Thanksgiving-week session with two back-to-back mock interviews: **Plus One** (Lisa) and **Search Insert Position** (John). Emphasis on verbalizing process over reaching a final solution.
 

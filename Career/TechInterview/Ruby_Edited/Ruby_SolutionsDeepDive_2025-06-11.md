@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Two Sum: Approaches & Pseudo Code (2025-06-11)
+Source: https://youtu.be/CMJ9rEYttdw
 
 Wednesday session: deep dive on Two Sum, comparing brute force, search-based, two-pointer, and set-based approaches. **No coding today** — focus is on the pseudo-code and approach-evaluation phase.
 

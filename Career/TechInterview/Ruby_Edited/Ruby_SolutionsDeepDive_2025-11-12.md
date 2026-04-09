@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — November 12, 2025
+Source: https://youtu.be/o9QJY4aS--4
 
 Deep dive on LeetCode's **Repeated Substring Pattern** (Easy), including assumption-testing methodology, Mauricio's O(n²) solution, and a discussion on "patterns vs templates" in interview prep.
 

@@ -1,3 +1,6 @@
+Ruby MockInterview 2025-08-24
+Source: https://youtu.be/E2fdp5mDZkE
+
 Oh, I have a question. A serious
 question, Ruby. Um,
 >> okay.

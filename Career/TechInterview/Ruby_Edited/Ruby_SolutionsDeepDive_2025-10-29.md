@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — October 29, 2025
+Source: https://youtu.be/EAs0tnJhPVA
 
 Deep dive on **Minimum Time to Make Rope Colorful** (the "balloons" problem) with two presented approaches, plus a follow-up on reverse-engineering Python's string methods `find`, `count`, and `replace`.
 

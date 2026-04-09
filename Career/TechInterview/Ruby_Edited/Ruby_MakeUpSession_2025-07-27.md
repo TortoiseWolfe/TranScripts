@@ -1,4 +1,5 @@
 # Make-Up Session — Two Pointers on Ice Cream Parlor (2025-07-27)
+Source: https://youtu.be/sx--aq3f3tc
 
 A long-overdue make-up session: implementing the **two-pointer** approach on the Ice Cream Parlor problem. (Binary search version still pending — saved for next session.)
 

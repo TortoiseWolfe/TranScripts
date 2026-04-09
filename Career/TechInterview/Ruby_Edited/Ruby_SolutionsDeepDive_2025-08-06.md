@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — August 6, 2025
+Source: https://youtu.be/bORQAEeY2Vg
 
 Wednesday solutions deep dive session revisiting **Top K Frequent Elements**. Lisa shares her working solution, the coach walks through building it from scratch without the `Counter` shortcut, explores sorting approaches, and contrasts with Brian's optimal bucket-sort solution.
 

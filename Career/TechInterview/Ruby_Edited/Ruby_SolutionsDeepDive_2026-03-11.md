@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — March 11, 2026
+Source: https://youtu.be/Y5MNKdxSOnk
 
 Mock interview on **Number of Employees Who Met the Target** (LeetCode Easy) with Dan. Focus on establishing a **pre-coding checklist template** to paste into the editor as a repeatable process.
 

@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Two Sum: Optimal Hashmap Solution (2025-06-25)
+Source: https://youtu.be/FxIUSmfXe94
 
 Wednesday session: revisiting Two Sum after a 2-week gap. Brian shares the dictionary/hashmap solution achieving O(n) runtime.
 

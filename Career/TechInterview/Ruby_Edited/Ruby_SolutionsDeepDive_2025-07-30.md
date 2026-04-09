@@ -1,4 +1,5 @@
 # Solutions Deep Dive — Contains Duplicate (All Approaches) (2025-07-30)
+Source: https://youtu.be/YEI5yYOPVus
 
 Wednesday session: explore four different approaches to LeetCode's Contains Duplicate, from O(n²) brute force to a one-line O(n) set comparison.
 

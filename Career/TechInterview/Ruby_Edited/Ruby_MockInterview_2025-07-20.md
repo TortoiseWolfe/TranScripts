@@ -1,4 +1,5 @@
 # Mock Interview — Insert Interval (2025-07-20)
+Source: https://youtu.be/-taB2UY9O3g
 
 Sunday session: deep pseudo-code session on LeetCode's Insert Interval (medium, 43% acceptance). No coding today — entire session spent on understanding, decomposing, and game-planning.
 

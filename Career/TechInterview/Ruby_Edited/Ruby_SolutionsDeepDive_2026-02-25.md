@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — February 25, 2026
+Source: https://youtu.be/qzo0MHuLHlU
 
 Coach Ruby does her own mock interview on **Number of Changing Keys**, then Lisa takes a mock on **Sum Multiples**. Lesson: test your core assumption (the math operator) **before** building logic around it.
 

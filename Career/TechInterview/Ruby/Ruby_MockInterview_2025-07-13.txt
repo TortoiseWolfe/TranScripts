@@ -1,3 +1,6 @@
+Ruby MockInterview 2025-07-13
+Source: https://youtu.be/sVC-1f0WOZU
+
 All right, welcome everyone to this
 week's nailing the tech interview mock
 coding day. Still I can never remember

@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — September 17, 2025
+Source: https://youtu.be/0YgXnEU5wls
 
 Mock interview session on the HackerRank **Number Line Jumps** (Kangaroo) problem, with coach feedback on problem-solving process, reading constraints, and pseudo code discipline.
 

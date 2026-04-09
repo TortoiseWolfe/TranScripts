@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — January 28, 2026
+Source: https://youtu.be/y_BGi1xOHe8
 
 Group mock interview on **Baseball Game** (LeetCode Easy, problem 682). Extended lesson on why restating each operation in your own words before pseudo coding saves time on problems with many rules.
 

@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — November 19, 2025
+Source: https://youtu.be/-4q6yvWZqxk
 
 Announcement of schedule changes, introduction of the **Technical Interview Success Rubric**, and a mock interview on **Assign Cookies** (LeetCode Easy).
 

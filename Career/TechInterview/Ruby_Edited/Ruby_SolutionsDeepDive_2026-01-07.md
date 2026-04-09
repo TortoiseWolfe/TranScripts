@@ -1,4 +1,5 @@
 # Ruby Solutions Deep Dive — January 7, 2026
+Source: https://youtu.be/pitBLw8iuyo
 
 Group walkthrough of **Plus One** (LeetCode Easy) with the coach as mock interviewer and participants contributing approaches. Emphasis on verbalizing during problem analysis and handling edge cases with trailing 9s.
 
