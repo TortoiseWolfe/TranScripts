@@ -1,17 +1,18 @@
 # Mock Interview — Birthday Cake Candles & Container With Most Water (2025-06-01)
+Source: https://youtu.be/iL-qgwYVJBE
 
 Nailing the Tech Interview session. New Sunday format: Q&A, high-level walkthrough of an easy problem with pseudo code, then a volunteer mock interview. Wednesday sessions take problems to full solutions.
 
 ---
 
-## Q&A
+## [9:04](https://youtu.be/iL-qgwYVJBE?t=544) Q&A
 
-### Can you use Google or notes during Joy of Coding tech interviews?
+### [9:04](https://youtu.be/iL-qgwYVJBE?t=544) Can you use Google or notes during Joy of Coding tech interviews?
 
 - **Allowed:** syntax lookups (e.g., "how to set up the `count` method"), handwritten concept notes on stacks/queues/linked lists.
 - **Not allowed:** full or partial solutions, ChatGPT / AI assistants, Googling things like "how to reverse an integer."
 
-### Getting stuck transferring pseudo code into real code
+### [48:14](https://youtu.be/iL-qgwYVJBE?t=2894) Getting stuck transferring pseudo code into real code
 
 Common pattern: student understands the problem, can write pseudo code, but freezes when it's time to write actual code.
 
@@ -24,7 +25,7 @@ Fix: don't try to jump to a final solution. Get **something** on the screen, the
 
 Referenced framework: **Dr. Emily's four problem-solving pillars** (review in prior sessions).
 
-### Can you Google the Big-O cost of built-in methods?
+### [10:30](https://youtu.be/iL-qgwYVJBE?t=630) [approx] Can you Google the Big-O cost of built-in methods?
 
 Yes — that's what the coach does too.
 
@@ -37,7 +38,7 @@ Yes — that's what the coach does too.
 
 > Big-O explanation is **not required** for Joy of Coding tech interviews, but it comes up in real job interviews.
 
-### How to actually understand Big-O
+### [32:56](https://youtu.be/iL-qgwYVJBE?t=1976) How to actually understand Big-O
 
 - Find code examples that illustrate each Big-O class.
 - O(1) — declaring a variable, dict lookup by key, returning `array[0]` regardless of array size.
@@ -47,56 +48,56 @@ Yes — that's what the coach does too.
 - **Two separate sequential loops over the same array = O(2n), not O(n²).** O(n²) is specifically nested traversal.
 - Cumulative rule: if any section is O(n), the function is at least O(n). If any section is O(n²), it's at least O(n²).
 
-### Do harder HackerRank problems expect more edge cases?
+### [26:52](https://youtu.be/iL-qgwYVJBE?t=1612) Do harder HackerRank problems expect more edge cases?
 
 Yes. Higher difficulty → more test cases, more "gotcha" edge cases. Reading the **constraints** up front helps predict edge cases. It's also acceptable in a real interview to write draft code, run it, and catch edge cases iteratively — as long as you can explain what came up and how you handled it.
 
 ---
 
-## Problem 1: Birthday Cake Candles (walkthrough)
+## [21:01](https://youtu.be/iL-qgwYVJBE?t=1261) [approx] Problem 1: Birthday Cake Candles (walkthrough)
 
 **Source:** HackerRank easy.
 
 **Prompt:** Given an array of candle heights, return the count of candles equal to the tallest height.
 
-### Pulling the problem apart
+### [8:57](https://youtu.be/iL-qgwYVJBE?t=537) Pulling the problem apart
 
 - **Input:** integer array of candle heights.
 - **Output:** integer — count of tallest candles.
 - **Example:** `[3, 2, 1, 3]` → `2` (two candles at height 3).
 - **Constraints:** array length 1 → 10⁵ (100,000). Values 1 → 10⁷ (10,000,000).
 
-### Strip the metaphor
+### [13:36](https://youtu.be/iL-qgwYVJBE?t=816) Strip the metaphor
 
 Restated plainly: *find the maximum value in the array, then count how many elements equal that maximum.*
 
-### Strategy
+### [31:31](https://youtu.be/iL-qgwYVJBE?t=1891) [approx] Strategy
 
 Two things needed:
 
 1. Max value in the array.
 2. Count of elements equal to that max.
 
-### Two approaches
+### [9:04](https://youtu.be/iL-qgwYVJBE?t=544) Two approaches
 
 - **Built-in:** `max(candles)` then count matches.
 - **Manual loop:** loop once tracking max, then second loop counting matches (or track both in a single pass for efficiency).
 
 > When starting out, go for the most verbose method. Don't worry about being DRY or efficient — just get the test cases passing first.
 
-### Tip: blank return to unlock test cases
+### [13:30](https://youtu.be/iL-qgwYVJBE?t=810) Tip: blank return to unlock test cases
 
 > HackerRank/LeetCode sometimes throws fake errors from their submission wrapper before your code runs. Add a stub `return 0` (or `return []` / `return False` depending on expected type) just to reveal the real test cases.
 
 ---
 
-## Problem 2: Container With Most Water (mock interview — medium)
+## [42:02](https://youtu.be/iL-qgwYVJBE?t=2522) [approx] Problem 2: Container With Most Water (mock interview — medium)
 
 **Volunteer:** Jenny.
 
 **Prompt:** Given an integer array `height`, each index is a vertical line. Pick two lines that together with the x-axis form a container holding the most water. Return the max area. Lines cannot slant.
 
-### What Jenny did well
+### [45:32](https://youtu.be/iL-qgwYVJBE?t=2732) [approx] What Jenny did well
 
 - Wrote out key phrases from the problem in comments.
 - Initialized a variable (`waterVolume = 0`).
@@ -104,13 +105,13 @@ Two things needed:
 - Ran the code partway through to see output.
 - Flagged assumptions ("I think this means this") — a great habit.
 
-### Where she got stuck
+### [48:08](https://youtu.be/iL-qgwYVJBE?t=2888) Where she got stuck
 
 - Jumped into code before fully understanding the problem.
 - Kept trying to **add** heights together (got 44 for the example — but expected 49).
 - Didn't recognize that "area" implies **multiplication**, not addition.
 
-### The coach's guided breakthrough
+### [52:30](https://youtu.be/iL-qgwYVJBE?t=3150) The coach's guided breakthrough
 
 **Key question:** *"When you think area, what operation do you use?"*
 
@@ -125,26 +126,26 @@ Answer: multiplication (width × height).
 - Using the two 8s (indices 1 and 6): distance = 5, min height = 8, area = 40. Smaller.
 - This is why it's **not** just "pick the tallest two" — distance matters too.
 
-### Decoding the confusing wording
+### [31:31](https://youtu.be/iL-qgwYVJBE?t=1891) Decoding the confusing wording
 
 > "There are n vertical lines drawn such that the two end points of the iᵗʰ line are (i, 0) and (i, height[i])."
 
 Translation: at each index `i`, the line runs from `(i, 0)` at the bottom to `(i, height[i])` at the top. You don't need to fully parse this sentence to solve the problem — the picture and the word "area" give enough to work from.
 
-### Interview lessons from this mock
+### [1:03:36](https://youtu.be/iL-qgwYVJBE?t=3816) Interview lessons from this mock
 
 - **Test assumptions immediately** — print, run, compare to expected output.
 - **Don't rush into code** before understanding the problem enough to know what you're testing.
 - Brute force first, optimize later.
 - Medium problems are **stacked easy problems** — same skills, more layers of assumption-testing.
 
-### Efficiency hint (two-pointer approach)
+### [37:38](https://youtu.be/iL-qgwYVJBE?t=2258) Efficiency hint (two-pointer approach)
 
 One participant suggested: start with two pointers at opposite ends of the array and move inward. This is the named efficient algorithm for this problem (two-pointer technique). Brute-force a working solution first, then reverse-engineer the two-pointer optimization.
 
 ---
 
-## General Guidance
+## [1:02:22](https://youtu.be/iL-qgwYVJBE?t=3742) General Guidance
 
 - Practice harder than you play. Medium problems build the same fundamentals as easy problems, stacked.
 - Reading the **example explanation** carefully often gives the breakthrough — they use words like "area" deliberately.
@@ -153,25 +154,26 @@ One participant suggested: start with two pointers at opposite ends of the array
 
 [REVIEW: one participant speculated a linked-list approach would help — coach corrected that linked lists aren't the right tool here; the two-pointer technique on the array is.]
 
-
+---
 ---
 
 # Mock Interview — Two Sum & Three Sum (2025-06-08)
+Source: https://youtu.be/dS1fvk2S_rw
 
 Sunday session: pseudo code walkthrough + mock interview. This week covers **Two Sum** (easy) and **Three Sum** (medium), both perennial tech-interview favorites.
 
 ---
 
-## Q&A
+## [57:10](https://youtu.be/dS1fvk2S_rw?t=3430) Q&A
 
-### Using AI assistants during practice
+### [57:10](https://youtu.be/dS1fvk2S_rw?t=3430) Using AI assistants during practice
 
 Walter shared that he was using GPT to reorder lines and suggest syntax alternatives.
 
 - If AI is fixing parentheses or small syntax, that's one thing.
 - If AI is restructuring logic, **that's problem solving** — letting it do that shortcuts your own learning.
 
-### Writing pseudo code without knowing exact syntax
+### [3:37](https://youtu.be/dS1fvk2S_rw?t=217) Writing pseudo code without knowing exact syntax
 
 You don't need to know the exact method name while writing pseudo code.
 
@@ -179,7 +181,7 @@ You don't need to know the exact method name while writing pseudo code.
 - When you need something like "count method" or "max method," just note it — look up the syntax later when you write the real code.
 - Iterate: write pseudo code → write real code → test assumptions → rewrite pseudo code if needed.
 
-### What does the Joy of Coding tech interview look like?
+### [10:38](https://youtu.be/dS1fvk2S_rw?t=638) [approx] What does the Joy of Coding tech interview look like?
 
 - 30-minute session.
 - 20 minutes on a HackerRank easy-level question.
@@ -189,18 +191,18 @@ You don't need to know the exact method name while writing pseudo code.
 
 ---
 
-## Problem 1: Two Sum (pseudo code walkthrough)
+## [10:51](https://youtu.be/dS1fvk2S_rw?t=651) Problem 1: Two Sum (pseudo code walkthrough)
 
 **Prompt:** Given array `nums` and integer `target`, return the **indices** of two numbers that add up to `target`. Exactly one solution exists. Cannot use the same element twice.
 
-### Pull out the key pieces
+### [10:53](https://youtu.be/dS1fvk2S_rw?t=653) Pull out the key pieces
 
 - **Input:** array of integers + a target integer.
 - **Output:** two index positions whose values sum to target. Order of indices doesn't matter.
 - **Assumption:** exactly one solution always exists → will never return an empty array.
 - **"Cannot use same element twice"** means cannot use the **same index** twice. Values can repeat (e.g., `[3,3]` with target 6 → `[0,1]`).
 
-### Constraints
+### [21:17](https://youtu.be/dS1fvk2S_rw?t=1277) [approx] Constraints
 
 - `nums.length`: 2 to 10⁴.
 - Values: −10⁹ to 10⁹ (**can be negative**).
@@ -208,7 +210,7 @@ You don't need to know the exact method name while writing pseudo code.
 
 > **Important consequence of negative values:** you can't eliminate values that are larger than the target, because a negative plus a positive could still equal the target. E.g., target 15 could come from `−5 + 20`.
 
-### The follow-up hint
+### [17:13](https://youtu.be/dS1fvk2S_rw?t=1033) The follow-up hint
 
 > "Can you come up with an algorithm that is less than O(n²) time complexity?"
 
@@ -217,7 +219,7 @@ This tells you:
 - Brute-force solution is expected to be **O(n²)**.
 - A more efficient solution exists.
 
-### Brute force approach
+### [28:23](https://youtu.be/dS1fvk2S_rw?t=1703) [approx] Brute force approach
 
 - Outer loop through each index.
 - Inner (nested) loop through remaining indices.
@@ -226,7 +228,7 @@ This tells you:
 
 This is **O(n²)**. Will it time out? Depends on the test cases and the language — sometimes brute force squeaks by, sometimes it doesn't.
 
-### Improved approach (Eric's suggestion)
+### [1:07:20](https://youtu.be/dS1fvk2S_rw?t=4040) Improved approach (Eric's suggestion)
 
 - Loop through the array once.
 - For each value, compute the **complement** (`target − current`).
@@ -238,7 +240,7 @@ Efficiency depends on the search method:
 - Sorted array with binary search → O(n log n).
 - With a hash map lookup → O(n). *(This is the standard optimal answer, not covered in detail today.)*
 
-### Big-O clarification
+### [22:35](https://youtu.be/dS1fvk2S_rw?t=1355) Big-O clarification
 
 A nested loop where the inner loop only looks at greater indices (`j = i+1`) **is still O(n²)**. It's reduced, but not meaningfully — the class doesn't change.
 
@@ -246,26 +248,26 @@ A nested loop where the inner loop only looks at greater indices (`j = i+1`) **i
 
 ---
 
-## Problem 2: Three Sum (mock interview)
+## [39:02](https://youtu.be/dS1fvk2S_rw?t=2342) [approx] Problem 2: Three Sum (mock interview)
 
 **Volunteer:** Walter.
 
 **Prompt:** Given integer array `nums`, return **all triplets** `[nums[i], nums[j], nums[k]]` such that `i ≠ j ≠ k` and `nums[i] + nums[j] + nums[k] == 0`. Solution must not contain duplicate triplets.
 
-### What Walter did well
+### [17:31](https://youtu.be/dS1fvk2S_rw?t=1051) What Walter did well
 
 - Recognized it would need multiple nested loops (three pointers: `i`, `j`, `k`).
 - Identified the core task: find all groups of three that sum to zero.
 - Understood the relationship to Two Sum.
 
-### Key clarification that tripped the group up
+### [21:28](https://youtu.be/dS1fvk2S_rw?t=1288) Key clarification that tripped the group up
 
 The phrase "`i ≠ j ≠ k`" refers to **index positions**, not values.
 
 - `[-1, -1, 2]` is valid if there are two `−1`s at **different indices** in the array.
 - You can reuse the same **value** across triplets, but not the same **index** within a single triplet.
 
-### Additional constraints
+### [38:05](https://youtu.be/dS1fvk2S_rw?t=2285) Additional constraints
 
 - **Return shape:** a 2D array of all valid triplets (not index positions — unlike Two Sum, which returns indices).
 - **No duplicate triplets:** if `[−1, −1, 2]` has already been found, you cannot add another `[−1, −1, 2]` even if it came from different indices.
@@ -273,13 +275,13 @@ The phrase "`i ≠ j ≠ k`" refers to **index positions**, not values.
 - **Order within answer arrays doesn't matter.**
 - **There may be no valid triplets** — unlike Two Sum, it's possible an entire array has no solution. Always default to returning an empty array.
 
-### Approach
+### [33:01](https://youtu.be/dS1fvk2S_rw?t=1981) Approach
 
 Brute force is three nested loops (O(n³)) checking all `i,j,k` combinations.
 
 - Unlike Two Sum, Three Sum has **no dramatically better solution** — you can optimize the brute force a smidge (sort first, use two-pointer inside a single loop → O(n²)), but that's about it.
 
-### Strategy: break it into steps
+### [6:14](https://youtu.be/dS1fvk2S_rw?t=374) Strategy: break it into steps
 
 1. First, just find **one** valid triplet. Don't worry about finding all of them.
 2. Then figure out how to find **multiple** triplets.
@@ -289,7 +291,7 @@ Each step may take several iterations to get right.
 
 ---
 
-## Why These Two Problems Matter
+## [1:02:31](https://youtu.be/dS1fvk2S_rw?t=3751) Why These Two Problems Matter
 
 - **Two Sum** and **Three Sum** are still actively used in real job-hunt technical interviews today.
 - Often seen together: interviewers start with Two Sum, then add conditions until it becomes Three Sum.
@@ -297,7 +299,7 @@ Each step may take several iterations to get right.
 
 ---
 
-## General Advice
+## [1:02:50](https://youtu.be/dS1fvk2S_rw?t=3770) General Advice
 
 - Try these problems on your own before Wednesday's deep-dive session.
 - When stuck, break the problem into the smallest possible step. Don't try to solve "find all triplets with dedup" in one shot — find one triplet first.
@@ -305,26 +307,27 @@ Each step may take several iterations to get right.
 
 [REVIEW: coach mentioned moving to Spain and cancelling sessions for one week — scheduling note, not technical content, but kept for completeness.]
 
-
+---
 ---
 
 # Mock Interview — Missing Numbers (2025-06-29)
+Source: https://youtu.be/g7CrcFvipMs
 
 Sunday session: pseudo code walkthrough of HackerRank's Missing Numbers problem. No volunteer mock interview today — discussion ran long.
 
 ---
 
-## Problem: Missing Numbers
+## [3:09](https://youtu.be/g7CrcFvipMs?t=189) Problem: Missing Numbers
 
 Given two arrays of integers, find which elements in the **second** (longer/original) array are missing from the **first** (shortened) array.
 
-### Examples
+### [3:11](https://youtu.be/g7CrcFvipMs?t=191) [approx] Examples
 
 - `arr = [7,2,5,3,5,3]`, `brr = [7,2,5,4,6,3,5,3]` → missing `[4, 6]`.
 - Frequency matters: if `3` appears twice in `brr` and once in `arr`, then `3` is missing.
 - But only include each missing number **once** even if its frequency difference is more than one.
 
-### Constraints worth noting
+### [10:32](https://youtu.be/g7CrcFvipMs?t=632) Constraints worth noting
 
 - `n ≤ m` — the shortened array is always at most as long as the original.
 - The difference between max and min values in the original list is ≤ 100. *(Hint at an O(1)-space frequency-array approach using offset indexing.)*
@@ -332,21 +335,21 @@ Given two arrays of integers, find which elements in the **second** (longer/orig
 
 ---
 
-## Pulling Statements From the Problem
+## [4:53](https://youtu.be/g7CrcFvipMs?t=293) Pulling Statements From the Problem
 
 - Given two lists, find missing numbers from the smaller (`arr`).
 - Frequency of a number matters — could count as missing.
 - If a number occurs multiple times, only include it as missing **once**.
 - Return a sorted array of missing numbers.
 
-### Assumptions to test
+### [12:38](https://youtu.be/g7CrcFvipMs?t=758) Assumptions to test
 
 - **Same length implies identical arrays / no missing numbers** — possibly false. Could be all `[203, 203, ...]` vs `[201, 202, 203, ...]` of the same length. Worth verifying with test cases.
 - **Both arrays will be in the same general sort order** — not stated explicitly. If true, you can do an index-by-index walk. If false, you need a more complicated search per element.
 
 ---
 
-## Approach: Index-Walk (assumes sorted order)
+## [15:57](https://youtu.be/g7CrcFvipMs?t=957) [approx] Approach: Index-Walk (assumes sorted order)
 
 ```python
 tracking = []
@@ -358,18 +361,18 @@ for i in range(len(brr)):
 return sorted(tracking)
 ```
 
-### How it works
+### [19:08](https://youtu.be/g7CrcFvipMs?t=1148) [approx] How it works
 
 - Walk `brr` (the longer original) one element at a time.
 - Compare against the corresponding index in `arr` (the shortened), with an **offset** to skip past missing values.
 - When `brr[i]` doesn't match `arr[i - offset]`, that's a missing number — append it to `tracking` and bump the offset.
 - Sort the result before returning.
 
-### Why offset?
+### [24:39](https://youtu.be/g7CrcFvipMs?t=1479) Why offset?
 
 When you find a missing number, the indices in `arr` don't advance — but `brr` does. The offset keeps the comparison aligned.
 
-### If the assumption is wrong
+### [20:11](https://youtu.be/g7CrcFvipMs?t=1211) If the assumption is wrong
 
 If the arrays aren't sorted, you'd need to search the entire `arr` for each `brr` element, bumping complexity from **O(n)** to **O(n²)**.
 
@@ -377,18 +380,18 @@ If the arrays aren't sorted, you'd need to search the entire `arr` for each `brr
 
 ---
 
-## Translating Pseudo Code Into Real Code
+## [52:54](https://youtu.be/g7CrcFvipMs?t=3174) Translating Pseudo Code Into Real Code
 
 A common stuck point: "I have an idea, but I don't know how to convert it into Python syntax."
 
-### Coach's advice
+### [10:25](https://youtu.be/g7CrcFvipMs?t=625) Coach's advice
 
 - Write your pseudo code as **discrete steps** (initialize array, loop, conditional, append).
 - For each step, ask: "What's the syntax I need? Do I know it, or do I need to look it up?"
 - **Looking up syntax is fair game** in tech interviews — Google `Python range` to confirm parameters; that's not cheating.
 - What's **not** OK: looking up "how to solve missing numbers in Python" or pasting a full or partial solution.
 
-### Python `range()` recap
+### [35:05](https://youtu.be/g7CrcFvipMs?t=2105) [approx] Python `range()` recap
 
 - `range(stop)` → 0 to stop-1, increment by 1.
 - `range(start, stop)` → start to stop-1.
@@ -397,7 +400,7 @@ A common stuck point: "I have an idea, but I don't know how to convert it into P
 
 ---
 
-## Iterative Testing
+## [45:35](https://youtu.be/g7CrcFvipMs?t=2735) Iterative Testing
 
 After writing each step, **run it and print intermediate values** before adding the next step:
 
@@ -410,11 +413,11 @@ This catches off-by-one errors and assumption failures one step at a time. If yo
 
 ---
 
-## Q&A: How to Track Time During Practice
+## [43:28](https://youtu.be/g7CrcFvipMs?t=2608) Q&A: How to Track Time During Practice
 
 Question: "I have trouble realizing where I am within the time limit. How should I keep an eye on time while practicing?"
 
-### Coach's answer
+### [44:06](https://youtu.be/g7CrcFvipMs?t=2646) Coach's answer
 
 - **Don't race the clock** while practicing. Take the time you need to do each step properly.
 - Use a stopwatch (count-up) to **measure** how long it took, then look at the result. Don't pre-set a 20-minute deadline that pressures you.
@@ -422,14 +425,14 @@ Question: "I have trouble realizing where I am within the time limit. How should
 - Once you're consistently under 20 minutes, **then** start using a countdown timer to simulate the real interview pressure.
 - There's no single "correct" time split between pseudo code and coding. Some people take 3 minutes on pseudo code and 10 on code. Others take 10 on pseudo code and 2 on code. Both work.
 
-### Tools
+### [47:11](https://youtu.be/g7CrcFvipMs?t=2831) Tools
 
 - Built-in stopwatch/timer apps on Windows or your phone.
 - Keep the timer visible on screen if it helps, but don't let it distract from the work.
 
 ---
 
-## Time Window Goal
+## [51:02](https://youtu.be/g7CrcFvipMs?t=3062) [approx] Time Window Goal
 
 - **Target:** 15–20 minutes per easy problem.
 - **For practice:** start with 20-minute targets, then tighten as you get faster.
@@ -437,26 +440,27 @@ Question: "I have trouble realizing where I am within the time limit. How should
 
 [REVIEW: extended discussion about Spanish keyboard quirks and missing `#` / `{}` keys — kept as context for why the coach paused mid-coding multiple times.]
 
-
+---
 ---
 
 # Mock Interview — Ice Cream Parlor (2025-07-06)
+Source: https://youtu.be/h5H7XIse0Bo
 
 Sunday session: pseudo code walkthrough of HackerRank's Ice Cream Parlor (a Two Sum variant). No volunteer mock interview today — login issues for the volunteer.
 
 ---
 
-## Problem: Ice Cream Parlor
+## [3:39](https://youtu.be/h5H7XIse0Bo?t=219) Problem: Ice Cream Parlor
 
 Two friends pool money to buy ice cream. They always pick **two distinct flavors** and spend **all their money**. Given the budget `m` and a list of flavor `costs`, return the **one-based indices** of the two flavors that exactly add up to `m`.
 
-### Example
+### [3:04](https://youtu.be/h5H7XIse0Bo?t=184) [approx] Example
 
 - Budget: `m = 6`
 - Costs: `[1, 3, 4, 5, 6]`
 - Output: `[1, 4]` (cost[0]=1, cost[3]=5, sum=6, but using **1-based** indexing → 1 and 4)
 
-### Constraints
+### [13:53](https://youtu.be/h5H7XIse0Bo?t=833) Constraints
 
 - Number of trips: 1 to 50 (multiple test cases per submission).
 - Money `m`: 2 to 10⁴.
@@ -466,7 +470,7 @@ Two friends pool money to buy ice cream. They always pick **two distinct flavors
 
 ---
 
-## HackerRank gotcha: multi-test-case input format
+## [9:12](https://youtu.be/h5H7XIse0Bo?t=552) [approx] HackerRank gotcha: multi-test-case input format
 
 The "Sample Input" shows a long block:
 
@@ -482,7 +486,7 @@ The "Sample Input" shows a long block:
 
 > **Don't be confused by the input format.** Behind the scenes, HackerRank calls `iceCreamParlor(m, cost)` **once per test case**. You only need to write the function for a single trip — the harness handles iterating over the test cases.
 
-### The empty-return trick
+### [12:16](https://youtu.be/h5H7XIse0Bo?t=736) [approx] The empty-return trick
 
 If you see `_FptrName_join(...)` errors before your code runs, that's HackerRank's submission wrapper failing because you're not returning the expected type. Fix: add a stub return matching the expected type:
 
@@ -494,7 +498,7 @@ This silences the wrapper error and lets you see the real test case input.
 
 ---
 
-## Pulling Statements From the Problem
+## [11:45](https://youtu.be/h5H7XIse0Bo?t=705) Pulling Statements From the Problem
 
 - Given `m` (money to spend) and `cost` (potential ice cream flavors).
 - Return the **two indices** representing the chosen flavors.
@@ -503,13 +507,13 @@ This silences the wrapper error and lets you see the real test case input.
 - Cost array will always have at least two flavors.
 - Values may repeat; values are between 1 and n.
 
-### Goal in plain words
+### [20:28](https://youtu.be/h5H7XIse0Bo?t=1228) Goal in plain words
 
 Given `m`, find two values in the `cost` array that sum to `m`, and return their **one-based** indices.
 
 ---
 
-## Python `enumerate` with custom start
+## [21:29](https://youtu.be/h5H7XIse0Bo?t=1289) [approx] Python `enumerate` with custom start
 
 ```python
 for index, value in enumerate(cost, 1):
@@ -524,9 +528,9 @@ for index, value in enumerate(cost, 1):
 
 ---
 
-## Approaches
+## [24:33](https://youtu.be/h5H7XIse0Bo?t=1473) [approx] Approaches
 
-### 1. Brute Force (nested loop)
+### [27:37](https://youtu.be/h5H7XIse0Bo?t=1657) [approx] 1. Brute Force (nested loop)
 
 ```python
 for i, val_i in enumerate(cost, 1):
@@ -538,18 +542,18 @@ for i, val_i in enumerate(cost, 1):
 - **Complexity:** O(n²)
 - Always works. May be slow on large inputs.
 
-### 2. List comprehension
+### [17:28](https://youtu.be/h5H7XIse0Bo?t=1048) 2. List comprehension
 
 Conceptually equivalent to the nested loop. Same O(n²) complexity. List comprehension is **not** automatically faster — it just looks more compact. It also creates an intermediate list, which uses more memory than a plain loop.
 
-### 3. Complement search
+### [33:19](https://youtu.be/h5H7XIse0Bo?t=1999) 3. Complement search
 
 For each value, compute `complement = m - value` and search the rest of the array for the complement.
 
 - With **linear search:** still O(n²) overall.
 - With **binary search:** O(n log n), but requires sorting first → sorting also loses original indices.
 
-### 4. Hashmap (dictionary)
+### [36:49](https://youtu.be/h5H7XIse0Bo?t=2209) [approx] 4. Hashmap (dictionary)
 
 ```python
 seen = {}
@@ -568,7 +572,7 @@ for i, val in enumerate(cost, 1):
 
 ---
 
-## Decoding Math Notation in Constraints
+## [39:53](https://youtu.be/h5H7XIse0Bo?t=2393) [approx] Decoding Math Notation in Constraints
 
 The constraint `cost[i] ∈ {1...n}` (with the "for all" upside-down A symbol) just means: every value in `cost` is an integer between 1 and n inclusive.
 
@@ -579,7 +583,7 @@ You can usually safely **ignore** these symbols if they don't directly help you 
 
 ---
 
-## Q&A: Data Annotation Company
+## [12:03](https://youtu.be/h5H7XIse0Bo?t=723) Q&A: Data Annotation Company
 
 A few participants asked about Data Annotation as a freelance opportunity.
 
@@ -594,32 +598,33 @@ A few participants asked about Data Annotation as a freelance opportunity.
 
 ---
 
-## Brian's Maximum Product Subarray result
+## [48:59](https://youtu.be/h5H7XIse0Bo?t=2939) Brian's Maximum Product Subarray result
 
 Brian solved last Wednesday's Max Product Subarray problem using **traversing left-to-right and right-to-left**. Took ~2 hours but passed all test cases. For a medium problem with 35% acceptance rate, that's a strong result.
 
 > "Better than 65% of people who took on the challenge."
 
-
+---
 ---
 
 # Mock Interview — Maximum Average Subarray & Search in Rotated Sorted Array (2025-07-13)
+Source: https://youtu.be/sVC-1f0WOZU
 
 Sunday session: pseudo code on Maximum Average Subarray (easy, sliding window intro), then a mock interview on Search in Rotated Sorted Array (medium, binary search). Volunteer: Daniel.
 
 ---
 
-## Problem 1: Maximum Average Subarray I (easy)
+## [2:41](https://youtu.be/sVC-1f0WOZU?t=161) Problem 1: Maximum Average Subarray I (easy)
 
 Given an integer array `nums` of length `n` and an integer `k`, find a **contiguous subarray of length k** with the **maximum average value** and return that value.
 
-### Example
+### [3:23](https://youtu.be/sVC-1f0WOZU?t=203) [approx] Example
 
 - `nums = [1, 12, -5, -6, 50, 3]`, `k = 4`
 - Output: `12.75`
 - Reasoning: subarray `[12, -5, -6, 50]` sums to 51, divided by 4 = 12.75.
 
-### Constraints
+### [6:46](https://youtu.be/sVC-1f0WOZU?t=406) [approx] Constraints
 
 - `nums.length` (n): 1 to 10⁵
 - `k`: 1 to n (always have enough elements for at least one subarray of size k)
@@ -627,7 +632,7 @@ Given an integer array `nums` of length `n` and an integer `k`, find a **contigu
 
 ---
 
-## Pulling From the Problem
+## [6:40](https://youtu.be/sVC-1f0WOZU?t=400) Pulling From the Problem
 
 - `nums` = array given to find subarray average in.
 - `k` = size of the subarray to calculate an average for.
@@ -635,9 +640,9 @@ Given an integer array `nums` of length `n` and an integer `k`, find a **contigu
 
 ---
 
-## Approaches
+## [13:32](https://youtu.be/sVC-1f0WOZU?t=812) [approx] Approaches
 
-### 1. Brute Force (nested loop)
+### [16:55](https://youtu.be/sVC-1f0WOZU?t=1015) [approx] 1. Brute Force (nested loop)
 
 ```python
 max_avg = float('-inf')
@@ -653,7 +658,7 @@ return max_avg
 - **Complexity:** O(n × k) ≈ O(n²)
 - Works, but slow on large inputs.
 
-### 2. Sliding Window (the optimal approach)
+### [20:18](https://youtu.be/sVC-1f0WOZU?t=1218) [approx] 2. Sliding Window (the optimal approach)
 
 ```python
 window_sum = sum(nums[:k])
@@ -669,7 +674,7 @@ return max_sum / k
 - Slide: add the new right-edge value, subtract the old left-edge value. No need to recalculate the whole sum.
 - Track the running max sum, divide by k once at the end.
 
-### Sliding Window keywords (when to use it)
+### [17:42](https://youtu.be/sVC-1f0WOZU?t=1062) Sliding Window keywords (when to use it)
 
 - **Given K** or a fixed window size to track.
 - Looking for a **sum, product, or average**.
@@ -677,44 +682,44 @@ return max_sum / k
 
 > "Having the window size defined really helps you get that O(n) done pretty quickly. Maximum Average Subarray is a great intro to sliding window because the window size is given."
 
-### Bonus: prefix sum approach (mentioned but not fleshed out)
+### [3:09](https://youtu.be/sVC-1f0WOZU?t=189) Bonus: prefix sum approach (mentioned but not fleshed out)
 
 Build a prefix-sum array where `prefix[i]` = sum of `nums[0..i]`. Then any window sum = `prefix[i + k] - prefix[i]`. Same O(n) complexity, different mechanism.
 
 ---
 
-## Problem 2: Search in Rotated Sorted Array (medium) — mock interview
+## [30:27](https://youtu.be/sVC-1f0WOZU?t=1827) [approx] Problem 2: Search in Rotated Sorted Array (medium) — mock interview
 
 **Volunteer:** Daniel.
 
-### Problem statement
+### [1:44](https://youtu.be/sVC-1f0WOZU?t=104) Problem statement
 
 You're given a sorted (ascending) integer array `nums` with **distinct values** that has been rotated at some unknown pivot index `k` (so the array becomes `nums[k:] + nums[:k]`). Given a target value, return its index in the rotated array, or `-1` if not found.
 
 **Critical constraint:** "You must write an algorithm with **O(log n)** runtime complexity."
 
-### Why it's a medium problem
+### [26:50](https://youtu.be/sVC-1f0WOZU?t=1610) Why it's a medium problem
 
 The O(log n) requirement immediately rules out brute-force linear search (O(n)). You're expected to know **binary search** and adapt it to the rotated case.
 
 ---
 
-## Daniel's session
+## [6:53](https://youtu.be/sVC-1f0WOZU?t=413) Daniel's session
 
-### What Daniel did well
+### [6:53](https://youtu.be/sVC-1f0WOZU?t=413) What Daniel did well
 
 - Read the problem and pulled out the goal: find target, return its index, or return -1.
 - Identified two potential approaches: brute force loop, or sorting first.
 - Wrote out comments before code.
 - Iterated when stuck, with the coach prompting.
 
-### Where he got stuck
+### [1:03:45](https://youtu.be/sVC-1f0WOZU?t=3825) Where he got stuck
 
 - **Variable name conflict:** used `target` as the loop variable in `for target in range(...)`, which shadowed the `target` parameter passed to the function.
 - **Indexing confusion:** wasn't sure whether `i` was an index or a value. Coach prompted using `print(nums[i])` to verify.
 - **Indentation error:** the code block was at the same level as the function definition, not inside it.
 
-### The fix progression
+### [51:59](https://youtu.be/sVC-1f0WOZU?t=3119) The fix progression
 
 1. Print the loop variable: `print(i)` → confirmed `i` was the index.
 2. Print the array value at that index: `print(nums[i])` → confirmed access works.
@@ -725,7 +730,7 @@ This brute-force solution works but is **O(n)**, which fails the O(log n) requir
 
 ---
 
-## The Iterative Testing Habit
+## [1:07:59](https://youtu.be/sVC-1f0WOZU?t=4079) The Iterative Testing Habit
 
 > "Make sure you're taking iterative steps. What am I getting in my for loop? Is it printing an index? A value? How can I make sure I'm hitting all those steps before I write down a full several lines of code?"
 
@@ -740,9 +745,9 @@ This avoids the trap of writing 30 lines, hitting an error, and not knowing whic
 
 ---
 
-## Binary Search on a Rotated Array (group discussion)
+## [57:32](https://youtu.be/sVC-1f0WOZU?t=3452) [approx] Binary Search on a Rotated Array (group discussion)
 
-### Standard binary search recap
+### [1:00:55](https://youtu.be/sVC-1f0WOZU?t=3655) [approx] Standard binary search recap
 
 ```
 left = 0, right = len(nums) - 1
@@ -759,11 +764,11 @@ return -1
 
 - **O(log n)** because you cut the search space in half each iteration.
 
-### The rotation challenge
+### [1:09:47](https://youtu.be/sVC-1f0WOZU?t=4187) The rotation challenge
 
 A rotated array is **two sorted segments stitched together**. At any midpoint, **one half is still sorted** and the other half contains the rotation pivot.
 
-### Modified binary search idea
+### [1:07:41](https://youtu.be/sVC-1f0WOZU?t=4061) [approx] Modified binary search idea
 
 - Compute `mid`.
 - Determine which half (left or right of `mid`) is fully sorted.
@@ -776,7 +781,7 @@ This will be explored in depth on Wednesday.
 
 ---
 
-## Big-O Reminder
+## [1:11:04](https://youtu.be/sVC-1f0WOZU?t=4264) [approx] Big-O Reminder
 
 | Big-O | Description | Example |
 |---|---|---|
@@ -790,7 +795,7 @@ The medium problem here demands O(log n) — only a tiny step above O(1). That's
 
 ---
 
-## Recommendation: Always Get Brute Force First
+## [1:11:58](https://youtu.be/sVC-1f0WOZU?t=4318) Recommendation: Always Get Brute Force First
 
 Even when the problem demands a specific complexity (like O(log n) here):
 
@@ -800,20 +805,21 @@ Even when the problem demands a specific complexity (like O(log n) here):
 
 > "For brute force of just getting how can I approach this problem and get some test cases passing — totally great. Then we make the next step of saying what do I know about potential approaches to get this to that desired runtime."
 
-
+---
 ---
 
 # Mock Interview — Insert Interval (2025-07-20)
+Source: https://youtu.be/-taB2UY9O3g
 
 Sunday session: deep pseudo-code session on LeetCode's Insert Interval (medium, 43% acceptance). No coding today — entire session spent on understanding, decomposing, and game-planning.
 
 ---
 
-## Problem: Insert Interval
+## [3:27](https://youtu.be/-taB2UY9O3g?t=207) Problem: Insert Interval
 
 You're given an array of **non-overlapping intervals** sorted in ascending order by start. You're also given a single **new interval**. Insert the new interval into the array such that it remains sorted and non-overlapping. Merge overlapping intervals if necessary. Return the resulting interval array.
 
-### Example 1
+### [2:17](https://youtu.be/-taB2UY9O3g?t=137) [approx] Example 1
 
 - Intervals: `[[1, 3], [6, 9]]`
 - New interval: `[2, 5]`
@@ -821,7 +827,7 @@ You're given an array of **non-overlapping intervals** sorted in ascending order
 
 The new interval `[2, 5]` overlaps with `[1, 3]` (at 2 and 3), so they merge into `[1, 5]`.
 
-### Example 2
+### [4:35](https://youtu.be/-taB2UY9O3g?t=275) [approx] Example 2
 
 - Intervals: `[[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]`
 - New interval: `[4, 8]`
@@ -829,17 +835,17 @@ The new interval `[2, 5]` overlaps with `[1, 3]` (at 2 and 3), so they merge int
 
 The new interval `[4, 8]` overlaps with `[3, 5]`, `[6, 7]`, and `[8, 10]` — all three merge into `[3, 10]`.
 
-### Critical insight
+### [20:28](https://youtu.be/-taB2UY9O3g?t=1228) Critical insight
 
 > "An interval represents **all the numbers in between**, not just the endpoints. `[3, 5]` means 3, 4, 5. That's why `[4, 8]` overlaps with it — 4 is inside that range."
 
 ---
 
-## Why This Problem Is Mind-Bending
+## [15:50](https://youtu.be/-taB2UY9O3g?t=950) Why This Problem Is Mind-Bending
 
 The wording uses "intervals" so many times in one paragraph that it's hard to track what's being referred to. The coach's tactic: **rewrite the problem in your own words** as you read it.
 
-### Coach's restatement
+### [4:55](https://youtu.be/-taB2UY9O3g?t=295) Coach's restatement
 
 - We are given **intervals** = a list of `[start, end]` pairs (the coach calls them "i-j pairs").
 - The pairs **do not overlap** with each other.
@@ -848,15 +854,15 @@ The wording uses "intervals" so many times in one paragraph that it's hard to tr
 - The new interval may overlap with one or more existing intervals.
 - Return a new list with the new interval inserted (or merged if needed), still sorted, still non-overlapping.
 
-### Inclusive vs exclusive
+### [38:55](https://youtu.be/-taB2UY9O3g?t=2335) Inclusive vs exclusive
 
 The intervals use square brackets `[...]`, which means **inclusive** of the endpoints. If they used parentheses `(...)`, that would be exclusive. Pay attention to bracket notation when dealing with ranges.
 
 ---
 
-## Decomposing Into Two Test Case Difficulties
+## [16:05](https://youtu.be/-taB2UY9O3g?t=965) [approx] Decomposing Into Two Test Case Difficulties
 
-### Easy version (modify the example)
+### [18:23](https://youtu.be/-taB2UY9O3g?t=1103) [approx] Easy version (modify the example)
 
 - Intervals: `[[1, 3], [6, 9]]`
 - New interval: `[4, 5]`
@@ -864,7 +870,7 @@ The intervals use square brackets `[...]`, which means **inclusive** of the endp
 
 No overlap → just slot it in. **Tackle this first** as a simpler subset of the full problem.
 
-### Hard version (original example 2)
+### [38:37](https://youtu.be/-taB2UY9O3g?t=2317) Hard version (original example 2)
 
 - Multi-interval merging required.
 - Build the easy solution first, then extend.
@@ -873,29 +879,29 @@ No overlap → just slot it in. **Tackle this first** as a simpler subset of the
 
 ---
 
-## Approach: Two-Step Game Plan
+## [22:59](https://youtu.be/-taB2UY9O3g?t=1379) [approx] Approach: Two-Step Game Plan
 
 For the **easy** version (no merging):
 
-### Step 0: Initialize a new array to hold the result
+### [32:55](https://youtu.be/-taB2UY9O3g?t=1975) Step 0: Initialize a new array to hold the result
 
 (Don't modify the original — the problem note explicitly allows returning a new array.)
 
-### Step 1: Loop through the intervals
+### [18:35](https://youtu.be/-taB2UY9O3g?t=1115) Step 1: Loop through the intervals
 
 For each existing interval, **check if the new interval's start is contained within it**.
 
-### Step 2: Determine the sort placement
+### [18:35](https://youtu.be/-taB2UY9O3g?t=1115) Step 2: Determine the sort placement
 
 For each interval, check whether the new interval is **less than** or **greater than** the current interval (using start values).
 
-### Decision logic
+### [49:02](https://youtu.be/-taB2UY9O3g?t=2942) Decision logic
 
 - If no overlap **and** new interval is less than current → add new interval to king array, then add current.
 - If no overlap **and** new interval is greater than current → add current to king array, continue iterating.
 - Continue this until you've placed the new interval and finished iterating.
 
-### Example walk-through (`[1, 3]`, `[6, 9]` + `[4, 5]`)
+### [39:38](https://youtu.be/-taB2UY9O3g?t=2378) Example walk-through (`[1, 3]`, `[6, 9]` + `[4, 5]`)
 
 1. Index 0 = `[1, 3]`. Is `4` between 1 and 3? No. Is `[4, 5]` greater than `[1, 3]`? Yes. Add `[1, 3]` to result. Continue.
 2. Index 1 = `[6, 9]`. Is `4` between 6 and 9? No. Is `[4, 5]` less than `[6, 9]`? Yes. Add `[4, 5]` to result, then add `[6, 9]`.
@@ -903,7 +909,7 @@ For each interval, check whether the new interval is **less than** or **greater 
 
 ---
 
-## Useful Python Index Notation
+## [36:47](https://youtu.be/-taB2UY9O3g?t=2207) [approx] Useful Python Index Notation
 
 Brian's tip:
 
@@ -918,36 +924,36 @@ Alternatively, since each interval is just a 2-element list, you can also use `[
 
 ---
 
-## Other Approaches Considered
+## [3:36](https://youtu.be/-taB2UY9O3g?t=216) Other Approaches Considered
 
-### Mindy's dictionary idea
+### [3:36](https://youtu.be/-taB2UY9O3g?t=216) Mindy's dictionary idea
 
 Store intervals as dictionary entries with the start as the key and the rest of the values as the value. Concept is interesting but complicates the merge logic. Not pursued, but the **idea** of using a different data structure to organize the intervals is worth keeping in mind.
 
-### Brian's list-of-lists loop with index notation
+### [43:41](https://youtu.be/-taB2UY9O3g?t=2621) [approx] Brian's list-of-lists loop with index notation
 
 Instead of explicit `[0]` / `[1]` access, use Python's list-of-lists semantics directly. Same approach, cleaner notation.
 
 ---
 
-## The Big Lesson: Stay In Pseudo Code Longer
+## [52:54](https://youtu.be/-taB2UY9O3g?t=3174) The Big Lesson: Stay In Pseudo Code Longer
 
 > "I've gone through and rewritten this portion several times. I added a new step at the beginning. I rewrote this part two or three times. I rewrote this part twice. Now I have a game plan I've been able to modify very quickly. Whereas if this was code, I'd be worried about syntax, implementation, correct order of operations."
 
-### Why it matters
+### [37:24](https://youtu.be/-taB2UY9O3g?t=2244) Why it matters
 
 - Once you're in code, you're locked into "I have to make this code work" mode.
 - Pseudo code is **cheap to edit** — you can rewrite an approach in 30 seconds.
 - Rewriting code takes minutes.
 - Spending 80% of an interview in comments is fine **as long as** you're confident the resulting code will run when you finally write it.
 
-### When to start over vs tweak
+### [38:38](https://youtu.be/-taB2UY9O3g?t=2318) When to start over vs tweak
 
 - A few small bugs in code → debug and tweak.
 - Realized the whole approach was wrong → wipe it, go back to pseudo code, start over.
 - The longer you spend tweaking a bad approach, the more time you waste.
 
-### What the coach has seen
+### [55:22](https://youtu.be/-taB2UY9O3g?t=3322) What the coach has seen
 
 - 10 minutes of pseudo code → 2 minutes of code → all test cases pass.
 - 5 minutes of pseudo code → 5 minutes of code → all pass.
@@ -955,7 +961,7 @@ Instead of explicit `[0]` / `[1]` access, use Python's list-of-lists semantics d
 
 ---
 
-## The Easy → Hard Strategy
+## [34:13](https://youtu.be/-taB2UY9O3g?t=2053) The Easy → Hard Strategy
 
 When a problem has an "easy" base case and a "hard" extension (like the merging here):
 
@@ -966,24 +972,234 @@ When a problem has an "easy" base case and a "hard" extension (like the merging 
 
 ---
 
-## Brute Force First, Always
+## [38:26](https://youtu.be/-taB2UY9O3g?t=2306) Brute Force First, Always
 
 Even though Insert Interval has elegant solutions, the coach is OK with starting with the worst-performing brute force as long as it works:
 
 > "If your brute force solution that gets all the test cases passing is the worst performance, both time and space — through the charts awful — I could care less as long as it passes all the test cases. The next step is coming back and saying, 'How can I make that better?'"
 
+---
+---
+
+# Mock Interview — Top K Frequent Elements (2025-07-27c)
+Source: https://youtu.be/UR7nTnf7ENo
+
+Continuation of the Sunday session. After Contains Duplicate, the group does a pseudo-code-only mock interview on **Top K Frequent Elements** (medium). Volunteer: Rebecca.
 
 ---
 
+## [21:53](https://youtu.be/UR7nTnf7ENo?t=1313) Contains Duplicate — Final Approaches Discussed
+
+Three different approaches surfaced for the warm-up problem:
+
+### [1:50](https://youtu.be/UR7nTnf7ENo?t=110) [approx] Approach 1: Nested Loop with Count
+
+```python
+for i in range(len(nums)):
+    if nums.count(nums[i]) > 1:
+        return True
+return False
+```
+
+- **Time:** O(n²)
+- Brute force, simple to write.
+
+### [3:41](https://youtu.be/UR7nTnf7ENo?t=221) [approx] Approach 2: Hashmap / Set (Mindy's suggestion)
+
+```python
+seen = set()
+for num in nums:
+    if num in seen:
+        return True
+    seen.add(num)
+return False
+```
+
+- **Time:** O(n)
+- **Space:** O(n)
+- **Optimal.** Single loop, set lookup is O(1).
+
+### [5:32](https://youtu.be/UR7nTnf7ENo?t=332) [approx] Approach 3: Sort + Adjacent Comparison
+
+```python
+nums.sort()
+for i in range(len(nums) - 1):
+    if nums[i] == nums[i + 1]:
+        return True
+return False
+```
+
+- **Time:** O(n log n) — dominated by the sort.
+- **Space:** O(1) (or O(n) depending on the sort's implementation).
+- Worse than the hashmap, but better than brute force.
+
+### [7:22](https://youtu.be/UR7nTnf7ENo?t=442) [approx] Big-O comparison
+
+- Brute force: O(n²) ❌
+- Sort + check: O(n log n) ⚠️
+- Hashmap: O(n) ✅
+
+### [9:13](https://youtu.be/UR7nTnf7ENo?t=553) [approx] A note on "shortcutting" by digit range
+
+One participant suggested: "Since digits 0-9 are limited, can we exploit that?" The coach pointed out: **values can be -10⁹ to 10⁹**, so this isn't a finite digit set. The example uses small numbers, but the constraints allow much larger values. Always check the constraints before assuming a shortcut.
+
+---
+
+## [30:05](https://youtu.be/UR7nTnf7ENo?t=1805) Problem 2: Top K Frequent Elements (Medium)
+
+### [30:05](https://youtu.be/UR7nTnf7ENo?t=1805) Problem statement
+
+Given an integer array `nums` and an integer `k`, return the **k most frequent elements**. You may return the answer in any order.
+
+### [14:45](https://youtu.be/UR7nTnf7ENo?t=885) [approx] Examples
+
+- `nums = [1, 1, 1, 2, 2, 3]`, `k = 2` → `[1, 2]`
+- `nums = [1]`, `k = 1` → `[1]`
+
+### [35:23](https://youtu.be/UR7nTnf7ENo?t=2123) Critical clarification (Rebecca initially missed)
+
+`k` is **not** how many numbers are duplicated. `k` is the **count of the most frequent values you should return**.
+
+- `k = 2` means "return the 2 most frequent values."
+- For `[1, 1, 1, 2, 2, 3]`: 1 appears 3 times, 2 appears 2 times, 3 appears once. The top 2 most frequent are 1 and 2.
+- Rebecca initially thought `k = 2` meant "two values appeared more than once," which would be a totally different problem.
+
+### [18:27](https://youtu.be/UR7nTnf7ENo?t=1107) [approx] Walking through a harder example
+
+If the input were `[1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 4]` with `k = 2`:
+
+- Frequencies: `{1: 3, 2: 2, 3: 1, 4: 5}`
+- Top 2 most frequent: **4 and 1** (4 has 5 occurrences, 1 has 3).
+- Output: `[1, 4]` or `[4, 1]` (order doesn't matter).
+
+> The key word is **frequency**, not **value**. Sort the unique values by their frequency, then take the top k.
+
+---
+
+## [28:26](https://youtu.be/UR7nTnf7ENo?t=1706) Rebecca's Pseudo Code Approach
+
+### [28:26](https://youtu.be/UR7nTnf7ENo?t=1706) Step 1: Restate the problem in your own words
+
+```
+nums = array of integers
+k = how many of the most frequent numbers to return
+output = the k values that occur most often
+```
+
+### [39:10](https://youtu.be/UR7nTnf7ENo?t=2350) Step 2: Identify the data structure
+
+- Build a **dictionary (hashmap)** mapping each unique value to its frequency count.
+- Iterate through `nums`, increment the count for each value in the dictionary.
+
+### [36:08](https://youtu.be/UR7nTnf7ENo?t=2168) Step 3: Find the top k
+
+- After building the frequency dictionary, find the k entries with the highest counts.
+- Return those k keys.
+
+### [33:08](https://youtu.be/UR7nTnf7ENo?t=1988) Step 4: Pseudo code
+
+```
+loop through nums to find duplicate numbers
+create dictionary
+when you find a duplicate, increment count in dictionary
+loop through dictionary to find the k highest counts
+return those k values
+```
+
+This is exactly the right shape for the optimal solution. The remaining work is just translating it to actual Python.
+
+---
+
+## [29:31](https://youtu.be/UR7nTnf7ENo?t=1771) [approx] Implementing Top K Frequent (next steps for Rebecca)
+
+### [31:22](https://youtu.be/UR7nTnf7ENo?t=1882) [approx] Step 1: Build the frequency dictionary
+
+```python
+from collections import Counter
+freq = Counter(nums)  # or build manually with a dict
+```
+
+### [33:13](https://youtu.be/UR7nTnf7ENo?t=1993) [approx] Step 2: Sort or select the top k
+
+Several Python options:
+
+- `sorted(freq, key=freq.get, reverse=True)[:k]`
+- `freq.most_common(k)` — returns list of `(value, count)` tuples
+- Heap-based approach for O(n log k) instead of O(n log n)
+
+### [30:46](https://youtu.be/UR7nTnf7ENo?t=1846) Big-O for the optimal hashmap + sort approach
+
+- **Time:** O(n log n) (the sort dominates)
+- **Space:** O(n) (the dictionary)
+
+A heap-based approach can get this down to O(n log k), which matters when k is much smaller than n.
+
+---
+
+## [45:42](https://youtu.be/UR7nTnf7ENo?t=2742) The New Mock Interview Format Worked
+
+> Mindy: "I think this was a really effective session."
+>
+> Coach: "I agree. Thank you for the suggestion, Mindy."
+
+### [38:45](https://youtu.be/UR7nTnf7ENo?t=2325) [approx] Why pseudo-code-only is better (for now)
+
+- **Removes the freeze-up trap.** Rebecca admitted she "couldn't even think of the word 'loop' for a minute" when put on the spot. Without the pressure of code, she could keep thinking.
+- **Builds the planning muscle** that students under-practice.
+- **Builds presentation confidence** without the secondary pressure of syntax errors.
+- Once participants are confident at this level, they can graduate to coding mock interviews.
+
+### [30:46](https://youtu.be/UR7nTnf7ENo?t=1846) Rebecca's success
+
+Even though she froze briefly, she:
+
+- Restated the problem in her own words.
+- Realized her initial assumption about `k` was wrong (with a hint).
+- Pivoted her approach from "just find duplicates" to "count frequencies and return top k."
+- Identified a dictionary as the right data structure.
+- Outlined the next steps clearly.
+
+That's exactly what a good interviewer wants to see — adaptability and clear thinking under pressure.
+
+---
+
+## [43:14](https://youtu.be/UR7nTnf7ENo?t=2594) Q&A: Test Plan + Print Statements in the Real Interview
+
+**Q:** "For the technical interview, do I still need to print things out and write a plan first?"
+
+**A:** Not required, but **highly recommended**.
+
+- Following your steps as you practice builds the muscle so it becomes natural.
+- Print statements save more time than they cost — you catch bugs immediately instead of after writing 30 lines.
+- The 15–20 minute time limit feels short, but if you've been practicing the full process, you'll fit within it.
+
+**Q:** "It took me 15 minutes just to read an easy problem. Will I get faster?"
+
+**A:** Yes, but reading time also depends on the problem itself. Some problems are intentionally tricky and confusing — no amount of practice makes them faster to digest. What you can practice is **pulling out actionable information** quickly: what's the input, what's the output, what are the constraints, what's the goal in one sentence.
+
+> "If they want to make it tricky and confusing, it's going to be tricky and confusing. There's no amount of practice that can make the problem itself easier to digest."
+
+---
+
+## [43:09](https://youtu.be/UR7nTnf7ENo?t=2589) Recap: 15-Minute Interview Time
+
+- Joy of Coding tech interview: **15–20 minutes** for one easy HackerRank problem.
+- Practice within that window, but don't sacrifice quality steps to chase speed.
+- Speed comes from **practiced steps**, not from rushing.
+
+---
+---
+
 # Mock Interview — Contains Duplicate (2025-07-27b)
+Source: https://youtu.be/gyW2s5ERvM0
 
 Sunday session: pseudo code walkthrough of LeetCode's **Contains Duplicate** (easy). New rule going forward: **mock interviews will be pseudo-code only — no coding** until further notice.
 
 ---
 
-## Q&A
+## [0:28](https://youtu.be/gyW2s5ERvM0?t=28) Q&A
 
-### Ice Cream Parlor felt harder than "easy"
+### [0:28](https://youtu.be/gyW2s5ERvM0?t=28) Ice Cream Parlor felt harder than "easy"
 
 Rebecca timed herself reading the Ice Cream Parlor problem and it took 15 minutes just to digest it — and the goal for an easy problem in the interview is to **finish in 15 minutes**.
 
@@ -994,18 +1210,18 @@ Rebecca timed herself reading the Ice Cream Parlor problem and it took 15 minute
 
 ---
 
-## New Mock Interview Format
+## [4:30](https://youtu.be/gyW2s5ERvM0?t=270) New Mock Interview Format
 
 > "I want to remove the barrier of jumping into code. We all have this tendency to just dive into the editor. For mock interviews going forward, I want everyone to focus exclusively on **pseudo code only** — no real code at all."
 
-### What this means
+### [2:27](https://youtu.be/gyW2s5ERvM0?t=147) [approx] What this means
 
 - Read and digest the problem.
 - Pull out what we can — observations, assumptions, constraints.
 - Write pseudo code: explain the problem, present your understanding, lay out steps.
 - **Stop** at the point where you would normally start writing code.
 
-### Why
+### [10:10](https://youtu.be/gyW2s5ERvM0?t=610) Why
 
 - Practice the underused skill of decomposing problems before coding.
 - Avoid the trap of "I'm in code now, I have to make this work."
@@ -1013,24 +1229,24 @@ Rebecca timed herself reading the Ice Cream Parlor problem and it took 15 minute
 
 ---
 
-## Problem: Contains Duplicate
+## [5:25](https://youtu.be/gyW2s5ERvM0?t=325) Problem: Contains Duplicate
 
 Given an integer array `nums`, return `True` if any value appears at least twice, `False` if all elements are distinct.
 
-### Examples
+### [6:02](https://youtu.be/gyW2s5ERvM0?t=362) Examples
 
 - `[1, 2, 3, 1]` → `True` (1 appears at indices 0 and 3)
 - `[1, 2, 3, 4]` → `False` (all distinct)
 - `[1, 1, 1, 3, 3, 4, 3, 2, 4, 2]` → `True` (multiple repeats)
 
-### Constraints
+### [5:44](https://youtu.be/gyW2s5ERvM0?t=344) [approx] Constraints
 
 - `nums.length`: 1 to 10⁵ (100,000)
 - Values: -10⁹ to 10⁹
 
 ---
 
-## Pulling From the Problem
+## [7:28](https://youtu.be/gyW2s5ERvM0?t=448) Pulling From the Problem
 
 - **Input:** integer array.
 - **Goal:** find the **frequency** of any given number in the array.
@@ -1039,7 +1255,7 @@ Given an integer array `nums`, return `True` if any value appears at least twice
 
 ---
 
-## Approach 1: Loop With Count (Brian's idea)
+## [7:23](https://youtu.be/gyW2s5ERvM0?t=443) [approx] Approach 1: Loop With Count (Brian's idea)
 
 ```python
 for i in range(len(nums)):
@@ -1048,24 +1264,24 @@ for i in range(len(nums)):
 return False
 ```
 
-### How it works
+### [10:42](https://youtu.be/gyW2s5ERvM0?t=642) How it works
 
 - For each value in the array, count how many times it appears in the full array.
 - If the count is greater than 1, return `True` immediately.
 - After the loop, if no duplicates were found, return `False`.
 
-### Big-O
+### [7:28](https://youtu.be/gyW2s5ERvM0?t=448) Big-O
 
 - **Time:** O(n²) — `list.count(x)` is O(n), and we call it n times.
 - **Space:** O(1)
 
-### Tradeoff
+### [12:55](https://youtu.be/gyW2s5ERvM0?t=775) Tradeoff
 
 Simple, easy to write, but inefficient. Brute force.
 
 ---
 
-## Approach 2: Set / Hashmap (the optimal answer)
+## [10:10](https://youtu.be/gyW2s5ERvM0?t=610) Approach 2: Set / Hashmap (the optimal answer)
 
 The classic solution to this kind of problem is to use a **set** to track values seen so far.
 
@@ -1091,7 +1307,7 @@ If the set version of the array has fewer elements than the original, there were
 
 ---
 
-## Why This Problem Is Easy
+## [11:29](https://youtu.be/gyW2s5ERvM0?t=689) [approx] Why This Problem Is Easy
 
 - One condition to check.
 - One pass through the data is sufficient with the right data structure.
@@ -1101,230 +1317,23 @@ The challenge for someone new to LeetCode is **knowing the set/hashmap pattern**
 
 ---
 
-## What To Practice
+## [3:38](https://youtu.be/gyW2s5ERvM0?t=218) What To Practice
 
 > "Today's mock interview is going to focus on this exact same skill: read the problem, pull out what you can, write some pseudo code, present your understanding, and stop there. No coding. Just the thinking part."
 
 [REVIEW: this transcript ends mid-discussion at line 268, so the actual mock interview portion is not included. The session continues in `Ruby_MockInterview_2025-07-27c.txt`.]
 
-
 ---
-
-# Mock Interview — Top K Frequent Elements (2025-07-27c)
-
-Continuation of the Sunday session. After Contains Duplicate, the group does a pseudo-code-only mock interview on **Top K Frequent Elements** (medium). Volunteer: Rebecca.
-
----
-
-## Contains Duplicate — Final Approaches Discussed
-
-Three different approaches surfaced for the warm-up problem:
-
-### Approach 1: Nested Loop with Count
-
-```python
-for i in range(len(nums)):
-    if nums.count(nums[i]) > 1:
-        return True
-return False
-```
-
-- **Time:** O(n²)
-- Brute force, simple to write.
-
-### Approach 2: Hashmap / Set (Mindy's suggestion)
-
-```python
-seen = set()
-for num in nums:
-    if num in seen:
-        return True
-    seen.add(num)
-return False
-```
-
-- **Time:** O(n)
-- **Space:** O(n)
-- **Optimal.** Single loop, set lookup is O(1).
-
-### Approach 3: Sort + Adjacent Comparison
-
-```python
-nums.sort()
-for i in range(len(nums) - 1):
-    if nums[i] == nums[i + 1]:
-        return True
-return False
-```
-
-- **Time:** O(n log n) — dominated by the sort.
-- **Space:** O(1) (or O(n) depending on the sort's implementation).
-- Worse than the hashmap, but better than brute force.
-
-### Big-O comparison
-
-- Brute force: O(n²) ❌
-- Sort + check: O(n log n) ⚠️
-- Hashmap: O(n) ✅
-
-### A note on "shortcutting" by digit range
-
-One participant suggested: "Since digits 0-9 are limited, can we exploit that?" The coach pointed out: **values can be -10⁹ to 10⁹**, so this isn't a finite digit set. The example uses small numbers, but the constraints allow much larger values. Always check the constraints before assuming a shortcut.
-
----
-
-## Problem 2: Top K Frequent Elements (Medium)
-
-### Problem statement
-
-Given an integer array `nums` and an integer `k`, return the **k most frequent elements**. You may return the answer in any order.
-
-### Examples
-
-- `nums = [1, 1, 1, 2, 2, 3]`, `k = 2` → `[1, 2]`
-- `nums = [1]`, `k = 1` → `[1]`
-
-### Critical clarification (Rebecca initially missed)
-
-`k` is **not** how many numbers are duplicated. `k` is the **count of the most frequent values you should return**.
-
-- `k = 2` means "return the 2 most frequent values."
-- For `[1, 1, 1, 2, 2, 3]`: 1 appears 3 times, 2 appears 2 times, 3 appears once. The top 2 most frequent are 1 and 2.
-- Rebecca initially thought `k = 2` meant "two values appeared more than once," which would be a totally different problem.
-
-### Walking through a harder example
-
-If the input were `[1, 1, 1, 2, 2, 3, 4, 4, 4, 4, 4]` with `k = 2`:
-
-- Frequencies: `{1: 3, 2: 2, 3: 1, 4: 5}`
-- Top 2 most frequent: **4 and 1** (4 has 5 occurrences, 1 has 3).
-- Output: `[1, 4]` or `[4, 1]` (order doesn't matter).
-
-> The key word is **frequency**, not **value**. Sort the unique values by their frequency, then take the top k.
-
----
-
-## Rebecca's Pseudo Code Approach
-
-### Step 1: Restate the problem in your own words
-
-```
-nums = array of integers
-k = how many of the most frequent numbers to return
-output = the k values that occur most often
-```
-
-### Step 2: Identify the data structure
-
-- Build a **dictionary (hashmap)** mapping each unique value to its frequency count.
-- Iterate through `nums`, increment the count for each value in the dictionary.
-
-### Step 3: Find the top k
-
-- After building the frequency dictionary, find the k entries with the highest counts.
-- Return those k keys.
-
-### Step 4: Pseudo code
-
-```
-loop through nums to find duplicate numbers
-create dictionary
-when you find a duplicate, increment count in dictionary
-loop through dictionary to find the k highest counts
-return those k values
-```
-
-This is exactly the right shape for the optimal solution. The remaining work is just translating it to actual Python.
-
----
-
-## Implementing Top K Frequent (next steps for Rebecca)
-
-### Step 1: Build the frequency dictionary
-
-```python
-from collections import Counter
-freq = Counter(nums)  # or build manually with a dict
-```
-
-### Step 2: Sort or select the top k
-
-Several Python options:
-
-- `sorted(freq, key=freq.get, reverse=True)[:k]`
-- `freq.most_common(k)` — returns list of `(value, count)` tuples
-- Heap-based approach for O(n log k) instead of O(n log n)
-
-### Big-O for the optimal hashmap + sort approach
-
-- **Time:** O(n log n) (the sort dominates)
-- **Space:** O(n) (the dictionary)
-
-A heap-based approach can get this down to O(n log k), which matters when k is much smaller than n.
-
----
-
-## The New Mock Interview Format Worked
-
-> Mindy: "I think this was a really effective session."
->
-> Coach: "I agree. Thank you for the suggestion, Mindy."
-
-### Why pseudo-code-only is better (for now)
-
-- **Removes the freeze-up trap.** Rebecca admitted she "couldn't even think of the word 'loop' for a minute" when put on the spot. Without the pressure of code, she could keep thinking.
-- **Builds the planning muscle** that students under-practice.
-- **Builds presentation confidence** without the secondary pressure of syntax errors.
-- Once participants are confident at this level, they can graduate to coding mock interviews.
-
-### Rebecca's success
-
-Even though she froze briefly, she:
-
-- Restated the problem in her own words.
-- Realized her initial assumption about `k` was wrong (with a hint).
-- Pivoted her approach from "just find duplicates" to "count frequencies and return top k."
-- Identified a dictionary as the right data structure.
-- Outlined the next steps clearly.
-
-That's exactly what a good interviewer wants to see — adaptability and clear thinking under pressure.
-
----
-
-## Q&A: Test Plan + Print Statements in the Real Interview
-
-**Q:** "For the technical interview, do I still need to print things out and write a plan first?"
-
-**A:** Not required, but **highly recommended**.
-
-- Following your steps as you practice builds the muscle so it becomes natural.
-- Print statements save more time than they cost — you catch bugs immediately instead of after writing 30 lines.
-- The 15–20 minute time limit feels short, but if you've been practicing the full process, you'll fit within it.
-
-**Q:** "It took me 15 minutes just to read an easy problem. Will I get faster?"
-
-**A:** Yes, but reading time also depends on the problem itself. Some problems are intentionally tricky and confusing — no amount of practice makes them faster to digest. What you can practice is **pulling out actionable information** quickly: what's the input, what's the output, what are the constraints, what's the goal in one sentence.
-
-> "If they want to make it tricky and confusing, it's going to be tricky and confusing. There's no amount of practice that can make the problem itself easier to digest."
-
----
-
-## Recap: 15-Minute Interview Time
-
-- Joy of Coding tech interview: **15–20 minutes** for one easy HackerRank problem.
-- Practice within that window, but don't sacrifice quality steps to chase speed.
-- Speed comes from **practiced steps**, not from rushing.
-
-
 ---
 
 # Ruby Mock Interview — August 3, 2025
+Source: https://youtu.be/vqK-YLBcIF0
 
 *Nailing the Tech Interview — Sunday session*
 
-## Opening Questions
+## [0:00](https://youtu.be/vqK-YLBcIF0?t=0) [approx] Opening Questions
 
-### Are vector databases common in technical interviews?
+### [3:41](https://youtu.be/vqK-YLBcIF0?t=221) [approx] Are vector databases common in technical interviews?
 
 Short answer: **no**, not for entry-level or Joy of Coding-style interviews.
 
@@ -1334,29 +1343,29 @@ Short answer: **no**, not for entry-level or Joy of Coding-style interviews.
 
 ---
 
-## Revisit: Maximum Average Subarray (Sliding Window)
+## [27:54](https://youtu.be/vqK-YLBcIF0?t=1674) Revisit: Maximum Average Subarray (Sliding Window)
 
 Last session's problem was revisited to walk through the **sliding window** approach and to demonstrate writing more **code-adjacent pseudo code** (at Lisa's request).
 
-### Problem statement
+### [7:03](https://youtu.be/vqK-YLBcIF0?t=423) Problem statement
 
 You are given an integer array `nums` of `n` elements and an integer `k`. Find a **contiguous subarray of length `k`** with the **maximum average value**, and return that value. Any calculation error less than `10^-5` is accepted.
 
 **Example:** `nums = [1, 12, -5, -6, 50, 3]`, `k = 4` → output `12.75` (the window `[12, -5, -6, 50]` gives the highest average).
 
-### Constraints
+### [14:45](https://youtu.be/vqK-YLBcIF0?t=885) [approx] Constraints
 
 - `1 <= k <= 10^5`
 - `k <= nums.length <= 10^5`
 - `-10^4 <= nums[i] <= 10^4`
 - There is always at least one valid answer.
 
-### Two approaches discussed
+### [18:26](https://youtu.be/vqK-YLBcIF0?t=1106) [approx] Two approaches discussed
 
 - **Brute force — O(n²).** Nested loops. For each starting index, sum the next `k` values and compare averages.
 - **Sliding window — O(n).** Set a window of size `k`, slide it by one each step, maintain a running sum (add new, subtract old).
 
-### Code-adjacent pseudo code for sliding window
+### [22:08](https://youtu.be/vqK-YLBcIF0?t=1328) [approx] Code-adjacent pseudo code for sliding window
 
 ```
 # Initialize max_average carefully — keep constraints in mind.
@@ -1385,18 +1394,18 @@ Key reminders:
 
 ---
 
-## Python 2 vs Python 3 Gotcha: Integer Division
+## [15:46](https://youtu.be/vqK-YLBcIF0?t=946) Python 2 vs Python 3 Gotcha: Integer Division
 
 Brian showed his solution and hit a bug: he kept getting `12` instead of `12.75` for the first test case.
 
-### What happened
+### [29:30](https://youtu.be/vqK-YLBcIF0?t=1770) [approx] What happened
 
 - Brian was on **"Python"** (Python 2) on LeetCode, not **Python 3**.
 - His initial `sum_one = sum(nums[:k])` returned an **integer**, so downstream arithmetic stayed in integer math and truncated the answer.
 - Wrapping with `float(sum(nums[:k]))` fixed it in Python 2.
 - Switching to **Python 3** made it work without the explicit `float()` cast because the function signature included a return type annotation (`-> float`), and Python 3's division operator `/` already returns a float.
 
-### Takeaway
+### [19:58](https://youtu.be/vqK-YLBcIF0?t=1198) Takeaway
 
 - Python 2 uses **integer division** when both operands are ints.
 - Python 3's `/` always returns a float; integer division is `//`.
@@ -1404,7 +1413,7 @@ Brian showed his solution and hit a bug: he kept getting `12` instead of `12.75`
 
 > "There's been many times I've worked on a project, run it, it looks good, come back the next day and it's in scientific notation or something, and I have to figure out why."
 
-### Brian's working sliding-window code (Python)
+### [36:53](https://youtu.be/vqK-YLBcIF0?t=2213) [approx] Brian's working sliding-window code (Python)
 
 ```python
 class Solution:
@@ -1417,7 +1426,7 @@ class Solution:
         return max_sum / k
 ```
 
-### Runtime discussion
+### [39:06](https://youtu.be/vqK-YLBcIF0?t=2346) Runtime discussion
 
 - Submitted at ~73ms. Not the fastest on the board but acceptable.
 - Discussed whether initializing with `float('-inf')` would be faster — probably not, because you'd still need to compute the first window's sum somewhere.
@@ -1426,11 +1435,11 @@ class Solution:
 
 ---
 
-## Walkthrough: Top K Frequent Elements (Brian's Solution)
+## [1:06:05](https://youtu.be/vqK-YLBcIF0?t=3965) Walkthrough: Top K Frequent Elements (Brian's Solution)
 
 Brian solved **Top K Frequent Elements** and brought it in because he had a question about the output ordering.
 
-### Approach
+### [38:07](https://youtu.be/vqK-YLBcIF0?t=2287) Approach
 
 - Use `collections.Counter` on the input list to get `{num: frequency}`.
 - Build a **list of lists** (LOL) sized `len(nums) + 1`, where index `i` holds all numbers that appear `i` times (bucket sort by frequency).
@@ -1452,12 +1461,12 @@ class Solution:
         return ans
 ```
 
-### Bug Brian hit
+### [37:03](https://youtu.be/vqK-YLBcIF0?t=2223) Bug Brian hit
 
 - Originally sized the bucket array `len(c)` (length of the counter) and got **IndexError: list index out of range**.
 - A number with frequency `N` needs index `N` to exist in the bucket list, and frequencies can equal `len(nums)`. So the bucket array must be `len(nums) + 1`.
 
-### Confusion about output order
+### [1:03:03](https://youtu.be/vqK-YLBcIF0?t=3783) Confusion about output order
 
 Brian saw `[8, 4]` in the output rather than `[4, 8]` and wondered why.
 
@@ -1467,7 +1476,7 @@ Brian saw `[8, 4]` in the output rather than `[4, 8]` and wondered why.
 
 > "The uniqueness is hard to build constraints around. Imagine writing all the test cases for this — I feel bad for whoever did that."
 
-### Feedback on the approach
+### [12:26](https://youtu.be/vqK-YLBcIF0?t=746) Feedback on the approach
 
 - **It works**, and the runtime is solid.
 - But it's doing more than necessary — the LOL bucket approach is clever, but the code is hard to read with many overlapping variables (`c`, `lol`, `j`, `num`, `ans`).
@@ -1479,7 +1488,7 @@ Brian's solution will be explored further in Wednesday's Solutions Deep Dive.
 
 ---
 
-## Key Takeaways
+## [11:24](https://youtu.be/vqK-YLBcIF0?t=684) Key Takeaways
 
 - **Sliding window** reduces O(n²) brute-force subarray problems to O(n) by maintaining a running sum and adjusting at the edges.
 - Always initialize max/min trackers with **safe sentinels** like `float('-inf')` — not `0`, which fails on negative inputs.
@@ -1489,18 +1498,19 @@ Brian's solution will be explored further in Wednesday's Solutions Deep Dive.
 - For "top k" problems, **bucket sort by frequency** is O(n) but can be less readable than **sort + slice** at O(n log n). Readability often wins in interviews.
 - **Always write your return statement** in pseudo code — it forces you to think about the final shape of the answer.
 
-
+---
 ---
 
 # Ruby Mock Interview — August 10, 2025
+Source: https://youtu.be/iks_9_BzQQg
 
 *Nailing the Tech Interview — Sunday session*
 
-## HackerRank Certifications: Worth It?
+## [18:23](https://youtu.be/iks_9_BzQQg?t=1103) HackerRank Certifications: Worth It?
 
 Extended discussion on whether HackerRank certifications are worth pursuing.
 
-### TLDR
+### [5:08](https://youtu.be/iks_9_BzQQg?t=308) TLDR
 
 - **Most interviewers and companies don't pay much attention to them.**
 - They're **fun** and don't hurt to have on a resume or LinkedIn, but they rarely move the needle.
@@ -1508,7 +1518,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 > "I don't think companies really care about them too much. Not having them won't hurt you."
 
-### Available HackerRank certification tracks
+### [2:22](https://youtu.be/iks_9_BzQQg?t=142) Available HackerRank certification tracks
 
 - **Software Engineer Intern** — Problem Solving + SQL.
 - **Software Engineer** — Problem Solving + SQL + REST API.
@@ -1519,13 +1529,13 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 - **Problem Solving** — Basic, Intermediate, Advanced.
 - **PowerShell**, **Selenium**, **Tech Communication**, etc.
 
-### What the Problem Solving levels correspond to
+### [29:09](https://youtu.be/iks_9_BzQQg?t=1749) What the Problem Solving levels correspond to
 
 - **Basic** — roughly easy-level HackerRank problems.
 - **Intermediate** — hashmaps, stacks, queues, Dijkstra, optimal solutions (medium level).
 - **Advanced** — trees, graph traversal, shortest path, dynamic programming (hard level).
 
-### Python intermediate cert topic list
+### [12:36](https://youtu.be/iks_9_BzQQg?t=756) [approx] Python intermediate cert topic list
 
 - Closures, decorators
 - Advanced object-oriented programming
@@ -1536,7 +1546,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 > "That would basically be like a really good summary of everything you learn in mod 2, scaled into one certification. I imagine it might be kind of tricky to do within an hour."
 
-### When certifications *might* help
+### [8:31](https://youtu.be/iks_9_BzQQg?t=511) When certifications *might* help
 
 - If you've worked in a niche area (e.g., **Selenium** for QA automation) and are applying for a role that specifically asks for that skill, the cert might give a slight edge.
 - If everything else is equal between two candidates, certs could tip the scales.
@@ -1545,7 +1555,7 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 ---
 
-## Q&A: Practicing for Certification Exams
+## [13:46](https://youtu.be/iks_9_BzQQg?t=826) Q&A: Practicing for Certification Exams
 
 **Mina asked** about sites where you can pay a membership and take mock certification exams repeatedly until the real exam.
 
@@ -1554,14 +1564,14 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 
 ---
 
-## Tech Interview Structure (Joy of Coding)
+## [15:53](https://youtu.be/iks_9_BzQQg?t=953) Tech Interview Structure (Joy of Coding)
 
 - Joy of Coding's technical interview uses **HackerRank only**, not LeetCode.
 - HackerRank problems at **easy level** give you all the info you need. LeetCode intentionally leaves info out, forcing more assumption-checking — good practice, but harder.
 - **Readiness signal:** You can solve roughly **3 easy problems in a row under a 20-minute time limit**.
 - The **Problem Solving track** on HackerRank covers everything from Joy of Coding mods 1 and 2.
 
-### Topics that may appear on the tech interview
+### [18:17](https://youtu.be/iks_9_BzQQg?t=1097) Topics that may appear on the tech interview
 
 - Arrays and lists
 - Dictionaries
@@ -1572,17 +1582,17 @@ Extended discussion on whether HackerRank certifications are worth pursuing.
 - Sliding window / basic algorithms
 - (File I/O is listed in mod 2 but will **not** be tested.)
 
-### Recommended readiness benchmark
+### [22:32](https://youtu.be/iks_9_BzQQg?t=1352) Recommended readiness benchmark
 
 Complete mod 2 through **projects 2 or 3**, then you're ready to try a mock interview.
 
 ---
 
-## Mock Interview: Jumping on the Clouds (Lisa)
+## [20:15](https://youtu.be/iks_9_BzQQg?t=1215) Mock Interview: Jumping on the Clouds (Lisa)
 
 Lisa volunteered for a pseudo-code mock interview on the HackerRank **Jumping on the Clouds** problem.
 
-### Problem summary
+### [50:23](https://youtu.be/iks_9_BzQQg?t=3023) Problem summary
 
 You're given an array of 0s and 1s representing clouds:
 
@@ -1591,26 +1601,26 @@ You're given an array of 0s and 1s representing clouds:
 
 Starting at index 0, you can jump **+1 or +2** each move. Find the **minimum number of jumps** to reach the last index.
 
-### Constraints
+### [27:38](https://youtu.be/iks_9_BzQQg?t=1658) Constraints
 
 - `2 <= n <= 100` where `n` is the array length
 - `c[i]` is `0` or `1`
 - `c[0] == 0` and `c[n-1] == 0` — **first and last are always safe**
 - It is always possible to win the game
 
-### Key insight from the constraints
+### [56:25](https://youtu.be/iks_9_BzQQg?t=3385) Key insight from the constraints
 
 > "It is always possible to win the game."
 
 Because the starting and ending positions are always `0`, and you can always jump `+1` or `+2` from any safe cell, **you never need to track history or backtrack**. No edge case where "I jumped two before, now I'm stuck."
 
-### Assumptions you can safely make
+### [44:08](https://youtu.be/iks_9_BzQQg?t=2648) [approx] Assumptions you can safely make
 
 - First index is always `0` (safe).
 - Last index is always `0` (safe) — you'll always land on it.
 - Minimum array length is 2, so at least one jump is possible.
 
-### Game plan (pseudo code)
+### [47:17](https://youtu.be/iks_9_BzQQg?t=2837) [approx] Game plan (pseudo code)
 
 ```
 # Given: c = array of 0s and 1s, starting at index 0
@@ -1628,7 +1638,7 @@ while i < len(c) - 1:
 return steps
 ```
 
-### Coaching feedback for Lisa
+### [52:13](https://youtu.be/iks_9_BzQQg?t=3133) Coaching feedback for Lisa
 
 - **"Least number of jumps" implies a preference** for the `+2` jump whenever it's safe and in range. Always check the `+2` option first, then fall back to `+1`.
 - When your index progression is **not fixed** (jumping 1 or 2), a **`while` loop** is usually cleaner than `for i in range(...)`. You can technically manipulate `i` inside a for loop, but it hurts readability.
@@ -1637,7 +1647,7 @@ return steps
 
 > "I like that re-summarization of the problem — it makes it easier to say 'all right, you're given an array of 0 or 1, you can land on a zero, one is not safe, and we want the least amount of jumps.'"
 
-### How to classify this problem
+### [59:44](https://youtu.be/iks_9_BzQQg?t=3584) How to classify this problem
 
 - **Not** a specific algorithmic pattern — no sliding window, no DP trick, no formula.
 - Just **linear iteration with index manipulation**. Straightforward loop + conditionals.
@@ -1645,7 +1655,7 @@ return steps
 
 ---
 
-## Closing Notes
+## [19:20](https://youtu.be/iks_9_BzQQg?t=1160) Closing Notes
 
 - Ruby is **running thin on new problems** to pose, since the group has covered arrays, dictionaries, searching/sorting, linked lists, stacks, queues, hashmaps, and sliding window extensively.
 - Going forward, Sundays will focus more on **mock interviews** rather than lengthy explanation segments, to conserve problems.
@@ -1654,7 +1664,7 @@ return steps
 
 ---
 
-## Key Takeaways
+## [0:08](https://youtu.be/iks_9_BzQQg?t=8) Key Takeaways
 
 - **HackerRank certifications are mostly for fun** — they rarely affect hiring decisions for dev roles.
 - **HackerRank > LeetCode at easy level** for tech interview prep because HackerRank includes all necessary context.
@@ -1664,14 +1674,15 @@ return steps
 - **"Least jumps" = prefer the bigger step** when it's safe and in range.
 - Always resummarize the problem in your own words before jumping into code.
 
-
+---
 ---
 
 # Ruby Mock Interview — August 24, 2025
+Source: https://youtu.be/E2fdp5mDZkE
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: The Low-Code Internship
+## [0:08](https://youtu.be/E2fdp5mDZkE?t=8) Q&A: The Low-Code Internship
 
 A student asked about the **low-code internship** option at Joy of Coding.
 
@@ -1685,18 +1696,18 @@ A student asked about the **low-code internship** option at Joy of Coding.
 
 ---
 
-## Q&A: Problems That Require Outside Research (Magic Square)
+## [4:59](https://youtu.be/E2fdp5mDZkE?t=299) Q&A: Problems That Require Outside Research (Magic Square)
 
 **Mauricio** worked on the **Magic Square** medium problem and discovered that solving it optimally requires knowing specific domain knowledge that isn't in the problem statement.
 
-### What he found
+### [3:46](https://youtu.be/E2fdp5mDZkE?t=226) What he found
 
 - A 3x3 magic square has rows, columns, and diagonals all summing to **15**.
 - There are **only 8 possible 3x3 magic squares** in total.
 - The only way to guarantee a minimum-cost transformation is to **compare against all 8** magic squares, either by hardcoding them or generating all permutations of 1–9 and filtering.
 - Attempts to build a general algorithm without this knowledge led to spaghetti code with no guarantee of finding the minimum.
 
-### Coaching response
+### [8:01](https://youtu.be/E2fdp5mDZkE?t=481) Coaching response
 
 - **Medium and hard problems sometimes require specific prior knowledge** — popular algorithms, math theorems, well-known patterns.
 - This is more common at **FAANG-level interviews** (Google, Amazon, Facebook) than at typical job-hunt interviews.
@@ -1706,22 +1717,22 @@ A student asked about the **low-code internship** option at Joy of Coding.
 
 > "What value would there be in interviewing a candidate to try and stump them? It doesn't make a lot of sense. That's not going to be the vast majority of situations you run into."
 
-### Can you research during an interview?
+### [9:10](https://youtu.be/E2fdp5mDZkE?t=550) Can you research during an interview?
 
 - Generally **no** — looking up an approach during an interview counts as looking up the solution.
 - Mauricio learned the relevant constraint *through research after the fact*, which is fine for learning but wouldn't be allowed live.
 
 ---
 
-## Problem Walkthrough: Best Time to Buy and Sell Stock
+## [14:06](https://youtu.be/E2fdp5mDZkE?t=846) [approx] Problem Walkthrough: Best Time to Buy and Sell Stock
 
 Easy-level problem from LeetCode.
 
-### Problem statement
+### [15:31](https://youtu.be/E2fdp5mDZkE?t=931) Problem statement
 
 Given an array `prices` where `prices[i]` is the stock price on day `i`, pick a **single day to buy** and a **different day in the future to sell** to maximize profit. Return the maximum profit, or `0` if no profit is possible.
 
-### Examples
+### [16:13](https://youtu.be/E2fdp5mDZkE?t=973) Examples
 
 ```
 prices = [7, 1, 5, 3, 6, 4]  ->  5  (buy on day 2 at 1, sell on day 5 at 6)
@@ -1730,20 +1741,20 @@ prices = [7, 6, 4, 3, 1]     ->  0  (monotonically decreasing, no profit)
 
 **Key constraint:** You **cannot sell before you buy** — no time machine.
 
-### Restating the problem
+### [19:01](https://youtu.be/E2fdp5mDZkE?t=1141) Restating the problem
 
 > "Find the greatest difference between any two indices `i` and `j` where `i < j` and `prices[i] < prices[j]`."
 
 Or in plain language: "Find the **lowest** I can buy, and the **highest** I can sell after that index."
 
-### Two subproblems
+### [19:04](https://youtu.be/E2fdp5mDZkE?t=1144) Two subproblems
 
 1. Find two indices satisfying `i < j`.
 2. Among those, find the pair with the **greatest difference**.
 
 ---
 
-### Approach 1: Brute Force — O(n²)
+### [41:03](https://youtu.be/E2fdp5mDZkE?t=2463) Approach 1: Brute Force — O(n²)
 
 **Mauricio's idea:** Nested loop. Outer loop over each starting index `i`; inner loop over `j` from `i + 1` to the end. Track the max profit seen.
 
@@ -1764,7 +1775,7 @@ def maxProfit(prices):
 
 ---
 
-### Approach 2: Track Minimum Price in a Single Pass — O(n)
+### [18:53](https://youtu.be/E2fdp5mDZkE?t=1133) Approach 2: Track Minimum Price in a Single Pass — O(n)
 
 **Mindy's solution** (she had solved it before and been practicing).
 
@@ -1786,11 +1797,11 @@ def maxProfit(prices):
 - **Time:** O(n)
 - **Space:** O(1)
 
-### Why initialize `min_price` to something huge?
+### [19:04](https://youtu.be/E2fdp5mDZkE?t=1144) Why initialize `min_price` to something huge?
 
 Counterintuitive but necessary: we need a sentinel value **higher than any possible input** so the very first real price always replaces it. The problem constraints say prices go up to `10^4`, so `10001` or `float('inf')` both work.
 
-### Walking through the algorithm on `[7, 1, 5, 3, 6, 4]`
+### [43:42](https://youtu.be/E2fdp5mDZkE?t=2622) Walking through the algorithm on `[7, 1, 5, 3, 6, 4]`
 
 | p | min_price | diff = p - min_price | best_diff |
 |---|-----------|----------------------|-----------|
@@ -1803,13 +1814,13 @@ Counterintuitive but necessary: we need a sentinel value **higher than any possi
 
 Return **5**. Correct.
 
-### Why this works even when the global min doesn't give the best profit
+### [4:36](https://youtu.be/E2fdp5mDZkE?t=276) Why this works even when the global min doesn't give the best profit
 
 Ruby tried to break the algorithm by constructing arrays like `[3, 2, 1, 5, 6, ...]` where the global minimum appears mid-array. It still works because **`min_price` is updated *before* the difference is computed** at each step. By the time you reach a potential sell price, `min_price` holds the minimum *up to that point* — which is exactly what you need (you can only sell after you buy).
 
 > "That's pretty sleek. And that's why we set those values outside of the loop first, so that we have something to compare against."
 
-### Style feedback
+### [28:56](https://youtu.be/E2fdp5mDZkE?t=1736) Style feedback
 
 - Very Pythonic — three lines inside a `for` loop. Concise.
 - Ternary-style assignment (`x = a if cond else b`) is idiomatic, but for readability some would prefer a plain `if` statement:
@@ -1823,7 +1834,7 @@ if p < min_price:
 
 ---
 
-### Approach 3: Sliding Window / Two Pointers (Attempted)
+### [43:47](https://youtu.be/E2fdp5mDZkE?t=2627) Approach 3: Sliding Window / Two Pointers (Attempted)
 
 Ruby tried a **two-pointer / sliding window** approach working from both ends inward:
 
@@ -1843,7 +1854,7 @@ while start < end:
 - Ran out of time debugging.
 - Ruby's initial implementation confused index vs. value in the comparison (`if start > end` should be `if prices[start] > prices[end]`).
 
-### Takeaway on sliding window here
+### [21:02](https://youtu.be/E2fdp5mDZkE?t=1262) Takeaway on sliding window here
 
 - Same O(n) complexity as the min-tracking approach.
 - Doesn't obviously improve over it.
@@ -1851,7 +1862,7 @@ while start < end:
 
 ---
 
-## Key Takeaways
+## [10:17](https://youtu.be/E2fdp5mDZkE?t=617) Key Takeaways
 
 - **Start with brute force** to get *a* working solution, then optimize. Do not stall trying to find the perfect solution first.
 - **Single-pass "running minimum/maximum"** is a key pattern for array problems that ask about pairs with constraints like `i < j`.
@@ -1862,16 +1873,17 @@ while start < end:
 - **O(n) is optimal** for problems where you must examine each element at least once — don't waste time looking for O(log n) that doesn't exist.
 - **Research during an interview is not allowed.** Problems requiring deep prior knowledge are rare outside FAANG-level interviews and will not appear in Joy of Coding's technical interview.
 
-
+---
 ---
 
 # Ruby Mock Interview — August 31, 2025
+Source: https://youtu.be/bOgVYYVJGPs
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: When Are You Ready for the Technical Interview?
+## [0:00](https://youtu.be/bOgVYYVJGPs?t=0) [approx] Q&A: When Are You Ready for the Technical Interview?
 
-### The "three in a row" guideline
+### [2:15](https://youtu.be/bOgVYYVJGPs?t=135) [approx] The "three in a row" guideline
 
 - General benchmark: solve **3 easy problems consecutively within 15–20 minutes each**, closer to **15 minutes** being the stronger signal.
 - Also make sure you're getting practice with **medium problems**.
@@ -1879,18 +1891,18 @@ while start < end:
 
 > "It's a good indicator that you *might* be ready. It's hard to say whether someone's ready until they actually take it."
 
-### Extra practice before signing up
+### [1:30](https://youtu.be/bOgVYYVJGPs?t=90) Extra practice before signing up
 
 - **Peer mentor office hours** are a good place to get additional timed practice with feedback before the real interview.
 - You can sign up for the real technical interview at any time, then use peer mentor sessions as warm-ups before your scheduled slot.
 - Rebecca runs peer mentor office hours Mondays 9–10 AM and will either work through a problem the student brings or pick one together.
 
-### Why aim for 15 minutes if 20 passes?
+### [4:32](https://youtu.be/bOgVYYVJGPs?t=272) Why aim for 15 minutes if 20 passes?
 
 - Nerves and pressure during the real interview slow people down.
 - A 15-minute self-pace leaves buffer for interview pressure.
 
-### What happens if you fail the technical interview?
+### [9:02](https://youtu.be/bOgVYYVJGPs?t=542) [approx] What happens if you fail the technical interview?
 
 - You won't be permanently denied.
 - After a failed attempt, Ruby will:
@@ -1899,7 +1911,7 @@ while start < end:
   3. Make **specific recommendations** (mod 1/2 concept review, problem-solving tips, etc.).
 - Once you've worked through those recommendations and are still consistently hitting the 15–20 minute benchmark, you can schedule again.
 
-### Handling "curveball" problems you get stuck on
+### [7:08](https://youtu.be/bOgVYYVJGPs?t=428) Handling "curveball" problems you get stuck on
 
 - It's okay to hit a curveball occasionally and still sign up.
 - When stuck past 20 minutes: **don't immediately look up the solution**. Instead:
@@ -1910,7 +1922,7 @@ while start < end:
 
 > "When I find myself coding just to pass the next test and not generalizing the problem, I feel like I'm going down the wrong rabbit hole."
 
-### The "too many if conditions" smell
+### [12:27](https://youtu.be/bOgVYYVJGPs?t=747) The "too many if conditions" smell
 
 - One or two (maybe three) `if` conditions is normal — even binary search has about three.
 - If you're piling on `if` conditions **to catch specific edge cases one by one**, that's a signal to stop and think of a more **general** approach.
@@ -1918,40 +1930,40 @@ while start < end:
 
 ---
 
-## Breakout Room Experiment: Pseudo Code for "Can Place Flowers"
+## [13:20](https://youtu.be/bOgVYYVJGPs?t=800) Breakout Room Experiment: Pseudo Code for "Can Place Flowers"
 
 Ruby ran an experiment using Zoom breakout rooms. Everyone got 10 minutes alone with the problem to produce **pseudo code only** — no real coding unless you finished pseudo code early.
 
-### Problem: Can Place Flowers (LeetCode easy)
+### [19:50](https://youtu.be/bOgVYYVJGPs?t=1190) Problem: Can Place Flowers (LeetCode easy)
 
 > Given an integer array `flowerbed` containing 0s and 1s (0 = empty, 1 = planted), and an integer `n`, return `true` if you can plant `n` new flowers **without any two adjacent flowers**.
 
-### Examples
+### [20:19](https://youtu.be/bOgVYYVJGPs?t=1219) [approx] Examples
 
 ```
 flowerbed = [1,0,0,0,1], n = 1  ->  true
 flowerbed = [1,0,0,0,1], n = 2  ->  false
 ```
 
-### Constraints
+### [22:35](https://youtu.be/bOgVYYVJGPs?t=1355) [approx] Constraints
 
 - `1 <= flowerbed.length <= 2 * 10^4`
 - `flowerbed[i]` is `0` or `1`
 - **There are no adjacent flowers in `flowerbed`** — the input will never violate the rule itself.
 - `0 <= n <= flowerbed.length`
 
-### Clarification on `n`
+### [16:01](https://youtu.be/bOgVYYVJGPs?t=961) Clarification on `n`
 
 - Normally in LeetCode constraints, `n` refers to the **length of the array**.
 - **In this problem**, `n` is a separate input variable — the number of flowers you want to plant. Always read the problem statement to confirm.
 
-### Key assumption pulled from constraints
+### [26:01](https://youtu.be/bOgVYYVJGPs?t=1561) Key assumption pulled from constraints
 
 Because the input is guaranteed to follow the no-adjacent rule, you don't need to defend against malformed input. You can trust that if you check "current spot is 0 and neighbors are 0," you'll be safe.
 
 ---
 
-## Mauricio's Pseudo Code
+## [37:02](https://youtu.be/bOgVYYVJGPs?t=2222) Mauricio's Pseudo Code
 
 Written **above** the function (clean style, like a docstring):
 
@@ -1976,7 +1988,7 @@ for i in range(len(flowerbed)):
 
 ---
 
-## Ruby's Pseudo Code
+## [31:37](https://youtu.be/bOgVYYVJGPs?t=1897) [approx] Ruby's Pseudo Code
 
 Written **in the function** using countdown-style logic:
 
@@ -1997,7 +2009,7 @@ Written **in the function** using countdown-style logic:
 # Big O: O(N)
 ```
 
-### Why iterate only once?
+### [33:52](https://youtu.be/bOgVYYVJGPs?t=2032) [approx] Why iterate only once?
 
 - The problem is **linear** — each spot only depends on its immediate neighbors.
 - No need for nested loops or backtracking.
@@ -2005,19 +2017,19 @@ Written **in the function** using countdown-style logic:
 
 ---
 
-## Coaching Feedback
+## [37:05](https://youtu.be/bOgVYYVJGPs?t=2225) Coaching Feedback
 
-### On writing pseudo code above vs. inside the function
+### [37:05](https://youtu.be/bOgVYYVJGPs?t=2225) On writing pseudo code above vs. inside the function
 
 - **Above the function:** cleaner, matches real-world docstring style.
 - **Inside the function:** kept closer to where the logic lives, good for interview flow.
 - In production, you'd never have pseudo code inside a function — but in an interview, either works.
 
-### Always include the return condition in pseudo code
+### [37:21](https://youtu.be/bOgVYYVJGPs?t=2241) Always include the return condition in pseudo code
 
 Ruby initially didn't see a return condition in Mauricio's pseudo code and flagged it — it turned out he'd written it, just phrased differently ("return true if count >= n"). **Always make the return statement explicit.**
 
-### The three parts of a technical interview performance
+### [44:30](https://youtu.be/bOgVYYVJGPs?t=2670) The three parts of a technical interview performance
 
 1. **Read and understand the problem** (~20% of evaluation)
 2. **Resummarize and pseudo code** (~20% of evaluation)
@@ -2034,7 +2046,7 @@ The first two matter for interviewer impressions because they show:
 
 ---
 
-## Key Takeaways
+## [45:10](https://youtu.be/bOgVYYVJGPs?t=2710) [approx] Key Takeaways
 
 - **Readiness benchmark:** 3 consecutive easy problems solved in ~15 minutes each, plus exposure to mediums.
 - **Don't reset to zero after a failure** — you'll get specific recommendations and can try again after addressing them.
@@ -2045,14 +2057,15 @@ The first two matter for interviewer impressions because they show:
 - **Trust the constraints.** "No adjacent flowers in input" saves you from defensive edge cases.
 - **Interviewers evaluate communication as well as code.** Think out loud, resummarize the problem, explain tradeoffs.
 
-
+---
 ---
 
 # Ruby Mock Interview — September 7, 2025
+Source: https://youtu.be/fvtYZ_QBQK0
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Not Every Practice Session Has to Hit the Time Target
+## [0:37](https://youtu.be/fvtYZ_QBQK0?t=37) Q&A: Not Every Practice Session Has to Hit the Time Target
 
 - It's okay if you don't hit the 15–20 minute target every single time.
 - What matters is that **on average** you consistently hit it.
@@ -2060,7 +2073,7 @@ The first two matter for interviewer impressions because they show:
 
 > "Sometimes you take the wrong path to the solution that gets you tangled in a mess that ends up consuming lots of time." — Mauricio
 
-### When to scrap and restart
+### [1:34](https://youtu.be/fvtYZ_QBQK0?t=94) When to scrap and restart
 
 - If you've gone down a bad path, **it's always okay to scratch it and start from scratch**.
 - Often starting over is *faster* than trying to rescue a tangled approach.
@@ -2068,13 +2081,13 @@ The first two matter for interviewer impressions because they show:
 
 ---
 
-## Warm-Up Problem: Array Partition I (LeetCode easy)
+## [2:49](https://youtu.be/fvtYZ_QBQK0?t=169) Warm-Up Problem: Array Partition I (LeetCode easy)
 
-### Problem statement
+### [2:49](https://youtu.be/fvtYZ_QBQK0?t=169) Problem statement
 
 Given an integer array `nums` of `2n` integers, group them into `n` pairs `(a1, b1), (a2, b2), ...` such that the sum of `min(ai, bi)` for all `i` is **maximized**. Return the maximized sum.
 
-### Examples
+### [10:45](https://youtu.be/fvtYZ_QBQK0?t=645) [approx] Examples
 
 ```
 nums = [1, 4, 3, 2]     -> 4
@@ -2084,17 +2097,17 @@ nums = [6, 2, 6, 5, 1, 2] -> 9
   Pair: (1, 2), (2, 5), (6, 6) -> 1 + 2 + 6 = 9
 ```
 
-### Constraints
+### [13:27](https://youtu.be/fvtYZ_QBQK0?t=807) [approx] Constraints
 
 - `1 <= n <= 10^4`
 - `nums.length == 2 * n` — **always even length**
 - `-10^4 <= nums[i] <= 10^4` — **can be negative**
 
-### Problem restated
+### [6:20](https://youtu.be/fvtYZ_QBQK0?t=380) Problem restated
 
 > "Find the best combination of pairs so that the sum of the min of each two-value pair provides the highest output."
 
-### Key phrase: "all possible pairings"
+### [3:41](https://youtu.be/fvtYZ_QBQK0?t=221) Key phrase: "all possible pairings"
 
 This phrase in the explanation suggests brute force is possible, but it's actually **two levels of brute force**:
 
@@ -2103,27 +2116,27 @@ This phrase in the explanation suggests brute force is possible, but it's actual
 
 This explodes to factorial complexity very quickly.
 
-### A partial optimization idea
+### [14:49](https://youtu.be/fvtYZ_QBQK0?t=889) A partial optimization idea
 
 - Greedily find the best pair first (highest possible min), remove those two elements, then repeat on the remaining set.
 - Gets you closer to O(n²) rather than O(n!).
 - **Not discussed yet:** the actually-optimal solution, which is to **sort and take every other element**. This is covered in the Wednesday deep-dive.
 
-### Coaching note
+### [17:23](https://youtu.be/fvtYZ_QBQK0?t=1043) Coaching note
 
 This is marked "easy" on LeetCode, but easy problems vary in difficulty. If a particular easy stumps you, don't panic — it happens.
 
 ---
 
-## Mock Interview: Mauricio on "Minimum Number of Arrows to Burst Balloons"
+## [30:02](https://youtu.be/fvtYZ_QBQK0?t=1802) Mock Interview: Mauricio on "Minimum Number of Arrows to Burst Balloons"
 
-### Problem statement
+### [30:02](https://youtu.be/fvtYZ_QBQK0?t=1802) Problem statement
 
 You're given a 2D wall with balloons. Each balloon is represented as `[xstart, xend]` (its horizontal diameter). You can shoot arrows vertically from the x-axis that travel infinitely upward, popping all balloons they pass through.
 
 **Return the minimum number of arrows needed to burst all balloons.**
 
-### Constraint quirk
+### [49:27](https://youtu.be/fvtYZ_QBQK0?t=2967) Constraint quirk
 
 One constraint Mauricio found confusing: `points[i].length == 2`. This just means each balloon is a 2-element sub-array (2D array with inner length 2), not a constraint on the outer array length.
 
@@ -2134,14 +2147,14 @@ The other constraints:
 - `1 <= points.length <= 10^5`
 - `-2^31 <= xstart < xend <= 2^31 - 1` — values can be **negative**
 
-### Mauricio's game plan
+### [34:14](https://youtu.be/fvtYZ_QBQK0?t=2054) Mauricio's game plan
 
 - **Find intersections** between balloon diameters.
 - One arrow can pop multiple balloons if their x-ranges overlap.
 - Compare each balloon against the others to find overlapping groups, then count how many distinct groups you need.
 - Acknowledged this is **O(n²)** nested-loop brute force — he wanted to get an idea down fast rather than find an optimal approach.
 
-### Partial pseudo code
+### [37:40](https://youtu.be/fvtYZ_QBQK0?t=2260) [approx] Partial pseudo code
 
 ```
 # For each balloon, compare its [xstart, xend] against every other balloon
@@ -2156,13 +2169,13 @@ end2 = points[j][1]
 # check intersection
 ```
 
-### Coaching feedback
+### [45:39](https://youtu.be/fvtYZ_QBQK0?t=2739) Coaching feedback
 
 - Good job thinking it through clearly and picking a starting approach even knowing it wasn't optimal.
 - Medium problems have a **40-minute to 1-hour** time budget. Spending 20–25 minutes on pseudo code still leaves ample time to code and debug.
 - **Two-level brute force tends to balloon into complexity traps** — if you catch yourself saying "compare each with all others" without a tracking mechanism, pause and think about sorting first.
 
-### The actually good approach (hinted)
+### [34:14](https://youtu.be/fvtYZ_QBQK0?t=2054) The actually good approach (hinted)
 
 - **Sort balloons by their end coordinate.**
 - Walk through and greedily count: if the current balloon starts *after* the last arrow's position, shoot a new arrow at its end.
@@ -2170,11 +2183,11 @@ end2 = points[j][1]
 
 ---
 
-## Group Breakout Session
+## [15:11](https://youtu.be/fvtYZ_QBQK0?t=911) Group Breakout Session
 
 Ruby split the group into pairs for 20 minutes on the Burst Balloons problem while Mauricio stayed in the main room for his mock interview.
 
-### Group 1 — Chris (solo, possibly muted the whole time)
+### [56:05](https://youtu.be/fvtYZ_QBQK0?t=3365) Group 1 — Chris (solo, possibly muted the whole time)
 
 Chris attempted to code a solution iterating `for i in range(len(points))`, treating each `points[i]` as `[start, end]`, and tracking arrows.
 
@@ -2187,7 +2200,7 @@ Chris attempted to code a solution iterating `for i in range(len(points))`, trea
 
 Not a bad starting approach — just needs constraint awareness.
 
-### Group 2 — Lisa and Rebecca
+### [51:08](https://youtu.be/fvtYZ_QBQK0?t=3068) [approx] Group 2 — Lisa and Rebecca
 
 Worked on pseudo code only.
 
@@ -2199,7 +2212,7 @@ Worked on pseudo code only.
 - Considered **sorting the points** to make the comparison easier.
 - Planned a `for` loop through each balloon with `if` statements checking overlap, then a counter for arrows needed.
 
-### Rebecca's confusion with nested arrays
+### [25:58](https://youtu.be/fvtYZ_QBQK0?t=1558) Rebecca's confusion with nested arrays
 
 Rebecca understood the problem visually but wasn't sure **how to "tell the computer"** to compare the minimum of one inner array against the maximum of the next.
 
@@ -2212,7 +2225,7 @@ Rebecca understood the problem visually but wasn't sure **how to "tell the compu
 
 ---
 
-## On Going Back Through Old Material
+## [56:31](https://youtu.be/fvtYZ_QBQK0?t=3391) [approx] On Going Back Through Old Material
 
 Rebecca asked whether she should redo all of mod 2.
 
@@ -2224,7 +2237,7 @@ Rebecca asked whether she should redo all of mod 2.
 
 ---
 
-## Time Targets Recap
+## [36:01](https://youtu.be/fvtYZ_QBQK0?t=2161) Time Targets Recap
 
 | Difficulty | Target time |
 |------------|-------------|
@@ -2238,7 +2251,7 @@ Consistently hitting easy targets is the main readiness signal. Medium problems 
 
 ---
 
-## Key Takeaways
+## [15:03](https://youtu.be/fvtYZ_QBQK0?t=903) Key Takeaways
 
 - **Consistency matters more than every-time perfection.** Hit the time target on average, not always.
 - **Start over when stuck.** A fresh attempt is often faster than debugging a tangled approach.
@@ -2249,16 +2262,17 @@ Consistently hitting easy targets is the main readiness signal. Medium problems 
 - **Review material on a second pass** is dramatically more efficient than the first.
 - **O(n²) brute force is fine as a starting point.** Get something working, then think about optimizing.
 
-
+---
 ---
 
 # Ruby Mock Interview — September 21, 2025
+Source: https://youtu.be/l2XMSmCPWrM
 
 *Nailing the Tech Interview — Sunday session*
 
-## Warm-Up: Valid Anagram (LeetCode easy)
+## [3:10](https://youtu.be/l2XMSmCPWrM?t=190) Warm-Up: Valid Anagram (LeetCode easy)
 
-### Problem statement
+### [3:10](https://youtu.be/l2XMSmCPWrM?t=190) Problem statement
 
 Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`, else `false`.
 
@@ -2266,24 +2280,24 @@ Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`, el
 
 **Key pull-out:** uses all the original letters **exactly once** — same letters, same counts.
 
-### Examples
+### [4:59](https://youtu.be/l2XMSmCPWrM?t=299) [approx] Examples
 
 ```
 s = "anagram", t = "nagaram" -> true
 s = "rat",     t = "car"     -> false
 ```
 
-### Constraints
+### [7:29](https://youtu.be/l2XMSmCPWrM?t=449) [approx] Constraints
 
 - `1 <= s.length, t.length <= 5 * 10^4`
 - `s` and `t` consist of **lowercase English letters** only.
 - **Follow-up:** what if the inputs contain Unicode characters?
 
-### Reading comma-separated constraint lists
+### [9:58](https://youtu.be/l2XMSmCPWrM?t=598) [approx] Reading comma-separated constraint lists
 
 `1 <= s.length, t.length <= 5 * 10^4` is shorthand for two independent bounds — both strings are between 1 and `5 * 10^4`. It does **not** imply `s.length < t.length`. Contrast this with problems that use `<` explicitly between variables (e.g., last week's constraint showed ordering).
 
-### Immediate easy check
+### [12:28](https://youtu.be/l2XMSmCPWrM?t=748) [approx] Immediate easy check
 
 ```python
 if len(s) != len(t):
@@ -2294,9 +2308,9 @@ Two anagrams must be the same length — fail fast on mismatched lengths.
 
 ---
 
-## Solution Brainstorm (Multiple Approaches)
+## [14:58](https://youtu.be/l2XMSmCPWrM?t=898) [approx] Solution Brainstorm (Multiple Approaches)
 
-### Approach 1 — Sort both strings and compare
+### [17:27](https://youtu.be/l2XMSmCPWrM?t=1047) [approx] Approach 1 — Sort both strings and compare
 
 ```python
 return sorted(s) == sorted(t)
@@ -2306,7 +2320,7 @@ return sorted(s) == sorted(t)
 - **Space:** O(n) for the sorted copies
 - Chris's submitted runtime: beat only ~15% — works but slow.
 
-### Approach 2 — Two dictionaries (count characters)
+### [42:23](https://youtu.be/l2XMSmCPWrM?t=2543) Approach 2 — Two dictionaries (count characters)
 
 Build a frequency dictionary for each string and compare them.
 
@@ -2325,7 +2339,7 @@ def isAnagram(s, t):
 - **Space:** O(n) for two dictionaries
 - Comparing two dicts isn't O(1) — it's O(n) in the number of keys.
 
-### Approach 3 — One dictionary, count up then count down (Kai's idea)
+### [20:17](https://youtu.be/l2XMSmCPWrM?t=1217) Approach 3 — One dictionary, count up then count down (Kai's idea)
 
 Loop over `s` and add counts. Loop over `t` and subtract. Remove keys when they hit zero. If the dictionary is empty at the end, they're anagrams.
 
@@ -2349,7 +2363,7 @@ def isAnagram(s, t):
 - **Space:** O(n) for **one** dictionary (better than Approach 2)
 - **Best memory efficiency** of the bunch.
 
-### Approach 4 — Mauricio's brute force using `count()`
+### [24:57](https://youtu.be/l2XMSmCPWrM?t=1497) [approx] Approach 4 — Mauricio's brute force using `count()`
 
 ```python
 def isAnagram(s, t):
@@ -2368,7 +2382,7 @@ def isAnagram(s, t):
 
 > "This is why I advocate for brute force. You came up with the solution, tried it, and it worked. That's awesome." — Ruby
 
-### Efficiency summary
+### [27:26](https://youtu.be/l2XMSmCPWrM?t=1646) [approx] Efficiency summary
 
 | Approach | Time | Space |
 |----------|------|-------|
@@ -2379,13 +2393,13 @@ def isAnagram(s, t):
 
 ---
 
-## Coaching Debate: Brute Force First vs. Consider Alternatives
+## [31:08](https://youtu.be/l2XMSmCPWrM?t=1868) Coaching Debate: Brute Force First vs. Consider Alternatives
 
-### Mauricio's take
+### [31:08](https://youtu.be/l2XMSmCPWrM?t=1868) Mauricio's take
 
 > "I have the experience that burning out the time sometimes thinking about a sophisticated solution. So the method in your mind should be: just hit brute force, and if it doesn't work, go back to sophistication."
 
-### Ruby's take (holding two slightly conflicting ideas)
+### [31:48](https://youtu.be/l2XMSmCPWrM?t=1908) Ruby's take (holding two slightly conflicting ideas)
 
 - **Yes, brute force first** if it's the first thing that comes to mind and you can implement it quickly.
 - **But also take 1–2 minutes** to consider an alternative before committing.
@@ -2397,19 +2411,19 @@ def isAnagram(s, t):
 
 ---
 
-## Mock Interview: Mauricio on "Group Anagrams" (LeetCode medium)
+## [37:56](https://youtu.be/l2XMSmCPWrM?t=2276) Mock Interview: Mauricio on "Group Anagrams" (LeetCode medium)
 
-### Problem statement
+### [37:56](https://youtu.be/l2XMSmCPWrM?t=2276) Problem statement
 
 Given an array of strings `strs`, **group the anagrams together**. Return a list of lists.
 
-### Constraints
+### [42:24](https://youtu.be/l2XMSmCPWrM?t=2544) [approx] Constraints
 
 - `1 <= strs.length <= 10^4`
 - `0 <= strs[i].length <= 100`
 - `strs[i]` consists of lowercase English letters.
 
-### Mauricio's approach (under 15-minute time pressure)
+### [40:50](https://youtu.be/l2XMSmCPWrM?t=2450) Mauricio's approach (under 15-minute time pressure)
 
 Brute force: traverse the array, compare each string to the others, and group those that are anagrams. Considered using a dictionary keyed by **something anagram-identifying** (sorted string as key), with the value being a list of anagrams.
 
@@ -2426,7 +2440,7 @@ def groupAnagrams(strs):
     return output
 ```
 
-### The bug in the first draft
+### [38:58](https://youtu.be/l2XMSmCPWrM?t=2338) The bug in the first draft
 
 Mauricio used the **length** of the string as the dictionary key, which would collide across non-anagram words of the same length (e.g., `"bat"` and `"nat"` would both key to `3` even though only `"nat"` and `"tan"` are anagrams).
 
@@ -2443,13 +2457,13 @@ def groupAnagrams(strs):
     return list(groups.values())
 ```
 
-### Second bug: iteration variable naming
+### [57:09](https://youtu.be/l2XMSmCPWrM?t=3429) Second bug: iteration variable naming
 
 Mauricio wrote `for string in range(len(strings))`, which makes `string` an **integer index**, not a string object. Then his `string.sort` call would fail because integers don't have `.sort()`.
 
 **Fix:** use subscript access: `strs[i].sort` → or better, iterate directly `for s in strs`.
 
-### Coaching feedback
+### [55:37](https://youtu.be/l2XMSmCPWrM?t=3337) Coaching feedback
 
 - **Great job breaking down the steps:** check anagram, group them, format output.
 - **Add print statements along the way** when developing — catch index-vs-value confusion early.
@@ -2458,7 +2472,7 @@ Mauricio wrote `for string in range(len(strings))`, which makes `string` an **in
 
 > "Being under the hammer of time really hurts me." — Mauricio
 
-### Practice recommendation
+### [54:53](https://youtu.be/l2XMSmCPWrM?t=3293) [approx] Practice recommendation
 
 Use **peer mentors** for live-coding pressure practice:
 
@@ -2468,9 +2482,9 @@ Ruby tells peer mentors to expect these requests.
 
 ---
 
-## Closing Thoughts
+## [31:02](https://youtu.be/l2XMSmCPWrM?t=1862) Closing Thoughts
 
-### Why spend so much time on multiple approaches to an easy problem?
+### [31:02](https://youtu.be/l2XMSmCPWrM?t=1862) Why spend so much time on multiple approaches to an easy problem?
 
 - It's a **thought experiment**. You don't have to catalog every possible solution on every real problem.
 - But once you've solved a problem, it's valuable to **revisit and ask "what else could I have done?"**
@@ -2480,7 +2494,7 @@ Ruby tells peer mentors to expect these requests.
 
 ---
 
-## Key Takeaways
+## [1:02:22](https://youtu.be/l2XMSmCPWrM?t=3742) [approx] Key Takeaways
 
 - **Comma-separated constraints** (`1 <= s.length, t.length <= N`) describe independent bounds, not ordering.
 - **Length mismatch is an instant false** for anagram problems — fail fast.
@@ -2492,18 +2506,19 @@ Ruby tells peer mentors to expect these requests.
 - **Debugging is normal.** Don't expect first-run success; expect 2–3 iterations.
 - **Peer mentor sessions** are the best place to practice under live-coding pressure.
 
-
+---
 ---
 
 # Ruby Mock Interview — September 28, 2025
+Source: https://youtu.be/Uy1SVqF-508
 
 *Nailing the Tech Interview — Sunday session*
 
-## Extended Q&A: How Long to Stay Stuck Before Looking Up a Solution?
+## [3:16](https://youtu.be/Uy1SVqF-508?t=196) Extended Q&A: How Long to Stay Stuck Before Looking Up a Solution?
 
 **Mauricio asked:** when you're stuck on a problem and can't pass test cases, how long should you stay with it before looking up a solution?
 
-### Ruby's framework: identify which phase you're stuck in
+### [4:05](https://youtu.be/Uy1SVqF-508?t=245) Ruby's framework: identify which phase you're stuck in
 
 There are multiple phases of working through a LeetCode/HackerRank problem, and **what you should do depends on which phase you're stuck in**:
 
@@ -2516,13 +2531,13 @@ There are multiple phases of working through a LeetCode/HackerRank problem, and 
 
 These phases aren't strictly linear — you often bounce between them. And you can collapse several into one for simple problems you've seen before.
 
-### General time guidelines
+### [2:39](https://youtu.be/Uy1SVqF-508?t=159) General time guidelines
 
 - **Easy problems:** if you've spent **over an hour** and haven't gotten two-thirds of test cases passing, look up resources.
 - **Medium problems:** maybe **an hour or so**, then **walk away** and come back a day or two later and start fresh rather than looking it up immediately.
 - Goal: **get at least two-thirds of test cases passing** before looking up the full solution.
 
-### What to do based on where you're stuck
+### [26:53](https://youtu.be/Uy1SVqF-508?t=1613) What to do based on where you're stuck
 
 **Stuck understanding the problem:**
 
@@ -2549,14 +2564,14 @@ These phases aren't strictly linear — you often bounce between them. And you c
 - Print everything along the way. Compare expected output vs. actual output.
 - If the expected is 5 and you're returning 7, **trace back why** you're returning 7. Maybe an assumption was wrong.
 
-### The "stuck in a loop" problem
+### [8:48](https://youtu.be/Uy1SVqF-508?t=528) The "stuck in a loop" problem
 
 Mauricio: "I get stuck in a loop where I keep coding to pass the next test case and not generalizing. I realize the path is wrong but can't see another path to take."
 
 - At that point, **revisit the earlier phases**. Did you fully understand the problem? Did you test your original assumptions?
 - Take it to a **peer mentor office hours** or a **Q&A session** and say, "Here's where I'm at. Can you give me pointers?" A good mentor will **ask you questions** rather than hand you the answer, so you still make the connections yourself.
 
-### After looking up a solution
+### [16:04](https://youtu.be/Uy1SVqF-508?t=964) [approx] After looking up a solution
 
 Even after researching, there's still valuable work to do:
 
@@ -2567,7 +2582,7 @@ Even after researching, there's still valuable work to do:
 
 > "Instead of having one solution that I had to look up, I have three solutions that I know and I could potentially extrapolate to new problems."
 
-### 80/20 on algorithmic prerequisites
+### [14:56](https://youtu.be/Uy1SVqF-508?t=896) 80/20 on algorithmic prerequisites
 
 - About **80% of problems** can be solved with just mod 2 fundamentals.
 - About **20% of problems** require specialized knowledge (named algorithms, advanced applications of data structures) that you may legitimately need to research.
@@ -2577,7 +2592,7 @@ Even after researching, there's still valuable work to do:
 
 ---
 
-## The 6 Phases Framework (Reference)
+## [1:20:21](https://youtu.be/Uy1SVqF-508?t=4821) The 6 Phases Framework (Reference)
 
 | Phase | What you do |
 |-------|-------------|
@@ -2592,15 +2607,15 @@ Phase 6 is a **meta-phase** — what it looks like depends on which of phases 1�
 
 ---
 
-## Worked Example: Repeated String (HackerRank)
+## [1:14:53](https://youtu.be/Uy1SVqF-508?t=4493) Worked Example: Repeated String (HackerRank)
 
 Ruby walked through this problem using the 6-phase framework explicitly.
 
-### Problem statement
+### [30:33](https://youtu.be/Uy1SVqF-508?t=1833) Problem statement
 
 There is a string `s` of lowercase English letters that is repeated infinitely many times. Given an integer `n`, find and return the number of letter `'a'`'s in the **first `n` letters** of the infinite string.
 
-### Examples
+### [32:09](https://youtu.be/Uy1SVqF-508?t=1929) [approx] Examples
 
 ```
 s = "abcac", n = 10   -> 4
@@ -2613,17 +2628,17 @@ s = "a", n = 1000000000000 -> 1000000000000
   A string of all 'a's, so the count is just n.
 ```
 
-### Constraints
+### [31:40](https://youtu.be/Uy1SVqF-508?t=1900) Constraints
 
 - `1 <= |s| <= 100` (where `|s|` is the length of s in mathematical notation)
 - `1 <= n <= 10^12`
 - For 25% of test cases, `n <= 10^6`
 
-### Note on the `|s|` notation
+### [1:16:28](https://youtu.be/Uy1SVqF-508?t=4588) Note on the `|s|` notation
 
 The vertical bars `|s|` in constraints are **absolute value notation** in math, which for a string represents its **length** (number of characters). If you don't know a symbol in constraints, Google it or check Stack Overflow.
 
-### Phase 1: Reading and Understanding
+### [26:53](https://youtu.be/Uy1SVqF-508?t=1613) Phase 1: Reading and Understanding
 
 First read of the problem is often confusing. Take a deep breath, read again. Pull out:
 
@@ -2632,13 +2647,13 @@ First read of the problem is often confusing. Take a deep breath, read again. Pu
 - We care about the first `n` characters.
 - Count the `'a'`s in that range.
 
-### Phase 3: Explain in your own words and write assumptions
+### [34:55](https://youtu.be/Uy1SVqF-508?t=2095) Phase 3: Explain in your own words and write assumptions
 
 > "Given `s`, which is the smallest range of characters in an infinitely repeating sequence, and `n`, an integer representing the length I need to construct — return the number of `'a'`s in the constructed string up to length `n`."
 
 **Initial assumption:** `s` will be shorter than `n`.
 
-### Phase 2: Check constraints to test the assumption
+### [48:14](https://youtu.be/Uy1SVqF-508?t=2894) [approx] Phase 2: Check constraints to test the assumption
 
 - `|s|` can be `1 <= |s| <= 100`
 - `n` can be `1 <= n <= 10^12`
@@ -2647,17 +2662,17 @@ These are **independent ranges**. `s` could theoretically be length 100 while `n
 
 **Updated pseudo code note:** add a conditional check for whether `s` is shorter or longer than `n` before building.
 
-### Another assumption to check: Is `'a'` always included in `s`?
+### [53:42](https://youtu.be/Uy1SVqF-508?t=3222) Another assumption to check: Is `'a'` always included in `s`?
 
 The problem says `s` is "a string to repeat" — it **doesn't** say `s` must contain the character `'a'`. Nothing in the constraints says so either. So **`'a'` may or may not be in `s`** — handle that case (count could be 0).
 
-### Efficiency warning from constraints
+### [1:11:21](https://youtu.be/Uy1SVqF-508?t=4281) Efficiency warning from constraints
 
 `n` can be as large as `10^12`. Building an actual string of length `10^12` would **blow up memory** (and take forever). This is a **space complexity** concern that will cause a **time-out** failure in practice.
 
 > "Do I need to build that string? It takes up a lot of memory."
 
-### Phase 4: Pseudo code (first draft — naive approach)
+### [57:53](https://youtu.be/Uy1SVqF-508?t=3473) [approx] Phase 4: Pseudo code (first draft — naive approach)
 
 ```
 # Build infinite_string out of s up to length n
@@ -2676,7 +2691,7 @@ return count
 
 **Problem:** builds a massive string for large `n`. Will time out on tests where `n >= 10^9` or so.
 
-### Phase 6: Efficiency improvement — skip building the string
+### [1:04:59](https://youtu.be/Uy1SVqF-508?t=3899) Phase 6: Efficiency improvement — skip building the string
 
 Key insight: you **don't need to materialize the string**. You just need arithmetic:
 
@@ -2685,7 +2700,7 @@ Key insight: you **don't need to materialize the string**. You just need arithme
 - The "full copies" contribute `full_copies * a_in_s` a's.
 - Then handle the **remainder** — the leftover partial string: `remainder_len = n % len(s)`. Count `'a'`s in `s[:remainder_len]` and add.
 
-### Optimized solution
+### [1:04:19](https://youtu.be/Uy1SVqF-508?t=3859) [approx] Optimized solution
 
 ```python
 def repeatedString(s, n):
@@ -2701,19 +2716,19 @@ def repeatedString(s, n):
 - **Space:** O(1) — no massive string built.
 - Handles `n = 10^12` instantly.
 
-### Lisa's question and the key insight
+### [42:30](https://youtu.be/Uy1SVqF-508?t=2550) Lisa's question and the key insight
 
 Lisa asked early: "Is there a formula to build out the string — like `string * number`?"
 
 Ruby initially said "hold that thought" because she wasn't done reading the problem. But Lisa's instinct was on the right track: **use math, not construction**. The `full_copies * a_in_s + remainder_count` formula is exactly what you get when you stop thinking about the string and start thinking about the arithmetic.
 
-### Why return an `int`, not a string or list
+### [40:38](https://youtu.be/Uy1SVqF-508?t=2438) Why return an `int`, not a string or list
 
 Always set up your return statement **to match the expected return type** early. The function signature says it returns an integer. If you return the wrong type, you'll get parsing errors. Ruby recommends starting with `return 0` or `return count` as a placeholder so the type is correct from the start.
 
 ---
 
-## Status Check: Where Is Everyone?
+## [1:12:23](https://youtu.be/Uy1SVqF-508?t=4343) Status Check: Where Is Everyone?
 
 - **End of mod 2 (through project 5):** reviewing concepts and working on HackerRank practice.
 - **Finished mod 2 a month ago**, had some life interruptions, now restarting tech interview prep and revising mod 1/2 material alongside HackerRank.
@@ -2722,7 +2737,7 @@ Ruby: everyone's in a good spot for the practice we're doing.
 
 ---
 
-## Key Takeaways
+## [1:04:38](https://youtu.be/Uy1SVqF-508?t=3878) Key Takeaways
 
 - **Identify which phase you're stuck in** — then take phase-appropriate action. Don't do coding debugging when the real problem is that you don't understand the problem.
 - **Goal before looking up:** get 2/3 of test cases passing first. If you can't hit that after an hour on an easy problem, start looking at resources.
@@ -2735,30 +2750,31 @@ Ruby: everyone's in a good spot for the practice we're doing.
 - **`n // len_s` and `n % len_s`** unlock O(1) space for "first n chars of an infinitely repeating string" problems.
 - **Set up the return statement early** with the correct data type as a placeholder.
 
-
+---
 ---
 
 # Ruby Mock Interview — October 12, 2025
+Source: https://youtu.be/vWcH6g62B-E
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Do I Need to Learn All the "Patterns"?
+## [41:23](https://youtu.be/vWcH6g62B-E?t=2483) Q&A: Do I Need to Learn All the "Patterns"?
 
 Mauricio asked about the anxiety of feeling like there are 20–30 different problem-solving patterns to master for interviews — BFS, DFS, sliding window, two pointers, greedy, dynamic programming, etc.
 
-### For the Joy of Coding technical interview
+### [44:29](https://youtu.be/vWcH6g62B-E?t=2669) For the Joy of Coding technical interview
 
 - **You do NOT need BFS/DFS** — those are for trees and graphs, which aren't in mod 2.
 - **Recursion problems**, if given, will be problems that *could* be solved normally and you'll be asked to solve recursively — not problems that *require* recursion.
 - Ruby hasn't found an easy-level recursion-only problem in mod 2 topics, so it's unlikely to appear.
 
-### For the job hunt
+### [40:33](https://youtu.be/vWcH6g62B-E?t=2433) For the job hunt
 
 - Yes, eventually you should practice these patterns, but the actual list is **not that long** — maybe a dozen or so patterns total.
 - LeetCode has **curated lists by pattern**: sliding window list, two-pointer list, tree/graph list, etc. Work through them one category at a time.
 - You don't need to study this yet — come back to it once you've been in the internship for a while and are comfortable with general coding problems.
 
-### The 80/20 breakdown
+### [2:45](https://youtu.be/vWcH6g62B-E?t=165) The 80/20 breakdown
 
 - **~80% of problems** can be solved with just mod 2 fundamentals: lists, dictionaries, linked lists, 2D arrays, functions, recursion, stacks, queues.
 - **~20% of problems** need specialized knowledge — trees, graphs, specific algorithms.
@@ -2768,11 +2784,11 @@ Mauricio asked about the anxiety of feeling like there are 20–30 different pro
 
 ---
 
-## Main Topic: How to Work with a Looked-Up Solution
+## [35:52](https://youtu.be/vWcH6g62B-E?t=2152) Main Topic: How to Work with a Looked-Up Solution
 
 Ruby covered her process for when you've tried your best, gotten stuck, looked up a solution, and now need to learn from it. She'd never explicitly walked through this process before.
 
-### Problem used for the walkthrough: Group Anagrams (LeetCode medium)
+### [9:07](https://youtu.be/vWcH6g62B-E?t=547) Problem used for the walkthrough: Group Anagrams (LeetCode medium)
 
 Given an array of strings, group the anagrams together into a 2D array.
 
@@ -2781,13 +2797,13 @@ Input:  ["eat","tea","tan","ate","nat","bat"]
 Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
 ```
 
-### Constraints
+### [12:41](https://youtu.be/vWcH6g62B-E?t=761) [approx] Constraints
 
 - `1 <= strs.length <= 10^4`
 - `0 <= strs[i].length <= 100`
 - Lowercase English letters only.
 
-### The pseudo code outline
+### [14:48](https://youtu.be/vWcH6g62B-E?t=888) [approx] The pseudo code outline
 
 ```
 # Given: strings - list of strings that may or may not be anagrams
@@ -2798,7 +2814,7 @@ Output: [["eat","tea","ate"],["tan","nat"],["bat"]]
 
 ---
 
-## The Solution (found online)
+## [16:55](https://youtu.be/vWcH6g62B-E?t=1015) [approx] The Solution (found online)
 
 ```python
 def groupAnagrams(strs):
@@ -2813,13 +2829,13 @@ def groupAnagrams(strs):
 
 ---
 
-## Ruby's Process for Learning from a Looked-Up Solution
+## [38:36](https://youtu.be/vWcH6g62B-E?t=2316) Ruby's Process for Learning from a Looked-Up Solution
 
-### Step 1: Paste it in and confirm it works
+### [38:36](https://youtu.be/vWcH6g62B-E?t=2316) Step 1: Paste it in and confirm it works
 
 Run the solution against the sample test cases. Confirm it passes. Don't submit yet — you want to learn, not just submit someone else's work.
 
-### Step 2: Step through each line and visualize
+### [45:32](https://youtu.be/vWcH6g62B-E?t=2732) Step 2: Step through each line and visualize
 
 Add print statements to understand what each line does:
 
@@ -2832,7 +2848,7 @@ print(anagram_table)  # see the dict build up
 - **`"".join(sorted("eat"))`** uses the `join` string method to concatenate the sorted list back into a string (`"aet"`).
 - **`list(anagram_table.values())`** converts the dictionary's values view into a list of lists.
 
-### Step 3: Write pseudo code for the solution *as if you had written it*
+### [28:38](https://youtu.be/vWcH6g62B-E?t=1718) Step 3: Write pseudo code for the solution *as if you had written it*
 
 Pretend you wrote this code and are now documenting it in pseudo code:
 
@@ -2846,15 +2862,15 @@ Pretend you wrote this code and are now documenting it in pseudo code:
 # After the loop, convert the dictionary's values into a 2D list and return
 ```
 
-### Step 4: Take a break
+### [39:43](https://youtu.be/vWcH6g62B-E?t=2383) Step 4: Take a break
 
 A day, a few days, maybe a week. No code in the editor — only the pseudo code.
 
-### Step 5: Rewrite the solution from your pseudo code
+### [22:34](https://youtu.be/vWcH6g62B-E?t=1354) Step 5: Rewrite the solution from your pseudo code
 
 Come back. Only the pseudo code is there. Try to write working code from your pseudo code alone.
 
-### Step 6: Look up **only** the specific things you get stuck on
+### [40:21](https://youtu.be/vWcH6g62B-E?t=2421) Step 6: Look up **only** the specific things you get stuck on
 
 Don't reference the original solution. Look up things like:
 
@@ -2864,7 +2880,7 @@ Don't reference the original solution. Look up things like:
 
 ---
 
-## Ruby's Rewrite (done during the demo)
+## [33:51](https://youtu.be/vWcH6g62B-E?t=2031) [approx] Ruby's Rewrite (done during the demo)
 
 ```python
 def groupAnagrams(strs):
@@ -2886,13 +2902,13 @@ Slightly different from the original, but still works. The key point: **her vers
 
 ---
 
-## How Long to Bang Your Head Before Looking Up a Solution
+## [40:33](https://youtu.be/vWcH6g62B-E?t=2433) How Long to Bang Your Head Before Looking Up a Solution
 
-### Mauricio's follow-up question
+### [40:33](https://youtu.be/vWcH6g62B-E?t=2433) Mauricio's follow-up question
 
 > "How long should you basically bang your head against the wall before going for the solution?"
 
-### Ruby's answer
+### [40:52](https://youtu.be/vWcH6g62B-E?t=2452) Ruby's answer
 
 - **Easy problem:** ~1 hour. If you can't get 2/3 of test cases passing, walk away.
 - **Medium problem:** up to ~1 hour on day 1. Let it marinate. Come back a day or two later.
@@ -2900,7 +2916,7 @@ Slightly different from the original, but still works. The key point: **her vers
 - After 2/3 test cases pass, spend another **10–20 minutes** trying to get the final third. If that fails, re-read the problem carefully first. **If still stuck after that**, look up the solution.
 - **Total time across multiple days:** ~1.5 hours is Ruby's rough budget.
 
-### When to stop for the day
+### [43:36](https://youtu.be/vWcH6g62B-E?t=2616) When to stop for the day
 
 - When you've thought through everything you can.
 - When you're going in circles in your own head.
@@ -2910,7 +2926,7 @@ Slightly different from the original, but still works. The key point: **her vers
 
 ---
 
-## Python Dictionary Method Reference
+## [49:23](https://youtu.be/vWcH6g62B-E?t=2963) Python Dictionary Method Reference
 
 Useful methods you should get acquainted with:
 
@@ -2922,7 +2938,7 @@ Useful methods you should get acquainted with:
 - **`setdefault(key, default)`** — returns value if key exists, else inserts default.
 - **`update(other_dict)`** — updates keys/values in place.
 
-### When iterating
+### [24:29](https://youtu.be/vWcH6g62B-E?t=1469) When iterating
 
 - `for key in dict:` — iterates keys.
 - `for value in dict.values():` — iterates values.
@@ -2932,7 +2948,7 @@ Useful methods you should get acquainted with:
 
 ---
 
-## Key Takeaways
+## [5:53](https://youtu.be/vWcH6g62B-E?t=353) Key Takeaways
 
 - **You don't need to master every pattern before the technical interview.** Mod 2 fundamentals are ~80% of what you need.
 - **BFS/DFS** are tree/graph topics — not in mod 2, not on the Joy of Coding technical interview.
@@ -2950,18 +2966,19 @@ Useful methods you should get acquainted with:
 - **Group Anagrams canonical approach:** dictionary keyed by sorted string, values are lists of original strings.
 - **Know your dictionary methods** — `.values()`, `.items()`, `.keys()`, `.get()` are essential.
 
-
+---
 ---
 
 # Ruby Mock Interview — October 19, 2025
+Source: https://youtu.be/zNncK2JEBgU
 
 *Nailing the Tech Interview — Sunday session*
 
-## Topic: Reverse-Engineering Python String Methods
+## [1:20:32](https://youtu.be/zNncK2JEBgU?t=4832) Topic: Reverse-Engineering Python String Methods
 
 Ruby changed up the session format. Instead of a mock interview, she ran a workshop on **reverse-engineering built-in string methods** by breaking them into small reusable micro-challenges.
 
-### Motivation
+### [0:19](https://youtu.be/zNncK2JEBgU?t=19) Motivation
 
 On Wednesday the group covered **"Find the Index of the First Occurrence in a String"** (LeetCode easy), where:
 
@@ -2979,7 +2996,7 @@ Ruby's point: **this is a valid solution for the interview, but it's not great f
 
 ---
 
-## The Micro-Challenge Framework
+## [12:42](https://youtu.be/zNncK2JEBgU?t=762) The Micro-Challenge Framework
 
 Break the problem into small foundational skills you can practice in isolation:
 
@@ -2993,9 +3010,9 @@ If you can do each of these, you can compose them to implement `find()` yourself
 
 ---
 
-## Micro-Challenge 1: String Equality
+## [7:53](https://youtu.be/zNncK2JEBgU?t=473) [approx] Micro-Challenge 1: String Equality
 
-### Equality in value
+### [10:31](https://youtu.be/zNncK2JEBgU?t=631) [approx] Equality in value
 
 ```python
 string_1 = "hello"
@@ -3003,7 +3020,7 @@ string_2 = "hello"
 print(string_1 == string_2)   # True
 ```
 
-### Equality in length (different question)
+### [17:35](https://youtu.be/zNncK2JEBgU?t=1055) Equality in length (different question)
 
 ```python
 print(len(string_1) == len(string_2))
@@ -3011,7 +3028,7 @@ print(len(string_1) == len(string_2))
 
 **Key distinction:** `==` on strings checks that **every character matches**. `len(a) == len(b)` only checks that the lengths match, not the characters.
 
-### The "compressed if" clarification
+### [21:31](https://youtu.be/zNncK2JEBgU?t=1291) The "compressed if" clarification
 
 Chris asked about the one-liner `print(char in haystack)` without an `if` block:
 
@@ -3021,7 +3038,7 @@ Chris asked about the one-liner `print(char in haystack)` without an `if` block:
 
 ---
 
-## Micro-Challenge 2: Iterate Through a String
+## [18:25](https://youtu.be/zNncK2JEBgU?t=1105) [approx] Micro-Challenge 2: Iterate Through a String
 
 ```python
 haystack = "sadbutsad"
@@ -3033,7 +3050,7 @@ Straightforward. This iterates the characters directly without tracking an index
 
 ---
 
-## Micro-Challenge 3: Check If a Character Exists in a String
+## [21:03](https://youtu.be/zNncK2JEBgU?t=1263) [approx] Micro-Challenge 3: Check If a Character Exists in a String
 
 ```python
 character = "s"
@@ -3045,7 +3062,7 @@ The `in` operator is all you need — no loop required.
 
 ---
 
-## Micro-Challenge 4: Find Index of First Matching Character
+## [43:11](https://youtu.be/zNncK2JEBgU?t=2591) Micro-Challenge 4: Find Index of First Matching Character
 
 The trick: `for ch in string` iterates **characters**, but you need the **index**. Use `for i in range(len(string))` instead so `i` is an integer index.
 
@@ -3059,22 +3076,22 @@ for i in range(len(haystack)):
         break   # stop at first match
 ```
 
-### On `break` vs `return`
+### [33:23](https://youtu.be/zNncK2JEBgU?t=2003) On `break` vs `return`
 
 - **`break`** exits the loop but continues with code after it.
 - **`return`** exits the entire function immediately.
 - Use `break` if you want to find the first occurrence and keep doing work afterwards.
 - Use `return` if finding the match means the function is done.
 
-### The trap
+### [15:34](https://youtu.be/zNncK2JEBgU?t=934) The trap
 
 Without `break`, the loop would print **every** `s` in `sadbutsad` (indexes 0 and 6). We only want the first. `break` ensures we stop at index 0.
 
 ---
 
-## Micro-Challenge 5: Slice a String Between Two Indexes
+## [1:04:19](https://youtu.be/zNncK2JEBgU?t=3859) Micro-Challenge 5: Slice a String Between Two Indexes
 
-### The long way (for loop)
+### [1:04:19](https://youtu.be/zNncK2JEBgU?t=3859) The long way (for loop)
 
 ```python
 index_1 = 3
@@ -3085,7 +3102,7 @@ for i in range(index_1, index_2):
 print(word)
 ```
 
-### The Python-idiomatic way (slice notation)
+### [35:42](https://youtu.be/zNncK2JEBgU?t=2142) The Python-idiomatic way (slice notation)
 
 ```python
 print(haystack[index_1:index_2])   # "lo w"  (inclusive start, exclusive end)
@@ -3098,11 +3115,11 @@ print(haystack[index_1:index_2])   # "lo w"  (inclusive start, exclusive end)
 
 ---
 
-## Composing the Micro-Challenges into a Full Solution
+## [1:04:19](https://youtu.be/zNncK2JEBgU?t=3859) Composing the Micro-Challenges into a Full Solution
 
 Now build `strStr(haystack, needle)` from these building blocks.
 
-### High-level pseudo code
+### [42:07](https://youtu.be/zNncK2JEBgU?t=2527) [approx] High-level pseudo code
 
 ```
 # Iterate through haystack
@@ -3111,12 +3128,12 @@ Now build `strStr(haystack, needle)` from these building blocks.
 # If we finish the loop without matching, return -1
 ```
 
-### Bonus edge cases
+### [1:04:24](https://youtu.be/zNncK2JEBgU?t=3864) Bonus edge cases
 
 - **If needle equals haystack**, return 0 immediately.
 - **If haystack is shorter than needle**, return -1 immediately.
 
-### Full implementation
+### [1:04:19](https://youtu.be/zNncK2JEBgU?t=3859) Full implementation
 
 ```python
 def strStr(haystack, needle):
@@ -3135,7 +3152,7 @@ def strStr(haystack, needle):
     return -1
 ```
 
-### Walking through the critical slice
+### [1:04:19](https://youtu.be/zNncK2JEBgU?t=3859) Walking through the critical slice
 
 For `haystack = "sadbutsad"`, `needle = "sad"`:
 
@@ -3147,19 +3164,19 @@ For `haystack = "somethingsomething sad"`, `needle = "sad"`:
 - `i = 10`: first char `s` matches, but slice ≠ `"sad"`.
 - `i = 20` (eventual): slice `haystack[20:23]` = `"sad"` → return 20.
 
-### The subtle bug we hit during the demo
+### [50:49](https://youtu.be/zNncK2JEBgU?t=3049) The subtle bug we hit during the demo
 
 Initial attempt used `haystack[i:n]` instead of `haystack[i:i + n]`. That means "from `i` to `n`" — if `i > n`, you get an empty string. The fix is `i + n` so the endpoint advances with the start.
 
 > "This is why it's always good to print. When you're not sure why you're getting nothing, add more context to your prints."
 
-### Indentation gotcha for the `return -1`
+### [44:26](https://youtu.be/zNncK2JEBgU?t=2666) Indentation gotcha for the `return -1`
 
 The `return -1` must be **outside** the `for` loop (at the function level), not inside it. If it's at the loop's level, it fires after the first iteration and never finds matches beyond index 0. Kick it one tab further left.
 
 ---
 
-## Why Bother With This Exercise?
+## [17:38](https://youtu.be/zNncK2JEBgU?t=1058) Why Bother With This Exercise?
 
 - These micro-skills (string equality, iteration with index, slicing, character membership) appear in **many** string problems.
 - Once you're fluent, you can look at a problem and see "this is iterate + slice + compare + return" without needing to remember a specific built-in method.
@@ -3167,7 +3184,7 @@ The `return -1` must be **outside** the `for` loop (at the function level), not 
 
 > "The trick is to look at a problem and determine what those little mini micro-challenges are." — Ruby
 
-### Example of generalization: email validation
+### [50:46](https://youtu.be/zNncK2JEBgU?t=3046) Example of generalization: email validation
 
 Chris noted this pattern applies to email validation:
 
@@ -3179,15 +3196,15 @@ All the same building blocks.
 
 ---
 
-## Related String Methods (and Homework)
+## [1:36](https://youtu.be/zNncK2JEBgU?t=96) Related String Methods (and Homework)
 
 Ruby pointed out two other common string methods that work similarly:
 
-### `str.count(substring)`
+### [44:26](https://youtu.be/zNncK2JEBgU?t=2666) `str.count(substring)`
 
 Returns the number of times `substring` appears in the string. We tested this implicitly in the demo by tracking multiple `s` matches in `sadbutsad`.
 
-### `str.replace(old, new, count=...)`
+### [31:32](https://youtu.be/zNncK2JEBgU?t=1892) `str.replace(old, new, count=...)`
 
 Replaces occurrences of `old` with `new`. Optional `count` parameter limits how many replacements.
 
@@ -3199,7 +3216,7 @@ text.replace("one", "three", 2)    # "three three one"
 
 **Note:** `replace` **returns** a new string — strings in Python are immutable, so it can't modify in place.
 
-### Homework
+### [1:15:55](https://youtu.be/zNncK2JEBgU?t=4555) Homework
 
 Implement `count` and `replace` **without using the built-in methods**. Use only the micro-challenge building blocks we practiced today.
 
@@ -3208,7 +3225,7 @@ Implement `count` and `replace` **without using the built-in methods**. Use only
 
 ---
 
-## Q&A: Bracket Notation for Indexing
+## [50:46](https://youtu.be/zNncK2JEBgU?t=3046) Q&A: Bracket Notation for Indexing
 
 Someone asked: "When you put `needle[0]`, does the bracket notation always mean index?"
 
@@ -3219,7 +3236,7 @@ Someone asked: "When you put `needle[0]`, does the bracket notation always mean 
 - Works the same on lists: `my_list[0]`.
 - **Strings and lists** are both iterable and indexable.
 
-### Parentheses in return statements
+### [9:10](https://youtu.be/zNncK2JEBgU?t=550) Parentheses in return statements
 
 Another clarification: **you don't need parentheses around a `return` value** in Python. You need them for `print()` (which is a function call) but not `return` (which is a keyword).
 
@@ -3230,7 +3247,7 @@ return(i)          # also works but unnecessary
 
 ---
 
-## Key Takeaways
+## [17:35](https://youtu.be/zNncK2JEBgU?t=1055) Key Takeaways
 
 - **Built-in string methods are shortcuts** — useful in interviews, but don't let them rob you of understanding the mechanics.
 - **Break problems into micro-challenges** that are reusable across many problems.
@@ -3243,24 +3260,25 @@ return(i)          # also works but unnecessary
 - **`[0]`, `[1]`, etc. are indexes** for strings, lists, tuples — all ordered iterables.
 - **Print early, print often** when debugging slice/index logic. When you see nothing, add more print context.
 
-
+---
 ---
 
 # Ruby Mock Interview — October 26, 2025
+Source: https://youtu.be/P60M5VIEBQY
 
 *Nailing the Tech Interview — Sunday session*
 
-## Homework Recap: Reimplementing `count` and `replace`
+## [1:16](https://youtu.be/P60M5VIEBQY?t=76) Homework Recap: Reimplementing `count` and `replace`
 
 Mauricio completed the homework of reimplementing Python's `str.count()` and `str.replace()` without using the built-in methods and posted his solutions to the HackerRank Discord channel. He even wrapped them in a class to mimic the built-in interface.
 
-### What he ran into
+### [34:30](https://youtu.be/P60M5VIEBQY?t=2070) What he ran into
 
 - **`replace` was harder than `count`** — the sticking point was **updating the string as you find matches**. At first he was only replacing the first or the last occurrence.
 - **Strings are immutable** — each replacement creates a new string, which you then have to reassign before the next iteration.
 - **Once `replace` worked, `count` was trivial** — it's essentially a shortened version of the same traversal logic without the modification step.
 
-### Why Ruby chose these two problems
+### [3:25](https://youtu.be/P60M5VIEBQY?t=205) Why Ruby chose these two problems
 
 - `find`, `count`, and `replace` all share the same **traversal + comparison base** but have different side effects:
   - `find` returns an index.
@@ -3269,13 +3287,13 @@ Mauricio completed the homework of reimplementing Python's `str.count()` and `st
 
 ---
 
-## Mock Interview: Mauricio on "Minimum Time to Make Rope Colorful" (LeetCode medium)
+## [52:07](https://youtu.be/P60M5VIEBQY?t=3127) Mock Interview: Mauricio on "Minimum Time to Make Rope Colorful" (LeetCode medium)
 
-### Problem statement
+### [52:07](https://youtu.be/P60M5VIEBQY?t=3127) Problem statement
 
 You have a rope of balloons represented as a string `colors`. You also have an integer array `neededTime` where `neededTime[i]` is the time to remove balloon `i`. Bob wants the rope to be **"colorful"** — meaning **no two consecutive balloons have the same color**. Return the **minimum time** Bob needs to make the rope colorful.
 
-### Examples
+### [12:23](https://youtu.be/P60M5VIEBQY?t=743) [approx] Examples
 
 ```
 colors = "abaac",   neededTime = [1, 2, 3, 4, 5]  ->  3
@@ -3289,18 +3307,18 @@ colors = "aabaa",   neededTime = [1, 2, 3, 4, 1]  ->  2
   Remove first 'a' (time 1) and last 'a' (time 1) -> "aba". Total: 2.
 ```
 
-### Constraints
+### [18:25](https://youtu.be/P60M5VIEBQY?t=1105) Constraints
 
 - `colors.length == neededTime.length == n`
 - `1 <= n <= 10^5`
 - `1 <= neededTime[i] <= 10^4`
 - `colors` consists of lowercase English letters.
 
-### Mauricio's verbal problem breakdown
+### [48:16](https://youtu.be/P60M5VIEBQY?t=2896) Mauricio's verbal problem breakdown
 
 > "The goal is to remove any consecutive balloons of the same color. Among the two, I should remove the cheapest one. So I need to find consecutive duplicates, then add the minimum of the two times to a running sum."
 
-### Approach (pair-by-pair with `step=2`)
+### [15:31](https://youtu.be/P60M5VIEBQY?t=931) Approach (pair-by-pair with `step=2`)
 
 Initial plan: iterate `colors` in steps of 2, compare `colors[i]` to `colors[i+1]`, and if they match, add the minimum of the two times to a running sum.
 
@@ -3313,23 +3331,23 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### The bug: step=2 skips odd-indexed comparisons
+### [22:18](https://youtu.be/P60M5VIEBQY?t=1338) [approx] The bug: step=2 skips odd-indexed comparisons
 
 With step 2, you compare (0,1), (2,3), (4,5)... but you **miss** comparing (1,2), (3,4), etc. This fails cases where consecutive duplicates straddle the step boundary.
 
-### The debugging hiccup
+### [55:51](https://youtu.be/P60M5VIEBQY?t=3351) The debugging hiccup
 
 - Mauricio added print statements but **nothing printed**. He thought the `if` condition was the problem.
 - **Actual cause:** the `range(..., step=2)` was skipping past the matching pairs, so the `if` was never true.
 - **Lesson:** he should have added a print statement **right after the `for` loop** to confirm the loop was iterating over the expected indexes — **before** writing any inner logic.
 
-### Ruby's coaching point
+### [32:45](https://youtu.be/P60M5VIEBQY?t=1965) Ruby's coaching point
 
 > "As soon as you wrote your for loop, I would have tested to make sure it was doing what you expected. It seems simple — why would I need to test my for loop? I've written it a million times. This is exactly why I do it every single week."
 
 **Always print right after writing a loop.** You reduce the possible sources of error from "is it my for loop, my if, my sum, my index arithmetic, or my variable name?" down to just "the for loop." Debug the smallest surface area at a time.
 
-### Fixing step=2 → step=1
+### [11:35](https://youtu.be/P60M5VIEBQY?t=695) Fixing step=2 → step=1
 
 Removing the step argument got the code running:
 
@@ -3341,11 +3359,11 @@ for i in range(len(colors) - 1):
 
 Result: **33% of test cases passing** (only about 28%).
 
-### Why `len(colors) - 1` (the safety offset)
+### [17:11](https://youtu.be/P60M5VIEBQY?t=1031) Why `len(colors) - 1` (the safety offset)
 
 Because we access `colors[i + 1]` inside the loop, we must stop at the second-to-last index or we'll hit an **index out of range** error. `range(len(colors) - 1)` gives indexes `0` through `n - 2`, and `i + 1` will then be at most `n - 1`.
 
-### The remaining bug: three-or-more consecutive duplicates
+### [18:52](https://youtu.be/P60M5VIEBQY?t=1132) The remaining bug: three-or-more consecutive duplicates
 
 With `colors = "aaabbbc"` and `neededTime = [3, 5, 10, 7, 5, 3, 5]`, the pair-by-pair logic starts **double-counting**:
 
@@ -3357,17 +3375,17 @@ With `colors = "aaabbbc"` and `neededTime = [3, 5, 10, 7, 5, 3, 5]`, the pair-by
 
 The correct approach for a run of `k` same-colored balloons is: **remove all but the most expensive one**. That is, `sum(group) - max(group)`.
 
-### Strategy for the next attempt
+### [36:03](https://youtu.be/P60M5VIEBQY?t=2163) Strategy for the next attempt
 
 Mauricio suggested switching to a **`while` loop** to walk through runs of same-color balloons until the color changes, then sum the group and subtract the max. Ruby suggested first **walking through the failing test case by hand** before rewriting.
 
 > "Before I just start switching variables or conditions, what do I need to know about this problem? What do I need to consider?"
 
-### Ruby's hint
+### [45:17](https://youtu.be/P60M5VIEBQY?t=2717) Ruby's hint
 
 > "I think that hint might even be example three in their problem statement." — pointing to the `"aabaa"` example where removing the two cheap end-a's is the right move. Generalize: always **keep the most expensive balloon** in each consecutive-color group.
 
-### Correct canonical solution (implied, not coded in session)
+### [11:40](https://youtu.be/P60M5VIEBQY?t=700) Correct canonical solution (implied, not coded in session)
 
 ```python
 def minCost(colors, neededTime):
@@ -3391,7 +3409,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Linda's Clarifying Questions (Great Interview Practice)
+## [49:50](https://youtu.be/P60M5VIEBQY?t=2990) Linda's Clarifying Questions (Great Interview Practice)
 
 Linda joined late and asked Mauricio to explain his code in plain English. Ruby noted this is **exactly** the kind of conversation you'd have in an interview — being able to explain your logic while the interviewer probes your reasoning.
 
@@ -3406,22 +3424,22 @@ Questions Mauricio fielded well:
 
 ---
 
-## Closing Recommendations
+## [8:51](https://youtu.be/P60M5VIEBQY?t=531) Closing Recommendations
 
-### Pen and paper for tricky test cases
+### [8:51](https://youtu.be/P60M5VIEBQY?t=531) Pen and paper for tricky test cases
 
 When code passes some tests but not all and you can't see where it's breaking down mentally, **draw it out**. Especially for problems with visual setups like this one (balloons on a rope).
 
 > "I'm always a fan of pen and paper. Make it visual if you need to."
 
-### Session cadence reminder (for newcomers)
+### [55:01](https://youtu.be/P60M5VIEBQY?t=3301) Session cadence reminder (for newcomers)
 
 - **Sundays:** new problems, mock interviews, fresh content.
 - **Wednesdays:** exploring the problems from Sunday in more depth, alternative approaches, efficiency discussions.
 
 ---
 
-## Key Takeaways
+## [3:20](https://youtu.be/P60M5VIEBQY?t=200) Key Takeaways
 
 - **Homework insight:** `replace` requires reassigning the string after every match because strings are immutable. `count` is a simpler traversal with no modification.
 - **Always debug your for loop immediately after writing it.** Print indexes or values before adding any inner logic — reduces debugging surface area.
@@ -3433,18 +3451,19 @@ When code passes some tests but not all and you can't see where it's breaking do
 - **When stuck, walk through the failing test case by hand** before changing code blindly. Ask "what do I need to know?" before "what should I change?"
 - **Pen and paper beats mental tracing** for complex iterations.
 
-
+---
 ---
 
 # Ruby Mock Interview — November 2, 2025
+Source: https://youtu.be/STZUhIZW9Hw
 
 *Nailing the Tech Interview — Sunday session*
 
-## Q&A: Is There a Quick, Effective Way to Prepare?
+## [2:07](https://youtu.be/STZUhIZW9Hw?t=127) Q&A: Is There a Quick, Effective Way to Prepare?
 
 Linda asked if there's a quick or effective way to prepare for the technical interview beyond just doing problems repetitively.
 
-### Ruby's answer
+### [2:17](https://youtu.be/STZUhIZW9Hw?t=137) [approx] Ruby's answer
 
 - **Not quick, but effective** — absolutely.
 - **Repetition alone isn't enough.** What matters is **what you learn after each problem**.
@@ -3455,11 +3474,11 @@ Linda asked if there's a quick or effective way to prepare for the technical int
 
 ---
 
-## Mindy's Alternative Count Implementation
+## [5:39](https://youtu.be/STZUhIZW9Hw?t=339) Mindy's Alternative Count Implementation
 
 Mindy shared an alternative implementation of `str.count()` that she developed because the **sliding window slicing approach** from Mauricio's version had been tripping her up.
 
-### The "whole-word" version
+### [5:53](https://youtu.be/STZUhIZW9Hw?t=353) The "whole-word" version
 
 Instead of matching substrings, she split the string by spaces and compared whole words after stripping punctuation:
 
@@ -3484,7 +3503,7 @@ def count(string, word, match_whole_word=True):
         return count
 ```
 
-### The `+ 1` in the range
+### [4:50](https://youtu.be/STZUhIZW9Hw?t=290) The `+ 1` in the range
 
 Mindy spent time puzzling out why the range is `len(string) - word_length + 1`:
 
@@ -3492,7 +3511,7 @@ Mindy spent time puzzling out why the range is `len(string) - word_length + 1`:
 - Example: `string = "abcde"` (length 5), `word = "cd"` (length 2). Valid start indexes are `0, 1, 2, 3` → that's `5 - 2 + 1 = 4` positions.
 - **The `+ 1` includes the final viable starting index.**
 
-### The sliding-window comparison
+### [11:26](https://youtu.be/STZUhIZW9Hw?t=686) [approx] The sliding-window comparison
 
 ```python
 if string[i:i + word_length] == word:
@@ -3502,7 +3521,7 @@ if string[i:i + word_length] == word:
 - `==` compares the chunk to the full word.
 - Increments `i` each iteration → the window slides forward.
 
-### Ruby's critique
+### [1:08:11](https://youtu.be/STZUhIZW9Hw?t=4091) Ruby's critique
 
 Mindy's test case used `apple` as the search term in a string containing `"apples"`:
 
@@ -3515,11 +3534,11 @@ Mindy's test case used `apple` as the search term in a string containing `"apple
 
 ---
 
-## Ruby's First Hard Problem: Median of Two Sorted Arrays
+## [22:38](https://youtu.be/STZUhIZW9Hw?t=1358) Ruby's First Hard Problem: Median of Two Sorted Arrays
 
 Ruby solved a LeetCode **hard** problem in under 30 minutes and thought it was mislabeled — the techniques are all things the group had covered in easier problems. She walked through how to build up to it.
 
-### Subproblem 1: Find the Median of a Sorted Array
+### [23:53](https://youtu.be/STZUhIZW9Hw?t=1433) Subproblem 1: Find the Median of a Sorted Array
 
 What information do you need to know?
 
@@ -3529,7 +3548,7 @@ What information do you need to know?
 - **Is the array non-empty?** Edge case to handle.
 - **Range of values** (sometimes given as a constraint, not strictly needed for logic).
 
-### For an odd-length sorted array
+### [20:35](https://youtu.be/STZUhIZW9Hw?t=1235) [approx] For an odd-length sorted array
 
 ```python
 def find_median_odd(arr):
@@ -3539,7 +3558,7 @@ def find_median_odd(arr):
 
 For `len(arr) == 7`, `7 // 2 == 3`, which is the correct 0-indexed middle position (values at indexes 0,1,2 | **3** | 4,5,6).
 
-### For an even-length sorted array
+### [22:52](https://youtu.be/STZUhIZW9Hw?t=1372) [approx] For an even-length sorted array
 
 ```python
 def find_median_even(arr):
@@ -3549,7 +3568,7 @@ def find_median_even(arr):
     return (mid1 + mid2) / 2
 ```
 
-### Subproblem 2: Merge Two Sorted Arrays in O(n + m)
+### [25:09](https://youtu.be/STZUhIZW9Hw?t=1509) [approx] Subproblem 2: Merge Two Sorted Arrays in O(n + m)
 
 Information needed:
 
@@ -3558,7 +3577,7 @@ Information needed:
 - A new array must be created — you can't modify in place easily.
 - The combined length is `len(a) + len(b)`.
 
-### Naive approach: concat + sort
+### [27:27](https://youtu.be/STZUhIZW9Hw?t=1647) [approx] Naive approach: concat + sort
 
 ```python
 merged = nums1 + nums2
@@ -3567,7 +3586,7 @@ merged.sort()
 
 This **works** but is **O((n+m) log(n+m))** due to the sort. The problem requires better.
 
-### Proper O(n + m) merge (two pointers)
+### [29:44](https://youtu.be/STZUhIZW9Hw?t=1784) [approx] Proper O(n + m) merge (two pointers)
 
 ```python
 def merge_sorted(nums1, nums2):
@@ -3590,18 +3609,18 @@ Each pointer only advances forward → total work is `O(n + m)`.
 
 ---
 
-## The Hard Problem: Median of Two Sorted Arrays
+## [36:53](https://youtu.be/STZUhIZW9Hw?t=2213) The Hard Problem: Median of Two Sorted Arrays
 
 > Given two sorted arrays `nums1` and `nums2` of sizes `m` and `n`, return the median of the combined sorted array. **Overall runtime complexity should be O(log(m + n))**.
 
-### Examples
+### [34:19](https://youtu.be/STZUhIZW9Hw?t=2059) [approx] Examples
 
 ```
 nums1 = [1,3],    nums2 = [2]       -> 2.0
 nums1 = [1,2],    nums2 = [3,4]     -> 2.5
 ```
 
-### Ruby's approach
+### [36:36](https://youtu.be/STZUhIZW9Hw?t=2196) [approx] Ruby's approach
 
 Combine the two subproblems:
 
@@ -3612,23 +3631,23 @@ Combine the two subproblems:
 
 > "I kind of feel like this problem is mislabeled. I'll take the win either way."
 
-### Problem-asking exercise
+### [10:00](https://youtu.be/STZUhIZW9Hw?t=600) Problem-asking exercise
 
 Ruby turned this into a group pseudo-code exercise **without showing the problem first**, just asking "what information would you need?" This is exactly the kind of clarifying-questions exercise you should practice for interviews.
 
 ---
 
-## The Blind 75 and Pattern Recognition Debate
+## [44:52](https://youtu.be/STZUhIZW9Hw?t=2692) The Blind 75 and Pattern Recognition Debate
 
 Mindy mentioned LeetCode now has a **"Study Plan"** feature for the Blind 75 that categorizes problems by pattern (arrays, sliding window, two pointers, etc.).
 
-### Mindy's position
+### [48:41](https://youtu.be/STZUhIZW9Hw?t=2921) Mindy's position
 
 - Helpful for people who learn by repetition.
 - Seeing a bunch of problems that use the same pattern helps build pattern recognition.
 - Similar to how math drills taught fundamentals growing up.
 
-### Ruby's position
+### [52:10](https://youtu.be/STZUhIZW9Hw?t=3130) Ruby's position
 
 - For the **Blind 75 specifically**, going in knowing the category **defeats the purpose**. The whole point is to test whether you can recognize patterns *cold* — just like in a real interview.
 - **For learning a new concept**, Googling "LeetCode sliding window problems" to get a focused problem set is absolutely valid.
@@ -3636,14 +3655,14 @@ Mindy mentioned LeetCode now has a **"Study Plan"** feature for the Blind 75 tha
 
 > "Are you going to know it's a hashset problem, a linked list problem, a sliding window problem if you don't practice identifying that yourself?"
 
-### Middle ground
+### [1:05:08](https://youtu.be/STZUhIZW9Hw?t=3908) Middle ground
 
 - Use categorized problem lists when you're **learning** a concept.
 - Use uncategorized practice (blind picks) when you're **interview prepping**.
 
 ---
 
-## Q&A: Am I Ready for the Technical Interview?
+## [54:39](https://youtu.be/STZUhIZW9Hw?t=3279) Q&A: Am I Ready for the Technical Interview?
 
 > "Do you give us an inkling of when we might be ready?"
 
@@ -3651,11 +3670,11 @@ Ruby: "If you volunteer to do a mock interview, I can give you a read on what yo
 
 ---
 
-## Q&A: Is Tech Joy Winding Down?
+## [55:08](https://youtu.be/STZUhIZW9Hw?t=3308) Q&A: Is Tech Joy Winding Down?
 
 Linda noticed Discord is quieter and the calendar is shrinking. She asked if Tech Joy is closing.
 
-### Ruby's answer
+### [57:02](https://youtu.be/STZUhIZW9Hw?t=3422) Ruby's answer
 
 - **No.** The technical interview is **not going anywhere**, per Dr. Emily.
 - The company's strategy is shifting toward bringing in **code-ready people** for internships rather than training from scratch.
@@ -3667,17 +3686,17 @@ Linda noticed Discord is quieter and the calendar is shrinking. She asked if Tec
 
 ---
 
-## Q&A: Running Out of Practice Problems
+## [1:03:49](https://youtu.be/STZUhIZW9Hw?t=3829) Q&A: Running Out of Practice Problems
 
 Mauricio: "If I've done all the hacker rank problems and then take the technical interview, I'll be left with only the hardest easy problems. I feel penalized for having done so many."
 
-### Ruby's answer
+### [58:23](https://youtu.be/STZUhIZW9Hw?t=3503) Ruby's answer
 
 - **Solved-on-HackerRank problems won't be reused** in your technical interview — the instructors check the leaderboard.
 - Ruby is actively working on **new problem sets** drawn from **LeetCode** for students who exhaust the HackerRank pool.
 - **General philosophy:** HackerRank is preferred because it gives all the info upfront; LeetCode sometimes leaves info out, forcing you to discover it through failing tests. Ruby will select LeetCode problems that match HackerRank's "everything upfront" style.
 
-### On interview nerves and luck
+### [1:04:20](https://youtu.be/STZUhIZW9Hw?t=3860) On interview nerves and luck
 
 > "Sometimes it feels like when the stars align, you pass. You got the right problem, you were more relaxed, more focused, and everything aligned. It's just like a real technical interview." — Mauricio
 
@@ -3685,13 +3704,13 @@ Mauricio: "If I've done all the hacker rank problems and then take the technical
 
 ---
 
-## Homework
+## [36:41](https://youtu.be/STZUhIZW9Hw?t=2201) Homework
 
 Solve **Median of Two Sorted Arrays** using the merge + median approach. After this, you'll have "tackled your first hard problem" for the record books.
 
 ---
 
-## Key Takeaways
+## [49:52](https://youtu.be/STZUhIZW9Hw?t=2992) Key Takeaways
 
 - **Repetition alone isn't enough** — what matters is what you learn *after* each problem.
 - **Reverse-engineering built-in methods** (like `str.count`) is a great way to learn string manipulation fundamentals.
@@ -3705,35 +3724,36 @@ Solve **Median of Two Sorted Arrays** using the merge + median approach. After t
 - **The technical interview isn't going away** — it's the admissions test for the internship pipeline.
 - **Clarifying questions** (sorted? even length? range? non-empty?) are a core interview skill — practice asking them before coding.
 
-
+---
 ---
 
 # Ruby Mock Interview — November 23, 2025
+Source: https://youtu.be/lav3CnpwqtM
 
 *Nailing the Tech Interview — Last Sunday session*
 
-## Session Format Change
+## [0:17](https://youtu.be/lav3CnpwqtM?t=17) Session Format Change
 
 This is the **last Sunday session**. Moving forward, only the **Wednesday sessions** will continue, keeping the same mock-interview-and-practice format.
 
 ---
 
-## Linda's Walkthrough: Assign Cookies
+## [1:32](https://youtu.be/lav3CnpwqtM?t=92) Linda's Walkthrough: Assign Cookies
 
 Linda volunteered to walk through a problem she'd already solved (**LeetCode Assign Cookies**) as a self-directed warm-up. Ruby agreed this counts as a valid mock interview — it tests communication, explaining logic, and debugging under observation.
 
-### Problem statement
+### [4:03](https://youtu.be/lav3CnpwqtM?t=243) Problem statement
 
 Assume you're a parent giving cookies to children. Each child has a **greed factor `g[i]`** (minimum cookie size they'll accept). Each cookie has a **size `s[j]`**. You can give each child at most one cookie. If `s[j] >= g[i]`, child `i` is content. **Return the maximum number of content children.**
 
-### Examples
+### [7:50](https://youtu.be/lav3CnpwqtM?t=470) [approx] Examples
 
 ```
 g = [1, 2, 3],   s = [1, 1]     -> 1
 g = [1, 2],      s = [1, 2, 3]  -> 2
 ```
 
-### Linda's approach: two pointers + greedy
+### [10:27](https://youtu.be/lav3CnpwqtM?t=627) [approx] Linda's approach: two pointers + greedy
 
 1. Sort both arrays.
 2. Initialize pointers `i` (kid) and `j` (cookie) to 0.
@@ -3753,11 +3773,11 @@ def findContentChildren(g, s):
     return i
 ```
 
-### The bug Linda hit
+### [42:54](https://youtu.be/lav3CnpwqtM?t=2574) The bug Linda hit
 
 She was initially writing `return 1` (hardcoded) and couldn't understand why case 2 (expected output 2) was failing. She was also confused why running the code with the stray `1` still passed case 1 — because the expected output for case 1 happens to be `1`, so the hardcoded answer matched coincidentally.
 
-### Debugging process
+### [15:40](https://youtu.be/lav3CnpwqtM?t=940) [approx] Debugging process
 
 Ruby coached her through:
 
@@ -3767,14 +3787,14 @@ Ruby coached her through:
 
 > "When you're going along and everything looks right but the output is wrong, take a step back. Ask what inputs you're given, what outputs you're expected to return, and what's driving the problem."
 
-### What Linda did well
+### [39:36](https://youtu.be/lav3CnpwqtM?t=2376) What Linda did well
 
 - Clear labeling of her thought process and variables.
 - Strong verbal communication throughout.
 - Explained the algorithm before coding.
 - Only tripped up on one return statement and recovered.
 
-### Coaching notes
+### [22:27](https://youtu.be/lav3CnpwqtM?t=1347) Coaching notes
 
 - **Making assumptions when stuck is good**, but follow it with a concrete action (add prints, test, verify).
 - **Watch out for the mental loop** of "just toggle things until it works." Systematic debugging beats guessing.
@@ -3784,25 +3804,25 @@ Ruby coached her through:
 
 ---
 
-## Mock Interview: Mauricio on "Majority Element" (LeetCode easy)
+## [33:26](https://youtu.be/lav3CnpwqtM?t=2006) Mock Interview: Mauricio on "Majority Element" (LeetCode easy)
 
-### Problem statement
+### [33:26](https://youtu.be/lav3CnpwqtM?t=2006) Problem statement
 
 Given an array `nums` of size `n`, return the **majority element** — the element that appears **more than `n/2` times**. You may assume a majority element always exists.
 
-### Examples
+### [28:44](https://youtu.be/lav3CnpwqtM?t=1724) [approx] Examples
 
 ```
 nums = [3, 2, 3]                    -> 3  (appears 2 times, n/2 = 1.5)
 nums = [2, 2, 1, 1, 1, 2, 2]        -> 2  (appears 4 times, n/2 = 3.5)
 ```
 
-### Constraints
+### [31:21](https://youtu.be/lav3CnpwqtM?t=1881) [approx] Constraints
 
 - `1 <= n <= 5 * 10^4`
 - `-10^9 <= nums[i] <= 10^9`
 
-### Mauricio's approach: frequency hashmap
+### [33:58](https://youtu.be/lav3CnpwqtM?t=2038) [approx] Mauricio's approach: frequency hashmap
 
 ```python
 def majorityElement(nums):
@@ -3819,7 +3839,7 @@ def majorityElement(nums):
 - **Space:** O(n)
 - Solved in about **10 minutes**.
 
-### Coaching feedback
+### [36:26](https://youtu.be/lav3CnpwqtM?t=2186) Coaching feedback
 
 - Clean, confident implementation — Mauricio has frequency dictionaries down cold.
 - **Still check your work along the way** even when a problem feels easy. Add a print after building the frequency dict to confirm it's shaped correctly. Don't write a long block of code untested.
@@ -3838,7 +3858,7 @@ def majorityElement(nums):
 
 - O(n) time, O(1) space. Works because the majority element "wins" enough vote comparisons to survive to the end.
 
-### Early-exit optimization hint
+### [44:36](https://youtu.be/lav3CnpwqtM?t=2676) Early-exit optimization hint
 
 Since the problem guarantees exactly one majority element exists, you could **exit early** from the frequency loop the moment any count exceeds `n/2`. No need to finish building the dict.
 
@@ -3846,11 +3866,11 @@ Since the problem guarantees exactly one majority element exists, you could **ex
 
 ---
 
-## Ruby's Real-World Example: Full-Text Search with Highlighting
+## [32:06](https://youtu.be/lav3CnpwqtM?t=1926) Ruby's Real-World Example: Full-Text Search with Highlighting
 
 Ruby showcased a real project she was working on that applies string-manipulation concepts from the tech interview prep to a practical problem.
 
-### The problem
+### [44:25](https://youtu.be/lav3CnpwqtM?t=2665) [approx] The problem
 
 Build a full-text search that:
 
@@ -3859,7 +3879,7 @@ Build a full-text search that:
 3. Preserves the **original casing** in the output.
 4. Wraps matches in HTML `<highlight>` tags for display.
 
-### Why Python's built-in `str.replace()` isn't enough
+### [52:31](https://youtu.be/lav3CnpwqtM?t=3151) Why Python's built-in `str.replace()` isn't enough
 
 ```python
 "I like bananas BANANAS Bananas".replace("bananas", "apples")
@@ -3868,7 +3888,7 @@ Build a full-text search that:
 
 Only matches the exact casing, and doesn't preserve original casing in the non-matched occurrences you'd also want to highlight.
 
-### The layers of complexity
+### [49:39](https://youtu.be/lav3CnpwqtM?t=2979) [approx] The layers of complexity
 
 Starting from a basic `replace` understanding:
 
@@ -3877,7 +3897,7 @@ Starting from a basic `replace` understanding:
 3. **Preserve original casing** — find all cases, highlight them, don't alter the surrounding text.
 4. **Wrap in HTML** — output `<highlight>original</highlight>` rather than just the match.
 
-### The point
+### [49:24](https://youtu.be/lav3CnpwqtM?t=2964) The point
 
 > "Everything you're learning and practicing for the tech interview definitely does come back in the internship and beyond. There are skill sets you're building that will take you from good to great when it comes to performing in the real world."
 
@@ -3885,7 +3905,7 @@ The interview problem is **the baseline template**. The real world adds layers o
 
 ---
 
-## Key Takeaways
+## [1:55](https://youtu.be/lav3CnpwqtM?t=115) Key Takeaways
 
 - **Walking through a problem you've solved before counts as valuable mock interview practice** — it tests explanation and debugging skills, not just fresh problem-solving.
 - **Read error messages carefully.** Don't assume you know what's wrong — the error tells you.

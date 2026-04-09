@@ -1,191 +1,177 @@
-# Make-Up Session — Two Pointers on Ice Cream Parlor (2025-07-27)
+# Three Things to Nail Your Technical Interview
+Source: https://youtu.be/0xVef_cANvw
 
-A long-overdue make-up session: implementing the **two-pointer** approach on the Ice Cream Parlor problem. (Binary search version still pending — saved for next session.)
+*Dr. Emily, Joy of Coding Academy*
 
----
+## [0:03](https://youtu.be/0xVef_cANvw?t=3) Overview
 
-## Problem Recap: Ice Cream Parlor
-
-Two friends pool money `m`. Given a list of ice cream costs, return the **one-based indices** of the two distinct flavors that sum exactly to `m`. There will always be a valid solution.
-
-### Key constraints
-
-- `m`: 2 to 10⁴.
-- `n` (length of cost array): 2 to 10⁴.
-- Cost values: 1 to 10⁴.
-- Always exactly one valid solution.
-- Two indices must be **distinct** but the **values** can repeat.
+This session covers the three things you need to nail your technical interviews for software development jobs — whether you're targeting the $40–60k, $70–90k, or $100k+ salary range. Regardless of level, you will face a technical interview.
 
 ---
 
-## Brute Force Recap (Nested Loop)
+## [1:47](https://youtu.be/0xVef_cANvw?t=107) What Is a Technical Interview?
 
-```python
-for index, value in enumerate(cost, 1):
-    for j in range(index, len(cost)):
-        if value + cost[j] == m:
-            return [index, j + 1]
-```
+A technical interview is the component specific to software development jobs where, in addition to a face-to-face conversation, companies assess your actual technical skills.
 
-- `enumerate(cost, 1)` for one-based outer index.
-- `range(index, len(cost))` for the inner loop (zero-based, since `cost[j]` uses zero-based access).
-- Add `+1` to `j` when returning to convert to one-based.
-- **Time:** O(n²)
-- **Space:** O(1)
+Typical flow:
 
-### Important indexing nuance
+- You submit a resume through HR.
+- They like what they see and move you forward.
+- Often a **technical interview comes first** because it's less labor-intensive for the company than a full face-to-face.
+- Then you move to the face-to-face/team interview stage.
 
-`enumerate(cost, 1)` gives a one-based **counter**, but the underlying list `cost` is still zero-based. When you mix `enumerate` with raw `cost[j]` access, you have to mentally track which is which. **Print everything to verify.**
+Two broad styles of technical interview:
 
----
+1. **Problem-solving questions** — data structures and algorithms style.
+2. **Practical build tasks** — "spin up a sample application that does X, Y, Z" or edit provided sample code.
 
-## Two-Pointer Implementation
+> "To be honest, in a software developer or web developer's day-to-day, they don't do a lot of data structures and algorithms work."
 
-### Why this problem needs sorting first
-
-Two pointers requires a condition to decide which pointer to move. Here, the condition is "is `cost[left] + cost[right]` greater than or less than `m`?" That comparison only makes sense if the values are **sorted**.
-
-```python
-sorted_cost = sorted(cost)  # don't mutate the original
-left = 0
-right = len(sorted_cost) - 1
-
-value_one = 0
-value_two = 0
-
-while left < right:
-    if sorted_cost[left] + sorted_cost[right] == m:
-        value_one = sorted_cost[left]
-        value_two = sorted_cost[right]
-        break
-    elif sorted_cost[left] + sorted_cost[right] > m:
-        right -= 1
-    else:
-        left += 1
-```
-
-### Why `sorted()` instead of `cost.sort()`
-
-- `cost.sort()` mutates the original list **in place** → destroys the original indices.
-- `sorted(cost)` returns a **new sorted list**, leaving `cost` unchanged.
-- We need the **original** array to look up the **original** indices of our found values.
-
-> **Bug discovered during the live coding:** The coach initially used `cost.sort()`, found the right values, but then returned wrong indices because the indices in the sorted array don't match the original. Fix: switch to `sorted(cost)` and store the result in a separate variable.
-
-### Recovering the original indices
-
-```python
-answer = []
-for index, value in enumerate(cost, 1):
-    if value == value_one:
-        answer.append(index)
-    elif value == value_two:
-        answer.append(index)
-return answer
-```
-
-### Why `elif` instead of two separate `if`s
-
-If both target values are the same (e.g., `[2, 2]` summing to 4), two separate `if` statements would both fire on the same value and return the same index twice. Using `elif` ensures each iteration only matches one of the two targets, so you get two **distinct** indices.
+Dr. Emily prefers the practical style because it better reflects the actual job — but you should prepare for both.
 
 ---
 
-## Big-O Analysis
+## [2:59](https://youtu.be/0xVef_cANvw?t=179) Thing 1: Practice Data Structures and Algorithms
 
-- **Sort:** O(n log n)
-- **Two-pointer loop:** O(n)
-- **Index recovery loop:** O(n)
-- **Overall:** O(n log n)
+For problem-solving style interviews, practice on:
 
-### Why this is barely better than brute force
+- **HackerRank**
+- **LeetCode**
 
-Brute force was O(n²), and the two-pointer approach is O(n log n). On the Big-O graph, that's a meaningful improvement on paper. But for this problem specifically, you have to write **way more code** (sort + two-pointer + index recovery), so the actual runtime gain is marginal compared to just nesting two loops.
+Tips:
 
-### When two-pointer really shines
-
-Two pointers is genuinely O(n) **when the input is already sorted** and you don't need to recover original indices. Container With Most Water (a previous problem) is the classic example — the input doesn't need to be sorted because the conditions for moving pointers depend on heights, not sums.
+- Focus on problems under the **data structures and algorithms** category — not language-specific problems.
+- The language doesn't matter; HackerRank lets you use C, Python, Java, whatever. What matters is how you solve problems.
+- Joy of Coding Academy uses HackerRank because of the interface, but either platform works.
 
 ---
 
-## The Lesson: Knowing the Algorithm vs Using It
+## [1:24](https://youtu.be/0xVef_cANvw?t=84) Thing 2: Vocabulary and Terminology
 
-Even though two-pointer wasn't the **best** solution for Ice Cream Parlor, the implementation exercise teaches:
+For the practical/build style interview (and for the job itself), **vocabulary matters as much as coding skill**.
 
-- How to write the **truthy case** (the condition for "we found it").
-- How to write the **conditions** that decide which pointer moves.
-- How to **modify a standard algorithm** to fit a problem's quirks (like needing to recover original indices via a second loop).
+Why vocabulary is critical:
 
-> "We can modify an algorithm to meet our use cases if it's something that we know would work or meet the goal."
+- **Understanding instructions.** If the interviewer says "create a variable that does X" or "use this design pattern," you need to know the words.
+- **Live technical questions.** Some interviews include live Q&A where you verbally answer technical questions — you can't answer what you don't understand.
+- **On-the-job communication.** After you're hired, your team will use proper terminology in standups, PRs, and design discussions. You need to be up to speed quickly.
+- **Better Googling.** Knowing the right terms gets you to the right Stack Overflow page faster.
+- **Better AI prompting.** ChatGPT responds better when you use correct terminology.
 
----
+### [7:27](https://youtu.be/0xVef_cANvw?t=447) [approx] Vocabulary baseline
 
-## Two-Pointer Template
+At minimum, know **the seven basics**:
 
-```python
-left = 0
-right = len(arr) - 1
+- Variables
+- Loops
+- Ifs
+- Functions
+- Conditions
+- Statements
+- Error messages (know what the words in them mean)
 
-while left < right:
-    if [truthy condition]:
-        return [solution]
-    elif [condition to shrink right]:
-        right -= 1
-    else:
-        left += 1
-```
+### [8:32](https://youtu.be/0xVef_cANvw?t=512) How to build vocabulary
 
-- **Loop condition:** `while left < right` — stops when pointers meet or cross.
-- **Truthy case:** the win condition. Return immediately.
-- **Two condition cases:** decide which pointer moves based on the data.
+- Read tutorials that use proper terminology (e.g., "how to spin up a React app").
+- Don't just skim to get code running — pause and learn the words.
+- Find the sweet spot: don't skip terminology, but don't obsess over every word either.
 
-### Things to debug
-
-- **Index out of range:** initial `right` should be `len(arr) - 1`, not `len(arr)`.
-- **Wrong indices returned:** check whether you're using a sorted view or the original.
-- **Infinite loop:** make sure both branches actually move a pointer.
+> "It's not just about getting the code running — it's about how can I communicate about the code."
 
 ---
 
-## Errors as Friends (Debugging Walk-Through)
+## [1:18](https://youtu.be/0xVef_cANvw?t=78) Thing 3: A Resume That Gets Noticed
 
-### Bug 1: index out of range
+You can't have a technical interview without first getting the interview. The resume has to get you in the door.
 
-Initial `right = len(cost)` instead of `len(cost) - 1`. Caused an out-of-bounds access.
+Key resume factors (from prior sessions with recruiter Miles Savage):
 
-### Bug 2: returning indices from sorted array, not original
+- **Readability** matters.
+- List out your **tech skills** clearly.
+- Use **Google's XYZ format** for experience and project bullets.
+- **Length doesn't really matter** as much as people think.
+- **Portfolio** should be simple — just your GitHub profile with one or two deep projects. **Quality over quantity.**
+- **LinkedIn profile** matters — aim for at least **200 connections**. Start with friends, family, colleagues and it happens fast.
 
-After fixing bug 1, the function returned `[1, 3]` instead of `[1, 4]`. The values were correct but the indices were from the sorted view.
-
-**Diagnosis:** print `left, right, sorted_cost[left], sorted_cost[right]` and compare against the unsorted `cost` array. Realized the indices were from the sorted view.
-
-**Fix:** use `sorted(cost)` to keep both versions, then do a second loop on the original to recover the original indices.
-
-### Bug 3: visual confusion from a "find" highlight
-
-The coach accidentally had Ctrl+F find-mode active in the editor, which highlighted random text and made it hard to see what was wrong. Took several minutes to notice. **Lesson:** if the editor is acting weird, check for stray modal states.
+Why LinkedIn matters: software development is a human endeavor. The computer executes, but people build together.
 
 ---
 
-## Plan for Next Session
+## [10:56](https://youtu.be/0xVef_cANvw?t=656) The Bigger Picture: Prepare for the Job, Not the Interview
 
-- **Binary search** implementation on the same Ice Cream Parlor problem.
-- Will dive straight in without the long buildup since the problem is now well-understood.
-- Goal: see binary search applied to a real problem, not just as an isolated Mod 2 exercise.
+> "We don't really want to prepare for the interview. The interview is a gatekeeper for the actual thing we want — the job."
 
-> "Today's point is just seeing that implementation of two pointer in the context of this problem so that you can learn how to use it in unique and variety of ways."
+- Prepare to be successful **on the other side** of the interview.
+- If you're already what they're looking for, the interview becomes easy — you're just showing them.
+- The human element is huge. Connecting with your interviewer and the team is a major part of the process.
+- Communicating intelligently with proper terminology about the code and technology is what sets candidates apart.
 
+---
 
+## [18:57](https://youtu.be/0xVef_cANvw?t=1137) Q&A
+
+### [18:57](https://youtu.be/0xVef_cANvw?t=1137) Are LeetCode and HackerRank the best way to further my education?
+
+They're the best way to **prep for the technical interview**, but not necessarily the best way to grow as a developer.
+
+The make-or-break piece on a resume is **experience** — specifically, working on a team for a real client. That's what recruiters consistently say.
+
+Two things team experience gives you:
+
+- **Skills someone can vouch for.** A network that can say "this person is awesome, are you hiring?"
+- **Real communication at a professional level.** You can point to a live website a company is actually using and say "I built that on a team, here's how we did it, these are the choices we made."
+
+> "When you come through a team collaborative experience, you have all the skills they're looking for, and it shows up like that in an interview."
+
+### [18:39](https://youtu.be/0xVef_cANvw?t=1119) [approx] What's a good way to network?
+
+- **Meetups** — go in person.
+- **Boot camp educators** — if you did a boot camp, leverage those connections.
+- **LinkedIn** — format your profile and reach out.
+- **Intelligent conversations** about the technology you work with — essential for the job, not just the interview.
+- **Podcasts** — great for staying current and building vocabulary. (Example given: a senior dev named Tyler who automated his boring day job to spend time coding and constantly listens to podcasts to stay current.)
+
+### [23:56](https://youtu.be/0xVef_cANvw?t=1436) What separates dabblers from serious players?
+
+Most boot camps stop at "get a web page up on your own" with basic Git. Serious players know:
+
+- **Git on a team** (not just solo commits)
+- **Continuous integration**
+- **DevOps pipelines**
+- Building **software at scale**
+
+---
+
+## [22:23](https://youtu.be/0xVef_cANvw?t=1343) [approx] Salary Reference Points (mentioned in session)
+
+- Entry level: high fives to $100k
+- Senior level: ~$200k to $300k
+- Timeline to senior: can be 2–3 years when you know your stuff
+
+---
+
+## [4:38](https://youtu.be/0xVef_cANvw?t=278) Key Takeaways
+
+- Practice **data structures and algorithms** on HackerRank or LeetCode for problem-solving interviews.
+- Build **vocabulary and terminology** deliberately — it helps you understand instructions, communicate on teams, Google effectively, and prompt AI tools.
+- Get a **resume that gets noticed** — readable, with XYZ-format bullets, a deep portfolio, and a populated LinkedIn.
+- **Prepare for the job, not just the interview.** If you're already ready to do the work, the interview takes care of itself.
+- **Experience on a real team for a real client** is the single highest-leverage resume item.
+- **Networking** cuts through the red tape — a recommendation from someone trusted can make you the only candidate for a role.
+
+---
 ---
 
 # Solutions Deep Dive — Birthday Cake Candles & Container With Most Water (2025-06-04)
+Source: https://youtu.be/qCssyZzmhu8
 
 Wednesday session: solutions and alternative approaches for Sunday's two problems. Schedule reminder: Sundays = Q&A + pseudo code + mock interview; Wednesdays = solution deep dives.
 
 ---
 
-## Q&A
+## [39:05](https://youtu.be/qCssyZzmhu8?t=2345) Q&A
 
-### What if you can't finish a tech interview problem in time?
+### [39:05](https://youtu.be/qCssyZzmhu8?t=2345) What if you can't finish a tech interview problem in time?
 
 Outcomes vary by company. Many people don't finish all problems and still advance. Interviewers value:
 
@@ -197,7 +183,7 @@ This is also why Big-O comes up in these sessions — being able to explain conc
 
 ---
 
-## Problem 1: Birthday Cake Candles (easy) — solution
+## [9:02](https://youtu.be/qCssyZzmhu8?t=542) [approx] Problem 1: Birthday Cake Candles (easy) — solution
 
 **Two-step solution:**
 
@@ -209,11 +195,11 @@ candle_max = max(candles)
 return candles.count(candle_max)
 ```
 
-### Big-O note
+### [6:23](https://youtu.be/qCssyZzmhu8?t=383) Big-O note
 
 Two separate O(n) operations = O(2n), which simplifies to **O(n)**. Constants are dropped in Big-O. You *could* combine into a single pass for one O(n), but two passes is fine — clarity beats marginal efficiency on an easy problem.
 
-### Bonus question: how to find the second max?
+### [18:05](https://youtu.be/qCssyZzmhu8?t=1085) [approx] Bonus question: how to find the second max?
 
 - Two-variable approach: track `max` and `second_max`, single pass.
 - Or sort the array and take the second-from-last position.
@@ -222,18 +208,18 @@ Two separate O(n) operations = O(2n), which simplifies to **O(n)**. Constants ar
 
 ---
 
-## Problem 2: Container With Most Water (medium) — brute force solution
+## [33:56](https://youtu.be/qCssyZzmhu8?t=2036) Problem 2: Container With Most Water (medium) — brute force solution
 
 **Approach:** nested loop, calculate area for every pair `(i, j)`, track the max.
 
-### Setup
+### [27:08](https://youtu.be/qCssyZzmhu8?t=1628) [approx] Setup
 
 - `n = len(height)`
 - Outer loop: `for i in range(n)`
 - Inner loop: `for j in range(i+1, n)` — second pointer always after the first to avoid duplicate pairs.
 - For each pair, calculate area and update the running max.
 
-### Calculating the area
+### [33:16](https://youtu.be/qCssyZzmhu8?t=1996) Calculating the area
 
 - **Container length** = `j - i` (distance between the two indices on the x-axis).
 - **Container height** = `min(height[i], height[j])` — must use the **shorter** of the two walls because water can't slant.
@@ -241,19 +227,19 @@ Two separate O(n) operations = O(2n), which simplifies to **O(n)**. Constants ar
 
 > Common bug: writing `j - 1` instead of `j - i` for the length. Test cases may *appear* to pass while still being wrong — print and verify each intermediate value.
 
-### Updating the max
+### [50:06](https://youtu.be/qCssyZzmhu8?t=3006) Updating the max
 
 ```python
 water_area = container_area if container_area > water_area else water_area
 ```
 
-### Result
+### [55:39](https://youtu.be/qCssyZzmhu8?t=3339) Result
 
 - Brute force gets **55/65 test cases passing** before hitting the time limit.
 - That's confirmation the logic is correct — just too slow.
 - Big-O = **O(n²)** because of the nested loops.
 
-### Iterative testing discipline
+### [45:14](https://youtu.be/qCssyZzmhu8?t=2714) [approx] Iterative testing discipline
 
 Print at every intermediate step:
 
@@ -266,23 +252,23 @@ If you only print the final area and there's a bug upstream, debugging is much h
 
 ---
 
-## Problem 2: Optimized — Two-Pointer Approach
+## [32:27](https://youtu.be/qCssyZzmhu8?t=1947) Problem 2: Optimized — Two-Pointer Approach
 
 Brute force is O(n²). The optimal solution is **O(n)** using **two pointers**.
 
-### When to consider two pointers
+### [58:39](https://youtu.be/qCssyZzmhu8?t=3519) When to consider two pointers
 
 - You see an O(n²) brute force using two nested loops.
 - The data has some monotonic property (here: max area must use the **tallest** lines, so smaller heights can be discarded as you scan).
 - Two pointers is **not** a universal replacement for nested loops — it depends on whether the problem has a structure that lets one pointer move at a time.
 
-### Setup
+### [58:48](https://youtu.be/qCssyZzmhu8?t=3528) [approx] Setup
 
 - `i = 0`, `j = len(height) - 1`
 - Loop: `while i < j`
 - One pointer moves per iteration, not both.
 
-### The condition that decides which pointer moves
+### [26:32](https://youtu.be/qCssyZzmhu8?t=1592) The condition that decides which pointer moves
 
 Move whichever pointer is at the **shorter** vertical line. The shorter wall is what's limiting the area, so discarding it (and hoping for a taller one) is the only way to find a larger area.
 
@@ -293,19 +279,19 @@ else:
     j -= 1
 ```
 
-### Why this works
+### [1:09:56](https://youtu.be/qCssyZzmhu8?t=4196) Why this works
 
 - The container area is bounded by the shorter wall.
 - Moving the taller pointer can only ever reduce the length while keeping the height bound the same → can't improve.
 - Moving the shorter pointer is the only move that has a chance of finding a taller wall and increasing the area.
 
-### Verification advice
+### [0:44](https://youtu.be/qCssyZzmhu8?t=44) Verification advice
 
 > Don't copy/paste solution code from LeetCode. Read through it, understand the approach, then close the tab and reimplement from scratch. Only look at solutions after you've gotten **at least two-thirds of the test cases passing** with brute force — that proves you understand the problem.
 
 ---
 
-## General Lessons
+## [35:45](https://youtu.be/qCssyZzmhu8?t=2145) General Lessons
 
 - **Brute force first.** Even if you know the optimized solution, write the brute force to confirm understanding and unlock test cases.
 - **Print everything as you go.** Errors can be subtle and look correct at one layer while breaking another.
@@ -314,20 +300,21 @@ else:
 
 [REVIEW: brief moment where coach noted printing both index and value side-by-side caused confusion for one participant; mostly a UI/zoom issue — kept the lesson about printing both for context.]
 
-
+---
 ---
 
 # Solutions Deep Dive — Two Sum: Approaches & Pseudo Code (2025-06-11)
+Source: https://youtu.be/CMJ9rEYttdw
 
 Wednesday session: deep dive on Two Sum, comparing brute force, search-based, two-pointer, and set-based approaches. **No coding today** — focus is on the pseudo-code and approach-evaluation phase.
 
 ---
 
-## Recap: Two Sum problem statement
+## [36:50](https://youtu.be/CMJ9rEYttdw?t=2210) Recap: Two Sum problem statement
 
 Given array `nums` and integer `target`, return the **indices** of two numbers that add up to `target`. Exactly one solution exists. Cannot use the same index twice.
 
-### Pseudo code from Sunday
+### [7:08](https://youtu.be/CMJ9rEYttdw?t=428) Pseudo code from Sunday
 
 - We are given an array `nums` and `target` (integer).
 - Find two separate indices in `nums` whose values sum to `target`.
@@ -342,7 +329,7 @@ Given array `nums` and integer `target`, return the **indices** of two numbers t
 
 ---
 
-## Approach 1: Brute Force (Daniel's submission)
+## [8:27](https://youtu.be/CMJ9rEYttdw?t=507) [approx] Approach 1: Brute Force (Daniel's submission)
 
 ```python
 for i in range(len(nums)):
@@ -357,17 +344,17 @@ for i in range(len(nums)):
 
 ---
 
-## Approach 2: Sort + Binary Search
+## [36:50](https://youtu.be/CMJ9rEYttdw?t=2210) Approach 2: Sort + Binary Search
 
 **Idea:** for each value, compute the **complement** (`target - current`) and search the array for it.
 
-### Why sort first?
+### [40:14](https://youtu.be/CMJ9rEYttdw?t=2414) Why sort first?
 
 - **Linear search** for the complement is O(n) → overall O(n²). No improvement.
 - **Binary search** is O(log n) → overall O(n log n). Better than O(n²).
 - But binary search **requires a sorted array**.
 
-### Sort vs sorted in Python
+### [46:52](https://youtu.be/CMJ9rEYttdw?t=2812) Sort vs sorted in Python
 
 - `nums.sort()` → mutates the original array, returns `None`. Can only be called on lists.
 - `sorted(nums)` → returns a new sorted list, original is unchanged. Works on any iterable (lists, tuples, strings, dicts, sets).
@@ -375,11 +362,11 @@ for i in range(len(nums)):
 
 > Use `sorted()` here so you can keep the original `nums` for index lookup.
 
-### The index problem
+### [39:04](https://youtu.be/CMJ9rEYttdw?t=2344) The index problem
 
 Sorting destroys the original index positions, but the answer requires original indices. After finding the matching values in the sorted array, you need a second linear pass through the original `nums` to recover their indices. (Or use `enumerate` to track original positions during sort.)
 
-### Verdict on this approach
+### [29:35](https://youtu.be/CMJ9rEYttdw?t=1775) [approx] Verdict on this approach
 
 - **Complexity:** O(n log n)
 - Requires knowing how to write binary search (or asking the interviewer if you can use a template).
@@ -388,7 +375,7 @@ Sorting destroys the original index positions, but the answer requires original 
 
 ---
 
-## Approach 3: Two Pointers
+## [1:05:39](https://youtu.be/CMJ9rEYttdw?t=3939) Approach 3: Two Pointers
 
 - Worked great for Container With Most Water last week, but **only because that problem doesn't care about index order**.
 - Two Sum needs a comparison against a target, which means you'd need a less-than/greater-than condition to decide which pointer to move.
@@ -398,11 +385,11 @@ Sorting destroys the original index positions, but the answer requires original 
 
 ---
 
-## Approach 4: Hashmap / Set Lookup (the optimal solution)
+## [52:12](https://youtu.be/CMJ9rEYttdw?t=3132) Approach 4: Hashmap / Set Lookup (the optimal solution)
 
 **Insight from the chat:** sets (and dicts) have **O(1) lookup**, insertion, and deletion.
 
-### The algorithm
+### [42:16](https://youtu.be/CMJ9rEYttdw?t=2536) [approx] The algorithm
 
 ```python
 seen = {}                          # value -> index
@@ -417,24 +404,24 @@ for i, num in enumerate(nums):
 - If yes → we found the pair, return both indices.
 - If no → add the current value (and its index) to the set/dict and continue.
 
-### Complexity
+### [46:30](https://youtu.be/CMJ9rEYttdw?t=2790) [approx] Complexity
 
 - **Time:** O(n) — single pass through the array.
 - **Space:** O(n) — the lookup structure can grow up to the size of the input.
 
-### Why a dict instead of a set?
+### [59:45](https://youtu.be/CMJ9rEYttdw?t=3585) Why a dict instead of a set?
 
 - A **set** can confirm whether the complement exists, but doesn't store the original index.
 - A **dict** maps `value → index`, so when you find a complement you can return both indices immediately.
 - Using `enumerate` in the loop gives you the index of the current value cleanly.
 
-### Negative numbers?
+### [28:15](https://youtu.be/CMJ9rEYttdw?t=1695) Negative numbers?
 
 Works fine. Subtraction and addition behave normally with negatives — the only operations that would get tricky are multiplication or division.
 
 ---
 
-## The Bigger Lesson: Pseudo Code Before Code
+## [59:11](https://youtu.be/CMJ9rEYttdw?t=3551) [approx] The Bigger Lesson: Pseudo Code Before Code
 
 Today's session deliberately had **zero coding** for almost the entire hour. Why?
 
@@ -450,7 +437,7 @@ Once you've evaluated the trade-offs, pick the best one and code it confidently 
 
 ---
 
-## Reddit thread observation
+## [6:50](https://youtu.be/CMJ9rEYttdw?t=410) Reddit thread observation
 
 > A CS-degree holder admitted Two Sum was hard for them and they had to Google hints and learn about hashmaps from scratch.
 
@@ -458,26 +445,27 @@ The point: even people with formal CS degrees struggle with these problems. The 
 
 ---
 
-## Joy of Coding Tech Interview vs Job Hunt Interviews
+## [11:17](https://youtu.be/CMJ9rEYttdw?t=677) Joy of Coding Tech Interview vs Job Hunt Interviews
 
 - **Joy of Coding interview:** easy-level problems. Don't need to master mediums.
 - **Job hunt interviews:** medium and hard problems are common. Working up to this level matters.
 - The **process** (read problem, pull observations, write pseudo code, evaluate approaches, code with print statements, test iteratively) is the same regardless of difficulty.
 
-
+---
 ---
 
 # Solutions Deep Dive — Two Sum: Optimal Hashmap Solution (2025-06-25)
+Source: https://youtu.be/FxIUSmfXe94
 
 Wednesday session: revisiting Two Sum after a 2-week gap. Brian shares the dictionary/hashmap solution achieving O(n) runtime.
 
 ---
 
-## Quick recap: Two Sum problem
+## [8:33](https://youtu.be/FxIUSmfXe94?t=513) Quick recap: Two Sum problem
 
 Given `nums` (list of integers) and `target` (integer), return the indices of the two numbers that add up to `target`. Exactly one solution exists. Cannot use the same index twice.
 
-### Key facts pulled from Sunday's pseudo code
+### [10:33](https://youtu.be/FxIUSmfXe94?t=633) Key facts pulled from Sunday's pseudo code
 
 - We will always find a solution → never return empty.
 - Array is **not guaranteed sorted** (example 2 has `[3, 2, 4]`).
@@ -486,7 +474,7 @@ Given `nums` (list of integers) and `target` (integer), return the indices of th
 
 ---
 
-## Approach 1: Brute Force with Complement Variation
+## [17:33](https://youtu.be/FxIUSmfXe94?t=1053) Approach 1: Brute Force with Complement Variation
 
 Original brute force used `nums[i] + nums[j] == target`. The complement variation is conceptually clearer:
 
@@ -498,20 +486,20 @@ for i in range(len(nums)):
             return [i, j]
 ```
 
-### Complexity
+### [43:15](https://youtu.be/FxIUSmfXe94?t=2595) Complexity
 
 - **Time:** O(n²) — outer loop O(n), inner linear search O(n).
 - **Space:** O(1) — only storing a single `complement` variable. Variables, comparisons, and loop counters are all constant space.
 
 > Space complexity refers to memory used. Creating an array or modifying a data structure changes space to O(n). Single variables = O(1).
 
-### Python comment trick
+### [13:16](https://youtu.be/FxIUSmfXe94?t=796) [approx] Python comment trick
 
 Use triple apostrophes `'''...'''` for multi-line block comments instead of `#` on every line.
 
 ---
 
-## Approach 2: Brian's Hashmap Solution (the optimal answer)
+## [16:36](https://youtu.be/FxIUSmfXe94?t=996) [approx] Approach 2: Brian's Hashmap Solution (the optimal answer)
 
 ```python
 def twoSum(self, nums, target):
@@ -522,14 +510,14 @@ def twoSum(self, nums, target):
         d[num] = count
 ```
 
-### How it works
+### [32:51](https://youtu.be/FxIUSmfXe94?t=1971) How it works
 
 - `enumerate(nums)` gives back `(index, value)` pairs in a single iteration, no need for `for i in range(len(nums))` + `nums[i]`.
 - For each value, check whether its **complement** (`target - num`) is already in the dictionary.
 - If yes → return `[d[complement], current_index]`.
 - If no → store `num → index` in the dictionary and continue.
 
-### Walkthrough on `[3, 2, 4]`, target 6
+### [37:09](https://youtu.be/FxIUSmfXe94?t=2229) Walkthrough on `[3, 2, 4]`, target 6
 
 | Step | index | num | dict before | complement | in dict? | dict after |
 |---|---|---|---|---|---|---|
@@ -537,24 +525,24 @@ def twoSum(self, nums, target):
 | 2 | 1 | 2 | `{3: 0}` | 4 | no | `{3: 0, 2: 1}` |
 | 3 | 2 | 4 | `{3: 0, 2: 1}` | 2 | **yes** | return `[1, 2]` |
 
-### Complexity
+### [26:33](https://youtu.be/FxIUSmfXe94?t=1593) [approx] Complexity
 
 - **Time:** O(n) — single pass.
 - **Space:** O(n) — dictionary can grow up to n entries.
 - **Runtime:** ~0 milliseconds on LeetCode.
 
-### Why dictionary instead of set?
+### [13:36](https://youtu.be/FxIUSmfXe94?t=816) Why dictionary instead of set?
 
 - A set could confirm "complement exists," but you also need its **index**.
 - A dictionary stores `value → index`, giving you both pieces of information in one lookup.
 
-### `enumerate` trick
+### [3:00](https://youtu.be/FxIUSmfXe94?t=180) `enumerate` trick
 
 `enumerate(iterable, start=N)` lets you set the starting index. Default is 0. You can also rename for clarity: `for index, value in enumerate(nums)`.
 
 ---
 
-## Big-O Comparison Table
+## [36:31](https://youtu.be/FxIUSmfXe94?t=2191) [approx] Big-O Comparison Table
 
 | Approach | Time | Space | Notes |
 |---|---|---|---|
@@ -564,17 +552,17 @@ def twoSum(self, nums, target):
 | Two pointers | O(n log n) | O(1) | Needs sorted array; index-loss problem |
 | **Hashmap** | **O(n)** | **O(n)** | **Optimal** |
 
-### Important Big-O insight
+### [44:08](https://youtu.be/FxIUSmfXe94?t=2648) Important Big-O insight
 
 A binary search **inside** a loop is `O(n × log n) = O(n log n)`, **not** `O(n²)` and **not** `O(n² log n)`. Multiplication of nested complexities, not addition.
 
-### Two-pointer caveat
+### [47:15](https://youtu.be/FxIUSmfXe94?t=2835) Two-pointer caveat
 
 Two-pointer would be O(n) **on a sorted input**. Since Two Sum gives unsorted input, sorting it first puts you back at O(n log n). The hashmap approach beats it because it doesn't require sorting.
 
 ---
 
-## Why Big-O Keeps Coming Up
+## [46:29](https://youtu.be/FxIUSmfXe94?t=2789) [approx] Why Big-O Keeps Coming Up
 
 - **Joy of Coding interview:** won't be quizzed on Big-O for a grade.
 - **Job hunt interviews:** Big-O is commonly asked. Being able to explain time/space complexity confidently is a major plus.
@@ -582,7 +570,7 @@ Two-pointer would be O(n) **on a sorted input**. Since Two Sum gives unsorted in
 
 ---
 
-## Cheat Sheets in Tech Interviews
+## [49:48](https://youtu.be/FxIUSmfXe94?t=2988) [approx] Cheat Sheets in Tech Interviews
 
 Q: "Can I bring a cheat sheet?"
 
@@ -593,7 +581,7 @@ Q: "Can I bring a cheat sheet?"
 
 ---
 
-## Homework: Three Sum
+## [53:07](https://youtu.be/FxIUSmfXe94?t=3187) [approx] Homework: Three Sum
 
 Try Three Sum (LeetCode #15):
 
@@ -604,40 +592,41 @@ Try Three Sum (LeetCode #15):
 
 Both Two Sum and Three Sum are still actively used in real tech interviews — getting comfortable with both is a high-value investment.
 
-
+---
 ---
 
 # Solutions Deep Dive — Maximum Product Subarray (2025-07-02)
+Source: https://youtu.be/zB8f0KW9VzU
 
 Wednesday session: mock interview on LeetCode's **Maximum Product Subarray** (medium, 35% acceptance rate). Volunteer: Lisa.
 
 ---
 
-## Problem statement
+## [11:04](https://youtu.be/zB8f0KW9VzU?t=664) Problem statement
 
 Given an integer array `nums`, find the **subarray** with the **largest product** and return the product.
 
-### Definitions
+### [46:19](https://youtu.be/zB8f0KW9VzU?t=2779) Definitions
 
 - **Subarray:** a **contiguous** non-empty sequence of elements within an array. "Contiguous" = sharing a common border, touching, in sequence.
 - A subarray can be any length from 1 up to the full array.
 - Test cases are guaranteed to fit in a 32-bit integer.
 
-### Examples
+### [12:48](https://youtu.be/zB8f0KW9VzU?t=768) Examples
 
 - `[2, 3, -2, 4]` → output `6` (subarray `[2, 3]`).
 - `[-2, 0, -1]` → output `0` (since `-2` and `-1` are not contiguous, you can't multiply them; the only valid subarrays produce 0).
 
-### Constraints
+### [31:55](https://youtu.be/zB8f0KW9VzU?t=1915) Constraints
 
 - Length of `nums`: 1 to ~20,000.
 - Values: -10 to 10.
 
 ---
 
-## Where Lisa got stuck (and the lesson)
+## [29:32](https://youtu.be/zB8f0KW9VzU?t=1772) Where Lisa got stuck (and the lesson)
 
-### Initial confusion
+### [29:32](https://youtu.be/zB8f0KW9VzU?t=1772) Initial confusion
 
 Lisa (and most people on first read) assumed "product" meant "the multiplication of any two numbers in the array." That's why `2 * 3 = 6` made sense as the answer for example 1.
 
@@ -645,7 +634,7 @@ But then example 2 (`[-2, 0, -1]` → `0`) breaks that theory because `-2 * -1 =
 
 **The key insight:** the problem says "**subarray** with the largest product." A subarray must be **contiguous**. `-2` and `-1` aren't touching (`0` is between them), so they can't form a subarray together.
 
-### The lesson: write assumptions explicitly
+### [49:07](https://youtu.be/zB8f0KW9VzU?t=2947) The lesson: write assumptions explicitly
 
 Lisa's assumption was "product means multiplying two numbers." That's a fine starting assumption — but it should be **written down explicitly** so you can spot when it conflicts with the examples.
 
@@ -653,24 +642,24 @@ Lisa's assumption was "product means multiplying two numbers." That's a fine sta
 
 ---
 
-## How to attack the problem
+## [48:42](https://youtu.be/zB8f0KW9VzU?t=2922) How to attack the problem
 
-### Step 1: Restate in your own words
+### [48:42](https://youtu.be/zB8f0KW9VzU?t=2922) Step 1: Restate in your own words
 
 - We're looking for a product (multiplication result) of a **subarray** (contiguous sub-sequence) that produces the **largest number**.
 - A subarray can be **multiple numbers**, not just two.
 
-### Step 2: Use Google for unfamiliar terminology
+### [43:03](https://youtu.be/zB8f0KW9VzU?t=2583) Step 2: Use Google for unfamiliar terminology
 
 Looking up "what is contiguous" is fair game in a tech interview. Looking up "how to solve maximum product subarray" is not.
 
-### Step 3: Build your own test case
+### [34:55](https://youtu.be/zB8f0KW9VzU?t=2095) [approx] Step 3: Build your own test case
 
 For `[2, 3, -2, 4]`, the examples are sparse. Build a more complex test case where the answer is a subarray **in the middle** of the array — that forces you to think beyond just pairs.
 
 > **LeetCode pro tip:** you can directly edit the test case input fields to add your own. LeetCode will compute the expected output for you. HackerRank lets you input custom test cases but won't generate the expected output.
 
-### Step 4: Walk through how the answer is computed
+### [38:25](https://youtu.be/zB8f0KW9VzU?t=2305) [approx] Step 4: Walk through how the answer is computed
 
 For `[2, 3, -2, 4]`:
 
@@ -681,7 +670,7 @@ For `[2, 3, -2, 4]`:
 
 ---
 
-## Approach: Brute Force with Slicing
+## [41:54](https://youtu.be/zB8f0KW9VzU?t=2514) [approx] Approach: Brute Force with Slicing
 
 One viable approach (suggested in the chat):
 
@@ -701,13 +690,13 @@ return max_product
 - `math.prod(sub)` multiplies all elements.
 - Track the running max.
 
-### Complexity
+### [26:53](https://youtu.be/zB8f0KW9VzU?t=1613) Complexity
 
 - **Time:** O(n³) — nested loops O(n²) plus the `math.prod` O(n) inside.
 - **Space:** O(n) for the slice.
 - Will likely time out on larger test cases but proves the logic works on smaller ones.
 
-### Why start with brute force
+### [43:03](https://youtu.be/zB8f0KW9VzU?t=2583) Why start with brute force
 
 - Get any working solution first → confirms you understand the problem.
 - Then optimize once you've passed some test cases.
@@ -715,7 +704,7 @@ return max_product
 
 ---
 
-## Pattern Recognition: Looking at Past Problems
+## [1:03:04](https://youtu.be/zB8f0KW9VzU?t=3784) Pattern Recognition: Looking at Past Problems
 
 When you don't know how to approach a new problem, ask: "Have I seen something similar before?"
 
@@ -725,16 +714,16 @@ When you don't know how to approach a new problem, ask: "Have I seen something s
 
 ---
 
-## Mock Interview Lessons (for Lisa)
+## [1:06:12](https://youtu.be/zB8f0KW9VzU?t=3972) Mock Interview Lessons (for Lisa)
 
-### What Lisa did well
+### [1:06:12](https://youtu.be/zB8f0KW9VzU?t=3972) What Lisa did well
 
 - Started with a paint program to draw out the problem visually.
 - Wrote a stub `return` statement so the code would compile.
 - Tried to test her assumption ("product means multiplication") in code.
 - Asked clarifying questions about `self` and other syntax.
 
-### What to improve
+### [1:07:03](https://youtu.be/zB8f0KW9VzU?t=4023) What to improve
 
 - **Spend longer in pseudo code before writing real code.** Getting a clear understanding of the problem is more valuable than getting code on the screen quickly.
 - **Write down assumptions explicitly.** When the example contradicts an assumption, you'll know which one to revisit.
@@ -742,22 +731,23 @@ When you don't know how to approach a new problem, ask: "Have I seen something s
 
 ---
 
-## On `self` in LeetCode functions
+## [1:05:27](https://youtu.be/zB8f0KW9VzU?t=3927) On `self` in LeetCode functions
 
 LeetCode wraps all problems in a `class Solution:` definition, so the function signatures include `self`. **Ignore `self`** in any LeetCode question — it's just Python class boilerplate, not part of the problem.
 
 [REVIEW: extended discussion about Spanish keyboard quirks and one participant losing their pseudo code when accidentally switching languages — context for why the mock interview took so long.]
 
-
+---
 ---
 
 # Solutions Deep Dive — Missing Numbers, Ice Cream Parlor, and Big-O Walkthroughs (2025-07-09)
+Source: https://youtu.be/T5oLd7kqqOo
 
 Wednesday session: solutions for Missing Numbers (Brian's hashmap approach + the group's offset approach), Natalia's Ice Cream Parlor dictionary attempt, and a thorough Big-O breakdown.
 
 ---
 
-## Recap: Maximum Product Subarray (extra notes)
+## [39:21](https://youtu.be/T5oLd7kqqOo?t=2361) Recap: Maximum Product Subarray (extra notes)
 
 The coach felt last week's pseudo code left people with too little to go on. Extra notes for restarting that problem:
 
@@ -766,7 +756,7 @@ The coach felt last week's pseudo code left people with too little to go on. Ext
 - **You can't quit early** because of negative numbers. Two negatives multiplied together can flip the sign, so you have to check every subarray.
 - This brute force is O(n²) — sliding window can do better.
 
-### Sliding Window keywords
+### [13:04](https://youtu.be/T5oLd7kqqOo?t=784) Sliding Window keywords
 
 When you see all of these together, think **sliding window**:
 
@@ -778,19 +768,19 @@ Lisa learned and used the sliding window approach for Maximum Product Subarray. 
 
 ---
 
-## Natalia's Ice Cream Parlor Solution (Dictionary Approach)
+## [3:44](https://youtu.be/T5oLd7kqqOo?t=224) Natalia's Ice Cream Parlor Solution (Dictionary Approach)
 
-### Approach
+### [3:44](https://youtu.be/T5oLd7kqqOo?t=224) Approach
 
 Natalia recognized this as a Two Sum variant ("if you have a target value and need to find two values that sum to it, use a complement dictionary").
 
-### Initial code issues and fixes
+### [16:19](https://youtu.be/T5oLd7kqqOo?t=979) Initial code issues and fixes
 
 1. **One-based indexing:** use `enumerate(arr, 1)` — pass `1` as the second argument to start counting from 1 instead of 0.
 2. **Empty return for HackerRank wrapper:** add `return []` outside the loop to avoid the `_FptrName_join(...)` error.
 3. **Indentation bug:** the dictionary update line was indented inside the `if` block, so it never ran when the complement wasn't found. Move `d[value] = index` to the same indentation level as the `if`, still inside the `for` loop.
 
-### Final shape
+### [16:19](https://youtu.be/T5oLd7kqqOo?t=979) Final shape
 
 ```python
 d = {}
@@ -802,19 +792,19 @@ for index, value in enumerate(arr, 1):
 return []
 ```
 
-### The fix that broke it
+### [27:21](https://youtu.be/T5oLd7kqqOo?t=1641) The fix that broke it
 
 Submission gave a runtime error (not a time limit error) on one test case after the fixes. Worth investigating, but the approach is correct.
 
-### Indentation lesson
+### [26:29](https://youtu.be/T5oLd7kqqOo?t=1589) Indentation lesson
 
 > Python is **very** strict about indentation. Anything at the same indentation level as the body of an `if` is treated as part of that `if` block. Some other languages let you write a one-liner `if` followed by a separate next line — Python does not.
 
 ---
 
-## Brian's Missing Numbers Solution (Counter / Frequency Map)
+## [22:59](https://youtu.be/T5oLd7kqqOo?t=1379) [approx] Brian's Missing Numbers Solution (Counter / Frequency Map)
 
-### Approach
+### [25:52](https://youtu.be/T5oLd7kqqOo?t=1552) [approx] Approach
 
 ```python
 from collections import Counter
@@ -829,18 +819,18 @@ def missingNumbers(arr, brr):
     return sorted(set(stack))
 ```
 
-### How `Counter` works
+### [44:31](https://youtu.be/T5oLd7kqqOo?t=2671) How `Counter` works
 
 `collections.Counter` creates a dictionary-like object mapping values to their **frequency**. For `[7, 2, 5, 4, 6, 3, 5, 3]` it returns `{7: 1, 2: 1, 5: 2, 4: 1, 6: 1, 3: 2}`.
 
-### Walkthrough
+### [36:21](https://youtu.be/T5oLd7kqqOo?t=2181) Walkthrough
 
 - Build frequency dicts for both arrays.
 - Iterate through the original (longer) array.
 - If a value's frequency doesn't match between the two dicts, it's missing.
 - Append to a stack, then return the sorted unique values.
 
-### Big-O breakdown
+### [34:29](https://youtu.be/T5oLd7kqqOo?t=2069) [approx] Big-O breakdown
 
 - `Counter(arr)` and `Counter(brr)`: each O(n) → O(2n) → **O(n)**.
 - `for value in brr`: O(n).
@@ -853,11 +843,11 @@ def missingNumbers(arr, brr):
 
 ---
 
-## Big-O Reasoning Step by Step (Brian's session)
+## [37:22](https://youtu.be/T5oLd7kqqOo?t=2242) [approx] Big-O Reasoning Step by Step (Brian's session)
 
 This was a real-time exercise in determining Big-O by inspection.
 
-### Question: "Is the for loop O(n) or O(n²)?"
+### [40:14](https://youtu.be/T5oLd7kqqOo?t=2414) [approx] Question: "Is the for loop O(n) or O(n²)?"
 
 **Answer:** Depends on what's inside.
 
@@ -867,11 +857,11 @@ This was a real-time exercise in determining Big-O by inspection.
 - **All O(1) inside an O(n) loop** = O(n) overall.
 - O(n²) only happens when you have a **nested loop** over the array — e.g., `for i: for j: ...`.
 
-### "But I'm comparing two arrays — isn't that O(n²)?"
+### [40:55](https://youtu.be/T5oLd7kqqOo?t=2455) "But I'm comparing two arrays — isn't that O(n²)?"
 
 No. Comparing **values from two arrays** is O(1) per comparison. You'd only get O(n²) if you wrote a nested loop where the inner loop traversed the second array fully for each element of the first.
 
-### Big-O of common Python operations
+### [45:59](https://youtu.be/T5oLd7kqqOo?t=2759) [approx] Big-O of common Python operations
 
 - `dict[key]` lookup: O(1)
 - `list.append(x)`: O(1)
@@ -885,7 +875,7 @@ No. Comparing **values from two arrays** is O(1) per comparison. You'd only get 
 - `set(iterable)`: O(n)
 - `key in set`: O(1)
 
-### Why no O(n) sort exists
+### [49:16](https://youtu.be/T5oLd7kqqOo?t=2956) Why no O(n) sort exists
 
 - General-purpose comparison sorts have a **theoretical lower bound** of O(n log n).
 - "Binary sort" doesn't exist as a sorting algorithm — binary **search** is a search algorithm, and it's O(log n).
@@ -893,22 +883,22 @@ No. Comparing **values from two arrays** is O(1) per comparison. You'd only get 
 
 ---
 
-## The Group's Offset Approach (Coach's solution)
+## [1:10](https://youtu.be/T5oLd7kqqOo?t=70) The Group's Offset Approach (Coach's solution)
 
 This was the approach the group had pseudo-coded a few weeks earlier. It's the brute force / non-hashmap version:
 
-### Core idea
+### [54:37](https://youtu.be/T5oLd7kqqOo?t=3277) [approx] Core idea
 
 - Sort both arrays first.
 - Walk through `brr` (the longer original) one element at a time.
 - Compare to `arr[index - offset]`. When they don't match, the current `brr` value is missing — append it and bump the offset.
 - Bonus: bounds-check to avoid going out of range when offset grows past `arr`'s length.
 
-### Why sort first?
+### [58:38](https://youtu.be/T5oLd7kqqOo?t=3518) Why sort first?
 
 The hidden test cases on HackerRank are **not in order**. The original assumption ("the order will be the same") was false. Sorting both first lets the index-walk comparison work.
 
-### Why this is worse than Brian's
+### [1:00:21](https://youtu.be/T5oLd7kqqOo?t=3621) [approx] Why this is worse than Brian's
 
 - Sort A: O(n log n)
 - Sort B: O(n log n)
@@ -916,7 +906,7 @@ The hidden test cases on HackerRank are **not in order**. The original assumptio
 - Sort the answer: O(n log n)
 - **Three O(n log n) operations** vs Brian's **one** O(n log n) sort plus three O(n) operations.
 
-### A weird Python set behavior
+### [16:27](https://youtu.be/T5oLd7kqqOo?t=987) A weird Python set behavior
 
 When you `set.add()` items into a Python set, the **order changes unpredictably** — sets are not ordered, and adding elements can rearrange the internal storage. That's why the coach had to call `sorted(...)` at the end even though the inputs had already been sorted.
 
@@ -924,7 +914,7 @@ When you `set.add()` items into a Python set, the **order changes unpredictably*
 
 ---
 
-## Hashmap vs Offset: Why Frequency Maps Are Safer
+## [37:24](https://youtu.be/T5oLd7kqqOo?t=2244) Hashmap vs Offset: Why Frequency Maps Are Safer
 
 - **Frequency maps eliminate duplicate-tracking entirely** because the value is the key and the count is the value. There's only one entry per unique number.
 - **Offset tracking** has to manually account for repeating numbers, bounds checks, and order assumptions — many places to introduce bugs.
@@ -932,7 +922,7 @@ When you `set.add()` items into a Python set, the **order changes unpredictably*
 
 ---
 
-## Memory vs Space Complexity
+## [44:22](https://youtu.be/T5oLd7kqqOo?t=2662) Memory vs Space Complexity
 
 Big-O space complexity and actual memory usage are **not the same thing**:
 
@@ -941,7 +931,7 @@ Big-O space complexity and actual memory usage are **not the same thing**:
 
 ---
 
-## Plan for Next Session
+## [1:11:51](https://youtu.be/T5oLd7kqqOo?t=4311) [approx] Plan for Next Session
 
 Three named algorithms to focus on:
 
@@ -951,18 +941,19 @@ Three named algorithms to focus on:
 
 > "Even just knowing how these algorithms work can help you create and craft solutions to other problems in unique ways so that you can actually get your test cases passing."
 
-
+---
 ---
 
 # Solutions Deep Dive — Insert Interval & Merge Intervals (2025-07-23)
+Source: https://youtu.be/9ksvSJSY85k
 
 Wednesday session: Brian shares his clean O(n) solution for Insert Interval. The session also reveals that Merge Intervals is the natural prerequisite — they were covered in the wrong order.
 
 ---
 
-## Q&A
+## [2:01](https://youtu.be/9ksvSJSY85k?t=121) Q&A
 
-### Should LeetCode solutions use object-oriented Python (classes)?
+### [2:01](https://youtu.be/9ksvSJSY85k?t=121) Should LeetCode solutions use object-oriented Python (classes)?
 
 Adam noticed many LeetCode solutions used class-based Python (e.g., creating an `Interval` class). Are tech interview answers supposed to be class-based?
 
@@ -971,7 +962,7 @@ Adam noticed many LeetCode solutions used class-based Python (e.g., creating an 
 - Some languages (Java) are inherently class-based; Python is not.
 - Use the simplest solution that solves the problem.
 
-### What if a problem requires math knowledge you don't have?
+### [5:03](https://youtu.be/9ksvSJSY85k?t=303) What if a problem requires math knowledge you don't have?
 
 - Every problem should have a **brute force** solution that doesn't require special math tricks.
 - Even using `mod` (modulus) is a "math trick" you learned and can now apply across many problems.
@@ -980,7 +971,7 @@ Adam noticed many LeetCode solutions used class-based Python (e.g., creating an 
 
 ---
 
-## Brian's Insert Interval Solution
+## [19:01](https://youtu.be/9ksvSJSY85k?t=1141) Brian's Insert Interval Solution
 
 A clean O(n) single-loop solution. Key insight: Brian solved the **merge case** first, then handled the special insert cases around it.
 
@@ -1004,18 +995,18 @@ def insert(self, intervals, newInterval):
     return ans
 ```
 
-### Walking through `[[1, 3], [6, 9]]` + `[2, 5]`
+### [1:01:11](https://youtu.be/9ksvSJSY85k?t=3671) Walking through `[[1, 3], [6, 9]]` + `[2, 5]`
 
 | i | intervals[i] | newInterval | Branch | Action |
 |---|---|---|---|---|
 | 0 | `[1, 3]` | `[2, 5]` | `2 > 3`? No. `5 < 1`? No. **Else** | Merge: `min(2,1)=1`, `max(5,3)=5` → newInterval = `[1, 5]` |
 | 1 | `[6, 9]` | `[1, 5]` | `1 > 9`? No. `5 < 6`? **Yes** | Return `ans + [[1,5]] + [[6,9]]` = `[[1,5], [6,9]]` ✓ |
 
-### Why `[-1]` instead of `[1]`?
+### [48:30](https://youtu.be/9ksvSJSY85k?t=2910) Why `[-1]` instead of `[1]`?
 
 Brian's habit: when working with data structures where the **end** is significant, use `[-1]` to communicate intent. In this 2-element case, `[1]` would also work, but `[-1]` reads as "the last element" regardless of length.
 
-### The clever return
+### [43:25](https://youtu.be/9ksvSJSY85k?t=2605) The clever return
 
 ```python
 return ans + [newInterval] + intervals[i:]
@@ -1023,7 +1014,7 @@ return ans + [newInterval] + intervals[i:]
 
 When the new interval ends before the current interval starts (no more merging possible), this **slices the rest of intervals from `i` to the end** and concatenates. Saves writing a second loop just to copy the remainder.
 
-### Wrapping the merged result in `[...]`
+### [43:25](https://youtu.be/9ksvSJSY85k?t=2605) Wrapping the merged result in `[...]`
 
 ```python
 newInterval = [min(...), max(...)]
@@ -1031,7 +1022,7 @@ newInterval = [min(...), max(...)]
 
 Brian explicitly returns a list (not a tuple or unpacked values) so it can be appended to `ans` (a list of lists) without type errors. He had hit data-structure errors before adding the brackets.
 
-### Big-O
+### [21:59](https://youtu.be/9ksvSJSY85k?t=1319) [approx] Big-O
 
 - **Time:** O(n) — single loop, all operations inside are O(1).
 - **Space:** O(n) — `ans` can grow up to n+1 entries.
@@ -1040,7 +1031,7 @@ Brian confirmed via LeetCode's "Analyze Complexity" button.
 
 ---
 
-## Alternative Approach: Append + Sort + Merge
+## [24:44](https://youtu.be/9ksvSJSY85k?t=1484) [approx] Alternative Approach: Append + Sort + Merge
 
 Coach demonstrates the "lazy" brute force version:
 
@@ -1050,7 +1041,7 @@ intervals.sort()
 # now merge any overlaps in the sorted list
 ```
 
-### Why `sort()` works on lists of lists
+### [40:53](https://youtu.be/9ksvSJSY85k?t=2453) Why `sort()` works on lists of lists
 
 Python's `sort()` and `sorted()` default to sorting by the **first element** of each sublist. For `[[1, 3], [4, 5], [2, 5]]`, sorting yields `[[1, 3], [2, 5], [4, 5]]` automatically.
 
@@ -1060,13 +1051,13 @@ You can override the sort key with a `lambda`:
 sorted(items, key=lambda x: x[1])  # sort by second element
 ```
 
-### Why this is cheating (but useful)
+### [1:03:08](https://youtu.be/9ksvSJSY85k?t=3788) Why this is cheating (but useful)
 
 This collapses the **insert** problem into a **merge** problem. Then you only need to solve "merge overlapping intervals," which is the simpler companion problem (see below).
 
 ---
 
-## Two Approaches Side by Side
+## [32:59](https://youtu.be/9ksvSJSY85k?t=1979) [approx] Two Approaches Side by Side
 
 | Approach | Strategy |
 |---|---|
@@ -1077,20 +1068,20 @@ Both work. Brian's is more efficient (single pass). The coach's is more decompos
 
 ---
 
-## Merge Intervals (the prerequisite the coach skipped)
+## [1:01:11](https://youtu.be/9ksvSJSY85k?t=3671) Merge Intervals (the prerequisite the coach skipped)
 
 The coach realized after the fact that **Merge Intervals** is the prerequisite to **Insert Interval**. They covered them in the wrong order.
 
-### Problem statement
+### [1:01:57](https://youtu.be/9ksvSJSY85k?t=3717) Problem statement
 
 You're given an array of intervals. Some may overlap. Merge all overlapping intervals and return the result.
 
-### Example
+### [41:14](https://youtu.be/9ksvSJSY85k?t=2474) [approx] Example
 
 - Input: `[[1, 3], [2, 6], [8, 10], [15, 18]]`
 - Output: `[[1, 6], [8, 10], [15, 18]]` (the first two merge)
 
-### Solution sketch
+### [58:23](https://youtu.be/9ksvSJSY85k?t=3503) Solution sketch
 
 This is essentially **just the merge logic from Brian's solution**. After sorting, walk through the list and merge adjacent overlapping intervals.
 
@@ -1105,13 +1096,13 @@ for i in range(1, len(intervals)):
 return ans
 ```
 
-### Why it's also "medium" difficulty
+### [25:11](https://youtu.be/9ksvSJSY85k?t=1511) Why it's also "medium" difficulty
 
 Some students argue this should be easy because the logic is straightforward. The coach pushes back: index manipulation, comparing the right endpoints, and handling the merge in O(n) requires confidence that students fresh out of Mod 2 don't usually have.
 
 ---
 
-## Errors as Friends
+## [48:50](https://youtu.be/9ksvSJSY85k?t=2930) Errors as Friends
 
 > "When you're first starting out, you're terrified of errors. But errors are kind of like your best friend. If everything's going smoothly, I almost don't trust it — something must be wrong."
 
@@ -1123,13 +1114,13 @@ Each error taught him something about the data structure he was building.
 
 ---
 
-## Resources Mentioned
+## [52:14](https://youtu.be/9ksvSJSY85k?t=3134) [approx] Resources Mentioned
 
-### NeetCode
+### [54:59](https://youtu.be/9ksvSJSY85k?t=3299) [approx] NeetCode
 
 A YouTuber/educator (former Amazon engineer) who built courses around LeetCode. Provides a "study roadmap" for learning data structures and tackling LeetCode problems systematically. Some of his videos use class-based solutions.
 
-### Blind 75
+### [1:05:34](https://youtu.be/9ksvSJSY85k?t=3934) Blind 75
 
 A list of 75 LeetCode problems considered the "essential" set for tech interview prep. The coach has been pulling problems from this list. Two from this session:
 
@@ -1140,7 +1131,7 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 > "The Blind 75 is pretty old now — some people consider it almost outdated. But it's still a good representation of the fundamentals."
 
-### General study advice
+### [59:43](https://youtu.be/9ksvSJSY85k?t=3583) General study advice
 
 - Spend 10–15 minutes on a problem. If stuck, look at the answer.
 - Build pattern recognition by **seeing** examples.
@@ -1148,7 +1139,7 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 ---
 
-## Coach's Plan for the Next Session
+## [1:05:40](https://youtu.be/9ksvSJSY85k?t=3940) Coach's Plan for the Next Session
 
 - Record a video on **sliding window**, **two pointers**, and **binary search** in the context of specific problems.
 - Bridge the gap from "I learned binary search in Mod 2" to "I can implement binary search to solve a real problem."
@@ -1156,20 +1147,201 @@ After this session: **13 of 75** Blind 75 problems covered.
 
 ---
 
-## Brian's Status
+## [43:05](https://youtu.be/9ksvSJSY85k?t=2585) Brian's Status
 
 Brian has finished Mod 2 except for the optional Java content. The technical interview is the gate to the **explorer phase** (working on tickets, building apps). Coach: "You're probably ready."
 
+---
+---
+
+# Make-Up Session — Two Pointers on Ice Cream Parlor (2025-07-27)
+Source: https://youtu.be/sx--aq3f3tc
+
+A long-overdue make-up session: implementing the **two-pointer** approach on the Ice Cream Parlor problem. (Binary search version still pending — saved for next session.)
 
 ---
 
+## [21:29](https://youtu.be/sx--aq3f3tc?t=1289) Problem Recap: Ice Cream Parlor
+
+Two friends pool money `m`. Given a list of ice cream costs, return the **one-based indices** of the two distinct flavors that sum exactly to `m`. There will always be a valid solution.
+
+### [3:04](https://youtu.be/sx--aq3f3tc?t=184) [approx] Key constraints
+
+- `m`: 2 to 10⁴.
+- `n` (length of cost array): 2 to 10⁴.
+- Cost values: 1 to 10⁴.
+- Always exactly one valid solution.
+- Two indices must be **distinct** but the **values** can repeat.
+
+---
+
+## [21:29](https://youtu.be/sx--aq3f3tc?t=1289) Brute Force Recap (Nested Loop)
+
+```python
+for index, value in enumerate(cost, 1):
+    for j in range(index, len(cost)):
+        if value + cost[j] == m:
+            return [index, j + 1]
+```
+
+- `enumerate(cost, 1)` for one-based outer index.
+- `range(index, len(cost))` for the inner loop (zero-based, since `cost[j]` uses zero-based access).
+- Add `+1` to `j` when returning to convert to one-based.
+- **Time:** O(n²)
+- **Space:** O(1)
+
+### [18:54](https://youtu.be/sx--aq3f3tc?t=1134) Important indexing nuance
+
+`enumerate(cost, 1)` gives a one-based **counter**, but the underlying list `cost` is still zero-based. When you mix `enumerate` with raw `cost[j]` access, you have to mentally track which is which. **Print everything to verify.**
+
+---
+
+## [51:52](https://youtu.be/sx--aq3f3tc?t=3112) Two-Pointer Implementation
+
+### [51:52](https://youtu.be/sx--aq3f3tc?t=3112) Why this problem needs sorting first
+
+Two pointers requires a condition to decide which pointer to move. Here, the condition is "is `cost[left] + cost[right]` greater than or less than `m`?" That comparison only makes sense if the values are **sorted**.
+
+```python
+sorted_cost = sorted(cost)  # don't mutate the original
+left = 0
+right = len(sorted_cost) - 1
+
+value_one = 0
+value_two = 0
+
+while left < right:
+    if sorted_cost[left] + sorted_cost[right] == m:
+        value_one = sorted_cost[left]
+        value_two = sorted_cost[right]
+        break
+    elif sorted_cost[left] + sorted_cost[right] > m:
+        right -= 1
+    else:
+        left += 1
+```
+
+### [24:25](https://youtu.be/sx--aq3f3tc?t=1465) Why `sorted()` instead of `cost.sort()`
+
+- `cost.sort()` mutates the original list **in place** → destroys the original indices.
+- `sorted(cost)` returns a **new sorted list**, leaving `cost` unchanged.
+- We need the **original** array to look up the **original** indices of our found values.
+
+> **Bug discovered during the live coding:** The coach initially used `cost.sort()`, found the right values, but then returned wrong indices because the indices in the sorted array don't match the original. Fix: switch to `sorted(cost)` and store the result in a separate variable.
+
+### [21:29](https://youtu.be/sx--aq3f3tc?t=1289) Recovering the original indices
+
+```python
+answer = []
+for index, value in enumerate(cost, 1):
+    if value == value_one:
+        answer.append(index)
+    elif value == value_two:
+        answer.append(index)
+return answer
+```
+
+### [54:07](https://youtu.be/sx--aq3f3tc?t=3247) Why `elif` instead of two separate `if`s
+
+If both target values are the same (e.g., `[2, 2]` summing to 4), two separate `if` statements would both fire on the same value and return the same index twice. Using `elif` ensures each iteration only matches one of the two targets, so you get two **distinct** indices.
+
+---
+
+## [27:39](https://youtu.be/sx--aq3f3tc?t=1659) [approx] Big-O Analysis
+
+- **Sort:** O(n log n)
+- **Two-pointer loop:** O(n)
+- **Index recovery loop:** O(n)
+- **Overall:** O(n log n)
+
+### [34:26](https://youtu.be/sx--aq3f3tc?t=2066) Why this is barely better than brute force
+
+Brute force was O(n²), and the two-pointer approach is O(n log n). On the Big-O graph, that's a meaningful improvement on paper. But for this problem specifically, you have to write **way more code** (sort + two-pointer + index recovery), so the actual runtime gain is marginal compared to just nesting two loops.
+
+### [51:56](https://youtu.be/sx--aq3f3tc?t=3116) When two-pointer really shines
+
+Two pointers is genuinely O(n) **when the input is already sorted** and you don't need to recover original indices. Container With Most Water (a previous problem) is the classic example — the input doesn't need to be sorted because the conditions for moving pointers depend on heights, not sums.
+
+---
+
+## [35:20](https://youtu.be/sx--aq3f3tc?t=2120) The Lesson: Knowing the Algorithm vs Using It
+
+Even though two-pointer wasn't the **best** solution for Ice Cream Parlor, the implementation exercise teaches:
+
+- How to write the **truthy case** (the condition for "we found it").
+- How to write the **conditions** that decide which pointer moves.
+- How to **modify a standard algorithm** to fit a problem's quirks (like needing to recover original indices via a second loop).
+
+> "We can modify an algorithm to meet our use cases if it's something that we know would work or meet the goal."
+
+---
+
+## [39:57](https://youtu.be/sx--aq3f3tc?t=2397) [approx] Two-Pointer Template
+
+```python
+left = 0
+right = len(arr) - 1
+
+while left < right:
+    if [truthy condition]:
+        return [solution]
+    elif [condition to shrink right]:
+        right -= 1
+    else:
+        left += 1
+```
+
+- **Loop condition:** `while left < right` — stops when pointers meet or cross.
+- **Truthy case:** the win condition. Return immediately.
+- **Two condition cases:** decide which pointer moves based on the data.
+
+### [47:14](https://youtu.be/sx--aq3f3tc?t=2834) Things to debug
+
+- **Index out of range:** initial `right` should be `len(arr) - 1`, not `len(arr)`.
+- **Wrong indices returned:** check whether you're using a sorted view or the original.
+- **Infinite loop:** make sure both branches actually move a pointer.
+
+---
+
+## [41:18](https://youtu.be/sx--aq3f3tc?t=2478) Errors as Friends (Debugging Walk-Through)
+
+### [41:18](https://youtu.be/sx--aq3f3tc?t=2478) Bug 1: index out of range
+
+Initial `right = len(cost)` instead of `len(cost) - 1`. Caused an out-of-bounds access.
+
+### [47:46](https://youtu.be/sx--aq3f3tc?t=2866) Bug 2: returning indices from sorted array, not original
+
+After fixing bug 1, the function returned `[1, 3]` instead of `[1, 4]`. The values were correct but the indices were from the sorted view.
+
+**Diagnosis:** print `left, right, sorted_cost[left], sorted_cost[right]` and compare against the unsorted `cost` array. Realized the indices were from the sorted view.
+
+**Fix:** use `sorted(cost)` to keep both versions, then do a second loop on the original to recover the original indices.
+
+### [25:48](https://youtu.be/sx--aq3f3tc?t=1548) Bug 3: visual confusion from a "find" highlight
+
+The coach accidentally had Ctrl+F find-mode active in the editor, which highlighted random text and made it hard to see what was wrong. Took several minutes to notice. **Lesson:** if the editor is acting weird, check for stray modal states.
+
+---
+
+## [0:10](https://youtu.be/sx--aq3f3tc?t=10) Plan for Next Session
+
+- **Binary search** implementation on the same Ice Cream Parlor problem.
+- Will dive straight in without the long buildup since the problem is now well-understood.
+- Goal: see binary search applied to a real problem, not just as an isolated Mod 2 exercise.
+
+> "Today's point is just seeing that implementation of two pointer in the context of this problem so that you can learn how to use it in unique and variety of ways."
+
+---
+---
+
 # Solutions Deep Dive — Contains Duplicate (All Approaches) (2025-07-30)
+Source: https://youtu.be/YEI5yYOPVus
 
 Wednesday session: explore four different approaches to LeetCode's Contains Duplicate, from O(n²) brute force to a one-line O(n) set comparison.
 
 ---
 
-## Recap: Contains Duplicate problem
+## [2:07](https://youtu.be/YEI5yYOPVus?t=127) Recap: Contains Duplicate problem
 
 Given an integer array `nums`, return `True` if any value appears at least twice, `False` if all elements are distinct.
 
@@ -1178,7 +1350,7 @@ Given an integer array `nums`, return `True` if any value appears at least twice
 
 ---
 
-## Approach 1: Brute Force Nested Loop — O(n²)
+## [13:33](https://youtu.be/YEI5yYOPVus?t=813) Approach 1: Brute Force Nested Loop — O(n²)
 
 ```python
 for index, value in enumerate(nums):
@@ -1188,32 +1360,32 @@ for index, value in enumerate(nums):
 return False
 ```
 
-### How it works
+### [53:40](https://youtu.be/YEI5yYOPVus?t=3220) How it works
 
 - Outer loop: iterate through each value with its index.
 - Inner loop: compare against all subsequent values.
 - If any pair matches, return `True`.
 - Otherwise, return `False` after the loops complete.
 
-### Result
+### [24:46](https://youtu.be/YEI5yYOPVus?t=1486) Result
 
 - **Passes 65 of 77 test cases** before hitting LeetCode's time limit on the larger inputs (10,000+ elements).
 - **Time:** O(n²)
 - **Space:** O(1)
 
-### Lesson: time limit exceeded ≠ wrong solution
+### [12:32](https://youtu.be/YEI5yYOPVus?t=752) Lesson: time limit exceeded ≠ wrong solution
 
 You got the right answer for the cases that ran. The solution is correct, just inefficient. This is your cue to look for a better approach.
 
 > **In the joy of coding tech interview** (HackerRank easy problems), brute force usually passes. **In real job interviews and on LeetCode mediums/hards**, you'll often need to optimize past brute force.
 
-### Coach's recommendation
+### [7:31](https://youtu.be/YEI5yYOPVus?t=451) Coach's recommendation
 
 If your brute force passes at least **two-thirds of the test cases**, you've proven you understand the problem. Now go look at the Solutions tab or your toolkit of efficient techniques.
 
 ---
 
-## Approach 2: Sort + Adjacent Comparison — O(n log n)
+## [53:40](https://youtu.be/YEI5yYOPVus?t=3220) Approach 2: Sort + Adjacent Comparison — O(n log n)
 
 ```python
 nums.sort()
@@ -1223,27 +1395,27 @@ for i in range(len(nums) - 1):
 return False
 ```
 
-### How it works
+### [16:55](https://youtu.be/YEI5yYOPVus?t=1015) [approx] How it works
 
 - Sort the array (O(n log n)).
 - Walk through with index `i`, comparing each value to the next one.
 - Stop at `len(nums) - 1` to avoid index out of bounds.
 - If any adjacent pair matches, return `True`.
 
-### Result
+### [19:20](https://youtu.be/YEI5yYOPVus?t=1160) [approx] Result
 
 - **Passes all test cases.**
 - **Time:** O(n log n) — sort dominates.
 - **Space:** O(1) for the sort (in-place) or O(n) depending on the implementation.
 
-### `sort()` vs `sorted()`
+### [26:34](https://youtu.be/YEI5yYOPVus?t=1594) `sort()` vs `sorted()`
 
 - `nums.sort()` mutates the list **in place** and returns `None`.
 - `sorted(nums)` returns a **new sorted list** without mutating the original.
 
 If you write `sorted_nums = nums.sort()`, you get `None` stored in `sorted_nums` because the method has no return value. This trips people up. Use `sorted_nums = sorted(nums)` if you want a new copy.
 
-### Can you import libraries in tech interviews?
+### [29:30](https://youtu.be/YEI5yYOPVus?t=1770) Can you import libraries in tech interviews?
 
 - **Built-in functions** (`sort`, `sorted`, `min`, `max`, `len`, etc.) are always fine.
 - **Importing libraries** is usually allowed but adds overhead — you have to know how to use them and remember the import syntax.
@@ -1251,7 +1423,7 @@ If you write `sorted_nums = nums.sort()`, you get `None` stored in `sorted_nums`
 
 ---
 
-## Approach 3: Set With Add and Check — O(n)
+## [26:35](https://youtu.be/YEI5yYOPVus?t=1595) [approx] Approach 3: Set With Add and Check — O(n)
 
 ```python
 seen = set()
@@ -1262,21 +1434,21 @@ for value in nums:
 return False
 ```
 
-### How it works
+### [40:50](https://youtu.be/YEI5yYOPVus?t=2450) How it works
 
 - Build a set as you go.
 - For each value, check if it's already in the set.
 - If yes → duplicate found, return `True`.
 - If no → add it to the set and continue.
 
-### Why this is O(n)
+### [31:25](https://youtu.be/YEI5yYOPVus?t=1885) [approx] Why this is O(n)
 
 - Single loop: O(n).
 - `value in set` is **O(1)** (hash lookup, not linear scan).
 - `set.add(value)` is also O(1).
 - Inside an O(n) loop, all operations are O(1) → **O(n) overall**.
 
-### `in` is O(n) for lists, O(1) for sets
+### [33:50](https://youtu.be/YEI5yYOPVus?t=2030) [approx] `in` is O(n) for lists, O(1) for sets
 
 This is a critical distinction:
 
@@ -1288,32 +1460,32 @@ Sets use **hashing** under the hood. The value's hash determines its index, so c
 
 ---
 
-## Approach 4: One-Line Set Comparison (Lisa's idea) — O(n)
+## [36:15](https://youtu.be/YEI5yYOPVus?t=2175) [approx] Approach 4: One-Line Set Comparison (Lisa's idea) — O(n)
 
 ```python
 return len(set(nums)) != len(nums)
 ```
 
-### How it works
+### [40:24](https://youtu.be/YEI5yYOPVus?t=2424) How it works
 
 - `set(nums)` creates a set from the list, which automatically removes duplicates.
 - If the resulting set is **shorter** than the original list, there were duplicates.
 - Compare lengths and return the boolean.
 
-### Big-O
+### [17:48](https://youtu.be/YEI5yYOPVus?t=1068) Big-O
 
 - `set(nums)` is **O(n)** (one pass through the list to insert into the set).
 - `len()` calls are **O(1)**.
 - **Overall: O(n)**, same as Approach 3.
 
-### Why this is the elegant winner
+### [26:31](https://youtu.be/YEI5yYOPVus?t=1591) Why this is the elegant winner
 
 - One line.
 - Uses Python's built-in set semantics to do the heavy lifting.
 - No explicit loop, no early-return logic, no extra variables.
 - Reads almost like the problem statement: "if the unique values are fewer than all values, there's a duplicate."
 
-### Real-world performance comparison
+### [45:56](https://youtu.be/YEI5yYOPVus?t=2756) [approx] Real-world performance comparison
 
 | Approach | Runtime |
 |---|---|
@@ -1326,7 +1498,7 @@ return len(set(nums)) != len(nums)
 
 ---
 
-## Memory Trade-Off
+## [57:49](https://youtu.be/YEI5yYOPVus?t=3469) Memory Trade-Off
 
 The set-based approaches use **O(n) space** because they store every unique value. The sort and brute force approaches use **O(1)** extra space.
 
@@ -1336,11 +1508,11 @@ For most problems, **runtime matters more than memory**. Pick the faster solutio
 
 ---
 
-## Confused Adam: "Why use enumerate?"
+## [53:49](https://youtu.be/YEI5yYOPVus?t=3229) Confused Adam: "Why use enumerate?"
 
 A participant pointed out that `enumerate(nums)` is functionally identical to `for i in range(len(nums))` followed by `nums[i]`. Why use `enumerate`?
 
-### Answer
+### [53:34](https://youtu.be/YEI5yYOPVus?t=3214) Answer
 
 - **Same efficiency** — both are O(n) and do the same thing under the hood.
 - `enumerate` is **cleaner syntax** — gives you both the index and the value in one expression.
@@ -1350,7 +1522,7 @@ A participant pointed out that `enumerate(nums)` is functionally identical to `f
 
 ---
 
-## Encouragement: Try the Problems After the Session
+## [52:08](https://youtu.be/YEI5yYOPVus?t=3128) Encouragement: Try the Problems After the Session
 
 Even though all four approaches were walked through live, **try them yourself from memory**. The muscle memory of typing them out, debugging the small mistakes, and making them work is what builds your speed.
 
@@ -1358,31 +1530,32 @@ Even though all four approaches were walked through live, **try them yourself fr
 
 ---
 
-## Coming Up: Top K Frequent Elements
+## [10:12](https://youtu.be/YEI5yYOPVus?t=612) Coming Up: Top K Frequent Elements
 
 The other Sunday problem. The constraint says "your solution must be **better than O(n log n)**" — which rules out sort-based approaches. Try this one before the next session.
 
 > "It kind of implies that there are many solutions of varying O complexities that are better than N log of N."
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — August 6, 2025
+Source: https://youtu.be/bORQAEeY2Vg
 
 Wednesday solutions deep dive session revisiting **Top K Frequent Elements**. Lisa shares her working solution, the coach walks through building it from scratch without the `Counter` shortcut, explores sorting approaches, and contrasts with Brian's optimal bucket-sort solution.
 
 ---
 
-## Problem: Top K Frequent Elements
+## [10:46](https://youtu.be/bORQAEeY2Vg?t=646) Problem: Top K Frequent Elements
 
 Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. The answer may be returned in any order.
 
-### Examples
+### [3:05](https://youtu.be/bORQAEeY2Vg?t=185) [approx] Examples
 
 - `nums = [1,1,1,2,2,3], k = 2` → `[1, 2]` (1 appears 3x, 2 appears 2x, 3 appears 1x)
 - `nums = [1], k = 1` → `[1]`
 
-### Constraints
+### [6:11](https://youtu.be/bORQAEeY2Vg?t=371) [approx] Constraints
 
 - `1 <= nums.length <= 10^5`
 - `-10^4 <= nums[i] <= 10^4`
@@ -1393,7 +1566,7 @@ Given an integer array `nums` and an integer `k`, return the `k` most frequent e
 
 ---
 
-## Lisa's Solution: `Counter` + `most_common`
+## [9:17](https://youtu.be/bORQAEeY2Vg?t=557) [approx] Lisa's Solution: `Counter` + `most_common`
 
 Lisa's approach used Python's `collections.Counter`, inspired by SQL's `SELECT TOP` pattern.
 
@@ -1406,13 +1579,13 @@ def topKFrequent(nums, k):
     return most_common
 ```
 
-### How it works
+### [18:54](https://youtu.be/bORQAEeY2Vg?t=1134) How it works
 
 - **`Counter(nums)`** builds a frequency dictionary in one call (e.g. `{1: 3, 2: 2, 3: 1}`).
 - **`.most_common(k)`** returns the top `k` key/count tuples already sorted descending by frequency.
 - The **list comprehension** extracts just the keys (the actual numbers), discarding the counts.
 
-### Coach feedback
+### [3:08](https://youtu.be/bORQAEeY2Vg?t=188) Coach feedback
 
 > You could just `return counts_frequency.most_common(k)` directly and map out the keys — you don't need a separate sort step because `most_common` is already sorted.
 
@@ -1421,7 +1594,7 @@ def topKFrequent(nums, k):
 
 ---
 
-## Approach 1: Build the Frequency Dictionary From Scratch
+## [27:06](https://youtu.be/bORQAEeY2Vg?t=1626) Approach 1: Build the Frequency Dictionary From Scratch
 
 The coach emphasized understanding the underlying mechanics before relying on `Counter`.
 
@@ -1434,7 +1607,7 @@ for num in nums:
         frequency[num] = 1
 ```
 
-### Key takeaways
+### [47:22](https://youtu.be/bORQAEeY2Vg?t=2842) Key takeaways
 
 - A dictionary literal uses **`{key: value, key: value}`** syntax.
 - You **cannot `+= 1`** on a key that doesn't exist yet — Python raises `KeyError`.
@@ -1445,11 +1618,11 @@ for num in nums:
 
 ---
 
-## Approach 2: Sorting the Dictionary
+## [32:23](https://youtu.be/bORQAEeY2Vg?t=1943) Approach 2: Sorting the Dictionary
 
 Once you have the frequency dictionary, you need to extract the top `k` entries. Sorting is the obvious first attempt.
 
-### Sorting a dict by value
+### [52:56](https://youtu.be/bORQAEeY2Vg?t=3176) Sorting a dict by value
 
 ```python
 sorted_frequency = sorted(frequency.items(), key=lambda item: item[1], reverse=True)
@@ -1459,7 +1632,7 @@ sorted_frequency = sorted(frequency.items(), key=lambda item: item[1], reverse=T
 - **`key=lambda item: item[1]`** tells `sorted` to sort by the second element of each tuple (the count).
 - **`reverse=True`** sorts descending so the most frequent comes first.
 
-### Extracting the top k
+### [30:59](https://youtu.be/bORQAEeY2Vg?t=1859) [approx] Extracting the top k
 
 ```python
 answers = []
@@ -1471,7 +1644,7 @@ return answers
 - `sorted_frequency[i]` is a `(num, count)` tuple.
 - `[0]` pulls out just the number.
 
-### Complexity
+### [52:49](https://youtu.be/bORQAEeY2Vg?t=3169) Complexity
 
 - **Time:** O(n log n) — dominated by `sorted`.
 - **Space:** O(n) for the frequency dict.
@@ -1481,7 +1654,7 @@ return answers
 
 ---
 
-## Approach 3: Repeated Max (Brute Force Without Sort)
+## [1:02:34](https://youtu.be/bORQAEeY2Vg?t=3754) Approach 3: Repeated Max (Brute Force Without Sort)
 
 An attempt to dodge the sort by repeatedly pulling the current max.
 
@@ -1499,12 +1672,12 @@ while len(k_frequency) < k:
 return k_frequency
 ```
 
-### How it works
+### [1:00:38](https://youtu.be/bORQAEeY2Vg?t=3638) How it works
 
 - While we haven't collected `k` answers, scan the whole dict for the current max.
 - Append it to results and **delete it** from the dict so the next scan finds the next max.
 
-### Complexity
+### [32:01](https://youtu.be/bORQAEeY2Vg?t=1921) Complexity
 
 - **Time:** O(k * n) worst case — for each of `k` passes we scan all `n` entries.
 - Ends up **worse than** sorting when `k` approaches `n`, but avoids the `O(n log n)` sort.
@@ -1513,7 +1686,7 @@ return k_frequency
 
 ---
 
-## Approach 4: Bucket Sort — O(n) (Brian's Solution)
+## [45:08](https://youtu.be/bORQAEeY2Vg?t=2708) Approach 4: Bucket Sort — O(n) (Brian's Solution)
 
 The only standard way to beat O(n log n) on this problem. Brian demonstrated it the prior Sunday.
 
@@ -1534,13 +1707,13 @@ def topKFrequent(nums, k):
                 return result
 ```
 
-### The key insight
+### [18:50](https://youtu.be/bORQAEeY2Vg?t=1130) The key insight
 
 - A number's frequency is bounded by `len(nums)` — so we can use **frequency as an index** into a list of buckets.
 - `buckets[freq]` holds every number that appears exactly `freq` times.
 - Walking the buckets **from high index to low** yields numbers in descending frequency order for free — no sorting required.
 
-### Complexity
+### [25:24](https://youtu.be/bORQAEeY2Vg?t=1524) Complexity
 
 - **Time:** O(n) — building the counter is O(n), filling buckets is O(n), walking buckets is O(n).
 - **Space:** O(n) — the bucket list is sized to `len(nums) + 1`.
@@ -1549,7 +1722,7 @@ def topKFrequent(nums, k):
 
 ---
 
-## Big-O Review
+## [33:59](https://youtu.be/bORQAEeY2Vg?t=2039) Big-O Review
 
 When in doubt about a complexity claim, the coach recommended **bigocalc.com** and the classic **Big-O complexity graph**.
 
@@ -1561,11 +1734,11 @@ When in doubt about a complexity claim, the coach recommended **bigocalc.com** a
 | **O(n log n)** linearithmic | Comparison sorts (Timsort, merge sort); binary searching each of `n` items |
 | **O(n^2)** quadratic | Nested loops over the same input (e.g. naive pair-finding) |
 
-### Why sorting is O(n log n)
+### [58:52](https://youtu.be/bORQAEeY2Vg?t=3532) [approx] Why sorting is O(n log n)
 
 Comparison-based sorts (Python's Timsort included) cannot do better than O(n log n) in the general case. Any time you see `sorted(...)` or `.sort()`, assume that's your lower bound unless you're using a non-comparison sort like bucket or radix sort.
 
-### How to know if your solution meets the follow-up
+### [19:48](https://youtu.be/bORQAEeY2Vg?t=1188) How to know if your solution meets the follow-up
 
 - Break down your code line by line and identify the dominant operation.
 - Dictionary operations (`in`, get, set, delete) are **O(1) average**.
@@ -1575,7 +1748,7 @@ Comparison-based sorts (Python's Timsort included) cannot do better than O(n log
 
 ---
 
-## Session Takeaways
+## [30:18](https://youtu.be/bORQAEeY2Vg?t=1818) Session Takeaways
 
 - **Counter + most_common** is the cleanest Pythonic solution — know it cold for interviews.
 - You must also be able to build the frequency dict manually with `if key in dict` branching.
@@ -1585,35 +1758,36 @@ Comparison-based sorts (Python's Timsort included) cannot do better than O(n log
 
 > Commit the `items() + lambda` sort pattern to memory. It's one of those idioms that comes up constantly and is awkward to derive from first principles under interview pressure.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — August 13, 2025
+Source: https://youtu.be/itWLg5UCbsk
 
 Wednesday session covering three topics: (1) how to get started practicing on HackerRank, (2) a visual Big-O demo contrasting linear and binary search, and (3) a full walkthrough of the **Jumping on the Clouds** problem showing the coach's end-to-end interview process from reading the prompt to debugging code.
 
 ---
 
-## Getting Started on HackerRank
+## [1:15](https://youtu.be/itWLg5UCbsk?t=75) Getting Started on HackerRank
 
-### Where to start
+### [1:15](https://youtu.be/itWLg5UCbsk?t=75) Where to start
 
 - Use the **Problem Solving track** — it mixes data structure and algorithm questions and shows up by default on new accounts.
 - Filter to **Easy** and work through them in order of point value.
 
-### Point values as a difficulty signal
+### [1:07:38](https://youtu.be/itWLg5UCbsk?t=4058) Point values as a difficulty signal
 
 - **10-point problems** are generally easier than **15-point** problems, which are easier than **20-point** problems — even within the Easy tier.
 - Stars on HackerRank are gamification only — ignore them as a progress gauge.
 
-### What to practice per problem
+### [3:27](https://youtu.be/itWLg5UCbsk?t=207) What to practice per problem
 
 - Read the **entire** problem statement — don't stop at the short summary.
 - Pull elements from the problem into **pseudo code** — data types, return type, constraints, edge cases.
 - Read the **constraints** carefully; they frequently contain guarantees that eliminate the need for edge-case handling.
 - Run your code often against their examples; don't write 20 lines before testing.
 
-### Readiness benchmarks
+### [7:44](https://youtu.be/itWLg5UCbsk?t=464) [approx] Readiness benchmarks
 
 | Metric | Target |
 |---|---|
@@ -1623,14 +1797,14 @@ Wednesday session covering three topics: (1) how to get started practicing on Ha
 
 > Medium problems aren't harder conceptually — they're easy problems compacted into multiple steps stacked on top of each other. The skill you're training is decomposition.
 
-### Interview mechanics
+### [16:30](https://youtu.be/itWLg5UCbsk?t=990) Interview mechanics
 
 - The tech interview is a **hard 20 minutes** on a single easy problem.
 - The interviewer doesn't answer questions mid-session; assume any question you ask is rhetorical — you are talking to yourself.
 - If you ask how much time is left, the interviewer will tell you. Otherwise focus on the code.
 - **Job-hunt interviews** will include medium and hard problems — preparing with mediums pays off after the internship interview.
 
-### Practice tips
+### [57:58](https://youtu.be/itWLg5UCbsk?t=3478) Practice tips
 
 - Use a **stopwatch (counting up)** rather than a countdown timer when starting out — measure how long problems actually take, then compress.
 - Book peer-mentor office hours for low-stakes speaking practice before your real attempt.
@@ -1638,23 +1812,23 @@ Wednesday session covering three topics: (1) how to get started practicing on Ha
 
 ---
 
-## Big-O Visualization: Linear vs Binary Search
+## [13:21](https://youtu.be/itWLg5UCbsk?t=801) Big-O Visualization: Linear vs Binary Search
 
 The coach demonstrated a custom visualizer comparing **linear search** (O(n)) and **binary search** (O(log n)) across library catalogs of different sizes.
 
-### Linear search — O(n)
+### [3:42](https://youtu.be/itWLg5UCbsk?t=222) Linear search — O(n)
 
 - Walk the array one index at a time until you find the target or reach the end.
 - No prerequisite ordering required.
 - Steps scale **diagonally** with input size — double the books, double the average steps.
 
-### Binary search — O(log n)
+### [17:26](https://youtu.be/itWLg5UCbsk?t=1046) [approx] Binary search — O(log n)
 
 - **Requires a sorted list.**
 - Check the midpoint, decide if the target is in the lower or upper half, discard the other half, repeat.
 - Steps grow **logarithmically** — doubling input adds only one more step on average.
 
-### Scale observations
+### [19:22](https://youtu.be/itWLg5UCbsk?t=1162) [approx] Scale observations
 
 | Books | Linear steps (avg) | Binary steps (avg) |
 |---|---|---|
@@ -1665,29 +1839,29 @@ The coach demonstrated a custom visualizer comparing **linear search** (O(n)) an
 
 > Big-O isn't about performance on a small scale or a large scale — it's about how performance changes between scales. Linear goes diagonal. Log-n goes nearly flat.
 
-### Why this matters beyond interviews
+### [25:39](https://youtu.be/itWLg5UCbsk?t=1539) Why this matters beyond interviews
 
 Code written with poor efficiency works fine on small inputs but degrades dramatically as data grows. Whether or not you're implementing a literal binary search, being able to *recognize* when your code is doing wasted work is what separates production-quality code from brute-force code.
 
 ---
 
-## Problem: Jumping on the Clouds
+## [31:09](https://youtu.be/itWLg5UCbsk?t=1869) Problem: Jumping on the Clouds
 
 > There is a new mobile game that starts with consecutively numbered clouds. Some clouds are thunderheads, others are cumulus. The player can jump on any cumulus cloud with a number equal to the current cloud + 1 or + 2. The player must avoid thunderheads. Determine the number of jumps it takes to reach the last cloud. It is always possible to win the game.
 
-### Restating the problem
+### [32:11](https://youtu.be/itWLg5UCbsk?t=1931) Restating the problem
 
 - Given an array `c` of integers containing only `0` (safe) or `1` (thunderhead).
 - Index the array from `0` to `n-1`.
 - Advance the index by **+1 or +2** positions per jump, never landing on a `1`.
 - Return the **shortest path** (fewest jumps) to the last index.
 
-### Examples
+### [27:07](https://youtu.be/itWLg5UCbsk?t=1627) [approx] Examples
 
 - `c = [0,0,1,0,0,1,0]` → `4` jumps (e.g. 0 → 1 → 3 → 4 → 6).
 - `c = [0,0,0,0,1,0]` → `3` jumps (0 → 2 → 3 → 5 or 0 → 2 → 4? actually 0 → 2 → 3 → 5 since index 4 is unsafe).
 
-### Constraints and what they buy us
+### [29:03](https://youtu.be/itWLg5UCbsk?t=1743) [approx] Constraints and what they buy us
 
 - `2 <= n <= 100`.
 - `c[0] = 0` and `c[n-1] = 0` — the **first and last clouds are always safe**.
@@ -1697,9 +1871,9 @@ Code written with poor efficiency works fine on small inputs but degrades dramat
 
 ---
 
-## Coach's Interview Process (End to End)
+## [30:56](https://youtu.be/itWLg5UCbsk?t=1856) Coach's Interview Process (End to End)
 
-### Step 1 — Read aloud and restate
+### [30:56](https://youtu.be/itWLg5UCbsk?t=1856) Step 1 — Read aloud and restate
 
 Read the problem at least once. Resummarize it in your own words to the interviewer. This buys your brain buffer time and proves comprehension.
 
@@ -1711,7 +1885,7 @@ Read the problem at least once. Resummarize it in your own words to the intervie
 # return the shortest path from the first index to the last
 ```
 
-### Step 2 — Print the inputs
+### [34:44](https://youtu.be/itWLg5UCbsk?t=2084) Step 2 — Print the inputs
 
 Always print the parameters you're given on the first line of the function. Verify the runtime data matches your mental model before writing any logic.
 
@@ -1721,11 +1895,11 @@ def jumpingOnClouds(c):
     return 0
 ```
 
-### Step 3 — Default return
+### [47:47](https://youtu.be/itWLg5UCbsk?t=2867) Step 3 — Default return
 
 Add a default return matching the expected type (here, an integer). Missing return statements cause confusing type errors that can send you down the wrong debugging path.
 
-### Step 4 — Pseudo code the approach
+### [38:44](https://youtu.be/itWLg5UCbsk?t=2324) [approx] Step 4 — Pseudo code the approach
 
 ```
 # default to jump 2 spaces if the index is safe (not a 1)
@@ -1733,15 +1907,15 @@ Add a default return matching the expected type (here, an integer). Missing retu
 # keep track of steps taken with a count variable
 ```
 
-### Step 5 — Summarize for the interviewer
+### [41:42](https://youtu.be/itWLg5UCbsk?t=2502) Step 5 — Summarize for the interviewer
 
 > The problem gives me a list of 0s and 1s. I can take up any 0 space but not a 1. I can advance by 1 or 2 each jump. I'll loop through the array, prefer jumping by 2 when the landing spot is safe, otherwise jump by 1, and track the count. Thanks to the constraints I know the first and last index are always safe, so I don't need edge cases for either end.
 
 ---
 
-## Implementing the Solution
+## [42:37](https://youtu.be/itWLg5UCbsk?t=2557) [approx] Implementing the Solution
 
-### First attempt — `enumerate` (suggested by Brian)
+### [44:33](https://youtu.be/itWLg5UCbsk?t=2673) [approx] First attempt — `enumerate` (suggested by Brian)
 
 ```python
 def jumpingOnClouds(c):
@@ -1754,7 +1928,7 @@ def jumpingOnClouds(c):
     return count
 ```
 
-### Bugs surfaced by testing
+### [52:00](https://youtu.be/itWLg5UCbsk?t=3120) Bugs surfaced by testing
 
 - **`IndexError: list index out of range`** — when `index + 2` exceeds `len(c) - 1`.
 - **Reassigning the loop variable `index`** inside a `for` loop does nothing — Python rebinds it on the next iteration.
@@ -1762,13 +1936,13 @@ def jumpingOnClouds(c):
 
 > This is why `enumerate` is awkward here. You can't manually advance the iterator. When you need to control the step yourself, use a `while` loop with a manual index, not `for ... in enumerate`.
 
-### When to prefer `enumerate` vs `range`
+### [46:33](https://youtu.be/itWLg5UCbsk?t=2793) When to prefer `enumerate` vs `range`
 
 - Use **`enumerate`** when you need **both** the index and the value and you iterate linearly.
 - Use **`for i in range(len(c))`** when you only need the index or need to manipulate positioning.
 - Use **`while`** when you need to control the advance step yourself (as here).
 
-### Corrected approach — `while` loop
+### [50:21](https://youtu.be/itWLg5UCbsk?t=3021) [approx] Corrected approach — `while` loop
 
 ```python
 def jumpingOnClouds(c):
@@ -1783,7 +1957,7 @@ def jumpingOnClouds(c):
     return count
 ```
 
-### How it works
+### [52:06](https://youtu.be/itWLg5UCbsk?t=3126) How it works
 
 - Loop while `i` has not reached the last index.
 - **Prefer jumping 2** — check that `i + 2` is in range and safe; if so, advance by 2.
@@ -1791,42 +1965,42 @@ def jumpingOnClouds(c):
 - Increment `count` on every jump regardless of size.
 - Return `count`.
 
-### Complexity
+### [52:03](https://youtu.be/itWLg5UCbsk?t=3123) Complexity
 
 - **Time:** O(n) — we visit each index at most once.
 - **Space:** O(1) — only `count` and `i` as extra storage.
 
 ---
 
-## Debugging Discipline
+## [40:32](https://youtu.be/itWLg5UCbsk?t=2432) Debugging Discipline
 
 The coach's session ran into an off-by-one error and several `IndexError`s. Key takeaways:
 
-### Run code frequently
+### [7:00](https://youtu.be/itWLg5UCbsk?t=420) Run code frequently
 
 - Don't write 20 lines before your first test run. Write 2-3 lines, print the intermediate state, verify your mental model, repeat.
 - If you had tested the for loop in isolation first, the `enumerate` bug would have been obvious within seconds.
 
-### Print intermediate state
+### [52:03](https://youtu.be/itWLg5UCbsk?t=3123) Print intermediate state
 
 - Print loop variables (`i`, `jump_index`) on every iteration.
 - Print the condition you're testing so you can see which branch is taken.
 
-### Don't panic-patch
+### [1:00:00](https://youtu.be/itWLg5UCbsk?t=3600) Don't panic-patch
 
 > When you start seeing errors and you're worried about time, you slip into a mindset of "what if I just subtract 1 here" or "what if I flip this operator" — once you're there, you've stopped problem solving and started panicking.
 
 - If you catch yourself adjusting constants randomly to chase passing tests, **stop**. Go back to printing intermediate state and actually understanding what's happening.
 - It's often faster to **delete and restart** a broken approach than to keep patching it.
 
-### Test assumptions explicitly
+### [52:03](https://youtu.be/itWLg5UCbsk?t=3123) Test assumptions explicitly
 
 - Every implicit assumption is a potential bug. If you assume the first index is always safe, the constraints confirmed it — but if the constraints hadn't, that's an edge case you'd need to test.
 - Gut-check yourself with print statements even when things look obvious. You lose 10 seconds to a print and save 5 minutes of wrong-direction debugging.
 
 ---
 
-## Session Takeaways
+## [30:13](https://youtu.be/itWLg5UCbsk?t=1813) Session Takeaways
 
 - **The interview process is a repeatable pipeline:** read → restate → print inputs → pseudo code → summarize → code → test → debug → complexity analysis.
 - **HackerRank readiness** means 3 easy problems consecutively under 20 minutes, plus some medium practice.
@@ -1834,16 +2008,17 @@ The coach's session ran into an off-by-one error and several `IndexError`s. Key 
 - **`enumerate` is wrong for problems where you control step size** — reach for `while` or `for i in range` instead.
 - **Print early, print often, and never panic-patch** a solution you don't understand.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — August 20, 2025
+Source: https://youtu.be/llJ4-m1lsaE
 
 Mauricio volunteers for a mock interview on **Jumping on the Clouds Revisited** — the circular variant with an energy counter. The session covers live debugging under pressure, when to reach for `while` vs `for`, and how to leverage formulas given in the problem statement.
 
 ---
 
-## Mock Interview Context
+## [0:36](https://youtu.be/llJ4-m1lsaE?t=36) Mock Interview Context
 
 - **Problem:** Jumping on the Clouds Revisited (HackerRank).
 - **Format:** 20 minutes, read → summarize → pseudo code → code → debug.
@@ -1851,11 +2026,11 @@ Mauricio volunteers for a mock interview on **Jumping on the Clouds Revisited** 
 
 ---
 
-## Problem: Jumping on the Clouds Revisited
+## [20:26](https://youtu.be/llJ4-m1lsaE?t=1226) Problem: Jumping on the Clouds Revisited
 
 > The array is circular. From index `i` the player jumps to `(i + k) % n`. The player starts at index 0 with 100 energy, loses 1 energy per jump, and loses an additional 2 energy if they land on a thundercloud (value 1). Return the remaining energy after the player returns to index 0.
 
-### Restated
+### [34:22](https://youtu.be/llJ4-m1lsaE?t=2062) Restated
 
 - Input: array `c` of 0s and 1s (0 = cumulus/safe, 1 = thundercloud) and integer `k` (jump length).
 - Starting energy: 100.
@@ -1866,7 +2041,7 @@ Mauricio volunteers for a mock interview on **Jumping on the Clouds Revisited** 
 
 ---
 
-## Mauricio's Pseudo Code
+## [8:18](https://youtu.be/llJ4-m1lsaE?t=498) [approx] Mauricio's Pseudo Code
 
 ```
 # traverse the array with a while loop (unknown number of jumps)
@@ -1877,7 +2052,7 @@ Mauricio volunteers for a mock interview on **Jumping on the Clouds Revisited** 
 # use (i + k) % n to compute the next index
 ```
 
-### Code attempt
+### [11:04](https://youtu.be/llJ4-m1lsaE?t=664) [approx] Code attempt
 
 ```python
 def jumpingOnClouds(c, k):
@@ -1893,7 +2068,7 @@ def jumpingOnClouds(c, k):
     return e
 ```
 
-### The bugs
+### [24:54](https://youtu.be/llJ4-m1lsaE?t=1494) The bugs
 
 1. **Starting at `i = 1`** to dodge the `while i != 0` condition means the first real jump is never taken from index 0 — the loop just spins forward.
 2. **`i = (i + k) % n` is inside the `if/else`** but happens before the energy deduction, so the first cloud's energy cost is never accounted for correctly.
@@ -1901,13 +2076,13 @@ def jumpingOnClouds(c, k):
 
 ---
 
-## Debugging Under Pressure
+## [35:10](https://youtu.be/llJ4-m1lsaE?t=2110) Debugging Under Pressure
 
-### Coach feedback on the mock
+### [35:10](https://youtu.be/llJ4-m1lsaE?t=2110) Coach feedback on the mock
 
 > You summarized the problem well and got to reasonable pseudo code. Your approach is logical. The specific bugs are normal — what we're practicing is the response when you get stuck.
 
-### When you're stuck, add observability
+### [28:13](https://youtu.be/llJ4-m1lsaE?t=1693) When you're stuck, add observability
 
 - **Print the loop variable** (`i`) on every iteration to see if it's actually moving.
 - **Print the computed next index** (`(i + k) % n`) to see what path the player is taking.
@@ -1920,11 +2095,11 @@ while i != 0:
     ...
 ```
 
-### Counter the panic loop
+### [13:41](https://youtu.be/llJ4-m1lsaE?t=821) Counter the panic loop
 
 > When you run into errors and time is ticking, your brain starts looping: "I'm stuck, time is running, I'm stuck, time is running." You stop problem solving. The fix is to stop typing and add print statements — observability breaks the panic loop.
 
-### Use the formula the problem gives you
+### [2:20](https://youtu.be/llJ4-m1lsaE?t=140) Use the formula the problem gives you
 
 The problem explicitly gives you `(i + k) % n`. That's a massive hint — don't just use it as an `if` condition, consider using it as:
 
@@ -1935,11 +2110,11 @@ The problem explicitly gives you `(i + k) % n`. That's a massive hint — don't 
 
 ---
 
-## When to Use `while` vs `for`
+## [22:38](https://youtu.be/llJ4-m1lsaE?t=1358) When to Use `while` vs `for`
 
 This session also revisited **Jumping on the Clouds** (the non-circular version from last week) and confirmed why a `while` loop is required.
 
-### Why `for` fails in the original problem
+### [33:14](https://youtu.be/llJ4-m1lsaE?t=1994) [approx] Why `for` fails in the original problem
 
 ```python
 for i in range(len(c)):
@@ -1952,7 +2127,7 @@ for i in range(len(c)):
 
 > JavaScript's `for (let i = 0; i < n; i++)` does let you mutate `i` mid-loop, which is probably where my intuition got confused last week. Python's `for` is strictly iterator-driven — the variable assignment is a lie.
 
-### Two reasons to reach for `while` on cloud problems
+### [36:00](https://youtu.be/llJ4-m1lsaE?t=2160) [approx] Two reasons to reach for `while` on cloud problems
 
 | Reason | Applies to |
 |---|---|
@@ -1962,13 +2137,13 @@ for i in range(len(c)):
 - The first problem needs `while` because the **step size isn't consistent**.
 - The second problem needs `while` because there is **no fixed end** — the array loops, and you stop based on a condition rather than exhausting a range.
 
-### General rule from the discussion
+### [4:04](https://youtu.be/llJ4-m1lsaE?t=244) General rule from the discussion
 
 - **`for` loop** — you know the range up front and the step is consistent (including step sizes other than 1).
 - **`while` loop** — you don't know how many iterations you'll take, or you need to manipulate the index yourself, or termination depends on a computed condition.
 - ChatGPT's summary matched this: unknown range or inconsistent step → while.
 
-### Count isn't an iterator
+### [22:32](https://youtu.be/llJ4-m1lsaE?t=1352) Count isn't an iterator
 
 A point of confusion: the `count` variable in jumping-on-the-clouds isn't an iterator — it's a **tracker**. Same with `energy` in the revisited version.
 
@@ -1979,7 +2154,7 @@ Mixing them up leads to incorrect termination logic. The loop condition should b
 
 ---
 
-## Working Through the Revisited Problem
+## [44:18](https://youtu.be/llJ4-m1lsaE?t=2658) [approx] Working Through the Revisited Problem
 
 A cleaner approach that starts correctly:
 
@@ -1998,20 +2173,20 @@ def jumpingOnClouds(c, k):
     return e
 ```
 
-### Why this works
+### [51:54](https://youtu.be/llJ4-m1lsaE?t=3114) Why this works
 
 - **`while True` with a `break`** sidesteps the "starting at 0" paradox — we always take at least one jump before checking termination.
 - The jump is always the first thing in the loop body, so the energy deduction is guaranteed.
 - The `break` fires after the energy deduction, ensuring the final step's cost is counted.
 
-### Complexity
+### [50:49](https://youtu.be/llJ4-m1lsaE?t=3049) Complexity
 
 - **Time:** O(n / gcd(n, k)) — worst case O(n) when `k` and `n` are coprime.
 - **Space:** O(1).
 
 ---
 
-## Session Takeaways
+## [11:31](https://youtu.be/llJ4-m1lsaE?t=691) Session Takeaways
 
 - **Mock interviews are about performing under pressure**, not about finishing the code. Mauricio's summary, pseudo code, and debugging dialogue were all strong even though the code didn't pass.
 - **When stuck, add print statements** before touching logic. Observability defeats panic.
@@ -2022,27 +2197,28 @@ def jumpingOnClouds(c, k):
 
 > Even one person silently watching you code is shockingly hard the first time. The only fix is practice — book peer mentor office hours and get reps before the real thing.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — August 27, 2025
+Source: https://youtu.be/jJSryNGi6Io
 
 Wednesday session covering two problems: a walk-through of **Best Time to Buy and Sell Stock** (brute force vs optimal), followed by a mock interview on LeetCode's **Jump Game** (medium) with John.
 
 ---
 
-## Problem: Best Time to Buy and Sell Stock
+## [52:29](https://youtu.be/jJSryNGi6Io?t=3149) Problem: Best Time to Buy and Sell Stock
 
 > You are given an array `prices` where `prices[i]` is the price of a stock on day `i`. Choose a single day to buy and a different day in the future to sell. Return the maximum profit. If no profit is possible, return 0.
 
-### Examples
+### [2:20](https://youtu.be/jJSryNGi6Io?t=140) [approx] Examples
 
 - `prices = [7, 1, 5, 3, 6, 4]` → `5` (buy at 1, sell at 6).
 - `prices = [7, 6, 4, 3, 1]` → `0` (monotonically decreasing — no profit possible).
 
 ---
 
-## Brute Force: Nested Loop — O(n²)
+## [5:57](https://youtu.be/jJSryNGi6Io?t=357) Brute Force: Nested Loop — O(n²)
 
 Compare every buy day to every possible sell day and track the max profit.
 
@@ -2058,17 +2234,17 @@ def maxProfit(prices):
     return profit
 ```
 
-### Result on LeetCode
+### [6:55](https://youtu.be/jJSryNGi6Io?t=415) Result on LeetCode
 
 - **198 / 212 test cases pass**, then **Time Limit Exceeded**.
 - Logic is correct; efficiency is the bottleneck.
 
-### Complexity
+### [13:05](https://youtu.be/jJSryNGi6Io?t=785) Complexity
 
 - **Time:** O(n²) — nested loop over the same array.
 - **Space:** O(1).
 
-### When brute force is OK to start with
+### [3:35](https://youtu.be/jJSryNGi6Io?t=215) When brute force is OK to start with
 
 > Start with brute force to validate your logic. If it passes, great. If it times out but passes most cases, that tells you the approach is logically sound — you just need a better algorithm, not a different understanding of the problem.
 
@@ -2077,7 +2253,7 @@ def maxProfit(prices):
 
 ---
 
-## Don't Micro-Optimize — Drop a Rung
+## [0:50](https://youtu.be/jJSryNGi6Io?t=50) Don't Micro-Optimize — Drop a Rung
 
 When your brute force times out, resist the urge to tweak the existing nested loop with small tricks (reversing iteration, swapping `+`/`-`, starting from the end). Those optimizations stay **within** O(n²) and won't get you under the time limit.
 
@@ -2091,7 +2267,7 @@ If you're at O(n²), aim for **O(n log n)** or **O(n)**. You need to remove the 
 
 ---
 
-## Optimization Attempt 1: Replace Inner Loop With `max()`
+## [16:25](https://youtu.be/jJSryNGi6Io?t=985) [approx] Optimization Attempt 1: Replace Inner Loop With `max()`
 
 ```python
 def maxProfit(prices):
@@ -2105,7 +2281,7 @@ def maxProfit(prices):
     return profit
 ```
 
-### Why this doesn't help
+### [13:51](https://youtu.be/jJSryNGi6Io?t=831) Why this doesn't help
 
 - `max(prices[i+1:])` is itself an **O(n)** operation.
 - The outer O(n) loop times O(n) max calls = still **O(n²)**.
@@ -2113,7 +2289,7 @@ def maxProfit(prices):
 
 ---
 
-## Optimal Solution: Single Pass — O(n) (Mindy's Solution)
+## [12:44](https://youtu.be/jJSryNGi6Io?t=764) Optimal Solution: Single Pass — O(n) (Mindy's Solution)
 
 Flip the thinking. Instead of asking "what's the max price after this day?", track the **minimum price seen so far** and calculate profit from it as you walk the array.
 
@@ -2129,29 +2305,29 @@ def maxProfit(prices):
     return profit
 ```
 
-### How it works
+### [1:00:56](https://youtu.be/jJSryNGi6Io?t=3656) How it works
 
 - Walk the array once.
 - **Update `min_price`** whenever you see a lower value — this is "the best day to have bought so far".
 - Otherwise, **calculate the profit** from selling today relative to `min_price` and update `profit` if it beats the current best.
 - You never need to look backward because `min_price` already holds the best buy point from everything to the left.
 
-### The mental flip
+### [0:31](https://youtu.be/jJSryNGi6Io?t=31) The mental flip
 
 > The brute force asks "for each buy, what's the best sell?" — that's O(n²) because every buy needs its own search. The optimal asks "for each sell, what's the best buy so far?" — and the answer to that is just a running minimum, which is O(1) to maintain.
 
-### Complexity
+### [28:08](https://youtu.be/jJSryNGi6Io?t=1688) [approx] Complexity
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1) — just two scalars.
 
-### Coach's two-pointer attempt (failed)
+### [8:05](https://youtu.be/jJSryNGi6Io?t=485) Coach's two-pointer attempt (failed)
 
 The coach tried converging two pointers from opposite ends, but the array isn't sorted — there's no structural guarantee that shrinking from the outside preserves the optimal pair. **Two pointers only work when the array has monotonic or sorted properties to exploit.**
 
 ---
 
-## Problem-Solving Process Reminder
+## [17:02](https://youtu.be/jJSryNGi6Io?t=1022) Problem-Solving Process Reminder
 
 > When you've done your due diligence — tried brute force, tried an alternate technique, and still can't find a better approach — that's when you can look at the solutions tab. Don't copy; read, close the tab, and re-implement from memory. Add the pattern to your mental toolkit.
 
@@ -2159,31 +2335,31 @@ Mindy likely didn't find the running-minimum solution on her first try either. T
 
 ---
 
-## Mock Interview: Jump Game (Medium)
+## [52:29](https://youtu.be/jJSryNGi6Io?t=3149) Mock Interview: Jump Game (Medium)
 
 > You are given an integer array `nums`. You are initially positioned at the array's first index. Each element in the array represents your **maximum** jump length at that position. Return `true` if you can reach the last index, or `false` otherwise.
 
-### Examples
+### [37:31](https://youtu.be/jJSryNGi6Io?t=2251) [approx] Examples
 
 - `nums = [2, 3, 1, 1, 4]` → `true` (jump 1 → then 3 → reach the end).
 - `nums = [3, 2, 1, 0, 4]` → `false` (stuck on the 0 at index 3).
 
-### John's key insight during the read-through
+### [51:25](https://youtu.be/jJSryNGi6Io?t=3085) John's key insight during the read-through
 
 > Each element represents your **maximum** jump length — not a required jump length. You can jump *up to* that many steps, including fewer. That's half the problem right there.
 
 - If `nums[i] == 0` you're stuck at position `i` unless you can skip over it from an earlier jump.
 - The "maximum" wording is critical — John initially misread it as a required jump before catching the assumption on a second read.
 
-### John's attempt
+### [47:11](https://youtu.be/jJSryNGi6Io?t=2831) John's attempt
 
 John got initial test cases passing in under 15 minutes on his first medium problem ever. The code hit an edge case when `nums` had a single zero-only scenario, which led to an `IndexError`.
 
-### Coach feedback
+### [53:05](https://youtu.be/jJSryNGi6Io?t=3185) Coach feedback
 
 > You jumped straight into code, which works for the small cases, but for a medium problem you want to slow down. Pull out your assumptions, comment them in, test them. You'll iterate on code endlessly — distilling the problem first is where the real wins happen.
 
-### Approach outline (for future iteration)
+### [46:54](https://youtu.be/jJSryNGi6Io?t=2814) [approx] Approach outline (for future iteration)
 
 ```
 # greedy approach: track the furthest index reachable so far
@@ -2193,25 +2369,25 @@ John got initial test cases passing in under 15 minutes on his first medium prob
 #   if furthest reachable >= last index, return true
 ```
 
-### Complexity target
+### [49:15](https://youtu.be/jJSryNGi6Io?t=2955) [approx] Complexity target
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1).
 
 ---
 
-## Why Mock Interviews Use Medium Problems
+## [55:03](https://youtu.be/jJSryNGi6Io?t=3303) Why Mock Interviews Use Medium Problems
 
 Mauricio asked: the tech interview academy uses easy problems, so why does the mock use medium?
 
-### Reasons
+### [55:15](https://youtu.be/jJSryNGi6Io?t=3315) Reasons
 
 1. **Real-world interviews** on the job market are **medium to hard** — getting early exposure builds tolerance.
 2. **Medium problems are not just "hard math"** — they're usually easy problems composed together. They stress-test decomposition skills.
 3. **Hoarding easy problems** for actual practice — the coach reserves easy problems for practice runs and reserves mediums for mock stress.
 4. **The mock isn't about writing working code** — it's about the problem-solving dialogue: pulling assumptions from the prompt, breaking steps down, verbalizing thinking.
 
-### Expectation on a mock medium
+### [58:03](https://youtu.be/jJSryNGi6Io?t=3483) Expectation on a mock medium
 
 - Read the full problem, including constraints.
 - Pull out assumptions (what it tells you, what it doesn't).
@@ -2221,7 +2397,7 @@ Mauricio asked: the tech interview academy uses easy problems, so why does the m
 
 ---
 
-## Session Takeaways
+## [37:27](https://youtu.be/jJSryNGi6Io?t=2247) Session Takeaways
 
 - **Brute force first when you're stuck** — validate logic, then optimize.
 - **Passing most but not all test cases** with TLE means efficiency, not correctness. Drop a full Big-O rung, don't micro-optimize.
@@ -2230,31 +2406,32 @@ Mauricio asked: the tech interview academy uses easy problems, so why does the m
 - **Read medium problems twice** before coding. Words like "maximum" and "at most" radically change the problem.
 - **Mock interviews are dialogue stress-tests**, not code-writing exercises. Focus on narrating your assumptions out loud.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — September 3, 2025
+Source: https://youtu.be/MG3TELB2nJM
 
 Wednesday session revisiting two problems after breakout room practice: **Can Place Flowers** (easy) and **Jump Game** (medium). Mauricio, Jenny, and the coach each walk through their own solutions to Jump Game, revealing three subtly different implementations of the same greedy insight.
 
 ---
 
-## Problem: Can Place Flowers
+## [28:07](https://youtu.be/MG3TELB2nJM?t=1687) Problem: Can Place Flowers
 
 > You have a long flowerbed in which some plots are planted and others are not. However, flowers cannot be planted in adjacent plots. Given an integer array `flowerbed` containing `0`s (empty) and `1`s (not empty), and an integer `n`, return `true` if `n` new flowers can be planted without violating the no-adjacent rule.
 
-### Example
+### [2:20](https://youtu.be/MG3TELB2nJM?t=140) [approx] Example
 
 - `flowerbed = [1,0,0,0,1], n = 1` → `true` (plant at index 2).
 - `flowerbed = [1,0,0,0,1], n = 2` → `false` (can only fit one).
 
-### Edge rule
+### [28:41](https://youtu.be/MG3TELB2nJM?t=1721) Edge rule
 
 - The positions **outside** the array count as empty — you can plant at index 0 as long as index 1 is empty, and similarly at the last index.
 
 ---
 
-## Can Place Flowers: Solution
+## [29:32](https://youtu.be/MG3TELB2nJM?t=1772) Can Place Flowers: Solution
 
 The approach uses `n` as a **countdown** of flowers still to plant, walks the bed once, and checks each empty slot against its neighbors.
 
@@ -2269,34 +2446,34 @@ def canPlaceFlowers(flowerbed, n):
     return n <= 0
 ```
 
-### How it works
+### [25:30](https://youtu.be/MG3TELB2nJM?t=1530) How it works
 
 - **`pre`** and **`post`** fetch the left and right neighbors, defaulting to `0` when out of bounds (handling the edge rule cleanly).
 - If the current slot is empty **and** both neighbors are empty, plant a flower (mutate the array to `1`) and decrement `n`.
 - After walking the bed, return `n <= 0` — we either planted everything requested or we didn't.
 
-### Why mutate the array
+### [44:34](https://youtu.be/MG3TELB2nJM?t=2674) Why mutate the array
 
 - Setting `flowerbed[i] = 1` prevents the next iteration from planting an adjacent flower.
 - Without this step, `[0, 0, 0]` with `n = 2` would incorrectly succeed.
 
-### Complexity
+### [14:03](https://youtu.be/MG3TELB2nJM?t=843) [approx] Complexity
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1) — in-place mutation.
 
 ---
 
-## Problem: Jump Game
+## [31:53](https://youtu.be/MG3TELB2nJM?t=1913) Problem: Jump Game
 
 > You are given an integer array `nums`. You are initially positioned at the first index. Each element represents your **maximum** jump length at that position. Return `true` if you can reach the last index.
 
-### Examples
+### [18:44](https://youtu.be/MG3TELB2nJM?t=1124) [approx] Examples
 
 - `nums = [2,3,1,1,4]` → `true`
 - `nums = [3,2,1,0,4]` → `false` (stuck on the `0`)
 
-### The sneaky part
+### [43:12](https://youtu.be/MG3TELB2nJM?t=2592) The sneaky part
 
 > You don't have to jump the full distance. `nums[i] = 3` means you can jump 1, 2, **or** 3 steps. Sometimes the optimal path uses a shorter jump to land on a cell with a larger value.
 
@@ -2304,9 +2481,9 @@ Example: `[2, 5, 0, 0, 0, 0, 1]` — jumping the full 2 from index 0 lands on th
 
 ---
 
-## Jump Game: Three Solutions, Same Insight
+## [23:25](https://youtu.be/MG3TELB2nJM?t=1405) [approx] Jump Game: Three Solutions, Same Insight
 
-### Solution 1 — Mauricio (Python): Track `farthest`, Bail on Overshoot
+### [25:46](https://youtu.be/MG3TELB2nJM?t=1546) [approx] Solution 1 — Mauricio (Python): Track `farthest`, Bail on Overshoot
 
 ```python
 def canJump(nums):
@@ -2320,25 +2497,25 @@ def canJump(nums):
     return True
 ```
 
-### How it works
+### [26:00](https://youtu.be/MG3TELB2nJM?t=1560) How it works
 
 - **`farthest`** tracks the highest index we've proven reachable so far.
 - At each step, if the current index `i` has already passed `farthest`, we can't possibly be standing here — return `False`.
 - Otherwise, update `farthest` to the better of its current value or `i + nums[i]` (the furthest we could jump from here).
 - If the loop completes without failing, we made it — return `True`.
 
-### The key insight
+### [10:11](https://youtu.be/MG3TELB2nJM?t=611) The key insight
 
 > If `i > farthest` is never true during the walk, it means every position up to `len(nums) - 1` was reachable. The single check at the top of each iteration is sufficient — you don't need a separate "did we reach the end?" check.
 
-### Complexity
+### [32:48](https://youtu.be/MG3TELB2nJM?t=1968) [approx] Complexity
 
 - **Time:** O(n) — single pass.
 - **Space:** O(1).
 
 ---
 
-### Solution 2 — Jenny (JavaScript): Same Approach, Early Return on Reach
+### [35:08](https://youtu.be/MG3TELB2nJM?t=2108) [approx] Solution 2 — Jenny (JavaScript): Same Approach, Early Return on Reach
 
 ```javascript
 function canJump(nums) {
@@ -2352,14 +2529,14 @@ function canJump(nums) {
 }
 ```
 
-### Differences from Mauricio's
+### [25:25](https://youtu.be/MG3TELB2nJM?t=1525) Differences from Mauricio's
 
 - Identical core logic; adds an **early return** when `maxReach` can already reach the last index.
 - Slightly faster on inputs where the reachable frontier expands quickly.
 
 ---
 
-### Solution 3 — Ruby (Coach): Decrementing Fuel
+### [17:25](https://youtu.be/MG3TELB2nJM?t=1045) Solution 3 — Ruby (Coach): Decrementing Fuel
 
 A subtly different mental model: track the remaining "fuel" rather than the furthest reachable index.
 
@@ -2381,20 +2558,20 @@ def canJump(nums):
     return False
 ```
 
-### How it works
+### [28:27](https://youtu.be/MG3TELB2nJM?t=1707) How it works
 
 - **`jump`** represents "how many more steps of momentum I currently have".
 - At each index, decrement `jump` by 1 (we used a step) but refill to `nums[i]` if that's larger — we just landed on a better launchpad.
 - If `jump` ever hits `0` before reaching the end, return `False`.
 - Early-exit when `jump + i` can reach the last index.
 
-### Why all three work
+### [44:38](https://youtu.be/MG3TELB2nJM?t=2678) Why all three work
 
 They're three encodings of the same greedy observation: **the furthest reachable index is monotonically non-decreasing as you walk forward, and you only need to know whether it ever reaches the end**. Whether you track "farthest index" or "remaining fuel" is just a representation choice.
 
 ---
 
-## The Coach's Bogus First Attempt
+## [56:22](https://youtu.be/MG3TELB2nJM?t=3382) The Coach's Bogus First Attempt
 
 Before arriving at the decrementing-fuel solution, the coach first tried "always jump the maximum distance, back up if stuck":
 
@@ -2402,21 +2579,21 @@ Before arriving at the decrementing-fuel solution, the coach first tried "always
 - If you land on a `0`, go backward looking for an earlier index that could reach the end.
 - Added a `circular` flag to break infinite loops when the backward search found another "jump as far as possible" index that looped back.
 
-### Why it failed
+### [50:03](https://youtu.be/MG3TELB2nJM?t=3003) Why it failed
 
 - The bailout logic kept finding the same position it just came from, creating infinite loops.
 - Each new edge case required another flag or condition — accumulating complexity is a red flag.
 
 > When you start adding code for every single nuance you find, that means you're going bad ways. Step away, rethink, come back with a cleaner model.
 
-### The discipline
+### [46:17](https://youtu.be/MG3TELB2nJM?t=2777) The discipline
 
 - If you catch yourself stacking more conditions and flags to handle edge cases, **stop**. The problem is probably in your overall approach, not in a missing condition.
 - The coach lost ~10 minutes on this attempt, then solved the problem in 15-20 minutes with the fresh approach.
 
 ---
 
-## When to Use `while` vs `for` — Revisited
+## [21:33](https://youtu.be/MG3TELB2nJM?t=1293) When to Use `while` vs `for` — Revisited
 
 Lisa started working on Jump Game with a `while` loop because the step sizes are variable. Both `while` and `for` work here:
 
@@ -2427,7 +2604,7 @@ Lisa started working on Jump Game with a `while` loop because the step sizes are
 
 ---
 
-## Tech Interview Cookbook Note
+## [58:19](https://youtu.be/MG3TELB2nJM?t=3499) Tech Interview Cookbook Note
 
 Rebecca asked if she could keep the Mod 1 cookbook open during the tech interview.
 
@@ -2437,7 +2614,7 @@ Rebecca asked if she could keep the Mod 1 cookbook open during the tech intervie
 
 ---
 
-## Session Takeaways
+## [28:04](https://youtu.be/MG3TELB2nJM?t=1684) Session Takeaways
 
 - **Can Place Flowers** — mutate the array in place to prevent planting adjacent flowers in the same pass. Use out-of-bounds defaults to handle the edge rule cleanly.
 - **Jump Game** — the greedy insight is that the furthest reachable index is monotonic; three different representations (`farthest`, `maxReach`, `jump`) all encode the same idea.
@@ -2445,30 +2622,31 @@ Rebecca asked if she could keep the Mod 1 cookbook open during the tech intervie
 - **Accumulating flags is a code smell** — when you're stacking special cases, your approach is probably wrong.
 - **Three working solutions to the same problem** is great for mental flexibility — recognizing the same insight in different encodings is a skill.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — September 10, 2025
+Source: https://youtu.be/P8TqSsayQC8
 
 Wednesday session covering two problems from the prior Sunday: **Array Partition I** (easy) and **Minimum Number of Arrows to Burst Balloons** (medium). Lisa walks through her sort-then-pair solution, and the coach uses a whiteboard to demonstrate the greedy "reach" technique for the balloon problem.
 
 ---
 
-## Problem: Array Partition I
+## [8:34](https://youtu.be/P8TqSsayQC8?t=514) Problem: Array Partition I
 
 > Given an integer array `nums` of `2n` integers, group these integers into `n` pairs `(a1, b1), (a2, b2), ..., (an, bn)` such that the sum of `min(ai, bi)` for all `i` is **maximized**. Return the maximized sum.
 
-### Example
+### [1:31](https://youtu.be/P8TqSsayQC8?t=91) [approx] Example
 
 - `nums = [1, 4, 3, 2]` → `4` (pair as `(1,2), (3,4)`, min sum = `1 + 3 = 4`)
 
-### Constraints
+### [10:02](https://youtu.be/P8TqSsayQC8?t=602) Constraints
 
 - `nums.length` is always **even** (divisible by 2, so there's always a pair for each element).
 
 ---
 
-## Array Partition: Sort-and-Step Solution (Lisa)
+## [4:33](https://youtu.be/P8TqSsayQC8?t=273) [approx] Array Partition: Sort-and-Step Solution (Lisa)
 
 ```python
 def arrayPairSum(nums):
@@ -2479,13 +2657,13 @@ def arrayPairSum(nums):
     return total
 ```
 
-### How it works
+### [6:04](https://youtu.be/P8TqSsayQC8?t=364) [approx] How it works
 
 - **Sort** the array ascending.
 - **Step by 2** through the sorted array, always taking the element at the even index.
 - Each "step 2" index is guaranteed to be the **smaller** of its pair when the array is sorted ascending.
 
-### Why sorting is the key insight
+### [11:51](https://youtu.be/P8TqSsayQC8?t=711) Why sorting is the key insight
 
 > If you're looking for the minimum of two numbers, you want those two numbers close together. If you pair 1 with 6 in a sorted array, you "lose" the 6 — it gets thrown away because we only take the min. By pairing adjacent values after sorting, the max possible value that gets discarded per pair is minimized.
 
@@ -2493,27 +2671,27 @@ def arrayPairSum(nums):
 - Pairing `(1, 4)` throws away `4`; pairing `(2, 3)` throws away `3`. Total discarded: `7`.
 - Minimum discard maximizes the sum of the mins.
 
-### Complexity
+### [9:07](https://youtu.be/P8TqSsayQC8?t=547) [approx] Complexity
 
 - **Time:** O(n log n) — dominated by the sort.
 - **Space:** O(1) — sorted in place.
 
-### Is there a non-sorting solution?
+### [31:56](https://youtu.be/P8TqSsayQC8?t=1916) Is there a non-sorting solution?
 
 The coach tried to find one and couldn't get below O(n²) without sorting. The problem fundamentally relies on the pairing structure that sorting creates — without sorted order, there's no efficient way to identify which pairs minimize discarded values.
 
 ---
 
-## Problem: Minimum Number of Arrows to Burst Balloons
+## [36:24](https://youtu.be/P8TqSsayQC8?t=2184) Problem: Minimum Number of Arrows to Burst Balloons
 
 > Balloons are given as `points[i] = [xstart, xend]`. Arrows shot straight up at x-coordinate `x` burst any balloon whose `xstart <= x <= xend`. Return the minimum number of arrows needed to burst all balloons.
 
-### Examples
+### [13:40](https://youtu.be/P8TqSsayQC8?t=820) [approx] Examples
 
 - `points = [[1,6], [2,8], [7,12], [10,16]]` → `2`
 - `points = [[1,2], [3,4], [5,6], [7,8]]` → `4` (no overlaps)
 
-### Conceptual setup
+### [31:23](https://youtu.be/P8TqSsayQC8?t=1883) Conceptual setup
 
 - The y-axis doesn't matter — only x-ranges are given, and arrows travel vertically.
 - Balloons whose x-ranges **overlap at any point** can all be burst by a single arrow shot through that overlap.
@@ -2521,7 +2699,7 @@ The coach tried to find one and couldn't get below O(n²) without sorting. The p
 
 ---
 
-## Lisa's First Attempt: Compare Adjacent Pairs
+## [16:43](https://youtu.be/P8TqSsayQC8?t=1003) [approx] Lisa's First Attempt: Compare Adjacent Pairs
 
 ```python
 def findMinArrowShots(points):
@@ -2536,24 +2714,24 @@ def findMinArrowShots(points):
     return count - arrow
 ```
 
-### What it gets right
+### [21:51](https://youtu.be/P8TqSsayQC8?t=1311) What it gets right
 
 - Sorts the points to bring overlapping balloons together.
 - Walks adjacent pairs checking for overlap.
 
-### What it gets wrong
+### [19:45](https://youtu.be/P8TqSsayQC8?t=1185) [approx] What it gets wrong
 
 - Only checks **adjacent** pairs — misses the case where balloon 1 and balloon 3 both overlap with balloon 2 but not with each other.
 - Double-counts overlaps — if A overlaps B and B overlaps C, that's two "overlap detections" but should be one arrow covering all three.
 - Doesn't track which balloons have already been "used" by a previous arrow.
 
-### The root diagnosis
+### [24:23](https://youtu.be/P8TqSsayQC8?t=1463) The root diagnosis
 
 > You're not really counting how many balloons can be burst with the minimum arrows. You're counting how many balloons that are immediately beside each other have an overlap. Those are different problems.
 
 ---
 
-## Mental Model 1: Dynamic Shifting Overlap
+## [24:38](https://youtu.be/P8TqSsayQC8?t=1478) Mental Model 1: Dynamic Shifting Overlap
 
 Track the **current overlap region** — the intersection of all balloons the current arrow could burst.
 
@@ -2562,18 +2740,18 @@ Track the **current overlap region** — the intersection of all balloons the cu
   - **Yes** → tighten the overlap to the intersection (the balloon is now also covered by the current arrow).
   - **No** → increment arrow count, reset the overlap to this new balloon's range.
 
-### Why this is harder to code
+### [23:58](https://youtu.be/P8TqSsayQC8?t=1438) Why this is harder to code
 
 - Requires tracking both the start and end of the shrinking overlap.
 - The intersection operation (`max(starts), min(ends)`) has to happen on every balloon.
 
 ---
 
-## Mental Model 2: Track the Reach — Greedy O(n log n)
+## [5:52](https://youtu.be/P8TqSsayQC8?t=352) Mental Model 2: Track the Reach — Greedy O(n log n)
 
 A much simpler encoding of the same idea. Track only the **end** of the current arrow's reach.
 
-### Whiteboard walkthrough
+### [27:21](https://youtu.be/P8TqSsayQC8?t=1641) [approx] Whiteboard walkthrough
 
 Sorted balloons: `[1,6], [4,8], [7,9], [11,13], [12,15]`
 
@@ -2587,7 +2765,7 @@ Sorted balloons: `[1,6], [4,8], [7,9], [11,13], [12,15]`
 
 **Answer: 3 arrows.**
 
-### The code
+### [28:52](https://youtu.be/P8TqSsayQC8?t=1732) [approx] The code
 
 ```python
 def findMinArrowShots(points):
@@ -2605,24 +2783,24 @@ def findMinArrowShots(points):
     return arrows
 ```
 
-### Why it works
+### [36:08](https://youtu.be/P8TqSsayQC8?t=2168) Why it works
 
 - After sorting by start, if the current balloon's start is **within** the previous reach, they share overlap — tighten the reach to `min(reach, end)` so future balloons must also fit the tightened intersection.
 - If the current balloon's start is **beyond** the previous reach, no single arrow can cover both — increment the arrow count and reset reach to the new balloon's end.
 - We only ever look at one balloon at a time — no nested loops, no dynamic overlap tracking beyond a single scalar.
 
-### Complexity
+### [31:55](https://youtu.be/P8TqSsayQC8?t=1915) [approx] Complexity
 
 - **Time:** O(n log n) — dominated by sort.
 - **Space:** O(1) after sort.
 
-### Key realization
+### [37:02](https://youtu.be/P8TqSsayQC8?t=2222) Key realization
 
 > We're only tracking one thing: reach. We're not comparing each balloon against a bunch of others. We walk slow along the way and just ask, "Is the next balloon's start within my current arrow's reach?" Yes → stay. No → new arrow.
 
 ---
 
-## The Visualization Technique
+## [25:05](https://youtu.be/P8TqSsayQC8?t=1505) The Visualization Technique
 
 The coach mentioned needing to pull out a whiteboard and actually draw the balloons to arrive at this solution.
 
@@ -2633,9 +2811,9 @@ The coach mentioned needing to pull out a whiteboard and actually draw the ballo
 
 ---
 
-## Edge Cases and Anti-Patterns
+## [36:28](https://youtu.be/P8TqSsayQC8?t=2188) [approx] Edge Cases and Anti-Patterns
 
-### Don't code for every edge case you imagine
+### [37:59](https://youtu.be/P8TqSsayQC8?t=2279) [approx] Don't code for every edge case you imagine
 
 Lisa added a `if arrow == 0: return count` fallback to handle "what if there are no overlaps at all?"
 
@@ -2643,13 +2821,13 @@ Lisa added a `if arrow == 0: return count` fallback to handle "what if there are
 
 The greedy-reach solution handles "no overlaps" naturally — every balloon triggers a new arrow, no special case required.
 
-### Don't randomly tweak operators when stuck
+### [23:51](https://youtu.be/P8TqSsayQC8?t=1431) Don't randomly tweak operators when stuck
 
 > Don't start changing things randomly, like "what if I add another increment" or "what if I switch greater-than to greater-than-or-equal". If you do that, you're not sure what your code is doing anymore. Take a step back, rethink the approach.
 
 ---
 
-## Session Takeaways
+## [7:29](https://youtu.be/P8TqSsayQC8?t=449) Session Takeaways
 
 - **Array Partition** — sort ascending and sum every other element starting from index 0. The sort is mandatory because the problem depends on pairing close values.
 - **Minimum Arrows** — sort by start, track a single scalar "reach" equal to the current arrow's rightmost coverage, and either tighten it (overlap) or advance it (new arrow).
@@ -2657,16 +2835,17 @@ The greedy-reach solution handles "no overlaps" naturally — every balloon trig
 - **Visualize when stuck** — whiteboard diagrams expose greedy solutions that are invisible when you're staring at code.
 - **Stop when you find yourself coding edge case by edge case** — your approach is probably wrong, not incomplete.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — September 17, 2025
+Source: https://youtu.be/0YgXnEU5wls
 
 Mock interview session on the HackerRank **Number Line Jumps** (Kangaroo) problem, with coach feedback on problem-solving process, reading constraints, and pseudo code discipline.
 
 ---
 
-## Session Format
+## [2:59](https://youtu.be/0YgXnEU5wls?t=179) Session Format
 
 The coach opened by offering breakout rooms or a mock interview. With only four attendees, the group stayed together and **John** volunteered as the candidate. He filtered HackerRank Algorithms by **status: unsolved** and **difficulty: easy**, selecting **Number Line Jumps**.
 
@@ -2674,18 +2853,18 @@ The coach opened by offering breakout rooms or a mock interview. With only four 
 
 ---
 
-## Problem: Number Line Jumps (Kangaroo)
+## [51:00](https://youtu.be/0YgXnEU5wls?t=3060) Problem: Number Line Jumps (Kangaroo)
 
 Two kangaroos start at positions `x1` and `x2` on a number line and jump with velocities `v1` and `v2` respectively. Determine whether they will ever land on the same position **at the same jump**. Return the string `"YES"` or `"NO"`.
 
-### Inputs
+### [35:16](https://youtu.be/0YgXnEU5wls?t=2116) Inputs
 
 - `x1` — starting location of kangaroo 1
 - `v1` — jump velocity (meters per jump) of kangaroo 1
 - `x2` — starting location of kangaroo 2
 - `v2` — jump velocity of kangaroo 2
 
-### Key Insight the Candidate Missed Initially
+### [35:16](https://youtu.be/0YgXnEU5wls?t=2116) Key Insight the Candidate Missed Initially
 
 Both kangaroos jump **simultaneously**. After each jump, kangaroo 1 is at `x1 + v1` and kangaroo 2 is at `x2 + v2`. They either meet on a shared jump or they never do.
 
@@ -2693,7 +2872,7 @@ Both kangaroos jump **simultaneously**. After each jump, kangaroo 1 is at `x1 + 
 
 ---
 
-## Candidate's Initial Attempt
+## [15:42](https://youtu.be/0YgXnEU5wls?t=942) [approx] Candidate's Initial Attempt
 
 John renamed `x1, v1, x2, v2` to more readable names like `kang_one_location`, `kang_one_velocity`, etc. He then tried a `while` loop but ran into an **infinite loop / timeout** on the test run.
 
@@ -2707,7 +2886,7 @@ def kangaroo(x1, v1, x2, v2):
     return answer
 ```
 
-### Bugs the Coach Flagged
+### [34:39](https://youtu.be/0YgXnEU5wls?t=2079) Bugs the Coach Flagged
 
 - **Positions never updated inside the loop.** The candidate computed `kang_one + velocity` each iteration but never reassigned `kang_one += velocity`, so the comparison evaluated the same values forever.
 - **Return type mismatch.** The function signature expects a **string** (`"YES"` / `"NO"`), not a boolean. HackerRank's `if __name__ == "__main__":` block parses the return value and will error on a bool.
@@ -2716,7 +2895,7 @@ def kangaroo(x1, v1, x2, v2):
 
 ---
 
-## Coach Feedback: Reading the Constraints
+## [52:41](https://youtu.be/0YgXnEU5wls?t=3161) Coach Feedback: Reading the Constraints
 
 The coach pushed the candidate to re-read the **Constraints** section of the problem, where it states `1 <= x1 < x2 <= 10000`. The strict `<` between `x1` and `x2` is load-bearing:
 
@@ -2726,13 +2905,13 @@ The coach pushed the candidate to re-read the **Constraints** section of the pro
 
 > "Sometimes the constraints don't give you anything, but it's a good practice to always check. More often than not they help eliminate assumptions or give you hints."
 
-### Velocity Constraints
+### [27:29](https://youtu.be/0YgXnEU5wls?t=1649) [approx] Velocity Constraints
 
 `1 <= v1, v2 <= 10000`. The problem does **not** tell you whether `v1` is greater than, less than, or equal to `v2` — you must handle all three cases in your logic.
 
 ---
 
-## Coach Feedback: Assumptions in Comments
+## [32:15](https://youtu.be/0YgXnEU5wls?t=1935) Coach Feedback: Assumptions in Comments
 
 The coach pointed out that John verbalized several good observations while reading the problem ("they can jump forever", "x2 starts ahead") but never wrote them down, and then contradicted them in code.
 
@@ -2740,13 +2919,13 @@ The coach pointed out that John verbalized several good observations while readi
 
 ---
 
-## Coach Feedback: Pseudo Code First
+## [40:05](https://youtu.be/0YgXnEU5wls?t=2405) Coach Feedback: Pseudo Code First
 
 > "Getting some preliminary code out can help you think, but always take a step back and ask: what is the overall system this problem is asking me to implement? What requirements, outputs, and assumptions do I need to consider? Dealing with those at the front end saves time because you're not mitigating errors along the way."
 
 ---
 
-## Language Notes
+## [42:47](https://youtu.be/0YgXnEU5wls?t=2567) Language Notes
 
 The candidate's Python carried **JavaScript/TypeScript accent** — braces where colons belonged, missing indentation cues. The coach confirmed HackerRank allows any supported language; Python is used in the course because Mod 2 teaches Python, but candidates may use JavaScript, TypeScript, or others in their real interview.
 
@@ -2755,7 +2934,7 @@ The candidate's Python carried **JavaScript/TypeScript accent** — braces where
 
 ---
 
-## Side Discussion: Example Walkthrough
+## [43:25](https://youtu.be/0YgXnEU5wls?t=2605) Side Discussion: Example Walkthrough
 
 A participant (Mauricio) asked why the example shows `x1 + v1 = 2 + 1`. The coach clarified:
 
@@ -2768,13 +2947,13 @@ The velocities are applied at the same time each iteration; that simultaneity is
 
 ---
 
-## Side Discussion: React Practice on HackerRank
+## [53:37](https://youtu.be/0YgXnEU5wls?t=3217) Side Discussion: React Practice on HackerRank
 
 John noted HackerRank's **Get Certified → Front End Developer** track has **React** problems. The coach confirmed these exist and are not too difficult, and also noted that candidates will get significant React practice during the Explorer phase and internship.
 
 ---
 
-## Takeaways
+## [49:26](https://youtu.be/0YgXnEU5wls?t=2966) Takeaways
 
 - **Read constraints first** — they often eliminate entire branches of defensive code.
 - **Write your verbal assumptions into comments** before writing code.
@@ -2782,26 +2961,27 @@ John noted HackerRank's **Get Certified → Front End Developer** track has **Re
 - **Update loop state** inside the loop, or your `while` will never terminate.
 - A **well-structured pseudo code pass** is cheaper than debugging an infinite loop under time pressure.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — September 24, 2025
+Source: https://youtu.be/v8uaNuVK3CY
 
 Walkthrough of **Valid Anagram** with three solutions at different complexities (O(n²), O(n log n), O(n)), plus discussion of scaling considerations leading into **Group Anagrams**.
 
 ---
 
-## Opening Question: Is More Practice The Only Way To Improve?
+## [0:41](https://youtu.be/v8uaNuVK3CY?t=41) Opening Question: Is More Practice The Only Way To Improve?
 
 > "The simple answer is yes — if you're taking the right practice steps. Are you breaking the problem down? Testing along the way? Reviewing what you get stuck on and applying that to new problems? If you're doing everything right and just not hitting the time limit, then yes, the only way to improve is practice. That's the same with any sport or task. And resting. Taking breaks."
 
 ---
 
-## Problem: Valid Anagram
+## [14:11](https://youtu.be/v8uaNuVK3CY?t=851) Problem: Valid Anagram
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`.
 
-### Approach 1 — O(n²) Nested Membership + Count
+### [7:34](https://youtu.be/v8uaNuVK3CY?t=454) [approx] Approach 1 — O(n²) Nested Membership + Count
 
 ```python
 def isAnagram(s, t):
@@ -2819,7 +2999,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 2 — O(n log n) Sort and Compare
+### [11:21](https://youtu.be/v8uaNuVK3CY?t=681) [approx] Approach 2 — O(n log n) Sort and Compare
 
 ```python
 def isAnagram(s, t):
@@ -2834,7 +3014,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 3a — O(n) Two Dictionaries
+### [17:36](https://youtu.be/v8uaNuVK3CY?t=1056) Approach 3a — O(n) Two Dictionaries
 
 Build a frequency dictionary for each string, then compare key/value pairs.
 
@@ -2858,7 +3038,7 @@ def isAnagram(s, t):
 
 ---
 
-### Approach 3b — O(n) One Dictionary (Decrement Pattern)
+### [18:55](https://youtu.be/v8uaNuVK3CY?t=1135) [approx] Approach 3b — O(n) One Dictionary (Decrement Pattern)
 
 Chris's contributed solution (with help from a friend):
 
@@ -2884,19 +3064,19 @@ def isAnagram(s, t):
 
 ---
 
-## Coach's Nerdy Probability Aside
+## [26:57](https://youtu.be/v8uaNuVK3CY?t=1617) Coach's Nerdy Probability Aside
 
 The coach wondered whether the final `all(count == 0)` check is strictly necessary for **real English words**. For two real words with the same letters and same length but differing frequencies (e.g., `racecar` vs a hypothetical `carrera` with matching letter sets but different counts), the probability is vanishingly low. For arbitrary random strings in test cases, though, it **is** reachable, so the check stays.
 
 ---
 
-## Why Scalability Matters (Lead-in to Group Anagrams)
+## [35:32](https://youtu.be/v8uaNuVK3CY?t=2132) Why Scalability Matters (Lead-in to Group Anagrams)
 
 > "If this were production code loading a web page, and the page sits while the server groups millions of anagrams, the user is staring at a blank screen. Even a really efficient website can struggle at scale with millions of users and millions of rows. How efficiently your code runs is one of the main ways you deal with that."
 
 **Group Anagrams** is the harder follow-up: determine which strings in a list are anagrams of each other and return them grouped. The efficient one-dictionary pattern above is the building block.
 
-### Question: Two Dictionaries for Group Anagrams?
+### [17:48](https://youtu.be/v8uaNuVK3CY?t=1068) Question: Two Dictionaries for Group Anagrams?
 
 A participant asked whether to use two dictionaries for the group version. Coach's answer:
 
@@ -2904,7 +3084,7 @@ A participant asked whether to use two dictionaries for the group version. Coach
 
 ---
 
-## Space vs. Time Trade-off Summary
+## [34:04](https://youtu.be/v8uaNuVK3CY?t=2044) [approx] Space vs. Time Trade-off Summary
 
 | Approach | Time | Space | LoC |
 |---|---|---|---|
@@ -2918,24 +3098,25 @@ A participant asked whether to use two dictionaries for the group version. Coach
 
 ---
 
-## Review Habit Recommendation
+## [29:35](https://youtu.be/v8uaNuVK3CY?t=1775) Review Habit Recommendation
 
 > "Go back through problems, break down the elements so you understand them, then in a week delete it all and try to implement it from scratch. That way the knowledge really cements."
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — October 1, 2025
+Source: https://youtu.be/_KV-fzHskuk
 
 Deep dive on HackerRank's **Lisa's Workbook** problem, presented solutions, and coach feedback on study cadence and burnout management.
 
 ---
 
-## Problem: Lisa's Workbook
+## [16:13](https://youtu.be/_KV-fzHskuk?t=973) Problem: Lisa's Workbook
 
 Lisa has a workbook with `n` chapters. Chapter `i` contains `arr[i]` problems. Each page holds at most `k` problems, and **each new chapter starts on a new page** (problems from different chapters never share a page). A **special problem** is one whose problem number equals the page number it sits on. Return the total count of special problems.
 
-### Parameters
+### [3:55](https://youtu.be/_KV-fzHskuk?t=235) [approx] Parameters
 
 - `n` — number of chapters
 - `k` — maximum problems per page
@@ -2945,7 +3126,7 @@ Lisa has a workbook with `n` chapters. Chapter `i` contains `arr[i]` problems. E
 
 ---
 
-## Mauricio's Solution (Refined)
+## [13:27](https://youtu.be/_KV-fzHskuk?t=807) Mauricio's Solution (Refined)
 
 Mauricio started with a data-structure approach, then refined to a direct simulation: for each chapter compute pages, for each page compute the first and last problem numbers on that page, then check if the page number falls in that range.
 
@@ -2966,7 +3147,7 @@ def workbook(n, k, arr):
     return special
 ```
 
-### Key Math
+### [29:26](https://youtu.be/_KV-fzHskuk?t=1766) Key Math
 
 - **`full_pages = chapter_problems // k`** — integer division gives the count of completely filled pages.
 - **Remainder page:** if `chapter_problems % k != 0`, there's a trailing partial page. Add 1.
@@ -2975,7 +3156,7 @@ def workbook(n, k, arr):
 
 ---
 
-## Coach's Alternative Framing: Dictionary Approach
+## [21:34](https://youtu.be/_KV-fzHskuk?t=1294) Coach's Alternative Framing: Dictionary Approach
 
 The coach's first instinct was a dictionary `{page_number: [problems on that page]}`, building out the diagram from the problem statement as a data structure, then scanning each key to see if any value matches the key.
 
@@ -2996,11 +3177,11 @@ for chapter_problems in arr:
 
 ---
 
-## Coach's Optimization Idea: Early Rejection
+## [8:37](https://youtu.be/_KV-fzHskuk?t=517) Coach's Optimization Idea: Early Rejection
 
 The coach proposed a filter that skips pages which **cannot possibly** contain a special problem before running the inner check.
 
-### The Insight
+### [3:18](https://youtu.be/_KV-fzHskuk?t=198) The Insight
 
 For a given page number and current chapter:
 - On page 1, we need the chapter to contain at least 1 problem.
@@ -3018,7 +3199,7 @@ The coach flagged that she had not tested this and invited the group to try it.
 
 ---
 
-## Why This Problem Felt Hard
+## [40:26](https://youtu.be/_KV-fzHskuk?t=2426) Why This Problem Felt Hard
 
 Reactions from the group: *"Spaghetti and meatballs"*, *"I hate this problem"*. Coach agreed:
 
@@ -3028,11 +3209,11 @@ The value of practicing it is **logical decomposition**, not raw algorithm skill
 
 ---
 
-## Study Cadence Discussion
+## [39:20](https://youtu.be/_KV-fzHskuk?t=2360) Study Cadence Discussion
 
 Mauricio asked about the right mix of easy and medium problems per session.
 
-### Coach's Recommendation
+### [44:11](https://youtu.be/_KV-fzHskuk?t=2651) Coach's Recommendation
 
 - **Do not practice for 5 hours at a stretch.**
 - **Start with easies.** Two or three per day. If you knock them out of the park, try **one medium**.
@@ -3041,13 +3222,13 @@ Mauricio asked about the right mix of easy and medium problems per session.
 
 > "Once you've solved one to three medium problems total in under an hour, regardless of consistency, you're good with mediums at this stage. Move forward with the curriculum, move into the internship, and then keep practicing mediums there because you're preparing for the job hunt."
 
-### Signal That You're Ready to Interview
+### [46:23](https://youtu.be/_KV-fzHskuk?t=2783) Signal That You're Ready to Interview
 
 > "If you're finding success multiple times in a week, it's time to sign up for the interview. If the time limit is the only thing holding you back, sign up anyway — we can talk about it one-on-one."
 
 ---
 
-## Burnout & Emotional Reset
+## [27:02](https://youtu.be/_KV-fzHskuk?t=1622) Burnout & Emotional Reset
 
 Mauricio observed that after a draining problem, the next one feels impossible regardless of difficulty.
 
@@ -3057,24 +3238,25 @@ Applies to easies and mediums alike. If two easies in a row crush you, **today i
 
 ---
 
-## Habit-Building Reminder
+## [50:03](https://youtu.be/_KV-fzHskuk?t=3003) Habit-Building Reminder
 
 > "Build good habits now — explaining your thought process, breaking down the problem, taking breaks. Bad habits follow you through your career. If you think you're burned out now, it's a lot worse on a 9-to-5 clock with results expected. Learn what good habits look like and what outcomes they lead to."
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — October 15, 2025
+Source: https://youtu.be/ShMeohFw0Pc
 
 Walkthrough of **Find the Index of the First Occurrence in a String** with an emphasis on reading constraints, translating problems into your own words, and the role of library methods versus from-scratch implementation. Also: how to effectively reverse-engineer a lookup solution for learning.
 
 ---
 
-## Opening: Reverse-Engineering Solutions When You're Stuck
+## [7:56](https://youtu.be/ShMeohFw0Pc?t=476) Opening: Reverse-Engineering Solutions When You're Stuck
 
 Recap of the prior Sunday's session on using other people's solutions as a learning tool when you've exhausted your own attempts.
 
-### The Process
+### [18:26](https://youtu.be/ShMeohFw0Pc?t=1106) The Process
 
 1. **Exhaust your own effort first.** Debug, break down, understand your failing test cases. Don't jump to the solution at the first sign of struggle.
 2. **Look up the solution** when you've genuinely done your due diligence.
@@ -3085,13 +3267,13 @@ Recap of the prior Sunday's session on using other people's solutions as a learn
 
 > "You're learning the solution, you're learning to reverse engineer it, you're learning what good pseudo code looks like, and you're learning not to rely on pasting in a solution but actually applying the knowledge you just gained."
 
-### Bonus Benefit: Reading Other People's Code
+### [7:35](https://youtu.be/ShMeohFw0Pc?t=455) Bonus Benefit: Reading Other People's Code
 
 > "That's huge. Even when you get to the internship, you'll be thrown into situations where you need to fix code, and you need to know what it says. Reverse engineering is practice reading unfamiliar code."
 
 ---
 
-## Chat GPT & Learning
+## [9:35](https://youtu.be/ShMeohFw0Pc?t=575) [approx] Chat GPT & Learning
 
 Side discussion sparked by a participant in the low-code internship. Coach's take on AI assistants during learning:
 
@@ -3101,22 +3283,22 @@ If your goal is to go to the full-stack or front-end internship, **put Chat GPT 
 
 ---
 
-## Problem: Find the Index of the First Occurrence in a String
+## [20:18](https://youtu.be/ShMeohFw0Pc?t=1218) Problem: Find the Index of the First Occurrence in a String
 
 > Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of `haystack`.
 
-### Example 1
+### [28:50](https://youtu.be/ShMeohFw0Pc?t=1730) Example 1
 
 - `haystack = "sadbutsad"`, `needle = "sad"` → `0`
 - `"sad"` occurs at indices `0` and `6`; first occurrence is at `0`.
 
-### Example 2
+### [28:40](https://youtu.be/ShMeohFw0Pc?t=1720) Example 2
 
 - `haystack = "leetcode"`, `needle = "leeto"` → `-1`
 
 ---
 
-## Translating the Problem Into Your Own Words
+## [23:55](https://youtu.be/ShMeohFw0Pc?t=1435) Translating the Problem Into Your Own Words
 
 > "It's very important to write it in your own words. Make the translation of what they're telling you into how you are understanding it."
 
@@ -3128,31 +3310,31 @@ Return an int representing a valid index position.
 If no match, return -1.
 ```
 
-### The `-1` Sentinel Convention
+### [26:12](https://youtu.be/ShMeohFw0Pc?t=1572) The `-1` Sentinel Convention
 
 > "Returning `-1` is very common — you'll see it a lot in library methods. Binary search returns `-1` if nothing matches. It's a standard way to signal 'not found' for anything that normally returns an integer."
 
 ---
 
-## Reading the Constraints
+## [28:50](https://youtu.be/ShMeohFw0Pc?t=1730) Reading the Constraints
 
 ```
 1 <= haystack.length, needle.length <= 10^4
 haystack and needle consist of only lowercase English characters.
 ```
 
-### What the Constraints Do NOT Tell Us
+### [28:46](https://youtu.be/ShMeohFw0Pc?t=1726) What the Constraints Do NOT Tell Us
 
 The constraints give bounds on **each** length independently, but they do **not** say that `needle.length <= haystack.length`. So `needle` could in theory be **larger** than `haystack`.
 
 > "It's not specifically telling me those implementation details, so I have to account for both possibilities — that's what you get from the constraint."
 
-### What the Constraints DO Tell Us
+### [28:46](https://youtu.be/ShMeohFw0Pc?t=1726) What the Constraints DO Tell Us
 
 - Both strings are **non-empty** (length >= 1).
 - Only **lowercase English characters** — no whitespace, unicode, or special characters to parse out. Exact string matches work.
 
-### Resulting Pseudo Code Addition
+### [36:12](https://youtu.be/ShMeohFw0Pc?t=2172) Resulting Pseudo Code Addition
 
 ```
 Check that haystack.length >= needle.length.
@@ -3164,7 +3346,7 @@ Then search for needle inside haystack...
 
 ---
 
-## First Approach Attempt: `in` Operator
+## [44:35](https://youtu.be/ShMeohFw0Pc?t=2675) First Approach Attempt: `in` Operator
 
 A participant defaulted to a `for` loop. The coach nudged toward a simpler first check:
 
@@ -3178,26 +3360,26 @@ The `in` operator tests substring containment and returns a bool. That's a usefu
 
 ---
 
-## Second Approach: `str.find()`
+## [50:40](https://youtu.be/ShMeohFw0Pc?t=3040) Second Approach: `str.find()`
 
 Googling "how to get the index of a character in a string" surfaces two Python string methods:
 
-### `str.find(substring)`
+### [25:02](https://youtu.be/ShMeohFw0Pc?t=1502) `str.find(substring)`
 
 - Returns the **first index** where `substring` occurs.
 - Returns **`-1`** if not found.
 - **This matches the problem signature exactly.**
 
-### `str.index(substring)`
+### [51:07](https://youtu.be/ShMeohFw0Pc?t=3067) [approx] `str.index(substring)`
 
 - Same as `find()` on success.
 - **Raises `ValueError`** if not found.
 
-### Why the Two Variants Exist
+### [55:46](https://youtu.be/ShMeohFw0Pc?t=3346) Why the Two Variants Exist
 
 > "In production, maybe you're checking an API response or a data exchange, and if the thing isn't there you need to throw an error and surface it on the front end. Instead of checking for `-1` and writing the error yourself, `index` does it for you."
 
-### Final Solution
+### [57:30](https://youtu.be/ShMeohFw0Pc?t=3450) [approx] Final Solution
 
 ```python
 class Solution:
@@ -3209,7 +3391,7 @@ class Solution:
 
 ---
 
-## Is the One-Liner "Preferred"?
+## [59:41](https://youtu.be/ShMeohFw0Pc?t=3581) Is the One-Liner "Preferred"?
 
 A participant asked whether using the library method counts as cheating or is preferred in an interview.
 
@@ -3221,11 +3403,11 @@ A participant asked whether using the library method counts as cheating or is pr
 
 ---
 
-## The Challenge: Reverse-Engineer `find`
+## [59:41](https://youtu.be/ShMeohFw0Pc?t=3581) The Challenge: Reverse-Engineer `find`
 
 The coach's homework: solve this problem **without** any library method. Research how `find` works behind the scenes, write pseudo code from that explanation, delete the reference, and implement it from scratch.
 
-### Why Bother?
+### [58:29](https://youtu.be/ShMeohFw0Pc?t=3509) Why Bother?
 
 > "All the little sub-parts — the if condition, the for loop, checking for a specific index, returning the index — show up in almost every problem. If you can master doing that part from scratch, you're expanding your ability to solve a wider variety of problems where `find` isn't available."
 
@@ -3233,7 +3415,7 @@ The coach's homework: solve this problem **without** any library method. Researc
 
 ---
 
-## Key Takeaways
+## [34:06](https://youtu.be/ShMeohFw0Pc?t=2046) Key Takeaways
 
 - **Read constraints, then determine which assumptions the constraints resolve for you.** Write less code by relying on what the problem guarantees.
 - **Write the problem in your own words** before coding.
@@ -3241,20 +3423,21 @@ The coach's homework: solve this problem **without** any library method. Researc
 - **Add `find` and `index` to your string methods toolkit.** They differ only in how they signal "not found".
 - **`-1` is the standard sentinel** for integer-returning functions when a result isn't available.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — October 29, 2025
+Source: https://youtu.be/EAs0tnJhPVA
 
 Deep dive on **Minimum Time to Make Rope Colorful** (the "balloons" problem) with two presented approaches, plus a follow-up on reverse-engineering Python's string methods `find`, `count`, and `replace`.
 
 ---
 
-## Problem: Minimum Time to Make Rope Colorful
+## [1:20](https://youtu.be/EAs0tnJhPVA?t=80) Problem: Minimum Time to Make Rope Colorful
 
 You are given an array `colors` where each element is a letter representing a balloon's color, and a parallel array `neededTime` where each element is the seconds required to remove the balloon at that index. Remove the **minimum total time** worth of balloons such that no two adjacent balloons share a color.
 
-### Constraints
+### [2:22](https://youtu.be/EAs0tnJhPVA?t=142) Constraints
 
 - `len(colors) == len(neededTime)` (one-to-one correspondence)
 - `1 <= len(colors) <= 10^5`
@@ -3263,7 +3446,7 @@ You are given an array `colors` where each element is a letter representing a ba
 
 ---
 
-## Mauricio's First Approach — Nested Loops (Brute Force)
+## [4:21](https://youtu.be/EAs0tnJhPVA?t=261) Mauricio's First Approach — Nested Loops (Brute Force)
 
 Identify each **sub-array of consecutive same-colored balloons**, sum the time for that group, subtract the maximum (the balloon we keep), and accumulate the cost.
 
@@ -3291,7 +3474,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Mauricio's Refined Approach — Single Loop, O(n)
+## [20:02](https://youtu.be/EAs0tnJhPVA?t=1202) Mauricio's Refined Approach — Single Loop, O(n)
 
 Rather than identifying groups, iterate once and on every match with the previous balloon, add the **minimum** of the two times to the total, then store the **running maximum** back into `neededTime[i]` so the next iteration compares against the right value.
 
@@ -3305,7 +3488,7 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### Why Update `neededTime[i]` In Place?
+### [7:26](https://youtu.be/EAs0tnJhPVA?t=446) Why Update `neededTime[i]` In Place?
 
 > "As I go through the array, I'm keeping one position before — `i - 1` — always holding the current maximum. So I always get the min against the maximum, because ultimately I'm going to leave the maximum there. This line ensures the next iteration has the correct running maximum at `i - 1`."
 
@@ -3314,7 +3497,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Coach's Parallel Approach — External Tracking Variables
+## [47:47](https://youtu.be/EAs0tnJhPVA?t=2867) Coach's Parallel Approach — External Tracking Variables
 
 The coach wrote a similar one-pass solution but used **external variables** instead of mutating `neededTime`:
 
@@ -3340,7 +3523,7 @@ def minCost(colors, neededTime):
     return total
 ```
 
-### Trade-off Comparison
+### [26:57](https://youtu.be/EAs0tnJhPVA?t=1617) [approx] Trade-off Comparison
 
 | | Mauricio's refined | Coach's variables |
 |---|---|---|
@@ -3353,7 +3536,7 @@ def minCost(colors, neededTime):
 
 ---
 
-## Whiteboarding Worked Example
+## [25:24](https://youtu.be/EAs0tnJhPVA?t=1524) Whiteboarding Worked Example
 
 Colors: `blue, blue, blue, red, green, green`
 Times:  `1, 3, 2, 1, 2, 1`
@@ -3366,13 +3549,13 @@ Times:  `1, 3, 2, 1, 2, 1`
 
 ---
 
-## Is This Really "Medium"?
+## [42:03](https://youtu.be/EAs0tnJhPVA?t=2523) Is This Really "Medium"?
 
 > "I'd say this is on the lower end of the medium problems. I've seen easy-ranked problems harder to conceptualize than this one. The diagram is clear and the steps are straightforward."
 
 ---
 
-## Follow-up Challenge: Reverse-Engineer `count` and `replace`
+## [44:20](https://youtu.be/EAs0tnJhPVA?t=2660) Follow-up Challenge: Reverse-Engineer `count` and `replace`
 
 Revisiting the earlier **Find the Index of the First Occurrence** session where the solution collapsed to a one-liner `haystack.find(needle)`. The challenge was to implement `find` from scratch with a for loop:
 
@@ -3385,18 +3568,18 @@ def find(haystack, needle):
     return -1
 ```
 
-### New Challenges
+### [47:58](https://youtu.be/EAs0tnJhPVA?t=2878) New Challenges
 
 1. **`str.count(substring)`** — return the number of non-overlapping occurrences of `substring` in the string.
 2. **`str.replace(old, new)`** — return a new string where all occurrences of `old` are replaced with `new`.
 
 Both should be implemented **without calling the library method**, to exercise the same from-scratch muscle.
 
-### Use in a Real Interview?
+### [52:54](https://youtu.be/EAs0tnJhPVA?t=3174) Use in a Real Interview?
 
 > "You are allowed to use `find` or `count` in the tech interview. It's just rare that a single method solves the whole problem outright. Usually it's part of a larger solution."
 
-### Pseudo Code Sketch for `count`
+### [1:33](https://youtu.be/EAs0tnJhPVA?t=93) Pseudo Code Sketch for `count`
 
 Iterate through the larger string; at each position, check whether the substring starting there matches the target. Increment a counter on match.
 
@@ -3410,33 +3593,34 @@ return counter
 
 ---
 
-## Session Meta: Sunday vs Wednesday Format
+## [1:01:13](https://youtu.be/EAs0tnJhPVA?t=3673) Session Meta: Sunday vs Wednesday Format
 
 - **Sundays:** new problem introduced, optional mock interview.
 - **Wednesdays:** review of the mock interview and/or Sunday's problem.
 
 ---
 
-## Stage Fright & Presenting
+## [52:29](https://youtu.be/EAs0tnJhPVA?t=3149) Stage Fright & Presenting
 
 A participant (Rebecca) committed to presenting her `count`/`replace` code next session despite stage fright.
 
 > "That's a great way to practice. The idea that someone watches you while you do this — whether you look stupid or not — it's a rehearsal for the tech interview."
 
-### W3 Schools Gotcha
+### [1:04:14](https://youtu.be/EAs0tnJhPVA?t=3854) W3 Schools Gotcha
 
 > "W3 Schools' indentation checking for Python is really strict and annoying. If you're getting a lot of errors, tab everything back to the left and re-indent. Sometimes the exact same code will work on a second attempt."
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — November 5, 2025
+Source: https://youtu.be/9SvY-5sgL1Q
 
 Review of Mauricio's solution to **Median of Two Sorted Arrays** (LeetCode Hard) using the merge step from merge sort, followed by a mock interview on **Longest Harmonious Subsequence** (LeetCode Easy, deceptively tricky).
 
 ---
 
-## Preamble: Finding "Implementation Algorithm" Problems on LeetCode
+## [3:09](https://youtu.be/9SvY-5sgL1Q?t=189) Preamble: Finding "Implementation Algorithm" Problems on LeetCode
 
 A participant asked how to find the HackerRank "Algorithms → Implementation" equivalent on LeetCode, since LeetCode doesn't expose that subcategory.
 
@@ -3446,7 +3630,7 @@ A participant asked how to find the HackerRank "Algorithms → Implementation" e
 
 ---
 
-## Problem: Median of Two Sorted Arrays (Hard)
+## [28:55](https://youtu.be/9SvY-5sgL1Q?t=1735) Problem: Median of Two Sorted Arrays (Hard)
 
 Given two sorted integer arrays `nums1` and `nums2`, return the median of the combined sorted array.
 
@@ -3455,7 +3639,7 @@ Given two sorted integer arrays `nums1` and `nums2`, return the median of the co
 
 ---
 
-## Mauricio's Solution — Merge Then Compute
+## [7:08](https://youtu.be/9SvY-5sgL1Q?t=428) [approx] Mauricio's Solution — Merge Then Compute
 
 ```python
 def findMedianSortedArrays(nums1, nums2):
@@ -3479,7 +3663,7 @@ def findMedianSortedArrays(nums1, nums2):
         return (merged[n // 2 - 1] + merged[n // 2]) / 2
 ```
 
-### Key Points
+### [12:20](https://youtu.be/9SvY-5sgL1Q?t=740) Key Points
 
 - **Two pointers `i` and `j`** walk each array. Append the smaller of the two current values and advance its pointer.
 - **`.extend()` not `.append()`** for the leftovers — `append` would add the remaining slice as a single nested list.
@@ -3490,11 +3674,11 @@ def findMedianSortedArrays(nums1, nums2):
 
 ---
 
-## Coach's Alternative — Stop At The Median Index
+## [14:17](https://youtu.be/9SvY-5sgL1Q?t=857) [approx] Coach's Alternative — Stop At The Median Index
 
 The coach's approach avoided building the full merged array. Compute the target index `(len(nums1) + len(nums2)) // 2`, then advance through both arrays until reaching that index and return the value there.
 
-### Why the Coach Didn't Like Her Own Version
+### [15:54](https://youtu.be/9SvY-5sgL1Q?t=954) Why the Coach Didn't Like Her Own Version
 
 To handle the case where one array runs out before the target index is reached, she hard-coded a **sentinel value outside the constraint range** (like `10**6 + 1`) so the exhausted side would always lose the `min` comparison.
 
@@ -3502,17 +3686,17 @@ To handle the case where one array runs out before the target index is reached, 
 
 ---
 
-## Mock Interview: Longest Harmonious Subsequence (LeetCode Easy)
+## [15:08](https://youtu.be/9SvY-5sgL1Q?t=908) Mock Interview: Longest Harmonious Subsequence (LeetCode Easy)
 
 > A **harmonious array** has `max - min == 1`. Given an integer array, return the length of its longest harmonious **subsequence** (elements in order, but not necessarily contiguous).
 
-### Example
+### [25:00](https://youtu.be/9SvY-5sgL1Q?t=1500) [approx] Example
 
 `[1, 3, 2, 2, 5, 2, 3, 7]` → answer `5` (the subsequence `[3, 2, 2, 2, 3]`).
 
 > "Subsequence means you can skip elements. You're not restricted to contiguous runs."
 
-### Mauricio's Attempt
+### [27:06](https://youtu.be/9SvY-5sgL1Q?t=1626) Mauricio's Attempt
 
 He tried to track a running `max`/`min` while traversing and append the current element to a `current` list if the difference equaled 1. The approach broke down on the first few values because:
 
@@ -3520,19 +3704,19 @@ He tried to track a running `max`/`min` while traversing and append the current 
 - The array is **not sorted** (contradicting his initial assumption).
 - A harmonious subsequence is really a count of **how many times each value and its neighbor (value ± 1) appear**.
 
-### Coach Feedback
+### [44:50](https://youtu.be/9SvY-5sgL1Q?t=2690) Coach Feedback
 
 > "You want to return a number, not necessarily an array. Maybe you want to keep count of what would go in the array without actually creating the array. That's a different mindset."
 
 > "Test along the way. You got all of this code written, and when we traced the first few values, it broke down after a few iterations. Testing earlier would have caught it before you moved too far."
 
-### Topic Tags As Hints
+### [7:17](https://youtu.be/9SvY-5sgL1Q?t=437) Topic Tags As Hints
 
 LeetCode listed the problem's tags as **Hash Table, Sliding Window, Sorting, Counting**.
 
 > "Hash table is a big clue. Sliding window can be a clue. Sorting is in there. Counting — you were going to count it anyway."
 
-### The Hash Table Approach (Coach's Working Solution)
+### [39:18](https://youtu.be/9SvY-5sgL1Q?t=2358) [approx] The Hash Table Approach (Coach's Working Solution)
 
 The coach solved it using a frequency counter:
 
@@ -3552,7 +3736,7 @@ def findLHS(nums):
 - For each key, check whether `key + 1` exists. If so, the combined count is a candidate harmonious subsequence length.
 - **No sorting required.** O(n) time.
 
-### Sliding Window Variant
+### [49:08](https://youtu.be/9SvY-5sgL1Q?t=2948) Sliding Window Variant
 
 Sliding window **can** work, but only if you first sort the array to make the "harmonious" values adjacent — sacrificing time to sorting for logical simplicity.
 
@@ -3560,13 +3744,13 @@ Sliding window **can** work, but only if you first sort the array to make the "h
 
 ---
 
-## Easy vs Hard Labeling
+## [47:57](https://youtu.be/9SvY-5sgL1Q?t=2877) Easy vs Hard Labeling
 
 > "This is not an easy problem to me. It's easy when you know how to do it. An acceptance rate of 64% on an 'easy' is a good indication that it shouldn't necessarily be an easy problem. I wouldn't give you a problem like this for the technical interview — but it's a good one to add to your tool belt."
 
 ---
 
-## Takeaways
+## [50:01](https://youtu.be/9SvY-5sgL1Q?t=3001) [approx] Takeaways
 
 - **Merge sort's merge step** solves "combine two sorted arrays" problems cleanly. Don't forget the leftovers.
 - Use **`.extend()`** for remaining slices; `.append()` nests them.
@@ -3575,16 +3759,17 @@ Sliding window **can** work, but only if you first sort the array to make the "h
 - When your idea isn't working after a few iterations, **stop and re-trace with real values** before writing more code.
 - If you hard-code against a constraint as a sentinel, flag it and clean it up later — it's a real-world "sloppy first draft" move.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — November 12, 2025
+Source: https://youtu.be/o9QJY4aS--4
 
 Deep dive on LeetCode's **Repeated Substring Pattern** (Easy), including assumption-testing methodology, Mauricio's O(n²) solution, and a discussion on "patterns vs templates" in interview prep.
 
 ---
 
-## LeetCode vs HackerRank Setup
+## [0:00](https://youtu.be/o9QJY4aS--4?t=0) [approx] LeetCode vs HackerRank Setup
 
 A participant asked about LeetCode's mandatory `class Solution:` wrapper vs writing standalone functions. Verdict:
 
@@ -3594,53 +3779,53 @@ A participant asked about LeetCode's mandatory `class Solution:` wrapper vs writ
 
 ---
 
-## Problem: Repeated Substring Pattern
+## [7:53](https://youtu.be/o9QJY4aS--4?t=473) Problem: Repeated Substring Pattern
 
 > Given a string `s`, check if it can be constructed by taking a substring of it and appending multiple copies of the substring together.
 
-### Examples
+### [5:37](https://youtu.be/o9QJY4aS--4?t=337) [approx] Examples
 
 - `"abab"` → `true` (`"ab"` × 2)
 - `"aba"` → `false` (no substring tiles the whole string)
 - `"abcabcabcabc"` → `true` (`"abc"` × 4)
 
-### Constraints
+### [8:25](https://youtu.be/o9QJY4aS--4?t=505) [approx] Constraints
 
 - `1 <= s.length <= 10^4`
 - `s` consists only of lowercase English letters.
 
 ---
 
-## Assumption-Testing Methodology
+## [10:03](https://youtu.be/o9QJY4aS--4?t=603) Assumption-Testing Methodology
 
 The coach demonstrated how to use LeetCode's custom test case box as an **assumption laboratory** before writing any real code:
 
-### Assumption 1: Does a single character count?
+### [36:05](https://youtu.be/o9QJY4aS--4?t=2165) Assumption 1: Does a single character count?
 
 Test case: `"a"`. Expected output: `false`.
 
 > "A length of 1 is NOT considered repeating."
 
-### Assumption 2: Does a single character repeated count?
+### [36:05](https://youtu.be/o9QJY4aS--4?t=2165) Assumption 2: Does a single character repeated count?
 
 Test case: `"aaa"`. Expected output: `true`.
 
 > "A repeated single character IS considered a repeating substring."
 
-### Assumption 3: Does odd vs even length matter?
+### [1:04:14](https://youtu.be/o9QJY4aS--4?t=3854) Assumption 3: Does odd vs even length matter?
 
 Initially the coach thought all valid answers would have even length. But `"abcabcabc"` (length 9) is valid. **Length parity doesn't matter.**
 
 > "If you're having a question or assumption about the problem, write it out at the very top. Even if you haven't started developing an approach, get some questions down that you can test or see if the problem answers for you."
 
-### LeetCode vs HackerRank Custom Tests
+### [14:52](https://youtu.be/o9QJY4aS--4?t=892) LeetCode vs HackerRank Custom Tests
 
 - **LeetCode** shows you the expected output for custom test cases.
 - **HackerRank** lets you add custom test cases but doesn't show expected output — you have to use `assert` or print statements to validate.
 
 ---
 
-## Mauricio's Solution
+## [25:16](https://youtu.be/o9QJY4aS--4?t=1516) [approx] Mauricio's Solution
 
 ```python
 class Solution:
@@ -3654,7 +3839,7 @@ class Solution:
         return False
 ```
 
-### How It Works
+### [3:54](https://youtu.be/o9QJY4aS--4?t=234) How It Works
 
 - **`sub`** is the candidate substring length, iterating from 1 up to `n - 1`.
 - **`n % sub == 0`** filter — if `sub` doesn't evenly divide the string length, it can't possibly tile the string. Skip it.
@@ -3662,15 +3847,15 @@ class Solution:
 - **`candidate * (n // sub)`** repeats the candidate the required number of times.
 - **String comparison** `== s` checks whether the reconstruction matches the original.
 
-### Key Insight
+### [38:43](https://youtu.be/o9QJY4aS--4?t=2323) Key Insight
 
 > "If a string forms itself by repeating a substring, the substring must fit evenly into the length. So I'm only interested in substrings whose length divides the total length."
 
 ---
 
-## Big O Analysis
+## [33:42](https://youtu.be/o9QJY4aS--4?t=2022) [approx] Big O Analysis
 
-### Time Complexity: O(n²)
+### [36:30](https://youtu.be/o9QJY4aS--4?t=2190) [approx] Time Complexity: O(n²)
 
 - Outer loop iterates up to `n` candidate lengths.
 - Inside each iteration, **string concatenation and comparison are each O(n)** operations — Python has to build the repeated string character-by-character.
@@ -3678,31 +3863,31 @@ class Solution:
 
 > "The filter `n % sub == 0` only skips some iterations — it still moves through a linear amount of inputs. At worst it's still O(n²). That doesn't mean it's a bad solution — it just means you should be able to answer this question for the job hunt."
 
-### Coach's Clarification on Mauricio's Confusion
+### [0:35](https://youtu.be/o9QJY4aS--4?t=35) Coach's Clarification on Mauricio's Confusion
 
 Mauricio objected that as `sub` grows, the number of repetitions `n // sub` shrinks, so the work per iteration shrinks too. True — the total work is closer to `n * H(n)` (harmonic) than `n²`, but for interview discussion, **worst case big O is what matters**, and that's O(n²) when concatenation dominates.
 
 ---
 
-## Conceptual Sticking Point (Breakout Room)
+## [8:22](https://youtu.be/o9QJY4aS--4?t=502) Conceptual Sticking Point (Breakout Room)
 
 A participant (Linda) struggled because she expected **two parameters** — a string and a substring — and the function only gives one. The group walked through:
 
 > "You have to adapt your understanding to what the problem gives you. You're not given the substring. You have to figure out all the possible combinations of what the substring could be, or if no combination works, return false."
 
-### The Brute Force Mental Model
+### [49:47](https://youtu.be/o9QJY4aS--4?t=2987) The Brute Force Mental Model
 
 - Start with **window size 1** — take the first character. Repeat it across the full length. Does it equal `s`?
 - If no, **window size 2** — take the first two characters. Repeat. Does it equal `s`?
 - Continue until you find a match or exhaust options up to `n - 1`.
 
-### Critical Observation
+### [48:29](https://youtu.be/o9QJY4aS--4?t=2909) Critical Observation
 
 > "The first string that will repeat has to come from the beginning of the string. Whatever's at the front has to also be repeated towards the end. We couldn't say `cab` in the middle — the prefix is what we test."
 
 ---
 
-## Using `str.count()` As An Alternative
+## [1:03:53](https://youtu.be/o9QJY4aS--4?t=3833) Using `str.count()` As An Alternative
 
 A participant asked whether Python has a built-in like "tell me if a letter is repeated". Coach's answer:
 
@@ -3710,11 +3895,11 @@ A participant asked whether Python has a built-in like "tell me if a letter is r
 
 ---
 
-## Patterns vs Templates Discussion
+## [56:03](https://youtu.be/o9QJY4aS--4?t=3363) Patterns vs Templates Discussion
 
 Mauricio asked about the "four pillars of problem solving" framework, specifically the "find your template" step. Is that the same as pattern recognition (sliding window, binary search, etc.)?
 
-### Coach's Take
+### [1:02:17](https://youtu.be/o9QJY4aS--4?t=3737) Coach's Take
 
 > "I wouldn't call that a template. I'd call it understanding the problem and knowing what to apply — what data structure, what algorithm, what logical approach."
 
@@ -3722,17 +3907,17 @@ Mauricio asked about the "four pillars of problem solving" framework, specifical
 
 > "An interview isn't just getting the code working. It's showing that you can break down the problem, what assumptions you're making, what questions you're asking, how you're checking your work at each step. Those are all problem-solving skills."
 
-### Mauricio's Counterpoint
+### [57:22](https://youtu.be/o9QJY4aS--4?t=3442) Mauricio's Counterpoint
 
 > "After doing hundreds of problems, you recognize patterns. A sliding window in its most basic form is an algorithm — that's your starting point, and you adapt it to the problem. You already understand the basic principle, so you use it and tweak it."
 
-### Coach's Resolution
+### [1:01:38](https://youtu.be/o9QJY4aS--4?t=3698) Coach's Resolution
 
 > "Yeah — if you're taking the basic sliding window, writing it out yourself, and then saying 'I'm going to use this approach but modify it to work through this problem,' that's fine. There are problems that specifically require that, like ones that use the **concepts** of binary search without being literal binary search."
 
 ---
 
-## Takeaways
+## [18:38](https://youtu.be/o9QJY4aS--4?t=1118) Takeaways
 
 - **Write assumptions as comments at the top** of your code and test them against provided examples.
 - **Use LeetCode custom test cases as an assumption lab** — change the input, see the expected output.
@@ -3741,20 +3926,21 @@ Mauricio asked about the "four pillars of problem solving" framework, specifical
 - **Problem-solving visibility matters more than raw correctness** in an interview.
 - **Start with the shortest window and grow.** The prefix constraint means any valid repeating substring must begin at index 0.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — November 19, 2025
+Source: https://youtu.be/-4q6yvWZqxk
 
 Announcement of schedule changes, introduction of the **Technical Interview Success Rubric**, and a mock interview on **Assign Cookies** (LeetCode Easy).
 
 ---
 
-## Schedule Change: Wednesdays Only
+## [0:31](https://youtu.be/-4q6yvWZqxk?t=31) Schedule Change: Wednesdays Only
 
 Starting after Thanksgiving, there will be **no more Sunday sessions**. Wednesday sessions at 2:00 PM will remain, focused exclusively on **mock interviews** plus coaching discussion.
 
-### Rationale
+### [1:32](https://youtu.be/-4q6yvWZqxk?t=92) Rationale
 
 > "I'm kind of overwhelmed. It aligns with the direction Dr. Emily wants us moving — focusing on core things week to week and helping you advance through to the next phase. And the best way to advance is to practice mock interviews."
 
@@ -3764,11 +3950,11 @@ Starting after Thanksgiving, there will be **no more Sunday sessions**. Wednesda
 
 ---
 
-## Technical Interview Success Rubric
+## [35:38](https://youtu.be/-4q6yvWZqxk?t=2138) Technical Interview Success Rubric
 
 The coach has conducted **over 115 technical interviews** and compiled observations into a draft rubric covering four dimensions:
 
-### 1. Communication
+### [7:49](https://youtu.be/-4q6yvWZqxk?t=469) [approx] 1. Communication
 
 **Meeting expectations:**
 - Restate the problem in your own words.
@@ -3776,21 +3962,21 @@ The coach has conducted **over 115 technical interviews** and compiled observati
 - Sound out your thoughts while writing pseudo code and coding.
 - Confidently answer follow-up questions about your code.
 
-### 2. Technical Knowledge
+### [10:26](https://youtu.be/-4q6yvWZqxk?t=626) [approx] 2. Technical Knowledge
 
 **Meeting expectations:**
 - Comfortable with **Mod 2** data structures and algorithms.
 - Understand function parameters, input/output types, and test cases.
 - Can read library/method documentation and apply it correctly.
 
-### 3. Problem Solving
+### [13:03](https://youtu.be/-4q6yvWZqxk?t=783) [approx] 3. Problem Solving
 
 **Meeting expectations:**
 - Break the problem into smaller pseudo-code steps.
 - Test incrementally with print statements.
 - Troubleshoot errors by identifying where they came from.
 
-### 4. Behavior
+### [15:39](https://youtu.be/-4q6yvWZqxk?t=939) [approx] 4. Behavior
 
 **Meeting expectations:**
 - Read the full problem including examples and constraints.
@@ -3798,17 +3984,17 @@ The coach has conducted **over 115 technical interviews** and compiled observati
 - Bounce back from errors quickly without spiraling.
 - Accept feedback and use it to advance.
 
-### Time Correlation
+### [18:16](https://youtu.be/-4q6yvWZqxk?t=1096) [approx] Time Correlation
 
 - **Below expectations** → 20+ minutes, likely fails.
 - **Meeting expectations** → around 20 minutes.
 - **Exceeding expectations** → 10–15 minutes, ready for job-hunt level interviews.
 
-### Pass Rate Reality
+### [50:06](https://youtu.be/-4q6yvWZqxk?t=3006) Pass Rate Reality
 
 > "Out of the 115 I've run, eventually everyone passes — there's never been someone who didn't make it through unless they left the program or decided coding wasn't for them. The average is **two to three attempts**. Very rarely do people pass on the first try, and that's from nerves and being put on the spot for the first time."
 
-### Common Failure Causes
+### [19:43](https://youtu.be/-4q6yvWZqxk?t=1183) Common Failure Causes
 
 - **Nerves and pressure.** Skilled candidates right on the cusp sometimes fail two or three times before passing.
 - **Going down a spaghetti path.** Coach's remedy: recognize it fast, scrap it, and restart with better understanding.
@@ -3816,11 +4002,11 @@ The coach has conducted **over 115 technical interviews** and compiled observati
 
 > "Errors don't scare me. They're just telling me that something's wrong in my assumptions. The best way to handle them is incremental testing."
 
-### The Incremental Testing Math
+### [24:01](https://youtu.be/-4q6yvWZqxk?t=1441) The Incremental Testing Math
 
 > "If you add 10–20 seconds of print-statement testing after each line, that adds up to maybe 2 minutes across the whole problem. If you're moving at a good pace, that's nothing. You can still solve the problem in under 10 minutes. Versus hitting an error with a whole code block written, now having to figure out which line caused it."
 
-### Difficulty Escalation
+### [17:56](https://youtu.be/-4q6yvWZqxk?t=1076) Difficulty Escalation
 
 Each subsequent attempt gets **incrementally harder** within the easy range — never crossing into medium territory.
 
@@ -3828,20 +4014,20 @@ Each subsequent attempt gets **incrementally harder** within the easy range — 
 
 ---
 
-## Mock Interview: Assign Cookies (LeetCode Easy)
+## [47:07](https://youtu.be/-4q6yvWZqxk?t=2827) Mock Interview: Assign Cookies (LeetCode Easy)
 
-### Problem
+### [47:07](https://youtu.be/-4q6yvWZqxk?t=2827) Problem
 
 > Assume you are a parent with several children and you want to give them cookies. Each child `i` has a greed factor `g[i]`, which is the minimum size of a cookie that will content them. Each cookie `j` has a size `s[j]`. If `s[j] >= g[i]`, you can assign cookie `j` to child `i` and the child will be content. Your goal is to maximize the number of content children.
 
-### Function Signature
+### [36:33](https://youtu.be/-4q6yvWZqxk?t=2193) [approx] Function Signature
 
 ```python
 class Solution:
     def findContentChildren(self, g: List[int], s: List[int]) -> int:
 ```
 
-### John's Initial Confusion
+### [50:30](https://youtu.be/-4q6yvWZqxk?t=3030) John's Initial Confusion
 
 Coming from a JavaScript/TypeScript background, John got tripped up by Python's type annotations:
 
@@ -3851,19 +4037,19 @@ Coming from a JavaScript/TypeScript background, John got tripped up by Python's 
 
 > "Only `g` and `s` are actionable variables. The annotation `int` just tells you the expected return type."
 
-### Coach Feedback: Pull the Problem Into Code Comments
+### [28:39](https://youtu.be/-4q6yvWZqxk?t=1719) Coach Feedback: Pull the Problem Into Code Comments
 
 John tried to reverse-engineer the problem from the function signature alone, which wasted time.
 
 > "What can we pull from the problem statement into our code comments so that we can quickly at any point know what the goal of the problem is, what the inputs are, and what our expected output is?"
 
-### Coach Feedback: Test Assumptions Early
+### [1:01:24](https://youtu.be/-4q6yvWZqxk?t=3684) Coach Feedback: Test Assumptions Early
 
 John used the word "assumption" naturally while talking through his approach but didn't write or test his assumptions until later.
 
 > "The first thing I would do is test an assumption. Eventually you did with a print statement — but not until a little bit later. Move that up in the timeline."
 
-### The Approach Discussion
+### [53:02](https://youtu.be/-4q6yvWZqxk?t=3182) The Approach Discussion
 
 John asked which array to iterate through — children (`g`) or cookies (`s`). The coach steered him toward understanding:
 
@@ -3872,7 +4058,7 @@ John asked which array to iterate through — children (`g`) or cookies (`s`). T
 - **Length of `s`** = number of cookies.
 - **Each integer in `s`** = size of that cookie.
 
-### Standard Solution Sketch (Greedy)
+### [49:36](https://youtu.be/-4q6yvWZqxk?t=2976) [approx] Standard Solution Sketch (Greedy)
 
 ```python
 def findContentChildren(self, g, s):
@@ -3891,7 +4077,7 @@ def findContentChildren(self, g, s):
 
 ---
 
-## John's Flash Cards / Cheat Sheet Technique
+## [52:13](https://youtu.be/-4q6yvWZqxk?t=3133) [approx] John's Flash Cards / Cheat Sheet Technique
 
 John mentioned he'd made **index cards** as flash cards for Python syntax after coming from JavaScript. They contained concept-level snippets — a basic for loop with `n` for length, data structure templates, not full problem solutions.
 
@@ -3901,7 +4087,7 @@ John mentioned he'd made **index cards** as flash cards for Python syntax after 
 
 ---
 
-## Silent vs Verbal Time Allocation
+## [54:49](https://youtu.be/-4q6yvWZqxk?t=3289) [approx] Silent vs Verbal Time Allocation
 
 A participant asked about dynamics — how long a candidate should silently read the problem.
 
@@ -3909,17 +4095,17 @@ A participant asked about dynamics — how long a candidate should silently read
 
 > "The important part isn't how long each step takes. It's: once you reach a point where you understand the problem enough to explain it, **can you then explain it out loud** as an observer? And at regular intervals, can you recap what you're thinking and doing?"
 
-### What To Avoid
+### [1:01:50](https://youtu.be/-4q6yvWZqxk?t=3710) What To Avoid
 
 > "Sitting in silence the entire time until the end — whether all your test cases pass or you've hit an error and run out of time. You can pass while silent, but it's not great. Interviewers want to know how you think, not just whether you got there."
 
-### Time Budget Warning
+### [1:03:27](https://youtu.be/-4q6yvWZqxk?t=3807) Time Budget Warning
 
 > "If you're spending 15 out of 20 minutes breaking down the problem with no pseudo code and no actual code, that's an indicator you need to shorten that step — not by skipping it, but by honing in on what you're doing."
 
 ---
 
-## Takeaways
+## [16:08](https://youtu.be/-4q6yvWZqxk?t=968) Takeaways
 
 - Everyone eventually passes — **two to three attempts is the average**.
 - **Communication is a first-class interview skill** alongside raw problem-solving.
@@ -3928,39 +4114,40 @@ A participant asked about dynamics — how long a candidate should silently read
 - **Practice under pressure in front of an audience** replicates the real interview more than solo practice ever can.
 - **Flash-card style concept sheets** are legitimate interview aids when focused on syntax and data structure basics.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — November 26, 2025
+Source: https://youtu.be/tDiuu04JnK8
 
 Thanksgiving-week session with two back-to-back mock interviews: **Plus One** (Lisa) and **Search Insert Position** (John). Emphasis on verbalizing process over reaching a final solution.
 
 ---
 
-## Process Note: Writing vs Speaking
+## [1:02](https://youtu.be/tDiuu04JnK8?t=62) Process Note: Writing vs Speaking
 
 A participant shared that she prefers writing out her thoughts but the interviewer can't see her write. The coach's workarounds:
 
 > "You can still use pen and paper if you need to, then talk about what you're writing. Or open Microsoft Paint, Zoom's built-in whiteboard, or just type pseudo code directly into the code editor as comments. The point is: figure out how to incorporate writing into the digital scope — don't cut it out entirely just because you think you have to talk the whole time."
 
-### Zoom Whiteboard Discovery
+### [3:57](https://youtu.be/tDiuu04JnK8?t=237) Zoom Whiteboard Discovery
 
 Zoom has a built-in whiteboard feature under "More settings" — useful for design meetings, explaining systems in the internship, or mock interview diagramming.
 
 ---
 
-## Mock Interview #1: Plus One (Lisa)
+## [13:23](https://youtu.be/tDiuu04JnK8?t=803) Mock Interview #1: Plus One (Lisa)
 
-### Problem
+### [13:23](https://youtu.be/tDiuu04JnK8?t=803) Problem
 
 > You are given a large integer represented as an integer array `digits`, where each `digits[i]` is the i-th digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading zeros. Increment the large integer by one and return the resulting array of digits.
 
-### Example
+### [11:08](https://youtu.be/tDiuu04JnK8?t=668) [approx] Example
 
 - Input: `digits = [1, 2, 3]` → Output: `[1, 2, 4]`
 - Input: `digits = [9]` → Output: `[1, 0]`
 
-### Lisa's Approach — Convert, Add, Convert Back
+### [1:06:16](https://youtu.be/tDiuu04JnK8?t=3976) Lisa's Approach — Convert, Add, Convert Back
 
 Lisa had seen this before and remembered the strategy:
 
@@ -3968,7 +4155,7 @@ Lisa had seen this before and remembered the strategy:
 2. **Add one.**
 3. **Convert back into a list of digits.**
 
-### Implementation Sketch
+### [16:43](https://youtu.be/tDiuu04JnK8?t=1003) [approx] Implementation Sketch
 
 ```python
 class Solution:
@@ -3983,19 +4170,19 @@ class Solution:
         return [int(d) for d in str(whole)]
 ```
 
-### Coach Feedback: Reading Errors Out Loud
+### [32:34](https://youtu.be/tDiuu04JnK8?t=1954) Coach Feedback: Reading Errors Out Loud
 
 > "I really liked hearing you say 'read the error, read the error.' It's very easy to see that there's an error on this line and think you understand it, but once you actually read — 'oh, this thing doesn't do this thing' — you sit and think about what it means. That's how you work through errors."
 
-### Coach Feedback: Think Out Loud When Stepping Back
+### [32:00](https://youtu.be/tDiuu04JnK8?t=1920) Coach Feedback: Think Out Loud When Stepping Back
 
 > "You started going through the loop, got a little stuck, and said 'let me take a step back, go up to my comments, spell this out.' I liked hearing that thought process and liked that you walked it out in the code comments. That showed me you understood the problem and what you were doing."
 
-### Looking Up Syntax Is OK
+### [33:34](https://youtu.be/tDiuu04JnK8?t=2014) Looking Up Syntax Is OK
 
 > "If you want to look up how a function works, how the syntax goes, or how to do a simple thing — that's totally fine. What we want to avoid is looking up 'how do I take a list of integers and turn them into a number and do math on them,' where it gives you a full code template. Discreet items like `map`, `split`, or type conversion are fine."
 
-### When Nerves Get In The Way
+### [6:15](https://youtu.be/tDiuu04JnK8?t=375) When Nerves Get In The Way
 
 Lisa noted that nerves slowed her down near the end. Coach:
 
@@ -4003,29 +4190,29 @@ Lisa noted that nerves slowed her down near the end. Coach:
 
 ---
 
-## Mock Interview #2: Search Insert Position (John)
+## [37:27](https://youtu.be/tDiuu04JnK8?t=2247) Mock Interview #2: Search Insert Position (John)
 
-### Problem
+### [37:27](https://youtu.be/tDiuu04JnK8?t=2247) Problem
 
 > Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. You must write an algorithm with **O(log n)** runtime complexity.
 
-### Examples
+### [51:35](https://youtu.be/tDiuu04JnK8?t=3095) Examples
 
 - `nums = [1, 3, 5, 6], target = 5` → `2`
 - `nums = [1, 3, 5, 6], target = 2` → `1`
 - `nums = [1, 3, 5, 6], target = 7` → `4`
 
-### John's Approach — `list.index()`
+### [52:51](https://youtu.be/tDiuu04JnK8?t=3171) John's Approach — `list.index()`
 
 John tried to use Python's built-in `list.index(target)` method, which throws a `ValueError` if the target isn't present. When he tested with a missing target, he hit the error and had to pivot.
 
-### Coach Feedback: Silent Thinking Is The Biggest Problem
+### [54:05](https://youtu.be/tDiuu04JnK8?t=3245) Coach Feedback: Silent Thinking Is The Biggest Problem
 
 > "It's hard to know what you think about this problem because you haven't shown us what you think. There was a solid minute or two where no action was being taken, you were clicking in the for loop and back to the index. I could see you were thinking, but we have no idea what you were deliberating."
 
 > "Even if you could solve problems, being able to explain what's going through your process and walk us through your process is a big key for interviews specifically. Not just tech interviews — all interviews, and a lot of work life."
 
-### The Chunking Exercise
+### [57:58](https://youtu.be/tDiuu04JnK8?t=3478) The Chunking Exercise
 
 The coach walked through how to **chunk the problem** before writing code:
 
@@ -4035,17 +4222,17 @@ The coach walked through how to **chunk the problem** before writing code:
 
 > "If we had seen those chunks existed before you started working through them, it would have been a reference point. Then as you're thinking, you're not worried about what to do three steps from now — you're focused on the problem in front of you."
 
-### What The Problem Actually Wants: Binary Search
+### [59:03](https://youtu.be/tDiuu04JnK8?t=3543) What The Problem Actually Wants: Binary Search
 
 > "This problem is asking you to write a binary search. It's not telling you outright — it says 'write an algorithm with O(log n) runtime complexity.' The binary search algorithm includes the aspect of 'what do you do if you don't find it?' You're always between two indexes, and you change the `return -1` step to return the insertion position instead."
 
 For today's session, the coach was not evaluating whether John wrote binary search specifically — she wanted to see the **process**.
 
-### Alternative: The `bisect` / "insert and sort" Approach
+### [1:00:50](https://youtu.be/tDiuu04JnK8?t=3650) Alternative: The `bisect` / "insert and sort" Approach
 
 A participant suggested: add the target, sort, find the index. The coach noted that the array is **already sorted and distinct** — "those are both key pieces of information" — so you don't need to sort. You can just increment through it and find the right spot.
 
-### `list.index()` vs Alternatives
+### [48:43](https://youtu.be/tDiuu04JnK8?t=2923) `list.index()` vs Alternatives
 
 - `list.index(target)` — raises `ValueError` if not found.
 - You could instead use `try/except` to catch the error.
@@ -4054,17 +4241,17 @@ A participant suggested: add the target, sort, find the index. The coach noted t
 
 ---
 
-## What Is `self` in LeetCode's Function Signature?
+## [40:38](https://youtu.be/tDiuu04JnK8?t=2438) What Is `self` in LeetCode's Function Signature?
 
 A participant asked about the `self` parameter in LeetCode's `class Solution:` wrapper.
 
 > "For the purposes of writing your function, you can ignore it. `self` is the way of tying the function to the class. It's a required parameter as a class member."
 
-### Mental Model
+### [1:08:17](https://youtu.be/tDiuu04JnK8?t=4097) Mental Model
 
 > "LeetCode made a platform for you to write your code in. The `class` stuff is under-the-hood scaffolding that enables you to write in the 'your code here' section. Behind the scenes, they instantiate the class as an object and call your function in a loop over all the test cases, passing `nums` and `target` for each one."
 
-### Comparison to Built-in String Methods
+### [1:01:18](https://youtu.be/tDiuu04JnK8?t=3678) [approx] Comparison to Built-in String Methods
 
 `str.replace(old, new)` under the hood:
 
@@ -4078,17 +4265,17 @@ When you call `"hello".replace("h", "j")`, Python is calling the `replace` metho
 
 ---
 
-## Coaching Philosophy: Speed Drills, No More Homework
+## [1:10:56](https://youtu.be/tDiuu04JnK8?t=4256) Coaching Philosophy: Speed Drills, No More Homework
 
 > "We're going to keep doing these like speed drills — focus on the process, work through the process, here's a problem, do your steps, get the experience. Through that repeated structure, you're honing your skills and getting the stress and nerves out of performing."
 
-### "Trauma-Brained" Information
+### [1:10:12](https://youtu.be/tDiuu04JnK8?t=4212) "Trauma-Brained" Information
 
 > "When you have to look it up in front of an audience and then explain how your code works line by line and why it meets the solution, you're going to have a much easier time holding onto that piece of information because you've kind of trauma-brained it into yourself. Over time it feels less like trauma, I promise."
 
 ---
 
-## Takeaways
+## [54:54](https://youtu.be/tDiuu04JnK8?t=3294) Takeaways
 
 - **Verbalize your process continuously.** Silent thinking is the #1 reason candidates fail to pass even when their code works.
 - **Chunk the problem** into concrete sub-problems before writing code.
@@ -4098,24 +4285,25 @@ When you call `"hello".replace("h", "j")`, Python is calling the `replace` metho
 - **"Sorted and distinct"** in a problem statement is load-bearing — it often replaces the need for sorting logic and enables binary search.
 - **Zoom whiteboard** exists under "More settings" — usable as a digital pen-and-paper substitute.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — December 3, 2025
+Source: https://youtu.be/QQnvnHtF1G4
 
 Q&A on variable scope and Python basics, followed by a mock interview on **Happy Number** (LeetCode Easy).
 
 ---
 
-## Q: Variable Scope For Temporary Lists
+## [1:40](https://youtu.be/QQnvnHtF1G4?t=100) Q: Variable Scope For Temporary Lists
 
 > "When you're setting up a temporary list inside a loop to collect values for later comparison, does it have to be initialized outside the loop?"
 
-### Answer: Yes — Variable Scoping
+### [2:14](https://youtu.be/QQnvnHtF1G4?t=134) Answer: Yes — Variable Scoping
 
 > "If you want the list to persist for the life of the loop, it has to exist before the loop starts. You put it outside the loop and refer to it from inside."
 
-### Scope Refresher
+### [18:27](https://youtu.be/QQnvnHtF1G4?t=1107) Scope Refresher
 
 Each kind of enclosure creates its own scope:
 
@@ -4127,11 +4315,11 @@ Each kind of enclosure creates its own scope:
 
 ---
 
-## Q: What Can Go On Flash Cards For The Interview?
+## [5:35](https://youtu.be/QQnvnHtF1G4?t=335) Q: What Can Go On Flash Cards For The Interview?
 
 > "You can use pseudo code or basic syntax examples — what a for loop looks like, how to convert a string to an int. Nothing where you're actually performing an algorithmic function within it. About the same level of what you would Google."
 
-### Allowed
+### [44:40](https://youtu.be/QQnvnHtF1G4?t=2680) Allowed
 
 - `int(num_str)` — convert string to int
 - `str(num)` — convert int to string
@@ -4139,7 +4327,7 @@ Each kind of enclosure creates its own scope:
 - Dictionary access patterns
 - List comprehensions
 
-### Not Allowed
+### [12:20](https://youtu.be/QQnvnHtF1G4?t=740) [approx] Not Allowed
 
 - Full solved problems
 - Sliding window or binary search templates
@@ -4147,11 +4335,11 @@ Each kind of enclosure creates its own scope:
 
 ---
 
-## Elementary Python Gotchas
+## [18:30](https://youtu.be/QQnvnHtF1G4?t=1110) Elementary Python Gotchas
 
 A participant noted that **basic things** trip her up:
 
-### String-to-Int for Addition
+### [17:17](https://youtu.be/QQnvnHtF1G4?t=1037) [approx] String-to-Int for Addition
 
 ```python
 num1 = input("Enter first number: ")
@@ -4162,7 +4350,7 @@ result = int(num1) + int(num2)
 
 `input()` returns a **string**. You must cast to `int` before arithmetic.
 
-### Accessing Elements vs Indexes in Loops
+### [19:45](https://youtu.be/QQnvnHtF1G4?t=1185) [approx] Accessing Elements vs Indexes in Loops
 
 ```python
 # Index-based access
@@ -4180,7 +4368,7 @@ for char in s:
 
 ---
 
-## Career Phase Question: What Comes After This?
+## [38:14](https://youtu.be/QQnvnHtF1G4?t=2294) Career Phase Question: What Comes After This?
 
 Clarification on the phase sequence:
 
@@ -4190,7 +4378,7 @@ Clarification on the phase sequence:
 
 The career strategy call does **not** change the explorer phase contents.
 
-### Program Sunset Schedule
+### [24:41](https://youtu.be/QQnvnHtF1G4?t=1481) [approx] Program Sunset Schedule
 
 - **New signups end in February.**
 - **Support continues through November** of the following year for existing members.
@@ -4198,16 +4386,16 @@ The career strategy call does **not** change the explorer phase contents.
 
 ---
 
-## Mock Interview: Happy Number (Lisa)
+## [16:27](https://youtu.be/QQnvnHtF1G4?t=987) Mock Interview: Happy Number (Lisa)
 
-### Problem
+### [16:27](https://youtu.be/QQnvnHtF1G4?t=987) Problem
 
 > Write an algorithm to determine if a number `n` is happy. A happy number is defined by:
 > 1. Starting with any positive integer, replace the number by the sum of the squares of its digits.
 > 2. Repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle that does not include 1.
 > Return `true` if `n` is a happy number, `false` otherwise.
 
-### Example
+### [32:06](https://youtu.be/QQnvnHtF1G4?t=1926) [approx] Example
 
 `n = 19`:
 - `1² + 9² = 1 + 81 = 82`
@@ -4215,14 +4403,14 @@ The career strategy call does **not** change the explorer phase contents.
 - `6² + 8² = 36 + 64 = 100`
 - `1² + 0² + 0² = 1` → **happy, return true**
 
-### Lisa's Approach
+### [37:23](https://youtu.be/QQnvnHtF1G4?t=2243) Lisa's Approach
 
 1. Convert `n` to a string to access individual digits.
 2. Loop over each character, convert back to int, square, accumulate a sum.
 3. Test whether the sum equals 1.
 4. If not, repeat the process on the new sum.
 
-### Implementation Sketch
+### [37:02](https://youtu.be/QQnvnHtF1G4?t=2222) [approx] Implementation Sketch
 
 ```python
 class Solution:
@@ -4239,15 +4427,15 @@ class Solution:
 
 Lisa identified that she needed **another loop** — an outer loop to repeat the sum-of-squares process — but ran out of time before finishing the implementation.
 
-### Coach Feedback: Break Down Before Coding
+### [45:29](https://youtu.be/QQnvnHtF1G4?t=2729) Coach Feedback: Break Down Before Coding
 
 > "It would have helped to spend more time in pseudo code to think about it. You know you need to break the number into digits, square them, sum them — you jumped right into that. That's a good place to start, but we got stuck on that step. If we'd taken a step back and asked what the overall strategy looks like, that might have saved time."
 
-### Coach Feedback: Read The Two Termination Conditions Early
+### [46:15](https://youtu.be/QQnvnHtF1G4?t=2775) Coach Feedback: Read The Two Termination Conditions Early
 
 > "The problem says it either ends at 1 or cycles endlessly. That makes me think I want to walk through a few more steps — if it can cycle endlessly, that's more than one operation, which means a `while` loop from the start. You don't know exactly how you'll use it yet, but you can pull it out as a game plan element."
 
-### The Cycle Detection Problem
+### [16:35](https://youtu.be/QQnvnHtF1G4?t=995) The Cycle Detection Problem
 
 The hardest part of Happy Number is **detecting the infinite loop**. Two common approaches:
 
@@ -4256,13 +4444,13 @@ The hardest part of Happy Number is **detecting the infinite loop**. Two common 
 
 ---
 
-## Asking For Help The Right Way
+## [48:20](https://youtu.be/QQnvnHtF1G4?t=2900) Asking For Help The Right Way
 
 > "When you're asking for help, don't just say 'I'm stuck, what do I do?' Say 'Here's what I've done, here's where I'm thinking, does anyone have advice for the exact next step I might consider?'"
 
 ---
 
-## Takeaways
+## [3:15](https://youtu.be/QQnvnHtF1G4?t=195) Takeaways
 
 - **Initialize collector variables outside the loop** that uses them.
 - **Flash cards should mirror what you'd Google** — no full solutions.
@@ -4271,27 +4459,28 @@ The hardest part of Happy Number is **detecting the infinite loop**. Two common 
 - **On problems with two termination conditions**, plan the outer loop before writing the inner logic.
 - **Cycle detection via a `seen` set** is the standard trick for Happy Number and similar problems.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — December 10, 2025
+Source: https://youtu.be/VGk_bq8RY_o
 
 Mock interview on **Arranging Coins** (LeetCode Easy). Deep coaching on the shift from manual step-by-step reasoning to **programmatic algorithmic thinking**.
 
 ---
 
-## Problem: Arranging Coins
+## [19:47](https://youtu.be/VGk_bq8RY_o?t=1187) Problem: Arranging Coins
 
 > You have `n` coins and you want to build a staircase with them. The staircase consists of `k` rows where the `i`th row has exactly `i` coins. The last row of the staircase may be incomplete. Given `n`, return the number of **complete** rows of the staircase you can build.
 
-### Examples
+### [46:01](https://youtu.be/VGk_bq8RY_o?t=2761) Examples
 
 - `n = 5` → `2` (rows of 1 and 2 coins; the 3rd row needs 3 but only 2 remain)
 - `n = 8` → `3` (rows of 1, 2, and 3 coins; the 4th row needs 4 but only 2 remain)
 
 ---
 
-## Linda's Journey: Manual Reasoning → Code
+## [51:24](https://youtu.be/VGk_bq8RY_o?t=3084) Linda's Journey: Manual Reasoning → Code
 
 Linda understood the problem immediately by working through the examples:
 
@@ -4300,7 +4489,7 @@ Linda understood the problem immediately by working through the examples:
 - Row 3 needs 3 coins (cumulative: 6)
 - Stop when the next row can't be filled
 
-### Her Manual Process
+### [16:56](https://youtu.be/VGk_bq8RY_o?t=1016) Her Manual Process
 
 For `n = 5`:
 - `5 - 1 = 4` (row 1 filled)
@@ -4313,13 +4502,13 @@ For `n = 8`:
 - `5 - 3 = 2`
 - `2 - 4 = -2` → return **3**
 
-### The Blocker: Translating To Code
+### [41:25](https://youtu.be/VGk_bq8RY_o?t=2485) The Blocker: Translating To Code
 
 Linda could see the answer manually but couldn't express the iterative process in code. She tried to hard-code each subtraction as an `if/else` ladder before eventually recognizing it needed to be a `while` loop.
 
 ---
 
-## The Correct Solution
+## [14:11](https://youtu.be/VGk_bq8RY_o?t=851) [approx] The Correct Solution
 
 ```python
 class Solution:
@@ -4333,7 +4522,7 @@ class Solution:
         return count
 ```
 
-### Walkthrough
+### [17:01](https://youtu.be/VGk_bq8RY_o?t=1021) [approx] Walkthrough
 
 - **`row`** tracks how many coins the current row needs.
 - **`count`** tracks completed rows.
@@ -4342,13 +4531,13 @@ class Solution:
 
 ---
 
-## Key Coaching Moment: Updating The Loop Variable
+## [40:51](https://youtu.be/VGk_bq8RY_o?t=2451) Key Coaching Moment: Updating The Loop Variable
 
 Linda wrote a while loop whose condition depended on `n`, but never actually updated `n` inside the loop body. The coach walked her through it:
 
 > "For your while loop to work, if `n` isn't updating, what's it going to do? It's going to go on forever."
 
-### The Fix
+### [22:41](https://youtu.be/VGk_bq8RY_o?t=1361) [approx] The Fix
 
 ```python
 n -= 1  # or n -= row, using the subtraction pattern
@@ -4356,23 +4545,23 @@ n -= 1  # or n -= row, using the subtraction pattern
 
 The subtraction Linda was computing inside the `if` condition produced a number, but she wasn't **assigning** that number back to `n`. The while loop kept checking the same unchanged value.
 
-### Coach's Core Point
+### [35:30](https://youtu.be/VGk_bq8RY_o?t=2130) Coach's Core Point
 
 > "You're doing a calculation, and the calculation returns a number, but you have to update your variable if you want your while loop to end."
 
 ---
 
-## The Bigger Issue: Programmatic Thinking
+## [15:40](https://youtu.be/VGk_bq8RY_o?t=940) The Bigger Issue: Programmatic Thinking
 
 Linda's struggle wasn't technical — she understood `while`, `if`, and variable manipulation. It was **translating a mental model into step-by-step iterative instructions**.
 
-### Coach's Diagnosis
+### [39:43](https://youtu.be/VGk_bq8RY_o?t=2383) Coach's Diagnosis
 
 > "I don't think you have a technical issue or a problem-solving issue. What I'm seeing is that you're having trouble thinking programmatically — putting an algorithmic step into a series of steps. You need to see the whole thing outlined all at once."
 
 > "You're trying to solve every step of the problem before doing anything. You don't want to calculate how you'll do each interaction — that's where the while loop comes in. You focus on one step at a time: what's my first step? What comes after? Give the code instructions, let it do the work for you."
 
-### The Shift
+### [44:24](https://youtu.be/VGk_bq8RY_o?t=2664) The Shift
 
 - **Before:** "I'll manually compute `5 - 1 - 2 - 3` and check each one"
 - **After:** "I'll tell the code to subtract the current row and bump the row counter, and let the while loop do that repeatedly until it can't"
@@ -4381,7 +4570,7 @@ Linda's struggle wasn't technical — she understood `while`, `if`, and variable
 
 ---
 
-## Coach's Prescription: Pseudo Code With Raw Numbers, No Code
+## [49:07](https://youtu.be/VGk_bq8RY_o?t=2947) Coach's Prescription: Pseudo Code With Raw Numbers, No Code
 
 > "When I do pseudo code, if I'm doing pen and paper, I'm using the raw numbers the problem gives me. First step: `5 - 1 = 4`. Draw a box around that: that's row 1. Row 2: I need to put 2 coins, so `4 - 2 = 2`. I do it that way without any code references or structure."
 
@@ -4389,13 +4578,13 @@ Linda's struggle wasn't technical — she understood `while`, `if`, and variable
 
 ---
 
-## The Return Statement As An Anchor
+## [46:26](https://youtu.be/VGk_bq8RY_o?t=2786) The Return Statement As An Anchor
 
 > "I always start by asking: what am I returning? You're returning the count of rows you can fill. So I'd write `return rows` first, then work backward — what am I doing with my `rows` variable at each step?"
 
 ---
 
-## Side Tangent: `int object is not iterable`
+## [42:33](https://youtu.be/VGk_bq8RY_o?t=2553) [approx] Side Tangent: `int object is not iterable`
 
 Rebecca ran into this error. Cause:
 
@@ -4408,7 +4597,7 @@ You can't iterate directly over an integer; you need `range(n)`.
 
 ---
 
-## Error Reading as a Strength
+## [15:47](https://youtu.be/VGk_bq8RY_o?t=947) Error Reading as a Strength
 
 Linda got praise from observers for reading Python syntax errors carefully and correcting indentation errors as they appeared. The coach agreed this is a key skill:
 
@@ -4416,13 +4605,13 @@ Linda got praise from observers for reading Python syntax errors carefully and c
 
 ---
 
-## Scheduling Note
+## [53:31](https://youtu.be/VGk_bq8RY_o?t=3211) Scheduling Note
 
 No session during Christmas week or New Year's week. Next session on December 17.
 
 ---
 
-## Takeaways
+## [35:36](https://youtu.be/VGk_bq8RY_o?t=2136) Takeaways
 
 - **Update your loop variable inside the loop body**, not just in the condition.
 - **`n -= row`** is how you reassign — a bare subtraction expression does nothing.
@@ -4431,16 +4620,17 @@ No session during Christmas week or New Year's week. Next session on December 17
 - **Don't try to visualize all N iterations at once.** Write what happens in one iteration; let the loop handle the rest.
 - **`for i in range(n)`**, not `for i in n`.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — December 17, 2025
+Source: https://youtu.be/23b9sbzY1SM
 
 Two mock interviews: **Lilah's Beautiful Days at the Movies** (HackerRank) and **Move Zeroes** (LeetCode). Core lesson: slow down to re-read the problem, and use a `while` loop when a `for` loop's index can't be mutated during iteration.
 
 ---
 
-## Q&A: Tech Interview Format
+## [0:27](https://youtu.be/23b9sbzY1SM?t=27) Q&A: Tech Interview Format
 
 - **Easy problems only.** The tech interview draws exclusively from easies.
 - **Some behavioral follow-up** is asked purely for practice — applying your experience to a dev career.
@@ -4448,13 +4638,13 @@ Two mock interviews: **Lilah's Beautiful Days at the Movies** (HackerRank) and *
 
 ---
 
-## Mock Interview #1: Lilah's Beautiful Days (Daniel)
+## [4:45](https://youtu.be/23b9sbzY1SM?t=285) Mock Interview #1: Lilah's Beautiful Days (Daniel)
 
-### Problem
+### [4:45](https://youtu.be/23b9sbzY1SM?t=285) Problem
 
 > Lilah determines the difference between a number and its reverse. For instance, `12` reversed is `21`, difference `9`. Given a range of days `i` to `j` and a number `k`, return the count of **beautiful days** — days whose value minus its reverse is evenly divisible by `k`.
 
-### Examples
+### [6:54](https://youtu.be/23b9sbzY1SM?t=414) [approx] Examples
 
 For `i = 20, j = 23, k = 6`:
 - Day 20: `|20 - 02| = 18`, `18 / 6 = 3` → beautiful
@@ -4464,7 +4654,7 @@ For `i = 20, j = 23, k = 6`:
 
 Answer: **2**.
 
-### Daniel's Approach
+### [9:13](https://youtu.be/23b9sbzY1SM?t=553) [approx] Daniel's Approach
 
 Pseudo code:
 - Counter for beautiful days, initialized to 0.
@@ -4473,7 +4663,7 @@ Pseudo code:
 - Increment counter on match.
 - Return counter.
 
-### Reverse Logic
+### [11:31](https://youtu.be/23b9sbzY1SM?t=691) [approx] Reverse Logic
 
 ```python
 reversed_num = int(str(i)[::-1])
@@ -4485,11 +4675,11 @@ reversed_num = int(str(i)[::-1])
 
 Tested with `120` → `21` (leading zeros dropped) and `210` → `12`. Confirmed the slice handles trailing-zero cases correctly.
 
-### The Scope Bug
+### [33:35](https://youtu.be/23b9sbzY1SM?t=2015) The Scope Bug
 
 Daniel placed the `reversed_num = ...` line **outside** the for loop, in the global/function scope. When the loop iterated, `reversed_num` never updated because the reverse expression only ran once.
 
-### Fix Direction
+### [30:46](https://youtu.be/23b9sbzY1SM?t=1846) Fix Direction
 
 Move the reverse calculation **inside the for loop**, so each iteration produces its own reversed value against the current `day` variable.
 
@@ -4503,29 +4693,29 @@ def beautifulDays(i, j, k):
     return count
 ```
 
-### Coach Feedback: Slow Down, Re-Read The Problem
+### [23:03](https://youtu.be/23b9sbzY1SM?t=1383) Coach Feedback: Slow Down, Re-Read The Problem
 
 > "I think your steps were great up until getting stuck. But I think you might be going a little too quickly. You didn't get the chance to read through the full problem, see the explanation, confirm the formula, or walk through the example step-by-step."
 
 When the coach asked Daniel to restate the **formula for a beautiful day**, he initially said "the reverse divided by k." After re-reading the explanation, he corrected: **`(day - reversed) / k` with no remainder**.
 
-### Coach Feedback: Range Inclusivity
+### [30:34](https://youtu.be/23b9sbzY1SM?t=1834) Coach Feedback: Range Inclusivity
 
 > "`range(i, j)` is exclusive on the upper bound — make sure to use `range(i, j + 1)` to include the final day."
 
-### On Googling Syntax
+### [24:16](https://youtu.be/23b9sbzY1SM?t=1456) On Googling Syntax
 
 > "Googling 'how to reverse a string' is fine. Googling 'how to solve beautiful days' is not. It's the level of specificity that matters."
 
 ---
 
-## Mock Interview #2: Move Zeroes (Ben)
+## [36:59](https://youtu.be/23b9sbzY1SM?t=2219) Mock Interview #2: Move Zeroes (Ben)
 
-### Problem
+### [36:59](https://youtu.be/23b9sbzY1SM?t=2219) Problem
 
 > Given an integer array `nums`, move all `0`s to the end while maintaining the relative order of the non-zero elements. Do this **in-place** without making a copy.
 
-### Ben's Brute Force
+### [34:14](https://youtu.be/23b9sbzY1SM?t=2054) Ben's Brute Force
 
 Loop through the array and append non-zero values to a new array.
 
@@ -4538,19 +4728,19 @@ for num in nums:
 
 > "Before worrying about the in-place constraint, I always recommend doing the brute force first to make sure you understand the approach."
 
-### The In-Place Requirement
+### [32:15](https://youtu.be/23b9sbzY1SM?t=1935) [approx] The In-Place Requirement
 
 LeetCode expects you to **modify `nums` directly** and return nothing — the test runner checks the array by reference.
 
-### Ben's Second Attempt: Delete Elements In Place
+### [34:34](https://youtu.be/23b9sbzY1SM?t=2074) [approx] Ben's Second Attempt: Delete Elements In Place
 
 Ben switched to deleting zeros from `nums` directly using `del nums[i]` inside a `for i in range(len(nums))` loop.
 
-### The Bug: Index Shifting
+### [43:53](https://youtu.be/23b9sbzY1SM?t=2633) The Bug: Index Shifting
 
 When you delete an element from a list, **every subsequent element shifts down by one index**. A `for i in range(...)` loop doesn't know about this — it keeps incrementing `i`, so you skip the element that shifted into the deleted slot.
 
-### The Fix: Use A While Loop
+### [50:22](https://youtu.be/23b9sbzY1SM?t=3022) The Fix: Use A While Loop
 
 > "For loops are kind of tough because those indexes aren't flexible. In cases like this, it's better to use a `while` loop where you can make index-based decisions while also manipulating the index you're using. If I hit a zero, I don't increment `i` — I just remove the element and move on."
 
@@ -4579,33 +4769,33 @@ def moveZeroes(nums):
         nums[k] = 0
 ```
 
-### Coach Feedback: Look Up Specific Syntax, Not Solutions
+### [51:04](https://youtu.be/23b9sbzY1SM?t=3064) Coach Feedback: Look Up Specific Syntax, Not Solutions
 
 > "Your use of Google here was fine — you looked up 'delete element from list Python' which is exactly what you'd Google and it gave you exactly the syntax, not a solution. That's a perfect thing. HackerRank doesn't have that luxury, but LeetCode allows it."
 
-### Coach Feedback: Don't Give Up Too Early
+### [3:04](https://youtu.be/23b9sbzY1SM?t=184) Coach Feedback: Don't Give Up Too Early
 
 Ben wanted to stop when his code wasn't working. The coach encouraged him to push through — "we're in a safe space." Once he moved into the in-place approach, he was on track.
 
 ---
 
-## Final Discussion: Pattern Recognition vs Structure
+## [46:05](https://youtu.be/23b9sbzY1SM?t=2765) [approx] Final Discussion: Pattern Recognition vs Structure
 
 One participant observed:
 
 > "If I do a certain kind of problem over and over, I start to recognize the structure. It's easier to build a template from that. It's like a pattern."
 
-### Coach's Reframe
+### [53:59](https://youtu.be/23b9sbzY1SM?t=3239) Coach's Reframe
 
 > "I'm really glad you're saying 'structure' because you know how I feel about 'patterns'. When I think of patterns, I'm really thinking, no, you're just mastering the fundamentals and seeing how those data structures apply in new and interesting ways."
 
-### Reflection After Each Attempt
+### [52:41](https://youtu.be/23b9sbzY1SM?t=3161) Reflection After Each Attempt
 
 > "How are you reviewing and improving after each attempt? What did I learn? Did I get it passing? How many attempts did I take? How can I apply those steps to my next problem? That reflection step is important."
 
 ---
 
-## Takeaways
+## [30:26](https://youtu.be/23b9sbzY1SM?t=1826) Takeaways
 
 - **Slow down to re-read the problem**, especially the explanation section for examples.
 - **`range(i, j + 1)`** if you need the upper bound included.
@@ -4615,22 +4805,23 @@ One participant observed:
 - **Brute force first** — then refine to in-place or optimized.
 - **Structure is a better word than pattern** — fundamentals applied to new problems, not a cookie-cutter template.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — January 7, 2026
+Source: https://youtu.be/pitBLw8iuyo
 
 Group walkthrough of **Plus One** (LeetCode Easy) with the coach as mock interviewer and participants contributing approaches. Emphasis on verbalizing during problem analysis and handling edge cases with trailing 9s.
 
 ---
 
-## Q&A: When Can You Stay Silent At The Start?
+## [3:29](https://youtu.be/pitBLw8iuyo?t=209) Q&A: When Can You Stay Silent At The Start?
 
 A participant asked about the pressure to start talking immediately during an interview.
 
 > "There's never too soon, but there is a little bit of a too late. If you start talking when you've already figured out the problem and say 'here's what I'm going to do,' you might pass all the test cases, but I don't have a good understanding of your process — how you're thinking through problems, breaking them down, asking and answering questions, getting stuck, moving past obstacles."
 
-### The Advice
+### [5:18](https://youtu.be/pitBLw8iuyo?t=318) The Advice
 
 > "Be afraid, be scared, and then do it anyway. Talk yourself out of it. Mumble to yourself. Write it down and then read what you wrote aloud. A third of the process is trying to understand the problem — I want to hear that."
 
@@ -4638,23 +4829,23 @@ A participant asked about the pressure to start talking immediately during an in
 
 ---
 
-## Q&A: Getting Back Into It After A Long Pause
+## [8:51](https://youtu.be/pitBLw8iuyo?t=531) Q&A: Getting Back Into It After A Long Pause
 
 > "Review problems you've worked on before. Clear out your code right away — you'll be familiar enough to have a vague recollection. Focus on rebuilding your routine: how do I break the problem into steps? How do I get pseudo code down? How do I start writing code? Focus on the process piece, not the solving piece."
 
 ---
 
-## Problem: Plus One
+## [12:04](https://youtu.be/pitBLw8iuyo?t=724) Problem: Plus One
 
 > You are given a large integer represented as an integer array `digits`, where each `digits[i]` is the `i`-th digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. Increment the large integer by one and return the resulting array of digits.
 
-### Examples
+### [12:27](https://youtu.be/pitBLw8iuyo?t=747) [approx] Examples
 
 - `[1, 2, 3]` → `[1, 2, 4]`
 - `[4, 3, 2, 1]` → `[4, 3, 2, 2]`
 - `[9]` → `[1, 0]`
 
-### Constraints
+### [15:34](https://youtu.be/pitBLw8iuyo?t=934) [approx] Constraints
 
 - `1 <= digits.length <= 100`
 - `0 <= digits[i] <= 9`
@@ -4662,13 +4853,13 @@ A participant asked about the pressure to start talking immediately during an in
 
 ---
 
-## Approach 1: Last Index + 1 (Fails On 9)
+## [19:23](https://youtu.be/pitBLw8iuyo?t=1163) Approach 1: Last Index + 1 (Fails On 9)
 
 Linda proposed: just grab the last index, add 1, return. Works for most cases. Fails when the last digit is 9 because you'd get `[1, 2, 3, 10]`, not `[1, 2, 4, 0]`.
 
 ---
 
-## Approach 2: Convert To Int, Add, Convert Back
+## [21:48](https://youtu.be/pitBLw8iuyo?t=1308) [approx] Approach 2: Convert To Int, Add, Convert Back
 
 Coach sketched a cleaner alternative:
 
@@ -4683,11 +4874,11 @@ def plusOne(digits):
 
 ---
 
-## Approach 3: Reverse For Loop + Carry Propagation (Chosen)
+## [16:20](https://youtu.be/pitBLw8iuyo?t=980) Approach 3: Reverse For Loop + Carry Propagation (Chosen)
 
 The group chose to implement the carry-propagation approach because it exercises more Python concepts.
 
-### The `range` Function For Reverse Iteration
+### [19:21](https://youtu.be/pitBLw8iuyo?t=1161) The `range` Function For Reverse Iteration
 
 ```python
 for i in range(len(digits) - 1, -1, -1):
@@ -4700,13 +4891,13 @@ for i in range(len(digits) - 1, -1, -1):
 
 > "When reversing, you actually have to include all three parameters. The normal shorthand only works when you accept the defaults of start=0 and step=1."
 
-### Side Note: `range` Requires Integers, Not Collections
+### [52:04](https://youtu.be/pitBLw8iuyo?t=3124) Side Note: `range` Requires Integers, Not Collections
 
 - `for i in range(len(digits))` → iterates indexes (0, 1, 2…)
 - `for digit in digits` → iterates values directly
 - You need indexes here because you're modifying the array in place.
 
-### Initial Carry Logic
+### [34:16](https://youtu.be/pitBLw8iuyo?t=2056) [approx] Initial Carry Logic
 
 ```python
 def plusOne(digits):
@@ -4723,7 +4914,7 @@ Walks through `[1, 2, 9]`:
 - `i = 2`, value is 9 → set to 0, keep going
 - `i = 1`, value is 2 → add 1, become 3, return `[1, 3, 0]`
 
-### Edge Case: All 9s
+### [37:23](https://youtu.be/pitBLw8iuyo?t=2243) [approx] Edge Case: All 9s
 
 `[9, 9, 9]`:
 - `i = 2`, 9 → 0
@@ -4731,7 +4922,7 @@ Walks through `[1, 2, 9]`:
 - `i = 0`, 9 → 0
 - Loop ends with `[0, 0, 0]` — **wrong**. The expected output is `[1, 0, 0, 0]`.
 
-### The Fix: Insert A Leading 1
+### [7:08](https://youtu.be/pitBLw8iuyo?t=428) The Fix: Insert A Leading 1
 
 If we fall through the whole loop without returning, it means every digit was 9 and we need to prepend a 1:
 
@@ -4747,7 +4938,7 @@ def plusOne(digits):
     return digits
 ```
 
-### `list.insert(index, value)`
+### [52:10](https://youtu.be/pitBLw8iuyo?t=3130) `list.insert(index, value)`
 
 - Inserts `value` at `index`, shifting everything else right.
 - `digits.insert(0, 1)` prepends a 1 to the front.
@@ -4755,20 +4946,20 @@ def plusOne(digits):
 
 ---
 
-## Big O Analysis
+## [1:02:16](https://youtu.be/pitBLw8iuyo?t=3736) Big O Analysis
 
 - **For loop:** O(n)
 - **If/else inside loop:** O(1) per iteration
 - **`insert(0, 1)`** at the end: O(n)
 - **Total:** O(n) + O(n) = **O(n)**
 
-### Performance Result
+### [4:47](https://youtu.be/pitBLw8iuyo?t=287) Performance Result
 
 Passed all 112 test cases at 0ms runtime. Memory usage was higher than expected — likely due to the `insert` at the front requiring internal array reallocation.
 
 ---
 
-## The Math Parallel
+## [58:24](https://youtu.be/pitBLw8iuyo?t=3504) The Math Parallel
 
 > "This is how I learned addition. `1 2 9 9 9 + 1`: 9 + 1 = 10, put zero, carry the 1. 9 + 1 = 0, carry the 1. Etc. That's exactly what the formula does: if it's not a 9, add 1 and done. If it is a 9, set to 0 and carry to the next index."
 
@@ -4776,7 +4967,7 @@ The `insert(0, 1)` at the end is the "carry out of the top" case — when the ca
 
 ---
 
-## Approach Comparison
+## [56:05](https://youtu.be/pitBLw8iuyo?t=3365) [approx] Approach Comparison
 
 | Approach | Time | Space | Complexity |
 |---|---|---|---|
@@ -4786,7 +4977,7 @@ The `insert(0, 1)` at the end is the "carry out of the top" case — when the ca
 
 ---
 
-## Session Takeaways
+## [4:15](https://youtu.be/pitBLw8iuyo?t=255) Session Takeaways
 
 - **Verbalize even when you don't fully understand the problem yet.** That's the phase the coach wants to hear the most.
 - **`range(start, stop, step)` with negative step** for reverse iteration in Python.
@@ -4796,16 +4987,17 @@ The `insert(0, 1)` at the end is the "carry out of the top" case — when the ca
 - **Carry propagation** translates directly from pencil-and-paper addition to code.
 - **Googling "how to add an index to the front of a list"** is an acceptable interview lookup because it's specific syntax, not a full solution.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — January 21, 2026
+Source: https://youtu.be/ayvXEbzZpNY
 
 Group mock interview on **Find if Digit Game Can Be Won** (LeetCode Easy). Experiment with collaborative pseudo code — the group acts as a sounding board during planning, then goes silent during the coding phase.
 
 ---
 
-## Experimental Format
+## [1:41](https://youtu.be/ayvXEbzZpNY?t=101) Experimental Format
 
 > "The volunteer leads their own mock interview. During pseudo code, use the group as a sounding board — ask us questions, see what we think, but you're the main stakeholder. Once you're ready to code, we all go silent."
 
@@ -4813,41 +5005,41 @@ Rationale: if the pre-code phase is a blocker, this collaborative mode lets cand
 
 ---
 
-## Problem: Find if Digit Game Can Be Won
+## [4:38](https://youtu.be/ayvXEbzZpNY?t=278) Problem: Find if Digit Game Can Be Won
 
 > You are given an array of positive integers `nums`. Alice and Bob are playing a game. In the game, Alice can choose either all single-digit numbers or all double-digit numbers from `nums`, and the rest of the numbers are given to Bob. Alice wins if the sum of her numbers is **strictly greater than** the sum of Bob's numbers. Return `true` if Alice can win, `false` otherwise.
 
-### Examples
+### [16:14](https://youtu.be/ayvXEbzZpNY?t=974) Examples
 
 - `[1, 2, 3, 4, 10]` → `false` (singles sum to 10, doubles sum to 10 — a tie)
 - `[1, 2, 3, 4, 5, 14]` → `true` (singles sum to 15 > 14)
 - `[5, 5, 5, 25]` → `true` (doubles sum to 25 > 15)
 
-### Constraints
+### [7:18](https://youtu.be/ayvXEbzZpNY?t=438) [approx] Constraints
 
 - `1 <= nums.length <= 100`
 - `1 <= nums[i] <= 99` (no triple digits)
 
 ---
 
-## Lisa's Pseudo Code
+## [9:44](https://youtu.be/ayvXEbzZpNY?t=584) [approx] Lisa's Pseudo Code
 
 - Return `true` or `false`.
 - Sum the single-digit numbers → **Alice**.
 - Sum the double-digit numbers → **Bob**.
 - Compare: return `true` if Alice's sum > Bob's sum OR Bob's sum > Alice's sum. Return `false` if equal.
 
-### Key Assumption Made
+### [10:31](https://youtu.be/ayvXEbzZpNY?t=631) Key Assumption Made
 
 > "Equal is a tie — she can't win. The only thing we really need to test for is if they're equal."
 
-### Single vs Double Digit Check
+### [18:26](https://youtu.be/ayvXEbzZpNY?t=1106) Single vs Double Digit Check
 
 Lisa proposed: `if num < 10, add to Alice; else add to Bob`.
 
 ---
 
-## Side Question: Does Example With One Double Digit Matter?
+## [23:59](https://youtu.be/ayvXEbzZpNY?t=1439) Side Question: Does Example With One Double Digit Matter?
 
 A participant asked whether the examples guarantee only one double digit per input. Coach's response:
 
@@ -4857,7 +5049,7 @@ Verdict: you should **assume multiple double digits are possible** because the c
 
 ---
 
-## First Implementation (With Lists)
+## [19:29](https://youtu.be/ayvXEbzZpNY?t=1169) [approx] First Implementation (With Lists)
 
 ```python
 class Solution:
@@ -4874,17 +5066,17 @@ class Solution:
         return alice_sum != bob_sum
 ```
 
-### Why Only `!=` Works
+### [5:22](https://youtu.be/ayvXEbzZpNY?t=322) Why Only `!=` Works
 
 The question is: can Alice win by choosing **one** of the two groups? She always picks the winning group. So as long as the two sums aren't equal, she can win by picking the larger one. **Equality is the only loss condition.**
 
 ---
 
-## Coach Feedback: Do You Need The Lists At All?
+## [33:35](https://youtu.be/ayvXEbzZpNY?t=2015) Coach Feedback: Do You Need The Lists At All?
 
 > "You're using a pretty intense data structure — a list — to store and then sum values. But if you already know the contents are being properly separated, do you need to store them in a list, or can you just sum them?"
 
-### Refactor: Sum In Place
+### [26:48](https://youtu.be/ayvXEbzZpNY?t=1608) [approx] Refactor: Sum In Place
 
 ```python
 class Solution:
@@ -4904,13 +5096,13 @@ class Solution:
 - `alice += num` or `bob += num` as you iterate.
 - Same comparison at the end.
 
-### Performance Note
+### [31:50](https://youtu.be/ayvXEbzZpNY?t=1910) Performance Note
 
 Lisa's first submission was in the upper end of runtime percentile because of the list allocations. Sum-in-place is meaningfully faster even at small input sizes because it skips the list construction entirely.
 
 ---
 
-## The "Can I Do This Without A List?" Question
+## [18:34](https://youtu.be/ayvXEbzZpNY?t=1114) The "Can I Do This Without A List?" Question
 
 Lisa tried to find the Python feature for "sum with a condition" and got stuck.
 
@@ -4927,7 +5119,7 @@ But the explicit accumulator loop is just as correct and clearer when you're sti
 
 ---
 
-## Key Interview Skills Demonstrated
+## [8:50](https://youtu.be/ayvXEbzZpNY?t=530) Key Interview Skills Demonstrated
 
 1. **Restating the goal:** "Determine if Alice can win the game" — clear and concise.
 2. **Confirming assumptions with the group** before coding (ties = loss, multiple doubles possible).
@@ -4936,7 +5128,7 @@ But the explicit accumulator loop is just as correct and clearer when you're sti
 
 ---
 
-## Takeaways
+## [36:33](https://youtu.be/ayvXEbzZpNY?t=2193) [approx] Takeaways
 
 - **Accumulate sums in integer variables, not lists**, when you don't need the individual values later.
 - **`a != b` is equivalent to `a > b or b > a`** when one side always wins — simpler and more intuitive.
@@ -4944,16 +5136,17 @@ But the explicit accumulator loop is just as correct and clearer when you're sti
 - **Group pseudo-coding** can be a useful hybrid practice format before going silent for the coding phase.
 - **Two accumulators in one pass is O(n) time and O(1) space** — optimal for this problem.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — January 28, 2026
+Source: https://youtu.be/y_BGi1xOHe8
 
 Group mock interview on **Baseball Game** (LeetCode Easy, problem 682). Extended lesson on why restating each operation in your own words before pseudo coding saves time on problems with many rules.
 
 ---
 
-## Problem: Baseball Game (LeetCode 682)
+## [3:49](https://youtu.be/y_BGi1xOHe8?t=229) Problem: Baseball Game (LeetCode 682)
 
 > You are keeping the scores for a baseball game with strange rules. Given a list of strings `operations`, apply each operation to the record and return the sum of all scores after all operations. Each operation is one of:
 >
@@ -4962,7 +5155,7 @@ Group mock interview on **Baseball Game** (LeetCode Easy, problem 682). Extended
 > - **`"D"`** — record a new score that is **double** the previous score
 > - **`"C"`** — **invalidate** the previous score, removing it from the record
 
-### Examples
+### [3:26](https://youtu.be/y_BGi1xOHe8?t=206) [approx] Examples
 
 **Example 1:** `["5", "2", "C", "D", "+"]` → `30`
 - `5` → record: `[5]`
@@ -4974,7 +5167,7 @@ Group mock interview on **Baseball Game** (LeetCode Easy, problem 682). Extended
 
 **Example 2:** `["5", "-2", "4", "C", "D", "9", "+", "+"]` → `27`
 
-### Constraints
+### [6:53](https://youtu.be/y_BGi1xOHe8?t=413) [approx] Constraints
 
 - `1 <= operations.length <= 1000`
 - Integer operations are strings representing values in `[-3*10^4, 3*10^4]`
@@ -4983,11 +5176,11 @@ Group mock interview on **Baseball Game** (LeetCode Easy, problem 682). Extended
 
 ---
 
-## Linda's Pseudo Code Walkthrough
+## [58:25](https://youtu.be/y_BGi1xOHe8?t=3505) Linda's Pseudo Code Walkthrough
 
 Linda tried to write pseudo code directly without first restating each operation in her own words. This became the central lesson of the session.
 
-### Initial Sketch
+### [13:46](https://youtu.be/y_BGi1xOHe8?t=826) [approx] Initial Sketch
 
 ```python
 def calPoints(operations):
@@ -5010,7 +5203,7 @@ def calPoints(operations):
 
 ---
 
-## Key Confusion: What Does "Previous" Mean For Each Operation?
+## [20:12](https://youtu.be/y_BGi1xOHe8?t=1212) Key Confusion: What Does "Previous" Mean For Each Operation?
 
 Linda mixed up two different interpretations of "previous":
 
@@ -5018,19 +5211,19 @@ Linda mixed up two different interpretations of "previous":
 2. **`D`** — **double** the **single previous** score (the previous score remains in the record)
 3. **`C`** — **invalidate and remove** the **single previous** score
 
-### Coach Feedback: `D` Does Not Replace
+### [27:16](https://youtu.be/y_BGi1xOHe8?t=1636) Coach Feedback: `D` Does Not Replace
 
 When Linda wrote `score = [10]` after `D` on a starting `[5]`, the coach corrected:
 
 > "Look at the example. After the `D` on `[5]`, the record becomes `[5, 10]`, not `[10]`. You're supposed to record a **new** score that is double the previous — the previous one stays."
 
-### Coach Feedback: Which Value Do You Double?
+### [24:06](https://youtu.be/y_BGi1xOHe8?t=1446) [approx] Coach Feedback: Which Value Do You Double?
 
 When the coach gave Linda a hypothetical `score = [5, 3, 2, 4]` and asked "what does `D` produce?", Linda initially tried to pick a value at random. The correct answer: **the last element**, which is `4`. So `D` produces `8` and the new record is `[5, 3, 2, 4, 8]`.
 
 > "How are you going to grab that value?" → Linda: "I'd pop it off and multiply by two." Close — but `pop` **removes** the element. For `D`, you want `score[-1] * 2` (read without removing) and append the result.
 
-### Correct `D` Operation
+### [21:14](https://youtu.be/y_BGi1xOHe8?t=1274) Correct `D` Operation
 
 ```python
 if element == "D":
@@ -5039,7 +5232,7 @@ if element == "D":
 
 ---
 
-## Why String vs Int Matters
+## [11:52](https://youtu.be/y_BGi1xOHe8?t=712) Why String vs Int Matters
 
 `operations` is a list of **strings**, not a mix of strings and ints. `"5"` and `"-2"` are strings. When Linda tried to append `element` directly to `score` for an integer case, the coach pointed out the eventual need to cast.
 
@@ -5052,7 +5245,7 @@ Check for non-operation strings first (everything that isn't `+`, `D`, or `C` is
 
 ---
 
-## The Correct Solution
+## [34:25](https://youtu.be/y_BGi1xOHe8?t=2065) [approx] The Correct Solution
 
 ```python
 class Solution:
@@ -5070,7 +5263,7 @@ class Solution:
         return sum(record)
 ```
 
-### Key Details
+### [23:30](https://youtu.be/y_BGi1xOHe8?t=1410) Key Details
 
 - **`record[-1]`** — last element, Python's idiomatic way to access "previous"
 - **`record[-1] + record[-2]`** — sum of the last two, for `+`
@@ -5080,27 +5273,27 @@ class Solution:
 
 ---
 
-## The Core Lesson: Restate Operations In Your Own Words First
+## [12:55](https://youtu.be/y_BGi1xOHe8?t=775) The Core Lesson: Restate Operations In Your Own Words First
 
 Linda skipped the step of writing each operation in plain English and tried to jump straight into pseudo code. This caused her to repeatedly jump back to the problem to re-read what each letter meant.
 
-### Coach's Prescription
+### [56:53](https://youtu.be/y_BGi1xOHe8?t=3413) Coach's Prescription
 
 > "Take the parts of the problem and put them in your own words in the comments. Line by line: 'You get X — it's an integer, track it in an array. You get plus — it takes the previous two and sums them and keeps them all. You get D — it doubles the last and adds it. You get C — it removes the last.' That's in words, not pseudo code."
 
 > "Then you compare that against the examples to make sure what you've written matches. If it's not, course-correct before writing code."
 
-### Why Skipping That Step Cost Time
+### [57:54](https://youtu.be/y_BGi1xOHe8?t=3474) Why Skipping That Step Cost Time
 
 > "We kept going back — wait, what does `+` mean again? What does `D` do? If we had that in our own words at the top of the function, we wouldn't have to jump around as much."
 
-### The Universal Rule
+### [59:13](https://youtu.be/y_BGi1xOHe8?t=3553) The Universal Rule
 
 > "Even if you feel you know a problem backwards and forwards, I'm still going to do that step. I don't skip steps ever. That's the whole point of having a good list of steps — you take them every time. You don't change your habits. You don't get lost. The steps are there to help you."
 
 ---
 
-## Session Duration Reflection
+## [1:00:43](https://youtu.be/y_BGi1xOHe8?t=3643) Session Duration Reflection
 
 The full pseudo code phase took about 40 minutes. The coach's target:
 
@@ -5110,7 +5303,7 @@ Linda explicitly said this matched what Claude had told her about "put it in you
 
 ---
 
-## Takeaways
+## [58:31](https://youtu.be/y_BGi1xOHe8?t=3511) [approx] Takeaways
 
 - **`record[-1]`** and **`record[-2]`** are the idiomatic way to access "previous" and "previous-previous" in a Python list.
 - **`list.pop()`** removes **and returns** the last element. Use it for `C`, but not for `D` (where you want to keep the previous score).
@@ -5120,21 +5313,22 @@ Linda explicitly said this matched what Claude had told her about "put it in you
 - **Restate each rule of the problem in plain English** before writing any pseudo code. This is non-negotiable on multi-rule problems.
 - **Follow your own process steps every time**, even on problems you think you understand. Skipping steps causes backtracking.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — February 4, 2026
+Source: https://youtu.be/SR9qqxnrmTQ
 
 Mock interview on **Richest Customer Wealth** (LeetCode Easy). Textbook clean execution in under 15 minutes — a reference example of a well-run mock.
 
 ---
 
-## Problem: Richest Customer Wealth
+## [5:00](https://youtu.be/SR9qqxnrmTQ?t=300) Problem: Richest Customer Wealth
 
 > You are given an `m x n` integer grid `accounts` where `accounts[i][j]` is the amount of money the `i`-th customer has in the `j`-th bank. Return the wealth that the **richest customer** has.
 > A customer's wealth is the amount of money they have in all their bank accounts. The richest customer is the one with the **maximum total wealth**.
 
-### Example
+### [2:03](https://youtu.be/SR9qqxnrmTQ?t=123) [approx] Example
 
 ```
 accounts = [[1, 2, 3],
@@ -5145,14 +5339,14 @@ accounts = [[1, 2, 3],
 - Customer 2 wealth: `3 + 2 + 1 = 6`
 - Output: `6`
 
-### Constraints
+### [4:07](https://youtu.be/SR9qqxnrmTQ?t=247) [approx] Constraints
 
 - `1 <= m, n <= 50`
 - `1 <= accounts[i][j] <= 100`
 
 ---
 
-## Russell's Solution
+## [6:11](https://youtu.be/SR9qqxnrmTQ?t=371) [approx] Russell's Solution
 
 ```python
 class Solution:
@@ -5165,7 +5359,7 @@ class Solution:
         return greatest
 ```
 
-### Process Highlights
+### [4:24](https://youtu.be/SR9qqxnrmTQ?t=264) Process Highlights
 
 1. **Read the problem carefully.** Understood that each sub-array represents a customer's accounts.
 2. **Verified `sum()` works on a Python list** before relying on it — ran a quick test returning `sum(accounts[0])` to confirm.
@@ -5173,7 +5367,7 @@ class Solution:
 4. **Single-pass comparison** — `if current > greatest: greatest = current`.
 5. **Returned the final max.**
 
-### Idiomatic Pythonic Variant
+### [7:29](https://youtu.be/SR9qqxnrmTQ?t=449) Idiomatic Pythonic Variant
 
 ```python
 return max(sum(customer) for customer in accounts)
@@ -5183,7 +5377,7 @@ Russell's explicit version is clearer for an interview; the one-liner shows lang
 
 ---
 
-## Constraints Check
+## [4:28](https://youtu.be/SR9qqxnrmTQ?t=268) Constraints Check
 
 Coach asked whether the constraints changed the approach:
 
@@ -5193,13 +5387,13 @@ The constraint `1 <= m, n` guarantees every customer has at least one account an
 
 ---
 
-## Coach Feedback
+## [15:48](https://youtu.be/SR9qqxnrmTQ?t=948) Coach Feedback
 
 > "You followed pretty much everything we usually recommend. Reading through the problem, getting baseline assumptions, typing out comments of your understanding, quickly prototyping, taking a step out to test the `sum` piece individually, then putting it back. That was all great. You're definitely ready — whenever you want to sign up for the tech interview, go ahead."
 
 ---
 
-## Why This Mock Was Exemplary
+## [16:30](https://youtu.be/SR9qqxnrmTQ?t=990) [approx] Why This Mock Was Exemplary
 
 - **Assumed nothing, tested everything.** Russell explicitly verified `sum()` on a list worked before relying on it.
 - **Talked through his logic at each step**, naming the variables and their purpose.
@@ -5210,7 +5404,7 @@ The constraint `1 <= m, n` guarantees every customer has at least one account an
 
 ---
 
-## Resource Pointer
+## [21:15](https://youtu.be/SR9qqxnrmTQ?t=1275) Resource Pointer
 
 The coach shared the **tech interview rubric** pinned in the Discord `#hackerrank` channel. It's a comprehensive breakdown of:
 
@@ -5223,7 +5417,7 @@ The rubric also lists every concept that could appear on the tech interview.
 
 ---
 
-## Takeaways
+## [20:37](https://youtu.be/SR9qqxnrmTQ?t=1237) [approx] Takeaways
 
 - **Initializing `max_so_far = 0` and updating** is a standard pattern for "find the maximum of something" problems.
 - **`sum(list)`** just works on any list of numerics in Python.
@@ -5231,16 +5425,17 @@ The rubric also lists every concept that could appear on the tech interview.
 - **Constraints often eliminate defensive code** — check them before adding edge-case handling.
 - **Clean verbalization + a simple iteration** is often all a tech interview easy problem requires.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — February 11, 2026
+Source: https://youtu.be/9vFUUFe7ehg
 
 Mock interview on **Check if a String Is an Acronym of Words** — actually **Type of Triangle** (LeetCode Easy). Long walkthrough on the importance of enumerating all return conditions before coding, plus a sorting-based shortcut for the triangle inequality check.
 
 ---
 
-## Problem: Type of Triangle
+## [37:14](https://youtu.be/9vFUUFe7ehg?t=2234) Problem: Type of Triangle
 
 > Given a 0-indexed integer array `nums` of size 3, representing the sides of a triangle, return a string representing the type:
 > - `"equilateral"` — all three sides equal
@@ -5248,24 +5443,24 @@ Mock interview on **Check if a String Is an Acronym of Words** — actually **Ty
 > - `"scalene"` — all sides different
 > - `"none"` — if the three numbers cannot form a triangle
 
-### Examples
+### [7:52](https://youtu.be/9vFUUFe7ehg?t=472) Examples
 
 - `[3, 3, 3]` → `"equilateral"`
 - `[3, 4, 5]` → `"scalene"` (the sum of any two sides exceeds the third)
 - `[3, 4, 15]` → `"none"` (`3 + 4 = 7` is not greater than `15`)
 
-### Constraints
+### [5:49](https://youtu.be/9vFUUFe7ehg?t=349) [approx] Constraints
 
 - `nums.length == 3`
 - `1 <= nums[i] <= 100`
 
 ---
 
-## The Triangle Inequality Theorem
+## [42:40](https://youtu.be/9vFUUFe7ehg?t=2560) The Triangle Inequality Theorem
 
 > "The sum of two sides of a triangle is always greater than the third side — for **all three combinations** of sides. If even one combination fails, the three lengths cannot form a triangle."
 
-### Combinations to check
+### [8:16](https://youtu.be/9vFUUFe7ehg?t=496) Combinations to check
 
 For sides `a`, `b`, `c`:
 1. `a + b > c`
@@ -5276,11 +5471,11 @@ If all three hold, it's a triangle. Otherwise, it's `"none"`.
 
 ---
 
-## Linda's Initial Struggle
+## [57:34](https://youtu.be/9vFUUFe7ehg?t=3454) Linda's Initial Struggle
 
 Linda missed the `"none"` case on her first read and thought there were only three return conditions. She got **equilateral** working quickly with `if nums[0] == nums[1] == nums[2]`, then hit an `int object is not iterable` error when she tried `sum(nums[0], nums[1])`.
 
-### The Bug: Misusing `sum()`
+### [15:40](https://youtu.be/9vFUUFe7ehg?t=940) The Bug: Misusing `sum()`
 
 ```python
 sum(nums[0], nums[1])  # ERROR - sum() takes an iterable
@@ -5288,17 +5483,17 @@ sum(nums[0], nums[1])  # ERROR - sum() takes an iterable
 
 `sum()` expects an **iterable** as its first argument, not individual numbers. The correct usage is `sum([nums[0], nums[1]])` or simply `nums[0] + nums[1]`.
 
-### Coach's Debug Process
+### [29:34](https://youtu.be/9vFUUFe7ehg?t=1774) Coach's Debug Process
 
 > "When you see `int object is not iterable`, look at the `sum()` call. Check Python docs or W3Schools — `sum()` requires a sequence, not two separate ints."
 
 ---
 
-## The Core Lesson: Enumerate All Return Conditions First
+## [37:19](https://youtu.be/9vFUUFe7ehg?t=2239) The Core Lesson: Enumerate All Return Conditions First
 
 The coach restarted the session by walking through the problem from the top:
 
-### Step 1: Identify All Possible Returns
+### [8:04](https://youtu.be/9vFUUFe7ehg?t=484) Step 1: Identify All Possible Returns
 
 ```
 - equilateral (all three sides equal)
@@ -5307,14 +5502,14 @@ The coach restarted the session by walking through the problem from the top:
 - none       (not a triangle)
 ```
 
-### Step 2: Under What Conditions Does Each Apply?
+### [8:06](https://youtu.be/9vFUUFe7ehg?t=486) Step 2: Under What Conditions Does Each Apply?
 
 - **Equilateral** — all three sides equal. **Always a triangle.**
 - **Isosceles** — two sides equal. **Triangle check still required.** (E.g., `[3, 3, 15]` is isosceles by side equality but not a triangle.)
 - **Scalene** — all three sides different. **Triangle check still required.**
 - **None** — triangle inequality fails.
 
-### Step 3: Order The Checks
+### [15:47](https://youtu.be/9vFUUFe7ehg?t=947) Step 3: Order The Checks
 
 ```
 1. Is it equilateral? (always a triangle if yes)
@@ -5326,21 +5521,21 @@ This flips the naive ordering and avoids redundant work.
 
 ---
 
-## Lisa's Insight: Sort First
+## [38:59](https://youtu.be/9vFUUFe7ehg?t=2339) Lisa's Insight: Sort First
 
 Lisa suggested sorting the array as a preprocessing step. This unlocks multiple simplifications:
 
-### Benefit 1: Simpler Isosceles vs Scalene
+### [1:08:42](https://youtu.be/9vFUUFe7ehg?t=4122) Benefit 1: Simpler Isosceles vs Scalene
 
 After sorting, the two smallest values are adjacent. If `nums[0] == nums[1]`, the result (given it's already not equilateral) is isosceles. Otherwise scalene. Only one comparison needed.
 
-### Benefit 2: Simpler Triangle Check
+### [39:39](https://youtu.be/9vFUUFe7ehg?t=2379) Benefit 2: Simpler Triangle Check
 
 With a sorted array `[a, b, c]` where `a <= b <= c`, the triangle inequality reduces to **one check**: `a + b > c`. The other two combinations (`a + c > b`, `b + c > a`) are automatically satisfied when `c` is the largest.
 
 ---
 
-## The Clean Solution
+## [43:41](https://youtu.be/9vFUUFe7ehg?t=2621) [approx] The Clean Solution
 
 ```python
 class Solution:
@@ -5356,12 +5551,12 @@ class Solution:
         return "scalene"
 ```
 
-### Walkthrough On `[3, 4, 15]`
+### [46:36](https://youtu.be/9vFUUFe7ehg?t=2796) [approx] Walkthrough On `[3, 4, 15]`
 
 - Sorted: `[3, 4, 15]`
 - `3 + 4 = 7`, `7 <= 15` → return `"none"` ✓
 
-### Walkthrough On `[3, 3, 5]`
+### [49:30](https://youtu.be/9vFUUFe7ehg?t=2970) [approx] Walkthrough On `[3, 3, 5]`
 
 - Sorted: `[3, 3, 5]`
 - `3 + 3 = 6 > 5` → is a triangle
@@ -5370,7 +5565,7 @@ class Solution:
 
 ---
 
-## Russell's Naming Tip
+## [1:08:22](https://youtu.be/9vFUUFe7ehg?t=4102) Russell's Naming Tip
 
 > "Trying to work directly with `nums[0]` vs `nums[1]` is hard for my brain to visualize. As soon as I write six of those on a line I lose it. Even though it's an extra step, I assign them to their own named variables so I can compare `a` and `b` and `c` rather than `nums[0]` and `nums[1]` and `nums[2]`."
 
@@ -5384,23 +5579,23 @@ The coach endorsed this strongly:
 
 ---
 
-## Coach Feedback: Don't Jump To Code Before Understanding All Conditions
+## [1:04:07](https://youtu.be/9vFUUFe7ehg?t=3847) Coach Feedback: Don't Jump To Code Before Understanding All Conditions
 
 > "Jumping ahead to say 'oh, I know how I'd solve part one of three, but I don't know the full three-part process yet' — that's shortcutting your progress. Understand all the conditions upfront so you can code with them in mind, instead of hitting obstacles and going backwards."
 
-### The Value of Re-Reading Confusing Sections
+### [14:30](https://youtu.be/9vFUUFe7ehg?t=870) The Value of Re-Reading Confusing Sections
 
 > "It's fine to read something for the first time and think 'I don't know what this means.' But once you understand the rest of the problem, go back and try to make sense of the piece you didn't understand. Why are they telling you this? Why does it matter? That's when you see 'oh, there's a none option — is that going to help me determine it?'"
 
 ---
 
-## Method: Enumerate Return Values First
+## [1:01:10](https://youtu.be/9vFUUFe7ehg?t=3670) [approx] Method: Enumerate Return Values First
 
 Russell summarized the key realization:
 
 > "There are four possible returns. What test do we need to do to return each one? And potentially, what order do we test them in so we can eliminate cases?"
 
-### Coach's Recommended Opening
+### [1:06:35](https://youtu.be/9vFUUFe7ehg?t=3995) Coach's Recommended Opening
 
 1. Print `nums` (confirm your parameters match the test cases).
 2. Identify the return type — here, a string.
@@ -5411,7 +5606,7 @@ Russell summarized the key realization:
 
 ---
 
-## Takeaways
+## [26:33](https://youtu.be/9vFUUFe7ehg?t=1593) Takeaways
 
 - **Enumerate all possible return values** at the top of your pseudo code before coding any logic.
 - **Triangle inequality:** `a + b > c` for **all** combinations — but sorting reduces it to **one** check.
@@ -5421,35 +5616,36 @@ Russell summarized the key realization:
 - **Re-read confusing sections** of the problem after you understand the rest.
 - **"None" as a fourth return condition** is easy to miss on the first read — scan for it explicitly.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — February 25, 2026
+Source: https://youtu.be/qzo0MHuLHlU
 
 Coach Ruby does her own mock interview on **Number of Changing Keys**, then Lisa takes a mock on **Sum Multiples**. Lesson: test your core assumption (the math operator) **before** building logic around it.
 
 ---
 
-## Coach's Self Mock: Number of Changing Keys
+## [2:37](https://youtu.be/qzo0MHuLHlU?t=157) Coach's Self Mock: Number of Changing Keys
 
-### Problem
+### [2:37](https://youtu.be/qzo0MHuLHlU?t=157) Problem
 
 > You are given a 0-indexed string `s` typed by a user. Changing a key is defined as using a key different from the last used key. `s = "ab"` has a key change; `s = "bB"` does not (shift/caps lock are ignored). Return the number of times the user had to change the key.
 
-### Examples
+### [4:28](https://youtu.be/qzo0MHuLHlU?t=268) [approx] Examples
 
 - `"aAbBcC"` → `2` (`a→b` and `b→c`)
 - `"AaAaAaaA"` → `0`
 
-### Constraints
+### [13:50](https://youtu.be/qzo0MHuLHlU?t=830) Constraints
 
 - `1 <= s.length <= 100`
 
 ---
 
-## Coach's Approach
+## [8:56](https://youtu.be/qzo0MHuLHlU?t=536) [approx] Coach's Approach
 
-### Assumption Test First
+### [11:11](https://youtu.be/qzo0MHuLHlU?t=671) [approx] Assumption Test First
 
 Before writing any logic, she verified in the console that:
 - `'a' == 'A'` → **False**
@@ -5457,7 +5653,7 @@ Before writing any logic, she verified in the console that:
 
 So case matters for Python string equality. Need to normalize first.
 
-### Normalization With `str.lower()`
+### [13:25](https://youtu.be/qzo0MHuLHlU?t=805) [approx] Normalization With `str.lower()`
 
 ```python
 >>> "aAbBcC".lower()
@@ -5473,7 +5669,7 @@ So case matters for Python string equality. Need to normalize first.
 
 ---
 
-## The Solution
+## [15:39](https://youtu.be/qzo0MHuLHlU?t=939) [approx] The Solution
 
 ```python
 class Solution:
@@ -5486,18 +5682,18 @@ class Solution:
         return count
 ```
 
-### Key Details
+### [23:11](https://youtu.be/qzo0MHuLHlU?t=1391) Key Details
 
 - **Normalize first** — `s.lower()` converts the whole string once.
 - **Start the loop at index 1** — you need a previous character to compare against.
 - **Compare `s_lower[i]` to `s_lower[i - 1]`** — increment count on mismatch.
 - **No special edge-case handling** — constraints guarantee `len >= 1`, and the loop naturally handles length-1 strings (no iterations, returns 0).
 
-### Self-Reflection
+### [16:26](https://youtu.be/qzo0MHuLHlU?t=986) Self-Reflection
 
 > "16 minutes on an easy problem — not my personal best. I did a lot of chattering at the beginning. No weird edge cases. Memory usage was high probably because of storing a second lowered string and the count. I'd be curious what other approaches avoided allocating the new string."
 
-### Alternative: In-Place Comparison Without Lowering
+### [22:22](https://youtu.be/qzo0MHuLHlU?t=1342) [approx] Alternative: In-Place Comparison Without Lowering
 
 ```python
 def countKeyChanges(self, s):
@@ -5512,19 +5708,19 @@ This avoids allocating a full-length copy by lowering just one character at a ti
 
 ---
 
-## Mock Interview: Sum Multiples (Lisa)
+## [20:56](https://youtu.be/qzo0MHuLHlU?t=1256) Mock Interview: Sum Multiples (Lisa)
 
-### Problem
+### [20:56](https://youtu.be/qzo0MHuLHlU?t=1256) Problem
 
 > Given a positive integer `n`, find the sum of all integers in the range `[1, n]` inclusive that are divisible by `3`, `5`, or `7`. Return that sum.
 
-### Example
+### [29:05](https://youtu.be/qzo0MHuLHlU?t=1745) [approx] Example
 
 - `n = 7` → `3 + 5 + 6 + 7 = 21`
 
 ---
 
-## Lisa's Approach
+## [13:48](https://youtu.be/qzo0MHuLHlU?t=828) Lisa's Approach
 
 Standard accumulator with a for loop over `range(1, n + 1)`:
 
@@ -5537,7 +5733,7 @@ def sumOfMultiples(n):
     return total
 ```
 
-### The Bug: Wrong Division Operator
+### [26:43](https://youtu.be/qzo0MHuLHlU?t=1603) The Bug: Wrong Division Operator
 
 Lisa initially wrote her divisibility check as:
 
@@ -5552,11 +5748,11 @@ if i // 3 == 0:  # BUG: `//` is integer division, not modulo
 | `//` | integer quotient | `1` | - |
 | `%` | remainder | - | `0` |
 
-### Testing Exposed The Bug
+### [45:27](https://youtu.be/qzo0MHuLHlU?t=2727) Testing Exposed The Bug
 
 Lisa added print statements inside the loop and noticed `total` was updating on iteration `i = 1`, which shouldn't happen if the check were correct. `1 // 3 == 0` is True (integer quotient of 1/3 is 0), triggering the false positive.
 
-### The Fix
+### [38:01](https://youtu.be/qzo0MHuLHlU?t=2281) [approx] The Fix
 
 ```python
 if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
@@ -5567,7 +5763,7 @@ if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
 - If the remainder is 0, `i` is evenly divisible.
 - Chain with `or` for the three divisors.
 
-### Correct Final Solution
+### [40:16](https://youtu.be/qzo0MHuLHlU?t=2416) [approx] Correct Final Solution
 
 ```python
 class Solution:
@@ -5581,11 +5777,11 @@ class Solution:
 
 ---
 
-## Coach Feedback: Test The Math Before Building Around It
+## [49:14](https://youtu.be/qzo0MHuLHlU?t=2954) Coach Feedback: Test The Math Before Building Around It
 
 > "You did a great job breaking down the problem — understood what was required, the expected output, the general approach was right. But your basic assumption about the math piece needed more testing. I would have liked to see you test that `i // 3 == 0` logic against a few quick integers like 6 and 15 upfront to make sure it applied across the board."
 
-### Consequence Of Not Testing
+### [46:46](https://youtu.be/qzo0MHuLHlU?t=2806) Consequence Of Not Testing
 
 Lisa built lots of scaffolding around the broken divisibility check — extra `if n > 2` conditions, guards, special cases — trying to paper over the real problem.
 
@@ -5593,7 +5789,7 @@ Lisa built lots of scaffolding around the broken divisibility check — extra `i
 
 ---
 
-## The Lesson: Test Your Core Operator First
+## [46:58](https://youtu.be/qzo0MHuLHlU?t=2818) [approx] The Lesson: Test Your Core Operator First
 
 Whenever your solution hinges on a single arithmetic or logical operator, **verify the operator does what you expect** with a tiny test case before building the rest of the solution:
 
@@ -5607,7 +5803,7 @@ print(6 % 3)  # should be 0
 
 ---
 
-## Takeaways
+## [9:36](https://youtu.be/qzo0MHuLHlU?t=576) Takeaways
 
 - **`str.lower()` returns a new string** — assign to a variable; doesn't mutate.
 - **Start index-based loops at 1** when you need a "previous" reference.
@@ -5616,49 +5812,50 @@ print(6 % 3)  # should be 0
 - **`i % k == 0`** is the canonical divisibility-by-`k` test.
 - **Normalization (like `lower()`) upfront** is often simpler than per-comparison handling, but costs memory.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — March 11, 2026
+Source: https://youtu.be/Y5MNKdxSOnk
 
 Mock interview on **Number of Employees Who Met the Target** (LeetCode Easy) with Dan. Focus on establishing a **pre-coding checklist template** to paste into the editor as a repeatable process.
 
 ---
 
-## Pre-Session Discussion: Optimization vs Brute Force Under Time Pressure
+## [0:00](https://youtu.be/Y5MNKdxSOnk?t=0) [approx] Pre-Session Discussion: Optimization vs Brute Force Under Time Pressure
 
 Dan shared that he's good at optimizing code, but optimizing **within a 15-20 minute window** is the challenge.
 
-### Coach's Clarification
+### [0:00](https://youtu.be/Y5MNKdxSOnk?t=0) [approx] Coach's Clarification
 
 > "You don't have to be at the optimization level for the tech interview here. Getting something ugly out — something brute force that just solves the problem — is the starting point. You can continue honing it as you build skills. Optimization comes with practice."
 
 ---
 
-## Problem: Number of Employees Who Met the Target
+## [0:01](https://youtu.be/Y5MNKdxSOnk?t=1) [approx] Problem: Number of Employees Who Met the Target
 
 > There are `n` employees in a company numbered `0` to `n-1`. Each employee `i` has worked `hours[i]` hours. The company requires each employee to work at least `target` hours. Return the number of employees who met or exceeded the target.
 
-### Example
+### [0:02](https://youtu.be/Y5MNKdxSOnk?t=2) [approx] Example
 
 - `hours = [0, 1, 2, 3, 4]`, `target = 2` → `3` (employees 2, 3, 4 met the target)
 - `hours = [5, 1, 4, 2, 2]`, `target = 6` → `0`
 
-### Constraints
+### [0:03](https://youtu.be/Y5MNKdxSOnk?t=3) [approx] Constraints
 
 - `1 <= n == hours.length <= 50`
 - `0 <= hours[i], target <= 10^5`
 
 ---
 
-## Key Observations From Constraints
+## [0:04](https://youtu.be/Y5MNKdxSOnk?t=4) [approx] Key Observations From Constraints
 
 - **Both `hours[i]` and `target` can be zero.** If `target = 0`, every employee meets the target (even those with 0 hours).
 - **`n >= 1`** — there's always at least one employee, so no empty-array edge case.
 
 ---
 
-## Standard Solution
+## [0:05](https://youtu.be/Y5MNKdxSOnk?t=5) [approx] Standard Solution
 
 ```python
 class Solution:
@@ -5670,7 +5867,7 @@ class Solution:
         return count
 ```
 
-### Pythonic One-Liner
+### [0:08](https://youtu.be/Y5MNKdxSOnk?t=8) Pythonic One-Liner
 
 ```python
 return sum(1 for h in hours if h >= target)
@@ -5686,7 +5883,7 @@ return sum(h >= target for h in hours)
 
 ---
 
-## Coach's Best-Practices Template (Checklist)
+## [0:07](https://youtu.be/Y5MNKdxSOnk?t=7) [approx] Coach's Best-Practices Template (Checklist)
 
 Dan said having a reusable checklist template to paste at the top of every problem would keep him focused and prevent skipping steps. The coach endorsed this strongly and summarized her recommended template:
 
@@ -5702,7 +5899,7 @@ Dan said having a reusable checklist template to paste at the top of every probl
 # ============================
 ```
 
-### Coach Quotes
+### [0:08](https://youtu.be/Y5MNKdxSOnk?t=8) [approx] Coach Quotes
 
 > "I always start with printing out the parameters and pulling out the key information from the problem. These are what the parameters mean in **my own words** — in your own words is important."
 
@@ -5714,7 +5911,7 @@ Dan said having a reusable checklist template to paste at the top of every probl
 
 ---
 
-## Key Insight For Dan: Comments First, Then Code
+## [0:09](https://youtu.be/Y5MNKdxSOnk?t=9) [approx] Key Insight For Dan: Comments First, Then Code
 
 Dan realized mid-session that writing comments in the code section itself — instead of eyeballing the problem pane back and forth — forces him to process and lock in the information.
 
@@ -5724,13 +5921,13 @@ Coach: "That's a best practice."
 
 ---
 
-## Session Meta
+## [0:10](https://youtu.be/Y5MNKdxSOnk?t=10) [approx] Session Meta
 
 The coach's recording had paused unexpectedly, losing 20 minutes of the session. The core material was reconstructed verbally: print parameters, pull key info in your own words, understand edge-case constraints, pseudo code first, read errors.
 
 ---
 
-## `self` In LeetCode Class Methods
+## [0:11](https://youtu.be/Y5MNKdxSOnk?t=11) [approx] `self` In LeetCode Class Methods
 
 Dan was initially thrown by the `self` parameter. Coach:
 
@@ -5738,13 +5935,13 @@ Dan was initially thrown by the `self` parameter. Coach:
 
 ---
 
-## Life Advice: Use Your Resources
+## [0:12](https://youtu.be/Y5MNKdxSOnk?t=12) [approx] Life Advice: Use Your Resources
 
 > "Write out your assumptions, get the answers. Don't make up your own answers. If you can get a resource for it — whether that's Google or whether that's these meetings — use your resources. Another great coding tip that also just kind of applies to life."
 
 ---
 
-## Takeaways
+## [0:08](https://youtu.be/Y5MNKdxSOnk?t=8) Takeaways
 
 - **Establish a reusable pre-coding checklist template** to paste at the top of every problem.
 - **Write problem understanding as comments in the code**, not in your head or the problem pane.
@@ -5753,22 +5950,23 @@ Dan was initially thrown by the `self` parameter. Coach:
 - **Ignore `self`** in LeetCode class method signatures.
 - **Read errors to understand**, don't just keep mashing variables around hoping for success.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — March 18, 2026
+Source: https://youtu.be/d75LFUvlQ48
 
 Mock interview on **Summary Ranges** (LeetCode Easy). Long lesson on mindset, self-coaching through problem understanding, and how to decode an unusual problem specification.
 
 ---
 
-## Pre-Session: Dan's Notepad++ Demo
+## [0:00](https://youtu.be/d75LFUvlQ48?t=0) [approx] Pre-Session: Dan's Notepad++ Demo
 
 Dan shared his in-progress demonstration of Python data types — a script showcasing `type()`, lists containing mixed data types, list indexing, negative index access, and string escape sequences. Material for his peer programming sessions where attendees get homework.
 
 ---
 
-## Problem: Summary Ranges
+## [9:01](https://youtu.be/d75LFUvlQ48?t=541) Problem: Summary Ranges
 
 > You are given a sorted unique integer array `nums`. A range `[a, b]` is the set of all integers from `a` to `b` (inclusive). Return the **smallest** sorted list of ranges that cover all the numbers in the array exactly. That is, each element of `nums` is covered by exactly one of the ranges, and there is no integer `x` such that `x` is in one of the ranges but not in `nums`.
 >
@@ -5776,12 +5974,12 @@ Dan shared his in-progress demonstration of Python data types — a script showc
 > - `"a->b"` if `a != b`
 > - `"a"` if `a == b`
 
-### Examples
+### [6:00](https://youtu.be/d75LFUvlQ48?t=360) [approx] Examples
 
 - `[0, 1, 2, 4, 5, 7]` → `["0->2", "4->5", "7"]`
 - `[0, 2, 3, 4, 6, 8, 9]` → `["0", "2->4", "6", "8->9"]`
 
-### Constraints
+### [9:01](https://youtu.be/d75LFUvlQ48?t=541) [approx] Constraints
 
 - `0 <= nums.length <= 20`
 - `-2^31 <= nums[i] <= 2^31 - 1`
@@ -5790,11 +5988,11 @@ Dan shared his in-progress demonstration of Python data types — a script showc
 
 ---
 
-## Stephen's Confusion
+## [11:18](https://youtu.be/d75LFUvlQ48?t=678) Stephen's Confusion
 
 Stephen got stuck on the phrase *"each element of nums is covered by exactly one of the ranges"* and couldn't understand why `1` and `3` seemed to be "missing" from the output when they weren't even in the input arrays.
 
-### The Core Misunderstanding
+### [52:57](https://youtu.be/d75LFUvlQ48?t=3177) The Core Misunderstanding
 
 The examples actually don't skip numbers — they represent **consecutive runs**. In `[0, 1, 2, 4, 5, 7]`:
 - `0, 1, 2` are consecutive → range `"0->2"`
@@ -5805,7 +6003,7 @@ The key insight: **a range in this problem is a maximal run of consecutive integ
 
 ---
 
-## The Coach's Nudge Toward Python's `range()`
+## [26:56](https://youtu.be/d75LFUvlQ48?t=1616) The Coach's Nudge Toward Python's `range()`
 
 > "So if you think about the Python `range` function — you can set a start and a stop. When you have a start and a stop, do you need to include all the numbers in between?"
 > Stephen: "No."
@@ -5815,7 +6013,7 @@ Connecting the problem's "range" to Python's `range(start, stop)` function unloc
 
 ---
 
-## The Solution
+## [21:02](https://youtu.be/d75LFUvlQ48?t=1262) [approx] The Solution
 
 ```python
 class Solution:
@@ -5845,7 +6043,7 @@ class Solution:
         return ranges
 ```
 
-### Walkthrough On `[0, 1, 2, 4, 5, 7]`
+### [24:03](https://youtu.be/d75LFUvlQ48?t=1443) [approx] Walkthrough On `[0, 1, 2, 4, 5, 7]`
 
 - `start = 0`
 - `i = 1`: `1 == 0 + 1`, continue
@@ -5856,7 +6054,7 @@ class Solution:
 - Loop ends, flush final: `7 == 7`, append `"7"`
 - Result: `["0->2", "4->5", "7"]` ✓
 
-### The Two Output Formats
+### [27:03](https://youtu.be/d75LFUvlQ48?t=1623) [approx] The Two Output Formats
 
 ```python
 if start == end:
@@ -5869,39 +6067,39 @@ This matches the problem's `A->B if A != B, A if A == B` specification.
 
 ---
 
-## Coach Feedback: Mindset As The Real Blocker
+## [32:30](https://youtu.be/d75LFUvlQ48?t=1950) Coach Feedback: Mindset As The Real Blocker
 
 > "You were saying that you were struggling and stuck and didn't understand it, but you did explain the problem really well. You called out exactly what it was doing. It is converting ranges to strings. You acknowledged that it's skipping numbers and highlighted how it's going `0->2` then `4->5` then `7`. You understood almost everything about this problem."
 
 > "I think with just a little bit of a mindset shift, you could have hit that breakthrough. The only way to get to those breakthroughs on your own is: one, your mindset. Are you defeatist and giving up, or are you saying 'what do I know about this problem? What can I do next to understand it?'"
 
-### The Meta-Lesson
+### [33:48](https://youtu.be/d75LFUvlQ48?t=2028) The Meta-Lesson
 
 > "No amount of tips or guidance or someone else chiming in is going to help you make that breakthrough on your own. You have to build the habit of asking yourself questions and testing theories."
 
 ---
 
-## Linda's Contribution: Pattern Recognition From Examples
+## [48:58](https://youtu.be/d75LFUvlQ48?t=2938) Linda's Contribution: Pattern Recognition From Examples
 
 > "The thing that put me on the right path was being able to recognize a pattern from the examples — what worked, what didn't. When you had consecutives you had the dash-zero thing. When you had a skip you had an individual number."
 
-### Coach's Response
+### [52:12](https://youtu.be/d75LFUvlQ48?t=3132) Coach's Response
 
 > "That's great, but not everyone can immediately see the same pattern. The only way around that is by asking a bunch of questions — what is the range? How are they defining these ranges? What does it mean in the context of this problem?"
 
-### What Examples Are For
+### [52:44](https://youtu.be/d75LFUvlQ48?t=3164) What Examples Are For
 
 > "Examples give you an outline and some edge cases. LeetCode will give you minimal examples to force you to find the edge cases yourself. A better example here would have been one where the range skipped a lot of numbers. You have to build out your own test cases, or submit something partial to unlock the hidden test cases LeetCode shows you on failure."
 
 ---
 
-## Michelle's Question: Does A Range Always Not Skip?
+## [54:46](https://youtu.be/d75LFUvlQ48?t=3286) Michelle's Question: Does A Range Always Not Skip?
 
 > "A range is context-dependent. For this problem, they're defining a range as a series of consecutive numbers represented as a start and a stop. `0 1 2 3 4` become `"0->4"`. That definition is specific to this problem."
 
 ---
 
-## Constraint-Based Assumption: Starting Index Doesn't Matter
+## [31:18](https://youtu.be/d75LFUvlQ48?t=1878) Constraint-Based Assumption: Starting Index Doesn't Matter
 
 Stephen initially wondered if the range always started at zero. The coach pushed back:
 
@@ -5911,7 +6109,7 @@ Stephen initially wondered if the range always started at zero. The coach pushed
 
 ---
 
-## Dan's Old-School Flowchart Analogy
+## [47:22](https://youtu.be/d75LFUvlQ48?t=2842) Dan's Old-School Flowchart Analogy
 
 > "Back in the day we used to write flowcharts. We'd create the if statements and conditional statements — not exactly writing code but going to where the intersection point is or the decision point. What do you do from that decision point?"
 
@@ -5919,7 +6117,7 @@ Coach: "Putting it into a data-structure form helps you figure out the flowchart
 
 ---
 
-## Takeaways
+## [36:07](https://youtu.be/d75LFUvlQ48?t=2167) Takeaways
 
 - **A "range" in this problem is a maximal run of consecutive integers present in the array.** Not every integer in the range's interval is necessarily present in the source — but every integer in the run must be consecutive.
 - **Link unfamiliar problem terminology to Python built-ins** — "range" → `range(start, stop)`.
@@ -5929,44 +6127,45 @@ Coach: "Putting it into a data-structure form helps you figure out the flowchart
 - **Mindset breakthroughs can't be coached** — you have to build the habit of asking yourself questions and testing theories instead of giving up.
 - **Flowchart thinking** (decision points and branches) translates directly to if/else code structures.
 
-
+---
 ---
 
 # Ruby Solutions Deep Dive — March 25, 2026
+Source: https://youtu.be/J8mwGq1dgjc
 
 Mock interview on **Move Zeroes** (LeetCode Easy) with Dan. Central lesson: **start with a brute force that violates the constraints**, get it working, then refactor — don't try to solve the hard version first from scratch.
 
 ---
 
-## Problem: Move Zeroes
+## [20:54](https://youtu.be/J8mwGq1dgjc?t=1254) Problem: Move Zeroes
 
 > Given an integer array `nums`, move all `0`s to the end of it while maintaining the relative order of the non-zero elements.
 > **Note:** You must do this **in-place without making a copy of the array**.
 
-### Example
+### [2:21](https://youtu.be/J8mwGq1dgjc?t=141) [approx] Example
 
 - Input: `[0, 1, 0, 3, 12]`
 - After: `[1, 3, 12, 0, 0]`
 
 ---
 
-## Dan's First Attempt: Bubble Sort
+## [4:43](https://youtu.be/J8mwGq1dgjc?t=283) [approx] Dan's First Attempt: Bubble Sort
 
 Dan got bogged down trying to implement a bubble-sort-like right-to-left swapping approach without ever running his code once. He was handling multiple edge cases mentally — two adjacent zeros, the last element already being zero, a pair of non-zeros — and building the logic all at once.
 
-### Coach Feedback: Test Iteratively
+### [24:53](https://youtu.be/J8mwGq1dgjc?t=1493) Coach Feedback: Test Iteratively
 
 > "You have quite an intense set of logic here and we haven't hit run or printed anything at all. If something goes wrong, where do you start? The top? The first while loop? The if? The swapping? There are so many things that could go wrong. You want to make sure you're testing iteratively as you're developing your approach."
 
 ---
 
-## The Key Insight: Brute Force First, Even If It Breaks The Constraint
+## [28:27](https://youtu.be/J8mwGq1dgjc?t=1707) The Key Insight: Brute Force First, Even If It Breaks The Constraint
 
-### Coach's Prescription
+### [28:27](https://youtu.be/J8mwGq1dgjc?t=1707) Coach's Prescription
 
 > "With a complicated problem, instead of deferring to the most difficult idea or the approach you're unsure of, it's always better to default to a **brute force approach even if it violates the constraints** — just so you have some code running and some test cases passing. That builds your confidence and gives you a better understanding of what the problem is asking mechanically. Then you can either wipe and start from scratch knowing how it works, or refactor that approach to meet the conditions."
 
-### Dan's Brute Force Idea
+### [42:55](https://youtu.be/J8mwGq1dgjc?t=2575) Dan's Brute Force Idea
 
 Create two lists: one for non-zero values, one for zeros. Concatenate them at the end.
 
@@ -5981,7 +6180,7 @@ This violates "no copy" but it's simple, correct, and gets all test cases passin
 
 ---
 
-## Dan's Refined Approach: Count And Remove Zeros
+## [44:23](https://youtu.be/J8mwGq1dgjc?t=2663) Dan's Refined Approach: Count And Remove Zeros
 
 After the coach pushed him to break the constraint mentally first, Dan came up with a cleaner idea:
 
@@ -5989,19 +6188,19 @@ After the coach pushed him to break the constraint mentally first, Dan came up w
 2. On each zero, increment a counter and **remove** the element.
 3. After the loop, append `counter` zeros to the end.
 
-### Problem With Removing While Iterating
+### [18:55](https://youtu.be/J8mwGq1dgjc?t=1135) [approx] Problem With Removing While Iterating
 
 Coach pointed out the classic bug:
 
 > "If you're going through an index loop 0, 1, 2, 3, 4 and you remove the value at index 1, what is the new length? What is the value at index 1 now? Your indexes are not going to be consistent if you're removing values while iterating."
 
-### Dan's Acknowledgment
+### [38:27](https://youtu.be/J8mwGq1dgjc?t=2307) Dan's Acknowledgment
 
 > "The overall algorithm is sound but incomplete. I'd have to reset my indexing after each removal because now I have a potential non-zero value that shifted into the deleted slot."
 
 ---
 
-## The Correct Two-Pointer In-Place Solution
+## [23:39](https://youtu.be/J8mwGq1dgjc?t=1419) [approx] The Correct Two-Pointer In-Place Solution
 
 ```python
 class Solution:
@@ -6016,7 +6215,7 @@ class Solution:
             nums[k] = 0
 ```
 
-### Walkthrough On `[0, 1, 0, 3, 12]`
+### [26:01](https://youtu.be/J8mwGq1dgjc?t=1561) [approx] Walkthrough On `[0, 1, 0, 3, 12]`
 
 - `read=0, nums[0]=0` → skip
 - `read=1, nums[1]=1` → `nums[0]=1`, `write=1`
@@ -6026,7 +6225,7 @@ class Solution:
 - Array now: `[1, 3, 12, 3, 12]`
 - Fill from index 3: `[1, 3, 12, 0, 0]` ✓
 
-### Why Two Pointers Work
+### [16:30](https://youtu.be/J8mwGq1dgjc?t=990) Why Two Pointers Work
 
 - **`read`** walks the whole array once.
 - **`write`** only advances when a non-zero is placed.
@@ -6035,7 +6234,7 @@ class Solution:
 
 ---
 
-## Clarification: What Does "No Copy" Mean?
+## [27:47](https://youtu.be/J8mwGq1dgjc?t=1667) Clarification: What Does "No Copy" Mean?
 
 Linda (and others) asked whether building a second list is allowed if you assign it back. The coach clarified:
 
@@ -6045,13 +6244,13 @@ Effectively: **mutate the input array directly.**
 
 ---
 
-## Coach Feedback: Verbalize Before Coding
+## [31:41](https://youtu.be/J8mwGq1dgjc?t=1901) Coach Feedback: Verbalize Before Coding
 
 > "From the interview side, I need to know how you got to this point. You didn't mention anything about what your approach would look like until after you had all the code written. Make sure you're outlining what you're observing about the problem and any alternatives you're considering — even if the alternatives don't turn into code. I want to see the thought process."
 
 ---
 
-## Dan's Observation About Input Order Assumptions
+## [15:49](https://youtu.be/J8mwGq1dgjc?t=949) Dan's Observation About Input Order Assumptions
 
 > "The problem states 'relative order' but doesn't say anything about the order of the non-zero items being sorted. Potentially the non-zero items could be out of order based on this statement."
 
@@ -6059,7 +6258,7 @@ Coach agreed: you cannot assume the non-zero values are sorted. **Write that dow
 
 ---
 
-## Session Reflection: Sequence Of Approaches
+## [20:40](https://youtu.be/J8mwGq1dgjc?t=1240) Session Reflection: Sequence Of Approaches
 
 Dan walked through three progressively better approaches by the end of the session:
 
@@ -6068,13 +6267,13 @@ Dan walked through three progressively better approaches by the end of the sessi
 3. **Count and remove** — sound algorithm but index-shifting bug
 4. **Two-pointer in place** — (discussed by coach) the canonical answer
 
-### Why The Progression Matters
+### [33:34](https://youtu.be/J8mwGq1dgjc?t=2014) Why The Progression Matters
 
 > "If you had approached this with the second process from the start, we would have had a success. You could explain it clearly, and as long as you're dealing with a mutable object, what you described would work."
 
 ---
 
-## Takeaways
+## [26:46](https://youtu.be/J8mwGq1dgjc?t=1606) Takeaways
 
 - **Brute force first, constraint-compliant second.** Don't try to solve the hard version of a problem from a cold start.
 - **Test iteratively** — print, run, check. Don't write 30 lines of logic without executing any of them.
