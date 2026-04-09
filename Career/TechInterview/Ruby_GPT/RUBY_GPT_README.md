@@ -7,9 +7,9 @@ This directory contains everything needed to build an OpenAI Custom GPT named **
 | File | Purpose | Upload to GPT? |
 |---|---|---|
 | `Ruby_CoachingPhilosophy.md` | Ruby's coaching doctrine — Socratic moves, hint ladder, anti-patterns | ✅ Yes (knowledge file 1) |
-| `Ruby_ProblemIndex.md` | Lookup table of every problem Ruby has covered, by name/date/technique | ✅ Yes (knowledge file 2) |
-| `Ruby_MockInterviews.md` | Concatenated transcripts of all 20 live mock-interview sessions | ✅ Yes (knowledge file 3) |
-| `Ruby_SolutionsDeepDive.md` | Concatenated transcripts of 34 solution deep-dives + 1 make-up session | ✅ Yes (knowledge file 4) |
+| `Ruby_ProblemIndex.md` | Lookup table of every problem Ruby has covered, by name/date/technique, with Source video links | ✅ Yes (knowledge file 2) |
+| `Ruby_MockInterviews.md` | Concatenated transcripts of all 20 live mock-interview sessions with clickable YouTube timestamp anchors | ✅ Yes (knowledge file 3) |
+| `Ruby_SolutionsDeepDive.md` | Concatenated transcripts of 36 solution deep-dives + make-up sessions with clickable YouTube timestamp anchors | ✅ Yes (knowledge file 4) |
 | `RUBY_GPT_SYSTEM_PROMPT.md` | The text to paste into the GPT's "Instructions" field | ❌ No — paste as Instructions |
 | `RUBY_GPT_README.md` | This file | ❌ No |
 
@@ -51,6 +51,10 @@ This directory contains everything needed to build an OpenAI Custom GPT named **
 
    ```
    Review my approach — am I missing any edge cases?
+   ```
+
+   ```
+   Show me where Ruby covered Two Sum — link me to the video.
    ```
    - **Knowledge:** click **Upload files** and upload these 4 files in order:
      1. `Ruby_CoachingPhilosophy.md`
@@ -109,9 +113,12 @@ Paste each of these into the GPT and verify the response matches expectations.
 ## Maintenance
 
 When new Ruby sessions are added:
-1. Clean the raw transcript with `/clean-transcript` into `Ruby_Edited/`.
-2. Re-run the concatenation for the affected file (`Ruby_MockInterviews.md` or `Ruby_SolutionsDeepDive.md`).
-3. Add the new row to `Ruby_ProblemIndex.md`.
-4. Re-upload the updated file to the GPT (OpenAI lets you replace individual knowledge files).
+1. Pull the timed transcript with `get_timed_transcript` and save to `Ruby/timed/`.
+2. Clean the raw transcript with `/clean-transcript` into `Ruby_Edited/` — this now automatically injects Source URLs and clickable timestamp anchors on section headers.
+3. Re-run the concatenation for the affected file (`Ruby_MockInterviews.md` or `Ruby_SolutionsDeepDive.md`).
+4. Add the new row to `Ruby_ProblemIndex.md` with the Source video link.
+5. Re-upload the updated file to the GPT (OpenAI lets you replace individual knowledge files).
+
+See `memory/feedback_transcript_workflow.md` for the full workflow rules.
 
 The 5th knowledge slot is reserved for if/when the session corpus grows past what fits cleanly in 4 files, or for a pattern cheatsheet you may want to add later.
