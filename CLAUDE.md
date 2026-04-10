@@ -193,19 +193,22 @@ Setup: Copy system prompt to Project Instructions at claude.ai, upload the corre
 
 ## Workflow
 
-**Adding new transcripts:**
-1. Extract transcript from YouTube using the [YouTube Transcript MCP server](https://github.com/jkawamoto/mcp-youtube-transcript) (see README for setup)
-2. Save raw transcript to appropriate folder (`Career/LinkedIn/`, `Career/Resume/`, `Docker/`, etc.)
-3. Run `/clean-transcript <filename>` to create cleaned version
-4. Move cleaned version to corresponding `*_Edited/` directory
-5. Update Claude Project knowledge base at claude.ai if needed
+**Adding new transcripts (any source — Ruby, Chelsea, Docker, Drupal, etc.):**
+1. Extract transcript using `mcp__youtube_transcript__get_timed_transcript` (NOT `get_transcript`) — this returns timestamps. **One video at a time, never batch** (see `memory/feedback_youtube_extraction.md` for rate-limit rules)
+2. Save the timed JSON output to `<section>/timed/<filename>.json`
+3. Save raw transcript to the appropriate folder with `Source: https://youtu.be/<VIDEO_ID>` as line 2
+4. Run `/clean-transcript <filename>` to create the cleaned version — this automatically preserves the Source URL and injects clickable `[H:MM:SS](url?t=SECONDS)` timestamp anchors on section headers
+5. Move cleaned version to the corresponding `*_Edited/` directory
+6. If a GPT knowledge bundle exists for this source (e.g., `Ruby_GPT/`, `Chelsea_GPT/`), regenerate the concatenated file
+7. Update Claude Project knowledge base at claude.ai if needed
+
+See `memory/feedback_transcript_workflow.md` for the full workflow rules and rationale.
 
 **Adding Docker content:**
 1. Find Bret Fisher or other Docker best practices videos on YouTube
-2. Extract transcript and save to `Docker/`
-3. Run `/clean-transcript` to create cleaned version
-4. Move to `Docker/Docker_Edited/`
-5. Update Claude Project if using Docker knowledge base
+2. Follow steps 1–5 above (use `get_timed_transcript`, save timed JSON, preserve Source URL)
+3. Move to `Docker/Docker_Edited/`
+4. Update Claude Project if using Docker knowledge base
 
 **LinkedIn profile analysis (CSV export):**
 1. User downloads LinkedIn data export from LinkedIn settings
