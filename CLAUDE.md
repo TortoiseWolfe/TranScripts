@@ -144,11 +144,13 @@ AI_Builders/            # Raw transcripts (14 chapters, Kishan Sheth Lovable clo
 └── AI_Builders_Edited/ # Cleaned transcripts (14 files)
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
+Construction/           # Raw transcripts (sustainable design / cradle-to-cradle)
+└── Construction_Edited/ # Cleaned transcripts (2 William McDonough talks) + system prompt
 ```
 
 ## Claude Projects
 
-Four projects with system prompts and knowledge bases:
+Projects with system prompts and knowledge bases:
 
 | Project | System Prompt | Knowledge Base |
 |---------|---------------|----------------|
@@ -157,6 +159,7 @@ Four projects with system prompts and knowledge bases:
 | Cover Letter Review | `Career/CoverLetter_Edited/COVERLETTER_SYSTEM_PROMPT.md` | (uses Resume + LinkedIn as reference) |
 | Docker Best Practices | `Docker/Docker_Edited/DOCKER_SYSTEM_PROMPT.md` | 9 files in `Docker_Edited/` + 3 in `WordPress_Free_Forever/WFF_Edited/` |
 | Drupal CMS & Canvas | `Drupal/Drupal_Edited/DRUPAL_SYSTEM_PROMPT.md` | 5 transcripts in `Drupal_Edited/` |
+| Sustainable Design & Construction | `Construction/Construction_Edited/CONSTRUCTION_SYSTEM_PROMPT.md` | 2 William McDonough talks in `Construction_Edited/` |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
