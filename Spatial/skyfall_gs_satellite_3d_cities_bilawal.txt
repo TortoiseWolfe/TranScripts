@@ -1,0 +1,20 @@
+This AI Just Fixed Google Earth's Biggest Problem (Skyfall-GS) — Bilawal Sidhu
+Source: https://youtu.be/VWdmXlRpL84
+
+[0:00] Satellites can see your roof, but not your front door. These AI researchers just fixed that problem. Let me explain. When I worked on Google Maps photogrammetry, we had this massive constraint. Satellite-based 3D reconstructions were basically useless for anything city scale. You needed airplanes with these specialized camera rigs to fly the city at low altitude.
+
+[0:18] The physics problem is quite simple. These satellites are largely looking oblique down or slightly off nadir. That basically means that you're not really going to get building facades and certainly not street level detail. All that geometry is just occluded, which is fine if you can fly planes with camera arrays everywhere, but you can't. You've got aerial-denied regions, you've got restricted airspace, you have conflict zones. Huge chunks of planet Earth are literally unmapped with these methods, which is why you only have about 3,000 cities worth of 3D data inside of Google Earth.
+
+[0:54] These researchers found a workaround that is honestly kind of beautiful. They train Gaussian splats on multi-view satellite imagery — basically standard 3D Gaussian splatting stuff. But naturally, as the camera descends towards ground level, the renders completely fall apart. You've got floating artifacts everywhere, this geometric nonsense.
+
+[1:11] Now, instead of trying to fix this technically, they just leaned into it. They treat those broken renders as input into an image diffusion model like Flux and basically say, "Hey, hallucinate and fill in the missing parts." That nightmare street-level view becomes a starting point for diffusion to autocomplete, in a sense.
+
+[1:31] But here's where it gets really clever. They generate multiple diffusion samples per view instead of committing to one solution that is probably wrong. If you generate a couple of versions and let Gaussian splatting optimization find consensus across them, you actually get multi-view consistency that looks pretty damn good. They do this refinement in episodes — this curriculum-style training starting at higher altitudes and gradually descending. Hence the name of the paper, Skyfall-GS.
+
+[1:57] So with each iteration, those ground-level views get less screwed up and more refined. The diffusion model starts filling in the facades, adding the texture detail, fixing the artifacts. By the end, you've got real-time flyable 3D cities that look surprisingly convincing. And critically, the geometry still respects the satellite input. It's not just making stuff up — it is intelligently completing whatever was occluded. No 3D training data required, no street-level photos, no airplane flyovers, just satellite + diffusion doing what it does best: filling in the blanks.
+
+[2:31] This is really cool because previous methods to do this type of stuff, such as Vricon 3D (which Maxar now owns), can suddenly get a huge boost. In other words, the entire world — including all those aerial-denied regions — suddenly became mappable. That is not just an incremental improvement. That, my friends, is a paradigm shift.
+
+[2:51] Now this is useful for a lot of different things. There's actually a program called the US Army One World Terrain program. Essentially, this is a contract to Maxar to use satellite imagery across the world to create this type of synthetic 3D environment — because the US military wants 3D data everywhere it can't necessarily fly airplanes and drones. But thus far, those 3D reconstructions kind of look like what you see in Google Earth. They're kind of good — great analysis rasters, 2-and-a-half-D if you want to figure out the elevation of something. Not really good to look at for a human, and certainly not for an AI to train on and figure out how to navigate.
+
+[3:28] This paper just changed that. It's like neural scene completion, but actually practical. And it just unlocked the whole world. Imagine not just 3,000 cities in Google Earth anymore. Imagine the entire world.
