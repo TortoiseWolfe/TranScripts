@@ -148,6 +148,8 @@ Construction/           # Raw transcripts (sustainable design / cradle-to-cradle
 └── Construction_Edited/ # Cleaned transcripts (2 William McDonough talks) + system prompt
 Narrative/              # Raw transcripts (story craft / narrative structure)
 └── Narrative_Edited/   # Cleaned transcripts (1 Will Schoder story-structure essay) + system prompt
+Spatial/                # Raw transcripts (spatial intelligence / 3D reconstruction / computer vision)
+└── Spatial_Edited/     # Cleaned transcripts (8: 3 Bilawal Sidhu + video→3DGS pipeline + COLMAP deep-dive + CesiumJS tutorial + OSS urban-twin workshop + OpenUSD/3D-Tiles talk) + system prompt
 ```
 
 ## Claude Projects
@@ -163,6 +165,7 @@ Projects with system prompts and knowledge bases:
 | Drupal CMS & Canvas | `Drupal/Drupal_Edited/DRUPAL_SYSTEM_PROMPT.md` | 5 transcripts in `Drupal_Edited/` |
 | Sustainable Design & Construction | `Construction/Construction_Edited/CONSTRUCTION_SYSTEM_PROMPT.md` | 2 William McDonough talks in `Construction_Edited/` |
 | Narrative & Storytelling | `Narrative/Narrative_Edited/NARRATIVE_SYSTEM_PROMPT.md` | 1 Will Schoder story-structure essay in `Narrative_Edited/` |
+| Spatial Intelligence & 3D Reconstruction | `Spatial/Spatial_Edited/SPATIAL_SYSTEM_PROMPT.md` | 8 talks in `Spatial_Edited/` (3 Bilawal Sidhu + video→3DGS pipeline + COLMAP deep-dive + CesiumJS tutorial + OSS urban-twin workshop + OpenUSD/3D-Tiles) |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
