@@ -1,0 +1,15 @@
+# graphify — merged on top of .gitignore (can only exclude more, never re-include)
+
+# PRIVACY GATE: personal documents. .gitignore already covers these, but
+# `graphify extract --no-gitignore` would sweep them in and a graph is far
+# harder to un-leak than a file. Belt and braces — do not remove.
+**/private/
+
+# Raw caption fragments — large, timestamped, zero conceptual content.
+# These would cost a full semantic pass and contribute nothing.
+**/timed/*.json
+
+# Machine artifacts
+node_modules/
+.venv/
+*.lock

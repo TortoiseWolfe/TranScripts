@@ -131,9 +131,11 @@ Claude/                 # AI agent & Claude Code transcripts
 ├── Cowork/             # Claude cowork/workflow content
 ├── Frameworks/         # Agent OS, future-of-AI frameworks
 ├── MoltBot/            # OpenClaw (formerly Clawdbot/Moltbot) transcripts
-├── Patterns/           # Claude Code workflow patterns, subagents, meta-prompting
+├── Patterns/           # Claude Code workflow patterns, subagents, meta-prompting, agent memory
 ├── Skills/             # Claude Code skills tutorials
-└── Tools/              # Claude Code tools (hooks, status line, desktop apps)
+├── Tools/              # Claude Code tools (hooks, status line, desktop apps)
+├── timed/              # Timed transcript JSON
+└── Claude_Edited/      # Cleaned transcripts (1 file: Graphify + Obsidian second brain)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 ├── Docker_Edited/      # Cleaned transcripts (9 files) + system prompt
 └── WordPress_Free_Forever/ # Free hosting series (8 raw + 3 cleaned)
@@ -229,3 +231,13 @@ See `memory/feedback_transcript_workflow.md` for the full workflow rules and rat
 1. Ensure LinkedIn MCP server is configured (see README for setup)
 2. Use the MCP server to fetch profile data directly
 3. Analyze against frameworks in `LinkedIn_Edited/` transcripts
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).

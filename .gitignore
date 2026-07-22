@@ -38,3 +38,8 @@ Thumbs.db
 .vscode/
 .idea/
 .cookies.txt
+
+# graphify — rest of graphify-out/ is meant to be committed
+graphify-out/cost.json
+graphify-out/20*/
+graphify-out/cache/
