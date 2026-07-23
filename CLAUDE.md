@@ -135,7 +135,7 @@ Claude/                 # AI agent & Claude Code transcripts
 ├── Skills/             # Claude Code skills tutorials
 ├── Tools/              # Claude Code tools (hooks, status line, desktop apps)
 ├── timed/              # Timed transcript JSON
-└── Claude_Edited/      # Cleaned transcripts (1 file: Graphify + Obsidian second brain)
+└── Claude_Edited/      # Cleaned transcripts (2 files: Graphify + Obsidian second brain; scroll-world 3D-brand skill)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 ├── Docker_Edited/      # Cleaned transcripts (9 files) + system prompt
 └── WordPress_Free_Forever/ # Free hosting series (8 raw + 3 cleaned)
