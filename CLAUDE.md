@@ -135,7 +135,7 @@ Claude/                 # AI agent & Claude Code transcripts
 ├── Skills/             # Claude Code skills tutorials
 ├── Tools/              # Claude Code tools (hooks, status line, desktop apps)
 ├── timed/              # Timed transcript JSON
-└── Claude_Edited/      # Cleaned transcripts (2 files: Graphify + Obsidian second brain; scroll-world 3D-brand skill)
+└── Claude_Edited/      # Cleaned transcripts (5 files: Graphify + Obsidian second brain; scroll-world 3D-brand skill; Boris Cherny "delete your CLAUDE.md" YC commentary + the full Boris Cherny YC "Building Claude Code" talk; the gauntlet-loop subagent-orchestration prompting technique — RoboNuggets)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 ├── Docker_Edited/      # Cleaned transcripts (9 files) + system prompt
 └── WordPress_Free_Forever/ # Free hosting series (8 raw + 3 cleaned)
@@ -152,6 +152,8 @@ Narrative/              # Raw transcripts (story craft / narrative structure)
 └── Narrative_Edited/   # Cleaned transcripts (1 Will Schoder story-structure essay) + system prompt
 Spatial/                # Raw transcripts (spatial intelligence / 3D reconstruction / computer vision)
 └── Spatial_Edited/     # Cleaned transcripts (8: 3 Bilawal Sidhu + video→3DGS pipeline + COLMAP deep-dive + CesiumJS tutorial + OSS urban-twin workshop + OpenUSD/3D-Tiles talk) + system prompt
+Agriculture/            # Raw transcripts (agtech / precision agriculture / farm robotics / AI agronomy)
+└── Agriculture_Edited/ # Cleaned transcripts (1: AI + robotics in farming survey — Interesting Engineering) + system prompt
 ```
 
 ## Claude Projects
@@ -168,6 +170,7 @@ Projects with system prompts and knowledge bases:
 | Sustainable Design & Construction | `Construction/Construction_Edited/CONSTRUCTION_SYSTEM_PROMPT.md` | 2 William McDonough talks in `Construction_Edited/` |
 | Narrative & Storytelling | `Narrative/Narrative_Edited/NARRATIVE_SYSTEM_PROMPT.md` | 1 Will Schoder story-structure essay in `Narrative_Edited/` |
 | Spatial Intelligence & 3D Reconstruction | `Spatial/Spatial_Edited/SPATIAL_SYSTEM_PROMPT.md` | 8 talks in `Spatial_Edited/` (3 Bilawal Sidhu + video→3DGS pipeline + COLMAP deep-dive + CesiumJS tutorial + OSS urban-twin workshop + OpenUSD/3D-Tiles) |
+| Agriculture & AgTech | `Agriculture/Agriculture_Edited/AGRICULTURE_SYSTEM_PROMPT.md` | 1 survey in `Agriculture_Edited/` (AI + robotics in farming — Interesting Engineering) |
 
 Setup: Copy system prompt to Project Instructions at claude.ai, upload the corresponding `*_Edited/` folder as knowledge base.
 
