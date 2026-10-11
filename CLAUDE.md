@@ -133,9 +133,9 @@ Claude/                 # AI agent & Claude Code transcripts
 ├── MoltBot/            # OpenClaw (formerly Clawdbot/Moltbot) transcripts
 ├── Patterns/           # Claude Code workflow patterns, subagents, meta-prompting, agent memory
 ├── Skills/             # Claude Code skills tutorials
-├── Tools/              # Claude Code tools (hooks, status line, desktop apps)
+├── Tools/              # Claude Code tools (hooks, status line, mods, desktop apps)
 ├── timed/              # Timed transcript JSON
-└── Claude_Edited/      # Cleaned transcripts (5 files: Graphify + Obsidian second brain; scroll-world 3D-brand skill; Boris Cherny "delete your CLAUDE.md" YC commentary + the full Boris Cherny YC "Building Claude Code" talk; the gauntlet-loop subagent-orchestration prompting technique — RoboNuggets)
+└── Claude_Edited/      # Cleaned transcripts (6 files: Graphify + Obsidian second brain; scroll-world 3D-brand skill; Boris Cherny "delete your CLAUDE.md" YC commentary + the full Boris Cherny YC "Building Claude Code" talk; the gauntlet-loop subagent-orchestration prompting technique — RoboNuggets; Claude Code mods briefing — DIY Smart Code)
 Docker/                 # Raw transcripts (Bret Fisher DockerCon talks)
 ├── Docker_Edited/      # Cleaned transcripts (9 files) + system prompt
 └── WordPress_Free_Forever/ # Free hosting series (8 raw + 3 cleaned)

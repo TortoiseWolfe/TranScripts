@@ -1,0 +1,336 @@
+{
+  "title": "Claude Code just got a massive update #claude #tech - YouTube",
+  "snippets": [
+    {
+      "text": "Anthropic just shipped mods for Claude",
+      "start": 0.0,
+      "duration": 4.6
+    },
+    {
+      "text": "code. A few lines of TypeScript and",
+      "start": 2.2,
+      "duration": 4.64
+    },
+    {
+      "text": "Claude code shows how full your context",
+      "start": 4.6,
+      "duration": 4.48
+    },
+    {
+      "text": "is, stops the delete command before it",
+      "start": 6.84,
+      "duration": 4.8
+    },
+    {
+      "text": "runs, and replays every edit it just",
+      "start": 9.08,
+      "duration": 5.28
+    },
+    {
+      "text": "made. Hooks could not rewrite events,",
+      "start": 11.64,
+      "duration": 4.96
+    },
+    {
+      "text": "draw new UI, or replace built-in",
+      "start": 14.36,
+      "duration": 5.08
+    },
+    {
+      "text": "features. Mods can.",
+      "start": 16.6,
+      "duration": 4.88
+    },
+    {
+      "text": "Every time Claude code does something,",
+      "start": 19.44,
+      "duration": 4.52
+    },
+    {
+      "text": "it emits an event. Calling a tool,",
+      "start": 21.48,
+      "duration": 4.44
+    },
+    {
+      "text": "asking for permission, drawing part of",
+      "start": 23.96,
+      "duration": 4.96
+    },
+    {
+      "text": "the screen. A mod is one function hooked",
+      "start": 25.92,
+      "duration": 5.2
+    },
+    {
+      "text": "into that event, and it can run before",
+      "start": 28.92,
+      "duration": 4.96
+    },
+    {
+      "text": "it, after it, or instead of it. The",
+      "start": 31.12,
+      "duration": 5.28
+    },
+    {
+      "text": "hooks form a chain, like middleware.",
+      "start": 33.88,
+      "duration": 4.88
+    },
+    {
+      "text": "Yours runs, hands the event on, and at",
+      "start": 36.4,
+      "duration": 4.12
+    },
+    {
+      "text": "the bottom, Claude code does what it",
+      "start": 38.76,
+      "duration": 3.88
+    },
+    {
+      "text": "would have done anyway. Anthropic's",
+      "start": 40.52,
+      "duration": 4.8
+    },
+    {
+      "text": "first example is token weather, about 80",
+      "start": 42.64,
+      "duration": 5.08
+    },
+    {
+      "text": "lines. A band above the prompt turns",
+      "start": 45.32,
+      "duration": 5.08
+    },
+    {
+      "text": "your context window into a forecast. One",
+      "start": 47.72,
+      "duration": 6.28
+    },
+    {
+      "text": "small file, clear at 18%. Four big",
+      "start": 50.4,
+      "duration": 8.04
+    },
+    {
+      "text": "files, showers at 67. One more, storm at",
+      "start": 54.0,
+      "duration": 8.0
+    },
+    {
+      "text": "81%, a signal to wrap up the session.",
+      "start": 58.44,
+      "duration": 6.16
+    },
+    {
+      "text": "Blast radius goes further. Ask Claude to",
+      "start": 62.0,
+      "duration": 4.52
+    },
+    {
+      "text": "delete the build folder, and the mod",
+      "start": 64.6,
+      "duration": 4.24
+    },
+    {
+      "text": "holds the command. It lists the nine",
+      "start": 66.52,
+      "duration": 5.2
+    },
+    {
+      "text": "files it would remove, 1.1 megabytes,",
+      "start": 68.84,
+      "duration": 5.68
+    },
+    {
+      "text": "and waits. Press two, and Claude gets a",
+      "start": 71.72,
+      "duration": 5.48
+    },
+    {
+      "text": "refusal with the reason. Press one, and",
+      "start": 74.52,
+      "duration": 4.24
+    },
+    {
+      "text": "the command runs.",
+      "start": 77.2,
+      "duration": 3.84
+    },
+    {
+      "text": "Replay theater captures every edit in a",
+      "start": 78.76,
+      "duration": 4.68
+    },
+    {
+      "text": "turn. Claude renamed a function across",
+      "start": 81.04,
+      "duration": 5.64
+    },
+    {
+      "text": "three files in five edits. Press R, and",
+      "start": 83.44,
+      "duration": 5.52
+    },
+    {
+      "text": "a pane steps through each diff, one at a",
+      "start": 86.68,
+      "duration": 3.32
+    },
+    {
+      "text": "time.",
+      "start": 88.96,
+      "duration": 2.88
+    },
+    {
+      "text": "The bigger change is inside Claude code",
+      "start": 90.0,
+      "duration": 4.68
+    },
+    {
+      "text": "itself. Its own {slash} diff pane is now",
+      "start": 91.84,
+      "duration": 4.68
+    },
+    {
+      "text": "a mod, and so is the support for",
+      "start": 94.68,
+      "duration": 3.44
+    },
+    {
+      "text": "agents.md.",
+      "start": 96.52,
+      "duration": 3.28
+    },
+    {
+      "text": "The source sits in the public Claude",
+      "start": 98.12,
+      "duration": 4.36
+    },
+    {
+      "text": "code repo. Anthropic plans to move more",
+      "start": 99.8,
+      "duration": 4.6
+    },
+    {
+      "text": "built-in features to mods, so you can",
+      "start": 102.48,
+      "duration": 4.24
+    },
+    {
+      "text": "strip Claude code down to a small core,",
+      "start": 104.4,
+      "duration": 4.44
+    },
+    {
+      "text": "and add back only what you want.",
+      "start": 106.72,
+      "duration": 3.92
+    },
+    {
+      "text": "Describe the mod you want, and Claude",
+      "start": 108.84,
+      "duration": 4.2
+    },
+    {
+      "text": "writes it, installs it, and hot reloads",
+      "start": 110.64,
+      "duration": 4.76
+    },
+    {
+      "text": "it into your session. Mods are not",
+      "start": 113.04,
+      "duration": 4.48
+    },
+    {
+      "text": "sandboxed from your machine. They run",
+      "start": 115.4,
+      "duration": 3.8
+    },
+    {
+      "text": "with the same access as Claude code",
+      "start": 117.52,
+      "duration": 3.84
+    },
+    {
+      "text": "itself, and their publisher is not",
+      "start": 119.2,
+      "duration": 4.96
+    },
+    {
+      "text": "Anthropic. On team and enterprise plans",
+      "start": 121.36,
+      "duration": 5.16
+    },
+    {
+      "text": "and on managed machines, a built-in mod",
+      "start": 124.16,
+      "duration": 5.08
+    },
+    {
+      "text": "called sec default loads first and stops",
+      "start": 126.52,
+      "duration": 4.44
+    },
+    {
+      "text": "installed mods from overriding your",
+      "start": 129.24,
+      "duration": 4.36
+    },
+    {
+      "text": "permission deny rules. Anthropic also",
+      "start": 130.96,
+      "duration": 5.16
+    },
+    {
+      "text": "calls blast radius a safety net, not a",
+      "start": 133.6,
+      "duration": 4.64
+    },
+    {
+      "text": "permission system. A script that calls",
+      "start": 136.12,
+      "duration": 4.64
+    },
+    {
+      "text": "the delete command gets past it. Use",
+      "start": 138.24,
+      "duration": 4.44
+    },
+    {
+      "text": "mods for your own readouts and guards",
+      "start": 140.76,
+      "duration": 4.48
+    },
+    {
+      "text": "first. Those are worth it today. Skip",
+      "start": 142.68,
+      "duration": 4.44
+    },
+    {
+      "text": "the mods from strangers until you've",
+      "start": 145.24,
+      "duration": 4.52
+    },
+    {
+      "text": "checked their repo, and keep hard blocks",
+      "start": 147.12,
+      "duration": 4.68
+    },
+    {
+      "text": "in permission rules.",
+      "start": 149.76,
+      "duration": 4.04
+    },
+    {
+      "text": "Would you install a stranger's mod with",
+      "start": 151.8,
+      "duration": 6.64
+    },
+    {
+      "text": "full access to your machine? Yes or no?",
+      "start": 153.8,
+      "duration": 4.64
+    }
+  ],
+  "next_cursor": null
+}
