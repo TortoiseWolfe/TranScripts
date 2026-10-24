@@ -152,6 +152,8 @@ Narrative/              # Raw transcripts (story craft / narrative structure)
 └── Narrative_Edited/   # Cleaned transcripts (1 Will Schoder story-structure essay) + system prompt
 Spatial/                # Raw transcripts (spatial intelligence / 3D reconstruction / computer vision)
 └── Spatial_Edited/     # Cleaned transcripts (8: 3 Bilawal Sidhu + video→3DGS pipeline + COLMAP deep-dive + CesiumJS tutorial + OSS urban-twin workshop + OpenUSD/3D-Tiles talk) + system prompt
+Comedy/                 # Raw transcripts (sketch / parody comedy; used for tone and bit research)
+└── Comedy_Edited/      # Cleaned transcripts (1: Smosh Pit "The Chosens' Challenge Pit" — chosen-one-trope parody)
 Agriculture/            # Raw transcripts (agtech / precision agriculture / farm robotics / AI agronomy)
 └── Agriculture_Edited/ # Cleaned transcripts (1: AI + robotics in farming survey — Interesting Engineering) + system prompt
 ```
