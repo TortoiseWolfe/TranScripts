@@ -147,7 +147,7 @@ AI_Builders/            # Raw transcripts (14 chapters, Kishan Sheth Lovable clo
 Gaming_PC/              # PC build transcripts
 RPGs/                   # RPG-related content
 Construction/           # Raw transcripts (sustainable design / cradle-to-cradle)
-└── Construction_Edited/ # Cleaned transcripts (2 William McDonough talks) + system prompt
+└── Construction_Edited/ # Cleaned transcripts (2 William McDonough talks + 1 MUZWalls SketchUp plugin Short) + system prompt
 Narrative/              # Raw transcripts (story craft / narrative structure)
 └── Narrative_Edited/   # Cleaned transcripts (1 Will Schoder story-structure essay) + system prompt
 Spatial/                # Raw transcripts (spatial intelligence / 3D reconstruction / computer vision)
